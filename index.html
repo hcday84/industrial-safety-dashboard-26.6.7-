@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>산업안전산업기사 올인원 대시보드 - 채용 및 시험 일정</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="2026년 산업안전산업기사 시험 일정 D-Day, 대기업 및 공기업 채용 공고, 교보문고 베스트셀러 수험서 및 합격률 분석 차트를 한눈에 볼 수 있는 취업 대비 올인원 대시보드입니다.">
+  <meta name="keywords" content="산업안전산업기사, 산업안전산업기사 시험일정, 산업안전산업기사 채용, 큐넷, 국가기술자격증, 교보문고, 수험서 추천">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome for Premium Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="logo-area">
+        <div class="logo-icon">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <h1><span id="header-cert-name">산업안전산업기사</span> <span>올인원 대시보드</span></h1>
+      </div>
+      
+      <div class="header-search-bar">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" id="global-search" placeholder="자격증 이름 검색... (예: 전기기사, 소방설비기사)" autocomplete="off">
+        <div id="cert-dropdown" class="cert-dropdown"></div>
+      </div>
+
+      <div class="header-controls">
+        <button id="theme-toggle-btn" class="control-btn" title="테마 변경">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button id="bookmark-filter-btn" class="control-btn" title="북마크된 공고 보기">
+          <i class="fa-regular fa-bookmark"></i>
+          <span id="bookmark-count" class="badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Highlight Section (MD Recommendation / Announcement style from Kyobo Book) -->
+  <section class="hero-section">
+    <div class="hero-carousel">
+      <div class="hero-slide active">
+        <div class="slide-content">
+          <span class="slide-badge">Hot Topic</span>
+          <h2 id="hero-title">2026년도 산업안전산업기사 합격 전략</h2>
+          <p id="hero-desc">중대재해처벌법 강화로 건설 및 제조업 안전관리자 채용 의무 증가! 평균 합격률 40% 장벽을 깨는 과목별 정밀 분석 데이터를 대시보드에서 확인하세요.</p>
+          <div class="slide-buttons">
+            <a href="#analytics-section" class="btn btn-primary">합격률 통계 보기</a>
+            <a href="#books-section" class="btn btn-secondary">추천 수험서 보기</a>
+          </div>
+        </div>
+        <div class="slide-visual">
+          <div class="shield-graphic">
+            <i class="fa-solid fa-helmet-safety"></i>
+            <div class="pulse-ring"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Grid -->
+  <section class="stats-grid-container">
+    <div class="stats-grid">
+      <div class="stat-card" id="stat-dday">
+        <div class="stat-icon icon-cyan">
+          <i class="fa-regular fa-clock"></i>
+        </div>
+        <div class="stat-info">
+          <h3>다음 시험 D-Day</h3>
+          <p class="stat-value" id="next-exam-dday">D-Loading</p>
+          <span class="stat-desc" id="next-exam-label">로딩 중...</span>
+        </div>
+      </div>
+
+      <div class="stat-card" id="stat-jobs">
+        <div class="stat-icon icon-emerald">
+          <i class="fa-solid fa-briefcase"></i>
+        </div>
+        <div class="stat-info">
+          <h3>등록된 채용 정보</h3>
+          <p class="stat-value" id="total-jobs-count">0건</p>
+          <span class="stat-desc">자격증 우대/필수 공고</span>
+        </div>
+      </div>
+
+      <div class="stat-card" id="stat-pass">
+        <div class="stat-icon icon-amber">
+          <i class="fa-solid fa-chart-line"></i>
+        </div>
+        <div class="stat-info">
+          <h3>최근 평균 합격률</h3>
+          <p class="stat-value">41.3%</p>
+          <span class="stat-desc">필기 40.1% | 실기 42.4%</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Main Grid Layout -->
+  <div class="main-layout-container">
+    <aside class="sidebar-nav">
+      <div class="sidebar-title">
+        <i class="fa-solid fa-list"></i> 대시보드 메뉴
+      </div>
+      <nav class="nav-links">
+        <a href="#schedule-section" class="nav-item active">
+          <i class="fa-regular fa-calendar-days"></i> 2026 시험 일정
+        </a>
+        <a href="#jobs-section" class="nav-item">
+          <i class="fa-solid fa-bullhorn"></i> 맞춤형 채용 공고
+        </a>
+        <a href="#books-section" class="nav-item">
+          <i class="fa-solid fa-book-open"></i> 교보문고 추천 수험서
+        </a>
+        <a href="#analytics-section" class="nav-item">
+          <i class="fa-solid fa-chart-pie"></i> 합격 통계 & 과목 공략
+        </a>
+      </nav>
+
+      <div class="sidebar-banner">
+        <h4>중대재해처벌법 대비</h4>
+        <p>산업안전 자격 소지자는 모든 건설/제조 사업장 채용의 0순위 우대 대상입니다.</p>
+      </div>
+
+      <div class="external-links">
+        <h5>관련 링크 바로가기</h5>
+        <a href="https://www.q-net.or.kr" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-square-arrow-up-right"></i> Q-Net 바로가기</a>
+        <a href="https://product.kyobobook.co.kr/category/KOR/26" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i> 교보문고 수험서 홈</a>
+        <a href="https://www.kosha.or.kr" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i> 안전보건공단</a>
+      </div>
+    </aside>
+
+    <main class="content-area">
+      <!-- Section 1: Exam Schedule -->
+      <section id="schedule-section" class="dashboard-section card-box">
+        <div class="section-header">
+          <h2><i class="fa-regular fa-calendar-days text-teal"></i> 2026년 산업안전산업기사 정기 시험 일정</h2>
+          <span class="badge badge-success">공식 일정 반영</span>
+        </div>
+        <div class="timeline-visual-bar">
+          <div class="timeline-progress-bar" id="timeline-progress-bar" style="width: 35%;"></div>
+          <div class="timeline-nodes">
+            <div class="timeline-node active" id="node-round1">
+              <span class="node-dot"></span>
+              <span class="node-label">제1회</span>
+            </div>
+            <div class="timeline-node active" id="node-round2">
+              <span class="node-dot"></span>
+              <span class="node-label">제2회</span>
+            </div>
+            <div class="timeline-node" id="node-round3">
+              <span class="node-dot"></span>
+              <span class="node-label">제3회</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-cards-grid" id="schedule-cards-grid">
+          <!-- JS로 동적 렌더링 -->
+        </div>
+      </section>
+
+      <!-- Section 2: Job Postings -->
+      <section id="jobs-section" class="dashboard-section card-box">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-briefcase text-teal"></i> 맞춤형 자격증 우대 채용 정보</h2>
+          <div class="job-list-toggle">
+            <span class="active" id="view-all-jobs">전체 채용</span>
+            <span id="view-bookmarked-jobs">북마크 보관함</span>
+          </div>
+        </div>
+
+        <!-- Job Filters -->
+        <div class="filter-wrapper">
+          <div class="filter-row">
+            <span class="filter-label">기업 형태:</span>
+            <div class="filter-group" id="filter-type">
+              <button class="filter-btn active" data-value="all">전체</button>
+              <button class="filter-btn" data-value="public">공기업/공공</button>
+              <button class="filter-btn" data-value="large">대기업</button>
+              <button class="filter-btn" data-value="mid">중견/강소</button>
+              <button class="filter-btn" data-value="consult">안전진단</button>
+            </div>
+          </div>
+          
+          <div class="filter-row">
+            <span class="filter-label">근무 지역:</span>
+            <div class="filter-group" id="filter-region">
+              <button class="filter-btn active" data-value="all">전체</button>
+              <button class="filter-btn" data-value="seoul">수도권</button>
+              <button class="filter-btn" data-value="gong">영남권</button>
+              <button class="filter-btn" data-value="honam">호남권</button>
+              <button class="filter-btn" data-value="chung">충청권</button>
+            </div>
+          </div>
+
+          <div class="filter-row">
+            <span class="filter-label">경력 조건:</span>
+            <div class="filter-group" id="filter-experience">
+              <button class="filter-btn active" data-value="all">전체</button>
+              <button class="filter-btn" data-value="new">신입</button>
+              <button class="filter-btn" data-value="exp">경력</button>
+              <button class="filter-btn" data-value="any">경력무관</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="active-filters-tags" id="active-filters-tags">
+          <!-- Active filter tags will appear here -->
+        </div>
+
+        <!-- Jobs Grid -->
+        <div class="jobs-grid" id="jobs-grid-container">
+          <!-- Job cards dynamically rendered -->
+          <div class="loading-spinner"><i class="fa-solid fa-spinner fa-spin"></i> 채용 공고 데이터를 불러오는 중...</div>
+        </div>
+      </section>
+
+      <!-- Section 3: Recommended Books (Kyobo style) -->
+      <section id="books-section" class="dashboard-section card-box">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-book-open text-teal"></i> 교보문고 베스트셀러 및 추천 수험서</h2>
+          <a href="https://product.kyobobook.co.kr/category/KOR/26" target="_blank" rel="noopener noreferrer" class="link-more">
+            카테고리 전체보기 <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+        
+        <div class="books-intro">
+          <p>교보문고 기술/공학(KOR/26) 수험서 분야 평점 9.5 이상의 검증된 학습 교재 목록입니다.</p>
+        </div>
+
+        <div class="books-grid" id="books-grid-container">
+          <!-- Book cards dynamically rendered -->
+        </div>
+      </section>
+
+      <!-- Section 4: Statistics & Pass Rates -->
+      <section id="analytics-section" class="dashboard-section card-box">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-chart-pie text-teal"></i> 시험 통계 분석 및 과목별 고득점 팁</h2>
+          <span class="badge badge-info">최근 5개년 트렌드</span>
+        </div>
+        
+        <div class="analytics-layout">
+          <div class="chart-container">
+            <h4>연도별 합격률 변화 추이</h4>
+            <div class="chart-wrapper">
+              <!-- JS로 동적 SVG 렌더링 -->
+            </div>
+            <div class="chart-legend">
+              <span class="legend-item"><span class="legend-dot fill-amber"></span> 필기 합격률</span>
+              <span class="legend-item"><span class="legend-dot fill-teal"></span> 실기 합격률</span>
+            </div>
+          </div>
+
+          <div class="subject-guide-container">
+            <h4>필기 시험 과목 분석 & 공부 팁</h4>
+            <div class="subject-list" id="subject-list">
+              <!-- JS로 동적 렌더링 -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Job Detail Modal -->
+  <div class="modal-overlay" id="job-detail-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <span class="modal-company" id="modal-company-name">회사명</span>
+          <h3 id="modal-job-title">채용 공고 제목</h3>
+        </div>
+        <button class="modal-close" id="modal-close-btn">&times;</button>
+      </div>
+      
+      <div class="modal-body">
+        <div class="modal-info-grid">
+          <div class="info-block">
+            <span class="info-label"><i class="fa-solid fa-coins"></i> 급여 조건</span>
+            <span class="info-value" id="modal-salary">연봉 3,600만원 ~ 4,500만원</span>
+          </div>
+          <div class="info-block">
+            <span class="info-label"><i class="fa-solid fa-location-dot"></i> 근무 지역</span>
+            <span class="info-value" id="modal-location">서울 영등포구</span>
+          </div>
+          <div class="info-block">
+            <span class="info-label"><i class="fa-solid fa-user-tie"></i> 경력 및 직무</span>
+            <span class="info-value" id="modal-experience">신입 및 경력 (2년 이하)</span>
+          </div>
+          <div class="info-block">
+            <span class="info-label"><i class="fa-regular fa-clock"></i> 지원 마감일</span>
+            <span class="info-value text-red" id="modal-deadline">D-14 (2026.06.21)</span>
+          </div>
+        </div>
+
+        <div class="modal-details-content">
+          <h4><i class="fa-solid fa-circle-check"></i> 주요 수행 업무</h4>
+          <p id="modal-duties">주요 업무 설명</p>
+
+          <h4><i class="fa-solid fa-circle-check"></i> 자격 및 우대 요건</h4>
+          <ul id="modal-requirements">
+            <li>산업안전산업기사 이상 자격 필수</li>
+          </ul>
+
+          <h4><i class="fa-solid fa-circle-check"></i> 복리후생 및 혜택</h4>
+          <p id="modal-benefits">복리후생 설명</p>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="modal-bookmark-btn">
+          <i class="fa-regular fa-bookmark"></i> 북마크 추가
+        </button>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modal-apply-link">
+          지원하러 가기 <i class="fa-solid fa-square-arrow-up-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <i class="fa-solid fa-shield-halved"></i> 산업안전산업기사 대시보드
+        </div>
+        <p>본 대시보드는 수험생들의 취업과 합격을 지원하기 위해 제작되었습니다.<br>채용 정보 및 자격 시험 정보는 해당 기관의 사정에 따라 변동될 수 있으므로, 반드시 공식 사이트의 최종 공고를 재확인하시기 바랍니다.</p>
+      </div>
+      <div class="footer-right">
+        <p class="copyright">&copy; 2026 Industrial Safety Dashboard. All rights reserved.</p>
+        <p class="design-ref">UI Reference: Kyobo Book Center Category KOR/26 (Technology & Engineering) Layout</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 실제 도서 데이터 (yes24) -->
+  <script src="books_data.js"></script>
+  <!-- App Javascript -->
+  <script src="app.js"></script>
+</body>
+</html>
