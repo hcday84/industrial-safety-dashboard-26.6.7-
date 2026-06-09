@@ -12671,10 +12671,10 @@ function getCert() { return CERTIFICATIONS[STATE.currentCert]; }
 // ============================================
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
-  showWelcomeScreen();
-  initEventListeners();
   initClock();
   initWeather();
+  showWelcomeScreen();
+  initEventListeners();
 });
 
 // ============================================
@@ -12691,10 +12691,16 @@ function initClock() {
     const mo   = now.getMonth() + 1;
     const dd   = now.getDate();
     const day  = DAYS[now.getDay()];
+    // 대시보드 위젯
     const timeEl = document.getElementById('clock-time');
     const dateEl = document.getElementById('clock-date');
     if (timeEl) timeEl.textContent = `${hh}:${mm}:${ss}`;
     if (dateEl) dateEl.textContent = `${yyyy}년 ${mo}월 ${dd}일 ${day}`;
+    // 웰컴 화면 위젯
+    const wcTimeEl = document.getElementById('wc-clock-time');
+    const wcDateEl = document.getElementById('wc-clock-date');
+    if (wcTimeEl) wcTimeEl.textContent = `${hh}:${mm}:${ss}`;
+    if (wcDateEl) wcDateEl.textContent = `${yyyy}년 ${mo}월 ${dd}일 ${day}`;
   }
   tick();
   setInterval(tick, 1000);
@@ -12749,9 +12755,15 @@ async function fetchWeatherByCity(city) {
   }
 }
 
+function setWeatherEl(id, prop, val) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  if (prop === 'textContent') el.textContent = val;
+  else if (prop === 'innerHTML') el.innerHTML = val;
+  else if (prop === 'display') el.style.display = val;
+}
+
 function renderWeather(data) {
-  document.getElementById('weather-loading').style.display = 'none';
-  document.getElementById('weather-content').style.display = 'block';
   const icon   = data.weather[0].icon;
   const desc   = data.weather[0].description;
   const temp   = Math.round(data.main.temp);
@@ -12759,19 +12771,35 @@ function renderWeather(data) {
   const humid  = data.main.humidity;
   const wind   = data.wind.speed.toFixed(1);
   const city   = data.name;
-  document.getElementById('weather-icon').textContent   = WEATHER_ICONS[icon] || '🌤️';
-  document.getElementById('weather-temp').textContent   = `${temp}°C`;
-  document.getElementById('weather-feels').textContent  = `체감 ${feels}°C`;
-  document.getElementById('weather-desc').textContent   = desc;
-  document.getElementById('weather-humidity').innerHTML = `<i class="fa-solid fa-droplet"></i> ${humid}%`;
-  document.getElementById('weather-wind').innerHTML     = `<i class="fa-solid fa-wind"></i> ${wind}m/s`;
-  document.getElementById('weather-location').innerHTML = `<i class="fa-solid fa-location-dot"></i> ${city}`;
+  // 대시보드 위젯 업데이트
+  setWeatherEl('weather-loading', 'display', 'none');
+  setWeatherEl('weather-content', 'display', 'block');
+  setWeatherEl('weather-icon',    'textContent', WEATHER_ICONS[icon] || '🌤️');
+  setWeatherEl('weather-temp',    'textContent', `${temp}°C`);
+  setWeatherEl('weather-feels',   'textContent', `체감 ${feels}°C`);
+  setWeatherEl('weather-desc',    'textContent', desc);
+  setWeatherEl('weather-humidity','innerHTML', `<i class="fa-solid fa-droplet"></i> ${humid}%`);
+  setWeatherEl('weather-wind',    'innerHTML', `<i class="fa-solid fa-wind"></i> ${wind}m/s`);
+  setWeatherEl('weather-location','innerHTML', `<i class="fa-solid fa-location-dot"></i> ${city}`);
+  // 웰컴 화면 위젯 업데이트
+  setWeatherEl('wc-weather-loading', 'display', 'none');
+  setWeatherEl('wc-weather-content', 'display', 'block');
+  setWeatherEl('wc-weather-icon',    'textContent', WEATHER_ICONS[icon] || '🌤️');
+  setWeatherEl('wc-weather-temp',    'textContent', `${temp}°C`);
+  setWeatherEl('wc-weather-feels',   'textContent', `체감 ${feels}°C`);
+  setWeatherEl('wc-weather-desc',    'textContent', desc);
+  setWeatherEl('wc-weather-humidity','innerHTML', `<i class="fa-solid fa-droplet"></i> ${humid}%`);
+  setWeatherEl('wc-weather-wind',    'innerHTML', `<i class="fa-solid fa-wind"></i> ${wind}m/s`);
+  setWeatherEl('wc-weather-location','innerHTML', `<i class="fa-solid fa-location-dot"></i> ${city}`);
 }
 
 function showWeatherError(msg) {
-  document.getElementById('weather-loading').style.display = 'none';
-  document.getElementById('weather-error').style.display   = 'block';
-  document.getElementById('weather-error-msg').textContent = msg;
+  setWeatherEl('weather-loading',    'display', 'none');
+  setWeatherEl('weather-error',      'display', 'block');
+  setWeatherEl('weather-error-msg',  'textContent', msg);
+  setWeatherEl('wc-weather-loading', 'display', 'none');
+  setWeatherEl('wc-weather-error',   'display', 'block');
+  setWeatherEl('wc-weather-error-msg','textContent', msg);
 }
 
 function showWelcomeScreen() {
@@ -12780,6 +12808,32 @@ function showWelcomeScreen() {
   document.getElementById('global-search').value = '';
   document.getElementById('global-search').placeholder = '자격증 이름을 입력하세요 (예: 전기기사)';
   document.title = '기술수험서 올인원 대시보드';
+  // 달력 카드를 웰컴 화면 플레이스홀더로 이동
+  const calCard    = document.getElementById('exam-calendar-card');
+  const placeholder = document.getElementById('welcome-cal-placeholder');
+  if (calCard && placeholder && !placeholder.contains(calCard)) {
+    placeholder.appendChild(calCard);
+  }
+  // 달력 초기 렌더링 (자격증 없이 오늘 날짜 기준)
+  if (!CAL_STATE.year) {
+    const now = new Date();
+    CAL_STATE.year  = now.getFullYear();
+    CAL_STATE.month = now.getMonth();
+  }
+  drawCalendar();
+  const prevBtn = document.getElementById('cal-prev');
+  const nextBtn = document.getElementById('cal-next');
+  if (prevBtn && !prevBtn._wcBound) { prevBtn.onclick = () => moveCalMonth(-1); prevBtn._wcBound = true; }
+  if (nextBtn && !nextBtn._wcBound) { nextBtn.onclick = () => moveCalMonth(1);  nextBtn._wcBound = true; }
+}
+
+function restoreCalendarToDashboard() {
+  // 달력 카드를 대시보드 right-widgets-col 로 복원
+  const calCard      = document.getElementById('exam-calendar-card');
+  const widgetsCol   = document.querySelector('#dashboard-content .right-widgets-col');
+  if (calCard && widgetsCol && !widgetsCol.contains(calCard)) {
+    widgetsCol.appendChild(calCard);
+  }
 }
 
 function renderAll() {
@@ -12787,6 +12841,7 @@ function renderAll() {
   if (!cert) return;
   document.getElementById('welcome-screen').style.display = 'none';
   document.getElementById('dashboard-content').style.display = 'block';
+  restoreCalendarToDashboard();
   updatePageMeta(cert);
   renderHero(cert);
   renderScheduleCards(cert);
@@ -13064,7 +13119,7 @@ function drawCalendar() {
   const { year, month, cert } = CAL_STATE;
   const labelEl = document.getElementById('cal-month-label');
   const daysEl  = document.getElementById('cal-days');
-  if (!labelEl || !daysEl || !cert) return;
+  if (!labelEl || !daysEl) return;
 
   const monthNames = ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'];
   labelEl.textContent = `${year}년 ${monthNames[month]}`;
@@ -13090,12 +13145,14 @@ function drawCalendar() {
     }
   }
 
-  cert.schedules.forEach(s => {
-    addDateRange(s.writtenExam,   writtenDates);
-    addDateRange(s.practicalExam, practicalDates);
-    addDateRange(s.writtenResult,  resultDates);
-    addDateRange(s.practicalResult, resultDates);
-  });
+  if (cert && cert.schedules) {
+    cert.schedules.forEach(s => {
+      addDateRange(s.writtenExam,   writtenDates);
+      addDateRange(s.practicalExam, practicalDates);
+      addDateRange(s.writtenResult,  resultDates);
+      addDateRange(s.practicalResult, resultDates);
+    });
+  }
 
   const today = new Date();
   const todayKey = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;

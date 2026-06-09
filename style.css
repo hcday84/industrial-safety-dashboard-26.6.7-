@@ -370,13 +370,44 @@ button, input, select {
   display: none;
   align-items: center;
   justify-content: center;
+  gap: 60px;
   min-height: calc(100vh - 70px);
-  padding: 60px 20px;
+  padding: 60px 40px;
 }
 
 .welcome-inner {
   text-align: center;
   max-width: 560px;
+  flex-shrink: 0;
+}
+
+/* 웰컴 화면 오른쪽 위젯 컬럼 */
+.welcome-widgets-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+  width: 300px;
+}
+
+/* 달력 플레이스홀더 — 실제 달력 카드를 JS로 이동 */
+.welcome-cal-placeholder {
+  width: 300px;
+}
+
+@media (max-width: 900px) {
+  #welcome-screen {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+  .welcome-widgets-col {
+    width: 100%;
+    max-width: 340px;
+  }
+  .welcome-cal-placeholder {
+    width: 100%;
+  }
 }
 
 .welcome-icon {

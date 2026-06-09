@@ -67,6 +67,44 @@
         <span class="example-tag" onclick="window.selectCert('건설안전산업기사')">건설안전산업기사</span>
       </div>
     </div>
+
+    <!-- 웰컴 화면 오른쪽 위젯 -->
+    <div class="welcome-widgets-col">
+      <!-- 시계 & 날씨 -->
+      <div class="clock-weather-card" id="wc-clock-weather-card">
+        <div class="clock-section">
+          <div class="clock-time" id="wc-clock-time">--:--:--</div>
+          <div class="clock-date" id="wc-clock-date">---- -- --</div>
+        </div>
+        <div class="cw-divider"></div>
+        <div class="weather-section" id="wc-weather-section">
+          <div class="weather-loading" id="wc-weather-loading">
+            <i class="fa-solid fa-spinner fa-spin"></i> 날씨 불러오는 중...
+          </div>
+          <div class="weather-content" id="wc-weather-content" style="display:none;">
+            <div class="weather-main">
+              <span class="weather-icon" id="wc-weather-icon">🌤️</span>
+              <div class="weather-temp-wrap">
+                <span class="weather-temp" id="wc-weather-temp">--°C</span>
+                <span class="weather-feels" id="wc-weather-feels">체감 --°C</span>
+              </div>
+            </div>
+            <div class="weather-desc" id="wc-weather-desc">--</div>
+            <div class="weather-meta">
+              <span id="wc-weather-humidity"><i class="fa-solid fa-droplet"></i> --%</span>
+              <span id="wc-weather-wind"><i class="fa-solid fa-wind"></i> -- m/s</span>
+              <span id="wc-weather-location"><i class="fa-solid fa-location-dot"></i> --</span>
+            </div>
+          </div>
+          <div class="weather-error" id="wc-weather-error" style="display:none;">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <span id="wc-weather-error-msg">위치 권한을 허용해 주세요</span>
+          </div>
+        </div>
+      </div>
+      <!-- 달력 (공유) -->
+      <div class="welcome-cal-placeholder" id="welcome-cal-placeholder"></div>
+    </div>
   </div>
 
   <!-- 대시보드 컨텐츠 -->
