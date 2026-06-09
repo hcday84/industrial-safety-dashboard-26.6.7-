@@ -24,7 +24,7 @@
         <div class="logo-icon">
           <i class="fa-solid fa-shield-halved"></i>
         </div>
-        <h1><span id="header-cert-name">산업안전산업기사</span> <span>올인원 대시보드</span></h1>
+        <h1>기술수험서 올인원 대시보드</h1>
       </div>
       
       <div class="header-search-bar">
@@ -32,10 +32,14 @@
         <input type="text" id="global-search" placeholder="자격증 이름 검색... (예: 전기기사, 소방설비기사)" autocomplete="off">
         <div id="cert-dropdown" class="cert-dropdown"></div>
       </div>
+      <button id="reset-btn" class="reset-btn" title="초기화" onclick="window.resetDashboard()">
+        <i class="fa-solid fa-rotate-left"></i> 초기화
+      </button>
 
       <div class="header-controls">
-        <button id="theme-toggle-btn" class="control-btn" title="테마 변경">
+        <button id="theme-toggle-btn" class="control-btn theme-toggle-btn" title="테마 변경">
           <i class="fa-solid fa-moon"></i>
+          <span class="theme-label">다크모드</span>
         </button>
         <button id="bookmark-filter-btn" class="control-btn" title="북마크된 공고 보기">
           <i class="fa-regular fa-bookmark"></i>
@@ -44,6 +48,29 @@
       </div>
     </div>
   </header>
+
+  <!-- 웰컴 화면 -->
+  <div id="welcome-screen">
+    <div class="welcome-inner">
+      <div class="welcome-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+      <h2>자격증을 검색해보세요</h2>
+      <p>140개 기술 자격증의 시험 일정, 합격률, 추천 수험서를<br>한눈에 확인할 수 있습니다.</p>
+      <div class="welcome-search-hint">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <span>상단 검색창에 자격증 이름을 입력하세요</span>
+      </div>
+      <div class="welcome-examples">
+        <span class="example-tag" onclick="window.selectCert('전기기사')">전기기사</span>
+        <span class="example-tag" onclick="window.selectCert('산업안전산업기사')">산업안전산업기사</span>
+        <span class="example-tag" onclick="window.selectCert('정보처리기사')">정보처리기사</span>
+        <span class="example-tag" onclick="window.selectCert('소방설비기사')">소방설비기사</span>
+        <span class="example-tag" onclick="window.selectCert('건설안전산업기사')">건설안전산업기사</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 대시보드 컨텐츠 -->
+  <div id="dashboard-content">
 
   <!-- Hero Highlight Section (MD Recommendation / Announcement style from Kyobo Book) -->
   <section class="hero-section">
@@ -70,37 +97,71 @@
 
   <!-- Stats Grid -->
   <section class="stats-grid-container">
-    <div class="stats-grid">
-      <div class="stat-card" id="stat-dday">
-        <div class="stat-icon icon-cyan">
-          <i class="fa-regular fa-clock"></i>
+    <div class="stats-layout">
+
+      <!-- 왼쪽: 지표 카드 2x2 -->
+      <div class="stats-grid">
+        <div class="stat-card dday-card" id="stat-dday">
+          <div class="stat-icon icon-cyan">
+            <i class="fa-solid fa-pencil"></i>
+          </div>
+          <div class="stat-info">
+            <h3>필기시험 D-Day</h3>
+            <p class="stat-value" id="written-exam-dday">D-Loading</p>
+            <span class="stat-desc" id="written-exam-label">로딩 중...</span>
+          </div>
         </div>
-        <div class="stat-info">
-          <h3>다음 시험 D-Day</h3>
-          <p class="stat-value" id="next-exam-dday">D-Loading</p>
-          <span class="stat-desc" id="next-exam-label">로딩 중...</span>
+
+        <div class="stat-card dday-card" id="stat-dday-practical">
+          <div class="stat-icon icon-purple">
+            <i class="fa-solid fa-hammer"></i>
+          </div>
+          <div class="stat-info">
+            <h3>실기시험 D-Day</h3>
+            <p class="stat-value" id="practical-exam-dday">D-Loading</p>
+            <span class="stat-desc" id="practical-exam-label">로딩 중...</span>
+          </div>
+        </div>
+
+        <div class="stat-card" id="stat-jobs">
+          <div class="stat-icon icon-emerald">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <div class="stat-info">
+            <h3>등록된 채용 정보</h3>
+            <p class="stat-value" id="total-jobs-count">0건</p>
+            <span class="stat-desc">자격증 우대/필수 공고</span>
+          </div>
+        </div>
+
+        <div class="stat-card" id="stat-pass">
+          <div class="stat-icon icon-amber">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <div class="stat-info">
+            <h3>최근 평균 합격률</h3>
+            <p class="stat-value">41.3%</p>
+            <span class="stat-desc">필기 40.1% | 실기 42.4%</span>
+          </div>
         </div>
       </div>
 
-      <div class="stat-card" id="stat-jobs">
-        <div class="stat-icon icon-emerald">
-          <i class="fa-solid fa-briefcase"></i>
+      <!-- 오른쪽: 달력 위젯 -->
+      <div class="exam-calendar-card" id="exam-calendar-card">
+        <div class="cal-header">
+          <button class="cal-nav-btn" id="cal-prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <span class="cal-month-label" id="cal-month-label">2026년 6월</span>
+          <button class="cal-nav-btn" id="cal-next"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
-        <div class="stat-info">
-          <h3>등록된 채용 정보</h3>
-          <p class="stat-value" id="total-jobs-count">0건</p>
-          <span class="stat-desc">자격증 우대/필수 공고</span>
+        <div class="cal-weekdays">
+          <span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span>
         </div>
-      </div>
-
-      <div class="stat-card" id="stat-pass">
-        <div class="stat-icon icon-amber">
-          <i class="fa-solid fa-chart-line"></i>
-        </div>
-        <div class="stat-info">
-          <h3>최근 평균 합격률</h3>
-          <p class="stat-value">41.3%</p>
-          <span class="stat-desc">필기 40.1% | 실기 42.4%</span>
+        <div class="cal-days" id="cal-days"></div>
+        <div class="cal-legend">
+          <span class="cal-legend-item"><span class="cal-dot dot-written"></span>필기시험</span>
+          <span class="cal-legend-item"><span class="cal-dot dot-practical"></span>실기시험</span>
+          <span class="cal-legend-item"><span class="cal-dot dot-result"></span>합격발표</span>
+          <span class="cal-legend-item"><span class="cal-dot dot-today"></span>오늘</span>
         </div>
       </div>
 
@@ -145,7 +206,7 @@
       <!-- Section 1: Exam Schedule -->
       <section id="schedule-section" class="dashboard-section card-box">
         <div class="section-header">
-          <h2><i class="fa-regular fa-calendar-days text-teal"></i> 2026년 산업안전산업기사 정기 시험 일정</h2>
+          <h2><i class="fa-regular fa-calendar-days text-teal"></i> <span id="schedule-section-title">2026년 정기 시험 일정</span></h2>
           <span class="badge badge-success">공식 일정 반영</span>
         </div>
         <div class="timeline-visual-bar">
@@ -331,6 +392,8 @@
       </div>
     </div>
   </div>
+
+  </div><!-- /dashboard-content -->
 
   <!-- Footer -->
   <footer class="app-footer">
