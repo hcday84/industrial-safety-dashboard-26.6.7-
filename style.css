@@ -385,14 +385,81 @@ button, input, select {
 .welcome-widgets-col {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   flex-shrink: 0;
-  width: 300px;
+  width: 230px;
 }
 
 /* 달력 플레이스홀더 — 실제 달력 카드를 JS로 이동 */
 .welcome-cal-placeholder {
-  width: 300px;
+  width: 230px;
+}
+
+/* 웰컴 화면 전용: 시계·날씨 카드 축소 */
+.welcome-widgets-col .clock-weather-card {
+  padding: 10px 12px;
+  gap: 7px;
+}
+.welcome-widgets-col .clock-time {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+.welcome-widgets-col .clock-date {
+  font-size: 0.68rem;
+}
+.welcome-widgets-col .weather-icon {
+  font-size: 1.4rem;
+}
+.welcome-widgets-col .weather-temp {
+  font-size: 1.05rem;
+}
+.welcome-widgets-col .weather-feels {
+  font-size: 0.65rem;
+}
+.welcome-widgets-col .weather-desc {
+  font-size: 0.7rem;
+  margin-top: 1px;
+}
+.welcome-widgets-col .weather-meta {
+  gap: 6px;
+  margin-top: 3px;
+}
+.welcome-widgets-col .weather-meta span {
+  font-size: 0.65rem;
+}
+
+/* 웰컴 화면 전용: 달력 카드 축소 */
+.welcome-cal-placeholder .exam-calendar-card {
+  width: 230px;
+  padding: 10px 12px;
+  gap: 6px;
+}
+.welcome-cal-placeholder .cal-month-label {
+  font-size: 0.8rem;
+}
+.welcome-cal-placeholder .cal-nav-btn {
+  width: 22px;
+  height: 22px;
+  font-size: 0.65rem;
+}
+.welcome-cal-placeholder .cal-weekdays span {
+  font-size: 0.6rem;
+  padding: 2px 0;
+}
+.welcome-cal-placeholder .cal-day {
+  font-size: 0.65rem;
+  padding: 3px 1px;
+}
+.welcome-cal-placeholder .cal-legend {
+  gap: 4px;
+}
+.welcome-cal-placeholder .cal-legend-item {
+  font-size: 0.6rem;
+  gap: 3px;
+}
+.welcome-cal-placeholder .cal-dot {
+  width: 6px;
+  height: 6px;
 }
 
 @media (max-width: 900px) {
