@@ -461,6 +461,10 @@ button, input, select {
   width: 6px;
   height: 6px;
 }
+/* 웰컴 화면에서는 시험 관련 범례 숨김 */
+.welcome-cal-placeholder .cal-legend-exam {
+  display: none;
+}
 
 @media (max-width: 900px) {
   #welcome-screen {
