@@ -8299,6 +8299,66 @@ const CERTIFICATIONS = {
       '시험장 사전 답사 및 예약 확인',
     ],
   },
+// === 화물운송종사 ===
+  '화물운송종사': {
+    name: '화물운송종사',
+    icon: 'fa-truck',
+    category: '교통·운전',
+    heroTitle: '2026년도 화물운송종사자격 합격 가이드',
+    heroDesc: '화물운송종사자격은 화물자동차운수사업법에 따라 영업용 화물차(용달·개별·일반화물) 운전자에게 필수적으로 요구되는 국가자격입니다. 한국교통안전공단(TS)에서 전국 상시 시행하며, 필기시험(객관식 4지선다, 80문항)만으로 구성됩니다. 물류·배송·택배 업종 취업 및 사업 면허 취득에 반드시 필요한 자격입니다.',
+    passRateSummary: '필기 60~70% (상시시험)',
+    avgPassRate: '65%',
+    passRates: [
+      { year: 2020, written: 60, practical: null },
+      { year: 2021, written: 62, practical: null },
+      { year: 2022, written: 63, practical: null },
+      { year: 2023, written: 65, practical: null },
+      { year: 2024, written: 67, practical: null },
+    ],
+    schedules: [
+      {
+        round: '상시(연중)',
+        isCurrent: true,
+        isDone: false,
+        writtenApply: '한국교통안전공단(TS) 홈페이지 상시 접수 (ts2020.or.kr)',
+        writtenExam: '접수 후 지정일 응시 (전국 TS 검사소)',
+        writtenResult: '시험 당일 또는 익일 발표',
+        practicalApply: '—',
+        practicalExam: '—',
+        finalResult: '합격 즉시 자격증 발급 신청 가능',
+      },
+    ],
+    milestones: [
+      { label: '수시 접수 가능 (TS 홈페이지)', date: '2026-01-01' },
+    ],
+    subjects: [
+      { name: '교통 및 화물자동차운수사업 관련 법규', desc: '화물자동차운수사업법, 도로교통법, 교통안전법 주요 조항' },
+      { name: '화물취급요령', desc: '화물의 적재·고박·포장 방법, 위험물·특수화물 취급 기준' },
+      { name: '안전운행', desc: '방어운전, 피로 관리, 기상 조건별 운전 요령, 교통사고 예방' },
+      { name: '운송서비스', desc: '고객 응대, 화물 인수도, 운임 계산, 운송장 작성 방법' },
+    ],
+    jobs: [
+      { title: '택배 배송기사', company: '택배·물류업체', salary: '3,000~4,500만원', location: '전국', type: '계약직' },
+      { title: '용달·개별화물 기사', company: '개인사업자', salary: '3,500~5,000만원', location: '전국', type: '개인사업' },
+      { title: '화물차량 운전원', company: '일반화물운송업체', salary: '3,200~4,800만원', location: '전국', type: '정규직' },
+      { title: '냉동·냉장 화물기사', company: '식품·유통업체', salary: '3,500~5,200만원', location: '전국', type: '정규직' },
+      { title: '위험물 운반 차량 기사', company: '위험물운송업체', salary: '3,800~5,500만원', location: '전국', type: '정규직' },
+    ],
+    books: [
+      { title: '화물운송종사자격 한권으로 끝내기', author: '김동현', publisher: '성안당', year: 2025, rating: 4.6 },
+      { title: '화물운송종사 자격시험 핵심요약+기출문제', author: '이패스코리아 편집부', publisher: '이패스코리아', year: 2025, rating: 4.5 },
+      { title: '화물운송종사자격 실전 모의고사 800제', author: '자격시험 편집부', publisher: '예문사', year: 2024, rating: 4.3 },
+      { title: '화물운송 관련 법규 완전정복', author: '교통법규 연구회', publisher: '일진사', year: 2024, rating: 4.2 },
+    ],
+    defaultTodos: [
+      '시험 4과목 범위 파악 및 출제 비율 확인',
+      '화물자동차운수사업법 핵심 조항 암기',
+      '화물취급요령·안전운행 이론 정리',
+      '기출문제 풀이 (최근 3개년, 80문항 기준)',
+      'TS 홈페이지에서 시험 일정 확인 및 접수',
+    ],
+  },
+
 // === 자동차 그룹1 5종 ===
   '이륜자동차운전면허': {
     name: '이륜자동차운전면허',
