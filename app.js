@@ -13321,15 +13321,19 @@ function renderChart(cert) {
 function renderSubjects(cert) {
   const list = document.getElementById('subject-list');
   if (!list) return;
-  list.innerHTML = cert.subjects.map((s, i) => `
+  list.innerHTML = cert.subjects.map((s, i) => {
+    const title = s.title || s.name || '';
+    const desc  = s.tip   || s.desc  || '';
+    return `
     <div class="subject-item">
       <span class="subject-num">${i + 1}</span>
       <div class="subject-details">
-        <h5>${s.title}</h5>
-        <p>${s.tip}</p>
+        <h5>${title}</h5>
+        <p>${desc}</p>
       </div>
     </div>
-  `).join('');
+  `;
+  }).join('');
 }
 
 // ============================================
