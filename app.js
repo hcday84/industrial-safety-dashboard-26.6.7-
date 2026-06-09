@@ -8359,6 +8359,125 @@ const CERTIFICATIONS = {
     ],
   },
 
+// === 버스·택시 운전자격 ===
+  '버스운전자격': {
+    name: '버스운전자격',
+    icon: 'fa-bus',
+    category: '교통·운전',
+    heroTitle: '2026년도 버스운전자격 합격 가이드',
+    heroDesc: '버스운전자격은 여객자동차운수사업법에 따라 노선버스·전세버스·특수여객 등 사업용 버스를 운전하는 데 필수적인 국가자격입니다. 한국교통안전공단(TS)에서 상시 시행하며, 학과시험(60문항)과 기능시험으로 구성됩니다. 1종 대형 면허 소지자라면 도로주행 시험 없이 응시 가능하여 비교적 빠르게 취득할 수 있습니다.',
+    passRateSummary: '학과 65% | 기능 70%',
+    avgPassRate: '67%',
+    passRates: [
+      { year: 2020, written: 62, practical: 68 },
+      { year: 2021, written: 63, practical: 69 },
+      { year: 2022, written: 65, practical: 70 },
+      { year: 2023, written: 66, practical: 71 },
+      { year: 2024, written: 67, practical: 72 },
+    ],
+    schedules: [
+      {
+        round: '상시(연중)',
+        isCurrent: true,
+        isDone: false,
+        writtenApply: '한국교통안전공단(TS) 홈페이지 상시 접수 (ts2020.or.kr)',
+        writtenExam: '접수 후 지정일 응시 (전국 TS 검사소)',
+        writtenResult: '시험 당일 또는 익일 발표',
+        practicalApply: '학과 합격 후 기능시험 접수',
+        practicalExam: '지정 기능시험장 방문 응시',
+        finalResult: '기능 합격 즉시 자격증 발급 신청 가능',
+      },
+    ],
+    milestones: [
+      { label: '수시 접수 가능 (TS 홈페이지)', date: '2026-01-01' },
+    ],
+    subjects: [
+      { name: '여객자동차운수사업 관련 법규', desc: '여객자동차운수사업법, 도로교통법, 교통안전법 핵심 조항' },
+      { name: '안전운행', desc: '방어운전, 긴급상황 대처, 기상 조건별 운전 요령, 교통사고 예방' },
+      { name: '운송서비스', desc: '승객 서비스, 장애인·노약자 응대, 민원 처리, 요금 수수 절차' },
+      { name: '교통사고 및 응급처치', desc: '교통사고 처리 절차, 심폐소생술(CPR), 응급처치 기본 방법' },
+    ],
+    jobs: [
+      { title: '시내버스 기사', company: '시내버스 운수업체', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
+      { title: '고속버스·시외버스 기사', company: '고속·시외버스업체', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
+      { title: '전세버스 기사', company: '전세버스업체', salary: '3,200~4,800만원', location: '전국', type: '정규직' },
+      { title: '통근·통학버스 기사', company: '기업·학교', salary: '2,800~3,800만원', location: '전국', type: '계약직' },
+      { title: '공항리무진 버스 기사', company: '공항운송업체', salary: '3,500~4,500만원', location: '서울·경기·인천', type: '정규직' },
+    ],
+    books: [
+      { title: '버스운전자격 한권으로 끝내기', author: '김동현', publisher: '성안당', year: 2025, rating: 4.6 },
+      { title: '버스운전자격 핵심요약+기출문제', author: '이패스코리아 편집부', publisher: '이패스코리아', year: 2025, rating: 4.5 },
+      { title: '버스운전자격 실전 모의고사 600제', author: '자격시험 편집부', publisher: '예문사', year: 2024, rating: 4.3 },
+      { title: '여객운수 관련 법규 완전정복', author: '교통법규 연구회', publisher: '일진사', year: 2024, rating: 4.2 },
+    ],
+    defaultTodos: [
+      '시험 4과목 범위 파악 및 출제 비율 확인',
+      '여객자동차운수사업법 핵심 조항 암기',
+      '안전운행·운송서비스 이론 정리',
+      '응급처치(CPR) 기초 학습',
+      'TS 홈페이지에서 시험 일정 확인 및 접수',
+    ],
+  },
+
+  '택시운전자격': {
+    name: '택시운전자격',
+    icon: 'fa-taxi',
+    category: '교통·운전',
+    heroTitle: '2026년도 택시운전자격 합격 가이드',
+    heroDesc: '택시운전자격은 여객자동차운수사업법에 따라 일반택시·개인택시·법인택시를 운전하기 위해 반드시 취득해야 하는 국가자격입니다. 한국교통안전공단(TS)에서 상시 시행하며, 학과시험(80문항)만으로 구성됩니다. 응시 지역의 지리 문제가 출제되므로 해당 지역 도로·명소를 함께 학습하는 것이 합격의 핵심입니다.',
+    passRateSummary: '학과 55~65% (상시시험)',
+    avgPassRate: '60%',
+    passRates: [
+      { year: 2020, written: 55, practical: null },
+      { year: 2021, written: 57, practical: null },
+      { year: 2022, written: 58, practical: null },
+      { year: 2023, written: 60, practical: null },
+      { year: 2024, written: 62, practical: null },
+    ],
+    schedules: [
+      {
+        round: '상시(연중)',
+        isCurrent: true,
+        isDone: false,
+        writtenApply: '한국교통안전공단(TS) 홈페이지 상시 접수 (ts2020.or.kr)',
+        writtenExam: '접수 후 지정일 응시 (전국 TS 검사소)',
+        writtenResult: '시험 당일 또는 익일 발표',
+        practicalApply: '—',
+        practicalExam: '—',
+        finalResult: '합격 즉시 자격증 발급 신청 가능',
+      },
+    ],
+    milestones: [
+      { label: '수시 접수 가능 (TS 홈페이지)', date: '2026-01-01' },
+    ],
+    subjects: [
+      { name: '여객자동차운수사업 관련 법규', desc: '여객자동차운수사업법, 도로교통법, 택시 요금 및 미터기 관련 규정' },
+      { name: '안전운행', desc: '방어운전, 야간·악천후 운전 요령, 교통사고 예방 및 현장 대처' },
+      { name: '운송서비스', desc: '승객 응대 예절, 카드·현금 결제, 콜택시 시스템, 민원 처리 방법' },
+      { name: '지리(응시 지역)', desc: '응시 지역 주요 도로·명소·공공기관·교통 체계 숙지 (지역별 출제)' },
+    ],
+    jobs: [
+      { title: '법인택시 기사', company: '택시운수법인', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
+      { title: '개인택시 기사', company: '개인사업자', salary: '3,500~5,500만원', location: '전국', type: '개인사업' },
+      { title: '플랫폼택시 기사', company: '카카오T·타다 등', salary: '3,200~4,800만원', location: '전국', type: '계약직' },
+      { title: '대리운전·택시 겸업', company: '개인', salary: '2,500~3,500만원', location: '전국', type: '개인사업' },
+      { title: '모범택시 기사', company: '모범택시 업체', salary: '3,800~5,200만원', location: '대도시', type: '정규직' },
+    ],
+    books: [
+      { title: '택시운전자격 한권으로 끝내기', author: '김동현', publisher: '성안당', year: 2025, rating: 4.6 },
+      { title: '택시운전자격 핵심요약+기출문제', author: '이패스코리아 편집부', publisher: '이패스코리아', year: 2025, rating: 4.5 },
+      { title: '택시운전자격 실전 모의고사 800제', author: '자격시험 편집부', publisher: '예문사', year: 2024, rating: 4.4 },
+      { title: '서울·경기 지리 완전정복 (택시 지리 특화)', author: '지리시험 연구회', publisher: '일진사', year: 2025, rating: 4.3 },
+    ],
+    defaultTodos: [
+      '시험 4과목 범위 파악 및 출제 비율 확인',
+      '여객자동차운수사업법 핵심 조항 암기',
+      '안전운행·운송서비스 이론 정리',
+      '응시 지역 지리 문제 집중 학습 (도로·명소·기관)',
+      'TS 홈페이지에서 시험 일정 확인 및 접수',
+    ],
+  },
+
 // === 자동차 그룹1 5종 ===
   '이륜자동차운전면허': {
     name: '이륜자동차운전면허',
