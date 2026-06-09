@@ -580,6 +580,90 @@ button, input, select {
 }
 
 /* ── 달력 위젯 ── */
+/* ── 오른쪽 위젯 컬럼 ── */
+.right-widgets-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+  width: 300px;
+}
+
+/* ── 시계 & 날씨 카드 ── */
+.clock-weather-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.clock-section {
+  text-align: center;
+}
+.clock-time {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  letter-spacing: 2px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+}
+.clock-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+.cw-divider {
+  height: 1px;
+  background: var(--border-color);
+}
+
+/* 날씨 */
+.weather-loading, .weather-error {
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  padding: 4px 0;
+}
+.weather-error { color: #e67e22; }
+.weather-main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.weather-icon { font-size: 2.2rem; line-height: 1; }
+.weather-temp-wrap { display: flex; flex-direction: column; }
+.weather-temp {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-color);
+  line-height: 1.1;
+}
+.weather-feels { font-size: 0.75rem; color: var(--text-muted); }
+.weather-desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+.weather-meta {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+.weather-meta span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.weather-meta i { color: var(--primary-color); }
+
 .exam-calendar-card {
   flex-shrink: 0;
   width: 300px;
@@ -710,7 +794,9 @@ button, input, select {
 
 @media (max-width: 900px) {
   .stats-layout { flex-direction: column; }
+  .right-widgets-col { width: 100%; }
   .exam-calendar-card { width: 100%; }
+  .clock-weather-card { width: 100%; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
 }
 

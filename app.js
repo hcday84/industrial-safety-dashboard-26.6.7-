@@ -12673,7 +12673,106 @@ document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   showWelcomeScreen();
   initEventListeners();
+  initClock();
+  initWeather();
 });
+
+// ============================================
+// 시계 위젯
+// ============================================
+function initClock() {
+  const DAYS = ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'];
+  function tick() {
+    const now  = new Date();
+    const hh   = String(now.getHours()).padStart(2, '0');
+    const mm   = String(now.getMinutes()).padStart(2, '0');
+    const ss   = String(now.getSeconds()).padStart(2, '0');
+    const yyyy = now.getFullYear();
+    const mo   = now.getMonth() + 1;
+    const dd   = now.getDate();
+    const day  = DAYS[now.getDay()];
+    const timeEl = document.getElementById('clock-time');
+    const dateEl = document.getElementById('clock-date');
+    if (timeEl) timeEl.textContent = `${hh}:${mm}:${ss}`;
+    if (dateEl) dateEl.textContent = `${yyyy}년 ${mo}월 ${dd}일 ${day}`;
+  }
+  tick();
+  setInterval(tick, 1000);
+}
+
+// ============================================
+// 날씨 위젯 (OpenWeatherMap 무료 API)
+// ============================================
+const OWM_API_KEY = '4f6e1b2e0e68b3c75e2f9fde8fb08b05';
+
+const WEATHER_ICONS = {
+  '01d':'☀️','01n':'🌙','02d':'⛅','02n':'⛅',
+  '03d':'☁️','03n':'☁️','04d':'☁️','04n':'☁️',
+  '09d':'🌧️','09n':'🌧️','10d':'🌦️','10n':'🌦️',
+  '11d':'⛈️','11n':'⛈️','13d':'❄️','13n':'❄️',
+  '50d':'🌫️','50n':'🌫️',
+};
+
+function initWeather() {
+  if (!navigator.geolocation) {
+    showWeatherError('위치 정보를 지원하지 않는 브라우저입니다');
+    return;
+  }
+  navigator.geolocation.getCurrentPosition(
+    pos => fetchWeather(pos.coords.latitude, pos.coords.longitude),
+    ()  => fetchWeatherByCity('Seoul'),
+    { timeout: 8000 }
+  );
+}
+
+async function fetchWeather(lat, lon) {
+  try {
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${OWM_API_KEY}&units=metric&lang=kr`;
+    const res  = await fetch(url);
+    if (!res.ok) throw new Error('API 오류');
+    const data = await res.json();
+    renderWeather(data);
+  } catch(e) {
+    showWeatherError('날씨를 불러올 수 없습니다');
+  }
+}
+
+async function fetchWeatherByCity(city) {
+  try {
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${OWM_API_KEY}&units=metric&lang=kr`;
+    const res  = await fetch(url);
+    if (!res.ok) throw new Error('API 오류');
+    const data = await res.json();
+    renderWeather(data);
+  } catch(e) {
+    showWeatherError('날씨를 불러올 수 없습니다');
+  }
+}
+
+function renderWeather(data) {
+  document.getElementById('weather-loading').style.display = 'none';
+  document.getElementById('weather-content').style.display = 'block';
+  const icon   = data.weather[0].icon;
+  const desc   = data.weather[0].description;
+  const temp   = Math.round(data.main.temp);
+  const feels  = Math.round(data.main.feels_like);
+  const humid  = data.main.humidity;
+  const wind   = data.wind.speed.toFixed(1);
+  const city   = data.name;
+  document.getElementById('weather-icon').textContent   = WEATHER_ICONS[icon] || '🌤️';
+  document.getElementById('weather-temp').textContent   = `${temp}°C`;
+  document.getElementById('weather-feels').textContent  = `체감 ${feels}°C`;
+  document.getElementById('weather-desc').textContent   = desc;
+  document.getElementById('weather-humidity').innerHTML = `<i class="fa-solid fa-droplet"></i> ${humid}%`;
+  document.getElementById('weather-wind').innerHTML     = `<i class="fa-solid fa-wind"></i> ${wind}m/s`;
+  document.getElementById('weather-location').innerHTML = `<i class="fa-solid fa-location-dot"></i> ${city}`;
+}
+
+function showWeatherError(msg) {
+  document.getElementById('weather-loading').style.display = 'none';
+  document.getElementById('weather-error').style.display   = 'block';
+  document.getElementById('weather-error-msg').textContent = msg;
+}
 
 function showWelcomeScreen() {
   document.getElementById('dashboard-content').style.display = 'none';
