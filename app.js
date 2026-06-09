@@ -12709,47 +12709,70 @@ function initClock() {
 // ============================================
 // 날씨 위젯 (OpenWeatherMap 무료 API)
 // ============================================
-const OWM_API_KEY = '4f6e1b2e0e68b3c75e2f9fde8fb08b05';
-
-const WEATHER_ICONS = {
-  '01d':'☀️','01n':'🌙','02d':'⛅','02n':'⛅',
-  '03d':'☁️','03n':'☁️','04d':'☁️','04n':'☁️',
-  '09d':'🌧️','09n':'🌧️','10d':'🌦️','10n':'🌦️',
-  '11d':'⛈️','11n':'⛈️','13d':'❄️','13n':'❄️',
-  '50d':'🌫️','50n':'🌫️',
+// Open-Meteo WMO 날씨 코드 → 이모지 + 한국어 설명 (API 키 불필요)
+const WMO_WEATHER = {
+  0:  { icon:'☀️',  desc:'맑음' },
+  1:  { icon:'🌤️', desc:'대체로 맑음' },
+  2:  { icon:'⛅',  desc:'구름 조금' },
+  3:  { icon:'☁️',  desc:'흐림' },
+  45: { icon:'🌫️', desc:'안개' },
+  48: { icon:'🌫️', desc:'안개' },
+  51: { icon:'🌦️', desc:'이슬비 (약)' },
+  53: { icon:'🌦️', desc:'이슬비' },
+  55: { icon:'🌧️', desc:'이슬비 (강)' },
+  61: { icon:'🌧️', desc:'비 (약)' },
+  63: { icon:'🌧️', desc:'비' },
+  65: { icon:'🌧️', desc:'비 (강)' },
+  71: { icon:'❄️',  desc:'눈 (약)' },
+  73: { icon:'❄️',  desc:'눈' },
+  75: { icon:'❄️',  desc:'눈 (강)' },
+  80: { icon:'🌦️', desc:'소나기 (약)' },
+  81: { icon:'🌦️', desc:'소나기' },
+  82: { icon:'⛈️',  desc:'소나기 (강)' },
+  95: { icon:'⛈️',  desc:'뇌우' },
+  96: { icon:'⛈️',  desc:'우박 동반 뇌우' },
+  99: { icon:'⛈️',  desc:'우박 동반 뇌우 (강)' },
 };
 
 function initWeather() {
-  if (!navigator.geolocation) {
-    showWeatherError('위치 정보를 지원하지 않는 브라우저입니다');
-    return;
-  }
-  navigator.geolocation.getCurrentPosition(
-    pos => fetchWeather(pos.coords.latitude, pos.coords.longitude),
-    ()  => fetchWeatherByCity('Seoul'),
-    { timeout: 8000 }
-  );
-}
-
-async function fetchWeather(lat, lon) {
-  try {
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${OWM_API_KEY}&units=metric&lang=kr`;
-    const res  = await fetch(url);
-    if (!res.ok) throw new Error('API 오류');
-    const data = await res.json();
-    renderWeather(data);
-  } catch(e) {
-    showWeatherError('날씨를 불러올 수 없습니다');
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      pos => fetchWeatherOpenMeteo(pos.coords.latitude, pos.coords.longitude, null),
+      ()  => fetchWeatherOpenMeteo(37.5665, 126.9780, '서울'),
+      { timeout: 8000 }
+    );
+  } else {
+    fetchWeatherOpenMeteo(37.5665, 126.9780, '서울');
   }
 }
 
-async function fetchWeatherByCity(city) {
+async function fetchWeatherOpenMeteo(lat, lon, cityName) {
   try {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${OWM_API_KEY}&units=metric&lang=kr`;
+    // 1) 도시명 역지오코딩 (cityName이 없을 때)
+    let city = cityName;
+    if (!city) {
+      try {
+        const geoRes = await fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json&accept-language=ko`);
+        const geoData = await geoRes.json();
+        city = geoData.address?.city || geoData.address?.town || geoData.address?.county || '현재 위치';
+      } catch { city = '현재 위치'; }
+    }
+    // 2) 날씨 데이터
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,apparent_temperature,relative_humidity_2m,wind_speed_10m,weather_code&timezone=Asia%2FSeoul`;
     const res  = await fetch(url);
     if (!res.ok) throw new Error('API 오류');
     const data = await res.json();
-    renderWeather(data);
+    const c    = data.current;
+    const wmo  = WMO_WEATHER[c.weather_code] || { icon:'🌤️', desc:'날씨 정보' };
+    renderWeather({
+      icon:  wmo.icon,
+      desc:  wmo.desc,
+      temp:  Math.round(c.temperature_2m),
+      feels: Math.round(c.apparent_temperature),
+      humid: c.relative_humidity_2m,
+      wind:  c.wind_speed_10m.toFixed(1),
+      city,
+    });
   } catch(e) {
     showWeatherError('날씨를 불러올 수 없습니다');
   }
@@ -12764,17 +12787,11 @@ function setWeatherEl(id, prop, val) {
 }
 
 function renderWeather(data) {
-  const icon   = data.weather[0].icon;
-  const desc   = data.weather[0].description;
-  const temp   = Math.round(data.main.temp);
-  const feels  = Math.round(data.main.feels_like);
-  const humid  = data.main.humidity;
-  const wind   = data.wind.speed.toFixed(1);
-  const city   = data.name;
+  const { icon, desc, temp, feels, humid, wind, city } = data;
   // 대시보드 위젯 업데이트
   setWeatherEl('weather-loading', 'display', 'none');
   setWeatherEl('weather-content', 'display', 'block');
-  setWeatherEl('weather-icon',    'textContent', WEATHER_ICONS[icon] || '🌤️');
+  setWeatherEl('weather-icon',    'textContent', icon);
   setWeatherEl('weather-temp',    'textContent', `${temp}°C`);
   setWeatherEl('weather-feels',   'textContent', `체감 ${feels}°C`);
   setWeatherEl('weather-desc',    'textContent', desc);
@@ -12784,7 +12801,7 @@ function renderWeather(data) {
   // 웰컴 화면 위젯 업데이트
   setWeatherEl('wc-weather-loading', 'display', 'none');
   setWeatherEl('wc-weather-content', 'display', 'block');
-  setWeatherEl('wc-weather-icon',    'textContent', WEATHER_ICONS[icon] || '🌤️');
+  setWeatherEl('wc-weather-icon',    'textContent', icon);
   setWeatherEl('wc-weather-temp',    'textContent', `${temp}°C`);
   setWeatherEl('wc-weather-feels',   'textContent', `체감 ${feels}°C`);
   setWeatherEl('wc-weather-desc',    'textContent', desc);
@@ -12794,11 +12811,11 @@ function renderWeather(data) {
 }
 
 function showWeatherError(msg) {
-  setWeatherEl('weather-loading',    'display', 'none');
-  setWeatherEl('weather-error',      'display', 'block');
-  setWeatherEl('weather-error-msg',  'textContent', msg);
-  setWeatherEl('wc-weather-loading', 'display', 'none');
-  setWeatherEl('wc-weather-error',   'display', 'block');
+  setWeatherEl('weather-loading',     'display', 'none');
+  setWeatherEl('weather-error',       'display', 'block');
+  setWeatherEl('weather-error-msg',   'textContent', msg);
+  setWeatherEl('wc-weather-loading',  'display', 'none');
+  setWeatherEl('wc-weather-error',    'display', 'block');
   setWeatherEl('wc-weather-error-msg','textContent', msg);
 }
 
