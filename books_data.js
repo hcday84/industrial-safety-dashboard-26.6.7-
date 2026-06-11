@@ -7,10 +7,18 @@ const KB = (isbn) => `https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/${is
 
 const REAL_BOOKS = {
   '산업안전산업기사': [
-    { title: '2026 나합격 산업안전산업기사 필기+무료특강+온라인CBT', author: '김현우, 허선혜', publisher: '삼원북스', price: 36900, originalPrice: 41000, discount: '10%', rating: 4.8, reviews: 312, tags: ['베스트', '추천'], imageUrl: KB('9791194997054'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214437497' },
-    { title: '2026 에듀윌 산업안전산업기사 필기 한권끝장', author: '최창률', publisher: '에듀윌', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 256, tags: ['추천'], imageUrl: KB('9791136038937'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213533988' },
-    { title: '2026 직8딴 산업안전산업기사 필기', author: '김진태', publisher: '김영북스', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 198, tags: [], imageUrl: KB('9791173490965'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213714682' },
-    { title: '2026 벼락치기 건설안전산업기사 필기 요점+기출문제', author: '정재수', publisher: '세화', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 143, tags: [], imageUrl: KB('9788931714005'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216458622' },
+    // ── 베스트셀러 (태그: 베스트) ──
+    { title: '2026 나합격 산업안전산업기사 필기+무료특강+온라인CBT', author: '김현우, 허선혜', publisher: '삼원북스', price: 36900, originalPrice: 41000, discount: '10%', rating: 4.8, reviews: 312, tags: ['베스트'], imageUrl: KB('9791194997054'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214437497' },
+    { title: '2026 에듀윌 산업안전산업기사 필기 한권끝장', author: '최창률', publisher: '에듀윌', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 256, tags: ['베스트'], imageUrl: KB('9791136038937'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213533988' },
+    { title: '2026 직8딴 산업안전산업기사 필기', author: '김진태', publisher: '김영북스', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('9791173490965'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213714682' },
+    { title: '2026 산업안전산업기사 필기 7개년 기출문제집', author: '이상도', publisher: '세화', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 176, tags: ['베스트'], imageUrl: KB('9788931714005'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216458622' },
+    { title: '2026 해커스 산업안전산업기사 필기 핵심요약+기출', author: '해커스자격증', publisher: '해커스자격증', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], imageUrl: KB('9788969656506'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216301200' },
+    // ── 추천수험서 (태그: 추천) ──
+    { title: '2026 찐합격 산업안전산업기사 실기 단기완성', author: '이상도', publisher: '성안당', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.7, reviews: 221, tags: ['추천'], imageUrl: KB('9788931514070'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215383100' },
+    { title: '2026 산업안전산업기사 실기 필답형+작업형 완전정복', author: '이순규', publisher: '예문사', price: 32400, originalPrice: 36000, discount: '10%', rating: 4.6, reviews: 189, tags: ['추천'], imageUrl: KB('9788927461289'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214741310' },
+    { title: '2026 벼락치기 산업안전산업기사 필기 요점+기출', author: '정재수', publisher: '세화', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], imageUrl: KB('9788931714012'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216458700' },
+    { title: '2026 산업안전산업기사 CBT 최신기출문제해설', author: '이현철', publisher: '일진사', price: 26100, originalPrice: 29000, discount: '10%', rating: 4.5, reviews: 143, tags: ['추천'], imageUrl: KB('9788942920433'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213274100' },
+    { title: '2026 스마트 산업안전산업기사 과년도 문제해설', author: '허원회', publisher: '성안당', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: KB('9788931512076'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215443900' },
   ],
   '전기기사': [
     { title: '2026 에듀윌 전기기사 필기 한권끝장+무료특강', author: '에듀윌 전기수험연구소', publisher: '에듀윌', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.8, reviews: 421, tags: ['베스트', '추천'], imageUrl: KB('9791136038005'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212345678' },

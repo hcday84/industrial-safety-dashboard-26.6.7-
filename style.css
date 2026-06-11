@@ -540,10 +540,20 @@ button, input, select {
 }
 
 /* 5. 히어로 배너 영역 */
-.hero-section {
+.hero-widgets-row {
   max-width: 1300px;
   margin: 30px auto 0;
   padding: 0 20px;
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.hero-section {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .hero-carousel {
@@ -554,6 +564,8 @@ button, input, select {
   display: flex;
   overflow: hidden;
   position: relative;
+  height: 100%;
+  box-sizing: border-box;
   box-shadow: var(--shadow-lg);
 }
 
@@ -676,7 +688,7 @@ button, input, select {
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   flex: 1;
 }
@@ -691,83 +703,81 @@ button, input, select {
   width: 300px;
 }
 
-/* ── 시계 & 날씨 카드 ── */
+/* ── 시계 & 날씨 카드 (컴팩트 가로형) ── */
 .clock-weather-card {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: 16px 18px;
+  padding: 10px 16px;
   box-shadow: var(--shadow-sm);
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
 }
 
 .clock-section {
   text-align: center;
+  flex-shrink: 0;
 }
 .clock-time {
-  font-size: 2rem;
+  font-size: 1.45rem;
   font-weight: 800;
   color: var(--primary-color);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-variant-numeric: tabular-nums;
   line-height: 1.1;
 }
 .clock-date {
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   color: var(--text-muted);
   margin-top: 2px;
+  white-space: nowrap;
 }
 .cw-divider {
-  height: 1px;
+  width: 1px;
+  height: 36px;
   background: var(--border-color);
+  flex-shrink: 0;
 }
 
 /* 날씨 */
+.weather-section {
+  flex: 1;
+  min-width: 0;
+}
 .weather-loading, .weather-error {
-  text-align: center;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   color: var(--text-muted);
-  padding: 4px 0;
 }
 .weather-error { color: #e67e22; }
-.weather-main {
+.weather-content {
   display: flex;
   align-items: center;
-  gap: 10px;
-}
-.weather-icon { font-size: 2.2rem; line-height: 1; }
-.weather-temp-wrap { display: flex; flex-direction: column; }
-.weather-temp {
-  font-size: 1.6rem;
-  font-weight: 800;
-  color: var(--text-color);
-  line-height: 1.1;
-}
-.weather-feels { font-size: 0.75rem; color: var(--text-muted); }
-.weather-desc {
-  font-size: 0.82rem;
-  color: var(--text-muted);
-  margin-top: 2px;
-}
-.weather-meta {
-  display: flex;
-  gap: 10px;
-  margin-top: 6px;
+  gap: 6px;
   flex-wrap: wrap;
 }
-.weather-meta span {
-  font-size: 0.75rem;
+.weather-icon { font-size: 1.4rem; line-height: 1; }
+.weather-temp {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+.weather-desc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+.weather-loc {
+  font-size: 0.72rem;
   color: var(--text-muted);
   display: flex;
   align-items: center;
   gap: 3px;
 }
-.weather-meta i { color: var(--primary-color); }
+.weather-loc i { color: var(--primary-color); }
 
 .exam-calendar-card {
-  flex-shrink: 0;
+  flex: 1;
   width: 300px;
   background: var(--card-bg);
   border: 1px solid var(--border-color);
@@ -1617,6 +1627,38 @@ button, input, select {
 }
 
 /* 11. 교보문고 스타일 추천 도서 목록 */
+.books-sub-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--border-color);
+}
+.books-sub-header h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0;
+}
+.books-sub-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: var(--green-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green-color);
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+.books-empty {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  padding: 20px 0;
+}
+
 .books-intro {
   margin-bottom: 20px;
   font-size: 0.95rem;
@@ -2363,10 +2405,15 @@ button, input, select {
   }
   
   .sidebar-nav {
-    position: static;
+    position: sticky;
+    top: 60px;
+    z-index: 100;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    background: var(--card-bg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
   }
   
   .nav-links {

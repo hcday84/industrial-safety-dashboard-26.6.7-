@@ -13385,16 +13385,19 @@ function closeModal() {
 // 13. 수험서 렌더링
 // ============================================
 function renderBooks() {
-  const container = document.getElementById('books-grid-container');
-  if (!container) return;
+  const bestContainer = document.getElementById('books-best-container');
+  const recContainer  = document.getElementById('books-recommend-container');
+  if (!bestContainer || !recContainer) return;
 
-  // 실제 도서 데이터 우선, 없으면 기본 데이터 사용
   const certName = STATE.currentCert;
-  const books = (typeof REAL_BOOKS !== 'undefined' && REAL_BOOKS[certName])
+  const allBooks = (typeof REAL_BOOKS !== 'undefined' && REAL_BOOKS[certName])
     ? REAL_BOOKS[certName]
     : getCert().books;
 
-  container.innerHTML = books.map(book => {
+  const bestBooks = allBooks.filter(b => (b.tags || []).includes('베스트')).slice(0, 5);
+  const recBooks  = allBooks.filter(b => (b.tags || []).includes('추천') && !(b.tags || []).includes('베스트')).slice(0, 5);
+
+  function bookCard(book) {
     const tags = book.tags || [];
     const badgesHTML = tags.map(t => {
       let cls = t === '베스트' ? 'book-badge' : t === '추천' ? 'badge badge-success' : 'badge badge-info';
@@ -13441,7 +13444,15 @@ function renderBooks() {
         <a href="${pageUrl}" target="_blank" rel="noopener noreferrer" class="book-btn">교보문고 상세보기</a>
       </div>
     `;
-  }).join('');
+  }
+
+  bestContainer.innerHTML = bestBooks.length
+    ? bestBooks.map(bookCard).join('')
+    : '<p class="books-empty">베스트셀러 데이터가 없습니다.</p>';
+
+  recContainer.innerHTML = recBooks.length
+    ? recBooks.map(bookCard).join('')
+    : '<p class="books-empty">추천 수험서 데이터가 없습니다.</p>';
 }
 
 // ============================================
@@ -13665,21 +13676,35 @@ function initEventListeners() {
     if (e.key === 'Enter') window.addTodo();
   });
 
-  // 사이드바 스크롤 싱크
-  const navItems = document.querySelectorAll('.nav-item');
-  const sections = document.querySelectorAll('.dashboard-section');
-  window.addEventListener('scroll', () => {
-    const scrollPos = window.scrollY + 150;
-    sections.forEach(section => {
-      if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
-        const id = section.getAttribute('id');
-        navItems.forEach(item => item.classList.toggle('active', item.getAttribute('href') === `#${id}`));
-      }
+  // 사이드바 스크롤 싱크 (클릭 이벤트만)
+  document.querySelectorAll('.nav-item').forEach(item => {
+    item.addEventListener('click', () => {
+      document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+      item.classList.add('active');
     });
   });
-  navItems.forEach(item => item.addEventListener('click', () => {
-    navItems.forEach(n => n.classList.remove('active'));
-    item.classList.add('active');
-  }));
 }
 
+// ============================================
+// 전역 스크롤 싱크 (클로저 문제 없이 항상 최신 DOM 참조)
+// ============================================
+(function() {
+  const SECTION_IDS = ['schedule-section', 'jobs-section', 'books-section', 'analytics-section'];
+
+  function syncNavOnScroll() {
+    const threshold = window.scrollY + window.innerHeight * 0.5;
+    let activeId = null;
+    SECTION_IDS.forEach(id => {
+      const el = document.getElementById(id);
+      if (el && threshold >= el.getBoundingClientRect().top + window.scrollY) {
+        activeId = id;
+      }
+    });
+    if (!activeId) return;
+    document.querySelectorAll('.nav-item').forEach(item => {
+      item.classList.toggle('active', item.getAttribute('href') === '#' + activeId);
+    });
+  }
+
+  window.addEventListener('scroll', syncNavOnScroll, { passive: true });
+})();

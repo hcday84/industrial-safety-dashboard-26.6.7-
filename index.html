@@ -110,7 +110,10 @@
   <!-- 대시보드 컨텐츠 -->
   <div id="dashboard-content">
 
-  <!-- Hero Highlight Section (MD Recommendation / Announcement style from Kyobo Book) -->
+  <!-- Hero + 위젯 나란히 배치 -->
+  <div class="hero-widgets-row">
+
+  <!-- Hero Highlight Section -->
   <section class="hero-section">
     <div class="hero-carousel">
       <div class="hero-slide active">
@@ -133,11 +136,61 @@
     </div>
   </section>
 
+      <!-- 오른쪽: 시계/날씨 + 달력 위젯 -->
+      <div class="right-widgets-col">
+
+      <!-- 시계 & 날씨 위젯 (컴팩트) -->
+      <div class="clock-weather-card" id="clock-weather-card">
+        <div class="clock-section">
+          <div class="clock-time" id="clock-time">--:--:--</div>
+          <div class="clock-date" id="clock-date">---- -- --</div>
+        </div>
+        <div class="cw-divider"></div>
+        <div class="weather-section" id="weather-section">
+          <div class="weather-loading" id="weather-loading">
+            <i class="fa-solid fa-spinner fa-spin"></i> 로딩 중...
+          </div>
+          <div class="weather-content" id="weather-content" style="display:none;">
+            <span class="weather-icon" id="weather-icon">🌤️</span>
+            <span class="weather-temp" id="weather-temp">--°C</span>
+            <span class="weather-desc" id="weather-desc">--</span>
+            <span id="weather-location" class="weather-loc"><i class="fa-solid fa-location-dot"></i> --</span>
+          </div>
+          <div class="weather-error" id="weather-error" style="display:none;">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <span id="weather-error-msg">위치 권한 필요</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 달력 위젯 -->
+      <div class="exam-calendar-card" id="exam-calendar-card">
+        <div class="cal-header">
+          <button class="cal-nav-btn" id="cal-prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <span class="cal-month-label" id="cal-month-label">2026년 6월</span>
+          <button class="cal-nav-btn" id="cal-next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div class="cal-weekdays">
+          <span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span>
+        </div>
+        <div class="cal-days" id="cal-days"></div>
+        <div class="cal-legend">
+          <span class="cal-legend-item cal-legend-exam"><span class="cal-dot dot-written"></span>필기시험</span>
+          <span class="cal-legend-item cal-legend-exam"><span class="cal-dot dot-practical"></span>실기시험</span>
+          <span class="cal-legend-item cal-legend-exam"><span class="cal-dot dot-result"></span>합격발표</span>
+          <span class="cal-legend-item"><span class="cal-dot dot-today"></span>오늘</span>
+        </div>
+      </div>
+
+      </div><!-- /.right-widgets-col -->
+
+  </div><!-- /.hero-widgets-row -->
+
   <!-- Stats Grid -->
   <section class="stats-grid-container">
     <div class="stats-layout">
 
-      <!-- 왼쪽: 지표 카드 2x2 -->
+      <!-- 지표 카드 2x2 -->
       <div class="stats-grid">
         <div class="stat-card dday-card" id="stat-dday">
           <div class="stat-icon icon-cyan">
@@ -183,66 +236,6 @@
           </div>
         </div>
       </div>
-
-      <!-- 오른쪽: 달력 + 시계/날씨 위젯 컬럼 -->
-      <div class="right-widgets-col">
-
-      <!-- 시계 & 날씨 위젯 -->
-      <div class="clock-weather-card" id="clock-weather-card">
-        <!-- 시계 -->
-        <div class="clock-section">
-          <div class="clock-time" id="clock-time">--:--:--</div>
-          <div class="clock-date" id="clock-date">---- -- --</div>
-        </div>
-        <!-- 구분선 -->
-        <div class="cw-divider"></div>
-        <!-- 날씨 -->
-        <div class="weather-section" id="weather-section">
-          <div class="weather-loading" id="weather-loading">
-            <i class="fa-solid fa-spinner fa-spin"></i> 날씨 불러오는 중...
-          </div>
-          <div class="weather-content" id="weather-content" style="display:none;">
-            <div class="weather-main">
-              <span class="weather-icon" id="weather-icon">🌤️</span>
-              <div class="weather-temp-wrap">
-                <span class="weather-temp" id="weather-temp">--°C</span>
-                <span class="weather-feels" id="weather-feels">체감 --°C</span>
-              </div>
-            </div>
-            <div class="weather-desc" id="weather-desc">--</div>
-            <div class="weather-meta">
-              <span id="weather-humidity"><i class="fa-solid fa-droplet"></i> --%</span>
-              <span id="weather-wind"><i class="fa-solid fa-wind"></i> -- m/s</span>
-              <span id="weather-location"><i class="fa-solid fa-location-dot"></i> --</span>
-            </div>
-          </div>
-          <div class="weather-error" id="weather-error" style="display:none;">
-            <i class="fa-solid fa-triangle-exclamation"></i>
-            <span id="weather-error-msg">위치 권한을 허용해 주세요</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 달력 위젯 -->
-      <div class="exam-calendar-card" id="exam-calendar-card">
-        <div class="cal-header">
-          <button class="cal-nav-btn" id="cal-prev"><i class="fa-solid fa-chevron-left"></i></button>
-          <span class="cal-month-label" id="cal-month-label">2026년 6월</span>
-          <button class="cal-nav-btn" id="cal-next"><i class="fa-solid fa-chevron-right"></i></button>
-        </div>
-        <div class="cal-weekdays">
-          <span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span>
-        </div>
-        <div class="cal-days" id="cal-days"></div>
-        <div class="cal-legend">
-          <span class="cal-legend-item cal-legend-exam"><span class="cal-dot dot-written"></span>필기시험</span>
-          <span class="cal-legend-item cal-legend-exam"><span class="cal-dot dot-practical"></span>실기시험</span>
-          <span class="cal-legend-item cal-legend-exam"><span class="cal-dot dot-result"></span>합격발표</span>
-          <span class="cal-legend-item"><span class="cal-dot dot-today"></span>오늘</span>
-        </div>
-      </div>
-
-      </div><!-- /.right-widgets-col -->
 
     </div>
   </section>
@@ -376,12 +369,24 @@
           </a>
         </div>
         
-        <div class="books-intro">
-          <p>교보문고 기술/공학(KOR/26) 수험서 분야 평점 9.5 이상의 검증된 학습 교재 목록입니다.</p>
+        <!-- 베스트셀러 -->
+        <div class="books-sub-header">
+          <span class="books-sub-icon"><i class="fa-solid fa-trophy"></i></span>
+          <h3>베스트셀러 TOP 5</h3>
+          <span class="badge badge-warning">판매량 기준</span>
+        </div>
+        <div class="books-grid" id="books-best-container">
+          <!-- 베스트셀러 카드 -->
         </div>
 
-        <div class="books-grid" id="books-grid-container">
-          <!-- Book cards dynamically rendered -->
+        <!-- 추천수험서 -->
+        <div class="books-sub-header" style="margin-top: 32px;">
+          <span class="books-sub-icon"><i class="fa-solid fa-bookmark"></i></span>
+          <h3>추천 수험서 TOP 5</h3>
+          <span class="badge badge-success">합격률 기준</span>
+        </div>
+        <div class="books-grid" id="books-recommend-container">
+          <!-- 추천수험서 카드 -->
         </div>
       </section>
 
