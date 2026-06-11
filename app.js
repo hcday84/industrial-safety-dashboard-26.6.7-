@@ -13091,11 +13091,14 @@ function renderDdays(cert) {
     document.getElementById('node-round2'),
     document.getElementById('node-round3'),
   ];
-  nodes.forEach(n => n && n.classList.remove('active'));
+  nodes.forEach(n => n && n.classList.remove('active', 'done', 'current'));
   let doneCount = 0;
   schedules.forEach((s, i) => {
-    if (s.isDone || s.isCurrent) {
-      nodes[i] && nodes[i].classList.add('active');
+    if (s.isDone) {
+      nodes[i] && nodes[i].classList.add('active', 'done');
+      doneCount = i + 1;
+    } else if (s.isCurrent) {
+      nodes[i] && nodes[i].classList.add('active', 'current');
       doneCount = i + 1;
     }
   });
