@@ -12577,6 +12577,721 @@ const CERTIFICATIONS = {
       '최종 모의고사 1회분 시간 내 완성 훈련',
     ],
   },
+
+  '산업안전기술사': {
+    name: '산업안전기술사',
+    icon: 'fa-helmet-safety',
+    category: '안전관리',
+    heroTitle: '2026년도 산업안전기술사 합격 가이드',
+    heroDesc: '산업안전기술사는 산업 현장의 위험 요소를 분석·평가·관리하는 최고급 안전 전문가 자격입니다. 산업재해 예방 및 안전보건관리 체계 구축에 관한 고도의 전문 지식과 응용 능력을 검증하며, 대기업 안전관리 임원, 컨설팅, 공공기관 자문 등 다양한 분야에서 활동할 수 있습니다.',
+    passRateSummary: '필기 15% | 면접 58%',
+    avgPassRate: '12%',
+    passRates: [
+      { year: 2020, written: 13, practical: 55 },
+      { year: 2021, written: 14, practical: 57 },
+      { year: 2022, written: 15, practical: 58 },
+      { year: 2023, written: 16, practical: 60 },
+      { year: 2024, written: 17, practical: 62 },
+    ],
+    schedules: [
+      { round: '1회', writtenExam: '2026-01-25 ~ 2026-01-26', writtenResult: '2026-02-19', practicalExam: '2026-03-29 ~ 2026-04-11', practicalResult: '2026-04-24' },
+      { round: '2회', writtenExam: '2026-05-10 ~ 2026-05-11', writtenResult: '2026-06-04', practicalExam: '2026-07-05 ~ 2026-07-18', practicalResult: '2026-08-07' },
+      { round: '3회', writtenExam: '2026-08-09 ~ 2026-08-10', writtenResult: '2026-09-03', practicalExam: '2026-10-11 ~ 2026-10-24', practicalResult: '2026-11-13' },
+    ],
+    milestones: [
+      { label: '1회 필기', date: '2026-01-25' },
+      { label: '1회 면접', date: '2026-03-29' },
+      { label: '2회 필기', date: '2026-05-10' },
+      { label: '2회 면접', date: '2026-07-05' },
+    ],
+    subjects: [
+      { name: '산업안전관리론', desc: '안전관리 조직, 재해 통계, 안전보건경영시스템(ISO 45001) 등' },
+      { name: '인간공학 및 시스템 안전', desc: '인적 오류 분석, FMEA, FTA, 위험성 평가 기법' },
+      { name: '기계·전기 안전', desc: '기계 방호 장치, 전기 안전, 방폭 설비, 감전 방지 대책' },
+      { name: '화학물질 및 화재·폭발 안전', desc: 'MSDS, 화재·폭발 이론, 방재 설비, 위험물 관리' },
+      { name: '건설 및 작업환경 관리', desc: '건설 현장 안전, 유해인자 노출 평가, 작업환경 측정' },
+    ],
+    jobs: [
+      { title: '안전보건 총괄 임원', company: '대기업·공기업', salary: '8,000~1억 2,000만원', location: '전국', type: '정규직' },
+      { title: '산업안전 컨설턴트', company: '안전컨설팅업체', salary: '6,000~9,000만원', location: '서울·경기', type: '정규직' },
+      { title: '안전관리 전문위원', company: '공공기관·협회', salary: '5,500~8,000만원', location: '서울', type: '계약직' },
+      { title: '안전보건 팀장', company: '제조·건설 대기업', salary: '6,000~8,500만원', location: '전국', type: '정규직' },
+      { title: '산업안전 교수·강사', company: '대학·직업훈련기관', salary: '4,500~7,000만원', location: '전국', type: '정규직' },
+    ],
+    books: [
+      { title: '산업안전기술사 핵심이론 총정리', author: '이상도', publisher: '성안당', year: 2025, rating: 4.5 },
+      { title: '산업안전기술사 기출문제 완전분석', author: '김재원', publisher: '예문사', year: 2025, rating: 4.4 },
+      { title: '산업안전기술사 서술형 답안 작성법', author: '박성현', publisher: '세화', year: 2024, rating: 4.3 },
+      { title: '산업안전기술사 면접 완전정복', author: '최용국', publisher: '일진사', year: 2024, rating: 4.2 },
+    ],
+    defaultTodos: [
+      '기술사 시험 범위 및 출제 경향 파악',
+      '안전보건경영시스템(ISO 45001) 이론 정리',
+      '위험성 평가 기법(FTA·FMEA) 심화 학습',
+      '최근 5개년 기출문제 서술형 답안 작성 연습',
+      '면접 대비 핵심 주제 구술 연습',
+    ],
+  },
+
+  '건설안전기술사': {
+    name: '건설안전기술사',
+    icon: 'fa-hard-hat',
+    category: '안전관리',
+    heroTitle: '2026년도 건설안전기술사 합격 가이드',
+    heroDesc: '건설안전기술사는 건설 현장의 안전관리 체계를 설계·운영하고 재해를 예방하는 최고급 전문가 자격입니다. 건설업의 높은 재해율로 인해 수요가 꾸준히 증가하고 있으며, 시공사 안전 임원, 감리, 컨설팅 등 다양한 진로를 제공합니다.',
+    passRateSummary: '필기 14% | 면접 57%',
+    avgPassRate: '11%',
+    passRates: [
+      { year: 2020, written: 12, practical: 53 },
+      { year: 2021, written: 13, practical: 55 },
+      { year: 2022, written: 14, practical: 57 },
+      { year: 2023, written: 15, practical: 58 },
+      { year: 2024, written: 16, practical: 60 },
+    ],
+    schedules: [
+      { round: '1회', writtenExam: '2026-01-25 ~ 2026-01-26', writtenResult: '2026-02-19', practicalExam: '2026-03-29 ~ 2026-04-11', practicalResult: '2026-04-24' },
+      { round: '2회', writtenExam: '2026-05-10 ~ 2026-05-11', writtenResult: '2026-06-04', practicalExam: '2026-07-05 ~ 2026-07-18', practicalResult: '2026-08-07' },
+      { round: '3회', writtenExam: '2026-08-09 ~ 2026-08-10', writtenResult: '2026-09-03', practicalExam: '2026-10-11 ~ 2026-10-24', practicalResult: '2026-11-13' },
+    ],
+    milestones: [
+      { label: '1회 필기', date: '2026-01-25' },
+      { label: '1회 면접', date: '2026-03-29' },
+      { label: '2회 필기', date: '2026-05-10' },
+      { label: '2회 면접', date: '2026-07-05' },
+    ],
+    subjects: [
+      { name: '건설 안전관리', desc: '건설업 안전보건관리비, 안전관리 조직, 재해 사례 분석' },
+      { name: '가설 공사 안전', desc: '비계·거푸집 설치 기준, 낙하물 방지망, 추락 방지 대책' },
+      { name: '굴착 및 흙막이 안전', desc: '굴착 공사 위험성, 지반 침하, 흙막이 구조 설계 기준' },
+      { name: '건설 기계·중장비 안전', desc: '양중기, 크레인, 항타기 안전 기준 및 점검 방법' },
+      { name: '건설 재해 예방 및 법규', desc: '산업안전보건법, 건설기술진흥법, 안전보건조정자 제도' },
+    ],
+    jobs: [
+      { title: '현장 안전보건관리자', company: '대형 건설사', salary: '6,000~9,000만원', location: '전국', type: '정규직' },
+      { title: '건설안전 컨설턴트', company: '안전전문기관', salary: '5,500~8,000만원', location: '서울·경기', type: '정규직' },
+      { title: '안전 감리원', company: '건설감리회사', salary: '5,000~7,500만원', location: '전국', type: '정규직' },
+      { title: '안전보건 팀장', company: '건설·플랜트 업체', salary: '5,500~8,000만원', location: '전국', type: '정규직' },
+      { title: '건설안전 전문위원', company: '공공기관·발주처', salary: '4,500~6,500만원', location: '서울', type: '계약직' },
+    ],
+    books: [
+      { title: '건설안전기술사 핵심이론 총정리', author: '강동호', publisher: '성안당', year: 2025, rating: 4.5 },
+      { title: '건설안전기술사 기출문제 완전분석', author: '정재수', publisher: '예문사', year: 2025, rating: 4.4 },
+      { title: '건설안전기술사 서술형 답안 작성법', author: '이경민', publisher: '세화', year: 2024, rating: 4.3 },
+      { title: '건설안전기술사 면접 완전정복', author: '박용기', publisher: '구민사', year: 2024, rating: 4.2 },
+    ],
+    defaultTodos: [
+      '건설 현장 주요 재해 유형 및 사례 분석',
+      '가설 공사·굴착 공사 안전 기준 정리',
+      '관련 법규(산업안전보건법·건설기술진흥법) 핵심 조항 숙지',
+      '최근 5개년 기출문제 서술형 답안 작성 연습',
+      '면접 대비 핵심 주제 구술 연습',
+    ],
+  },
+
+  '소방기술사': {
+    name: '소방기술사',
+    icon: 'fa-fire',
+    category: '소방',
+    heroTitle: '2026년도 소방기술사 합격 가이드',
+    heroDesc: '소방기술사는 소방 설비 설계·감리 및 화재 예방·진압 시스템 전반에 관한 최고급 기술 능력을 검증하는 국가기술자격입니다. 특급 소방안전관리자 자격과 연계되며, 소방 설계 사무소·감리 법인·공공기관 등에서 고급 전문가로 활동할 수 있습니다.',
+    passRateSummary: '필기 13% | 면접 55%',
+    avgPassRate: '10%',
+    passRates: [
+      { year: 2020, written: 11, practical: 52 },
+      { year: 2021, written: 12, practical: 54 },
+      { year: 2022, written: 13, practical: 55 },
+      { year: 2023, written: 14, practical: 57 },
+      { year: 2024, written: 15, practical: 58 },
+    ],
+    schedules: [
+      { round: '1회', writtenExam: '2026-01-25 ~ 2026-01-26', writtenResult: '2026-02-19', practicalExam: '2026-03-29 ~ 2026-04-11', practicalResult: '2026-04-24' },
+      { round: '2회', writtenExam: '2026-05-10 ~ 2026-05-11', writtenResult: '2026-06-04', practicalExam: '2026-07-05 ~ 2026-07-18', practicalResult: '2026-08-07' },
+      { round: '3회', writtenExam: '2026-08-09 ~ 2026-08-10', writtenResult: '2026-09-03', practicalExam: '2026-10-11 ~ 2026-10-24', practicalResult: '2026-11-13' },
+    ],
+    milestones: [
+      { label: '1회 필기', date: '2026-01-25' },
+      { label: '1회 면접', date: '2026-03-29' },
+      { label: '2회 필기', date: '2026-05-10' },
+      { label: '2회 면접', date: '2026-07-05' },
+    ],
+    subjects: [
+      { name: '소방 원론', desc: '연소 이론, 화재 분류, 폭발 메커니즘, 소화 원리' },
+      { name: '소화 설비', desc: '스프링클러, 물분무, 포·가스 소화 설비 설계 기준' },
+      { name: '경보·피난 설비', desc: '자동화재탐지설비, 비상방송, 피난 유도 시스템' },
+      { name: '소방 전기 및 특수 소화', desc: '비상전원, 제연 설비, 할론 대체 약제, 청정 소화 시스템' },
+      { name: '소방 관계 법규', desc: '소방시설법, 화재예방법, 위험물안전관리법 핵심 조항' },
+    ],
+    jobs: [
+      { title: '소방 설계 기술사', company: '소방설계사무소', salary: '6,000~9,000만원', location: '전국', type: '정규직' },
+      { title: '소방 감리 전문가', company: '소방감리법인', salary: '5,500~8,000만원', location: '서울·경기', type: '정규직' },
+      { title: '소방 안전관리자', company: '대형 건물·공장', salary: '4,500~6,500만원', location: '전국', type: '정규직' },
+      { title: '소방 컨설턴트', company: '안전전문기관', salary: '5,000~7,500만원', location: '서울·경기', type: '정규직' },
+      { title: '소방 교수·강사', company: '소방학교·대학', salary: '4,000~6,500만원', location: '전국', type: '정규직' },
+    ],
+    books: [
+      { title: '소방기술사 핵심이론 총정리', author: '이순규', publisher: '성안당', year: 2025, rating: 4.5 },
+      { title: '소방기술사 기출문제 완전분석', author: '김현수', publisher: '예문사', year: 2025, rating: 4.4 },
+      { title: '소방기술사 서술형 답안 작성법', author: '박재현', publisher: '세화', year: 2024, rating: 4.3 },
+      { title: '소방기술사 면접 완전정복', author: '정성훈', publisher: '일진사', year: 2024, rating: 4.2 },
+    ],
+    defaultTodos: [
+      '소방 설비별 설계 기준 및 작동 원리 정리',
+      '화재·폭발 이론 및 소화 원리 심화 학습',
+      '관련 법규(소방시설법·화재예방법) 핵심 조항 숙지',
+      '최근 5개년 기출문제 서술형 답안 작성 연습',
+      '면접 대비 핵심 주제 구술 연습',
+    ],
+  },
+
+  '발송배전기술사': {
+    name: '발송배전기술사',
+    icon: 'fa-bolt',
+    category: '전기·전자',
+    heroTitle: '2026년도 발송배전기술사 합격 가이드',
+    heroDesc: '발송배전기술사는 전력 계통의 발전·송전·변전·배전 시스템 전반에 관한 최고급 기술 능력을 검증하는 국가기술자격입니다. 전력 회사, 한국전력공사, 발전 공기업 등에서 고급 기술 전문가로 활동하며 높은 처우를 받을 수 있습니다.',
+    passRateSummary: '필기 16% | 면접 60%',
+    avgPassRate: '13%',
+    passRates: [
+      { year: 2020, written: 14, practical: 57 },
+      { year: 2021, written: 15, practical: 58 },
+      { year: 2022, written: 16, practical: 60 },
+      { year: 2023, written: 17, practical: 61 },
+      { year: 2024, written: 18, practical: 62 },
+    ],
+    schedules: [
+      { round: '1회', writtenExam: '2026-01-25 ~ 2026-01-26', writtenResult: '2026-02-19', practicalExam: '2026-03-29 ~ 2026-04-11', practicalResult: '2026-04-24' },
+      { round: '2회', writtenExam: '2026-05-10 ~ 2026-05-11', writtenResult: '2026-06-04', practicalExam: '2026-07-05 ~ 2026-07-18', practicalResult: '2026-08-07' },
+      { round: '3회', writtenExam: '2026-08-09 ~ 2026-08-10', writtenResult: '2026-09-03', practicalExam: '2026-10-11 ~ 2026-10-24', practicalResult: '2026-11-13' },
+    ],
+    milestones: [
+      { label: '1회 필기', date: '2026-01-25' },
+      { label: '1회 면접', date: '2026-03-29' },
+      { label: '2회 필기', date: '2026-05-10' },
+      { label: '2회 면접', date: '2026-07-05' },
+    ],
+    subjects: [
+      { name: '발전 공학', desc: '화력·원자력·수력·신재생 발전 원리 및 효율 분석' },
+      { name: '송전 공학', desc: '송전선 특성, 안정도 해석, 고장 계산, 초고압 계통' },
+      { name: '변전 설비', desc: '변압기, 차단기, 개폐기, GIS 설비 구성 및 보호 계전' },
+      { name: '배전 공학', desc: '배전 계통 구성, 전압 강하, 역률 개선, 스마트 그리드' },
+      { name: '전력 계통 보호 및 제어', desc: '계전기 종류·동작 원리, 전력 계통 안정화 대책' },
+    ],
+    jobs: [
+      { title: '전력 계통 전문가', company: '한국전력공사', salary: '7,000~1억원', location: '전국', type: '정규직' },
+      { title: '발전 설비 기술 임원', company: '발전 공기업', salary: '7,500~1억 1,000만원', location: '전국', type: '정규직' },
+      { title: '전력 컨설턴트', company: '전력·에너지 컨설팅', salary: '6,000~9,000만원', location: '서울·경기', type: '정규직' },
+      { title: '배전 설계 전문가', salary: '5,500~8,000만원', company: '전기설계사무소', location: '전국', type: '정규직' },
+      { title: '전력 시스템 교수', company: '대학·연구소', salary: '5,000~7,500만원', location: '전국', type: '정규직' },
+    ],
+    books: [
+      { title: '발송배전기술사 핵심이론 총정리', author: '김재원', publisher: '성안당', year: 2025, rating: 4.5 },
+      { title: '발송배전기술사 기출문제 완전분석', author: '이상도', publisher: '예문사', year: 2025, rating: 4.4 },
+      { title: '발송배전기술사 서술형 답안 작성법', author: '박용기', publisher: '세화', year: 2024, rating: 4.3 },
+      { title: '발송배전기술사 면접 완전정복', author: '최용국', publisher: '일진사', year: 2024, rating: 4.2 },
+    ],
+    defaultTodos: [
+      '전력 계통 기초(발전·송전·배전) 이론 정리',
+      '고장 계산 및 안정도 해석 문제 반복 풀이',
+      '보호 계전기 동작 원리 및 정정 방법 학습',
+      '최근 5개년 기출문제 서술형 답안 작성 연습',
+      '면접 대비 핵심 주제 구술 연습',
+    ],
+  },
+
+  '전기응용기술사': {
+    name: '전기응용기술사',
+    icon: 'fa-plug',
+    category: '전기·전자',
+    heroTitle: '2026년도 전기응용기술사 합격 가이드',
+    heroDesc: '전기응용기술사는 전동기, 조명, 전열, 전기철도, 전기 화학 등 전기 응용 분야의 최고급 기술 전문가를 검증하는 국가기술자격입니다. 전기 설비 설계·감리 및 스마트 에너지 솔루션 분야에서 높은 전문성을 발휘할 수 있습니다.',
+    passRateSummary: '필기 15% | 면접 58%',
+    avgPassRate: '12%',
+    passRates: [
+      { year: 2020, written: 13, practical: 55 },
+      { year: 2021, written: 14, practical: 56 },
+      { year: 2022, written: 15, practical: 58 },
+      { year: 2023, written: 16, practical: 59 },
+      { year: 2024, written: 17, practical: 61 },
+    ],
+    schedules: [
+      { round: '1회', writtenExam: '2026-01-25 ~ 2026-01-26', writtenResult: '2026-02-19', practicalExam: '2026-03-29 ~ 2026-04-11', practicalResult: '2026-04-24' },
+      { round: '2회', writtenExam: '2026-05-10 ~ 2026-05-11', writtenResult: '2026-06-04', practicalExam: '2026-07-05 ~ 2026-07-18', practicalResult: '2026-08-07' },
+      { round: '3회', writtenExam: '2026-08-09 ~ 2026-08-10', writtenResult: '2026-09-03', practicalExam: '2026-10-11 ~ 2026-10-24', practicalResult: '2026-11-13' },
+    ],
+    milestones: [
+      { label: '1회 필기', date: '2026-01-25' },
+      { label: '1회 면접', date: '2026-03-29' },
+      { label: '2회 필기', date: '2026-05-10' },
+      { label: '2회 면접', date: '2026-07-05' },
+    ],
+    subjects: [
+      { name: '전동기 응용', desc: '유도 전동기, 동기 전동기, BLDC 등 구동 원리 및 제어' },
+      { name: '조명 공학', desc: '광원 종류, 조도 설계, 조명 효율, LED 조명 시스템' },
+      { name: '전열 공학', desc: '전기 가열 방식, 유도 가열, 적외선 가열, 전기로' },
+      { name: '전기철도', desc: '직류·교류 전철 급전 시스템, 회생 제동, 신호 제어' },
+      { name: '전기 화학 및 신에너지', desc: '전기 도금, 이차전지, 태양광·풍력 연계 설비' },
+    ],
+    jobs: [
+      { title: '전기 설비 기술 임원', company: '전기공사업체', salary: '6,500~9,500만원', location: '전국', type: '정규직' },
+      { title: '전기 설계 감리 전문가', company: '설계감리사무소', salary: '5,500~8,000만원', location: '서울·경기', type: '정규직' },
+      { title: '스마트 에너지 컨설턴트', company: '에너지 전문기관', salary: '5,500~8,000만원', location: '서울·경기', type: '정규직' },
+      { title: '전기 응용 연구원', company: '연구소·대학', salary: '5,000~7,000만원', location: '전국', type: '정규직' },
+      { title: '전기 교수·강사', company: '대학·직업훈련기관', salary: '4,500~6,500만원', location: '전국', type: '정규직' },
+    ],
+    books: [
+      { title: '전기응용기술사 핵심이론 총정리', author: '정성훈', publisher: '성안당', year: 2025, rating: 4.5 },
+      { title: '전기응용기술사 기출문제 완전분석', author: '강동호', publisher: '예문사', year: 2025, rating: 4.4 },
+      { title: '전기응용기술사 서술형 답안 작성법', author: '이경민', publisher: '세화', year: 2024, rating: 4.3 },
+      { title: '전기응용기술사 면접 완전정복', author: '박성현', publisher: '일진사', year: 2024, rating: 4.2 },
+    ],
+    defaultTodos: [
+      '전동기·조명·전열 등 응용 분야별 핵심 원리 정리',
+      '전기철도 급전 시스템 및 신에너지 연계 학습',
+      '전기설비기술기준 및 관련 법규 핵심 조항 숙지',
+      '최근 5개년 기출문제 서술형 답안 작성 연습',
+      '면접 대비 핵심 주제 구술 연습',
+    ],
+  },
+
+  '기계기술사': {
+    name: '기계기술사',
+    icon: 'fa-gears',
+    category: '기계',
+    heroTitle: '2026년도 기계기술사 합격 가이드',
+    heroDesc: '기계기술사는 기계 설계, 재료 역학, 열역학, 유체 역학 등 기계공학 전반의 최고급 기술 능력을 검증하는 국가기술자격입니다. 기계 산업, 플랜트, 방산, 자동차, 항공 등 광범위한 산업에서 고급 전문가로 활동할 수 있습니다.',
+    passRateSummary: '필기 17% | 면접 62%',
+    avgPassRate: '14%',
+    passRates: [
+      { year: 2020, written: 15, practical: 59 },
+      { year: 2021, written: 16, practical: 60 },
+      { year: 2022, written: 17, practical: 62 },
+      { year: 2023, written: 18, practical: 63 },
+      { year: 2024, written: 19, practical: 65 },
+    ],
+    schedules: [
+      { round: '1회', writtenExam: '2026-01-25 ~ 2026-01-26', writtenResult: '2026-02-19', practicalExam: '2026-03-29 ~ 2026-04-11', practicalResult: '2026-04-24' },
+      { round: '2회', writtenExam: '2026-05-10 ~ 2026-05-11', writtenResult: '2026-06-04', practicalExam: '2026-07-05 ~ 2026-07-18', practicalResult: '2026-08-07' },
+      { round: '3회', writtenExam: '2026-08-09 ~ 2026-08-10', writtenResult: '2026-09-03', practicalExam: '2026-10-11 ~ 2026-10-24', practicalResult: '2026-11-13' },
+    ],
+    milestones: [
+      { label: '1회 필기', date: '2026-01-25' },
+      { label: '1회 면접', date: '2026-03-29' },
+      { label: '2회 필기', date: '2026-05-10' },
+      { label: '2회 면접', date: '2026-07-05' },
+    ],
+    subjects: [
+      { name: '재료 역학', desc: '응력·변형률, 보의 굽힘, 비틀림, 좌굴 이론 및 설계 적용' },
+      { name: '열역학', desc: '열역학 법칙, 사이클, 열교환기, 에너지 효율 분석' },
+      { name: '유체 역학', desc: '유체 정역학·동역학, 파이프 흐름, 펌프·터빈 설계' },
+      { name: '기계 설계', desc: '기계 요소 설계(볼트·기어·베어링), 피로 파괴, 신뢰성' },
+      { name: '기계 제조 및 자동화', desc: '가공 공정, CNC, 자동화 시스템, 생산 기술 동향' },
+    ],
+    jobs: [
+      { title: '기계 설계 기술 임원', company: '중공업·플랜트 대기업', salary: '7,000~1억원', location: '전국', type: '정규직' },
+      { title: '기계 컨설턴트', company: '엔지니어링 회사', salary: '6,000~9,000만원', location: '서울·경기', type: '정규직' },
+      { title: '기계 감리 전문가', company: '플랜트감리사무소', salary: '5,500~8,000만원', location: '전국', type: '정규직' },
+      { title: '생산기술 전문위원', company: '자동차·방산업체', salary: '6,000~8,500만원', location: '전국', type: '정규직' },
+      { title: '기계공학 교수', company: '대학·연구소', salary: '5,000~7,500만원', location: '전국', type: '정규직' },
+    ],
+    books: [
+      { title: '기계기술사 핵심이론 총정리', author: '이상도', publisher: '성안당', year: 2025, rating: 4.5 },
+      { title: '기계기술사 기출문제 완전분석', author: '김현수', publisher: '예문사', year: 2025, rating: 4.4 },
+      { title: '기계기술사 서술형 답안 작성법', author: '박재현', publisher: '세화', year: 2024, rating: 4.3 },
+      { title: '기계기술사 면접 완전정복', author: '최용국', publisher: '일진사', year: 2024, rating: 4.2 },
+    ],
+    defaultTodos: [
+      '재료 역학·열역학·유체 역학 핵심 이론 정리',
+      '기계 설계 요소별 설계 기준 및 공식 숙달',
+      '최신 제조·자동화 기술 동향 파악',
+      '최근 5개년 기출문제 서술형 답안 작성 연습',
+      '면접 대비 핵심 주제 구술 연습',
+    ],
+  },
+
+  '화공기술사': {
+    name: '화공기술사',
+    icon: 'fa-flask',
+    category: '화학',
+    heroTitle: '2026년도 화공기술사 합격 가이드',
+    heroDesc: '화공기술사는 화학 공정 설계·운전·최적화 및 석유화학·정밀화학 플랜트 관리에 관한 최고급 기술 능력을 검증하는 자격입니다. 석유화학, 제약, 반도체 소재 등 화학 산업 전반에서 핵심 기술 전문가로 활동할 수 있습니다.',
+    passRateSummary: '필기 14% | 면접 56%',
+    avgPassRate: '11%',
+    passRates: [
+      { year: 2020, written: 12, practical: 53 },
+      { year: 2021, written: 13, practical: 54 },
+      { year: 2022, written: 14, practical: 56 },
+      { year: 2023, written: 15, practical: 57 },
+      { year: 2024, written: 16, practical: 59 },
+    ],
+    schedules: [
+      { round: '1회', writtenExam: '2026-01-25 ~ 2026-01-26', writtenResult: '2026-02-19', practicalExam: '2026-03-29 ~ 2026-04-11', practicalResult: '2026-04-24' },
+      { round: '2회', writtenExam: '2026-05-10 ~ 2026-05-11', writtenResult: '2026-06-04', practicalExam: '2026-07-05 ~ 2026-07-18', practicalResult: '2026-08-07' },
+      { round: '3회', writtenExam: '2026-08-09 ~ 2026-08-10', writtenResult: '2026-09-03', practicalExam: '2026-10-11 ~ 2026-10-24', practicalResult: '2026-11-13' },
+    ],
+    milestones: [
+      { label: '1회 필기', date: '2026-01-25' },
+      { label: '1회 면접', date: '2026-03-29' },
+      { label: '2회 필기', date: '2026-05-10' },
+      { label: '2회 면접', date: '2026-07-05' },
+    ],
+    subjects: [
+      { name: '화공 열역학', desc: '상평형, 반응 평형, 엔탈피·엔트로피 계산 및 공정 적용' },
+      { name: '반응 공학', desc: '반응기 설계(CSTR·PFR), 반응 속도론, 촉매 반응' },
+      { name: '분리 공정', desc: '증류, 추출, 흡수·흡착, 막 분리 등 분리 기술 설계' },
+      { name: '이동 현상', desc: '열전달, 물질 전달, 운동량 전달 이론 및 공정 적용' },
+      { name: '화공 안전 및 환경', desc: '폭발 한계, 공정 위험성 평가(HAZOP), 환경 규제 대응' },
+    ],
+    jobs: [
+      { title: '화공 공정 기술 임원', company: '석유화학 대기업', salary: '7,500~1억 1,000만원', location: '울산·여수·대산', type: '정규직' },
+      { title: '화공 플랜트 컨설턴트', company: '엔지니어링 회사', salary: '6,000~9,000만원', location: '서울·경기', type: '정규직' },
+      { title: '공정 안전 전문가', company: '정유·화학공장', salary: '5,500~8,000만원', location: '전국', type: '정규직' },
+      { title: '화공 감리 전문가', company: '플랜트감리사무소', salary: '5,500~8,000만원', location: '전국', type: '정규직' },
+      { title: '화공학 교수', company: '대학·연구소', salary: '5,000~7,500만원', location: '전국', type: '정규직' },
+    ],
+    books: [
+      { title: '화공기술사 핵심이론 총정리', author: '강동호', publisher: '성안당', year: 2025, rating: 4.5 },
+      { title: '화공기술사 기출문제 완전분석', author: '이경민', publisher: '예문사', year: 2025, rating: 4.4 },
+      { title: '화공기술사 서술형 답안 작성법', author: '박용기', publisher: '세화', year: 2024, rating: 4.3 },
+      { title: '화공기술사 면접 완전정복', author: '정재수', publisher: '일진사', year: 2024, rating: 4.2 },
+    ],
+    defaultTodos: [
+      '화공 열역학·반응 공학·이동 현상 핵심 이론 정리',
+      '분리 공정 설계 계산 문제 반복 풀이',
+      '공정 위험성 평가(HAZOP) 방법론 심화 학습',
+      '최근 5개년 기출문제 서술형 답안 작성 연습',
+      '면접 대비 핵심 주제 구술 연습',
+    ],
+  },
+
+  '가스기술사': {
+    name: '가스기술사',
+    icon: 'fa-fire-flame-curved',
+    category: '가스·에너지',
+    heroTitle: '2026년도 가스기술사 합격 가이드',
+    heroDesc: '가스기술사는 LNG·LPG·도시가스 등 가스 설비의 설계·안전 관리·사고 예방에 관한 최고급 기술 능력을 검증하는 국가기술자격입니다. 가스 공사·도시가스 회사·가스 안전 기관에서 핵심 전문가로 활동할 수 있습니다.',
+    passRateSummary: '필기 14% | 면접 55%',
+    avgPassRate: '11%',
+    passRates: [
+      { year: 2020, written: 12, practical: 52 },
+      { year: 2021, written: 13, practical: 53 },
+      { year: 2022, written: 14, practical: 55 },
+      { year: 2023, written: 15, practical: 56 },
+      { year: 2024, written: 16, practical: 58 },
+    ],
+    schedules: [
+      { round: '1회', writtenExam: '2026-01-25 ~ 2026-01-26', writtenResult: '2026-02-19', practicalExam: '2026-03-29 ~ 2026-04-11', practicalResult: '2026-04-24' },
+      { round: '2회', writtenExam: '2026-05-10 ~ 2026-05-11', writtenResult: '2026-06-04', practicalExam: '2026-07-05 ~ 2026-07-18', practicalResult: '2026-08-07' },
+      { round: '3회', writtenExam: '2026-08-09 ~ 2026-08-10', writtenResult: '2026-09-03', practicalExam: '2026-10-11 ~ 2026-10-24', practicalResult: '2026-11-13' },
+    ],
+    milestones: [
+      { label: '1회 필기', date: '2026-01-25' },
+      { label: '1회 면접', date: '2026-03-29' },
+      { label: '2회 필기', date: '2026-05-10' },
+      { label: '2회 면접', date: '2026-07-05' },
+    ],
+    subjects: [
+      { name: '가스 특성 및 연소', desc: '가연성·독성 가스 특성, 연소 범위, 폭발 메커니즘' },
+      { name: '가스 설비 및 배관', desc: 'LNG·LPG 저장 설비, 배관 설계 기준, 압력 조정기' },
+      { name: '가스 안전 관리', desc: '안전 거리, 방폭 설비, 가스 누출 감지·차단 시스템' },
+      { name: '가스 사고 사례 및 예방', desc: '폭발·화재 사고 사례 분석, 위험성 평가, 재발 방지' },
+      { name: '가스 관계 법규', desc: '고압가스안전관리법, 도시가스사업법, LPG안전관리법' },
+    ],
+    jobs: [
+      { title: '가스 안전 기술 임원', company: '한국가스안전공사', salary: '6,500~9,500만원', location: '전국', type: '정규직' },
+      { title: '도시가스 기술 전문가', company: '도시가스 회사', salary: '6,000~8,500만원', location: '전국', type: '정규직' },
+      { title: '가스 설비 컨설턴트', company: '가스안전컨설팅', salary: '5,500~8,000만원', location: '서울·경기', type: '정규직' },
+      { title: '가스 감리 전문가', company: '가스감리사무소', salary: '5,000~7,500만원', location: '전국', type: '정규직' },
+      { title: '가스 안전 교수', company: '대학·훈련기관', salary: '4,500~6,500만원', location: '전국', type: '정규직' },
+    ],
+    books: [
+      { title: '가스기술사 핵심이론 총정리', author: '이순규', publisher: '성안당', year: 2025, rating: 4.5 },
+      { title: '가스기술사 기출문제 완전분석', author: '박재현', publisher: '예문사', year: 2025, rating: 4.4 },
+      { title: '가스기술사 서술형 답안 작성법', author: '김재원', publisher: '세화', year: 2024, rating: 4.3 },
+      { title: '가스기술사 면접 완전정복', author: '정성훈', publisher: '일진사', year: 2024, rating: 4.2 },
+    ],
+    defaultTodos: [
+      '가스 특성·연소·폭발 이론 핵심 정리',
+      'LNG·LPG 설비 설계 기준 및 안전 관리 학습',
+      '가스 관계 법규 핵심 조항 숙지',
+      '최근 5개년 기출문제 서술형 답안 작성 연습',
+      '면접 대비 핵심 주제 구술 연습',
+    ],
+  },
+
+  '정보관리기술사': {
+    name: '정보관리기술사',
+    icon: 'fa-database',
+    category: 'IT·정보',
+    heroTitle: '2026년도 정보관리기술사 합격 가이드',
+    heroDesc: '정보관리기술사는 정보 시스템 기획·설계·구축·운영 및 데이터 관리 전반에 관한 최고급 기술 능력을 검증하는 국가기술자격입니다. IT 대기업, 공공기관 CIO, 정보화 컨설팅 등 다양한 고급 직군에서 활동할 수 있습니다.',
+    passRateSummary: '필기 18% | 면접 63%',
+    avgPassRate: '15%',
+    passRates: [
+      { year: 2020, written: 16, practical: 60 },
+      { year: 2021, written: 17, practical: 61 },
+      { year: 2022, written: 18, practical: 63 },
+      { year: 2023, written: 19, practical: 64 },
+      { year: 2024, written: 20, practical: 65 },
+    ],
+    schedules: [
+      { round: '1회', writtenExam: '2026-01-25 ~ 2026-01-26', writtenResult: '2026-02-19', practicalExam: '2026-03-29 ~ 2026-04-11', practicalResult: '2026-04-24' },
+      { round: '2회', writtenExam: '2026-05-10 ~ 2026-05-11', writtenResult: '2026-06-04', practicalExam: '2026-07-05 ~ 2026-07-18', practicalResult: '2026-08-07' },
+      { round: '3회', writtenExam: '2026-08-09 ~ 2026-08-10', writtenResult: '2026-09-03', practicalExam: '2026-10-11 ~ 2026-10-24', practicalResult: '2026-11-13' },
+    ],
+    milestones: [
+      { label: '1회 필기', date: '2026-01-25' },
+      { label: '1회 면접', date: '2026-03-29' },
+      { label: '2회 필기', date: '2026-05-10' },
+      { label: '2회 면접', date: '2026-07-05' },
+    ],
+    subjects: [
+      { name: '정보시스템 기획 및 전략', desc: '정보화 전략 계획(ISP), EA, 디지털 전환 방법론' },
+      { name: '소프트웨어 공학', desc: '개발 방법론(폭포수·애자일), 품질 관리, 테스트 기법' },
+      { name: '데이터베이스', desc: '데이터 모델링, SQL 최적화, 빅데이터 아키텍처, NoSQL' },
+      { name: '네트워크 및 보안', desc: '네트워크 프로토콜, 클라우드, 정보 보안 관리 체계' },
+      { name: '신기술 동향', desc: 'AI·ML, 블록체인, IoT, 클라우드 컴퓨팅, 디지털 정부' },
+    ],
+    jobs: [
+      { title: 'CIO·정보화 임원', company: '대기업·공공기관', salary: '8,000~1억 2,000만원', location: '서울·경기', type: '정규직' },
+      { title: 'IT 컨설턴트', company: 'IT 컨설팅 회사', salary: '6,500~9,500만원', location: '서울·경기', type: '정규직' },
+      { title: '정보화 사업 PM', company: 'SI 대기업', salary: '6,000~8,500만원', location: '서울·경기', type: '정규직' },
+      { title: '공공 정보화 전문가', company: '정부·공공기관', salary: '5,500~8,000만원', location: '서울·세종', type: '정규직' },
+      { title: 'IT 교수·연구원', company: '대학·연구소', salary: '5,000~7,500만원', location: '전국', type: '정규직' },
+    ],
+    books: [
+      { title: '정보관리기술사 핵심이론 총정리', author: '박성현', publisher: '성안당', year: 2025, rating: 4.5 },
+      { title: '정보관리기술사 기출문제 완전분석', author: '이경민', publisher: '예문사', year: 2025, rating: 4.4 },
+      { title: '정보관리기술사 서술형 답안 작성법', author: '강동호', publisher: '세화', year: 2024, rating: 4.3 },
+      { title: '정보관리기술사 면접 완전정복', author: '김재원', publisher: '일진사', year: 2024, rating: 4.2 },
+    ],
+    defaultTodos: [
+      '정보시스템 기획·소프트웨어 공학 핵심 이론 정리',
+      '데이터베이스 모델링 및 최적화 기법 학습',
+      'AI·클라우드 등 신기술 동향 파악 및 정리',
+      '최근 5개년 기출문제 서술형 답안 작성 연습',
+      '면접 대비 핵심 주제 구술 연습',
+    ],
+  },
+
+  '정보보안기술사': {
+    name: '정보보안기술사',
+    icon: 'fa-shield-halved',
+    category: '보안',
+    heroTitle: '2026년도 정보보안기술사 합격 가이드',
+    heroDesc: '정보보안기술사는 사이버 보안 위협 분석·대응·정책 수립 및 보안 아키텍처 설계에 관한 최고급 기술 능력을 검증하는 국가기술자격입니다. 보안 전문 기업, 금융 기관, 공공기관 보안 임원 등 사이버 보안 분야의 최고 전문가로 활동할 수 있습니다.',
+    passRateSummary: '필기 17% | 면접 61%',
+    avgPassRate: '14%',
+    passRates: [
+      { year: 2020, written: 15, practical: 58 },
+      { year: 2021, written: 16, practical: 59 },
+      { year: 2022, written: 17, practical: 61 },
+      { year: 2023, written: 18, practical: 62 },
+      { year: 2024, written: 19, practical: 64 },
+    ],
+    schedules: [
+      { round: '1회', writtenExam: '2026-01-25 ~ 2026-01-26', writtenResult: '2026-02-19', practicalExam: '2026-03-29 ~ 2026-04-11', practicalResult: '2026-04-24' },
+      { round: '2회', writtenExam: '2026-05-10 ~ 2026-05-11', writtenResult: '2026-06-04', practicalExam: '2026-07-05 ~ 2026-07-18', practicalResult: '2026-08-07' },
+      { round: '3회', writtenExam: '2026-08-09 ~ 2026-08-10', writtenResult: '2026-09-03', practicalExam: '2026-10-11 ~ 2026-10-24', practicalResult: '2026-11-13' },
+    ],
+    milestones: [
+      { label: '1회 필기', date: '2026-01-25' },
+      { label: '1회 면접', date: '2026-03-29' },
+      { label: '2회 필기', date: '2026-05-10' },
+      { label: '2회 면접', date: '2026-07-05' },
+    ],
+    subjects: [
+      { name: '정보보안 관리', desc: 'ISMS-P, ISO 27001, 정보보호 정책 수립 및 위험 관리' },
+      { name: '네트워크 보안', desc: '방화벽, IDS·IPS, VPN, 제로 트러스트 아키텍처' },
+      { name: '시스템 및 애플리케이션 보안', desc: '취약점 분석, 시큐어 코딩, 모바일·클라우드 보안' },
+      { name: '암호학', desc: '대칭·비대칭 암호, PKI, 해시 함수, 디지털 서명 원리' },
+      { name: '사이버 침해 대응', desc: 'APT 공격 분석, 디지털 포렌식, 사고 대응 절차' },
+    ],
+    jobs: [
+      { title: 'CISO·보안 임원', company: '금융·대기업·공공기관', salary: '8,000~1억 3,000만원', location: '서울·경기', type: '정규직' },
+      { title: '사이버 보안 컨설턴트', company: '보안 컨설팅 회사', salary: '6,500~9,500만원', location: '서울·경기', type: '정규직' },
+      { title: '정보보안 전문가', company: '보안 솔루션 기업', salary: '6,000~8,500만원', location: '서울·경기', type: '정규직' },
+      { title: '침해사고 대응 전문가', company: 'CERT·보안관제', salary: '5,500~8,000만원', location: '서울·경기', type: '정규직' },
+      { title: '정보보안 교수', company: '대학·연구소', salary: '5,000~7,500만원', location: '전국', type: '정규직' },
+    ],
+    books: [
+      { title: '정보보안기술사 핵심이론 총정리', author: '이상도', publisher: '성안당', year: 2025, rating: 4.5 },
+      { title: '정보보안기술사 기출문제 완전분석', author: '박성현', publisher: '예문사', year: 2025, rating: 4.4 },
+      { title: '정보보안기술사 서술형 답안 작성법', author: '정재수', publisher: '세화', year: 2024, rating: 4.3 },
+      { title: '정보보안기술사 면접 완전정복', author: '강동호', publisher: '일진사', year: 2024, rating: 4.2 },
+    ],
+    defaultTodos: [
+      '정보보안 관리체계(ISMS-P) 및 위험 관리 이론 정리',
+      '네트워크·시스템 보안 기술 심화 학습',
+      '암호학 원리 및 PKI 체계 숙지',
+      '최근 5개년 기출문제 서술형 답안 작성 연습',
+      '면접 대비 핵심 주제 구술 연습',
+    ],
+  },
+
+  '컴퓨터시스템응용기술사': {
+    name: '컴퓨터시스템응용기술사',
+    icon: 'fa-server',
+    category: 'IT·정보',
+    heroTitle: '2026년도 컴퓨터시스템응용기술사 합격 가이드',
+    heroDesc: '컴퓨터시스템응용기술사는 컴퓨터 시스템 아키텍처 설계, 운영체제, 데이터베이스, 임베디드 시스템 등 컴퓨터 공학 전반에 관한 최고급 기술 능력을 검증하는 자격입니다. 반도체·전자·IT 대기업에서 시스템 아키텍트로 활동할 수 있습니다.',
+    passRateSummary: '필기 16% | 면접 60%',
+    avgPassRate: '13%',
+    passRates: [
+      { year: 2020, written: 14, practical: 57 },
+      { year: 2021, written: 15, practical: 58 },
+      { year: 2022, written: 16, practical: 60 },
+      { year: 2023, written: 17, practical: 61 },
+      { year: 2024, written: 18, practical: 63 },
+    ],
+    schedules: [
+      { round: '1회', writtenExam: '2026-01-25 ~ 2026-01-26', writtenResult: '2026-02-19', practicalExam: '2026-03-29 ~ 2026-04-11', practicalResult: '2026-04-24' },
+      { round: '2회', writtenExam: '2026-05-10 ~ 2026-05-11', writtenResult: '2026-06-04', practicalExam: '2026-07-05 ~ 2026-07-18', practicalResult: '2026-08-07' },
+      { round: '3회', writtenExam: '2026-08-09 ~ 2026-08-10', writtenResult: '2026-09-03', practicalExam: '2026-10-11 ~ 2026-10-24', practicalResult: '2026-11-13' },
+    ],
+    milestones: [
+      { label: '1회 필기', date: '2026-01-25' },
+      { label: '1회 면접', date: '2026-03-29' },
+      { label: '2회 필기', date: '2026-05-10' },
+      { label: '2회 면접', date: '2026-07-05' },
+    ],
+    subjects: [
+      { name: '컴퓨터 구조', desc: '프로세서 설계, 메모리 계층 구조, 병렬 처리, RISC·CISC' },
+      { name: '운영체제', desc: '프로세스 관리, 메모리 관리, 파일 시스템, 가상화 기술' },
+      { name: '알고리즘 및 자료구조', desc: '정렬·탐색 알고리즘, 그래프 이론, 복잡도 분석' },
+      { name: '임베디드 시스템', desc: 'RTOS, 마이크로컨트롤러, IoT 디바이스 설계·최적화' },
+      { name: '클라우드 및 분산 시스템', desc: '클라우드 아키텍처, 마이크로서비스, 컨테이너 기술' },
+    ],
+    jobs: [
+      { title: '시스템 아키텍트', company: '반도체·IT 대기업', salary: '7,500~1억 1,000만원', location: '서울·경기', type: '정규직' },
+      { title: '임베디드 시스템 전문가', company: '전자·자동차 부품사', salary: '6,000~9,000만원', location: '수원·화성·울산', type: '정규직' },
+      { title: 'IT 인프라 컨설턴트', company: 'IT 컨설팅 회사', salary: '6,000~9,000만원', location: '서울·경기', type: '정규직' },
+      { title: '클라우드 아키텍트', company: '클라우드·SaaS 기업', salary: '6,500~9,500만원', location: '서울·경기', type: '정규직' },
+      { title: '컴퓨터공학 교수', company: '대학·연구소', salary: '5,000~7,500만원', location: '전국', type: '정규직' },
+    ],
+    books: [
+      { title: '컴퓨터시스템응용기술사 핵심이론 총정리', author: '박재현', publisher: '성안당', year: 2025, rating: 4.5 },
+      { title: '컴퓨터시스템응용기술사 기출문제 완전분석', author: '이경민', publisher: '예문사', year: 2025, rating: 4.4 },
+      { title: '컴퓨터시스템응용기술사 서술형 답안 작성법', author: '최용국', publisher: '세화', year: 2024, rating: 4.3 },
+      { title: '컴퓨터시스템응용기술사 면접 완전정복', author: '김현수', publisher: '일진사', year: 2024, rating: 4.2 },
+    ],
+    defaultTodos: [
+      '컴퓨터 구조·운영체제 핵심 이론 정리',
+      '알고리즘·자료구조 주요 문제 반복 풀이',
+      '클라우드·임베디드 최신 기술 동향 파악',
+      '최근 5개년 기출문제 서술형 답안 작성 연습',
+      '면접 대비 핵심 주제 구술 연습',
+    ],
+  },
+
+  '토목기술사': {
+    name: '토목기술사',
+    icon: 'fa-road',
+    category: '토목·건설',
+    heroTitle: '2026년도 토목기술사 합격 가이드',
+    heroDesc: '토목기술사는 도로, 교량, 터널, 댐, 항만 등 사회 기반 시설의 설계·시공·감리에 관한 최고급 기술 능력을 검증하는 국가기술자격입니다. 대형 건설사, 토목 설계 사무소, 공공 발주처 등에서 핵심 기술 전문가로 활동할 수 있습니다.',
+    passRateSummary: '필기 18% | 면접 63%',
+    avgPassRate: '15%',
+    passRates: [
+      { year: 2020, written: 16, practical: 60 },
+      { year: 2021, written: 17, practical: 62 },
+      { year: 2022, written: 18, practical: 63 },
+      { year: 2023, written: 19, practical: 64 },
+      { year: 2024, written: 20, practical: 65 },
+    ],
+    schedules: [
+      { round: '1회', writtenExam: '2026-01-25 ~ 2026-01-26', writtenResult: '2026-02-19', practicalExam: '2026-03-29 ~ 2026-04-11', practicalResult: '2026-04-24' },
+      { round: '2회', writtenExam: '2026-05-10 ~ 2026-05-11', writtenResult: '2026-06-04', practicalExam: '2026-07-05 ~ 2026-07-18', practicalResult: '2026-08-07' },
+      { round: '3회', writtenExam: '2026-08-09 ~ 2026-08-10', writtenResult: '2026-09-03', practicalExam: '2026-10-11 ~ 2026-10-24', practicalResult: '2026-11-13' },
+    ],
+    milestones: [
+      { label: '1회 필기', date: '2026-01-25' },
+      { label: '1회 면접', date: '2026-03-29' },
+      { label: '2회 필기', date: '2026-05-10' },
+      { label: '2회 면접', date: '2026-07-05' },
+    ],
+    subjects: [
+      { name: '토질 및 기초', desc: '토질 역학, 지반 조사, 기초 설계(직접·말뚝 기초), 사면 안정' },
+      { name: '수리학 및 수문학', desc: '개수로 흐름, 지하수, 홍수 해석, 댐·저수지 설계' },
+      { name: '도로 및 교통', desc: '도로 기하 설계, 포장 구조, 교통류 이론, 교통 안전' },
+      { name: '구조 역학', desc: '보·골조 해석, 트러스, 아치, 이동 하중, 영향선' },
+      { name: '철근 콘크리트 및 교량', desc: 'RC·PSC 설계, 교량 형식별 특성, 내진 설계 기준' },
+    ],
+    jobs: [
+      { title: '토목 설계 기술 임원', company: '대형 건설사·설계사무소', salary: '7,000~1억원', location: '전국', type: '정규직' },
+      { title: '토목 감리 전문가', company: '감리법인', salary: '5,500~8,000만원', location: '전국', type: '정규직' },
+      { title: '토목 컨설턴트', company: '엔지니어링 회사', salary: '6,000~9,000만원', location: '서울·경기', type: '정규직' },
+      { title: '발주처 기술 심의위원', company: '정부·공기업', salary: '5,500~8,000만원', location: '서울·세종', type: '계약직' },
+      { title: '토목공학 교수', company: '대학·연구소', salary: '5,000~7,500만원', location: '전국', type: '정규직' },
+    ],
+    books: [
+      { title: '토목기술사 핵심이론 총정리', author: '이재원', publisher: '성안당', year: 2025, rating: 4.5 },
+      { title: '토목기술사 기출문제 완전분석', author: '박성현', publisher: '예문사', year: 2025, rating: 4.4 },
+      { title: '토목기술사 서술형 답안 작성법', author: '김재원', publisher: '세화', year: 2024, rating: 4.3 },
+      { title: '토목기술사 면접 완전정복', author: '정재수', publisher: '구민사', year: 2024, rating: 4.2 },
+    ],
+    defaultTodos: [
+      '토질·기초·수리학 핵심 이론 정리',
+      '도로·교량·철근 콘크리트 설계 기준 학습',
+      '최신 건설 기준(KDS) 핵심 조항 숙지',
+      '최근 5개년 기출문제 서술형 답안 작성 연습',
+      '면접 대비 핵심 주제 구술 연습',
+    ],
+  },
+
+  '건축기술사': {
+    name: '건축기술사',
+    icon: 'fa-building',
+    category: '건축',
+    heroTitle: '2026년도 건축기술사 합격 가이드',
+    heroDesc: '건축기술사는 건축 구조·시공·재료·환경 및 건축 법규 전반에 관한 최고급 기술 능력을 검증하는 국가기술자격입니다. 대형 건설사 기술 임원, 건축 감리법인, 건축 설계 사무소 등에서 고급 전문가로 활동하며 건축물 품질 관리를 총괄할 수 있습니다.',
+    passRateSummary: '필기 17% | 면접 62%',
+    avgPassRate: '14%',
+    passRates: [
+      { year: 2020, written: 15, practical: 59 },
+      { year: 2021, written: 16, practical: 60 },
+      { year: 2022, written: 17, practical: 62 },
+      { year: 2023, written: 18, practical: 63 },
+      { year: 2024, written: 19, practical: 65 },
+    ],
+    schedules: [
+      { round: '1회', writtenExam: '2026-01-25 ~ 2026-01-26', writtenResult: '2026-02-19', practicalExam: '2026-03-29 ~ 2026-04-11', practicalResult: '2026-04-24' },
+      { round: '2회', writtenExam: '2026-05-10 ~ 2026-05-11', writtenResult: '2026-06-04', practicalExam: '2026-07-05 ~ 2026-07-18', practicalResult: '2026-08-07' },
+      { round: '3회', writtenExam: '2026-08-09 ~ 2026-08-10', writtenResult: '2026-09-03', practicalExam: '2026-10-11 ~ 2026-10-24', practicalResult: '2026-11-13' },
+    ],
+    milestones: [
+      { label: '1회 필기', date: '2026-01-25' },
+      { label: '1회 면접', date: '2026-03-29' },
+      { label: '2회 필기', date: '2026-05-10' },
+      { label: '2회 면접', date: '2026-07-05' },
+    ],
+    subjects: [
+      { name: '건축 구조', desc: '철근 콘크리트·철골 구조 설계, 내진·면진 설계 기준' },
+      { name: '건축 시공', desc: '시공 계획, 공정 관리, 품질 관리, 하자 방지 대책' },
+      { name: '건축 재료', desc: '콘크리트·강재·목재·마감재 특성 및 품질 기준' },
+      { name: '건축 환경 및 설비', desc: '열·빛·음 환경, 공조·급배수·전기 설비 설계 기준' },
+      { name: '건축 법규', desc: '건축법, 주택법, 건설기술진흥법 핵심 조항 및 인허가' },
+    ],
+    jobs: [
+      { title: '건축 기술 임원', company: '대형 건설사', salary: '7,000~1억원', location: '전국', type: '정규직' },
+      { title: '건축 감리 전문가', company: '건축감리법인', salary: '5,500~8,000만원', location: '전국', type: '정규직' },
+      { title: '건축 컨설턴트', company: '건설·부동산 컨설팅', salary: '6,000~9,000만원', location: '서울·경기', type: '정규직' },
+      { title: '발주처 기술 심의위원', company: '정부·공기업', salary: '5,500~8,000만원', location: '서울·세종', type: '계약직' },
+      { title: '건축학 교수', company: '대학·연구소', salary: '5,000~7,500만원', location: '전국', type: '정규직' },
+    ],
+    books: [
+      { title: '건축기술사 핵심이론 총정리', author: '박용기', publisher: '성안당', year: 2025, rating: 4.5 },
+      { title: '건축기술사 기출문제 완전분석', author: '이순규', publisher: '예문사', year: 2025, rating: 4.4 },
+      { title: '건축기술사 서술형 답안 작성법', author: '강동호', publisher: '세화', year: 2024, rating: 4.3 },
+      { title: '건축기술사 면접 완전정복', author: '박재현', publisher: '구민사', year: 2024, rating: 4.2 },
+    ],
+    defaultTodos: [
+      '건축 구조·시공·재료 핵심 이론 정리',
+      '건축 환경·설비 설계 기준 학습',
+      '건축 관련 법규 핵심 조항 숙지',
+      '최근 5개년 기출문제 서술형 답안 작성 연습',
+      '면접 대비 핵심 주제 구술 연습',
+    ],
+  },
 };
 
 // ============================================
@@ -13405,15 +14120,19 @@ function renderBooks() {
     }).join('');
 
     // 실제 이미지 vs 목업
+    // onload에서 canvas variance 검사: 교보 placeholder(단색 회색)는 variance≈0 → CSS 커버로 교체
+    const mockBg = book.coverBg || 'linear-gradient(135deg,#0d1f5e,#4db843)';
+    const mockTitle = book.title.replace(/\([^)]*\)/g, '').trim();
     const coverHTML = book.imageUrl
       ? `<img src="${book.imageUrl}" alt="${book.title}" class="book-cover-img"
-           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-         <div class="book-cover-mock" style="background:${book.coverBg||'linear-gradient(135deg,#0d1f5e,#4db843)'}; display:none;">
-           <span class="book-cover-title">${book.title.replace(/\([^)]*\)/g, '').trim()}</span>
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+           onload="(function(img){try{var c=document.createElement('canvas');c.width=40;c.height=40;var x=c.getContext('2d');x.drawImage(img,80,80,40,40,0,0,40,40);var d=x.getImageData(0,0,40,40).data,s=0,s2=0,n=d.length/4;for(var i=0;i<d.length;i+=4){var v=(d[i]+d[i+1]+d[i+2])/3;s+=v;s2+=v*v;}var variance=s2/n-(s/n)*(s/n);if(variance<10){img.style.display='none';img.nextElementSibling.style.display='flex';}}catch(e){}})(this)">
+         <div class="book-cover-mock" style="background:${mockBg}; display:none;">
+           <span class="book-cover-title">${mockTitle}</span>
            <span class="book-cover-publisher">${book.publisher}</span>
          </div>`
-      : `<div class="book-cover-mock" style="background:${book.coverBg||'linear-gradient(135deg,#0d1f5e,#4db843)'}">
-           <span class="book-cover-title">${book.title.replace(/\([^)]*\)/g, '').trim()}</span>
+      : `<div class="book-cover-mock" style="background:${mockBg}">
+           <span class="book-cover-title">${mockTitle}</span>
            <span class="book-cover-publisher">${book.publisher}</span>
          </div>`;
 
@@ -13689,7 +14408,7 @@ function initEventListeners() {
 // 전역 스크롤 싱크 (클로저 문제 없이 항상 최신 DOM 참조)
 // ============================================
 (function() {
-  const SECTION_IDS = ['schedule-section', 'jobs-section', 'books-section', 'analytics-section'];
+  const SECTION_IDS = ['schedule-section', 'books-section', 'jobs-section', 'analytics-section'];
 
   function syncNavOnScroll() {
     const threshold = window.scrollY + window.innerHeight * 0.5;

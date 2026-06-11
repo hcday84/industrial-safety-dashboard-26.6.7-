@@ -122,8 +122,8 @@
           <h2 id="hero-title">2026년도 산업안전산업기사 합격 전략</h2>
           <p id="hero-desc">중대재해처벌법 강화로 건설 및 제조업 안전관리자 채용 의무 증가! 평균 합격률 40% 장벽을 깨는 과목별 정밀 분석 데이터를 대시보드에서 확인하세요.</p>
           <div class="slide-buttons">
-            <a href="#analytics-section" class="btn btn-primary">합격률 통계 보기</a>
-            <a href="#books-section" class="btn btn-secondary">추천 수험서 보기</a>
+            <a href="#books-section" class="btn btn-primary">추천 수험서 보기</a>
+            <a href="#analytics-section" class="btn btn-secondary">합격률 통계 보기</a>
           </div>
         </div>
         <div class="slide-visual">
@@ -250,11 +250,11 @@
         <a href="#schedule-section" class="nav-item active">
           <i class="fa-regular fa-calendar-days"></i> 2026 시험 일정
         </a>
-        <a href="#jobs-section" class="nav-item">
-          <i class="fa-solid fa-bullhorn"></i> 맞춤형 채용 공고
-        </a>
         <a href="#books-section" class="nav-item">
           <i class="fa-solid fa-book-open"></i> 교보문고 베스트셀러 및 추천 수험서
+        </a>
+        <a href="#jobs-section" class="nav-item">
+          <i class="fa-solid fa-bullhorn"></i> 맞춤형 채용 공고
         </a>
         <a href="#analytics-section" class="nav-item">
           <i class="fa-solid fa-chart-pie"></i> 합격 통계 & 과목 공략
@@ -304,7 +304,37 @@
         </div>
       </section>
 
-      <!-- Section 2: Job Postings -->
+      <!-- Section 2: Recommended Books (Kyobo style) -->
+      <section id="books-section" class="dashboard-section card-box">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-book-open text-teal"></i> 교보문고 베스트셀러 및 추천 수험서</h2>
+          <a href="https://product.kyobobook.co.kr/category/KOR/26" target="_blank" rel="noopener noreferrer" class="link-more">
+            카테고리 전체보기 <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+
+        <!-- 베스트셀러 -->
+        <div class="books-sub-header">
+          <span class="books-sub-icon"><i class="fa-solid fa-trophy"></i></span>
+          <h3>베스트셀러 TOP 5</h3>
+          <span class="badge badge-warning">판매량 기준</span>
+        </div>
+        <div class="books-grid" id="books-best-container">
+          <!-- 베스트셀러 카드 -->
+        </div>
+
+        <!-- 추천수험서 -->
+        <div class="books-sub-header" style="margin-top: 32px;">
+          <span class="books-sub-icon"><i class="fa-solid fa-bookmark"></i></span>
+          <h3>추천 수험서 TOP 5</h3>
+          <span class="badge badge-success">합격률 기준</span>
+        </div>
+        <div class="books-grid" id="books-recommend-container">
+          <!-- 추천수험서 카드 -->
+        </div>
+      </section>
+
+      <!-- Section 3: Job Postings -->
       <section id="jobs-section" class="dashboard-section card-box">
         <div class="section-header">
           <h2><i class="fa-solid fa-briefcase text-teal"></i> 맞춤형 자격증 우대 채용 정보</h2>
@@ -326,7 +356,7 @@
               <button class="filter-btn" data-value="consult">안전진단</button>
             </div>
           </div>
-          
+
           <div class="filter-row">
             <span class="filter-label">근무 지역:</span>
             <div class="filter-group" id="filter-region">
@@ -357,36 +387,6 @@
         <div class="jobs-grid" id="jobs-grid-container">
           <!-- Job cards dynamically rendered -->
           <div class="loading-spinner"><i class="fa-solid fa-spinner fa-spin"></i> 채용 공고 데이터를 불러오는 중...</div>
-        </div>
-      </section>
-
-      <!-- Section 3: Recommended Books (Kyobo style) -->
-      <section id="books-section" class="dashboard-section card-box">
-        <div class="section-header">
-          <h2><i class="fa-solid fa-book-open text-teal"></i> 교보문고 베스트셀러 및 추천 수험서</h2>
-          <a href="https://product.kyobobook.co.kr/category/KOR/26" target="_blank" rel="noopener noreferrer" class="link-more">
-            카테고리 전체보기 <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </div>
-        
-        <!-- 베스트셀러 -->
-        <div class="books-sub-header">
-          <span class="books-sub-icon"><i class="fa-solid fa-trophy"></i></span>
-          <h3>베스트셀러 TOP 5</h3>
-          <span class="badge badge-warning">판매량 기준</span>
-        </div>
-        <div class="books-grid" id="books-best-container">
-          <!-- 베스트셀러 카드 -->
-        </div>
-
-        <!-- 추천수험서 -->
-        <div class="books-sub-header" style="margin-top: 32px;">
-          <span class="books-sub-icon"><i class="fa-solid fa-bookmark"></i></span>
-          <h3>추천 수험서 TOP 5</h3>
-          <span class="badge badge-success">합격률 기준</span>
-        </div>
-        <div class="books-grid" id="books-recommend-container">
-          <!-- 추천수험서 카드 -->
         </div>
       </section>
 
