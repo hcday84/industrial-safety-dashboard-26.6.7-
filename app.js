@@ -14114,17 +14114,18 @@ function renderBooks() {
     ? REAL_BOOKS[certName]
     : (getCert().books || []);
 
-  // 평점 내림차순 정렬 후 분류
-  const sorted = [...allBooks].sort((a, b) => (b.rating || 0) - (a.rating || 0));
+  // 베스트셀러: 판매량(reviews) 내림차순 / 추천 수험서: 평점(rating) 내림차순
+  const sortedBySales  = [...allBooks].sort((a, b) => (b.reviews || 0) - (a.reviews || 0));
+  const sortedByRating = [...allBooks].sort((a, b) => (b.rating  || 0) - (a.rating  || 0));
   const hasTags = allBooks.some(b => (b.tags || []).length > 0);
   let bestBooks, recBooks;
   if (hasTags) {
-    bestBooks = sorted.filter(b => (b.tags || []).includes('베스트')).slice(0, 5);
-    recBooks  = sorted.filter(b => (b.tags || []).includes('추천') && !(b.tags || []).includes('베스트')).slice(0, 5);
+    bestBooks = sortedBySales .filter(b => (b.tags || []).includes('베스트')).slice(0, 5);
+    recBooks  = sortedByRating.filter(b => (b.tags || []).includes('추천') && !(b.tags || []).includes('베스트')).slice(0, 5);
   } else {
-    // 태그 없는 경우: 상위 5개 → 베스트셀러, 그 다음 5개 → 추천 수험서
-    bestBooks = sorted.slice(0, 5);
-    recBooks  = sorted.slice(5, 10);
+    // 태그 없는 경우: 판매량순 상위 5개 → 베스트, 평점순 상위 5개 → 추천
+    bestBooks = sortedBySales .slice(0, 5);
+    recBooks  = sortedByRating.slice(0, 5);
   }
 
   function bookCard(book, fallbackTag) {
