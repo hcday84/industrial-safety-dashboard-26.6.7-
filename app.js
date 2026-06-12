@@ -14102,7 +14102,7 @@ function renderDdays(cert) {
   const writtenLblEl = document.getElementById('written-exam-label');
   if (writtenValEl && writtenLblEl) {
     if (writtenAlways) {
-      writtenValEl.textContent = '상시CBT로 진행';
+      writtenValEl.textContent = '상시CBT';
       writtenValEl.className   = 'stat-value text-green';
       writtenLblEl.textContent = '원하는 날짜에 상시 CBT로 응시 가능합니다.';
     } else if (nextWritten) {
@@ -14120,7 +14120,7 @@ function renderDdays(cert) {
   const practicalLblEl = document.getElementById('practical-exam-label');
   if (practicalValEl && practicalLblEl) {
     if (practicalAlways) {
-      practicalValEl.textContent = '상시CBT로 진행';
+      practicalValEl.textContent = '상시CBT';
       practicalValEl.className   = 'stat-value text-green';
       practicalLblEl.textContent = '원하는 날짜에 상시 CBT로 응시 가능합니다.';
     } else if (nextPractical) {
