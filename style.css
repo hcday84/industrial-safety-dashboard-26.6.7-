@@ -2235,6 +2235,10 @@ button, input, select {
   color: var(--text-muted);
 }
 
+.text-green {
+  color: #22c55e;
+}
+
 .modal-details-content {
   display: flex;
   flex-direction: column;

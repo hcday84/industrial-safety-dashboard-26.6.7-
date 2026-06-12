@@ -14077,14 +14077,23 @@ function renderDdays(cert) {
 
   const schedules = cert.schedules;
 
+  // 상시 CBT 여부 확인 헬퍼
+  function isAlways(str) {
+    return str && /상시/.test(str);
+  }
+
   let nextWritten = null;
+  let writtenAlways = false;
   for (const s of schedules) {
+    if (isAlways(s.writtenExam)) { writtenAlways = true; break; }
     const diff = calcDiff(s.writtenExam);
     if (diff !== null && diff >= 0) { nextWritten = { s, diff }; break; }
   }
 
   let nextPractical = null;
+  let practicalAlways = false;
   for (const s of schedules) {
+    if (isAlways(s.practicalExam)) { practicalAlways = true; break; }
     const diff = calcDiff(s.practicalExam);
     if (diff !== null && diff >= 0) { nextPractical = { s, diff }; break; }
   }
@@ -14092,7 +14101,11 @@ function renderDdays(cert) {
   const writtenValEl = document.getElementById('written-exam-dday');
   const writtenLblEl = document.getElementById('written-exam-label');
   if (writtenValEl && writtenLblEl) {
-    if (nextWritten) {
+    if (writtenAlways) {
+      writtenValEl.textContent = '상시CBT로 진행';
+      writtenValEl.className   = 'stat-value text-green';
+      writtenLblEl.textContent = '원하는 날짜에 상시 CBT로 응시 가능합니다.';
+    } else if (nextWritten) {
       writtenValEl.textContent = ddayText(nextWritten.diff);
       writtenValEl.className   = ddayClass(nextWritten.diff);
       writtenLblEl.textContent = `${nextWritten.s.round} 필기 (${nextWritten.s.writtenExam})`;
@@ -14106,7 +14119,11 @@ function renderDdays(cert) {
   const practicalValEl = document.getElementById('practical-exam-dday');
   const practicalLblEl = document.getElementById('practical-exam-label');
   if (practicalValEl && practicalLblEl) {
-    if (nextPractical) {
+    if (practicalAlways) {
+      practicalValEl.textContent = '상시CBT로 진행';
+      practicalValEl.className   = 'stat-value text-green';
+      practicalLblEl.textContent = '원하는 날짜에 상시 CBT로 응시 가능합니다.';
+    } else if (nextPractical) {
       practicalValEl.textContent = ddayText(nextPractical.diff);
       practicalValEl.className   = ddayClass(nextPractical.diff);
       practicalLblEl.textContent = `${nextPractical.s.round} 실기 (${nextPractical.s.practicalExam})`;
