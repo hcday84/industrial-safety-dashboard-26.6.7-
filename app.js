@@ -13540,6 +13540,11 @@ function showWelcomeScreen() {
   document.getElementById('global-search').value = '';
   document.getElementById('global-search').placeholder = '자격증 이름을 입력하세요 (예: 전기기사)';
   document.title = '기술수험서 올인원 대시보드';
+  // 자격증 갯수 자동 업데이트
+  const countEl = document.getElementById('cert-count');
+  if (countEl && typeof CERTIFICATIONS !== 'undefined') {
+    countEl.textContent = Object.keys(CERTIFICATIONS).length;
+  }
   // 달력 카드를 웰컴 화면 플레이스홀더로 이동
   const calCard    = document.getElementById('exam-calendar-card');
   const placeholder = document.getElementById('welcome-cal-placeholder');
