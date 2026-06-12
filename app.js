@@ -13385,11 +13385,22 @@ function getCert() { return CERTIFICATIONS[STATE.currentCert]; }
 // 3. 초기화
 // ============================================
 document.addEventListener('DOMContentLoaded', () => {
-  initTheme();
-  initClock();
-  initWeather();
-  showWelcomeScreen();
-  initEventListeners();
+  try { initTheme(); } catch(e) {}
+  try { initClock(); } catch(e) {}
+  try { initWeather(); } catch(e) {}
+  try { initEventListeners(); } catch(e) {}
+
+  // 마지막으로 선택한 자격증 복원 (새로고침 시 유지)
+  let restored = false;
+  try {
+    const lastCert = localStorage.getItem('lastCert');
+    if (lastCert && CERTIFICATIONS[lastCert]) {
+      switchCertification(lastCert);
+      restored = true;
+    }
+  } catch(e) { console.error('[restore]', e); }
+
+  if (!restored) showWelcomeScreen();
 });
 
 // ============================================
@@ -13601,6 +13612,7 @@ function switchCertification(certName) {
   STATE.activeTab = 'all-jobs';
   STATE.filters = { type: 'all', region: 'all', experience: 'all' };
   STATE.searchQuery = '';
+  try { localStorage.setItem('lastCert', certName); } catch(e) {}
 
   // 필터 버튼 초기화
   document.querySelectorAll('.filter-btn').forEach(btn => {
@@ -14295,6 +14307,7 @@ window.selectCert = function(certName) {
 
 window.resetDashboard = function() {
   STATE.currentCert = null;
+  try { localStorage.removeItem('lastCert'); } catch(e) {}
   const dropdown = document.getElementById('cert-dropdown');
   if (dropdown) dropdown.classList.remove('visible');
   showWelcomeScreen();
