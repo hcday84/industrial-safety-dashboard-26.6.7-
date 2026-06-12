@@ -14107,13 +14107,23 @@ function renderBooks() {
   const certName = STATE.currentCert;
   const allBooks = (typeof REAL_BOOKS !== 'undefined' && REAL_BOOKS[certName])
     ? REAL_BOOKS[certName]
-    : getCert().books;
+    : (getCert().books || []);
 
-  const bestBooks = allBooks.filter(b => (b.tags || []).includes('베스트')).slice(0, 5);
-  const recBooks  = allBooks.filter(b => (b.tags || []).includes('추천') && !(b.tags || []).includes('베스트')).slice(0, 5);
+  // tags 필드가 있는 경우: 태그 기준 분류
+  // tags 필드가 없는 경우: 앞 절반 → 베스트셀러, 뒷 절반 → 추천 수험서
+  const hasTags = allBooks.some(b => (b.tags || []).length > 0);
+  let bestBooks, recBooks;
+  if (hasTags) {
+    bestBooks = allBooks.filter(b => (b.tags || []).includes('베스트')).slice(0, 5);
+    recBooks  = allBooks.filter(b => (b.tags || []).includes('추천') && !(b.tags || []).includes('베스트')).slice(0, 5);
+  } else {
+    const mid = Math.ceil(allBooks.length / 2);
+    bestBooks = allBooks.slice(0, mid).slice(0, 5);
+    recBooks  = allBooks.slice(mid).slice(0, 5);
+  }
 
-  function bookCard(book) {
-    const tags = book.tags || [];
+  function bookCard(book, fallbackTag) {
+    const tags = (book.tags && book.tags.length > 0) ? book.tags : (fallbackTag ? [fallbackTag] : []);
     const badgesHTML = tags.map(t => {
       let cls = t === '베스트' ? 'book-badge' : t === '추천' ? 'badge badge-success' : 'badge badge-info';
       return `<span class="${cls}" style="margin-right:4px">${t}</span>`;
@@ -14143,6 +14153,9 @@ function renderBooks() {
     const rating = book.rating || 4.5;
     const pageUrl = book.pageUrl
       || `https://search.kyobobook.co.kr/search?keyword=${encodeURIComponent(book.title)}`;
+    const priceHTML = price > 0
+      ? `${discount ? `<span class="book-discount">${discount}</span>` : ''}<span class="book-price">${price.toLocaleString()}원</span>${originalPrice > price ? `<span class="book-original-price">${originalPrice.toLocaleString()}원</span>` : ''}`
+      : `<span class="book-price" style="color:var(--text-muted);font-size:0.8rem">교보문고에서 가격 확인</span>`;
 
     return `
       <div class="book-card">
@@ -14155,9 +14168,7 @@ function renderBooks() {
           <h4 class="book-title" title="${book.title}">${book.title}</h4>
           <div class="book-rating"><i class="fa-solid fa-star"></i><span>${rating} <span>(${reviews}평)</span></span></div>
           <div class="book-price-area">
-            ${discount ? `<span class="book-discount">${discount}</span>` : ''}
-            <span class="book-price">${price.toLocaleString()}원</span>
-            ${originalPrice > price ? `<span class="book-original-price">${originalPrice.toLocaleString()}원</span>` : ''}
+            ${priceHTML}
           </div>
         </div>
         <a href="${pageUrl}" target="_blank" rel="noopener noreferrer" class="book-btn">교보문고 상세보기</a>
@@ -14166,11 +14177,11 @@ function renderBooks() {
   }
 
   bestContainer.innerHTML = bestBooks.length
-    ? bestBooks.map(bookCard).join('')
+    ? bestBooks.map(b => bookCard(b, '베스트')).join('')
     : '<p class="books-empty">베스트셀러 데이터가 없습니다.</p>';
 
   recContainer.innerHTML = recBooks.length
-    ? recBooks.map(bookCard).join('')
+    ? recBooks.map(b => bookCard(b, '추천')).join('')
     : '<p class="books-empty">추천 수험서 데이터가 없습니다.</p>';
 }
 
