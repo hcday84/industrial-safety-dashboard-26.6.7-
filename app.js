@@ -14114,17 +14114,17 @@ function renderBooks() {
     ? REAL_BOOKS[certName]
     : (getCert().books || []);
 
-  // tags 필드가 있는 경우: 태그 기준 분류
-  // tags 필드가 없는 경우: 앞 절반 → 베스트셀러, 뒷 절반 → 추천 수험서
+  // 평점 내림차순 정렬 후 분류
+  const sorted = [...allBooks].sort((a, b) => (b.rating || 0) - (a.rating || 0));
   const hasTags = allBooks.some(b => (b.tags || []).length > 0);
   let bestBooks, recBooks;
   if (hasTags) {
-    bestBooks = allBooks.filter(b => (b.tags || []).includes('베스트')).slice(0, 5);
-    recBooks  = allBooks.filter(b => (b.tags || []).includes('추천') && !(b.tags || []).includes('베스트')).slice(0, 5);
+    bestBooks = sorted.filter(b => (b.tags || []).includes('베스트')).slice(0, 5);
+    recBooks  = sorted.filter(b => (b.tags || []).includes('추천') && !(b.tags || []).includes('베스트')).slice(0, 5);
   } else {
-    const mid = Math.ceil(allBooks.length / 2);
-    bestBooks = allBooks.slice(0, mid).slice(0, 5);
-    recBooks  = allBooks.slice(mid).slice(0, 5);
+    // 태그 없는 경우: 상위 5개 → 베스트셀러, 그 다음 5개 → 추천 수험서
+    bestBooks = sorted.slice(0, 5);
+    recBooks  = sorted.slice(5, 10);
   }
 
   function bookCard(book, fallbackTag) {
