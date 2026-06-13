@@ -3,6 +3,39 @@
    ========================================== */
 
 // ============================================
+// 0. 공공데이터 API 설정
+// ============================================
+const GOV_API_KEY  = '688d62bca5f00144bd4be91139ca3297c2641d3c918f57e0a5e80ad59faece52';
+const GOV_API_BASE = 'https://api.odcloud.kr/api/3038404/v1/uddi:cde11ae6-35ca-47b8-98cb-ad71146c6fd9';
+
+async function fetchCertInfo(certName) {
+  try {
+    const params = new URLSearchParams({
+      serviceKey: GOV_API_KEY,
+      page: 1,
+      perPage: 20,
+      returnType: 'JSON',
+    });
+    // 종목명 필터 (공공데이터포털 cond 문법)
+    params.append('cond[종목명::EQ]', certName);
+    const res = await fetch(`${GOV_API_BASE}?${params}`);
+    if (!res.ok) return null;
+    const json = await res.json();
+    const data = json.data || [];
+    if (!data.length) return null;
+    const get = (항목) => data.find(d => d.항목 === 항목)?.내용 || '';
+    return {
+      overview:  get('개요'),
+      duties:    get('수행직무'),
+      career:    get('진로 및 전망'),
+      howToGet:  get('취득방법'),
+    };
+  } catch (e) {
+    return null;
+  }
+}
+
+// ============================================
 // 1. 자격증 데이터베이스
 // ============================================
 const CERTIFICATIONS = {
@@ -13929,6 +13962,18 @@ function switchCertification(certName) {
 
   // 상단으로 스크롤
   window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  // 공공데이터 API — 종목 정보 비동기 업데이트
+  const cert = getCert();
+  if (cert) {
+    fetchCertInfo(cert.name).then(info => {
+      if (!info) return;
+      const descEl = document.getElementById('hero-desc');
+      if (descEl && info.overview) {
+        descEl.textContent = info.overview;
+      }
+    });
+  }
 }
 
 // ============================================
