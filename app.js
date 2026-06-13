@@ -13962,6 +13962,36 @@ function renderStatCards(cert) {
 // ============================================
 // 8. 시험 일정 카드 렌더링 (동적)
 // ============================================
+// ============================================
+// 날짜 파싱 및 회차 상태 헬퍼 (전역)
+// ============================================
+function parseLastDate(str) {
+  if (!str || str === '-') return null;
+  const parts = str.split(/[~\/]/).map(s => s.trim()).filter(Boolean);
+  const lastStr = parts[parts.length - 1].split(' ')[0].trim();
+  const d = new Date(lastStr);
+  return isNaN(d) ? null : d;
+}
+
+function parseFirstDate(str) {
+  if (!str || str === '-') return null;
+  const firstStr = str.split(/[~\/]/)[0].trim().split(' ')[0].trim();
+  const d = new Date(firstStr);
+  return isNaN(d) ? null : d;
+}
+
+function getScheduleStatus(s) {
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const finalDate    = parseLastDate(s.finalResult || s.practicalResult);
+  const practicalEnd = parseLastDate(s.practicalExam);
+  const writtenStart = parseFirstDate(s.writtenApply || s.writtenExam);
+  if (finalDate && finalDate < today) return 'done';
+  if (practicalEnd && practicalEnd < today) return 'result-pending';
+  if (writtenStart && writtenStart <= today) return 'current';
+  return 'upcoming';
+}
+
 function renderScheduleCards(cert) {
   const grid = document.getElementById('schedule-cards-grid');
   if (!grid) return;
@@ -13969,41 +13999,8 @@ function renderScheduleCards(cert) {
   const titleEl = document.getElementById('schedule-section-title');
   if (titleEl) titleEl.textContent = `2026년 ${cert.name} 정기 시험 일정`;
 
-  const now = new Date();
-  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-
-  // 날짜 문자열에서 마지막 날짜 추출 (범위/복수 모두 대응)
-  function parseLastDate(str) {
-    if (!str || str === '-') return null;
-    const parts = str.split(/[~\/]/).map(s => s.trim()).filter(Boolean);
-    const lastStr = parts[parts.length - 1].split(' ')[0].trim();
-    const d = new Date(lastStr);
-    return isNaN(d) ? null : d;
-  }
-
-  // 날짜 문자열에서 첫 번째 날짜 추출
-  function parseFirstDate(str) {
-    if (!str || str === '-') return null;
-    const firstStr = str.split(/[~\/]/)[0].trim().split(' ')[0].trim();
-    const d = new Date(firstStr);
-    return isNaN(d) ? null : d;
-  }
-
-  // 회차 상태 동적 계산
-  function getStatus(s) {
-    const finalDate    = parseLastDate(s.finalResult || s.practicalResult);
-    const practicalEnd = parseLastDate(s.practicalExam);
-    const writtenStart = parseFirstDate(s.writtenApply || s.writtenExam);
-
-    // 최종 합격발표일이 오늘 이전 → 완전 종료
-    if (finalDate && finalDate < today) return 'done';
-    // 실기 시험 종료됐고 합격발표 대기 중
-    if (practicalEnd && practicalEnd < today) return 'result-pending';
-    // 필기 시험 시작됐고 아직 진행 중
-    if (writtenStart && writtenStart <= today) return 'current';
-    // 아직 접수 전
-    return 'upcoming';
-  }
+  // 하위 호환 — 내부에서도 동일 로직 사용
+  function getStatus(s) { return getScheduleStatus(s); }
 
   grid.innerHTML = cert.schedules.map((s, idx) => {
     const status = getStatus(s);
@@ -14135,11 +14132,13 @@ function renderDdays(cert) {
   }
 
   const nodesContainer = document.getElementById('timeline-nodes');
+  let doneCount = 0;
   if (nodesContainer) {
     nodesContainer.innerHTML = schedules.map((s, i) => {
+      const st = getScheduleStatus(s);
       let cls = 'timeline-node';
-      if (s.isDone)    cls += ' active done';
-      else if (s.isCurrent) cls += ' active current';
+      if (st === 'done') { cls += ' active done'; doneCount++; }
+      else if (st === 'current' || st === 'result-pending') cls += ' active current';
       const label = s.round || `제${i + 1}회`;
       return `<div class="${cls}" id="node-round${i + 1}">
         <span class="node-dot"></span>
@@ -14147,7 +14146,6 @@ function renderDdays(cert) {
       </div>`;
     }).join('');
   }
-  let doneCount = schedules.filter(s => s.isDone || s.isCurrent).length;
   const timelineEl = document.getElementById('timeline-progress-bar');
   const progressPct = Math.min(100, Math.round((doneCount / schedules.length) * 100));
   if (timelineEl) timelineEl.style.width = `${progressPct}%`;
