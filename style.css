@@ -333,15 +333,7 @@ button, input, select {
 }
 
 .inventory-btn {
-  opacity: 0.5;
-  cursor: default;
   position: relative;
-}
-
-.inventory-btn:hover {
-  background-color: var(--bg-color);
-  color: inherit;
-  border-color: var(--border-color);
 }
 
 .inventory-tooltip {
