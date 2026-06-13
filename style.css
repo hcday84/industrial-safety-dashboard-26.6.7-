@@ -293,6 +293,7 @@ button, input, select {
 .header-controls {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 12px;
 }
 
@@ -327,6 +328,29 @@ button, input, select {
 }
 
 .theme-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+#inventory-btn {
+  width: auto;
+  border-radius: 20px;
+  padding: 0 13px;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0.55;
+  cursor: default;
+}
+
+#inventory-btn:hover {
+  background-color: var(--bg-color);
+  color: inherit;
+  border-color: var(--border-color);
+}
+
+.control-btn-label {
   font-size: 0.82rem;
   font-weight: 600;
 }
