@@ -332,27 +332,36 @@ button, input, select {
   font-weight: 600;
 }
 
-#inventory-btn {
-  width: auto;
-  border-radius: 20px;
-  padding: 0 13px;
-  gap: 6px;
-  font-size: 0.82rem;
-  font-weight: 600;
-  white-space: nowrap;
-  opacity: 0.55;
+.inventory-btn {
+  opacity: 0.5;
   cursor: default;
+  position: relative;
 }
 
-#inventory-btn:hover {
+.inventory-btn:hover {
   background-color: var(--bg-color);
   color: inherit;
   border-color: var(--border-color);
 }
 
-.control-btn-label {
-  font-size: 0.82rem;
-  font-weight: 600;
+.inventory-tooltip {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 8px);
+  right: 0;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 0.78rem;
+  white-space: nowrap;
+  box-shadow: var(--shadow-sm);
+  color: var(--text-color);
+  pointer-events: none;
+}
+
+.inventory-btn:hover .inventory-tooltip {
+  display: block;
 }
 
 .control-btn .badge {
