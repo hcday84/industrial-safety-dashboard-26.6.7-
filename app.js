@@ -14134,22 +14134,20 @@ function renderDdays(cert) {
     }
   }
 
-  const nodes = [
-    document.getElementById('node-round1'),
-    document.getElementById('node-round2'),
-    document.getElementById('node-round3'),
-  ];
-  nodes.forEach(n => n && n.classList.remove('active', 'done', 'current'));
-  let doneCount = 0;
-  schedules.forEach((s, i) => {
-    if (s.isDone) {
-      nodes[i] && nodes[i].classList.add('active', 'done');
-      doneCount = i + 1;
-    } else if (s.isCurrent) {
-      nodes[i] && nodes[i].classList.add('active', 'current');
-      doneCount = i + 1;
-    }
-  });
+  const nodesContainer = document.getElementById('timeline-nodes');
+  if (nodesContainer) {
+    nodesContainer.innerHTML = schedules.map((s, i) => {
+      let cls = 'timeline-node';
+      if (s.isDone)    cls += ' active done';
+      else if (s.isCurrent) cls += ' active current';
+      const label = s.round || `제${i + 1}회`;
+      return `<div class="${cls}" id="node-round${i + 1}">
+        <span class="node-dot"></span>
+        <span class="node-label">${label}</span>
+      </div>`;
+    }).join('');
+  }
+  let doneCount = schedules.filter(s => s.isDone || s.isCurrent).length;
   const timelineEl = document.getElementById('timeline-progress-bar');
   const progressPct = Math.min(100, Math.round((doneCount / schedules.length) * 100));
   if (timelineEl) timelineEl.style.width = `${progressPct}%`;
