@@ -14147,7 +14147,9 @@ function renderDdays(cert) {
     }).join('');
   }
   const timelineEl = document.getElementById('timeline-progress-bar');
-  const progressPct = Math.min(100, Math.round((doneCount / schedules.length) * 100));
+  const segments = schedules.length - 1;
+  const progressPct = segments <= 0 ? (doneCount > 0 ? 100 : 0)
+    : Math.min(100, Math.round((doneCount / segments) * 100));
   if (timelineEl) timelineEl.style.width = `${progressPct}%`;
 }
 
