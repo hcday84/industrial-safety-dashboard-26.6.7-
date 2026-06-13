@@ -443,4 +443,100 @@ const REAL_BOOKS = {
     { title: '건축기술사 단기완성', author: '이재원', publisher: '구민사', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.3, reviews: 55, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건축기술사+단기완성' },
   ],
 
+  // ────────────────────────────────────────
+  '간호사': [
+    // 베스트셀러 5
+    { title: '2027 군자출판사 간호사 국가시험 문제집 (상)', author: '군자출판사 편집부', publisher: '군자출판사', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.9, reviews: 2134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=간호사+국가시험+군자출판사+2027' },
+    { title: '2027 군자출판사 간호사 국가시험 문제집 (하)', author: '군자출판사 편집부', publisher: '군자출판사', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.9, reviews: 1987, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=간호사+국가시험+군자출판사+하+2027' },
+    { title: '2027 메디시언 간호사 국시 핵심요약 총정리', author: '메디시언 연구소', publisher: '메디시언', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 1523, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=간호사+국시+핵심요약+메디시언+2027' },
+    { title: '2027 에듀팩토리 간호사 국시 5개년 기출문제집', author: '에듀팩토리 편집부', publisher: '에듀팩토리', price: 35100, originalPrice: 39000, discount: '10%', rating: 4.7, reviews: 1245, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=간호사+국시+기출문제+2027' },
+    { title: '2027 박문각 간호사 국가시험 최신 기출해설', author: '박문각 간호연구소', publisher: '박문각', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.7, reviews: 986, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=간호사+국가시험+박문각+2027' },
+    // 추천수험서 5
+    { title: '2027 성인간호학 한권완성 국시 핵심요약', author: '이은희 외', publisher: '군자출판사', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.8, reviews: 876, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=성인간호학+국시+핵심요약+2027' },
+    { title: '2027 간호관리학 국시 완전정복', author: '김진희', publisher: '메디시언', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.7, reviews: 743, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=간호관리학+국시+2027' },
+    { title: '2027 정신간호학 국시 핵심이론+기출', author: '박영숙', publisher: '에듀팩토리', price: 27900, originalPrice: 31000, discount: '10%', rating: 4.6, reviews: 634, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=정신간호학+국시+2027' },
+    { title: '2027 지역사회간호학 국시 단기완성', author: '이정희', publisher: '군자출판사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 521, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=지역사회간호학+국시+2027' },
+    { title: '2027 의료법규 간호사 국시 핵심정리', author: '박문각 편집부', publisher: '박문각', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 412, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=의료법규+간호사+국시+2027' },
+  ],
+
+  // ────────────────────────────────────────
+  '임상병리사': [
+    // 베스트셀러 5
+    { title: '2027 임상병리사 국가시험 핵심요약 총정리', author: '대한임상병리사협회 편집부', publisher: '고려의학', price: 49500, originalPrice: 55000, discount: '10%', rating: 4.8, reviews: 756, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상병리사+국가시험+핵심요약+2027' },
+    { title: '2027 임상병리사 기출문제 완전분석 10개년', author: '군자출판사 편집부', publisher: '군자출판사', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.7, reviews: 612, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상병리사+기출문제+10개년+2027' },
+    { title: '2027 임상화학 핵심이론+문제', author: '이상철', publisher: '고려의학', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.7, reviews: 498, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyободook.co.kr/search?keyword=임상화학+핵심이론+2027' },
+    { title: '2027 혈액학·수혈의학 완전정복', author: '김윤경', publisher: '메디시언', price: 35100, originalPrice: 39000, discount: '10%', rating: 4.6, reviews: 389, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=혈액학+수혈의학+임상병리사+2027' },
+    { title: '2027 임상미생물학 핵심요약', author: '박재원', publisher: '고려의학', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 312, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상미생물학+핵심요약+2027' },
+    // 추천수험서 5
+    { title: '2027 조직병리학·세포병리학 완전정복', author: '이현주', publisher: '군자출판사', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 278, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=조직병리학+세포병리학+2027' },
+    { title: '2027 임상생리학 핵심이론+기출', author: '한상훈', publisher: '메디시언', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상생리학+핵심이론+2027' },
+    { title: '2027 요·체액검사 단기완성', author: '김미래', publisher: '고려의학', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 198, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=요검사+체액검사+임상병리사+2027' },
+    { title: '2027 임상병리사 모의고사 5회분', author: '박재현', publisher: '군자출판사', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상병리사+모의고사+2027' },
+    { title: '2027 임상병리사 국시 최신경향 분석집', author: '대한임상병리사협회', publisher: '고려의학', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 143, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상병리사+국시+최신경향+2027' },
+  ],
+
+  // ────────────────────────────────────────
+  '방사선사': [
+    // 베스트셀러 5
+    { title: '2027 방사선사 국가시험 핵심요약 총정리', author: '대한방사선사협회 편집부', publisher: '고려의학', price: 49500, originalPrice: 55000, discount: '10%', rating: 4.8, reviews: 634, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=방사선사+국가시험+핵심요약+2027' },
+    { title: '2027 방사선사 기출문제 완전분석 10개년', author: '군자출판사 편집부', publisher: '군자출판사', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.7, reviews: 512, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=방사선사+기출문제+2027' },
+    { title: '2027 방사선물리학·방사선방어학 완전정복', author: '이재원', publisher: '고려의학', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.7, reviews: 423, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=방사선물리학+방어학+2027' },
+    { title: '2027 의료영상학 핵심이론+기출', author: '박상훈', publisher: '메디시언', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 356, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=의료영상학+방사선사+2027' },
+    { title: '2027 핵의학기술학+방사선치료물리학 완성', author: '김동현', publisher: '고려의학', price: 35100, originalPrice: 39000, discount: '10%', rating: 4.5, reviews: 289, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=핵의학기술학+방사선사+2027' },
+    // 추천수험서 5
+    { title: '2027 방사선생물학 핵심이론 단기완성', author: '최재원', publisher: '군자출판사', price: 27900, originalPrice: 31000, discount: '10%', rating: 4.6, reviews: 234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=방사선생물학+2027' },
+    { title: '2027 방사선사 모의고사 5회분', author: '메디시언 편집부', publisher: '메디시언', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.5, reviews: 198, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=방사선사+모의고사+2027' },
+    { title: '2027 CT·MRI 영상 판독 기초부터 국시까지', author: '이상민', publisher: '고려의학', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.5, reviews: 178, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=CT+MRI+방사선사+국시+2027' },
+    { title: '2027 방사선사 국시 최신경향 분석집', author: '대한방사선사협회', publisher: '고려의학', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 156, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=방사선사+국시+최신경향+2027' },
+    { title: '2027 방사선사 벼락치기 핵심요점', author: '박재현', publisher: '메디시언', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 132, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=방사선사+벼락치기+2027' },
+  ],
+
+  // ────────────────────────────────────────
+  '물리치료사': [
+    // 베스트셀러 5
+    { title: '2027 물리치료사 국가시험 핵심요약 총정리', author: '대한물리치료사협회 편집부', publisher: '고려의학', price: 52200, originalPrice: 58000, discount: '10%', rating: 4.8, reviews: 789, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=물리치료사+국가시험+핵심요약+2027' },
+    { title: '2027 물리치료사 기출문제 완전분석 10개년', author: '군자출판사 편집부', publisher: '군자출판사', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.7, reviews: 634, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=물리치료사+기출문제+2027' },
+    { title: '2027 근골격계 물리치료학 완전정복', author: '이재훈', publisher: '고려의학', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.7, reviews: 523, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=근골격계+물리치료학+2027' },
+    { title: '2027 신경계 물리치료학 핵심이론+기출', author: '박진수', publisher: '메디시언', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.6, reviews: 445, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=신경계+물리치료학+2027' },
+    { title: '2027 물리인자치료학 완전정복', author: '김상호', publisher: '군자출판사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 367, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=물리인자치료학+2027' },
+    // 추천수험서 5
+    { title: '2027 기능해부학·운동학 국시 핵심정리', author: '최인호', publisher: '고려의학', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 312, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=기능해부학+운동학+물리치료사+2027' },
+    { title: '2027 물리치료사 모의고사 5회분', author: '메디시언 편집부', publisher: '메디시언', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 267, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyободook.co.kr/search?keyword=물리치료사+모의고사+2027' },
+    { title: '2027 심폐·스포츠재활 물리치료 핵심이론', author: '이동현', publisher: '고려의학', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.5, reviews: 223, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=심폐+스포츠재활+물리치료사+2027' },
+    { title: '2027 물리치료사 국시 최신경향 분석집', author: '대한물리치료사협회', publisher: '고려의학', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 189, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=물리치료사+국시+최신경향+2027' },
+    { title: '2027 물리치료사 벼락치기 핵심요점', author: '박민수', publisher: '메디시언', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.4, reviews: 156, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=물리치료사+벼락치기+2027' },
+  ],
+
+  // ────────────────────────────────────────
+  '응급구조사1급': [
+    // 베스트셀러 5
+    { title: '2027 응급구조사 1급 국가시험 핵심요약 총정리', author: '대한응급구조사협회 편집부', publisher: '군자출판사', price: 49500, originalPrice: 55000, discount: '10%', rating: 4.8, reviews: 534, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=응급구조사+1급+국가시험+핵심요약+2027' },
+    { title: '2027 응급구조사 1급 기출문제 완전분석', author: '군자출판사 편집부', publisher: '군자출판사', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.7, reviews: 423, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=응급구조사+1급+기출문제+2027' },
+    { title: '2027 전문응급처치학 총론·각론 완전정복', author: '이재원', publisher: '고려의학', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.7, reviews: 367, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=전문응급처치학+2027' },
+    { title: '2027 응급처치론 핵심이론+기출', author: '박상호', publisher: '메디시언', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 289, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=응급처치론+핵심이론+2027' },
+    { title: '2027 응급환자관리·응급의학 완성', author: '김동수', publisher: '군자출판사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 234, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=응급환자관리+응급의학+2027' },
+    // 추천수험서 5
+    { title: '2027 응급구조사 1급 모의고사 5회분', author: '메디시언 편집부', publisher: '메디시언', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 198, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=응급구조사+1급+모의고사+2027' },
+    { title: '2027 심전도 판독 응급구조사 국시 완성', author: '이상민', publisher: '고려의학', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.6, reviews: 167, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=심전도+응급구조사+2027' },
+    { title: '2027 외상응급처치 핵심정리', author: '박재현', publisher: '군자출판사', price: 27900, originalPrice: 31000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=외상응급처치+응급구조사+2027' },
+    { title: '2027 응급구조사 1급 국시 최신경향 분석집', author: '대한응급구조사협회', publisher: '군자출판사', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.5, reviews: 123, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=응급구조사+국시+최신경향+2027' },
+    { title: '2027 응급구조사 1급 벼락치기 핵심요점', author: '김민준', publisher: '메디시언', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=응급구조사+벼락치기+2027' },
+  ],
+
+  // ────────────────────────────────────────
+  '치과위생사': [
+    // 베스트셀러 5
+    { title: '2027 치과위생사 국가시험 핵심요약 총정리', author: '대한치과위생사협회 편집부', publisher: '군자출판사', price: 49500, originalPrice: 55000, discount: '10%', rating: 4.8, reviews: 678, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치과위생사+국가시험+핵심요약+2027' },
+    { title: '2027 치과위생사 기출문제 완전분석 10개년', author: '군자출판사 편집부', publisher: '군자출판사', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.7, reviews: 534, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치과위생사+기출문제+2027' },
+    { title: '2027 치위생학 개론·구강해부학 완전정복', author: '이재원', publisher: '고려의학', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.7, reviews: 445, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=치위생학+구강해부학+2027' },
+    { title: '2027 치과재료학·구강미생물학 핵심이론', author: '박지현', publisher: '메디시언', price: 35100, originalPrice: 39000, discount: '10%', rating: 4.6, reviews: 367, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치과재료학+구강미생물학+2027' },
+    { title: '2027 구강보건행정·교육 완성', author: '김수진', publisher: '고려의학', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.5, reviews: 289, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=구강보건행정+치과위생사+2027' },
+    // 추천수험서 5
+    { title: '2027 치과위생사 모의고사 5회분', author: '메디시언 편집부', publisher: '메디시언', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치과위생사+모의고사+2027' },
+    { title: '2027 구강생리학·구강생화학 핵심정리', author: '이상호', publisher: '군자출판사', price: 27900, originalPrice: 31000, discount: '10%', rating: 4.6, reviews: 198, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=구강생리학+구강생화학+2027' },
+    { title: '2027 치과위생사 국시 최신경향 분석집', author: '대한치과위생사협회', publisher: '군자출판사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치과위생사+국시+최신경향+2027' },
+    { title: '2027 임상치위생학 핵심이론+기출', author: '박민희', publisher: '고려의학', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상치위생학+2027' },
+    { title: '2027 치과위생사 벼락치기 핵심요점', author: '김재원', publisher: '메디시언', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치과위생사+벼락치기+2027' },
+  ],
+
 };
