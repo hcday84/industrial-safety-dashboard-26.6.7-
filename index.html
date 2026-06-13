@@ -34,8 +34,18 @@
         </div>
         <h1>기술수험서 올인원 대시보드</h1>
       </div>
-      
-      <div class="header-search-bar">
+
+      <!-- 탭 전환 -->
+      <div class="header-tabs">
+        <button class="header-tab active" id="tab-dashboard" onclick="window.switchTab('dashboard')">
+          <i class="fa-solid fa-gauge-high"></i> 대시보드
+        </button>
+        <button class="header-tab" id="tab-inventory" onclick="window.switchTab('inventory')">
+          <i class="fa-solid fa-boxes-stacked"></i> 발주&amp;재고관리
+        </button>
+      </div>
+
+      <div class="header-search-bar" id="header-search-bar">
         <i class="fa-solid fa-magnifying-glass search-icon"></i>
         <input type="text" id="global-search" placeholder="자격증 이름 검색... (예: 전기기사, 소방설비기사)" autocomplete="off">
         <div id="cert-dropdown" class="cert-dropdown"></div>
@@ -52,10 +62,6 @@
         <button id="bookmark-filter-btn" class="control-btn" title="북마크된 공고 보기">
           <i class="fa-regular fa-bookmark"></i>
           <span id="bookmark-count" class="badge">0</span>
-        </button>
-        <button id="inventory-btn" class="control-btn inventory-btn" title="발주&재고관리모드">
-          <i class="fa-solid fa-boxes-stacked"></i>
-          <span class="inventory-tooltip">발주&amp;재고관리모드</span>
         </button>
       </div>
     </div>
@@ -422,12 +428,9 @@
     </main>
   </div>
 
-  <!-- 발주&재고관리모드 Modal -->
-  <div id="inventory-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:9999; align-items:center; justify-content:center;">
-    <div style="position:relative; width:96vw; max-width:1400px; height:90vh; background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 25px 60px rgba(0,0,0,0.4);">
-      <button id="inventory-modal-close" style="position:absolute; top:14px; right:18px; z-index:10; background:rgba(0,0,0,0.55); border:none; color:#fff; border-radius:50%; width:36px; height:36px; font-size:1.2rem; cursor:pointer; display:flex; align-items:center; justify-content:center; line-height:1;">✕</button>
-      <iframe src="inventory.html" style="width:100%; height:100%; border:none;" id="inventory-iframe"></iframe>
-    </div>
+  <!-- 발주&재고관리 탭 패널 -->
+  <div id="inventory-panel" style="display:none; position:fixed; top:62px; left:0; right:0; bottom:0; z-index:900;">
+    <iframe src="inventory.html" style="width:100%; height:100%; border:none;" id="inventory-iframe"></iframe>
   </div>
 
   <!-- Job Detail Modal -->

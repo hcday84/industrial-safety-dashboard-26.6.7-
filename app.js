@@ -15172,26 +15172,45 @@ function initEventListeners() {
   window.addEventListener('scroll', syncNavOnScroll, { passive: true });
 })();
 
-// 발주&재고관리모드 버튼
-function initInventoryModal() {
-  const inventoryBtn = document.getElementById('inventory-btn');
-  const inventoryModal = document.getElementById('inventory-modal');
-  const inventoryClose = document.getElementById('inventory-modal-close');
-  if (!inventoryBtn || !inventoryModal || !inventoryClose) return;
-  inventoryBtn.addEventListener('click', () => {
-    inventoryModal.style.display = 'flex';
+// 탭 전환 (대시보드 ↔ 발주&재고관리)
+window.switchTab = function(tab) {
+  const dashboardContent = document.getElementById('welcome-screen') || document.getElementById('dashboard-container');
+  const mainWrap = document.querySelector('.dashboard-wrapper') || document.getElementById('dashboard-main');
+  const inventoryPanel = document.getElementById('inventory-panel');
+  const searchBar = document.getElementById('header-search-bar');
+  const resetBtn = document.getElementById('reset-btn');
+  const tabDashboard = document.getElementById('tab-dashboard');
+  const tabInventory = document.getElementById('tab-inventory');
+
+  if (tab === 'inventory') {
+    // 대시보드 숨기기
+    document.querySelectorAll('.dashboard-wrapper, #welcome-screen, #dashboard-container, #cert-dashboard').forEach(el => {
+      if (el) el.style.display = 'none';
+    });
+    if (searchBar) searchBar.style.display = 'none';
+    if (resetBtn) resetBtn.style.display = 'none';
+    // 재고관리 패널 표시
+    if (inventoryPanel) inventoryPanel.style.display = 'block';
+    if (tabDashboard) tabDashboard.classList.remove('active');
+    if (tabInventory) tabInventory.classList.add('active');
     document.body.style.overflow = 'hidden';
-  });
-  inventoryClose.addEventListener('click', () => {
-    inventoryModal.style.display = 'none';
+  } else {
+    // 재고관리 패널 숨기기
+    if (inventoryPanel) inventoryPanel.style.display = 'none';
+    // 대시보드 복원
+    document.querySelectorAll('.dashboard-wrapper, #welcome-screen, #dashboard-container, #cert-dashboard').forEach(el => {
+      if (el) el.style.display = '';
+    });
+    if (searchBar) searchBar.style.display = '';
+    if (resetBtn) resetBtn.style.display = '';
+    if (tabDashboard) tabDashboard.classList.add('active');
+    if (tabInventory) tabInventory.classList.remove('active');
     document.body.style.overflow = '';
-  });
-  inventoryModal.addEventListener('click', (e) => {
-    if (e.target === inventoryModal) {
-      inventoryModal.style.display = 'none';
-      document.body.style.overflow = '';
-    }
-  });
+  }
+};
+
+function initInventoryModal() {
+  // 탭 방식으로 대체됨 — 기존 모달 참조 없음
 }
 
 if (document.readyState === 'loading') {
