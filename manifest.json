@@ -1,0 +1,25 @@
+{
+  "name": "기술수험서 올인원 대시보드",
+  "short_name": "수험서 대시보드",
+  "description": "자격증 시험 일정 D-Day, 채용 공고, 교보문고 수험서 올인원 대시보드",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#6366f1",
+  "lang": "ko",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
