@@ -14750,6 +14750,30 @@ function initEventListeners() {
     renderJobs();
   });
 
+  // 발주&재고관리모드 버튼
+  const inventoryBtn = document.getElementById('inventory-btn');
+  const inventoryModal = document.getElementById('inventory-modal');
+  const inventoryClose = document.getElementById('inventory-modal-close');
+  if (inventoryBtn && inventoryModal) {
+    inventoryBtn.removeAttribute('disabled');
+    inventoryBtn.style.opacity = '1';
+    inventoryBtn.style.cursor = 'pointer';
+    inventoryBtn.addEventListener('click', () => {
+      inventoryModal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    });
+    inventoryClose.addEventListener('click', () => {
+      inventoryModal.style.display = 'none';
+      document.body.style.overflow = '';
+    });
+    inventoryModal.addEventListener('click', (e) => {
+      if (e.target === inventoryModal) {
+        inventoryModal.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
   // 채용 탭 토글
   document.getElementById('view-all-jobs').addEventListener('click', e => {
     document.getElementById('view-bookmarked-jobs').classList.remove('active');

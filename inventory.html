@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT 기술수험서 절판 및 개정판 대시보드</title>
+    <!-- Google Fonts: Outfit & Inter for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons for modern, crisp UI icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- SheetJS for client-side Excel exporting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="inventory-styles.css">
+</head>
+<body>
+    <!-- Background glow elements for aesthetic glassmorphism design -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <div class="app-container">
+        <!-- Sidebar or Header Banner -->
+        <header class="app-header">
+            <div class="header-logo">
+                <div class="logo-icon">
+                    <i data-lucide="book-open"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>기술분야 수험서 관리 시스템</h1>
+                    <p>TechPrep Manager</p>
+                </div>
+            </div>
+            <div class="user-profile">
+                <span class="badge badge-primary">수험서 전문 북마스터</span>
+                <button class="theme-toggle-btn" id="themeToggle" title="테마 변경">
+                    <i data-lucide="moon" id="themeIcon"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Search & Filter Controls (moved to top) -->
+        <div class="filter-controls card-glass">
+            <div class="search-box">
+                <i data-lucide="search" class="search-icon"></i>
+                <input type="text" id="searchInput" placeholder="ISBN, 도서명, 저자, 출판사, 자격증 검색...">
+            </div>
+
+            <div class="filters-row">
+                <div class="filter-group">
+                    <label for="filterStatus">상태 구분</label>
+                    <select id="filterStatus" class="select-custom">
+                        <option value="all">전체 도서</option>
+                        <option value="out-of-print">절판 도서만</option>
+                        <option value="out-of-stock">품절 도서만</option>
+                        <option value="has-revised">개정판 존재 도서만</option>
+                        <option value="no-revised">개정판 없음 (완전절판)</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="filterPublisher">출판사</label>
+                    <div class="publisher-input-wrap">
+                        <input type="text" id="filterPublisher" class="select-custom publisher-input" placeholder="출판사명 입력..." autocomplete="off">
+                        <ul id="publisherSuggestions" class="publisher-suggestions"></ul>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <label for="sortBy">정렬 기준</label>
+                    <select id="sortBy" class="select-custom">
+                        <option value="titleAsc">도서명 오름차순</option>
+                        <option value="pubDateDesc">구버전 출판일 최신순</option>
+                        <option value="priceDesc">구버전 가격 높은순</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="filterYear">기준 연도</label>
+                    <select id="filterYear" class="select-custom">
+                        <option value="all">전체 연도</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics Section -->
+        <section class="stats-grid">
+            <div class="stats-card card-glass">
+                <div class="stats-info">
+                    <span class="stats-label">전체 수험서 데이터</span>
+                    <span class="stats-value" id="statTotal">0</span>
+                    <span class="stats-desc">교보문고 & YES24 대조군</span>
+                </div>
+                <div class="stats-icon text-indigo">
+                    <i data-lucide="database"></i>
+                </div>
+            </div>
+            <div class="stats-card card-glass text-warning-border">
+                <div class="stats-info">
+                    <span class="stats-label">절판 도서</span>
+                    <span class="stats-value text-red" id="statOutOfPrint">0</span>
+                    <span class="stats-desc">재고 부족 및 절판 처리 완료</span>
+                </div>
+                <div class="stats-icon text-red">
+                    <i data-lucide="slash"></i>
+                </div>
+            </div>
+            <div class="stats-card card-glass text-success-border">
+                <div class="stats-info">
+                    <span class="stats-label">개정판 출간 완료</span>
+                    <span class="stats-value text-cyan" id="statRevised">0</span>
+                    <span class="stats-desc">후속 개정 도서 매핑 정보 보유</span>
+                </div>
+                <div class="stats-icon text-cyan">
+                    <i data-lucide="refresh-cw"></i>
+                </div>
+            </div>
+            <div class="stats-card card-glass">
+                <div class="stats-info">
+                    <span class="stats-label">수동 엑셀 추출</span>
+                    <button class="btn btn-gradient btn-export" id="btnExportExcel">
+                        <i data-lucide="file-spreadsheet"></i> 엑셀 내보내기
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Excel Upload Analyzer -->
+        <section class="upload-analyzer card-glass">
+            <div class="upload-analyzer-header" id="analyzerToggle">
+                <div class="upload-analyzer-title">
+                    <i data-lucide="file-search"></i>
+                    <span>엑셀 업로드 &mdash; 절판/품절 도서 추출</span>
+                </div>
+                <i data-lucide="chevron-down" id="analyzerChevron"></i>
+            </div>
+            <div class="upload-analyzer-body" id="analyzerBody">
+                <div class="upload-zone" id="uploadZone">
+                    <i data-lucide="upload-cloud"></i>
+                    <p>엑셀 파일을 여기에 끌어다 놓거나 클릭하여 업로드</p>
+                    <span class="upload-hint">.xlsx / .xls 지원 &nbsp;|&nbsp; ISBN 컬럼 또는 상태 컬럼 자동 감지</span>
+                    <input type="file" id="excelUpload" accept=".xlsx,.xls" hidden>
+                </div>
+
+                <div class="upload-results" id="uploadResults" style="display:none">
+                    <div class="upload-results-toolbar">
+                        <div class="upload-summary" id="uploadSummary"></div>
+                        <div class="upload-filter-btns">
+                            <button class="btn-filter-tag active" data-filter="all">전체</button>
+                            <button class="btn-filter-tag" data-filter="out_of_print">절판</button>
+                            <button class="btn-filter-tag" data-filter="out_of_stock">품절</button>
+                        </div>
+                        <button class="btn btn-gradient btn-sm" id="btnExportFiltered">
+                            <i data-lucide="download"></i> 결과 엑셀 저장
+                        </button>
+                    </div>
+                    <div class="upload-cards" id="uploadTableBody"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Dashboard Workspace -->
+        <main class="dashboard-workspace card-glass">
+            <!-- Dashboard Table/Card Container -->
+            <div class="books-display-wrapper">
+                <div class="table-header-row">
+                    <div class="col-title">구버전(절판) 도서 정보</div>
+                    <div class="col-status">상태</div>
+                    <div class="col-revised">개정판(신버전) 정보</div>
+                    <div class="col-links">온라인 서점 비교 (Kyobo / YES24)</div>
+                </div>
+                <div id="booksContainer" class="books-list">
+                    <!-- Dynamic rendering via app.js -->
+                    <div class="loading-state">
+                        <i data-lucide="loader-2" class="spin"></i>
+                        <p>수험서 데이터를 분석 중입니다...</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Book Detail Modal for Side-by-Side Comparison -->
+    <div class="modal-backdrop" id="compareModal">
+        <div class="modal-content card-glass">
+            <div class="modal-header">
+                <h2>🔍 구버전 vs 개정판 상세 대조표</h2>
+                <button class="btn-close" id="btnMinClose"><i data-lucide="x"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="comparison-grid">
+                    <!-- Original Out-of-Print Book -->
+                    <div class="compare-card compare-original">
+                        <div class="compare-badge badge-red">절판 도서 (구버전)</div>
+                        <h3 id="modalOrigTitle" class="compare-title">-</h3>
+                        <table class="compare-table">
+                            <tr><th>저자</th><td id="modalOrigAuthor">-</td></tr>
+                            <tr><th>출판사</th><td id="modalOrigPublisher">-</td></tr>
+                            <tr><th>출판일</th><td id="modalOrigDate">-</td></tr>
+                            <tr><th>정가</th><td id="modalOrigPrice">-</td></tr>
+                            <tr><th>ISBN</th><td id="modalOrigIsbn">-</td></tr>
+                        </table>
+                        <div class="modal-links-section">
+                            <h4>서점 링크</h4>
+                            <div class="link-buttons">
+                                <a id="modalOrigKyobo" href="#" target="_blank" class="btn btn-outline btn-sm"><i data-lucide="external-link"></i> 교보문고 바로가기</a>
+                                <a id="modalOrigYes24" href="#" target="_blank" class="btn btn-outline btn-sm"><i data-lucide="external-link"></i> YES24 바로가기</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Flow arrow icon -->
+                    <div class="compare-flow">
+                        <i data-lucide="chevrons-right" class="flow-icon-desktop"></i>
+                        <i data-lucide="chevrons-down" class="flow-icon-mobile"></i>
+                    </div>
+
+                    <!-- Revised Book -->
+                    <div class="compare-card compare-revised" id="modalRevisedCard">
+                        <div class="compare-badge badge-cyan">개정판 도서 (신버전)</div>
+                        <h3 id="modalRevTitle" class="compare-title">-</h3>
+                        <table class="compare-table">
+                            <tr><th>저자</th><td id="modalRevAuthor">-</td></tr>
+                            <tr><th>출판사</th><td id="modalRevPublisher">-</td></tr>
+                            <tr><th>출판일</th><td id="modalRevDate">-</td></tr>
+                            <tr><th>정가</th><td id="modalRevPrice">-</td></tr>
+                            <tr><th>ISBN</th><td id="modalRevIsbn">-</td></tr>
+                        </table>
+                        <div class="modal-links-section">
+                            <h4>서점 링크</h4>
+                            <div class="link-buttons">
+                                <a id="modalRevKyobo" href="#" target="_blank" class="btn btn-cyan btn-sm"><i data-lucide="external-link"></i> 교보문고 바로가기</a>
+                                <a id="modalRevYes24" href="#" target="_blank" class="btn btn-cyan btn-sm"><i data-lucide="external-link"></i> YES24 바로가기</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Revised Book Missing State -->
+                    <div class="compare-card compare-revised-missing" id="modalNoRevisedCard" style="display:none;">
+                        <div class="compare-badge badge-gray">개정판 정보 없음</div>
+                        <div class="missing-content">
+                            <i data-lucide="alert-circle" class="missing-icon"></i>
+                            <p>이 도서는 해당 시험 자격증의 출제 범위 개정이 없거나, 해당 출판사에서 개정 버전을 발간하지 않고 폐간한 도서입니다.</p>
+                            <p class="desc-sub">대신 유사한 대체 과목 수험서 또는 후속 수험서 검색을 권장합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Excel Export Instruction Toast / Modal -->
+    <div class="toast-notification" id="exportToast">
+        <div class="toast-content">
+            <i data-lucide="check-circle" class="toast-icon"></i>
+            <div class="toast-text">
+                <strong>엑셀 다운로드 완료!</strong>
+                <p>절판 및 개정 대조 목록이 엑셀 파일로 저장되었습니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="inventory-app.js"></script>
+</body>
+</html>
