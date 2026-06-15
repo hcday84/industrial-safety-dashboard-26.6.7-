@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
@@ -434,6 +434,64 @@
     </main>
   </div>
 
+  <!-- Job Detail Modal -->
+  <div class="modal-overlay" id="job-detail-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <span class="modal-company" id="modal-company-name">회사명</span>
+          <h3 id="modal-job-title">채용 공고 제목</h3>
+        </div>
+        <button class="modal-close" id="modal-close-btn">&times;</button>
+      </div>
+      
+      <div class="modal-body">
+        <div class="modal-info-grid">
+          <div class="info-block">
+            <span class="info-label"><i class="fa-solid fa-coins"></i> 급여 조건</span>
+            <span class="info-value" id="modal-salary">연봉 3,600만원 ~ 4,500만원</span>
+          </div>
+          <div class="info-block">
+            <span class="info-label"><i class="fa-solid fa-location-dot"></i> 근무 지역</span>
+            <span class="info-value" id="modal-location">서울 영등포구</span>
+          </div>
+          <div class="info-block">
+            <span class="info-label"><i class="fa-solid fa-user-tie"></i> 경력 및 직무</span>
+            <span class="info-value" id="modal-experience">신입 및 경력 (2년 이하)</span>
+          </div>
+          <div class="info-block">
+            <span class="info-label"><i class="fa-regular fa-clock"></i> 지원 마감일</span>
+            <span class="info-value text-red" id="modal-deadline">D-14 (2026.06.21)</span>
+          </div>
+        </div>
+
+        <div class="modal-details-content">
+          <h4><i class="fa-solid fa-circle-check"></i> 주요 수행 업무</h4>
+          <p id="modal-duties">주요 업무 설명</p>
+
+          <h4><i class="fa-solid fa-circle-check"></i> 자격 및 우대 요건</h4>
+          <ul id="modal-requirements">
+            <li>산업안전산업기사 이상 자격 필수</li>
+          </ul>
+
+          <h4><i class="fa-solid fa-circle-check"></i> 복리후생 및 혜택</h4>
+          <p id="modal-benefits">복리후생 설명</p>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="modal-bookmark-btn">
+          <i class="fa-regular fa-bookmark"></i> 북마크 추가
+        </button>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modal-apply-link">
+          지원하러 가기 <i class="fa-solid fa-square-arrow-up-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  </div><!-- /dashboard-content -->
+
   <!-- 발주&재고관리 탭 패널 (iframe 제거 → 직접 통합) -->
   <div id="inventory-panel" style="display:none; position:fixed; top:62px; left:0; right:0; bottom:0; z-index:900; overflow-y:auto;">
     <div class="bg-glow bg-glow-1"></div>
@@ -653,64 +711,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Job Detail Modal -->
-  <div class="modal-overlay" id="job-detail-modal">
-    <div class="modal-container">
-      <div class="modal-header">
-        <div class="modal-header-left">
-          <span class="modal-company" id="modal-company-name">회사명</span>
-          <h3 id="modal-job-title">채용 공고 제목</h3>
-        </div>
-        <button class="modal-close" id="modal-close-btn">&times;</button>
-      </div>
-      
-      <div class="modal-body">
-        <div class="modal-info-grid">
-          <div class="info-block">
-            <span class="info-label"><i class="fa-solid fa-coins"></i> 급여 조건</span>
-            <span class="info-value" id="modal-salary">연봉 3,600만원 ~ 4,500만원</span>
-          </div>
-          <div class="info-block">
-            <span class="info-label"><i class="fa-solid fa-location-dot"></i> 근무 지역</span>
-            <span class="info-value" id="modal-location">서울 영등포구</span>
-          </div>
-          <div class="info-block">
-            <span class="info-label"><i class="fa-solid fa-user-tie"></i> 경력 및 직무</span>
-            <span class="info-value" id="modal-experience">신입 및 경력 (2년 이하)</span>
-          </div>
-          <div class="info-block">
-            <span class="info-label"><i class="fa-regular fa-clock"></i> 지원 마감일</span>
-            <span class="info-value text-red" id="modal-deadline">D-14 (2026.06.21)</span>
-          </div>
-        </div>
-
-        <div class="modal-details-content">
-          <h4><i class="fa-solid fa-circle-check"></i> 주요 수행 업무</h4>
-          <p id="modal-duties">주요 업무 설명</p>
-
-          <h4><i class="fa-solid fa-circle-check"></i> 자격 및 우대 요건</h4>
-          <ul id="modal-requirements">
-            <li>산업안전산업기사 이상 자격 필수</li>
-          </ul>
-
-          <h4><i class="fa-solid fa-circle-check"></i> 복리후생 및 혜택</h4>
-          <p id="modal-benefits">복리후생 설명</p>
-        </div>
-      </div>
-
-      <div class="modal-footer">
-        <button class="btn btn-secondary" id="modal-bookmark-btn">
-          <i class="fa-regular fa-bookmark"></i> 북마크 추가
-        </button>
-        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modal-apply-link">
-          지원하러 가기 <i class="fa-solid fa-square-arrow-up-right"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  </div><!-- /dashboard-content -->
 
   <!-- Footer -->
   <footer class="app-footer">
