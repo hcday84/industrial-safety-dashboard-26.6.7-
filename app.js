@@ -14277,7 +14277,7 @@ function showWelcomeScreen() {
   document.getElementById('welcome-screen').style.display = 'flex';
   document.getElementById('global-search').value = '';
   document.getElementById('global-search').placeholder = '자격증 이름을 입력하세요 (예: 전기기사)';
-  document.title = '기술수험서 올인원 대시보드';
+  document.title = '수험서 All in One 대시보드';
   // 자격증 갯수 자동 업데이트
   const countEl = document.getElementById('cert-count');
   if (countEl && typeof CERTIFICATIONS !== 'undefined') {
@@ -14395,7 +14395,7 @@ function createUpdateBadge() {
 // 5. 페이지 메타·헤더 업데이트
 // ============================================
 function updatePageMeta(cert) {
-  document.title = `기술수험서 올인원 대시보드 - ${cert.name} 채용 및 시험 일정`;
+  document.title = `수험서 All in One 대시보드 - ${cert.name} 채용 및 시험 일정`;
 }
 
 // ============================================
