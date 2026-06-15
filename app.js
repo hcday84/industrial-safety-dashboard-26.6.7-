@@ -15099,17 +15099,24 @@ function updateThemeBtn(isDark) {
     : '<i class="fa-solid fa-moon"></i><span class="theme-label">다크모드</span>';
 }
 
+function syncInventoryTheme(isDark) {
+  const inv = document.getElementById('inventory-panel');
+  if (inv) inv.classList.toggle('light-mode', !isDark);
+}
+
 function initTheme() {
   const saved = localStorage.getItem('dashboard_theme');
   const isDark = saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches);
   document.body.classList.toggle('dark-theme', isDark);
   updateThemeBtn(isDark);
+  syncInventoryTheme(isDark);
 }
 
 function toggleTheme() {
   const isDark = document.body.classList.toggle('dark-theme');
   localStorage.setItem('dashboard_theme', isDark ? 'dark' : 'light');
   updateThemeBtn(isDark);
+  syncInventoryTheme(isDark);
 }
 
 // ============================================

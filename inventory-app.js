@@ -325,8 +325,6 @@ window.initInventoryApp = function() {
     const filterYear = document.getElementById("filterYear");
     const booksContainer = document.getElementById("booksContainer");
     const btnExportExcel = document.getElementById("btnExportExcel");
-    const themeToggle = document.getElementById("themeToggle");
-    const themeIcon = document.getElementById("themeIcon");
     const compareModal = document.getElementById("compareModal");
     const btnMinClose = document.getElementById("btnMinClose");
     const modalOrigTitle = document.getElementById("modalOrigTitle");
@@ -701,14 +699,7 @@ window.initInventoryApp = function() {
         showExportToast();
     }
 
-    function toggleTheme() {
-        invPanel.classList.toggle("light-mode");
-        const isLight = invPanel.classList.contains("light-mode");
-        themeIcon.setAttribute("data-lucide", isLight ? "sun" : "moon");
-        lucide.createIcons();
-    }
-
-    function populateYears() {
+function populateYears() {
         const dataYears = new Set(examBooksData.map(b => b.pubDate.slice(0, 4)));
         ["2026", "2025", "2024"].forEach(y => dataYears.add(y));
         const years = [...dataYears].sort((a, b) => b - a);
@@ -733,7 +724,6 @@ window.initInventoryApp = function() {
     sortBy.addEventListener("change", filterAndRender);
     filterYear.addEventListener("change", filterAndRender);
     btnExportExcel.addEventListener("click", exportToExcel);
-    themeToggle.addEventListener("click", toggleTheme);
     btnMinClose.addEventListener("click", closeModal);
     compareModal.addEventListener("click", e => { if (e.target === compareModal) closeModal(); });
 
