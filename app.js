@@ -35,6 +35,46 @@ async function fetchCertInfo(certName) {
   }
 }
 
+// 시험 일정 자동 업데이트 (Vercel 서버리스 프록시 경유)
+async function fetchExamSchedule(certName, implYy) {
+  const jmCd = (typeof JM_CODES !== 'undefined') ? JM_CODES[certName] : null;
+  if (!jmCd) return null;
+  const year = implYy || new Date().getFullYear();
+  try {
+    const res = await fetch(`/api/exam-schedule?jmCd=${jmCd}&implYy=${year}`);
+    if (!res.ok) return null;
+    const json = await res.json();
+    const items = json?.body?.items;
+    if (!items || !items.length) return null;
+    return parseExamItems(items);
+  } catch (e) {
+    return null;
+  }
+}
+
+function parseExamItems(items) {
+  const fmt = d => d ? `${d.slice(0,4)}-${d.slice(4,6)}-${d.slice(6,8)}` : '-';
+  const bySeq = {};
+  items.forEach(item => {
+    const seq = item.implSeq;
+    if (!bySeq[seq] || item.docRegStartDt < bySeq[seq].docRegStartDt) {
+      bySeq[seq] = item;
+    }
+  });
+  return Object.values(bySeq)
+    .sort((a, b) => a.implSeq - b.implSeq)
+    .map(item => ({
+      round: `제${item.implSeq}회`,
+      writtenApply:    `${fmt(item.docRegStartDt)} ~ ${fmt(item.docRegEndDt)}`,
+      writtenExam:     `${fmt(item.docExamStartDt)} ~ ${fmt(item.docExamEndDt)}`,
+      writtenResult:   fmt(item.docPassDt),
+      practicalExam:   `${fmt(item.pracExamStartDt)} ~ ${fmt(item.pracExamEndDt)}`,
+      practicalResult: fmt(item.pracPassDt),
+      finalResult:     fmt(item.pracPassDt),
+    }));
+}
+
+
 // ============================================
 // 1. 자격증 데이터베이스
 // ============================================
@@ -14318,17 +14358,37 @@ function switchCertification(certName) {
   // 상단으로 스크롤
   window.scrollTo({ top: 0, behavior: 'smooth' });
 
-  // 공공데이터 API — 종목 정보 비동기 업데이트
+  // 공공데이터 API — 종목 정보 + 시험 일정 비동기 업데이트
   const cert = getCert();
   if (cert) {
     fetchCertInfo(cert.name).then(info => {
       if (!info) return;
       const descEl = document.getElementById('hero-desc');
-      if (descEl && info.overview) {
-        descEl.textContent = info.overview;
-      }
+      if (descEl && info.overview) descEl.textContent = info.overview;
+    });
+
+    fetchExamSchedule(cert.name).then(schedules => {
+      if (!schedules || !schedules.length) return;
+      // CERTIFICATIONS 데이터 갱신
+      CERTIFICATIONS[cert.name].schedules = schedules;
+      // UI 재렌더링
+      renderScheduleCards(CERTIFICATIONS[cert.name]);
+      renderDdays(CERTIFICATIONS[cert.name]);
+      // 일정 업데이트 알림
+      const badge = document.querySelector('.cert-info-badge') || createUpdateBadge();
+      badge.textContent = '✓ 최신 시험 일정 반영됨';
+      badge.style.display = 'inline-block';
+      setTimeout(() => { badge.style.display = 'none'; }, 4000);
     });
   }
+}
+
+function createUpdateBadge() {
+  const badge = document.createElement('span');
+  badge.className = 'cert-info-badge';
+  badge.style.cssText = 'display:none; position:fixed; bottom:20px; right:20px; background:#22c55e; color:#fff; padding:8px 16px; border-radius:20px; font-size:13px; font-weight:600; z-index:999; box-shadow:0 4px 12px rgba(0,0,0,0.15);';
+  document.body.appendChild(badge);
+  return badge;
 }
 
 // ============================================
