@@ -15232,6 +15232,14 @@ function initEventListeners() {
   window.addEventListener('scroll', syncNavOnScroll, { passive: true });
 })();
 
+// inventory-panel을 body 직접 자식으로 이동 (dashboard-content 안에 있으면 같이 숨겨지는 문제 방지)
+(function() {
+  const inv = document.getElementById('inventory-panel');
+  if (inv && inv.parentElement !== document.body) {
+    document.body.appendChild(inv);
+  }
+})();
+
 // 탭 전환 (대시보드 ↔ 발주&재고관리)
 window.switchTab = function(tab) {
   const dashboardContent = document.getElementById('welcome-screen') || document.getElementById('dashboard-container');
@@ -15249,11 +15257,17 @@ window.switchTab = function(tab) {
     });
     if (searchBar) searchBar.style.display = 'none';
     if (resetBtn) resetBtn.style.display = 'none';
+    // inventory-panel이 body 직접 자식이 아닌 경우 이동 (CSS 상속 display:none 방지)
+    if (inventoryPanel && inventoryPanel.parentElement !== document.body) {
+      document.body.appendChild(inventoryPanel);
+    }
     // 재고관리 패널 표시
     if (inventoryPanel) inventoryPanel.style.display = 'block';
     if (tabDashboard) tabDashboard.classList.remove('active');
     if (tabInventory) tabInventory.classList.add('active');
     document.body.style.overflow = 'hidden';
+    // 발주&재고관리 앱 초기화 (최초 1회)
+    if (typeof window.initInventoryApp === 'function') window.initInventoryApp();
   } else {
     // 재고관리 패널 숨기기
     if (inventoryPanel) inventoryPanel.style.display = 'none';
