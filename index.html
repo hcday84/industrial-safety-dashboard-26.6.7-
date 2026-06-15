@@ -49,11 +49,11 @@
 
       <!-- 탭 전환 -->
       <div class="header-tabs">
-        <button class="header-tab" id="tab-inventory" onclick="window.switchTab('inventory')">
-          <i class="fa-solid fa-boxes-stacked"></i> 발주&amp;재고관리
-        </button>
         <button class="header-tab active" id="tab-dashboard" onclick="window.switchTab('dashboard')">
           <i class="fa-solid fa-gauge-high"></i> 대시보드
+        </button>
+        <button class="header-tab" id="tab-inventory" onclick="window.switchTab('inventory')">
+          <i class="fa-solid fa-boxes-stacked"></i> 발주&amp;재고관리
         </button>
       </div>
       <button id="reset-btn" class="reset-btn" title="초기화" onclick="window.resetDashboard()">
