@@ -15249,17 +15249,22 @@ function initEventListeners() {
 
 // 탭 전환 (대시보드 ↔ 발주&재고관리)
 window.switchTab = function(tab) {
-  const dashboardContent = document.getElementById('welcome-screen') || document.getElementById('dashboard-container');
-  const mainWrap = document.querySelector('.dashboard-wrapper') || document.getElementById('dashboard-main');
   const inventoryPanel = document.getElementById('inventory-panel');
   const searchBar = document.getElementById('header-search-bar');
   const resetBtn = document.getElementById('reset-btn');
   const tabDashboard = document.getElementById('tab-dashboard');
   const tabInventory = document.getElementById('tab-inventory');
+  const welcomeScreen = document.getElementById('welcome-screen');
+  const dashboardContent = document.getElementById('dashboard-content');
 
   if (tab === 'inventory') {
+    // 인벤토리로 이동 전 현재 화면 상태 저장
+    window._prevDashboardState = {
+      welcomeVisible: welcomeScreen && welcomeScreen.style.display !== 'none' && getComputedStyle(welcomeScreen).display !== 'none',
+      dashboardVisible: dashboardContent && dashboardContent.style.display !== 'none' && getComputedStyle(dashboardContent).display !== 'none',
+    };
     // 대시보드 숨기기
-    document.querySelectorAll('.dashboard-wrapper, #welcome-screen, #dashboard-container, #cert-dashboard').forEach(el => {
+    document.querySelectorAll('.dashboard-wrapper, #welcome-screen, #dashboard-content, #dashboard-container, #cert-dashboard').forEach(el => {
       if (el) el.style.display = 'none';
     });
     if (searchBar) searchBar.style.display = 'none';
@@ -15278,10 +15283,22 @@ window.switchTab = function(tab) {
   } else {
     // 재고관리 패널 숨기기
     if (inventoryPanel) inventoryPanel.style.display = 'none';
-    // 대시보드 복원
-    document.querySelectorAll('.dashboard-wrapper, #welcome-screen, #dashboard-container, #cert-dashboard').forEach(el => {
-      if (el) el.style.display = '';
-    });
+    // 저장된 이전 상태로 복원; 상태가 없으면 웰컴 화면으로
+    const prev = window._prevDashboardState;
+    if (prev && prev.dashboardVisible) {
+      if (welcomeScreen) welcomeScreen.style.display = 'none';
+      if (dashboardContent) dashboardContent.style.display = 'block';
+      document.querySelectorAll('.dashboard-wrapper, #dashboard-container, #cert-dashboard').forEach(el => {
+        if (el) el.style.display = '';
+      });
+    } else {
+      // 웰컴 화면으로 복원
+      if (welcomeScreen) welcomeScreen.style.display = 'flex';
+      if (dashboardContent) dashboardContent.style.display = 'none';
+      document.querySelectorAll('.dashboard-wrapper, #dashboard-container, #cert-dashboard').forEach(el => {
+        if (el) el.style.display = '';
+      });
+    }
     if (searchBar) searchBar.style.display = '';
     if (resetBtn) resetBtn.style.display = '';
     if (tabDashboard) tabDashboard.classList.add('active');
