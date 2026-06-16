@@ -1,8 +1,8 @@
 /* CSS Design System for TechPrep Manager */
 :root {
     /* Color Palette - Dark Mode (Default) — Navy + Green */
-    --bg-primary: #071840;
-    --bg-secondary: #0c2050;
+    --bg-primary: #000000;
+    --bg-secondary: #0d0d0d;
     --card-bg: rgba(10, 30, 72, 0.70);
     --card-border: rgba(255, 255, 255, 0.10);
     --text-primary: #e8f0fe;
