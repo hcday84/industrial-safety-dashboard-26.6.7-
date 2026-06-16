@@ -5012,6 +5012,59 @@ const CERTIFICATIONS = {
       '최근 5개년 기출문제 1회분 실전 조건으로 풀고 오답 분석',
     ],
   },
+// === 맞춤형화장품 ===
+  '맞춤형화장품조제관리사': {
+    name: '맞춤형화장품조제관리사',
+    icon: 'fa-flask',
+    category: '미용·뷰티',
+    heroTitle: '2026년도 맞춤형화장품조제관리사 합격 가이드',
+    heroDesc: '맞춤형화장품조제관리사는 고객 개인의 피부 특성과 요구에 맞춰 화장품 원료를 혼합·소분하여 맞춤형 화장품을 조제·판매할 수 있는 국가자격입니다. 화장품법 개정(2020년)으로 신설된 자격으로, 맞춤형화장품 판매업소에 의무적으로 1인 이상 배치되어야 하므로 취업·창업 수요가 빠르게 성장하고 있습니다.',
+    passRateSummary: '필기 58% | (필기만 시행)',
+    avgPassRate: '58%',
+    passRates: [
+      { year: 2020, written: 52, practical: 0 },
+      { year: 2021, written: 55, practical: 0 },
+      { year: 2022, written: 57, practical: 0 },
+      { year: 2023, written: 59, practical: 0 },
+      { year: 2024, written: 62, practical: 0 },
+    ],
+    schedules: [
+      { round: '1회', writtenExam: '2026-03-14 ~ 2026-03-15', writtenResult: '2026-04-10', practicalExam: '-', practicalResult: '-' },
+      { round: '2회', writtenExam: '2026-09-05 ~ 2026-09-06', writtenResult: '2026-10-02', practicalExam: '-', practicalResult: '-' },
+    ],
+    milestones: [
+      { label: '1회 필기', date: '2026-03-14' },
+      { label: '1회 결과', date: '2026-04-10' },
+      { label: '2회 필기', date: '2026-09-05' },
+      { label: '2회 결과', date: '2026-10-02' },
+    ],
+    subjects: [
+      { name: '화장품법 관련 법령', desc: '화장품법, 맞춤형화장품 판매업 신고, 조제관리사 의무 및 준수사항' },
+      { name: '화장품 원료의 종류와 특성', desc: '기능성 원료, 보존제, 계면활성제 등 화장품 원료의 성분과 효능' },
+      { name: '화장품의 기능과 품질', desc: '기초·색조·기능성 화장품의 종류, 특성 및 품질 기준' },
+      { name: '피부 및 모발 과학', desc: '피부 구조와 기능, 피부 유형별 특성, 모발 과학 기초' },
+      { name: '맞춤형화장품 조제 및 위생', desc: '혼합·소분 기술, 조제 장비 사용법, 위생 관리 기준' },
+    ],
+    jobs: [
+      { title: '맞춤형화장품조제관리사', company: '맞춤형화장품 판매업소', salary: '2,600~3,800만원', location: '전국', type: '정규직' },
+      { title: '뷰티 컨설턴트', company: '화장품 브랜드샵·백화점', salary: '2,800~4,000만원', location: '수도권', type: '정규직' },
+      { title: '화장품 개발 연구원', company: '화장품 제조업체', salary: '3,000~4,500만원', location: '수도권', type: '정규직' },
+      { title: '맞춤형화장품 창업', company: '개인 판매업소', salary: '수익 자율', location: '전국', type: '자영업' },
+    ],
+    books: [
+      { title: '맞춤형화장품조제관리사 한권으로 끝내기', author: '맞춤형화장품수험연구회', publisher: '성안당', year: 2024, rating: 4.6 },
+      { title: '맞춤형화장품조제관리사 핵심이론 + 기출문제', author: '김미선', publisher: '크라운출판사', year: 2024, rating: 4.5 },
+      { title: '맞춤형화장품조제관리사 기출문제 해설집', author: '이수진', publisher: '에듀윌', year: 2023, rating: 4.3 },
+      { title: '화장품학 이론서 (맞춤형화장품 완벽 대비)', author: '대한화장품학회', publisher: '광문각', year: 2024, rating: 4.2 },
+    ],
+    defaultTodos: [
+      '화장품법 및 관련 법령 핵심 정리',
+      '화장품 원료 종류·특성 암기',
+      '피부 및 모발 과학 이론 학습',
+      '기출문제 풀이 (최근 3개년)',
+      '최근 5개년 기출 1회분 실전 조건으로 풀고 오답 분석',
+    ],
+  },
 // === 이용 2종 ===
   '이용사': {
     name: '이용사',
