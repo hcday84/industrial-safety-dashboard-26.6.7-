@@ -1,9 +1,9 @@
 ﻿/* CSS Design System for TechPrep Manager */
 #inventory-panel{
     /* Color Palette - Dark Mode (Default) — Navy + Green */
-    --bg-primary: #071840;
-    --bg-secondary: #0c2050;
-    --card-bg: rgba(10, 30, 72, 0.70);
+    --bg-primary: #000000;
+    --bg-secondary: #0d0d0d;
+    --card-bg: rgba(20, 20, 20, 0.70);
     --card-border: rgba(255, 255, 255, 0.10);
     --text-primary: #e8f0fe;
     --text-secondary: #93aed8;

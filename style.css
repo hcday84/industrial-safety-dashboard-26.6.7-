@@ -293,8 +293,8 @@ button, input, select {
 .header-controls {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
+  flex-wrap: nowrap;
+  gap: 8px;
 }
 
 .control-btn {
@@ -325,6 +325,34 @@ button, input, select {
   font-size: 0.82rem;
   font-weight: 600;
   white-space: nowrap;
+}
+
+.vercel-link-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 13px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.vercel-link-btn:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.vercel-link-label {
+  display: inline;
 }
 
 .theme-label {
