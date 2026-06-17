@@ -8,6 +8,7 @@ const examBooksData = [
         pubDate: "2022-10-18",
         price: 38000,
         isbn: "9791140701605",
+        certification: "정보처리기사",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791140701605",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791140701605",
