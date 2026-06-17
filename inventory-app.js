@@ -31,6 +31,7 @@ const examBooksData = [
         pubDate: "2022-01-05",
         price: 36000,
         isbn: "9788931466027",
+        certification: "정보보안기사",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9788931466027",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931466027",
