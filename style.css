@@ -54,8 +54,8 @@
   --green-bg: #0d2a0b;
   --green-hover: #45c43b;
 
-  --bg-color: #080d1e;           /* 어두운 딥 네이비 */
-  --card-bg: #0f1628;
+  --bg-color: #000000;           /* 순수 검정 */
+  --card-bg: #0d0d1a;
   --text-color: #eef0f8;
   --text-secondary: #9099bf;
   --text-muted: #5a6380;
