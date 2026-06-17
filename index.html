@@ -501,7 +501,49 @@
     <div class="bg-glow bg-glow-1"></div>
     <div class="bg-glow bg-glow-2"></div>
     <div class="app-container">
-      <div class="filter-controls card-glass">
+      <div class="inv-layout">
+
+      <!-- 발주&재고관리 사이드바 -->
+      <aside class="inv-sidebar">
+        <div class="inv-sidebar-title">
+          <i class="fa-solid fa-list"></i> 발주&amp;재고관리 메뉴
+        </div>
+        <nav class="inv-nav-links">
+          <a href="#inv-search-section" class="inv-nav-item active" onclick="invNavActivate(this)">
+            <i class="fa-solid fa-magnifying-glass"></i> 도서 검색 &amp; 필터
+          </a>
+          <a href="#inv-stats-section" class="inv-nav-item" onclick="invNavActivate(this)">
+            <i class="fa-solid fa-chart-bar"></i> 수험서 현황
+          </a>
+          <a href="#inv-upload-section" class="inv-nav-item" onclick="invNavActivate(this)">
+            <i class="fa-solid fa-file-arrow-up"></i> 엑셀 업로드 분석
+          </a>
+          <a href="#inv-books-section" class="inv-nav-item" onclick="invNavActivate(this)">
+            <i class="fa-solid fa-book-open"></i> 도서 목록
+          </a>
+        </nav>
+        <div class="inv-sidebar-banner">
+          <h4><i class="fa-solid fa-circle-info"></i> 관리 안내</h4>
+          <p>절판·품절 도서를 확인하고 개정판으로 발주를 전환하세요.</p>
+        </div>
+        <div class="inv-external-links">
+          <h5>바로가기</h5>
+          <a href="https://product.kyobobook.co.kr/category/KOR/26" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-square-arrow-up-right"></i> 교보문고 수험서 홈
+          </a>
+          <a href="https://www.yes24.com/Category/Display/001001010" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-link"></i> YES24 수험서 홈
+          </a>
+          <a href="https://www.q-net.or.kr" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-link"></i> Q-Net 자격증 정보
+          </a>
+        </div>
+      </aside>
+
+      <!-- 발주&재고관리 메인 콘텐츠 -->
+      <div class="inv-main-content">
+
+      <div id="inv-search-section" class="filter-controls card-glass">
         <div class="search-box">
           <i data-lucide="search" class="search-icon"></i>
           <input type="text" id="searchInput" placeholder="ISBN, 도서명, 저자, 출판사, 자격증 검색...">
