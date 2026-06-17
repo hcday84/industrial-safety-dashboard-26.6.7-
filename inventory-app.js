@@ -146,6 +146,7 @@ const examBooksData = [
         pubDate: "2021-06-28",
         price: 32000,
         isbn: "9791162244340",
+        certification: "AWS Solutions Architect",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791162244340",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791162244340",
