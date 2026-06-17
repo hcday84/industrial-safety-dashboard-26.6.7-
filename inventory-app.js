@@ -169,6 +169,7 @@ const examBooksData = [
         pubDate: "2022-02-10",
         price: 39000,
         isbn: "9791157676645",
+        certification: "정보처리기사",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791157676645",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791157676645",
