@@ -123,6 +123,7 @@ const examBooksData = [
         pubDate: "2021-03-10",
         price: 35000,
         isbn: "9788931556940",
+        certification: "리눅스마스터1급",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9788931556940",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931556940",
