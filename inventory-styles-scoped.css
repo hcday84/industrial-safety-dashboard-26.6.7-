@@ -113,6 +113,155 @@
     padding: 2.5rem 1.5rem;
 }
 
+/* 발주&재고관리 레이아웃 */
+#inventory-panel .inv-layout{
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 28px;
+    align-items: start;
+}
+
+/* 사이드바 */
+#inventory-panel .inv-sidebar{
+    position: sticky;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#inventory-panel .inv-sidebar-title{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-indigo);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--color-indigo);
+}
+
+#inventory-panel .inv-nav-links{
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius-md);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+#inventory-panel .inv-nav-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 14px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    border-radius: var(--border-radius-sm);
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+#inventory-panel .inv-nav-item i{
+    font-size: 0.95rem;
+    width: 16px;
+    text-align: center;
+}
+
+#inventory-panel .inv-nav-item:hover{
+    background-color: rgba(76, 175, 48, 0.08);
+    color: var(--color-indigo);
+    padding-left: 18px;
+}
+
+#inventory-panel .inv-nav-item.active{
+    background-color: rgba(76, 175, 48, 0.15);
+    color: var(--color-indigo);
+    font-weight: 700;
+}
+
+#inventory-panel .inv-sidebar-banner{
+    background-color: rgba(46, 111, 224, 0.08);
+    border: 1px solid rgba(46, 111, 224, 0.2);
+    border-radius: var(--border-radius-md);
+    padding: 16px;
+    color: var(--text-primary);
+}
+
+#inventory-panel .inv-sidebar-banner h4{
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 7px;
+    color: var(--color-cyan);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#inventory-panel .inv-sidebar-banner p{
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+}
+
+#inventory-panel .inv-external-links{
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius-md);
+    padding: 16px;
+}
+
+#inventory-panel .inv-external-links h5{
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+#inventory-panel .inv-external-links a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    padding: 7px 0;
+    border-bottom: 1px dashed var(--card-border);
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+#inventory-panel .inv-external-links a:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+#inventory-panel .inv-external-links a:hover{
+    color: var(--color-indigo);
+    padding-left: 4px;
+}
+
+/* 메인 콘텐츠 */
+#inventory-panel .inv-main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-width: 0;
+}
+
+/* 라이트모드 사이드바 오버라이드 */
+#inventory-panel.light-mode .inv-nav-item:hover{
+    background-color: rgba(76, 175, 48, 0.1);
+}
+#inventory-panel.light-mode .inv-nav-item.active{
+    background-color: rgba(76, 175, 48, 0.18);
+}
+#inventory-panel.light-mode .inv-sidebar-banner{
+    background-color: rgba(46, 111, 224, 0.06);
+}
+
 /* Header */
 #inventory-panel .app-header{
     display: flex;
