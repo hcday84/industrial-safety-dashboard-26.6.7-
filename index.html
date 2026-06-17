@@ -772,6 +772,34 @@
   <script src="kuksiwon_api.js"></script>
   <!-- PWA Service Worker 등록 -->
   <script>
+    // 발주&재고관리 사이드바 활성화
+    function invNavActivate(el) {
+      document.querySelectorAll('#inventory-panel .inv-nav-item').forEach(i => i.classList.remove('active'));
+      el.classList.add('active');
+    }
+    // 스크롤 위치에 따라 사이드바 메뉴 자동 활성화
+    document.addEventListener('DOMContentLoaded', () => {
+      const invPanel = document.getElementById('inventory-panel');
+      const sections = ['inv-search-section','inv-stats-section','inv-upload-section','inv-books-section'];
+      invPanel.addEventListener('scroll', () => {
+        let current = sections[0];
+        sections.forEach(id => {
+          const el = document.getElementById(id);
+          if (el && invPanel.scrollTop >= el.offsetTop - 120) current = id;
+        });
+        document.querySelectorAll('#inventory-panel .inv-nav-item').forEach(a => {
+          a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+        });
+      });
+      // 사이드바 링크 클릭 시 부드럽게 스크롤
+      document.querySelectorAll('#inventory-panel .inv-nav-item').forEach(a => {
+        a.addEventListener('click', e => {
+          const target = document.querySelector(a.getAttribute('href'));
+          if (target) { e.preventDefault(); invPanel.scrollTo({ top: target.offsetTop - 30, behavior: 'smooth' }); }
+        });
+      });
+    });
+
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('/sw.js').catch(() => {});
