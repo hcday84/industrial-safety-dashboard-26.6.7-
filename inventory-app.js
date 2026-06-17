@@ -54,6 +54,7 @@ const examBooksData = [
         pubDate: "2020-03-30",
         price: 50000,
         isbn: "9791188070275",
+        certification: "SQLP",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791188070275",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791188070275",
