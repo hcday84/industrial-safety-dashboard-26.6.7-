@@ -206,6 +206,7 @@ const examBooksData = [
         pubDate: "2019-02-10",
         price: 21000,
         isbn: "9788931458824",
+        certification: "사무자동화산업기사",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9788931458824",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931458824",
