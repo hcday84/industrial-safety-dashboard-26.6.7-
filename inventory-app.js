@@ -557,13 +557,15 @@ window.initInventoryApp = function() {
     function renderBooksList() {
         booksContainer.innerHTML = "";
         if (currentBooks.length === 0) {
-            booksContainer.innerHTML = `
-                <div class="empty-state">
-                    <i data-lucide="book-x"></i>
-                    <h3>일치하는 도서 목록이 없습니다.</h3>
-                    <p>다른 검색어나 필터를 선택해 주세요.</p>
-                </div>
-            `;
+            const query = searchInput.value.toLowerCase().trim();
+            const matchedCert = query ? ALL_CERTIFICATIONS.find(c => c.toLowerCase().includes(query) || query.includes(c.toLowerCase())) : null;
+            booksContainer.innerHTML = matchedCert
+              ? `<div class="empty-state">
+                  <i data-lucide="search-x"></i>
+                  <p><strong>${matchedCert}</strong> 관련 도서가 재고에 없습니다.</p>
+                  <a href="https://search.kyobobook.co.kr/search?keyword=${encodeURIComponent(matchedCert)}+수험서" target="_blank" rel="noopener noreferrer" class="btn btn-gradient btn-sm" style="margin-top:12px;display:inline-flex;align-items:center;gap:6px;"><i data-lucide="external-link"></i> 교보문고에서 수험서 찾기</a>
+                </div>`
+              : `<div class="empty-state"><i data-lucide="search-x"></i><p>검색 결과가 없습니다.</p></div>`;
             lucide.createIcons();
             return;
         }
