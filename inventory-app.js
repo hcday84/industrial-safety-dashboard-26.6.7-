@@ -192,6 +192,7 @@ const examBooksData = [
         pubDate: "2020-01-15",
         price: 30000,
         isbn: "9788931709926",
+        certification: "정보통신기사",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9788931709926",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931709926",
