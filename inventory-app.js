@@ -304,6 +304,7 @@ const examBooksData = [
         pubDate: "2023-03-15",
         price: 22000,
         isbn: "9791157677023",
+        certification: "정보처리기사",
         status: "out_of_stock",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791157677023",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791157677023",
