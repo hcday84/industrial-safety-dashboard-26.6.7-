@@ -77,6 +77,7 @@ const examBooksData = [
         pubDate: "2023-01-15",
         price: 24000,
         isbn: "9791186712399",
+        certification: "SQLD",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791186712399",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791186712399",
