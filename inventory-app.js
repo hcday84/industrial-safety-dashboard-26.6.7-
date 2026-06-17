@@ -493,6 +493,7 @@ window.initInventoryApp = function() {
                 book.author.toLowerCase().includes(query) ||
                 book.publisher.toLowerCase().includes(query) ||
                 book.isbn.includes(query) ||
+                (book.certification && book.certification.toLowerCase().includes(query)) ||
                 (book.revised && book.revised.title.toLowerCase().includes(query));
 
             let matchesStatus = true;
