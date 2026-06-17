@@ -100,6 +100,7 @@ const examBooksData = [
         pubDate: "2022-03-05",
         price: 28000,
         isbn: "9791197475146",
+        certification: "ADsP",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791197475146",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791197475146",
