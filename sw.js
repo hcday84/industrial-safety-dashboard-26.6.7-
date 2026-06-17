@@ -1,9 +1,6 @@
-const CACHE_NAME = 'cert-dashboard-v2';
+const CACHE_NAME = 'cert-dashboard-v3';
 const ASSETS = [
-  '/',
-  '/index.html',
   '/style.css',
-  '/app.js',
   '/manifest.json'
 ];
 
@@ -24,8 +21,14 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
-  // API 요청은 캐시 없이 네트워크 직접 요청
-  if (e.request.url.includes('api.odcloud.kr') || e.request.url.includes('apis.data.go.kr')) {
+  // API 요청 및 HTML 파일은 항상 네트워크 우선
+  if (
+    e.request.url.includes('api.odcloud.kr') ||
+    e.request.url.includes('apis.data.go.kr') ||
+    e.request.headers.get('accept')?.includes('text/html') ||
+    e.request.url.endsWith('.html') ||
+    e.request.url.endsWith('/')
+  ) {
     return;
   }
   e.respondWith(
