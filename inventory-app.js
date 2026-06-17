@@ -290,6 +290,7 @@ const examBooksData = [
         pubDate: "2024-02-05",
         price: 26000,
         isbn: "9788931469042",
+        certification: "SQLD",
         status: "out_of_stock",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9788931469042",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931469042",
