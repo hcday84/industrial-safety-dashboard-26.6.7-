@@ -267,6 +267,7 @@ const examBooksData = [
         pubDate: "2024-01-10",
         price: 40000,
         isbn: "9791140706419",
+        certification: "정보처리기사",
         status: "out_of_stock",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791140706419",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791140706419",
