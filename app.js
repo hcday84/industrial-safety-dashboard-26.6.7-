@@ -15433,6 +15433,8 @@ window.switchTab = function(tab) {
     if (inventoryPanel) inventoryPanel.style.display = 'block';
     if (tabDashboard) tabDashboard.classList.remove('active');
     if (tabInventory) tabInventory.classList.add('active');
+    const siteTitle = document.getElementById('site-title');
+    if (siteTitle) siteTitle.textContent = '수험서 발주&재고관리';
     document.body.style.overflow = 'hidden';
     // 발주&재고관리 앱 초기화 (최초 1회)
     if (typeof window.initInventoryApp === 'function') window.initInventoryApp();
