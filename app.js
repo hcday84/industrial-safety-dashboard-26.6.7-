@@ -15226,6 +15226,7 @@ function renderCertDropdown(query) {
       </div>
     `;
   }).join('');
+  dropdown.classList.toggle('two-col', matches.length > 10);
   dropdown.classList.add('visible');
 }
 
