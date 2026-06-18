@@ -86,6 +86,8 @@ const CERTIFICATIONS = {
     heroDesc: '중대재해처벌법 강화로 건설 및 제조업 안전관리자 채용 의무 증가! 평균 합격률 40% 장벽을 깨는 과목별 정밀 분석 데이터를 대시보드에서 확인하세요.',
     passRateSummary: '필기 40.1% | 실기 42.4%',
     avgPassRate: '41.3%',
+    avgExamRate: '80%',
+    examRateSummary: '필기 72% | 실기 88%',
     passRates: [
       { year: 2020, written: 51.3, practical: 34.2 },
       { year: 2021, written: 48.2, practical: 43.0 },
@@ -187,6 +189,8 @@ const CERTIFICATIONS = {
     heroDesc: '에너지 전환 시대, ESG 경영 의무화로 전기 전문 인력 수요 폭증! 회로이론부터 전력공학까지 방대한 범위를 체계적으로 정복하는 전략을 확인하세요.',
     passRateSummary: '필기 37.2% | 실기 49.1%',
     avgPassRate: '43.2%',
+    avgExamRate: '76%',
+    examRateSummary: '필기 66% | 실기 85%',
     passRates: [
       { year: 2020, written: 40.1, practical: 55.2 },
       { year: 2021, written: 38.5, practical: 52.3 },
@@ -267,6 +271,8 @@ const CERTIFICATIONS = {
     heroDesc: '건축법 강화 및 소방시설 의무 설치 확대로 소방 전문 인력 수요 지속 증가! 기계/전기 분야를 아우르는 소방 전문가로 거듭나세요.',
     passRateSummary: '필기 29.8% | 실기 38.5%',
     avgPassRate: '34.2%',
+    avgExamRate: '78%',
+    examRateSummary: '필기 70% | 실기 86%',
     passRates: [
       { year: 2020, written: 32.1, practical: 41.2 },
       { year: 2021, written: 31.5, practical: 40.3 },
@@ -347,6 +353,8 @@ const CERTIFICATIONS = {
     heroDesc: 'AI·클라우드 시대 IT 직군 취업의 기본 스펙! 연간 응시자 40만명이 넘는 최대 규모 자격증, 체계적인 학습 전략으로 단기 합격을 노리세요.',
     passRateSummary: '필기 59.4% | 실기 21.3%',
     avgPassRate: '40.4%',
+    avgExamRate: '79%',
+    examRateSummary: '필기 75% | 실기 82%',
     passRates: [
       { year: 2020, written: 55.8, practical: 24.7 },
       { year: 2021, written: 62.1, practical: 18.3 },
@@ -427,6 +435,8 @@ const CERTIFICATIONS = {
     heroDesc: '대형 건설사·공공기관 건설 현장 안전관리자 의무 선임 강화! 산업안전산업기사와 시너지 효과가 높은 건설 특화 안전 자격증 전략을 확인하세요.',
     passRateSummary: '필기 38.5% | 실기 44.2%',
     avgPassRate: '41.4%',
+    avgExamRate: '81%',
+    examRateSummary: '필기 74% | 실기 87%',
     passRates: [
       { year: 2020, written: 42.1, practical: 38.7 },
       { year: 2021, written: 40.5, practical: 40.2 },
@@ -510,6 +520,8 @@ const CERTIFICATIONS = {
     heroDesc: '전기산업기사는 전기설비의 설계·시공·운영 및 유지보수에 필요한 전문 기술을 검증하는 자격증입니다. 전기 안전관리 및 전력 계통 운용 능력을 체계적으로 평가합니다. 산업 현장의 전기 전문가로 활동하기 위한 필수 국가자격입니다.',
     passRateSummary: '필기 38% | 실기 42%',
     avgPassRate: '40%',
+    avgExamRate: '77%',
+    examRateSummary: '필기 69% | 실기 84%',
     passRates: [
       { year: 2020, written: 36, practical: 40 },
       { year: 2021, written: 38, practical: 41 },
@@ -564,6 +576,8 @@ const CERTIFICATIONS = {
     heroDesc: '신재생에너지발전설비기사는 태양광, 풍력 등 신재생에너지 발전 설비의 설계·시공·운용 전문 능력을 검증하는 자격증입니다. 탄소중립과 에너지 전환 정책에 따라 수요가 빠르게 증가하는 핵심 자격입니다. 신재생에너지 설비 전문가로서 미래 에너지 산업을 이끌어 갈 수 있습니다.',
     passRateSummary: '필기 42% | 실기 38%',
     avgPassRate: '40%',
+    avgExamRate: '71%',
+    examRateSummary: '필기 64% | 실기 78%',
     passRates: [
       { year: 2020, written: 39, practical: 35 },
       { year: 2021, written: 41, practical: 37 },
@@ -618,6 +632,8 @@ const CERTIFICATIONS = {
     heroDesc: '전기공사기사는 건축물 및 산업시설의 전기공사 설계·시공·감리에 필요한 전문 지식과 기술을 검증하는 국가자격증입니다. 전기공사업 등록 및 현장 대리인 자격 취득에 필수적인 자격입니다. 전기공사 현장의 핵심 인력으로 안정적인 취업과 경력 개발이 가능합니다.',
     passRateSummary: '필기 35% | 실기 45%',
     avgPassRate: '40%',
+    avgExamRate: '75%',
+    examRateSummary: '필기 68% | 실기 81%',
     passRates: [
       { year: 2020, written: 33, practical: 43 },
       { year: 2021, written: 34, practical: 44 },
@@ -672,6 +688,8 @@ const CERTIFICATIONS = {
     heroDesc: '에너지관리기사는 산업 현장의 열에너지 설비 운용, 에너지 효율 향상, 보일러 및 압력용기 관리 전반을 다루는 국가전문자격입니다. 에너지 절약 의무화 정책으로 수요가 꾸준히 증가하고 있습니다. 제조·플랜트 업종에서 에너지 관리 전문가로 활약할 수 있습니다.',
     passRateSummary: '필기 40% | 실기 36%',
     avgPassRate: '38%',
+    avgExamRate: '74%',
+    examRateSummary: '필기 67% | 실기 80%',
     passRates: [
       { year: 2020, written: 38, practical: 34 },
       { year: 2021, written: 40, practical: 35 },
@@ -726,6 +744,8 @@ const CERTIFICATIONS = {
     heroDesc: '일반기계기사는 기계 설비의 설계, 제작, 유지보수에 필요한 기계공학 전반의 전문 능력을 검증하는 국가자격증입니다. 제조업, 플랜트, 자동차 등 기계 관련 전 산업 분야에서 폭넓게 활용됩니다. 기계 전문가로서의 경력 개발과 취업에 핵심적인 자격입니다.',
     passRateSummary: '필기 30% | 실기 40%',
     avgPassRate: '35%',
+    avgExamRate: '76%',
+    examRateSummary: '필기 70% | 실기 82%',
     passRates: [
       { year: 2020, written: 28, practical: 38 },
       { year: 2021, written: 29, practical: 39 },
@@ -780,6 +800,8 @@ const CERTIFICATIONS = {
     heroDesc: '공조냉동기계기사는 냉동·공기조화 설비의 설계, 시공, 유지관리에 필요한 전문 기술을 인증하는 국가자격증입니다. 건물 에너지 효율화 및 냉난방 수요 증가로 취업 전망이 밝은 분야입니다. 빌딩, 식품, 제약 등 다양한 산업에서 활용도가 높습니다.',
     passRateSummary: '필기 36% | 실기 43%',
     avgPassRate: '40%',
+    avgExamRate: '75%',
+    examRateSummary: '필기 68% | 실기 81%',
     passRates: [
       { year: 2020, written: 34, practical: 41 },
       { year: 2021, written: 35, practical: 42 },
@@ -834,6 +856,8 @@ const CERTIFICATIONS = {
     heroDesc: '승강기기사는 엘리베이터, 에스컬레이터 등 승강기 설비의 설계·제조·검사 및 안전관리 전문 능력을 인증하는 국가자격증입니다. 승강기 안전관리법 강화로 자격증 소지자의 수요가 지속적으로 증가하고 있습니다. 건물 유지관리 및 승강기 전문 업체에서 핵심 기술자로 활동할 수 있습니다.',
     passRateSummary: '필기 45% | 실기 50%',
     avgPassRate: '47%',
+    avgExamRate: '72%',
+    examRateSummary: '필기 65% | 실기 79%',
     passRates: [
       { year: 2020, written: 43, practical: 48 },
       { year: 2021, written: 44, practical: 49 },
@@ -888,6 +912,8 @@ const CERTIFICATIONS = {
     heroDesc: '건설기계기사는 굴착기, 지게차, 크레인 등 건설기계의 점검·정비 및 안전 운용에 관한 전문 기술을 인증하는 국가자격증입니다. 건설·토목 현장의 기계 관리 전문가로 취업에 유리합니다. 건설 경기 회복과 인프라 투자 확대로 꾸준한 수요가 예상됩니다.',
     passRateSummary: '필기 33% | 실기 47%',
     avgPassRate: '40%',
+    avgExamRate: '73%',
+    examRateSummary: '필기 66% | 실기 79%',
     passRates: [
       { year: 2020, written: 31, practical: 45 },
       { year: 2021, written: 32, practical: 46 },
@@ -942,6 +968,8 @@ const CERTIFICATIONS = {
     heroDesc: '화공기사는 화학 공정 설계·운영·관리와 화학 제품 생산에 관한 전문 능력을 검증하는 국가기술자격증입니다. 석유화학, 제약, 소재 등 화학 관련 산업 전반에서 활용되는 핵심 자격입니다. 화학 공장의 안전하고 효율적인 운영을 담당하는 전문가로 성장할 수 있습니다.',
     passRateSummary: '필기 28% | 실기 38%',
     avgPassRate: '33%',
+    avgExamRate: '75%',
+    examRateSummary: '필기 68% | 실기 81%',
     passRates: [
       { year: 2020, written: 26, practical: 36 },
       { year: 2021, written: 27, practical: 37 },
@@ -996,6 +1024,8 @@ const CERTIFICATIONS = {
     heroDesc: '위험물산업기사는 위험물의 저장·취급·운반에 관한 안전 관리 전문 능력을 인증하는 국가자격증입니다. 화학 공장, 주유소, 위험물 저장 시설 등에서 법적 요건으로 자격증 소지자가 요구됩니다. 취득 난이도가 상대적으로 낮아 화학·안전 분야 진입을 위한 첫 자격으로 인기가 높습니다.',
     passRateSummary: '필기 50% | 실기 55%',
     avgPassRate: '52%',
+    avgExamRate: '83%',
+    examRateSummary: '필기 77% | 실기 89%',
     passRates: [
       { year: 2020, written: 48, practical: 53 },
       { year: 2021, written: 49, practical: 54 },
@@ -1050,6 +1080,8 @@ const CERTIFICATIONS = {
     heroDesc: '가스기사는 LPG, LNG 등 가스 설비의 설계·시공·안전관리에 관한 전문 기술을 인증하는 국가자격증입니다. 가스 안전 관련 법규 강화로 현장 수요가 꾸준히 증가하고 있습니다. 가스 설비 전문가로서 공공기관 및 민간 기업에서 안정적인 커리어를 쌓을 수 있습니다.',
     passRateSummary: '필기 38% | 실기 44%',
     avgPassRate: '41%',
+    avgExamRate: '74%',
+    examRateSummary: '필기 67% | 실기 81%',
     passRates: [
       { year: 2020, written: 36, practical: 42 },
       { year: 2021, written: 37, practical: 43 },
@@ -1104,6 +1136,8 @@ const CERTIFICATIONS = {
     heroDesc: '대기환경기사는 대기 오염의 방지·측정·관리에 관한 전문 능력을 검증하는 국가자격증입니다. 미세먼지, 온실가스 등 대기환경 문제 해결을 위한 전문가 수요가 꾸준히 증가하고 있습니다. 환경부·공공기관 및 민간 기업의 환경 관리 부서에서 핵심 인력으로 활동할 수 있습니다.',
     passRateSummary: '필기 32% | 실기 40%',
     avgPassRate: '36%',
+    avgExamRate: '72%',
+    examRateSummary: '필기 65% | 실기 79%',
     passRates: [
       { year: 2020, written: 30, practical: 38 },
       { year: 2021, written: 31, practical: 39 },
@@ -1158,6 +1192,8 @@ const CERTIFICATIONS = {
     heroDesc: '수질환경기사는 수질 오염 방지·측정 및 하수처리·폐수처리 시설 운영에 관한 전문 능력을 인증하는 국가자격증입니다. 물 환경 보전 정책 강화로 관련 전문가 수요가 지속적으로 증가하고 있습니다. 지자체, 환경공단, 제조업체의 환경 관리 부서에서 폭넓게 활용됩니다.',
     passRateSummary: '필기 35% | 실기 42%',
     avgPassRate: '38%',
+    avgExamRate: '73%',
+    examRateSummary: '필기 66% | 실기 80%',
     passRates: [
       { year: 2020, written: 33, practical: 40 },
       { year: 2021, written: 34, practical: 41 },
@@ -1212,6 +1248,8 @@ const CERTIFICATIONS = {
     heroDesc: '산업안전기사는 제조·건설 현장의 산업재해 예방과 안전보건 관리 전반을 담당하는 전문가 자격입니다. 중대재해처벌법 시행 이후 안전관리자 선임 의무가 확대되어 취업 수요가 크게 증가하였습니다. 산업안전 분야 최상위 자격으로 안정적인 경력 개발이 가능합니다.',
     passRateSummary: '필기 42% | 실기 48%',
     avgPassRate: '45%',
+    avgExamRate: '79%',
+    examRateSummary: '필기 71% | 실기 87%',
     passRates: [
       { year: 2020, written: 40, practical: 46 },
       { year: 2021, written: 41, practical: 47 },
@@ -1266,6 +1304,8 @@ const CERTIFICATIONS = {
     heroDesc: '정보보안기사는 사이버 보안 위협에 대응하는 정보 시스템 보안 설계·운영 전문 능력을 인증하는 국가자격증입니다. 사이버 공격 증가와 개인정보 보호 강화로 정보보안 전문가에 대한 수요가 폭발적으로 늘고 있습니다. IT 업계에서 가장 취업이 유리한 국가기술자격 중 하나입니다.',
     passRateSummary: '필기 25% | 실기 30%',
     avgPassRate: '28%',
+    avgExamRate: '74%',
+    examRateSummary: '필기 68% | 실기 80%',
     passRates: [
       { year: 2020, written: 23, practical: 28 },
       { year: 2021, written: 24, practical: 29 },
