@@ -2431,6 +2431,21 @@ button, input, select {
   display: block;
 }
 
+.cert-dropdown.two-col.visible {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-width: 560px;
+}
+
+.cert-dropdown.two-col .cert-dropdown-item {
+  border-bottom: 1px solid var(--border-color);
+  border-right: none;
+}
+
+.cert-dropdown.two-col .cert-dropdown-item:nth-child(odd) {
+  border-right: 1px solid var(--border-color);
+}
+
 .cert-dropdown-item {
   display: flex;
   align-items: center;
