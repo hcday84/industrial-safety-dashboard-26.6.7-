@@ -987,10 +987,10 @@ button, input, select {
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  padding: 22px;
+  padding: 14px 16px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 12px;
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
 }
@@ -1002,13 +1002,14 @@ button, input, select {
 }
 
 .stat-icon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 }
 
 .icon-cyan { background-color: rgba(59, 130, 246, 0.1); color: var(--info-color); }
