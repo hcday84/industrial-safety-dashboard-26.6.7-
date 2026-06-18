@@ -1041,7 +1041,6 @@ button, input, select {
 .stat-desc {
   font-size: 0.68rem;
   color: var(--text-muted);
-  white-space: nowrap;
 }
 
 .progress-bar-mini {
