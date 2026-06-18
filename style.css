@@ -1027,7 +1027,6 @@ button, input, select {
   font-weight: 500;
   color: var(--text-secondary);
   margin-bottom: 2px;
-  white-space: nowrap;
 }
 
 .stat-value {
