@@ -15210,7 +15210,7 @@ function renderCertDropdown(query) {
 
   const matches = Object.keys(CERTIFICATIONS).filter(name =>
     name.includes(query) || query.includes(name.substring(0, 2))
-  );
+  ).sort((a, b) => a.localeCompare(b, 'ko'));
 
   if (matches.length === 0) { dropdown.classList.remove('visible'); return; }
 
