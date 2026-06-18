@@ -14612,6 +14612,12 @@ function renderStatCards(cert) {
   const passDescEl = document.querySelector('#stat-pass .stat-desc');
   if (passValEl) passValEl.textContent = cert.avgPassRate;
   if (passDescEl) passDescEl.textContent = cert.passRateSummary;
+
+  const examValEl = document.getElementById('stat-exam-rate-value');
+  const examDescEl = document.getElementById('stat-exam-rate-desc');
+  if (examValEl) examValEl.textContent = cert.avgExamRate || '–';
+  if (examDescEl) examDescEl.textContent = cert.examRateSummary || '데이터 준비중';
+
   document.getElementById('bookmark-count').textContent = STATE.bookmarks.length;
 }
 
