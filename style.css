@@ -71,6 +71,10 @@
   --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.5);
 }
 
+.dark-theme .app-header {
+  background-color: #000000;
+}
+
 /* 2. 전역 스타일 초기화 */
 * {
   box-sizing: border-box;
