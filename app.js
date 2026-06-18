@@ -15457,6 +15457,8 @@ window.switchTab = function(tab) {
         if (el) el.style.display = '';
       });
     }
+    const siteTitle = document.getElementById('site-title');
+    if (siteTitle) siteTitle.textContent = '수험서 All in One 대시보드';
     if (searchBar) searchBar.style.display = '';
     if (resetBtn) resetBtn.style.display = '';
     if (tabDashboard) tabDashboard.classList.add('active');
