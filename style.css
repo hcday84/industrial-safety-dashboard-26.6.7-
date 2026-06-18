@@ -760,7 +760,7 @@ button, input, select {
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 16px;
+  gap: 10px;
   flex: 1;
 }
 
