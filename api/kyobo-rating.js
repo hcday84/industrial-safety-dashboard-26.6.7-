@@ -44,15 +44,23 @@ export default async function handler(req, res) {
       }
     }
 
-    // Debug: look for star/rating related HTML
-    const ratingHtmlMatch = html.match(/.{0,100}(star|rating|별점|리뷰|review|score).{0,100}/i);
-    const sampleStart = html.substring(5000, 5300);
+    // Look for SSR state (Nuxt __NUXT__, Vue initial state, etc.)
+    const nuxtMatch = html.match(/__NUXT__\s*=\s*(\{.{0,2000})/);
+    const stateMatch = html.match(/window\.__INITIAL_STATE__\s*=\s*(\{.{0,2000})/);
+    // Look for JSON data near "starScore", "ratingAvg", "reviewCount"
+    const starIdx = html.indexOf('starScore');
+    const ratingIdx = html.indexOf('ratingAvg');
+    const reviewIdx = html.indexOf('reviewCount');
     return res.status(200).json({
       rating: null,
       reviewCount: null,
       htmlLength: html.length,
-      ratingContext: ratingHtmlMatch ? ratingHtmlMatch[0] : 'none found',
-      sample: sampleStart,
+      hasNuxt: !!nuxtMatch,
+      hasInitialState: !!stateMatch,
+      starScoreAt: starIdx,
+      ratingAvgAt: ratingIdx,
+      reviewCountAt: reviewIdx,
+      nuxtSnippet: nuxtMatch ? nuxtMatch[1].substring(0, 300) : null,
     });
   } catch (e) {
     return res.status(500).json({ error: e.message });
