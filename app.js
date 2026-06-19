@@ -14324,6 +14324,7 @@ document.addEventListener('DOMContentLoaded', () => {
   } catch(e) { console.error('[restore]', e); }
 
   if (!restored) showWelcomeScreen();
+  try { initMonthlySection(); } catch(e) {}
 });
 
 // ============================================
