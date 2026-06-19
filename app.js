@@ -14307,6 +14307,161 @@ function getCert() { return CERTIFICATIONS[STATE.currentCert]; }
 // ============================================
 // 3. 초기화
 // ============================================
+// ============================================
+// 월별 시험 수험서 추출
+// ============================================
+
+let _monthlyExamCache = null;
+let _monthlyFetchPromise = null;
+
+async function fetchAllMonthlyExams() {
+  if (_monthlyExamCache) return _monthlyExamCache;
+  if (_monthlyFetchPromise) return _monthlyFetchPromise;
+
+  _monthlyFetchPromise = (async () => {
+    const monthData = {};
+    for (let m = 1; m <= 12; m++) monthData[m] = { written: [], practical: [] };
+
+    const certNames = Object.keys(JM_CODES);
+    const BATCH = 8;
+
+    for (let i = 0; i < certNames.length; i += BATCH) {
+      const batch = certNames.slice(i, i + BATCH);
+      await Promise.all(batch.map(async certName => {
+        const jmCd = JM_CODES[certName];
+        try {
+          const res = await fetch(`/api/exam-schedule?jmCd=${jmCd}&implYy=2026`);
+          if (!res.ok) return;
+          const json = await res.json();
+          const items = json?.body?.items;
+          if (!items?.length) return;
+
+          const bySeq = {};
+          items.forEach(item => {
+            const seq = item.implSeq;
+            if (!bySeq[seq]) bySeq[seq] = item;
+          });
+
+          const certInfo = CERTIFICATIONS[certName];
+          const books = certInfo?.books?.slice(0, 2) || [];
+
+          Object.values(bySeq).forEach(item => {
+            const fmtDate = d => d ? `${d.slice(4,6)}/${d.slice(6,8)}` : '';
+
+            if (item.docExamStartDt) {
+              const m = parseInt(item.docExamStartDt.slice(4, 6));
+              monthData[m].written.push({
+                certName,
+                round: `제${item.implSeq}회`,
+                dateRange: `${fmtDate(item.docExamStartDt)} ~ ${fmtDate(item.docExamEndDt)}`,
+                books,
+              });
+            }
+            if (item.pracExamStartDt) {
+              const m = parseInt(item.pracExamStartDt.slice(4, 6));
+              monthData[m].practical.push({
+                certName,
+                round: `제${item.implSeq}회`,
+                dateRange: `${fmtDate(item.pracExamStartDt)} ~ ${fmtDate(item.pracExamEndDt)}`,
+                books,
+              });
+            }
+          });
+        } catch (e) {}
+      }));
+    }
+
+    _monthlyExamCache = monthData;
+    return monthData;
+  })();
+
+  return _monthlyFetchPromise;
+}
+
+function initMonthlySection() {
+  const tabsEl = document.getElementById('month-tabs');
+  const loadingEl = document.getElementById('monthly-loading');
+  const resultEl = document.getElementById('monthly-result');
+  if (!tabsEl) return;
+
+  const months = ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'];
+  const currentMonth = new Date().getMonth() + 1;
+  let selectedMonth = currentMonth;
+
+  tabsEl.innerHTML = months.map((m, i) => `
+    <button class="month-tab-btn${i + 1 === currentMonth ? ' active' : ''}" data-month="${i + 1}">${m}</button>
+  `).join('');
+
+  tabsEl.addEventListener('click', e => {
+    const btn = e.target.closest('.month-tab-btn');
+    if (!btn) return;
+    tabsEl.querySelectorAll('.month-tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    selectedMonth = parseInt(btn.dataset.month);
+    renderMonthlyResult(selectedMonth);
+  });
+
+  async function renderMonthlyResult(month) {
+    loadingEl.style.display = 'flex';
+    resultEl.innerHTML = '';
+    const data = await fetchAllMonthlyExams();
+    loadingEl.style.display = 'none';
+
+    const { written, practical } = data[month];
+
+    if (!written.length && !practical.length) {
+      resultEl.innerHTML = `<p class="monthly-empty"><i class="fa-solid fa-circle-info"></i> ${month}월에 예정된 시험이 없습니다.</p>`;
+      return;
+    }
+
+    const renderGroup = (items, label, icon) => {
+      if (!items.length) return '';
+      return `
+        <div class="monthly-group">
+          <h3 class="monthly-group-title"><i class="${icon}"></i> ${label} <span class="monthly-count">${items.length}종</span></h3>
+          <div class="monthly-cert-list">
+            ${items.map(item => `
+              <div class="monthly-cert-card">
+                <div class="monthly-cert-header">
+                  <span class="monthly-cert-name">${item.certName}</span>
+                  <span class="monthly-cert-round">${item.round} · ${item.dateRange}</span>
+                </div>
+                ${item.books.length ? `
+                  <div class="monthly-cert-books">
+                    ${item.books.map(b => `
+                      <div class="monthly-book-chip">
+                        <span class="monthly-book-title">${b.title}</span>
+                        <span class="monthly-book-pub">${b.publisher}</span>
+                      </div>
+                    `).join('')}
+                  </div>
+                ` : '<p class="monthly-no-books">수험서 데이터 준비 중</p>'}
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    };
+
+    resultEl.innerHTML = `
+      <div class="monthly-columns">
+        ${renderGroup(written, '필기 시험', 'fa-solid fa-pencil')}
+        ${renderGroup(practical, '실기 시험', 'fa-solid fa-hammer')}
+      </div>
+    `;
+  }
+
+  // IntersectionObserver로 처음 보일 때 자동 로드
+  const section = document.getElementById('monthly-section');
+  const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) {
+      observer.disconnect();
+      renderMonthlyResult(selectedMonth);
+    }
+  }, { threshold: 0.1 });
+  if (section) observer.observe(section);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   try { initTheme(); } catch(e) {}
   try { initClock(); } catch(e) {}
