@@ -15160,7 +15160,7 @@ function renderBooks() {
         <div class="book-info">
           <span class="book-publisher">${book.publisher} 수험서</span>
           <h4 class="book-title" title="${book.title}">${book.title}</h4>
-          <div class="book-rating" data-book-id="${book.id}"><i class="fa-solid fa-star"></i><span id="rating-val-${book.id}">${rating}</span> <span id="rating-rev-${book.id}">(${reviews}평)</span></div>
+          <a href="${pageUrl}" target="_blank" rel="noopener noreferrer" class="book-rating-link"><i class="fa-solid fa-star"></i>교보문고에서 별점 확인</a>
           <div class="book-price-area">
             ${priceHTML}
           </div>
