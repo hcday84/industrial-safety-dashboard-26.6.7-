@@ -15160,7 +15160,7 @@ function renderBooks() {
         <div class="book-info">
           <span class="book-publisher">${book.publisher} 수험서</span>
           <h4 class="book-title" title="${book.title}">${book.title}</h4>
-          <div class="book-rating"><i class="fa-solid fa-star"></i><span>${rating} <span>(${reviews}평)</span></span></div>
+          <div class="book-rating" data-book-id="${book.id}"><i class="fa-solid fa-star"></i><span id="rating-val-${book.id}">${rating}</span> <span id="rating-rev-${book.id}">(${reviews}평)</span></div>
           <div class="book-price-area">
             ${priceHTML}
           </div>
