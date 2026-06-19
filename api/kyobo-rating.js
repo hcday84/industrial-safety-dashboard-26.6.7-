@@ -23,18 +23,35 @@ export default async function handler(req, res) {
       return res.status(200).json({ rating: null, reviewCount: null, htmlLength: html.length });
     }
 
-    // Kyobo search results show ratings as "10.0 (9)" or "9.8 (14)" in HTML
-    // Pattern: score followed by count in parentheses
-    const ratingMatch = html.match(/\b(10\.0|[1-9]\.\d)\s*\((\d+)\)/);
-    if (ratingMatch) {
-      return res.status(200).json({
-        rating: parseFloat(ratingMatch[1]),
-        reviewCount: parseInt(ratingMatch[2]),
-        htmlLength: html.length,
-      });
+    // Find rating patterns — try multiple formats Kyobo might use
+    const patterns = [
+      /\b(10\.0|[1-9]\.\d)\s*\((\d+)\)/,         // "9.8 (14)"
+      /"starScore"\s*:\s*"?([\d.]+)"?/,             // JSON field
+      /"ratingAvg"\s*:\s*"?([\d.]+)"?/,
+      /별점\s*[:：]?\s*([\d.]+)/,
+      /([0-9]\.[0-9])\s*점\s*\((\d+)/,
+    ];
+
+    for (const pat of patterns) {
+      const m = html.match(pat);
+      if (m) {
+        return res.status(200).json({
+          rating: parseFloat(m[1]),
+          reviewCount: m[2] ? parseInt(m[2]) : null,
+          htmlLength: html.length,
+          pattern: pat.toString(),
+        });
+      }
     }
 
-    return res.status(200).json({ rating: null, reviewCount: null, htmlLength: html.length });
+    // Debug: return a snippet around any digit.digit pattern
+    const snippetMatch = html.match(/.{0,50}[0-9]\.[0-9].{0,50}/);
+    return res.status(200).json({
+      rating: null,
+      reviewCount: null,
+      htmlLength: html.length,
+      snippet: snippetMatch ? snippetMatch[0] : 'no digit.digit found',
+    });
   } catch (e) {
     return res.status(500).json({ error: e.message });
   }
