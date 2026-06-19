@@ -15178,21 +15178,6 @@ function renderBooks() {
     ? recBooks.map(b => bookCard(b, '추천')).join('')
     : '<p class="books-empty">추천 수험서 데이터가 없습니다.</p>';
 
-  // 교보문고 실시간 별점 동기화
-  const allBooks = [...bestBooks, ...recBooks];
-  allBooks.forEach(book => {
-    fetch(`/api/kyobo-rating?title=${encodeURIComponent(book.title)}`)
-      .then(r => r.json())
-      .then(data => {
-        if (data.rating) {
-          const valEl = document.getElementById(`rating-val-${book.id}`);
-          const revEl = document.getElementById(`rating-rev-${book.id}`);
-          if (valEl) valEl.textContent = data.rating;
-          if (revEl) revEl.textContent = `(${data.reviewCount || 0}평)`;
-        }
-      })
-      .catch(() => {});
-  });
 }
 
 // ============================================
