@@ -1865,17 +1865,22 @@ button, input, select {
   -webkit-box-orient: vertical;
 }
 
-.book-rating {
-  display: flex;
+.book-rating-link {
+  display: inline-flex;
   align-items: center;
   gap: 5px;
   font-size: 0.75rem;
-  color: var(--accent-color);
-  font-weight: 700;
+  color: var(--text-muted);
+  text-decoration: none;
+  margin: 2px 0;
 }
-
-.book-rating span {
-  color: var(--text-secondary);
+.book-rating-link:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+.book-rating-link i {
+  color: #f5a623;
+  font-size: 0.75rem;
 }
 
 .book-price-area {
