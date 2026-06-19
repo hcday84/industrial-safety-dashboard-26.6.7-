@@ -44,13 +44,15 @@ export default async function handler(req, res) {
       }
     }
 
-    // Debug: return a snippet around any digit.digit pattern
-    const snippetMatch = html.match(/.{0,50}[0-9]\.[0-9].{0,50}/);
+    // Debug: look for star/rating related HTML
+    const ratingHtmlMatch = html.match(/.{0,100}(star|rating|별점|리뷰|review|score).{0,100}/i);
+    const sampleStart = html.substring(5000, 5300);
     return res.status(200).json({
       rating: null,
       reviewCount: null,
       htmlLength: html.length,
-      snippet: snippetMatch ? snippetMatch[0] : 'no digit.digit found',
+      ratingContext: ratingHtmlMatch ? ratingHtmlMatch[0] : 'none found',
+      sample: sampleStart,
     });
   } catch (e) {
     return res.status(500).json({ error: e.message });
