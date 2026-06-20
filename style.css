@@ -2696,6 +2696,35 @@ button, input, select {
   gap: 8px;
 }
 
+/* 필기: 파란색 계열 */
+.monthly-group-title--written {
+  color: var(--primary-light, #2a4aaa);
+}
+.monthly-group-title--written i {
+  color: var(--primary-light, #2a4aaa);
+}
+
+/* 실기: 주황색 계열 */
+.monthly-group-title--practical {
+  color: #d97706;
+}
+.monthly-group-title--practical i {
+  color: #d97706;
+}
+
+.dark-theme .monthly-group-title--written {
+  color: #7ba4f7;
+}
+.dark-theme .monthly-group-title--written i {
+  color: #7ba4f7;
+}
+.dark-theme .monthly-group-title--practical {
+  color: #fbbf24;
+}
+.dark-theme .monthly-group-title--practical i {
+  color: #fbbf24;
+}
+
 .monthly-count {
   font-size: 0.75rem;
   font-weight: 500;
@@ -2716,6 +2745,40 @@ button, input, select {
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 12px 14px;
+}
+
+/* 필기 카드: 파란 좌측 테두리 + 연한 파란 배경 */
+.monthly-cert-card--written {
+  border-left: 3px solid var(--primary-light, #2a4aaa);
+  background: rgba(42, 74, 170, 0.05);
+}
+.dark-theme .monthly-cert-card--written {
+  border-left-color: #7ba4f7;
+  background: rgba(123, 164, 247, 0.07);
+}
+
+/* 실기 카드: 주황 좌측 테두리 + 연한 주황 배경 */
+.monthly-cert-card--practical {
+  border-left: 3px solid #d97706;
+  background: rgba(217, 119, 6, 0.05);
+}
+.dark-theme .monthly-cert-card--practical {
+  border-left-color: #fbbf24;
+  background: rgba(251, 191, 36, 0.07);
+}
+
+/* 수험서 chip 색상 */
+.monthly-book-chip--written {
+  border-left: 2px solid var(--primary-light, #2a4aaa);
+}
+.dark-theme .monthly-book-chip--written {
+  border-left-color: #7ba4f7;
+}
+.monthly-book-chip--practical {
+  border-left: 2px solid #d97706;
+}
+.dark-theme .monthly-book-chip--practical {
+  border-left-color: #fbbf24;
 }
 
 .monthly-cert-header {

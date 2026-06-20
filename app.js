@@ -14573,14 +14573,14 @@ function initMonthlySection() {
       return;
     }
 
-    const renderGroup = (items, label, icon) => {
+    const renderGroup = (items, label, icon, type) => {
       if (!items.length) return '';
       return `
-        <div class="monthly-group">
-          <h3 class="monthly-group-title"><i class="${icon}"></i> ${label} <span class="monthly-count">${items.length}종</span></h3>
+        <div class="monthly-group monthly-group--${type}">
+          <h3 class="monthly-group-title monthly-group-title--${type}"><i class="${icon}"></i> ${label} <span class="monthly-count">${items.length}종</span></h3>
           <div class="monthly-cert-list">
             ${items.map(item => `
-              <div class="monthly-cert-card">
+              <div class="monthly-cert-card monthly-cert-card--${type}">
                 <div class="monthly-cert-header">
                   <span class="monthly-cert-name">${item.certName}</span>
                   <span class="monthly-cert-round">${item.round} · ${item.dateRange}</span>
@@ -14588,7 +14588,7 @@ function initMonthlySection() {
                 ${item.books.length ? `
                   <div class="monthly-cert-books">
                     ${item.books.map(b => `
-                      <div class="monthly-book-chip">
+                      <div class="monthly-book-chip monthly-book-chip--${type}">
                         <span class="monthly-book-title">${b.title}</span>
                         <span class="monthly-book-pub">${b.publisher}</span>
                       </div>
@@ -14604,8 +14604,8 @@ function initMonthlySection() {
 
     resultEl.innerHTML = `
       <div class="monthly-columns">
-        ${renderGroup(written, '필기 시험', 'fa-solid fa-pencil')}
-        ${renderGroup(practical, '실기 시험', 'fa-solid fa-hammer')}
+        ${renderGroup(written, '필기 시험', 'fa-solid fa-pencil', 'written')}
+        ${renderGroup(practical, '실기 시험', 'fa-solid fa-hammer', 'practical')}
       </div>
     `;
   }
