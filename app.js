@@ -14577,6 +14577,10 @@ function initMonthlySection() {
 
     const { written, practical } = data[month];
 
+    // 가나다순 정렬
+    written.sort((a, b) => a.certName.localeCompare(b.certName, 'ko'));
+    practical.sort((a, b) => a.certName.localeCompare(b.certName, 'ko'));
+
     if (!written.length && !practical.length) {
       resultEl.innerHTML = `<p class="monthly-empty"><i class="fa-solid fa-circle-info"></i> ${month}월에 예정된 시험이 없습니다.</p>`;
       return;
