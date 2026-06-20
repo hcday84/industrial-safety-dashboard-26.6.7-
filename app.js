@@ -14598,16 +14598,6 @@ function initMonthlySection() {
                   <span class="monthly-cert-name">${item.certName}</span>
                   <span class="monthly-cert-round">${item.round} · ${item.dateRange}</span>
                 </div>
-                ${item.books.length ? `
-                  <div class="monthly-cert-books">
-                    ${item.books.map(b => `
-                      <div class="monthly-book-chip monthly-book-chip--${type}">
-                        <span class="monthly-book-title">${b.title}</span>
-                        <span class="monthly-book-pub">${b.publisher}</span>
-                      </div>
-                    `).join('')}
-                  </div>
-                ` : '<p class="monthly-no-books">수험서 데이터 준비 중</p>'}
               </div>
             `).join('')}
           </div>
