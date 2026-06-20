@@ -8,6 +8,7 @@ const examBooksData = [
         pubDate: "2022-10-18",
         price: 38000,
         isbn: "9791140701605",
+        certification: "정보처리기사",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791140701605",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791140701605",
@@ -30,6 +31,7 @@ const examBooksData = [
         pubDate: "2022-01-05",
         price: 36000,
         isbn: "9788931466027",
+        certification: "정보보안기사",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9788931466027",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931466027",
@@ -52,6 +54,7 @@ const examBooksData = [
         pubDate: "2020-03-30",
         price: 50000,
         isbn: "9791188070275",
+        certification: "SQLP",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791188070275",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791188070275",
@@ -74,6 +77,7 @@ const examBooksData = [
         pubDate: "2023-01-15",
         price: 24000,
         isbn: "9791186712399",
+        certification: "SQLD",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791186712399",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791186712399",
@@ -96,6 +100,7 @@ const examBooksData = [
         pubDate: "2022-03-05",
         price: 28000,
         isbn: "9791197475146",
+        certification: "ADsP",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791197475146",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791197475146",
@@ -118,6 +123,7 @@ const examBooksData = [
         pubDate: "2021-03-10",
         price: 35000,
         isbn: "9788931556940",
+        certification: "리눅스마스터1급",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9788931556940",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931556940",
@@ -140,6 +146,7 @@ const examBooksData = [
         pubDate: "2021-06-28",
         price: 32000,
         isbn: "9791162244340",
+        certification: "AWS Solutions Architect",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791162244340",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791162244340",
@@ -162,6 +169,7 @@ const examBooksData = [
         pubDate: "2022-02-10",
         price: 39000,
         isbn: "9791157676645",
+        certification: "정보처리기사",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791157676645",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791157676645",
@@ -184,6 +192,7 @@ const examBooksData = [
         pubDate: "2020-01-15",
         price: 30000,
         isbn: "9788931709926",
+        certification: "정보통신기사",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9788931709926",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931709926",
@@ -197,6 +206,7 @@ const examBooksData = [
         pubDate: "2019-02-10",
         price: 21000,
         isbn: "9788931458824",
+        certification: "사무자동화산업기사",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9788931458824",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931458824",
@@ -210,6 +220,7 @@ const examBooksData = [
         pubDate: "2023-02-25",
         price: 29000,
         isbn: "9791136024103",
+        certification: "정보처리기사",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791136024103",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791136024103",
@@ -232,6 +243,7 @@ const examBooksData = [
         pubDate: "2022-03-20",
         price: 25000,
         isbn: "9788931466850",
+        certification: "네트워크관리사2급",
         status: "out_of_print",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9788931466850",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931466850",
@@ -255,6 +267,7 @@ const examBooksData = [
         pubDate: "2024-01-10",
         price: 40000,
         isbn: "9791140706419",
+        certification: "정보처리기사",
         status: "out_of_stock",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791140706419",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791140706419",
@@ -277,6 +290,7 @@ const examBooksData = [
         pubDate: "2024-02-05",
         price: 26000,
         isbn: "9788931469042",
+        certification: "SQLD",
         status: "out_of_stock",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9788931469042",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931469042",
@@ -290,6 +304,7 @@ const examBooksData = [
         pubDate: "2023-03-15",
         price: 22000,
         isbn: "9791157677023",
+        certification: "정보처리기사",
         status: "out_of_stock",
         kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791157677023",
         yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791157677023",
@@ -305,6 +320,64 @@ const examBooksData = [
         }
     }
 ];
+
+const ALL_CERTIFICATIONS = [
+  '산업안전산업기사','전기기사','소방설비기사','정보처리기사','건설안전산업기사',
+  '전기산업기사','신재생에너지발전설비기사','전기공사기사','에너지관리기사','일반기계기사',
+  '공조냉동기계기사','승강기기사','건설기계기사','화공기사','위험물산업기사',
+  '가스기사','대기환경기사','수질환경기사','산업안전기사','정보보안기사',
+  '빅데이터분석기사','SQLD','토목기사','건축기사','품질경영기사',
+  '전기공사산업기사','태양광발전설비기능사','에너지관리산업기사','용접기사','공조냉동기계산업기사',
+  '배관기사','메카트로닉스기사','환경기사','소음진동기사','폐기물처리기사',
+  '토양환경기사','소방설비산업기사','소방안전관리자특급','소방안전관리자1급','소방안전관리자2급',
+  '소방안전관리자3급','위험물기능사','가스산업기사','산업위생관리기사','토목산업기사',
+  '건축산업기사','실내건축기사','조경기능사','조경기사','측량및지형공간정보기사',
+  '품질경영산업기사','생산관리기술사','물류관리사','전기기능장','용접기능장',
+  '배관기능장','공조냉동기계기능장','금형기능장','기계가공조립기능장','위험물기능장',
+  '소방설비기능장','건축목공기능장','도장기능장','철근기능장','정보처리기능장',
+  '전기기능사','전기공사기능사','용접기능사','특수용접기능사','배관기능사',
+  '공조냉동기계기능사','승강기기능사','화학분석기능사','소방설비기능사(전기)','소방설비기능사(기계)',
+  '전산응용건축제도기능사','콘크리트기능사','건설재료시험기능사','측량기능사','정보처리기능사',
+  '컴퓨터그래픽스운용기능사','웹디자인기능사','미용사(일반)','미용사(피부)','미용사(네일)',
+  '미용사(메이크업)','미용기능장','피부미용사','맞춤형화장품조제관리사','이용사','이용기능장',
+  '산업위생관리산업기사','소음진동산업기사','인간공학기사','방사선관리기사','온실가스관리기사',
+  '신재생에너지발전설비산업기사','조경산업기사','도시계획기사','지적기사','로봇기구개발기사',
+  '3D프린터운용기능사','간호사','간호조무사','물리치료사','작업치료사',
+  '임상병리사','방사선사','치위생사','응급구조사1급','응급구조사2급',
+  '요양보호사','의무기록사','보건교육사','위생사','영양사',
+  '산림기능사','산림기능장','나무의사','산림기사','식물보호기사',
+  '농화학기사','건설안전기사','비파괴검사기사','재료기사','표면처리기사',
+  '전자기사','무선설비기사','자동차기사','화재감식평가기사','철도차량기사',
+  '비파괴검사산업기사','자동차산업기사','전자산업기사','정보통신산업기사','반도체설계산업기사',
+  '화학분석산업기사','금속재료산업기사','가스기능장','전자기기기능장','자동차기능장',
+  '화학분석기능장','공장관리기능장','가스기능사','자동차정비기능사','지게차운전기능사',
+  '굴착기운전기능사','전자기기기능사','비파괴검사기능사','정보통신기능사','도배기능사',
+  '건설기계산업기사','기중기운전기능사','타워크레인운전기능사','컨테이너크레인운전기능사','농기계운전기능사',
+  '천장크레인운전기능사','불도저운전기능사','로더운전기능사','모터그레이더운전기능사','롤러운전기능사',
+  '천공기운전기능사','항타및항발기운전기능사','공기압축기운전기능사','콘크리트펌프운전기능사','아스팔트피니셔운전기능사',
+  '1종운전면허(대형)','1종운전면허(보통)','2종운전면허(보통)','화물운송종사','버스운전자격',
+  '택시운전자격','이륜자동차운전면허','자동차정비기사','자동차정비산업기사','자동차정비기능장',
+  '자동차차체수리기능사','자동차보수도장기능사','자동차검사기사','자동차검사산업기사','자동변속기정비기능사',
+  '기계설계기사','기계설계산업기사','생산자동화기능사','프레스금형기능사','사출금형기능사',
+  '선반기능사','밀링기능사','판금제관기능사','냉동공조기능사','공유압기능사',
+  '기계정비산업기사','건축설비기사','건축설비산업기사','건설재료시험기사','거푸집기능사',
+  '비계기능사','타일기능사','유리시공기능사','수질환경산업기사','대기환경산업기사',
+  '환경산업기사','정보보안산업기사','전자계산기기사','전자계산기제어산업기사','전자계산기기능사',
+  '항공기체기능사','항공기관기능사','항공산업기사','항공기사','철도신호기사',
+  '철도신호산업기사','철도차량산업기사','식품기사','식품산업기사','유기농업기능사',
+  '원예기능사','화훼장식기능사','화훼장식산업기사','화훼장식기사','축산기사',
+  '축산기능사','농산물품질관리사','수산물품질관리사','종자기사','종자기능사',
+  '버섯종균기능사','식육처리기능사','가축인공수정사','유기농업기사','원예기사',
+  '전산응용기계제도기능사','산업안전기술사','건설안전기술사','소방기술사','발송배전기술사',
+  '전기응용기술사','기계기술사','화공기술사','가스기술사','정보관리기술사',
+  '정보보안기술사','컴퓨터시스템응용기술사','토목기술사','건축기술사',
+  '네트워크관리사1급','네트워크관리사2급','리눅스마스터1급','리눅스마스터2급',
+  'ADsP','ADP','SQLP','임베디드기사','멀티미디어콘텐츠제작전문가',
+  'CCNA','CCNP','AWS Solutions Architect','GCP','Azure Fundamentals',
+  '컴퓨터활용능력1급','컴퓨터활용능력2급','ITQ','MOS','CISA','CISSP',
+  '치과위생사','ISMS','정보통신기사','사무자동화산업기사'
+];
+
 let _invInit = false;
 
 window.initInventoryApp = function() {
@@ -420,6 +493,7 @@ window.initInventoryApp = function() {
                 book.author.toLowerCase().includes(query) ||
                 book.publisher.toLowerCase().includes(query) ||
                 book.isbn.includes(query) ||
+                (book.certification && book.certification.toLowerCase().includes(query)) ||
                 (book.revised && book.revised.title.toLowerCase().includes(query));
 
             let matchesStatus = true;
@@ -483,13 +557,15 @@ window.initInventoryApp = function() {
     function renderBooksList() {
         booksContainer.innerHTML = "";
         if (currentBooks.length === 0) {
-            booksContainer.innerHTML = `
-                <div class="empty-state">
-                    <i data-lucide="book-x"></i>
-                    <h3>일치하는 도서 목록이 없습니다.</h3>
-                    <p>다른 검색어나 필터를 선택해 주세요.</p>
-                </div>
-            `;
+            const query = searchInput.value.toLowerCase().trim();
+            const matchedCert = query ? ALL_CERTIFICATIONS.find(c => c.toLowerCase().includes(query) || query.includes(c.toLowerCase())) : null;
+            booksContainer.innerHTML = matchedCert
+              ? `<div class="empty-state">
+                  <i data-lucide="search-x"></i>
+                  <p><strong>${matchedCert}</strong> 관련 도서가 재고에 없습니다.</p>
+                  <a href="https://search.kyobobook.co.kr/search?keyword=${encodeURIComponent(matchedCert)}+수험서" target="_blank" rel="noopener noreferrer" class="btn btn-gradient btn-sm" style="margin-top:12px;display:inline-flex;align-items:center;gap:6px;"><i data-lucide="external-link"></i> 교보문고에서 수험서 찾기</a>
+                </div>`
+              : `<div class="empty-state"><i data-lucide="search-x"></i><p>검색 결과가 없습니다.</p></div>`;
             lucide.createIcons();
             return;
         }

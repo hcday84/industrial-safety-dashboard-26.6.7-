@@ -54,8 +54,8 @@
   --green-bg: #0d2a0b;
   --green-hover: #45c43b;
 
-  --bg-color: #080d1e;           /* 어두운 딥 네이비 */
-  --card-bg: #0f1628;
+  --bg-color: #000000;           /* 순수 검정 */
+  --card-bg: #0d0d1a;
   --text-color: #eef0f8;
   --text-secondary: #9099bf;
   --text-muted: #5a6380;
@@ -69,6 +69,10 @@
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.5);
+}
+
+.dark-theme .app-header {
+  background-color: #000000;
 }
 
 /* 2. 전역 스타일 초기화 */
@@ -293,8 +297,8 @@ button, input, select {
 .header-controls {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
+  flex-wrap: nowrap;
+  gap: 8px;
 }
 
 .control-btn {
@@ -325,6 +329,34 @@ button, input, select {
   font-size: 0.82rem;
   font-weight: 600;
   white-space: nowrap;
+}
+
+.vercel-link-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 13px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.vercel-link-btn:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.vercel-link-label {
+  display: inline;
 }
 
 .theme-label {
@@ -727,9 +759,10 @@ button, input, select {
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
   flex: 1;
+  min-width: 0;
 }
 
 /* ── 달력 위젯 ── */
@@ -955,10 +988,10 @@ button, input, select {
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  padding: 22px;
+  padding: 14px 16px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 12px;
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
 }
@@ -970,13 +1003,14 @@ button, input, select {
 }
 
 .stat-icon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 }
 
 .icon-cyan { background-color: rgba(59, 130, 246, 0.1); color: var(--info-color); }
@@ -989,23 +1023,23 @@ button, input, select {
 }
 
 .stat-info h3 {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: 500;
   color: var(--text-secondary);
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .stat-value {
   font-family: 'Outfit', sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 800;
   line-height: 1.1;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
   color: var(--text-color);
 }
 
 .stat-desc {
-  font-size: 0.75rem;
+  font-size: 0.68rem;
   color: var(--text-muted);
 }
 
@@ -1831,17 +1865,22 @@ button, input, select {
   -webkit-box-orient: vertical;
 }
 
-.book-rating {
-  display: flex;
+.book-rating-link {
+  display: inline-flex;
   align-items: center;
   gap: 5px;
   font-size: 0.75rem;
-  color: var(--accent-color);
-  font-weight: 700;
+  color: var(--text-muted);
+  text-decoration: none;
+  margin: 2px 0;
 }
-
-.book-rating span {
-  color: var(--text-secondary);
+.book-rating-link:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+.book-rating-link i {
+  color: #f5a623;
+  font-size: 0.75rem;
 }
 
 .book-price-area {
@@ -2399,6 +2438,21 @@ button, input, select {
   display: block;
 }
 
+.cert-dropdown.two-col.visible {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-width: 560px;
+}
+
+.cert-dropdown.two-col .cert-dropdown-item {
+  border-bottom: 1px solid var(--border-color);
+  border-right: none;
+}
+
+.cert-dropdown.two-col .cert-dropdown-item:nth-child(odd) {
+  border-right: 1px solid var(--border-color);
+}
+
 .cert-dropdown-item {
   display: flex;
   align-items: center;
@@ -2567,4 +2621,156 @@ button, input, select {
   .footer-right {
     align-items: flex-start;
   }
+}
+
+/* ── 월별 시험 수험서 섹션 ── */
+.monthly-section-desc {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+}
+
+.month-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.month-tab-btn {
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.month-tab-btn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.month-tab-btn.active {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+  font-weight: 600;
+}
+
+.monthly-loading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  padding: 20px 0;
+}
+
+.monthly-empty {
+  color: var(--text-muted);
+  text-align: center;
+  padding: 40px 0;
+  font-size: 0.9rem;
+}
+
+.monthly-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .monthly-columns { grid-template-columns: 1fr; }
+}
+
+.monthly-group-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.monthly-count {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: var(--bg-tertiary, var(--border-color));
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.monthly-cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.monthly-cert-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+}
+
+.monthly-cert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.monthly-cert-name {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.monthly-cert-round {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.monthly-cert-books {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.monthly-book-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 5px 10px;
+}
+
+.monthly-book-title {
+  font-size: 0.78rem;
+  color: var(--text-color);
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.monthly-book-pub {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.monthly-no-books {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-style: italic;
 }

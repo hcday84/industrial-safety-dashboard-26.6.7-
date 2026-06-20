@@ -86,6 +86,8 @@ const CERTIFICATIONS = {
     heroDesc: '중대재해처벌법 강화로 건설 및 제조업 안전관리자 채용 의무 증가! 평균 합격률 40% 장벽을 깨는 과목별 정밀 분석 데이터를 대시보드에서 확인하세요.',
     passRateSummary: '필기 40.1% | 실기 42.4%',
     avgPassRate: '41.3%',
+    avgExamRate: '80%',
+    examRateSummary: '필기 72% | 실기 88%',
     passRates: [
       { year: 2020, written: 51.3, practical: 34.2 },
       { year: 2021, written: 48.2, practical: 43.0 },
@@ -187,6 +189,8 @@ const CERTIFICATIONS = {
     heroDesc: '에너지 전환 시대, ESG 경영 의무화로 전기 전문 인력 수요 폭증! 회로이론부터 전력공학까지 방대한 범위를 체계적으로 정복하는 전략을 확인하세요.',
     passRateSummary: '필기 37.2% | 실기 49.1%',
     avgPassRate: '43.2%',
+    avgExamRate: '76%',
+    examRateSummary: '필기 66% | 실기 85%',
     passRates: [
       { year: 2020, written: 40.1, practical: 55.2 },
       { year: 2021, written: 38.5, practical: 52.3 },
@@ -267,6 +271,8 @@ const CERTIFICATIONS = {
     heroDesc: '건축법 강화 및 소방시설 의무 설치 확대로 소방 전문 인력 수요 지속 증가! 기계/전기 분야를 아우르는 소방 전문가로 거듭나세요.',
     passRateSummary: '필기 29.8% | 실기 38.5%',
     avgPassRate: '34.2%',
+    avgExamRate: '78%',
+    examRateSummary: '필기 70% | 실기 86%',
     passRates: [
       { year: 2020, written: 32.1, practical: 41.2 },
       { year: 2021, written: 31.5, practical: 40.3 },
@@ -347,6 +353,8 @@ const CERTIFICATIONS = {
     heroDesc: 'AI·클라우드 시대 IT 직군 취업의 기본 스펙! 연간 응시자 40만명이 넘는 최대 규모 자격증, 체계적인 학습 전략으로 단기 합격을 노리세요.',
     passRateSummary: '필기 59.4% | 실기 21.3%',
     avgPassRate: '40.4%',
+    avgExamRate: '79%',
+    examRateSummary: '필기 75% | 실기 82%',
     passRates: [
       { year: 2020, written: 55.8, practical: 24.7 },
       { year: 2021, written: 62.1, practical: 18.3 },
@@ -427,6 +435,8 @@ const CERTIFICATIONS = {
     heroDesc: '대형 건설사·공공기관 건설 현장 안전관리자 의무 선임 강화! 산업안전산업기사와 시너지 효과가 높은 건설 특화 안전 자격증 전략을 확인하세요.',
     passRateSummary: '필기 38.5% | 실기 44.2%',
     avgPassRate: '41.4%',
+    avgExamRate: '81%',
+    examRateSummary: '필기 74% | 실기 87%',
     passRates: [
       { year: 2020, written: 42.1, practical: 38.7 },
       { year: 2021, written: 40.5, practical: 40.2 },
@@ -510,6 +520,8 @@ const CERTIFICATIONS = {
     heroDesc: '전기산업기사는 전기설비의 설계·시공·운영 및 유지보수에 필요한 전문 기술을 검증하는 자격증입니다. 전기 안전관리 및 전력 계통 운용 능력을 체계적으로 평가합니다. 산업 현장의 전기 전문가로 활동하기 위한 필수 국가자격입니다.',
     passRateSummary: '필기 38% | 실기 42%',
     avgPassRate: '40%',
+    avgExamRate: '77%',
+    examRateSummary: '필기 69% | 실기 84%',
     passRates: [
       { year: 2020, written: 36, practical: 40 },
       { year: 2021, written: 38, practical: 41 },
@@ -564,6 +576,8 @@ const CERTIFICATIONS = {
     heroDesc: '신재생에너지발전설비기사는 태양광, 풍력 등 신재생에너지 발전 설비의 설계·시공·운용 전문 능력을 검증하는 자격증입니다. 탄소중립과 에너지 전환 정책에 따라 수요가 빠르게 증가하는 핵심 자격입니다. 신재생에너지 설비 전문가로서 미래 에너지 산업을 이끌어 갈 수 있습니다.',
     passRateSummary: '필기 42% | 실기 38%',
     avgPassRate: '40%',
+    avgExamRate: '71%',
+    examRateSummary: '필기 64% | 실기 78%',
     passRates: [
       { year: 2020, written: 39, practical: 35 },
       { year: 2021, written: 41, practical: 37 },
@@ -618,6 +632,8 @@ const CERTIFICATIONS = {
     heroDesc: '전기공사기사는 건축물 및 산업시설의 전기공사 설계·시공·감리에 필요한 전문 지식과 기술을 검증하는 국가자격증입니다. 전기공사업 등록 및 현장 대리인 자격 취득에 필수적인 자격입니다. 전기공사 현장의 핵심 인력으로 안정적인 취업과 경력 개발이 가능합니다.',
     passRateSummary: '필기 35% | 실기 45%',
     avgPassRate: '40%',
+    avgExamRate: '75%',
+    examRateSummary: '필기 68% | 실기 81%',
     passRates: [
       { year: 2020, written: 33, practical: 43 },
       { year: 2021, written: 34, practical: 44 },
@@ -672,6 +688,8 @@ const CERTIFICATIONS = {
     heroDesc: '에너지관리기사는 산업 현장의 열에너지 설비 운용, 에너지 효율 향상, 보일러 및 압력용기 관리 전반을 다루는 국가전문자격입니다. 에너지 절약 의무화 정책으로 수요가 꾸준히 증가하고 있습니다. 제조·플랜트 업종에서 에너지 관리 전문가로 활약할 수 있습니다.',
     passRateSummary: '필기 40% | 실기 36%',
     avgPassRate: '38%',
+    avgExamRate: '74%',
+    examRateSummary: '필기 67% | 실기 80%',
     passRates: [
       { year: 2020, written: 38, practical: 34 },
       { year: 2021, written: 40, practical: 35 },
@@ -726,6 +744,8 @@ const CERTIFICATIONS = {
     heroDesc: '일반기계기사는 기계 설비의 설계, 제작, 유지보수에 필요한 기계공학 전반의 전문 능력을 검증하는 국가자격증입니다. 제조업, 플랜트, 자동차 등 기계 관련 전 산업 분야에서 폭넓게 활용됩니다. 기계 전문가로서의 경력 개발과 취업에 핵심적인 자격입니다.',
     passRateSummary: '필기 30% | 실기 40%',
     avgPassRate: '35%',
+    avgExamRate: '76%',
+    examRateSummary: '필기 70% | 실기 82%',
     passRates: [
       { year: 2020, written: 28, practical: 38 },
       { year: 2021, written: 29, practical: 39 },
@@ -780,6 +800,8 @@ const CERTIFICATIONS = {
     heroDesc: '공조냉동기계기사는 냉동·공기조화 설비의 설계, 시공, 유지관리에 필요한 전문 기술을 인증하는 국가자격증입니다. 건물 에너지 효율화 및 냉난방 수요 증가로 취업 전망이 밝은 분야입니다. 빌딩, 식품, 제약 등 다양한 산업에서 활용도가 높습니다.',
     passRateSummary: '필기 36% | 실기 43%',
     avgPassRate: '40%',
+    avgExamRate: '75%',
+    examRateSummary: '필기 68% | 실기 81%',
     passRates: [
       { year: 2020, written: 34, practical: 41 },
       { year: 2021, written: 35, practical: 42 },
@@ -834,6 +856,8 @@ const CERTIFICATIONS = {
     heroDesc: '승강기기사는 엘리베이터, 에스컬레이터 등 승강기 설비의 설계·제조·검사 및 안전관리 전문 능력을 인증하는 국가자격증입니다. 승강기 안전관리법 강화로 자격증 소지자의 수요가 지속적으로 증가하고 있습니다. 건물 유지관리 및 승강기 전문 업체에서 핵심 기술자로 활동할 수 있습니다.',
     passRateSummary: '필기 45% | 실기 50%',
     avgPassRate: '47%',
+    avgExamRate: '72%',
+    examRateSummary: '필기 65% | 실기 79%',
     passRates: [
       { year: 2020, written: 43, practical: 48 },
       { year: 2021, written: 44, practical: 49 },
@@ -888,6 +912,8 @@ const CERTIFICATIONS = {
     heroDesc: '건설기계기사는 굴착기, 지게차, 크레인 등 건설기계의 점검·정비 및 안전 운용에 관한 전문 기술을 인증하는 국가자격증입니다. 건설·토목 현장의 기계 관리 전문가로 취업에 유리합니다. 건설 경기 회복과 인프라 투자 확대로 꾸준한 수요가 예상됩니다.',
     passRateSummary: '필기 33% | 실기 47%',
     avgPassRate: '40%',
+    avgExamRate: '73%',
+    examRateSummary: '필기 66% | 실기 79%',
     passRates: [
       { year: 2020, written: 31, practical: 45 },
       { year: 2021, written: 32, practical: 46 },
@@ -942,6 +968,8 @@ const CERTIFICATIONS = {
     heroDesc: '화공기사는 화학 공정 설계·운영·관리와 화학 제품 생산에 관한 전문 능력을 검증하는 국가기술자격증입니다. 석유화학, 제약, 소재 등 화학 관련 산업 전반에서 활용되는 핵심 자격입니다. 화학 공장의 안전하고 효율적인 운영을 담당하는 전문가로 성장할 수 있습니다.',
     passRateSummary: '필기 28% | 실기 38%',
     avgPassRate: '33%',
+    avgExamRate: '75%',
+    examRateSummary: '필기 68% | 실기 81%',
     passRates: [
       { year: 2020, written: 26, practical: 36 },
       { year: 2021, written: 27, practical: 37 },
@@ -996,6 +1024,8 @@ const CERTIFICATIONS = {
     heroDesc: '위험물산업기사는 위험물의 저장·취급·운반에 관한 안전 관리 전문 능력을 인증하는 국가자격증입니다. 화학 공장, 주유소, 위험물 저장 시설 등에서 법적 요건으로 자격증 소지자가 요구됩니다. 취득 난이도가 상대적으로 낮아 화학·안전 분야 진입을 위한 첫 자격으로 인기가 높습니다.',
     passRateSummary: '필기 50% | 실기 55%',
     avgPassRate: '52%',
+    avgExamRate: '83%',
+    examRateSummary: '필기 77% | 실기 89%',
     passRates: [
       { year: 2020, written: 48, practical: 53 },
       { year: 2021, written: 49, practical: 54 },
@@ -1050,6 +1080,8 @@ const CERTIFICATIONS = {
     heroDesc: '가스기사는 LPG, LNG 등 가스 설비의 설계·시공·안전관리에 관한 전문 기술을 인증하는 국가자격증입니다. 가스 안전 관련 법규 강화로 현장 수요가 꾸준히 증가하고 있습니다. 가스 설비 전문가로서 공공기관 및 민간 기업에서 안정적인 커리어를 쌓을 수 있습니다.',
     passRateSummary: '필기 38% | 실기 44%',
     avgPassRate: '41%',
+    avgExamRate: '74%',
+    examRateSummary: '필기 67% | 실기 81%',
     passRates: [
       { year: 2020, written: 36, practical: 42 },
       { year: 2021, written: 37, practical: 43 },
@@ -1104,6 +1136,8 @@ const CERTIFICATIONS = {
     heroDesc: '대기환경기사는 대기 오염의 방지·측정·관리에 관한 전문 능력을 검증하는 국가자격증입니다. 미세먼지, 온실가스 등 대기환경 문제 해결을 위한 전문가 수요가 꾸준히 증가하고 있습니다. 환경부·공공기관 및 민간 기업의 환경 관리 부서에서 핵심 인력으로 활동할 수 있습니다.',
     passRateSummary: '필기 32% | 실기 40%',
     avgPassRate: '36%',
+    avgExamRate: '72%',
+    examRateSummary: '필기 65% | 실기 79%',
     passRates: [
       { year: 2020, written: 30, practical: 38 },
       { year: 2021, written: 31, practical: 39 },
@@ -1158,6 +1192,8 @@ const CERTIFICATIONS = {
     heroDesc: '수질환경기사는 수질 오염 방지·측정 및 하수처리·폐수처리 시설 운영에 관한 전문 능력을 인증하는 국가자격증입니다. 물 환경 보전 정책 강화로 관련 전문가 수요가 지속적으로 증가하고 있습니다. 지자체, 환경공단, 제조업체의 환경 관리 부서에서 폭넓게 활용됩니다.',
     passRateSummary: '필기 35% | 실기 42%',
     avgPassRate: '38%',
+    avgExamRate: '73%',
+    examRateSummary: '필기 66% | 실기 80%',
     passRates: [
       { year: 2020, written: 33, practical: 40 },
       { year: 2021, written: 34, practical: 41 },
@@ -1212,6 +1248,8 @@ const CERTIFICATIONS = {
     heroDesc: '산업안전기사는 제조·건설 현장의 산업재해 예방과 안전보건 관리 전반을 담당하는 전문가 자격입니다. 중대재해처벌법 시행 이후 안전관리자 선임 의무가 확대되어 취업 수요가 크게 증가하였습니다. 산업안전 분야 최상위 자격으로 안정적인 경력 개발이 가능합니다.',
     passRateSummary: '필기 42% | 실기 48%',
     avgPassRate: '45%',
+    avgExamRate: '79%',
+    examRateSummary: '필기 71% | 실기 87%',
     passRates: [
       { year: 2020, written: 40, practical: 46 },
       { year: 2021, written: 41, practical: 47 },
@@ -1266,6 +1304,8 @@ const CERTIFICATIONS = {
     heroDesc: '정보보안기사는 사이버 보안 위협에 대응하는 정보 시스템 보안 설계·운영 전문 능력을 인증하는 국가자격증입니다. 사이버 공격 증가와 개인정보 보호 강화로 정보보안 전문가에 대한 수요가 폭발적으로 늘고 있습니다. IT 업계에서 가장 취업이 유리한 국가기술자격 중 하나입니다.',
     passRateSummary: '필기 25% | 실기 30%',
     avgPassRate: '28%',
+    avgExamRate: '74%',
+    examRateSummary: '필기 68% | 실기 80%',
     passRates: [
       { year: 2020, written: 23, practical: 28 },
       { year: 2021, written: 24, practical: 29 },
@@ -5168,6 +5208,162 @@ const CERTIFICATIONS = {
       '주요 과목 핵심 이론 정리',
       '기출문제 풀이 (최근 3개년)',
       '실기 대비 실습 반복 연습',
+      '최근 5개년 기출문제 1회분 실전 조건으로 풀고 오답 분석',
+    ],
+  },
+// === 맞춤형화장품 ===
+  '맞춤형화장품조제관리사': {
+    name: '맞춤형화장품조제관리사',
+    icon: 'fa-flask',
+    category: '미용·뷰티',
+    heroTitle: '2026년도 맞춤형화장품조제관리사 합격 가이드',
+    heroDesc: '맞춤형화장품조제관리사는 고객 개인의 피부 특성과 요구에 맞춰 화장품 원료를 혼합·소분하여 맞춤형 화장품을 조제·판매할 수 있는 국가자격입니다. 화장품법 개정(2020년)으로 신설된 자격으로, 맞춤형화장품 판매업소에 의무적으로 1인 이상 배치되어야 하므로 취업·창업 수요가 빠르게 성장하고 있습니다.',
+    passRateSummary: '필기 58% | (필기만 시행)',
+    avgPassRate: '58%',
+    passRates: [
+      { year: 2020, written: 52, practical: 0 },
+      { year: 2021, written: 55, practical: 0 },
+      { year: 2022, written: 57, practical: 0 },
+      { year: 2023, written: 59, practical: 0 },
+      { year: 2024, written: 62, practical: 0 },
+    ],
+    schedules: [
+      { round: '1회', writtenExam: '2026-03-14 ~ 2026-03-15', writtenResult: '2026-04-10', practicalExam: '-', practicalResult: '-' },
+      { round: '2회', writtenExam: '2026-09-05 ~ 2026-09-06', writtenResult: '2026-10-02', practicalExam: '-', practicalResult: '-' },
+    ],
+    milestones: [
+      { label: '1회 필기', date: '2026-03-14' },
+      { label: '1회 결과', date: '2026-04-10' },
+      { label: '2회 필기', date: '2026-09-05' },
+      { label: '2회 결과', date: '2026-10-02' },
+    ],
+    subjects: [
+      { name: '화장품법 관련 법령', desc: '화장품법, 맞춤형화장품 판매업 신고, 조제관리사 의무 및 준수사항' },
+      { name: '화장품 원료의 종류와 특성', desc: '기능성 원료, 보존제, 계면활성제 등 화장품 원료의 성분과 효능' },
+      { name: '화장품의 기능과 품질', desc: '기초·색조·기능성 화장품의 종류, 특성 및 품질 기준' },
+      { name: '피부 및 모발 과학', desc: '피부 구조와 기능, 피부 유형별 특성, 모발 과학 기초' },
+      { name: '맞춤형화장품 조제 및 위생', desc: '혼합·소분 기술, 조제 장비 사용법, 위생 관리 기준' },
+    ],
+    jobs: [
+      { title: '맞춤형화장품조제관리사', company: '맞춤형화장품 판매업소', salary: '2,600~3,800만원', location: '전국', type: '정규직' },
+      { title: '뷰티 컨설턴트', company: '화장품 브랜드샵·백화점', salary: '2,800~4,000만원', location: '수도권', type: '정규직' },
+      { title: '화장품 개발 연구원', company: '화장품 제조업체', salary: '3,000~4,500만원', location: '수도권', type: '정규직' },
+      { title: '맞춤형화장품 창업', company: '개인 판매업소', salary: '수익 자율', location: '전국', type: '자영업' },
+    ],
+    books: [
+      { title: '맞춤형화장품조제관리사 한권으로 끝내기', author: '맞춤형화장품수험연구회', publisher: '성안당', year: 2024, rating: 4.6 },
+      { title: '맞춤형화장품조제관리사 핵심이론 + 기출문제', author: '김미선', publisher: '크라운출판사', year: 2024, rating: 4.5 },
+      { title: '맞춤형화장품조제관리사 기출문제 해설집', author: '이수진', publisher: '에듀윌', year: 2023, rating: 4.3 },
+      { title: '화장품학 이론서 (맞춤형화장품 완벽 대비)', author: '대한화장품학회', publisher: '광문각', year: 2024, rating: 4.2 },
+    ],
+    defaultTodos: [
+      '화장품법 및 관련 법령 핵심 정리',
+      '화장품 원료 종류·특성 암기',
+      '피부 및 모발 과학 이론 학습',
+      '기출문제 풀이 (최근 3개년)',
+      '최근 5개년 기출 1회분 실전 조건으로 풀고 오답 분석',
+    ],
+  },
+// === 이용 2종 ===
+  '이용사': {
+    name: '이용사',
+    icon: 'fa-scissors',
+    category: '미용·뷰티',
+    heroTitle: '2026년도 이용사 합격 가이드',
+    heroDesc: '이용사 자격증은 남성 고객을 대상으로 헤어 커트, 면도, 두피·모발 관리 등 이용 서비스를 제공할 수 있는 국가기술자격입니다. 이발소 및 남성 전문 헤어샵 창업과 취업의 필수 자격으로, 이론과 실기를 균형 있게 준비하면 단기 합격이 가능합니다.',
+    passRateSummary: '필기 55% | 실기 60%',
+    avgPassRate: '58%',
+    passRates: [
+      { year: 2020, written: 50, practical: 55 },
+      { year: 2021, written: 52, practical: 57 },
+      { year: 2022, written: 54, practical: 59 },
+      { year: 2023, written: 56, practical: 61 },
+      { year: 2024, written: 58, practical: 63 },
+    ],
+    schedules: [
+      { round: '1회', writtenExam: '2026-01-19 ~ 2026-01-22', writtenResult: '2026-02-12', practicalExam: '2026-03-23 ~ 2026-04-05', practicalResult: '2026-04-18' },
+      { round: '2회', writtenExam: '2026-04-13 ~ 2026-04-16', writtenResult: '2026-05-07', practicalExam: '2026-06-28 ~ 2026-07-12', practicalResult: '2026-07-24' },
+      { round: '3회', writtenExam: '2026-07-27 ~ 2026-07-30', writtenResult: '2026-08-20', practicalExam: '2026-10-04 ~ 2026-10-17', practicalResult: '2026-11-06' },
+    ],
+    milestones: [
+      { label: '1회 필기', date: '2026-01-19' },
+      { label: '1회 실기', date: '2026-03-23' },
+      { label: '2회 필기', date: '2026-04-13' },
+      { label: '2회 실기', date: '2026-06-28' },
+    ],
+    subjects: [
+      { name: '이용이론', desc: '헤어 커트, 면도, 퍼머, 염색 등 이용 기술의 기초 이론과 실무 지식' },
+      { name: '피부학', desc: '두피 및 모발의 구조, 유형, 트러블 원인과 관리법' },
+      { name: '공중보건학', desc: '위생 관리, 감염병 예방, 공중위생 환경 관련 기초 지식' },
+      { name: '화장품학', desc: '이용 관련 화장품·제품의 성분, 종류 및 안전한 사용법' },
+      { name: '관련법규', desc: '공중위생관리법, 이용업 영업 기준 및 위생 관련 법령' },
+    ],
+    jobs: [
+      { title: '이용사', company: '이발소·남성 헤어샵', salary: '2,400~3,400만원', location: '전국', type: '정규직' },
+      { title: '이용실 창업', company: '개인 이용실', salary: '수익 자율', location: '전국', type: '자영업' },
+      { title: '이용 강사', company: '직업훈련원·미용학원', salary: '2,600~3,800만원', location: '전국', type: '정규직' },
+      { title: '호텔 이용사', company: '특급호텔·리조트', salary: '2,800~4,000만원', location: '수도권·제주', type: '정규직' },
+    ],
+    books: [
+      { title: '이용사 필기 핵심이론 + 기출문제', author: '이용수험연구회', publisher: '성안당', year: 2024, rating: 4.4 },
+      { title: '이용사 실기 완전정복', author: '김대현', publisher: '크라운출판사', year: 2024, rating: 4.3 },
+      { title: '이용사 기출문제 해설집', author: '박성민', publisher: '에듀윌', year: 2023, rating: 4.2 },
+      { title: '이용 NCS 기반 이론서', author: '한국이용교육연구원', publisher: '광문각', year: 2024, rating: 4.1 },
+    ],
+    defaultTodos: [
+      '필기 시험 범위 파악 및 출제 경향 분석',
+      '이용이론·공중보건학 핵심 이론 정리',
+      '기출문제 풀이 (최근 3개년)',
+      '실기 커트·면도 반복 연습',
+      '최근 5개년 기출문제 1회분 실전 조건으로 풀고 오답 분석',
+    ],
+  },
+  '이용기능장': {
+    name: '이용기능장',
+    icon: 'fa-award',
+    category: '미용·뷰티',
+    heroTitle: '2026년도 이용기능장 합격 가이드',
+    heroDesc: '이용기능장은 이용 분야의 최고 국가기술자격으로, 고급 이용 기술과 경영·교육 능력을 검증합니다. 이용 관련 최고 수준의 실무 능력을 인정받아 이용 기술 교육자, 고급 헤어샵 운영, 경진대회 심사 위원 등으로 활동할 수 있습니다. 이용사 자격 취득 후 실무 경력을 쌓고 도전하는 최상위 자격입니다.',
+    passRateSummary: '필기 40% | 실기 45%',
+    avgPassRate: '43%',
+    passRates: [
+      { year: 2020, written: 36, practical: 40 },
+      { year: 2021, written: 38, practical: 42 },
+      { year: 2022, written: 40, practical: 44 },
+      { year: 2023, written: 41, practical: 46 },
+      { year: 2024, written: 43, practical: 48 },
+    ],
+    schedules: [
+      { round: '1회', writtenExam: '2026-04-13 ~ 2026-04-16', writtenResult: '2026-05-07', practicalExam: '2026-06-28 ~ 2026-07-12', practicalResult: '2026-07-24' },
+    ],
+    milestones: [
+      { label: '1회 필기', date: '2026-04-13' },
+      { label: '1회 실기', date: '2026-06-28' },
+    ],
+    subjects: [
+      { name: '이용 고급 기술', desc: '커트, 퍼머, 염색, 면도 등 이용의 고급 기술 및 디자인 응용' },
+      { name: '경영 및 교육론', desc: '이용실 경영 관리, 인력 운영, 고객 서비스 전략 및 교육 방법론' },
+      { name: '피부학 및 모발과학', desc: '두피·모발의 구조와 과학적 분석, 트러블 진단 및 처방' },
+      { name: '공중보건학 및 위생관리', desc: '이용업 위생 기준, 감염 예방, 공중위생관리법 심화' },
+      { name: '화장품학 심화', desc: '이용 전문 화장품·케미컬 제품 성분 분석 및 활용 기술' },
+    ],
+    jobs: [
+      { title: '이용 기술 교육자', company: '직업훈련원·이용학원', salary: '3,200~4,800만원', location: '전국', type: '정규직' },
+      { title: '고급 이용실 원장', company: '프리미엄 이발소·헤어샵', salary: '수익 자율', location: '전국', type: '자영업' },
+      { title: '이용 경진대회 심사위원', company: '공공기관·협회', salary: '건당 협의', location: '전국', type: '계약직' },
+      { title: '이용 분야 직업훈련 교사', company: '한국폴리텍·직업전문학교', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
+    ],
+    books: [
+      { title: '이용기능장 필기 핵심이론 + 기출문제', author: '이용기능장수험연구회', publisher: '성안당', year: 2024, rating: 4.5 },
+      { title: '이용기능장 실기 완전정복', author: '이재용', publisher: '크라운출판사', year: 2024, rating: 4.4 },
+      { title: '이용기능장 기출문제 해설집', author: '정현민', publisher: '에듀윌', year: 2023, rating: 4.3 },
+      { title: '이용 고급 기술 이론서', author: '한국이용기능장협회', publisher: '광문각', year: 2024, rating: 4.2 },
+    ],
+    defaultTodos: [
+      '이용 고급 기술 이론 심화 학습',
+      '경영·교육론 핵심 이론 정리',
+      '기출문제 풀이 (최근 3개년)',
+      '실기 고급 커트·퍼머·염색 반복 연습',
       '최근 5개년 기출문제 1회분 실전 조건으로 풀고 오답 분석',
     ],
   },
@@ -14270,6 +14466,161 @@ function getCert() { return CERTIFICATIONS[STATE.currentCert]; }
 // ============================================
 // 3. 초기화
 // ============================================
+// ============================================
+// 월별 시험 수험서 추출
+// ============================================
+
+let _monthlyExamCache = null;
+let _monthlyFetchPromise = null;
+
+async function fetchAllMonthlyExams() {
+  if (_monthlyExamCache) return _monthlyExamCache;
+  if (_monthlyFetchPromise) return _monthlyFetchPromise;
+
+  _monthlyFetchPromise = (async () => {
+    const monthData = {};
+    for (let m = 1; m <= 12; m++) monthData[m] = { written: [], practical: [] };
+
+    const certNames = Object.keys(JM_CODES);
+    const BATCH = 8;
+
+    for (let i = 0; i < certNames.length; i += BATCH) {
+      const batch = certNames.slice(i, i + BATCH);
+      await Promise.all(batch.map(async certName => {
+        const jmCd = JM_CODES[certName];
+        try {
+          const res = await fetch(`/api/exam-schedule?jmCd=${jmCd}&implYy=2026`);
+          if (!res.ok) return;
+          const json = await res.json();
+          const items = json?.body?.items;
+          if (!items?.length) return;
+
+          const bySeq = {};
+          items.forEach(item => {
+            const seq = item.implSeq;
+            if (!bySeq[seq]) bySeq[seq] = item;
+          });
+
+          const certInfo = CERTIFICATIONS[certName];
+          const books = certInfo?.books?.slice(0, 2) || [];
+
+          Object.values(bySeq).forEach(item => {
+            const fmtDate = d => d ? `${d.slice(4,6)}/${d.slice(6,8)}` : '';
+
+            if (item.docExamStartDt) {
+              const m = parseInt(item.docExamStartDt.slice(4, 6));
+              monthData[m].written.push({
+                certName,
+                round: `제${item.implSeq}회`,
+                dateRange: `${fmtDate(item.docExamStartDt)} ~ ${fmtDate(item.docExamEndDt)}`,
+                books,
+              });
+            }
+            if (item.pracExamStartDt) {
+              const m = parseInt(item.pracExamStartDt.slice(4, 6));
+              monthData[m].practical.push({
+                certName,
+                round: `제${item.implSeq}회`,
+                dateRange: `${fmtDate(item.pracExamStartDt)} ~ ${fmtDate(item.pracExamEndDt)}`,
+                books,
+              });
+            }
+          });
+        } catch (e) {}
+      }));
+    }
+
+    _monthlyExamCache = monthData;
+    return monthData;
+  })();
+
+  return _monthlyFetchPromise;
+}
+
+function initMonthlySection() {
+  const tabsEl = document.getElementById('month-tabs');
+  const loadingEl = document.getElementById('monthly-loading');
+  const resultEl = document.getElementById('monthly-result');
+  if (!tabsEl) return;
+
+  const months = ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'];
+  const currentMonth = new Date().getMonth() + 1;
+  let selectedMonth = currentMonth;
+
+  tabsEl.innerHTML = months.map((m, i) => `
+    <button class="month-tab-btn${i + 1 === currentMonth ? ' active' : ''}" data-month="${i + 1}">${m}</button>
+  `).join('');
+
+  tabsEl.addEventListener('click', e => {
+    const btn = e.target.closest('.month-tab-btn');
+    if (!btn) return;
+    tabsEl.querySelectorAll('.month-tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    selectedMonth = parseInt(btn.dataset.month);
+    renderMonthlyResult(selectedMonth);
+  });
+
+  async function renderMonthlyResult(month) {
+    loadingEl.style.display = 'flex';
+    resultEl.innerHTML = '';
+    const data = await fetchAllMonthlyExams();
+    loadingEl.style.display = 'none';
+
+    const { written, practical } = data[month];
+
+    if (!written.length && !practical.length) {
+      resultEl.innerHTML = `<p class="monthly-empty"><i class="fa-solid fa-circle-info"></i> ${month}월에 예정된 시험이 없습니다.</p>`;
+      return;
+    }
+
+    const renderGroup = (items, label, icon) => {
+      if (!items.length) return '';
+      return `
+        <div class="monthly-group">
+          <h3 class="monthly-group-title"><i class="${icon}"></i> ${label} <span class="monthly-count">${items.length}종</span></h3>
+          <div class="monthly-cert-list">
+            ${items.map(item => `
+              <div class="monthly-cert-card">
+                <div class="monthly-cert-header">
+                  <span class="monthly-cert-name">${item.certName}</span>
+                  <span class="monthly-cert-round">${item.round} · ${item.dateRange}</span>
+                </div>
+                ${item.books.length ? `
+                  <div class="monthly-cert-books">
+                    ${item.books.map(b => `
+                      <div class="monthly-book-chip">
+                        <span class="monthly-book-title">${b.title}</span>
+                        <span class="monthly-book-pub">${b.publisher}</span>
+                      </div>
+                    `).join('')}
+                  </div>
+                ` : '<p class="monthly-no-books">수험서 데이터 준비 중</p>'}
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    };
+
+    resultEl.innerHTML = `
+      <div class="monthly-columns">
+        ${renderGroup(written, '필기 시험', 'fa-solid fa-pencil')}
+        ${renderGroup(practical, '실기 시험', 'fa-solid fa-hammer')}
+      </div>
+    `;
+  }
+
+  // IntersectionObserver로 처음 보일 때 자동 로드
+  const section = document.getElementById('monthly-section');
+  const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) {
+      observer.disconnect();
+      renderMonthlyResult(selectedMonth);
+    }
+  }, { threshold: 0.1 });
+  if (section) observer.observe(section);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   try { initTheme(); } catch(e) {}
   try { initClock(); } catch(e) {}
@@ -14287,6 +14638,7 @@ document.addEventListener('DOMContentLoaded', () => {
   } catch(e) { console.error('[restore]', e); }
 
   if (!restored) showWelcomeScreen();
+  try { initMonthlySection(); } catch(e) {}
 });
 
 // ============================================
@@ -14575,6 +14927,12 @@ function renderStatCards(cert) {
   const passDescEl = document.querySelector('#stat-pass .stat-desc');
   if (passValEl) passValEl.textContent = cert.avgPassRate;
   if (passDescEl) passDescEl.textContent = cert.passRateSummary;
+
+  const examValEl = document.getElementById('stat-exam-rate-value');
+  const examDescEl = document.getElementById('stat-exam-rate-desc');
+  if (examValEl) examValEl.textContent = cert.avgExamRate || '–';
+  if (examDescEl) examDescEl.textContent = cert.examRateSummary || '데이터 준비중';
+
   document.getElementById('bookmark-count').textContent = STATE.bookmarks.length;
 }
 
@@ -15085,7 +15443,7 @@ function renderBooks() {
     const mockBg = book.coverBg || 'linear-gradient(135deg,#0d1f5e,#4db843)';
     const mockTitle = book.title.replace(/\([^)]*\)/g, '').trim();
     const coverHTML = book.imageUrl
-      ? `<img src="${book.imageUrl}" alt="${book.title}" class="book-cover-img"
+      ? `<img src="${book.imageUrl}" alt="${book.title}" class="book-cover-img" crossorigin="anonymous"
            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
            onload="(function(img){try{var c=document.createElement('canvas');c.width=40;c.height=40;var x=c.getContext('2d');x.drawImage(img,80,80,40,40,0,0,40,40);var d=x.getImageData(0,0,40,40).data,s=0,s2=0,n=d.length/4;for(var i=0;i<d.length;i+=4){var v=(d[i]+d[i+1]+d[i+2])/3;s+=v;s2+=v*v;}var variance=s2/n-(s/n)*(s/n);if(variance<10){img.style.display='none';img.nextElementSibling.style.display='flex';}}catch(e){}})(this)">
          <div class="book-cover-mock" style="background:${mockBg}; display:none;">
@@ -15117,7 +15475,7 @@ function renderBooks() {
         <div class="book-info">
           <span class="book-publisher">${book.publisher} 수험서</span>
           <h4 class="book-title" title="${book.title}">${book.title}</h4>
-          <div class="book-rating"><i class="fa-solid fa-star"></i><span>${rating} <span>(${reviews}평)</span></span></div>
+          <a href="${pageUrl}" target="_blank" rel="noopener noreferrer" class="book-rating-link"><i class="fa-solid fa-star"></i>교보문고에서 별점 확인</a>
           <div class="book-price-area">
             ${priceHTML}
           </div>
@@ -15134,6 +15492,7 @@ function renderBooks() {
   recContainer.innerHTML = recBooks.length
     ? recBooks.map(b => bookCard(b, '추천')).join('')
     : '<p class="books-empty">추천 수험서 데이터가 없습니다.</p>';
+
 }
 
 // ============================================
@@ -15213,7 +15572,7 @@ function renderCertDropdown(query) {
 
   const matches = Object.keys(CERTIFICATIONS).filter(name =>
     name.includes(query) || query.includes(name.substring(0, 2))
-  );
+  ).sort((a, b) => a.localeCompare(b, 'ko'));
 
   if (matches.length === 0) { dropdown.classList.remove('visible'); return; }
 
@@ -15229,6 +15588,7 @@ function renderCertDropdown(query) {
       </div>
     `;
   }).join('');
+  dropdown.classList.toggle('two-col', matches.length > 10);
   dropdown.classList.add('visible');
 }
 
@@ -15378,7 +15738,7 @@ function initEventListeners() {
 // 전역 스크롤 싱크 (클로저 문제 없이 항상 최신 DOM 참조)
 // ============================================
 (function() {
-  const SECTION_IDS = ['schedule-section', 'books-section', 'jobs-section', 'analytics-section'];
+  const SECTION_IDS = ['schedule-section', 'monthly-section', 'books-section', 'jobs-section', 'analytics-section'];
 
   function syncNavOnScroll() {
     const threshold = window.scrollY + window.innerHeight * 0.5;
@@ -15436,6 +15796,8 @@ window.switchTab = function(tab) {
     if (inventoryPanel) inventoryPanel.style.display = 'block';
     if (tabDashboard) tabDashboard.classList.remove('active');
     if (tabInventory) tabInventory.classList.add('active');
+    const siteTitle = document.getElementById('site-title');
+    if (siteTitle) siteTitle.textContent = '수험서 발주&재고관리';
     document.body.style.overflow = 'hidden';
     // 발주&재고관리 앱 초기화 (최초 1회)
     if (typeof window.initInventoryApp === 'function') window.initInventoryApp();
@@ -15458,6 +15820,8 @@ window.switchTab = function(tab) {
         if (el) el.style.display = '';
       });
     }
+    const siteTitle = document.getElementById('site-title');
+    if (siteTitle) siteTitle.textContent = '수험서 All in One 대시보드';
     if (searchBar) searchBar.style.display = '';
     if (resetBtn) resetBtn.style.display = '';
     if (tabDashboard) tabDashboard.classList.add('active');

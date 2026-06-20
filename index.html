@@ -38,7 +38,7 @@
         <div class="logo-icon">
           <i class="fa-solid fa-screwdriver-wrench"></i>
         </div>
-        <h1>수험서 All in One 대시보드</h1>
+        <h1 id="site-title">수험서 All in One 대시보드</h1>
       </div>
 
       <div class="header-search-bar" id="header-search-bar">
@@ -61,6 +61,10 @@
       </button>
 
       <div class="header-controls">
+        <a href="https://industrial-safety-dashboard-26-6-7.vercel.app/" target="_blank" class="vercel-link-btn" title="Vercel 배포 사이트 열기">
+          <i class="fa-solid fa-globe"></i>
+          <span class="vercel-link-label">vercel 배포</span>
+        </a>
         <button id="theme-toggle-btn" class="control-btn theme-toggle-btn" title="테마 변경">
           <i class="fa-solid fa-moon"></i>
           <span class="theme-label">다크모드</span>
@@ -255,8 +259,19 @@
           </div>
           <div class="stat-info">
             <h3>최근 평균 합격률</h3>
-            <p class="stat-value">41.3%</p>
-            <span class="stat-desc">필기 40.1% | 실기 42.4%</span>
+            <p class="stat-value" id="stat-pass-value">41.3%</p>
+            <span class="stat-desc" id="stat-pass-desc">필기 40.1% | 실기 42.4%</span>
+          </div>
+        </div>
+
+        <div class="stat-card" id="stat-exam-rate">
+          <div class="stat-icon icon-purple">
+            <i class="fa-solid fa-user-check"></i>
+          </div>
+          <div class="stat-info">
+            <h3>최근 평균 응시률</h3>
+            <p class="stat-value" id="stat-exam-rate-value">–</p>
+            <span class="stat-desc" id="stat-exam-rate-desc">자격증을 선택하세요</span>
           </div>
         </div>
       </div>
@@ -273,6 +288,9 @@
       <nav class="nav-links">
         <a href="#schedule-section" class="nav-item active">
           <i class="fa-regular fa-calendar-days"></i> 2026 시험 일정
+        </a>
+        <a href="#monthly-section" class="nav-item">
+          <i class="fa-solid fa-calendar-check"></i> 월별 수험서 일정 조회
         </a>
         <a href="#books-section" class="nav-item">
           <i class="fa-solid fa-book-open"></i> 교보문고 베스트셀러 및 추천 수험서
@@ -317,7 +335,21 @@
         </div>
       </section>
 
-      <!-- Section 2: Recommended Books (Kyobo style) -->
+      <!-- Section 2: Monthly Exam Books -->
+      <section id="monthly-section" class="dashboard-section card-box">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-calendar-check text-teal"></i> 월별 시험 수험서 추출</h2>
+          <span class="badge badge-info">2026년 일정 기준</span>
+        </div>
+        <p class="monthly-section-desc">월을 선택하면 해당 월에 필기·실기 시험이 예정된 자격증과 추천 수험서를 자동으로 추출합니다.</p>
+        <div class="month-tabs" id="month-tabs"></div>
+        <div id="monthly-loading" class="monthly-loading" style="display:none">
+          <i class="fa-solid fa-spinner fa-spin"></i> 전체 자격증 시험 일정을 조회 중입니다...
+        </div>
+        <div id="monthly-result" class="monthly-result"></div>
+      </section>
+
+      <!-- Section 3: Recommended Books (Kyobo style) -->
       <section id="books-section" class="dashboard-section card-box">
         <div class="section-header">
           <h2><i class="fa-solid fa-book-open text-teal"></i> 교보문고 베스트셀러 및 추천 수험서</h2>
@@ -431,6 +463,7 @@
         </div>
       </section>
 
+
     </main>
   </div>
 
@@ -497,20 +530,46 @@
     <div class="bg-glow bg-glow-1"></div>
     <div class="bg-glow bg-glow-2"></div>
     <div class="app-container">
-      <header class="app-header">
-        <div class="header-logo">
-          <div class="logo-icon"><i data-lucide="book-open"></i></div>
-          <div class="logo-text">
-            <h1>수험서 All in One 대시보드</h1>
-            <p>All-in-One Study Book Manager</p>
-          </div>
-        </div>
-        <div class="user-profile">
-          <span class="badge badge-primary">수험서 전문 북마스터</span>
-        </div>
-      </header>
+      <div class="inv-layout">
 
-      <div class="filter-controls card-glass">
+      <!-- 발주&재고관리 사이드바 -->
+      <aside class="inv-sidebar">
+        <div class="inv-sidebar-title">
+          <i class="fa-solid fa-list"></i> 발주&amp;재고관리 메뉴
+        </div>
+        <nav class="inv-nav-links">
+          <a href="#inv-search-section" class="inv-nav-item active" onclick="invNavActivate(this)">
+            <i class="fa-solid fa-magnifying-glass"></i> 수험서 발주 관리
+          </a>
+          <a href="#inv-stats-section" class="inv-nav-item" onclick="invNavActivate(this)">
+            <i class="fa-solid fa-chart-bar"></i> 수험서 종.권수 보유 현황
+          </a>
+          <a href="#inv-upload-section" class="inv-nav-item" onclick="invNavActivate(this)">
+            <i class="fa-solid fa-file-arrow-up"></i> 수험서 품.절판 현황
+          </a>
+          <a href="#inv-books-section" class="inv-nav-item" onclick="invNavActivate(this)">
+            <i class="fa-solid fa-book-open"></i> 수험서 미회전 현황
+          </a>
+        </nav>
+        <div class="inv-sidebar-banner">
+          <h4><i class="fa-solid fa-circle-info"></i> 관리 안내</h4>
+          <p>절판·품절 도서를 확인하고 개정판으로 발주를 전환하세요.</p>
+        </div>
+        <div class="inv-external-links">
+          <h5>바로가기</h5>
+          <a href="https://product.kyobobook.co.kr/category/KOR/26" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-square-arrow-up-right"></i> 교보문고 수험서 홈
+          </a>
+<a href="https://www.q-net.or.kr" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-link"></i> Q-Net 자격증 정보
+          </a>
+        </div>
+      </aside>
+
+      <!-- 발주&재고관리 메인 콘텐츠 -->
+      <div class="inv-main-content">
+
+      <div id="inv-search-section" class="filter-controls card-glass">
         <div class="search-box">
           <i data-lucide="search" class="search-icon"></i>
           <input type="text" id="searchInput" placeholder="ISBN, 도서명, 저자, 출판사, 자격증 검색...">
@@ -550,7 +609,7 @@
         </div>
       </div>
 
-      <section class="stats-grid">
+      <section id="inv-stats-section" class="stats-grid">
         <div class="stats-card card-glass">
           <div class="stats-info">
             <span class="stats-label">전체 수험서 데이터</span>
@@ -585,7 +644,7 @@
         </div>
       </section>
 
-      <section class="upload-analyzer card-glass">
+      <section id="inv-upload-section" class="upload-analyzer card-glass">
         <div class="upload-analyzer-header" id="analyzerToggle">
           <div class="upload-analyzer-title">
             <i data-lucide="file-search"></i>
@@ -617,7 +676,7 @@
         </div>
       </section>
 
-      <main class="dashboard-workspace card-glass">
+      <main id="inv-books-section" class="dashboard-workspace card-glass">
         <div class="books-display-wrapper">
           <div class="table-header-row">
             <div class="col-title">구버전(절판) 도서 정보</div>
@@ -633,6 +692,9 @@
           </div>
         </div>
       </main>
+
+      </div><!-- /.inv-main-content -->
+      </div><!-- /.inv-layout -->
     </div>
 
     <!-- 비교 모달 -->
@@ -736,6 +798,34 @@
   <script src="kuksiwon_api.js"></script>
   <!-- PWA Service Worker 등록 -->
   <script>
+    // 발주&재고관리 사이드바 활성화
+    function invNavActivate(el) {
+      document.querySelectorAll('#inventory-panel .inv-nav-item').forEach(i => i.classList.remove('active'));
+      el.classList.add('active');
+    }
+    // 스크롤 위치에 따라 사이드바 메뉴 자동 활성화
+    document.addEventListener('DOMContentLoaded', () => {
+      const invPanel = document.getElementById('inventory-panel');
+      const sections = ['inv-search-section','inv-stats-section','inv-upload-section','inv-books-section'];
+      invPanel.addEventListener('scroll', () => {
+        let current = sections[0];
+        sections.forEach(id => {
+          const el = document.getElementById(id);
+          if (el && invPanel.scrollTop >= el.offsetTop - 120) current = id;
+        });
+        document.querySelectorAll('#inventory-panel .inv-nav-item').forEach(a => {
+          a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+        });
+      });
+      // 사이드바 링크 클릭 시 부드럽게 스크롤
+      document.querySelectorAll('#inventory-panel .inv-nav-item').forEach(a => {
+        a.addEventListener('click', e => {
+          const target = document.querySelector(a.getAttribute('href'));
+          if (target) { e.preventDefault(); invPanel.scrollTo({ top: target.offsetTop - 30, behavior: 'smooth' }); }
+        });
+      });
+    });
+
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('/sw.js').catch(() => {});
