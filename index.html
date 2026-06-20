@@ -28,7 +28,7 @@
   <meta name="apple-mobile-web-app-title" content="수험서 대시보드">
   <link rel="apple-touch-icon" href="icons/icon-192.png">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css?v=20260620f">
+  <link rel="stylesheet" href="style.css?v=20260620g">
 </head>
 <body>
   <!-- Header Navigation -->
@@ -308,6 +308,9 @@
         <a href="#books-section" class="nav-item">
           <i class="fa-solid fa-book-open"></i> 교보문고 베스트셀러 및 추천 수험서
         </a>
+        <a href="#news-section" class="nav-item">
+          <i class="fa-solid fa-newspaper"></i> 수험서 관련 뉴스 보기
+        </a>
         <a href="#jobs-section" class="nav-item">
           <i class="fa-solid fa-bullhorn"></i> 맞춤형 채용 공고
         </a>
@@ -375,6 +378,17 @@
         </div>
         <div class="books-grid" id="books-recommend-container">
           <!-- 추천수험서 카드 -->
+        </div>
+      </section>
+
+      <!-- Section: News -->
+      <section id="news-section" class="dashboard-section card-box">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-newspaper text-teal"></i> 수험서 관련 뉴스</h2>
+          <span class="badge badge-info" id="news-cert-badge"></span>
+        </div>
+        <div id="news-container" class="news-container">
+          <div class="news-loading"><i class="fa-solid fa-spinner fa-spin"></i> 뉴스를 불러오는 중...</div>
         </div>
       </section>
 
@@ -792,7 +806,7 @@
   <!-- 발주&재고관리 탭 JS -->
   <script src="inventory-app.js"></script>
   <!-- App Javascript -->
-  <script src="app.js?v=20260620f"></script>
+  <script src="app.js?v=20260620g"></script>
   <!-- 한국보건의료인국가시험원 시험일정 API -->
   <script src="kuksiwon_api.js"></script>
   <!-- PWA Service Worker 등록 -->

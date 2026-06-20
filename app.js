@@ -14837,6 +14837,7 @@ function renderAll() {
   renderStatCards(cert);
   renderDdays(cert);
   renderExamCalendar(cert);
+  renderNews();
   renderJobs();
   renderBooks();
   renderChart(cert);
@@ -15237,6 +15238,59 @@ function drawCalendar() {
   }
   daysEl.innerHTML = html;
 }
+// ============================================
+// 10-0. 수험서 관련 뉴스 렌더링
+// ============================================
+function renderNews() {
+  const container = document.getElementById('news-container');
+  const badge = document.getElementById('news-cert-badge');
+  if (!container) return;
+
+  const certName = STATE.currentCert;
+  if (badge) badge.textContent = certName;
+
+  // 네이버 뉴스 검색 URL (새 탭으로 열기)
+  const naverNewsUrl = `https://search.naver.com/search.naver?where=news&query=${encodeURIComponent(certName + ' 수험서')}`;
+  const naverBlogUrl = `https://search.naver.com/search.naver?where=blog&query=${encodeURIComponent(certName + ' 수험서')}`;
+  const googleNewsUrl = `https://news.google.com/search?q=${encodeURIComponent(certName + ' 자격증')}&hl=ko`;
+
+  container.innerHTML = `
+    <div class="news-links-row">
+      <a href="${naverNewsUrl}" target="_blank" rel="noopener noreferrer" class="news-link-card">
+        <div class="news-link-icon" style="background:#03c75a">
+          <i class="fa-solid fa-n" style="font-size:1.2rem;font-weight:900;color:#fff">N</i>
+        </div>
+        <div class="news-link-info">
+          <span class="news-link-title">네이버 뉴스 검색</span>
+          <span class="news-link-desc">${certName} 수험서 관련 최신 뉴스</span>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square news-link-arrow"></i>
+      </a>
+      <a href="${naverBlogUrl}" target="_blank" rel="noopener noreferrer" class="news-link-card">
+        <div class="news-link-icon" style="background:#03c75a">
+          <i class="fa-solid fa-blog" style="color:#fff"></i>
+        </div>
+        <div class="news-link-info">
+          <span class="news-link-title">네이버 블로그 검색</span>
+          <span class="news-link-desc">${certName} 합격 후기 · 공부법 블로그</span>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square news-link-arrow"></i>
+      </a>
+      <a href="${googleNewsUrl}" target="_blank" rel="noopener noreferrer" class="news-link-card">
+        <div class="news-link-icon" style="background:#4285f4">
+          <i class="fa-brands fa-google" style="color:#fff"></i>
+        </div>
+        <div class="news-link-info">
+          <span class="news-link-title">구글 뉴스 검색</span>
+          <span class="news-link-desc">${certName} 자격증 관련 최신 뉴스</span>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square news-link-arrow"></i>
+      </a>
+    </div>
+    <p class="news-hint"><i class="fa-solid fa-circle-info"></i> 클릭하면 해당 검색 결과 페이지가 새 탭에서 열립니다.</p>
+  `;
+}
+
 // ============================================
 // 10. 채용 공고 렌더링 & 필터링
 // ============================================
