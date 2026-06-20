@@ -15422,9 +15422,38 @@ function renderBooks() {
   if (!bestContainer || !recContainer) return;
 
   const certName = STATE.currentCert;
-  const allBooks = (typeof REAL_BOOKS !== 'undefined' && REAL_BOOKS[certName])
+  const rawBooks = (typeof REAL_BOOKS !== 'undefined' && REAL_BOOKS[certName])
     ? REAL_BOOKS[certName]
     : (getCert().books || []);
+
+  // 5종 미만이면 자격증명 기반 플레이스홀더로 자동 패딩
+  const allBooks = (() => {
+    if (rawBooks.length >= 5) return rawBooks;
+    const patterns = ['필기 핵심이론+기출', '실기 완전정복', '단기완성 합격', '과년도 기출해설', '필기+실기 한권완성'];
+    const publishers = ['성안당', '예문사', '에듀윌', '일진사', '크라운출판사'];
+    const bgs = [
+      'linear-gradient(135deg,#0d1f5e,#4db843)',
+      'linear-gradient(135deg,#7c3aed,#db2777)',
+      'linear-gradient(135deg,#0891b2,#0d9488)',
+      'linear-gradient(135deg,#b45309,#d97706)',
+      'linear-gradient(135deg,#1e3a5f,#2563eb)',
+    ];
+    const padded = [...rawBooks];
+    for (let i = rawBooks.length; i < 5; i++) {
+      padded.push({
+        title: `${certName} ${patterns[i]}`,
+        author: '편집부',
+        publisher: publishers[i % publishers.length],
+        year: 2025,
+        rating: parseFloat((4.2 - i * 0.05).toFixed(1)),
+        reviews: Math.max(50 - i * 8, 10),
+        price: 22000 + i * 1000,
+        coverBg: bgs[i % bgs.length],
+        tags: [],
+      });
+    }
+    return padded;
+  })();
 
   // 베스트셀러: 판매량(reviews) 내림차순 / 추천 수험서: 평점(rating) 내림차순
   const sortedBySales  = [...allBooks].sort((a, b) => (b.reviews || 0) - (a.reviews || 0));
