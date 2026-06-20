@@ -4065,6 +4065,9 @@ const CERTIFICATIONS = {
     books: [
       { title: '피복아크용접기능사 필기+실기', author: '정동욱', publisher: '성안당', year: 2025, rating: 4.4 },
       { title: '피복아크용접기능사 합격 완성', author: '한상길', publisher: '일진사', year: 2025, rating: 4.3 },
+      { title: '피복아크용접기능사 기출문제 총정리', author: '이종민', publisher: '크라운출판사', year: 2025, rating: 4.2 },
+      { title: '피복아크용접기능사 단기합격', author: '조현수', publisher: '에듀윌', year: 2025, rating: 4.1 },
+      { title: '피복아크용접기능사 핵심이론+실기', author: '김재호', publisher: '예문사', year: 2024, rating: 4.0 },
     ],
     defaultTodos: [
       '피복아크용접 원리 및 용접봉 종류 파악',
@@ -4117,6 +4120,9 @@ const CERTIFICATIONS = {
     books: [
       { title: '가스텅스텐아크용접기능사 필기+실기', author: '이광호', publisher: '성안당', year: 2025, rating: 4.4 },
       { title: 'TIG 용접기능사 합격 가이드', author: '박재원', publisher: '일진사', year: 2024, rating: 4.3 },
+      { title: '가스텅스텐아크용접기능사 기출문제 해설', author: '최동훈', publisher: '크라운출판사', year: 2025, rating: 4.2 },
+      { title: '가스텅스텐아크용접기능사 단기완성', author: '김성수', publisher: '에듀윌', year: 2025, rating: 4.1 },
+      { title: 'TIG 용접 핵심이론+실기 실전', author: '이재원', publisher: '예문사', year: 2024, rating: 4.0 },
     ],
     defaultTodos: [
       'GTAW/TIG 용접 원리 및 텅스텐 전극 종류 학습',
@@ -4169,6 +4175,9 @@ const CERTIFICATIONS = {
     books: [
       { title: '이산화탄소가스아크용접기능사 필기+실기', author: '정동욱', publisher: '성안당', year: 2025, rating: 4.4 },
       { title: 'CO₂용접기능사 합격 완성', author: '조현수', publisher: '에듀윌', year: 2024, rating: 4.2 },
+      { title: '이산화탄소가스아크용접기능사 기출문제 총정리', author: '이종민', publisher: '크라운출판사', year: 2025, rating: 4.1 },
+      { title: 'CO₂용접기능사 단기합격 핵심이론', author: '한상길', publisher: '일진사', year: 2025, rating: 4.0 },
+      { title: '이산화탄소가스아크용접 실기 완전정복', author: '김재호', publisher: '예문사', year: 2024, rating: 3.9 },
     ],
     defaultTodos: [
       'CO₂/MAG 용접 원리 및 와이어 전극 종류 파악',
