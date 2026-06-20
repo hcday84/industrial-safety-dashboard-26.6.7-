@@ -439,11 +439,24 @@ button, input, select {
 /* 5-0. 웰컴 화면 */
 #welcome-screen {
   display: none;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  min-height: calc(100vh - 70px);
+  padding: 60px 40px;
+}
+
+.welcome-top-row {
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 60px;
-  min-height: calc(100vh - 70px);
-  padding: 60px 40px;
+  width: 100%;
+}
+
+#welcome-screen #monthly-section {
+  width: 100%;
+  margin-top: 32px;
 }
 
 .welcome-inner {
@@ -539,9 +552,11 @@ button, input, select {
 
 @media (max-width: 900px) {
   #welcome-screen {
+    padding: 40px 20px;
+  }
+  .welcome-top-row {
     flex-direction: column;
     gap: 30px;
-    padding: 40px 20px;
   }
   .welcome-widgets-col {
     width: 100%;
