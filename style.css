@@ -456,6 +456,8 @@ button, input, select {
 
 #welcome-screen #monthly-section {
   width: 100%;
+  max-width: 900px;
+  align-self: center;
   margin-top: 32px;
 }
 
