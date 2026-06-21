@@ -443,7 +443,11 @@ button, input, select {
   align-items: stretch;
   gap: 0;
   min-height: calc(100vh - 70px);
-  padding: 60px 40px;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 20px;
+  box-sizing: border-box;
 }
 
 .welcome-top-row {
