@@ -18308,7 +18308,7 @@ function initPublisherSearch() {
       : '';
   }).join('');
 
-  input.addEventListener('input', e => renderPublisherResults(e.target.value));
+  input.addEventListener('input', e => window.renderPublisherResults(e.target.value));
 }
 
 window.renderPublisherResults = function renderPublisherResults(query) {
