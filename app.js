@@ -18223,8 +18223,9 @@ function renderCertDropdown(query) {
   const dropdown = document.getElementById('cert-dropdown');
   if (!query.trim()) { dropdown.classList.remove('visible'); return; }
 
+  const q = query.toLowerCase();
   const matches = Object.keys(CERTIFICATIONS).filter(name =>
-    name.includes(query) || query.includes(name.substring(0, 2))
+    name.toLowerCase().includes(q) || q.includes(name.toLowerCase().substring(0, 2))
   ).sort((a, b) => a.localeCompare(b, 'ko'));
 
   if (matches.length === 0) { dropdown.classList.remove('visible'); return; }
