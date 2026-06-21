@@ -642,23 +642,27 @@ button, input, select {
   margin-top: 24px;
   width: 100%;
   max-width: 480px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 24px 28px;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.3s, background-color 0.3s;
 }
 
 .publisher-search-label {
   display: flex;
   align-items: center;
-  gap: 7px;
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  margin-bottom: 8px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  gap: 8px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
 }
 
 .publisher-search-label i {
   color: var(--green-color);
-  font-size: 0.85rem;
+  font-size: 1.2rem;
 }
 
 .publisher-search-row {
