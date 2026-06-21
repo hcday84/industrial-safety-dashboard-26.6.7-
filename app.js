@@ -18272,7 +18272,7 @@ window.resetDashboard = function() {
 // ============================================
 const PUBLISHERS = [
   { name: '성안당',       url: 'https://www.cyber.co.kr',          keywords: ['성안당'] },
-  { name: '예문사',       url: 'https://www.yeamoon.com',          keywords: ['예문사'] },
+  { name: '예문사',       url: 'https://www.yeamoonsa.com',        keywords: ['예문사'] },
   { name: '에듀윌',       url: 'https://www.eduwill.net',          keywords: ['에듀윌'] },
   { name: '시대에듀',     url: 'https://www.sdedu.co.kr',          keywords: ['시대에듀', '시대고시'] },
   { name: '일진사',       url: 'https://www.iljinsa.net',          keywords: ['일진사'] },
