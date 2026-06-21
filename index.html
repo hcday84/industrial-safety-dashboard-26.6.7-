@@ -95,6 +95,22 @@
         <span class="example-tag" onclick="window.selectCert('소방설비기사')">소방설비기사</span>
         <span class="example-tag" onclick="window.selectCert('건설안전산업기사')">건설안전산업기사</span>
       </div>
+
+      <!-- 출판사 검색 위젯 -->
+      <div class="publisher-search-wrap">
+        <div class="publisher-search-label">
+          <i class="fa-solid fa-building-columns"></i>
+          <span>수험서 출판사 홈페이지 바로가기</span>
+        </div>
+        <div class="publisher-search-row">
+          <div class="publisher-input-wrap">
+            <i class="fa-solid fa-magnifying-glass publisher-search-icon"></i>
+            <input type="text" id="publisher-search" placeholder="출판사 이름 검색 (예: 성안당)" autocomplete="off" />
+          </div>
+        </div>
+        <div id="publisher-results" class="publisher-results"></div>
+        <div class="publisher-quick-tags" id="publisher-quick-tags"></div>
+      </div>
     </div>
 
     <!-- 웰컴 화면 오른쪽 위젯 -->
