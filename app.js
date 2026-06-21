@@ -18285,7 +18285,7 @@ const PUBLISHERS = [
   { name: '에듀피디',     url: 'https://www.edupd.com',            keywords: ['에듀피디'] },
   { name: '다산에듀',     url: 'https://dasanedu.co.kr',           keywords: ['다산'] },
   { name: 'MJ미디어',     url: 'https://www.mjmedia.co.kr',        keywords: ['mj', 'MJ', 'MJ미디어'] },
-  { name: '동일출판사',   url: 'https://www.dongil.com',           keywords: ['동일'] },
+  { name: '동일출판사',   url: 'https://dongilbook.co.kr',         keywords: ['동일'] },
   { name: '탑스팟',       url: 'https://www.topspot.co.kr',        keywords: ['탑스팟'] },
   { name: '메카피아',     url: 'https://www.mechapia.com',         keywords: ['메카피아'] },
   { name: '교보문고',     url: 'https://www.kyobobook.co.kr',      keywords: ['교보'] },
