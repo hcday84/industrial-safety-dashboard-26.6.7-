@@ -15933,6 +15933,97 @@ const CERTIFICATIONS = {
     ],
   },
 
+  '식품안전기사': {
+    name: '식품안전기사',
+    icon: 'fa-shield-halved',
+    category: '식품·위생',
+    heroTitle: '식품안전기사 — 식품 안전관리 전문 국가기술자격',
+    heroDesc: '식품안전기사는 식품의 원료 검사, 제조·가공 공정의 위해요소 분석(HACCP), 위생 기준 설정, 안전성 평가 등을 수행하는 전문 자격입니다. 식품안전관리인증기준(HACCP) 의무 적용 확대로 식품업체 및 급식업체에서 자격 보유자 수요가 지속 증가하고 있습니다.',
+    passRateSummary: '필기 합격률 35~50%, 실기 합격률 50~65% 수준의 중난이도 자격',
+    avgPassRate: 50,
+    avgExamRate: 65,
+    examRateSummary: '식품안전 규제 강화로 응시자 꾸준히 증가',
+    passRates: [
+      { year: 2022, written: 42, practical: 55 },
+      { year: 2023, written: 46, practical: 58 },
+      { year: 2024, written: 49, practical: 62 },
+    ],
+    schedules: [],
+    milestones: [],
+    subjects: [
+      { name: '식품안전관리', questions: 20, desc: 'HACCP 원칙·절차, 위해요소 분석, CCP 설정' },
+      { name: '식품위생법규', questions: 20, desc: '식품위생법, 식품안전기본법, 관련 고시' },
+      { name: '식품미생물학', questions: 20, desc: '식중독균, 위생지표균, 미생물 제어 방법' },
+      { name: '식품화학', questions: 20, desc: '식품 성분 분석, 식품 첨가물, 유해물질' },
+      { name: '식품가공·저장', questions: 20, desc: '식품 가공 원리, 저장 방법, 포장 기술' },
+    ],
+    jobs: [
+      { title: 'HACCP 관리자', company: '식품제조업체', salary: '3,500~5,500만원', location: '전국', type: '정규직' },
+      { title: '식품안전 품질관리원', company: '대형 식품기업', salary: '3,500~6,000만원', location: '전국', type: '정규직' },
+      { title: '식품위생 감시원', company: '식품의약품안전처·지자체', salary: '4,000~6,500만원', location: '전국', type: '공무원' },
+      { title: '급식 위생관리자', company: '집단급식소·위탁급식사', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
+    ],
+    books: [
+      { id: 'fsa-b1', title: '2026 식품안전기사 필기 한권완성', publisher: '성안당', rating: 9.4, reviews: 340, originalPrice: 42000, price: 37800, discount: '10%', coverBg: 'linear-gradient(135deg,#1a4a1a,#2e8c2e)', tags: ['베스트', '무료배송'] },
+      { id: 'fsa-b2', title: '식품안전기사 HACCP 완전정복', publisher: '예문사', rating: 9.3, reviews: 260, originalPrice: 36000, price: 32400, discount: '10%', coverBg: 'linear-gradient(135deg,#0f3a0f,#1e6a1e)', tags: ['추천'] },
+      { id: 'fsa-b3', title: '식품안전기사 기출문제 최근 5개년', publisher: '구민사', rating: 9.2, reviews: 200, originalPrice: 38000, price: 34200, discount: '10%', coverBg: 'linear-gradient(135deg,#0a2a0a,#155015)', tags: ['기출'] },
+      { id: 'fsa-b4', title: '식품안전기사 실기 식품위생법규 핵심정리', publisher: '에듀윌', rating: 9.1, reviews: 170, originalPrice: 32000, price: 28800, discount: '10%', coverBg: 'linear-gradient(135deg,#082008,#123a12)', tags: ['실기대비'] },
+      { id: 'fsa-b5', title: '식품안전기사 단기완성 30일 합격', publisher: '일진사', rating: 9.0, reviews: 140, originalPrice: 30000, price: 27000, discount: '10%', coverBg: 'linear-gradient(135deg,#061806,#0f2e0f)', tags: [] },
+    ],
+    defaultTodos: [
+      'HACCP 7원칙 12절차 완전 암기',
+      '식품위생법 주요 조항(영업 허가·신고, 벌칙) 정리',
+      '주요 식중독균(살모넬라·장출혈성대장균 등) 특성 정리',
+      '식품 첨가물 종류별 용도 암기',
+      '기출문제 5개년 풀기',
+    ],
+  },
+
+  '식품가공기능사': {
+    name: '식품가공기능사',
+    icon: 'fa-blender',
+    category: '식품·위생',
+    heroTitle: '식품가공기능사 — 식품 제조·가공 실무 국가기술자격',
+    heroDesc: '식품가공기능사는 식품의 원료 선별·처리부터 제조·가공·포장까지의 실무 능력을 검정하는 국가기술자격입니다. 학력 제한 없이 응시 가능하며, 식품제조업체·식품연구소·급식 업체 등에서 폭넓게 활용됩니다. 식품 관련 상위 자격(식품산업기사·식품기사) 취득의 기초 단계로 많이 활용됩니다.',
+    passRateSummary: '필기 합격률 45~60%, 실기 합격률 60~75% 수준의 접근하기 쉬운 자격',
+    avgPassRate: 62,
+    avgExamRate: 72,
+    examRateSummary: '식품업 입문자 및 경력 전환자 응시 수요 꾸준',
+    passRates: [
+      { year: 2022, written: 52, practical: 65 },
+      { year: 2023, written: 55, practical: 68 },
+      { year: 2024, written: 58, practical: 72 },
+    ],
+    schedules: [],
+    milestones: [],
+    subjects: [
+      { name: '식품재료학', questions: 20, desc: '식품 원료 성분, 특성, 품질 기준' },
+      { name: '식품가공학', questions: 20, desc: '가공 원리, 단위 조작, 제조 공정' },
+      { name: '식품위생학', questions: 20, desc: '식품 위생 기준, 식중독 예방, 개인 위생' },
+      { name: '식품기계', questions: 20, desc: '가공 기계 구조, 작동 원리, 안전 관리' },
+    ],
+    jobs: [
+      { title: '식품 제조 기능원', company: '식품제조업체', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
+      { title: '식품 품질 검사원', company: '식품가공업체', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
+      { title: '베이커리·제과 가공 기술원', company: '제과·제빵업체', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
+      { title: '식품 연구소 기술 보조원', company: '식품연구기관', salary: '3,000~4,200만원', location: '전국', type: '계약직' },
+    ],
+    books: [
+      { id: 'fpc-b1', title: '2026 식품가공기능사 필기 한권완성', publisher: '성안당', rating: 9.3, reviews: 420, originalPrice: 28000, price: 25200, discount: '10%', coverBg: 'linear-gradient(135deg,#5a2d0c,#c0652b)', tags: ['베스트', '무료배송'] },
+      { id: 'fpc-b2', title: '식품가공기능사 기출문제 완전분석', publisher: '예문사', rating: 9.2, reviews: 310, originalPrice: 24000, price: 21600, discount: '10%', coverBg: 'linear-gradient(135deg,#3e1e08,#8c4820)', tags: ['추천'] },
+      { id: 'fpc-b3', title: '식품가공기능사 실기 작업형 완전정복', publisher: '구민사', rating: 9.1, reviews: 250, originalPrice: 26000, price: 23400, discount: '10%', coverBg: 'linear-gradient(135deg,#2a1405,#6a3618)', tags: ['실기대비'] },
+      { id: 'fpc-b4', title: '식품가공기능사 단기완성 핵심이론', publisher: '에듀윌', rating: 9.0, reviews: 200, originalPrice: 22000, price: 19800, discount: '10%', coverBg: 'linear-gradient(135deg,#1e0e04,#4e2a12)', tags: [] },
+      { id: 'fpc-b5', title: '식품가공기능사 과년도 기출해설 5개년', publisher: '일진사', rating: 8.9, reviews: 170, originalPrice: 20000, price: 18000, discount: '10%', coverBg: 'linear-gradient(135deg,#140904,#38200e)', tags: [] },
+    ],
+    defaultTodos: [
+      '식품 원료별 성분 및 가공 특성 정리',
+      '주요 식품 가공 단위 조작(살균·농축·건조) 이해',
+      '식품위생법 기초 조항 및 개인위생 기준 암기',
+      '실기 작업형 제조 공정 순서 반복 연습',
+      '기출문제 3회분 풀기',
+    ],
+  },
+
 };
 
 // ============================================
