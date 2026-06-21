@@ -15755,6 +15755,117 @@ const CERTIFICATIONS = {
     ],
   },
 
+  '드론조종자격증': {
+    name: '드론조종자격증',
+    icon: 'fa-drone',
+    category: '항공·해양',
+    heroTitle: '드론조종자격증 — 무인비행장치 국가자격',
+    heroDesc: '드론조종자격증(무인멀티콥터·무인헬리콥터·무인비행기)은 한국교통안전공단이 시행하는 국가자격으로, 상업용 드론 촬영·농업방제·물류배송 등 드론 관련 직종 취업에 필수적입니다. 초경량비행장치 조종자 증명과 함께 항공 분야 핵심 자격으로, 드론 산업 성장에 따라 수요가 빠르게 증가하고 있습니다.',
+    passRateSummary: '실기 위주 평가로 학과 합격률은 높으나 실기 불합격이 많음',
+    avgPassRate: 62,
+    avgExamRate: 75,
+    examRateSummary: '드론 조종 관심자 증가로 응시율 꾸준히 상승',
+    passRates: [
+      { year: 2022, written: 78, practical: 58 },
+      { year: 2023, written: 80, practical: 60 },
+      { year: 2024, written: 82, practical: 63 },
+    ],
+    schedules: [
+      {
+        round: '상시',
+        writtenApply: '상시접수',
+        writtenExam: '상시시험',
+        practicalApply: '학과 합격 후',
+        practicalExam: '상시시험',
+        resultDate: '합격 후 즉시',
+      },
+    ],
+    milestones: [
+      { week: 1, title: '항공법규', desc: '초경량비행장치 관련 항공안전법 핵심 조항 학습' },
+      { week: 2, title: '항공기상', desc: '기상 현상, 바람, 구름 등 드론 운용 관련 기상 이론' },
+      { week: 3, title: '비행이론', desc: '멀티콥터 비행 원리, 조종 메커니즘 이해' },
+      { week: 4, title: '실기 훈련', desc: '이·착륙, 공중 정지, 비상 조작 반복 연습' },
+    ],
+    subjects: [
+      { name: '항공법규', questions: 20, desc: '초경량비행장치 관련 법규 및 규정' },
+      { name: '항공기상', questions: 20, desc: '기상 요소, 항공 기상 현상 이해' },
+      { name: '비행이론 및 운용', questions: 20, desc: '비행 원리, 드론 시스템 구조, 안전 운용' },
+    ],
+    jobs: [
+      { title: '드론 촬영 전문가', company: '영상제작사', salary: '3,000~5,000만원', location: '전국', type: '프리랜서' },
+      { title: '농업용 드론 방제사', company: '농업법인', salary: '3,500~5,500만원', location: '전국', type: '계약직' },
+      { title: '드론 물류 조종사', company: '물류기업', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
+      { title: '드론 측량사', company: '측량업체', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
+    ],
+    books: [
+      { id: 'drn-b1', title: '2026 무인멀티콥터 드론 조종자 자격증 한권완성', publisher: '성안당', rating: 9.5, reviews: 380, originalPrice: 32000, price: 28800, discount: '10%', coverBg: 'linear-gradient(135deg,#1a3a5c,#2e6da4)', tags: ['베스트', '무료배송'] },
+      { id: 'drn-b2', title: '드론 국가자격증 학과시험 기출문제집', publisher: '예문사', rating: 9.3, reviews: 260, originalPrice: 24000, price: 21600, discount: '10%', coverBg: 'linear-gradient(135deg,#0d2640,#1a5080)', tags: ['추천'] },
+    ],
+    defaultTodos: [
+      '항공안전법 초경량비행장치 관련 조항 정리',
+      '비행 구역(관제권·비행금지구역) 암기',
+      '멀티콥터 구조·작동 원리 이해',
+      '실기 비행 과목(이착륙·정지비행·비상조작) 반복 훈련',
+      '기출 학과시험 3회분 풀기',
+    ],
+  },
+
+  '소형선박조종사': {
+    name: '소형선박조종사',
+    icon: 'fa-ship',
+    category: '항공·해양',
+    heroTitle: '소형선박조종사 — 해양수산부 국가면허',
+    heroDesc: '소형선박조종사는 해양수산부가 시행하는 국가면허로, 총톤수 5톤 미만 선박을 조종할 수 있는 자격입니다. 낚시어선·레저보트·수상레저기구 운항에 필수적이며, 연안 여객·관광·해양레저 산업 종사자에게 꼭 필요한 면허입니다. 한국해양교통안전공단(KOMSA)이 주관합니다.',
+    passRateSummary: '학과 합격률 70% 내외, 실기(조종실습) 합격률 80% 이상',
+    avgPassRate: 74,
+    avgExamRate: 82,
+    examRateSummary: '해양레저 인구 증가로 응시자 수 꾸준히 증가',
+    passRates: [
+      { year: 2022, written: 68, practical: 80 },
+      { year: 2023, written: 72, practical: 82 },
+      { year: 2024, written: 74, practical: 84 },
+    ],
+    schedules: [
+      {
+        round: '상시',
+        writtenApply: '상시접수(KOMSA)',
+        writtenExam: '상시시험',
+        practicalApply: '학과 합격 후',
+        practicalExam: '상시시험',
+        resultDate: '합격 후 즉시',
+      },
+    ],
+    milestones: [
+      { week: 1, title: '항법·운용', desc: '항로표지, 교통분리방식, 충돌예방 규칙 학습' },
+      { week: 2, title: '선박 구조', desc: '소형선박 구조, 기관 운용, 안전 장비 이해' },
+      { week: 3, title: '법규', desc: '선박안전법, 해사안전법, 수상레저안전법 핵심 조항' },
+      { week: 4, title: '실기 훈련', desc: '출항·입항·계류·비상 조작 실습' },
+    ],
+    subjects: [
+      { name: '항법', questions: 25, desc: '항로, 충돌 예방 규칙, 항법 우선순위' },
+      { name: '선박 운용', questions: 25, desc: '선박 구조, 기관, 안전 장비 운용' },
+      { name: '법규', questions: 25, desc: '해사안전법, 수상레저안전법 등 관련 법령' },
+      { name: '비상 대처', questions: 25, desc: '인명구조, 소화, 선박 비상 상황 대처' },
+    ],
+    jobs: [
+      { title: '낚시어선 선장', company: '낚시어선업체', salary: '4,000~6,000만원', location: '연안 지역', type: '자영업·계약직' },
+      { title: '레저보트 운항 강사', company: '마리나 시설', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
+      { title: '해양레저 가이드', company: '관광업체', salary: '3,000~4,000만원', location: '제주·부산·통영', type: '계약직' },
+      { title: '연안 여객선 사무장', company: '여객선사', salary: '3,500~5,000만원', location: '도서지역', type: '정규직' },
+    ],
+    books: [
+      { id: 'ssb-b1', title: '2026 소형선박조종사 면허시험 한권완성', publisher: '성안당', rating: 9.4, reviews: 290, originalPrice: 28000, price: 25200, discount: '10%', coverBg: 'linear-gradient(135deg,#0a3d62,#1a7abf)', tags: ['베스트', '무료배송'] },
+      { id: 'ssb-b2', title: '소형선박조종사 기출문제 완전분석', publisher: '예문사', rating: 9.2, reviews: 180, originalPrice: 22000, price: 19800, discount: '10%', coverBg: 'linear-gradient(135deg,#052a44,#0f5a8c)', tags: ['추천'] },
+    ],
+    defaultTodos: [
+      '충돌예방규칙(항법 우선순위) 완전 암기',
+      '항로표지 종류·의미 정리',
+      '선박안전법·수상레저안전법 핵심 조항 암기',
+      '기관 고장 시 비상 조치 절차 숙지',
+      '기출문제 3회분 풀기',
+    ],
+  },
+
 };
 
 // ============================================
