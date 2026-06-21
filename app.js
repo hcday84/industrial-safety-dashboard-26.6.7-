@@ -15866,6 +15866,73 @@ const CERTIFICATIONS = {
     ],
   },
 
+  '교통기사': {
+    name: '교통기사',
+    icon: 'fa-road',
+    category: '건설·토목',
+    heroTitle: '교통기사 — 교통계획·설계·운영 국가기술자격',
+    heroDesc: '교통기사는 도로·철도·교통시설의 계획, 설계, 운영, 평가 능력을 검정하는 국가기술자격입니다. 교통영향분석, 교통수요 예측, 신호 최적화 등 스마트시티·자율주행 인프라 구축에 핵심 역할을 하며, 국토부·지자체·교통 엔지니어링 업체 등에서 폭넓게 활용됩니다.',
+    passRateSummary: '필기 합격률 30~45%, 실기 합격률 50~65% 수준의 중난이도 자격',
+    avgPassRate: 48,
+    avgExamRate: 62,
+    examRateSummary: '교통 인프라 수요 증가로 응시자 꾸준히 유지',
+    passRates: [
+      { year: 2022, written: 38, practical: 55 },
+      { year: 2023, written: 42, practical: 58 },
+      { year: 2024, written: 44, practical: 62 },
+    ],
+    schedules: [
+      {
+        round: '1회',
+        writtenApply: '2026-01-06 ~ 2026-01-09',
+        writtenExam: '2026-02-07',
+        practicalApply: '2026-03-23 ~ 2026-03-26',
+        practicalExam: '2026-04-25',
+        resultDate: '2026-06-05',
+      },
+      {
+        round: '2회',
+        writtenApply: '2026-04-13 ~ 2026-04-16',
+        writtenExam: '2026-05-09',
+        practicalApply: '2026-06-22 ~ 2026-06-25',
+        practicalExam: '2026-07-26',
+        resultDate: '2026-09-04',
+      },
+    ],
+    milestones: [
+      { week: 1, title: '교통공학 이론', desc: '교통류 이론, 용량 분석, 교통 특성 지표 학습' },
+      { week: 2, title: '교통계획', desc: '교통수요 예측(4단계), 교통영향분석 방법론' },
+      { week: 3, title: '도로·신호 설계', desc: '도로 기하구조 설계, 교차로 신호 최적화' },
+      { week: 4, title: '대중교통·물류', desc: '버스·철도 시스템, 물류 네트워크 계획' },
+      { week: 5, title: '실기 준비', desc: '교통조사·분석 실무, 기출 실기 문제 풀이' },
+    ],
+    subjects: [
+      { name: '교통공학', questions: 20, desc: '교통류 이론, 교통 용량, 서비스 수준' },
+      { name: '교통계획', questions: 20, desc: '교통수요 예측, 교통영향평가, 교통계획 수립' },
+      { name: '도로공학', questions: 20, desc: '도로 설계 기준, 선형 설계, 교차로 설계' },
+      { name: '교통안전', questions: 20, desc: '교통사고 분석, 안전시설, 보행자 안전' },
+      { name: '교통법규', questions: 20, desc: '도로교통법, 교통안전법, 관련 규정' },
+    ],
+    jobs: [
+      { title: '교통영향분석 전문가', company: '교통엔지니어링 업체', salary: '4,000~6,000만원', location: '전국', type: '정규직' },
+      { title: '교통계획 연구원', company: '국토연구원·지방연구원', salary: '4,000~6,500만원', location: '전국', type: '정규직' },
+      { title: '도로교통 설계사', company: '건설사·설계사무소', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
+      { title: '스마트교통 시스템 엔지니어', company: 'ITS 전문업체', salary: '4,500~7,000만원', location: '수도권', type: '정규직' },
+    ],
+    books: [
+      { id: 'trf-b1', title: '2026 교통기사 필기 한권완성', publisher: '성안당', rating: 9.4, reviews: 310, originalPrice: 42000, price: 37800, discount: '10%', coverBg: 'linear-gradient(135deg,#1a3a1a,#2e7a2e)', tags: ['베스트', '무료배송'] },
+      { id: 'trf-b2', title: '교통기사 기출문제 완전분석 최근 5개년', publisher: '예문사', rating: 9.2, reviews: 220, originalPrice: 36000, price: 32400, discount: '10%', coverBg: 'linear-gradient(135deg,#0f2a0f,#1e5a1e)', tags: ['추천'] },
+      { id: 'trf-b3', title: '교통기사 실기 교통조사 및 설계 완전정복', publisher: '구민사', rating: 9.1, reviews: 160, originalPrice: 38000, price: 34200, discount: '10%', coverBg: 'linear-gradient(135deg,#0a1f0a,#164516)', tags: ['실기대비'] },
+    ],
+    defaultTodos: [
+      '교통류 이론(밀도·속도·교통량 관계) 완전 이해',
+      '4단계 교통수요 예측 모형 정리',
+      '도로 기하구조 설계 기준(곡선반경·종단경사) 암기',
+      '교통영향분석 작성 절차 숙지',
+      '기출문제 5개년 풀기',
+    ],
+  },
+
 };
 
 // ============================================
