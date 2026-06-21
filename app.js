@@ -18262,6 +18262,73 @@ window.resetDashboard = function() {
 
 
 // ============================================
+// 17-B. 출판사 검색 위젯
+// ============================================
+const PUBLISHERS = [
+  { name: '성안당',       url: 'https://www.cyber.co.kr',          keywords: ['성안당'] },
+  { name: '예문사',       url: 'https://www.yeamoon.com',          keywords: ['예문사'] },
+  { name: '에듀윌',       url: 'https://www.eduwill.net',          keywords: ['에듀윌'] },
+  { name: '시대에듀',     url: 'https://www.sdedu.co.kr',          keywords: ['시대에듀', '시대고시'] },
+  { name: '일진사',       url: 'https://www.iljinsa.net',          keywords: ['일진사'] },
+  { name: '구민사',       url: 'https://www.gumins.com',           keywords: ['구민사'] },
+  { name: '크라운출판사', url: 'https://www.crownbook.co.kr',      keywords: ['크라운'] },
+  { name: '한솔아카데미', url: 'https://www.inup.co.kr',           keywords: ['한솔'] },
+  { name: '이패스코리아', url: 'https://www.epasskorea.com',       keywords: ['이패스'] },
+  { name: '영진닷컴',     url: 'https://www.youngjin.com',         keywords: ['영진'] },
+  { name: '기문당',       url: 'https://www.kimoondang.com',       keywords: ['기문당'] },
+  { name: '에듀피디',     url: 'https://www.edupd.com',            keywords: ['에듀피디'] },
+  { name: '다산에듀',     url: 'https://dasanedu.co.kr',           keywords: ['다산'] },
+  { name: 'MJ미디어',     url: 'https://www.mjmedia.co.kr',        keywords: ['mj', 'MJ', 'MJ미디어'] },
+  { name: '동일출판사',   url: 'https://www.dongil.com',           keywords: ['동일'] },
+  { name: '탑스팟',       url: 'https://www.topspot.co.kr',        keywords: ['탑스팟'] },
+  { name: '메카피아',     url: 'https://www.mechapia.com',         keywords: ['메카피아'] },
+  { name: '교보문고',     url: 'https://www.kyobobook.co.kr',      keywords: ['교보'] },
+  { name: '알라딘',       url: 'https://www.aladin.co.kr',         keywords: ['알라딘'] },
+  { name: '예스24',       url: 'https://www.yes24.com',            keywords: ['예스'] },
+];
+
+function initPublisherSearch() {
+  const input   = document.getElementById('publisher-search');
+  const results = document.getElementById('publisher-results');
+  const quickEl = document.getElementById('publisher-quick-tags');
+  if (!input || !results || !quickEl) return;
+
+  // 빠른 접근 태그 (자주 쓰는 출판사)
+  const quickList = ['성안당', '예문사', '에듀윌', '시대에듀', '한솔아카데미', '영진닷컴'];
+  quickEl.innerHTML = quickList.map(name => {
+    const pub = PUBLISHERS.find(p => p.name === name);
+    return pub
+      ? `<span class="publisher-quick-tag" onclick="(function(){document.getElementById('publisher-search').value='${name}';renderPublisherResults('${name}');})()">${name}</span>`
+      : '';
+  }).join('');
+
+  input.addEventListener('input', e => renderPublisherResults(e.target.value));
+}
+
+function renderPublisherResults(query) {
+  const results = document.getElementById('publisher-results');
+  if (!results) return;
+  const q = query.trim().toLowerCase();
+  if (!q) { results.innerHTML = ''; return; }
+
+  const matched = PUBLISHERS.filter(p =>
+    p.name.toLowerCase().includes(q) ||
+    p.keywords.some(k => k.toLowerCase().includes(q))
+  );
+
+  if (matched.length === 0) {
+    results.innerHTML = `<span class="publisher-no-result"><i class="fa-solid fa-circle-info"></i> 검색 결과가 없습니다.</span>`;
+    return;
+  }
+
+  results.innerHTML = matched.map(p =>
+    `<a href="${p.url}" target="_blank" rel="noopener noreferrer" class="publisher-result-btn">
+      <i class="fa-solid fa-arrow-up-right-from-square"></i>${p.name} 홈페이지
+    </a>`
+  ).join('');
+}
+
+// ============================================
 // 18. 다크모드 테마
 // ============================================
 function updateThemeBtn(isDark) {
