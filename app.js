@@ -16249,6 +16249,51 @@ const CERTIFICATIONS = {
     ],
   },
 
+  '낙농기능사': {
+    name: '낙농기능사',
+    icon: 'fa-cow',
+    category: '농림·축산',
+    heroTitle: '낙농기능사 — 착유·유제품 제조·낙농 위생 관리 국가기술자격',
+    heroDesc: '낙농기능사는 젖소 착유, 원유 검사, 우유·치즈·버터 등 유제품 제조, 낙농 위생 관리 기술을 검정하는 국가기술자격입니다. 학력 제한 없이 응시 가능하며, 낙농 농가·유가공 업체·농협 유제품 공장 등에서 활용됩니다. 국내 유제품 시장 성장과 수입산 대체 수요로 전문 낙농 인력 수요가 꾸준합니다.',
+    passRateSummary: '필기 합격률 50~65%, 실기 합격률 62~75% 수준의 비교적 접근하기 쉬운 자격',
+    avgPassRate: 62,
+    avgExamRate: 72,
+    examRateSummary: '낙농업 종사자 및 유가공 업체 입사 희망자 응시 꾸준',
+    passRates: [
+      { year: 2022, written: 52, practical: 63 },
+      { year: 2023, written: 56, practical: 67 },
+      { year: 2024, written: 60, practical: 72 },
+    ],
+    schedules: [],
+    milestones: [],
+    subjects: [
+      { name: '낙농학', questions: 25, desc: '젖소 품종·사양 관리, 비유 생리, 착유 방법 및 착유기 취급' },
+      { name: '유가공학', questions: 25, desc: '원유 성분·검사, 우유·치즈·버터·발효유 제조 공정' },
+      { name: '낙농 위생학', questions: 20, desc: '원유 위생 기준, 유방염 예방, 낙농 시설 소독 방법' },
+      { name: '관련 법규', questions: 10, desc: '축산물위생관리법, 낙농진흥법 주요 조항' },
+    ],
+    jobs: [
+      { title: '낙농 농가 착유 관리원', company: '젖소 낙농 농가', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
+      { title: '유가공 공장 기술원', company: '유제품 제조업체·농협', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
+      { title: '유제품 품질 검사원', company: '유제품 제조·유통업체', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
+      { title: '낙농 컨설턴트', company: '축협·농업기술센터', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
+    ],
+    books: [
+      { id: 'dri-b1', title: '2026 낙농기능사 필기 한권완성', publisher: '성안당', rating: 9.1, reviews: 190, originalPrice: 26000, price: 23400, discount: '10%', coverBg: 'linear-gradient(135deg,#2a3a5a,#4a6aa0)', tags: ['베스트', '무료배송'] },
+      { id: 'dri-b2', title: '낙농기능사 기출문제 완전분석', publisher: '예문사', rating: 9.0, reviews: 140, originalPrice: 22000, price: 19800, discount: '10%', coverBg: 'linear-gradient(135deg,#1a2a48,#324e80)', tags: ['추천'] },
+      { id: 'dri-b3', title: '낙농기능사 핵심이론 단기완성', publisher: '시대에듀', rating: 8.9, reviews: 110, originalPrice: 24000, price: 21600, discount: '10%', coverBg: 'linear-gradient(135deg,#101e36,#243a60)', tags: [] },
+      { id: 'dri-b4', title: '낙농기능사 실기 작업형 완전정복', publisher: '구민사', rating: 8.8, reviews: 85, originalPrice: 22000, price: 19800, discount: '10%', coverBg: 'linear-gradient(135deg,#0a1426,#1a2c4e)', tags: ['실기대비'] },
+      { id: 'dri-b5', title: '낙농기능사·축산기능사 통합 기출해설', publisher: '일진사', rating: 8.7, reviews: 65, originalPrice: 20000, price: 18000, discount: '10%', coverBg: 'linear-gradient(135deg,#060e1a,#10203a)', tags: [] },
+    ],
+    defaultTodos: [
+      '젖소 품종별(홀스타인·저지) 특성 및 사양 기준 정리',
+      '착유 순서(전착유·본착유·후착유) 및 착유기 위생 관리 암기',
+      '원유 성분 기준(유지방·무지고형분·세균수·체세포수) 숙지',
+      '유방염 원인·예방·치료 방법 정리',
+      '기출문제 3회분 풀기',
+    ],
+  },
+
 };
 
 // ============================================
