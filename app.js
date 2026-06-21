@@ -18311,7 +18311,7 @@ function initPublisherSearch() {
   input.addEventListener('input', e => renderPublisherResults(e.target.value));
 }
 
-function renderPublisherResults(query) {
+window.renderPublisherResults = function renderPublisherResults(query) {
   const results = document.getElementById('publisher-results');
   if (!results) return;
   const q = query.trim().toLowerCase();
