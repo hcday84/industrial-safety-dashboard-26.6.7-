@@ -17062,6 +17062,13 @@ function renderBooks() {
     bestBooks = sortedBySales .filter(b => (b.tags || []).includes('베스트')).slice(0, 5);
     recBooks  = sortedByRating.filter(b => (b.tags || []).includes('추천') && !(b.tags || []).includes('베스트')).slice(0, 5);
     // 태그 필터 후 5종 미만이면 나머지 books로 보충
+    if (bestBooks.length < 5) {
+      const seen = new Set(bestBooks.map(b => b.title));
+      for (const b of sortedBySales) {
+        if (bestBooks.length >= 5) break;
+        if (!seen.has(b.title)) { bestBooks.push(b); seen.add(b.title); }
+      }
+    }
     if (recBooks.length < 5) {
       const seen = new Set(recBooks.map(b => b.title));
       for (const b of sortedByRating) {
