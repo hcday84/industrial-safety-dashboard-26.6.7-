@@ -18320,9 +18320,10 @@ function initEventListeners() {
     const query = e.target.value.trim();
     if (!query) return;
     // 정확히 일치하는 자격증 먼저, 없으면 포함하는 첫 번째
-    const exact = Object.keys(CERTIFICATIONS).find(name => name === query);
+    const qLower = query.toLowerCase();
+    const exact = Object.keys(CERTIFICATIONS).find(name => name.toLowerCase() === qLower);
     const partial = Object.keys(CERTIFICATIONS).find(name =>
-      name.includes(query) || query.includes(name.substring(0, 2))
+      name.toLowerCase().includes(qLower) || qLower.includes(name.toLowerCase().substring(0, 2))
     );
     const target = exact || partial;
     if (target) {
