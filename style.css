@@ -589,6 +589,16 @@ button, input, select {
   margin-bottom: 28px;
 }
 
+#cert-count {
+  font-size: 1.55rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.5px;
+}
+
 .welcome-search-hint {
   display: inline-flex;
   align-items: center;
