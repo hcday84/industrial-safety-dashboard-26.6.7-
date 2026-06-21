@@ -637,6 +637,133 @@ button, input, select {
   background: var(--green-bg);
 }
 
+/* 출판사 검색 위젯 */
+.publisher-search-wrap {
+  margin-top: 24px;
+  width: 100%;
+  max-width: 480px;
+}
+
+.publisher-search-label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.publisher-search-label i {
+  color: var(--green-color);
+  font-size: 0.85rem;
+}
+
+.publisher-search-row {
+  display: flex;
+  gap: 8px;
+}
+
+.publisher-input-wrap {
+  position: relative;
+  flex: 1;
+}
+
+.publisher-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  pointer-events: none;
+}
+
+#publisher-search {
+  width: 100%;
+  padding: 10px 14px 10px 36px;
+  border: 1.5px solid var(--border-color);
+  border-radius: 10px;
+  background: var(--card-bg);
+  color: var(--text-primary);
+  font-size: 0.92rem;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+#publisher-search:focus {
+  border-color: var(--green-color);
+}
+
+#publisher-search::placeholder {
+  color: var(--text-muted);
+}
+
+.publisher-results {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.publisher-result-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px;
+  background: var(--green-bg);
+  border: 1.5px solid var(--green-color);
+  border-radius: 8px;
+  color: var(--green-color);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.publisher-result-btn:hover {
+  background: var(--green-color);
+  color: #fff;
+}
+
+.publisher-result-btn i {
+  font-size: 0.8rem;
+}
+
+.publisher-no-result {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  padding: 6px 2px;
+}
+
+.publisher-quick-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.publisher-quick-tag {
+  padding: 5px 12px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 50px;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.18s;
+}
+
+.publisher-quick-tag:hover {
+  border-color: var(--green-color);
+  color: var(--green-color);
+  background: var(--green-bg);
+}
+
 /* 5. 히어로 배너 영역 */
 .hero-widgets-row {
   max-width: 1300px;
