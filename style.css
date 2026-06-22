@@ -475,7 +475,8 @@ button, input, select {
 }
 
 .welcome-bottom-row .publisher-search-label {
-  font-size: 1.1rem;
+  font-size: 1.35rem;
+  font-weight: 700;
   white-space: nowrap;
 }
 
