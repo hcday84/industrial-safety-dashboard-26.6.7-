@@ -473,6 +473,11 @@ button, input, select {
   margin-top: 0;
 }
 
+.welcome-bottom-row .publisher-search-label {
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+
 #welcome-screen #monthly-section {
   flex: 1;
   min-width: 0;
