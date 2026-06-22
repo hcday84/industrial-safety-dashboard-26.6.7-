@@ -18401,8 +18401,11 @@ const PUBLISHERS = [
   { name: '건기원',       url: 'https://www.kkwbooks.com',         keywords: ['건기원'] },
   { name: '해커스',       url: 'https://www.hackers.com',          keywords: ['해커스'] },
   { name: '형설출판사',   url: 'https://www.hyungseul.co.kr',      keywords: ['형설'] },
-  { name: '이나무출판사', url: 'https://enamuh.co.kr',              keywords: ['이나무'] },
-  { name: '교보문고',     url: 'https://www.kyobobook.co.kr',      keywords: ['교보'] },
+  { name: '이나무출판사',   url: 'https://enamuh.co.kr',              keywords: ['이나무'] },
+  { name: '한빛미디어',   url: 'https://www.hanbit.co.kr',          keywords: ['한빛'] },
+  { name: '이지스퍼블리싱', url: 'https://www.easyspub.co.kr',      keywords: ['이지스', 'Do it', 'doit'] },
+  { name: '생능출판사',   url: 'https://www.booksr.co.kr',           keywords: ['생능'] },
+  { name: '교보문고',     url: 'https://www.kyobobook.co.kr',        keywords: ['교보'] },
   { name: '알라딘',       url: 'https://www.aladin.co.kr',         keywords: ['알라딘'] },
   { name: '예스24',       url: 'https://www.yes24.com',            keywords: ['예스'] },
 ];
