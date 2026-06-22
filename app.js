@@ -17401,6 +17401,7 @@ function renderAll() {
   renderBooks();
   renderChart(cert);
   renderSubjects(cert);
+  renderEmqualStats(cert.name);
 }
 
 // ============================================
