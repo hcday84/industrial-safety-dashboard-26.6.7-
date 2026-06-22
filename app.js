@@ -18400,6 +18400,8 @@ const PUBLISHERS = [
   { name: '삼원북스',     url: 'https://www.samwonbooks.com',      keywords: ['삼원북스', '삼원'] },
   { name: '건기원',       url: 'https://www.kkwbooks.com',         keywords: ['건기원'] },
   { name: '해커스',       url: 'https://www.hackers.com',          keywords: ['해커스'] },
+  { name: '형설출판사',   url: 'https://www.hyungseul.co.kr',      keywords: ['형설'] },
+  { name: '이나무출판사', url: 'https://enamuh.co.kr',              keywords: ['이나무'] },
   { name: '교보문고',     url: 'https://www.kyobobook.co.kr',      keywords: ['교보'] },
   { name: '알라딘',       url: 'https://www.aladin.co.kr',         keywords: ['알라딘'] },
   { name: '예스24',       url: 'https://www.yes24.com',            keywords: ['예스'] },
