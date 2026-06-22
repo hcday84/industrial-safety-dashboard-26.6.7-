@@ -458,11 +458,26 @@ button, input, select {
   width: 100%;
 }
 
-#welcome-screen #monthly-section {
+/* 하단 행: 출판사 위젯 + 월별 일정 나란히 */
+.welcome-bottom-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
   width: 100%;
-  max-width: 900px;
-  align-self: center;
-  margin-top: 32px;
+  margin-top: 28px;
+}
+
+.welcome-bottom-row .publisher-search-wrap {
+  width: 360px;
+  flex-shrink: 0;
+  margin-top: 0;
+}
+
+#welcome-screen #monthly-section {
+  flex: 1;
+  min-width: 0;
+  max-width: none;
+  margin-top: 0;
 }
 
 .welcome-inner {
