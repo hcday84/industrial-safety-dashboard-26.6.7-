@@ -136,8 +136,26 @@
     </div>
     </div><!-- /.welcome-top-row -->
 
-    <!-- 월별 수험서 시험 일정 (웰컴 화면 전용) -->
-    <section id="monthly-section" class="dashboard-section card-box">
+    <!-- 하단 행: 출판사 위젯 + 월별 시험 일정 나란히 -->
+    <div class="welcome-bottom-row">
+      <!-- 출판사 검색 위젯 -->
+      <div class="publisher-search-wrap">
+        <div class="publisher-search-label">
+          <i class="fa-solid fa-building-columns"></i>
+          <span>수험서 출판사 홈페이지 바로가기</span>
+        </div>
+        <div class="publisher-search-row">
+          <div class="publisher-input-wrap">
+            <i class="fa-solid fa-magnifying-glass publisher-search-icon"></i>
+            <input type="text" id="publisher-search" placeholder="출판사 이름 검색 (예: 성안당)" autocomplete="off" />
+          </div>
+        </div>
+        <div id="publisher-results" class="publisher-results"></div>
+        <div class="publisher-quick-tags" id="publisher-quick-tags"></div>
+      </div>
+
+      <!-- 월별 수험서 시험 일정 (웰컴 화면 전용) -->
+      <section id="monthly-section" class="dashboard-section card-box">
       <div class="section-header">
         <h2><i class="fa-solid fa-calendar-check text-teal"></i> 월별 수험서 시험 일정 한눈에 보기</h2>
         <span class="badge badge-info">2026년 일정 기준</span>
