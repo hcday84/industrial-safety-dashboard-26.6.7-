@@ -462,6 +462,7 @@ button, input, select {
 .welcome-bottom-row {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   gap: 24px;
   width: 100%;
   margin-top: 28px;
