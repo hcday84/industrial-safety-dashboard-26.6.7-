@@ -586,6 +586,12 @@ button, input, select {
   .welcome-cal-placeholder {
     width: 100%;
   }
+  .welcome-bottom-row {
+    flex-direction: column;
+  }
+  .welcome-bottom-row .publisher-search-wrap {
+    width: 100%;
+  }
 }
 
 .welcome-icon {
