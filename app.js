@@ -17485,17 +17485,55 @@ function renderHero(cert) {
 // 7. 스탯 카드 업데이트
 // ============================================
 function renderStatCards(cert) {
-  const passValEl = document.querySelector('#stat-pass .stat-value');
-  const passDescEl = document.querySelector('#stat-pass .stat-desc');
-  if (passValEl) passValEl.textContent = cert.avgPassRate;
-  if (passDescEl) passDescEl.textContent = cert.passRateSummary;
+  const passLabelEl = document.getElementById('stat-pass-label');
+  const passValEl   = document.getElementById('stat-pass-value');
+  const passDescEl  = document.getElementById('stat-pass-desc');
+  if (cert.avgPassRate && cert.avgPassRate !== '–') {
+    if (passLabelEl) passLabelEl.textContent = '선택 자격증 합격률';
+    if (passValEl)   passValEl.textContent   = cert.avgPassRate;
+    if (passDescEl)  passDescEl.textContent  = cert.passRateSummary;
+  }
 
-  const examValEl = document.getElementById('stat-exam-rate-value');
-  const examDescEl = document.getElementById('stat-exam-rate-desc');
-  if (examValEl) examValEl.textContent = cert.avgExamRate || '–';
-  if (examDescEl) examDescEl.textContent = cert.examRateSummary || '데이터 준비중';
+  const examLabelEl = document.getElementById('stat-exam-rate-label');
+  const examValEl   = document.getElementById('stat-exam-rate-value');
+  const examDescEl  = document.getElementById('stat-exam-rate-desc');
+  if (cert.avgExamRate) {
+    if (examLabelEl) examLabelEl.textContent = '선택 자격증 응시률';
+    if (examValEl)   examValEl.textContent   = cert.avgExamRate;
+    if (examDescEl)  examDescEl.textContent  = cert.examRateSummary || '데이터 준비중';
+  }
 
   document.getElementById('bookmark-count').textContent = STATE.bookmarks.length;
+}
+
+// ============================================
+// 전국 국가기술자격 통계 로드 (한국산업인력공단 API)
+// ============================================
+async function fetchNationalStats() {
+  try {
+    const res  = await fetch('/api/qnet-stats?baseYY=2023');
+    const data = await res.json();
+    if (data.error) return;
+
+    const passValEl  = document.getElementById('stat-pass-value');
+    const passDescEl = document.getElementById('stat-pass-desc');
+    const passLabelEl = document.getElementById('stat-pass-label');
+    if (passValEl)  passValEl.textContent  = data.avgRate ? `${data.avgRate}%` : '–';
+    if (passDescEl) passDescEl.textContent =
+      `필기 ${data.pilRate}% | 실기 ${data.silRate}% (2023)`;
+    if (passLabelEl) passLabelEl.textContent = '전국 평균 합격률';
+
+    const examValEl   = document.getElementById('stat-exam-rate-value');
+    const examDescEl  = document.getElementById('stat-exam-rate-desc');
+    const examLabelEl = document.getElementById('stat-exam-rate-label');
+    const pilMan = data.pilRc ? `${(data.pilRc / 10000).toFixed(0)}만` : '–';
+    const silMan = data.silRc ? `${(data.silRc / 10000).toFixed(0)}만` : '–';
+    if (examValEl)   examValEl.textContent   = pilMan;
+    if (examDescEl)  examDescEl.textContent  = `필기 ${pilMan}건 | 실기 ${silMan}건 (2023)`;
+    if (examLabelEl) examLabelEl.textContent = '전국 응시 현황';
+  } catch (e) {
+    // API 실패 시 기존 표시 유지
+  }
 }
 
 // ============================================
