@@ -481,7 +481,7 @@ button, input, select {
 #welcome-screen #monthly-section {
   flex: 1;
   min-width: 0;
-  max-width: none;
+  max-width: 500px;
   margin-top: 0;
 }
 
