@@ -17508,6 +17508,71 @@ function renderStatCards(cert) {
 }
 
 // ============================================
+// 응시자격 현황 (InquiryEmqualPassSVC)
+// ============================================
+function getGrdCd(certName) {
+  if (!certName) return null;
+  if (certName.includes('기술사')) return '10';
+  if (certName.includes('기능장')) return '20';
+  if (certName.includes('산업기사')) return '31';
+  if (certName.includes('기사')) return '30';
+  return null; // 기능사 등 응시자격 제한 없는 등급
+}
+
+async function renderEmqualStats(certName) {
+  const wrap = document.getElementById('emqual-stats-wrap');
+  const barsEl = document.getElementById('emqual-bars');
+  const labelEl = document.getElementById('emqual-grade-label');
+  if (!wrap || !barsEl) return;
+
+  const grdCd = getGrdCd(certName);
+  if (!grdCd) { wrap.style.display = 'none'; return; }
+
+  wrap.style.display = 'block';
+  barsEl.innerHTML = '<div style="color:var(--text-secondary);font-size:0.85rem;">불러오는 중...</div>';
+
+  try {
+    const res  = await fetch(`/api/emqual-stats?grdCd=${grdCd}&baseYY=2023`);
+    const data = await res.json();
+
+    if (!data.top5 || data.top5.length === 0) {
+      wrap.style.display = 'none'; return;
+    }
+
+    if (labelEl) labelEl.textContent = data.grdNm + '급';
+
+    // 긴 응시자격명 → 핵심만 추출
+    const shorten = (s) => {
+      s = s.replace(/동일 및 유사직무분야에서 /g, '');
+      const max = 38;
+      return s.length > max ? s.slice(0, max) + '…' : s;
+    };
+
+    const rows = data.top5.map(item => `
+      <div class="emqual-bar-row">
+        <span class="emqual-bar-label" title="${item.label}">${shorten(item.label)}</span>
+        <div class="emqual-bar-track">
+          <div class="emqual-bar-fill" style="width:${item.pct}%"></div>
+        </div>
+        <span class="emqual-bar-pct">${item.pct}%</span>
+      </div>`).join('');
+
+    const other = data.otherPct > 0 ? `
+      <div class="emqual-bar-row">
+        <span class="emqual-bar-label">기타 응시자격</span>
+        <div class="emqual-bar-track">
+          <div class="emqual-bar-fill other" style="width:${data.otherPct}%"></div>
+        </div>
+        <span class="emqual-bar-pct" style="color:var(--text-secondary)">${data.otherPct}%</span>
+      </div>` : '';
+
+    barsEl.innerHTML = rows + other;
+  } catch (e) {
+    wrap.style.display = 'none';
+  }
+}
+
+// ============================================
 // 전국 국가기술자격 통계 로드 (한국산업인력공단 API)
 // ============================================
 async function fetchNationalStats() {
