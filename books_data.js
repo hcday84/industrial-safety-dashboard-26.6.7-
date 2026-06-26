@@ -153,6 +153,54 @@ const REAL_BOOKS = {
   ],
 
   // ────────────────────────────────────────
+  '가스산업기사': [
+    // 베스트셀러 5
+    { title: '2026 나합격 가스산업기사 필기+실기+무료특강', author: '이윤기', publisher: '삼원북스', price: 39600, originalPrice: 44000, discount: '10%', rating: 4.7, reviews: 287, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+나합격+가스산업기사+필기' },
+    { title: '2026 가스산업기사 필기 총정리', author: '서상희', publisher: '일진사', price: 35100, originalPrice: 39000, discount: '10%', rating: 4.6, reviews: 234, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+가스산업기사+필기+총정리' },
+    { title: '2026 모아 가스산업기사 필기 핵심이론+과년도', author: '오민정', publisher: '모아교육그룹', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+모아+가스산업기사+필기' },
+    { title: '2026 나합격 가스산업기사 필기 핵심이론+8개년 기출', author: '이윤기', publisher: '삼원북스', price: 26100, originalPrice: 29000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+나합격+가스산업기사+핵심이론' },
+    { title: '2026 가스산업기사 필기 과년도 출제문제 해설', author: '서상희', publisher: '일진사', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.5, reviews: 143, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+가스산업기사+과년도' },
+    // 추천수험서 5
+    { title: '2026 모아 가스산업기사 필기 빵꾸노트', author: '오민정', publisher: '모아교육그룹', price: 9900, originalPrice: 11000, discount: '10%', rating: 4.5, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+모아+가스산업기사+빵꾸노트' },
+    { title: '2026 가스산업기사 필기 기출문제집', author: '김재호', publisher: '예문사', price: 27900, originalPrice: 31000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+가스산업기사+기출문제집' },
+    { title: '2026 에듀윌 가스산업기사 필기 한권끝장', author: '에듀윌 수험연구소', publisher: '에듀윌', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.4, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+에듀윌+가스산업기사' },
+    { title: '2026 가스산업기사 실기 완전정복', author: '서상희', publisher: '일진사', price: 30600, originalPrice: 34000, discount: '10%', rating: 4.3, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+가스산업기사+실기' },
+    { title: '2026 가스산업기사 CBT 최신기출문제해설', author: '이윤기', publisher: '삼원북스', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 65, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+가스산업기사+CBT' },
+  ],
+
+  // ────────────────────────────────────────
+  '가스기능사': [
+    // 베스트셀러 5
+    { title: '2026 나합격 가스기능사 필기+실기+무료특강', author: '이윤기', publisher: '삼원북스', price: 35100, originalPrice: 39000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+나합격+가스기능사+필기' },
+    { title: '2026 가스기능사 필기 총정리', author: '서상희', publisher: '일진사', price: 30600, originalPrice: 34000, discount: '10%', rating: 4.6, reviews: 256, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+가스기능사+필기+총정리' },
+    { title: '2026 에듀윌 가스기능사 필기 2주끝장', author: '양성진', publisher: '에듀윌', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 213, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+에듀윌+가스기능사+필기' },
+    { title: '2026 모아 가스기능사 필기 핵심이론+과년도 12개년', author: '모아합격전략연구소', publisher: '모아교육그룹', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.5, reviews: 178, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+모아+가스기능사+필기' },
+    { title: '2026 가스기능사 필기 과년도 출제문제 해설', author: '서상희', publisher: '일진사', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.5, reviews: 154, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+가스기능사+과년도' },
+    // 추천수험서 5
+    { title: '홍까스와 함께하는 가스기능사 필기 핵심강의노트', author: '홍경표', publisher: '에듀피디', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 132, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=홍까스+가스기능사+필기' },
+    { title: '2026 가스기능사 필기 CBT 기출문제집', author: '김재호', publisher: '예문사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+가스기능사+CBT' },
+    { title: '2026 가스기능사 필기 한권끝장', author: '이윤기', publisher: '삼원북스', price: 18900, originalPrice: 21000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+가스기능사+필기+한권끝장' },
+    { title: '2026 가스기능사 실기 완전정복', author: '서상희', publisher: '일진사', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.3, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+가스기능사+실기' },
+    { title: '2026 Win-Q 가스기능사 필기 단기합격', author: '함성훈', publisher: '시대에듀', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.3, reviews: 73, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+Win-Q+가스기능사' },
+  ],
+
+  // ────────────────────────────────────────
+  '가스기능장': [
+    // 베스트셀러 5
+    { title: '2026 완벽대비 가스기능장 필기', author: '서상희', publisher: '동일출판사', price: 38000, originalPrice: 40000, discount: '5%', rating: 4.6, reviews: 145, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=가스기능장+필기+완벽대비' },
+    { title: '2026 초단기완성! 가스기능장 필기', author: '노진식', publisher: '책과상상', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 112, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+초단기완성+가스기능장' },
+    { title: '단기완성 가스기능장 필기 최근 기출문제', author: '최갑규', publisher: '세진북스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 98, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=가스기능장+필기+기출문제' },
+    { title: '가스기능장 필기 과년도 기출문제', author: '권오수 외', publisher: '예문사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.4, reviews: 87, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=가스기능장+과년도+기출문제' },
+    { title: '한권으로 필기와 실기를 끝내는 가스기능장', author: '최갑규', publisher: '세진북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.4, reviews: 76, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=가스기능장+필기+실기+한권' },
+    // 추천수험서 5
+    { title: '가스기능장 핵심요약 이론서', author: '서상희', publisher: '일진사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 65, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=가스기능장+핵심요약+이론서' },
+    { title: '가스기능장 필기 CBT 실전모의고사', author: '이윤기', publisher: '삼원북스', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 54, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=가스기능장+CBT+모의고사' },
+    { title: '가스기능장 NCS 출제유형 핵심정리', author: '박재현', publisher: '예문사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.3, reviews: 48, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=가스기능장+NCS+핵심정리' },
+    { title: '가스기능장 실기 완전정복', author: '최갑규', publisher: '세진북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.3, reviews: 43, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=가스기능장+실기' },
+    { title: '가스기능장 10개년 기출문제 해설', author: '노진식', publisher: '책과상상', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.2, reviews: 37, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=가스기능장+10개년+기출' },
+  ],
+
+  // ────────────────────────────────────────
   '정보보안기사': [
     // 베스트셀러 5
     { title: '2026 알기사 정보보안기사(산업기사) 필기+핵심기출 1200제 세트', author: '조현준', publisher: '지안에듀', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000218322836'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218322836' },
