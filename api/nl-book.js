@@ -20,14 +20,25 @@ async function searchAladin(query) {
 }
 
 // "2026 에듀윌 산업안전산업기사 필기 한권끝장" → "산업안전산업기사 필기"
+// "2026 정보처리기사 필기 한권끝장"           → "정보처리기사 필기"
 function extractKeywords(title) {
-  return title
-    .replace(/^(20\d{2})\s+/, '')          // 앞 연도 제거
-    .replace(/에듀윌|시나공|길벗|성안당|예문사|일진사|세화|구민사|해커스|이기적|수제비|크라운|영진|나합격|직8딴|벼락치기|찐합격|스마트|해커스자격증/g, '')
-    .replace(/\+.*$/, '')                   // + 이후 제거
+  const cleaned = title
+    .replace(/^(20\d{2})\s+/, '')
+    .replace(/에듀윌|시나공|길벗|성안당|예문사|일진사|세화|구민사|해커스|이기적|수제비|크라운|영진|나합격|직8딴|벼락치기|찐합격|스마트|해커스자격증|김영북스|삼원북스/g, '')
+    .replace(/\+.*$/, '')
+    .replace(/\(.*?\)/g, '')
     .replace(/\s{2,}/g, ' ')
-    .trim()
-    .split(' ').slice(0, 4).join(' ');      // 최대 4단어
+    .trim();
+
+  const words = cleaned.split(' ').filter(Boolean);
+  // 자격증명(기사/산업기사/기능사/기술사 포함 단어) + 필기/실기 2단어만 추출
+  const certIdx = words.findIndex(w => /기사|기능사|기술사|SQLD|빅데이터|정보보안/.test(w));
+  if (certIdx !== -1) {
+    const cert = words[certIdx];
+    const level = words.slice(certIdx + 1).find(w => /필기|실기/.test(w));
+    return level ? `${cert} ${level}` : cert;
+  }
+  return words.slice(0, 3).join(' ');
 }
 
 export default async function handler(req, res) {
