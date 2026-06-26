@@ -18262,40 +18262,53 @@ function renderBooks() {
   initNLBookImages();
 }
 
+async function fetchAladinImage(title) {
+  const cacheKey = 'nl_img_' + title;
+  const cached = sessionStorage.getItem(cacheKey);
+  if (cached !== null) return cached;
+  try {
+    const res = await fetch(`/api/nl-book?title=${encodeURIComponent(title)}`);
+    const data = await res.json();
+    const imageUrl = data.imageUrl || '';
+    sessionStorage.setItem(cacheKey, imageUrl);
+    return imageUrl;
+  } catch (e) {
+    return '';
+  }
+}
+
+function applyBookImage(img, imageUrl) {
+  if (!imageUrl) return;
+  const mock = img.nextElementSibling;
+  img.src = imageUrl;
+  img.onload = () => {
+    img.style.display = 'block';
+    if (mock) mock.style.display = 'none';
+  };
+  img.onerror = () => {
+    img.style.display = 'none';
+    if (mock) mock.style.display = 'flex';
+  };
+}
+
+// KB 이미지 onerror 시 Aladin으로 자동 대체
+window._nlFallback = async function(img) {
+  const title = decodeURIComponent(img.dataset.nlTitle || '');
+  if (!title) return;
+  const imageUrl = await fetchAladinImage(title);
+  applyBookImage(img, imageUrl);
+};
+
 async function initNLBookImages() {
-  const imgs = Array.from(document.querySelectorAll('#books-section img[data-nl-title]'));
+  // imageUrl 없는 카드(data-nl-title은 있고 src 비어있는 img)만 처리
+  const imgs = Array.from(document.querySelectorAll('#books-section img[data-nl-title]'))
+    .filter(img => !img.src || img.src === window.location.href);
   if (!imgs.length) return;
 
   await Promise.all(imgs.map(async (img) => {
     const title = decodeURIComponent(img.dataset.nlTitle);
-    const cacheKey = 'nl_img_' + title;
-
-    let imageUrl;
-    const cached = sessionStorage.getItem(cacheKey);
-    if (cached !== null) {
-      imageUrl = cached;
-    } else {
-      try {
-        const res = await fetch(`/api/nl-book?title=${encodeURIComponent(title)}`);
-        const data = await res.json();
-        imageUrl = data.imageUrl || '';
-        sessionStorage.setItem(cacheKey, imageUrl);
-      } catch (e) {
-        return;
-      }
-    }
-
-    if (!imageUrl) return;
-    const mock = img.nextElementSibling;
-    img.src = imageUrl;
-    img.onload = () => {
-      img.style.display = 'block';
-      if (mock) mock.style.display = 'none';
-    };
-    img.onerror = () => {
-      img.style.display = 'none';
-      if (mock) mock.style.display = 'flex';
-    };
+    const imageUrl = await fetchAladinImage(title);
+    applyBookImage(img, imageUrl);
   }));
 }
 
