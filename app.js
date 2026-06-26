@@ -18259,6 +18259,44 @@ function renderBooks() {
     ? recBooks.map(b => bookCard(b, '추천')).join('')
     : '<p class="books-empty">추천 수험서 데이터가 없습니다.</p>';
 
+  initNLBookImages();
+}
+
+async function initNLBookImages() {
+  const imgs = Array.from(document.querySelectorAll('#books-section img[data-nl-title]'));
+  if (!imgs.length) return;
+
+  await Promise.all(imgs.map(async (img) => {
+    const title = decodeURIComponent(img.dataset.nlTitle);
+    const cacheKey = 'nl_img_' + title;
+
+    let imageUrl;
+    const cached = sessionStorage.getItem(cacheKey);
+    if (cached !== null) {
+      imageUrl = cached;
+    } else {
+      try {
+        const res = await fetch(`/api/nl-book?title=${encodeURIComponent(title)}`);
+        const data = await res.json();
+        imageUrl = data.imageUrl || '';
+        sessionStorage.setItem(cacheKey, imageUrl);
+      } catch (e) {
+        return;
+      }
+    }
+
+    if (!imageUrl) return;
+    const mock = img.nextElementSibling;
+    img.src = imageUrl;
+    img.onload = () => {
+      img.style.display = 'block';
+      if (mock) mock.style.display = 'none';
+    };
+    img.onerror = () => {
+      img.style.display = 'none';
+      if (mock) mock.style.display = 'flex';
+    };
+  }));
 }
 
 // ============================================
