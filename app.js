@@ -18203,13 +18203,15 @@ function renderBooks() {
     }).join('');
 
     // 실제 이미지 vs 목업
-    // imageUrl(교보 CDN) 있으면 우선 표시, 실패 시 Aladin으로 자동 대체
+    // KB 이미지: 로드 성공 시 variance 검사 → placeholder면 Aladin으로 자동 대체
+    // KB 이미지 없으면: Aladin API 직접 호출
     const mockBg = book.coverBg || 'linear-gradient(135deg,#0d1f5e,#4db843)';
     const mockTitle = book.title.replace(/\([^)]*\)/g, '').trim();
     const nlAttr = `data-nl-title="${encodeURIComponent(book.title)}"`;
     const coverHTML = book.imageUrl
-      ? `<img src="${book.imageUrl}" alt="${book.title}" class="book-cover-img" ${nlAttr}
-           onerror="this.removeAttribute('src');this.style.display='none';this.nextElementSibling.style.display='flex';window._nlFallback&&window._nlFallback(this)">
+      ? `<img src="${book.imageUrl}" alt="${book.title}" class="book-cover-img" crossorigin="anonymous" ${nlAttr}
+           onerror="this.removeAttribute('src');this.style.display='none';this.nextElementSibling.style.display='flex';window._nlFallback&&window._nlFallback(this)"
+           onload="(function(img){try{var c=document.createElement('canvas');c.width=40;c.height=40;var x=c.getContext('2d');x.drawImage(img,0,0,40,40,0,0,40,40);var d=x.getImageData(0,0,40,40).data,s=0,s2=0,n=d.length/4;for(var i=0;i<d.length;i+=4){var v=(d[i]+d[i+1]+d[i+2])/3;s+=v;s2+=v*v;}var variance=s2/n-(s/n)*(s/n);if(variance<30){img.removeAttribute('src');img.style.display='none';img.nextElementSibling.style.display='flex';window._nlFallback&&window._nlFallback(img);}}catch(e){}})(this)">
          <div class="book-cover-mock" style="background:${mockBg}; display:none;">
            <span class="book-cover-title">${mockTitle}</span>
            <span class="book-cover-publisher">${book.publisher}</span>
