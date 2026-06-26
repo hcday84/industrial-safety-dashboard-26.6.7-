@@ -233,6 +233,54 @@ const REAL_BOOKS = {
   ],
 
   // ────────────────────────────────────────
+  '컴퓨터활용능력1급': [
+    // 베스트셀러 5
+    { title: '2026 시나공 컴퓨터활용능력 1급 필기 기본서', author: '길벗 R&D', publisher: '길벗', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.8, reviews: 578, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+시나공+컴퓨터활용능력+1급+필기+기본서' },
+    { title: '2026 이기적 컴퓨터활용능력 1급 필기 기본서', author: '홍태성', publisher: '영진닷컴', price: 27900, originalPrice: 31000, discount: '10%', rating: 4.7, reviews: 467, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+이기적+컴퓨터활용능력+1급+필기' },
+    { title: '2026 한 권으로 끝내는 시나공 컴활 1급 필기+실기', author: '길벗 R&D', publisher: '길벗', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 398, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+시나공+컴활+1급+필기+실기' },
+    { title: '2026 이기적 컴퓨터활용능력 1급 필기+실기 올인원', author: '홍태성', publisher: '영진닷컴', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 345, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+이기적+컴활+1급+올인원' },
+    { title: '2026 시나공 컴퓨터활용능력 1급 필기 총정리', author: '길벗 R&D', publisher: '길벗', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.6, reviews: 289, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+시나공+컴활+1급+총정리' },
+    // 추천수험서 5
+    { title: '2026 시나공 컴퓨터활용능력 1급 필기 기출문제집', author: '길벗 R&D', publisher: '길벗', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.6, reviews: 245, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+시나공+컴활+1급+기출문제집' },
+    { title: '2026 에듀윌 컴퓨터활용능력 1급 필기 한권끝장', author: '에듀윌 IT수험연구소', publisher: '에듀윌', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 198, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+에듀윌+컴퓨터활용능력+1급' },
+    { title: '2026 컴활 1급 필기 7개년 기출문제해설', author: '강태우', publisher: '영진닷컴', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+컴활+1급+7개년+기출' },
+    { title: '2026 컴퓨터활용능력 1급 CBT 기출예상문제집', author: '홍태성', publisher: '영진닷컴', price: 18900, originalPrice: 21000, discount: '10%', rating: 4.4, reviews: 143, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+컴활+1급+CBT' },
+    { title: '2026 합격이 보이는 컴퓨터활용능력 1급 필기', author: '박윤정', publisher: '성안당', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.4, reviews: 123, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+컴퓨터활용능력+1급+합격' },
+  ],
+
+  // ────────────────────────────────────────
+  '컴퓨터활용능력2급': [
+    // 베스트셀러 5
+    { title: '2026 시나공 컴퓨터활용능력 2급 필기 기본서', author: '길벗 R&D', publisher: '길벗', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.8, reviews: 634, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+시나공+컴퓨터활용능력+2급+필기+기본서' },
+    { title: '2026 이기적 컴퓨터활용능력 2급 필기 기본서', author: '홍태성', publisher: '영진닷컴', price: 18900, originalPrice: 21000, discount: '10%', rating: 4.7, reviews: 512, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+이기적+컴퓨터활용능력+2급+필기' },
+    { title: '2026 한 권으로 끝내는 시나공 컴활 2급 필기+실기', author: '길벗 R&D', publisher: '길벗', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.7, reviews: 445, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+시나공+컴활+2급+필기+실기' },
+    { title: '2026 이기적 컴퓨터활용능력 2급 필기+실기 올인원', author: '홍태성', publisher: '영진닷컴', price: 26100, originalPrice: 29000, discount: '10%', rating: 4.6, reviews: 378, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+이기적+컴활+2급+올인원' },
+    { title: '2026 시나공 컴퓨터활용능력 2급 필기 총정리', author: '길벗 R&D', publisher: '길벗', price: 14400, originalPrice: 16000, discount: '10%', rating: 4.6, reviews: 312, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+시나공+컴활+2급+총정리' },
+    // 추천수험서 5
+    { title: '2026 시나공 컴퓨터활용능력 2급 필기 기출문제집', author: '길벗 R&D', publisher: '길벗', price: 11700, originalPrice: 13000, discount: '10%', rating: 4.6, reviews: 267, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+시나공+컴활+2급+기출문제집' },
+    { title: '2026 에듀윌 컴퓨터활용능력 2급 필기 한권끝장', author: '에듀윌 IT수험연구소', publisher: '에듀윌', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.5, reviews: 223, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+에듀윌+컴퓨터활용능력+2급' },
+    { title: '2026 컴활 2급 필기 CBT 기출예상문제집', author: '홍태성', publisher: '영진닷컴', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.5, reviews: 189, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+컴활+2급+CBT' },
+    { title: '2026 기분파 컴퓨터활용능력 2급 필기', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.4, reviews: 156, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+기분파+컴퓨터활용능력+2급' },
+    { title: '2026 합격이 보이는 컴퓨터활용능력 2급 필기', author: '박윤정', publisher: '성안당', price: 18900, originalPrice: 21000, discount: '10%', rating: 4.4, reviews: 134, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+컴퓨터활용능력+2급+합격' },
+  ],
+
+  // ────────────────────────────────────────
+  'ADsP': [
+    // 베스트셀러 5
+    { title: '2026 최신개정 ADsP 데이터분석 준전문가', author: '윤종식', publisher: '데이터에듀', price: 27900, originalPrice: 31000, discount: '10%', rating: 4.7, reviews: 367, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+ADsP+데이터분석+준전문가+윤종식' },
+    { title: '이지패스 2026 ADsP 데이터분석 준전문가', author: '전용문', publisher: '위키북스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 298, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이지패스+2026+ADsP' },
+    { title: '2026 이기적 ADsP 데이터분석 준전문가 이론서+기출문제', author: '임경덕', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+이기적+ADsP' },
+    { title: '2026 에듀윌 데이터분석 준전문가 ADsP 2주끝장', author: '윤소영', publisher: '에듀윌', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.5, reviews: 213, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+에듀윌+ADsP' },
+    { title: '2026 선넘는 ADsP 데이터분석 준전문가 라임북', author: '공석민', publisher: '쏠티북스', price: 27900, originalPrice: 31000, discount: '10%', rating: 4.5, reviews: 178, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+선넘는+ADsP+라임북' },
+    // 추천수험서 5
+    { title: '2026 박문각 ADsP 기출원스톱 400제+무료특강', author: '육근수', publisher: '박문각', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+박문각+ADsP+기출원스톱' },
+    { title: '2026 ADsP 데이터분석 준전문가 한권으로 끝내기', author: '김계철', publisher: '황소걸음아카데미', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 123, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+ADsP+한권으로+끝내기' },
+    { title: '2026 ADsP 핵심요약+실전문제', author: '윤종식', publisher: '데이터에듀', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 108, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+ADsP+핵심요약+실전문제' },
+    { title: '2026 데이터 분석 준전문가 ADsP 단기완성', author: '이재원', publisher: '예문사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 89, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+ADsP+단기완성' },
+    { title: '2026 ADsP 기출문제 완전정복', author: '전용문', publisher: '위키북스', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.3, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+ADsP+기출문제+완전정복' },
+  ],
+
+  // ────────────────────────────────────────
   'SQLD': [
     // 베스트셀러 5
     { title: '2026 이기적 SQLD SQL 개발자 기본서 이론+기출문제', author: '강태우', publisher: '영진닷컴', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.8, reviews: 534, tags: ['베스트'], imageUrl: KB('S000217937565'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217937565' },
