@@ -18214,7 +18214,9 @@ function renderBooks() {
            <span class="book-cover-title">${mockTitle}</span>
            <span class="book-cover-publisher">${book.publisher}</span>
          </div>`
-      : `<div class="book-cover-mock" style="background:${mockBg}">
+      : `<img class="book-cover-img" data-nl-title="${encodeURIComponent(book.title)}" src="" alt="${book.title}" style="display:none"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+         <div class="book-cover-mock" style="background:${mockBg}">
            <span class="book-cover-title">${mockTitle}</span>
            <span class="book-cover-publisher">${book.publisher}</span>
          </div>`;
