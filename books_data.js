@@ -1181,6 +1181,86 @@ const REAL_BOOKS = {
     { title: '2026 에듀윌 전기 전기기능사 필기 한권끝장', author: '유치형, 홍석묵, 최대규', publisher: '에듀윌', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.4, reviews: 43, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=에듀윌+전기기능사+필기+한권끝장+2026' },
   ],
 
+  // ────────────────────────────────────────
+  '화학분석기사': [
+    // 베스트셀러 5
+    { title: '2026 정나나의 화학분석기사 필기', author: '정나나', publisher: '예문사', price: 35100, originalPrice: 39000, discount: '10%', rating: 4.7, reviews: 234, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+정나나+화학분석기사+필기' },
+    { title: '2026 나합격 화학분석기사 필기+무료특강', author: '나합격콘텐츠연구소', publisher: '삼원북스', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+나합격+화학분석기사' },
+    { title: '2026 한번에 합격하는 화학분석기사 필기', author: '박수경', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 167, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+화학분석기사+필기+성안당' },
+    { title: '2026 Win-Q 화학분석기사 필기 단기합격', author: '박지은', publisher: '시대에듀', price: 32400, originalPrice: 36000, discount: '10%', rating: 4.5, reviews: 143, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+Win-Q+화학분석기사' },
+    { title: '2026 화학분석기사 필기 기출문제집', author: '김재호', publisher: '예문사', price: 27900, originalPrice: 31000, discount: '10%', rating: 4.5, reviews: 121, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+화학분석기사+기출문제집' },
+    // 추천수험서 5
+    { title: '2026 에듀윌 화학분석기사 필기 한권끝장', author: '에듀윌 수험연구소', publisher: '에듀윌', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+에듀윌+화학분석기사' },
+    { title: '2026 화학분석기사 핵심이론+기출문제', author: '정나나', publisher: '예문사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.4, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+화학분석기사+핵심이론' },
+    { title: '2026 화학분석기사 실기 완전정복', author: '박수경', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+화학분석기사+실기' },
+    { title: '2026 화학분석기사 CBT 기출예상문제집', author: '이경호', publisher: '세화', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.3, reviews: 65, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+화학분석기사+CBT' },
+    { title: '2026 화학분석기사 7개년 과년도 해설집', author: '박지은', publisher: '시대에듀', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.3, reviews: 54, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+화학분석기사+7개년' },
+  ],
+
+  // ────────────────────────────────────────
+  '자동차정비기능사': [
+    // 베스트셀러 5
+    { title: '2026 기분파 자동차정비기능사 필기', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.7, reviews: 378, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+기분파+자동차정비기능사+필기' },
+    { title: '2026 에듀윌 자동차정비기능사 필기 한권끝장', author: '김정혁', publisher: '에듀윌', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.6, reviews: 312, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+에듀윌+자동차정비기능사' },
+    { title: '2026 뻥! 뚫린 패스 자동차정비기능사 필기', author: '김연수 외', publisher: '골든벨', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.6, reviews: 267, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기능사+골든벨' },
+    { title: '2026 자동차정비기능사 필기(+전과목 무료동영상)', author: '이병근', publisher: '예문에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 223, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기능사+무료동영상' },
+    { title: '2026 Win-Q 자동차정비기능사 필기 단기합격', author: '함성훈 외', publisher: '시대에듀', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.5, reviews: 189, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+Win-Q+자동차정비기능사' },
+    // 추천수험서 5
+    { title: '2026 자동차정비기능사 필기 최근기출문제', author: '김형진', publisher: '책과상상', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 156, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기능사+최근기출' },
+    { title: '2026 자동차정비기능사 필기 핵심이론', author: '김광석', publisher: '골든벨', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 132, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기능사+핵심이론' },
+    { title: '2026 합격이 보이는 자동차정비기능사 필기', author: '국가기술자격연구회', publisher: '구민사', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기능사+구민사' },
+    { title: '2026 자동차정비기능사 실기 완전정복', author: '이병근', publisher: '예문에듀', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기능사+실기' },
+    { title: '2026 자동차정비기능사 CBT 적중모의고사', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.3, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기능사+CBT' },
+  ],
+
+  // ────────────────────────────────────────
+  '자동차정비산업기사': [
+    // 베스트셀러 5
+    { title: '2026 기분파 자동차정비산업기사 필기', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 267, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+기분파+자동차정비산업기사' },
+    { title: '2026 뻥! 뚫린 PASS 자동차정비산업기사 필기', author: '김명준 외', publisher: '골든벨', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.6, reviews: 223, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비산업기사+골든벨' },
+    { title: '2026 자동차정비산업기사 필기 한권완성', author: '이병근', publisher: '예문에듀', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 189, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비산업기사+한권완성' },
+    { title: '2026 합격포인트 자동차정비산업기사 필기', author: '김광석 외', publisher: '골든벨', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 156, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+합격포인트+자동차정비산업기사' },
+    { title: '2026 자동차정비산업기사 필기', author: '소철호', publisher: '책과상상', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 132, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비산업기사+필기' },
+    // 추천수험서 5
+    { title: '자동차정비산업기사 필기', author: '정장만', publisher: '에듀피디', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=자동차정비산업기사+필기+에듀피디' },
+    { title: '2026 에듀윌 자동차정비산업기사 필기 한권끝장', author: '에듀윌 수험연구소', publisher: '에듀윌', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+에듀윌+자동차정비산업기사' },
+    { title: '2026 자동차정비산업기사 실기 완전정복', author: '이병근', publisher: '예문에듀', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.4, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비산업기사+실기' },
+    { title: '2026 자동차정비산업기사 CBT 실전모의고사', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.3, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비산업기사+CBT' },
+    { title: '2026 자동차정비산업기사 과년도 기출해설', author: '소철호', publisher: '책과상상', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.3, reviews: 65, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비산업기사+과년도' },
+  ],
+
+  // ────────────────────────────────────────
+  '지게차운전기능사': [
+    // 베스트셀러 5
+    { title: '2027 박문각 지게차운전기능사 필기 핵심이론서+8개년 기출문제집 세트', author: '박문각 자격시험 개발팀', publisher: '박문각', price: 21510, originalPrice: 23900, discount: '10%', rating: 4.8, reviews: 456, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2027+박문각+지게차운전기능사+세트' },
+    { title: '2026 기분파 지게차운전기능사 필기', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 12600, originalPrice: 14000, discount: '10%', rating: 4.7, reviews: 378, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+기분파+지게차운전기능사' },
+    { title: '2027 박문각 지게차운전기능사 필기 8개년 기출문제집', author: '박문각 자격시험 개발팀', publisher: '박문각', price: 10800, originalPrice: 12000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyободook.co.kr/search?keyword=2027+박문각+지게차운전기능사+기출' },
+    { title: '2026 기발한 지게차운전기능사 필기 총정리문제', author: '김준한', publisher: '크라운출판사', price: 11700, originalPrice: 13000, discount: '10%', rating: 4.6, reviews: 267, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+지게차운전기능사+크라운' },
+    { title: '2026 쩐 기능장의 3일 끝! 지게차운전기능사 필기', author: '전범준', publisher: '직업상점', price: 12600, originalPrice: 14000, discount: '10%', rating: 4.6, reviews: 234, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+지게차운전기능사+3일끝' },
+    // 추천수험서 5
+    { title: '2027 박문각 지게차운전기능사 필기 핵심이론서', author: '박문각 자격시험 개발팀', publisher: '박문각', price: 12510, originalPrice: 13900, discount: '10%', rating: 4.6, reviews: 198, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2027+박문각+지게차운전기능사+핵심이론' },
+    { title: '2026 에듀윌 지게차운전기능사 필기 독학끝장', author: '에듀윌 수험연구소', publisher: '에듀윌', price: 12600, originalPrice: 14000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+에듀윌+지게차운전기능사' },
+    { title: '2026 Win-Q 지게차운전기능사 필기 단기합격', author: '함성훈', publisher: '시대에듀', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.5, reviews: 143, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+Win-Q+지게차운전기능사' },
+    { title: '2026 지게차운전기능사 필기 기출문제집', author: '건설기계교육아카데미', publisher: '책과상상', price: 12600, originalPrice: 14000, discount: '10%', rating: 4.4, reviews: 123, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+지게차운전기능사+기출문제집' },
+    { title: '2026 지게차운전기능사 실기 완전정복', author: '김준한', publisher: '크라운출판사', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.4, reviews: 108, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+지게차운전기능사+실기' },
+  ],
+
+  // ────────────────────────────────────────
+  '굴착기운전기능사': [
+    // 베스트셀러 5
+    { title: '2026 기분파 굴착기운전기능사 필기', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 12600, originalPrice: 14000, discount: '10%', rating: 4.7, reviews: 412, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+기분파+굴착기운전기능사+필기' },
+    { title: '2026 에듀윌 굴착기운전기능사 독학으로 필기끝장', author: '김은남', publisher: '에듀윌', price: 12600, originalPrice: 14000, discount: '10%', rating: 4.7, reviews: 356, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+에듀윌+굴착기운전기능사' },
+    { title: '2026 확! 바뀐 굴착기운전기능사 필기', author: '전국중장비교사협의회', publisher: '골든벨', price: 12600, originalPrice: 14000, discount: '10%', rating: 4.6, reviews: 298, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+굴착기운전기능사+골든벨' },
+    { title: '2026 박문각 취밥러 굴착기운전기능사 필기', author: '박문각 자격시험 개발팀', publisher: '박문각', price: 12510, originalPrice: 13900, discount: '10%', rating: 4.6, reviews: 256, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+박문각+굴착기운전기능사' },
+    { title: '2026 굴착기운전기능사 필기 기출문제', author: '건설기계교육아카데미', publisher: '책과상상', price: 11700, originalPrice: 13000, discount: '10%', rating: 4.6, reviews: 223, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+굴착기운전기능사+기출문제' },
+    // 추천수험서 5
+    { title: '굴착기운전기능사 필기', author: '국가기술자격시험연구회', publisher: '구민사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 189, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=굴착기운전기능사+필기+구민사' },
+    { title: '2026 굴착기운전기능사 필기+실기 완전정복', author: '에듀윌 수험연구소', publisher: '에듀윌', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 156, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+굴착기운전기능사+완전정복' },
+    { title: '2026 Win-Q 굴착기운전기능사 필기 단기합격', author: '함성훈', publisher: '시대에듀', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.4, reviews: 134, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+Win-Q+굴착기운전기능사' },
+    { title: '2026 굴착기운전기능사 실기 코스별 요령', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+굴착기운전기능사+실기' },
+    { title: '2026 굴착기운전기능사 필기 핵심요약 노트', author: '전국중장비교사협의회', publisher: '골든벨', price: 10800, originalPrice: 12000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+굴착기운전기능사+핵심요약' },
+  ],
+
   '영양사': [
     { title: '2026 영양사 국가시험 핵심요약 총정리', author: '대한영양사협회 편집부', publisher: '군자출판사', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 678, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=영양사+국가시험+핵심요약+2026' },
     { title: '2026 영양사 기출문제 완전분석 10개년', author: '메디시언 편집부', publisher: '메디시언', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.8, reviews: 556, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=영양사+기출문제+완전분석+10개년+2026' },
