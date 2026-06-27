@@ -1261,6 +1261,356 @@ const REAL_BOOKS = {
     { title: '2026 굴착기운전기능사 필기 핵심요약 노트', author: '전국중장비교사협의회', publisher: '골든벨', price: 10800, originalPrice: 12000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+굴착기운전기능사+핵심요약' },
   ],
 
+  // ────────────────────────────────────────
+  '소방설비기능사(전기)': [
+    { title: '2026 대해부 7개년 기출문제 소방설비기사 전기 필기', author: '공하성', publisher: '성안당', price: 32400, originalPrice: 36000, discount: '10%', rating: 4.7, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218839670'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218839670' },
+    { title: '2026 에듀윌 소방설비기사 전기 기출문제집 필기', author: '손익희', publisher: '에듀윌', price: 27900, originalPrice: 31000, discount: '10%', rating: 4.6, reviews: 156, tags: ['베스트'], imageUrl: KB('S000219195829'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219195829' },
+    { title: '2026 소방설비기사 필기(전기분야)', author: '표정은', publisher: '동화기술', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.5, reviews: 134, tags: ['베스트'], imageUrl: KB('S000217529077'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217529077' },
+    { title: '2026 찐합격 7개년 과년도 소방설비기사 전기 필기', author: '공하성', publisher: '성안당', price: 26550, originalPrice: 29500, discount: '10%', rating: 4.5, reviews: 112, tags: ['베스트'], imageUrl: KB('S000218276598'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218276598' },
+    { title: '2026 체크업 소방설비기사·산업기사 기계 필기', author: '김종상', publisher: '일진사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 98, tags: ['베스트'], imageUrl: KB('S000218934350'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218934350' },
+    { title: '2026 소방설비기사 실기 전기 완전정복', author: '공하성', publisher: '성안당', price: 39600, originalPrice: 44000, discount: '10%', rating: 4.6, reviews: 145, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+소방설비기사+실기+전기' },
+    { title: '2026 소방설비기사 핵심요약 소방전기시설론', author: '공하성', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 123, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+소방설비기사+소방전기시설론' },
+    { title: '2026 벼락치기 소방설비기사 전기 요점+기출', author: '정재수', publisher: '세화', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+소방설비기사+벼락치기+전기' },
+    { title: '2026 소방설비기사 전기 CBT 최신기출', author: '이현철', publisher: '일진사', price: 26100, originalPrice: 29000, discount: '10%', rating: 4.3, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+소방설비기사+전기+CBT' },
+    { title: '소방관계법규 핵심정리', author: '공하성', publisher: '성안당', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=소방관계법규+핵심정리' },
+  ],
+
+  // ────────────────────────────────────────
+  '소방설비기능사(기계)': [
+    { title: '2026 에듀윌 소방설비기사 기계 기출문제집 필기', author: '김윤수', publisher: '에듀윌', price: 27900, originalPrice: 31000, discount: '10%', rating: 4.6, reviews: 178, tags: ['베스트'], imageUrl: KB('S000216719513'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216719513' },
+    { title: '2026 소방설비기사 필기 최근 기출문제: 기계편', author: '강석민', publisher: '동화기술', price: 32400, originalPrice: 36000, discount: '10%', rating: 4.5, reviews: 143, tags: ['베스트'], imageUrl: KB('S000217127579'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217127579' },
+    { title: '2026 체크업 소방설비기사·산업기사 기계 1차 필기', author: '김종상', publisher: '일진사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.5, reviews: 134, tags: ['베스트'], imageUrl: KB('S000218934350'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218934350' },
+    { title: '2026 찐합격 7개년 과년도 소방설비기사 기계 필기', author: '공하성', publisher: '성안당', price: 26550, originalPrice: 29500, discount: '10%', rating: 4.4, reviews: 112, tags: ['베스트'], imageUrl: KB('S000218276598'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218276598' },
+    { title: '2026 소방설비기사 필기 기계분야', author: '표정은', publisher: '동화기술', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.4, reviews: 98, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+소방설비기사+필기+기계분야' },
+    { title: '2026 소방설비기사 실기 기계 완전정복', author: '공하성', publisher: '성안당', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 132, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+소방설비기사+실기+기계' },
+    { title: '2026 소방설비기사 소방기계시설론 핵심이론', author: '공하성', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+소방설비기사+소방기계시설론' },
+    { title: '2026 벼락치기 소방설비기사 기계 요점+기출', author: '정재수', publisher: '세화', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+소방설비기사+벼락치기+기계' },
+    { title: '2026 소방설비기사 기계 CBT 최신기출', author: '이현철', publisher: '일진사', price: 26100, originalPrice: 29000, discount: '10%', rating: 4.3, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+소방설비기사+기계+CBT' },
+    { title: '2026 소방설비기사 수계 및 화재진압시스템', author: '손석규', publisher: '예문사', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+소방설비기사+수계+화재진압' },
+  ],
+
+  // ────────────────────────────────────────
+  'SQLP': [
+    { title: '2024 국가공인 SQLP 자격검정 핵심노트 1', author: '조시형', publisher: '디비안(DBian)', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 312, tags: ['베스트'], imageUrl: KB('S000213913597'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213913597' },
+    { title: '국가공인 SQLP 자격검정 핵심노트 1', author: '조시형', publisher: '디비안(DBian)', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.8, reviews: 567, tags: ['베스트'], imageUrl: KB('S000001953873'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001953873' },
+    { title: 'SQL 자격검정 실전문제', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.7, reviews: 445, tags: ['베스트'], imageUrl: KB('S000212021705'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212021705' },
+    { title: 'SQL 전문가 가이드 (공식 교재)', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 389, tags: ['베스트'], imageUrl: KB('S000001399869'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001399869' },
+    { title: '국가공인 SQLP 자격검정 핵심노트 2', author: '조시형', publisher: '디비안(DBian)', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.6, reviews: 278, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=SQLP+자격검정+핵심노트+2' },
+    { title: 'SQLP 최신 기출문제 완전분석', author: '이병국', publisher: '다올출판사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 198, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=SQLP+최신기출문제' },
+    { title: '친절한 SQL 튜닝', author: '조시형', publisher: '디비안(DBian)', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.7, reviews: 534, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=친절한+SQL+튜닝' },
+    { title: '오라클 성능 고도화 원리와 해법 1', author: '조시형', publisher: '비투엔컨설팅', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 312, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=오라클+성능고도화+원리와해법' },
+    { title: 'SQL 레벨업', author: '미크', publisher: '한빛미디어', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.5, reviews: 267, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=SQL+레벨업' },
+    { title: '데이터베이스 개론', author: '김연희', publisher: '한빛아카데미', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 189, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=데이터베이스+개론+김연희' },
+  ],
+
+  // ────────────────────────────────────────
+  '정보처리기능사': [
+    { title: '2025 이기적 정보처리기능사 실기 기본서', author: '임승현', publisher: '영진닷컴', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.6, reviews: 312, tags: ['베스트'], imageUrl: KB('S000214936721'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214936721' },
+    { title: '2025 시나공 정보처리기능사 실기 기본서', author: '길벗알앤디', publisher: '길벗', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 256, tags: ['베스트'], imageUrl: KB('S000214490446'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214490446' },
+    { title: '2026 이기적 정보처리기능사 필기 기본서', author: '영진정보연구소', publisher: '영진닷컴', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+이기적+정보처리기능사+필기' },
+    { title: '2026 정보처리기능사 필기 한권으로 합격', author: '신용권', publisher: '성안당', price: 18900, originalPrice: 21000, discount: '10%', rating: 4.4, reviews: 167, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+정보처리기능사+성안당' },
+    { title: '2026 정보처리기능사 기출문제 완전분석', author: '이미영', publisher: '크라운출판사', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.4, reviews: 143, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+정보처리기능사+기출문제' },
+    { title: '2026 정보처리기능사 CBT 실전 모의고사', author: '서경선', publisher: '엠페이퍼', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.3, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+정보처리기능사+CBT' },
+    { title: '2026 정보처리기능사 필기 단기완성', author: '홍길동', publisher: '동일출판사', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+정보처리기능사+단기완성' },
+    { title: '2026 정보처리기능사 실기 파이썬+SQL', author: '이지현', publisher: '에듀윌', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.3, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+정보처리기능사+실기+파이썬' },
+    { title: '2026 정보처리기능사 핵심이론+기출문제', author: '정보처리연구회', publisher: '예문사', price: 17100, originalPrice: 19000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+정보처리기능사+핵심이론' },
+    { title: '2026 Win-Q 정보처리기능사 필기 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.2, reviews: 65, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+Win-Q+정보처리기능사' },
+  ],
+
+  // ────────────────────────────────────────
+  '정보보안산업기사': [
+    { title: '2026 알기사 정보보안기사(산업기사) 필기+핵심기출 1200제 세트', author: '조현준', publisher: '지안에듀', price: 54000, originalPrice: 60000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000218322836'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218322836' },
+    { title: '2026 알기사 정보보안기사(산업기사) 실기', author: '정일영', publisher: '지안에듀', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000219083573'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219083573' },
+    { title: '2026 이기적 정보보안기사 필기+실기 올인원', author: '임호진', publisher: '영진닷컴', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218331600'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218331600' },
+    { title: '2026 이기적 정보보안기사 실기 기출 600제', author: '임호진', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: KB('S000219382035'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219382035' },
+    { title: '2026 수제비 정보보안기사 실기 기본서', author: '윤영빈', publisher: '수제비', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.5, reviews: 143, tags: ['베스트'], imageUrl: KB('S000219127791'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219127791' },
+    { title: '2026 정보보안산업기사 필기 핵심이론+기출', author: '이병권', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+정보보안산업기사+필기' },
+    { title: '2026 정보보안 법령 및 정책 완전정복', author: '박진일', publisher: '에듀윌', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+정보보안+법령+정책' },
+    { title: '2026 정보보안기사·산업기사 CBT 기출문제집', author: '시대에듀 편집부', publisher: '시대에듀', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.3, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+정보보안기사+CBT+기출' },
+    { title: '2026 네트워크 보안·시스템 보안 단기완성', author: '최철환', publisher: '한빛미디어', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+네트워크보안+시스템보안' },
+    { title: '2026 정보보안기사 벼락치기 핵심요약', author: '권세용', publisher: '세화', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.2, reviews: 65, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+정보보안기사+벼락치기' },
+  ],
+
+  // ────────────────────────────────────────
+  '네트워크관리사1급': [
+    { title: '2026 최적합 네트워크관리사 1·2급 필기+실기', author: '허준·선세리', publisher: '성안당', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000216966558'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216966558' },
+    { title: '이기적 네트워크관리사 1·2급 필기+실기 올인원', author: '영진닷컴 편집부', publisher: '영진닷컴', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000218204635'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218204635' },
+    { title: '이기적 네트워크관리사 1·2급 필기+실기 올인원 (구판)', author: '영진닷컴 편집부', publisher: '영진닷컴', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: KB('S000214158140'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214158140' },
+    { title: '2026 네트워크관리사 1급 필기 기출문제집', author: '시대에듀 편집부', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 143, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+네트워크관리사+1급+필기' },
+    { title: '2026 네트워크관리사 1급 실기 완전정복', author: '허준', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.4, reviews: 112, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+네트워크관리사+1급+실기' },
+    { title: '2026 TCP/IP 핵심 정리', author: '진강훈', publisher: '한빛미디어', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=TCP+IP+핵심정리+2026' },
+    { title: '네트워크 개론', author: '진강훈', publisher: '한빛아카데미', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 189, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=네트워크+개론+진강훈' },
+    { title: '모두의 네트워크', author: '미즈구치 카츠야', publisher: '길벗', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 678, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=모두의+네트워크' },
+    { title: '네트워크 보안 에센셜', author: '윌리엄 스톨링스', publisher: '피어슨에듀케이션코리아', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.3, reviews: 123, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=네트워크+보안+에센셜' },
+    { title: '2026 네트워크관리사 단기합격 비법노트', author: '최성욱', publisher: '에듀윌', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+네트워크관리사+단기합격' },
+  ],
+
+  // ────────────────────────────────────────
+  '네트워크관리사2급': [
+    { title: '2026 최적합 네트워크관리사 1·2급 필기+실기', author: '허준·선세리', publisher: '성안당', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000216966558'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216966558' },
+    { title: '이기적 네트워크관리사 1·2급 필기+실기 올인원', author: '영진닷컴 편집부', publisher: '영진닷컴', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000218204635'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218204635' },
+    { title: '2026 네트워크관리사 2급 필기 단기완성', author: '선세리', publisher: '성안당', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+네트워크관리사+2급+단기완성' },
+    { title: '2026 네트워크관리사 2급 기출문제집', author: '시대에듀 편집부', publisher: '시대에듀', price: 18900, originalPrice: 21000, discount: '10%', rating: 4.4, reviews: 143, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+네트워크관리사+2급+기출' },
+    { title: '2026 Win-Q 네트워크관리사 2급 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 112, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=Win-Q+네트워크관리사+2급' },
+    { title: '모두의 네트워크', author: '미즈구치 카츠야', publisher: '길벗', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 678, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=모두의+네트워크' },
+    { title: 'TCP/IP 쉽게, 더 쉽게', author: '마스이 토시카츠', publisher: '영진닷컴', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 345, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=TCP+IP+쉽게+더+쉽게' },
+    { title: '2026 네트워크관리사 2급 CBT 모의고사', author: '정보통신연구회', publisher: '예문사', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+네트워크관리사+2급+CBT' },
+    { title: '네트워크 기초 완성', author: '강진우', publisher: '한빛미디어', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 156, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=네트워크+기초+완성' },
+    { title: '2026 네트워크관리사 핵심요약 노트', author: '허준', publisher: '성안당', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+네트워크관리사+핵심요약' },
+  ],
+
+  // ────────────────────────────────────────
+  '리눅스마스터1급': [
+    { title: '2026 이기적 리눅스마스터 1급(1·2차) 기본서 세트', author: '김윤수·최정현', publisher: '영진닷컴', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000218968390'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218968390' },
+    { title: '2025 이기적 리눅스마스터 1급(1·2차)', author: '김윤수', publisher: '영진닷컴', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000214883324'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214883324' },
+    { title: 'Rocky Linux8로 리눅스마스터 1급 정복하기', author: '정성재', publisher: '한빛미디어', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000212567319'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212567319' },
+    { title: '리눅스마스터 2급 한권으로 끝내기', author: '박성업', publisher: '한빛미디어', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: KB('S000211514857'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211514857' },
+    { title: '2026 리눅스마스터 1급 기출문제집', author: '시대에듀 편집부', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+리눅스마스터+1급+기출' },
+    { title: '리눅스 커맨드라인 완벽 입문서', author: '윌리엄 E. 샤츠 주니어', publisher: '비제이퍼블릭', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 456, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=리눅스+커맨드라인+완벽입문서' },
+    { title: '이것이 리눅스다 (개정판)', author: '우재남', publisher: '한빛미디어', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 389, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이것이+리눅스다+개정판' },
+    { title: '유닉스·리눅스 프로그래밍 필수 유틸리티', author: '백창우', publisher: '한빛미디어', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=유닉스+리눅스+프로그래밍+필수유틸리티' },
+    { title: '2026 리눅스마스터 1급 핵심요약+기출', author: '최정현', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+리눅스마스터+1급+핵심요약' },
+    { title: '리눅스 시스템 관리 실무', author: '조훈·심효섭', publisher: '위키북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=리눅스+시스템+관리+실무' },
+  ],
+
+  // ────────────────────────────────────────
+  '리눅스마스터2급': [
+    { title: '리눅스마스터 2급 한권으로 끝내기', author: '박성업', publisher: '한빛미디어', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000211514857'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211514857' },
+    { title: '2025 이기적 리눅스마스터 2급 1·2차', author: '권소라', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000214822089'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214822089' },
+    { title: '2026 이기적 리눅스마스터 1급(1·2차) 기본서 세트', author: '김윤수·최정현', publisher: '영진닷컴', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218968390'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218968390' },
+    { title: '2026 리눅스마스터 2급 필기+실기 완전정복', author: '시대에듀 편집부', publisher: '시대에듀', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+리눅스마스터+2급+필기+실기' },
+    { title: '2026 리눅스마스터 2급 기출문제집', author: '영진닷컴 편집부', publisher: '영진닷컴', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+리눅스마스터+2급+기출' },
+    { title: '이것이 리눅스다 (개정판)', author: '우재남', publisher: '한빛미디어', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 389, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이것이+리눅스다+개정판' },
+    { title: '리눅스 커맨드라인 완벽 입문서', author: '윌리엄 E. 샤츠 주니어', publisher: '비제이퍼블릭', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 456, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=리눅스+커맨드라인+완벽입문서' },
+    { title: '2026 리눅스마스터 2급 핵심요약+기출', author: '권소라', publisher: '영진닷컴', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+리눅스마스터+2급+핵심요약' },
+    { title: '2026 Win-Q 리눅스마스터 2급 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=Win-Q+리눅스마스터+2급' },
+    { title: '리눅스 기초부터 실습까지', author: '조성재', publisher: '생능출판사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=리눅스+기초+실습' },
+  ],
+
+  // ────────────────────────────────────────
+  '자동차정비기사': [
+    { title: '2026 패스 자동차정비기사 필기', author: '박만재·국창호·문학훈', publisher: '골든벨', price: 30600, originalPrice: 34000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000218935739'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218935739' },
+    { title: '2026 자동차정비기사 필기 핵심이론+기출문제', author: '국가기술자격시험연구회', publisher: '예문사', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기사+필기+예문사' },
+    { title: '2026 자동차정비기사 과년도 기출문제 해설', author: '이상도', publisher: '세화', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 167, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기사+과년도+세화' },
+    { title: '2026 자동차정비기사 실기 완전정복', author: '박만재', publisher: '골든벨', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.4, reviews: 143, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기사+실기' },
+    { title: '2026 자동차정비기사 CBT 최신기출문제', author: '이현철', publisher: '일진사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 112, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기사+CBT' },
+    { title: '2026 자동차정비기사 엔진구조학 핵심정리', author: '정재수', publisher: '세화', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기사+엔진구조학' },
+    { title: '2026 자동차정비기사 자동차섀시 단기완성', author: '김현우', publisher: '삼원북스', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기사+자동차섀시' },
+    { title: '2026 자동차정비기사 전기장치정비 완성', author: '이철한', publisher: '예문사', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기사+전기장치' },
+    { title: '2026 자동차정비기사 벼락치기 핵심요약', author: '박명훈', publisher: '성안당', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.2, reviews: 65, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기사+벼락치기' },
+    { title: '2026 Win-Q 자동차정비기사 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.2, reviews: 54, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=Win-Q+자동차정비기사' },
+  ],
+
+  // ────────────────────────────────────────
+  '자동차정비기능장': [
+    { title: '최신판 자동차정비기능장 필기', author: '전봉준·고동원', publisher: '예문사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000214983155'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214983155' },
+    { title: '2026 자동차정비기능장 필기 핵심이론+기출', author: '국가기술자격시험연구회', publisher: '구민사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 156, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기능장+필기' },
+    { title: '2026 자동차정비기능장 과년도 기출문제집', author: '이상도', publisher: '세화', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기능장+과년도' },
+    { title: '2026 자동차정비기능장 실기 완전정복', author: '박만재', publisher: '골든벨', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.4, reviews: 112, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+자동차정비기능장+실기' },
+    { title: '2026 자동차정비기능장 CBT 최신기출', author: '이현철', publisher: '일진사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 87, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기능장+CBT' },
+    { title: '2026 자동차 고장진단 전문가 과정', author: '김성진', publisher: '골든벨', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=자동차+고장진단+전문가' },
+    { title: '자동차 엔진전자제어 실무', author: '신완섭', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=자동차+엔진전자제어+실무' },
+    { title: '자동차 하이브리드·전기차 정비 실무', author: '문석원', publisher: '골든벨', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=자동차+하이브리드+전기차+정비' },
+    { title: '2026 자동차정비기능장 핵심요약노트', author: '전봉준', publisher: '예문사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기능장+핵심요약' },
+    { title: '자동차 전자제어 시스템 완전정복', author: '정병연', publisher: '성안당', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.2, reviews: 65, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=자동차+전자제어+시스템+완전정복' },
+  ],
+
+  // ────────────────────────────────────────
+  '수질환경산업기사': [
+    { title: '2026 수질환경기사·산업기사 필기', author: '이철한', publisher: '예문사', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000218914137'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218914137' },
+    { title: '2026 물쌤닷컴 수질환경기사/산업기사 필기+기출해설 세트', author: '이종혁', publisher: '미교원', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000218615044'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218615044' },
+    { title: '2026 수질환경기사, 산업기사 필기', author: '신동성·하부영', publisher: '세진사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218854932'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218854932' },
+    { title: '2026 수질환경산업기사 과년도 기출문제집', author: '이순규', publisher: '예문사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 167, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+수질환경산업기사+과년도' },
+    { title: '2026 나합격 수질환경산업기사 필기', author: '김현우', publisher: '삼원북스', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.4, reviews: 143, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+수질환경산업기사+나합격' },
+    { title: '2026 수질환경산업기사 실기 완전정복', author: '이철한', publisher: '예문사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 156, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+수질환경산업기사+실기' },
+    { title: '2026 수질환경 CBT 최신기출문제', author: '이현철', publisher: '일진사', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.3, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+수질환경산업기사+CBT' },
+    { title: '2026 수질오염공정시험기준 해설', author: '국가기술자격시험연구회', publisher: '구민사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+수질오염공정시험기준' },
+    { title: '2026 수질환경산업기사 벼락치기 핵심요약', author: '정재수', publisher: '세화', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.2, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+수질환경산업기사+벼락치기' },
+    { title: '2026 수질환경산업기사 핵심이론+예상문제', author: '박영태', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+수질환경산업기사+핵심이론' },
+  ],
+
+  // ────────────────────────────────────────
+  '대기환경산업기사': [
+    { title: '2026 대기환경기사 필기+과년도+무료동영상+핸드북', author: '전화택', publisher: '구민사', price: 37800, originalPrice: 42000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000218031344'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218031344' },
+    { title: '2026 나합격 대기환경기사 필기+무료특강+온라인 CBT', author: '김현우', publisher: '삼원북스', price: 39600, originalPrice: 44000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000218086849'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218086849' },
+    { title: '2026 합격Easy 대기환경기사 필기', author: '신은상', publisher: '건기원', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218358598'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218358598' },
+    { title: '2026 대기환경산업기사 과년도 기출문제집', author: '이순규', publisher: '예문사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 167, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+대기환경산업기사+과년도' },
+    { title: '2026 대기환경산업기사 필기 핵심이론', author: '서영민', publisher: '성안당', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+대기환경산업기사+성안당' },
+    { title: '2026 대기환경산업기사 실기 완전정복', author: '전화택', publisher: '구민사', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+대기환경산업기사+실기' },
+    { title: '2026 대기환경 CBT 최신기출문제', author: '이현철', publisher: '일진사', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.3, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+대기환경산업기사+CBT' },
+    { title: '2026 대기환경산업기사 벼락치기 핵심요약', author: '정재수', publisher: '세화', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.2, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+대기환경산업기사+벼락치기' },
+    { title: '2026 대기오염공정시험기준 해설', author: '국가기술자격시험연구회', publisher: '구민사', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.2, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+대기오염공정시험기준' },
+    { title: '2026 대기환경산업기사 핵심요약+예상문제', author: '박영태', publisher: '성안당', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.1, reviews: 65, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+대기환경산업기사+핵심요약' },
+  ],
+
+  // ────────────────────────────────────────
+  '환경산업기사': [
+    { title: '2026 수질환경기사·산업기사 필기', author: '이철한', publisher: '예문사', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218914137'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218914137' },
+    { title: '2026 대기환경기사 필기+과년도+무료동영상', author: '전화택', publisher: '구민사', price: 37800, originalPrice: 42000, discount: '10%', rating: 4.6, reviews: 178, tags: ['베스트'], imageUrl: KB('S000218031344'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218031344' },
+    { title: '2026 환경기사 필기 핵심이론+기출문제', author: '이순규', publisher: '예문사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+환경기사+필기+예문사' },
+    { title: '2026 환경산업기사 과년도 기출문제집', author: '박영태', publisher: '성안당', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 143, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+환경산업기사+과년도' },
+    { title: '2026 나합격 환경산업기사 필기+무료특강', author: '김현우', publisher: '삼원북스', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.4, reviews: 112, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+환경산업기사+나합격' },
+    { title: '2026 환경산업기사 실기 완전정복', author: '이철한', publisher: '예문사', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.4, reviews: 134, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+환경산업기사+실기' },
+    { title: '2026 환경산업기사 CBT 최신기출', author: '이현철', publisher: '일진사', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+환경산업기사+CBT' },
+    { title: '2026 환경산업기사 벼락치기', author: '정재수', publisher: '세화', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.2, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+환경산업기사+벼락치기' },
+    { title: '환경법령 핵심정리', author: '국가기술자격시험연구회', publisher: '구민사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=환경법령+핵심정리' },
+    { title: '2026 환경산업기사 핵심이론+예상문제', author: '신은상', publisher: '건기원', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.1, reviews: 65, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+환경산업기사+핵심이론' },
+  ],
+
+  // ────────────────────────────────────────
+  '배관기능사': [
+    { title: '2026 배관기능사 필기+실기 한권 완성', author: '국가기술자격시험연구회', publisher: '예문사', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000217122019'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217122019' },
+    { title: '배관기능사 필기·실기 단기완성', author: '이상휘', publisher: '일진사', price: 18900, originalPrice: 21000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218440656'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218440656' },
+    { title: '배관기능사 필기', author: '최종만', publisher: '성안당', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 167, tags: ['베스트'], imageUrl: KB('S000216719085'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216719085' },
+    { title: '2026 배관기능사 기출문제 완전정복', author: '이상도', publisher: '세화', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.3, reviews: 134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+배관기능사+기출문제' },
+    { title: '2026 Win-Q 배관기능사 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.3, reviews: 112, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=Win-Q+배관기능사' },
+    { title: '2026 배관기능사 실기 핵심요약', author: '국가기술자격시험연구회', publisher: '구민사', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.2, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+배관기능사+실기' },
+    { title: '2026 배관기능사 필기 핵심이론', author: '강민수', publisher: '예문사', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.2, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+배관기능사+핵심이론' },
+    { title: '배관 설계·시공 실무 가이드', author: '오진석', publisher: '동일출판사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 145, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=배관+설계+시공+실무' },
+    { title: '2026 배관기능사 CBT 모의고사 5세트', author: '배관교육연구회', publisher: '에듀윌', price: 14400, originalPrice: 16000, discount: '10%', rating: 4.1, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+배관기능사+CBT+모의고사' },
+    { title: '배관공사 표준시방서 해설', author: '한국배관공학회', publisher: '일진사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.1, reviews: 65, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=배관공사+표준시방서+해설' },
+  ],
+
+  // ────────────────────────────────────────
+  '배관기사': [
+    { title: '배관기사 필기 핵심이론+기출문제', author: '한상욱', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=배관기사+필기+핵심이론+기출문제' },
+    { title: '배관기사 과년도 문제 해설집', author: '배관기술연구회', publisher: '일진사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 156, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=배관기사+과년도+문제+해설집' },
+    { title: '배관기사 실기 완전정복', author: '오진석', publisher: '동일출판사', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=배관기사+실기+완전정복' },
+    { title: '2026 배관기사 기출문제 완전분석', author: '이상도', publisher: '세화', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 112, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+배관기사+기출문제' },
+    { title: '2026 Win-Q 배관기사 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.2, reviews: 87, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=Win-Q+배관기사' },
+    { title: '배관 설계·시공 실무', author: '오진석', publisher: '동일출판사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 145, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=배관+설계+시공+실무' },
+    { title: '플랜트 배관 설계 실무', author: '김민수', publisher: '성안당', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=플랜트+배관+설계+실무' },
+    { title: '2026 배관기사 필기 핵심요약노트', author: '배관기술연구회', publisher: '일진사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+배관기사+핵심요약노트' },
+    { title: '2026 배관기사 CBT 최신기출', author: '이현철', publisher: '일진사', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.1, reviews: 65, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+배관기사+CBT' },
+    { title: '배관공학 이론과 실제', author: '한국배관공학회', publisher: '기전연구사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.1, reviews: 54, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=배관공학+이론과+실제' },
+  ],
+
+  // ────────────────────────────────────────
+  '특수용접기능사': [
+    { title: '2023 특수용접기능사 필기', author: '정균호', publisher: '구민사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 245, tags: ['베스트'], imageUrl: KB('S000200014069'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200014069' },
+    { title: '2022 고수열강 용접·특수용접기능사 필기실기', author: '정균호', publisher: '구민사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: KB('S000001763692'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001763692' },
+    { title: '용접기능사 필기시험문제 (특수용접 포함)', author: '국가기술자격시험연구회', publisher: '예문사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 167, tags: ['베스트'], imageUrl: KB('S000000642260'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000642260' },
+    { title: '2026 특수용접기능사 핵심이론+기출문제', author: '이광호', publisher: '성안당', price: 18900, originalPrice: 21000, discount: '10%', rating: 4.3, reviews: 134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+특수용접기능사+필기' },
+    { title: '2026 Win-Q 특수용접기능사 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.3, reviews: 112, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=Win-Q+특수용접기능사' },
+    { title: '특수용접기능사 실기 핵심기술 TIG·MIG', author: '김철수', publisher: '일진사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 145, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=특수용접기능사+실기+TIG+MIG' },
+    { title: '2026 특수용접기능사 과년도 기출해설', author: '최동훈', publisher: '에듀윌', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.2, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+특수용접기능사+과년도' },
+    { title: '용접공학 기초', author: '박재원', publisher: '크라운출판사', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.2, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=용접공학+기초' },
+    { title: '특수용접 실무 기술서', author: '한국용접협회', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.1, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=특수용접+실무+기술서' },
+    { title: '2026 특수용접기능사 CBT 모의고사', author: '용접기술연구회', publisher: '일진사', price: 14400, originalPrice: 16000, discount: '10%', rating: 4.1, reviews: 65, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+특수용접기능사+CBT' },
+  ],
+
+  // ────────────────────────────────────────
+  '미용사(일반)': [
+    { title: '2026 미용사 일반 필기', author: '김지연', publisher: '책과상상', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000218629883'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218629883' },
+    { title: '2026 에듀윌 일반(헤어)미용사 필기 1주끝장', author: '최묘선', publisher: '에듀윌', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.6, reviews: 256, tags: ['베스트'], imageUrl: KB('S000218235656'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218235656' },
+    { title: '2026 원큐패스 미용사 일반 필기', author: '김선희', publisher: '크라운출판사', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218681294'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218681294' },
+    { title: '2026 시대에듀 답만 외우는 미용사 일반 필기 CBT기출문제', author: '시대에듀 편집부', publisher: '시대고시기획', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: KB('S000217049157'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217049157' },
+    { title: '2026 적중100% 미용사일반 필기시험 총정리문제', author: '크라운출판사 편집부', publisher: '크라운출판사', price: 14400, originalPrice: 16000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], imageUrl: KB('S000217049878'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217049878' },
+    { title: '2026 미용사 일반 필기 핵심요약+기출모의', author: '타임 NCS 연구소', publisher: '시대에듀', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: KB('S000218448172'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218448172' },
+    { title: '2026 미용사 일반 실기 완전정복', author: '김지연', publisher: '책과상상', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+미용사+일반+실기' },
+    { title: '2026 헤어미용 컬러링+펌 완전정복', author: '미용교육연구회', publisher: '에듀윌', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+헤어미용+컬러링+펌' },
+    { title: '2026 Win-Q 미용사(일반) 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.3, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=Win-Q+미용사+일반' },
+    { title: '2026 미용사 일반 CBT 최신기출문제해설', author: '미용자격연구회', publisher: '일진사', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+미용사+일반+CBT' },
+  ],
+
+  // ────────────────────────────────────────
+  '미용사(피부)': [
+    { title: '2026 피부미용사 필기 한권으로 합격하기', author: '황해정·김승아', publisher: '크라운출판사', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000217059166'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217059166' },
+    { title: '2026 이기적 권쌤TV 미용사(피부) 필기 기본서', author: '권순현', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000219159023'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219159023' },
+    { title: '2026 원큐패스 미용사 피부 필기', author: '이지안', publisher: '크라운출판사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218938455'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218938455' },
+    { title: '2026 시대에듀 답만 외우는 미용사 피부 필기 CBT기출문제', author: '시대에듀 편집부', publisher: '시대고시기획', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: KB('S000219023470'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219023470' },
+    { title: '2026 1주일 완성 피부미용사 필기시험 총정리문제', author: '황해정', publisher: '크라운출판사', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], imageUrl: KB('S000217021665'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217021665' },
+    { title: '2026 피부미용사 실기 핵심기술', author: '황해정', publisher: '크라운출판사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+피부미용사+실기' },
+    { title: '2026 에듀윌 피부미용사 필기 1주끝장', author: '에듀윌 편집부', publisher: '에듀윌', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+에듀윌+피부미용사+필기' },
+    { title: '2026 피부미용사 CBT 최신기출', author: '피부미용연구회', publisher: '일진사', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+피부미용사+CBT' },
+    { title: '피부관리 이론과 실제', author: '한국피부미용학회', publisher: '군자출판사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=피부관리+이론과+실제' },
+    { title: '2026 Win-Q 미용사(피부) 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=Win-Q+미용사+피부' },
+  ],
+
+  // ────────────────────────────────────────
+  '미용사(네일)': [
+    { title: '2026 에듀윌 네일미용사(네일아트) 필기 1주끝장+무료특강', author: '민방경', publisher: '에듀윌', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.6, reviews: 312, tags: ['베스트'], imageUrl: KB('S000218096474'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218096474' },
+    { title: '2026 2주완성 미용사 네일 필기시험문제', author: '류은주', publisher: '크라운출판사', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 245, tags: ['베스트'], imageUrl: KB('S000218565752'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218565752' },
+    { title: '2026 미용사(네일) 필기 완전정복', author: '민방경', publisher: '에듀윌', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+미용사+네일+필기' },
+    { title: '2026 Win-Q 미용사(네일) 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.4, reviews: 143, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=Win-Q+미용사+네일' },
+    { title: '2026 적중100% 미용사 네일 필기 총정리', author: '크라운출판사 편집부', publisher: '크라운출판사', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.4, reviews: 112, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+미용사+네일+필기+총정리' },
+    { title: '2026 미용사(네일) 실기 완전정복', author: '민방경', publisher: '에듀윌', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+미용사+네일+실기' },
+    { title: '2026 네일아트 CBT 최신기출문제', author: '네일미용연구회', publisher: '일진사', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+네일아트+CBT' },
+    { title: '네일아트 기초부터 응용까지', author: '김수연', publisher: '예문사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=네일아트+기초부터+응용까지' },
+    { title: '2026 미용사(네일) 핵심요약 노트', author: '미용자격연구회', publisher: '시대에듀', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+미용사+네일+핵심요약' },
+    { title: '젤 네일 아트 테크닉', author: '박지현', publisher: '크라운출판사', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.2, reviews: 65, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=젤+네일아트+테크닉' },
+  ],
+
+  // ────────────────────────────────────────
+  '미용사(메이크업)': [
+    { title: '2026 기분파 미용사 메이크업 필기', author: '김효정', publisher: '에듀웨이', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000217613656'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217613656' },
+    { title: '2026 완전합격 미용사 메이크업 필기시험문제', author: '메이크업자격연구회', publisher: '크라운출판사', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218704738'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218704738' },
+    { title: '2026 적중 100% 합격 미용사 메이크업 필기 총정리문제', author: '크라운출판사 편집부', publisher: '크라운출판사', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: KB('S000218565610'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218565610' },
+    { title: '2026 미용사(메이크업) 필기 완전정복', author: '김효정', publisher: '에듀웨이', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+미용사+메이크업+필기' },
+    { title: '2026 Win-Q 미용사(메이크업) 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.3, reviews: 112, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=Win-Q+미용사+메이크업' },
+    { title: '2026 퍼펙트 미용사 메이크업 실기시험문제', author: '김리나', publisher: '크라운출판사', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], imageUrl: KB('S000218676679'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218676679' },
+    { title: '2026 에듀윌 메이크업 필기 1주끝장', author: '에듀윌 편집부', publisher: '에듀윌', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+에듀윌+메이크업+필기' },
+    { title: '2026 미용사(메이크업) CBT 최신기출', author: '메이크업연구회', publisher: '일진사', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=2026+미용사+메이크업+CBT' },
+    { title: '색채학과 메이크업 아트', author: '한국메이크업협회', publisher: '군자출판사', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.2, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=색채학+메이크업+아트' },
+    { title: '메이크업 테크닉 완전정복', author: '김리나', publisher: '크라운출판사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=메이크업+테크닉+완전정복' },
+  ],
+
+  // ────────────────────────────────────────
+  '식품기사': [
+    { title: '2026 해커스 식품산업기사 필기 한권완성 이론+최신기출', author: '권유진', publisher: '해커스', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: KB('S000217941979'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217941979' },
+    { title: '2026 식품기사 필기 핵심이론+과년도 기출문제', author: '정진경·유연희', publisher: '예문에듀', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+식품기사+필기+예문에듀' },
+    { title: '2026 나합격 식품기사 필기+무료특강', author: '김현우', publisher: '삼원북스', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.4, reviews: 143, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+식품기사+나합격' },
+    { title: '2026 식품기사 과년도 기출문제 해설집', author: '이상도', publisher: '세화', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 112, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+식품기사+과년도+기출' },
+    { title: '2026 식품기사 실기 완전정복', author: '정진경', publisher: '예문에듀', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.3, reviews: 98, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+식품기사+실기' },
+    { title: '2026 식품기사 CBT 최신기출문제', author: '이현철', publisher: '일진사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+식품기사+CBT' },
+    { title: '2026 식품기사 벼락치기 핵심요약', author: '정재수', publisher: '세화', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=2026+식품기사+벼락치기' },
+    { title: '식품위생법 핵심정리', author: '식품기술사연구회', publisher: '구민사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.2, reviews: 65, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=식품위생법+핵심정리' },
+    { title: '식품가공학 총론', author: '김영태', publisher: '광문각', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.1, reviews: 54, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=식품가공학+총론' },
+    { title: '2026 Win-Q 식품기사 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.1, reviews: 45, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=Win-Q+식품기사' },
+  ],
+
+  // ────────────────────────────────────────
+  '식품산업기사': [
+    { title: '2026 식품산업기사 필기', author: '정진경·유연희·이다빈·이아랑', publisher: '예문에듀', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000217049829'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217049829' },
+    { title: '2026 해커스 식품산업기사 필기 한권완성', author: '권유진', publisher: '해커스', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000217941979'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217941979' },
+    { title: '2026 식품산업기사 과년도 기출문제 해설', author: '이상도', publisher: '세화', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+식품산업기사+과년도' },
+    { title: '2026 나합격 식품산업기사 필기+무료특강', author: '김현우', publisher: '삼원북스', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.4, reviews: 167, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+식품산업기사+나합격' },
+    { title: '2026 식품산업기사 실기 완전정복', author: '정진경', publisher: '예문에듀', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=2026+식품산업기사+실기' },
+    { title: '2026 식품산업기사 CBT 최신기출', author: '이현철', publisher: '일진사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=2026+식품산업기사+CBT' },
+    { title: '2026 Win-Q 식품산업기사 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=Win-Q+식품산업기사' },
+    { title: '2026 식품산업기사 벼락치기 핵심노트', author: '정재수', publisher: '세화', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.2, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=2026+식품산업기사+벼락치기' },
+    { title: '식품미생물학 핵심정리', author: '이영진', publisher: '광문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=식품미생물학+핵심정리' },
+    { title: '2026 식품산업기사 핵심이론+예상문제', author: '식품기술연구회', publisher: '구민사', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.1, reviews: 65, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=2026+식품산업기사+핵심이론' },
+  ],
+
+  // ────────────────────────────────────────
+  '항공기체기능사': [
+    { title: '2026 항공기정비기능사 필기', author: '항공기술교육아카데미', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: KB('S000217577886'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217577886' },
+    { title: '2026 항공기체기능사 필기 핵심이론+기출', author: '국가기술자격시험연구회', publisher: '예문사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 156, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+항공기체기능사+필기' },
+    { title: '2026 항공기체기능사 과년도 기출문제집', author: '이상도', publisher: '세화', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+항공기체기능사+과년도' },
+    { title: '2026 항공기체기능사 실기 완전정복', author: '항공기술교육아카데미', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 112, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=2026+항공기체기능사+실기' },
+    { title: '2026 Win-Q 항공기체기능사 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.2, reviews: 87, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=Win-Q+항공기체기능사' },
+    { title: '항공기구조 이론과 실제', author: '김태환', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.4, reviews: 145, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=항공기구조+이론과+실제' },
+    { title: '항공법규 핵심정리', author: '항공기술연구회', publisher: '구민사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=항공법규+핵심정리' },
+    { title: '2026 항공기체기능사 CBT 모의고사', author: '항공교육연구회', publisher: '일진사', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=2026+항공기체기능사+CBT' },
+    { title: '항공기 기체 정비 실무', author: '신완섭', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.2, reviews: 65, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=항공기+기체+정비+실무' },
+    { title: '항공역학 개론', author: '박인규', publisher: '경문사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.1, reviews: 54, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=항공역학+개론' },
+  ],
+
+  // ────────────────────────────────────────
+  '항공산업기사': [
+    { title: '2026 항공산업기사 필기', author: '장성희', publisher: '성안당', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000218227489'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218227489' },
+    { title: '2026 항공산업기사 필기', author: '항공기술교육아카데미', publisher: '성안당', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: KB('S000217577896'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217577896' },
+    { title: '2026 항공산업기사 과년도 기출문제집', author: '이상도', publisher: '세화', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 167, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=2026+항공산업기사+과년도' },
+    { title: '2026 항공산업기사 실기 완전정복', author: '장성희', publisher: '성안당', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.4, reviews: 143, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=2026+항공산업기사+실기' },
+    { title: '2026 Win-Q 항공산업기사 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.3, reviews: 112, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=Win-Q+항공산업기사' },
+    { title: '항공기 전기·전자 시스템', author: '신완섭', publisher: '성안당', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.4, reviews: 156, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=항공기+전기+전자+시스템' },
+    { title: '항공기관 이론과 실제', author: '김태환', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.3, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=항공기관+이론과+실제' },
+    { title: '2026 항공산업기사 핵심이론+기출문제', author: '항공기술연구회', publisher: '예문사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=2026+항공산업기사+핵심이론' },
+    { title: '2026 항공산업기사 CBT 최신기출', author: '항공교육연구회', publisher: '일진사', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.2, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=2026+항공산업기사+CBT' },
+    { title: '항공법규 완전정복', author: '박인규', publisher: '경문사', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=항공법규+완전정복' },
+  ],
+
   '영양사': [
     { title: '2026 영양사 국가시험 핵심요약 총정리', author: '대한영양사협회 편집부', publisher: '군자출판사', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 678, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=영양사+국가시험+핵심요약+2026' },
     { title: '2026 영양사 기출문제 완전분석 10개년', author: '메디시언 편집부', publisher: '메디시언', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.8, reviews: 556, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=영양사+기출문제+완전분석+10개년+2026' },
