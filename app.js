@@ -1501,12 +1501,6 @@ function toggleTheme() {
 function initEventListeners() {
   document.getElementById('theme-toggle-btn').addEventListener('click', toggleTheme);
 
-  // 모달 닫기
-  document.getElementById('modal-close-btn').addEventListener('click', closeModal);
-  document.getElementById('job-detail-modal').addEventListener('click', e => {
-    if (e.target.id === 'job-detail-modal') closeModal();
-  });
-
   // 자격증 검색 드롭다운
   const searchInput = document.getElementById('global-search');
   searchInput.value = STATE.currentCert || '';
