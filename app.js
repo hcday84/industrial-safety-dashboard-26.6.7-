@@ -1062,49 +1062,6 @@ function renderNews() {
 }
 
 
-// ============================================
-// 12. 모달
-// ============================================
-window.openJobDetail = function(jobId) {
-  const job = getCert().jobs.find(j => j.id === jobId);
-  if (!job) return;
-
-  const regionMap = { all: '전국 근무', seoul: '수도권 현장/사무소', gong: '영남권 공장/현장', honam: '호남권 본부/사업소', chung: '충청권 사업장' };
-  const expMap = { new: '신입 대상', exp: '경력 요함', any: '학력/경력 무관' };
-  const today = new Date('2026-06-07');
-  const diff = Math.ceil((new Date(job.deadline) - today) / 86400000);
-  const deadlineText = diff < 0 ? `마감됨 (${job.deadline})` : diff === 0 ? `오늘 마감! (${job.deadline})` : `D-${diff} (${job.deadline})`;
-
-  document.getElementById('modal-company-name').textContent = job.company;
-  document.getElementById('modal-job-title').textContent = job.title;
-  document.getElementById('modal-salary').textContent = job.salary;
-  document.getElementById('modal-location').textContent = regionMap[job.region] || job.region;
-  document.getElementById('modal-experience').textContent = expMap[job.experience] || job.experience;
-  const deadlineEl = document.getElementById('modal-deadline');
-  deadlineEl.textContent = deadlineText;
-  deadlineEl.className = diff < 0 ? 'info-value' : 'info-value text-red';
-  document.getElementById('modal-duties').textContent = job.duties;
-  document.getElementById('modal-requirements').innerHTML = job.requirements.map(r => `<li>${r}</li>`).join('');
-  document.getElementById('modal-benefits').textContent = job.benefits;
-
-  const bookmarkBtn = document.getElementById('modal-bookmark-btn');
-  const isBookmarked = STATE.bookmarks.includes(job.id);
-  bookmarkBtn.innerHTML = isBookmarked ? '<i class="fa-solid fa-bookmark"></i> 북마크 해제' : '<i class="fa-regular fa-bookmark"></i> 북마크 추가';
-  bookmarkBtn.onclick = (e) => {
-    toggleBookmark(e, job.id);
-    const nowBm = STATE.bookmarks.includes(job.id);
-    bookmarkBtn.innerHTML = nowBm ? '<i class="fa-solid fa-bookmark"></i> 북마크 해제' : '<i class="fa-regular fa-bookmark"></i> 북마크 추가';
-  };
-
-  document.getElementById('modal-apply-link').href = job.link;
-  document.getElementById('job-detail-modal').classList.add('active');
-  document.body.style.overflow = 'hidden';
-};
-
-function closeModal() {
-  document.getElementById('job-detail-modal').classList.remove('active');
-  document.body.style.overflow = '';
-}
 
 // ============================================
 // 13. 수험서 렌더링
