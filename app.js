@@ -1534,43 +1534,6 @@ function initEventListeners() {
     }
   });
 
-  // 북마크 버튼
-  document.getElementById('bookmark-filter-btn').addEventListener('click', () => {
-    document.getElementById('jobs-section').scrollIntoView({ behavior: 'smooth' });
-    document.getElementById('view-all-jobs').classList.remove('active');
-    document.getElementById('view-bookmarked-jobs').classList.add('active');
-    STATE.activeTab = 'bookmarked';
-    renderJobs();
-  });
-
-  // 채용 탭 토글
-  document.getElementById('view-all-jobs').addEventListener('click', e => {
-    document.getElementById('view-bookmarked-jobs').classList.remove('active');
-    e.target.classList.add('active');
-    STATE.activeTab = 'all-jobs';
-    renderJobs();
-  });
-  document.getElementById('view-bookmarked-jobs').addEventListener('click', e => {
-    document.getElementById('view-all-jobs').classList.remove('active');
-    e.target.classList.add('active');
-    STATE.activeTab = 'bookmarked';
-    renderJobs();
-  });
-
-  // 필터 버튼
-  const setupFilter = (groupId, key) => {
-    document.getElementById(groupId).addEventListener('click', e => {
-      if (!e.target.classList.contains('filter-btn')) return;
-      e.target.closest('.filter-group').querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-      e.target.classList.add('active');
-      STATE.filters[key] = e.target.getAttribute('data-value');
-      renderJobs();
-    });
-  };
-  setupFilter('filter-type', 'type');
-  setupFilter('filter-region', 'region');
-  setupFilter('filter-experience', 'experience');
-
   // 플래너
   document.getElementById('planner-add-btn').addEventListener('click', window.addTodo);
   document.getElementById('planner-input').addEventListener('keypress', e => {
