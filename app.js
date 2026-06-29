@@ -578,7 +578,7 @@ function createUpdateBadge() {
 // 5. 페이지 메타·헤더 업데이트
 // ============================================
 function updatePageMeta(cert) {
-  document.title = `수험서 All in One 대시보드 - ${cert.name} 채용 및 시험 일정`;
+  document.title = `수험서 All in One 대시보드 - ${cert.name} 시험 일정 & 합격 분석`;
 }
 
 // ============================================
