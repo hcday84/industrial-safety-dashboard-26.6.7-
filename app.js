@@ -134,11 +134,6 @@ function parseExamItems(items) {
 // ============================================
 const STATE = {
   currentCert: null,
-  activeTab: 'all-jobs',
-  filters: { type: 'all', region: 'all', experience: 'all' },
-  searchQuery: '',
-  get bookmarks() { return JSON.parse(localStorage.getItem(`${this.currentCert}_bookmarks`)) || []; },
-  setBookmarks(bm) { localStorage.setItem(`${this.currentCert}_bookmarks`, JSON.stringify(bm)); },
 };
 
 function getCert() { return CERTIFICATIONS[STATE.currentCert]; }
