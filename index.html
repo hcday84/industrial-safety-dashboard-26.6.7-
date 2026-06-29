@@ -814,6 +814,94 @@
     </div>
   </div>
 
+  <!-- ===== 작업내용 패널 ===== -->
+  <div id="work-log-panel" class="work-log-panel">
+    <div class="wlp-header">
+      <span class="wlp-title"><i class="fa-solid fa-clock-rotate-left"></i> 작업 내용</span>
+      <button class="wlp-close-btn" onclick="document.getElementById('work-log-panel').classList.remove('open')" title="닫기">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="wlp-body">
+
+      <div class="wlp-meta">
+        <span class="wlp-date"><i class="fa-regular fa-calendar"></i> 2026-06-28 기준</span>
+        <span class="wlp-commit"><i class="fa-solid fa-code-commit"></i> 총 49회 커밋</span>
+      </div>
+
+      <div class="wlp-section">
+        <div class="wlp-section-title"><i class="fa-solid fa-book"></i> books_data.js 신규 생성</div>
+        <ul class="wlp-list">
+          <li><span class="wlp-badge badge-green">완료</span> 111개 자격증 수험서 데이터 구축</li>
+          <li><span class="wlp-badge badge-green">완료</span> 기존 88개 + 신규 23개 등록</li>
+          <li><span class="wlp-badge badge-green">완료</span> 교보문고 KB 상품코드 확보 (20종+)</li>
+        </ul>
+      </div>
+
+      <div class="wlp-section">
+        <div class="wlp-section-title"><i class="fa-solid fa-plus"></i> 신규 추가 자격증 (23개)</div>
+        <ul class="wlp-list">
+          <li><span class="wlp-badge badge-blue">IT</span> SQLP, 정보처리기능사, 정보보안산업기사</li>
+          <li><span class="wlp-badge badge-blue">IT</span> 네트워크관리사 1·2급, 리눅스마스터 1·2급</li>
+          <li><span class="wlp-badge badge-purple">미용</span> 미용사 일반·피부·네일·메이크업</li>
+          <li><span class="wlp-badge badge-orange">자동차</span> 자동차정비기사·기능장</li>
+          <li><span class="wlp-badge badge-teal">환경</span> 수질·대기·환경산업기사</li>
+          <li><span class="wlp-badge badge-gray">기계</span> 배관기능사·기사, 특수용접기능사</li>
+          <li><span class="wlp-badge badge-gray">소방</span> 소방설비기능사 전기·기계</li>
+          <li><span class="wlp-badge badge-gray">식품/항공</span> 식품기사·산업기사, 항공기체·산업기사</li>
+        </ul>
+      </div>
+
+      <div class="wlp-section">
+        <div class="wlp-section-title"><i class="fa-solid fa-server"></i> API 서버리스 함수 추가</div>
+        <ul class="wlp-list">
+          <li><span class="wlp-badge badge-green">신규</span> <code>api/nl-book.js</code> — Aladin 이미지 프록시</li>
+          <li><span class="wlp-badge badge-green">신규</span> <code>api/qnet-stats.js</code> — 합격률 프록시</li>
+          <li><span class="wlp-badge badge-green">신규</span> <code>api/emqual-stats.js</code> — 기능사 합격률</li>
+        </ul>
+      </div>
+
+      <div class="wlp-section">
+        <div class="wlp-section-title"><i class="fa-solid fa-image"></i> 이미지 폴백 체인</div>
+        <div class="wlp-chain">
+          <div class="wlp-chain-step">① Kyobo CDN (KB코드)</div>
+          <div class="wlp-chain-arrow">↓</div>
+          <div class="wlp-chain-step">② Canvas 분산 검증</div>
+          <div class="wlp-chain-arrow">↓</div>
+          <div class="wlp-chain-step">③ Aladin Open API</div>
+          <div class="wlp-chain-arrow">↓</div>
+          <div class="wlp-chain-step">④ CSS 목업 카드</div>
+        </div>
+      </div>
+
+      <div class="wlp-section">
+        <div class="wlp-section-title"><i class="fa-solid fa-paint-brush"></i> UI/스타일 수정</div>
+        <ul class="wlp-list">
+          <li><span class="wlp-badge badge-blue">CSS</span> 수험서 카드 UI 스타일 (+112줄)</li>
+          <li><span class="wlp-badge badge-blue">JS</span> app.js 렌더링 로직 (+219줄)</li>
+          <li><span class="wlp-badge badge-gray">SW</span> 서비스워커 CACHE_NAME 버전 업</li>
+        </ul>
+      </div>
+
+      <div class="wlp-section">
+        <div class="wlp-section-title"><i class="fa-solid fa-rocket"></i> 배포</div>
+        <ul class="wlp-list">
+          <li><span class="wlp-badge badge-green">Vercel</span> main 브랜치 auto-push 설정</li>
+          <li><span class="wlp-badge badge-green">PWA</span> 서비스워커 v7</li>
+        </ul>
+        <a href="https://industrial-safety-dashboard-26-6-7.vercel.app" target="_blank" class="wlp-deploy-link">
+          <i class="fa-solid fa-globe"></i> 배포 사이트 열기
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <!-- 작업내용 패널 토글 탭 -->
+  <button id="work-log-tab" class="work-log-tab" onclick="document.getElementById('work-log-panel').classList.toggle('open')" title="작업 내용 보기">
+    <i class="fa-solid fa-clock-rotate-left"></i>
+    <span>작업내용</span>
+  </button>
+
   <!-- Footer -->
   <footer class="app-footer">
     <div class="footer-container">
