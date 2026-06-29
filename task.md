@@ -26,7 +26,7 @@
 | `books_data.js` | 1,627 | 교보문고 추천 수험서 정적 데이터 (111개 자격증) |
 | `style.css` | 3,396 | 전체 스타일 (작업내용 패널 포함) |
 | `index.html` | 968 | 메인 진입점 (작업내용 패널 HTML 포함) |
-| `sw.js` | — | 서비스워커 (CACHE_NAME: cert-dashboard-v8) |
+| `sw.js` | — | 서비스워커 (CACHE_NAME: cert-dashboard-v9) |
 | `inventory.html` | — | IT 기술수험서 절판·개정판 대시보드 |
 | `inventory-app.js` | — | inventory 페이지 로직 |
 | `inventory-styles.css` | — | inventory 페이지 스타일 |
