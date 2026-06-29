@@ -1,4 +1,4 @@
-// ============================================
+﻿// ============================================
 // 1. 자격증 데이터베이스
 // ============================================
 const CERTIFICATIONS = {
@@ -48,48 +48,6 @@ const CERTIFICATIONS = {
       { title: '기계·기구 및 설비 안전 관리', tip: '프레스, 크레인 등 위험 기계의 방호 장치 종류와 안전 거리 수치를 반드시 숙지하세요.' },
       { title: '전기 및 화학설비 안전 관리', tip: '전격 위험 방지대책(접지, 누전차단기)과 폭발성 물질 물리적 특성 위주로 요약 정리하여 반복 학습.' },
       { title: '건설공사 안전 관리', tip: '토공사, 비계 설치 기준 등. 실기 필답/작업형과도 직결되므로 가장 철저하게 공부해야 하는 과목.' },
-    ],
-    jobs: [
-      { id: 'sj-1', company: '안전보건공단', title: '2026년도 신입직원 (안전보건 분야) 공개 채용', type: 'public', region: 'all', experience: 'new',
-        requirements: ['산업안전산업기사 또는 건설안전산업기사 이상 자격 소지자 필수', '학력 및 연령 제한 없음', '공인어학성적 기준 점수 이상 획득자'],
-        duties: '전국 중소 사업장 산업재해 예방 지도, 유해·위험기계 안전 검사, 사업장 안전진단 컨설팅 및 근로자 교육.',
-        salary: '연봉 3,700만원 내외 (공단 내규)', benefits: '주 5일제, 유연근무제, 자녀학자금 지원, 복지카드', deadline: '2026-06-25', link: 'https://www.kosha.or.kr' },
-      { id: 'sj-2', company: '현대건설', title: '전국 건설현장 안전관리 담당자 (PJT 계약직)', type: 'large', region: 'seoul', experience: 'exp',
-        requirements: ['산업안전산업기사 또는 건설안전산업기사 자격 소지자 필수', '건설현장 안전관리 실무 경력 1년 이상 우대'],
-        duties: '건설 공정상 위험 요인 발굴 및 예방 대책 수립, 일일 안전 교육 및 TBM 리드, 현장 근로자 안전 점검.',
-        salary: '경력 협의 (약 4,500~5,500만원)', benefits: '경조사비 지원, 현장 귀향 여비, 4대보험', deadline: '2026-06-18', link: 'https://www.hdec.co.kr' },
-      { id: 'sj-3', company: '삼성물산 건설부문', title: '대형 하이테크 현장 안전/소방 환경 관리자 모집', type: 'large', region: 'gong', experience: 'exp',
-        requirements: ['산업안전산업기사 이상 필수', '안전 및 소방 관련 경력 3년 이상', 'ISO 45001 이해도 높은 자 우대'],
-        duties: '반도체 공장 건설 현장 특수 위험 작업 안전 허가제 운영, KOSHA-MS 준수 여부 감독.',
-        salary: '경력별 협의 (약 5,000~6,500만원)', benefits: '업계 최고 복리후생, 의료비 지원, 인센티브', deadline: '2026-06-30', link: 'https://www.samsungcnt.com' },
-      { id: 'sj-4', company: 'CJ제일제당', title: '식품 생산 사업장 EHS (환경·안전·보건) 담당자', type: 'large', region: 'seoul', experience: 'any',
-        requirements: ['산업안전산업기사 이상 필수', 'EHS 시스템 구축 경험자 우대', '대기/수질환경산업기사 추가 소지자 가점'],
-        duties: '식품 제조 공정 기계 설비 위험성 평가, 밀폐공간 및 고온 설비 안전 규정 점검.',
-        salary: '내규 적용 (약 4,000~4,800만원)', benefits: 'CJ그룹 복지, 사내 어린이집, 셔틀버스', deadline: '2026-06-20', link: 'https://www.cj.co.kr' },
-      { id: 'sj-5', company: '한국토지주택공사', title: '지역본부 건설공사 안전점검 전문 계약직', type: 'public', region: 'chung', experience: 'exp',
-        requirements: ['산업안전산업기사 취득 후 관련 경력 2년 이상 필수', '공공기관 현장 감독 업무 경험자 우대'],
-        duties: 'LH 시행 건설 공사장 안전점검 지원, 시공사 안전관리계획서 이행 상태 교차 점검.',
-        salary: '연봉 4,200만원 선', benefits: '공기업 맞춤형 복지포인트(웰페어), 명절 수당', deadline: '2026-06-12', link: 'https://www.lh.or.kr' },
-      { id: 'sj-6', company: '세이프티원 안전진단', title: '제조업 사업장 안전보건 위탁 기술지도 컨설턴트', type: 'consult', region: 'gong', experience: 'any',
-        requirements: ['산업안전산업기사 소지자 필수', '신입 지원 가능 (체계적 실무 교육 제공)', '운전면허 소지 필수'],
-        duties: '대구/경북 관내 50인 미만 중소 제조업체 매월 기술지도 방문, 위험성평가표 작성 보좌.',
-        salary: '연봉 3,300~3,800만원 (출장 수당·인센티브 별도)', benefits: '법인차 지원 또는 유류비 전액 실비', deadline: '2026-07-10', link: '#' },
-      { id: 'sj-7', company: '대한산업안전협회', title: '하반기 채용연계형 인턴십 모집 (안전 진단/교육)', type: 'public', region: 'honam', experience: 'new',
-        requirements: ['산업안전산업기사 이상 소지자 필수', '인턴십 3개월 후 평가를 통해 90% 이상 정규직 발령'],
-        duties: '제조 및 건설 현장 법정 안전 검사 보조, 안전보건 관리책임자 대상 교육 강사 지원.',
-        salary: '인턴 월 230만원 (정규직 전환 시 초임 3,800만원 수준)', benefits: '정기 하계 휴가 보장, 학자금 지원', deadline: '2026-07-05', link: 'https://www.safety.or.kr' },
-      { id: 'sj-8', company: '한화솔루션', title: '여수공장 생산/환경안전(EHS) 신입 엔지니어', type: 'large', region: 'gong', experience: 'new',
-        requirements: ['산업안전산업기사 또는 화공기사 자격 소지자', '공학 계열 전공자 필수', '토익 750점 이상'],
-        duties: '화학물질 관리 및 유해화학물질 취급 안전성 평가, PSM 이행 기준 준수 상태 확인.',
-        salary: '성과급 포함 연봉 약 5,000만원대 초반', benefits: '기숙사 무료, 의료비 전액, 자녀학자금 한도 없음', deadline: '2026-06-29', link: 'https://www.hanwhasolutions.com' },
-      { id: 'sj-9', company: 'GS건설', title: '2026년도 하반기 신입 안전관리자 채용', type: 'large', region: 'seoul', experience: 'new',
-        requirements: ['산업안전산업기사 또는 건설안전산업기사 자격 취득자', '건설 현장 근무 결격 사유 없는 자'],
-        duties: '현장 정리 정돈 지휘, 재해 원인 분석, 안전 시설물 배치 상태 확인 및 시정조치.',
-        salary: '신입 초봉 4,800만원 수준', benefits: '복지카드 연 200만원, 주택자금 저리 융자', deadline: '2026-06-15', link: 'https://www.gsenc.com' },
-      { id: 'sj-10', company: '(주)대원안전기술', title: '중소 제조업 위험성평가 및 아웃소싱 관리 대리급', type: 'consult', region: 'seoul', experience: 'exp',
-        requirements: ['산업안전산업기사 취득 후 제조업 안전관리 실무 경력 3년 이상', '중대재해 대응 매뉴얼 작성 유경험자 우대'],
-        duties: '안산/시흥 지역 공단 내 위탁 제조업체 공정 개선 및 안전 설비 적정성 진단.',
-        salary: '연봉 3,800~4,200만원', benefits: '주 5일 정시 퇴근 보장, 분기별 실적 보너스', deadline: '2026-06-14', link: '#' },
     ],
     books: [
       { id: 'sb-1', title: '2026 에듀윌 산업안전산업기사 필기 한권끝장', publisher: '에듀윌', rating: 9.8, reviews: 432, originalPrice: 38000, price: 34200, discount: '10%', coverBg: 'linear-gradient(135deg, #1a3a6b 0%, #2d5aa0 100%)', tags: ['베스트', '무료배송', '소득공제'] },
@@ -151,28 +109,6 @@ const CERTIFICATIONS = {
       { title: '회로이론', tip: 'RC/RL/RLC 회로 과도 현상과 페이저 계산이 핵심. 라플라스 변환보다 페이저를 활용한 풀이 연습을 집중적으로 하세요.' },
       { title: '전기설비기술기준', tip: '암기 과목이지만 최근 개정 내용 확인 필수. 기출 선지를 OX 형태로 반복 학습하는 것이 가장 효율적입니다.' },
     ],
-    jobs: [
-      { id: 'ej-1', company: '한국전력공사', title: '2026 하반기 신입 배전/변전 운영 직원 채용', type: 'public', region: 'all', experience: 'new',
-        requirements: ['전기기사 자격 소지자 (취득 예정자 포함)', '전기공학 관련 학과 졸업자', '공인어학성적 기준 충족자'],
-        duties: '배전선로 및 변전 설비 유지보수, 고장 복구 및 순시점검, 스마트그리드 인프라 구축 지원.',
-        salary: '연봉 4,800만원 내외 (공단 내규)', benefits: '자녀학자금, 사택 제공, 복지카드', deadline: '2026-07-15', link: 'https://www.kepco.co.kr' },
-      { id: 'ej-2', company: '삼성전자', title: '기흥/평택 사업장 전기 설비 유지보수 엔지니어', type: 'large', region: 'seoul', experience: 'exp',
-        requirements: ['전기기사 이상 필수', '반도체 클린룸 설비 유지보수 경력 2년 이상 우대', '전기 CAD 활용 가능자'],
-        duties: '반도체 공장 초고압 수변전 설비 운전·정비, 정전 사고 예방 및 비상 전원 시스템 관리.',
-        salary: '경력 협의 (약 5,500~7,000만원)', benefits: '기숙사, 본인·가족 의료비 전액 지원', deadline: '2026-07-20', link: 'https://www.samsung.com' },
-      { id: 'ej-3', company: '한국수력원자력', title: '원자력 발전소 전기직 정규직 채용', type: 'public', region: 'gong', experience: 'new',
-        requirements: ['전기기사 또는 전기공사기사 이상 필수', '방사선 작업 종사자 교육 이수 가능자'],
-        duties: '원전 내 전기 계통 설비 운전 및 유지보수, 계획 예방 정비(PM) 수행.',
-        salary: '초봉 약 4,500만원 (성과급 별도)', benefits: '주거지원, 의료비 전액, 자녀교육지원', deadline: '2026-06-30', link: 'https://www.khnp.co.kr' },
-      { id: 'ej-4', company: '현대엔지니어링', title: '해외 플랜트 전기공사 감독 (계약직)', type: 'large', region: 'seoul', experience: 'exp',
-        requirements: ['전기기사 필수', '해외 플랜트 전기공사 감독 경력 3년 이상', '영어 의사소통 가능자'],
-        duties: '해외 석유화학 플랜트 전기공사 품질·공정 관리, 전기 기자재 검수 및 시운전 지원.',
-        salary: '해외 수당 포함 약 7,000만원 이상', benefits: '항공료, 숙소 제공, 해외 수당', deadline: '2026-07-31', link: 'https://www.hec.co.kr' },
-      { id: 'ej-5', company: 'LS일렉트릭', title: '차단기/변압기 영업 기술 지원 사원', type: 'large', region: 'seoul', experience: 'any',
-        requirements: ['전기기사 소지자 우대', '전기공학 관련 학과 졸업자', '기술 영업 의지가 있는 인재'],
-        duties: '고압 차단기, 변압기 등 전력기기 기술 영업 지원, 고객사 현장 기술 상담 및 사양 제안.',
-        salary: '연봉 3,800~4,500만원', benefits: '복지카드, 자기계발비, 성과급', deadline: '2026-08-10', link: 'https://www.ls-electric.com' },
-    ],
     books: [
       { id: 'eb-1', title: '2026 전기기사 필기 한권끝장 (이론+기출)', publisher: '에듀윌', rating: 9.7, reviews: 521, originalPrice: 42000, price: 37800, discount: '10%', coverBg: 'linear-gradient(135deg, #1a3a6b 0%, #3b6cb5 100%)', tags: ['베스트', '무료배송'] },
       { id: 'eb-2', title: '2026 전기기사 과년도 기출 10개년 총정리', publisher: '구민사', rating: 9.6, reviews: 312, originalPrice: 38000, price: 34200, discount: '10%', coverBg: 'linear-gradient(135deg, #7c3aed 0%, #a855f7 100%)', tags: ['추천', '소득공제'] },
@@ -232,28 +168,6 @@ const CERTIFICATIONS = {
       { title: '소방기계 시설의 구조 및 원리', tip: '스프링클러, 옥내소화전, 할론 설비 등 각 시스템의 작동 원리와 구성 요소를 플로우차트로 정리하세요.' },
       { title: '소방전기 시설의 구조 및 원리', tip: '자동화재탐지설비 감지기 종류·설치 기준과 비상조명, 유도등 기준이 빈출. 수치 기준 암기가 핵심.' },
       { title: '소방 관련 설비 설계·실무', tip: '실기 시험과 직결. 배관 설계 계산(마찰손실 등)과 소화설비 용량 산정 공식을 반드시 손으로 익혀야 합니다.' },
-    ],
-    jobs: [
-      { id: 'fj-1', company: '롯데건설', title: '신축 공동주택 소방공사 관리 감리원', type: 'large', region: 'seoul', experience: 'exp',
-        requirements: ['소방설비기사 (기계/전기 중 1종 이상) 필수', '소방 감리 경력 2년 이상 우대'],
-        duties: '신축 아파트 단지 소방 설비 공사 품질 관리 및 감리, 소방완공검사 준비 서류 작성.',
-        salary: '연봉 4,200~5,500만원', benefits: '4대보험, 명절 상여금, 건강검진', deadline: '2026-07-25', link: 'https://www.lotteenc.com' },
-      { id: 'fj-2', company: '한국소방산업기술원', title: '소방용품 성능 시험 연구원 (계약직)', type: 'public', region: 'chung', experience: 'any',
-        requirements: ['소방설비기사 이상 소지자', '소방 관련 학과 졸업자 우대'],
-        duties: '소방용품(감지기, 소화기 등) KFI 인증 시험, 성능 검사 및 데이터 분석.',
-        salary: '월 270만원 (계약직)', benefits: '식비·교통비 별도 지원, 정규직 전환 기회', deadline: '2026-07-10', link: 'https://www.kfi.or.kr' },
-      { id: 'fj-3', company: '세이프가드 소방설비', title: '소방시설 유지보수 및 점검 담당자', type: 'consult', region: 'gong', experience: 'any',
-        requirements: ['소방설비기사 소지자 (신입 지원 가능)', '운전면허 보유자'],
-        duties: '사업장 소방시설 정기 점검 및 법정 서류 작성, 불량 설비 교체 공사 보조.',
-        salary: '연봉 3,200~3,800만원 (출장 수당 별도)', benefits: '법인차 지원, 점심 식사비', deadline: '2026-08-15', link: '#' },
-      { id: 'fj-4', company: '서울시설공단', title: '공공시설 소방시설 관리직', type: 'public', region: 'seoul', experience: 'exp',
-        requirements: ['소방설비기사 필수', '공공시설 소방 관리 경력 2년 이상', '소방안전관리자 선임 가능자'],
-        duties: '서울시 공공시설물 소방시설 유지관리 및 자체 점검, 소방훈련 계획 및 실시.',
-        salary: '연봉 4,000만원 선', benefits: '공단 선택적 복지, 연금, 의료비', deadline: '2026-07-05', link: '#' },
-      { id: 'fj-5', company: '현대건설', title: '대형 건설현장 소방안전 관리자', type: 'large', region: 'honam', experience: 'exp',
-        requirements: ['소방설비기사 및 산업안전산업기사 동시 소지자 우대', '건설현장 소방 관리 경력 1년 이상'],
-        duties: '건설 공사 현장 소방 안전 관리 계획 수립 및 이행, 화기 작업 허가 시스템 운영.',
-        salary: '연봉 4,500~5,200만원', benefits: '현장 수당, 유류비', deadline: '2026-06-30', link: 'https://www.hdec.co.kr' },
     ],
     books: [
       { id: 'fb-1', title: '2026 소방설비기사 필기 기계분야 한권끝장', publisher: '에듀윌', rating: 9.6, reviews: 398, originalPrice: 39000, price: 35100, discount: '10%', coverBg: 'linear-gradient(135deg, #b91c1c 0%, #ef4444 100%)', tags: ['베스트', '무료배송'] },
@@ -315,28 +229,6 @@ const CERTIFICATIONS = {
       { title: '프로그래밍 언어 활용', tip: 'C언어, Java, Python 코드 추적 문제 출제. 특히 포인터(C)와 예외처리(Java, Python) 코드를 손으로 써보며 연습하세요.' },
       { title: '정보시스템 구축 관리', tip: 'TCP/IP 프로토콜 스택, 암호화 방식(대칭/비대칭), 보안 공격 유형(SQL Injection, XSS 등)은 실기에서도 서술형으로 출제.' },
     ],
-    jobs: [
-      { id: 'ij-1', company: 'NAVER', title: '2026 신입 개발자 공개 채용 (백엔드/프론트)', type: 'large', region: 'seoul', experience: 'new',
-        requirements: ['정보처리기사 취득자 우대', '컴퓨터공학 관련 학과 졸업자', '알고리즘·자료구조 기초 역량 증명 가능자'],
-        duties: '검색, 클라우드, 커머스 등 서비스 개발 및 유지보수. 코딩 테스트 → 기술 면접 → 임원 면접 전형.',
-        salary: '신입 연봉 5,000만원 이상 (성과급 별도)', benefits: '사내 식당, 스톡옵션, 헬스케어 지원', deadline: '2026-06-25', link: 'https://recruit.navercorp.com' },
-      { id: 'ij-2', company: '카카오', title: '카카오 서비스 품질 보증(QA) 엔지니어', type: 'large', region: 'seoul', experience: 'any',
-        requirements: ['정보처리기사 소지자 우대', '소프트웨어 테스트 이론 이해자', '모바일/웹 서비스 테스트 경험자 우대'],
-        duties: '카카오 앱/서비스 품질 검증 테스트 케이스 설계 및 수행, 자동화 테스트 스크립트 작성.',
-        salary: '연봉 4,500~5,500만원', benefits: '재택근무, 식비, 자기계발비', deadline: '2026-07-05', link: 'https://kakao.com/careers' },
-      { id: 'ij-3', company: '국민건강보험공단', title: '정보기술직 공채 (전산/IT 관리)', type: 'public', region: 'all', experience: 'new',
-        requirements: ['정보처리기사 필수', '정보보안기사 추가 소지자 우대', '학력 제한 없음'],
-        duties: '건강보험 전산 시스템 유지보수, 개인정보 보호 및 사이버 보안 관리, IT 기반 민원 서비스 개선.',
-        salary: '초봉 약 3,800만원 (공단 내규)', benefits: '연금, 의료비, 자녀학자금, 유연근무', deadline: '2026-07-31', link: 'https://www.nhis.or.kr' },
-      { id: 'ij-4', company: 'SK C&C', title: 'AI·빅데이터 플랫폼 구축 컨설턴트', type: 'large', region: 'seoul', experience: 'exp',
-        requirements: ['정보처리기사 필수', '빅데이터분석기사 또는 ADsP 추가 소지자 우대', 'Python/SQL 실무 활용 가능자'],
-        duties: '기업 디지털 전환(DX) 컨설팅, AI/ML 모델 설계 및 데이터 파이프라인 구축 지원.',
-        salary: '연봉 협의 (약 4,800~6,000만원)', benefits: 'SK 패밀리 복지, 유연근무', deadline: '2026-07-20', link: 'https://www.skcc.co.kr' },
-      { id: 'ij-5', company: '한국정보화진흥원', title: '공공 IT 시스템 구축·관리 기술 지원', type: 'public', region: 'chung', experience: 'exp',
-        requirements: ['정보처리기사 필수', '공공 SI 프로젝트 투입 경력 2년 이상', 'Java 또는 Python 기반 개발 역량'],
-        duties: '중앙부처 정보시스템 유지보수 및 고도화 사업 참여, 데이터 표준화 및 품질관리 보조.',
-        salary: '연봉 4,000~4,800만원', benefits: '공공기관 복리후생, 원격 근무', deadline: '2026-06-28', link: 'https://www.nia.or.kr' },
-    ],
     books: [
       { id: 'ib-1', title: '2026 정보처리기사 필기 한권끝장', publisher: '시나공(길벗)', rating: 9.8, reviews: 1832, originalPrice: 38000, price: 34200, discount: '10%', coverBg: 'linear-gradient(135deg, #1e40af 0%, #3b82f6 100%)', tags: ['베스트', '무료배송', '소득공제'] },
       { id: 'ib-2', title: '2026 정보처리기사 실기 한권끝장', publisher: '시나공(길벗)', rating: 9.7, reviews: 1421, originalPrice: 36000, price: 32400, discount: '10%', coverBg: 'linear-gradient(135deg, #115e59 0%, #0d9488 100%)', tags: ['추천', '실기대비'] },
@@ -397,28 +289,6 @@ const CERTIFICATIONS = {
       { title: '비계 및 가시설 안전', tip: '강관 비계, 시스템 비계 설치 기준과 안전난간 설치 기준이 매 시험 출제. 수치를 정확히 암기하는 것이 핵심.' },
       { title: '건설 관계법규', tip: '산업안전보건법 + 건설기술진흥법 + 건축법 3가지에서 고루 출제. 안전관리계획서 제출 대상 기준을 집중 학습하세요.' },
     ],
-    jobs: [
-      { id: 'cj-1', company: '대우건설', title: '주택건설 현장 안전 관리자 채용', type: 'large', region: 'honam', experience: 'any',
-        requirements: ['건설안전산업기사 또는 산업안전산업기사 필수', '건설현장 안전관리 실무 우대', '운전면허 소지자'],
-        duties: '공동주택 건설 현장 추락·붕괴 위험 예방 점검, 위험성 평가 참여, 매일 TBM 교육 실시.',
-        salary: '연봉 3,800~4,800만원', benefits: '현장 수당, 4대보험, 명절선물', deadline: '2026-07-10', link: 'https://www.daewooenc.com' },
-      { id: 'cj-2', company: '포스코건설', title: '플랜트 건설 현장 EHS 담당 (계약직)', type: 'large', region: 'gong', experience: 'exp',
-        requirements: ['건설안전산업기사 소지자', '플랜트 현장 EHS 경력 2년 이상 우대'],
-        duties: '제철소 설비 교체 공사 현장 안전·환경·보건 통합 관리, ISO 45001 인증 유지 지원.',
-        salary: '연봉 5,000~6,000만원', benefits: '현장 수당, 숙소, 유류비 지원', deadline: '2026-06-30', link: 'https://www.poscoenc.com' },
-      { id: 'cj-3', company: '한국도로공사', title: '고속도로 건설공사 안전점검원', type: 'public', region: 'all', experience: 'exp',
-        requirements: ['건설안전산업기사 필수', '도로 토목 공사 안전 관련 경력 2년 이상'],
-        duties: '고속도로 건설 공사 구간 정기·특별 안전점검, 안전점검 결과 보고서 작성 및 시정조치 확인.',
-        salary: '연봉 4,000만원 선', benefits: '공단 복지, 선택적 복지포인트', deadline: '2026-07-20', link: 'https://www.ex.co.kr' },
-      { id: 'cj-4', company: '코오롱글로벌', title: '신입 건설안전 관리자 채용 (2026 하반기)', type: 'large', region: 'seoul', experience: 'new',
-        requirements: ['건설안전산업기사 또는 산업안전산업기사 소지자', '건설 관련 학과(토목, 건축, 안전공학) 졸업자'],
-        duties: '건설 현장 안전 일지 작성, 안전 순찰 및 불안전 행동 시정, 주간 안전교육 자료 준비.',
-        salary: '신입 초봉 4,200만원', benefits: '건강검진, 복지카드, 학자금 지원', deadline: '2026-08-01', link: 'https://www.kolon.com' },
-      { id: 'cj-5', company: '안전기술공단', title: '건설현장 재해예방 기술지도 컨설턴트', type: 'consult', region: 'chung', experience: 'any',
-        requirements: ['건설안전산업기사 소지자 (신입 가능)', '차량 운전 가능자 필수'],
-        duties: '중소 건설업체 현장 매월 기술지도, 건설공사 위험성평가 지원, 안전관리계획서 작성 보좌.',
-        salary: '연봉 3,500~4,000만원 + 인센티브', benefits: '법인차 또는 차량유지비, 점심식대', deadline: '2026-08-20', link: '#' },
-    ],
     books: [
       { id: 'cb-1', title: '2026 건설안전산업기사 필기 한권끝장', publisher: '에듀윌', rating: 9.6, reviews: 287, originalPrice: 37000, price: 33300, discount: '10%', coverBg: 'linear-gradient(135deg, #78350f 0%, #d97706 100%)', tags: ['베스트', '무료배송'] },
       { id: 'cb-2', title: '2026 건설안전산업기사 필기 5개년 기출문제집', publisher: '구민사', rating: 9.5, reviews: 198, originalPrice: 33000, price: 29700, discount: '10%', coverBg: 'linear-gradient(135deg, #1a3a6b 0%, #3b6cb5 100%)', tags: ['추천', '소득공제'] },
@@ -470,13 +340,6 @@ const CERTIFICATIONS = {
       { name: '회로이론 및 제어공학', desc: '교직류 회로 해석 및 자동제어 기초' },
       { name: '전기설비기술기준', desc: '전기설비 판단기준 및 관련 법규' },
     ],
-    jobs: [
-      { title: '전기설비 유지보수 기사', company: '제조/플랜트', salary: '3,500~4,500만원', location: '울산/경남', type: '정규직' },
-      { title: '전기 안전관리자', company: '대기업 생산공장', salary: '4,000~5,000만원', location: '경기/충남', type: '정규직' },
-      { title: '전기공사 현장관리', company: '전기공사업체', salary: '3,800~4,800만원', location: '전국', type: '정규직' },
-      { title: '건축물 전기설비 설계', company: '건축·엔지니어링', salary: '4,200~5,500만원', location: '서울/수도권', type: '정규직' },
-      { title: '전기 계측 기술원', company: '에너지 관리업체', salary: '3,200~4,000만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '전기산업기사 필기 핵심이론+기출문제', author: '김동진', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '전기산업기사 실기 완전정복', author: '이현석', publisher: '일진사', year: 2024, rating: 4.3 },
@@ -525,13 +388,6 @@ const CERTIFICATIONS = {
       { name: '연료전지·바이오에너지', desc: '연료전지 원리 및 바이오매스 에너지 기술' },
       { name: '신재생에너지 계통연계', desc: '계통연계 기술기준 및 보호 시스템' },
       { name: '신재생에너지 관련 법규', desc: '신에너지 및 재생에너지 개발 관련 법령' },
-    ],
-    jobs: [
-      { title: '태양광발전소 운영관리', company: '발전사/에너지기업', salary: '3,800~4,800만원', location: '전남/경북', type: '정규직' },
-      { title: '신재생에너지 설계 엔지니어', company: '에너지 엔지니어링', salary: '4,500~6,000만원', location: '서울/경기', type: '정규직' },
-      { title: '풍력설비 유지보수 기술자', company: '풍력발전 운영사', salary: '4,000~5,200만원', location: '강원/제주', type: '정규직' },
-      { title: '그린에너지 사업 관리', company: '공기업/지자체', salary: '4,200~5,500만원', location: '전국', type: '정규직' },
-      { title: '신재생에너지 시공 감리', company: '감리전문회사', salary: '3,500~4,500만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '신재생에너지발전설비기사 필기 올인원', author: '황진수', publisher: '성안당', year: 2024, rating: 4.4 },
@@ -582,13 +438,6 @@ const CERTIFICATIONS = {
       { name: '회로이론', desc: '교직류 회로 해석 및 전기 기초 이론' },
       { name: '전기기기', desc: '변압기, 전동기 등 전기기기 특성 분석' },
     ],
-    jobs: [
-      { title: '전기공사 현장소장', company: '전기공사 전문업체', salary: '5,000~7,000만원', location: '전국', type: '정규직' },
-      { title: '전기 감리원', company: '감리전문회사', salary: '4,500~6,000만원', location: '서울/경기', type: '정규직' },
-      { title: '전기 설계 기사', company: '설계·엔지니어링', salary: '4,000~5,500만원', location: '수도권', type: '정규직' },
-      { title: '건축 전기설비 시공관리', company: '종합건설사', salary: '4,500~6,000만원', location: '전국', type: '정규직' },
-      { title: '전기공사 현장 기술원', company: '전기공사업체', salary: '3,500~4,500만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '전기공사기사 필기 핵심완성', author: '류승표', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '전기공사기사 실기 집중공략', author: '이재용', publisher: '예문사', year: 2024, rating: 4.3 },
@@ -637,13 +486,6 @@ const CERTIFICATIONS = {
       { name: '계측 및 제어', desc: '에너지 계측기기 원리 및 자동제어 기초' },
       { name: '열설비 구조 및 유체역학', desc: '보일러, 열교환기 구조 및 유체 흐름' },
       { name: '에너지관계 법규', desc: '에너지이용합리화법 및 관련 기준' },
-    ],
-    jobs: [
-      { title: '에너지 관리원', company: '대형 제조공장', salary: '4,000~5,000만원', location: '울산/경기', type: '정규직' },
-      { title: '보일러 설비 관리 기사', company: '열병합발전소', salary: '4,200~5,500만원', location: '전국', type: '정규직' },
-      { title: '에너지 진단 전문가', company: '에너지관리공단', salary: '4,500~6,000만원', location: '서울/경기', type: '정규직' },
-      { title: '플랜트 열설비 엔지니어', company: '엔지니어링 전문사', salary: '4,800~6,500만원', location: '서울/경기', type: '정규직' },
-      { title: '에너지 절약 컨설턴트', company: '컨설팅 전문회사', salary: '3,800~5,000만원', location: '서울', type: '계약직' },
     ],
     books: [
       { title: '에너지관리기사 필기 이론 총정리', author: '정태원', publisher: '성안당', year: 2024, rating: 4.4 },
@@ -694,13 +536,6 @@ const CERTIFICATIONS = {
       { name: '열역학 및 열전달', desc: '열역학 법칙, 열전달 메커니즘 분석' },
       { name: '재료역학', desc: '응력·변형률, 보 이론 및 재료 파괴 기준' },
     ],
-    jobs: [
-      { title: '기계설비 설계 엔지니어', company: '기계·제조업체', salary: '4,000~5,500만원', location: '경기/인천', type: '정규직' },
-      { title: '생산설비 유지보수 기사', company: '자동차 부품사', salary: '3,800~5,000만원', location: '울산/경기', type: '정규직' },
-      { title: '플랜트 기계 엔지니어', company: '플랜트 건설사', salary: '4,500~6,500만원', location: '서울/경기', type: '정규직' },
-      { title: '기계 품질관리 기술자', company: '제조 전문업체', salary: '3,800~5,000만원', location: '경기/충남', type: '정규직' },
-      { title: '기계설비 감리원', company: '감리전문회사', salary: '3,500~4,800만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '일반기계기사 필기 단기완성', author: '한동원', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '일반기계기사 실기 핵심공략', author: '이승준', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -749,13 +584,6 @@ const CERTIFICATIONS = {
       { name: '배관일반', desc: '냉매 배관, 보온 시공 및 압력 시험' },
       { name: '전기제어공학', desc: '냉동공조 시스템의 전기 제어 회로' },
       { name: '공조냉동 관련 법규', desc: '고압가스안전관리법 및 냉동 관련 기준' },
-    ],
-    jobs: [
-      { title: '냉동공조 설비 엔지니어', company: '플랜트·건설사', salary: '4,000~5,500만원', location: '서울/경기', type: '정규직' },
-      { title: '빌딩 설비 관리 기술자', company: '빌딩 관리업체', salary: '3,800~5,000만원', location: '서울/수도권', type: '정규직' },
-      { title: '냉동식품 저온 설비 관리', company: '식품 제조사', salary: '3,600~4,800만원', location: '경기/충북', type: '정규직' },
-      { title: '반도체 클린룸 공조 기술자', company: '반도체 제조사', salary: '4,500~6,000만원', location: '경기/충남', type: '정규직' },
-      { title: '공조냉동 유지보수 기술원', company: '설비 유지보수업', salary: '3,300~4,300만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '공조냉동기계기사 필기 완전정복', author: '신동철', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -806,13 +634,6 @@ const CERTIFICATIONS = {
       { name: '승강기 설계', desc: '승강기 용량 계산 및 설계 기준' },
       { name: '승강기 관련 법규', desc: '승강기 안전관리법 및 설치·검사 기준' },
     ],
-    jobs: [
-      { title: '승강기 안전관리자', company: '대형 건물 관리사', salary: '3,800~5,000만원', location: '서울/경기', type: '정규직' },
-      { title: '승강기 검사원', company: '한국승강기안전공단', salary: '4,200~5,500만원', location: '전국', type: '정규직' },
-      { title: '승강기 유지보수 기사', company: '승강기 제조·유지보수사', salary: '3,600~4,800만원', location: '전국', type: '정규직' },
-      { title: '승강기 설치 현장관리', company: '승강기 설치 전문업체', salary: '4,000~5,200만원', location: '수도권', type: '정규직' },
-      { title: '승강기 기술 지원', company: '승강기 부품 유통사', salary: '3,300~4,200만원', location: '경기', type: '계약직' },
-    ],
     books: [
       { title: '승강기기사 필기 핵심이론', author: '문준호', publisher: '성안당', year: 2024, rating: 4.4 },
       { title: '승강기기사 실기 완전정복', author: '서영민', publisher: '예문사', year: 2024, rating: 4.3 },
@@ -861,13 +682,6 @@ const CERTIFICATIONS = {
       { name: '건설기계 전기·전자', desc: '전기 회로 및 전자 제어 장치 원리' },
       { name: '건설기계 유압', desc: '유압 시스템 원리, 부품 기능 및 정비' },
       { name: '건설기계 관련 법규', desc: '건설기계관리법 및 안전 관련 기준' },
-    ],
-    jobs: [
-      { title: '건설기계 정비 기술자', company: '건설기계 정비업체', salary: '3,500~4,800만원', location: '경기/전국', type: '정규직' },
-      { title: '건설현장 장비 관리자', company: '종합건설사', salary: '3,800~5,000만원', location: '전국', type: '정규직' },
-      { title: '건설기계 검사원', company: '건설기계 검사기관', salary: '4,000~5,200만원', location: '전국', type: '정규직' },
-      { title: '중장비 안전 관리원', company: '대형 건설사', salary: '3,800~5,000만원', location: '전국', type: '정규직' },
-      { title: '건설기계 기술 지원', company: '장비 렌탈업체', salary: '3,200~4,200만원', location: '경기/전국', type: '계약직' },
     ],
     books: [
       { title: '건설기계기사 필기 이론+기출', author: '강현준', publisher: '성안당', year: 2024, rating: 4.4 },
@@ -918,13 +732,6 @@ const CERTIFICATIONS = {
       { name: '공정제어', desc: '화학 공정의 자동제어 및 계장 시스템' },
       { name: '화공안전 관련 법규', desc: '산업안전보건법 화학물질 관련 기준' },
     ],
-    jobs: [
-      { title: '화학 공정 엔지니어', company: '석유화학 기업', salary: '4,500~6,500만원', location: '울산/여수', type: '정규직' },
-      { title: '제약 생산 기술자', company: '제약·바이오 기업', salary: '4,000~5,500만원', location: '충북/경기', type: '정규직' },
-      { title: '화학물질 안전관리자', company: '화학 제조사', salary: '4,200~5,500만원', location: '경기/울산', type: '정규직' },
-      { title: '고분자 소재 개발 연구원', company: 'R&D 연구소', salary: '4,500~6,000만원', location: '서울/경기', type: '정규직' },
-      { title: '화학 공장 운전 기술원', company: '정밀화학 업체', salary: '3,500~4,500만원', location: '전남/경남', type: '계약직' },
-    ],
     books: [
       { title: '화공기사 필기 핵심이론 총정리', author: '정승호', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '화공기사 실기 완전정복', author: '김영훈', publisher: '예문사', year: 2024, rating: 4.3 },
@@ -973,13 +780,6 @@ const CERTIFICATIONS = {
       { name: '위험물의 성질과 취급', desc: '위험물 분류별 특성 및 안전 취급 기준' },
       { name: '위험물 안전관리법', desc: '위험물 저장·취급 시설 기준 및 법규' },
       { name: '소방관계법규', desc: '소방 시설 설치 기준 및 관련 법령' },
-    ],
-    jobs: [
-      { title: '위험물 안전관리자', company: '주유소·위험물 저장소', salary: '3,200~4,200만원', location: '전국', type: '정규직' },
-      { title: '화학물질 취급 관리자', company: '화학 제조업체', salary: '3,500~4,500만원', location: '경기/울산', type: '정규직' },
-      { title: '소방·안전 담당자', company: '대형 물류창고', salary: '3,300~4,300만원', location: '경기/인천', type: '정규직' },
-      { title: '위험물 시설 점검원', company: '안전관리 용역사', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '화학물질 보관 관리원', company: '연구소·대학교', salary: '2,800~3,600만원', location: '서울/경기', type: '계약직' },
     ],
     books: [
       { title: '위험물산업기사 필기 핵심완성', author: '안재원', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -1030,13 +830,6 @@ const CERTIFICATIONS = {
       { name: '가스 안전관리', desc: '사고 사례 분석, 위험성 평가 및 예방' },
       { name: '고압가스안전관리법', desc: '가스 관련 법규 및 안전 기준' },
     ],
-    jobs: [
-      { title: '가스 안전관리자', company: '도시가스 공급사', salary: '4,000~5,200만원', location: '전국', type: '정규직' },
-      { title: '가스 설비 시공 기술자', company: '가스 시공업체', salary: '3,800~5,000만원', location: '전국', type: '정규직' },
-      { title: 'LNG 터미널 운영 기사', company: '한국가스공사', salary: '4,500~6,000만원', location: '인천/평택', type: '정규직' },
-      { title: '가스 시설 검사원', company: '한국가스안전공사', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '가스 배관 유지보수', company: '건물 관리업체', salary: '3,300~4,300만원', location: '수도권', type: '계약직' },
-    ],
     books: [
       { title: '가스기사 필기 이론 완전정복', author: '남기현', publisher: '성안당', year: 2024, rating: 4.4 },
       { title: '가스기사 실기 핵심공략', author: '오민혁', publisher: '예문사', year: 2024, rating: 4.3 },
@@ -1085,13 +878,6 @@ const CERTIFICATIONS = {
       { name: '대기오염 방지기술', desc: '집진, 탈황, 탈질 등 방지 시설 원리' },
       { name: '대기오염 공정시험기준', desc: '오염물질 측정 방법 및 시험 기준' },
       { name: '대기환경관계법규', desc: '대기환경보전법 및 시행령·규칙' },
-    ],
-    jobs: [
-      { title: '대기환경 관리 기술자', company: '대형 제조업체', salary: '3,800~5,000만원', location: '경기/충남', type: '정규직' },
-      { title: '환경 컨설턴트', company: '환경 컨설팅사', salary: '4,000~5,500만원', location: '서울/경기', type: '정규직' },
-      { title: '대기 측정 분석원', company: '환경 전문 측정 기관', salary: '3,500~4,500만원', location: '전국', type: '정규직' },
-      { title: '온실가스 검증원', company: '검증 전문 기관', salary: '4,000~5,200만원', location: '서울', type: '정규직' },
-      { title: '대기 방지 시설 운영원', company: '발전·소각 시설', salary: '3,200~4,200만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '대기환경기사 필기 핵심이론', author: '조승현', publisher: '성안당', year: 2024, rating: 4.4 },
@@ -1142,13 +928,6 @@ const CERTIFICATIONS = {
       { name: '수질오염 공정시험기준', desc: '수질 항목별 측정·분석 방법 기준' },
       { name: '수질환경 관계법규', desc: '물환경보전법 및 수질 관련 기준' },
     ],
-    jobs: [
-      { title: '폐수처리 시설 운영 기사', company: '제조·화학 업체', salary: '3,800~5,000만원', location: '경기/경남', type: '정규직' },
-      { title: '하수처리장 운영 기술자', company: '지방자치단체', salary: '4,000~5,200만원', location: '전국', type: '정규직' },
-      { title: '수질 측정 분석원', company: '환경 측정 기관', salary: '3,500~4,500만원', location: '전국', type: '정규직' },
-      { title: '환경 관리 담당자', company: '대기업 사업장', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '수처리 시설 유지보수', company: '환경 서비스업체', salary: '3,200~4,200만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '수질환경기사 필기 핵심이론', author: '강병호', publisher: '성안당', year: 2024, rating: 4.4 },
       { title: '수질환경기사 실기 완전정복', author: '이수연', publisher: '예문사', year: 2024, rating: 4.3 },
@@ -1197,13 +976,6 @@ const CERTIFICATIONS = {
       { name: '기계·기구 및 설비 안전관리', desc: '기계 설비 위험 요인 및 방호 장치' },
       { name: '전기 및 화학설비 안전관리', desc: '전기 안전, 화재·폭발 예방 기술' },
       { name: '건설안전관리 및 산업안전보건법', desc: '건설 현장 안전 기준 및 관련 법규' },
-    ],
-    jobs: [
-      { title: '산업안전 관리자', company: '대형 제조업체', salary: '4,200~5,500만원', location: '경기/울산', type: '정규직' },
-      { title: '안전보건 팀장', company: '종합건설사', salary: '5,000~7,000만원', location: '서울/전국', type: '정규직' },
-      { title: '안전 컨설턴트', company: '안전 전문 기관', salary: '4,500~6,000만원', location: '서울/경기', type: '정규직' },
-      { title: '위험성 평가 전문가', company: '엔지니어링·컨설팅', salary: '4,800~6,500만원', location: '서울/경기', type: '정규직' },
-      { title: '산업안전 보건 감리원', company: '감리 전문회사', salary: '3,800~5,000만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '산업안전기사 필기 올인원', author: '김상현', publisher: '성안당', year: 2024, rating: 4.6 },
@@ -1254,13 +1026,6 @@ const CERTIFICATIONS = {
       { name: '정보보안 일반', desc: '암호학, 인증 기술 및 보안 관리 프레임워크' },
       { name: '정보보안 관련 법규', desc: '개인정보보호법, 정보통신망법 및 관련 기준' },
     ],
-    jobs: [
-      { title: '정보보안 엔지니어', company: 'IT 대기업·금융기관', salary: '5,000~7,500만원', location: '서울/경기', type: '정규직' },
-      { title: '보안 관제 분석가', company: 'MSSP·보안 전문사', salary: '4,000~5,500만원', location: '서울/경기', type: '정규직' },
-      { title: '침해사고 대응(CERT) 전문가', company: '보안 전문 기업', salary: '5,000~7,000만원', location: '서울', type: '정규직' },
-      { title: '개인정보보호 담당자(DPO)', company: '대기업·공공기관', salary: '4,800~6,500만원', location: '서울/경기', type: '정규직' },
-      { title: '보안 취약점 진단원', company: '보안 컨설팅사', salary: '4,000~5,500만원', location: '서울', type: '계약직' },
-    ],
     books: [
       { title: '정보보안기사 필기 핵심이론', author: '이경철', publisher: '한빛미디어', year: 2024, rating: 4.5 },
       { title: '정보보안기사 실기 완전정복', author: '박원규', publisher: '성안당', year: 2024, rating: 4.4 },
@@ -1307,13 +1072,6 @@ const CERTIFICATIONS = {
       { name: '빅데이터 모델링', desc: '머신러닝·딥러닝 알고리즘 선택 및 모델 학습' },
       { name: '빅데이터 결과 해석', desc: '모델 평가 지표, 결과 해석 및 시각화' },
       { name: '빅데이터 관련 법규', desc: '개인정보보호법, 데이터 산업 진흥법 기준' },
-    ],
-    jobs: [
-      { title: '데이터 분석가', company: 'IT·플랫폼 기업', salary: '5,000~8,000만원', location: '서울/판교', type: '정규직' },
-      { title: '머신러닝 엔지니어', company: 'AI·빅테크 기업', salary: '6,000~10,000만원', location: '서울/판교', type: '정규직' },
-      { title: '비즈니스 인텔리전스(BI) 전문가', company: '금융·유통·제조', salary: '4,800~7,000만원', location: '서울/경기', type: '정규직' },
-      { title: '데이터 엔지니어', company: '클라우드·테크기업', salary: '5,500~9,000만원', location: '서울/판교', type: '정규직' },
-      { title: '데이터 분석 컨설턴트', company: '컨설팅 전문사', salary: '4,500~6,500만원', location: '서울', type: '계약직' },
     ],
     books: [
       { title: '빅데이터분석기사 필기+실기 한권완성', author: '신용균', publisher: '이기적', year: 2024, rating: 4.6 },
@@ -1362,13 +1120,6 @@ const CERTIFICATIONS = {
       { name: 'SQL 최적화 기본 원리', desc: '인덱스, 실행 계획 분석 및 튜닝 기법' },
       { name: '관계형 데이터베이스 개요', desc: 'DBMS 아키텍처, 트랜잭션 및 잠금 관리' },
     ],
-    jobs: [
-      { title: '백엔드 개발자', company: 'IT·스타트업·대기업', salary: '4,500~8,000만원', location: '서울/판교', type: '정규직' },
-      { title: '데이터베이스 관리자(DBA)', company: '금융·공공기관', salary: '5,000~7,500만원', location: '서울/경기', type: '정규직' },
-      { title: '데이터 분석가', company: 'IT·마케팅 기업', salary: '4,000~6,500만원', location: '서울/경기', type: '정규직' },
-      { title: 'ERP 시스템 운영자', company: '제조·금융 기업', salary: '3,800~5,500만원', location: '서울/수도권', type: '정규직' },
-      { title: 'SQL 튜닝 컨설턴트', company: 'IT 컨설팅사', salary: '4,000~6,000만원', location: '서울', type: '계약직' },
-    ],
     books: [
       { title: 'SQL 자격검정 실전문제 (SQLD)', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', year: 2024, rating: 4.7 },
       { title: 'SQLD 노랭이 (핵심이론+문제집)', author: '조시형', publisher: '영진닷컴', year: 2024, rating: 4.6 },
@@ -1415,13 +1166,6 @@ const CERTIFICATIONS = {
       { name: '토질 및 기초공학', desc: '지반 조사, 지지력·침하 계산 및 기초 설계' },
       { name: '측량학', desc: '각도·거리 측량, 노선 및 지적 측량 기법' },
       { name: '철근콘크리트 및 강구조', desc: 'RC 구조 설계, 강재 접합 및 시공 기준' },
-    ],
-    jobs: [
-      { title: '토목 설계 엔지니어', company: '설계·엔지니어링사', salary: '4,200~6,000만원', location: '서울/경기', type: '정규직' },
-      { title: '건설 현장 토목 기술자', company: '대형 건설사', salary: '4,500~6,500만원', location: '전국', type: '정규직' },
-      { title: '인프라 감리원', company: '감리 전문사', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '지방 SOC 사업 관리자', company: '지자체·공기업', salary: '4,500~6,000만원', location: '전국', type: '정규직' },
-      { title: '토목 시공 감독', company: '건설 전문업체', salary: '3,800~5,000만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '토목기사 필기 핵심이론 총정리', author: '이재철', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -1470,13 +1214,6 @@ const CERTIFICATIONS = {
       { name: '건축 설비', desc: '급배수·전기·공조·소방 설비 계획' },
       { name: '건축 관련 법규', desc: '건축법, 주택법 및 건설기술진흥법 기준' },
     ],
-    jobs: [
-      { title: '건축 설계 기사', company: '건축 설계 사무소', salary: '3,800~5,500만원', location: '서울/수도권', type: '정규직' },
-      { title: '건축 시공 현장 기술자', company: '종합건설사', salary: '4,500~6,500만원', location: '전국', type: '정규직' },
-      { title: '건축 감리원', company: '감리 전문회사', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '건축 CM(건설사업관리) 기술자', company: 'CM 전문사', salary: '4,500~6,500만원', location: '서울/경기', type: '정규직' },
-      { title: '건축 인허가 관리', company: '디벨로퍼·시행사', salary: '3,800~5,000만원', location: '서울/수도권', type: '계약직' },
-    ],
     books: [
       { title: '건축기사 필기 핵심이론 완전정복', author: '강주현', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '건축기사 실기 도면작성 완전정복', author: '이승철', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -1523,13 +1260,6 @@ const CERTIFICATIONS = {
       { name: '신뢰성 관리', desc: '고장 분석, FMEA 및 신뢰성 시험 기법' },
       { name: '품질경영', desc: 'ISO 9001, TQM, 6시그마 및 QC 7가지 도구' },
       { name: '품질경영 관련 법규', desc: '제품안전기본법 및 KS 표준화 관련 기준' },
-    ],
-    jobs: [
-      { title: '품질관리(QC) 엔지니어', company: '자동차·전자 부품사', salary: '4,000~5,500만원', location: '경기/울산', type: '정규직' },
-      { title: '품질보증(QA) 담당자', company: '제약·식품 제조사', salary: '4,000~5,500만원', location: '충북/경기', type: '정규직' },
-      { title: '6시그마 블랙벨트 컨설턴트', company: '컨설팅·대기업', salary: '5,000~7,500만원', location: '서울/경기', type: '정규직' },
-      { title: 'ISO 심사원', company: '인증 기관', salary: '4,500~6,000만원', location: '서울/전국', type: '정규직' },
-      { title: '품질 시스템 감사원', company: '제조·엔지니어링', salary: '3,800~5,000만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '품질경영기사 필기 핵심이론', author: '유태현', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -1581,13 +1311,6 @@ const CERTIFICATIONS = {
       { name: '전기공사재료 및 시공', desc: '전선관 공사, 배선 공사, 접지 공사 방법 및 재료' },
       { name: '전기설비 기술기준', desc: '한국전기설비규정(KEC) 및 안전 기준 적용' },
     ],
-    jobs: [
-      { title: '전기공사 현장감독', company: '중견 건설사', salary: '3,500~4,500만원', location: '전국', type: '정규직' },
-      { title: '전기설비 설계원', company: '전기설계사무소', salary: '3,200~4,200만원', location: '서울·수도권', type: '정규직' },
-      { title: '전기시공 기술자', company: '전기공사업체', salary: '3,800~5,000만원', location: '전국', type: '정규직' },
-      { title: '전기 안전관리원', company: '공공기관·공단', salary: '4,000~5,200만원', location: '전국', type: '정규직' },
-      { title: '전기공사 감리원', company: '감리전문회사', salary: '3,500~4,800만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '전기공사산업기사 필기 핵심이론', author: '김태호', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '전기공사산업기사 과년도 기출문제', author: '이상원', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -1635,13 +1358,6 @@ const CERTIFICATIONS = {
       { name: '태양광발전 시공', desc: '어레이 설치, 배선 공사, 접지 및 피뢰 시스템' },
       { name: '태양광발전 유지보수', desc: '고장 진단, 출력 저하 원인 분석, 정기 점검 방법' },
       { name: '전기 기초이론', desc: '직류·교류 회로, 전기 안전 기준 및 보호 장치' },
-    ],
-    jobs: [
-      { title: '태양광 설치 기술자', company: '신재생에너지업체', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '태양광 유지보수원', company: '발전소 운영사', salary: '3,200~4,200만원', location: '전국', type: '정규직' },
-      { title: '신재생에너지 시공원', company: '건설·시공업체', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '에너지 설비 점검원', company: '공공기관·지자체', salary: '3,500~4,500만원', location: '전국', type: '정규직' },
-      { title: '태양광 발전 운영원', company: '민간 발전사업자', salary: '2,800~3,800만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '태양광발전설비기능사 필기+실기', author: '조현철', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -1691,13 +1407,6 @@ const CERTIFICATIONS = {
       { name: '열설비 설계', desc: '보일러 구조 및 부속 장치, 열교환기 설계 기초' },
       { name: '에너지 관계 법규', desc: '에너지이용합리화법, 열사용기자재 검사 기준' },
     ],
-    jobs: [
-      { title: '에너지 관리원', company: '제조업체', salary: '3,500~4,500만원', location: '전국', type: '정규직' },
-      { title: '보일러 운전원', company: '대형 건물·공장', salary: '3,200~4,200만원', location: '전국', type: '정규직' },
-      { title: '열설비 유지보수원', company: '설비관리업체', salary: '3,400~4,400만원', location: '전국', type: '정규직' },
-      { title: '에너지 진단 전문가', company: '에너지진단기관', salary: '4,000~5,500만원', location: '서울·수도권', type: '정규직' },
-      { title: '열사용 시설 점검원', company: '한국에너지공단', salary: '3,500~4,800만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '에너지관리산업기사 필기 완전정복', author: '박성호', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '에너지관리산업기사 기출문제 해설', author: '에너지기술연구회', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -1745,13 +1454,6 @@ const CERTIFICATIONS = {
       { name: '용접 시공', desc: '피복아크·MIG·TIG·서브머지드 용접 시공법' },
       { name: '용접 검사', desc: '비파괴검사(RT, UT, MT, PT), 용접부 품질 기준' },
       { name: '용접 관계 법규', desc: '압력용기 기준, 용접 안전 규정, KS 규격' },
-    ],
-    jobs: [
-      { title: '용접 기술원', company: '조선소·플랜트사', salary: '4,000~5,500만원', location: '부산·거제·전남', type: '정규직' },
-      { title: '용접 품질 관리자', company: '자동차부품사', salary: '4,200~5,500만원', location: '울산·경기', type: '정규직' },
-      { title: '용접 설계 엔지니어', company: '중공업사', salary: '4,500~6,000만원', location: '전국', type: '정규직' },
-      { title: '비파괴 검사원', company: '검사전문기관', salary: '3,800~5,000만원', location: '전국', type: '정규직' },
-      { title: '용접 공정 관리원', company: '설비제조업체', salary: '3,500~4,500만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '용접기사 필기 핵심요약+기출', author: '이현석', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -1801,13 +1503,6 @@ const CERTIFICATIONS = {
       { name: '전기 제어', desc: '전기 회로 기초, 냉동 공조 제어 시스템, 인버터 응용' },
       { name: '공조냉동 관계 법규', desc: '고압가스 안전관리법, 냉매 관련 규정 및 검사 기준' },
     ],
-    jobs: [
-      { title: '냉동공조 설비 기술자', company: '설비전문업체', salary: '3,500~4,800만원', location: '전국', type: '정규직' },
-      { title: '빌딩 설비 관리원', company: '빌딩관리회사', salary: '3,200~4,200만원', location: '서울·수도권', type: '정규직' },
-      { title: '공조 설비 설계원', company: '설계사무소', salary: '3,500~4,500만원', location: '서울·수도권', type: '정규직' },
-      { title: '냉동창고 설비 관리자', company: '물류·유통업체', salary: '3,300~4,300만원', location: '전국', type: '정규직' },
-      { title: '냉동공조 유지보수원', company: '설비유지관리사', salary: '3,000~4,000만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '공조냉동기계산업기사 필기 완전정복', author: '최명진', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '공조냉동기계산업기사 기출문제 총정리', author: '냉동공조기술연구회', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -1856,13 +1551,6 @@ const CERTIFICATIONS = {
       { name: '유체역학', desc: '관 내 유동, 압력 손실 계산, 펌프 및 압축기 특성' },
       { name: '배관 관계 법규', desc: '도시가스사업법, 고압가스 안전관리법, 산업배관 기준' },
     ],
-    jobs: [
-      { title: '플랜트 배관 기술자', company: '플랜트건설사', salary: '4,200~5,800만원', location: '전국·해외', type: '정규직' },
-      { title: '배관 설계 엔지니어', company: '엔지니어링사', salary: '4,000~5,500만원', location: '서울·수도권', type: '정규직' },
-      { title: '가스 배관 시공원', company: '도시가스업체', salary: '3,500~4,700만원', location: '전국', type: '정규직' },
-      { title: '배관 검사원', company: '검사전문기관', salary: '3,800~5,000만원', location: '전국', type: '정규직' },
-      { title: '배관 유지보수 기술자', company: '설비관리업체', salary: '3,300~4,500만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '배관기사 필기 핵심이론+기출문제', author: '한상욱', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '배관기사 과년도 문제 해설집', author: '배관기술연구회', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -1910,13 +1598,6 @@ const CERTIFICATIONS = {
       { name: '유공압 시스템', desc: '유압·공압 회로 설계, 액추에이터 선정 및 제어 로직' },
       { name: '로봇 및 자동화', desc: '산업용 로봇 구조, 운동학, 자동화 라인 구성 설계' },
       { name: '메카트로닉스 시스템', desc: '시스템 통합 설계, 신호 처리, CNC 공작기계 응용' },
-    ],
-    jobs: [
-      { title: '자동화 시스템 엔지니어', company: '자동화설비업체', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '산업용 로봇 기술자', company: '로봇전문기업', salary: '4,200~5,800만원', location: '경기·울산·충남', type: '정규직' },
-      { title: 'PLC 제어 프로그래머', company: '제조업체', salary: '3,800~5,000만원', location: '전국', type: '정규직' },
-      { title: '스마트팩토리 구축원', company: 'IT·제조융합사', salary: '4,500~6,000만원', location: '서울·수도권', type: '정규직' },
-      { title: '설비 자동화 유지보수원', company: '설비관리업체', salary: '3,500~4,500만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '메카트로닉스기사 필기 핵심정리+기출', author: '신동호', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -1968,13 +1649,6 @@ const CERTIFICATIONS = {
       { name: '소음·진동', desc: '소음·진동의 발생 원인, 측정 방법 및 저감 대책' },
       { name: '환경화학 및 생태학', desc: '환경 내 화학 반응, 생태계 구조와 오염 영향 평가' },
     ],
-    jobs: [
-      { title: '환경영향평가사', company: '환경컨설팅회사', salary: '3,500~5,000만원', location: '서울/경기', type: '정규직' },
-      { title: '환경관리원', company: '제조·화학업체', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '수질관리기사', company: '지방상하수도본부', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '환경안전담당자', company: '대기업 생산법인', salary: '3,800~5,500만원', location: '수도권/지방', type: '정규직' },
-      { title: '환경조사원', company: '환경부 산하기관', salary: '2,800~3,800만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '환경기사 필기 한권으로 끝내기', author: '이윤재', publisher: '성안당', year: 2024, rating: 4.6 },
       { title: '환경기사 실기 핵심요약 및 기출문제', author: '김정호', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -2022,13 +1696,6 @@ const CERTIFICATIONS = {
       { name: '진동 측정 및 평가', desc: '진동 측정 방법, 진동 레벨 분석 및 평가 기법' },
       { name: '소음·진동 방지 기술', desc: '흡음, 차음, 제진, 방진 등 저감 공법 및 설계' },
       { name: '관계 법규', desc: '소음·진동 관련 환경법, 기준치 및 행정 규제 사항' },
-    ],
-    jobs: [
-      { title: '소음·진동 측정원', company: '환경측정대행업체', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '환경관리담당자', company: '건설·토목회사', salary: '3,200~4,500만원', location: '수도권', type: '정규직' },
-      { title: '품질환경엔지니어', company: '자동차·기계 제조사', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '소음규제 관리원', company: '지방자치단체', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '소음진동 조사원', company: '환경부 산하기관', salary: '2,700~3,600만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '소음진동기사 필기 완전합격', author: '이상철', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -2078,13 +1745,6 @@ const CERTIFICATIONS = {
       { name: '재활용 기술', desc: '자원 회수, 재활용 공정, 순환 경제 적용 사례' },
       { name: '관계 법규', desc: '폐기물관리법, 자원순환기본법 및 관련 행정 규제' },
     ],
-    jobs: [
-      { title: '폐기물처리 기술원', company: '폐기물처리업체', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '환경관리사원', company: '대형 제조공장', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '자원재활용 관리원', company: '재활용처리기업', salary: '2,800~4,000만원', location: '수도권/지방', type: '정규직' },
-      { title: '환경안전팀원', company: '화학·제약회사', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '폐기물 지도점검원', company: '지방환경청', salary: '2,700~3,600만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '폐기물처리기사 필기 한권완성', author: '이진호', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '폐기물처리기사 실기 총정리', author: '최우석', publisher: '예문사', year: 2024, rating: 4.3 },
@@ -2133,13 +1793,6 @@ const CERTIFICATIONS = {
       { name: '토양 정화 기술', desc: '생물학적·물리화학적 정화 공법 및 적용 사례' },
       { name: '관계 법규', desc: '토양환경보전법, 지하수법 및 오염 기준 관련 규정' },
     ],
-    jobs: [
-      { title: '토양오염 조사원', company: '환경컨설팅업체', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '토양정화 기술원', company: '토양정화전문기업', salary: '3,200~4,500만원', location: '수도권/지방', type: '정규직' },
-      { title: '환경부지 관리원', company: '공공기관·LH', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '지하수 환경관리원', company: '한국수자원공사', salary: '3,300~4,700만원', location: '전국', type: '정규직' },
-      { title: '환경조사 연구원', company: '환경부 산하연구원', salary: '2,800~3,800만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '토양환경기사 필기 완벽대비', author: '윤석진', publisher: '성안당', year: 2024, rating: 4.4 },
       { title: '토양환경기사 실기 핵심이론', author: '이민철', publisher: '예문사', year: 2024, rating: 4.3 },
@@ -2187,13 +1840,6 @@ const CERTIFICATIONS = {
       { name: '피난구조설비', desc: '유도등, 피난기구, 비상조명등 설치 및 유지 관리 기준' },
       { name: '소화활동설비', desc: '제연설비, 연결송수관, 비상콘센트 설비 등 구조 및 점검' },
       { name: '소방 관계 법규', desc: '소방시설법, 화재예방법 등 설치 기준 및 유지관리 규정' },
-    ],
-    jobs: [
-      { title: '소방설비 시공원', company: '소방시공전문업체', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '소방점검 기술원', company: '소방안전관리업체', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '건축 소방담당자', company: '건설·시행사', salary: '3,500~5,000만원', location: '수도권', type: '정규직' },
-      { title: '소방시설 관리원', company: '공공기관·시설관리', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '소방 안전점검원', company: '소방청 위탁기관', salary: '2,800~3,700만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '소방설비산업기사 필기 기계편', author: '이재학', publisher: '성안당', year: 2024, rating: 4.6 },
@@ -2251,10 +1897,6 @@ const CERTIFICATIONS = {
       '특급 응시 자격: 소방설비기사 취득 후 2년 이상 실무 경력 등',
       '2차 시험은 논술·서술형 위주로 실무 적용 능력 중점 평가',
     ],
-    jobs: [
-      { title: '대형 건물 소방 안전 관리자', company: '대형 백화점·호텔·공항', salary: '4,500~7,000만원', location: '전국', type: '정규직' },
-      { title: '소방 안전 컨설턴트', company: '소방 안전 전문 기업', salary: '4,000~6,000만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { title: '소방안전관리자 특급 1차 합격 완성', author: '김현우', publisher: '성안당', year: 2025, rating: 4.5 },
       { title: '소방안전관리자 특급 2차 실무 완전정복', author: '이상훈', publisher: '예문사', year: 2025, rating: 4.4 },
@@ -2303,10 +1945,6 @@ const CERTIFICATIONS = {
       '소방안전관리자 2급 취득 후 실무 경력 쌓아 1급 응시 가능',
       'Q-Net 국가기술자격이 아닌 한국소방안전원 자체 자격',
     ],
-    jobs: [
-      { title: '소방 안전 관리자 (1급)', company: '오피스빌딩·대형 아파트', salary: '3,800~5,500만원', location: '전국', type: '정규직' },
-      { title: '소방 안전 관리 대행업체', company: '소방 안전 대행 전문 기업', salary: '3,500~4,800만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { title: '소방안전관리자 1급 합격 완성', author: '이재학', publisher: '성안당', year: 2025, rating: 4.5 },
       { title: '소방안전관리자 1급 핵심요약+기출문제', author: '김성욱', publisher: '예문사', year: 2025, rating: 4.4 },
@@ -2352,10 +1990,6 @@ const CERTIFICATIONS = {
       '합격 기준: 각 과목 40점 이상 + 전 과목 평균 70점 이상',
       '소방 분야 첫 번째 자격증으로 취득 후 1급·특급으로 단계 상승 추천',
       'Q-Net 국가기술자격이 아닌 한국소방안전원 자체 자격',
-    ],
-    jobs: [
-      { title: '소방 안전 관리자 (2급)', company: '중소형 빌딩·아파트', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '소방 점검 보조원', company: '소방 안전 대행 기업', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '소방안전관리자 2급 합격 완성', author: '이재학', publisher: '성안당', year: 2025, rating: 4.4 },
@@ -2403,9 +2037,6 @@ const CERTIFICATIONS = {
       '별도 응시 자격 없이 누구나 취득 가능한 소방 입문 자격',
       'Q-Net 국가기술자격이 아닌 한국소방안전원 자체 자격',
     ],
-    jobs: [
-      { title: '소방 안전 관리자 (3급)', company: '소형 건물·근린생활시설', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { title: '소방안전관리자 3급 합격 완성', author: '김현우', publisher: '성안당', year: 2025, rating: 4.3 },
     ],
@@ -2447,13 +2078,6 @@ const CERTIFICATIONS = {
       { name: '위험물 저장 및 운반', desc: '저장소 구조 기준, 용기 기준, 운반 방법 및 주의사항' },
       { name: '소화 방법', desc: '각 위험물 특성에 따른 적응 소화약제 및 소화 방법 선택' },
       { name: '위험물안전관리법', desc: '위험물 제조소 등 시설 기준, 안전 관리자 자격 및 의무' },
-    ],
-    jobs: [
-      { title: '위험물안전관리자', company: '주유소·충전소', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '화학물질 취급원', company: '화학·제약공장', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '위험물 보관 담당자', company: '물류창고업체', salary: '2,900~4,000만원', location: '전국', type: '정규직' },
-      { title: '소방안전관리 보조원', company: '소방안전관리업체', salary: '2,800~3,700만원', location: '전국', type: '정규직' },
-      { title: '위험물 운반 담당', company: '탱크로리 운송업체', salary: '2,700~3,500만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '위험물기능사 필기 단기합격', author: '이종석', publisher: '성안당', year: 2024, rating: 4.7 },
@@ -2503,13 +2127,6 @@ const CERTIFICATIONS = {
       { name: '가스 공급 시스템', desc: '도시가스·LPG 공급 방식, 배관 설계 기준 및 압력 관리' },
       { name: '가스 관계 법규', desc: '고압가스안전관리법, LPG법, 도시가스사업법 핵심 규정' },
     ],
-    jobs: [
-      { title: '가스안전관리원', company: '도시가스공사', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '가스설비 기술원', company: '가스시공전문업체', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '산업가스 관리원', company: '화학·반도체 공장', salary: '3,500~5,000만원', location: '수도권/충청', type: '정규직' },
-      { title: '수소충전소 관리원', company: '에너지전문업체', salary: '3,300~4,700만원', location: '전국', type: '정규직' },
-      { title: 'LPG 충전 담당원', company: 'LPG충전소', salary: '2,700~3,600만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '가스산업기사 필기 완전합격', author: '정재영', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '가스산업기사 실기 핵심정리', author: '이한솔', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -2557,13 +2174,6 @@ const CERTIFICATIONS = {
       { name: '작업환경 관리', desc: '공학적 대책, 행정적 대책, 개인 보호구 선택 및 관리 방법' },
       { name: '산업독성학', desc: '유해 화학 물질의 독성 작용 메커니즘, 인체 흡수 및 대사 경로' },
       { name: '산업위생 관계 법규', desc: '산업안전보건법상 작업환경측정 의무, 보건 관리자 직무 규정' },
-    ],
-    jobs: [
-      { title: '작업환경측정사', company: '산업위생측정기관', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '보건관리자', company: '대형 제조사업장', salary: '3,800~5,500만원', location: '전국', type: '정규직' },
-      { title: '산업위생 연구원', company: '산업안전보건연구원', salary: '4,000~6,000만원', location: '서울/대전', type: '정규직' },
-      { title: '환경보건 담당자', company: '화학·반도체 기업', salary: '4,000~6,000만원', location: '수도권/충청', type: '정규직' },
-      { title: '안전보건 조사원', company: '고용노동부 산하기관', salary: '3,000~4,000만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '산업위생관리기사 필기 한권완성', author: '한재만', publisher: '성안당', year: 2024, rating: 4.6 },
@@ -2615,13 +2225,6 @@ const CERTIFICATIONS = {
       { name: '철근콘크리트 및 강구조', desc: '철근콘크리트 구조 설계 및 강구조 접합 방법' },
       { name: '토질 및 기초', desc: '지반 조사, 토압, 기초 형식 선정 및 설계' },
     ],
-    jobs: [
-      { title: '토목 설계 엔지니어', company: '종합건설사', salary: '3,500~5,000만원', location: '서울·경기', type: '정규직' },
-      { title: '현장 시공 관리자', company: '건설시공업체', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '도로·교량 감리원', company: '감리전문업체', salary: '3,800~5,500만원', location: '전국', type: '정규직' },
-      { title: '토목 적산 담당', company: '건설회사', salary: '3,000~4,200만원', location: '서울·경기', type: '정규직' },
-      { title: '건설현장 품질검사원', company: '품질검사기관', salary: '2,800~3,800만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '토목산업기사 필기 한권으로 끝내기', author: '이상도', publisher: '성안당', year: 2024, rating: 4.6 },
       { title: '토목산업기사 과년도 기출문제해설', author: '김민준', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -2669,13 +2272,6 @@ const CERTIFICATIONS = {
       { name: '건축구조', desc: '건축물의 구조 원리, 하중 산정, 내진 설계 기초' },
       { name: '건축설비', desc: '전기, 급배수, 냉난방, 소방 설비의 기본 이해' },
       { name: '건축재료', desc: '건축에 사용되는 각종 재료의 성질과 용도 분류' },
-    ],
-    jobs: [
-      { title: '건축 설계 보조원', company: '건축설계사무소', salary: '3,000~4,500만원', location: '서울·경기', type: '정규직' },
-      { title: '건축 현장 소장', company: '중소건설업체', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '건축 감리 보조원', company: '감리전문업체', salary: '3,200~4,800만원', location: '전국', type: '정규직' },
-      { title: '시설 유지보수 담당', company: '건물관리업체', salary: '2,800~4,000만원', location: '전국', type: '정규직' },
-      { title: '건축 인허가 보조', company: '컨설팅업체', salary: '2,600~3,600만원', location: '서울·경기', type: '계약직' },
     ],
     books: [
       { title: '건축산업기사 필기 완전정복', author: '강태형', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -2725,13 +2321,6 @@ const CERTIFICATIONS = {
       { name: '건축구조', desc: '실내 공간과 관련된 구조 하중 및 구조 시스템' },
       { name: '건축법규', desc: '건축법, 소방법 관련 실내 설계 기준 및 규정' },
     ],
-    jobs: [
-      { title: '인테리어 디자이너', company: '인테리어전문업체', salary: '3,000~4,800만원', location: '서울·경기', type: '정규직' },
-      { title: '실내건축 현장 감리', company: '감리전문업체', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '상업공간 설계 담당', company: '건축설계사무소', salary: '3,500~5,200만원', location: '서울·경기', type: '정규직' },
-      { title: '시설 리모델링 팀장', company: '종합건설사', salary: '4,000~5,800만원', location: '전국', type: '정규직' },
-      { title: '전시·이벤트 공간 디자이너', company: '전시기획사', salary: '2,800~4,000만원', location: '서울', type: '계약직' },
-    ],
     books: [
       { title: '실내건축기사 필기 한권으로 합격', author: '김수진', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '실내건축기사 과년도 기출문제', author: '이태호', publisher: '예문사', year: 2024, rating: 4.3 },
@@ -2776,13 +2365,6 @@ const CERTIFICATIONS = {
       { name: '조경식물학', desc: '조경수 종류·특성, 초화류·잔디 관리, 병충해 방제 기초' },
       { name: '조경시공', desc: '식재 공사, 포장 공사, 배수 시설, 조경 구조물 시공 방법' },
       { name: '조경관리', desc: '수목 전정·이식·시비, 잔디 관리, 조경 시설물 유지보수' },
-    ],
-    jobs: [
-      { title: '조경 시공 기능원', company: '조경회사·건설사', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '공원 녹지 관리원', company: '지자체·공원관리공단', salary: '2,600~3,500만원', location: '전국', type: '정규직' },
-      { title: '골프장 코스 관리원', company: '골프클럽', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '아파트 조경 관리원', company: '관리업체', salary: '2,500~3,300만원', location: '전국', type: '정규직' },
-      { title: '가든센터 식물 관리원', company: '원예·가든센터', salary: '2,400~3,200만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '2026 시대에듀 조경기능사 필기 한권으로 끝내기', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.6 },
@@ -2829,13 +2411,6 @@ const CERTIFICATIONS = {
       { name: '조경시공', desc: '식재 공사, 포장 공사, 수경 시설 등 시공 관리' },
       { name: '조경관리', desc: '식물 생육 관리, 시설물 유지 보수, 병해충 방제' },
       { name: '조경식물', desc: '교목, 관목, 초본류의 분류, 특성 및 적용 기준' },
-    ],
-    jobs: [
-      { title: '조경 설계사', company: '조경설계사무소', salary: '3,200~4,800만원', location: '서울·경기', type: '정규직' },
-      { title: '공원 조성 현장 담당', company: '지방자치단체', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '조경 시공 감리원', company: '감리전문업체', salary: '3,500~5,200만원', location: '전국', type: '정규직' },
-      { title: '아파트 조경 관리원', company: '시설관리업체', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '생태 복원 조사원', company: '환경컨설팅업체', salary: '2,800~4,000만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '조경기사 필기 한번에 합격하기', author: '오세훈', publisher: '성안당', year: 2024, rating: 4.6 },
@@ -2885,13 +2460,6 @@ const CERTIFICATIONS = {
       { name: '응용측량', desc: '노선, 터널, 수로 측량 등 현장 응용 측량 기법' },
       { name: '위성측위시스템(GPS/GNSS)', desc: 'GNSS 원리, 위치 결정 방법, 오차 보정 기술' },
     ],
-    jobs: [
-      { title: 'GIS 데이터 분석원', company: '공간정보업체', salary: '3,200~5,000만원', location: '서울·경기', type: '정규직' },
-      { title: '드론 측량 전문가', company: '측량전문업체', salary: '3,500~5,500만원', location: '전국', type: '정규직' },
-      { title: '지형 측량 기술자', company: '국토개발업체', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
-      { title: '지적 측량 담당', company: '한국국토정보공사', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '공간 데이터 구축원', company: '공공기관', salary: '2,900~4,000만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '측량및지형공간정보기사 필기 완전정복', author: '김동철', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '측량기사 과년도 기출문제 해설', author: '이준호', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -2939,13 +2507,6 @@ const CERTIFICATIONS = {
       { name: '신뢰성관리', desc: '제품 수명 분석, 고장 유형, FMEA 등 신뢰성 기법' },
       { name: '품질비용', desc: '예방·평가·실패 비용 분류 및 품질 비용 최적화' },
       { name: '산업표준화', desc: 'KS, ISO 규격의 구조와 표준화 절차 및 인증 제도' },
-    ],
-    jobs: [
-      { title: '품질 관리 담당자', company: '제조업체', salary: '3,200~4,800만원', location: '전국', type: '정규직' },
-      { title: 'ISO 인증 심사원', company: '인증기관', salary: '4,000~6,000만원', location: '서울·경기', type: '정규직' },
-      { title: '품질 기획 전문가', company: '대기업 제조사', salary: '4,500~6,500만원', location: '전국', type: '정규직' },
-      { title: '공정 품질 엔지니어', company: '자동차부품사', salary: '3,800~5,500만원', location: '경상·충청', type: '정규직' },
-      { title: '품질검사원', company: '협력업체', salary: '2,800~3,800만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '품질경영산업기사 필기 한권으로 끝내기', author: '나승현', publisher: '성안당', year: 2024, rating: 4.6 },
@@ -2995,13 +2556,6 @@ const CERTIFICATIONS = {
       { name: '품질 및 설비관리', desc: 'TPM, 예방 보전, 설비 효율화 및 품질 연계 관리' },
       { name: '스마트팩토리', desc: 'IoT, AI 기반 스마트공장 구축 및 디지털 전환 전략' },
     ],
-    jobs: [
-      { title: '생산 기술 이사', company: '대기업 제조사', salary: '7,000~1억원', location: '전국', type: '정규직' },
-      { title: '생산관리 컨설턴트', company: '컨설팅업체', salary: '6,000~9,000만원', location: '서울·경기', type: '정규직' },
-      { title: '스마트팩토리 추진 팀장', company: '중견기업', salary: '5,500~8,000만원', location: '전국', type: '정규직' },
-      { title: '공정혁신 전문가', company: '제조업체', salary: '5,000~7,500만원', location: '전국', type: '정규직' },
-      { title: '생산관리 자문위원', company: '공공기관·협회', salary: '4,500~6,500만원', location: '서울', type: '계약직' },
-    ],
     books: [
       { title: '생산관리기술사 핵심이론 총정리', author: '박재현', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '생산관리기술사 기출문제 분석', author: '이경민', publisher: '예문사', year: 2024, rating: 4.3 },
@@ -3049,13 +2603,6 @@ const CERTIFICATIONS = {
       { name: '보관하역론', desc: '창고 관리, 입출고 시스템, 자동화 설비 운영' },
       { name: '물류정보시스템', desc: 'WMS, TMS, ERP 연동 및 물류 IT 시스템 이해' },
       { name: '국제물류론', desc: '무역 물류, 통관, 인코텀즈, 국제 운임 및 보험' },
-    ],
-    jobs: [
-      { title: '물류 운영 매니저', company: '물류전문업체', salary: '3,500~5,200만원', location: '서울·경기', type: '정규직' },
-      { title: '공급망 관리 담당자', company: '대기업 계열사', salary: '4,000~6,000만원', location: '전국', type: '정규직' },
-      { title: '창고 운영 팀장', company: '3PL 물류센터', salary: '3,800~5,500만원', location: '경기·인천', type: '정규직' },
-      { title: '수출입 물류 코디네이터', company: '포워딩업체', salary: '3,200~4,800만원', location: '서울·인천', type: '정규직' },
-      { title: '이커머스 물류 CS 담당', company: '온라인쇼핑몰', salary: '2,800~3,800만원', location: '서울·경기', type: '계약직' },
     ],
     books: [
       { title: '물류관리사 필기 단기완성', author: '서정호', publisher: '성안당', year: 2024, rating: 4.6 },
@@ -3108,13 +2655,6 @@ const CERTIFICATIONS = {
       { name: '전기설비', desc: '수변전 설비, 배선 설계, 접지 시스템 및 전기 안전 기준' },
       { name: '제어·자동화', desc: '시퀀스 제어, PLC 프로그래밍, 자동화 시스템 구성 및 유지보수' },
     ],
-    jobs: [
-      { title: '전기 설비 관리자', company: '대형 제조공장', salary: '4,500~6,000만원', location: '전국', type: '정규직' },
-      { title: '수변전 설비 엔지니어', company: '전력 설비 전문업체', salary: '4,000~5,500만원', location: '수도권', type: '정규직' },
-      { title: '전기 시공 현장소장', company: '전기 건설업체', salary: '5,000~7,000만원', location: '전국', type: '정규직' },
-      { title: '발전소 전기 유지보수', company: '발전 공기업', salary: '5,500~7,500만원', location: '지방', type: '정규직' },
-      { title: '전기 안전 점검원', company: '안전관리 대행업체', salary: '3,500~4,500만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '전기기능장 필기 완전정복', author: '김전기', publisher: '성안당', year: 2024, rating: 4.6 },
       { title: '전기기능장 실기 작업형 핵심 해설', author: '이설비', publisher: '일진사', year: 2024, rating: 4.5 },
@@ -3161,13 +2701,6 @@ const CERTIFICATIONS = {
       { name: '용접 시공 및 검사', desc: '각종 용접법 시공 절차, 결함 검사 방법, 비파괴 검사 기초' },
       { name: '용접 자동화', desc: '로봇 용접, 자동화 장비 운용, 용접 파라미터 설정 및 관리' },
       { name: '용접 안전 관리', desc: '용접 작업 위험 요소, 보호구 착용 기준, 화재·폭발 방지 대책' },
-    ],
-    jobs: [
-      { title: '용접 기술 관리자', company: '조선소·플랜트업체', salary: '5,000~7,000만원', location: '부산·거제·울산', type: '정규직' },
-      { title: '용접 품질 검사원', company: '중공업 제조사', salary: '4,500~6,000만원', location: '전국', type: '정규직' },
-      { title: '압력용기 용접 전문가', company: '화학·정유 플랜트', salary: '5,500~7,500만원', location: '울산·여수', type: '정규직' },
-      { title: '용접 교육 강사', company: '직업훈련기관', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '해외 플랜트 용접사', company: '해외 건설업체', salary: '6,000~9,000만원', location: '해외', type: '계약직' },
     ],
     books: [
       { title: '용접기능장 필기 핵심 이론', author: '홍용접', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -3216,13 +2749,6 @@ const CERTIFICATIONS = {
       { name: '배관 검사 및 시험', desc: '수압 시험, 기밀 시험, 비파괴 검사 종류 및 적용 기준' },
       { name: '배관 안전 관리', desc: '고압·고온 배관 위험성, 부식 방지, 보온·보냉 설계 및 안전 기준' },
     ],
-    jobs: [
-      { title: '플랜트 배관 설계 엔지니어', company: '플랜트 엔지니어링사', salary: '5,000~7,000만원', location: '수도권·울산', type: '정규직' },
-      { title: '산업용 배관 시공 관리자', company: '배관 전문 건설사', salary: '4,500~6,000만원', location: '전국', type: '정규직' },
-      { title: '정유·화학 배관 유지보수', company: '정유·화학 공기업', salary: '5,500~7,500만원', location: '울산·여수', type: '정규직' },
-      { title: '조선소 의장 배관 관리', company: '대형 조선소', salary: '4,800~6,500만원', location: '거제·부산', type: '정규직' },
-      { title: '배관 검사 전문원', company: '안전 검사 전문기관', salary: '3,800~5,000만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '배관기능장 필기 완전정복', author: '정배관', publisher: '성안당', year: 2024, rating: 4.4 },
       { title: '배관기능장 실기 핵심 해설', author: '나시공', publisher: '일진사', year: 2024, rating: 4.5 },
@@ -3269,13 +2795,6 @@ const CERTIFICATIONS = {
       { name: '냉동·공조 기기', desc: '각종 냉동기·공조기 구조, 운전 특성, 고장 진단 및 수리' },
       { name: '냉매 및 에너지 관리', desc: '친환경 냉매 종류, 누설 검사, 에너지 효율 분석 및 절약 대책' },
       { name: '냉동·공조 설비 관리', desc: '설비 유지보수 계획, 안전 관리, 법규 기준 및 점검 절차' },
-    ],
-    jobs: [
-      { title: '대형 빌딩 공조 관리자', company: '부동산 관리 법인', salary: '4,500~6,000만원', location: '수도권', type: '정규직' },
-      { title: '냉동 시스템 엔지니어', company: '냉동 설비 전문업체', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '식품공장 냉동설비 관리', company: '식품 제조업체', salary: '4,200~5,800만원', location: '전국', type: '정규직' },
-      { title: '공조냉동 설계 엔지니어', company: '건설 엔지니어링사', salary: '4,800~6,500만원', location: '수도권', type: '정규직' },
-      { title: '냉동창고 설비 점검원', company: '물류 기업', salary: '3,500~4,500만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '공조냉동기계기능장 필기 핵심 이론', author: '권냉동', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -3324,13 +2843,6 @@ const CERTIFICATIONS = {
       { name: '정밀 측정 및 검사', desc: '3차원 측정, 표면 거칠기 측정, 금형 검사 기준 및 방법' },
       { name: 'CAD/CAM 응용', desc: '금형 설계용 CAD/CAM 소프트웨어 활용 및 NC 프로그래밍' },
     ],
-    jobs: [
-      { title: '자동차 부품 금형 설계', company: '자동차 부품사', salary: '4,500~6,500만원', location: '울산·경기', type: '정규직' },
-      { title: '플라스틱 사출 금형 제작', company: '금형 전문업체', salary: '4,000~5,500만원', location: '경기·인천', type: '정규직' },
-      { title: '금형 품질 관리 엔지니어', company: '전자 부품 제조사', salary: '4,200~5,800만원', location: '수도권', type: '정규직' },
-      { title: '금형 기술 연구원', company: '금형 기술 연구소', salary: '4,800~6,000만원', location: '수도권', type: '정규직' },
-      { title: '금형 유지보수 전문원', company: '중소 제조업체', salary: '3,500~4,500만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '금형기능장 필기 완전정복', author: '김금형', publisher: '성안당', year: 2024, rating: 4.4 },
       { title: '금형기능장 실기 핵심 해설', author: '이정밀', publisher: '일진사', year: 2024, rating: 4.5 },
@@ -3377,13 +2889,6 @@ const CERTIFICATIONS = {
       { name: '기계 조립 및 검사', desc: '부품 조립 공차, 끼워맞춤 기준, 측정 기기 사용 및 검사 방법' },
       { name: '치공구 설계', desc: '지그·픽스처 설계 원리, 위치결정 방법, 클램핑 장치 설계' },
       { name: '품질 관리', desc: 'SPC, 공정 능력 지수, 불량 분석 기법 및 개선 활동 방법론' },
-    ],
-    jobs: [
-      { title: 'CNC 가공 기술 관리자', company: '정밀 가공 전문업체', salary: '4,200~5,800만원', location: '전국', type: '정규직' },
-      { title: '생산 공정 엔지니어', company: '자동차·전자 제조사', salary: '4,500~6,500만원', location: '수도권·경남', type: '정규직' },
-      { title: '품질 검사 팀장', company: '중견 제조업체', salary: '4,800~6,000만원', location: '전국', type: '정규직' },
-      { title: '기계 가공 교육 강사', company: '직업훈련기관', salary: '4,000~5,000만원', location: '전국', type: '정규직' },
-      { title: '기계 조립 전문 기술원', company: '기계 부품 업체', salary: '3,500~4,500만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '기계가공조립기능장 필기 핵심', author: '송기계', publisher: '성안당', year: 2024, rating: 4.4 },
@@ -3432,13 +2937,6 @@ const CERTIFICATIONS = {
       { name: '위험물 시설 기준', desc: '제조소·저장소·취급소 시설 기준, 설치 허가, 완공 검사 절차' },
       { name: '위험물 안전 관리 법규', desc: '위험물안전관리법 해석, 안전 관리자 직무, 정기점검 기준' },
     ],
-    jobs: [
-      { title: '위험물 안전 관리자', company: '정유·화학 공장', salary: '4,500~6,000만원', location: '울산·여수·대산', type: '정규직' },
-      { title: '위험물 창고 관리 책임자', company: '위험물 저장업체', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '소방 시설 안전 관리원', company: '소방 안전 관리 업체', salary: '4,200~5,800만원', location: '전국', type: '정규직' },
-      { title: '화학 물질 안전 전문가', company: '화학 제품 제조사', salary: '4,800~6,500만원', location: '수도권·충남', type: '정규직' },
-      { title: '위험물 운송 안전 관리원', company: '위험물 운송업체', salary: '3,500~4,800만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '위험물기능장 필기 완전정복', author: '양위험', publisher: '성안당', year: 2024, rating: 4.6 },
       { title: '위험물기능장 실기 핵심 해설', author: '구안전', publisher: '일진사', year: 2024, rating: 4.5 },
@@ -3485,13 +2983,6 @@ const CERTIFICATIONS = {
       { name: '경보 및 피난 설비', desc: '자동화재탐지 설비, 비상방송, 피난 유도 설비 구성 및 점검 방법' },
       { name: '소방 전기 설비', desc: '비상 전원, 비상 조명, 소방 전기 배선 기준 및 설치 방법' },
       { name: '소방 관계 법규', desc: '소방시설법, 화재예방법, 위험물법 핵심 내용 및 설치 기준' },
-    ],
-    jobs: [
-      { title: '소방 시설 설계 엔지니어', company: '소방 설계 전문업체', salary: '4,500~6,500만원', location: '전국', type: '정규직' },
-      { title: '소방 안전 관리자', company: '대형 건물 관리 법인', salary: '4,000~5,500만원', location: '수도권', type: '정규직' },
-      { title: '소방 시설 감리원', company: '소방 감리 법인', salary: '5,000~7,000만원', location: '전국', type: '정규직' },
-      { title: '소방 설비 시공 관리자', company: '소방 건설업체', salary: '4,800~6,500만원', location: '전국', type: '정규직' },
-      { title: '소방 점검 전문원', company: '소방 점검 업체', salary: '3,500~4,800만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '소방설비기능장 필기 완전정복', author: '오소방', publisher: '성안당', year: 2024, rating: 4.6 },
@@ -3540,13 +3031,6 @@ const CERTIFICATIONS = {
       { name: '한옥 및 목조 건축', desc: '전통 한옥 구조, 기둥·보·도리 결구 방식, 현대 목조 건축 공법' },
       { name: '건설 안전 관리', desc: '목공 작업 위험 요소, 추락·협착 방지, 작업 안전 수칙 및 법규' },
     ],
-    jobs: [
-      { title: '목조 주택 시공 관리자', company: '목조 건축 전문업체', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '한옥 건축 전문가', company: '전통 건축 복원업체', salary: '4,500~6,000만원', location: '전국', type: '정규직' },
-      { title: '목공 인테리어 기술 감독', company: '인테리어 전문업체', salary: '4,200~5,800만원', location: '수도권', type: '정규직' },
-      { title: '목공 기술 교육 강사', company: '직업훈련기관', salary: '3,800~5,000만원', location: '전국', type: '정규직' },
-      { title: '목공 현장 기술원', company: '건설 시공업체', salary: '3,200~4,200만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '건축목공기능장 필기 핵심 이론', author: '고목공', publisher: '성안당', year: 2024, rating: 4.3 },
       { title: '건축목공기능장 실기 완전정복', author: '남건축', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -3593,13 +3077,6 @@ const CERTIFICATIONS = {
       { name: '도장 결함 및 품질 관리', desc: '핀홀·런·부풀음 등 결함 원인 분석, 건조 도막 두께 측정 및 검사' },
       { name: '색채 계획 및 적용', desc: '색채 이론, 색채 계획 절차, 표준 색표 활용 및 조색 방법' },
       { name: '도장 안전 및 환경', desc: '유기용제 위험성, 도장 작업 환경 기준, 폐도료 처리 및 법규' },
-    ],
-    jobs: [
-      { title: '교량·구조물 방청 도장 관리자', company: '건설 전문 도장업체', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '선박 도장 기술 감독', company: '조선소·선박 도장업체', salary: '4,500~6,000만원', location: '부산·울산·거제', type: '정규직' },
-      { title: '건축물 도장 기술 책임자', company: '종합 건설업체', salary: '4,200~5,800만원', location: '전국', type: '정규직' },
-      { title: '도장 품질 관리 엔지니어', company: '중견 제조업체', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '특수 도장 시공 전문원', company: '특수 도장 전문업체', salary: '3,500~4,800만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '도장기능장 필기 완전정복', author: '마도장', publisher: '성안당', year: 2024, rating: 4.4 },
@@ -3648,13 +3125,6 @@ const CERTIFICATIONS = {
       { name: '철근 가공 및 조립', desc: '철근 절단·굽힘 가공, 가스압접·기계식 이음 방법 및 품질 기준' },
       { name: '건설 안전 관리', desc: '철근 작업 위험 요소, 붕괴·낙하 방지, 현장 안전 관리 법규' },
     ],
-    jobs: [
-      { title: '철근 공사 현장 소장', company: '철근 전문 건설업체', salary: '4,500~6,500만원', location: '전국', type: '정규직' },
-      { title: '철근콘크리트 공사 감리원', company: '감리 전문업체', salary: '4,800~6,500만원', location: '전국', type: '정규직' },
-      { title: '건설 현장 안전 관리자', company: '대형 건설사', salary: '4,200~5,800만원', location: '전국', type: '정규직' },
-      { title: '철근 공사 기술 지도원', company: '건설 기술 교육원', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '철근 가공 조립 기술원', company: '중소 건설업체', salary: '3,500~4,500만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '철근기능장 필기 완전정복', author: '자철근', publisher: '성안당', year: 2024, rating: 4.4 },
       { title: '철근기능장 실기 핵심 해설', author: '차건설', publisher: '일진사', year: 2024, rating: 4.5 },
@@ -3701,13 +3171,6 @@ const CERTIFICATIONS = {
       { name: '운영체제 및 네트워크', desc: '프로세스 관리, 메모리 관리, TCP/IP, 네트워크 보안 프로토콜' },
       { name: '정보 시스템 구축 관리', desc: '시스템 아키텍처 설계, 프로젝트 관리, 클라우드 컴퓨팅 개념' },
       { name: '정보보안', desc: '암호화 기법, 접근 통제, 보안 취약점 분석, 개인정보보호법 적용' },
-    ],
-    jobs: [
-      { title: 'IT 시스템 아키텍트', company: 'SI·IT 서비스 기업', salary: '6,000~9,000만원', location: '수도권', type: '정규직' },
-      { title: '공공기관 IT 기술 관리자', company: '공공기관·공기업', salary: '5,500~7,500만원', location: '전국', type: '정규직' },
-      { title: '데이터베이스 관리자(DBA)', company: '금융·통신 기업', salary: '5,500~8,000만원', location: '수도권', type: '정규직' },
-      { title: '정보보안 전문가', company: '보안 전문업체·대기업', salary: '5,000~7,500만원', location: '수도권', type: '정규직' },
-      { title: 'IT 컨설턴트', company: 'IT 컨설팅 업체', salary: '5,000~8,000만원', location: '수도권', type: '계약직' },
     ],
     books: [
       { title: '정보처리기능장 필기 완전정복', author: '파정보', publisher: '성안당', year: 2024, rating: 4.6 },
@@ -3759,13 +3222,6 @@ const CERTIFICATIONS = {
       { name: '전기법규', desc: '전기사업법·전기설비기술기준 등 관련 법령' },
       { name: '안전관리', desc: '전기재해 예방 및 작업 안전수칙' },
     ],
-    jobs: [
-      { title: '전기기사', company: '건설·시공업체', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '전기설비 유지보수', company: '제조·공장', salary: '3,200~4,200만원', location: '수도권', type: '정규직' },
-      { title: '전기공사 현장 기사', company: '전기공사 전문업체', salary: '3,000~3,800만원', location: '전국', type: '정규직' },
-      { title: '아파트·건물 전기관리', company: '관리업체', salary: '2,800~3,500만원', location: '수도권', type: '정규직' },
-      { title: '전기 점검 보조', company: '전기안전공사', salary: '2,500~3,000만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '전기기능사 필기 핵심이론+기출문제', author: '이영철', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '전기기능사 실기 완전정복', author: '김동현', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -3813,13 +3269,6 @@ const CERTIFICATIONS = {
       { name: '전기공사 일반', desc: '옥내·옥외 전기공사 방법 및 시공 기준' },
       { name: '전기설비기술기준', desc: '전기공사 관련 법규 및 안전기준' },
       { name: '배선설계', desc: '분전반 설계·케이블 선정 및 접지공사 방법' },
-    ],
-    jobs: [
-      { title: '전기공사 현장 기사', company: '전기공사 전문업체', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '배선공사 담당', company: '건설사', salary: '3,200~4,200만원', location: '수도권', type: '정규직' },
-      { title: '전기설비 시공', company: '공장·제조업체', salary: '3,000~3,800만원', location: '경기·인천', type: '정규직' },
-      { title: '아파트 전기공사', company: '건축 시행사', salary: '2,800~3,500만원', location: '전국', type: '정규직' },
-      { title: '전기공사 보조 작업자', company: '하도급 업체', salary: '2,400~2,900만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '전기공사기능사 필기 완전정복', author: '이상호', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -3869,13 +3318,6 @@ const CERTIFICATIONS = {
       { name: '용접 시공', desc: '각종 용접법 시공 절차 및 결함 방지' },
       { name: '안전관리', desc: '용접 작업 시 화재·폭발·가스 위험 예방' },
     ],
-    jobs: [
-      { title: '구조물 용접사', company: '조선·중공업', salary: '3,500~5,000만원', location: '부산·거제', type: '정규직' },
-      { title: '배관 용접사', company: '플랜트 시공업체', salary: '3,800~5,500만원', location: '전국', type: '정규직' },
-      { title: '금속 가공 용접', company: '제조·금속업체', salary: '3,000~4,000만원', location: '경기·인천', type: '정규직' },
-      { title: '자동차 부품 용접', company: '자동차 부품사', salary: '3,200~4,200만원', location: '울산·창원', type: '정규직' },
-      { title: '현장 보조 용접사', company: '건설·철골 업체', salary: '2,800~3,300만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '용접기능사 필기 핵심이론+기출', author: '정동욱', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '용접기능사 실기 완전정복', author: '한상길', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -3924,13 +3366,6 @@ const CERTIFICATIONS = {
       { name: '용접 품질관리', desc: '용접부 결함 검사 및 비파괴 검사 방법' },
       { name: '안전관리', desc: '특수용접 작업의 가스·복사열 위험 예방' },
     ],
-    jobs: [
-      { title: '항공부품 TIG 용접사', company: '항공·방산 업체', salary: '4,000~5,500만원', location: '경남·부산', type: '정규직' },
-      { title: '반도체 장비 용접', company: '반도체 장비사', salary: '3,800~5,000만원', location: '경기·충남', type: '정규직' },
-      { title: '조선소 특수용접', company: '조선소', salary: '4,000~6,000만원', location: '거제·부산', type: '정규직' },
-      { title: '플랜트 배관 용접', company: '플랜트 전문업체', salary: '4,200~6,000만원', location: '전국', type: '정규직' },
-      { title: '특수용접 보조 기술자', company: '금속 가공업체', salary: '2,900~3,500만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '특수용접기능사 필기 완전정복', author: '이광호', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '특수용접기능사 실기 합격 가이드', author: '김철수', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -3978,12 +3413,6 @@ const CERTIFICATIONS = {
       { name: '기계 제도', desc: '용접 기호 해독 및 도면 읽기' },
       { name: '용접 시공', desc: '자세별 용접(아래보기·수직·수평·위보기) 시공 요령' },
       { name: '안전관리', desc: '아크광선·연기·감전 위험 예방 및 개인보호구 착용' },
-    ],
-    jobs: [
-      { title: '구조물 용접사', company: '조선·중공업', salary: '3,200~4,800만원', location: '부산·거제', type: '정규직' },
-      { title: '철골 용접사', company: '건설·철구조물업체', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '배관 용접사', company: '플랜트·설비업체', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '용접 보조 기술자', company: '제조·금속업체', salary: '2,800~3,500만원', location: '경기·인천', type: '계약직' },
     ],
     books: [
       { title: '피복아크용접기능사 필기+실기', author: '정동욱', publisher: '성안당', year: 2025, rating: 4.4 },
@@ -4034,12 +3463,6 @@ const CERTIFICATIONS = {
       { name: '용접 품질관리', desc: '용접 결함 종류(기공·균열·용입불량) 및 비파괴 검사' },
       { name: '안전관리', desc: '자외선·오존·불활성 가스 질식 위험 예방' },
     ],
-    jobs: [
-      { title: 'TIG 용접 전문 기술자', company: '반도체·디스플레이 장비사', salary: '3,800~5,500만원', location: '경기·충남', type: '정규직' },
-      { title: '항공 구조 용접사', company: '항공·방산업체', salary: '4,000~6,000만원', location: '경남·부산', type: '정규직' },
-      { title: '화학플랜트 TIG 용접', company: '플랜트 전문업체', salary: '4,200~6,000만원', location: '전국', type: '정규직' },
-      { title: '스테인리스 용접 기술자', company: '식품·제약 장비업체', salary: '3,500~4,800만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { title: '가스텅스텐아크용접기능사 필기+실기', author: '이광호', publisher: '성안당', year: 2025, rating: 4.4 },
       { title: 'TIG 용접기능사 합격 가이드', author: '박재원', publisher: '일진사', year: 2024, rating: 4.3 },
@@ -4088,12 +3511,6 @@ const CERTIFICATIONS = {
       { name: '기계 제도', desc: '용접 기호 해독 및 이음 형상 도면 이해' },
       { name: '용접 시공', desc: '전진법·후진법, 위빙 비드 시공 요령, 스패터 저감 기법' },
       { name: '안전관리', desc: 'CO₂ 가스 질식·스패터 화재 위험 예방 및 환기 관리' },
-    ],
-    jobs: [
-      { title: '자동차 차체 용접사', company: '자동차·부품사', salary: '3,200~4,500만원', location: '울산·아산', type: '정규직' },
-      { title: '조선소 CO₂ 용접', company: '조선·중공업', salary: '3,500~5,000만원', location: '부산·거제', type: '정규직' },
-      { title: '철구조물 용접사', company: '건설·철골업체', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '반자동 용접 기술자', company: '일반 제조업체', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '이산화탄소가스아크용접기능사 필기+실기', author: '정동욱', publisher: '성안당', year: 2025, rating: 4.4 },
@@ -4144,13 +3561,6 @@ const CERTIFICATIONS = {
       { name: '배관 시공', desc: '급수·급탕·난방·가스 배관 시공 절차' },
       { name: '안전관리', desc: '배관 작업 시 가스 누출·화재 방지 및 안전수칙' },
     ],
-    jobs: [
-      { title: '배관 시공 기술자', company: '배관 전문업체', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '플랜트 배관원', company: '플랜트·화공 업체', salary: '3,800~5,500만원', location: '전국', type: '정규직' },
-      { title: '설비 배관 유지보수', company: '제조·공장', salary: '3,000~4,000만원', location: '경기·충남', type: '정규직' },
-      { title: '건축 설비 배관', company: '건설사', salary: '3,000~3,800만원', location: '수도권', type: '정규직' },
-      { title: '배관 설비 보조', company: '하도급 업체', salary: '2,500~3,000만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '배관기능사 필기 핵심이론+기출', author: '송태호', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '배관기능사 실기 완전정복', author: '강민수', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -4198,13 +3608,6 @@ const CERTIFICATIONS = {
       { name: '냉동 기계', desc: '팽창밸브·응축기·증발기 구조와 유지보수' },
       { name: '전기 제어', desc: '냉동공조 설비의 전기 회로 및 자동제어' },
       { name: '안전관리', desc: '냉매 취급 안전·고압가스 법규 및 사고 예방' },
-    ],
-    jobs: [
-      { title: '냉동공조 설비 기사', company: '건물관리·빌딩 업체', salary: '3,200~4,500만원', location: '수도권', type: '정규직' },
-      { title: '냉동기 유지보수', company: '식품·냉동창고 업체', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '공조설비 시공', company: '기계설비 시공업체', salary: '3,200~4,200만원', location: '전국', type: '정규직' },
-      { title: '반도체 공조 유지관리', company: '반도체 FAB', salary: '3,800~5,000만원', location: '경기·충남', type: '정규직' },
-      { title: '냉동공조 보조 기술자', company: '시공 하도급 업체', salary: '2,600~3,200만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '공조냉동기계기능사 필기 완전정복', author: '황인석', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -4254,13 +3657,6 @@ const CERTIFICATIONS = {
       { name: '승강기 법규', desc: '승강기 안전관리법·검사 기준 및 유지관리 규정' },
       { name: '안전관리', desc: '승강기 작업 안전수칙 및 사고 예방 방법' },
     ],
-    jobs: [
-      { title: '승강기 유지보수 기사', company: '승강기 전문 업체', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '엘리베이터 설치 기술자', company: '승강기 제조사', salary: '3,500~4,800만원', location: '수도권', type: '정규직' },
-      { title: '빌딩 승강기 관리', company: '건물관리 업체', salary: '3,000~4,000만원', location: '수도권', type: '정규직' },
-      { title: '승강기 검사원', company: '승강기안전공단', salary: '3,800~5,000만원', location: '전국', type: '정규직' },
-      { title: '승강기 보수 보조', company: '하도급 유지보수 업체', salary: '2,600~3,200만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '승강기기능사 필기 핵심이론+기출', author: '이준호', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '승강기기능사 실기 합격 완성', author: '박성우', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -4308,13 +3704,6 @@ const CERTIFICATIONS = {
       { name: '화학물질 관리', desc: '시약 취급·보관·폐기 및 화학물질 안전관리' },
       { name: '품질관리', desc: 'ISO 기준 시험법·정도관리 및 데이터 분석' },
       { name: '안전관리', desc: '실험실 안전규정·사고 대응 및 보호구 착용' },
-    ],
-    jobs: [
-      { title: '품질관리 분석원', company: '제약·바이오 업체', salary: '3,000~4,200만원', location: '수도권·충북', type: '정규직' },
-      { title: '환경 분석원', company: '환경 전문기관', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '화학 공정 분석', company: '석유화학 업체', salary: '3,500~4,800만원', location: '울산·여수', type: '정규직' },
-      { title: '식품 분석 기사', company: '식품 제조업체', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '연구소 분석 보조', company: '연구기관·학교', salary: '2,400~3,000만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '화학분석기능사 필기 완전정복', author: '김소연', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -4365,13 +3754,6 @@ const CERTIFICATIONS = {
       { name: '소방관계법규', desc: '소방기본법, 화재예방법, 소방시설법 등 관련 법령 이해' },
       { name: '실기: 소방전기 시설 점검·설치', desc: '경보·피난설비 배선 및 도면 판독, 측정 기구 사용 실습' },
     ],
-    jobs: [
-      { title: '소방시설 설치·점검원', company: '소방설비업체', salary: '2,800~3,500만원', location: '전국', type: '정규직' },
-      { title: '소방안전관리자', company: '건축·시설관리회사', salary: '3,000~3,800만원', location: '수도권', type: '정규직' },
-      { title: '소방설비 유지보수 기사', company: '소방전문업체', salary: '2,700~3,400만원', location: '전국', type: '정규직' },
-      { title: '소방공사 현장 기술원', company: '건설시공사', salary: '2,900~3,600만원', location: '전국', type: '정규직' },
-      { title: '소방시설 점검 보조', company: '소방안전관리 법인', salary: '2,500~3,000만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '소방설비기능사(전기) 필기 한권으로 끝내기', author: '성안당 편집부', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '소방설비기능사 전기 기출문제 해설집', author: '이재원', publisher: '동일출판사', year: 2024, rating: 4.4 },
@@ -4418,13 +3800,6 @@ const CERTIFICATIONS = {
       { name: '소방기계시설의 구조 및 원리', desc: '옥내·외 소화전, 스프링클러, 이산화탄소 소화설비 등의 구조' },
       { name: '소방관계법규', desc: '소방기본법, 소방시설법, 화재예방법 등 핵심 법령 파악' },
       { name: '실기: 소방기계 시설 점검·설치', desc: '배관 계통도 판독, 소화설비 배관 작업 및 측정 실습' },
-    ],
-    jobs: [
-      { title: '소방기계 설비 설치원', company: '소방설비업체', salary: '2,800~3,500만원', location: '전국', type: '정규직' },
-      { title: '소방안전관리보조자', company: '대형건물 관리업체', salary: '2,900~3,600만원', location: '수도권', type: '정규직' },
-      { title: '스프링클러 시스템 기술원', company: '소방시공사', salary: '2,800~3,400만원', location: '전국', type: '정규직' },
-      { title: '소방설비 점검 기술원', company: '소방전문업체', salary: '2,700~3,300만원', location: '전국', type: '정규직' },
-      { title: '소방공사 보조 기술원', company: '건설현장', salary: '2,400~3,000만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '소방설비기능사(기계) 필기 완전정복', author: '성안당 편집부', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -4473,13 +3848,6 @@ const CERTIFICATIONS = {
       { name: '건축설비', desc: '급배수·냉난방·전기·가스 설비의 기본 개념과 도면 표현' },
       { name: '실기: AutoCAD 건축도면 작성', desc: '평면도·입면도·단면도 작성, 치수 기입, 출력 설정 실습' },
     ],
-    jobs: [
-      { title: '건축 CAD 도면 작성원', company: '건축설계사무소', salary: '2,600~3,300만원', location: '수도권', type: '정규직' },
-      { title: '건설 설계 보조', company: '종합건설사', salary: '2,700~3,400만원', location: '전국', type: '정규직' },
-      { title: '인테리어 도면 작성원', company: '인테리어업체', salary: '2,500~3,200만원', location: '수도권', type: '정규직' },
-      { title: 'BIM 모델링 보조', company: '건축 엔지니어링사', salary: '2,800~3,500만원', location: '수도권', type: '정규직' },
-      { title: '도면 관리·출력 담당', company: '건설현장 사무소', salary: '2,400~2,900만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '전산응용건축제도기능사 필기+실기 한번에 합격', author: '조민수', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '전산응용건축제도기능사 AutoCAD 실기 완성', author: '이현철', publisher: '동일출판사', year: 2024, rating: 4.4 },
@@ -4526,13 +3894,6 @@ const CERTIFICATIONS = {
       { name: '콘크리트 시공', desc: '비비기·운반·타설·다지기·양생의 각 공정별 시공 기준' },
       { name: '콘크리트 품질관리', desc: '슬럼프 시험, 공기량 시험, 압축강도 시험 방법 및 기준' },
       { name: '실기: 콘크리트 배합 및 시험', desc: '배합 계산, 슬럼프 시험 및 공기량 측정 실습' },
-    ],
-    jobs: [
-      { title: '콘크리트 타설 기술원', company: '건설시공사', salary: '2,800~3,500만원', location: '전국', type: '정규직' },
-      { title: '토목 현장 기술원', company: '토목건설사', salary: '2,900~3,600만원', location: '전국', type: '정규직' },
-      { title: '품질 시험원', company: '건설품질관리업체', salary: '2,800~3,400만원', location: '전국', type: '정규직' },
-      { title: '레미콘 품질 관리원', company: '레미콘 제조사', salary: '2,700~3,300만원', location: '전국', type: '정규직' },
-      { title: '콘크리트 구조물 보수원', company: '유지보수 전문업체', salary: '2,500~3,000만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '콘크리트기능사 필기 핵심이론 총정리', author: '이태양', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -4581,13 +3942,6 @@ const CERTIFICATIONS = {
       { name: '강재 시험', desc: '인장 시험, 굽힘 시험, 경도 시험의 방법과 결과 해석' },
       { name: '실기: 건설재료 품질시험', desc: '슬럼프·공기량·압축강도 시험 및 결과 보고서 작성 실습' },
     ],
-    jobs: [
-      { title: '건설재료 품질시험원', company: '건설품질시험기관', salary: '2,700~3,400만원', location: '전국', type: '정규직' },
-      { title: '현장 품질관리원', company: '종합건설사', salary: '2,800~3,500만원', location: '전국', type: '정규직' },
-      { title: '레미콘 품질시험원', company: '레미콘 제조사', salary: '2,700~3,300만원', location: '전국', type: '정규직' },
-      { title: '토목 품질 기술원', company: '토목시공사', salary: '2,800~3,400만원', location: '전국', type: '정규직' },
-      { title: '시험소 보조 연구원', company: '건설기술연구소', salary: '2,500~3,000만원', location: '수도권', type: '계약직' },
-    ],
     books: [
       { title: '건설재료시험기능사 필기 핵심이론', author: '정민호', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '건설재료시험기능사 기출문제 완전분석', author: '이수진', publisher: '동일출판사', year: 2024, rating: 4.4 },
@@ -4634,13 +3988,6 @@ const CERTIFICATIONS = {
       { name: '수준측량', desc: '레벨 기기 취급, 직접 수준측량 절차, 오차 조정 방법' },
       { name: '지형측량 및 면적계산', desc: '등고선 작성, 트래버스 측량, 면적 계산 방법' },
       { name: '실기: 측량 기기 운용 및 계산', desc: '토털스테이션 조작, 측점 측정, 거리·면적 계산 실습' },
-    ],
-    jobs: [
-      { title: '측량 기술원', company: '측량전문업체', salary: '2,800~3,500만원', location: '전국', type: '정규직' },
-      { title: '지적 측량 보조원', company: '한국국토정보공사', salary: '2,900~3,600만원', location: '전국', type: '정규직' },
-      { title: '건설 현장 측량원', company: '종합건설사', salary: '2,800~3,400만원', location: '전국', type: '정규직' },
-      { title: 'GIS 데이터 처리원', company: '공간정보업체', salary: '2,900~3,500만원', location: '수도권', type: '정규직' },
-      { title: '드론 측량 보조원', company: '드론측량전문업체', salary: '2,500~3,100만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '측량기능사 필기 핵심이론 완전정복', author: '윤세진', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -4689,13 +4036,6 @@ const CERTIFICATIONS = {
       { name: '정보 시스템 구축 관리', desc: '네트워크 기초, 운영체제 개념, 보안 기초 이론' },
       { name: '실기: 프로그래밍 구현', desc: 'Python·SQL 코딩 문제 풀이, 알고리즘 구현 실습' },
     ],
-    jobs: [
-      { title: 'IT 운영 지원', company: 'IT서비스기업', salary: '2,700~3,400만원', location: '수도권', type: '정규직' },
-      { title: '데이터 처리 담당', company: '금융·공공기관', salary: '2,900~3,600만원', location: '수도권', type: '정규직' },
-      { title: '시스템 운영 보조', company: 'IT솔루션업체', salary: '2,700~3,300만원', location: '전국', type: '정규직' },
-      { title: '개발 지원 엔지니어', company: '소프트웨어개발사', salary: '2,800~3,500만원', location: '수도권', type: '정규직' },
-      { title: 'IT 헬프데스크', company: '아웃소싱업체', salary: '2,400~2,900만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '정보처리기능사 필기 한권으로 합격', author: '신용권', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '정보처리기능사 실기 파이썬+SQL 완성', author: '홍길동', publisher: '동일출판사', year: 2024, rating: 4.4 },
@@ -4743,13 +4083,6 @@ const CERTIFICATIONS = {
       { name: '인쇄·출판 일반', desc: '인쇄 방식, 색 분해, 판 제작, 인쇄 용지 및 제본 방법' },
       { name: '실기: 포토샵·일러스트레이터 작업', desc: '시안 제작, 이미지 합성, 타이포그래피, 벡터 드로잉 실습' },
     ],
-    jobs: [
-      { title: '광고 디자이너', company: '광고대행사', salary: '2,600~3,300만원', location: '수도권', type: '정규직' },
-      { title: '편집 디자이너', company: '출판사·인쇄소', salary: '2,500~3,200만원', location: '수도권', type: '정규직' },
-      { title: 'UI 디자인 보조', company: 'IT·앱개발사', salary: '2,700~3,400만원', location: '수도권', type: '정규직' },
-      { title: '영상 그래픽 디자이너', company: '방송·영상제작사', salary: '2,600~3,300만원', location: '수도권', type: '정규직' },
-      { title: '콘텐츠 디자인 보조', company: '소셜미디어 대행사', salary: '2,300~2,800만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '컴퓨터그래픽스운용기능사 필기 합격 이론', author: '박지연', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '컴퓨터그래픽스운용기능사 포토샵+일러스트 실기', author: '김민지', publisher: '동일출판사', year: 2024, rating: 4.4 },
@@ -4796,13 +4129,6 @@ const CERTIFICATIONS = {
       { name: '인터넷 개론', desc: '인터넷 프로토콜, 웹 브라우저 동작 원리, 웹 표준 이해' },
       { name: '컴퓨터 일반', desc: '운영체제 기초, 네트워크 기본 개념, 보안 기초 이론' },
       { name: '실기: 웹사이트 코딩 구현', desc: 'HTML·CSS·JavaScript로 메인 페이지 구현, 인터랙션 효과 실습' },
-    ],
-    jobs: [
-      { title: '웹 퍼블리셔', company: '웹에이전시', salary: '2,600~3,300만원', location: '수도권', type: '정규직' },
-      { title: 'UI 디자이너', company: 'IT스타트업', salary: '2,700~3,500만원', location: '수도권', type: '정규직' },
-      { title: '프론트엔드 개발 보조', company: '소프트웨어개발사', salary: '2,800~3,500만원', location: '수도권', type: '정규직' },
-      { title: '웹 콘텐츠 관리자', company: '전자상거래업체', salary: '2,600~3,200만원', location: '전국', type: '정규직' },
-      { title: '홈페이지 제작 보조', company: '중소기업 인하우스', salary: '2,400~2,900만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '웹디자인기능사 필기 핵심이론 총정리', author: '최서연', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -4852,13 +4178,6 @@ const CERTIFICATIONS = {
       { name: '화장품학', desc: '헤어 케어 제품의 성분, 종류, 사용법 및 안전성' },
       { name: '관련법규', desc: '공중위생관리법, 미용업 영업 기준 및 위생 관련 법령' },
     ],
-    jobs: [
-      { title: '헤어디자이너', company: '헤어살롱·미용실', salary: '2,400~3,600만원', location: '전국', type: '정규직' },
-      { title: '헤어스타일리스트', company: '프랜차이즈 미용실', salary: '2,600~4,000만원', location: '수도권', type: '정규직' },
-      { title: '두피관리사', company: '두피 전문 클리닉', salary: '2,400~3,200만원', location: '전국', type: '정규직' },
-      { title: '미용강사', company: '직업훈련원·미용학원', salary: '2,800~4,200만원', location: '전국', type: '정규직' },
-      { title: '방송·웨딩 헤어아티스트', company: '프리랜서·웨딩업체', salary: '건당 협의', location: '수도권', type: '계약직' },
-    ],
     books: [
       { title: '미용사(일반) 필기 핵심이론 + 기출문제', author: '미용수험연구회', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '미용사일반 실기 완전정복', author: '최은주', publisher: '크라운출판사', year: 2024, rating: 4.4 },
@@ -4905,13 +4224,6 @@ const CERTIFICATIONS = {
       { name: '해부생리학', desc: '피부 관리와 관련된 인체 해부학 및 생리학의 기초 지식' },
       { name: '화장품학', desc: '피부 관리용 화장품의 성분, 종류, 효능 및 사용법' },
       { name: '공중보건학 및 관련법규', desc: '위생 관리, 감염 예방, 공중위생관리법 및 미용업 관련 법령' },
-    ],
-    jobs: [
-      { title: '피부관리사', company: '피부 관리실·에스테틱샵', salary: '2,400~3,400만원', location: '전국', type: '정규직' },
-      { title: '피부미용사', company: '피부과 협력 클리닉', salary: '2,600~3,800만원', location: '수도권', type: '정규직' },
-      { title: '스파테라피스트', company: '호텔 스파·리조트', salary: '2,800~4,000만원', location: '수도권·제주', type: '정규직' },
-      { title: '뷰티 강사', company: '미용학원·직업훈련원', salary: '2,800~4,000만원', location: '전국', type: '정규직' },
-      { title: '출장 피부관리사', company: '프리랜서', salary: '건당 협의', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '미용사(피부) 필기 핵심이론 + 기출문제', author: '피부미용수험연구회', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -4960,13 +4272,6 @@ const CERTIFICATIONS = {
       { name: '화장품학', desc: '네일 제품(폴리시, 젤, 아크릴) 성분, 종류, 사용법 및 안전성' },
       { name: '공중보건학 및 관련법규', desc: '네일 샵 위생 관리, 감염 예방, 공중위생관리법 및 관련 법령' },
     ],
-    jobs: [
-      { title: '네일아티스트', company: '네일샵·뷰티샵', salary: '2,200~3,400만원', location: '전국', type: '정규직' },
-      { title: '젤네일 전문가', company: '프리미엄 네일샵', salary: '2,400~3,600만원', location: '수도권', type: '정규직' },
-      { title: '네일 강사', company: '미용학원·직업훈련원', salary: '2,600~3,800만원', location: '전국', type: '정규직' },
-      { title: '뷰티샵 매니저', company: '종합 뷰티샵', salary: '2,600~4,000만원', location: '수도권', type: '정규직' },
-      { title: '방문 네일아티스트', company: '프리랜서·출장샵', salary: '건당 협의', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '미용사(네일) 필기 핵심이론 + 기출문제', author: '네일미용수험연구회', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '미용사네일 실기 완전정복', author: '정수연', publisher: '크라운출판사', year: 2024, rating: 4.4 },
@@ -5013,13 +4318,6 @@ const CERTIFICATIONS = {
       { name: '피부학', desc: '피부 유형 분석, 피부 트러블 이해 및 메이크업 전 피부 관리 방법' },
       { name: '화장품학', desc: '메이크업 화장품의 종류, 성분, 사용법 및 안전한 관리' },
       { name: '공중보건학 및 관련법규', desc: '메이크업 환경의 위생 관리, 감염 예방, 공중위생관리법' },
-    ],
-    jobs: [
-      { title: '메이크업아티스트', company: '뷰티샵·메이크업스튜디오', salary: '2,400~3,600만원', location: '전국', type: '정규직' },
-      { title: '웨딩 메이크업아티스트', company: '웨딩업체·스튜디오', salary: '2,600~4,000만원', location: '수도권', type: '정규직' },
-      { title: '방송·영화 메이크업아티스트', company: '방송국·영화사', salary: '3,000~5,000만원', location: '수도권', type: '정규직' },
-      { title: '뷰티 강사', company: '미용학원·직업훈련원', salary: '2,800~4,000만원', location: '전국', type: '정규직' },
-      { title: '뷰티 크리에이터', company: '프리랜서·MCN', salary: '수익 구조별 상이', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '미용사(메이크업) 필기 핵심이론 + 기출문제', author: '메이크업수험연구회', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -5068,13 +4366,6 @@ const CERTIFICATIONS = {
       { name: '공중보건학', desc: '고급 위생 관리, 감염병 예방 및 미용 환경 공중보건 관련 규정' },
       { name: '미용경영 및 관련법규', desc: '미용업 경영, 인력 관리, 창업 운영 및 공중위생관리법 심화' },
     ],
-    jobs: [
-      { title: '미용학원 원장', company: '미용학원·직업전문학교', salary: '4,000~7,000만원', location: '전국', type: '정규직' },
-      { title: '수석 헤어디자이너', company: '대형 프랜차이즈 미용실', salary: '4,000~6,000만원', location: '수도권', type: '정규직' },
-      { title: '미용기술 지도사', company: '미용협회·직업훈련기관', salary: '3,600~5,500만원', location: '전국', type: '정규직' },
-      { title: '뷰티 컨설턴트', company: '화장품·뷰티 기업', salary: '4,000~6,500만원', location: '수도권', type: '정규직' },
-      { title: '국제 미용대회 심사위원', company: '미용협회·대회 주관 기관', salary: '활동비 별도', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '미용기능장 필기 핵심이론 + 기출문제', author: '미용기능장수험연구회', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '미용기능장 실기 완전정복', author: '한재희', publisher: '크라운출판사', year: 2024, rating: 4.4 },
@@ -5122,13 +4413,6 @@ const CERTIFICATIONS = {
       { name: '화장품학 및 영양학', desc: '기능성 화장품 성분 이해, 피부 영양 공급 원리 및 상담 방법' },
       { name: '공중보건학 및 관련법규', desc: '피부 관리 환경 위생, 감염 예방 및 공중위생관리법 심화 이해' },
     ],
-    jobs: [
-      { title: '전문 피부관리사', company: '피부 전문 클리닉·에스테틱샵', salary: '2,800~4,000만원', location: '전국', type: '정규직' },
-      { title: '의료 협력 피부관리사', company: '피부과 협력 센터', salary: '3,000~4,500만원', location: '수도권', type: '정규직' },
-      { title: '스파 테라피스트', company: '호텔 스파·메디칼스파', salary: '3,000~4,600만원', location: '수도권·제주', type: '정규직' },
-      { title: '뷰티 강사', company: '미용학원·전문대학', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
-      { title: '피부 컨설턴트', company: '화장품 회사·프리랜서', salary: '건당·성과급 협의', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '피부미용사 필기 핵심이론 + 기출문제', author: '피부미용기사수험연구회', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '피부미용사 실기 완전정복', author: '윤지영', publisher: '크라운출판사', year: 2024, rating: 4.4 },
@@ -5175,12 +4459,6 @@ const CERTIFICATIONS = {
       { name: '화장품의 기능과 품질', desc: '기초·색조·기능성 화장품의 종류, 특성 및 품질 기준' },
       { name: '피부 및 모발 과학', desc: '피부 구조와 기능, 피부 유형별 특성, 모발 과학 기초' },
       { name: '맞춤형화장품 조제 및 위생', desc: '혼합·소분 기술, 조제 장비 사용법, 위생 관리 기준' },
-    ],
-    jobs: [
-      { title: '맞춤형화장품조제관리사', company: '맞춤형화장품 판매업소', salary: '2,600~3,800만원', location: '전국', type: '정규직' },
-      { title: '뷰티 컨설턴트', company: '화장품 브랜드샵·백화점', salary: '2,800~4,000만원', location: '수도권', type: '정규직' },
-      { title: '화장품 개발 연구원', company: '화장품 제조업체', salary: '3,000~4,500만원', location: '수도권', type: '정규직' },
-      { title: '맞춤형화장품 창업', company: '개인 판매업소', salary: '수익 자율', location: '전국', type: '자영업' },
     ],
     books: [
       { title: '맞춤형화장품조제관리사 한권으로 끝내기', author: '맞춤형화장품수험연구회', publisher: '성안당', year: 2024, rating: 4.6 },
@@ -5230,12 +4508,6 @@ const CERTIFICATIONS = {
       { name: '화장품학', desc: '이용 관련 화장품·제품의 성분, 종류 및 안전한 사용법' },
       { name: '관련법규', desc: '공중위생관리법, 이용업 영업 기준 및 위생 관련 법령' },
     ],
-    jobs: [
-      { title: '이용사', company: '이발소·남성 헤어샵', salary: '2,400~3,400만원', location: '전국', type: '정규직' },
-      { title: '이용실 창업', company: '개인 이용실', salary: '수익 자율', location: '전국', type: '자영업' },
-      { title: '이용 강사', company: '직업훈련원·미용학원', salary: '2,600~3,800만원', location: '전국', type: '정규직' },
-      { title: '호텔 이용사', company: '특급호텔·리조트', salary: '2,800~4,000만원', location: '수도권·제주', type: '정규직' },
-    ],
     books: [
       { title: '이용사 필기 핵심이론 + 기출문제', author: '이용수험연구회', publisher: '성안당', year: 2024, rating: 4.4 },
       { title: '이용사 실기 완전정복', author: '김대현', publisher: '크라운출판사', year: 2024, rating: 4.3 },
@@ -5278,12 +4550,6 @@ const CERTIFICATIONS = {
       { name: '피부학 및 모발과학', desc: '두피·모발의 구조와 과학적 분석, 트러블 진단 및 처방' },
       { name: '공중보건학 및 위생관리', desc: '이용업 위생 기준, 감염 예방, 공중위생관리법 심화' },
       { name: '화장품학 심화', desc: '이용 전문 화장품·케미컬 제품 성분 분석 및 활용 기술' },
-    ],
-    jobs: [
-      { title: '이용 기술 교육자', company: '직업훈련원·이용학원', salary: '3,200~4,800만원', location: '전국', type: '정규직' },
-      { title: '고급 이용실 원장', company: '프리미엄 이발소·헤어샵', salary: '수익 자율', location: '전국', type: '자영업' },
-      { title: '이용 경진대회 심사위원', company: '공공기관·협회', salary: '건당 협의', location: '전국', type: '계약직' },
-      { title: '이용 분야 직업훈련 교사', company: '한국폴리텍·직업전문학교', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '이용기능장 필기 핵심이론 + 기출문제', author: '이용기능장수험연구회', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -5333,13 +4599,6 @@ const CERTIFICATIONS = {
       { name: '산업독성학', desc: '주요 화학물질의 독성 특성, 인체 영향 경로, 생물학적 노출지표 이해' },
       { name: '산업위생관계법규', desc: '산업안전보건법 보건 관련 조항, 유해물질 관리 기준, 작업환경 개선 절차' },
     ],
-    jobs: [
-      { title: '보건관리 담당자', company: '중소 제조업체', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '작업환경측정보조원', company: '작업환경측정기관', salary: '2,600~3,500만원', location: '전국', type: '정규직' },
-      { title: '산업보건 실무직', company: '공단·공공기관', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '화학물질 관리원', company: '화학제품 제조업체', salary: '2,800~3,600만원', location: '울산·충남', type: '정규직' },
-      { title: '보건환경 모니터링 요원', company: '환경전문기관', salary: '2,500~3,200만원', location: '수도권', type: '계약직' },
-    ],
     books: [
       { title: '산업위생관리산업기사 필기 단기완성', author: '오진호', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '산업위생 핵심 요약집', author: '김수정', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -5386,13 +4645,6 @@ const CERTIFICATIONS = {
       { name: '진동측정및평가', desc: '진동 측정 장비 기초, 전신·국소 진동 노출 평가, 측정 데이터 해석' },
       { name: '소음진동방지기술', desc: '소음원 저감 방법, 방음벽 설치 기준, 진동 절연 장치의 원리와 적용' },
       { name: '관계법규', desc: '소음진동관리법 주요 조항, 규제 기준, 측정 의무 사업장 기준 이해' },
-    ],
-    jobs: [
-      { title: '소음측정 보조원', company: '환경측정기관', salary: '2,600~3,500만원', location: '전국', type: '정규직' },
-      { title: '환경관리 실무직', company: '중소 제조업체', salary: '2,800~3,600만원', location: '전국', type: '정규직' },
-      { title: '생활소음 민원 처리', company: '지방자치단체', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '방음시공 기술직', company: '방음공사 전문업체', salary: '2,800~3,800만원', location: '수도권·부산', type: '정규직' },
-      { title: '환경조사 요원', company: '환경컨설팅업체', salary: '2,500~3,200만원', location: '서울·경기', type: '계약직' },
     ],
     books: [
       { title: '소음진동산업기사 필기 단기완성', author: '최상훈', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -5441,13 +4693,6 @@ const CERTIFICATIONS = {
       { name: '작업환경설계', desc: '작업공간 및 공구 설계 원칙, 조명·온도·진동 환경 기준, 컴퓨터 작업 환경 설계' },
       { name: '시스템안전및인간신뢰성', desc: '인적 오류 분류와 예방, 결함수 분석(FTA), 휴먼 신뢰성 분석(HRA) 기법' },
     ],
-    jobs: [
-      { title: '근골격계 유해요인 조사원', company: '한국산업안전보건공단', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '작업환경 개선 담당자', company: '자동차·전자 제조업체', salary: '3,500~5,200만원', location: '경기·울산', type: '정규직' },
-      { title: '인간공학 연구원', company: '산업안전 연구기관', salary: '3,800~5,500만원', location: '대전·서울', type: '정규직' },
-      { title: 'UX 안전 설계 담당', company: 'IT·가전 대기업', salary: '4,000~6,000만원', location: '서울·경기', type: '정규직' },
-      { title: '작업분석 컨설턴트', company: '안전컨설팅업체', salary: '3,200~4,500만원', location: '수도권', type: '계약직' },
-    ],
     books: [
       { title: '인간공학기사 필기 완전정복', author: '송재현', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '인간공학 이론과 실습', author: '류창수', publisher: '한경사', year: 2024, rating: 4.4 },
@@ -5494,13 +4739,6 @@ const CERTIFICATIONS = {
       { name: '방사선방호학', desc: '방사선 방호 3원칙, 차폐 재료와 두께 계산, 피폭선량 평가 및 ALARA 원칙 적용' },
       { name: '방사선물리학', desc: '원자 구조 및 핵반응, 방사성 붕괴 법칙, 방사선과 물질의 상호작용 원리' },
       { name: '방사선관계법규', desc: '원자력안전법 및 방사선 안전관리 규정, 방사선 허가·신고 기준, 종사자 피폭선량 한도' },
-    ],
-    jobs: [
-      { title: '방사선 안전관리자', company: '원자력발전소·한국수력원자력', salary: '4,500~7,000만원', location: '경주·영광·울진', type: '정규직' },
-      { title: '방사선 관리 기술직', company: '병원 핵의학과·방사선과', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '비파괴검사 방사선사', company: '비파괴검사 전문업체', salary: '3,200~4,800만원', location: '전국', type: '정규직' },
-      { title: '방사선 안전연구원', company: '한국원자력안전기술원(KINS)', salary: '4,000~6,000만원', location: '대전', type: '정규직' },
-      { title: '방사선 환경조사원', company: '환경부·지방환경청', salary: '3,000~4,200만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '방사선관리기사 필기 한권으로 끝내기', author: '한상원', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -5550,13 +4788,6 @@ const CERTIFICATIONS = {
       { name: '탄소시장 및 제도', desc: '배출권거래제(ETS), 탄소세, 국제 탄소시장 메커니즘 이해' },
       { name: '온실가스 검증·보고', desc: '제3자 검증 절차, 온실가스 인벤토리 구축 및 보고 체계' },
     ],
-    jobs: [
-      { title: '온실가스 검증원', company: '검증기관·컨설팅', salary: '4,000~5,800만원', location: '서울·경기', type: '정규직' },
-      { title: '탄소중립 담당자', company: '대기업·공기업', salary: '4,200~6,000만원', location: '수도권', type: '정규직' },
-      { title: 'ESG 환경 담당자', company: '대기업·금융기관', salary: '4,000~5,500만원', location: '서울', type: '정규직' },
-      { title: '배출권거래 실무자', company: '에너지거래소·기업', salary: '3,800~5,200만원', location: '서울', type: '정규직' },
-      { title: '탄소발자국 산정 연구원', company: '환경연구소', salary: '3,000~3,800만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '온실가스관리기사 필기 이론 총정리', author: '이탄소', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '온실가스관리기사 기출 & 예상문제집', author: '박기후', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -5603,13 +4834,6 @@ const CERTIFICATIONS = {
       { name: '신재생에너지 개론', desc: '신재생에너지 종류·특성, 국내외 정책 및 보급 현황' },
       { name: '전기기초 및 회로', desc: '전기 기본 이론, 직·교류 회로 분석, 배선 및 보호 장치' },
       { name: '발전설비 안전관리', desc: '신재생에너지 설비 안전기준, 유지보수 절차 및 사고 예방' },
-    ],
-    jobs: [
-      { title: '태양광 발전설비 기술자', company: '태양광 시공·운영업체', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '신재생에너지 설계원', company: '엔지니어링 회사', salary: '3,800~5,500만원', location: '수도권', type: '정규직' },
-      { title: '풍력설비 운영관리자', company: '풍력발전사업자', salary: '4,000~5,800만원', location: '지방·해안', type: '정규직' },
-      { title: 'RE100 에너지 담당자', company: '대기업·공기업', salary: '4,000~6,000만원', location: '서울·경기', type: '정규직' },
-      { title: '신재생에너지 현장 점검원', company: '에너지공단', salary: '2,800~3,600만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '신재생에너지발전설비산업기사 필기', author: '이태양광', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -5660,13 +4884,6 @@ const CERTIFICATIONS = {
       { name: '조경식물', desc: '주요 조경 수목과 초본식물의 특성, 식별, 활용법' },
       { name: '조경재료 및 법규', desc: '조경 자재, 시설물 재료 특성 및 관련 법령 이해' },
     ],
-    jobs: [
-      { title: '조경시공 기술자', company: '조경시공업체', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '공원 관리원', company: '지방자치단체/공단', salary: '2,600~3,500만원', location: '전국', type: '정규직' },
-      { title: '조경 설계 보조', company: '조경설계사무소', salary: '2,700~3,600만원', location: '서울/수도권', type: '정규직' },
-      { title: '아파트 조경관리', company: '건설·관리업체', salary: '2,500~3,400만원', location: '수도권', type: '정규직' },
-      { title: '조경 현장 보조', company: '조경시공업체', salary: '2,400~3,200만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '조경산업기사 필기 핵심정리', author: '이민호', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '조경산업기사 실기 완성', author: '정수진', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -5713,13 +4930,6 @@ const CERTIFICATIONS = {
       { name: '토지이용계획', desc: '용도지역·지구·구역 제도, 토지이용 규제 및 계획 기법' },
       { name: '국토 및 지역계획', desc: '광역계획, 지역 균형발전 전략, 국토종합계획 이해' },
       { name: '도시계획 관계법규', desc: '국토계획법, 도시개발법, 주택법 등 관련 법령 체계' },
-    ],
-    jobs: [
-      { title: '도시계획 연구원', company: '도시연구원/싱크탱크', salary: '3,500~5,000만원', location: '서울/수도권', type: '정규직' },
-      { title: '도시계획 담당 공무원', company: '지방자치단체', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '도시계획 컨설턴트', company: '엔지니어링사', salary: '3,800~5,500만원', location: '서울/수도권', type: '정규직' },
-      { title: '도시재생 사업 매니저', company: '공공기관/LH', salary: '3,600~5,200만원', location: '전국', type: '정규직' },
-      { title: '도시계획 용역 PM', company: '도시계획사무소', salary: '3,200~4,500만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '도시계획기사 필기 이론 완성', author: '김상호', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -5768,13 +4978,6 @@ const CERTIFICATIONS = {
       { name: '지적학', desc: '지적 제도의 이론, 토지 등록 및 지적 공부 관리' },
       { name: '지적관계법규', desc: '공간정보관리법, 지적재조사법 등 관련 법령 체계' },
     ],
-    jobs: [
-      { title: '지적측량사', company: '한국국토정보공사', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '지적 담당 공무원', company: '지방자치단체', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: 'GIS 분석원', company: '공간정보업체', salary: '3,400~4,800만원', location: '서울/수도권', type: '정규직' },
-      { title: '토지측량 기술자', company: '측량설계사무소', salary: '3,300~4,600만원', location: '전국', type: '정규직' },
-      { title: '지적조사 연구원', company: '국책연구원', salary: '3,000~4,200만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '지적기사 필기 핵심이론 총정리', author: '김동현', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '지적기사 실기 완전정복', author: '이승민', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -5822,13 +5025,6 @@ const CERTIFICATIONS = {
       { name: '로봇 재료 및 공정', desc: '경량 재료 선정, 부품 가공 방법, 조립 공정 설계' },
       { name: '로봇 안전 및 법규', desc: '로봇 안전 기준(ISO 10218), 협동 로봇 안전 규정' },
     ],
-    jobs: [
-      { title: '로봇 기구 설계 엔지니어', company: '로봇 전문기업', salary: '3,800~5,500만원', location: '수도권/경남', type: '정규직' },
-      { title: '산업용 로봇 기술자', company: '자동화 시스템사', salary: '3,600~5,200만원', location: '전국', type: '정규직' },
-      { title: '협동로봇 응용 엔지니어', company: '제조기업', salary: '4,000~5,800만원', location: '수도권', type: '정규직' },
-      { title: 'R&D 연구원(로봇)', company: '대기업/연구원', salary: '4,200~6,500만원', location: '수도권/대전', type: '정규직' },
-      { title: '로봇 유지보수 기술자', company: '제조공장', salary: '3,300~4,600만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '로봇기구개발기사 필기 핵심이론', author: '오준석', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '로봇기구개발기사 실기 가이드', author: '이로봇', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -5875,13 +5071,6 @@ const CERTIFICATIONS = {
       { name: '3D 프린터 장비 운용', desc: '장비 설치, 교정, 유지보수 및 출력 불량 원인 분석' },
       { name: '소재 및 후처리', desc: 'PLA, ABS, PETG 등 소재 특성과 표면 처리, 후가공 기술' },
       { name: '안전관리 및 품질', desc: '3D 프린팅 작업장 안전 수칙, 출력물 품질 검사 기준' },
-    ],
-    jobs: [
-      { title: '3D 프린팅 운용 기술자', company: '제조·시제품 업체', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '3D 프린팅 강사', company: '직업훈련원/학교', salary: '2,600~3,600만원', location: '전국', type: '정규직' },
-      { title: '시제품 제작 전문가', company: '스타트업/연구소', salary: '3,000~4,200만원', location: '서울/수도권', type: '정규직' },
-      { title: '의료용 3D 프린팅 기술자', company: '의료기기 업체', salary: '3,200~4,500만원', location: '수도권', type: '정규직' },
-      { title: '3D 프린팅 프리랜서', company: '개인/공방', salary: '2,400~3,500만원', location: '재택/전국', type: '계약직' },
     ],
     books: [
       { title: '3D프린터운용기능사 필기 완성', author: '박현우', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -5931,13 +5120,6 @@ const CERTIFICATIONS = {
       { name: '정신간호학', desc: '정신질환 분류(DSM), 치료적 의사소통, 정신과 약물' },
       { name: '간호관리학', desc: '간호 조직·리더십·의료법·병원 감염 관리 핵심 이론' },
     ],
-    jobs: [
-      { title: '병원 임상간호사', company: '종합병원·상급종합병원', salary: '3,800~6,000만원', location: '전국', type: '정규직' },
-      { title: '중환자실 간호사(ICU)', company: '대학병원', salary: '4,500~6,500만원', location: '전국', type: '정규직' },
-      { title: '수술실 간호사', company: '종합병원', salary: '4,200~6,200만원', location: '전국', type: '정규직' },
-      { title: '보건소 공중보건간호사', company: '지자체 보건소', salary: '3,500~4,500만원', location: '전국', type: '공무원' },
-      { title: '산업간호사', company: '대기업·공단', salary: '3,800~5,500만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { title: '2026 널스케이프 간호사 국가시험 핵심요약', author: '널스케이프 편집부', publisher: '수문사', year: 2025, rating: 4.8 },
       { title: '2026 군자출판사 간호사 국가시험 문제집', author: '간호국시연구회', publisher: '군자출판사', year: 2025, rating: 4.7 },
@@ -5985,13 +5167,6 @@ const CERTIFICATIONS = {
       { name: '의료관계법규', desc: '의료법, 감염병예방법, 의료급여법 등 주요 조항 및 관련 규정' },
       { name: '실기(간호술기)', desc: '활력징후 측정, 투약, 드레싱, 이동 보조 등 기본 간호술기' },
     ],
-    jobs: [
-      { title: '의원 간호조무사', company: '내과·외과·이비인후과 등', salary: '2,400~3,200만원', location: '전국', type: '정규직' },
-      { title: '요양병원 간호조무사', company: '요양병원·요양원', salary: '2,600~3,500만원', location: '전국', type: '정규직' },
-      { title: '소아과·산부인과 조무사', company: '전문과목 의원', salary: '2,500~3,300만원', location: '전국', type: '정규직' },
-      { title: '보건소 간호조무사', company: '지자체 보건소', salary: '2,300~3,000만원', location: '전국', type: '계약직' },
-      { title: '노인복지시설 간호조무사', company: '노인요양시설', salary: '2,400~3,200만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { title: '2026 메디시언 간호조무사 핵심요약+기출문제', author: '메디시언 편집부', publisher: '메디시언', year: 2025, rating: 4.7 },
       { title: '2026 시대에듀 간호조무사 한권완성', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.6 },
@@ -6035,13 +5210,6 @@ const CERTIFICATIONS = {
       { name: '신경계 물리치료', desc: '뇌졸중·척수손상·파킨슨 등 신경계 질환 재활 접근법' },
       { name: '전기·광선·수치료', desc: 'TENS·초음파·레이저·수치료 등 물리적 인자 치료법' },
       { name: '의료관계법규', desc: '의료기사법, 의료법, 장애인복지법 관련 주요 규정' },
-    ],
-    jobs: [
-      { title: '병원 물리치료사', company: '종합병원·재활병원', salary: '3,200~4,800만원', location: '전국', type: '정규직' },
-      { title: '스포츠재활 치료사', company: '스포츠의학센터·구단', salary: '3,500~5,200만원', location: '전국', type: '정규직' },
-      { title: '노인재활 물리치료사', company: '요양병원·노인복지시설', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '정형외과 물리치료사', company: '정형외과 의원', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '소아 물리치료사', company: '소아재활센터', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '2026 물리치료사 국가시험 핵심요약집', author: '대한물리치료사협회', publisher: '범문에듀케이션', year: 2025, rating: 4.7 },
@@ -6087,13 +5255,6 @@ const CERTIFICATIONS = {
       { name: '아동·노인 작업치료', desc: '발달 장애 아동 감각통합, 노인 인지재활·낙상 예방 중재' },
       { name: '의료관계법규', desc: '의료기사법, 장애인복지법, 정신건강복지법 주요 규정' },
     ],
-    jobs: [
-      { title: '재활병원 작업치료사', company: '재활병원·종합병원', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
-      { title: '아동발달센터 작업치료사', company: '소아재활·발달센터', salary: '2,800~4,000만원', location: '전국', type: '정규직' },
-      { title: '정신건강 작업치료사', company: '정신병원·정신건강센터', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '노인재활 작업치료사', company: '요양병원·노인복지시설', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '학교 특수교육 작업치료사', company: '특수학교·교육청', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { title: '2026 작업치료사 국가시험 핵심요약집', author: '대한작업치료사협회', publisher: '범문에듀케이션', year: 2025, rating: 4.7 },
       { title: '2026 작업치료사 국가시험 기출문제집', author: '보건의료 국시연구회', publisher: '군자출판사', year: 2025, rating: 4.6 },
@@ -6137,13 +5298,6 @@ const CERTIFICATIONS = {
       { name: '미생물학', desc: '세균·바이러스·진균 배양, 항생제 감수성 검사, 감염관리' },
       { name: '조직병리·세포병리', desc: '조직 처리, H&E 염색, 세포진 검사(PAP, 체강액) 판독' },
       { name: '임상생리학', desc: '심전도(ECG), 뇌파(EEG), 폐기능 검사, 초음파 기초 원리' },
-    ],
-    jobs: [
-      { title: '진단검사의학과 임상병리사', company: '종합병원·대학병원', salary: '3,200~4,800만원', location: '전국', type: '정규직' },
-      { title: '수탁검사센터 병리사', company: '녹십자·세브란스 등', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
-      { title: '보건소 임상병리사', company: '지자체 보건소', salary: '2,800~3,800만원', location: '전국', type: '공무원' },
-      { title: '제약·바이오 QC 담당', company: '제약·바이오기업', salary: '3,500~5,500만원', location: '서울·경기', type: '정규직' },
-      { title: '혈액원 검사 담당', company: '대한적십자사 혈액원', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '2026 임상병리사 국가시험 핵심요약집', author: '대한임상병리사협회', publisher: '범문에듀케이션', year: 2025, rating: 4.7 },
@@ -6189,13 +5343,6 @@ const CERTIFICATIONS = {
       { name: '방사선치료학', desc: '선형가속기, 치료 계획, 선량 분포, 방호 기준' },
       { name: '의료관계법규', desc: '의료기사법, 방사선안전관리법 관련 주요 규정' },
     ],
-    jobs: [
-      { title: '영상의학과 방사선사', company: '종합병원·대학병원', salary: '3,200~4,800만원', location: '전국', type: '정규직' },
-      { title: 'CT·MRI 기사', company: '검진센터·영상의학과', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
-      { title: '방사선치료 기사', company: '암센터·종양방사선과', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '보건소 방사선사', company: '지자체 보건소', salary: '2,800~3,800만원', location: '전국', type: '공무원' },
-      { title: '검진 차량 방사선사', company: '이동검진 업체', salary: '2,800~3,800만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '2026 방사선사 국가시험 핵심요약집', author: '대한방사선사협회', publisher: '범문에듀케이션', year: 2025, rating: 4.7 },
       { title: '2026 방사선사 국가시험 기출문제집', author: '보건의료 국시연구회', publisher: '군자출판사', year: 2025, rating: 4.6 },
@@ -6239,13 +5386,6 @@ const CERTIFICATIONS = {
       { name: '치과예방처치학', desc: '스케일링 기법, 불소 도포, 치면열구전색, 구강위생 지도' },
       { name: '치과방사선학', desc: '구내·구외 방사선 촬영, 방사선 방어, 영상 판독 기초' },
       { name: '의료관계법규', desc: '의료기사법, 의료법, 구강보건법 관련 주요 조항' },
-    ],
-    jobs: [
-      { title: '치과의원 치위생사', company: '일반 치과의원', salary: '2,600~3,600만원', location: '전국', type: '정규직' },
-      { title: '대학병원 치과 치위생사', company: '대학병원 치과', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
-      { title: '보건소 구강보건 담당', company: '지자체 보건소', salary: '2,800~3,500만원', location: '전국', type: '공무원' },
-      { title: '교정·임플란트 전문 치과', company: '전문과목 치과', salary: '2,800~4,000만원', location: '전국', type: '정규직' },
-      { title: '치과 건강검진센터', company: '검진센터', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '2026 치위생사 국가시험 핵심요약집', author: '대한치위생사협회', publisher: '범문에듀케이션', year: 2025, rating: 4.7 },
@@ -6291,13 +5431,6 @@ const CERTIFICATIONS = {
       { name: '약리학·응급약물', desc: '응급 투여 약물(에피네프린·아트로핀 등) 작용·용량·경로' },
       { name: '의료관계법규', desc: '응급의료에관한법률, 소방기본법 관련 응급구조사 업무 범위' },
     ],
-    jobs: [
-      { title: '소방 119구급대원', company: '소방서·119안전센터', salary: '3,500~5,000만원', location: '전국', type: '공무원' },
-      { title: '응급실 응급구조사', company: '종합병원 응급실', salary: '3,200~4,800만원', location: '전국', type: '정규직' },
-      { title: '항공 응급구조사', company: '닥터헬기·항공이송업체', salary: '4,000~6,000만원', location: '전국', type: '정규직' },
-      { title: '산업현장 응급처치 담당', company: '대기업·발전소·공단', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '해양경찰 구조대', company: '해양경찰청', salary: '3,500~5,000만원', location: '전국', type: '공무원' },
-    ],
     books: [
       { title: '2026 응급구조사 1급 국가시험 핵심요약집', author: '대한응급구조사협회', publisher: '범문에듀케이션', year: 2025, rating: 4.7 },
       { title: '2026 응급구조사 1급 기출문제집', author: '보건의료 국시연구회', publisher: '군자출판사', year: 2025, rating: 4.6 },
@@ -6341,13 +5474,6 @@ const CERTIFICATIONS = {
       { name: '내과 응급 기초', desc: '흉통·호흡곤란·의식 변화 환자 초기 평가 및 기본 처치' },
       { name: '외상 응급 기초', desc: '출혈 지혈, 골절 고정, 화상 처치, 척추 손상 의심 환자 이송' },
       { name: '응급의료 관련 법규', desc: '응급의료에관한법률, 2급 응급구조사 업무 범위 및 의무' },
-    ],
-    jobs: [
-      { title: '민간 구급차 구조사', company: '민간 구급대', salary: '2,500~3,500만원', location: '전국', type: '정규직' },
-      { title: '119구급대원(의용소방대)', company: '소방서', salary: '2,800~3,800만원', location: '전국', type: '계약직' },
-      { title: '산업현장 응급처치 담당', company: '제조·건설업체', salary: '2,800~3,600만원', location: '전국', type: '정규직' },
-      { title: '요양병원 응급처치 담당', company: '요양병원', salary: '2,600~3,400만원', location: '전국', type: '정규직' },
-      { title: '스포츠·이벤트 현장 구조사', company: '스포츠 구단·행사업체', salary: '2,400~3,200만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '2026 응급구조사 2급 국가시험 핵심요약집', author: '대한응급구조사협회', publisher: '범문에듀케이션', year: 2025, rating: 4.6 },
@@ -6397,13 +5523,6 @@ const CERTIFICATIONS = {
       { name: '특수 요양 보호 기술', desc: '치매 노인 케어, 임종 케어, 응급처치, 감염병 예방' },
       { name: '의사소통과 여가 활동', desc: '노인 심리 이해, 의사소통 기법, 여가 활동 프로그램 운영' },
     ],
-    jobs: [
-      { title: '노인요양원 요양보호사', company: '노인요양원·노인복지관', salary: '2,400~3,200만원', location: '전국', type: '정규직' },
-      { title: '재가 방문 요양보호사', company: '재가노인복지시설', salary: '2,000~2,800만원', location: '전국', type: '시간제' },
-      { title: '요양병원 요양보호사', company: '요양병원', salary: '2,500~3,300만원', location: '전국', type: '정규직' },
-      { title: '치매안심센터 요양보호사', company: '지자체 치매안심센터', salary: '2,400~3,000만원', location: '전국', type: '계약직' },
-      { title: '주·야간보호센터 종사자', company: '주야간보호센터', salary: '2,300~3,000만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { title: '2026 요양보호사 한권완성 필기+실기', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.7 },
       { title: '2026 요양보호사 기출문제 총정리', author: '서원각 편집부', publisher: '서원각', year: 2025, rating: 4.6 },
@@ -6447,13 +5566,6 @@ const CERTIFICATIONS = {
       { name: '보건통계·역학', desc: '병원 통계 산출(입원률·재원일수 등), 역학 지표 계산' },
       { name: '보건의료정보학', desc: 'EMR·EHR 시스템, 의료 데이터 표준(HL7·SNOMED), 정보 보안' },
       { name: '의료관계법규', desc: '의료법 의무기록 조항, 개인정보보호법, 건강보험 관련 규정' },
-    ],
-    jobs: [
-      { title: '병원 의무기록팀 담당', company: '종합병원·대학병원', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '보험심사·청구 담당', company: '병원·의원', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '건강보험공단 자료 분석', company: '국민건강보험공단', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '의료 데이터 분석가', company: '헬스케어 IT 기업', salary: '3,500~5,500만원', location: '서울·경기', type: '정규직' },
-      { title: '의료정보 컨설턴트', company: 'EMR 솔루션업체', salary: '3,500~5,000만원', location: '서울·경기', type: '정규직' },
     ],
     books: [
       { title: '2026 의무기록사 국가시험 핵심요약집', author: '대한의무기록협회', publisher: '범문에듀케이션', year: 2025, rating: 4.7 },
@@ -6503,13 +5615,6 @@ const CERTIFICATIONS = {
       { name: '보건의사소통', desc: '건강 커뮤니케이션, 미디어 활용 및 상담 기술' },
       { name: '보건의료법규', desc: '국민건강증진법, 의료법 등 관련 법령 이해' },
     ],
-    jobs: [
-      { title: '보건교육사', company: '지역보건소', salary: '3,000~3,800만원', location: '전국', type: '정규직' },
-      { title: '건강증진팀 연구원', company: '한국건강증진개발원', salary: '3,200~4,200만원', location: '서울', type: '정규직' },
-      { title: '보건교사', company: '초·중·고등학교', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '보건관리자', company: '산업체·사업장', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '건강교육 강사', company: '민간 교육기관', salary: '2,500~3,500만원', location: '수도권', type: '계약직' },
-    ],
     books: [
       { title: '보건교육사 필기 완전정복', author: '김보건', publisher: '에듀팩토리', year: 2024, rating: 4.5 },
       { title: '보건교육학 핵심이론 총정리', author: '이건강', publisher: '성안당', year: 2024, rating: 4.4 },
@@ -6556,13 +5661,6 @@ const CERTIFICATIONS = {
       { name: '위생곤충학', desc: '위생해충의 종류·생태·방제 방법 및 살충제 활용' },
       { name: '공중보건학', desc: '역학, 감염병 예방, 지역사회 보건 및 건강증진' },
       { name: '식품위생학', desc: '식품 오염, 식중독, HACCP 및 식품 검사 방법' },
-    ],
-    jobs: [
-      { title: '위생사', company: '지역보건소', salary: '2,800~3,600만원', location: '전국', type: '정규직' },
-      { title: '식품위생감시원', company: '지방자치단체', salary: '3,000~3,800만원', location: '전국', type: '정규직' },
-      { title: '환경위생관리원', company: '환경관리공단', salary: '2,900~3,700만원', location: '전국', type: '정규직' },
-      { title: '위생관리팀 직원', company: '식품제조업체', salary: '2,800~3,500만원', location: '수도권·충청', type: '정규직' },
-      { title: '방역소독 전문가', company: '방역업체', salary: '2,500~3,200만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '위생사 국가시험 완전정복', author: '최위생', publisher: '수문사', year: 2024, rating: 4.5 },
@@ -6611,13 +5709,6 @@ const CERTIFICATIONS = {
       { name: '급식경영학', desc: '급식 시스템 운영, 식단 작성, 원가 관리 및 위생 관리' },
       { name: '영양교육 및 상담실습', desc: '영양 상담 기법, 교육 매체 활용 및 영양 판정 실습' },
     ],
-    jobs: [
-      { title: '병원 영양사', company: '종합병원·의료기관', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '학교 영양교사', company: '초·중·고등학교', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '산업체 영양사', company: '대기업 구내식당', salary: '2,800~3,800만원', location: '수도권', type: '정규직' },
-      { title: '보건소 영양사', company: '지역보건소', salary: '2,900~3,600만원', location: '전국', type: '정규직' },
-      { title: '프리랜서 영양사', company: '영양 컨설팅업체', salary: '2,400~3,500만원', location: '수도권', type: '계약직' },
-    ],
     books: [
       { title: '영양사 국가시험 한권으로 끝내기', author: '김영양', publisher: '수문사', year: 2024, rating: 4.5 },
       { title: '영양학·생화학 핵심이론', author: '이생화', publisher: '에듀팩토리', year: 2024, rating: 4.4 },
@@ -6660,13 +5751,6 @@ const CERTIFICATIONS = {
       { name: '임업기계', desc: '체인톱·집재기 등 임업 기계 구조, 안전 사용법, 유지보수' },
       { name: '산림관계법규', desc: '산림기본법·산림자원법·산불 관련 법규 주요 내용' },
     ],
-    jobs: [
-      { title: '산림 조성 기능원', company: '임업회사·산림청', salary: '2,600~3,500만원', location: '전국', type: '정규직' },
-      { title: '산불 감시원', company: '지자체·산림청', salary: '2,300~3,000만원', location: '전국', type: '계약직' },
-      { title: '수목원·자연휴양림 관리원', company: '국공립 수목원', salary: '2,500~3,300만원', location: '전국', type: '정규직' },
-      { title: '임목 벌채·집재 기사', company: '임업회사', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '조림·육림 전문 기사', company: '산림조합·산림청', salary: '2,600~3,500만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { title: '2026 시대에듀 산림기능사 필기 한권으로 끝내기', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.6 },
       { title: '2026 산림기능사 필기', author: '이패스코리아 편집부', publisher: '이패스코리아', year: 2025, rating: 4.5 },
@@ -6706,13 +5790,6 @@ const CERTIFICATIONS = {
       { name: '산림 보호 심화', desc: '생태계 보전, 산림 재해 관리, 탄소 흡수원 관리 실무' },
       { name: '임업 경영', desc: '임업 경영 계획 수립, 임목 평가, 산림 인증 제도' },
       { name: '산림관계법규', desc: '산림 관련 법령 전반, 산림청 정책, 탄소중립 산림 제도' },
-    ],
-    jobs: [
-      { title: '산림 관리 팀장', company: '산림조합·임업회사', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '국유림 관리소 담당', company: '산림청·국유림관리소', salary: '3,200~4,500만원', location: '전국', type: '공무원' },
-      { title: '산림 복원 전문가', company: '환경부·지자체', salary: '3,500~4,800만원', location: '전국', type: '정규직' },
-      { title: '탄소 흡수원 관리 전문가', company: '한국임업진흥원', salary: '3,800~5,200만원', location: '전국', type: '정규직' },
-      { title: '임업 컨설턴트', company: '임업 컨설팅 업체', salary: '3,500~5,500만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '2026 시대에듀 산림기능장 필기 한권으로 끝내기', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.6 },
@@ -6755,13 +5832,6 @@ const CERTIFICATIONS = {
       { name: '수목생리학', desc: '수목 영양·수분·광합성·호르몬 생리, 생리 장애 원인 분석' },
       { name: '토양학', desc: '토양 구조·이화학성, 토양 개량, 수목 뿌리 환경 관리' },
       { name: '수목외과수술·약제학', desc: '외과수술 처리, 지주목 설치, 약제 선택·처방 원칙' },
-    ],
-    jobs: [
-      { title: '수목 진료 나무의사', company: '수목진료연구소·조경사', salary: '3,500~5,500만원', location: '전국', type: '정규직' },
-      { title: '수목 보호 전문가', company: '지자체·공원관리공단', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '조경·산림 방제 전문가', company: '방제업체', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
-      { title: '문화재 수목 관리 전문가', company: '문화재청·사찰', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '수목 진단 컨설턴트', company: '독립 개원', salary: '4,000~7,000만원', location: '전국', type: '개인사업' },
     ],
     books: [
       { title: '2026 시대에듀 나무의사 한권으로 끝내기', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.7 },
@@ -6808,13 +5878,6 @@ const CERTIFICATIONS = {
       { name: '산림공학', desc: '임도 설계·시공, 산림 작업 기계화 및 수확 시스템' },
       { name: '사방공학', desc: '산사태·토사 유출 방지, 사방댐 설계 및 녹화 공법' },
       { name: '임산공학', desc: '목재의 성질·가공·건조·보존 및 목질 재료 제조' },
-    ],
-    jobs: [
-      { title: '산림 주무관', company: '산림청·지방자치단체', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '조경·산림 기술자', company: '종합건설회사', salary: '3,200~4,500만원', location: '수도권', type: '정규직' },
-      { title: '산림환경 연구원', company: '국립산림과학원', salary: '3,500~5,000만원', location: '서울·경기', type: '정규직' },
-      { title: '임도 시공 감리원', company: '엔지니어링업체', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '산림 컨설턴트', company: '임업 컨설팅업체', salary: '2,800~3,800만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '산림기사 필기 완전정복', author: '김산림', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -6863,13 +5926,6 @@ const CERTIFICATIONS = {
       { name: '농약학', desc: '농약의 종류·성분·작용 원리·독성 및 안전 사용법' },
       { name: '잡초방제학', desc: '잡초의 생태·분류·방제 기술 및 제초제 활용' },
     ],
-    jobs: [
-      { title: '식물 방제 연구원', company: '농촌진흥청', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '농업기술 지도사', company: '지방농업기술센터', salary: '3,000~3,800만원', location: '전국', type: '정규직' },
-      { title: '농약 개발 연구원', company: '농약제조업체', salary: '3,500~5,000만원', location: '수도권·충청', type: '정규직' },
-      { title: '병해충 예찰 담당자', company: '농산물품질관리원', salary: '2,900~3,700만원', location: '전국', type: '정규직' },
-      { title: '작물 보호 컨설턴트', company: '농업 컨설팅업체', salary: '2,700~3,500만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '식물보호기사 필기 한권완성', author: '김식물', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '식물병리학·농업곤충학 핵심정리', author: '이병리', publisher: '에듀팩토리', year: 2024, rating: 4.4 },
@@ -6916,13 +5972,6 @@ const CERTIFICATIONS = {
       { name: '비료학', desc: '비료의 종류·성분·시비 방법 및 양분 관리 기술' },
       { name: '농약화학', desc: '농약의 화학 구조·합성·작용 기작·잔류·분해 특성' },
       { name: '환경농학', desc: '농업 활동이 토양·수질·대기 환경에 미치는 영향과 관리' },
-    ],
-    jobs: [
-      { title: '토양 환경 연구원', company: '농촌진흥청', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '비료 기술 연구원', company: '비료제조업체', salary: '3,000~4,200만원', location: '충청·전남', type: '정규직' },
-      { title: '환경 관리 담당자', company: '환경부 산하기관', salary: '3,200~4,000만원', location: '전국', type: '정규직' },
-      { title: '농업환경 분석원', company: '농산물품질관리원', salary: '2,900~3,700만원', location: '전국', type: '정규직' },
-      { title: '농화학 분석 연구원', company: '민간 분석기관', salary: '2,700~3,500만원', location: '수도권', type: '계약직' },
     ],
     books: [
       { title: '농화학기사 필기 완전정복', author: '김농화', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -6972,13 +6021,6 @@ const CERTIFICATIONS = {
       { name: '건설시공학', desc: '토공, 기초공사, 콘크리트 공사, 철골 및 건축 마감 공사' },
       { name: '건설재료학 및 관계법규', desc: '건설 자재 특성, 산업안전보건법 및 건설 관련 법령' },
     ],
-    jobs: [
-      { title: '건설안전관리자', company: '대형 건설사', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '안전감독원', company: '공공기관·LH', salary: '3,800~5,000만원', location: '수도권', type: '정규직' },
-      { title: '현장안전팀장', company: '중견 건설사', salary: '4,500~6,000만원', location: '전국', type: '정규직' },
-      { title: '안전컨설턴트', company: '안전관리 전문기관', salary: '4,000~5,500만원', location: '서울·경기', type: '정규직' },
-      { title: '안전점검원', company: '건설안전진단기관', salary: '3,200~4,000만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '건설안전기사 필기 한권으로 끝내기', author: '이재형', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '건설안전기사 실기 완전정복', author: '김성호', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -7025,13 +6067,6 @@ const CERTIFICATIONS = {
       { name: '자기탐상검사 및 침투탐상검사', desc: '자기장 원리, 형광 침투제 적용 및 판독 방법' },
       { name: '비파괴검사 개론', desc: '검사 방법 분류, 적용 기준 및 국제 규격(ASME, KS)' },
       { name: '재료역학', desc: '응력·변형률, 재료 파괴 거동 및 결함 평가 이론' },
-    ],
-    jobs: [
-      { title: '비파괴검사원', company: '원자력 발전소', salary: '4,500~6,000만원', location: '전국', type: '정규직' },
-      { title: '품질검사기술자', company: '조선·해양 플랜트', salary: '4,000~5,500만원', location: '부산·경남', type: '정규직' },
-      { title: 'NDT 엔지니어', company: '항공 MRO 업체', salary: '4,200~5,800만원', location: '인천·경기', type: '정규직' },
-      { title: '검사팀장', company: '비파괴검사 전문기업', salary: '4,800~6,500만원', location: '전국', type: '정규직' },
-      { title: '검사보조원', company: '플랜트 건설사', salary: '3,200~4,000만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '비파괴검사기사 필기 완전정복', author: '정태훈', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -7080,13 +6115,6 @@ const CERTIFICATIONS = {
       { name: '세라믹재료학', desc: '세라믹 결합 구조, 소결 공정, 기계적·전기적 특성' },
       { name: '재료시험법', desc: '인장·경도·충격 시험, 금속조직 분석, 표면분석 기법' },
     ],
-    jobs: [
-      { title: '재료연구원', company: '소재 전문 연구소', salary: '4,000~5,500만원', location: '대전·충남', type: '정규직' },
-      { title: '품질관리기사', company: '자동차 부품사', salary: '3,800~5,000만원', location: '경기·충남', type: '정규직' },
-      { title: '재료시험원', company: '철강·금속 제조사', salary: '3,800~5,200만원', location: '포항·광양', type: '정규직' },
-      { title: '소재개발엔지니어', company: '반도체·디스플레이 기업', salary: '4,500~6,500만원', location: '경기', type: '정규직' },
-      { title: '검사원', company: '재료시험기관', salary: '3,000~3,800만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '재료기사 필기 한권으로 합격', author: '김민준', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '재료기사 실기 완전정복', author: '이호영', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -7133,13 +6161,6 @@ const CERTIFICATIONS = {
       { name: '도장 공학', desc: '도료 성분, 도장 방법(분체·전착·용사), 도막 품질 관리' },
       { name: '표면분석 및 시험', desc: '접착력 시험, 내식성 평가, SEM·EDS 표면 분석' },
       { name: '환경·안전 관련 법규', desc: '도금 폐수 처리, 유해화학물질 관리 및 환경 규제' },
-    ],
-    jobs: [
-      { title: '도금공정 엔지니어', company: '자동차 부품 제조사', salary: '3,800~5,200만원', location: '경기·충남', type: '정규직' },
-      { title: '표면처리 품질관리자', company: '전자부품 기업', salary: '3,800~5,000만원', location: '수도권', type: '정규직' },
-      { title: '코팅기술 연구원', company: '소재 전문기업', salary: '4,200~5,800만원', location: '경기·대전', type: '정규직' },
-      { title: '도장공정 관리자', company: '조선·해양 기업', salary: '4,000~5,500만원', location: '부산·경남', type: '정규직' },
-      { title: '표면처리 검사원', company: '품질인증기관', salary: '3,000~3,800만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '표면처리기사 필기 완전정복', author: '정상훈', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -7188,13 +6209,6 @@ const CERTIFICATIONS = {
       { name: '전기자기학', desc: '전기장·자기장 이론, 맥스웰 방정식, 전자파 전파' },
       { name: '제어공학', desc: '전달함수, 주파수 응답, PID 제어 및 안정성 판별' },
     ],
-    jobs: [
-      { title: '전자회로 설계엔지니어', company: '반도체 팹리스', salary: '4,500~7,000만원', location: '수도권', type: '정규직' },
-      { title: 'HW 개발자', company: '가전·전자 기업', salary: '4,200~6,000만원', location: '수도권', type: '정규직' },
-      { title: '전자장비 개발원', company: '방산·항공 기업', salary: '4,500~6,500만원', location: '서울·경기', type: '정규직' },
-      { title: 'PCB 설계 엔지니어', company: '전자부품 중견기업', salary: '3,800~5,500만원', location: '경기', type: '정규직' },
-      { title: '전자제품 품질검사원', company: '가전 제조사', salary: '3,000~3,800만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '전자기사 필기 한권으로 합격', author: '김태영', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '전자기사 실기 완전정복', author: '이도형', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -7241,13 +6255,6 @@ const CERTIFICATIONS = {
       { name: '데이터통신', desc: 'TCP/IP 프로토콜, LAN·WAN 구조, 네트워크 보안 기초' },
       { name: '정보통신설비', desc: '전화망, 광케이블, 이동통신, 위성통신 설비 기준' },
       { name: '정보통신관계법규', desc: '전기통신사업법, 정보통신공사업법 및 관련 고시' },
-    ],
-    jobs: [
-      { title: '네트워크 엔지니어', company: '이동통신사', salary: '4,200~5,800만원', location: '서울·경기', type: '정규직' },
-      { title: '정보통신감리원', company: 'ICT 감리법인', salary: '4,500~6,500만원', location: '전국', type: '정규직' },
-      { title: '통신망 운용 전문가', company: 'SI·IT 서비스 기업', salary: '4,000~5,500만원', location: '수도권', type: '정규직' },
-      { title: '통신설비 설계원', company: '통신공사 기업', salary: '3,800~5,000만원', location: '전국', type: '정규직' },
-      { title: '통신장비 유지보수원', company: '통신 협력업체', salary: '3,200~4,000만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '정보통신기사 필기 합격 바이블', author: '최상민', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -7296,13 +6303,6 @@ const CERTIFICATIONS = {
       { name: '전파관리법규', desc: '전파법, 전파 이용 허가 제도, 무선국 운용 규정' },
       { name: '전자회로', desc: 'RF 증폭 회로, 발진기, 고주파 필터 및 임피던스 정합' },
     ],
-    jobs: [
-      { title: '무선설비 기술자', company: '이동통신 기지국 운영사', salary: '3,800~5,200만원', location: '전국', type: '정규직' },
-      { title: '방송통신설비 엔지니어', company: '방송사·미디어 기업', salary: '4,000~5,500만원', location: '서울·수도권', type: '정규직' },
-      { title: 'RF 엔지니어', company: '통신장비 제조사', salary: '4,200~6,000만원', location: '경기', type: '정규직' },
-      { title: '무선국 운용기사', company: '해운·항공 기업', salary: '4,000~5,500만원', location: '부산·인천', type: '정규직' },
-      { title: '통신설비 유지보수원', company: '통신 협력업체', salary: '3,000~3,800만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '무선설비기사 필기 한권으로 합격', author: '김동수', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '무선설비기사 실기 완전정복', author: '이재민', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -7349,13 +6349,6 @@ const CERTIFICATIONS = {
       { name: '자동차 전기·전자', desc: '자동차 전기 회로, 전자제어 시스템, CAN 통신 개요' },
       { name: '자동차 검사', desc: '자동차 검사 기준, 안전도 검사 항목 및 배출가스 측정' },
       { name: '자동차관계법규', desc: '자동차관리법, 도로교통법, 대기환경보전법 관련 규정' },
-    ],
-    jobs: [
-      { title: '차량 개발 엔지니어', company: '완성차 제조사', salary: '4,500~6,500만원', location: '울산·경기', type: '정규직' },
-      { title: '자동차 검사원', company: '자동차검사소', salary: '3,800~5,000만원', location: '전국', type: '정규직' },
-      { title: '정비 기술 관리자', company: '자동차 딜러사', salary: '3,800~5,200만원', location: '전국', type: '정규직' },
-      { title: '품질보증 엔지니어', company: '자동차 부품사', salary: '4,000~5,500만원', location: '경기·충남', type: '정규직' },
-      { title: '자동차 진단원', company: '보험사 손해사정 협력기관', salary: '3,200~4,200만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '자동차기사 필기 한권으로 합격', author: '정동훈', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -7404,13 +6397,6 @@ const CERTIFICATIONS = {
       { name: '화재피해평가', desc: '인명·재산 피해 산정 방법, 보험 감정 실무 절차' },
       { name: '화재감식관계법규', desc: '소방기본법, 화재조사 및 보고 규정, 증거법 기초' },
     ],
-    jobs: [
-      { title: '화재감식관', company: '소방청·소방서', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '손해사정사 보조', company: '손해보험사', salary: '3,800~5,200만원', location: '전국', type: '정규직' },
-      { title: '화재감정 전문가', company: '화재감정법인', salary: '4,500~6,500만원', location: '서울·수도권', type: '정규직' },
-      { title: '재해조사관', company: '국립과학수사연구원', salary: '4,200~5,800만원', location: '서울·대전', type: '정규직' },
-      { title: '화재감식 보조원', company: '안전컨설팅 기업', salary: '3,000~3,800만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '화재감식평가기사 필기 완전정복', author: '손성훈', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '화재감식평가기사 실기 한권으로 끝내기', author: '박민석', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -7457,13 +6443,6 @@ const CERTIFICATIONS = {
       { name: '철도차량 정비', desc: '정기검사 기준, 예방 정비 절차, 고장 진단 방법' },
       { name: '철도 운용 안전', desc: '철도 안전법, 운행 관리 규정, 사고 예방 및 대응' },
       { name: '재료역학 및 기계공학', desc: '기계 재료 특성, 응력·피로 해석, 열역학 기초' },
-    ],
-    jobs: [
-      { title: '철도차량 정비기술자', company: '한국철도공사(KORAIL)', salary: '4,200~5,800만원', location: '전국', type: '정규직' },
-      { title: '도시철도 차량 기사', company: '서울·부산·대구 지하철공사', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '철도차량 개발 엔지니어', company: '현대로템·다원시스', salary: '4,500~6,500만원', location: '경기·경남', type: '정규직' },
-      { title: '철도차량 검사원', company: '철도차량 검사 전문기관', salary: '3,800~5,000만원', location: '전국', type: '정규직' },
-      { title: '철도시설 유지보수원', company: '철도 유지보수 협력사', salary: '3,200~4,000만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '철도차량기사 필기 한권으로 합격', author: '오승환', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -7514,13 +6493,6 @@ const CERTIFICATIONS = {
       { name: '비파괴검사 공통이론', desc: '금속재료 특성, 용접결함 유형, 규격 및 코드 해석' },
       { name: '비파괴검사 관련법규', desc: '산업안전보건법, 방사선 관련 법령, 검사 절차 문서 작성' },
     ],
-    jobs: [
-      { title: '비파괴검사원', company: '플랜트·중공업사', salary: '3,200~4,500만원', location: '울산·경남', type: '정규직' },
-      { title: '품질검사 기술자', company: '자동차부품 제조사', salary: '3,000~4,200만원', location: '경기·충남', type: '정규직' },
-      { title: '검사 전문가', company: '비파괴검사 전문업체', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '시설안전 점검원', company: '공공기관·발전소', salary: '3,800~5,200만원', location: '전국', type: '정규직' },
-      { title: '비파괴검사 보조원', company: '건설·구조물 점검사', salary: '2,800~3,500만원', location: '서울·수도권', type: '계약직' },
-    ],
     books: [
       { title: '비파괴검사산업기사 필기 완전정복', author: '김철수', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '비파괴검사 핵심이론 + 기출문제', author: '이영희', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -7567,13 +6539,6 @@ const CERTIFICATIONS = {
       { name: '자동차 전기·전자', desc: '전기 배선, 충전·시동장치, 차량 전자제어 시스템' },
       { name: '자동차 검사', desc: '자동차 법규, 배출가스 기준, 안전기준 및 검사 항목' },
       { name: '자동차 정비', desc: '정비 작업 절차, 공구 활용, 결함 진단 및 수리 방법' },
-    ],
-    jobs: [
-      { title: '자동차 정비 기술자', company: '완성차 서비스센터', salary: '3,200~4,800만원', location: '전국', type: '정규직' },
-      { title: '차량 검사원', company: '자동차검사소', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '품질관리 담당자', company: '자동차부품 제조사', salary: '3,500~5,000만원', location: '경기·충남·경남', type: '정규직' },
-      { title: '자동차 R&D 기술원', company: '완성차 제조사', salary: '4,000~6,000만원', location: '경기·충남', type: '정규직' },
-      { title: '차량 정비 보조원', company: '일반 자동차 정비소', salary: '2,800~3,400만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '자동차산업기사 필기 한권으로 끝내기', author: '홍길동', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -7622,13 +6587,6 @@ const CERTIFICATIONS = {
       { name: '마이크로프로세서', desc: '마이크로프로세서 구조, 어셈블리 언어, 인터페이스 회로' },
       { name: '전자기기', desc: '통신기기, 전원장치, 영상·음향기기의 구조와 고장 진단' },
     ],
-    jobs: [
-      { title: '전자기기 개발 기술자', company: '전자·가전 제조사', salary: '3,500~5,200만원', location: '수원·구미·천안', type: '정규직' },
-      { title: '회로 설계 엔지니어', company: '반도체·PCB 업체', salary: '4,000~6,000만원', location: '경기·충남', type: '정규직' },
-      { title: '품질보증 담당자', company: '전자부품 제조사', salary: '3,200~4,500만원', location: '경기·경북', type: '정규직' },
-      { title: '전자장비 유지보수원', company: '공공기관·방산업체', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '전자 기술 보조원', company: 'IT 솔루션 업체', salary: '2,800~3,600만원', location: '서울·수도권', type: '계약직' },
-    ],
     books: [
       { title: '전자산업기사 필기 완전정복', author: '최재호', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '전자산업기사 핵심이론 + 과년도 기출문제', author: '강민서', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -7675,13 +6633,6 @@ const CERTIFICATIONS = {
       { name: '무선통신설비', desc: '이동통신, 위성통신, 무선 LAN 시스템 구성 및 운용' },
       { name: '정보통신 네트워크', desc: 'TCP/IP, 라우팅 프로토콜, 네트워크 보안 및 관리' },
       { name: '정보통신 법규', desc: '전파법, 정보통신공사업법, 개인정보보호법 핵심 조항' },
-    ],
-    jobs: [
-      { title: '통신망 운용 기술자', company: '이동통신사', salary: '3,500~5,000만원', location: '서울·수도권', type: '정규직' },
-      { title: '네트워크 엔지니어', company: 'SI·IT 인프라 기업', salary: '3,800~5,500만원', location: '서울·경기', type: '정규직' },
-      { title: '정보통신 설비 설치원', company: '통신공사 전문업체', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '통신 설비 유지보수원', company: '공공기관·지자체', salary: '3,500~4,800만원', location: '전국', type: '정규직' },
-      { title: '통신 기술 지원원', company: 'IT 솔루션 업체', salary: '2,800~3,600만원', location: '서울·수도권', type: '계약직' },
     ],
     books: [
       { title: '정보통신산업기사 필기 합격의 정석', author: '오승환', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -7730,13 +6681,6 @@ const CERTIFICATIONS = {
       { name: '프로그래밍 언어', desc: '기본 프로그래밍 개념, 매크로 작성, 간단한 스크립트 활용' },
       { name: '사무자동화 관련법규', desc: '전자문서법, 개인정보보호법, 저작권법 핵심 내용' },
     ],
-    jobs: [
-      { title: '행정 사무원', company: '공공기관·지자체', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '경영지원 담당자', company: '중견·대기업', salary: '3,000~4,200만원', location: '서울·수도권', type: '정규직' },
-      { title: '전산 운용원', company: '금융기관·보험사', salary: '3,200~4,500만원', location: '서울·경기', type: '정규직' },
-      { title: '데이터 입력 관리자', company: '유통·물류 기업', salary: '2,800~3,600만원', location: '전국', type: '정규직' },
-      { title: '사무 보조원', company: '중소기업', salary: '2,500~3,200만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '사무자동화산업기사 필기 합격완성', author: '김미래', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '사무자동화산업기사 핵심이론 및 기출문제', author: '이보름', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -7783,13 +6727,6 @@ const CERTIFICATIONS = {
       { name: '반도체 공정', desc: '포토리소그래피, 식각, 증착, 이온주입 등 공정 기술' },
       { name: 'HDL 설계', desc: 'Verilog/VHDL 기초 문법, 논리 합성, 시뮬레이션 방법' },
       { name: '반도체 측정 및 시험', desc: '전기적 특성 측정, 수율 분석, 신뢰성 시험 기법' },
-    ],
-    jobs: [
-      { title: '반도체 설계 엔지니어', company: '팹리스 반도체 기업', salary: '4,000~6,500만원', location: '서울·수도권', type: '정규직' },
-      { title: '공정 기술 담당자', company: '반도체 파운드리', salary: '4,200~6,800만원', location: '경기·충청', type: '정규직' },
-      { title: '반도체 품질 관리자', company: '반도체 제조사', salary: '3,800~5,500만원', location: '경기·충남', type: '정규직' },
-      { title: 'EDA 툴 지원 엔지니어', company: 'EDA 솔루션 기업', salary: '3,500~5,200만원', location: '서울·경기', type: '정규직' },
-      { title: '반도체 시험 보조원', company: '반도체 테스트 업체', salary: '2,900~3,700만원', location: '경기', type: '계약직' },
     ],
     books: [
       { title: '반도체설계산업기사 필기 완전합격', author: '유재원', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -7838,13 +6775,6 @@ const CERTIFICATIONS = {
       { name: '화학분석 실무', desc: '시료 채취 및 전처리, 표준물질 조제, 검량선 작성' },
       { name: '화학물질 관련법규', desc: '화학물질관리법, 산업안전보건기준, MSDS 작성 방법' },
     ],
-    jobs: [
-      { title: '분석화학 연구원', company: '제약·바이오 기업', salary: '3,200~4,800만원', location: '서울·경기·충청', type: '정규직' },
-      { title: '품질관리 분석원', company: '화학·소재 제조사', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
-      { title: '환경 분석 기술자', company: '환경 분석 전문기관', salary: '3,200~4,600만원', location: '전국', type: '정규직' },
-      { title: '식품 분석원', company: '식품 제조·검사기관', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '분석 실험 보조원', company: '연구소·시험기관', salary: '2,700~3,400만원', location: '서울·수도권', type: '계약직' },
-    ],
     books: [
       { title: '화학분석산업기사 필기 한권완성', author: '송수빈', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '화학분석산업기사 핵심이론 및 기출문제해설', author: '변준혁', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -7891,13 +6821,6 @@ const CERTIFICATIONS = {
       { name: '열처리', desc: '담금질, 뜨임, 풀림, 불림 등 열처리 방법과 조직 변화' },
       { name: '금속 시험 및 검사', desc: '인장시험, 경도시험, 충격시험, 금속 현미경 조직 분석' },
       { name: '금속재료 관련법규', desc: '산업안전보건법, KS 규격, 재료 관련 국제 표준 이해' },
-    ],
-    jobs: [
-      { title: '금속재료 품질 관리자', company: '철강·금속 제조사', salary: '3,200~4,800만원', location: '포항·광양·인천', type: '정규직' },
-      { title: '소재 개발 연구원', company: '자동차·항공 소재 기업', salary: '3,800~5,500만원', location: '경기·충남', type: '정규직' },
-      { title: '열처리 기술 담당자', company: '금속 가공 전문업체', salary: '3,000~4,500만원', location: '경기·경북', type: '정규직' },
-      { title: '생산 기술 엔지니어', company: '금속부품 제조사', salary: '3,500~5,200만원', location: '전국', type: '정규직' },
-      { title: '금속 검사 보조원', company: '품질시험 전문기관', salary: '2,700~3,500만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '금속재료산업기사 필기 완전합격', author: '서동욱', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -7948,13 +6871,6 @@ const CERTIFICATIONS = {
       { name: '가스계측', desc: '가스 검지기, 유량계, 압력계 등 계측기기 원리' },
       { name: '가스관계법규', desc: '고압가스안전관리법, 액화석유가스법, 도시가스사업법' },
     ],
-    jobs: [
-      { title: '가스안전관리총괄자', company: '도시가스사', salary: '4,500~6,000만원', location: '전국', type: '정규직' },
-      { title: '가스설비 기술팀장', company: '플랜트 건설사', salary: '5,000~7,000만원', location: '서울·경기', type: '정규직' },
-      { title: '고압가스 관리자', company: '화학공장', salary: '4,200~5,800만원', location: '울산·여수', type: '정규직' },
-      { title: '가스시설 검사원', company: '한국가스안전공사', salary: '4,800~6,200만원', location: '전국', type: '정규직' },
-      { title: '가스설비 유지보수', company: '설비관리업체', salary: '3,800~5,000만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '가스기능장 필기 완전정복', author: '이상훈', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '가스기능장 실기 실전 대비', author: '김민준', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -8001,13 +6917,6 @@ const CERTIFICATIONS = {
       { name: '전자계측', desc: '오실로스코프, 멀티미터 등 측정기기 활용 및 교정' },
       { name: '제어공학', desc: '피드백 제어, PLC 프로그래밍, 자동화 시스템 구성' },
       { name: '전자기기설계', desc: '회로 설계, PCB 설계, 신뢰성 분석 및 품질 관리' },
-    ],
-    jobs: [
-      { title: '전자기기 개발팀장', company: '전자제품 제조사', salary: '5,000~7,500만원', location: '수원·화성', type: '정규직' },
-      { title: '자동화설비 기술감독', company: '자동화 전문업체', salary: '4,800~6,500만원', location: '서울·경기', type: '정규직' },
-      { title: '품질관리 기술책임자', company: '반도체 부품사', salary: '5,200~7,000만원', location: '경기', type: '정규직' },
-      { title: '전자설비 유지보수 매니저', company: '생산설비 업체', salary: '4,500~6,000만원', location: '전국', type: '정규직' },
-      { title: '전자기기 점검 기술자', company: '유지보수 서비스사', salary: '3,800~5,200만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '전자기기기능장 필기 완전정복', author: '홍길동', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -8056,13 +6965,6 @@ const CERTIFICATIONS = {
       { name: '자동차검사', desc: '자동차 검사 기준, 배출가스 측정, 안전 기준 검사' },
       { name: '자동차관리법규', desc: '자동차관리법, 교통안전법, 환경 관련 규정' },
     ],
-    jobs: [
-      { title: '자동차정비 기술팀장', company: '완성차 딜러사', salary: '5,000~7,000만원', location: '전국', type: '정규직' },
-      { title: '자동차검사 기술책임자', company: '자동차검사소', salary: '4,500~6,000만원', location: '전국', type: '정규직' },
-      { title: '품질보증 기술관리자', company: '자동차 부품사', salary: '4,800~6,500만원', location: '경기·충남', type: '정규직' },
-      { title: '정비교육 강사', company: '직업훈련기관', salary: '4,200~5,500만원', location: '전국', type: '정규직' },
-      { title: '자동차 특수정비 기술자', company: '수입차 전문정비', salary: '4,000~5,500만원', location: '서울·경기', type: '계약직' },
-    ],
     books: [
       { title: '자동차기능장 필기 완전정복', author: '이정비', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '자동차기능장 실기 실전서', author: '김자동차', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -8109,13 +7011,6 @@ const CERTIFICATIONS = {
       { name: '화학물질관리', desc: '유해화학물질 취급, MSDS 작성, 화학물질 안전관리' },
       { name: '환경분석', desc: '수질·대기·토양 오염물질 분석 기준 및 측정 방법' },
       { name: '품질관리', desc: '통계적 품질관리, 측정불확도, ISO 17025 기준' },
-    ],
-    jobs: [
-      { title: '화학분석 연구소장', company: '화학 연구소', salary: '5,500~8,000만원', location: '대전·수도권', type: '정규직' },
-      { title: '품질관리 기술책임자', company: '석유화학사', salary: '5,000~7,000만원', location: '울산·여수', type: '정규직' },
-      { title: '환경분석 팀장', company: '환경분석기관', salary: '4,500~6,000만원', location: '전국', type: '정규직' },
-      { title: '제약 품질보증 책임자', company: '제약회사', salary: '5,200~7,500만원', location: '경기·충북', type: '정규직' },
-      { title: '화학분석 전문가', company: '시험검사기관', salary: '4,000~5,500만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '화학분석기능장 필기 완전정복', author: '이화학', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -8164,13 +7059,6 @@ const CERTIFICATIONS = {
       { name: '원가관리', desc: '원가계산, 원가절감 기법, 표준원가, 원가분석' },
       { name: '산업안전관리', desc: '공장 안전관리, 위험성평가, 재해통계 분석' },
     ],
-    jobs: [
-      { title: '공장장', company: '제조업체', salary: '6,000~9,000만원', location: '전국', type: '정규직' },
-      { title: '생산관리 이사', company: '중견 제조사', salary: '6,500~10,000만원', location: '경기·충남', type: '정규직' },
-      { title: '품질경영 팀장', company: '자동차 부품사', salary: '5,000~7,000만원', location: '경기·울산', type: '정규직' },
-      { title: '설비관리 책임자', company: '반도체 제조사', salary: '5,500~8,000만원', location: '경기', type: '정규직' },
-      { title: '생산효율 컨설턴트', company: '경영컨설팅사', salary: '4,500~6,500만원', location: '서울·경기', type: '계약직' },
-    ],
     books: [
       { title: '공장관리기능장 필기 완전정복', author: '이공장', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '공장관리기능장 실기 실전서', author: '김관리', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -8217,13 +7105,6 @@ const CERTIFICATIONS = {
       { name: '가스안전관리', desc: '가스 사고 예방, 검지기 사용법, 안전관리 규정' },
       { name: '가스관계법규', desc: '고압가스안전관리법, LPG법, 도시가스사업법 기초' },
       { name: '가스계측', desc: '압력계, 유량계, 가스 검지기 등 기초 계측기기 원리' },
-    ],
-    jobs: [
-      { title: '가스배관 시공원', company: '도시가스 시공사', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '가스안전 관리원', company: '가스판매업체', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: 'LPG 충전소 관리원', company: 'LPG 충전소', salary: '2,800~3,600만원', location: '전국', type: '정규직' },
-      { title: '가스설비 점검원', company: '가스안전 관리업체', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '가스설비 보조 기술자', company: '건설·설비업체', salary: '2,600~3,400만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '가스기능사 필기 완전정복', author: '이가스', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -8272,13 +7153,6 @@ const CERTIFICATIONS = {
       { name: '자동차안전기준', desc: '자동차 구조·장치 안전기준, 검사 항목 및 기준치' },
       { name: '자동차관리법규', desc: '자동차관리법, 도로교통법 중 자동차 관련 규정' },
     ],
-    jobs: [
-      { title: '자동차 정비원', company: '자동차 정비업체', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '카센터 정비 기술자', company: '카센터', salary: '2,600~3,600만원', location: '전국', type: '정규직' },
-      { title: '자동차검사 보조원', company: '자동차검사소', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '딜러 정비 기술자', company: '자동차 딜러사', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '자동차 정비 보조', company: '버스·화물 운수사', salary: '2,500~3,400만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '자동차정비기능사 필기 완전정복', author: '이정비', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '자동차정비기능사 실기 실전서', author: '김자동차', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -8325,13 +7199,6 @@ const CERTIFICATIONS = {
       { name: '지게차 안전작업', desc: '작업 전 점검, 안전 운전 수칙, 재해 예방 방법' },
       { name: '도로교통 및 화물취급', desc: '도로교통법 기초, 화물 취급 규정, 신호 체계' },
       { name: '산업안전보건법규', desc: '지게차 관련 산업안전보건법, 안전보건기준에 관한 규칙' },
-    ],
-    jobs: [
-      { title: '지게차 운전원', company: '물류창고', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '항만 지게차 기사', company: '항만 하역사', salary: '3,200~4,500만원', location: '부산·인천', type: '정규직' },
-      { title: '공장 내 물류 담당', company: '제조공장', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '유통센터 지게차 기사', company: '대형 유통사', salary: '3,000~4,000만원', location: '경기·전국', type: '정규직' },
-      { title: '건설현장 지게차 기사', company: '건설현장', salary: '3,000~4,200만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '지게차운전기능사 필기 완전정복', author: '이물류', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -8380,13 +7247,6 @@ const CERTIFICATIONS = {
       { name: '건설기계관리법규', desc: '건설기계관리법, 건설기계 등록·검사 기준' },
       { name: '도로교통법 기초', desc: '건설기계 도로 통행 기준, 신호 체계, 교통법규' },
     ],
-    jobs: [
-      { title: '굴착기 운전원', company: '토목 건설사', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '건설현장 기계 기사', company: '건설현장', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '도시개발 현장 기사', company: '도시개발 시행사', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '하천 정비 운전원', company: '지자체 공공기관', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '임시 굴착기 기사', company: '토목 용역업체', salary: '일당 20~35만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '굴착기운전기능사 필기 완전정복', author: '이건설', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '굴착기운전기능사 실기 실전서', author: '김굴착기', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -8433,13 +7293,6 @@ const CERTIFICATIONS = {
       { name: '전자계측', desc: '멀티미터, 오실로스코프, 신호발생기 사용법' },
       { name: '전자기기 설치·조정', desc: '전자기기 조립, 납땜, 배선, 기본 조정 작업' },
       { name: '전기·전자 관련 법규', desc: '전기안전 관련 규정, 전자파 기준, KS 규격' },
-    ],
-    jobs: [
-      { title: '전자기기 조립원', company: '전자제품 제조사', salary: '2,600~3,500만원', location: '경기·충남', type: '정규직' },
-      { title: '가전 서비스 기술자', company: '가전 AS센터', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '통신장비 유지보수', company: '통신 설비업체', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '전자제품 검사원', company: '전자 부품사', salary: '2,600~3,400만원', location: '경기', type: '정규직' },
-      { title: '전자기기 수리 기사', company: '전자기기 수리점', salary: '2,400~3,200만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '전자기기기능사 필기 완전정복', author: '이전자', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -8488,13 +7341,6 @@ const CERTIFICATIONS = {
       { name: '자기·침투탐상검사', desc: 'MT·PT 원리, 검사 절차, 결함 지시 평가' },
       { name: '관련 법규 및 규격', desc: 'KS, ASME, AWS 등 비파괴검사 관련 규격 및 기준' },
     ],
-    jobs: [
-      { title: '비파괴검사원', company: '검사 전문업체', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '발전소 설비 검사원', company: '발전 공기업', salary: '3,500~4,800만원', location: '전국', type: '정규직' },
-      { title: '조선소 용접 검사원', company: '조선사', salary: '3,200~4,500만원', location: '거제·울산', type: '정규직' },
-      { title: '압력용기 검사 기사', company: '검사기관', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '배관 비파괴 검사원', company: '플랜트 건설사', salary: '3,000~4,500만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '비파괴검사기능사 필기 완전정복', author: '이검사', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '비파괴검사기능사 실기 실전서', author: '김비파괴', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -8542,13 +7388,6 @@ const CERTIFICATIONS = {
       { name: '데이터통신', desc: '네트워크 구성, LAN·WAN, 프로토콜, IP 기초' },
       { name: '정보통신 관련 법규', desc: '전기통신사업법, 전파법, 방송통신 관련 규정' },
     ],
-    jobs: [
-      { title: '통신설비 설치 기사', company: '통신 설비업체', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '네트워크 유지보수 기사', company: 'ISP·통신사', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '방송통신 설비 기사', company: '방송국·방송사', salary: '3,000~4,000만원', location: '서울·전국', type: '정규직' },
-      { title: '빌딩 통신 관리원', company: '건물 관리업체', salary: '2,800~3,600만원', location: '전국', type: '정규직' },
-      { title: '통신설비 점검원', company: '공공기관 위탁', salary: '2,600~3,400만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '정보통신기능사 필기 완전정복', author: '이통신', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '정보통신기능사 실기 실전서', author: '김네트워크', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -8595,13 +7434,6 @@ const CERTIFICATIONS = {
       { name: '도배 시공법', desc: '벽지 재단, 풀 바르기, 부착, 이음새 처리, 마감 기법' },
       { name: '건축 내장 기초', desc: '건축 마감 재료, 바탕면 처리, 방습·방음 기초 지식' },
       { name: '건설 관련 법규', desc: '건설산업기본법, 산업안전보건법 중 건설 안전 관련 규정' },
-    ],
-    jobs: [
-      { title: '도배 기술자', company: '인테리어 업체', salary: '2,800~4,000만원', location: '전국', type: '정규직' },
-      { title: '아파트 도배 시공원', company: '대형 건설사 협력사', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '상업공간 인테리어 기사', company: '상업 인테리어사', salary: '3,000~4,500만원', location: '서울·경기', type: '정규직' },
-      { title: '건물 유지보수 도배원', company: '건물 관리업체', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '도배 프리랜서 기술자', company: '개인 사업자', salary: '일당 15~30만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '도배기능사 필기 완전정복', author: '이도배', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -8651,13 +7483,6 @@ const CERTIFICATIONS = {
       { name: '유압일반', desc: '유압 장치의 원리, 구성 요소 및 회로 분석에 관한 과목' },
       { name: '건설기계관계법규', desc: '건설기계 관련 법령, 안전 기준 및 등록 제도에 관한 과목' },
     ],
-    jobs: [
-      { title: '건설기계 정비기술자', company: '건설기계 정비업체', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '중장비 운용 관리자', company: '종합건설사', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '건설기계 검사원', company: '건설기계 검사기관', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '장비 유지보수 담당', company: '토목공사 전문업체', salary: '3,200~4,500만원', location: '서울/경기', type: '정규직' },
-      { title: '건설기계 기술지원', company: '건설기계 제조사', salary: '2,800~3,800만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '건설기계산업기사 필기 한권완성', author: '이재천', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '건설기계산업기사 실기 완전정복', author: '박성호', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -8705,13 +7530,6 @@ const CERTIFICATIONS = {
       { name: '안전 및 법규', desc: '중량물 취급 안전 기준, 신호 체계 및 관련 법령에 관한 과목' },
       { name: '건설기계관계법규', desc: '건설기계 등록, 검사 및 운행 관련 법규에 관한 과목' },
     ],
-    jobs: [
-      { title: '기중기 운전원', company: '종합건설사', salary: '3,500~5,200만원', location: '전국', type: '정규직' },
-      { title: '크레인 조종사', company: '플랜트 건설업체', salary: '3,800~5,500만원', location: '전국', type: '정규직' },
-      { title: '양중 작업 전문원', company: '중공업·조선사', salary: '4,000~5,800만원', location: '울산/부산', type: '정규직' },
-      { title: '장비 운용 기술자', company: '물류·항만업체', salary: '3,500~5,000만원', location: '인천/부산', type: '정규직' },
-      { title: '기중기 운전 보조', company: '건설장비 임대업체', salary: '2,800~3,800만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '기중기운전기능사 필기 완전정복', author: '이승준', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '기중기운전기능사 실기 한권완성', author: '최민호', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -8758,13 +7576,6 @@ const CERTIFICATIONS = {
       { name: '전기 제어 장치', desc: '전동기, 인버터, 리미트스위치 등 전기 제어 계통 구조와 점검' },
       { name: '안전 관리 및 신호', desc: '타워크레인 설치·해체 안전기준, 과부하 방지, 줄걸이 작업' },
       { name: '건설기계관계법규', desc: '건설기계관리법, 산업안전보건법 관련 크레인 규정 및 검사 기준' },
-    ],
-    jobs: [
-      { title: '타워크레인 운전원', company: '건설사·크레인임대사', salary: '4,500~7,000만원', location: '전국', type: '프리랜서' },
-      { title: '아파트 건설 크레인 기사', company: '대형 건설사', salary: '5,000~8,000만원', location: '전국', type: '계약직' },
-      { title: '플랜트 타워크레인 기사', company: '플랜트·발전소 건설사', salary: '5,500~9,000만원', location: '전국/해외', type: '계약직' },
-      { title: '크레인 운전·정비 기사', company: '건설기계 임대업체', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '해외 건설 현장 크레인 기사', company: '해외 플랜트 건설사', salary: '8,000~1억 2,000만원', location: '해외', type: '계약직' },
     ],
     books: [
       { title: '2026 시대에듀 Win-Q 타워크레인운전기능사 필기 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.6 },
@@ -8814,13 +7625,6 @@ const CERTIFICATIONS = {
       { name: '안전 관리 및 신호', desc: '항만 작업 안전기준, 컨테이너 낙하 방지, 선내 신호 체계' },
       { name: '건설기계관계법규', desc: '건설기계관리법, 항만법, 산업안전보건법 관련 크레인 규정' },
     ],
-    jobs: [
-      { title: '컨테이너크레인 운전원', company: '컨테이너터미널(항만)', salary: '4,500~6,500만원', location: '부산·인천·광양', type: '정규직' },
-      { title: '항만 하역 크레인 기사', company: '항만하역업체', salary: '4,000~6,000만원', location: '부산·인천', type: '정규직' },
-      { title: '부두 크레인 운전원', company: '항만공사(PA)', salary: '4,200~6,000만원', location: '부산·인천·광양', type: '정규직' },
-      { title: '해외 항만 크레인 기사', company: '해외 터미널 운영사', salary: '7,000~1억원', location: '해외', type: '계약직' },
-      { title: '크레인 운전·정비 기술원', company: '터미널 운영사', salary: '3,800~5,200만원', location: '전국 항만', type: '정규직' },
-    ],
     books: [
       { title: '2026 시대에듀 Win-Q 컨테이너크레인운전기능사 필기 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.6 },
       { title: '컨테이너크레인운전기능사 필기 핵심요약+기출문제', author: '이패스코리아 편집부', publisher: '이패스코리아', year: 2024, rating: 4.4 },
@@ -8867,13 +7671,6 @@ const CERTIFICATIONS = {
       { name: '농기계 운전 조작', desc: '경운·파종·수확·방제 등 작업별 농기계 운전 기술과 안전 수칙' },
       { name: '농기계 점검 및 정비', desc: '엔진 오일·필터·벨트 등 기본 점검 항목과 이상 발생 시 대처법' },
       { name: '농작업 안전 및 관련 법규', desc: '농기계 안전사고 예방, 농업기계화 촉진법 관련 주요 규정' },
-    ],
-    jobs: [
-      { title: '농기계 운전원', company: '농업법인·영농조합', salary: '2,800~3,800만원', location: '전국 농촌', type: '정규직' },
-      { title: '농협 농기계 임대 기사', company: '지역 농협', salary: '2,500~3,500만원', location: '전국', type: '정규직' },
-      { title: '스마트팜 농기계 기사', company: '스마트팜 업체', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '농기계 임대·운반 기사', company: '농기계 임대업체', salary: '2,600~3,600만원', location: '전국', type: '계약직' },
-      { title: '밭농업·논농업 전문 기사', company: '대규모 농업법인', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '2026 시대에듀 Win-Q 농기계정비·운전기능사 필기 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.6 },
@@ -8923,13 +7720,6 @@ const CERTIFICATIONS = {
       { name: '안전 관리 및 신호', desc: '크레인 작업 안전 기준, 신호 체계 및 줄걸이 작업에 관한 과목' },
       { name: '건설기계관계법규', desc: '크레인 검사·등록·운행에 관한 법령 및 기준에 관한 과목' },
     ],
-    jobs: [
-      { title: '천장크레인 운전원', company: '철강·금속 제조사', salary: '3,400~5,000만원', location: '전국', type: '정규직' },
-      { title: '크레인 운전 기술자', company: '자동차 조립공장', salary: '3,600~5,200만원', location: '울산/광주', type: '정규직' },
-      { title: '조선소 크레인 조종사', company: '조선·중공업', salary: '4,000~5,800만원', location: '거제/울산', type: '정규직' },
-      { title: '물류 크레인 운전원', company: '대형 물류창고', salary: '3,200~4,500만원', location: '인천/경기', type: '정규직' },
-      { title: '크레인 운전 보조', company: '건설 현장', salary: '2,800~3,800만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '천장크레인운전기능사 필기 완전정복', author: '정해성', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '천장크레인운전기능사 실기 한권완성', author: '이상훈', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -8976,13 +7766,6 @@ const CERTIFICATIONS = {
       { name: '유압 장치', desc: '유압 펌프, 실린더, 제어 밸브 등 유압 시스템에 관한 과목' },
       { name: '토공 작업 방법', desc: '굴착, 성토, 정지 등 토공 작업의 효율적 시공 방법에 관한 과목' },
       { name: '건설기계관계법규', desc: '건설기계 등록, 검사 및 안전 운행에 관한 법령에 관한 과목' },
-    ],
-    jobs: [
-      { title: '불도저 운전원', company: '토목공사 전문업체', salary: '3,300~4,800만원', location: '전국', type: '정규직' },
-      { title: '토공 장비 기술자', company: '도로건설 업체', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '건설 현장 장비 운용', company: '종합건설사', salary: '3,400~5,200만원', location: '전국', type: '정규직' },
-      { title: '택지개발 토공 전문원', company: '공기업·LH', salary: '3,600~5,000만원', location: '전국', type: '정규직' },
-      { title: '토공 장비 임대 운전', company: '건설장비 임대업체', salary: '2,800~3,800만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '불도저운전기능사 필기 완전정복', author: '김건우', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -9031,13 +7814,6 @@ const CERTIFICATIONS = {
       { name: '로더 작업 방법', desc: '굴착, 적재, 운반 등 효율적 로더 작업 기법에 관한 과목' },
       { name: '건설기계관계법규', desc: '건설기계 등록, 검사, 운행 안전에 관한 법령에 관한 과목' },
     ],
-    jobs: [
-      { title: '로더 운전원', company: '골재·채석 업체', salary: '3,200~4,800만원', location: '전국', type: '정규직' },
-      { title: '건설현장 적재 장비 기술자', company: '토목공사 전문업체', salary: '3,400~5,000만원', location: '전국', type: '정규직' },
-      { title: '항만 하역 로더 운전', company: '항만·물류업체', salary: '3,500~5,200만원', location: '인천/부산', type: '정규직' },
-      { title: '산업단지 장비 운용', company: '산업단지 관리업체', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '건설 로더 임대 운전', company: '건설장비 임대업체', salary: '2,800~3,800만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '로더운전기능사 필기 완전정복', author: '강민수', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '로더운전기능사 실기 한권완성', author: '윤재호', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -9084,13 +7860,6 @@ const CERTIFICATIONS = {
       { name: '유압 장치', desc: '블레이드 제어용 유압 회로 및 구성 요소에 관한 과목' },
       { name: '정지·정형 작업 방법', desc: '도로 정지, 사면 정형, 제설 등 효율적 작업 기법에 관한 과목' },
       { name: '건설기계관계법규', desc: '건설기계 등록, 검사 및 도로 운행에 관한 법령에 관한 과목' },
-    ],
-    jobs: [
-      { title: '모터그레이더 운전원', company: '도로건설 업체', salary: '3,400~5,000만원', location: '전국', type: '정규직' },
-      { title: '토목공사 정지 장비 기술자', company: '토목공사 전문업체', salary: '3,500~5,200만원', location: '전국', type: '정규직' },
-      { title: '비행장 건설 장비 운용', company: '공항 건설 업체', salary: '3,800~5,500만원', location: '전국', type: '정규직' },
-      { title: '댐·저수지 토공 전문원', company: '수자원 공사', salary: '3,600~5,000만원', location: '전국', type: '정규직' },
-      { title: '그레이더 임대 운전', company: '건설장비 임대업체', salary: '2,800~3,800만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '모터그레이더운전기능사 필기 완전정복', author: '한상욱', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -9140,13 +7909,6 @@ const CERTIFICATIONS = {
       { name: '건설기계전기', desc: '전기 계통 구성 요소, 시동·충전·조명 회로 점검 방법' },
       { name: '건설기계관계법규', desc: '건설기계관리법, 도로교통법 등 운전자 준수 법규 사항' },
     ],
-    jobs: [
-      { title: '롤러 운전원', company: '도로공사 전문업체', salary: '3,200~4,000만원', location: '전국', type: '정규직' },
-      { title: '포장공사 운전원', company: '건설시공사', salary: '3,000~3,800만원', location: '전국', type: '정규직' },
-      { title: '토목공사 장비 운전원', company: '토목전문건설사', salary: '3,100~3,900만원', location: '수도권', type: '정규직' },
-      { title: '지반 다짐 장비 기사', company: '대형 건설사', salary: '3,400~4,200만원', location: '전국', type: '정규직' },
-      { title: '건설장비 임대 운전원', company: '장비임대업체', salary: '2,800~3,500만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '롤러운전기능사 필기 완전정복', author: '건설기계연구회', publisher: '크라운출판사', year: 2024, rating: 4.5 },
       { title: '건설기계운전기능사 시리즈 핵심요약', author: '이현우', publisher: '성안당', year: 2024, rating: 4.4 },
@@ -9193,13 +7955,6 @@ const CERTIFICATIONS = {
       { name: '유압일반', desc: '천공 작업용 유압 회로, 고압 유압 장치 원리 및 점검' },
       { name: '건설기계전기', desc: '전기 계통 구성 요소, 제어 시스템 및 안전 장치 작동 이해' },
       { name: '건설기계관계법규', desc: '건설기계관리법, 산업안전보건법 등 천공 작업 관련 법규' },
-    ],
-    jobs: [
-      { title: '천공기 운전원', company: '터널공사 전문업체', salary: '3,500~4,500만원', location: '전국', type: '정규직' },
-      { title: '암반 굴착 기사', company: '기초공사 전문업체', salary: '3,400~4,300만원', location: '전국', type: '정규직' },
-      { title: '토목공사 천공 운전원', company: '대형 토목건설사', salary: '3,600~4,600만원', location: '수도권', type: '정규직' },
-      { title: '발파·천공 장비 기사', company: '광산·채석업체', salary: '3,800~4,800만원', location: '지방', type: '정규직' },
-      { title: '건설장비 임대 운전원', company: '건설장비임대사', salary: '3,000~3,800만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '천공기운전기능사 필기 완전정복', author: '건설기계연구회', publisher: '크라운출판사', year: 2024, rating: 4.5 },
@@ -9248,13 +8003,6 @@ const CERTIFICATIONS = {
       { name: '건설기계전기', desc: '전기 계통, 제어 장치, 안전 장치 구성 및 점검 방법' },
       { name: '건설기계관계법규', desc: '건설기계관리법, 항만·교량 공사 관련 안전 법규 사항' },
     ],
-    jobs: [
-      { title: '항타기 운전원', company: '기초공사 전문업체', salary: '3,500~4,500만원', location: '전국', type: '정규직' },
-      { title: '말뚝 공사 장비 기사', company: '지반공사 전문업체', salary: '3,400~4,400만원', location: '전국', type: '정규직' },
-      { title: '항만·교량 건설 운전원', company: '대형 건설사', salary: '3,700~4,700만원', location: '수도권·항만', type: '정규직' },
-      { title: '토목기초 장비 운전원', company: '토목전문건설사', salary: '3,300~4,200만원', location: '전국', type: '정규직' },
-      { title: '건설장비 임대 운전원', company: '중장비임대업체', salary: '3,000~3,800만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '항타및항발기운전기능사 필기 완전정복', author: '건설기계연구회', publisher: '크라운출판사', year: 2024, rating: 4.5 },
       { title: '건설기계 기초공사 장비 핵심이론', author: '정민준', publisher: '성안당', year: 2024, rating: 4.4 },
@@ -9301,13 +8049,6 @@ const CERTIFICATIONS = {
       { name: '유압일반', desc: '압축 공기 계통, 공압 회로 구성 요소 및 작동 원리 이해' },
       { name: '건설기계전기', desc: '전동기 구동 회로, 압력 스위치, 안전밸브 등 전기 제어 장치' },
       { name: '건설기계관계법규', desc: '건설기계관리법, 고압가스안전관리법 등 압축기 관련 법규' },
-    ],
-    jobs: [
-      { title: '공기압축기 운전원', company: '건설시공사', salary: '3,000~3,800만원', location: '전국', type: '정규직' },
-      { title: '플랜트 압축기 기사', company: '플랜트·제조업체', salary: '3,200~4,000만원', location: '산업단지', type: '정규직' },
-      { title: '토목공사 장비 운전원', company: '토목전문건설사', salary: '3,100~3,900만원', location: '전국', type: '정규직' },
-      { title: '압축기 유지보수 기사', company: '설비관리업체', salary: '3,300~4,100만원', location: '전국', type: '정규직' },
-      { title: '건설장비 임대 운전원', company: '장비임대업체', salary: '2,800~3,500만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '공기압축기운전기능사 필기 완전정복', author: '건설기계연구회', publisher: '크라운출판사', year: 2024, rating: 4.5 },
@@ -9356,13 +8097,6 @@ const CERTIFICATIONS = {
       { name: '건설기계전기', desc: '전기 제어 계통, 원격 제어 장치, 안전 인터록 장치 점검' },
       { name: '건설기계관계법규', desc: '건설기계관리법, 건설현장 안전관리 관련 법규 및 준수 사항' },
     ],
-    jobs: [
-      { title: '콘크리트펌프 운전원', company: '레미콘·건설업체', salary: '3,300~4,200만원', location: '전국', type: '정규직' },
-      { title: '압송 장비 기사', company: '건설시공사', salary: '3,200~4,000만원', location: '수도권', type: '정규직' },
-      { title: '아파트 공사 장비 운전원', company: '주택건설사', salary: '3,400~4,300만원', location: '수도권·광역시', type: '정규직' },
-      { title: '토목·교량 공사 운전원', company: '토목전문건설사', salary: '3,500~4,400만원', location: '전국', type: '정규직' },
-      { title: '건설장비 임대 운전원', company: '중장비임대업체', salary: '3,000~3,700만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '콘크리트펌프운전기능사 필기 완전정복', author: '건설기계연구회', publisher: '크라운출판사', year: 2024, rating: 4.5 },
       { title: '건설기계운전 핵심이론 및 실기 해설', author: '최준혁', publisher: '성안당', year: 2024, rating: 4.4 },
@@ -9410,13 +8144,6 @@ const CERTIFICATIONS = {
       { name: '건설기계전기', desc: '전기 제어 시스템, 자동 레벨링 장치, 가열 장치 전기 회로' },
       { name: '건설기계관계법규', desc: '건설기계관리법, 도로법, 도로 포장 공사 관련 안전 법규' },
     ],
-    jobs: [
-      { title: '아스팔트피니셔 운전원', company: '도로포장 전문업체', salary: '3,400~4,300만원', location: '전국', type: '정규직' },
-      { title: '도로 포장 장비 기사', company: '건설시공사', salary: '3,300~4,200만원', location: '전국', type: '정규직' },
-      { title: '고속도로 공사 운전원', company: '고속도로 건설사', salary: '3,600~4,500만원', location: '전국', type: '정규직' },
-      { title: '국도 포장 공사 운전원', company: '토목전문건설사', salary: '3,200~4,000만원', location: '전국', type: '정규직' },
-      { title: '도로 장비 임대 운전원', company: '도로장비임대업체', salary: '3,000~3,700만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '아스팔트피니셔운전기능사 필기 완전정복', author: '건설기계연구회', publisher: '크라운출판사', year: 2024, rating: 4.5 },
       { title: '도로포장 건설기계 핵심이론', author: '오재훈', publisher: '성안당', year: 2024, rating: 4.4 },
@@ -9463,13 +8190,6 @@ const CERTIFICATIONS = {
       { name: '기능시험', desc: '차로 변경·주차·경사로 출발 등 코스 주행' },
       { name: '도로주행', desc: '실제 도로에서 규정 준수 및 안전 운전 평가' },
     ],
-    jobs: [
-      { title: '버스 운전기사', company: '시내버스·고속버스 운수회사', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
-      { title: '화물차 기사', company: '물류·운송회사', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '굴절차량 운전원', company: '굴절버스 운수회사', salary: '3,200~4,200만원', location: '수도권', type: '정규직' },
-      { title: '특수차량 운전원', company: '건설·중장비 업체', salary: '3,500~5,500만원', location: '전국', type: '정규직' },
-      { title: '대형 트럭 운전기사', company: '택배·물류 대기업', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { title: '2026 운전면허 학과시험 총정리 (1·2종 공통)', author: '도로교통공단', publisher: '도로교통공단', year: 2025, rating: 4.7 },
       { title: '운전면허 1종 대형 핵심 요약집', author: '카스쿨 편집부', publisher: '카스쿨', year: 2025, rating: 4.4 },
@@ -9515,13 +8235,6 @@ const CERTIFICATIONS = {
       { name: '기능시험', desc: '차로 변경·주차·경사로 출발 등 코스 주행' },
       { name: '도로주행', desc: '실제 도로에서 규정 준수 및 안전 운전 평가' },
     ],
-    jobs: [
-      { title: '택시 운전사', company: '개인·법인 택시 회사', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '화물차 기사', company: '중소 운송·물류회사', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '렌터카 드라이버', company: '렌터카·카셰어링 업체', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '셔틀버스 운전기사', company: '기업·학교·공공기관', salary: '2,800~3,500만원', location: '전국', type: '정규직' },
-      { title: '대리운전 기사', company: '대리운전 플랫폼', salary: '2,500~4,000만원', location: '전국', type: '프리랜서' },
-    ],
     books: [
       { title: '2026 운전면허 학과시험 총정리 (1·2종 공통)', author: '도로교통공단', publisher: '도로교통공단', year: 2025, rating: 4.7 },
       { title: '2026 한번에 합격하는 운전면허 학과 문제집', author: '이패스코리아 편집부', publisher: '이패스코리아', year: 2025, rating: 4.5 },
@@ -9566,13 +8279,6 @@ const CERTIFICATIONS = {
       { name: '안전운전', desc: '긴급 상황 대처 및 방어운전' },
       { name: '기능시험', desc: '차로 변경·주차·경사로 출발 등 코스 주행' },
       { name: '도로주행', desc: '실제 도로에서 규정 준수 및 안전 운전 평가' },
-    ],
-    jobs: [
-      { title: '배달 드라이버', company: '쿠팡·마켓컬리 등 물류 플랫폼', salary: '2,800~4,000만원', location: '전국', type: '계약직' },
-      { title: '영업용 차량 운전기사', company: '중소기업·유통회사', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '카셰어링 관리원', company: '카셰어링·렌터카 업체', salary: '2,500~3,200만원', location: '전국', type: '정규직' },
-      { title: '사설 구급차 운전원', company: '사설 응급 이송업체', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '경비·시설 관리원', company: '아파트·건물 관리업체', salary: '2,400~3,200만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '2026 운전면허 학과시험 총정리 (1·2종 공통)', author: '도로교통공단', publisher: '도로교통공단', year: 2025, rating: 4.7 },
@@ -9625,13 +8331,6 @@ const CERTIFICATIONS = {
       { name: '화물취급요령', desc: '화물의 적재·고박·포장 방법, 위험물·특수화물 취급 기준' },
       { name: '안전운행', desc: '방어운전, 피로 관리, 기상 조건별 운전 요령, 교통사고 예방' },
       { name: '운송서비스', desc: '고객 응대, 화물 인수도, 운임 계산, 운송장 작성 방법' },
-    ],
-    jobs: [
-      { title: '택배 배송기사', company: '택배·물류업체', salary: '3,000~4,500만원', location: '전국', type: '계약직' },
-      { title: '용달·개별화물 기사', company: '개인사업자', salary: '3,500~5,000만원', location: '전국', type: '개인사업' },
-      { title: '화물차량 운전원', company: '일반화물운송업체', salary: '3,200~4,800만원', location: '전국', type: '정규직' },
-      { title: '냉동·냉장 화물기사', company: '식품·유통업체', salary: '3,500~5,200만원', location: '전국', type: '정규직' },
-      { title: '위험물 운반 차량 기사', company: '위험물운송업체', salary: '3,800~5,500만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '화물운송종사자격 한권으로 끝내기', author: '김동현', publisher: '성안당', year: 2025, rating: 4.6 },
@@ -9686,13 +8385,6 @@ const CERTIFICATIONS = {
       { name: '운송서비스', desc: '승객 서비스, 장애인·노약자 응대, 민원 처리, 요금 수수 절차' },
       { name: '교통사고 및 응급처치', desc: '교통사고 처리 절차, 심폐소생술(CPR), 응급처치 기본 방법' },
     ],
-    jobs: [
-      { title: '시내버스 기사', company: '시내버스 운수업체', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '고속버스·시외버스 기사', company: '고속·시외버스업체', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '전세버스 기사', company: '전세버스업체', salary: '3,200~4,800만원', location: '전국', type: '정규직' },
-      { title: '통근·통학버스 기사', company: '기업·학교', salary: '2,800~3,800만원', location: '전국', type: '계약직' },
-      { title: '공항리무진 버스 기사', company: '공항운송업체', salary: '3,500~4,500만원', location: '서울·경기·인천', type: '정규직' },
-    ],
     books: [
       { title: '버스운전자격 한권으로 끝내기', author: '김동현', publisher: '성안당', year: 2025, rating: 4.6 },
       { title: '버스운전자격 핵심요약+기출문제', author: '이패스코리아 편집부', publisher: '이패스코리아', year: 2025, rating: 4.5 },
@@ -9745,13 +8437,6 @@ const CERTIFICATIONS = {
       { name: '운송서비스', desc: '승객 응대 예절, 카드·현금 결제, 콜택시 시스템, 민원 처리 방법' },
       { name: '지리(응시 지역)', desc: '응시 지역 주요 도로·명소·공공기관·교통 체계 숙지 (지역별 출제)' },
     ],
-    jobs: [
-      { title: '법인택시 기사', company: '택시운수법인', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '개인택시 기사', company: '개인사업자', salary: '3,500~5,500만원', location: '전국', type: '개인사업' },
-      { title: '플랫폼택시 기사', company: '카카오T·타다 등', salary: '3,200~4,800만원', location: '전국', type: '계약직' },
-      { title: '대리운전·택시 겸업', company: '개인', salary: '2,500~3,500만원', location: '전국', type: '개인사업' },
-      { title: '모범택시 기사', company: '모범택시 업체', salary: '3,800~5,200만원', location: '대도시', type: '정규직' },
-    ],
     books: [
       { title: '택시운전자격 한권으로 끝내기', author: '김동현', publisher: '성안당', year: 2025, rating: 4.6 },
       { title: '택시운전자격 핵심요약+기출문제', author: '이패스코리아 편집부', publisher: '이패스코리아', year: 2025, rating: 4.5 },
@@ -9798,13 +8483,6 @@ const CERTIFICATIONS = {
       { name: '도로주행', desc: '실제 도로 환경에서의 이륜차 조작 및 주행' },
       { name: '기초기능', desc: '이륜차 발진·정지·방향 전환 등 기본 조작' },
       { name: '이륜차 구조', desc: '이륜차 기본 구조 및 점검 요령' },
-    ],
-    jobs: [
-      { title: '배달라이더', company: '배달 플랫폼', salary: '3,000~4,500만원', location: '전국', type: '계약직' },
-      { title: '퀵서비스 기사', company: '물류·배송업체', salary: '3,000~4,000만원', location: '수도권', type: '정규직' },
-      { title: '이륜차 강사', company: '운전면허학원', salary: '3,500~4,500만원', location: '전국', type: '정규직' },
-      { title: '이륜차 정비원', company: '이륜차 정비소', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '우편집배원', company: '우체국·공공기관', salary: '3,200~4,200만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '이륜자동차 운전면허 학과시험 총정리', author: '도로교통공단', publisher: '도로교통공단', year: 2024, rating: 4.5 },
@@ -9853,13 +8531,6 @@ const CERTIFICATIONS = {
       { name: '자동차차체정비', desc: '차체 구조, 판금·도장 및 안전기준' },
       { name: '자동차정비검사', desc: '법정 정기검사 기준 및 검사 방법론' },
     ],
-    jobs: [
-      { title: '자동차정비기사', company: '완성차 딜러 서비스센터', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '정비팀장', company: '자동차 정비업체', salary: '4,500~6,000만원', location: '수도권', type: '정규직' },
-      { title: '자동차검사원', company: '자동차검사소', salary: '3,800~5,000만원', location: '전국', type: '정규직' },
-      { title: '기술지원 엔지니어', company: '자동차부품 제조사', salary: '4,200~5,500만원', location: '수도권·충청', type: '정규직' },
-      { title: '자동차정비 강사', company: '직업훈련기관', salary: '3,500~4,500만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '자동차정비기사 필기 완전정복', author: '이정비', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '자동차정비기사 실기 실전문제', author: '박엔진', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -9907,13 +8578,6 @@ const CERTIFICATIONS = {
       { name: '자동차정비', desc: '각 장치별 분해·조립·측정 및 수리 실무' },
       { name: '안전관리', desc: '정비 작업 중 산업안전 및 환경 법규 준수' },
     ],
-    jobs: [
-      { title: '자동차정비 기술원', company: '자동차 정비업체', salary: '3,500~4,800만원', location: '전국', type: '정규직' },
-      { title: '서비스 어드바이저', company: '완성차 딜러사', salary: '3,800~5,000만원', location: '수도권', type: '정규직' },
-      { title: '자동차검사원', company: '자동차검사소', salary: '3,500~4,500만원', location: '전국', type: '정규직' },
-      { title: '정비기술 지원', company: '자동차부품 제조사', salary: '3,800~5,000만원', location: '수도권·경기', type: '정규직' },
-      { title: '자동차정비 교육강사', company: '직업능력개발원', salary: '3,200~4,200만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '자동차정비산업기사 필기 단기완성', author: '최정비', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '자동차정비산업기사 실기 실전정복', author: '이섀시', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -9960,13 +8624,6 @@ const CERTIFICATIONS = {
       { name: '자동차전기·전자 고급정비', desc: 'CAN 통신, 첨단 안전장치(ADAS) 진단 및 수리' },
       { name: '자동차 작업관리', desc: '현장 지도·감독, 작업 표준 수립 및 품질 관리' },
       { name: '안전·환경관리', desc: '고전압 전기차 안전 작업 및 폐기물 처리 기준' },
-    ],
-    jobs: [
-      { title: '정비소 소장·기술이사', company: '자동차 정비업체', salary: '5,000~7,000만원', location: '전국', type: '정규직' },
-      { title: '완성차 서비스 마스터', company: '완성차 딜러사', salary: '5,500~7,500만원', location: '수도권', type: '정규직' },
-      { title: '자동차검사 수석검사원', company: '자동차검사소', salary: '4,500~6,000만원', location: '전국', type: '정규직' },
-      { title: '기술훈련 교수', company: '직업능력개발원·폴리텍대', salary: '4,800~6,500만원', location: '전국', type: '정규직' },
-      { title: '자동차 기술 컨설턴트', company: '자동차 컨설팅사', salary: '5,000~8,000만원', location: '수도권', type: '계약직' },
     ],
     books: [
       { title: '자동차정비기능장 필기 완전정복', author: '이마스터', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -10016,13 +8673,6 @@ const CERTIFICATIONS = {
       { name: '자동차 구조', desc: '차체 구조·부품 명칭, 안전 구조물(필러·사이드실 등)' },
       { name: '도면 해독', desc: '차체 수리 도면 및 부품 카탈로그 해독 방법' },
     ],
-    jobs: [
-      { title: '차체수리 기술자', company: '자동차 보험 수리 전문점', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '판금·용접 담당', company: '자동차 딜러 직영 서비스센터', salary: '3,200~4,200만원', location: '수도권', type: '정규직' },
-      { title: '차체 복원 기술자', company: '일반 카센터', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '사고차량 수리 담당', company: '렌터카·리스 회사 정비팀', salary: '3,000~3,800만원', location: '수도권·광역시', type: '정규직' },
-      { title: '차체수리 보조', company: '자동차 수리 전문점', salary: '2,400~3,000만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '자동차차체수리기능사 필기+실기', author: '이재훈', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '차체수리기능사 한권으로 끝내기', author: '박동준', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -10069,13 +8719,6 @@ const CERTIFICATIONS = {
       { name: '표면 처리', desc: '연마·탈지·마스킹 등 도장 전 표면 준비 작업' },
       { name: '도료 및 재료', desc: '도료 종류·성분, 희석제·경화제 사용법' },
       { name: '도장 결함 및 보정', desc: '핀홀·오렌지필·흘림 등 도장 결함 원인 및 보정 방법' },
-    ],
-    jobs: [
-      { title: '보수도장 기술자', company: '자동차 보험 수리 전문점', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '도장 담당', company: '자동차 딜러 직영 서비스센터', salary: '3,200~4,200만원', location: '수도권', type: '정규직' },
-      { title: '차량 도색 전문가', company: '도장 전문 수리점', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '도장 기술자', company: '완성차 협력 정비사', salary: '3,000~4,000만원', location: '수도권·광역시', type: '정규직' },
-      { title: '도장 보조 기술자', company: '카센터·소형 수리점', salary: '2,400~3,000만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '자동차보수도장기능사 필기+실기', author: '이승철', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -10124,13 +8767,6 @@ const CERTIFICATIONS = {
       { name: '등화·소음 검사', desc: '전조등 조사 방향, 경음기·배기소음 측정 방법' },
       { name: '자동차 공학', desc: '엔진·섀시·전기 시스템 구조 및 작동 원리' },
     ],
-    jobs: [
-      { title: '자동차검사원', company: '한국교통안전공단', salary: '3,800~5,000만원', location: '전국', type: '정규직' },
-      { title: '자동차검사 기사', company: '민간 자동차검사소', salary: '3,500~4,500만원', location: '전국', type: '정규직' },
-      { title: '차량검사 담당', company: '화물·버스 운수회사', salary: '3,200~4,200만원', location: '전국', type: '정규직' },
-      { title: '기술 검사원', company: '자동차 제조사 품질팀', salary: '4,000~5,500만원', location: '수도권·충청', type: '정규직' },
-      { title: '검사 보조원', company: '민간 검사 대행업체', salary: '2,800~3,500만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '자동차검사기사 필기 완전정복', author: '박성진', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '자동차검사기사 한권으로 끝내기', author: '최현우', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -10178,13 +8814,6 @@ const CERTIFICATIONS = {
       { name: '등화·소음 검사', desc: '전조등 조사 방향 측정, 경음기·배기소음 검사 기준' },
       { name: '자동차 구조 및 기능', desc: '주요 자동차 시스템 구조 파악 및 검사 관련 항목 이해' },
     ],
-    jobs: [
-      { title: '자동차검사원', company: '민간 자동차검사소', salary: '3,200~4,200만원', location: '전국', type: '정규직' },
-      { title: '차량 검사 담당', company: '화물·버스 운수회사', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '검사 실무원', company: '한국교통안전공단 위탁 검사소', salary: '3,000~3,800만원', location: '전국', type: '정규직' },
-      { title: '기술 지원', company: '자동차부품 제조사', salary: '3,200~4,000만원', location: '수도권·충청', type: '정규직' },
-      { title: '검사 보조원', company: '자동차 검사 대행업체', salary: '2,600~3,200만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '자동차검사산업기사 필기+실기', author: '이상호', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '자동차검사산업기사 한권으로 끝내기', author: '강민준', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -10231,13 +8860,6 @@ const CERTIFICATIONS = {
       { name: '전자제어 시스템', desc: 'TCU 제어 로직, 솔레노이드 밸브, 자기진단 코드 분석' },
       { name: '변속기 진단·정비', desc: '이상 증상 진단 절차, 분해·조립 순서, 측정 기준값' },
       { name: '자동차 전기·전자', desc: '자동변속기 관련 센서·액추에이터, 회로도 해독' },
-    ],
-    jobs: [
-      { title: '변속기 정비 기술자', company: '자동차 딜러 직영 서비스센터', salary: '3,200~4,200만원', location: '수도권·광역시', type: '정규직' },
-      { title: '변속기 전문 정비사', company: '변속기 전문 정비점', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '자동차 정비 기술자', company: '종합 자동차 정비소', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '기술 지원', company: '자동변속기 부품 제조사', salary: '3,500~4,500만원', location: '수도권·충청', type: '정규직' },
-      { title: '정비 보조', company: '카센터·중소 정비소', salary: '2,400~3,000만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '자동변속기정비기능사 필기+실기', author: '한상욱', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -10287,13 +8909,6 @@ const CERTIFICATIONS = {
       { name: '열역학', desc: '열역학 법칙, 사이클 해석, 냉동·증기 사이클 응용' },
       { name: '유체역학', desc: '유체 정역학·동역학, 관 유동 해석, 펌프 및 유압 기초' },
     ],
-    jobs: [
-      { title: '기계설계 엔지니어', company: '제조 중견기업', salary: '3,800~5,500만원', location: '경기·인천', type: '정규직' },
-      { title: 'CAD/CAM 설계원', company: '부품가공 전문업체', salary: '3,500~4,800만원', location: '경남·울산', type: '정규직' },
-      { title: '생산기술 엔지니어', company: '자동차 부품사', salary: '4,000~5,800만원', location: '경기·충남', type: '정규직' },
-      { title: '설비설계 담당', company: '플랜트·중공업사', salary: '4,200~6,000만원', location: '부산·울산', type: '정규직' },
-      { title: '기계설계 계약직', company: '엔지니어링 전문업체', salary: '3,200~4,200만원', location: '서울·경기', type: '계약직' },
-    ],
     books: [
       { title: '기계설계기사 필기 핵심이론+기출문제', author: '한호수', publisher: '성안당', year: 2024, rating: 4.6 },
       { title: '기계설계기사 실기 완전정복', author: '이창범', publisher: '일진사', year: 2024, rating: 4.5 },
@@ -10340,13 +8955,6 @@ const CERTIFICATIONS = {
       { name: '기계재료', desc: '금속 재료의 성질, 열처리, 비금속 재료 및 재료 선택 기준' },
       { name: '재료역학', desc: '응력·변형률, 보의 굽힘, 축의 비틀림 등 구조 해석 기초' },
       { name: '공유압기기', desc: '유압·공압 회로 구성, 실린더·밸브 동작 원리 및 제어 기초' },
-    ],
-    jobs: [
-      { title: '기계설계 보조 엔지니어', company: '중소 제조업체', salary: '3,200~4,500만원', location: '경기·인천', type: '정규직' },
-      { title: '도면 작성 담당', company: '부품가공업체', salary: '3,000~4,200만원', location: '경남·경북', type: '정규직' },
-      { title: '생산기술 지원', company: '자동차 부품 협력사', salary: '3,300~4,600만원', location: '충남·충북', type: '정규직' },
-      { title: '설비 유지보수 담당', company: '식품·화학 제조사', salary: '3,100~4,300만원', location: '전국', type: '정규직' },
-      { title: 'CAD 오퍼레이터', company: '엔지니어링 업체', salary: '2,800~3,800만원', location: '서울·경기', type: '계약직' },
     ],
     books: [
       { title: '기계설계산업기사 필기 단기완성', author: '이종수', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -10395,13 +9003,6 @@ const CERTIFICATIONS = {
       { name: '기계 가공', desc: '선반·밀링 기초 가공 작업, 공구 선택, 절삭 조건 설정' },
       { name: '전기 기초', desc: '전기 회로 이론, 모터 제어 회로, 전기 안전 작업 기준' },
     ],
-    jobs: [
-      { title: '자동화 설비 운전원', company: '스마트 팩토리 제조사', salary: '3,000~4,200만원', location: '경기·충남', type: '정규직' },
-      { title: 'PLC 제어 담당', company: '자동화 설비업체', salary: '3,200~4,500만원', location: '경기·인천', type: '정규직' },
-      { title: '생산 설비 유지보수', company: '전자·반도체 협력사', salary: '3,300~4,600만원', location: '경기·충청', type: '정규직' },
-      { title: '자동화 라인 기술원', company: '식품·화학 공장', salary: '2,900~4,000만원', location: '전국', type: '정규직' },
-      { title: '설비 점검 기술원', company: '공공기관·공단', salary: '2,800~3,800만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '생산자동화기능사 필기+실기 완전정복', author: '이수철', publisher: '성안당', year: 2024, rating: 4.6 },
       { title: '생산자동화기능사 PLC 실기 특강', author: '박준호', publisher: '일진사', year: 2024, rating: 4.5 },
@@ -10448,13 +9049,6 @@ const CERTIFICATIONS = {
       { name: '금형 설계', desc: '프레스 금형 구조, 펀치·다이 설계, 스트리퍼 및 가이드 설계' },
       { name: '기계 가공', desc: '선반·밀링·연삭 가공 방법, 절삭 조건, 표면 거칠기 관리' },
       { name: '측정 및 검사', desc: '마이크로미터·버니어 캘리퍼스·게이지 사용법, 정밀 측정 기준' },
-    ],
-    jobs: [
-      { title: '금형 제작 기술원', company: '금형 전문업체', salary: '2,900~4,200만원', location: '경기·인천', type: '정규직' },
-      { title: '프레스 설비 운전원', company: '자동차 부품사', salary: '3,000~4,300만원', location: '경남·울산', type: '정규직' },
-      { title: '금형 수리 담당', company: '전자부품 제조사', salary: '3,100~4,400만원', location: '경기·충남', type: '정규직' },
-      { title: '품질 검사원', company: '정밀부품 제조사', salary: '2,800~4,000만원', location: '전국', type: '정규직' },
-      { title: '금형 조립 기술원', company: '중소 제조업체', salary: '2,600~3,500만원', location: '경기·경남', type: '계약직' },
     ],
     books: [
       { title: '프레스금형기능사 필기 핵심이론', author: '이명구', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -10503,13 +9097,6 @@ const CERTIFICATIONS = {
       { name: '기계 가공', desc: '범용 선반·밀링 가공, CNC 가공 기초, 측정 기구 활용' },
       { name: '금형 재료', desc: '금형강 종류, 열처리 방법, 표면처리(질화·코팅) 특성' },
     ],
-    jobs: [
-      { title: '사출 금형 기술원', company: '금형 전문업체', salary: '2,900~4,200만원', location: '경기·인천', type: '정규직' },
-      { title: '사출 성형 운전원', company: '플라스틱 부품사', salary: '2,800~4,000만원', location: '경기·경남', type: '정규직' },
-      { title: '금형 수리·보수 담당', company: '전자·가전 부품사', salary: '3,000~4,300만원', location: '경기·충남', type: '정규직' },
-      { title: '품질관리 기술원', company: '자동차 내장재 제조사', salary: '2,900~4,100만원', location: '경남·충남', type: '정규직' },
-      { title: '사출 공정 기술원', company: '중소 제조업체', salary: '2,600~3,500만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '사출금형기능사 필기 단기합격', author: '이준호', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '사출금형기능사 실기 완전정복', author: '박명수', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -10556,13 +9143,6 @@ const CERTIFICATIONS = {
       { name: '기계 재료', desc: '탄소강·합금강·비철금속 특성, 재료 식별, 열처리 기초' },
       { name: '측정 및 검사', desc: '버니어 캘리퍼스·마이크로미터·다이얼 게이지 사용 및 측정 방법' },
       { name: '안전 및 환경', desc: '선반 작업 안전 수칙, 절삭유 취급, 작업장 정리·정돈 기준' },
-    ],
-    jobs: [
-      { title: '선반 가공 기술원', company: '정밀가공 전문업체', salary: '2,800~4,000만원', location: '경기·인천', type: '정규직' },
-      { title: 'CNC 선반 운전원', company: '자동차 부품사', salary: '3,000~4,300만원', location: '경남·울산', type: '정규직' },
-      { title: '기계 가공 담당', company: '항공·방산 부품사', salary: '3,200~4,500만원', location: '경기·경남', type: '정규직' },
-      { title: '치구·공구 제작 담당', company: '금형·공구 제조사', salary: '2,900~4,100만원', location: '경기·충남', type: '정규직' },
-      { title: '가공 기술 지원', company: '중소 제조업체', salary: '2,500~3,400만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '선반기능사 필기 핵심이론+기출문제', author: '이현식', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -10611,13 +9191,6 @@ const CERTIFICATIONS = {
       { name: '측정 및 검사', desc: '정밀 측정 기기 사용법, 각도 측정, 윤곽 측정 및 불량 판정' },
       { name: '안전 및 환경', desc: '밀링 작업 안전 수칙, 칩 처리, 절삭유 관리, 개인 보호구 착용' },
     ],
-    jobs: [
-      { title: '밀링 가공 기술원', company: '정밀가공 전문업체', salary: '2,800~4,000만원', location: '경기·인천', type: '정규직' },
-      { title: 'CNC 머시닝센터 운전원', company: '자동차·항공 부품사', salary: '3,100~4,400만원', location: '경남·경기', type: '정규직' },
-      { title: '지그·픽스처 제작 담당', company: '치공구 전문업체', salary: '2,900~4,100만원', location: '경기·인천', type: '정규직' },
-      { title: '금형 가공 기술원', company: '금형 전문업체', salary: '3,000~4,300만원', location: '경기·경남', type: '정규직' },
-      { title: '가공 기술 지원원', company: '중소 제조업체', salary: '2,500~3,400만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '밀링기능사 필기 핵심이론+기출문제', author: '이승훈', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '밀링기능사 실기 작업 가이드', author: '박찬호', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -10665,13 +9238,6 @@ const CERTIFICATIONS = {
       { name: '기계 제도', desc: '판금·제관 도면 해독, 전개도 그리기, 기하학적 전개법 이해' },
       { name: '안전 및 환경', desc: '절단·용접 작업 안전 수칙, 화재·폭발 예방, 보호구 착용 기준' },
     ],
-    jobs: [
-      { title: '판금 제작 기술원', company: '덕트·판금 전문업체', salary: '2,800~4,000만원', location: '전국', type: '정규직' },
-      { title: '제관 작업원', company: '압력용기·보일러 제조사', salary: '3,000~4,300만원', location: '경남·부산', type: '정규직' },
-      { title: '냉난방 덕트 시공원', company: '기계설비 시공업체', salary: '2,900~4,100만원', location: '서울·경기', type: '정규직' },
-      { title: '플랜트 배관 기술원', company: '플랜트 건설사', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '판금 가공 기술원', company: '중소 제조업체', salary: '2,500~3,500만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '판금제관기능사 필기 핵심이론', author: '이성민', publisher: '성안당', year: 2024, rating: 4.4 },
       { title: '판금제관기능사 실기 완전정복', author: '박진수', publisher: '일진사', year: 2024, rating: 4.3 },
@@ -10718,13 +9284,6 @@ const CERTIFICATIONS = {
       { name: '공기조화', desc: '공기 선도 해석, 공조 시스템 구성, 환기·가습·제습 설비 이해' },
       { name: '배관 작업', desc: '냉매 배관 재료, 납땜·플레어 이음, 진공 작업 및 냉매 충전 방법' },
       { name: '냉동 전기', desc: '냉동 전기 회로, 제어 소자 동작, 전기 안전 작업 및 법규 기초' },
-    ],
-    jobs: [
-      { title: '냉동공조 설비 기술원', company: '냉동·공조 시공업체', salary: '2,900~4,200만원', location: '서울·경기', type: '정규직' },
-      { title: '냉동 설비 운전원', company: '식품·물류 냉동창고', salary: '2,800~4,000만원', location: '전국', type: '정규직' },
-      { title: '빌딩 냉난방 설비 관리', company: '건물관리 전문업체', salary: '3,000~4,300만원', location: '서울·수도권', type: '정규직' },
-      { title: '반도체 설비 유틸리티', company: '반도체 협력사', salary: '3,200~4,600만원', location: '경기·충청', type: '정규직' },
-      { title: '냉동공조 유지보수', company: '중소 시설관리업체', salary: '2,600~3,600만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '냉동공조기능사 필기 단기완성', author: '이재민', publisher: '성안당', year: 2024, rating: 4.6 },
@@ -10775,13 +9334,6 @@ const CERTIFICATIONS = {
       { name: '전기·전자 제어', desc: '전기 기초, 릴레이 회로, PLC 기초 제어 개념' },
       { name: '안전관리', desc: '공유압 시스템 작업 안전, 산업안전보건법 관련 규정' },
     ],
-    jobs: [
-      { title: '공유압 설비 유지보수', company: '제조업체', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '자동화 설비 기술직', company: '자동화 전문기업', salary: '3,200~4,500만원', location: '수도권', type: '정규직' },
-      { title: '공유압 시스템 엔지니어', company: '설비 제조사', salary: '3,500~5,000만원', location: '경기·인천', type: '정규직' },
-      { title: '생산설비 관리자', company: '대기업 계열사', salary: '3,800~5,500만원', location: '울산·창원', type: '정규직' },
-      { title: '공유압 장비 점검원', company: '설비 점검 업체', salary: '2,800~3,500만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '공유압기능사 필기 한권으로 끝내기', author: '김태호', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '공유압기능사 실기 완전정복', author: '이상훈', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -10829,13 +9381,6 @@ const CERTIFICATIONS = {
       { name: '공유압 설비 정비', desc: '공압·유압 시스템의 구성, 고장 원인 분석 및 수리 방법' },
       { name: '전기·제어 기초', desc: '전동기, 제어반, 센서 등 전기설비 정비 기초 지식' },
       { name: '안전관리 및 관계법규', desc: '산업안전보건법, 정비 작업 시 위험 요소 파악 및 대처' },
-    ],
-    jobs: [
-      { title: '설비 정비 기술자', company: '대형 제조공장', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '기계 유지보수 담당', company: '자동차 부품사', salary: '3,800~5,200만원', location: '울산·경기', type: '정규직' },
-      { title: '생산설비 정비원', company: '식품·화학공장', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '설비관리 엔지니어', company: '대기업 계열사', salary: '4,000~6,000만원', location: '수도권', type: '정규직' },
-      { title: '기계 점검 기술원', company: '정비 전문업체', salary: '2,800~3,800만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '기계정비산업기사 필기 완전정복', author: '이진호', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -10885,13 +9430,6 @@ const CERTIFICATIONS = {
       { name: '전기 설비', desc: '조명, 동력, 수변전 설비, 약전 설비 기초 계획' },
       { name: '건축설비 관계법규', desc: '건축법, 설비 관련 KS 기준, 에너지 절약 설계 기준' },
     ],
-    jobs: [
-      { title: '건축설비 설계 엔지니어', company: '설비 설계 사무소', salary: '4,000~6,000만원', location: '수도권', type: '정규직' },
-      { title: '기계설비 감리원', company: '감리 전문업체', salary: '4,500~7,000만원', location: '전국', type: '정규직' },
-      { title: '빌딩 설비 관리자', company: '건물 관리 회사', salary: '3,500~5,000만원', location: '서울·경기', type: '정규직' },
-      { title: '플랜트 설비 담당', company: '종합건설사', salary: '4,500~6,500만원', location: '전국', type: '정규직' },
-      { title: '설비 시공 관리자', company: '설비 시공업체', salary: '3,500~5,000만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '건축설비기사 필기 한권으로 끝내기', author: '정재영', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '건축설비기사 실기 완전정복', author: '이상철', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -10939,13 +9477,6 @@ const CERTIFICATIONS = {
       { name: '소방 설비 기초', desc: '소화 설비의 종류, 설치 기준, 점검 방법' },
       { name: '전기 설비 기초', desc: '건축 전기 개요, 조명·콘센트 설비 계획' },
       { name: '설비 관련 법규', desc: '건축법, 소방법, 에너지이용합리화법 관련 설비 기준' },
-    ],
-    jobs: [
-      { title: '건축설비 시공 기술원', company: '설비 시공업체', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '설비 현장 감독', company: '중소 건설사', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '빌딩 설비 유지보수', company: '건물 관리 업체', salary: '3,000~4,000만원', location: '서울·경기', type: '정규직' },
-      { title: '공조 설비 기술자', company: '설비 전문업체', salary: '3,200~4,800만원', location: '수도권', type: '정규직' },
-      { title: '설비 점검원', company: '유지관리 전문업체', salary: '2,600~3,500만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '건축설비산업기사 필기 완전정복', author: '이준호', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -10995,13 +9526,6 @@ const CERTIFICATIONS = {
       { name: '강재 및 금속 재료', desc: '인장·압축·굽힘 시험, 강재 규격, 비파괴검사 개요' },
       { name: '건설재료 관계법규', desc: '품질관리 기준, KS 규격, 건설기술진흥법 관련 기준' },
     ],
-    jobs: [
-      { title: '건설 품질 시험원', company: '건설 품질 시험기관', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '현장 품질 관리자', company: '종합건설사', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '재료 시험 연구원', company: '건설기술연구원', salary: '4,000~6,000만원', location: '수도권', type: '정규직' },
-      { title: '레미콘 품질 관리자', company: '레미콘 제조사', salary: '3,500~4,800만원', location: '전국', type: '정규직' },
-      { title: '품질 시험 보조원', company: '시험 전문업체', salary: '2,800~3,600만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '건설재료시험기사 필기 핵심이론', author: '김성진', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '건설재료시험기사 실기 완전정복', author: '이민호', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -11049,13 +9573,6 @@ const CERTIFICATIONS = {
       { name: '거푸집 해체 및 보관', desc: '적정 해체 시기, 해체 순서, 자재 관리 방법' },
       { name: '콘크리트 공사 기초', desc: '콘크리트 배합, 타설, 양생의 기본 지식' },
       { name: '건설 안전관리', desc: '거푸집 작업 시 추락·붕괴 사고 예방, 안전 장비 사용법' },
-    ],
-    jobs: [
-      { title: '거푸집 작업 기능공', company: '종합건설사 현장', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '목공 거푸집 반장', company: '건설 협력업체', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '시스템 거푸집 기술자', company: '거푸집 전문업체', salary: '3,200~4,500만원', location: '수도권', type: '정규직' },
-      { title: '콘크리트 구조물 시공원', company: '토목건설업체', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '거푸집 임시직 기능공', company: '건설 일용 현장', salary: '2,500~3,500만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '거푸집기능사 필기 한권으로 끝내기', author: '장민수', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -11105,13 +9622,6 @@ const CERTIFICATIONS = {
       { name: '건설 기계 기초', desc: '비계 설치에 사용되는 중장비 기초 지식 및 신호 방법' },
       { name: '산업안전 관계법규', desc: '산업안전보건법, 가설 구조물 관련 안전 기준 및 기술 지침' },
     ],
-    jobs: [
-      { title: '비계 설치 기능공', company: '건설 현장', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
-      { title: '가설 공사 반장', company: '가설 전문업체', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '외벽 작업 비계원', company: '외장 공사 업체', salary: '3,200~4,800만원', location: '수도권', type: '정규직' },
-      { title: '고소 작업 안전 담당', company: '플랜트 건설사', salary: '3,500~5,200만원', location: '전국', type: '정규직' },
-      { title: '비계 해체 기능공', company: '건설 일용 현장', salary: '2,600~3,500만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '비계기능사 필기 완전정복', author: '송재호', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '비계기능사 실기 작업 완전정복', author: '이창수', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -11159,13 +9669,6 @@ const CERTIFICATIONS = {
       { name: '바탕 만들기', desc: '바탕 처리, 방수층, 모르타르 바름, 기준선 설정 방법' },
       { name: '줄눈 및 마감 처리', desc: '줄눈 재료의 종류, 줄눈 채우기 방법, 청소 및 마감 검사' },
       { name: '건설 안전 일반', desc: '타일 공사 작업 시 안전 수칙, 공구 사용 안전, 산업안전보건법' },
-    ],
-    jobs: [
-      { title: '타일 시공 기능공', company: '인테리어 시공업체', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
-      { title: '바닥·벽 마감 기술자', company: '건축 마감 전문업체', salary: '3,200~4,800만원', location: '수도권', type: '정규직' },
-      { title: '욕실·주방 타일 전문가', company: '인테리어 회사', salary: '3,500~5,000만원', location: '서울·경기', type: '정규직' },
-      { title: '외벽 타일 시공원', company: '건설 협력업체', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '타일 공사 일용직', company: '건설 일용 현장', salary: '2,500~3,500만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '타일기능사 필기 한권으로 끝내기', author: '한상민', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -11215,13 +9718,6 @@ const CERTIFICATIONS = {
       { name: '커튼월 및 유리 구조물', desc: '커튼월 시스템 구성, 실링 방법, 하자 원인 및 방지 대책' },
       { name: '유리 시공 안전', desc: '유리 파손 방지, 고소 작업 안전, 운반·취급 시 안전 수칙' },
     ],
-    jobs: [
-      { title: '유리 시공 기능공', company: '유리 시공 전문업체', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
-      { title: '커튼월 시공 기술자', company: '파사드 전문업체', salary: '3,500~5,000만원', location: '수도권', type: '정규직' },
-      { title: '인테리어 유리 전문가', company: '인테리어 시공업체', salary: '3,200~4,800만원', location: '서울·경기', type: '정규직' },
-      { title: '건축 창호 설치원', company: '창호 제조·시공사', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '유리 보수 기능공', company: '유지관리 전문업체', salary: '2,500~3,500만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '유리시공기능사 필기 완전정복', author: '조현민', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '유리시공기능사 실기 작업 가이드', author: '이영호', publisher: '일진사', year: 2024, rating: 4.4 },
@@ -11270,13 +9766,6 @@ const CERTIFICATIONS = {
       { name: '수질환경관계법규', desc: '물환경보전법 및 관련 환경 법령 이해' },
       { name: '수질분석실험', desc: '수질 오염 물질의 측정 및 분석 실험 방법' },
     ],
-    jobs: [
-      { title: '수처리 시설 운영원', company: '환경관리공단', salary: '3,200~4,000만원', location: '전국', type: '정규직' },
-      { title: '수질환경 기술원', company: '환경컨설팅 업체', salary: '3,000~3,800만원', location: '서울·경기', type: '정규직' },
-      { title: '폐수처리 담당자', company: '제조·화학 기업', salary: '3,400~4,200만원', location: '전국', type: '정규직' },
-      { title: '환경안전 관리원', company: '공공기관', salary: '3,500~4,500만원', location: '전국', type: '정규직' },
-      { title: '수질측정 분석원', company: '환경측정 대행업체', salary: '2,800~3,500만원', location: '수도권', type: '계약직' },
-    ],
     books: [
       { title: '수질환경산업기사 필기 한권으로 끝내기', author: '성안당 편집부', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '수질환경산업기사 기출문제집', author: '이승원', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -11323,13 +9812,6 @@ const CERTIFICATIONS = {
       { name: '대기오염방지기술', desc: '집진·탈황·탈질 등 오염 방지 설비 기술' },
       { name: '대기환경관계법규', desc: '대기환경보전법 및 관련 환경 법령 이해' },
       { name: '대기오염공정시험기준', desc: '대기오염 물질 측정 및 시험 방법론' },
-    ],
-    jobs: [
-      { title: '대기환경 관리원', company: '환경관리공단', salary: '3,200~4,000만원', location: '전국', type: '정규직' },
-      { title: '배출가스 측정원', company: '환경측정 대행업체', salary: '3,000~3,800만원', location: '수도권', type: '정규직' },
-      { title: '대기방지 시설 관리자', company: '제조·발전 기업', salary: '3,400~4,200만원', location: '전국', type: '정규직' },
-      { title: '환경안전팀 담당자', company: '중견 제조기업', salary: '3,500~4,500만원', location: '전국', type: '정규직' },
-      { title: '대기오염 모니터링원', company: '공공기관', salary: '2,900~3,600만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '대기환경산업기사 필기 완벽대비', author: '성안당 편집부', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -11378,13 +9860,6 @@ const CERTIFICATIONS = {
       { name: '폐기물처리', desc: '폐기물 분류, 처리 방법 및 재활용 기술' },
       { name: '환경관계법규', desc: '환경부 소관 법령 및 환경 정책 이해' },
     ],
-    jobs: [
-      { title: '환경관리 담당자', company: '중대형 제조기업', salary: '3,300~4,200만원', location: '전국', type: '정규직' },
-      { title: '환경컨설턴트', company: '환경컨설팅 업체', salary: '3,500~4,500만원', location: '서울·경기', type: '정규직' },
-      { title: '환경안전팀원', company: '공공기관', salary: '3,400~4,300만원', location: '전국', type: '정규직' },
-      { title: '환경영향평가원', company: '환경평가 전문기관', salary: '3,600~4,800만원', location: '수도권', type: '정규직' },
-      { title: '환경시설 운영원', company: '지방공기업', salary: '2,900~3,700만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '환경산업기사 필기 한권완성', author: '김환경', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '환경산업기사 기출문제 총정리', author: '이성민', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -11431,13 +9906,6 @@ const CERTIFICATIONS = {
       { name: '시스템 보안', desc: '운영체제 및 서버 보안 취약점 분석과 대응' },
       { name: '애플리케이션 보안', desc: '웹·앱 취약점 및 시큐어코딩 방법론' },
       { name: '정보보호 관계법규', desc: '개인정보보호법, 정보통신망법 등 관련 법령' },
-    ],
-    jobs: [
-      { title: '정보보안 담당자', company: '금융·IT 기업', salary: '4,000~5,500만원', location: '서울·경기', type: '정규직' },
-      { title: '보안관제 분석원', company: '보안관제 전문기업', salary: '3,500~4,500만원', location: '수도권', type: '정규직' },
-      { title: '침해사고 대응원', company: 'CERT/CSIRT 기관', salary: '4,200~5,800만원', location: '서울', type: '정규직' },
-      { title: '정보보호 컨설턴트', company: '보안컨설팅 업체', salary: '4,500~6,000만원', location: '수도권', type: '정규직' },
-      { title: '보안 시스템 운영원', company: '공공기관', salary: '3,300~4,200만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '정보보안산업기사 필기 완전정복', author: '시나공 편집팀', publisher: '길벗', year: 2024, rating: 4.5 },
@@ -11486,13 +9954,6 @@ const CERTIFICATIONS = {
       { name: '소프트웨어공학', desc: '소프트웨어 개발 방법론 및 품질 관리' },
       { name: '데이터통신', desc: '데이터 전송 원리, 프로토콜, 네트워크 기초' },
     ],
-    jobs: [
-      { title: '시스템 엔지니어', company: 'IT 서비스 기업', salary: '3,800~5,000만원', location: '수도권', type: '정규직' },
-      { title: '임베디드 개발자', company: '전자·반도체 기업', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: 'IT 인프라 관리자', company: '대기업·공공기관', salary: '4,200~5,800만원', location: '전국', type: '정규직' },
-      { title: '하드웨어 설계원', company: '전자 제조기업', salary: '3,900~5,200만원', location: '전국', type: '정규직' },
-      { title: '전산 운영원', company: '공공기관', salary: '3,000~4,000만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '전자계산기기사 필기 완전정복', author: '시나공 편집팀', publisher: '길벗', year: 2024, rating: 4.5 },
       { title: '전자계산기기사 기출문제집', author: '이컴퓨터', publisher: '성안당', year: 2024, rating: 4.4 },
@@ -11539,13 +10000,6 @@ const CERTIFICATIONS = {
       { name: '제어공학', desc: '피드백 제어, PID 제어 등 자동제어 이론' },
       { name: '프로그래밍 언어', desc: 'C언어 기반 제어 프로그래밍 및 알고리즘' },
       { name: '전자회로', desc: '아날로그·디지털 전자 회로 설계 기초' },
-    ],
-    jobs: [
-      { title: '자동화 제어 엔지니어', company: '스마트팩토리 기업', salary: '3,800~5,000만원', location: '전국', type: '정규직' },
-      { title: 'PLC 프로그래머', company: '자동화 설비 업체', salary: '3,500~4,800만원', location: '전국', type: '정규직' },
-      { title: '산업용 로봇 제어원', company: '제조·자동차 기업', salary: '3,600~4,900만원', location: '전국', type: '정규직' },
-      { title: '임베디드 제어 개발자', company: '전자 부품 업체', salary: '3,700~5,000만원', location: '수도권', type: '정규직' },
-      { title: '시스템 유지보수원', company: '설비관리 업체', salary: '2,900~3,700만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '전자계산기제어산업기사 필기 완벽대비', author: '김제어', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -11594,13 +10048,6 @@ const CERTIFICATIONS = {
       { name: '컴퓨터 유지보수', desc: '하드웨어 조립, 점검, 고장 진단 및 수리' },
       { name: '정보통신 기초', desc: '네트워크 기초, 인터넷 서비스 개요' },
     ],
-    jobs: [
-      { title: 'PC 유지보수 기사', company: 'IT 서비스 업체', salary: '2,800~3,500만원', location: '전국', type: '정규직' },
-      { title: '전산 장비 관리원', company: '공공기관·학교', salary: '2,700~3,400만원', location: '전국', type: '정규직' },
-      { title: '전산 운영 보조원', company: '기업 전산실', salary: '2,600~3,300만원', location: '전국', type: '정규직' },
-      { title: '기술지원 담당자', company: 'IT 장비 업체', salary: '2,900~3,600만원', location: '수도권', type: '정규직' },
-      { title: 'IT 헬프데스크 요원', company: '대기업·공공기관', salary: '2,500~3,200만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '전자계산기기능사 필기 한권완성', author: '시나공 편집팀', publisher: '길벗', year: 2024, rating: 4.5 },
       { title: '전자계산기기능사 기출문제 총정리', author: '이전산', publisher: '성안당', year: 2024, rating: 4.4 },
@@ -11648,13 +10095,6 @@ const CERTIFICATIONS = {
       { name: '항공기계 요소', desc: '볼트, 리벳, 케이블 등 기계 요소 이론' },
       { name: '항공법규', desc: '항공법 및 항공 안전 규정 이해' },
     ],
-    jobs: [
-      { title: '항공기 기체 정비원', company: '대한항공·아시아나', salary: '3,500~4,800만원', location: '인천·김포', type: '정규직' },
-      { title: '항공 MRO 기술원', company: 'MRO 전문업체', salary: '3,300~4,500만원', location: '전국', type: '정규직' },
-      { title: '항공기 제조 기술원', company: '한국항공우주산업', salary: '3,600~5,000만원', location: '사천·창원', type: '정규직' },
-      { title: '기체 검사원', company: '항공정비 업체', salary: '3,400~4,600만원', location: '전국', type: '정규직' },
-      { title: '항공기 지상 정비원', company: '저비용항공사', salary: '2,900~3,800만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '항공기체기능사 필기 완전정복', author: '항공수험연구회', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '항공기체기능사 기출문제집', author: '김항공', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -11701,13 +10141,6 @@ const CERTIFICATIONS = {
       { name: '항공기관 정비', desc: '엔진 분해, 검사, 조립 및 시운전 절차' },
       { name: '항공연료 및 윤활유', desc: '항공유, 윤활유 특성 및 관리 방법' },
       { name: '항공법규', desc: '항공법 및 기관 정비 관련 안전 규정' },
-    ],
-    jobs: [
-      { title: '항공기관 정비원', company: '대한항공·아시아나', salary: '3,600~5,000만원', location: '인천·김포', type: '정규직' },
-      { title: '엔진 MRO 기술원', company: 'MRO 전문업체', salary: '3,400~4,700만원', location: '전국', type: '정규직' },
-      { title: '항공기 제조 기관팀원', company: '한국항공우주산업', salary: '3,700~5,200만원', location: '사천·창원', type: '정규직' },
-      { title: '엔진 테스트 엔지니어', company: '항공 부품 업체', salary: '3,500~4,800만원', location: '수도권', type: '정규직' },
-      { title: '항공기 지상 기관 정비원', company: '저비용항공사', salary: '3,000~3,900만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '항공기관기능사 필기 완전정복', author: '항공수험연구회', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -11758,13 +10191,6 @@ const CERTIFICATIONS = {
       { name: '항공장비', desc: '항공계기, 전기·전자 장비, 유압 및 공압 계통의 구조와 기능' },
       { name: '항공법규', desc: '항공안전법, 항공사업법 등 항공 관련 법령 및 규정' },
     ],
-    jobs: [
-      { title: '항공기 정비사', company: '대한항공·아시아나항공', salary: '3,200~4,500만원', location: '인천·김포', type: '정규직' },
-      { title: 'MRO 기술원', company: '한국항공우주산업(KAI)', salary: '3,000~4,200만원', location: '사천', type: '정규직' },
-      { title: '항공기체 검사원', company: '저비용항공사(LCC)', salary: '2,800~3,800만원', location: '제주·김해', type: '정규직' },
-      { title: '군수지원 정비기술원', company: '국방부 산하 기관', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '항공정비 계약직', company: '항공 MRO 전문업체', salary: '2,600~3,400만원', location: '인천', type: '계약직' },
-    ],
     books: [
       { title: '항공산업기사 필기 완전정복', author: '이재훈', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '항공산업기사 과년도 기출문제 해설', author: '김민준', publisher: '크라운출판사', year: 2024, rating: 4.4 },
@@ -11812,13 +10238,6 @@ const CERTIFICATIONS = {
       { name: '항공기관', desc: '가스터빈엔진 열역학, 엔진 성능 분석, 추진 계통 심화 이론' },
       { name: '항공장비일반', desc: '항공 전자·전기 계통, 자동비행장치, 통신·항법 장비 이론' },
       { name: '항공법규', desc: '국제민간항공협약(ICAO), 국내 항공안전법·항공사업법 규정' },
-    ],
-    jobs: [
-      { title: '항공기 설계·개발 엔지니어', company: '한국항공우주산업(KAI)', salary: '4,000~6,000만원', location: '사천', type: '정규직' },
-      { title: '항공기 품질보증 엔지니어', company: '대한항공 기술연구원', salary: '4,200~5,800만원', location: '인천', type: '정규직' },
-      { title: '방산 항공 시스템 기술원', company: 'LIG넥스원·한화시스템', salary: '4,000~5,500만원', location: '성남·구미', type: '정규직' },
-      { title: '항공안전 감독관', company: '국토교통부·항공안전기술원', salary: '4,500~6,000만원', location: '서울·인천', type: '정규직' },
-      { title: '항공기술 연구원', company: '한국항공우주연구원(KARI)', salary: '3,800~5,200만원', location: '대전', type: '계약직' },
     ],
     books: [
       { title: '항공기사 필기 완전정복', author: '이재훈', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -11868,13 +10287,6 @@ const CERTIFICATIONS = {
       { name: '신호설비설계', desc: '연동장치 설계, 신호 배선도 작성, 도면 판독 및 시공 기준' },
       { name: '철도관련법규', desc: '철도안전법, 도시철도법, 철도건설법 및 관련 규정' },
     ],
-    jobs: [
-      { title: '철도신호 설계 엔지니어', company: '한국철도기술연구원', salary: '4,000~5,500만원', location: '의왕', type: '정규직' },
-      { title: '철도신호 시공 감리원', company: '철도건설 전문업체', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '신호설비 유지보수원', company: '한국철도공사(KORAIL)', salary: '3,800~5,200만원', location: '전국', type: '정규직' },
-      { title: '도시철도 신호팀 기술원', company: '서울·부산 도시철도공사', salary: '3,600~4,800만원', location: '서울·부산', type: '정규직' },
-      { title: '철도신호 프로젝트 계약직', company: '철도 SI·유지보수 업체', salary: '3,000~4,200만원', location: '수도권', type: '계약직' },
-    ],
     books: [
       { title: '철도신호기사 필기 핵심이론', author: '김철수', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '철도신호기사 과년도 기출문제', author: '이영호', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -11922,13 +10334,6 @@ const CERTIFICATIONS = {
       { name: '전기일반', desc: '직류·교류 회로 이론, 전기기기 기초, 철도 전기 설비 개요' },
       { name: '신호기기', desc: '릴레이 회로, 연동 장치 배선, 신호 설비 유지보수 실무' },
       { name: '철도관련법규', desc: '철도안전법 기초, 도시철도법, 철도 신호 설비 관련 규정' },
-    ],
-    jobs: [
-      { title: '철도신호 유지보수 기술원', company: '한국철도공사(KORAIL)', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '지하철 신호설비 운용원', company: '서울교통공사', salary: '3,400~4,600만원', location: '서울', type: '정규직' },
-      { title: '철도신호 시공 기능사원', company: '철도건설 전문업체', salary: '2,800~4,000만원', location: '전국', type: '정규직' },
-      { title: '신호설비 검사원', company: '국가철도공단', salary: '3,200~4,400만원', location: '전국', type: '정규직' },
-      { title: '철도신호 유지보수 계약직', company: '민간 유지보수 업체', salary: '2,600~3,600만원', location: '수도권', type: '계약직' },
     ],
     books: [
       { title: '철도신호산업기사 필기 완전정복', author: '이영호', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -11978,13 +10383,6 @@ const CERTIFICATIONS = {
       { name: '차량설비일반', desc: '냉난방 장치, 공기압축 장치, 출입문 장치 구조 및 정비' },
       { name: '철도관련법규', desc: '철도안전법, 철도차량 안전 기준 및 검사 관련 규정' },
     ],
-    jobs: [
-      { title: '철도차량 유지보수 기술원', company: '한국철도공사(KORAIL)', salary: '3,400~4,600만원', location: '전국', type: '정규직' },
-      { title: '도시철도 차량 정비원', company: '서울교통공사·부산교통공사', salary: '3,400~4,800만원', location: '서울·부산', type: '정규직' },
-      { title: '철도차량 제조 품질검사원', company: '현대로템', salary: '3,600~5,000만원', location: '창원', type: '정규직' },
-      { title: '차량 검수 기술원', company: '국가철도공단', salary: '3,200~4,400만원', location: '전국', type: '정규직' },
-      { title: '철도차량 정비 계약직', company: '민간 철도차량 유지보수 업체', salary: '2,800~3,800만원', location: '수도권', type: '계약직' },
-    ],
     books: [
       { title: '철도차량산업기사 필기 완전정복', author: '김동현', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '철도차량산업기사 과년도 기출문제 해설', author: '이영호', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -12032,13 +10430,6 @@ const CERTIFICATIONS = {
       { name: '식품가공학', desc: '식품 제조 공정, 가열·냉동·건조·발효 처리 기술 및 품질 관리' },
       { name: '식품미생물학', desc: '유익균·유해균 특성, 발효 미생물, 식품 미생물 검사 방법' },
       { name: '식품관계법규', desc: '식품위생법, 건강기능식품법, HACCP 기준 및 식품 표시 규정' },
-    ],
-    jobs: [
-      { title: '식품 품질관리 연구원', company: 'CJ제일제당·롯데식품', salary: '3,400~4,800만원', location: '수도권', type: '정규직' },
-      { title: '식품위생 검사원', company: '식품의약품안전처·지방청', salary: '3,800~5,200만원', location: '전국', type: '정규직' },
-      { title: 'HACCP 관리 담당자', company: '식품 제조업체', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '식품 연구개발 연구원', company: '농심·오뚜기 R&D센터', salary: '3,600~5,000만원', location: '수도권', type: '정규직' },
-      { title: '식품 품질검사 계약직', company: '식품 검사 전문기관', salary: '2,800~3,800만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '식품기사 필기 완전정복', author: '김미진', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -12088,13 +10479,6 @@ const CERTIFICATIONS = {
       { name: '식품미생물학', desc: '위생 지표균, 식품 부패균 특성, 미생물 검사 방법 기초' },
       { name: '식품관계법규', desc: '식품위생법 기초, HACCP 의무 적용 기준, 식품 표시 기준' },
     ],
-    jobs: [
-      { title: '식품 품질관리 기술원', company: '중소 식품 제조업체', salary: '2,800~4,000만원', location: '전국', type: '정규직' },
-      { title: '식품 생산 공정 관리원', company: '식품 대기업 생산라인', salary: '3,000~4,200만원', location: '수도권·충청', type: '정규직' },
-      { title: '단체급식 위생 관리원', company: '학교·병원 급식 업체', salary: '2,600~3,600만원', location: '전국', type: '정규직' },
-      { title: '식품 원료 검사원', company: '식품 원료 납품업체', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '식품 검사 계약직', company: '식품 검사기관', salary: '2,400~3,400만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '식품산업기사 필기 완전정복', author: '이수연', publisher: '성안당', year: 2024, rating: 4.5 },
       { title: '식품산업기사 과년도 기출문제', author: '김미진', publisher: '예문사', year: 2024, rating: 4.4 },
@@ -12138,13 +10522,6 @@ const CERTIFICATIONS = {
       { name: '토양 관리', desc: '토양 이화학적 특성, 유기물 투입, 토양 개량 방법' },
       { name: '농업 관련 법규', desc: '친환경농어업법, 유기식품 인증 기준 주요 내용' },
     ],
-    jobs: [
-      { title: '유기농 재배 농업인', company: '유기농 농장', salary: '2,500~4,000만원', location: '전국', type: '개인사업' },
-      { title: '친환경 농산물 생산 관리', company: '농업법인', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '농업기술센터 지도사', company: '지자체 농업기술센터', salary: '3,000~4,000만원', location: '전국', type: '공무원' },
-      { title: '유기농 컨설턴트', company: '친환경 농업 컨설팅', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
-      { title: '스마트팜 운영 관리자', company: '스마트팜 업체', salary: '2,800~4,000만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { title: '2026 시대에듀 무단뽀 유기농업기능사 필기+실기', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.6 },
       { title: '2026 나합격 유기농업기능사 필기+실기+무료특강', author: '나합격 편집부', publisher: '에듀팩토리', year: 2025, rating: 4.5 },
@@ -12185,13 +10562,6 @@ const CERTIFICATIONS = {
       { name: '과수 재배', desc: '사과·배·포도·복숭아 등 과수 재배, 전정·결실 관리 기술' },
       { name: '화훼 재배', desc: '절화·분화·지피식물 재배, 조직 배양, 시설 환경 관리' },
       { name: '원예 관련 법규', desc: '농업기계화 촉진법, 종자법, 식물신품종보호법 주요 내용' },
-    ],
-    jobs: [
-      { title: '원예 농장 재배 관리사', company: '원예 농장', salary: '2,500~3,500만원', location: '전국', type: '정규직' },
-      { title: '스마트팜 원예 기사', company: '스마트팜 업체', salary: '2,800~4,000만원', location: '전국', type: '정규직' },
-      { title: '도시농업 강사', company: '지자체·문화센터', salary: '2,500~3,500만원', location: '전국', type: '계약직' },
-      { title: '가든센터 운영 관리자', company: '원예·가든센터', salary: '2,600~3,600만원', location: '전국', type: '정규직' },
-      { title: '화훼 장식 보조', company: '화원·플로리스트샵', salary: '2,300~3,000만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '2026 시대에듀 Win-Q 원예기능사 필기+실기 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.6 },
@@ -12234,13 +10604,6 @@ const CERTIFICATIONS = {
       { name: '공간 화훼 연출', desc: '테이블 장식, 웨딩 플라워, 공간별 장식 연출 기법' },
       { name: '화훼 관련 법규', desc: '화훼 유통, 원산지 표시, 소비자 보호 관련 규정' },
     ],
-    jobs: [
-      { title: '플로리스트', company: '화원·플라워샵', salary: '2,400~3,500만원', location: '전국', type: '정규직' },
-      { title: '웨딩 화훼 장식사', company: '웨딩업체·예식장', salary: '2,600~3,800만원', location: '전국', type: '정규직' },
-      { title: '이벤트 플로리스트', company: '이벤트·공간 연출 업체', salary: '2,800~4,000만원', location: '전국', type: '프리랜서' },
-      { title: '화훼 매장 운영', company: '독립 창업', salary: '3,000~5,000만원', location: '전국', type: '개인사업' },
-      { title: '문화센터 화훼 강사', company: '문화센터·평생교육원', salary: '2,500~3,500만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { title: '2026 시대에듀 Win-Q 화훼장식기능사 필기 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.7 },
       { title: '2026 화훼장식기능사 필기&실기&미니북 세트', author: '자격시험 편집부', publisher: '성안당', year: 2025, rating: 4.6 },
@@ -12281,13 +10644,6 @@ const CERTIFICATIONS = {
       { name: '공간·이벤트 연출', desc: '결혼식·장례식·행사장 화훼 연출 기획 및 실행 방법' },
       { name: '화훼 관련 법규', desc: '화훼 산업 관련 법령, 유통·인증·표시 규정' },
     ],
-    jobs: [
-      { title: '전문 플로리스트', company: '고급 화원·플라워샵', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
-      { title: '화훼 교육 강사', company: '전문학교·문화센터', salary: '3,000~4,500만원', location: '전국', type: '계약직' },
-      { title: '이벤트 화훼 디렉터', company: '이벤트 기획사', salary: '3,200~5,000만원', location: '전국', type: '프리랜서' },
-      { title: '호텔·리조트 플로리스트', company: '특급 호텔', salary: '3,200~4,800만원', location: '전국', type: '정규직' },
-      { title: '화훼 창업', company: '독립 창업', salary: '3,500~6,000만원', location: '전국', type: '개인사업' },
-    ],
     books: [
       { title: '2026 화훼장식산업기사 필기실기 Revised Edition', author: '자격시험 편집부', publisher: '성안당', year: 2025, rating: 4.6 },
       { title: '2025 화훼장식산업기사 필기실기', author: '자격시험 편집부', publisher: '예문사', year: 2025, rating: 4.5 },
@@ -12327,13 +10683,6 @@ const CERTIFICATIONS = {
       { name: '화훼 생산·유통 관리', desc: '절화·분화 생산 관리, 품질 기준, 수출입 유통 체계' },
       { name: '화훼 비즈니스', desc: '원가 산출, 사업 계획, 마케팅, 글로벌 화훼 시장 이해' },
       { name: '화훼 관련 법규', desc: '화훼 산업 진흥법, 식물 검역, 원산지 규정 전반' },
-    ],
-    jobs: [
-      { title: '화훼 디자인 디렉터', company: '이벤트·공간 연출 업체', salary: '4,000~6,000만원', location: '전국', type: '정규직' },
-      { title: '화훼 전문 교수·강사', company: '대학·전문학교', salary: '3,500~6,000만원', location: '전국', type: '정규직' },
-      { title: '특급 호텔 수석 플로리스트', company: '특급 호텔', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '화훼 수출입 전문가', company: '화훼 무역업체', salary: '3,800~5,500만원', location: '전국', type: '정규직' },
-      { title: '화훼 플라워샵 대표', company: '독립 창업', salary: '4,000~8,000만원', location: '전국', type: '개인사업' },
     ],
     books: [
       { title: '2026 화훼장식기사 필기&실기 Revised Edition', author: '자격시험 편집부', publisher: '성안당', year: 2025, rating: 4.6 },
@@ -12377,13 +10726,6 @@ const CERTIFICATIONS = {
       { name: '초지 및 사료작물학', desc: '목초 재배·관리, 사료 작물 생산, TMR 배합 기술' },
       { name: '축산 관련 법규', desc: '축산법, 가축전염병예방법, 축산물위생관리법 주요 내용' },
     ],
-    jobs: [
-      { title: '축산 기술자', company: '축산 농가·농업법인', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
-      { title: '사료 영업·기술 담당', company: '사료회사', salary: '3,200~5,000만원', location: '전국', type: '정규직' },
-      { title: '가축 방역 담당', company: '축산물위생검사소', salary: '3,000~4,200만원', location: '전국', type: '공무원' },
-      { title: '축산물 품질 관리사', company: '축산물품질평가원', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '농협 축산 담당자', company: '농협·축협', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { title: '2026 시대에듀 축산기사·산업기사 필기 한권으로 끝내기', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.6 },
       { title: '2026 시대에듀 축산기사·산업기사 실기 한권으로 끝내기', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.5 },
@@ -12424,13 +10766,6 @@ const CERTIFICATIONS = {
       { name: '가축 위생 기초', desc: '예방 접종, 기생충 구제, 소독 방법, 분뇨 처리 기초' },
       { name: '축산 기계·시설', desc: '급이기·환기 시설·착유기 구조, 안전 사용법' },
       { name: '축산 관련 법규', desc: '가축전염병예방법, 축산물위생관리법 기초 내용' },
-    ],
-    jobs: [
-      { title: '축산 농가 사육 관리원', company: '한우·낙농·양돈 농가', salary: '2,500~3,500만원', location: '전국', type: '정규직' },
-      { title: '사료회사 기술 보조', company: '사료회사', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '농협 축산 관련 업무', company: '농협·축협', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '양계장·양돈장 관리원', company: '양계·양돈 농가', salary: '2,500~3,300만원', location: '전국', type: '정규직' },
-      { title: '축산물 처리 보조', company: '도축장·육가공업체', salary: '2,600~3,500만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '2026 시대에듀 Win-Q 축산기능사 필기+실기 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.6 },
@@ -12473,13 +10808,6 @@ const CERTIFICATIONS = {
       { name: '수확 후 품질관리론', desc: '저장·선별·포장·CA저장·예냉 처리, 저온 유통 체계' },
       { name: '농산물 유통론', desc: '농산물 유통 구조, 도매시장 경매, 산지 유통 센터 운영' },
     ],
-    jobs: [
-      { title: '농산물 품질관리사', company: '국립농산물품질관리원', salary: '3,200~4,500만원', location: '전국', type: '공무원' },
-      { title: '농협 농산물 선별 담당', company: '농협·산지 유통센터', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '대형마트 농산물 바이어', company: '대형 유통업체', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '수출입 농산물 검사원', company: '수출입 농산물 업체', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '농산물 등급 판정원', company: '산지 APC', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { title: '2026 시대에듀 농산물품질관리사 1차 한권으로 끝내기', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.7 },
       { title: '2026 시대에듀 농산물품질관리사 2차 필답형 실기 한권으로 끝내기', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.6 },
@@ -12518,13 +10846,6 @@ const CERTIFICATIONS = {
       { name: '수산물 유통론', desc: '수산물 유통 구조, 위판장 경매, 냉동·냉장 유통 체계' },
       { name: '수산생물학', desc: '어류·패류·갑각류 생물학적 특성, 어획 후 선도 관리' },
       { name: '수확 후 품질관리', desc: '수산물 저장·가공·포장 기술, 위생 관리, HACCP 기초' },
-    ],
-    jobs: [
-      { title: '수산물 품질관리사', company: '국립수산물품질관리원', salary: '3,200~4,500만원', location: '전국', type: '공무원' },
-      { title: '수협 수산물 유통 담당', company: '수협·산지 위판장', salary: '2,800~4,000만원', location: '전국', type: '정규직' },
-      { title: '수산물 수출입 품질 검사', company: '수출입 업체', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
-      { title: '대형마트 수산물 바이어', company: '대형 유통업체', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '수산물 가공 품질 관리', company: '수산물 가공업체', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '2026 시대에듀 수산물품질관리사 1차+2차 한권으로 끝내기', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.6 },
@@ -12566,13 +10887,6 @@ const CERTIFICATIONS = {
       { name: '종자법', desc: '종자산업법, 식물신품종보호법, 종자 검사·인증 기준' },
       { name: '종자 생산·검사', desc: '채종 관리, 발아율·순도 검사, 종자 처리 방법' },
     ],
-    jobs: [
-      { title: '종자 연구원', company: '종자회사·농촌진흥청', salary: '3,200~5,000만원', location: '전국', type: '정규직' },
-      { title: '국립종자원 직원', company: '국립종자원', salary: '3,000~4,500만원', location: '전국', type: '공무원' },
-      { title: '품종 개발 담당자', company: '농업 생명공학 기업', salary: '3,500~5,500만원', location: '전국', type: '정규직' },
-      { title: '종자 유통 관리자', company: '종자 유통업체', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '농업 기술 지도사', company: '농업기술센터', salary: '3,200~4,500만원', location: '전국', type: '공무원' },
-    ],
     books: [
       { title: '2026 시대에듀 기출이 답이다 종자기사 필기 최빈출 기출 1000제', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.6 },
       { title: '2024 종자기사·산업기사 실기', author: '자격시험 편집부', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -12612,12 +10926,6 @@ const CERTIFICATIONS = {
       { name: '작물 기초', desc: '주요 작물 생육 특성, 파종·수확 시기, 기본 재배 관리' },
       { name: '종자 생산·검사 기초', desc: '채종 방법, 발아율 측정, 종자 선별·포장 기초' },
       { name: '종자 관련 법규', desc: '종자산업법 기초 내용, 품종 보호 개요' },
-    ],
-    jobs: [
-      { title: '채종 농가 관리 보조', company: '채종 농가', salary: '2,300~3,000만원', location: '전국', type: '계약직' },
-      { title: '종자회사 생산 보조', company: '종자회사', salary: '2,500~3,300만원', location: '전국', type: '정규직' },
-      { title: '국립종자원 현장 보조', company: '국립종자원', salary: '2,400~3,200만원', location: '전국', type: '계약직' },
-      { title: '농업기술센터 보조', company: '지자체 농업기술센터', salary: '2,300~3,000만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '2026 나합격 종자기능사 필기+실기+무료특강', author: '나합격 편집부', publisher: '에듀팩토리', year: 2025, rating: 4.5 },
@@ -12659,12 +10967,6 @@ const CERTIFICATIONS = {
       { name: '버섯 병해충 관리', desc: '오염균 방제, 해충 예방, 재배 환경(온·습도) 관리' },
       { name: '농업 관련 법규', desc: '버섯 관련 인증·표시, 종자산업법 기초 내용' },
     ],
-    jobs: [
-      { title: '종균 생산 기술원', company: '버섯 종균 업체', salary: '2,600~3,500만원', location: '전국', type: '정규직' },
-      { title: '버섯 농장 재배 관리사', company: '버섯 재배 농가·법인', salary: '2,500~3,500만원', location: '전국', type: '정규직' },
-      { title: '스마트 버섯팜 기술원', company: '스마트팜 업체', salary: '2,800~4,000만원', location: '전국', type: '정규직' },
-      { title: '버섯 가공 품질 관리', company: '버섯 가공업체', salary: '2,600~3,500만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { title: '2026 시대에듀 Win-Q 버섯종균기능사 필기 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.6 },
       { title: '버섯종균기능사 핵심요약+기출문제', author: '이패스코리아 편집부', publisher: '이패스코리아', year: 2024, rating: 4.5 },
@@ -12705,13 +11007,6 @@ const CERTIFICATIONS = {
       { name: '식육 위생 관리', desc: 'HACCP 기초, 냉장·냉동 보관 기준, 세균 오염 예방' },
       { name: '관련 법규', desc: '축산물위생관리법, 식육 표시·원산지 기준 주요 내용' },
     ],
-    jobs: [
-      { title: '도축장 식육 처리원', company: '도축장·축산물 가공장', salary: '2,800~4,000만원', location: '전국', type: '정규직' },
-      { title: '정육 전문점 기술자', company: '정육점·정육 전문매장', salary: '2,600~3,800만원', location: '전국', type: '정규직' },
-      { title: '대형마트 축산 담당', company: '대형 유통업체', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '식육 가공업체 기술원', company: '식육 가공업체', salary: '2,700~3,700만원', location: '전국', type: '정규직' },
-      { title: '급식업체 육류 전처리', company: '단체급식업체', salary: '2,500~3,300만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { title: '2026 시대에듀 식육처리기능사 한권으로 끝내기', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.6 },
       { title: '식육처리기능사 핵심요약+기출문제', author: '이패스코리아 편집부', publisher: '이패스코리아', year: 2024, rating: 4.5 },
@@ -12749,12 +11044,6 @@ const CERTIFICATIONS = {
       { name: '인공수정 기술', desc: '정액 채취·검사·희석·동결 보존, 인공수정 기법' },
       { name: '수정란 이식', desc: '공란우·수란우 관리, 수정란 채취·이식 기술' },
       { name: '가축 위생 및 법규', desc: '가축전염병예방법, 축산법 관련 번식 기술 규정' },
-    ],
-    jobs: [
-      { title: '가축 인공수정사', company: '가축개량협회·낙농진흥회', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
-      { title: '한우 개량 사업소 담당', company: '한우 개량 사업소', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '낙농 농가 번식 담당', company: '대규모 낙농 농가', salary: '2,800~4,000만원', location: '전국', type: '정규직' },
-      { title: '수의 보조 기술원', company: '동물병원·농축산업체', salary: '2,600~3,500만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '시대에듀 가축인공수정사 필기 한권으로 합격하기', author: '시대에듀 편집부', publisher: '시대에듀', year: 2025, rating: 4.6 },
@@ -12800,13 +11089,6 @@ const CERTIFICATIONS = {
       { name: '유기농업일반', desc: '유기농업 원칙, 유기 인증 기준, 병해충 생태적 방제 방법' },
       { name: '농업환경보전', desc: '농업 생태계 보전, 환경 친화적 농업 기술, 농업 용수 관리' },
       { name: '농업관련법규', desc: '친환경농어업법, 유기식품 인증제도, 농약관리법 관련 규정' },
-    ],
-    jobs: [
-      { title: '친환경 농산물 인증 심사원', company: '국립농산물품질관리원', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '유기농 기술 지도사', company: '농촌진흥청·도 농업기술원', salary: '3,800~5,200만원', location: '전국', type: '정규직' },
-      { title: '유기농 생산 관리자', company: '친환경 농업법인', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '유기농 식품 품질관리원', company: '유기농 식품 유통업체', salary: '2,800~4,000만원', location: '수도권', type: '정규직' },
-      { title: '친환경 농업 컨설턴트', company: '농업 컨설팅 전문업체', salary: '2,600~3,800만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '유기농업기사 필기 완전정복', author: '박용호', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -12855,13 +11137,6 @@ const CERTIFICATIONS = {
       { name: '화훼학', desc: '주요 화훼 작물 분류, 재배 환경, 절화·분화·조경 식물 관리' },
       { name: '원예시설학', desc: '온실 구조, 시설 내 환경 제어, 수경재배 및 스마트팜 기술' },
       { name: '농업관련법규', desc: '종자산업법, 식물신품종보호법, 농업경영체 육성·지원법 규정' },
-    ],
-    jobs: [
-      { title: '농업 기술 지도사', company: '농촌진흥청·시군 농업기술센터', salary: '3,600~5,000만원', location: '전국', type: '정규직' },
-      { title: '원예 연구원', company: '한국농업기술진흥원', salary: '3,800~5,200만원', location: '전국', type: '정규직' },
-      { title: '스마트팜 운영 관리자', company: '스마트팜 전문 농업법인', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '종묘·원예 영업 기술원', company: '농우바이오·사카타코리아', salary: '3,000~4,200만원', location: '수도권·전국', type: '정규직' },
-      { title: '원예 재배 관리 계약직', company: '원예 농업법인·영농조합', salary: '2,600~3,600만원', location: '전국', type: '계약직' },
     ],
     books: [
       { title: '원예기사 필기 완전정복', author: '이상훈', publisher: '성안당', year: 2024, rating: 4.5 },
@@ -12916,13 +11191,6 @@ const CERTIFICATIONS = {
       { name: '재료 및 측정', desc: '기계 재료의 특성과 버니어캘리퍼스 등 측정기 사용법' },
       { name: '기계공작법', desc: '절삭·연삭·주조 등 기계 가공 방법의 기초 이해' },
     ],
-    jobs: [
-      { title: 'CAD 기계설계 사원', company: '중소 제조업체', salary: '2,800~3,500만원', location: '경기·인천', type: '정규직' },
-      { title: '도면 작성 담당자', company: '자동차 부품사', salary: '3,000~3,800만원', location: '울산·경남', type: '정규직' },
-      { title: '기계설계 보조', company: '금형·금속 가공업체', salary: '2,800~3,500만원', location: '경기·충남', type: '정규직' },
-      { title: '생산기술 사원', company: '전자부품 제조사', salary: '3,200~4,000만원', location: '수원·화성', type: '정규직' },
-      { title: 'CAD 도면 작업자', company: '설계 용역 업체', salary: '2,600~3,200만원', location: '서울·경기', type: '계약직' },
-    ],
     books: [
       { title: '2026 전산응용기계제도기능사 필기', author: '성안당 편집부', publisher: '성안당', year: 2025, rating: 4.6 },
       { title: '전산응용기계제도기능사 실기 도면집', author: '김도현', publisher: '일진사', year: 2025, rating: 4.5 },
@@ -12970,13 +11238,6 @@ const CERTIFICATIONS = {
       { name: '기계·전기 안전', desc: '기계 방호 장치, 전기 안전, 방폭 설비, 감전 방지 대책' },
       { name: '화학물질 및 화재·폭발 안전', desc: 'MSDS, 화재·폭발 이론, 방재 설비, 위험물 관리' },
       { name: '건설 및 작업환경 관리', desc: '건설 현장 안전, 유해인자 노출 평가, 작업환경 측정' },
-    ],
-    jobs: [
-      { title: '안전보건 총괄 임원', company: '대기업·공기업', salary: '8,000~1억 2,000만원', location: '전국', type: '정규직' },
-      { title: '산업안전 컨설턴트', company: '안전컨설팅업체', salary: '6,000~9,000만원', location: '서울·경기', type: '정규직' },
-      { title: '안전관리 전문위원', company: '공공기관·협회', salary: '5,500~8,000만원', location: '서울', type: '계약직' },
-      { title: '안전보건 팀장', company: '제조·건설 대기업', salary: '6,000~8,500만원', location: '전국', type: '정규직' },
-      { title: '산업안전 교수·강사', company: '대학·직업훈련기관', salary: '4,500~7,000만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '산업안전기술사 핵심이론 총정리', author: '이상도', publisher: '성안당', year: 2025, rating: 4.5 },
@@ -13026,13 +11287,6 @@ const CERTIFICATIONS = {
       { name: '건설 기계·중장비 안전', desc: '양중기, 크레인, 항타기 안전 기준 및 점검 방법' },
       { name: '건설 재해 예방 및 법규', desc: '산업안전보건법, 건설기술진흥법, 안전보건조정자 제도' },
     ],
-    jobs: [
-      { title: '현장 안전보건관리자', company: '대형 건설사', salary: '6,000~9,000만원', location: '전국', type: '정규직' },
-      { title: '건설안전 컨설턴트', company: '안전전문기관', salary: '5,500~8,000만원', location: '서울·경기', type: '정규직' },
-      { title: '안전 감리원', company: '건설감리회사', salary: '5,000~7,500만원', location: '전국', type: '정규직' },
-      { title: '안전보건 팀장', company: '건설·플랜트 업체', salary: '5,500~8,000만원', location: '전국', type: '정규직' },
-      { title: '건설안전 전문위원', company: '공공기관·발주처', salary: '4,500~6,500만원', location: '서울', type: '계약직' },
-    ],
     books: [
       { title: '건설안전기술사 핵심이론 총정리', author: '강동호', publisher: '성안당', year: 2025, rating: 4.5 },
       { title: '건설안전기술사 기출문제 완전분석', author: '정재수', publisher: '예문사', year: 2025, rating: 4.4 },
@@ -13080,13 +11334,6 @@ const CERTIFICATIONS = {
       { name: '경보·피난 설비', desc: '자동화재탐지설비, 비상방송, 피난 유도 시스템' },
       { name: '소방 전기 및 특수 소화', desc: '비상전원, 제연 설비, 할론 대체 약제, 청정 소화 시스템' },
       { name: '소방 관계 법규', desc: '소방시설법, 화재예방법, 위험물안전관리법 핵심 조항' },
-    ],
-    jobs: [
-      { title: '소방 설계 기술사', company: '소방설계사무소', salary: '6,000~9,000만원', location: '전국', type: '정규직' },
-      { title: '소방 감리 전문가', company: '소방감리법인', salary: '5,500~8,000만원', location: '서울·경기', type: '정규직' },
-      { title: '소방 안전관리자', company: '대형 건물·공장', salary: '4,500~6,500만원', location: '전국', type: '정규직' },
-      { title: '소방 컨설턴트', company: '안전전문기관', salary: '5,000~7,500만원', location: '서울·경기', type: '정규직' },
-      { title: '소방 교수·강사', company: '소방학교·대학', salary: '4,000~6,500만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '소방기술사 핵심이론 총정리', author: '이순규', publisher: '성안당', year: 2025, rating: 4.5 },
@@ -13136,13 +11383,6 @@ const CERTIFICATIONS = {
       { name: '배전 공학', desc: '배전 계통 구성, 전압 강하, 역률 개선, 스마트 그리드' },
       { name: '전력 계통 보호 및 제어', desc: '계전기 종류·동작 원리, 전력 계통 안정화 대책' },
     ],
-    jobs: [
-      { title: '전력 계통 전문가', company: '한국전력공사', salary: '7,000~1억원', location: '전국', type: '정규직' },
-      { title: '발전 설비 기술 임원', company: '발전 공기업', salary: '7,500~1억 1,000만원', location: '전국', type: '정규직' },
-      { title: '전력 컨설턴트', company: '전력·에너지 컨설팅', salary: '6,000~9,000만원', location: '서울·경기', type: '정규직' },
-      { title: '배전 설계 전문가', salary: '5,500~8,000만원', company: '전기설계사무소', location: '전국', type: '정규직' },
-      { title: '전력 시스템 교수', company: '대학·연구소', salary: '5,000~7,500만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { title: '발송배전기술사 핵심이론 총정리', author: '김재원', publisher: '성안당', year: 2025, rating: 4.5 },
       { title: '발송배전기술사 기출문제 완전분석', author: '이상도', publisher: '예문사', year: 2025, rating: 4.4 },
@@ -13190,13 +11430,6 @@ const CERTIFICATIONS = {
       { name: '전열 공학', desc: '전기 가열 방식, 유도 가열, 적외선 가열, 전기로' },
       { name: '전기철도', desc: '직류·교류 전철 급전 시스템, 회생 제동, 신호 제어' },
       { name: '전기 화학 및 신에너지', desc: '전기 도금, 이차전지, 태양광·풍력 연계 설비' },
-    ],
-    jobs: [
-      { title: '전기 설비 기술 임원', company: '전기공사업체', salary: '6,500~9,500만원', location: '전국', type: '정규직' },
-      { title: '전기 설계 감리 전문가', company: '설계감리사무소', salary: '5,500~8,000만원', location: '서울·경기', type: '정규직' },
-      { title: '스마트 에너지 컨설턴트', company: '에너지 전문기관', salary: '5,500~8,000만원', location: '서울·경기', type: '정규직' },
-      { title: '전기 응용 연구원', company: '연구소·대학', salary: '5,000~7,000만원', location: '전국', type: '정규직' },
-      { title: '전기 교수·강사', company: '대학·직업훈련기관', salary: '4,500~6,500만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '전기응용기술사 핵심이론 총정리', author: '정성훈', publisher: '성안당', year: 2025, rating: 4.5 },
@@ -13246,13 +11479,6 @@ const CERTIFICATIONS = {
       { name: '기계 설계', desc: '기계 요소 설계(볼트·기어·베어링), 피로 파괴, 신뢰성' },
       { name: '기계 제조 및 자동화', desc: '가공 공정, CNC, 자동화 시스템, 생산 기술 동향' },
     ],
-    jobs: [
-      { title: '기계 설계 기술 임원', company: '중공업·플랜트 대기업', salary: '7,000~1억원', location: '전국', type: '정규직' },
-      { title: '기계 컨설턴트', company: '엔지니어링 회사', salary: '6,000~9,000만원', location: '서울·경기', type: '정규직' },
-      { title: '기계 감리 전문가', company: '플랜트감리사무소', salary: '5,500~8,000만원', location: '전국', type: '정규직' },
-      { title: '생산기술 전문위원', company: '자동차·방산업체', salary: '6,000~8,500만원', location: '전국', type: '정규직' },
-      { title: '기계공학 교수', company: '대학·연구소', salary: '5,000~7,500만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { title: '기계기술사 핵심이론 총정리', author: '이상도', publisher: '성안당', year: 2025, rating: 4.5 },
       { title: '기계기술사 기출문제 완전분석', author: '김현수', publisher: '예문사', year: 2025, rating: 4.4 },
@@ -13300,13 +11526,6 @@ const CERTIFICATIONS = {
       { name: '분리 공정', desc: '증류, 추출, 흡수·흡착, 막 분리 등 분리 기술 설계' },
       { name: '이동 현상', desc: '열전달, 물질 전달, 운동량 전달 이론 및 공정 적용' },
       { name: '화공 안전 및 환경', desc: '폭발 한계, 공정 위험성 평가(HAZOP), 환경 규제 대응' },
-    ],
-    jobs: [
-      { title: '화공 공정 기술 임원', company: '석유화학 대기업', salary: '7,500~1억 1,000만원', location: '울산·여수·대산', type: '정규직' },
-      { title: '화공 플랜트 컨설턴트', company: '엔지니어링 회사', salary: '6,000~9,000만원', location: '서울·경기', type: '정규직' },
-      { title: '공정 안전 전문가', company: '정유·화학공장', salary: '5,500~8,000만원', location: '전국', type: '정규직' },
-      { title: '화공 감리 전문가', company: '플랜트감리사무소', salary: '5,500~8,000만원', location: '전국', type: '정규직' },
-      { title: '화공학 교수', company: '대학·연구소', salary: '5,000~7,500만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '화공기술사 핵심이론 총정리', author: '강동호', publisher: '성안당', year: 2025, rating: 4.5 },
@@ -13356,13 +11575,6 @@ const CERTIFICATIONS = {
       { name: '가스 사고 사례 및 예방', desc: '폭발·화재 사고 사례 분석, 위험성 평가, 재발 방지' },
       { name: '가스 관계 법규', desc: '고압가스안전관리법, 도시가스사업법, LPG안전관리법' },
     ],
-    jobs: [
-      { title: '가스 안전 기술 임원', company: '한국가스안전공사', salary: '6,500~9,500만원', location: '전국', type: '정규직' },
-      { title: '도시가스 기술 전문가', company: '도시가스 회사', salary: '6,000~8,500만원', location: '전국', type: '정규직' },
-      { title: '가스 설비 컨설턴트', company: '가스안전컨설팅', salary: '5,500~8,000만원', location: '서울·경기', type: '정규직' },
-      { title: '가스 감리 전문가', company: '가스감리사무소', salary: '5,000~7,500만원', location: '전국', type: '정규직' },
-      { title: '가스 안전 교수', company: '대학·훈련기관', salary: '4,500~6,500만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { title: '가스기술사 핵심이론 총정리', author: '이순규', publisher: '성안당', year: 2025, rating: 4.5 },
       { title: '가스기술사 기출문제 완전분석', author: '박재현', publisher: '예문사', year: 2025, rating: 4.4 },
@@ -13410,13 +11622,6 @@ const CERTIFICATIONS = {
       { name: '데이터베이스', desc: '데이터 모델링, SQL 최적화, 빅데이터 아키텍처, NoSQL' },
       { name: '네트워크 및 보안', desc: '네트워크 프로토콜, 클라우드, 정보 보안 관리 체계' },
       { name: '신기술 동향', desc: 'AI·ML, 블록체인, IoT, 클라우드 컴퓨팅, 디지털 정부' },
-    ],
-    jobs: [
-      { title: 'CIO·정보화 임원', company: '대기업·공공기관', salary: '8,000~1억 2,000만원', location: '서울·경기', type: '정규직' },
-      { title: 'IT 컨설턴트', company: 'IT 컨설팅 회사', salary: '6,500~9,500만원', location: '서울·경기', type: '정규직' },
-      { title: '정보화 사업 PM', company: 'SI 대기업', salary: '6,000~8,500만원', location: '서울·경기', type: '정규직' },
-      { title: '공공 정보화 전문가', company: '정부·공공기관', salary: '5,500~8,000만원', location: '서울·세종', type: '정규직' },
-      { title: 'IT 교수·연구원', company: '대학·연구소', salary: '5,000~7,500만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '정보관리기술사 핵심이론 총정리', author: '박성현', publisher: '성안당', year: 2025, rating: 4.5 },
@@ -13466,13 +11671,6 @@ const CERTIFICATIONS = {
       { name: '암호학', desc: '대칭·비대칭 암호, PKI, 해시 함수, 디지털 서명 원리' },
       { name: '사이버 침해 대응', desc: 'APT 공격 분석, 디지털 포렌식, 사고 대응 절차' },
     ],
-    jobs: [
-      { title: 'CISO·보안 임원', company: '금융·대기업·공공기관', salary: '8,000~1억 3,000만원', location: '서울·경기', type: '정규직' },
-      { title: '사이버 보안 컨설턴트', company: '보안 컨설팅 회사', salary: '6,500~9,500만원', location: '서울·경기', type: '정규직' },
-      { title: '정보보안 전문가', company: '보안 솔루션 기업', salary: '6,000~8,500만원', location: '서울·경기', type: '정규직' },
-      { title: '침해사고 대응 전문가', company: 'CERT·보안관제', salary: '5,500~8,000만원', location: '서울·경기', type: '정규직' },
-      { title: '정보보안 교수', company: '대학·연구소', salary: '5,000~7,500만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { title: '정보보안기술사 핵심이론 총정리', author: '이상도', publisher: '성안당', year: 2025, rating: 4.5 },
       { title: '정보보안기술사 기출문제 완전분석', author: '박성현', publisher: '예문사', year: 2025, rating: 4.4 },
@@ -13520,13 +11718,6 @@ const CERTIFICATIONS = {
       { name: '알고리즘 및 자료구조', desc: '정렬·탐색 알고리즘, 그래프 이론, 복잡도 분석' },
       { name: '임베디드 시스템', desc: 'RTOS, 마이크로컨트롤러, IoT 디바이스 설계·최적화' },
       { name: '클라우드 및 분산 시스템', desc: '클라우드 아키텍처, 마이크로서비스, 컨테이너 기술' },
-    ],
-    jobs: [
-      { title: '시스템 아키텍트', company: '반도체·IT 대기업', salary: '7,500~1억 1,000만원', location: '서울·경기', type: '정규직' },
-      { title: '임베디드 시스템 전문가', company: '전자·자동차 부품사', salary: '6,000~9,000만원', location: '수원·화성·울산', type: '정규직' },
-      { title: 'IT 인프라 컨설턴트', company: 'IT 컨설팅 회사', salary: '6,000~9,000만원', location: '서울·경기', type: '정규직' },
-      { title: '클라우드 아키텍트', company: '클라우드·SaaS 기업', salary: '6,500~9,500만원', location: '서울·경기', type: '정규직' },
-      { title: '컴퓨터공학 교수', company: '대학·연구소', salary: '5,000~7,500만원', location: '전국', type: '정규직' },
     ],
     books: [
       { title: '컴퓨터시스템응용기술사 핵심이론 총정리', author: '박재현', publisher: '성안당', year: 2025, rating: 4.5 },
@@ -13576,13 +11767,6 @@ const CERTIFICATIONS = {
       { name: '구조 역학', desc: '보·골조 해석, 트러스, 아치, 이동 하중, 영향선' },
       { name: '철근 콘크리트 및 교량', desc: 'RC·PSC 설계, 교량 형식별 특성, 내진 설계 기준' },
     ],
-    jobs: [
-      { title: '토목 설계 기술 임원', company: '대형 건설사·설계사무소', salary: '7,000~1억원', location: '전국', type: '정규직' },
-      { title: '토목 감리 전문가', company: '감리법인', salary: '5,500~8,000만원', location: '전국', type: '정규직' },
-      { title: '토목 컨설턴트', company: '엔지니어링 회사', salary: '6,000~9,000만원', location: '서울·경기', type: '정규직' },
-      { title: '발주처 기술 심의위원', company: '정부·공기업', salary: '5,500~8,000만원', location: '서울·세종', type: '계약직' },
-      { title: '토목공학 교수', company: '대학·연구소', salary: '5,000~7,500만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { title: '토목기술사 핵심이론 총정리', author: '이재원', publisher: '성안당', year: 2025, rating: 4.5 },
       { title: '토목기술사 기출문제 완전분석', author: '박성현', publisher: '예문사', year: 2025, rating: 4.4 },
@@ -13631,13 +11815,6 @@ const CERTIFICATIONS = {
       { name: '건축 환경 및 설비', desc: '열·빛·음 환경, 공조·급배수·전기 설비 설계 기준' },
       { name: '건축 법규', desc: '건축법, 주택법, 건설기술진흥법 핵심 조항 및 인허가' },
     ],
-    jobs: [
-      { title: '건축 기술 임원', company: '대형 건설사', salary: '7,000~1억원', location: '전국', type: '정규직' },
-      { title: '건축 감리 전문가', company: '건축감리법인', salary: '5,500~8,000만원', location: '전국', type: '정규직' },
-      { title: '건축 컨설턴트', company: '건설·부동산 컨설팅', salary: '6,000~9,000만원', location: '서울·경기', type: '정규직' },
-      { title: '발주처 기술 심의위원', company: '정부·공기업', salary: '5,500~8,000만원', location: '서울·세종', type: '계약직' },
-      { title: '건축학 교수', company: '대학·연구소', salary: '5,000~7,500만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { title: '건축기술사 핵심이론 총정리', author: '박용기', publisher: '성안당', year: 2025, rating: 4.5 },
       { title: '건축기술사 기출문제 완전분석', author: '이순규', publisher: '예문사', year: 2025, rating: 4.4 },
@@ -13665,293 +11842,6 @@ const CERTIFICATIONS = {
     passRates: [{year:2020,written:42,practical:35},{year:2021,written:44,practical:36},{year:2022,written:45,practical:37},{year:2023,written:46,practical:38},{year:2024,written:45,practical:38}],
     schedules: [{round:'상시',writtenExam:'상시접수',practicalExam:'상시접수',writtenResult:'-',practicalResult:'-',registerStart:'-',registerEnd:'-'}],
     subjects: [{name:'네트워크 일반',desc:'OSI 7계층, TCP/IP, 라우팅 프로토콜'},{name:'NOS',desc:'Windows/Linux 서버 관리'},{name:'네트워크 운용기기',desc:'스위치·라우터·방화벽 설정'},{name:'보안',desc:'네트워크 보안 정책 및 암호화'}],
-    jobs: [{company:'KT',title:'네트워크 엔지니어',type:'large',region:'seoul',experience:'any',salary:'3800~5000만원',deadline:'2026-09-30',duties:'네트워크 인프라 구축 및 운영',requirements:['네트워크관리사 1급 우대'],benefits:'4대보험, 성과급',applyUrl:'https://recruit.kt.com'},{company:'SK브로드밴드',title:'네트워크 운용 관리',type:'large',region:'seoul',experience:'exp',salary:'4000~5500만원',deadline:'2026-10-31',duties:'광역 네트워크 운용 및 장애 대응',requirements:['네트워크관리사 1급 이상'],benefits:'복지포인트, 주택자금',applyUrl:'https://www.skbroadband.com'}],
-    books: [{title:'2026 네트워크관리사 1급 필기+실기 한번에 끝내기',author:'이중호',publisher:'성안당',rating:4.7,reviews:312},{title:'네트워크관리사 1급 기출문제 완전정복',author:'김민수',publisher:'예문사',rating:4.5,reviews:245},{title:'네트워크관리사 1급 핵심요약 + 실전문제',author:'박상현',publisher:'일진사',rating:4.4,reviews:189}],
-    milestones: [{week:'1~2주',task:'네트워크 기초·OSI 계층 이론'},{week:'3~4주',task:'TCP/IP 및 라우팅 프로토콜'},{week:'5~6주',task:'NOS 서버 설정 실습'},{week:'7~8주',task:'기출문제 풀이 및 오답 정리'}],
-    defaultTodos: ['OSI 7계층·TCP/IP 완전 정복','라우팅·스위칭 설정 실습','서버(Windows/Linux) 구축 실습','최근 기출문제 3회분 풀기'],
-  },
-
-  '네트워크관리사2급': {
-    name: '네트워크관리사2급', icon: 'fa-network-wired', category: 'IT·정보통신',
-    heroTitle: '2026년도 네트워크관리사 2급 합격 전략',
-    heroDesc: '네트워크 기초 이론과 장비 운용을 검증하는 입문 자격증. IT 인프라 취업의 첫 걸음으로 많은 수험생이 선택하는 국민 자격증입니다.',
-    passRateSummary: '필기 52% | 실기 44%', avgPassRate: '48%',
-    passRates: [{year:2020,written:49,practical:41},{year:2021,written:51,practical:43},{year:2022,written:52,practical:44},{year:2023,written:53,practical:45},{year:2024,written:52,practical:44}],
-    schedules: [{round:'상시',writtenExam:'상시접수',practicalExam:'상시접수',writtenResult:'-',practicalResult:'-',registerStart:'-',registerEnd:'-'}],
-    subjects: [{name:'네트워크 일반',desc:'OSI 계층, IP 주소 체계'},{name:'TCP/IP',desc:'프로토콜 기초 및 서브넷팅'},{name:'NOS',desc:'기본 서버 관리'},{name:'네트워크 운용기기',desc:'스위치·공유기 기본 설정'}],
-    jobs: [{company:'LG유플러스',title:'네트워크 운용',type:'large',region:'seoul',experience:'new',salary:'3500~4500만원',deadline:'2026-09-30',duties:'네트워크 회선 관리 및 장애 처리',requirements:['네트워크관리사 2급 이상'],benefits:'4대보험, 통신비 지원',applyUrl:'https://www.lguplus.com'}],
-    books: [{title:'2026 네트워크관리사 2급 필기 한권끝장',author:'이중호',publisher:'성안당',rating:4.6,reviews:428},{title:'네트워크관리사 2급 실기 완전정복',author:'김민수',publisher:'예문사',rating:4.5,reviews:356},{title:'네트워크관리사 2급 7일 완성',author:'박성민',publisher:'길벗',rating:4.4,reviews:289}],
-    milestones: [{week:'1~2주',task:'네트워크 기초 이론'},{week:'3~4주',task:'TCP/IP 및 IP 주소 체계'},{week:'5주',task:'기출문제 집중 풀이'}],
-    defaultTodos: ['IP 주소·서브넷 계산 완숙','OSI 계층별 프로토콜 암기','기출문제 5회분 풀기'],
-  },
-
-  '리눅스마스터1급': {
-    name: '리눅스마스터1급', icon: 'fa-terminal', category: 'IT·정보통신',
-    heroTitle: '2026년도 리눅스마스터 1급 합격 전략',
-    heroDesc: '리눅스 시스템 관리·보안·네트워크 서비스 구축 역량을 검증하는 국내 최고 권위의 리눅스 자격증. 클라우드·서버 엔지니어 취업에 강력한 무기입니다.',
-    passRateSummary: '1차 55% | 2차 35%', avgPassRate: '32%',
-    passRates: [{year:2020,written:52,practical:33},{year:2021,written:54,practical:34},{year:2022,written:55,practical:35},{year:2023,written:56,practical:36},{year:2024,written:55,practical:35}],
-    schedules: [{round:'상반기',writtenExam:'2026-03-14',practicalExam:'2026-05-16',writtenResult:'2026-04-04',practicalResult:'2026-06-13',registerStart:'2026-01-02',registerEnd:'2026-02-07'},{round:'하반기',writtenExam:'2026-09-12',practicalExam:'2026-11-14',writtenResult:'2026-10-10',practicalResult:'2026-12-12',registerStart:'2026-07-01',registerEnd:'2026-08-07'}],
-    subjects: [{name:'리눅스 시스템 관리',desc:'커널·파일시스템·프로세스 관리'},{name:'리눅스 네트워크 서비스',desc:'DNS·Web·FTP·메일 서버 구축'},{name:'리눅스 보안',desc:'방화벽, SELinux, 취약점 관리'},{name:'시스템 프로그래밍',desc:'셸 스크립트, C 기초'}],
-    jobs: [{company:'네이버',title:'리눅스 서버 엔지니어',type:'large',region:'seoul',experience:'any',salary:'4500~6500만원',deadline:'2026-10-31',duties:'대규모 리눅스 서버 관리 및 자동화',requirements:['리눅스마스터 1급 우대'],benefits:'스톡옵션, 유연근무',applyUrl:'https://recruit.navercorp.com'},{company:'카카오',title:'인프라 엔지니어',type:'large',region:'seoul',experience:'exp',salary:'5000~7000만원',deadline:'2026-11-30',duties:'클라우드 인프라 구축·운영',requirements:['리눅스마스터 1급 이상 우대'],benefits:'재택근무, 성과급',applyUrl:'https://careers.kakao.com'}],
-    books: [{title:'2026 리눅스마스터 1급 완전정복',author:'한마음',publisher:'생능출판',rating:4.8,reviews:267},{title:'리눅스마스터 1급 기출문제+핵심요약',author:'김정현',publisher:'성안당',rating:4.6,reviews:198},{title:'리눅스 서버 실무 + 자격증',author:'이재국',publisher:'길벗',rating:4.5,reviews:156}],
-    milestones: [{week:'1~3주',task:'리눅스 기초·파일시스템·명령어'},{week:'4~6주',task:'네트워크 서비스 구축 실습'},{week:'7~8주',task:'보안 설정 및 스크립트 작성'},{week:'9~10주',task:'기출문제 풀이 및 실기 준비'}],
-    defaultTodos: ['리눅스 필수 명령어 100개 암기','서버 서비스(DNS·Web·FTP) 실습','셸 스크립트 작성 연습','최근 기출 3회분 풀기'],
-  },
-
-  '리눅스마스터2급': {
-    name: '리눅스마스터2급', icon: 'fa-terminal', category: 'IT·정보통신',
-    heroTitle: '2026년도 리눅스마스터 2급 합격 전략',
-    heroDesc: '리눅스 기초 명령어, 파일시스템, 사용자 관리를 다루는 입문 자격증. 개발자·시스템 관리자 모두에게 필수 기초 역량을 증명합니다.',
-    passRateSummary: '1차 62% | 2차 50%', avgPassRate: '55%',
-    passRates: [{year:2020,written:60,practical:48},{year:2021,written:61,practical:49},{year:2022,written:62,practical:50},{year:2023,written:63,practical:51},{year:2024,written:62,practical:50}],
-    schedules: [{round:'상반기',writtenExam:'2026-03-14',practicalExam:'2026-05-16',writtenResult:'2026-04-04',practicalResult:'2026-06-13',registerStart:'2026-01-02',registerEnd:'2026-02-07'},{round:'하반기',writtenExam:'2026-09-12',practicalExam:'2026-11-14',writtenResult:'2026-10-10',practicalResult:'2026-12-12',registerStart:'2026-07-01',registerEnd:'2026-08-07'}],
-    subjects: [{name:'리눅스 운영 및 관리',desc:'기본 명령어·파일시스템·사용자 관리'},{name:'장치 관리',desc:'디스크·네트워크·프린터 설정'},{name:'X윈도우',desc:'데스크탑 환경 설정'}],
-    jobs: [{company:'중소 IT 기업',title:'시스템 관리자',type:'mid',region:'seoul',experience:'new',salary:'3000~4000만원',deadline:'2026-09-30',duties:'리눅스 서버 기본 운영 및 유지보수',requirements:['리눅스마스터 2급 이상'],benefits:'4대보험',applyUrl:'https://www.saramin.co.kr'}],
-    books: [{title:'2026 리눅스마스터 2급 한권으로 끝내기',author:'한마음',publisher:'생능출판',rating:4.7,reviews:389},{title:'리눅스마스터 2급 기출문제 완성',author:'이재국',publisher:'성안당',rating:4.5,reviews:312},{title:'리눅스마스터 2급 합격공식',author:'김정현',publisher:'길벗',rating:4.4,reviews:256}],
-    milestones: [{week:'1~2주',task:'리눅스 기초·명령어'},{week:'3~4주',task:'파일시스템·사용자 관리'},{week:'5주',task:'기출문제 집중 풀기'}],
-    defaultTodos: ['기본 명령어 반복 실습','사용자·그룹 관리 연습','기출문제 3회분 풀기'],
-  },
-
-  'ADsP': {
-    name: 'ADsP', icon: 'fa-chart-bar', category: 'IT·정보통신',
-    heroTitle: '2026년도 ADsP(데이터분석준전문가) 합격 전략',
-    heroDesc: '데이터 이해·처리·분석의 기초를 검증하는 한국데이터산업진흥원 공인 자격증. 비전공자도 데이터 직군으로 전환하는 발판이 됩니다.',
-    passRateSummary: '필기 50% 내외', avgPassRate: '50%',
-    passRates: [{year:2020,written:48,practical:0},{year:2021,written:50,practical:0},{year:2022,written:51,practical:0},{year:2023,written:52,practical:0},{year:2024,written:50,practical:0}],
-    schedules: [{round:'1회',writtenExam:'2026-03-28',practicalExam:'-',writtenResult:'2026-04-25',practicalResult:'-',registerStart:'2026-02-17',registerEnd:'2026-03-07'},{round:'2회',writtenExam:'2026-09-26',practicalExam:'-',writtenResult:'2026-10-24',practicalResult:'-',registerStart:'2026-08-18',registerEnd:'2026-09-05'}],
-    subjects: [{name:'데이터 이해',desc:'데이터 개념, 데이터베이스 기초'},{name:'데이터 분석 기획',desc:'분석 방법론, 프로젝트 관리'},{name:'데이터 분석',desc:'통계 기법, R·Python 기초'}],
-    jobs: [{company:'삼성SDS',title:'데이터 분석가',type:'large',region:'seoul',experience:'new',salary:'4000~5500만원',deadline:'2026-10-31',duties:'빅데이터 분석 및 인사이트 도출',requirements:['ADsP 이상 우대'],benefits:'스톡옵션, 유연근무',applyUrl:'https://www.samsungsds.com'}],
-    books: [{title:'2026 ADsP 데이터분석준전문가 한권으로 합격',author:'이지스퍼블리싱',publisher:'이지스퍼블리싱',rating:4.8,reviews:534},{title:'ADsP 기출문제+핵심이론 30일 완성',author:'정우진',publisher:'데이터에듀',rating:4.7,reviews:423},{title:'ADsP 실전모의고사 5회분',author:'빅데이터연구소',publisher:'성안당',rating:4.5,reviews:312}],
-    milestones: [{week:'1~2주',task:'데이터 이해·DB 기초'},{week:'3~4주',task:'통계 기법·분석 방법론'},{week:'5~6주',task:'기출문제 집중 풀기'}],
-    defaultTodos: ['R/Python 기초 문법 학습','통계 개념(평균·분산·회귀) 정리','ADsP 기출문제 5회분 풀기'],
-  },
-
-  'ADP': {
-    name: 'ADP', icon: 'fa-database', category: 'IT·정보통신',
-    heroTitle: '2026년도 ADP(데이터분석전문가) 합격 전략',
-    heroDesc: '데이터 분석 설계·구현·결과 해석까지 전문가 수준을 검증하는 최고 권위의 데이터 자격증. 데이터 사이언티스트·AI 엔지니어 취업에 필수입니다.',
-    passRateSummary: '필기 30% | 실기 20%', avgPassRate: '18%',
-    passRates: [{year:2020,written:28,practical:18},{year:2021,written:29,practical:19},{year:2022,written:30,practical:20},{year:2023,written:31,practical:21},{year:2024,written:30,practical:20}],
-    schedules: [{round:'1회',writtenExam:'2026-03-28',practicalExam:'2026-06-06',writtenResult:'2026-04-25',practicalResult:'2026-07-04',registerStart:'2026-02-17',registerEnd:'2026-03-07'},{round:'2회',writtenExam:'2026-09-26',practicalExam:'2026-12-05',writtenResult:'2026-10-24',practicalResult:'2027-01-02',registerStart:'2026-08-18',registerEnd:'2026-09-05'}],
-    subjects: [{name:'데이터 이해',desc:'데이터 거버넌스·마스터 데이터'},{name:'데이터 분석 기획',desc:'분석 로드맵·방법론'},{name:'데이터 분석',desc:'머신러닝·딥러닝·시계열 분석'},{name:'데이터 시각화',desc:'BI 도구·시각화 설계'}],
-    jobs: [{company:'카카오',title:'데이터 사이언티스트',type:'large',region:'seoul',experience:'exp',salary:'6000~9000만원',deadline:'2026-11-30',duties:'ML 모델 개발 및 A/B 테스트',requirements:['ADP 우대'],benefits:'재택근무, 스톡옵션',applyUrl:'https://careers.kakao.com'},{company:'네이버',title:'AI 분석가',type:'large',region:'seoul',experience:'exp',salary:'5500~8000만원',deadline:'2026-10-31',duties:'대용량 데이터 분석 및 모델링',requirements:['ADP 이상 우대'],benefits:'유연근무, 성과급',applyUrl:'https://recruit.navercorp.com'}],
-    books: [{title:'2026 ADP 데이터분석전문가 필기+실기 완전정복',author:'권철민',publisher:'이지스퍼블리싱',rating:4.8,reviews:312},{title:'ADP 머신러닝·딥러닝 실전 문제집',author:'빅데이터연구소',publisher:'성안당',rating:4.6,reviews:245},{title:'ADP 통계분석·SQL 핵심정리',author:'이지영',publisher:'데이터에듀',rating:4.5,reviews:198}],
-    milestones: [{week:'1~3주',task:'통계·머신러닝 이론'},{week:'4~6주',task:'Python/R 실습'},{week:'7~8주',task:'필기 기출문제'},{week:'9~12주',task:'실기 과제형 연습'}],
-    defaultTodos: ['pandas·scikit-learn 실습','통계 검정 방법 완전 이해','기출문제 풀기 + 오답 분석','실기 과제 모의 풀이'],
-  },
-
-  'SQLP': {
-    name: 'SQLP', icon: 'fa-server', category: 'IT·정보통신',
-    heroTitle: '2026년도 SQLP(SQL전문가) 합격 전략',
-    heroDesc: '데이터베이스 SQL 튜닝·설계 전문가 자격증. DBA·데이터 엔지니어 취업에 핵심 스펙이며 SQLD 합격 후 도전하는 상위 자격증입니다.',
-    passRateSummary: '필기 40% | 실기 25%', avgPassRate: '22%',
-    passRates: [{year:2020,written:38,practical:23},{year:2021,written:39,practical:24},{year:2022,written:40,practical:25},{year:2023,written:41,practical:26},{year:2024,written:40,practical:25}],
-    schedules: [{round:'상반기',writtenExam:'2026-03-28',practicalExam:'2026-06-06',writtenResult:'2026-04-25',practicalResult:'2026-07-04',registerStart:'2026-02-17',registerEnd:'2026-03-07'},{round:'하반기',writtenExam:'2026-09-26',practicalExam:'2026-12-05',writtenResult:'2026-10-24',practicalResult:'2027-01-02',registerStart:'2026-08-18',registerEnd:'2026-09-05'}],
-    subjects: [{name:'SQL 기본 및 활용',desc:'DDL·DML·TCL·집합 연산자'},{name:'SQL 최적화 기본 원리',desc:'옵티마이저·인덱스·조인 최적화'},{name:'고급 SQL 튜닝',desc:'실행계획 분석·파티셔닝·대용량 처리'}],
-    jobs: [{company:'삼성전자',title:'DBA',type:'large',region:'seoul',experience:'exp',salary:'5000~7000만원',deadline:'2026-10-31',duties:'Oracle/MySQL DB 운영 및 성능 튜닝',requirements:['SQLP 우대'],benefits:'주택자금, 학자금',applyUrl:'https://www.samsung.com/sec/careers'},{company:'LG CNS',title:'데이터베이스 엔지니어',type:'large',region:'seoul',experience:'any',salary:'4500~6000만원',deadline:'2026-09-30',duties:'대용량 DB 설계 및 쿼리 최적화',requirements:['SQLP 이상 우대'],benefits:'유연근무, 복지포인트',applyUrl:'https://www.lgcns.com/careers'}],
-    books: [{title:'2026 SQLP 자격검정 핵심노트 I+II',author:'한국데이터산업진흥원',publisher:'한국데이터산업진흥원',rating:4.7,reviews:312},{title:'SQLP 실전 SQL 튜닝',author:'조시형',publisher:'디비안',rating:4.8,reviews:445},{title:'SQLP 기출문제+해설 완전정복',author:'이석기',publisher:'성안당',rating:4.5,reviews:234}],
-    milestones: [{week:'1~3주',task:'SQL 기본 문법 완벽 정리'},{week:'4~6주',task:'인덱스·옵티마이저 원리'},{week:'7~9주',task:'튜닝 실전 연습'},{week:'10~12주',task:'실기 서술형 답안 작성'}],
-    defaultTodos: ['실행계획(EXPLAIN) 분석 연습','인덱스 설계 전략 이해','기출문제 풀기','실기 서술형 5문제 작성 연습'],
-  },
-
-  '임베디드기사': {
-    name: '임베디드기사', icon: 'fa-microchip', category: 'IT·정보통신',
-    heroTitle: '2026년도 임베디드기사 합격 전략',
-    heroDesc: 'IoT·자동차·반도체 장비에 탑재되는 임베디드 시스템 설계 역량을 검증하는 국가기술자격. 전장·반도체·IoT 기업 취업에 강점을 발휘합니다.',
-    passRateSummary: '필기 42% | 실기 30%', avgPassRate: '28%',
-    passRates: [{year:2020,written:40,practical:28},{year:2021,written:41,practical:29},{year:2022,written:42,practical:30},{year:2023,written:43,practical:31},{year:2024,written:42,practical:30}],
-    schedules: [{round:'1회',writtenExam:'2026-03-07 ~ 2026-03-20',practicalExam:'2026-06-20 ~ 2026-07-04',writtenResult:'2026-04-18',practicalResult:'2026-07-25',registerStart:'2026-01-02',registerEnd:'2026-01-23'},{round:'2회',writtenExam:'2026-07-05 ~ 2026-07-18',practicalExam:'2026-10-17 ~ 2026-10-31',writtenResult:'2026-08-22',practicalResult:'2026-11-21',registerStart:'2026-05-12',registerEnd:'2026-06-05'}],
-    subjects: [{name:'전자회로',desc:'디지털·아날로그 회로 설계'},{name:'임베디드 운영체제',desc:'RTOS·리눅스 커널'},{name:'임베디드 소프트웨어',desc:'C 언어·드라이버 개발'},{name:'임베디드 하드웨어',desc:'마이크로프로세서·메모리 구조'}],
-    jobs: [{company:'현대자동차',title:'전장 소프트웨어 개발',type:'large',region:'seoul',experience:'any',salary:'4500~6500만원',deadline:'2026-10-31',duties:'차량 ECU 임베디드 SW 개발',requirements:['임베디드기사 우대'],benefits:'주택·학자금 지원',applyUrl:'https://www.hyundai.com/kr/careers'},{company:'삼성전자',title:'임베디드 시스템 엔지니어',type:'large',region:'seoul',experience:'exp',salary:'5000~7500만원',deadline:'2026-11-30',duties:'IoT 기기 펌웨어 개발',requirements:['임베디드기사 우대'],benefits:'주식매수선택권',applyUrl:'https://www.samsung.com/sec/careers'}],
-    books: [{title:'2026 임베디드기사 필기+실기 완전정복',author:'이성주',publisher:'성안당',rating:4.7,reviews:198},{title:'임베디드 C 프로그래밍 실전',author:'김정현',publisher:'한빛미디어',rating:4.6,reviews:267},{title:'임베디드기사 기출문제 해설집',author:'박형준',publisher:'예문사',rating:4.4,reviews:145}],
-    milestones: [{week:'1~3주',task:'전자회로·디지털 논리 기초'},{week:'4~6주',task:'C 언어·RTOS 개념'},{week:'7~9주',task:'하드웨어 인터페이스 실습'},{week:'10~12주',task:'기출문제 풀기·실기 준비'}],
-    defaultTodos: ['C언어 포인터·구조체 완숙','RTOS 태스크 스케줄링 이해','마이크로프로세서 구조 암기','기출문제 4회분 풀기'],
-  },
-
-  '멀티미디어콘텐츠제작전문가': {
-    name: '멀티미디어콘텐츠제작전문가', icon: 'fa-photo-film', category: 'IT·정보통신',
-    heroTitle: '2026년도 멀티미디어콘텐츠제작전문가 합격 전략',
-    heroDesc: '영상·이미지·음향·애니메이션을 통합한 디지털 콘텐츠 제작 역량을 검증. 게임·방송·광고·교육 콘텐츠 업계 취업에 유리합니다.',
-    passRateSummary: '필기 48% | 실기 40%', avgPassRate: '38%',
-    passRates: [{year:2020,written:46,practical:38},{year:2021,written:47,practical:39},{year:2022,written:48,practical:40},{year:2023,written:49,practical:41},{year:2024,written:48,practical:40}],
-    schedules: [{round:'1회',writtenExam:'2026-03-07 ~ 2026-03-20',practicalExam:'2026-06-20 ~ 2026-07-04',writtenResult:'2026-04-18',practicalResult:'2026-07-25',registerStart:'2026-01-02',registerEnd:'2026-01-23'},{round:'2회',writtenExam:'2026-07-05 ~ 2026-07-18',practicalExam:'2026-10-17 ~ 2026-10-31',writtenResult:'2026-08-22',practicalResult:'2026-11-21',registerStart:'2026-05-12',registerEnd:'2026-06-05'}],
-    subjects: [{name:'멀티미디어 개론',desc:'디지털 미디어 이론·표준'},{name:'멀티미디어 저작',desc:'HTML5·CSS·JS 기반 저작도구'},{name:'그래픽 제작',desc:'Photoshop·Illustrator 활용'},{name:'영상·음향 편집',desc:'Premiere·After Effects 기초'}],
-    jobs: [{company:'NHN',title:'UI/UX 디자이너',type:'large',region:'seoul',experience:'any',salary:'3500~5000만원',deadline:'2026-09-30',duties:'게임 UI 및 콘텐츠 디자인',requirements:['멀티미디어콘텐츠제작전문가 우대'],benefits:'유연근무, 복지포인트',applyUrl:'https://careers.nhn.com'}],
-    books: [{title:'2026 멀티미디어콘텐츠제작전문가 필기 합격공식',author:'이경미',publisher:'성안당',rating:4.6,reviews:234},{title:'멀티미디어 실기 Premiere+After Effects',author:'박지영',publisher:'한빛미디어',rating:4.5,reviews:312},{title:'멀티미디어콘텐츠 기출문제 완전정복',author:'김미래',publisher:'예문사',rating:4.4,reviews:189}],
-    milestones: [{week:'1~2주',task:'멀티미디어 이론·표준'},{week:'3~5주',task:'그래픽 툴 실습'},{week:'6~7주',task:'영상 편집 실습'},{week:'8~9주',task:'기출문제 + 실기 완성'}],
-    defaultTodos: ['Photoshop 기본 기능 숙달','Premiere 영상 편집 실습','기출문제 3회분 풀기','포트폴리오 작품 제작'],
-  },
-
-  'CCNA': {
-    name: 'CCNA', icon: 'fa-sitemap', category: 'IT·정보통신',
-    heroTitle: '2026년도 CCNA(Cisco Certified Network Associate) 합격 전략',
-    heroDesc: '시스코 공인 네트워크 어소시에이트 자격증. 전 세계 IT 기업에서 인정받는 글로벌 네트워크 자격으로 네트워크 엔지니어 취업의 기본 스펙입니다.',
-    passRateSummary: '합격률 약 60~70%', avgPassRate: '65%',
-    passRates: [{year:2020,written:63,practical:0},{year:2021,written:64,practical:0},{year:2022,written:65,practical:0},{year:2023,written:66,practical:0},{year:2024,written:65,practical:0}],
-    schedules: [{round:'상시',writtenExam:'피어슨VUE 상시 응시',practicalExam:'-',writtenResult:'즉시 발표',practicalResult:'-',registerStart:'-',registerEnd:'-'}],
-    subjects: [{name:'네트워크 기초',desc:'OSI·TCP/IP·서브넷팅'},{name:'스위칭',desc:'VLAN·STP·EtherChannel'},{name:'라우팅',desc:'OSPF·EIGRP·BGP 기초'},{name:'보안·자동화',desc:'ACL·VPN·네트워크 자동화'}],
-    jobs: [{company:'KT',title:'네트워크 엔지니어',type:'large',region:'seoul',experience:'any',salary:'4000~5500만원',deadline:'2026-10-31',duties:'WAN/LAN 설계 및 유지보수',requirements:['CCNA 이상 필수'],benefits:'4대보험, 성과급',applyUrl:'https://recruit.kt.com'},{company:'시스코코리아',title:'네트워크 솔루션 엔지니어',type:'large',region:'seoul',experience:'any',salary:'4500~6000만원',deadline:'2026-09-30',duties:'고객사 네트워크 솔루션 컨설팅',requirements:['CCNA 필수·CCNP 우대'],benefits:'글로벌 교육 지원',applyUrl:'https://www.cisco.com/c/ko_kr/about/careers.html'}],
-    books: [{title:'CCNA 200-301 Official Cert Guide(한국어판)',author:'Wendell Odom',publisher:'Cisco Press',rating:4.9,reviews:567},{title:'CCNA 완전정복 한권으로 끝내기',author:'황순규',publisher:'길벗',rating:4.7,reviews:423},{title:'CCNA 실전 덤프+해설',author:'네트워크연구소',publisher:'성안당',rating:4.5,reviews:312}],
-    milestones: [{week:'1~3주',task:'네트워크 기초·서브넷팅'},{week:'4~6주',task:'스위칭·VLAN 실습'},{week:'7~9주',task:'라우팅 프로토콜 실습'},{week:'10~12주',task:'모의시험 + 취약점 보완'}],
-    defaultTodos: ['서브넷 계산 완숙','Packet Tracer 실습 환경 구축','OSPF 설정 실습','공식 모의시험 5회 응시'],
-  },
-
-  'CCNP': {
-    name: 'CCNP', icon: 'fa-sitemap', category: 'IT·정보통신',
-    heroTitle: '2026년도 CCNP(Cisco Certified Network Professional) 합격 전략',
-    heroDesc: 'CCNA 상위 자격증으로 대규모 엔터프라이즈 네트워크 설계·구현·운영 능력을 검증. 시니어 네트워크 엔지니어·아키텍트 취업에 필수입니다.',
-    passRateSummary: '합격률 약 45~55%', avgPassRate: '50%',
-    passRates: [{year:2020,written:48,practical:0},{year:2021,written:49,practical:0},{year:2022,written:50,practical:0},{year:2023,written:51,practical:0},{year:2024,written:50,practical:0}],
-    schedules: [{round:'상시',writtenExam:'피어슨VUE 상시 응시',practicalExam:'-',writtenResult:'즉시 발표',practicalResult:'-',registerStart:'-',registerEnd:'-'}],
-    subjects: [{name:'엔터프라이즈 코어(ENCOR)',desc:'이중화·QoS·SD-WAN 설계'},{name:'집중 시험',desc:'ENARSI·ENSDWI 중 선택'},{name:'보안·자동화',desc:'Python 기반 네트워크 자동화'}],
-    jobs: [{company:'삼성SDS',title:'시니어 네트워크 엔지니어',type:'large',region:'seoul',experience:'exp',salary:'5500~7500만원',deadline:'2026-11-30',duties:'글로벌 데이터센터 네트워크 설계',requirements:['CCNP Enterprise 필수'],benefits:'주택자금, 학자금',applyUrl:'https://www.samsungsds.com'},{company:'LG CNS',title:'네트워크 아키텍트',type:'large',region:'seoul',experience:'exp',salary:'6000~8000만원',deadline:'2026-10-31',duties:'차세대 네트워크 아키텍처 설계',requirements:['CCNP 이상 우대'],benefits:'성과급, 유연근무',applyUrl:'https://www.lgcns.com/careers'}],
-    books: [{title:'CCNP ENCOR 350-401 Official Cert Guide',author:'Brad Edgeworth',publisher:'Cisco Press',rating:4.9,reviews:312},{title:'CCNP 엔터프라이즈 완전정복',author:'황순규',publisher:'길벗',rating:4.7,reviews:234},{title:'CCNP 실전 랩 가이드',author:'네트워크연구소',publisher:'성안당',rating:4.5,reviews:178}],
-    milestones: [{week:'1~4주',task:'ENCOR 코어 이론'},{week:'5~8주',task:'고급 라우팅·스위칭 실습'},{week:'9~11주',task:'집중 시험 과목 준비'},{week:'12주',task:'모의시험 + 최종 점검'}],
-    defaultTodos: ['ENCOR 공식 교재 정독','GNS3/EVE-NG 실습 환경 구축','고급 BGP·OSPF 설정 실습','집중 시험 과목 선택 후 준비'],
-  },
-
-  'AWS Solutions Architect': {
-    name: 'AWS Solutions Architect', icon: 'fa-cloud', category: 'IT·정보통신',
-    heroTitle: '2026년도 AWS Solutions Architect Associate 합격 전략',
-    heroDesc: '아마존 AWS 클라우드 아키텍처 설계 역량을 검증하는 글로벌 1위 클라우드 자격증. 클라우드 엔지니어·DevOps 취업의 필수 스펙입니다.',
-    passRateSummary: '합격률 약 60~70%', avgPassRate: '65%',
-    passRates: [{year:2020,written:62,practical:0},{year:2021,written:63,practical:0},{year:2022,written:64,practical:0},{year:2023,written:65,practical:0},{year:2024,written:65,practical:0}],
-    schedules: [{round:'상시',writtenExam:'피어슨VUE/온라인 상시 응시',practicalExam:'-',writtenResult:'즉시 발표',practicalResult:'-',registerStart:'-',registerEnd:'-'}],
-    subjects: [{name:'AWS 핵심 서비스',desc:'EC2·S3·RDS·VPC 설계'},{name:'고가용성 아키텍처',desc:'Auto Scaling·ELB·Multi-AZ'},{name:'보안',desc:'IAM·KMS·CloudTrail'},{name:'비용 최적화',desc:'Reserved Instance·Savings Plans'}],
-    jobs: [{company:'AWS코리아',title:'Solutions Architect',type:'large',region:'seoul',experience:'any',salary:'6000~9000만원',deadline:'2026-11-30',duties:'엔터프라이즈 고객 클라우드 아키텍처 설계',requirements:['AWS SAA 필수·SAP 우대'],benefits:'스톡옵션, RSU',applyUrl:'https://aws.amazon.com/ko/careers'},{company:'카카오클라우드',title:'클라우드 엔지니어',type:'large',region:'seoul',experience:'any',salary:'5000~7000만원',deadline:'2026-10-31',duties:'클라우드 인프라 설계 및 운영',requirements:['AWS SAA 이상 우대'],benefits:'재택근무, 스톡옵션',applyUrl:'https://careers.kakao.com'}],
-    books: [{title:'AWS Certified Solutions Architect Study Guide(한국어)',author:'Ben Piper',publisher:'Sybex',rating:4.8,reviews:678},{title:'AWS SAA-C03 합격공식 30일 완성',author:'김기술',publisher:'길벗',rating:4.7,reviews:534},{title:'AWS 실습으로 배우는 아키텍처 설계',author:'이도원',publisher:'한빛미디어',rating:4.6,reviews:412}],
-    milestones: [{week:'1~3주',task:'AWS 핵심 서비스 이론'},{week:'4~6주',task:'실습 환경(AWS Free Tier) 구축'},{week:'7~9주',task:'고가용성·보안 아키텍처'},{week:'10~12주',task:'공식 모의시험 + 취약점 보완'}],
-    defaultTodos: ['AWS Free Tier 계정 생성','EC2·S3·VPC 실습','공식 연습시험(Practice Exam) 응시','Well-Architected Framework 정독'],
-  },
-
-  'GCP': {
-    name: 'GCP', icon: 'fa-cloud', category: 'IT·정보통신',
-    heroTitle: '2026년도 GCP(Google Cloud Professional) 합격 전략',
-    heroDesc: '구글 클라우드 플랫폼의 인프라·데이터·AI 서비스 역량을 검증. BigQuery·Vertex AI 중심의 데이터 클라우드 전문가로 도약하세요.',
-    passRateSummary: '합격률 약 50~65%', avgPassRate: '58%',
-    passRates: [{year:2020,written:55,practical:0},{year:2021,written:57,practical:0},{year:2022,written:58,practical:0},{year:2023,written:59,practical:0},{year:2024,written:58,practical:0}],
-    schedules: [{round:'상시',writtenExam:'Kryterion 온라인 상시 응시',practicalExam:'-',writtenResult:'즉시 발표',practicalResult:'-',registerStart:'-',registerEnd:'-'}],
-    subjects: [{name:'컴퓨팅·스토리지',desc:'GCE·GCS·Cloud SQL'},{name:'네트워킹',desc:'VPC·Cloud Load Balancing'},{name:'데이터·AI',desc:'BigQuery·Vertex AI·Pub/Sub'},{name:'보안·운영',desc:'IAM·Cloud Monitoring'}],
-    jobs: [{company:'구글코리아',title:'Cloud Solutions Engineer',type:'large',region:'seoul',experience:'any',salary:'6000~9000만원',deadline:'2026-11-30',duties:'GCP 기반 솔루션 아키텍처 설계',requirements:['GCP Professional 우대'],benefits:'RSU, 글로벌 교육',applyUrl:'https://careers.google.com'},{company:'LG전자',title:'클라우드 인프라 엔지니어',type:'large',region:'seoul',experience:'any',salary:'4500~6500만원',deadline:'2026-10-31',duties:'GCP 마이그레이션 및 운영',requirements:['GCP Associate 이상 우대'],benefits:'성과급, 복지포인트',applyUrl:'https://careers.lg.com'}],
-    books: [{title:'Google Cloud Professional Cloud Architect 공식 가이드',author:'Google Cloud',publisher:'Packt',rating:4.8,reviews:345},{title:'GCP 합격을 위한 30일 플랜',author:'이재현',publisher:'길벗',rating:4.6,reviews:267},{title:'GCP BigQuery·Vertex AI 실전 가이드',author:'김데이터',publisher:'한빛미디어',rating:4.5,reviews:198}],
-    milestones: [{week:'1~3주',task:'GCP 핵심 서비스 학습'},{week:'4~6주',task:'Qwiklabs 실습'},{week:'7~9주',task:'Professional 시험 과목별 심화'},{week:'10~12주',task:'공식 모의시험 + 최종 점검'}],
-    defaultTodos: ['Google Cloud 무료 크레딧 계정 생성','Qwiklabs 퀘스트 완료','BigQuery SQL 실습','공식 Practice Exam 응시'],
-  },
-
-  'Azure Fundamentals': {
-    name: 'Azure Fundamentals', icon: 'fa-cloud', category: 'IT·정보통신',
-    heroTitle: '2026년도 Microsoft Azure Fundamentals(AZ-900) 합격 전략',
-    heroDesc: '마이크로소프트 Azure 클라우드의 기초 개념을 검증하는 입문 자격증. 비전공자도 1~2개월이면 취득 가능한 클라우드 입문 필수 자격입니다.',
-    passRateSummary: '합격률 약 70~80%', avgPassRate: '75%',
-    passRates: [{year:2020,written:72,practical:0},{year:2021,written:73,practical:0},{year:2022,written:74,practical:0},{year:2023,written:75,practical:0},{year:2024,written:75,practical:0}],
-    schedules: [{round:'상시',writtenExam:'피어슨VUE/온라인 상시 응시',practicalExam:'-',writtenResult:'즉시 발표',practicalResult:'-',registerStart:'-',registerEnd:'-'}],
-    subjects: [{name:'클라우드 개념',desc:'IaaS·PaaS·SaaS·클라우드 모델'},{name:'Azure 핵심 서비스',desc:'VM·Blob Storage·SQL·VNet'},{name:'보안·컴플라이언스',desc:'Azure AD·RBAC·정책'},{name:'가격 및 SLA',desc:'TCO 계산기·Azure 비용 관리'}],
-    jobs: [{company:'마이크로소프트코리아',title:'Azure CSP 엔지니어',type:'large',region:'seoul',experience:'new',salary:'4000~5500만원',deadline:'2026-09-30',duties:'파트너사 Azure 기술 지원',requirements:['AZ-900 필수·AZ-104 우대'],benefits:'글로벌 교육, RSU',applyUrl:'https://careers.microsoft.com'},{company:'LG CNS',title:'클라우드 컨설턴트',type:'large',region:'seoul',experience:'new',salary:'3800~5000만원',deadline:'2026-10-31',duties:'Azure 기반 디지털 전환 컨설팅',requirements:['AZ-900 이상 우대'],benefits:'유연근무, 복지포인트',applyUrl:'https://www.lgcns.com/careers'}],
-    books: [{title:'AZ-900 Microsoft Azure Fundamentals 공식 교재',author:'Jim Cheshire',publisher:'Microsoft Press',rating:4.8,reviews:456},{title:'AZ-900 합격공식 2주 완성',author:'이클라우드',publisher:'길벗',rating:4.7,reviews:389},{title:'Microsoft Azure 기초 + 핵심 실습',author:'박현우',publisher:'한빛미디어',rating:4.5,reviews:312}],
-    milestones: [{week:'1주',task:'클라우드 기본 개념 학습'},{week:'2주',task:'Azure 핵심 서비스 이해'},{week:'3주',task:'보안·가격 정책 학습'},{week:'4주',task:'모의시험 + 최종 정리'}],
-    defaultTodos: ['Microsoft Learn 무료 강의 완료','Azure 무료 계정 생성 후 실습','공식 연습시험 2회 응시','AZ-900 덤프 100문제 풀기'],
-  },
-
-  '컴퓨터활용능력1급': {
-    name: '컴퓨터활용능력1급', icon: 'fa-file-excel', category: 'IT·정보통신',
-    heroTitle: '2026년도 컴퓨터활용능력 1급 합격 전략',
-    heroDesc: '대한상공회의소 주관 스프레드시트(Excel)·데이터베이스(Access) 활용 능력 자격증. 거의 모든 사무직 채용에서 우대하는 국민 자격증입니다.',
-    passRateSummary: '필기 34% | 실기 25%', avgPassRate: '22%',
-    passRates: [{year:2020,written:32,practical:23},{year:2021,written:33,practical:24},{year:2022,written:34,practical:25},{year:2023,written:35,practical:26},{year:2024,written:34,practical:25}],
-    schedules: [{round:'상시',writtenExam:'상시 CBT',practicalExam:'상시 CBT',writtenResult:'즉시 발표',practicalResult:'즉시 발표',registerStart:'-',registerEnd:'-'}],
-    subjects: [{name:'컴퓨터 일반',desc:'운영체제·PC 하드웨어·인터넷'},{name:'스프레드시트(Excel)',desc:'함수·매크로·차트·피벗테이블'},{name:'데이터베이스(Access)',desc:'쿼리·폼·보고서 설계'}],
-    jobs: [{company:'삼성물산',title:'경영지원 사무직',type:'large',region:'seoul',experience:'new',salary:'3500~4500만원',deadline:'2026-09-30',duties:'데이터 집계 및 보고서 작성',requirements:['컴활 1급 우대'],benefits:'4대보험, 식대',applyUrl:'https://www.samsung.com/sec/careers'},{company:'공기업 전반',title:'행정사무원',type:'public',region:'all',experience:'new',salary:'3200~4000만원',deadline:'2026-12-31',duties:'행정 업무 및 데이터 관리',requirements:['컴활 1급 필수'],benefits:'공무원 복지',applyUrl:'https://www.gosi.kr'}],
-    books: [{title:'2026 컴퓨터활용능력 1급 필기 기본서',author:'김정민',publisher:'이기적',rating:4.8,reviews:1234},{title:'2026 컴퓨터활용능력 1급 실기 기본서(Excel+Access)',author:'정욱',publisher:'이기적',rating:4.8,reviews:1089},{title:'2026 컴활 1급 기출문제 완전정복',author:'영진닷컴',publisher:'영진닷컴',rating:4.7,reviews:876}],
-    milestones: [{week:'1~2주',task:'컴퓨터 일반 이론'},{week:'3~6주',task:'Excel 함수·매크로 실습'},{week:'7~9주',task:'Access DB 설계 실습'},{week:'10~12주',task:'실기 모의시험 반복'}],
-    defaultTodos: ['Excel VLOOKUP·INDEX·MATCH 완숙','매크로·VBA 기초 작성','Access 쿼리 설계 연습','실기 기출문제 5회 풀기'],
-  },
-
-  '컴퓨터활용능력2급': {
-    name: '컴퓨터활용능력2급', icon: 'fa-file-excel', category: 'IT·정보통신',
-    heroTitle: '2026년도 컴퓨터활용능력 2급 합격 전략',
-    heroDesc: '스프레드시트(Excel) 기본 활용 능력을 검증하는 가장 대중적인 IT 자격증. 취업 준비생의 기본 스펙으로 2~4주면 취득 가능합니다.',
-    passRateSummary: '필기 42% | 실기 33%', avgPassRate: '30%',
-    passRates: [{year:2020,written:40,practical:31},{year:2021,written:41,practical:32},{year:2022,written:42,practical:33},{year:2023,written:43,practical:34},{year:2024,written:42,practical:33}],
-    schedules: [{round:'상시',writtenExam:'상시 CBT',practicalExam:'상시 CBT',writtenResult:'즉시 발표',practicalResult:'즉시 발표',registerStart:'-',registerEnd:'-'}],
-    subjects: [{name:'컴퓨터 일반',desc:'운영체제·인터넷·PC 관리'},{name:'스프레드시트(Excel)',desc:'기본 함수·차트·데이터 관리'}],
-    jobs: [{company:'일반 기업 전반',title:'사무보조',type:'mid',region:'all',experience:'new',salary:'2800~3500만원',deadline:'2026-12-31',duties:'문서 작성·데이터 입력',requirements:['컴활 2급 우대'],benefits:'4대보험',applyUrl:'https://www.saramin.co.kr'}],
-    books: [{title:'2026 컴퓨터활용능력 2급 필기+실기 통합서',author:'김정민',publisher:'이기적',rating:4.8,reviews:2156},{title:'2026 컴활 2급 기출문제 최다수록',author:'정욱',publisher:'영진닷컴',rating:4.7,reviews:1789},{title:'2026 컴활 2급 10일 완성',author:'이메리트',publisher:'시나공',rating:4.6,reviews:1456}],
-    milestones: [{week:'1주',task:'컴퓨터 일반 이론'},{week:'2~3주',task:'Excel 기본 함수 실습'},{week:'4주',task:'기출문제 풀기 + 실기 연습'}],
-    defaultTodos: ['Excel SUM·IF·COUNT 계열 함수 완숙','차트 삽입·편집 실습','기출문제 3회분 풀기'],
-  },
-
-  'ITQ': {
-    name: 'ITQ', icon: 'fa-laptop', category: 'IT·정보통신',
-    heroTitle: '2026년도 ITQ(정보기술자격) 합격 전략',
-    heroDesc: '한국생산성본부 주관 MS Office(한글·Excel·PowerPoint) 실무 활용 능력 자격증. 고등학생부터 직장인까지 가장 많이 응시하는 오피스 자격증입니다.',
-    passRateSummary: '합격률 약 65~75%', avgPassRate: '70%',
-    passRates: [{year:2020,written:68,practical:0},{year:2021,written:70,practical:0},{year:2022,written:71,practical:0},{year:2023,written:72,practical:0},{year:2024,written:70,practical:0}],
-    schedules: [{round:'매월',writtenExam:'매월 둘째 주 토요일',practicalExam:'-',writtenResult:'3주 후 발표',practicalResult:'-',registerStart:'-',registerEnd:'-'}],
-    subjects: [{name:'아래한글(HWP)',desc:'문서 작성·표·차트'},{name:'Excel',desc:'함수·데이터 관리·차트'},{name:'PowerPoint',desc:'슬라이드 디자인·애니메이션'},{name:'Access',desc:'DB 쿼리·폼 작성'}],
-    jobs: [{company:'공공기관',title:'행정사무원',type:'public',region:'all',experience:'new',salary:'3000~3800만원',deadline:'2026-12-31',duties:'문서 작성 및 데이터 관리',requirements:['ITQ A등급 우대'],benefits:'공무원 복지',applyUrl:'https://www.gosi.kr'}],
-    books: [{title:'2026 ITQ 한글+엑셀+파포 3종 합격 패키지',author:'강윤정',publisher:'이기적',rating:4.8,reviews:2345},{title:'2026 ITQ 엑셀 A등급 완성',author:'김수진',publisher:'시나공',rating:4.7,reviews:1876},{title:'2026 ITQ OA마스터 한번에 합격',author:'정재은',publisher:'영진닷컴',rating:4.6,reviews:1543}],
-    milestones: [{week:'1주',task:'아래한글 실습'},{week:'2주',task:'Excel 함수·차트'},{week:'3주',task:'PowerPoint 디자인'},{week:'4주',task:'기출문제 풀기'}],
-    defaultTodos: ['아래한글 표·스타일 완숙','Excel 주요 함수 10개 암기','PowerPoint 슬라이드 마스터 실습','기출문제 3회분 풀기'],
-  },
-
-  'MOS': {
-    name: 'MOS', icon: 'fa-microsoft', category: 'IT·정보통신',
-    heroTitle: '2026년도 MOS(Microsoft Office Specialist) 합격 전략',
-    heroDesc: '마이크로소프트 공인 오피스 전문가 자격증. Word·Excel·PowerPoint·Access 각 과목별 취득 가능하며 글로벌 기업 취업에 유리합니다.',
-    passRateSummary: '합격률 약 65~75%', avgPassRate: '70%',
-    passRates: [{year:2020,written:68,practical:0},{year:2021,written:69,practical:0},{year:2022,written:70,practical:0},{year:2023,written:71,practical:0},{year:2024,written:70,practical:0}],
-    schedules: [{round:'상시',writtenExam:'피어슨VUE 상시 응시',practicalExam:'-',writtenResult:'즉시 발표',practicalResult:'-',registerStart:'-',registerEnd:'-'}],
-    subjects: [{name:'Word Expert',desc:'스타일·목차·메일 병합'},{name:'Excel Expert',desc:'고급 함수·피벗·매크로'},{name:'PowerPoint',desc:'프레젠테이션 디자인'},{name:'Access',desc:'DB 쿼리·보고서'}],
-    jobs: [{company:'외국계 기업',title:'사무직',type:'large',region:'seoul',experience:'new',salary:'3500~4500만원',deadline:'2026-12-31',duties:'문서 작성 및 데이터 분석',requirements:['MOS 우대'],benefits:'글로벌 복지',applyUrl:'https://www.saramin.co.kr'}],
-    books: [{title:'2026 MOS 엑셀 Expert 한권으로 끝내기',author:'이정희',publisher:'길벗',rating:4.7,reviews:678},{title:'2026 MOS 워드 Expert 완전정복',author:'김나현',publisher:'영진닷컴',rating:4.6,reviews:534},{title:'MOS 2019 마스터 종합 교재',author:'Microsoft',publisher:'한빛미디어',rating:4.5,reviews:445}],
-    milestones: [{week:'1~2주',task:'응시 과목 선택 및 기초 학습'},{week:'3~4주',task:'실전 기능 집중 실습'},{week:'5주',task:'기출+모의 시험 응시'}],
-    defaultTodos: ['응시 과목 결정(Excel 우선 권장)','Microsoft 365 실습 환경 준비','기출문제 3회 풀기','공식 모의시험 응시'],
-  },
-
-  'CISA': {
-    name: 'CISA', icon: 'fa-shield-halved', category: 'IT·정보통신',
-    heroTitle: '2026년도 CISA(정보시스템감사사) 합격 전략',
-    heroDesc: 'ISACA 주관 정보시스템 감사·통제·보안 분야 국제 자격증. 금융·공공·대기업 IT 감사팀과 컨설팅 펌에서 높은 연봉으로 대우받는 전문 자격입니다.',
-    passRateSummary: '합격률 약 45~55%', avgPassRate: '50%',
-    passRates: [{year:2020,written:48,practical:0},{year:2021,written:49,practical:0},{year:2022,written:50,practical:0},{year:2023,written:51,practical:0},{year:2024,written:50,practical:0}],
-    schedules: [{round:'1회',writtenExam:'2026-06-07',practicalExam:'-',writtenResult:'2026-08-22',practicalResult:'-',registerStart:'2026-03-01',registerEnd:'2026-05-01'},{round:'2회',writtenExam:'2026-11-08',practicalExam:'-',writtenResult:'2026-12-13',practicalResult:'-',registerStart:'2026-08-01',registerEnd:'2026-10-01'}],
-    subjects: [{name:'IT 거버넌스',desc:'IS 전략·조직·거버넌스 체계'},{name:'IS 감사',desc:'감사 절차·위험 평가'},{name:'IS 수명주기',desc:'시스템 개발·구현·유지보수'},{name:'IS 운영',desc:'서비스 관리·인프라 보호'},{name:'정보보호',desc:'암호화·접근통제·보안 아키텍처'}],
-    jobs: [{company:'딜로이트',title:'IT 감사 컨설턴트',type:'consult',region:'seoul',experience:'any',salary:'5000~8000만원',deadline:'2026-10-31',duties:'금융·공공기관 IT 감사 수행',requirements:['CISA 필수'],benefits:'성과급, 글로벌 교육',applyUrl:'https://www2.deloitte.com/kr/ko/careers.html'},{company:'금융감독원',title:'IT 검사역',type:'public',region:'seoul',experience:'exp',salary:'6000~8000만원',deadline:'2026-09-30',duties:'금융회사 IT 시스템 감사',requirements:['CISA 보유자 우대'],benefits:'공무원 복지',applyUrl:'https://www.fss.or.kr'}],
-    books: [{title:'CISA Review Manual 2026',author:'ISACA',publisher:'ISACA',rating:4.9,reviews:312},{title:'CISA 한국어 핵심요약+기출문제',author:'이경훈',publisher:'성안당',rating:4.7,reviews:234},{title:'정보시스템감사사 CISA 완전정복',author:'김정현',publisher:'예문사',rating:4.5,reviews:178}],
-    milestones: [{week:'1~4주',task:'IT 거버넌스·감사 이론'},{week:'5~8주',task:'IS 수명주기·운영 학습'},{week:'9~12주',task:'정보보호 도메인'},{week:'13~16주',task:'모의시험 + 오답 정리'}],
-    defaultTodos: ['ISACA 공식 교재 정독','도메인별 연습문제 1000문제 풀기','COBIT·ITIL 프레임워크 이해','모의시험 3회 응시'],
-  },
-
-  'CISSP': {
-    name: 'CISSP', icon: 'fa-lock', category: 'IT·정보통신',
-    heroTitle: '2026년도 CISSP(정보보안전문가) 합격 전략',
-    heroDesc: 'ISC² 주관 세계 최고 권위의 정보보안 자격증. 5년 이상 실무 경험이 필요하며 합격 시 연봉 1억 이상 정보보안 전문가로 인정받습니다.',
-    passRateSummary: '합격률 약 30~40%', avgPassRate: '35%',
-    passRates: [{year:2020,written:33,practical:0},{year:2021,written:34,practical:0},{year:2022,written:35,practical:0},{year:2023,written:36,practical:0},{year:2024,written:35,practical:0}],
-    schedules: [{round:'상시',writtenExam:'피어슨VUE CAT 상시 응시',practicalExam:'-',writtenResult:'즉시 발표',practicalResult:'-',registerStart:'-',registerEnd:'-'}],
-    subjects: [{name:'보안 및 위험 관리',desc:'거버넌스·컴플라이언스·법규'},{name:'자산 보안',desc:'데이터 분류·소유권·개인정보'},{name:'보안 아키텍처',desc:'암호화·보안 모델·취약점'},{name:'통신 및 네트워크',desc:'네트워크 보안·프로토콜'},{name:'IAM',desc:'접근통제·인증·권한 관리'},{name:'보안 평가',desc:'침투 테스트·취약점 스캔'},{name:'보안 운영',desc:'사고 대응·BCP/DR'},{name:'SW 개발 보안',desc:'SDLC·코드 보안'}],
-    jobs: [{company:'삼성전자',title:'정보보안 전문가',type:'large',region:'seoul',experience:'exp',salary:'8000~12000만원',deadline:'2026-11-30',duties:'글로벌 보안 아키텍처 설계',requirements:['CISSP 필수'],benefits:'주식매수선택권, 주택자금',applyUrl:'https://www.samsung.com/sec/careers'},{company:'국가정보원 산하기관',title:'사이버 보안 전문관',type:'public',region:'seoul',experience:'exp',salary:'7000~10000만원',deadline:'2026-09-30',duties:'국가 사이버 위협 분석 및 대응',requirements:['CISSP 보유 우대'],benefits:'공무원 복지',applyUrl:'https://www.nis.go.kr'}],
-    books: [{title:'CISSP All-in-One Exam Guide 9th Edition',author:'Shon Harris',publisher:'McGraw-Hill',rating:4.9,reviews:567},{title:'CISSP 한국어 핵심정리+문제집',author:'이경훈',publisher:'성안당',rating:4.8,reviews:312},{title:'(ISC)² CISSP 공식 교재(한국어)',author:'ISC²',publisher:'Wiley',rating:4.7,reviews:245}],
-    milestones: [{week:'1~6주',task:'8개 도메인 이론 학습'},{week:'7~10주',task:'도메인별 연습문제 풀기'},{week:'11~14주',task:'모의시험(Boson·Official)반복'},{week:'15~16주',task:'취약 도메인 집중 보완'}],
-    defaultTodos: ['8개 도메인 핵심 개념 정리','연습문제 2000문제 풀기','Boson 모의시험 3회 응시','암호화·네트워크 보안 심화 학습'],
-  },
-
-  // ── 의료·보건 국가시험 ──────────────────────────
-
-  '간호사': {
-    name: '간호사', icon: 'fa-user-nurse', category: '의료·보건',
-    heroTitle: '2027년도 간호사 국가시험 합격 전략',
-    heroDesc: '매년 약 30,000명이 응시하는 최대 규모 보건의료인 국가시험! 성인·아동·모성·정신 간호학 8개 과목을 체계적으로 정복하는 전략을 확인하세요.',
-    passRateSummary: '필기 95.2%',
-    avgPassRate: '94.5%',
-    passRates: [
-      { year: 2020, written: 93.2, practical: 0 },
-      { year: 2021, written: 94.1, practical: 0 },
-      { year: 2022, written: 95.3, practical: 0 },
-      { year: 2023, written: 94.8, practical: 0 },
-      { year: 2024, written: 95.2, practical: 0 },
-    ],
     schedules: [
       { round: '2026년도', isCurrent: false, isDone: true,
         writtenApply: '2025.11.17 ~ 2025.11.21', writtenExam: '2026.01.24', writtenResult: '2026.02.14',
@@ -13974,24 +11864,6 @@ const CERTIFICATIONS = {
       { title: '간호관리학', tip: '간호조직, 기획·조직·인사·지휘·통제 기능별 개념을 표로 정리.' },
       { title: '기본간호학', tip: '활력징후, 투약, 감염관리, 상처간호 등 실무 직결 개념은 반드시 암기.' },
       { title: '의료법규', tip: '의료법·간호법 주요 조항과 숫자(벌칙 금액, 자격정지 기간 등)를 집중 암기.' },
-    ],
-    jobs: [
-      { id: 'nurse-1', company: '서울아산병원', title: '2027년도 신규간호사 공개채용', type: 'large', region: 'seoul', experience: 'new',
-        requirements: ['간호사 면허 소지자', '2027년 2월 간호사 면허 취득 예정자 지원 가능'],
-        duties: '병동·중환자실·수술실·응급실 등 배치 부서 로테이션 간호 업무.',
-        salary: '연봉 4,000만원 이상 (초봉)', benefits: '기숙사 지원, 의료비 지원, 학자금', deadline: '2027-02-28', link: 'https://www.amc.seoul.kr' },
-      { id: 'nurse-2', company: '삼성서울병원', title: '신규·경력 간호사 수시채용', type: 'large', region: 'seoul', experience: 'any',
-        requirements: ['간호사 면허 소지자', '신규·경력 구분 없이 지원 가능'],
-        duties: '전문간호 파트 배치 후 체계적 수간호사 지도 하 임상 간호.',
-        salary: '초봉 약 4,200만원 + 성과급', benefits: '삼성 그룹 복지, 보육지원, 의료비 무료', deadline: '2027-03-15', link: 'https://www.samsunghospital.com' },
-      { id: 'nurse-3', company: '국립중앙의료원', title: '공공의료원 신규간호사 채용', type: 'public', region: 'seoul', experience: 'new',
-        requirements: ['간호사 면허 소지자', '공공보건 의료에 관심 있는 자'],
-        duties: '공공병원 병동 간호, 감염병 전담 병상 간호 지원.',
-        salary: '공무직 준용 (약 3,800만원)', benefits: '공무원 준준하는 복지, 정년 보장', deadline: '2027-02-20', link: 'https://www.nmc.or.kr' },
-      { id: 'nurse-4', company: '지역보건소', title: '보건직 공무원(간호직) 공개경쟁채용', type: 'public', region: 'all', experience: 'new',
-        requirements: ['간호사 면허 소지자', '공무원 결격 사유 없는 자'],
-        duties: '지역주민 건강관리, 방문간호, 만성질환 예방 교육.',
-        salary: '9급 공무원 초봉 약 2,600만원', benefits: '철저한 정년 보장, 연금, 육아휴직', deadline: '2027-04-30', link: 'https://www.gosi.kr' },
     ],
     books: [
       { id: 'nurse-b1', title: '2027 군자출판사 간호사 국가시험 문제집', publisher: '군자출판사', rating: 9.8, reviews: 1823, originalPrice: 65000, price: 58500, discount: '10%', coverBg: 'linear-gradient(135deg,#0d4f8b,#1a7fc1)', tags: ['베스트'] },
@@ -14041,16 +11913,6 @@ const CERTIFICATIONS = {
       { title: '요·체액검사', tip: '소변 침사 성분 형태와 의미, 정장액·흉수 분류 기준 암기.' },
       { title: '임상생리학', tip: 'ECG 파형 판독, 폐기능 검사 지표(FVC, FEV1) 해석 문제 집중 연습.' },
     ],
-    jobs: [
-      { id: 'cls-1', company: '서울대학교병원', title: '임상병리사 신규채용', type: 'large', region: 'seoul', experience: 'new',
-        requirements: ['임상병리사 면허 소지자'],
-        duties: '진단검사의학과 혈액·화학·미생물·수혈 파트 검체검사.',
-        salary: '초봉 약 3,800만원', benefits: '의료비 지원, 복지포인트', deadline: '2027-04-15', link: 'https://www.snuh.org' },
-      { id: 'cls-2', company: '대한적십자사 혈액원', title: '혈액검사 담당 임상병리사', type: 'public', region: 'all', experience: 'any',
-        requirements: ['임상병리사 면허', '수혈의학 관심자 우대'],
-        duties: '헌혈 혈액 적격성 검사, 혈액형 검사, 바이러스 선별 검사.',
-        salary: '연봉 3,600~4,500만원', benefits: '정년보장, 공공기관 복지', deadline: '2027-05-30', link: 'https://www.redcrossblood.or.kr' },
-    ],
     books: [
       { id: 'cls-b1', title: '임상병리사 국시 핵심요약 총정리', publisher: '고려의학', rating: 9.7, reviews: 654, originalPrice: 58000, price: 52200, discount: '10%', coverBg: 'linear-gradient(135deg,#1a5e3a,#27ae60)', tags: ['베스트'] },
       { id: 'cls-b2', title: '임상병리사 기출문제집 10개년', publisher: '군자출판사', rating: 9.6, reviews: 478, originalPrice: 48000, price: 43200, discount: '10%', coverBg: 'linear-gradient(135deg,#145a32,#1e8449)', tags: ['추천'] },
@@ -14097,16 +11959,6 @@ const CERTIFICATIONS = {
       { title: '의료영상학', tip: 'X선 촬영 조건(kVp·mAs), 영상의 질 인자, 디지털 영상처리 과정 이해.' },
       { title: '방사선치료물리학', tip: '치료 선량 분포, 등선량 곡선, 치료 계획(TPS) 기본 개념 정리.' },
       { title: '핵의학기술학', tip: '방사성 동위원소 특성, PET·SPECT 원리, 방사성의약품 취급 절차 암기.' },
-    ],
-    jobs: [
-      { id: 'rad-1', company: '세브란스병원', title: '방사선사 신규채용', type: 'large', region: 'seoul', experience: 'new',
-        requirements: ['방사선사 면허 소지자'],
-        duties: '영상의학과 일반촬영·CT·MRI·혈관조영 파트 근무.',
-        salary: '초봉 약 3,700만원', benefits: '의료비 지원, 복지포인트', deadline: '2027-04-30', link: 'https://www.severance.or.kr' },
-      { id: 'rad-2', company: '국민건강보험 일산병원', title: '방사선사 채용', type: 'public', region: 'gong', experience: 'any',
-        requirements: ['방사선사 면허 소지자'],
-        duties: '영상의학 전 파트 검사 및 방사선 방어 관리.',
-        salary: '연봉 3,500~4,500만원', benefits: '공공기관 수준 복지', deadline: '2027-05-15', link: 'https://www.nhimc.or.kr' },
     ],
     books: [
       { id: 'rad-b1', title: '방사선사 국시 핵심이론 총정리', publisher: '고려의학', rating: 9.7, reviews: 512, originalPrice: 55000, price: 49500, discount: '10%', coverBg: 'linear-gradient(135deg,#4a235a,#7d3c98)', tags: ['베스트'] },
@@ -14155,16 +12007,6 @@ const CERTIFICATIONS = {
       { title: '물리인자치료', tip: '전기치료(TENS·IFC·NMES), 온열·한랭치료 파라미터와 금기증 암기.' },
       { title: '심폐·스포츠 재활', tip: 'ACSM 운동 처방 기준, 스포츠 손상 응급처치(RICE) 및 재활 단계 정리.' },
     ],
-    jobs: [
-      { id: 'pt-1', company: '국립재활원', title: '물리치료사 채용', type: 'public', region: 'seoul', experience: 'any',
-        requirements: ['물리치료사 면허 소지자'],
-        duties: '척수손상·뇌졸중 환자 집중 재활 물리치료.',
-        salary: '연봉 3,500~4,200만원', benefits: '공공기관 복지', deadline: '2027-04-30', link: 'https://www.nrc.go.kr' },
-      { id: 'pt-2', company: '종합병원 재활의학과', title: '물리치료사 수시채용', type: 'large', region: 'all', experience: 'any',
-        requirements: ['물리치료사 면허 소지자'],
-        duties: '입원·외래 환자 근골격계 및 신경계 물리치료.',
-        salary: '연봉 3,200~4,500만원', benefits: '의료비 지원, 4대보험', deadline: '2027-05-31', link: 'https://www.saramin.co.kr' },
-    ],
     books: [
       { id: 'pt-b1', title: '물리치료사 국시 핵심요약 총정리', publisher: '고려의학', rating: 9.7, reviews: 678, originalPrice: 58000, price: 52200, discount: '10%', coverBg: 'linear-gradient(135deg,#1a3a5c,#2471a3)', tags: ['베스트'] },
       { id: 'pt-b2', title: '물리치료사 기출문제 완전정복', publisher: '군자출판사', rating: 9.6, reviews: 512, originalPrice: 50000, price: 45000, discount: '10%', coverBg: 'linear-gradient(135deg,#154360,#1a5276)', tags: ['추천'] },
@@ -14209,16 +12051,6 @@ const CERTIFICATIONS = {
       { title: '전문응급처치학 총론', tip: '12유도 심전도 판독, 기관내삽관 절차, 정맥로 확보 적응증 및 금기증 정리.' },
       { title: '전문응급처치학 각론', tip: '쇼크 종류별 처치, 두부·흉부·복부 외상 평가 및 처치 순서를 ATLS 기준으로 정리.' },
       { title: '응급환자관리', tip: '중증도 분류(START triage) 기준, 재난의료 대응 체계, 응급의료 관련 법 조항 암기.' },
-    ],
-    jobs: [
-      { id: 'ems-1', company: '소방청 119구급대', title: '소방공무원(구급) 공개경쟁채용', type: 'public', region: 'all', experience: 'new',
-        requirements: ['응급구조사 1급 면허 소지자', '소방공무원 체력기준 합격자'],
-        duties: '119 구급차 탑승, 현장 응급처치, 이송 중 환자 상태 모니터링.',
-        salary: '소방사 초봉 약 3,000만원 + 위험수당', benefits: '특수직 공무원 연금, 의료비', deadline: '2027-06-30', link: 'https://www.gosi.kr' },
-      { id: 'ems-2', company: '상급종합병원 응급실', title: '응급구조사 채용', type: 'large', region: 'all', experience: 'any',
-        requirements: ['응급구조사 1급 면허', '전문소생술(ACLS) 수료 우대'],
-        duties: '응급실 내 환자 초기 평가, 처치 보조, 전산 기록.',
-        salary: '연봉 3,200~4,000만원', benefits: '의료비 지원, 교대근무 수당', deadline: '2027-05-31', link: 'https://www.saramin.co.kr' },
     ],
     books: [
       { id: 'ems-b1', title: '응급구조사 1급 국시 핵심요약 총정리', publisher: '군자출판사', rating: 9.7, reviews: 432, originalPrice: 55000, price: 49500, discount: '10%', coverBg: 'linear-gradient(135deg,#922b21,#cb4335)', tags: ['베스트'] },
@@ -14267,16 +12099,6 @@ const CERTIFICATIONS = {
       { title: '치과재료학', tip: '인상재·접착제·수복재 분류, 조작 방법, 중합 반응 종류 위주 학습.' },
       { title: '구강보건행정·교육', tip: '구강보건 지표(DMF율, 치주요양필요지수), 집단 구강보건교육 기법 암기.' },
     ],
-    jobs: [
-      { id: 'dh-1', company: '치과의원 (개원가)', title: '치과위생사 채용 (수시)', type: 'consult', region: 'all', experience: 'any',
-        requirements: ['치과위생사 면허 소지자'],
-        duties: '스케일링, 구강위생교육, 진료 보조, 진료실 관리.',
-        salary: '신입 연봉 2,800~3,400만원', benefits: '4대보험, 치과 치료 할인', deadline: '2027-12-31', link: 'https://www.saramin.co.kr' },
-      { id: 'dh-2', company: '지역 구강보건센터', title: '구강보건사업 담당 치과위생사', type: 'public', region: 'all', experience: 'any',
-        requirements: ['치과위생사 면허', '지역사회 구강보건사업 관심자'],
-        duties: '노인·장애인·아동 대상 구강검진 및 예방처치, 불소도포 사업.',
-        salary: '연봉 3,000~3,600만원', benefits: '공무직 준용 복지', deadline: '2027-06-30', link: 'https://www.mohw.go.kr' },
-    ],
     books: [
       { id: 'dh-b1', title: '치과위생사 국시 핵심요약 총정리', publisher: '군자출판사', rating: 9.7, reviews: 567, originalPrice: 55000, price: 49500, discount: '10%', coverBg: 'linear-gradient(135deg,#1a5f7a,#2e86ab)', tags: ['베스트'] },
       { id: 'dh-b2', title: '치과위생사 기출문제 완전분석', publisher: '고려의학', rating: 9.6, reviews: 423, originalPrice: 48000, price: 43200, discount: '10%', coverBg: 'linear-gradient(135deg,#154360,#117a8b)', tags: ['추천'] },
@@ -14300,29 +12122,6 @@ const CERTIFICATIONS = {
     passRates: [{year:2020,written:32,practical:0},{year:2021,written:33,practical:0},{year:2022,written:34,practical:0},{year:2023,written:35,practical:0},{year:2024,written:34,practical:0}],
     schedules: [{round:'상반기',writtenExam:'2026-04-25',practicalExam:'-',writtenResult:'2026-05-23',practicalResult:'-',registerStart:'2026-03-02',registerEnd:'2026-04-10'},{round:'하반기',writtenExam:'2026-10-24',practicalExam:'-',writtenResult:'2026-11-21',practicalResult:'-',registerStart:'2026-09-01',registerEnd:'2026-10-10'}],
     subjects: [{name:'정보보호 관리',desc:'ISMS-P 인증 기준·통제 항목'},{name:'개인정보보호',desc:'개인정보보호법·GDPR'},{name:'정보보호 기술',desc:'암호화·접근통제·취약점 관리'},{name:'법규 및 제도',desc:'정보통신망법·전자서명법'}],
-    jobs: [{company:'KISA 위탁 심사기관',title:'ISMS-P 인증심사원',type:'consult',region:'seoul',experience:'exp',salary:'5000~7000만원',deadline:'2026-11-30',duties:'기업 정보보호 관리체계 심사',requirements:['ISMS 인증심사원 자격 필수'],benefits:'성과급',applyUrl:'https://isms.kisa.or.kr'},{company:'대기업 보안팀',title:'정보보호 담당자',type:'large',region:'seoul',experience:'any',salary:'4500~6500만원',deadline:'2026-10-31',duties:'ISMS-P 인증 취득·유지 업무',requirements:['ISMS 관련 자격 우대'],benefits:'4대보험, 성과급',applyUrl:'https://www.saramin.co.kr'}],
-    books: [{title:'2026 ISMS-P 인증심사원 필기 완전정복',author:'이재현',publisher:'성안당',rating:4.7,reviews:234},{title:'정보보호 관리체계(ISMS-P) 인증 실무 가이드',author:'KISA',publisher:'KISA',rating:4.8,reviews:189},{title:'ISMS 기출문제+핵심이론 30일 완성',author:'김보안',publisher:'예문사',rating:4.5,reviews:145}],
-    milestones: [{week:'1~3주',task:'ISMS-P 인증 기준 통제 항목 학습'},{week:'4~5주',task:'개인정보보호법·관련 법규'},{week:'6~7주',task:'기술적 보안 통제 학습'},{week:'8주',task:'기출문제 풀기 + 최종 정리'}],
-    defaultTodos: ['ISMS-P 102개 인증 기준 암기','개인정보보호법 주요 조항 숙지','기출문제 3회분 풀기','모의 심사 시나리오 연습'],
-  },
-
-// === 건설 추가 7종 ===
-
-  '철근기능사': {
-    name: '철근기능사', icon: 'fa-layer-group', category: '건설·토목',
-    heroTitle: '2026년도 철근기능사 합격 전략',
-    heroDesc: '건설 현장 필수 인력인 철근기능사! 아파트·교량 등 철근콘크리트 구조물 시공의 핵심 자격으로 취업률이 높습니다.',
-    passRateSummary: '필기 55.2% | 실기 48.3%',
-    avgPassRate: '51.8%',
-    avgExamRate: '72%',
-    examRateSummary: '필기 70% | 실기 74%',
-    passRates: [
-      { year: 2020, written: 58.1, practical: 46.2 },
-      { year: 2021, written: 57.3, practical: 47.5 },
-      { year: 2022, written: 56.4, practical: 48.0 },
-      { year: 2023, written: 55.8, practical: 48.1 },
-      { year: 2024, written: 55.2, practical: 48.3 },
-    ],
     schedules: [
       { round: '제1회', isCurrent: false, isDone: true,
         writtenApply: '01.06 ~ 01.09', writtenExam: '01.20 ~ 01.24', writtenResult: '01.30',
@@ -14349,12 +12148,6 @@ const CERTIFICATIONS = {
       { title: '철근 가공·조립', tip: '갈고리(Hook) 규격, 피복두께, 간격재 설치 기준이 자주 출제됩니다.' },
       { title: '도면 해독', tip: '배근 도면 읽기와 철근 수량 산출 연습이 실기에서 핵심입니다.' },
       { title: '안전 관리', tip: '철근 작업 중 낙하물 방지, 감전 예방 안전 수칙을 숙지하세요.' },
-    ],
-    jobs: [
-      { id: 'chr-1', company: '중견건설사', title: '철근콘크리트 공사 철근공 (현장직)', type: 'large', region: 'all', experience: 'any',
-        requirements: ['철근기능사 자격 소지자 우대', '건설 현장 경력자 우대'],
-        duties: '아파트·교량 철근콘크리트 구조물 철근 가공 및 조립.',
-        salary: '일당 18~25만원 / 월 350~450만원', benefits: '4대보험, 현장 숙소 제공', deadline: '2026-12-31', link: 'https://www.jobkorea.co.kr' },
     ],
     books: [
       { id: 'chr-b1', title: '2026 철근기능사 필기 한권으로 끝내기', publisher: '성안당', rating: 9.5, reviews: 210, originalPrice: 24000, price: 21600, discount: '10%', coverBg: 'linear-gradient(135deg,#7b3f00,#c0762a)', tags: ['베스트'] },
@@ -14411,12 +12204,6 @@ const CERTIFICATIONS = {
       { title: '실내건축 도면', tip: '평면도·입면도·단면도 해독 능력과 CAD 도면 작성이 실기 핵심입니다.' },
       { title: '안전 관리', tip: '실내 작업 시 VOC 발생 주의, 환기 기준, 추락 방지 수칙을 정리하세요.' },
     ],
-    jobs: [
-      { id: 'iaf-1', company: '인테리어 전문 업체', title: '실내건축 시공 기능사 (인테리어 시공팀)', type: 'consult', region: 'all', experience: 'any',
-        requirements: ['실내건축기능사 소지자 우대', '인테리어 시공 경력 1년 이상 우대'],
-        duties: '아파트·상업 공간 인테리어 도배·목공·타일 시공 및 현장 관리.',
-        salary: '월 250~380만원', benefits: '4대보험, 공구비 지원', deadline: '2026-12-31', link: 'https://www.jobkorea.co.kr' },
-    ],
     books: [
       { id: 'iaf-b1', title: '2026 실내건축기능사 필기 한권끝장', publisher: '에듀윌', rating: 9.5, reviews: 310, originalPrice: 27000, price: 24300, discount: '10%', coverBg: 'linear-gradient(135deg,#1a4a6b,#2d7aa0)', tags: ['베스트'] },
       { id: 'iaf-b2', title: '2026 실내건축기능사 실기 완전정복', publisher: '성안당', rating: 9.4, reviews: 220, originalPrice: 25000, price: 22500, discount: '10%', coverBg: 'linear-gradient(135deg,#0d3349,#1a5f80)', tags: ['추천'] },
@@ -14471,12 +12258,6 @@ const CERTIFICATIONS = {
       { title: '구조 일반', tip: '조적조 벽체의 두께·높이 기준, 개구부 보강 방법을 숙지하세요.' },
       { title: '안전 관리', tip: '비계 설치 기준과 낙하물 방지 안전 수칙을 함께 정리하세요.' },
     ],
-    jobs: [
-      { id: 'mas-1', company: '종합건설회사', title: '조적 시공 기능사 (마감팀)', type: 'large', region: 'all', experience: 'any',
-        requirements: ['조적기능사 자격 소지자 우대'],
-        duties: '아파트·건축물 벽돌·블록 조적 시공 및 마감 작업.',
-        salary: '일당 17~22만원', benefits: '4대보험', deadline: '2026-12-31', link: 'https://www.jobkorea.co.kr' },
-    ],
     books: [
       { id: 'mas-b1', title: '2026 조적기능사 필기·실기 한권완성', publisher: '일진사', rating: 9.2, reviews: 145, originalPrice: 22000, price: 19800, discount: '10%', coverBg: 'linear-gradient(135deg,#4a2800,#8b5a2b)', tags: ['베스트'] },
     ],
@@ -14528,12 +12309,6 @@ const CERTIFICATIONS = {
       { title: '미장 시공', tip: '바탕 처리, 초벌·재벌·정벌 바름 순서와 두께 기준이 핵심입니다.' },
       { title: '구조 일반', tip: '균열 방지 공법과 신축줄눈 설치 기준을 숙지하세요.' },
       { title: '안전 관리', tip: '분진·화학물질 취급 시 보호구 착용 기준을 정리하세요.' },
-    ],
-    jobs: [
-      { id: 'pla-1', company: '건설현장', title: '미장공 (마감시공팀)', type: 'large', region: 'all', experience: 'any',
-        requirements: ['미장기능사 자격 소지자 우대'],
-        duties: '아파트·건축물 내·외벽 미장 시공 및 마감 작업.',
-        salary: '일당 18~23만원', benefits: '4대보험', deadline: '2026-12-31', link: 'https://www.jobkorea.co.kr' },
     ],
     books: [
       { id: 'pla-b1', title: '2026 미장기능사 필기·실기 완전정복', publisher: '성안당', rating: 9.3, reviews: 130, originalPrice: 22000, price: 19800, discount: '10%', coverBg: 'linear-gradient(135deg,#2e4a1e,#4e8a36)', tags: ['베스트'] },
@@ -14587,12 +12362,6 @@ const CERTIFICATIONS = {
       { title: '방수 하자 및 보수', tip: '균열·핀홀·들뜸 등 하자 유형과 보수 방법을 숙지하세요.' },
       { title: '안전 관리', tip: '화기 작업 안전 수칙과 유기용제 취급 보호구 기준을 정리하세요.' },
     ],
-    jobs: [
-      { id: 'wtp-1', company: '방수 전문 업체', title: '방수 시공 기능사', type: 'consult', region: 'all', experience: 'any',
-        requirements: ['방수기능사 자격 소지자 우대'],
-        duties: '건축물 옥상·지하·욕실 방수 시공 및 하자 보수.',
-        salary: '일당 18~24만원', benefits: '4대보험', deadline: '2026-12-31', link: 'https://www.jobkorea.co.kr' },
-    ],
     books: [
       { id: 'wtp-b1', title: '2026 방수기능사 필기·실기 한권완성', publisher: '일진사', rating: 9.2, reviews: 115, originalPrice: 22000, price: 19800, discount: '10%', coverBg: 'linear-gradient(135deg,#003366,#0055aa)', tags: ['베스트'] },
     ],
@@ -14645,12 +12414,6 @@ const CERTIFICATIONS = {
       { title: '도면 해독', tip: '창호 상세도 읽기와 창호표 작성이 자주 출제됩니다.' },
       { title: '안전 관리', tip: '유리 취급 시 보호장갑 착용, 고소 작업 안전 수칙을 숙지하세요.' },
     ],
-    jobs: [
-      { id: 'win-1', company: '창호 전문 업체', title: '창호 시공 기능사', type: 'consult', region: 'all', experience: 'any',
-        requirements: ['창호기능사 자격 소지자 우대'],
-        duties: '건축물 창호 설치·교체·보수 시공.',
-        salary: '일당 17~22만원', benefits: '4대보험', deadline: '2026-12-31', link: 'https://www.jobkorea.co.kr' },
-    ],
     books: [
       { id: 'win-b1', title: '2026 창호기능사 필기·실기 완전정복', publisher: '성안당', rating: 9.2, reviews: 108, originalPrice: 22000, price: 19800, discount: '10%', coverBg: 'linear-gradient(135deg,#1a3a6b,#2d7aa0)', tags: ['베스트'] },
     ],
@@ -14699,12 +12462,6 @@ const CERTIFICATIONS = {
       { title: '온수온돌 시공', tip: '배관 간격·매립 깊이·시공 순서가 실기에서 자주 출제됩니다.' },
       { title: '열 계산', tip: '난방 부하 계산 공식과 온수 온도 기준(공급 60℃, 환수 50℃)을 암기하세요.' },
       { title: '안전 관리', tip: '고온 배관 작업 시 화상 방지와 가스 누출 점검 기준을 정리하세요.' },
-    ],
-    jobs: [
-      { id: 'hwf-1', company: '설비 전문 업체', title: '온수온돌 시공 기능사', type: 'consult', region: 'all', experience: 'any',
-        requirements: ['온수온돌기능사 자격 소지자 우대'],
-        duties: '건축물 바닥 난방 배관 시공 및 유지 보수.',
-        salary: '일당 17~22만원', benefits: '4대보험', deadline: '2026-12-31', link: 'https://www.jobkorea.co.kr' },
     ],
     books: [
       { id: 'hwf-b1', title: '2026 온수온돌기능사 필기·실기 완전정복', publisher: '일진사', rating: 9.0, reviews: 88, originalPrice: 21000, price: 18900, discount: '10%', coverBg: 'linear-gradient(135defer,#7a1a00,#c0391c)', tags: ['베스트'] },
@@ -14759,16 +12516,6 @@ const CERTIFICATIONS = {
       { title: '네트워크·보안', tip: 'OSI 7계층, TCP/IP, 암호화 방식(대칭·공개키)을 논리적으로 서술하는 연습이 필요합니다.' },
       { title: '프로젝트 관리', tip: 'WBS, CPM, EVM 등 PM 도구를 계산 문제와 함께 정리하세요.' },
     ],
-    jobs: [
-      { id: 'ipe-1', company: '공공기관 IT부서', title: 'IT 시스템 아키텍트 (정보처리기술사 우대)', type: 'public', region: 'all', experience: 'exp',
-        requirements: ['정보처리기술사 자격 필수', 'IT 프로젝트 관리 경력 5년 이상'],
-        duties: '공공 정보화 사업 아키텍처 설계 및 프로젝트 관리.',
-        salary: '연봉 7,000~1억원', benefits: '공기업 복지 체계', deadline: '2026-12-31', link: 'https://www.gosi.kr' },
-      { id: 'ipe-2', company: '대형 SI 업체', title: '수석 컨설턴트 (정보처리기술사)', type: 'large', region: 'seoul', experience: 'exp',
-        requirements: ['정보처리기술사 필수', 'IT 컨설팅 경력 7년 이상'],
-        duties: '기업 디지털 전환 전략 수립 및 IT 시스템 고도화 컨설팅.',
-        salary: '연봉 9,000만원~1.2억원', benefits: '성과 인센티브, 유연근무', deadline: '2026-12-31', link: 'https://www.saramin.co.kr' },
-    ],
     books: [
       { id: 'ipe-b1', title: '2026 정보처리기술사 필기 핵심요약 10주 완성', publisher: '한울', rating: 9.7, reviews: 520, originalPrice: 65000, price: 58500, discount: '10%', coverBg: 'linear-gradient(135deg,#0a2a5e,#1a4fa0)', tags: ['베스트', '무료배송'] },
       { id: 'ipe-b2', title: '정보처리기술사 기출문제 완전분석 (최신 5개년)', publisher: '성안당', rating: 9.5, reviews: 380, originalPrice: 58000, price: 52200, discount: '10%', coverBg: 'linear-gradient(135deg,#082044,#143878)', tags: ['추천'] },
@@ -14816,12 +12563,6 @@ const CERTIFICATIONS = {
       { title: '운영체제', tip: '프로세스 스케줄링, 메모리 관리(페이징·세그먼트), 교착상태 해결 방법을 정리하세요.' },
       { title: '디지털 논리 설계', tip: '부울 대수, 카르노 맵, 플립플롭, 순서 논리 회로 설계가 핵심입니다.' },
       { title: '시스템 소프트웨어', tip: '컴파일러 구조, 링커·로더, 어셈블러 동작 원리를 이해하세요.' },
-    ],
-    jobs: [
-      { id: 'cpe-1', company: '반도체·시스템 반도체 기업', title: '시스템 아키텍처 전문가', type: 'large', region: 'all', experience: 'exp',
-        requirements: ['전자계산기기술사 또는 관련 기술사 보유', '임베디드 시스템 설계 경력 5년 이상'],
-        duties: 'SoC 설계, 임베디드 OS 포팅, 하드웨어·소프트웨어 인터페이스 설계.',
-        salary: '연봉 8,000만원~1.1억원', benefits: '성과 인센티브, 스톡옵션', deadline: '2026-12-31', link: 'https://www.saramin.co.kr' },
     ],
     books: [
       { id: 'cpe-b1', title: '2026 전자계산기기술사 핵심이론 총정리', publisher: '성안당', rating: 9.4, reviews: 215, originalPrice: 60000, price: 54000, discount: '10%', coverBg: 'linear-gradient(135deg,#003366,#004fa0)', tags: ['베스트'] },
@@ -14872,16 +12613,6 @@ const CERTIFICATIONS = {
       { title: '디지털 집적 회로', tip: 'CMOS 논리 회로, 타이밍 분석, 전력 소모 계산이 자주 출제됩니다.' },
       { title: 'VLSI 설계', tip: 'HDL(Verilog/VHDL) 기초, 합성(Synthesis), 배치·배선(P&R) 흐름을 이해하세요.' },
       { title: '반도체 공정', tip: '포토리소그래피, 산화, 이온주입 등 주요 공정 단계와 목적을 정리하세요.' },
-    ],
-    jobs: [
-      { id: 'sde-1', company: '삼성전자 DS부문', title: '시스템 반도체 설계 엔지니어', type: 'large', region: 'gong', experience: 'new',
-        requirements: ['반도체설계기사 또는 관련 전공자', '전자공학·전기공학 전공 필수'],
-        duties: 'AP·모뎀 등 SoC 디지털 회로 설계 및 검증.',
-        salary: '신입 초봉 5,500만원 이상', benefits: '업계 최고 복지, 주택자금 지원', deadline: '2026-12-31', link: 'https://www.samsung.com/sec/careers' },
-      { id: 'sde-2', company: '팹리스 반도체 업체', title: 'RTL 설계 엔지니어', type: 'large', region: 'seoul', experience: 'any',
-        requirements: ['반도체설계기사 우대', 'Verilog/SystemVerilog 능숙자'],
-        duties: '디지털 IP 설계 및 기능 검증(Simulation, Formal Verification).',
-        salary: '연봉 4,500~7,000만원', benefits: '유연근무, 성과 인센티브', deadline: '2026-12-31', link: 'https://www.saramin.co.kr' },
     ],
     books: [
       { id: 'sde-b1', title: '2026 반도체설계기사 필기 완전정복', publisher: '성안당', rating: 9.5, reviews: 340, originalPrice: 38000, price: 34200, discount: '10%', coverBg: 'linear-gradient(135deg,#0a2244,#1a3d7a)', tags: ['베스트', '무료배송'] },
@@ -14934,12 +12665,6 @@ const CERTIFICATIONS = {
       { title: '광학 측정', tip: '파면 측정, MTF(해상도) 측정, 수차 분석 방법을 숙지하세요.' },
       { title: '광학 재료 및 가공', tip: '광학 유리 종류, 코팅 기술(AR 코팅), 연마 공정을 정리하세요.' },
     ],
-    jobs: [
-      { id: 'opt-1', company: '의료기기 업체', title: '광학기기 조립·검사 기능사', type: 'large', region: 'all', experience: 'any',
-        requirements: ['광학기기기능사 자격 소지자 우대'],
-        duties: '의료용 광학기기(내시경·현미경) 조립 및 광학 성능 검사.',
-        salary: '월 250~320만원', benefits: '4대보험, 야간 수당', deadline: '2026-12-31', link: 'https://www.jobkorea.co.kr' },
-    ],
     books: [
       { id: 'opt-b1', title: '2026 광학기기기능사 필기·실기 완전정복', publisher: '성안당', rating: 9.2, reviews: 130, originalPrice: 28000, price: 25200, discount: '10%', coverBg: 'linear-gradient(135deg,#1a2a6b,#2d4da0)', tags: ['베스트'] },
     ],
@@ -14988,12 +12713,6 @@ const CERTIFICATIONS = {
       { title: '안테나 공학', tip: '안테나 이득, 방사 패턴, 편파, 임피던스 매칭이 자주 출제됩니다.' },
       { title: '무선 설비 기준', tip: '전파법 시행령의 무선국 개설 허가, 주파수 할당 기준을 숙지하세요.' },
       { title: '무선 측정', tip: '스펙트럼 애널라이저, 신호 발생기, SWR 측정 방법을 정리하세요.' },
-    ],
-    jobs: [
-      { id: 'rfe-1', company: 'KT·SKT·LGU+', title: '무선 네트워크 운용 담당자', type: 'large', region: 'all', experience: 'any',
-        requirements: ['무선설비산업기사 또는 무선설비기사 자격 소지자', '통신 관련 전공 우대'],
-        duties: '5G 기지국 설치·운용·장애 처리 및 주파수 측정.',
-        salary: '연봉 3,800~5,000만원', benefits: '4대보험, 통신비 지원', deadline: '2026-12-31', link: 'https://www.saramin.co.kr' },
     ],
     books: [
       { id: 'rfe-b1', title: '2026 무선설비산업기사 필기 핵심요약', publisher: '성안당', rating: 9.3, reviews: 280, originalPrice: 32000, price: 28800, discount: '10%', coverBg: 'linear-gradient(135deg,#003d5c,#006b9e)', tags: ['베스트'] },
@@ -15048,16 +12767,6 @@ const CERTIFICATIONS = {
       { title: '기기분석', tip: 'GC·HPLC·AAS·UV-Vis 분광법 원리와 적용 대상을 비교 정리하세요.' },
       { title: '화학물질 관리', tip: 'GHS·MSDS 작성 기준, 위험물 분류 체계를 숙지하세요.' },
     ],
-    jobs: [
-      { id: 'cae-1', company: '제약·바이오 기업', title: 'QC 화학분석 담당자', type: 'large', region: 'all', experience: 'any',
-        requirements: ['화학분석기사 또는 화학분석산업기사 자격 소지자', '분석 기기(HPLC·GC) 조작 경험 우대'],
-        duties: '원료의약품·완제품 품질 시험 및 규격 적합 여부 판정.',
-        salary: '연봉 3,500~4,800만원', benefits: '4대보험, 연구비 지원', deadline: '2026-12-31', link: 'https://www.saramin.co.kr' },
-      { id: 'cae-2', company: '반도체 소재 업체', title: '화학 분석 엔지니어', type: 'large', region: 'gong', experience: 'exp',
-        requirements: ['화학분석기사 자격 우대', '분석화학 전공 또는 관련 경력 2년 이상'],
-        duties: '반도체 공정 화학물질 불순물 분석 및 공정 개선.',
-        salary: '연봉 4,000~5,500만원', benefits: '성과 인센티브, 교육 지원', deadline: '2026-12-31', link: 'https://www.saramin.co.kr' },
-    ],
     books: [
       { id: 'cae-b1', title: '2026 화학분석기사 필기 완전정복', publisher: '성안당', rating: 9.5, reviews: 310, originalPrice: 35000, price: 31500, discount: '10%', coverBg: 'linear-gradient(135deg,#1a4a3a,#2d8a6a)', tags: ['베스트'] },
       { id: 'cae-b2', title: '화학분석기사 실기 기기분석 집중 특강', publisher: '구민사', rating: 9.3, reviews: 210, originalPrice: 32000, price: 28800, discount: '10%', coverBg: 'linear-gradient(135deg,#0f3328,#1f6050)', tags: ['추천'] },
@@ -15111,12 +12820,6 @@ const CERTIFICATIONS = {
       { title: '기계적 성질 시험', tip: '인장·경도(브리넬·비커스·록웰)·충격·피로 시험 방법과 단위를 숙지하세요.' },
       { title: '비철금속', tip: 'Al·Cu·Ti 합금 계열과 특성, 주요 용도를 비교 정리하세요.' },
     ],
-    jobs: [
-      { id: 'mte-1', company: '철강·금속 제조업체', title: '품질 검사원 (금속재료)', type: 'large', region: 'all', experience: 'any',
-        requirements: ['금속재료기능사 자격 소지자 우대'],
-        duties: '입고 원자재 및 완제품 기계적 성질 시험 및 성적서 발행.',
-        salary: '월 260~340만원', benefits: '4대보험, 교육 지원', deadline: '2026-12-31', link: 'https://www.jobkorea.co.kr' },
-    ],
     books: [
       { id: 'mte-b1', title: '2026 금속재료기능사 필기·실기 완전정복', publisher: '일진사', rating: 9.3, reviews: 195, originalPrice: 26000, price: 23400, discount: '10%', coverBg: 'linear-gradient(135deg,#3d3d3d,#707070)', tags: ['베스트'] },
     ],
@@ -15167,12 +12870,6 @@ const CERTIFICATIONS = {
       { title: '전기·전자 세라믹', tip: '압전체·유전체·자성체 소재의 특성과 응용 제품(MLCC·압전센서)을 연결하세요.' },
       { title: '세라믹 품질 시험', tip: '소결 밀도, 기공률, 경도(비커스) 측정 방법과 규격 기준을 숙지하세요.' },
     ],
-    jobs: [
-      { id: 'cer-1', company: '전자 소재 기업', title: '세라믹 소재 개발 엔지니어', type: 'large', region: 'all', experience: 'any',
-        requirements: ['세라믹기사 자격 우대', '무기화학·재료공학 전공 우대'],
-        duties: 'MLCC·세라믹 기판 소재 조성 개발 및 공정 최적화.',
-        salary: '연봉 3,800~5,000만원', benefits: '4대보험, R&D 인센티브', deadline: '2026-12-31', link: 'https://www.saramin.co.kr' },
-    ],
     books: [
       { id: 'cer-b1', title: '2026 세라믹기사 필기 완전정복', publisher: '성안당', rating: 9.3, reviews: 165, originalPrice: 34000, price: 30600, discount: '10%', coverBg: 'linear-gradient(135deg,#5a3e1b,#9a6e30)', tags: ['베스트'] },
     ],
@@ -15222,12 +12919,6 @@ const CERTIFICATIONS = {
       { title: '보석 감정 기초', tip: '다이아몬드 4C(Carat·Cut·Color·Clarity)와 주요 유색 보석 특성을 숙지하세요.' },
       { title: '안전 관리', tip: '귀금속 도금 시 사용하는 산성 용액 취급 안전 수칙과 환기 기준을 정리하세요.' },
     ],
-    jobs: [
-      { id: 'jwl-1', company: '주얼리 제조업체', title: '귀금속 가공 기능사 (세공팀)', type: 'consult', region: 'all', experience: 'any',
-        requirements: ['귀금속가공기능사 자격 소지자 우대'],
-        duties: '금·은 장신구 제작·수리 및 귀금속 세공 작업.',
-        salary: '월 220~320만원', benefits: '4대보험', deadline: '2026-12-31', link: 'https://www.jobkorea.co.kr' },
-    ],
     books: [
       { id: 'jwl-b1', title: '2026 귀금속가공기능사 필기·실기 완전정복', publisher: '일진사', rating: 9.1, reviews: 120, originalPrice: 25000, price: 22500, discount: '10%', coverBg: 'linear-gradient(135deg,#7a6010,#c9a820)', tags: ['베스트'] },
     ],
@@ -15276,12 +12967,6 @@ const CERTIFICATIONS = {
       { title: '성형 기법', tip: '물레성형·압출성형·석고틀 이장주입 기법의 특징과 용도를 비교하세요.' },
       { title: '소성 및 가마', tip: '초벌구이·본구이 온도, 산화·환원 소성 차이와 색상 변화를 암기하세요.' },
       { title: '도자기 역사·감정', tip: '청자·백자·분청사기 시대·특징 구분이 자주 출제됩니다.' },
-    ],
-    jobs: [
-      { id: 'pot-1', company: '공예 공방·도자기 업체', title: '도자기 공예 작가·강사', type: 'consult', region: 'all', experience: 'any',
-        requirements: ['도자기공예기능사 자격 소지자 우대'],
-        duties: '도자기 성형·유약·소성 작업 및 공방 강습 운영.',
-        salary: '월 200~300만원', benefits: '자유로운 근무 환경', deadline: '2026-12-31', link: 'https://www.jobkorea.co.kr' },
     ],
     books: [
       { id: 'pot-b1', title: '2026 도자기공예기능사 필기·실기 완전정복', publisher: '성안당', rating: 9.1, reviews: 105, originalPrice: 24000, price: 21600, discount: '10%', coverBg: 'linear-gradient(135deg,#5c3317,#9a5a2a)', tags: ['베스트'] },
@@ -15335,12 +13020,6 @@ const CERTIFICATIONS = {
       { title: '산림 보호학', tip: '산불·병해충·기상해 원인과 방제 방법을 구분하여 암기하세요.' },
       { title: '임업 기계', tip: '체인톱·포워더·하베스터 등 임업 기계 종류와 안전 사용 기준을 정리하세요.' },
     ],
-    jobs: [
-      { id: 'for-1', company: '한국임업진흥원', title: '산림 기술 직원 (산림 경영 분야)', type: 'public', region: 'all', experience: 'any',
-        requirements: ['산림산업기사 이상 자격 소지자 우대', '산림 관련 전공자 우대'],
-        duties: '산림 경영 계획 수립, 조림·간벌 사업 관리, 탄소 흡수원 조성.',
-        salary: '연봉 3,500~4,500만원', benefits: '공기업 복지', deadline: '2026-12-31', link: 'https://www.kofpi.or.kr' },
-    ],
     books: [
       { id: 'for-b1', title: '2026 산림산업기사 필기 완전정복', publisher: '성안당', rating: 9.3, reviews: 220, originalPrice: 32000, price: 28800, discount: '10%', coverBg: 'linear-gradient(135deg,#1a4a1e,#2e8a36)', tags: ['베스트'] },
       { id: 'for-b2', title: '산림산업기사 실기 작업형 완전정복', publisher: '구민사', rating: 9.1, reviews: 155, originalPrice: 28000, price: 25200, discount: '10%', coverBg: 'linear-gradient(135deg,#0f3a12,#1e6a22)', tags: ['추천'] },
@@ -15386,12 +13065,6 @@ const CERTIFICATIONS = {
       { title: '조경 시공·관리', tip: '수목 이식 방법, 전지·전정 기준, 병해충 방제법을 정리하세요.' },
       { title: '조경 재료', tip: '포장재·수경시설·조경 시설물 재료 특성과 시공 기준을 숙지하세요.' },
     ],
-    jobs: [
-      { id: 'land-1', company: '조경 전문 업체', title: '조경기능장 (현장 소장)', type: 'large', region: 'all', experience: 'exp',
-        requirements: ['조경기능장 자격 필수', '조경 시공 현장 관리 경력 5년 이상'],
-        duties: '공원·아파트 단지 조경 공사 현장 총괄 관리.',
-        salary: '연봉 5,000~7,000만원', benefits: '차량 지원, 성과 인센티브', deadline: '2026-12-31', link: 'https://www.saramin.co.kr' },
-    ],
     books: [
       { id: 'land-b1', title: '2026 조경기능장 필기 완전정복', publisher: '성안당', rating: 9.4, reviews: 185, originalPrice: 38000, price: 34200, discount: '10%', coverBg: 'linear-gradient(135deg,#1a4a2e,#2e8a52)', tags: ['베스트'] },
     ],
@@ -15434,12 +13107,6 @@ const CERTIFICATIONS = {
       { title: '화훼 장식 디자인', tip: '색채 이론(색상환·배색법), 조형 원리(균형·비례·리듬)를 이해하세요.' },
       { title: '화훼 장식 기법', tip: '꽃다발·코사지·어레인지먼트 제작 기법과 꽃꽂이 스타일을 정리하세요.' },
       { title: '행사·공간 연출', tip: '웨딩·장례·기업 행사 화훼 장식 기획 방법을 숙지하세요.' },
-    ],
-    jobs: [
-      { id: 'flo-1', company: '플로리스트 스튜디오·웨딩 업체', title: '수석 플로리스트 (화훼장식기능장)', type: 'consult', region: 'all', experience: 'exp',
-        requirements: ['화훼장식기능장 자격 우대', '플로리스트 실무 경력 5년 이상'],
-        duties: '웨딩·기업 행사 화훼 장식 기획·제작 총괄 및 강사 활동.',
-        salary: '연봉 4,000~6,000만원', benefits: '프리랜서 또는 정규직 선택', deadline: '2026-12-31', link: 'https://www.saramin.co.kr' },
     ],
     books: [
       { id: 'flo-b1', title: '2026 화훼장식기능장 필기 완전정복', publisher: '성안당', rating: 9.2, reviews: 145, originalPrice: 36000, price: 32400, discount: '10%', coverBg: 'linear-gradient(135deg,#6a1a4a,#b02a7a)', tags: ['베스트'] },
@@ -15489,12 +13156,6 @@ const CERTIFICATIONS = {
       { title: '가축 번식학', tip: '발정 주기, 임신 기간, 인공수정 방법을 종별로 비교 정리하세요.' },
       { title: '축산 환경·위생', tip: '분뇨 처리, 악취 저감, 동물 복지 기준이 출제됩니다.' },
       { title: '축산 경영', tip: '생산비 분석, 사양 일수 계산, 사료 효율 지표를 숙지하세요.' },
-    ],
-    jobs: [
-      { id: 'liv-1', company: '축산 농가·농업법인', title: '축산 기술자 (사육 관리)', type: 'consult', region: 'all', experience: 'any',
-        requirements: ['축산산업기사 자격 소지자 우대'],
-        duties: '한우·돼지·닭 사육 환경 관리, 번식 관리, 사료 급여 계획 수립.',
-        salary: '연봉 3,000~4,000만원', benefits: '주거 제공, 4대보험', deadline: '2026-12-31', link: 'https://www.saramin.co.kr' },
     ],
     books: [
       { id: 'liv-b1', title: '2026 축산산업기사 필기 완전정복', publisher: '성안당', rating: 9.2, reviews: 180, originalPrice: 30000, price: 27000, discount: '10%', coverBg: 'linear-gradient(135deg,#3d2010,#7a4020)', tags: ['베스트'] },
@@ -15546,12 +13207,6 @@ const CERTIFICATIONS = {
       { title: '농업 기계 정비', tip: '엔진 정비(점화장치·연료장치), 유압 시스템 오일 점검 기준을 암기하세요.' },
       { title: '안전 관리', tip: '농기계 안전 수칙, 경운기·트랙터 전도 예방 기준을 숙지하세요.' },
     ],
-    jobs: [
-      { id: 'agm-1', company: 'LS엠트론·동양물산', title: '농업 기계 서비스 엔지니어', type: 'large', region: 'all', experience: 'any',
-        requirements: ['농업기계기사 자격 소지자 우대', '기계 정비 관련 경력 우대'],
-        duties: '트랙터·콤바인 출장 정비, 고장 진단, 부품 교체.',
-        salary: '연봉 3,500~4,800만원', benefits: '차량·공구 지원, 4대보험', deadline: '2026-12-31', link: 'https://www.saramin.co.kr' },
-    ],
     books: [
       { id: 'agm-b1', title: '2026 농업기계기사 필기 완전정복', publisher: '성안당', rating: 9.2, reviews: 200, originalPrice: 33000, price: 29700, discount: '10%', coverBg: 'linear-gradient(135deg,#2a4a10,#4a8a20)', tags: ['베스트'] },
     ],
@@ -15597,12 +13252,6 @@ const CERTIFICATIONS = {
       { title: '누에 사육', tip: '누에 령기별 사육 온도·습도 기준, 먹이 급여량 계산이 출제됩니다.' },
       { title: '제사·견직', tip: '고치 건조, 실 켜기(조사), 견사 등급 판정 기준을 숙지하세요.' },
       { title: '잠병 방제', tip: '누에 바이러스·세균성 병 증상과 소독 방법을 비교 정리하세요.' },
-    ],
-    jobs: [
-      { id: 'sil-1', company: '농촌진흥청·잠업 연구소', title: '잠업 기술 연구원', type: 'public', region: 'all', experience: 'any',
-        requirements: ['잠업기능사 자격 소지자 우대', '농업 관련 전공자 우대'],
-        duties: '누에 사육 기술 개발, 기능성 실크 소재 연구.',
-        salary: '연봉 3,000~4,000만원', benefits: '공공기관 복지', deadline: '2026-12-31', link: 'https://www.rda.go.kr' },
     ],
     books: [
       { id: 'sil-b1', title: '2026 잠업기능사 필기·실기 완전정복', publisher: '일진사', rating: 9.0, reviews: 75, originalPrice: 22000, price: 19800, discount: '10%', coverBg: 'linear-gradient(135deg,#3a2a6a,#6a4ab0)', tags: ['베스트'] },
@@ -15654,16 +13303,6 @@ const CERTIFICATIONS = {
       { title: '소방 관계 법규', tip: '소방시설법·화재예방법 주요 조항, 소방 시설 설치 기준(면적·층수)을 숙지하세요.' },
       { title: '소방 시설 점검 실무', tip: '작동점검·종합점검 대상, 점검 항목, 불량 판정 기준을 실기 위주로 정리하세요.' },
     ],
-    jobs: [
-      { id: 'fpm-1', company: '소방시설 관리업체', title: '소방시설관리사 (점검 팀장)', type: 'consult', region: 'all', experience: 'exp',
-        requirements: ['소방시설관리사 자격 필수', '소방 시설 점검 경력 3년 이상'],
-        duties: '다중이용시설·업무시설 소방 시설 작동점검·종합점검 대행.',
-        salary: '연봉 4,500~6,500만원', benefits: '법인 차량, 성과 인센티브', deadline: '2026-12-31', link: 'https://www.saramin.co.kr' },
-      { id: 'fpm-2', company: '대형 빌딩·공공기관', title: '소방 안전 관리자 (소방시설관리사)', type: 'public', region: 'all', experience: 'any',
-        requirements: ['소방시설관리사 자격 소지자 필수'],
-        duties: '자체 소방 시설 점검, 비상 대응 계획 수립, 소방 교육 실시.',
-        salary: '연봉 4,000~5,500만원', benefits: '4대보험, 공기관 복지', deadline: '2026-12-31', link: 'https://www.gosi.kr' },
-    ],
     books: [
       { id: 'fpm-b1', title: '2026 소방시설관리사 필기 1·2차 한권완성', publisher: '성안당', rating: 9.6, reviews: 480, originalPrice: 58000, price: 52200, discount: '10%', coverBg: 'linear-gradient(135deg,#8b1a1a,#cc2a2a)', tags: ['베스트', '무료배송'] },
       { id: 'fpm-b2', title: '소방시설관리사 기출문제 완전분석 최근 5개년', publisher: '예문사', rating: 9.4, reviews: 320, originalPrice: 52000, price: 46800, discount: '10%', coverBg: 'linear-gradient(135deg,#6d1212,#aa1e1e)', tags: ['추천'] },
@@ -15714,12 +13353,6 @@ const CERTIFICATIONS = {
       { name: '항공기상', questions: 20, desc: '기상 요소, 항공 기상 현상 이해' },
       { name: '비행이론 및 운용', questions: 20, desc: '비행 원리, 드론 시스템 구조, 안전 운용' },
     ],
-    jobs: [
-      { title: '드론 촬영 전문가', company: '영상제작사', salary: '3,000~5,000만원', location: '전국', type: '프리랜서' },
-      { title: '농업용 드론 방제사', company: '농업법인', salary: '3,500~5,500만원', location: '전국', type: '계약직' },
-      { title: '드론 물류 조종사', company: '물류기업', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
-      { title: '드론 측량사', company: '측량업체', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { id: 'drn-b1', title: '2026 무인멀티콥터 드론 조종자 자격증 한권완성', publisher: '성안당', rating: 9.5, reviews: 380, originalPrice: 32000, price: 28800, discount: '10%', coverBg: 'linear-gradient(135deg,#1a3a5c,#2e6da4)', tags: ['베스트', '무료배송'] },
       { id: 'drn-b2', title: '드론 국가자격증 학과시험 기출문제집', publisher: '예문사', rating: 9.3, reviews: 260, originalPrice: 24000, price: 21600, discount: '10%', coverBg: 'linear-gradient(135deg,#0d2640,#1a5080)', tags: ['추천'] },
@@ -15769,12 +13402,6 @@ const CERTIFICATIONS = {
       { name: '선박 운용', questions: 25, desc: '선박 구조, 기관, 안전 장비 운용' },
       { name: '법규', questions: 25, desc: '해사안전법, 수상레저안전법 등 관련 법령' },
       { name: '비상 대처', questions: 25, desc: '인명구조, 소화, 선박 비상 상황 대처' },
-    ],
-    jobs: [
-      { title: '낚시어선 선장', company: '낚시어선업체', salary: '4,000~6,000만원', location: '연안 지역', type: '자영업·계약직' },
-      { title: '레저보트 운항 강사', company: '마리나 시설', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
-      { title: '해양레저 가이드', company: '관광업체', salary: '3,000~4,000만원', location: '제주·부산·통영', type: '계약직' },
-      { title: '연안 여객선 사무장', company: '여객선사', salary: '3,500~5,000만원', location: '도서지역', type: '정규직' },
     ],
     books: [
       { id: 'ssb-b1', title: '2026 소형선박조종사 면허시험 한권완성', publisher: '성안당', rating: 9.4, reviews: 290, originalPrice: 28000, price: 25200, discount: '10%', coverBg: 'linear-gradient(135deg,#0a3d62,#1a7abf)', tags: ['베스트', '무료배송'] },
@@ -15836,12 +13463,6 @@ const CERTIFICATIONS = {
       { name: '교통안전', questions: 20, desc: '교통사고 분석, 안전시설, 보행자 안전' },
       { name: '교통법규', questions: 20, desc: '도로교통법, 교통안전법, 관련 규정' },
     ],
-    jobs: [
-      { title: '교통영향분석 전문가', company: '교통엔지니어링 업체', salary: '4,000~6,000만원', location: '전국', type: '정규직' },
-      { title: '교통계획 연구원', company: '국토연구원·지방연구원', salary: '4,000~6,500만원', location: '전국', type: '정규직' },
-      { title: '도로교통 설계사', company: '건설사·설계사무소', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '스마트교통 시스템 엔지니어', company: 'ITS 전문업체', salary: '4,500~7,000만원', location: '수도권', type: '정규직' },
-    ],
     books: [
       { id: 'trf-b1', title: '2026 교통기사 필기 한권완성', publisher: '성안당', rating: 9.4, reviews: 310, originalPrice: 42000, price: 37800, discount: '10%', coverBg: 'linear-gradient(135deg,#1a3a1a,#2e7a2e)', tags: ['베스트', '무료배송'] },
       { id: 'trf-b2', title: '교통기사 기출문제 완전분석 최근 5개년', publisher: '예문사', rating: 9.2, reviews: 220, originalPrice: 36000, price: 32400, discount: '10%', coverBg: 'linear-gradient(135deg,#0f2a0f,#1e5a1e)', tags: ['추천'] },
@@ -15879,12 +13500,6 @@ const CERTIFICATIONS = {
       { name: '식품미생물학', questions: 20, desc: '식중독균, 위생지표균, 미생물 제어 방법' },
       { name: '식품화학', questions: 20, desc: '식품 성분 분석, 식품 첨가물, 유해물질' },
       { name: '식품가공·저장', questions: 20, desc: '식품 가공 원리, 저장 방법, 포장 기술' },
-    ],
-    jobs: [
-      { title: 'HACCP 관리자', company: '식품제조업체', salary: '3,500~5,500만원', location: '전국', type: '정규직' },
-      { title: '식품안전 품질관리원', company: '대형 식품기업', salary: '3,500~6,000만원', location: '전국', type: '정규직' },
-      { title: '식품위생 감시원', company: '식품의약품안전처·지자체', salary: '4,000~6,500만원', location: '전국', type: '공무원' },
-      { title: '급식 위생관리자', company: '집단급식소·위탁급식사', salary: '3,000~4,500만원', location: '전국', type: '정규직' },
     ],
     books: [
       { id: 'fsa-b1', title: '2026 식품안전기사 필기 한권완성', publisher: '성안당', rating: 9.4, reviews: 340, originalPrice: 42000, price: 37800, discount: '10%', coverBg: 'linear-gradient(135deg,#1a4a1a,#2e8c2e)', tags: ['베스트', '무료배송'] },
@@ -15925,12 +13540,6 @@ const CERTIFICATIONS = {
       { name: '식품위생학', questions: 20, desc: '식품 위생 기준, 식중독 예방, 개인 위생' },
       { name: '식품기계', questions: 20, desc: '가공 기계 구조, 작동 원리, 안전 관리' },
     ],
-    jobs: [
-      { title: '식품 제조 기능원', company: '식품제조업체', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '식품 품질 검사원', company: '식품가공업체', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '베이커리·제과 가공 기술원', company: '제과·제빵업체', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '식품 연구소 기술 보조원', company: '식품연구기관', salary: '3,000~4,200만원', location: '전국', type: '계약직' },
-    ],
     books: [
       { id: 'fpc-b1', title: '2026 식품가공기능사 필기 한권완성', publisher: '성안당', rating: 9.3, reviews: 420, originalPrice: 28000, price: 25200, discount: '10%', coverBg: 'linear-gradient(135deg,#5a2d0c,#c0652b)', tags: ['베스트', '무료배송'] },
       { id: 'fpc-b2', title: '식품가공기능사 기출문제 완전분석', publisher: '예문사', rating: 9.2, reviews: 310, originalPrice: 24000, price: 21600, discount: '10%', coverBg: 'linear-gradient(135deg,#3e1e08,#8c4820)', tags: ['추천'] },
@@ -15969,12 +13578,6 @@ const CERTIFICATIONS = {
       { name: '조림학 기초', questions: 20, desc: '묘목 식재·관리, 수종별 생육 특성' },
       { name: '임업기계', questions: 15, desc: '종묘 생산 기계 구조·취급·안전 관리' },
       { name: '산림관계법규', questions: 20, desc: '산림자원법, 종자산업법 관련 주요 조항' },
-    ],
-    jobs: [
-      { title: '임업 종묘 생산 기술원', company: '묘목 생산업체·산림조합', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '조림 사업 현장 기술원', company: '임업회사·산림청', salary: '2,800~3,600만원', location: '전국', type: '계약직' },
-      { title: '국립 수목원 관리 보조', company: '국립수목원·지자체', salary: '2,700~3,500만원', location: '전국', type: '계약직' },
-      { title: '탄소중립 산림 조성 기술원', company: '한국임업진흥원', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
     ],
     books: [
       { id: 'frs-b1', title: '2026 임업종묘기능사 필기 한권완성', publisher: '성안당', rating: 9.2, reviews: 180, originalPrice: 26000, price: 23400, discount: '10%', coverBg: 'linear-gradient(135deg,#1a4a1a,#3a8c3a)', tags: ['베스트', '무료배송'] },
@@ -16015,12 +13618,6 @@ const CERTIFICATIONS = {
       { name: '기계 안전관리', questions: 15, desc: '임업 기계 안전 수칙, 사고 예방, 보호구 착용' },
       { name: '산림관계법규', questions: 20, desc: '산림자원법, 산업안전보건법 관련 임업 조항' },
     ],
-    jobs: [
-      { title: '벌목·조재 기계 운용원', company: '임업회사·산림조합', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '산림 정비 기계 운용원', company: '지자체·산림청', salary: '2,800~3,800만원', location: '전국', type: '계약직' },
-      { title: '임업 기계 정비 기술원', company: '임업기계 업체', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '집재·운반 장비 운전원', company: '목재 유통업체', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { id: 'frm-b1', title: '2026 임업기계기능사 필기 한권완성', publisher: '성안당', rating: 9.1, reviews: 160, originalPrice: 26000, price: 23400, discount: '10%', coverBg: 'linear-gradient(135deg,#2a3a1a,#5a7a2e)', tags: ['베스트', '무료배송'] },
       { id: 'frm-b2', title: '임업기계기능사 기출문제 완전분석', publisher: '예문사', rating: 8.9, reviews: 110, originalPrice: 22000, price: 19800, discount: '10%', coverBg: 'linear-gradient(135deg,#1c2a0f,#3e5a1e)', tags: ['추천'] },
@@ -16059,12 +13656,6 @@ const CERTIFICATIONS = {
       { name: '목재가공학', questions: 25, desc: '절삭 가공 원리, 접합 방법, 목재 기계 사용법' },
       { name: '도면 해독', questions: 15, desc: '가구·목공 도면 읽기, 치수 계산, 재료 산출' },
       { name: '목재관계법규', questions: 20, desc: '목재이용법, 산림자원법 관련 목재 관련 규정' },
-    ],
-    jobs: [
-      { title: '가구 제조 기능원', company: '가구 제조업체', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '건축 내장재 목공 기술원', company: '건축 내장재 업체', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '목공소 운영·창업', company: '자영업', salary: '3,500~6,000만원', location: '전국', type: '자영업' },
-      { title: '목재 가공 품질 검사원', company: '목재 유통업체', salary: '2,800~3,600만원', location: '전국', type: '정규직' },
     ],
     books: [
       { id: 'wdp-b1', title: '2026 목재가공기능사 필기 한권완성', publisher: '성안당', rating: 9.2, reviews: 200, originalPrice: 26000, price: 23400, discount: '10%', coverBg: 'linear-gradient(135deg,#5c3a1a,#a06030)', tags: ['베스트', '무료배송'] },
@@ -16105,12 +13696,6 @@ const CERTIFICATIONS = {
       { name: '생산 관리', questions: 20, desc: '공정 계획, 품질 관리, 생산성 분석' },
       { name: '목재관계법규', questions: 20, desc: '목재이용법, KS 규격, 친환경 목재 인증 제도' },
     ],
-    jobs: [
-      { title: '목재 가공 공정 관리자', company: '합판·MDF 제조업체', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '목재 품질 관리원', company: '목재 제조·유통업체', salary: '3,500~4,800만원', location: '전국', type: '정규직' },
-      { title: '목재 무역 전문가', company: '목재 수출입 업체', salary: '4,000~5,500만원', location: '수도권', type: '정규직' },
-      { title: '목질 건축재료 기술원', company: '건자재 업체', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { id: 'wdi-b1', title: '2026 목재가공산업기사 필기 한권완성', publisher: '성안당', rating: 9.2, reviews: 170, originalPrice: 32000, price: 28800, discount: '10%', coverBg: 'linear-gradient(135색,#4a2e10,#8c5a28)', tags: ['베스트', '무료배송'] },
       { id: 'wdi-b2', title: '목재가공산업기사 기출문제 완전분석', publisher: '예문사', rating: 9.0, reviews: 120, originalPrice: 28000, price: 25200, discount: '10%', coverBg: 'linear-gradient(135deg,#32200a,#6a421c)', tags: ['추천'] },
@@ -16150,12 +13735,6 @@ const CERTIFICATIONS = {
       { name: '공정 설비', questions: 20, desc: '펄프·제지 기계 구조, 운전 방법, 안전 관리' },
       { name: '관계법규', questions: 10, desc: '환경법(폐수·악취), 산업안전보건법 관련 조항' },
     ],
-    jobs: [
-      { title: '펄프 제조 공정 운전원', company: '펄프 제조업체', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '제지 공정 운전원', company: '제지업체', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '종이 가공 기술원', company: '종이 가공·포장 업체', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '재생지 공정 관리원', company: '재생지 제조업체', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { id: 'ppm-b1', title: '2026 펄프종이제조기능사 필기 한권완성', publisher: '성안당', rating: 9.0, reviews: 140, originalPrice: 26000, price: 23400, discount: '10%', coverBg: 'linear-gradient(135deg,#1a3a5a,#2e6a9a)', tags: ['베스트', '무료배송'] },
       { id: 'ppm-b2', title: '펄프종이제조기능사 기출문제 완전분석', publisher: '예문사', rating: 8.8, reviews: 100, originalPrice: 22000, price: 19800, discount: '10%', coverBg: 'linear-gradient(135deg,#0f2a42,#1e4e72)', tags: ['추천'] },
@@ -16194,12 +13773,6 @@ const CERTIFICATIONS = {
       { name: '유가공학', questions: 25, desc: '원유 성분·검사, 우유·치즈·버터·발효유 제조 공정' },
       { name: '낙농 위생학', questions: 20, desc: '원유 위생 기준, 유방염 예방, 낙농 시설 소독 방법' },
       { name: '관련 법규', questions: 10, desc: '축산물위생관리법, 낙농진흥법 주요 조항' },
-    ],
-    jobs: [
-      { title: '낙농 농가 착유 관리원', company: '젖소 낙농 농가', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '유가공 공장 기술원', company: '유제품 제조업체·농협', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '유제품 품질 검사원', company: '유제품 제조·유통업체', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '낙농 컨설턴트', company: '축협·농업기술센터', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
     ],
     books: [
       { id: 'dri-b1', title: '2026 낙농기능사 필기 한권완성', publisher: '성안당', rating: 9.1, reviews: 190, originalPrice: 26000, price: 23400, discount: '10%', coverBg: 'linear-gradient(135deg,#2a3a5a,#4a6aa0)', tags: ['베스트', '무료배송'] },
@@ -16243,12 +13816,6 @@ const CERTIFICATIONS = {
       { name: '수산질병학', questions: 20, desc: '수산생물 주요 질병, 예방·치료, 검역 제도' },
       { name: '수산관계법규', questions: 20, desc: '수산업법, 수산자원관리법, 양식산업발전법 주요 내용' },
     ],
-    jobs: [
-      { title: '양식장 생산 관리자', company: '수산 양식 기업', salary: '3,200~4,800만원', location: '전국 해안', type: '정규직' },
-      { title: '스마트 양식 기술원', company: '스마트 양식 업체', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '수산 연구원', company: '국립수산과학원', salary: '3,500~5,500만원', location: '전국', type: '정규직' },
-      { title: '양식 컨설턴트', company: '수산 컨설팅 업체', salary: '4,000~6,000만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { id: 'aqe-b1', title: '2026 수산양식기사 필기 한권완성', publisher: '성안당', rating: 9.2, reviews: 220, originalPrice: 38000, price: 34200, discount: '10%', coverBg: 'linear-gradient(135deg,#0a2a4a,#1a6a9a)', tags: ['베스트', '무료배송'] },
       { id: 'aqe-b2', title: '수산양식기사 기출문제 완전분석 5개년', publisher: '예문사', rating: 9.0, reviews: 160, originalPrice: 32000, price: 28800, discount: '10%', coverBg: 'linear-gradient(135deg,#061e36,#104e72)', tags: ['추천'] },
@@ -16287,12 +13854,6 @@ const CERTIFICATIONS = {
       { name: '수산생물학', questions: 20, desc: '주요 양식 생물 생태, 번식, 성장 특성' },
       { name: '수질관리', questions: 20, desc: '양식 수질 지표 측정·관리, 수처리 장치 운용' },
       { name: '수산관계법규', questions: 20, desc: '수산업법, 수산생물질병관리법 주요 조항' },
-    ],
-    jobs: [
-      { title: '양식장 현장 기술원', company: '수산 양식 농가·기업', salary: '3,000~4,200만원', location: '전국 해안', type: '정규직' },
-      { title: '수산물 품질 관리원', company: '국립수산물품질관리원', salary: '3,000~4,500만원', location: '전국', type: '공무원' },
-      { title: '수산 가공 관리원', company: '수산 가공 업체', salary: '2,800~3,800만원', location: '전국', type: '정규직' },
-      { title: '어촌 지도 기술원', company: '지자체·어촌계', salary: '3,000~4,000만원', location: '전국', type: '계약직' },
     ],
     books: [
       { id: 'aqi-b1', title: '2026 수산양식산업기사 필기 한권완성', publisher: '성안당', rating: 9.1, reviews: 180, originalPrice: 32000, price: 28800, discount: '10%', coverBg: 'linear-gradient(135deg,#0c2e52,#1e72a8)', tags: ['베스트', '무료배송'] },
@@ -16333,12 +13894,6 @@ const CERTIFICATIONS = {
       { name: '어선 운용', questions: 20, desc: '어선 구조, 항법, 기상 판단, 안전 운항' },
       { name: '수산관계법규', questions: 15, desc: '수산업법, 배타적경제수역법, 국제 어업 협약' },
     ],
-    jobs: [
-      { title: '원양 어선 어로장', company: '원양 어업 회사', salary: '5,000~9,000만원', location: '해외 어장', type: '정규직' },
-      { title: '연근해 어선 어로사', company: '연근해 어선', salary: '3,500~5,500만원', location: '전국 해안', type: '정규직' },
-      { title: '수산자원 조사원', company: '국립수산과학원', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '어업 지도원', company: '해양수산부·지자체', salary: '3,500~5,000만원', location: '전국', type: '공무원' },
-    ],
     books: [
       { id: 'fsh-b1', title: '2026 어로기사 필기 한권완성', publisher: '성안당', rating: 9.0, reviews: 150, originalPrice: 36000, price: 32400, discount: '10%', coverBg: 'linear-gradient(135deg,#0a1e3a,#1a4e8a)', tags: ['베스트', '무료배송'] },
       { id: 'fsh-b2', title: '어로기사 기출문제 완전분석 5개년', publisher: '예문사', rating: 8.9, reviews: 110, originalPrice: 30000, price: 27000, discount: '10%', coverBg: 'linear-gradient(135deg,#06142a,#123870)', tags: ['추천'] },
@@ -16377,12 +13932,6 @@ const CERTIFICATIONS = {
       { name: '수산화학', questions: 20, desc: '수산물 성분 분석, 신선도 판정, 품질 지표' },
       { name: '수산물 위생관리', questions: 20, desc: 'HACCP 적용, 수산물 위생 기준, 식중독 예방' },
       { name: '수산관계법규', questions: 15, desc: '수산물위생관리법, 식품위생법 수산물 관련 조항' },
-    ],
-    jobs: [
-      { title: '수산 가공 공장 기술자', company: '수산 가공 업체', salary: '3,200~4,800만원', location: '전국 해안', type: '정규직' },
-      { title: '수산물 품질 관리원', company: '수산물 가공·유통업체', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '냉동 수산물 관리자', company: '냉동 물류 업체', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '수산물 검사원', company: '국립수산물품질관리원', salary: '3,500~5,000만원', location: '전국', type: '공무원' },
     ],
     books: [
       { id: 'smf-b1', title: '2026 수산제조기사 필기 한권완성', publisher: '성안당', rating: 9.0, reviews: 170, originalPrice: 36000, price: 32400, discount: '10%', coverBg: 'linear-gradient(135deg,#0c2840,#1e5e8a)', tags: ['베스트', '무료배송'] },
@@ -16426,12 +13975,6 @@ const CERTIFICATIONS = {
       { name: '금속재료시험', questions: 20, desc: '기계적 시험(인장·충격·경도), 비파괴검사, 금속 조직 분석' },
       { name: '관련 법규·규격', questions: 20, desc: 'KS 금속 규격, 재료 인증 제도, 산업 표준' },
     ],
-    jobs: [
-      { title: '금속 재료 시험 연구원', company: '소재 연구소·기업 R&D', salary: '4,000~6,500만원', location: '수도권·산업단지', type: '정규직' },
-      { title: '철강 품질 관리 기술자', company: '철강 제조업체', salary: '3,800~5,500만원', location: '전국', type: '정규직' },
-      { title: '자동차 소재 개발 연구원', company: '자동차 부품사', salary: '4,000~6,000만원', location: '수도권·충청', type: '정규직' },
-      { title: '비파괴 검사 전문가', company: '비파괴검사 전문 업체', salary: '3,800~5,500만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { id: 'met-b1', title: '2026 금속재료기사 필기 한권완성', publisher: '성안당', rating: 9.3, reviews: 280, originalPrice: 42000, price: 37800, discount: '10%', coverBg: 'linear-gradient(135deg,#2a2a2a,#606060)', tags: ['베스트', '무료배송'] },
       { id: 'met-b2', title: '금속재료기사 기출문제 완전분석 5개년', publisher: '예문사', rating: 9.1, reviews: 200, originalPrice: 36000, price: 32400, discount: '10%', coverBg: 'linear-gradient(135deg,#1e1e1e,#484848)', tags: ['추천'] },
@@ -16470,12 +14013,6 @@ const CERTIFICATIONS = {
       { name: '금속재료학', questions: 20, desc: '주철·주강·비철 합금 종류, 용해 온도, 유동성' },
       { name: '주조 설비', questions: 15, desc: '용해로(큐폴라·전기로), 주형 제작 기계, 냉각 설비' },
       { name: '관련 법규', questions: 20, desc: '산업안전보건법 주조 작업 관련 조항, 화학물질 관리' },
-    ],
-    jobs: [
-      { title: '주물 제조 기능원', company: '주물·주조 업체', salary: '3,000~4,200만원', location: '전국 산업단지', type: '정규직' },
-      { title: '자동차 부품 주조 기술원', company: '자동차 부품사', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '기계 부품 주물 검사원', company: '기계 부품 제조사', salary: '3,000~4,000만원', location: '전국', type: '정규직' },
-      { title: '다이캐스팅 운전원', company: '다이캐스팅 업체', salary: '3,200~4,200만원', location: '전국', type: '정규직' },
     ],
     books: [
       { id: 'cst-b1', title: '2026 주조기능사 필기 한권완성', publisher: '성안당', rating: 9.1, reviews: 210, originalPrice: 26000, price: 23400, discount: '10%', coverBg: 'linear-gradient(135deg,#4a2010,#a04828)', tags: ['베스트', '무료배송'] },
@@ -16516,12 +14053,6 @@ const CERTIFICATIONS = {
       { name: '단조 설비', questions: 15, desc: '해머·프레스·업셋터 구조, 금형, 가열로 취급' },
       { name: '관련 법규', questions: 20, desc: '산업안전보건법 단조 작업 관련 안전 기준' },
     ],
-    jobs: [
-      { title: '단조 기능원', company: '단조 전문 업체', salary: '3,200~4,500만원', location: '전국 산업단지', type: '정규직' },
-      { title: '자동차 단조 부품 기술원', company: '자동차 부품사', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '항공기 부품 단조 기술원', company: '항공 부품 제조사', salary: '4,000~5,500만원', location: '수도권·경남', type: '정규직' },
-      { title: '산업용 공구 단조 기술원', company: '공구 제조업체', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { id: 'frg-b1', title: '2026 단조기능사 필기 한권완성', publisher: '성안당', rating: 9.0, reviews: 190, originalPrice: 26000, price: 23400, discount: '10%', coverBg: 'linear-gradient(135deg,#3a2a1a,#7a5a38)', tags: ['베스트', '무료배송'] },
       { id: 'frg-b2', title: '단조기능사 기출문제 완전분석', publisher: '예문사', rating: 8.8, reviews: 140, originalPrice: 22000, price: 19800, discount: '10%', coverBg: 'linear-gradient(135deg,#281e10,#5a4028)', tags: ['추천'] },
@@ -16560,12 +14091,6 @@ const CERTIFICATIONS = {
       { name: '금속재료학', questions: 20, desc: '탄소강·합금강 종류, Fe-C 상태도, 경화능' },
       { name: '열처리 설비', questions: 15, desc: '가열로(배치로·연속로) 구조, 냉각조 취급, 분위기 가스' },
       { name: '관련 법규', questions: 20, desc: '산업안전보건법 열처리 작업 안전 기준, 화학물질 관리' },
-    ],
-    jobs: [
-      { title: '열처리 기능원', company: '열처리 전문 업체', salary: '3,200~4,500만원', location: '전국 산업단지', type: '정규직' },
-      { title: '자동차 부품 열처리 기술원', company: '자동차 부품사', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '공구·베어링 열처리 기술원', company: '공구·베어링 제조사', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
-      { title: '금속 표면 처리 기술원', company: '표면처리 전문 업체', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
     ],
     books: [
       { id: 'htr-b1', title: '2026 열처리기능사 필기 한권완성', publisher: '성안당', rating: 9.1, reviews: 230, originalPrice: 26000, price: 23400, discount: '10%', coverBg: 'linear-gradient(135deg,#5a1a0a,#c03820)', tags: ['베스트', '무료배송'] },
@@ -16608,12 +14133,6 @@ const CERTIFICATIONS = {
       { name: '화약류 안전관리', questions: 20, desc: '화약고 구조·관리, 운반 기준, 사고 예방 대책' },
       { name: '화약류관계법규', questions: 20, desc: '총포·도검·화약류 단속법, 광산보안법 화약류 조항' },
     ],
-    jobs: [
-      { title: '화약류 보안 관리자', company: '광산·채석장·터널 시공사', salary: '4,000~6,000만원', location: '전국', type: '정규직' },
-      { title: '발파 전문 기술자', company: '전문 발파 업체', salary: '4,500~7,000만원', location: '전국', type: '정규직' },
-      { title: '화약류 제조 관리자', company: '화약 제조업체', salary: '4,000~6,000만원', location: '전국', type: '정규직' },
-      { title: '건설 현장 발파 담당', company: '건설사', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { id: 'exp-b1', title: '2026 화약류관리기사 필기 한권완성', publisher: '성안당', rating: 9.2, reviews: 180, originalPrice: 42000, price: 37800, discount: '10%', coverBg: 'linear-gradient(135deg,#3a1a0a,#8a3818)', tags: ['베스트', '무료배송'] },
       { id: 'exp-b2', title: '화약류관리기사 기출문제 완전분석 5개년', publisher: '예문사', rating: 9.0, reviews: 130, originalPrice: 36000, price: 32400, discount: '10%', coverBg: 'linear-gradient(135deg,#2a1206,#642810)', tags: ['추천'] },
@@ -16653,12 +14172,6 @@ const CERTIFICATIONS = {
       { name: '화약류 안전관리', questions: 20, desc: '화약류 보관·운반 기준, 사고 사례, 응급 처치' },
       { name: '화약류관계법규', questions: 20, desc: '총포·도검·화약류 단속법 주요 규정' },
     ],
-    jobs: [
-      { title: '채석장 발파 보조 관리자', company: '채석·골재 업체', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-      { title: '건설 발파 보조 기술원', company: '건설사·전문 발파업체', salary: '3,500~4,800만원', location: '전국', type: '정규직' },
-      { title: '화약류 판매·취급 보조', company: '화약 판매업체', salary: '3,000~4,200만원', location: '전국', type: '정규직' },
-      { title: '광산 발파 기술원', company: '광업 회사', salary: '3,500~5,000만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { id: 'exi-b1', title: '2026 화약류관리산업기사 필기 한권완성', publisher: '성안당', rating: 9.1, reviews: 155, originalPrice: 36000, price: 32400, discount: '10%', coverBg: 'linear-gradient(135deg,#2e1808,#6e3618)', tags: ['베스트', '무료배송'] },
       { id: 'exi-b2', title: '화약류관리산업기사 기출문제 완전분석', publisher: '예문사', rating: 8.9, reviews: 110, originalPrice: 30000, price: 27000, discount: '10%', coverBg: 'linear-gradient(135deg,#201006,#502810)', tags: ['추천'] },
@@ -16697,12 +14210,6 @@ const CERTIFICATIONS = {
       { name: '채광학', questions: 20, desc: '노천채굴·지하채굴 방법, 채굴 계획, 발파 기초' },
       { name: '광산기계', questions: 15, desc: '채굴·운반·배수 기계 구조, 취급 방법, 안전 점검' },
       { name: '광산보안관계법규', questions: 20, desc: '광산보안법, 산업안전보건법 광업 조항 주요 내용' },
-    ],
-    jobs: [
-      { title: '광산 보안 담당자', company: '광업 회사', salary: '4,000~5,500만원', location: '전국 광산 지역', type: '정규직' },
-      { title: '채굴 현장 안전 관리자', company: '채석·광업 업체', salary: '3,800~5,200만원', location: '전국', type: '정규직' },
-      { title: '광산 환경 관리원', company: '한국광해광업공단', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-      { title: '지하 터널 안전 담당', company: '건설사·터널 전문업체', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
     ],
     books: [
       { id: 'mns-b1', title: '2026 광산보안기사 필기 한권완성', publisher: '성안당', rating: 9.0, reviews: 140, originalPrice: 40000, price: 36000, discount: '10%', coverBg: 'linear-gradient(135deg,#2a2a1a,#5a5a38)', tags: ['베스트', '무료배송'] },
@@ -16746,12 +14253,6 @@ const CERTIFICATIONS = {
       { name: '선박 의장', questions: 20, desc: '기관 의장·전장·배관 시스템 개요, 설치 기준' },
       { name: '조선관계법규', questions: 20, desc: '선박안전법, 해사노동협약, 선급 규정 개요' },
     ],
-    jobs: [
-      { title: '선박 설계 엔지니어', company: '대형 조선소', salary: '4,500~7,000만원', location: '울산·거제·목포', type: '정규직' },
-      { title: '선체 생산 기술 담당', company: '조선소·선박 기자재업체', salary: '4,000~6,000만원', location: '전국', type: '정규직' },
-      { title: '선급 검사원', company: '한국선급(KR)', salary: '4,500~7,000만원', location: '전국', type: '정규직' },
-      { title: '해양 플랜트 설계원', company: '해양 플랜트 전문 업체', salary: '4,500~7,500만원', location: '울산·부산', type: '정규직' },
-    ],
     books: [
       { id: 'shp-b1', title: '2026 조선기사 필기 한권완성', publisher: '성안당', rating: 9.3, reviews: 260, originalPrice: 44000, price: 39600, discount: '10%', coverBg: 'linear-gradient(135deg,#0a1e3a,#1a4e8a)', tags: ['베스트', '무료배송'] },
       { id: 'shp-b2', title: '조선기사 기출문제 완전분석 5개년', publisher: '예문사', rating: 9.1, reviews: 190, originalPrice: 38000, price: 34200, discount: '10%', coverBg: 'linear-gradient(135deg,#061430,#123870)', tags: ['추천'] },
@@ -16791,12 +14292,6 @@ const CERTIFICATIONS = {
       { name: '선박 의장', questions: 20, desc: '배관·전장·기관 의장 기초, 도장 공정' },
       { name: '조선관계법규', questions: 20, desc: '선박안전법, 산업안전보건법 조선 현장 조항' },
     ],
-    jobs: [
-      { title: '선체 조립 현장 관리자', company: '조선소', salary: '4,000~5,800만원', location: '울산·거제·목포', type: '정규직' },
-      { title: '선박 기자재 기술 담당', company: '선박 기자재 업체', salary: '3,800~5,500만원', location: '전국', type: '정규직' },
-      { title: '선박 수리 기술자', company: '선박 수리 업체', salary: '3,800~5,000만원', location: '부산·인천', type: '정규직' },
-      { title: '조선 품질 관리원', company: '조선소·선급', salary: '4,000~5,500만원', location: '전국', type: '정규직' },
-    ],
     books: [
       { id: 'shi-b1', title: '2026 조선산업기사 필기 한권완성', publisher: '성안당', rating: 9.1, reviews: 220, originalPrice: 36000, price: 32400, discount: '10%', coverBg: 'linear-gradient(135deg,#0c2040,#1e5090)', tags: ['베스트', '무료배송'] },
       { id: 'shi-b2', title: '조선산업기사 기출문제 완전분석', publisher: '예문사', rating: 8.9, reviews: 160, originalPrice: 30000, price: 27000, discount: '10%', coverBg: 'linear-gradient(135deg,#081630,#163c70)', tags: ['추천'] },
@@ -16835,12 +14330,6 @@ const CERTIFICATIONS = {
       { name: '선체건조 작업', questions: 25, desc: '마킹·절단·성형·조립·용접 작업 방법' },
       { name: '선체건조 기계', questions: 15, desc: '가스절단기·플라즈마 절단기·성형 프레스 취급' },
       { name: '관련 법규', questions: 20, desc: '산업안전보건법 조선 현장 안전 작업 기준' },
-    ],
-    jobs: [
-      { title: '선체 조립 기능원', company: '조선소', salary: '3,500~5,000만원', location: '울산·거제·목포', type: '정규직' },
-      { title: '선박 수리 기능원', company: '선박 수리 업체', salary: '3,300~4,800만원', location: '부산·인천', type: '정규직' },
-      { title: '해양 구조물 조립 기능원', company: '해양 플랜트 업체', salary: '3,800~5,200만원', location: '전국', type: '정규직' },
-      { title: '강구조물 제작 기능원', company: '강구조물 제작업체', salary: '3,200~4,500만원', location: '전국', type: '정규직' },
     ],
     books: [
       { id: 'hbs-b1', title: '2026 선체건조기능사 필기 한권완성', publisher: '성안당', rating: 9.0, reviews: 200, originalPrice: 26000, price: 23400, discount: '10%', coverBg: 'linear-gradient(135deg,#1a2e4a,#3a6090)', tags: ['베스트', '무료배송'] },

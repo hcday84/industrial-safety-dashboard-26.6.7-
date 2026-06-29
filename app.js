@@ -611,8 +611,6 @@ function renderStatCards(cert) {
     if (examValEl)   examValEl.textContent   = cert.avgExamRate;
     if (examDescEl)  examDescEl.textContent  = cert.examRateSummary || '데이터 준비중';
   }
-
-  document.getElementById('bookmark-count').textContent = STATE.bookmarks.length;
 }
 
 // ============================================
