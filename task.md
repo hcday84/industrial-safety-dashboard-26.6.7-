@@ -13,7 +13,7 @@
 | **GitHub** | https://github.com/hcday84/industrial-safety-dashboard-26.6.7- |
 | **작업 디렉터리** | `C:\Users\user\Desktop\industrial_safety_dashboard` |
 | **배포 브랜치** | `main` (push 시 Vercel 자동배포, 1~2분 소요) |
-| **총 커밋 수** | 242회+ |
+| **총 커밋 수** | 246회+ |
 
 ---
 
