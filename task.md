@@ -11,9 +11,9 @@
 | **서비스명** | 기술수험서 올인원 대시보드 |
 | **배포 URL** | https://industrial-safety-dashboard-26-6-7.vercel.app |
 | **GitHub** | https://github.com/hcday84/industrial-safety-dashboard-26.6.7- |
-| **작업 디렉터리** | `/home/user/industrial-safety-dashboard-26.6.7-` |
+| **작업 디렉터리** | `C:\Users\user\Desktop\industrial_safety_dashboard` |
 | **배포 브랜치** | `main` (push 시 Vercel 자동배포, 1~2분 소요) |
-| **총 커밋 수** | 235회+ |
+| **총 커밋 수** | 242회+ |
 
 ---
 
@@ -21,46 +21,53 @@
 
 | 파일 | 라인 수 | 역할 |
 |------|---------|------|
-| `app.js` | 18,760+ | 자격증 데이터(321종+), 핵심 렌더링 로직, STATE 관리 |
-| `books_data.js` | 1,800+ | 교보문고 추천 수험서 정적 데이터 (111개 자격증) |
-| `style.css` | 3,200+ | 전체 스타일 (작업내용 패널 포함) |
-| `index.html` | — | 메인 진입점 (작업내용 패널 HTML 포함) |
-| `sw.js` | — | 서비스워커 (CACHE_NAME: cert-dashboard-v7) |
+| `certs_data.js` | 16,861 | 자격증 데이터베이스 (321종+, CERTIFICATIONS 객체) |
+| `app.js` | 1,879 | 핵심 렌더링 로직, STATE 관리, API 호출 |
+| `books_data.js` | 1,627 | 교보문고 추천 수험서 정적 데이터 (111개 자격증) |
+| `style.css` | 3,396 | 전체 스타일 (작업내용 패널 포함) |
+| `index.html` | 968 | 메인 진입점 (작업내용 패널 HTML 포함) |
+| `sw.js` | — | 서비스워커 (CACHE_NAME: cert-dashboard-v8) |
 | `inventory.html` | — | IT 기술수험서 절판·개정판 대시보드 |
 | `inventory-app.js` | — | inventory 페이지 로직 |
 | `inventory-styles.css` | — | inventory 페이지 스타일 |
 | `jm-codes.js` | — | 자격증 종목코드 매핑 |
 | `kuksiwon_api.js` | — | 국가자격 API 유틸 |
-| `PROJECT_SUMMARY.md` | — | 전체 작업 정리 상세 문서 |
 
 ### API 서버리스 함수 (`api/`)
 
 | 파일 | 역할 |
 |------|------|
+| `cert-info.js` | 공공데이터포털 자격증 개요 프록시 (신규) |
 | `nl-book.js` | Aladin Open API 프록시 — 도서 표지 이미지 조회 |
 | `exam-schedule.js` | 국가공개API 시험일정 프록시 |
 | `qnet-stats.js` | Q-Net 시험 통계 프록시 |
 | `emqual-stats.js` | Q-Net 기능사 합격률 프록시 |
 | `kyobo-rating.js` | 교보문고 평점 프록시 (현재 비활성화 — 410 반환) |
 
+### 환경변수 (Vercel 설정)
+
+| 변수명 | 용도 |
+|--------|------|
+| `GOV_API_KEY` | 공공데이터포털 API 키 (cert-info, exam-schedule, qnet-stats, emqual-stats) |
+| `ALADIN_TTB_KEY` | 알라딘 오픈 API TTB 키 (nl-book) |
+
 ---
 
-## 이번 세션 작업 내용 (2026-06-29)
+## 최근 주요 작업 (2026-06-29)
 
-### 추가된 기능: 우측 작업내용 패널
+### 보안 및 최적화 리팩터링
 
-- **`index.html`** — `#work-log-panel` 슬라이딩 패널 추가
-  - 작업이력(books_data.js 현황, 신규 자격증, API 연동, 이미지 폴백 체인, UI 개선, 배포 현황) 표시
-  - 우측 고정 탭 버튼(`#work-log-tab`)으로 열기/닫기
-- **`style.css`** — 패널 전용 스타일 추가
-  - `.work-log-tab`: 우측 세로 탭 버튼 (보라색 그라디언트)
-  - `.work-log-panel`: 우측 슬라이딩 패널 (360px, `.open` 클래스로 토글)
-  - 배지 색상: `.badge-green`, `.badge-blue`, `.badge-purple`, `.badge-orange`, `.badge-teal`, `.badge-gray`
+1. **API 키 보안 처리** — 5개 파일에서 하드코딩된 API 키 제거 → `process.env` 환경변수로 이동
+2. **`/api/cert-info.js` 신규 생성** — 클라이언트 직접 호출을 서버리스 프록시 경유로 변경
+3. **`new_certs_*.js` 10개 파일 삭제** — app.js에 이미 통합된 중복 데이터 정리 (~245KB 절감)
+4. **Service Worker 캐시 보강** — ASSETS에 7개 에셋 추가, 캐시 버전 v7→v8
+5. **app.js 데이터/로직 분리** — 18,760줄 → `certs_data.js`(16,861줄) + `app.js`(1,879줄)
 
-### 브랜치 작업
+### 이전 세션 (2026-06-27~28)
 
-- 작업 브랜치: `claude/previous-work-review-chtpnl`
-- `main` 브랜치로 머지 완료 → Vercel 자동배포 트리거됨
+- 우측 작업내용 패널 (`#work-log-panel`) 추가
+- `books_data.js` 111개 자격증 등록 완료
+- `new_certs_*.js`로 자격증 대량 추가 후 app.js에 통합
 
 ---
 
@@ -110,29 +117,20 @@
 
 ## 중요 주의사항
 
-1. **큰 파일 수정 전 Read 필수** — `app.js`(18,000줄)는 수정 전 반드시 해당 부분을 Read해서 정확한 문자열 확인
-2. **서비스워커 버전** — CSS/JS 대규모 변경 시 `sw.js`의 `CACHE_NAME` 버전 업 필요
-3. **시험일정 API** — 로컬에서는 동작하지 않음, Vercel 배포 환경에서만 동작
-4. **이미지 처리 폴백 체인**:
+1. **데이터/로직 분리** — 자격증 데이터는 `certs_data.js`, 로직은 `app.js`에 분리되어 있음
+2. **API 키 환경변수** — 모든 API 키는 Vercel 환경변수(`GOV_API_KEY`, `ALADIN_TTB_KEY`)로 관리, 소스코드에 하드코딩 금지
+3. **서비스워커 버전** — CSS/JS 대규모 변경 시 `sw.js`의 `CACHE_NAME` 버전 업 필요
+4. **시험일정 API** — 로컬에서는 동작하지 않음, Vercel 배포 환경에서만 동작
+5. **이미지 처리 폴백 체인**:
    ```
    1. Kyobo CDN (KB코드 있는 책)
    2. Canvas 분산 검증
    3. Aladin Open API (api/nl-book.js)
    4. CSS 목업 카드
    ```
-5. **출판사 URL** — WebSearch로 실제 URL 검증 후 추가 (존재하지 않는 URL 금지)
-6. **소방설비기능사 교재** — 기능사 전용 교재 없어 기사/산업기사 공용 교재로 대체 등록
-7. **배포 확인** — main 브랜치 push 후 1~2분 대기, Vercel 대시보드에서 빌드 상태 확인
-
----
-
-## API 키 정보
-
-| 항목 | 값 |
-|------|-----|
-| 공공데이터포털 API 키 | `688d62bca5f00144bd4be91139ca3297c2641d3c918f57e0a5e80ad59faece52` |
-| Aladin TTB Key | `ttbhcday841606001` |
-| Kyobo CDN | `https://contents.kyobobook.co.kr/simg/fnf/pdt/S000XXXXXXXXX.jpg` 패턴 |
+6. **출판사 URL** — WebSearch로 실제 URL 검증 후 추가 (존재하지 않는 URL 금지)
+7. **소방설비기능사 교재** — 기능사 전용 교재 없어 기사/산업기사 공용 교재로 대체 등록
+8. **배포 확인** — main 브랜치 push 후 1~2분 대기, Vercel 대시보드에서 빌드 상태 확인
 
 ---
 
@@ -143,13 +141,16 @@
 
 배포 URL: https://industrial-safety-dashboard-26-6-7.vercel.app
 GitHub: hcday84/industrial-safety-dashboard-26.6.7-
-작업 디렉터리: /home/user/industrial-safety-dashboard-26.6.7-
+작업 디렉터리: C:\Users\user\Desktop\industrial_safety_dashboard
 배포 브랜치: main (push하면 Vercel 자동배포)
 
 주요 파일:
-- app.js (18,760줄) - 자격증 321종 데이터, 렌더링 로직
+- certs_data.js (16,861줄) - 자격증 321종 데이터
+- app.js (1,879줄) - 렌더링 로직, STATE 관리
 - books_data.js - 교보문고 추천 수험서 111개 자격증 등록
 - style.css / index.html - UI
 
-task.md와 PROJECT_SUMMARY.md 파일을 읽어서 이전 작업 내용을 파악해줘.
+API 키는 Vercel 환경변수로 관리 (GOV_API_KEY, ALADIN_TTB_KEY)
+
+task.md 파일을 읽어서 이전 작업 내용을 파악해줘.
 ```
