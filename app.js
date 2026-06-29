@@ -511,7 +511,6 @@ function renderAll() {
   renderDdays(cert);
   renderExamCalendar(cert);
   renderNews();
-  renderJobs();
   renderBooks();
   renderChart(cert);
   renderSubjects(cert);
