@@ -1,4 +1,4 @@
-const API_KEY = '688d62bca5f00144bd4be91139ca3297c2641d3c918f57e0a5e80ad59faece52';
+const API_KEY = process.env.GOV_API_KEY || '';
 const BASE = 'https://apis.data.go.kr/B490007/qualExamSchd/getQualExamSchdList';
 
 export default async function handler(req, res) {

@@ -1,7 +1,15 @@
-const CACHE_NAME = 'cert-dashboard-v7';
+const CACHE_NAME = 'cert-dashboard-v8';
 const ASSETS = [
   '/style.css',
-  '/manifest.json'
+  '/manifest.json',
+  '/certs_data.js',
+  '/app.js',
+  '/books_data.js',
+  '/jm-codes.js',
+  '/inventory-app.js',
+  '/inventory-styles-scoped.css',
+  '/icons/icon-192.png',
+  '/icons/icon-512.png',
 ];
 
 self.addEventListener('install', e => {

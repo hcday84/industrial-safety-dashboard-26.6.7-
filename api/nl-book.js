@@ -1,5 +1,5 @@
 // 알라딘 오픈 API — 도서 표지 이미지 조회
-const TTB_KEY = 'ttbhcday841606001';
+const TTB_KEY = process.env.ALADIN_TTB_KEY || '';
 const ALADIN_BASE = 'http://www.aladin.co.kr/ttb/api/ItemSearch.aspx';
 
 async function searchAladin(query) {
