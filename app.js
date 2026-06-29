@@ -525,9 +525,6 @@ function switchCertification(certName) {
   if (!CERTIFICATIONS[certName] || certName === STATE.currentCert) return;
 
   STATE.currentCert = certName;
-  STATE.activeTab = 'all-jobs';
-  STATE.filters = { type: 'all', region: 'all', experience: 'all' };
-  STATE.searchQuery = '';
   try { localStorage.setItem('lastCert', certName); } catch(e) {}
 
   // 필터 버튼 초기화
