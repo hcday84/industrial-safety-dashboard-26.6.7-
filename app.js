@@ -537,9 +537,6 @@ function switchCertification(certName) {
 
   renderAll();
 
-  // 탭 싱크
-  document.getElementById('view-all-jobs').classList.add('active');
-  document.getElementById('view-bookmarked-jobs').classList.remove('active');
 
   // 상단으로 스크롤
   window.scrollTo({ top: 0, behavior: 'smooth' });
