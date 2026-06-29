@@ -131,8 +131,8 @@
 4. **시험일정 API** — 로컬에서는 동작하지 않음, Vercel 배포 환경에서만 동작
 5. **이미지 처리 폴백 체인**:
    ```
-   1. Kyobo CDN (KB코드 있는 책)
-   2. Canvas 분산 검증
+   1. KB 상품코드 또는 ISBN → 교보문고 CDN 이미지
+   2. Canvas 분산 검증 (placeholder 감지, 분산 < 30 → 실패)
    3. Aladin Open API (api/nl-book.js)
    4. CSS 목업 카드
    ```
