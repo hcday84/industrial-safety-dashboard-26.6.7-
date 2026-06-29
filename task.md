@@ -60,8 +60,16 @@
 1. **API 키 보안 처리** — 5개 파일에서 하드코딩된 API 키 제거 → `process.env` 환경변수로 이동
 2. **`/api/cert-info.js` 신규 생성** — 클라이언트 직접 호출을 서버리스 프록시 경유로 변경
 3. **`new_certs_*.js` 10개 파일 삭제** — app.js에 이미 통합된 중복 데이터 정리 (~245KB 절감)
-4. **Service Worker 캐시 보강** — ASSETS에 7개 에셋 추가, 캐시 버전 v7→v8
+4. **Service Worker 캐시 보강** — ASSETS에 7개 에셋 추가, 캐시 버전 v7→v9
 5. **app.js 데이터/로직 분리** — 18,760줄 → `certs_data.js`(16,861줄) + `app.js`(1,879줄)
+
+### 도서 이미지 ISBN 기반 폴백 체인 구현
+
+6. **ISBN 수집** — Aladin API로 434권의 ISBN 수집, `books_data.js`에 `isbn` 필드 추가
+7. **교보문고 CDN 이미지 연동** — `https://contents.kyobobook.co.kr/sih/fit-in/200x0/pdt/{ISBN}.jpg` 패턴으로 이미지 표시
+8. **3단계 폴백 체인** — KB 상품코드/교보CDN(ISBN) → Aladin API → CSS 목업 카드
+9. **Canvas 분산 검증** — placeholder 이미지 감지 (분산값 < 30이면 실패 처리)
+10. **커버리지** — 1,130권 중 570권(50%) 이미지 직접 표시, 나머지 Aladin API 폴백
 
 ### 이전 세션 (2026-06-27~28)
 
