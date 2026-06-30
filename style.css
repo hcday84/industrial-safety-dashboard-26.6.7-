@@ -2195,6 +2195,127 @@ button, input, select {
   word-break: keep-all;
 }
 
+/* 12-2. 자격증 연계 로드맵 */
+.roadmap-path-container,
+.roadmap-related-container {
+  margin-bottom: 24px;
+}
+
+.roadmap-path-container h4,
+.roadmap-related-container h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.roadmap-path-container h4 i,
+.roadmap-related-container h4 i {
+  color: var(--primary-color);
+}
+
+.roadmap-path {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.roadmap-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 18px;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  min-width: 110px;
+  text-align: center;
+}
+
+.roadmap-step.clickable {
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.roadmap-step.clickable:hover {
+  border-color: var(--primary-light);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.roadmap-step.disabled {
+  opacity: 0.45;
+}
+
+.roadmap-step.current {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.roadmap-step.current .roadmap-step-label,
+.roadmap-step.current .roadmap-step-name {
+  color: #ffffff;
+}
+
+.roadmap-step-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.roadmap-step-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-color);
+  word-break: keep-all;
+}
+
+.roadmap-arrow {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.roadmap-related {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.roadmap-related-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.roadmap-related-chip:hover {
+  border-color: var(--primary-light);
+  color: var(--primary-color);
+  background-color: var(--primary-bg);
+}
+
+.roadmap-related-chip i {
+  color: var(--primary-light);
+}
+
+.roadmap-empty {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
 /* 13. 학습 플래너 */
 .planner-intro {
   margin-bottom: 20px;
