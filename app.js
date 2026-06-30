@@ -514,6 +514,7 @@ function renderAll() {
   renderBooks();
   renderChart(cert);
   renderSubjects(cert);
+  renderStudyGuide(cert);
   renderEmqualStats(cert.name);
 }
 
