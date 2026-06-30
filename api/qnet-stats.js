@@ -14,7 +14,7 @@ export default async function handler(req, res) {
     const data = await r.json();
     const item = data?.response?.body?.items?.item;
     if (!item || typeof item !== 'object') {
-      return res.status(200).json({ error: 'no_data' });
+      return res.status(200).json({ error: 'no_data', debug: data });
     }
 
     // 필기: 최근 5회차 응시/합격 합산
