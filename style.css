@@ -2187,6 +2187,14 @@ button, input, select {
   word-break: keep-all;
 }
 
+.study-guide-disclaimer {
+  margin-top: 18px;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  word-break: keep-all;
+}
+
 /* 13. 학습 플래너 */
 .planner-intro {
   margin-bottom: 20px;
