@@ -295,7 +295,6 @@ document.addEventListener('DOMContentLoaded', () => {
   try { initClock(); } catch(e) {}
   try { initWeather(); } catch(e) {}
   try { initEventListeners(); } catch(e) {}
-  try { fetchNationalStats(); } catch(e) {}
 
   // 마지막으로 선택한 자격증 복원 (새로고침 시 유지)
   let restored = false;
