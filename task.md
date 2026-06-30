@@ -40,8 +40,6 @@
 | `cert-info.js` | 공공데이터포털 자격증 개요 프록시 (신규) |
 | `nl-book.js` | Aladin Open API 프록시 — 도서 표지 이미지 조회 |
 | `exam-schedule.js` | 국가공개API 시험일정 프록시 |
-| `qnet-stats.js` | Q-Net 시험 통계 프록시 |
-| `emqual-stats.js` | Q-Net 기능사 합격률 프록시 |
 | `kyobo-rating.js` | 교보문고 평점 프록시 (현재 비활성화 — 410 반환) |
 
 ### 환경변수 (Vercel 설정)
