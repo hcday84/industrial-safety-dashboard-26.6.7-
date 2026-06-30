@@ -46,7 +46,7 @@
 
 | 변수명 | 용도 |
 |--------|------|
-| `GOV_API_KEY` | 공공데이터포털 API 키 (cert-info, exam-schedule, qnet-stats, emqual-stats) |
+| `GOV_API_KEY` | 공공데이터포털 API 키 (cert-info, exam-schedule) |
 | `ALADIN_TTB_KEY` | 알라딘 오픈 API TTB 키 (nl-book) |
 
 ---
