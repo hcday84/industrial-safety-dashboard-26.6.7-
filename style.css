@@ -2091,6 +2091,102 @@ button, input, select {
   word-break: keep-all;
 }
 
+/* 12-1. 합격 전략 가이드 */
+.study-guide-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 900px) {
+  .study-guide-layout { grid-template-columns: 1fr; }
+}
+
+.study-order-container h4,
+.study-mistakes-container h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.study-order-container h4 i,
+.study-mistakes-container h4 i {
+  color: var(--primary-color);
+}
+
+.study-order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.study-order-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.study-order-num {
+  width: 22px;
+  height: 22px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.study-order-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-color);
+  word-break: keep-all;
+}
+
+.study-mistakes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.study-mistake-item {
+  display: flex;
+  gap: 10px;
+  padding: 12px 14px;
+  background-color: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  border-radius: var(--radius-md);
+}
+
+.study-mistake-item i {
+  color: var(--accent-color);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.study-mistake-item span {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  word-break: keep-all;
+}
+
 /* 13. 학습 플래너 */
 .planner-intro {
   margin-bottom: 20px;
