@@ -1407,6 +1407,86 @@ function renderStudyGuide(cert) {
 }
 
 // ============================================
+// 15-2. 자격증 연계 로드맵
+// ============================================
+const ROADMAP_LEVEL_DEFS = [
+  { suffix: '산업기사', label: '산업기사', rank: 2 },
+  { suffix: '기능장', label: '기능장', rank: 2.5 },
+  { suffix: '기술사', label: '기술사', rank: 4 },
+  { suffix: '기능사', label: '기능사', rank: 1 },
+  { suffix: '기사', label: '기사', rank: 3 },
+];
+
+function getRoadmapBase(name) {
+  for (const def of ROADMAP_LEVEL_DEFS) {
+    if (name.endsWith(def.suffix)) {
+      return { base: name.slice(0, -def.suffix.length), level: def };
+    }
+  }
+  return null;
+}
+
+function buildRoadmapPath(cert) {
+  const info = getRoadmapBase(cert.name);
+  if (!info || !info.base) return null;
+  const { base } = info;
+  const path = ROADMAP_LEVEL_DEFS.slice()
+    .sort((a, b) => a.rank - b.rank)
+    .map(def => {
+      const candidate = base + def.suffix;
+      return {
+        name: candidate,
+        label: def.label,
+        exists: !!CERTIFICATIONS[candidate],
+        current: candidate === cert.name,
+      };
+    })
+    .filter(p => p.exists || p.current);
+  return path.length > 1 ? path : null;
+}
+
+function buildRoadmapRelated(cert, excludeNames) {
+  const cat = cert.category;
+  if (!cat) return [];
+  return Object.keys(CERTIFICATIONS)
+    .filter(n => n !== cert.name && !excludeNames.has(n) && CERTIFICATIONS[n].category === cat)
+    .slice(0, 6);
+}
+
+function renderRoadmap(cert) {
+  const pathEl = document.getElementById('roadmap-path');
+  const relatedEl = document.getElementById('roadmap-related');
+  if (!pathEl || !relatedEl) return;
+
+  const path = buildRoadmapPath(cert);
+  const usedNames = new Set([cert.name, ...((path || []).map(p => p.name))]);
+  const related = buildRoadmapRelated(cert, usedNames);
+
+  if (path) {
+    pathEl.style.display = '';
+    pathEl.innerHTML = path.map((p, i) => `
+      <div class="roadmap-step ${p.current ? 'current' : ''} ${p.exists ? 'clickable' : 'disabled'}" ${p.exists && !p.current ? `onclick="switchCertification('${p.name}')"` : ''}>
+        <span class="roadmap-step-label">${p.label}</span>
+        <span class="roadmap-step-name">${p.name}</span>
+      </div>
+      ${i < path.length - 1 ? '<i class="fa-solid fa-chevron-right roadmap-arrow"></i>' : ''}
+    `).join('');
+  } else {
+    pathEl.style.display = 'none';
+    pathEl.innerHTML = '';
+  }
+
+  if (related.length > 0) {
+    relatedEl.innerHTML = related.map(n => {
+      const c = CERTIFICATIONS[n];
+      return `<button class="roadmap-related-chip" onclick="switchCertification('${n}')"><i class="fa-solid ${c.icon || 'fa-certificate'}"></i> ${n}</button>`;
+    }).join('');
+  } else {
+    relatedEl.innerHTML = `<span class="roadmap-empty">같은 분야의 다른 자격증 정보가 없습니다.</span>`;
+  }
+}
+
+// ============================================
 // 16. 자격증 검색 드롭다운
 // ============================================
 function renderCertDropdown(query) {
