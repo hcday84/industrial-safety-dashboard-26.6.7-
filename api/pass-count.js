@@ -16,7 +16,7 @@ export default async function handler(req, res) {
     const data = await r.json();
     const body = data?.response?.body;
     if (!body || body.totalCount === 0) {
-      return res.status(200).json({ error: 'no_data' });
+      return res.status(200).json({ error: 'no_data', debug: data });
     }
 
     const raw = body.items?.item;
