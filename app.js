@@ -613,6 +613,42 @@ function renderStatCards(cert) {
     if (examValEl)   examValEl.textContent   = cert.avgExamRate;
     if (examDescEl)  examDescEl.textContent  = cert.examRateSummary || '데이터 준비중';
   }
+
+  renderPassCount(cert.name);
+}
+
+// ============================================
+// 7-1. 선택 자격증 합격자 수 (InquiryQualPassRateSVC)
+// ============================================
+async function renderPassCount(certName) {
+  const valEl  = document.getElementById('stat-pass-count-value');
+  const descEl = document.getElementById('stat-pass-count-desc');
+  if (!valEl || !descEl) return;
+
+  const grdCd = getGrdCd(certName);
+  if (!grdCd) {
+    valEl.textContent = '–';
+    descEl.textContent = '기능사 등급은 미제공';
+    return;
+  }
+
+  valEl.textContent = '–';
+  descEl.textContent = '불러오는 중...';
+
+  try {
+    const res = await fetch(`/api/pass-count?grdCd=${grdCd}&certName=${encodeURIComponent(certName)}&baseYY=2023`);
+    const data = await res.json();
+    if (data.error || !data.passCnt) {
+      valEl.textContent = '–';
+      descEl.textContent = '데이터 없음';
+      return;
+    }
+    valEl.textContent = `${data.passCnt.toLocaleString()}명`;
+    descEl.textContent = `응시 ${data.recptCnt.toLocaleString()}명 중 (2023)`;
+  } catch (e) {
+    valEl.textContent = '–';
+    descEl.textContent = '데이터 없음';
+  }
 }
 
 // ============================================
