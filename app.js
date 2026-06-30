@@ -515,6 +515,7 @@ function renderAll() {
   renderChart(cert);
   renderSubjects(cert);
   renderStudyGuide(cert);
+  renderRoadmap(cert);
   renderEmqualStats(cert.name);
 }
 
