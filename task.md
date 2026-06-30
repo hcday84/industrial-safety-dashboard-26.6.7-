@@ -137,6 +137,7 @@
 6. **출판사 URL** — WebSearch로 실제 URL 검증 후 추가 (존재하지 않는 URL 금지)
 7. **소방설비기능사 교재** — 기능사 전용 교재 없어 기사/산업기사 공용 교재로 대체 등록
 8. **배포 확인** — main 브랜치 push 후 1~2분 대기, Vercel 대시보드에서 빌드 상태 확인
+9. **`openapi.q-net.or.kr` API 사용 금지** — 한국산업인력공단의 레거시 통계 API(`InquiryStatSVC`, `InquiryEmqualPassSVC`, `InquiryQualPassRateSVC` 등 `http://openapi.q-net.or.kr/...` 도메인 전체)는 클라우드/해외 서버 IP를 막는 것으로 추정되어 Vercel(서울 리전 포함)에서 항상 `SocketTimeoutException`이 발생한다. 2026-07-01에 검증 후 관련 기능(`전국 응시 현황`, `응시자격 현황`, `선택 자격증 합격자 수`)을 모두 제거함. 같은 도메인의 API는 재시도하지 말 것 — `apis.data.go.kr` 통합 게이트웨이(시험일정 API가 사용 중)는 정상 작동하므로 그쪽 경로만 사용.
 
 ---
 
