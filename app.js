@@ -777,6 +777,37 @@ function renderDdays(cert) {
     }
   }
 
+  // 다음 접수(필기/실기 중 더 임박한 쪽) D-Day
+  let nextApply = null;
+  for (const s of schedules) {
+    const wDiff = calcDiff(s.writtenApply);
+    if (wDiff !== null && wDiff >= 0) {
+      if (!nextApply || wDiff < nextApply.diff) nextApply = { s, diff: wDiff, type: '필기', dateStr: s.writtenApply };
+    }
+    const pDiff = calcDiff(s.practicalApply);
+    if (pDiff !== null && pDiff >= 0) {
+      if (!nextApply || pDiff < nextApply.diff) nextApply = { s, diff: pDiff, type: '실기', dateStr: s.practicalApply };
+    }
+  }
+
+  const applyValEl = document.getElementById('apply-dday');
+  const applyLblEl = document.getElementById('apply-label');
+  if (applyValEl && applyLblEl) {
+    if (writtenAlways && practicalAlways) {
+      applyValEl.textContent = '상시CBT';
+      applyValEl.className   = 'stat-value text-green';
+      applyLblEl.textContent = '원하는 날짜에 상시 CBT로 응시 가능합니다.';
+    } else if (nextApply) {
+      applyValEl.textContent = ddayText(nextApply.diff);
+      applyValEl.className   = ddayClass(nextApply.diff);
+      applyLblEl.textContent = `${nextApply.s.round} ${nextApply.type} 원서접수 (${nextApply.dateStr})`;
+    } else {
+      applyValEl.textContent = '종료';
+      applyValEl.className   = 'stat-value text-muted';
+      applyLblEl.textContent = '2026년 접수 일정이 모두 종료되었습니다.';
+    }
+  }
+
   const nodesContainer = document.getElementById('timeline-nodes');
   let doneCount = 0;
   if (nodesContainer) {
