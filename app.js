@@ -1637,7 +1637,7 @@ function initEventListeners() {
 // 전역 스크롤 싱크 (클로저 문제 없이 항상 최신 DOM 참조)
 // ============================================
 (function() {
-  const SECTION_IDS = ['schedule-section', 'monthly-section', 'books-section', 'news-section', 'analytics-section'];
+  const SECTION_IDS = ['schedule-section', 'monthly-section', 'books-section', 'news-section', 'analytics-section', 'study-section'];
 
   function syncNavOnScroll() {
     const threshold = window.scrollY + window.innerHeight * 0.5;
