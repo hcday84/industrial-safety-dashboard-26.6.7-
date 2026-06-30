@@ -1321,6 +1321,91 @@ function renderSubjects(cert) {
 }
 
 // ============================================
+// 15-1. 합격 전략 가이드 (공략 순서 + 흔한 실수)
+// ============================================
+const STUDY_MISTAKE_GROUPS = [
+  { keys: ['안전', '소방'], mistakes: [
+      '법 조문·수치(허용기준, 교육시간 등) 암기를 막판으로 미루다가 단순 실수로 점수를 잃는 경우가 많습니다.',
+      '실기 작업형은 시간 배분 연습 없이 이론만 외우면 현장에서 시간 부족으로 당황하기 쉽습니다.',
+      '최신 개정 법령을 반영하지 않은 구버전 교재로 학습해 오답을 정답으로 착각하는 경우가 흔합니다.',
+    ] },
+  { keys: ['전기'], mistakes: [
+      '계산 문제(전력, 저항, 역률 등) 공식만 외우고 단위 변환 실수로 틀리는 경우가 많습니다.',
+      '실기 작업형(배선, 결선)을 눈으로만 익히고 직접 손으로 연습하지 않아 시험장에서 시간이 부족합니다.',
+      '기출에서 반복 출제되는 비슷한 유형을 새 문제로 착각해 다시 처음부터 푸는 비효율이 발생합니다.',
+    ] },
+  { keys: ['기계', '설비'], mistakes: [
+      '도면 해석과 공차 관련 문제를 암기 위주로 학습해 응용문제에서 막히는 경우가 많습니다.',
+      '실기 작업형 공정 순서를 충분히 반복하지 않아 시험 당일 순서를 헷갈리는 실수가 잦습니다.',
+      '최신 KS 규격 변경 사항을 놓쳐 과년도 정답과 다른 결과를 내는 경우가 있습니다.',
+    ] },
+  { keys: ['건설', '건축', '토목'], mistakes: [
+      '시공 기준 수치(비계 간격, 토공 구배 등)를 암기만 하고 현장 사진과 연결 학습하지 않아 응용에 약합니다.',
+      '실기 작업형/면접형 준비를 필기 합격 이후로 미루다가 준비 기간이 촉박해지는 경우가 많습니다.',
+      '관련 법규 개정(건설기술진흥법 등)을 놓쳐 과년도 기출과 다른 정답을 고르는 실수가 흔합니다.',
+    ] },
+  { keys: ['화학', '환경'], mistakes: [
+      '화학식과 반응 메커니즘을 단순 암기로 접근해 응용·계산 문제에서 점수를 잃는 경우가 많습니다.',
+      '실험·분석 과정의 순서를 정확히 외우지 않아 실기 작업형에서 감점되는 경우가 잦습니다.',
+      '환경 기준치(배출 허용기준 등)의 최신 개정값을 놓쳐 혼동하는 경우가 있습니다.',
+    ] },
+  { keys: ['IT', '정보', '보안'], mistakes: [
+      '이론 암기에 치중해 실기형 코딩·설계 문제에서 시간 관리에 실패하는 경우가 많습니다.',
+      '최신 기출 유형 변화(신규 기술 출제)를 따라가지 못해 과년도 패턴만 믿다가 당황하는 경우가 있습니다.',
+      '실무 경험 없이 이론서만 보면 사례형 문제에서 응용력이 떨어집니다.',
+    ] },
+  { keys: ['의료', '보건'], mistakes: [
+      '암기량이 방대해 막판 벼락치기로는 따라가기 어려운데, 초반 분산 학습 계획 없이 시작하는 경우가 많습니다.',
+      '실기/실습 평가 기준을 놓치고 이론 위주로만 준비하다가 실전에서 당황하는 경우가 잦습니다.',
+      '관련 법규·고시 개정을 반영하지 않은 구버전 자료로 학습하는 경우가 있습니다.',
+    ] },
+];
+const STUDY_MISTAKE_DEFAULT = [
+  '기출문제 분석 없이 이론서만 반복하다가 실제 출제 경향과 어긋난 학습을 하게 되는 경우가 많습니다.',
+  '실기 시험 준비를 필기 합격 발표 이후로 미루다가 준비 기간이 촉박해지는 경우가 흔합니다.',
+  '최신 개정 사항(법규·기준 등)을 반영하지 않은 자료로 학습해 오답을 정답으로 착각하는 경우가 있습니다.',
+];
+
+function getStudyMistakes(cert) {
+  if (cert.studyTip && cert.studyTip.mistakes) return cert.studyTip.mistakes;
+  const cat = cert.category || '';
+  const group = STUDY_MISTAKE_GROUPS.find(g => g.keys.some(k => cat.includes(k)));
+  return group ? group.mistakes : STUDY_MISTAKE_DEFAULT;
+}
+
+function getStudyPeriod(cert) {
+  if (cert.studyTip && cert.studyTip.period) return cert.studyTip.period;
+  const rate = parseFloat(cert.avgPassRate) || 50;
+  if (rate < 25) return '평균 준비기간 6개월 이상 (난이도 높음)';
+  if (rate < 40) return '평균 준비기간 4~5개월';
+  if (rate < 60) return '평균 준비기간 2~3개월';
+  return '평균 준비기간 1~2개월';
+}
+
+function renderStudyGuide(cert) {
+  const periodEl = document.getElementById('study-period-badge');
+  const orderEl = document.getElementById('study-order-list');
+  const mistakeEl = document.getElementById('study-mistakes-list');
+  if (!periodEl || !orderEl || !mistakeEl) return;
+
+  periodEl.textContent = getStudyPeriod(cert);
+
+  orderEl.innerHTML = (cert.subjects || []).map((s, i) => {
+    const title = s.title || s.name || '';
+    return `
+      <div class="study-order-item">
+        <span class="study-order-num">${i + 1}</span>
+        <span class="study-order-title">${title}</span>
+      </div>
+    `;
+  }).join('');
+
+  mistakeEl.innerHTML = getStudyMistakes(cert).map(m => `
+    <li class="study-mistake-item"><i class="fa-solid fa-triangle-exclamation"></i><span>${m}</span></li>
+  `).join('');
+}
+
+// ============================================
 // 16. 자격증 검색 드롭다운
 // ============================================
 function renderCertDropdown(query) {
