@@ -1657,7 +1657,6 @@ window.switchTab = function(tab) {
       if (el) el.style.display = 'none';
     });
     if (searchBar) searchBar.style.display = 'none';
-    if (resetBtn) resetBtn.style.display = 'none';
     // inventory-panel이 body 직접 자식이 아닌 경우 이동 (CSS 상속 display:none 방지)
     if (inventoryPanel && inventoryPanel.parentElement !== document.body) {
       document.body.appendChild(inventoryPanel);
