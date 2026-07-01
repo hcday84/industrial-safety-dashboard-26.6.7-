@@ -41,6 +41,22 @@ const REAL_BOOKS = {
   ],
 
   // ────────────────────────────────────────
+  '소방안전관리자1급': [
+    // 베스트셀러 5
+    { title: '2027 찐합격 소방안전관리자 1급 기출문제 총집합+5개년 기출문제', author: '공하성', publisher: '성안당', price: 26100, originalPrice: 29000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000220292536'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220292536' },
+    { title: '2027 박문각 소방안전관리자 1급 8개년 기출문제집+무료강의', author: '김연진', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000220097066'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220097066' },
+    { title: '2027 박문각 소방안전관리자 1급 핵심이론서+무료특강', author: '김연진', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000220054046'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220054046' },
+    { title: '2026 챕스랜드 소방안전관리자 1급 찐정리 원샷 이론서', author: '서채빈', publisher: '종이향기', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: KB('S000218936176'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218936176' },
+    { title: '2026 시대에듀 소방안전관리자 1급 기출예상문제집', author: '김미현', publisher: '시대고시기획', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], imageUrl: KB('S000219881474'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219881474' },
+    // 추천수험서 5
+    { title: '2027 찐합격 소방안전관리자 1급 합격노트+8개년 기출문제', author: '공하성', publisher: '성안당', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 221, tags: ['추천'], imageUrl: KB('S000220292538'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220292538' },
+    { title: '2027 모아 소방안전관리자 1급 이론서 무료특강', author: '모아합격전략연구소', publisher: '모아교육그룹', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.5, reviews: 189, tags: ['추천'], imageUrl: KB('S000219868621'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219868621' },
+    { title: '2027 모아 소방안전관리자 1급 실전모의고사 무료특강', author: '모아합격전략연구소', publisher: '모아교육그룹', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 156, tags: ['추천'], imageUrl: KB('S000219868605'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219868605' },
+    { title: '2026 쇼츠 소방안전관리자 1급 기출예상문제집', author: '소방안전관리자회', publisher: '서울고시각(SG P&E)', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.4, reviews: 132, tags: ['추천'], imageUrl: KB('S000217487323'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217487323' },
+    { title: '2026 챕스랜드 소방안전관리자1급 고난도 예상 기출유형 찜쪄먹기', author: '서채빈', publisher: '종이향기', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.3, reviews: 112, tags: ['추천'], imageUrl: KB('S000219115299'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219115299' },
+  ],
+
+  // ────────────────────────────────────────
   '소방설비기사': [
     // 베스트셀러 5
     { title: '2026 찐합격 7개년 과년도 소방설비기사 필기 전기1-7', author: '공하성', publisher: '성안당', price: 26550, originalPrice: 29500, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000218276598'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218276598' },
