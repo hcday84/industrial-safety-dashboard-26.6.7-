@@ -142,74 +142,50 @@ function getCert() { return CERTIFICATIONS[STATE.currentCert]; }
 // 3. 초기화
 // ============================================
 // ============================================
-// 월별 시험 수험서 추출
+// 월별 시험 수험서 추출 (정적 일정 데이터 사용 — API 호출 없음)
 // ============================================
 
 let _monthlyExamCache = null;
-let _monthlyFetchPromise = null;
 
-async function fetchAllMonthlyExams() {
+function fetchAllMonthlyExams() {
   if (_monthlyExamCache) return _monthlyExamCache;
-  if (_monthlyFetchPromise) return _monthlyFetchPromise;
 
-  _monthlyFetchPromise = (async () => {
-    const monthData = {};
-    for (let m = 1; m <= 12; m++) monthData[m] = { written: [], practical: [] };
+  const monthData = {};
+  for (let m = 1; m <= 12; m++) monthData[m] = { written: [], practical: [] };
 
-    const certNames = Object.keys(JM_CODES);
-    const BATCH = 8;
+  // "MM/DD ~ MM/DD" 형식에서 시작 월 추출
+  const startMonth = dateRange => {
+    if (!dateRange || dateRange === '-' || dateRange.startsWith('-')) return null;
+    const m = parseInt(dateRange.slice(0, 2));
+    return isNaN(m) ? null : m;
+  };
 
-    for (let i = 0; i < certNames.length; i += BATCH) {
-      const batch = certNames.slice(i, i + BATCH);
-      await Promise.all(batch.map(async certName => {
-        const jmCd = JM_CODES[certName];
-        try {
-          const res = await fetch(`/api/exam-schedule?jmCd=${jmCd}&implYy=2026`);
-          if (!res.ok) return;
-          const json = await res.json();
-          const items = json?.body?.items;
-          if (!items?.length) return;
+  Object.entries(CERTIFICATIONS).forEach(([certName, cert]) => {
+    if (!cert.schedules?.length) return;
+    cert.schedules.forEach(s => {
+      // 필기 시험
+      if (s.writtenExam) {
+        const range = s.writtenExam.replace(/\d{4}-/g, '').replace(/-/g, '/');
+        const m = startMonth(range);
+        if (m) monthData[m].written.push({ certName, round: s.round, dateRange: range });
+      }
+      // 실기 시험
+      if (s.practicalExam) {
+        const range = s.practicalExam.replace(/\d{4}-/g, '').replace(/-/g, '/');
+        const m = startMonth(range);
+        if (m) monthData[m].practical.push({ certName, round: s.round, dateRange: range });
+      }
+    });
+  });
 
-          const bySeq = {};
-          items.forEach(item => {
-            const seq = item.implSeq;
-            if (!bySeq[seq]) bySeq[seq] = item;
-          });
+  // 가나다순 정렬
+  for (let m = 1; m <= 12; m++) {
+    monthData[m].written.sort((a, b) => a.certName.localeCompare(b.certName, 'ko'));
+    monthData[m].practical.sort((a, b) => a.certName.localeCompare(b.certName, 'ko'));
+  }
 
-          const certInfo = CERTIFICATIONS[certName];
-          const books = certInfo?.books?.slice(0, 2) || [];
-
-          Object.values(bySeq).forEach(item => {
-            const fmtDate = d => d ? `${d.slice(4,6)}/${d.slice(6,8)}` : '';
-
-            if (item.docExamStartDt) {
-              const m = parseInt(item.docExamStartDt.slice(4, 6));
-              monthData[m].written.push({
-                certName,
-                round: `제${item.implSeq}회`,
-                dateRange: `${fmtDate(item.docExamStartDt)} ~ ${fmtDate(item.docExamEndDt)}`,
-                books,
-              });
-            }
-            if (item.pracExamStartDt) {
-              const m = parseInt(item.pracExamStartDt.slice(4, 6));
-              monthData[m].practical.push({
-                certName,
-                round: `제${item.implSeq}회`,
-                dateRange: `${fmtDate(item.pracExamStartDt)} ~ ${fmtDate(item.pracExamEndDt)}`,
-                books,
-              });
-            }
-          });
-        } catch (e) {}
-      }));
-    }
-
-    _monthlyExamCache = monthData;
-    return monthData;
-  })();
-
-  return _monthlyFetchPromise;
+  _monthlyExamCache = monthData;
+  return monthData;
 }
 
 function initMonthlySection() {
