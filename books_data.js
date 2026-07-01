@@ -1640,4 +1640,93 @@ const REAL_BOOKS = {
     { title: '2026 영양사 조리원리·식품재료학 완성', author: '한국영양학회 편집부', publisher: '고려의학', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], isbn: '9791143415103', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=영양사+조리원리+식품재료학+2026' },
   ],
 
+  // ────────────────────────────────────────
+  '소방안전관리자2급': [
+    { title: '2027 찐합격 소방안전관리자 2급 기출문제 총집합+5개년 기출문제', author: '공하성', publisher: '성안당', price: 23400, originalPrice: 26000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000220176733'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220176733' },
+    { title: '2027 박문각 소방안전관리자 2급 8개년 기출문제집+무료강의', author: '김연진', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 256, tags: ['베스트'], imageUrl: KB('S000219791382'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219791382' },
+    { title: '2027 박문각 소방안전관리자 2급 핵심이론서+무료특강', author: '김연진', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000219787574'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219787574' },
+    { title: '2026 챕스랜드 소방안전관리자 2급 찐정리 문신 이론서', author: '서채빈', publisher: '종이향기', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: KB('S000218666591'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218666591' },
+    { title: '2026 에듀윌 소방안전관리자 2급 7개년 기출문제집+무료특강', author: '손익희', publisher: '에듀윌', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 145, tags: ['베스트'], imageUrl: KB('S000218235489'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218235489' },
+    { title: '2027 찐합격 소방안전관리자 2급 합격노트+8개년 기출문제', author: '공하성', publisher: '성안당', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 221, tags: ['추천'], imageUrl: KB('S000220176737'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220176737' },
+    { title: '2027 박문각 소방안전관리자 2급 (핵심이론+기출문제) 세트', author: '김연진', publisher: '박문각', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.5, reviews: 178, tags: ['추천'], imageUrl: KB('S000219791389'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219791389' },
+    { title: '2027 모아 소방안전관리자 2급 이론서 무료특강', author: '모아합격전략연구소', publisher: '모아교육그룹', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.4, reviews: 134, tags: ['추천'], imageUrl: KB('S000219868641'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219868641' },
+    { title: '2026 시대에듀 소방안전관리자 2급 기출예상문제집', author: '김미현', publisher: '시대고시기획', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: KB('S000219381978'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219381978' },
+    { title: '2027 김영북스 소방안전관리자 2급 기출예상 단권끝장', author: '심승아', publisher: '김영북스', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: KB('S000219791300'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219791300' },
+  ],
+
+  // ────────────────────────────────────────
+  '소방안전관리자3급': [
+    { title: '2027 찐합격 소방안전관리자3급 기출문제 총집합+5개년 기출문제', author: '공하성', publisher: '성안당', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000220362738'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220362738' },
+    { title: '2026 박문각 소방안전관리자 3급 8개년 기출문제집+무료강의', author: '김연진', publisher: '박문각', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.6, reviews: 256, tags: ['베스트'], imageUrl: KB('S000219249527'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219249527' },
+    { title: '2026 찐합격 소방안전관리자 3급 기출문제 총집합+5개년 기출문제', author: '공하성', publisher: '성안당', price: 23400, originalPrice: 26000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000219332876'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219332876' },
+    { title: '2026 소방안전관리자 3급 합격노트+8개년 기출문제', author: '공하성', publisher: '성안당', price: 17100, originalPrice: 19000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: KB('S000219332877'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219332877' },
+    { title: '2026 쇼츠 소방안전관리자 3급 기출예상문제집', author: '소방안전관리자회', publisher: '서울고시각', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], imageUrl: KB('S000218907730'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218907730' },
+    { title: '2027 찐합격 소방안전관리자3급 합격노트+8개년 기출문제', author: '공하성', publisher: '성안당', price: 17100, originalPrice: 19000, discount: '10%', rating: 4.7, reviews: 221, tags: ['추천'], imageUrl: KB('S000220362739'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220362739' },
+    { title: '2026 소방안전관리자 3급 기출+적중예상문제', author: '소방안전연구회', publisher: '책과상상', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: KB('S000218229062'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218229062' },
+  ],
+
+  // ────────────────────────────────────────
+  '에너지관리기사': [
+    { title: '2026 에듀윌 에너지관리기사 필기 한권끝장+무료특강', author: '남진우, 박수한, 어준혁 외', publisher: '에듀윌', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.8, reviews: 312, tags: ['베스트'], imageUrl: KB('S000216854276'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216854276' },
+    { title: '에너지아카데미의 2026 더플러스 에너지관리기사 기출문제집 필기', author: '에너지아카데미, 이상식 외', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 245, tags: ['베스트'], imageUrl: KB('S000217513175'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217513175' },
+    { title: '2026 시대에듀 Win-Q 에너지관리기사 필기 단기합격', author: '박병호', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000219010747'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219010747' },
+    { title: '2026 스마트 에너지관리기사 필기', author: '허원회', publisher: '성안당', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: KB('S000218969238'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218969238' },
+    { title: '2026 에너지관리기사 필기', author: '권오수, 한홍걸 외', publisher: '예문사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 143, tags: ['베스트'], imageUrl: KB('S000217122034'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217122034' },
+    { title: '2026 에너지관리기사 필기 과년도 문제풀이 10개년', author: '권오수', publisher: '예문사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.6, reviews: 189, tags: ['추천'], imageUrl: KB('S000218666506'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218666506' },
+    { title: '모아 에너지관리기사 필기: 핵심이론+과년도 8개년', author: '모아합격기술연구소', publisher: '모아교육그룹', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 156, tags: ['추천'], imageUrl: KB('S000217524828'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217524828' },
+    { title: '2026 에너지관리기사 필기', author: '서상희', publisher: '동일출판사', price: 39600, originalPrice: 44000, discount: '10%', rating: 4.4, reviews: 132, tags: ['추천'], imageUrl: KB('S000217454947'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217454947' },
+    { title: '2026 물쌤닷컴 에너지관리기사 필기+기출해설', author: '김선태', publisher: '미교원', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 112, tags: ['추천'], imageUrl: KB('S000218632205'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218632205' },
+    { title: '2026 과년도 출제문제 중심 에너지관리기사 필기', author: '서상희', publisher: '동일출판사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: KB('S000217454935'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217454935' },
+  ],
+
+  // ────────────────────────────────────────
+  '신재생에너지발전설비기사': [
+    { title: '2026 신재생에너지 발전설비(태양광) 기사 필기', author: '태양광발전연구회', publisher: '동일출판사', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.7, reviews: 256, tags: ['베스트'], imageUrl: KB('S000217928341'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217928341' },
+    { title: '2026 마스터 신재생에너지 발전설비(태양광) 기사 필기', author: '봉우근', publisher: '엔트미디어', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218688575'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218688575' },
+    { title: '2026 신재생에너지발전설비(태양광) 필기 13개년 과년도', author: '이후곤', publisher: '명인북스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: KB('S000218276633'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218276633' },
+    { title: '2026 신재생에너지 발전설비(태양광) 기사 실기', author: '태양광발전연구회', publisher: '동일출판사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.6, reviews: 189, tags: ['추천'], imageUrl: KB('S000218841024'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218841024' },
+    { title: '2026 마스터 신재생에너지 발전설비(태양광) 기사 실기', author: '봉우근', publisher: '엔트미디어', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], imageUrl: KB('S000218846039'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218846039' },
+  ],
+
+  // ────────────────────────────────────────
+  '물류관리사': [
+    { title: '2026 EBS 물류관리사 단기완성', author: '전표훈, 변달수, 신지원', publisher: '신지원', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.8, reviews: 312, tags: ['베스트'], imageUrl: KB('S000218632186'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218632186' },
+    { title: '2026 에듀윌 물류관리사 한권끝장+무료특강', author: '황사빈, 전표훈, 류하영', publisher: '에듀윌', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.7, reviews: 256, tags: ['베스트'], imageUrl: KB('S000218668270'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218668270' },
+    { title: '2026 해커스 물류관리사 한권합격 이론+최신기출', author: '이인호, 정연태, 송민', publisher: '해커스금융', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.7, reviews: 222, tags: ['베스트'], imageUrl: KB('S000218366552'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218366552' },
+    { title: '2026 EBS 물류관리사 기출문제집', author: 'EBS물류관리사교수진', publisher: '신지원', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000219002936'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219002936' },
+    { title: '2026 시대에듀 물류관리사 한권으로 끝내기', author: '시대물류관리연구소', publisher: '시대고시기획', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 167, tags: ['베스트'], imageUrl: KB('S000218437555'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218437555' },
+    { title: '2026 시대에듀 물류관리사 5개년 첨삭식 기출문제해설', author: '시대물류관리연구소', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 189, tags: ['추천'], imageUrl: KB('S000217600693'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217600693' },
+    { title: '2026 EBS물류관리사 벼락치기 핵심요약집', author: '전표훈, 변달수', publisher: '신지원', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], imageUrl: KB('S000219550128'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219550128' },
+    { title: '2026 시대에듀 물류관리사 단기완성 핵심요약집', author: '시대물류관리연구소', publisher: '시대고시기획', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: KB('S000219391360'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219391360' },
+  ],
+
+  // ────────────────────────────────────────
+  '정보통신기사': [
+    { title: '2026 이기적 정보통신기사 필기+실기 올인원', author: '안영준, 육철민, 윤경수 외', publisher: '영진닷컴', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000219011189'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219011189' },
+    { title: '2026 시대에듀 유선배 정보통신기사 필기 합격노트', author: '변세현, 손대호 외', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000218751552'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218751552' },
+    { title: '정보통신기술사들이 저술한 2026 정보통신기사 필기', author: '박배영, 박희남, 백윤철 감수 외', publisher: '정림사', price: 49500, originalPrice: 55000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218673825'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218673825' },
+    { title: '2026 정보통신기사 필기', author: '김남선, 양윤석 외', publisher: '세화', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: KB('S000219412311'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219412311' },
+    { title: '2026 이패스 정보통신기사 필기(이론편+문제편) 6주 CUT', author: '권병철', publisher: '이패스코리아', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 145, tags: ['베스트'], imageUrl: KB('S000218934630'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218934630' },
+    { title: '2026 정보통신기사 필기 기출문제집+실전모의고사', author: '김한기, 김영현 외', publisher: '세화', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 189, tags: ['추천'], imageUrl: KB('S000219085254'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219085254' },
+    { title: '2026 이패스 정보통신기사 필기 실기 세트', author: '권병철', publisher: '이패스코리아', price: 63000, originalPrice: 70000, discount: '10%', rating: 4.4, reviews: 134, tags: ['추천'], imageUrl: KB('S000219434445'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219434445' },
+  ],
+
+  // ────────────────────────────────────────
+  '건축설비기사': [
+    { title: '2026 건축설비기사 필기 이론/문제', author: '조성안, 이석훈 외', publisher: '기문사', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.7, reviews: 256, tags: ['베스트'], imageUrl: KB('S000218180959'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218180959' },
+    { title: '2026 핵심기출 건축설비기사 필기 기출모의고사', author: '조성안, 이석훈 외', publisher: '기문사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218356158'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218356158' },
+    { title: '2026 건축설비기사 필기 기출공략 문제로 한번에 합격하기', author: '정하정', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: KB('S000218322930'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218322930' },
+    { title: '2026 건축설비기사 필기', author: '안병관', publisher: '예문사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 145, tags: ['베스트'], imageUrl: KB('S000219004244'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219004244' },
+    { title: '2026 compact 건축설비기사 필기', author: '조성안, 이석훈 외', publisher: '기문사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], imageUrl: KB('S000218790132'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218790132' },
+    { title: '2026 건축설비산업기사 필기 이론/문제', author: '조성안, 이석훈 외', publisher: '기문사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.5, reviews: 156, tags: ['추천'], imageUrl: KB('S000217941990'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217941990' },
+    { title: '2026 compact 건축설비산업기사 필기', author: '조성안, 이석훈 외', publisher: '기문사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: KB('S000218790134'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218790134' },
+  ],
+
+  // ────────────────────────────────────────
+  '도시계획기사': [
+    { title: '2026 도시계획기사 필기 세트', author: 'Urban. Lee', publisher: '예문사', price: 49500, originalPrice: 55000, discount: '10%', rating: 4.8, reviews: 312, tags: ['베스트'], imageUrl: KB('S000219117166'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219117166' },
+    { title: '2026 양재호의 도시계획기사 필기 이론편', author: '양재호', publisher: '트랜북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 256, tags: ['베스트'], imageUrl: KB('S000218229943'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218229943' },
+    { title: '2026 양재호의 도시계획기사 필기 기출편', author: '양재호', publisher: '트랜북스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218179861'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218179861' },
+  ],
+
 };
