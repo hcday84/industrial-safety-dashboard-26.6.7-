@@ -153,28 +153,22 @@ function fetchAllMonthlyExams() {
   const monthData = {};
   for (let m = 1; m <= 12; m++) monthData[m] = { written: [], practical: [] };
 
-  // "MM/DD ~ MM/DD" 형식에서 시작 월 추출
-  const startMonth = dateRange => {
-    if (!dateRange || dateRange === '-' || dateRange.startsWith('-')) return null;
-    const m = parseInt(dateRange.slice(0, 2));
-    return isNaN(m) ? null : m;
+  // "YYYY-MM-DD ~ YYYY-MM-DD" → 시작 월(숫자)과 표시용 "MM/DD ~ MM/DD" 변환
+  const parseExamRange = str => {
+    if (!str) return null;
+    const match = str.match(/(\d{4})-(\d{2})-(\d{2})\s*~\s*\d{4}-(\d{2})-(\d{2})/);
+    if (!match) return null;
+    return { month: parseInt(match[2]), display: `${match[2]}/${match[3]} ~ ${match[4]}/${match[5]}` };
   };
 
   Object.entries(CERTIFICATIONS).forEach(([certName, cert]) => {
     if (!cert.schedules?.length) return;
     cert.schedules.forEach(s => {
-      // 필기 시험
-      if (s.writtenExam) {
-        const range = s.writtenExam.replace(/\d{4}-/g, '').replace(/-/g, '/');
-        const m = startMonth(range);
-        if (m) monthData[m].written.push({ certName, round: s.round, dateRange: range });
-      }
-      // 실기 시험
-      if (s.practicalExam) {
-        const range = s.practicalExam.replace(/\d{4}-/g, '').replace(/-/g, '/');
-        const m = startMonth(range);
-        if (m) monthData[m].practical.push({ certName, round: s.round, dateRange: range });
-      }
+      const written = parseExamRange(s.writtenExam);
+      if (written) monthData[written.month].written.push({ certName, round: s.round, dateRange: written.display });
+
+      const practical = parseExamRange(s.practicalExam);
+      if (practical) monthData[practical.month].practical.push({ certName, round: s.round, dateRange: practical.display });
     });
   });
 
