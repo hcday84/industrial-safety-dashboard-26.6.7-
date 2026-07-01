@@ -1417,12 +1417,18 @@ window.resetDashboard = function() {
   try { localStorage.removeItem('lastCert'); } catch(e) {}
   const dropdown = document.getElementById('cert-dropdown');
   if (dropdown) dropdown.classList.remove('visible');
-  // 발주&재고관리 패널이 열려 있으면 먼저 닫기
+  // 발주&재고관리 패널이 열려 있으면 닫고 웰컴으로
   const inventoryPanel = document.getElementById('inventory-panel');
-  if (inventoryPanel && inventoryPanel.style.display !== 'none') {
-    window.switchTab('dashboard');
-    return;
-  }
+  if (inventoryPanel) inventoryPanel.style.display = 'none';
+  const tabDashboard = document.getElementById('tab-dashboard');
+  const tabInventory = document.getElementById('tab-inventory');
+  const searchBar = document.getElementById('header-search-bar');
+  const siteTitle = document.getElementById('site-title');
+  if (tabDashboard) tabDashboard.classList.add('active');
+  if (tabInventory) tabInventory.classList.remove('active');
+  if (searchBar) searchBar.style.display = '';
+  if (siteTitle) siteTitle.textContent = '수험서 All in One 대시보드';
+  document.body.style.overflow = '';
   showWelcomeScreen();
 };
 
