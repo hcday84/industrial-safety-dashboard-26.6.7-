@@ -153,12 +153,14 @@ function fetchAllMonthlyExams() {
   const monthData = {};
   for (let m = 1; m <= 12; m++) monthData[m] = { written: [], practical: [] };
 
-  // "YYYY-MM-DD ~ YYYY-MM-DD" → 시작 월(숫자)과 표시용 "MM/DD ~ MM/DD" 변환
+  // "YYYY-MM-DD [~ YYYY-MM-DD]" → 시작 월(숫자)과 표시용 "MM/DD[~ MM/DD]" 변환
   const parseExamRange = str => {
     if (!str) return null;
-    const match = str.match(/(\d{4})-(\d{2})-(\d{2})\s*~\s*\d{4}-(\d{2})-(\d{2})/);
-    if (!match) return null;
-    return { month: parseInt(match[2]), display: `${match[2]}/${match[3]} ~ ${match[4]}/${match[5]}` };
+    const range = str.match(/(\d{4})-(\d{2})-(\d{2})\s*~\s*\d{4}-(\d{2})-(\d{2})/);
+    if (range) return { month: parseInt(range[2]), display: `${range[2]}/${range[3]} ~ ${range[4]}/${range[5]}` };
+    const single = str.match(/(\d{4})-(\d{2})-(\d{2})/);
+    if (single) return { month: parseInt(single[2]), display: `${single[2]}/${single[3]}` };
+    return null;
   };
 
   Object.entries(CERTIFICATIONS).forEach(([certName, cert]) => {
