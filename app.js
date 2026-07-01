@@ -1417,6 +1417,12 @@ window.resetDashboard = function() {
   try { localStorage.removeItem('lastCert'); } catch(e) {}
   const dropdown = document.getElementById('cert-dropdown');
   if (dropdown) dropdown.classList.remove('visible');
+  // 발주&재고관리 패널이 열려 있으면 먼저 닫기
+  const inventoryPanel = document.getElementById('inventory-panel');
+  if (inventoryPanel && inventoryPanel.style.display !== 'none') {
+    window.switchTab('dashboard');
+    return;
+  }
   showWelcomeScreen();
 };
 
