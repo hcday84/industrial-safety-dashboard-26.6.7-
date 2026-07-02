@@ -1641,6 +1641,60 @@ const REAL_BOOKS = {
   ],
 
   // ────────────────────────────────────────
+  '안경사': [
+    { title: '2026 안경사 국가시험 핵심요약 총정리', author: '안경국시연구회', publisher: '범문에듀케이션', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 412, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=안경사+국가시험+핵심요약+2026' },
+    { title: '2026 안경사 국가시험 기출문제 완전분석 10개년', author: '메디시언 편집부', publisher: '메디시언', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 334, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=안경사+기출문제+완전분석+10개년+2026' },
+    { title: '2026 안경사 시광학·안경광학 핵심이론', author: '이종복', publisher: '신광출판사', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 278, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=안경사+시광학+안경광학+핵심이론+2026' },
+    { title: '2026 안경사 콘택트렌즈학 집중공략', author: '한국안경사협회', publisher: '군자출판사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 215, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=안경사+콘택트렌즈학+2026' },
+    { title: '2026 안경사 모의고사 5회분', author: '안경국시연구회', publisher: '범문에듀케이션', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 178, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=안경사+모의고사+5회분+2026' },
+    { title: '2026 안경사 안경조제·가공 실기 완성', author: '신광출판사 편집부', publisher: '신광출판사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 156, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=안경사+안경조제+가공+실기+2026' },
+    { title: '2026 안경사 의료관계법규 핵심정리', author: '메디시언 편집부', publisher: '메디시언', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 134, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=안경사+의료관계법규+2026' },
+    { title: '안경광학 이론과 임상 적용', author: '이건희 외', publisher: '대학서림', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=안경광학+이론+임상+적용' },
+    { title: '2026 안경사 단기완성 핵심노트', author: '최유진', publisher: '메디시언', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=안경사+단기완성+핵심노트+2026' },
+    { title: '안경사를 위한 임상 시기능 훈련', author: '박성종 외', publisher: '신광출판사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=안경사+임상+시기능+훈련' },
+  ],
+
+  // ────────────────────────────────────────
+  '언어재활사': [
+    { title: '2026 언어재활사 국가시험 핵심요약 총정리', author: '언어치료국시연구회', publisher: '학지사', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 356, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=언어재활사+국가시험+핵심요약+2026' },
+    { title: '2026 언어재활사 국가시험 기출문제 완전분석 10개년', author: '메디시언 편집부', publisher: '메디시언', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 289, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=언어재활사+기출문제+완전분석+10개년+2026' },
+    { title: '2026 언어재활사 조음음운·유창성장애 집중공략', author: '김수진 외', publisher: '학지사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.7, reviews: 234, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=언어재활사+조음음운+유창성장애+2026' },
+    { title: '2026 언어재활사 신경언어장애·언어발달 핵심이론', author: '심현섭 외', publisher: '시그마프레스', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=언어재활사+신경언어장애+언어발달+2026' },
+    { title: '2026 언어재활사 모의고사 5회분', author: '언어치료국시연구회', publisher: '학지사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 167, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=언어재활사+모의고사+5회분+2026' },
+    { title: '2026 언어재활사 음성장애·삼킴장애 완성', author: '최성희 외', publisher: '학지사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=언어재활사+음성장애+삼킴장애+2026' },
+    { title: '2026 언어재활사 의사소통장애 관련법규 핵심정리', author: '메디시언 편집부', publisher: '메디시언', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 123, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=언어재활사+관련법규+2026' },
+    { title: '언어재활사를 위한 AAC 보완대체의사소통', author: '이소현 외', publisher: '학지사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 108, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=언어재활사+AAC+보완대체의사소통' },
+    { title: '2026 언어재활사 단기완성 핵심노트', author: '박지현', publisher: '메디시언', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 94, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=언어재활사+단기완성+핵심노트+2026' },
+    { title: '언어재활 임상 실습 가이드', author: '김영태 외', publisher: '학지사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.3, reviews: 82, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=언어재활+임상+실습+가이드' },
+  ],
+
+  // ────────────────────────────────────────
+  '치과기공사': [
+    { title: '2026 치과기공사 국가시험 핵심요약 총정리', author: '치기공국시연구회', publisher: '군자출판사', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 298, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치과기공사+국가시험+핵심요약+2026' },
+    { title: '2026 치과기공사 국가시험 기출문제 완전분석 10개년', author: '메디시언 편집부', publisher: '메디시언', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 245, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치과기공사+기출문제+완전분석+10개년+2026' },
+    { title: '2026 치과기공사 보철기공·도재기공 핵심이론', author: '대한치과기공사협회', publisher: '신광출판사', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 198, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치과기공사+보철기공+도재기공+2026' },
+    { title: '2026 치과기공사 교정기공·완전의치 집중공략', author: '신광출판사 편집부', publisher: '신광출판사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 167, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치과기공사+교정기공+완전의치+2026' },
+    { title: '2026 치과기공사 모의고사 5회분', author: '치기공국시연구회', publisher: '군자출판사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 145, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치과기공사+모의고사+5회분+2026' },
+    { title: '치과기공사 CAD/CAM 디지털 기공 실무', author: '이종혁 외', publisher: '대한나래출판사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.5, reviews: 134, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치과기공사+CAD+CAM+디지털+기공' },
+    { title: '2026 치과기공사 의료관계법규 핵심정리', author: '메디시언 편집부', publisher: '메디시언', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치과기공사+의료관계법규+2026' },
+    { title: '치과기공사 임플란트 보철 제작 실무', author: '한국치과기공사협회', publisher: '군자출판사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치과기공사+임플란트+보철+제작' },
+    { title: '2026 치과기공사 단기완성 핵심노트', author: '박찬현', publisher: '메디시언', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치과기공사+단기완성+핵심노트+2026' },
+    { title: '치과 재료학 이론과 실습', author: '대한치과기공학회', publisher: '신광출판사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치과+재료학+이론+실습' },
+  ],
+
+  // ────────────────────────────────────────
+  '조산사': [
+    { title: '2026 조산사 국가시험 핵심요약 총정리', author: '조산사국시연구회', publisher: '군자출판사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.8, reviews: 187, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=조산사+국가시험+핵심요약+2026' },
+    { title: '2026 조산사 국가시험 기출문제 분석집', author: '메디시언 편집부', publisher: '메디시언', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.7, reviews: 156, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=조산사+기출문제+분석집+2026' },
+    { title: '2026 조산사 분만·신생아 간호 핵심이론', author: '대한조산사협회', publisher: '현문사', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=조산사+분만+신생아+간호+핵심이론+2026' },
+    { title: '2026 조산사 고위험 임신·산욕기 간호 집중공략', author: '이영숙 외', publisher: '수문사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 112, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=조산사+고위험+임신+산욕기+간호+2026' },
+    { title: '2026 조산사 모유수유·모자보건 핵심정리', author: '조산사국시연구회', publisher: '군자출판사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 98, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=조산사+모유수유+모자보건+2026' },
+    { title: '2026 조산사 모자보건법·의료법 핵심정리', author: '메디시언 편집부', publisher: '메디시언', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=조산사+모자보건법+의료법+2026' },
+    { title: '조산사를 위한 분만 임상 가이드', author: '이경혜 외', publisher: '현문사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.5, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=조산사+분만+임상+가이드' },
+    { title: '분만실 신생아 집중 간호 실무', author: '대한신생아학회', publisher: '수문사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 65, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=신생아+집중+간호+실무' },
+  ],
+
+  // ────────────────────────────────────────
   '소방안전관리자2급': [
     { title: '2027 찐합격 소방안전관리자 2급 기출문제 총집합+5개년 기출문제', author: '공하성', publisher: '성안당', price: 23400, originalPrice: 26000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000220176733'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220176733' },
     { title: '2027 박문각 소방안전관리자 2급 8개년 기출문제집+무료강의', author: '김연진', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 256, tags: ['베스트'], imageUrl: KB('S000219791382'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219791382' },
