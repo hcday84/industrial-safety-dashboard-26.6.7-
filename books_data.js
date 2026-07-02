@@ -1641,6 +1641,208 @@ const REAL_BOOKS = {
   ],
 
   // ────────────────────────────────────────
+  // 국가전문자격증 — 금융·법률·부동산
+  // ────────────────────────────────────────
+  '공인중개사': [
+    { title: '2026 에듀윌 공인중개사 1차 한권끝장+무료특강', author: '에듀윌 공인중개사연구소', publisher: '에듀윌', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 3245, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=에듀윌+공인중개사+1차+한권끝장+2026' },
+    { title: '2026 에듀윌 공인중개사 2차 한권끝장+무료특강', author: '에듀윌 공인중개사연구소', publisher: '에듀윌', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 2876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=에듀윌+공인중개사+2차+한권끝장+2026' },
+    { title: '2026 박문각 공인중개사 1차 핵심요약집', author: '이영방 외', publisher: '박문각', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 2134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=박문각+공인중개사+1차+핵심요약+2026' },
+    { title: '2026 해커스 공인중개사 1차 기출문제집', author: '해커스 공인중개사연구소', publisher: '해커스패스', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=해커스+공인중개사+1차+기출문제+2026' },
+    { title: '2026 시대에듀 공인중개사 2차 기출문제집', author: '시대공인중개사연구소', publisher: '시대고시기획', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 1654, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=시대에듀+공인중개사+2차+기출문제+2026' },
+    { title: '2026 EBS 공인중개사 1·2차 요약집', author: 'EBS공인중개사교수진', publisher: '한국교육방송공사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 1432, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=EBS+공인중개사+요약집+2026' },
+    { title: '2026 공인중개사 부동산세법 집중공략', author: '이동훈', publisher: '에듀윌', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 1123, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인중개사+부동산세법+집중공략+2026' },
+    { title: '2026 공인중개사 민법 핵심판례 정리', author: '조현상', publisher: '박문각', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인중개사+민법+핵심판례+2026' },
+    { title: '2026 공인중개사 단기완성 벼락치기', author: '에듀윌 공인중개사연구소', publisher: '에듀윌', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 876, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인중개사+단기완성+벼락치기+2026' },
+    { title: '2026 공인중개사 최종모의고사 5+5회분', author: '박문각 공인중개사연구소', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 765, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인중개사+최종모의고사+2026' },
+  ],
+
+  '세무사': [
+    { title: '2026 세무사 1차 세법학개론 한권으로 끝내기', author: '이철재 외', publisher: '세경북스', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 1234, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=세무사+1차+세법학개론+2026' },
+    { title: '2026 세무사 1차 회계학개론 한권으로 끝내기', author: '김현식 외', publisher: '세경북스', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 1098, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=세무사+1차+회계학개론+2026' },
+    { title: '2026 세무사 2차 세법학 1·2 기출문제집', author: '정정운 외', publisher: '나무와숲', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=세무사+2차+세법학+기출문제+2026' },
+    { title: '2026 세무사 1차 재정학 핵심이론+기출문제', author: '임병진', publisher: '나무와숲', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=세무사+1차+재정학+핵심이론+2026' },
+    { title: '2026 세무사 2차 회계학 1·2 기출+예상문제집', author: '최창규 외', publisher: '세경북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 654, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=세무사+2차+회계학+기출+예상+2026' },
+    { title: '2026 세무사 소득세법·법인세법 계산특강', author: '김경서', publisher: '나무와숲', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 543, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=세무사+소득세법+법인세법+계산특강+2026' },
+    { title: '2026 세무사 부가가치세법 핵심요약+기출', author: '이승철', publisher: '세경북스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 456, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=세무사+부가가치세법+핵심요약+2026' },
+    { title: '2026 세무사 최신 세법 개정사항 총정리', author: '정정운', publisher: '나무와숲', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 378, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=세무사+최신+세법+개정사항+2026' },
+  ],
+
+  '공인회계사': [
+    { title: '2026 공인회계사 1차 회계학 한권으로 끝내기', author: '김기동 외', publisher: '나무와숲', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.8, reviews: 1456, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인회계사+1차+회계학+한권으로+2026' },
+    { title: '2026 공인회계사 1차 세법개론 핵심이론+기출', author: '이철재', publisher: '세경북스', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 1234, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인회계사+1차+세법개론+2026' },
+    { title: '2026 공인회계사 1차 경영학 핵심이론+기출', author: '강경태 외', publisher: '나무와숲', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.7, reviews: 1098, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인회계사+1차+경영학+2026' },
+    { title: '2026 공인회계사 2차 재무회계 기출+예상문제', author: '최창규 외', publisher: '나무와숲', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.7, reviews: 876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인회계사+2차+재무회계+기출+2026' },
+    { title: '2026 공인회계사 2차 원가관리회계 기출+예상', author: '임세진', publisher: '세경북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 765, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인회계사+2차+원가관리회계+2026' },
+    { title: '2026 공인회계사 K-IFRS 핵심요약+기출', author: '이남재 외', publisher: '나무와숲', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 654, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인회계사+K-IFRS+핵심요약+2026' },
+    { title: '2026 공인회계사 1차 경제원론 핵심이론', author: '정병열', publisher: '세경북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 543, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인회계사+1차+경제원론+2026' },
+    { title: '2026 공인회계사 2차 세무회계 기출+예상', author: '김문현', publisher: '나무와숲', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 456, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인회계사+2차+세무회계+2026' },
+  ],
+
+  '감정평가사': [
+    { title: '2026 감정평가사 1차 부동산학원론 한권으로 끝내기', author: '강정규 외', publisher: '박문각', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=감정평가사+1차+부동산학원론+2026' },
+    { title: '2026 감정평가사 1차 민법 핵심이론+기출문제', author: '이동규', publisher: '박문각', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=감정평가사+1차+민법+핵심이론+2026' },
+    { title: '2026 감정평가사 2차 감정평가이론 기출+예상', author: '유선종 외', publisher: '나무와숲', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.7, reviews: 654, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=감정평가사+2차+감정평가이론+2026' },
+    { title: '2026 감정평가사 1차 경제학 핵심이론+기출', author: '정병열', publisher: '세경북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=감정평가사+1차+경제학+2026' },
+    { title: '2026 감정평가사 감정평가 관계법규 핵심이론', author: '이병준', publisher: '박문각', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 456, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=감정평가사+관계법규+핵심이론+2026' },
+    { title: '2026 감정평가사 감정평가실무 기출+예상문제', author: '박성용', publisher: '나무와숲', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.5, reviews: 378, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=감정평가사+감정평가실무+2026' },
+    { title: '2026 감정평가사 1차 회계학 핵심요약', author: '강경태', publisher: '나무와숲', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 312, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=감정평가사+1차+회계학+2026' },
+  ],
+
+  '변리사': [
+    { title: '2026 변리사 1차 산업재산권법 한권으로 끝내기', author: '원용수 외', publisher: '세경북스', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 765, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=변리사+1차+산업재산권법+2026' },
+    { title: '2026 변리사 2차 특허법 기출+예상문제집', author: '이창현 외', publisher: '나무와숲', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.7, reviews: 654, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=변리사+2차+특허법+기출+예상+2026' },
+    { title: '2026 변리사 1차 민사소송법 핵심이론+기출', author: '정우성 외', publisher: '박문각', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=변리사+1차+민사소송법+2026' },
+    { title: '2026 변리사 2차 상표법·디자인보호법 기출', author: '신현호', publisher: '세경북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 456, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=변리사+2차+상표법+디자인보호법+2026' },
+    { title: '2026 변리사 특허명세서 작성 실무', author: '김승열 외', publisher: '박문각', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 378, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=변리사+특허명세서+작성+실무+2026' },
+    { title: '2026 변리사 1차 자연과학개론 핵심이론', author: '이공계 국시연구회', publisher: '세경북스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 312, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=변리사+1차+자연과학개론+2026' },
+    { title: '2026 변리사 최신 특허법원 판례 정리', author: '이창현', publisher: '나무와숲', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 267, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=변리사+최신+특허법원+판례+2026' },
+  ],
+
+  '법무사': [
+    { title: '2026 법무사 1차 민법 한권으로 끝내기', author: '이동규 외', publisher: '박문각', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 654, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=법무사+1차+민법+한권으로+2026' },
+    { title: '2026 법무사 1차 민사소송법 핵심이론+기출', author: '정우성 외', publisher: '박문각', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=법무사+1차+민사소송법+2026' },
+    { title: '2026 법무사 2차 부동산등기법 기출+예상', author: '김성진 외', publisher: '나무와숲', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.7, reviews: 456, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=법무사+2차+부동산등기법+2026' },
+    { title: '2026 법무사 1차 상법 핵심이론+기출', author: '김훈 외', publisher: '박문각', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 378, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=법무사+1차+상법+핵심이론+2026' },
+    { title: '2026 법무사 2차 공탁법 기출+예상문제집', author: '신현탁', publisher: '나무와숲', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 312, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=법무사+2차+공탁법+기출+2026' },
+    { title: '2026 법무사 1차 헌법 핵심이론+기출', author: '정재황 외', publisher: '박문각', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.5, reviews: 267, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=법무사+1차+헌법+핵심이론+2026' },
+    { title: '2026 법무사 등기신청서류 작성 실무', author: '대한법무사협회', publisher: '법률미디어', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 223, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=법무사+등기신청서류+작성+실무+2026' },
+  ],
+
+  '공인노무사': [
+    { title: '2026 공인노무사 1차 노동법 한권으로 끝내기', author: '이승렬 외', publisher: '세경북스', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 1123, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인노무사+1차+노동법+한권으로+2026' },
+    { title: '2026 공인노무사 2차 노동법 기출+예상문제집', author: '전형배 외', publisher: '나무와숲', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 987, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인노무사+2차+노동법+기출+예상+2026' },
+    { title: '2026 공인노무사 1차 사회보험법 핵심이론', author: '김대환', publisher: '세경북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인노무사+1차+사회보험법+2026' },
+    { title: '2026 공인노무사 1차 민법 핵심이론+기출', author: '이동규', publisher: '박문각', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 654, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyободook.co.kr/search?keyword=공인노무사+1차+민법+핵심이론+2026' },
+    { title: '2026 공인노무사 노동경제학 핵심이론+기출', author: '김성준', publisher: '나무와숲', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 543, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인노무사+노동경제학+핵심이론+2026' },
+    { title: '2026 공인노무사 2차 인사노무관리 기출+예상', author: '박경규 외', publisher: '세경북스', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.5, reviews: 456, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인노무사+2차+인사노무관리+2026' },
+    { title: '2026 공인노무사 최신 노동법 개정사항 총정리', author: '이승렬', publisher: '세경북스', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 378, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인노무사+최신+노동법+개정사항+2026' },
+  ],
+
+  '관세사': [
+    { title: '2026 관세사 1차 관세법개론 한권으로 끝내기', author: '이재호 외', publisher: '세경북스', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 654, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=관세사+1차+관세법개론+한권으로+2026' },
+    { title: '2026 관세사 2차 관세율표·관세평가 기출+예상', author: '정재완 외', publisher: '나무와숲', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.7, reviews: 543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=관세사+2차+관세율표+관세평가+2026' },
+    { title: '2026 관세사 1차 무역영어 핵심이론+기출', author: '이은정', publisher: '세경북스', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 456, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=관세사+1차+무역영어+핵심이론+2026' },
+    { title: '2026 관세사 1차 내국소비세법 핵심이론', author: '이현철', publisher: '나무와숲', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 378, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=관세사+1차+내국소비세법+2026' },
+    { title: '2026 관세사 2차 통관절차·원산지 집중공략', author: '김원상', publisher: '세경북스', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 312, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=관세사+2차+통관절차+원산지+2026' },
+    { title: '2026 관세사 FTA 협정세율 활용 실무', author: '관세사회 편집부', publisher: '나무와숲', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 267, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=관세사+FTA+협정세율+활용+2026' },
+  ],
+
+  '손해사정사': [
+    { title: '2026 손해사정사 1차 보험이론 한권으로 끝내기', author: '김준호 외', publisher: '나무와숲', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=손해사정사+1차+보험이론+2026' },
+    { title: '2026 손해사정사 2차 손해사정이론 기출+예상', author: '이병욱 외', publisher: '나무와숲', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 456, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=손해사정사+2차+손해사정이론+2026' },
+    { title: '2026 손해사정사 의학이론 핵심요약', author: '손해사정연구회', publisher: '나무와숲', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 378, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=손해사정사+의학이론+핵심요약+2026' },
+    { title: '2026 손해사정사 자동차손해사정 실무', author: '김현진', publisher: '보험연수원', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 312, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=손해사정사+자동차손해사정+실무+2026' },
+    { title: '2026 손해사정사 관련법규 핵심정리', author: '법률 편집부', publisher: '나무와숲', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 267, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=손해사정사+관련법규+핵심정리+2026' },
+  ],
+
+  '보험계리사': [
+    { title: '2026 보험계리사 1차 보험수학 핵심이론+기출', author: '강수정 외', publisher: '보험연수원', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 456, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=보험계리사+1차+보험수학+핵심이론+2026' },
+    { title: '2026 보험계리사 1차 경제학 핵심이론+기출', author: '정병열', publisher: '세경북스', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 378, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=보험계리사+1차+경제학+2026' },
+    { title: '2026 보험계리사 2차 계리실무 기출+예상', author: '보험계리사협회 편집부', publisher: '보험연수원', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 312, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=보험계리사+2차+계리실무+2026' },
+    { title: '2026 보험계리사 보험업법·관련법규 핵심정리', author: '최준규', publisher: '보험연수원', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 245, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=보험계리사+보험업법+관련법규+2026' },
+    { title: '2026 보험계리사 회계원리 핵심이론+기출', author: '김동현', publisher: '나무와숲', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 198, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=보험계리사+회계원리+2026' },
+  ],
+
+  '행정사': [
+    { title: '2026 에듀윌 행정사 1차 행정법 한권끝장', author: '에듀윌 행정사연구소', publisher: '에듀윌', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=에듀윌+행정사+1차+행정법+2026' },
+    { title: '2026 박문각 행정사 1차 민법 핵심이론+기출', author: '이동규', publisher: '박문각', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=박문각+행정사+1차+민법+2026' },
+    { title: '2026 행정사 2차 행정사실무법 기출+예상', author: '이병철 외', publisher: '에듀윌', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 654, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=행정사+2차+행정사실무법+2026' },
+    { title: '2026 행정사 1차 행정학개론 핵심이론+기출', author: '임도빈 외', publisher: '박문각', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=행정사+1차+행정학개론+2026' },
+    { title: '2026 행정사 2차 민원처리·사무관리 실무', author: '행정사국시연구회', publisher: '에듀윌', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 456, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=행정사+2차+민원처리+사무관리+2026' },
+    { title: '2026 행정사 최종 모의고사 5회분', author: '박문각 행정사연구소', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 378, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=행정사+최종+모의고사+5회분+2026' },
+  ],
+
+  '주택관리사': [
+    { title: '2026 에듀윌 주택관리사 1차 한권끝장+무료특강', author: '에듀윌 주택관리사연구소', publisher: '에듀윌', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=에듀윌+주택관리사+1차+한권끝장+2026' },
+    { title: '2026 에듀윌 주택관리사 2차 한권끝장+무료특강', author: '에듀윌 주택관리사연구소', publisher: '에듀윌', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 1876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=에듀윌+주택관리사+2차+한권끝장+2026' },
+    { title: '2026 박문각 주택관리사 1차 기출문제집', author: '박문각 주택관리사연구소', publisher: '박문각', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 1456, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=박문각+주택관리사+1차+기출문제+2026' },
+    { title: '2026 주택관리사 공동주택관리법 핵심요약', author: '전재경', publisher: '에듀윌', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1123, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=주택관리사+공동주택관리법+핵심요약+2026' },
+    { title: '2026 주택관리사 2차 시설관리 핵심이론', author: '이광훈', publisher: '박문각', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=주택관리사+2차+시설관리+핵심이론+2026' },
+    { title: '2026 주택관리사 공동주택 회계처리 완성', author: '이현정', publisher: '에듀윌', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 765, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=주택관리사+공동주택+회계처리+2026' },
+    { title: '2026 주택관리사 최종 모의고사 1·2차', author: '에듀윌 주택관리사연구소', publisher: '에듀윌', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 654, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=주택관리사+최종+모의고사+2026' },
+  ],
+
+  // ────────────────────────────────────────
+  // 국가전문자격증 — 복지·교육 계열
+  // ────────────────────────────────────────
+  '사회복지사1급': [
+    { title: '2026 에듀윌 사회복지사 1급 한권끝장+무료특강', author: '에듀윌 사회복지사연구소', publisher: '에듀윌', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 2876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=에듀윌+사회복지사+1급+한권끝장+2026' },
+    { title: '2026 나눔의집 사회복지사 1급 기출문제집 10개년', author: '나눔의집 사회복지사연구소', publisher: '나눔의집', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.8, reviews: 2345, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=나눔의집+사회복지사+1급+기출문제+10개년+2026' },
+    { title: '2026 박문각 사회복지사 1급 핵심요약집', author: '박문각 사회복지사연구소', publisher: '박문각', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=박문각+사회복지사+1급+핵심요약+2026' },
+    { title: '2026 시대에듀 사회복지사 1급 한권으로 끝내기', author: '시대사회복지연구소', publisher: '시대고시기획', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 1654, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=시대에듀+사회복지사+1급+한권으로+2026' },
+    { title: '2026 사회복지사 1급 사회복지법제 핵심정리', author: '윤찬영', publisher: '나눔의집', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1345, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회복지사+1급+사회복지법제+핵심정리+2026' },
+    { title: '2026 사회복지사 1급 사회복지실천기술론 핵심', author: '엄명용 외', publisher: '학지사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 1123, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회복지사+1급+사회복지실천기술론+2026' },
+    { title: '2026 사회복지사 1급 모의고사 5회분', author: '나눔의집 사회복지사연구소', publisher: '나눔의집', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyободook.co.kr/search?keyword=사회복지사+1급+모의고사+5회분+2026' },
+    { title: '2026 사회복지사 1급 단기완성 벼락치기', author: '에듀윌 사회복지사연구소', publisher: '에듀윌', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 876, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회복지사+1급+단기완성+벼락치기+2026' },
+  ],
+
+  '청소년상담사': [
+    { title: '2026 청소년상담사 3급 한권으로 끝내기', author: '청소년상담사연구회', publisher: '시대고시기획', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년상담사+3급+한권으로+끝내기+2026' },
+    { title: '2026 청소년상담사 2급 한권으로 끝내기', author: '청소년상담사연구회', publisher: '시대고시기획', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년상담사+2급+한권으로+끝내기+2026' },
+    { title: '2026 청소년상담사 기출문제 완전분석', author: '김형태 외', publisher: '학지사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 654, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년상담사+기출문제+완전분석+2026' },
+    { title: '2026 청소년상담사 상담이론 핵심요약', author: '이장호 외', publisher: '학지사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년상담사+상담이론+핵심요약+2026' },
+    { title: '2026 청소년상담사 청소년 관계법규 핵심정리', author: '법규연구회', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 456, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년상담사+관계법규+핵심정리+2026' },
+    { title: '2026 청소년상담사 심리검사 이론과 실제', author: '황순택 외', publisher: '학지사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 378, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년상담사+심리검사+이론+2026' },
+  ],
+
+  '청소년지도사': [
+    { title: '2026 청소년지도사 2·3급 한권으로 끝내기', author: '청소년지도사연구회', publisher: '시대고시기획', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년지도사+2급+3급+한권으로+2026' },
+    { title: '2026 청소년지도사 기출문제 완전분석', author: '정건희 외', publisher: '시대고시기획', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.6, reviews: 612, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년지도사+기출문제+완전분석+2026' },
+    { title: '2026 청소년지도사 청소년활동·복지·문화 핵심', author: '한국청소년활동진흥원', publisher: '학지사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년지도사+청소년활동+복지+문화+2026' },
+    { title: '2026 청소년지도사 프로그램개발 핵심이론', author: '조미숙 외', publisher: '학지사', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.5, reviews: 423, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년지도사+프로그램개발+핵심이론+2026' },
+    { title: '2026 청소년지도사 면접 완벽 대비', author: '면접연구회', publisher: '시대고시기획', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 356, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년지도사+면접+완벽+대비+2026' },
+    { title: '청소년지도사 관계법규 핵심정리', author: '법규연구회', publisher: '시대고시기획', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.4, reviews: 289, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년지도사+관계법규+핵심정리+2026' },
+  ],
+
+  '평생교육사': [
+    { title: '2026 평생교육사 2급 핵심이론 총정리', author: '평생교육사연구회', publisher: '학지사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.6, reviews: 678, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=평생교육사+2급+핵심이론+2026' },
+    { title: '2026 평생교육사 기출문제 완전분석', author: '김진화 외', publisher: '학지사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=평생교육사+기출문제+완전분석+2026' },
+    { title: '2026 평생교육사 평생교육론·방법론 핵심', author: '권두승 외', publisher: '교육과학사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 456, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=평생교육사+평생교육론+방법론+2026' },
+    { title: '2026 평생교육사 프로그램개발론 핵심', author: '기영화 외', publisher: '학지사', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.5, reviews: 378, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=평생교육사+프로그램개발론+핵심+2026' },
+    { title: '평생교육법·학점인정법 관련법규 핵심정리', author: '법규연구회', publisher: '학지사', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.4, reviews: 312, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=평생교육사+관련법규+핵심정리+2026' },
+  ],
+
+  // ────────────────────────────────────────
+  // 국가전문자격증 — 건축·기타 계열
+  // ────────────────────────────────────────
+  '건축사': [
+    { title: '2026 건축사 자격시험 대지 계획+건축 계획 종합', author: '건축사시험연구회', publisher: '기문사', price: 49500, originalPrice: 55000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건축사+자격시험+대지+계획+건축+계획+2026' },
+    { title: '2026 건축사 구조 계획+건축 설비 핵심이론', author: '이중한 외', publisher: '기문사', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.7, reviews: 654, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건축사+구조+계획+건축+설비+핵심이론+2026' },
+    { title: '2026 건축사 자격시험 기출과제 완전분석', author: '박성열 외', publisher: '기문사', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.6, reviews: 543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건축사+자격시험+기출과제+완전분석+2026' },
+    { title: '2026 건축사 건축법규 핵심요약+기출', author: '이정봉', publisher: '성안당', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 456, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건축사+건축법규+핵심요약+2026' },
+    { title: '건축사를 위한 도면 작도 실전 훈련', author: '대한건축사협회', publisher: '기문사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 378, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건축사+도면+작도+실전+훈련' },
+    { title: '2026 건축사 예비시험 합격 가이드', author: '건축국시연구회', publisher: '기문사', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.5, reviews: 312, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyободook.co.kr/search?keyword=건축사+예비시험+합격+가이드+2026' },
+  ],
+
+  '수의사': [
+    { title: '2026 수의사 국가시험 핵심요약 총정리', author: '수의사국시연구회', publisher: '수의학교육출판부', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.7, reviews: 456, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=수의사+국가시험+핵심요약+2026' },
+    { title: '2026 수의사 임상수의학 핵심이론', author: '한국수의사회 편집부', publisher: '수의학교육출판부', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.7, reviews: 378, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=수의사+임상수의학+핵심이론+2026' },
+    { title: '2026 수의사 예방수의학·공중보건학 핵심', author: '박봉균 외', publisher: '수의학교육출판부', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 312, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=수의사+예방수의학+공중보건학+2026' },
+    { title: '2026 수의사 기초수의학 핵심이론', author: '전무형 외', publisher: '수의학교육출판부', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 267, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyободook.co.kr/search?keyword=수의사+기초수의학+핵심이론+2026' },
+    { title: '2026 수의사 수의약리학+수의법규 핵심정리', author: '이희수 외', publisher: '수의학교육출판부', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.5, reviews: 223, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=수의사+수의약리학+수의법규+2026' },
+    { title: '수의사를 위한 소동물 임상 매뉴얼', author: '대한수의사회', publisher: '광일문화사', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.5, reviews: 189, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyободook.co.kr/search?keyword=수의사+소동물+임상+매뉴얼' },
+  ],
+
+  '스포츠지도사': [
+    { title: '2026 스포츠지도사 2급 생활스포츠 필기 한권끝장', author: '스포츠지도사연구회', publisher: '시대고시기획', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyободook.co.kr/search?keyword=스포츠지도사+2급+생활스포츠+필기+2026' },
+    { title: '2026 스포츠지도사 필기 기출문제 완전분석', author: '국민체육진흥공단 편집부', publisher: '시대고시기획', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyободook.co.kr/search?keyword=스포츠지도사+필기+기출문제+완전분석+2026' },
+    { title: '2026 스포츠지도사 스포츠심리학+운동생리학 핵심', author: '김선진 외', publisher: '레인보우북스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 654, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyободook.co.kr/search?keyword=스포츠지도사+스포츠심리학+운동생리학+2026' },
+    { title: '2026 스포츠지도사 운동역학+스포츠사회학 핵심', author: '이상효 외', publisher: '레인보우북스', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.6, reviews: 543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=스포츠지도사+운동역학+스포츠사회학+2026' },
+    { title: '2026 스포츠지도사 2급 구술·면접 완벽 대비', author: '스포츠지도사연구회', publisher: '시대고시기획', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.5, reviews: 456, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=스포츠지도사+2급+구술+면접+2026' },
+    { title: '스포츠지도사 유소년·노인 스포츠 지도 가이드', author: '대한체육회 편집부', publisher: '레인보우북스', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 378, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=스포츠지도사+유소년+노인+스포츠+지도' },
+  ],
+
+  '사회조사분석사': [
+    { title: '2026 사회조사분석사 2급 한권으로 끝내기', author: '이재원 외', publisher: '에듀윌', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회조사분석사+2급+한권으로+끝내기+2026' },
+    { title: '2026 사회조사분석사 기출문제 완전분석', author: '시대통계연구소', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회조사분석사+기출문제+완전분석+2026' },
+    { title: '2026 사회조사분석사 조사방법론 핵심이론', author: '김경회 외', publisher: '에듀윌', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 654, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회조사분석사+조사방법론+핵심이론+2026' },
+    { title: '2026 사회조사분석사 사회통계 핵심이론+계산', author: '이준 외', publisher: '시대고시기획', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.6, reviews: 543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회조사분석사+사회통계+핵심이론+2026' },
+    { title: '2026 사회조사분석사 실기 SPSS 분석 완전정복', author: '구동모 외', publisher: '에듀윌', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.5, reviews: 456, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회조사분석사+실기+SPSS+분석+2026' },
+    { title: '2026 사회조사분석사 1급 한권으로 끝내기', author: '이재원 외', publisher: '에듀윌', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 378, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회조사분석사+1급+한권으로+2026' },
+    { title: '사회조사 설문지 설계·분석 실전 가이드', author: '차배근 외', publisher: '커뮤니케이션북스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 312, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회조사+설문지+설계+분석+실전' },
+  ],
+
+  // ────────────────────────────────────────
   '안경사': [
     { title: '2026 안경사 국가시험 핵심요약 총정리', author: '안경국시연구회', publisher: '범문에듀케이션', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 412, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=안경사+국가시험+핵심요약+2026' },
     { title: '2026 안경사 국가시험 기출문제 완전분석 10개년', author: '메디시언 편집부', publisher: '메디시언', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 334, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=안경사+기출문제+완전분석+10개년+2026' },
