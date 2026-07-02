@@ -14347,4 +14347,193 @@ const CERTIFICATIONS = {
     ],
   },
 
+  // ────────────────────────────────────────
+  // 국가전문자격증 — 의료계열
+  // ────────────────────────────────────────
+
+  '안경사': {
+    name: '안경사',
+    icon: 'fa-glasses',
+    category: '의료·보건',
+    heroTitle: '2026년도 안경사 국가시험 합격 가이드',
+    heroDesc: '안경사 국가시험은 한국보건의료인국가시험원(국시원)에서 매년 1월 시행합니다. 안경광학과(3년제 이상) 졸업 예정·졸업자가 응시할 수 있으며, 시력 검사·안경 조제·콘택트렌즈 처방 전문가로서 안경원·안과·콘택트렌즈 전문점에서 활동합니다. 시광학·안경광학·콘택트렌즈학 이론과 임상 실습 병행이 합격의 핵심입니다.',
+    passRateSummary: '필기 70~80% | 실기 85~90%',
+    avgPassRate: '78%',
+    passRates: [
+      { year: 2020, written: 72, practical: 86 },
+      { year: 2021, written: 74, practical: 87 },
+      { year: 2022, written: 76, practical: 88 },
+      { year: 2023, written: 78, practical: 89 },
+      { year: 2024, written: 77, practical: 88 },
+    ],
+    schedules: [
+      { round: '2026년도 시험', writtenExam: '2026-01-17', writtenResult: '2026-02-19', practicalApply: '2026-02-20', practicalExam: '2026-03-08', finalResult: '2026-03-25' },
+    ],
+    milestones: [
+      { label: '필기시험', date: '2026-01-17' },
+      { label: '필기 합격 발표', date: '2026-02-19' },
+      { label: '실기시험', date: '2026-03-08' },
+      { label: '최종 합격 발표', date: '2026-03-25' },
+    ],
+    subjects: [
+      { name: '기초안경광학', desc: '빛의 성질, 굴절 원리, 렌즈 광학 이론 기초' },
+      { name: '임상시광학', desc: '시력 검사법, 굴절 이상(근시·원시·난시) 진단 및 교정 처방' },
+      { name: '안경렌즈', desc: '렌즈 재질·코팅·가공, 누진다초점 설계, 처방 해석' },
+      { name: '콘택트렌즈', desc: '소프트·하드 렌즈 적합 검사, 관리법, 합병증 대처' },
+      { name: '안경조제 및 가공', desc: '프레임 피팅, 렌즈 센터링, 에지 가공 실무' },
+      { name: '의료관계법규', desc: '의료기사 등에 관한 법률, 안경사 업무 범위, 결격 사유' },
+    ],
+    books: [
+      { title: '2026 안경사 국가시험 핵심요약 총정리', author: '안경국시연구회', publisher: '범문에듀케이션', year: 2025, rating: 4.7 },
+      { title: '2026 안경사 국가시험 기출문제 완전분석', author: '메디시언 편집부', publisher: '메디시언', year: 2025, rating: 4.6 },
+      { title: '2026 안경사 시광학·안경광학 핵심이론', author: '이종복', publisher: '신광출판사', year: 2025, rating: 4.5 },
+      { title: '안경사 콘택트렌즈학 완성', author: '한국안경사협회', publisher: '군자출판사', year: 2024, rating: 4.4 },
+    ],
+    defaultTodos: [
+      '출제 과목 및 비율 파악 후 학습 계획 수립',
+      '기초안경광학·임상시광학 핵심 이론 정리',
+      '콘택트렌즈 피팅·관리 기출문제 반복 풀이',
+      '안경 조제·가공 실기 실습 병행',
+      '의료관계법규 주요 조항 암기',
+    ],
+  },
+
+  '언어재활사': {
+    name: '언어재활사',
+    icon: 'fa-comments-medical',
+    category: '의료·보건',
+    heroTitle: '2026년도 언어재활사 국가시험 합격 가이드',
+    heroDesc: '언어재활사 국가시험은 한국보건의료인국가시험원(국시원)에서 매년 시행합니다. 언어치료학과 졸업 예정·졸업자가 응시할 수 있으며, 말더듬·조음장애·언어발달지연·실어증 등 의사소통 장애를 평가하고 치료하는 전문가입니다. 아동발달센터·재활병원·특수학교·복지관에서 수요가 빠르게 증가하고 있습니다.',
+    passRateSummary: '필기 75~85% | 실기 80~90%',
+    avgPassRate: '80%',
+    passRates: [
+      { year: 2020, written: 75, practical: 82 },
+      { year: 2021, written: 77, practical: 84 },
+      { year: 2022, written: 79, practical: 85 },
+      { year: 2023, written: 82, practical: 87 },
+      { year: 2024, written: 81, practical: 86 },
+    ],
+    schedules: [
+      { round: '2026년도 시험', writtenExam: '2026-01-17', writtenResult: '2026-02-19', practicalApply: '2026-02-20', practicalExam: '2026-03-08', finalResult: '2026-03-25' },
+    ],
+    milestones: [
+      { label: '필기시험', date: '2026-01-17' },
+      { label: '필기 합격 발표', date: '2026-02-19' },
+      { label: '실기시험', date: '2026-03-08' },
+      { label: '최종 합격 발표', date: '2026-03-25' },
+    ],
+    subjects: [
+      { name: '언어발달', desc: '정상 언어 발달 단계, 언어발달지연 평가 및 중재 접근법' },
+      { name: '조음음운장애', desc: '말소리 발달, 조음 오류 유형 분석, 치료 기법(최소대립자극법 등)' },
+      { name: '유창성장애', desc: '말더듬 원인·평가·치료(유창성 형성법, 말더듬 수정법)' },
+      { name: '신경언어장애', desc: '실어증·마비말장애·인지-의사소통 장애 평가 및 재활' },
+      { name: '음성장애', desc: '음성 산출 기제, 음성장애 유형 분류, 음성치료 기법' },
+      { name: '의사소통장애 관련법규', desc: '장애인복지법, 발달장애인법, 언어재활사 업무 범위 규정' },
+    ],
+    books: [
+      { title: '2026 언어재활사 국가시험 핵심요약 총정리', author: '언어치료국시연구회', publisher: '학지사', year: 2025, rating: 4.7 },
+      { title: '2026 언어재활사 국가시험 기출문제 분석집', author: '메디시언 편집부', publisher: '메디시언', year: 2025, rating: 4.6 },
+      { title: '2026 언어재활사 조음음운·유창성 집중공략', author: '김수진 외', publisher: '학지사', year: 2025, rating: 4.5 },
+      { title: '언어재활사 신경언어장애 임상 가이드', author: '심현섭 외', publisher: '시그마프레스', year: 2024, rating: 4.4 },
+    ],
+    defaultTodos: [
+      '출제 영역 및 비율 분석 후 학습 계획 수립',
+      '언어발달·조음음운장애 핵심 이론 정리',
+      '신경언어장애(실어증·마비말) 평가 기출 풀이',
+      '유창성·음성장애 치료 기법 암기',
+      '관련 법규 주요 조항 암기 및 모의고사 실전 풀이',
+    ],
+  },
+
+  '치과기공사': {
+    name: '치과기공사',
+    icon: 'fa-tooth',
+    category: '의료·보건',
+    heroTitle: '2026년도 치과기공사 국가시험 합격 가이드',
+    heroDesc: '치과기공사 국가시험은 한국보건의료인국가시험원(국시원)에서 매년 시행합니다. 치기공학과(3년제 이상) 졸업 예정·졸업자가 응시할 수 있으며, 보철물(크라운·브릿지·의치)·교정장치·임플란트 보조물을 제작하는 치과 기공 전문가입니다. 디지털 치과 기공(CAD/CAM) 도입 확대로 전문 인력 수요가 꾸준히 유지되고 있습니다.',
+    passRateSummary: '필기 65~75% | 실기 70~80%',
+    avgPassRate: '72%',
+    passRates: [
+      { year: 2020, written: 65, practical: 72 },
+      { year: 2021, written: 67, practical: 73 },
+      { year: 2022, written: 70, practical: 75 },
+      { year: 2023, written: 72, practical: 78 },
+      { year: 2024, written: 71, practical: 76 },
+    ],
+    schedules: [
+      { round: '2026년도 시험', writtenExam: '2026-01-17', writtenResult: '2026-02-19', practicalApply: '2026-02-20', practicalExam: '2026-03-14', finalResult: '2026-04-02' },
+    ],
+    milestones: [
+      { label: '필기시험', date: '2026-01-17' },
+      { label: '필기 합격 발표', date: '2026-02-19' },
+      { label: '실기시험', date: '2026-03-14' },
+      { label: '최종 합격 발표', date: '2026-04-02' },
+    ],
+    subjects: [
+      { name: '치과기공학 개론', desc: '치과기공 역사·직무 범위, 기공 재료의 종류와 특성' },
+      { name: '보철기공학', desc: '크라운·인레이·브릿지·완전의치 제작 술식, 납형 제작' },
+      { name: '교정기공학', desc: '가철성·고정성 교정장치 제작, 레진 교합기 조작법' },
+      { name: '도재기공학', desc: '포세린 축성·소성 기법, 색조 재현, 금속도재관 제작' },
+      { name: 'CAD/CAM 기공', desc: '디지털 인상, 설계 소프트웨어, 밀링·3D 프린팅 보철 제작' },
+      { name: '의료관계법규', desc: '의료기사 등에 관한 법률, 치과기공사 업무 범위 규정' },
+    ],
+    books: [
+      { title: '2026 치과기공사 국가시험 핵심요약 총정리', author: '치기공국시연구회', publisher: '군자출판사', year: 2025, rating: 4.7 },
+      { title: '2026 치과기공사 국가시험 기출문제 완전분석', author: '메디시언 편집부', publisher: '메디시언', year: 2025, rating: 4.6 },
+      { title: '2026 치과기공사 보철기공·도재기공 핵심이론', author: '대한치과기공사협회', publisher: '신광출판사', year: 2025, rating: 4.5 },
+      { title: '치과기공사 CAD/CAM 디지털 기공 실무', author: '이종혁 외', publisher: '대한나래출판사', year: 2024, rating: 4.4 },
+    ],
+    defaultTodos: [
+      '출제 과목 및 비율 파악 후 학습 계획 수립',
+      '보철기공·도재기공 핵심 술식 이론 정리',
+      '교정장치 제작 기출문제 반복 풀이',
+      'CAD/CAM 디지털 기공 이론 학습',
+      '실기 보철 제작 실습 및 의료관계법규 암기',
+    ],
+  },
+
+  '조산사': {
+    name: '조산사',
+    icon: 'fa-baby',
+    category: '의료·보건',
+    heroTitle: '2026년도 조산사 국가시험 합격 가이드',
+    heroDesc: '조산사 국가시험은 한국보건의료인국가시험원(국시원)에서 매년 시행합니다. 간호사 면허 취득 후 조산 관련 교육과정(1년 이상)을 이수한 자가 응시할 수 있으며, 정상 분만 시 태아 분만 보조·신생아 간호·산욕기 관리·모유수유 상담 등을 담당합니다. 분만실·조산원·모자보건 기관에서 활동하며 저출산 대응 정책으로 전문 인력 수요가 지속되고 있습니다.',
+    passRateSummary: '85~95%',
+    avgPassRate: '90%',
+    passRates: [
+      { year: 2020, written: 88, practical: null },
+      { year: 2021, written: 90, practical: null },
+      { year: 2022, written: 91, practical: null },
+      { year: 2023, written: 93, practical: null },
+      { year: 2024, written: 92, practical: null },
+    ],
+    schedules: [
+      { round: '2026년도 시험', writtenExam: '2026-01-17', writtenResult: '2026-02-19', practicalApply: '—', practicalExam: '—', finalResult: '2026-02-19' },
+    ],
+    milestones: [
+      { label: '필기시험', date: '2026-01-17' },
+      { label: '최종 합격 발표', date: '2026-02-19' },
+    ],
+    subjects: [
+      { name: '임신·분만 관리', desc: '정상 임신 과정, 산전 관리, 분만 진행 단계 평가 및 분만 보조' },
+      { name: '고위험 임신·분만', desc: '임신 합병증(전치태반·조기진통·임신중독증) 인식 및 응급 대처' },
+      { name: '신생아 간호', desc: '출생 직후 신생아 평가(Apgar), 신생아 집중 간호, 모유수유 상담' },
+      { name: '산욕기 간호', desc: '산후 자궁 복구, 산후 합병증(산후출혈·감염) 예방 및 간호' },
+      { name: '모자보건 및 관련법규', desc: '모자보건법, 의료법 상 조산사 업무 범위, 모자보건 정책' },
+    ],
+    books: [
+      { title: '2026 조산사 국가시험 핵심요약 총정리', author: '조산사국시연구회', publisher: '군자출판사', year: 2025, rating: 4.7 },
+      { title: '2026 조산사 국가시험 기출문제 분석집', author: '메디시언 편집부', publisher: '메디시언', year: 2025, rating: 4.6 },
+      { title: '분만 및 신생아 간호 핵심 이론', author: '대한조산사협회', publisher: '현문사', year: 2024, rating: 4.5 },
+      { title: '고위험 임신·산욕기 간호 임상 가이드', author: '이영숙 외', publisher: '수문사', year: 2024, rating: 4.4 },
+    ],
+    defaultTodos: [
+      '임신·분만 정상 과정 핵심 이론 정리',
+      '고위험 임신 합병증 유형별 간호 중재 암기',
+      '신생아 평가(Apgar) 및 응급 처치 기출 풀이',
+      '산욕기 합병증 예방 및 모유수유 상담 내용 정리',
+      '모자보건법·의료법 주요 조항 암기',
+    ],
+  },
+
 };
