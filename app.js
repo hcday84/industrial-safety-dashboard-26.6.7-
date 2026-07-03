@@ -451,44 +451,6 @@ function showWelcomeScreen() {
     initPublisherSearch();
     pubInput._pubBound = true;
   }
-  // 전체 자격증 목록 렌더링
-  renderCertBrowse();
-}
-
-function renderCertBrowse() {
-  const container = document.getElementById('welcome-cert-browse');
-  if (!container || typeof CERTIFICATIONS === 'undefined') return;
-
-  const allNames = Object.keys(CERTIFICATIONS);
-  const techNames = allNames.filter(n => !PROFESSIONAL_CERT_NAMES.has(n));
-  const proNames  = allNames.filter(n => PROFESSIONAL_CERT_NAMES.has(n));
-
-  const makeGrid = (names) => names.map(n =>
-    `<span class="browse-cert-tag" onclick="window.selectCert('${n}')">${n}</span>`
-  ).join('');
-
-  container.innerHTML = `
-    <div class="cert-browse-section">
-      <div class="cert-browse-header" onclick="this.parentElement.classList.toggle('collapsed')">
-        <span class="cert-browse-title">
-          <i class="fa-solid fa-toolbox"></i> 국가기술자격
-          <em class="cert-browse-count">${techNames.length}개</em>
-        </span>
-        <i class="fa-solid fa-chevron-down cert-browse-chevron"></i>
-      </div>
-      <div class="cert-browse-grid">${makeGrid(techNames)}</div>
-    </div>
-    <div class="cert-browse-section">
-      <div class="cert-browse-header" onclick="this.parentElement.classList.toggle('collapsed')">
-        <span class="cert-browse-title">
-          <i class="fa-solid fa-id-card"></i> 국가전문자격
-          <em class="cert-browse-count">${proNames.length}개</em>
-        </span>
-        <i class="fa-solid fa-chevron-down cert-browse-chevron"></i>
-      </div>
-      <div class="cert-browse-grid">${makeGrid(proNames)}</div>
-    </div>
-  `;
 }
 
 function restoreCalendarToDashboard() {
