@@ -3232,3 +3232,17 @@ button, input, select {
   color: #fff;
   border-color: rgba(79,156,249,0.5);
 }
+
+/* 웰컴 화면 자격증 카운트 숫자 강조 */
+#tech-cert-count {
+  font-size: 1.45em;
+  font-weight: 800;
+  color: #4f9cf9;
+  letter-spacing: -0.5px;
+}
+#pro-cert-count {
+  font-size: 1.45em;
+  font-weight: 800;
+  color: #56d9a0;
+  letter-spacing: -0.5px;
+}

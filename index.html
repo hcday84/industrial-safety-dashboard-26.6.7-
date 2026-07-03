@@ -166,6 +166,29 @@
     </div><!-- /.welcome-bottom-row -->
   </div>
 
+  <!-- 관리자 인증 모달 -->
+  <div id="admin-auth-overlay" style="display:none;">
+    <div id="admin-auth-modal">
+      <div class="admin-auth-icon"><i class="fa-solid fa-shield-halved"></i></div>
+      <h2 class="admin-auth-title">관리자 인증</h2>
+      <p class="admin-auth-desc">발주&amp;재고관리 모드는 관리자 전용입니다.<br>비밀번호를 입력해 주세요.</p>
+      <div class="admin-auth-input-wrap">
+        <i class="fa-solid fa-lock admin-auth-input-icon"></i>
+        <input type="password" id="admin-auth-input" placeholder="비밀번호 입력" autocomplete="off" />
+        <button type="button" id="admin-auth-toggle" tabindex="-1" title="비밀번호 표시/숨기기">
+          <i class="fa-solid fa-eye" id="admin-auth-eye"></i>
+        </button>
+      </div>
+      <div id="admin-auth-error" class="admin-auth-error" style="display:none;">
+        <i class="fa-solid fa-circle-exclamation"></i> 비밀번호가 올바르지 않습니다.
+      </div>
+      <div class="admin-auth-btns">
+        <button id="admin-auth-cancel" class="admin-auth-btn-cancel">취소</button>
+        <button id="admin-auth-confirm" class="admin-auth-btn-confirm">확인</button>
+      </div>
+    </div>
+  </div>
+
   <!-- 대시보드 컨텐츠 -->
   <div id="dashboard-content">
 
