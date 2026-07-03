@@ -5182,7 +5182,7 @@ const CERTIFICATIONS = {
     ],
   },
 
-  '물리치료사': {
+  '물리치료사_삭제됨_중복': {
     name: '물리치료사',
     icon: 'fa-hand-holding-medical',
     category: '의료·보건',
