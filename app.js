@@ -438,9 +438,14 @@ function showWelcomeScreen() {
   document.getElementById('global-search').placeholder = '자격증 이름을 입력하세요 (예: 전기기사)';
   document.title = '수험서 All in One 대시보드';
   // 자격증 갯수 자동 업데이트
-  const countEl = document.getElementById('cert-count');
-  if (countEl && typeof CERTIFICATIONS !== 'undefined') {
-    countEl.textContent = Object.keys(CERTIFICATIONS).length;
+  if (typeof CERTIFICATIONS !== 'undefined') {
+    const allNames = Object.keys(CERTIFICATIONS);
+    const proCount  = allNames.filter(n => PROFESSIONAL_CERT_NAMES.has(n)).length;
+    const techCount = allNames.length - proCount;
+    const techEl = document.getElementById('tech-cert-count');
+    const proEl  = document.getElementById('pro-cert-count');
+    if (techEl) techEl.textContent = techCount;
+    if (proEl)  proEl.textContent  = proCount;
   }
   // 달력 카드를 웰컴 화면 플레이스홀더로 이동
   const calCard    = document.getElementById('exam-calendar-card');
