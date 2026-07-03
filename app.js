@@ -1735,6 +1735,7 @@ window.switchTab = function(tab) {
   const dashboardContent = document.getElementById('dashboard-content');
 
   if (tab === 'inventory') {
+    if (!_adminAuthed) { showAdminAuth(() => window.switchTab('inventory')); return; }
     // 인벤토리로 이동 전 현재 화면 상태 저장
     window._prevDashboardState = {
       welcomeVisible: welcomeScreen && welcomeScreen.style.display !== 'none' && getComputedStyle(welcomeScreen).display !== 'none',
