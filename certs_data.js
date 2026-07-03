@@ -5182,50 +5182,6 @@ const CERTIFICATIONS = {
     ],
   },
 
-  '물리치료사_삭제됨_중복': {
-    name: '물리치료사',
-    icon: 'fa-hand-holding-medical',
-    category: '의료·보건',
-    heroTitle: '2026년도 물리치료사 국가시험 합격 가이드',
-    heroDesc: '물리치료사 국가시험은 한국보건의료인국가시험원(국시원)에서 매년 1월 시행합니다. 물리치료학과(3~4년제) 졸업 예정·졸업자가 응시할 수 있으며, 고령화 사회 진입에 따라 재활 전문 인력 수요가 꾸준히 증가하고 있습니다. 해부학·생리학 기반의 임상 물리치료 지식이 합격의 핵심입니다.',
-    passRateSummary: '85~90%',
-    avgPassRate: '87%',
-    passRates: [
-      { year: 2020, written: 84, practical: null },
-      { year: 2021, written: 86, practical: null },
-      { year: 2022, written: 88, practical: null },
-      { year: 2023, written: 89, practical: null },
-      { year: 2024, written: 87, practical: null },
-    ],
-    schedules: [
-      { round: '2026년도 시험', writtenExam: '2026-01-17', writtenResult: '2026-02-19', practicalApply: '—', practicalExam: '—', finalResult: '2026-02-19' },
-    ],
-    milestones: [
-      { label: '필기시험', date: '2026-01-17' },
-      { label: '최종 합격 발표', date: '2026-02-19' },
-    ],
-    subjects: [
-      { name: '해부학·생리학', desc: '근골격계·신경계 해부 구조, 운동생리, 신경생리 핵심 정리' },
-      { name: '근골격계 물리치료', desc: '정형외과적 평가, 도수치료, 운동치료, 통증 관리 기법' },
-      { name: '신경계 물리치료', desc: '뇌졸중·척수손상·파킨슨 등 신경계 질환 재활 접근법' },
-      { name: '전기·광선·수치료', desc: 'TENS·초음파·레이저·수치료 등 물리적 인자 치료법' },
-      { name: '의료관계법규', desc: '의료기사법, 의료법, 장애인복지법 관련 주요 규정' },
-    ],
-    books: [
-      { title: '2026 물리치료사 국가시험 핵심요약집', author: '대한물리치료사협회', publisher: '범문에듀케이션', year: 2025, rating: 4.7 },
-      { title: '2026 물리치료사 국가시험 기출문제집', author: '보건의료 국시연구회', publisher: '군자출판사', year: 2025, rating: 4.6 },
-      { title: '물리치료사 국가고시 1000제', author: '이패스코리아 편집부', publisher: '이패스코리아', year: 2025, rating: 4.5 },
-      { title: '물리치료사 임상실습 매뉴얼', author: '박은영 외', publisher: '현문사', year: 2024, rating: 4.4 },
-    ],
-    defaultTodos: [
-      '출제 과목·비율 파악 및 학습 계획 수립',
-      '해부학·생리학 근골격·신경계 핵심 정리',
-      '임상 물리치료 기출 문제 반복 풀이',
-      '의료관계법규 주요 조항 암기',
-      '모의고사 실전 풀이 및 오답 분석',
-    ],
-  },
-
   '작업치료사': {
     name: '작업치료사',
     icon: 'fa-hand-holding-medical',
