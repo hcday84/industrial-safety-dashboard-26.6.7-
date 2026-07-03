@@ -1669,6 +1669,62 @@ function initEventListeners() {
 })();
 
 // 탭 전환 (대시보드 ↔ 발주&재고관리)
+// ────────────────────────────────────────
+// 관리자 인증 모달
+// ────────────────────────────────────────
+const ADMIN_PW = 'Cert@2026!';
+let _adminAuthed = false;
+
+function showAdminAuth(onSuccess) {
+  const overlay = document.getElementById('admin-auth-overlay');
+  const input   = document.getElementById('admin-auth-input');
+  const errorEl = document.getElementById('admin-auth-error');
+  const toggle  = document.getElementById('admin-auth-toggle');
+  const eye     = document.getElementById('admin-auth-eye');
+  const cancel  = document.getElementById('admin-auth-cancel');
+  const confirm = document.getElementById('admin-auth-confirm');
+
+  overlay.style.display = 'flex';
+  input.value = '';
+  errorEl.style.display = 'none';
+  input.type = 'password';
+  eye.className = 'fa-solid fa-eye';
+  setTimeout(() => input.focus(), 80);
+
+  const cleanup = () => {
+    overlay.style.display = 'none';
+    input.removeEventListener('keydown', onKey);
+    confirm.onclick = null;
+    cancel.onclick  = null;
+    toggle.onclick  = null;
+  };
+
+  const attempt = () => {
+    if (input.value === ADMIN_PW) {
+      _adminAuthed = true;
+      cleanup();
+      onSuccess();
+    } else {
+      errorEl.style.display = 'flex';
+      input.classList.remove('shake');
+      void input.offsetWidth;
+      input.classList.add('shake');
+      input.value = '';
+      input.focus();
+    }
+  };
+
+  const onKey = (e) => { if (e.key === 'Enter') attempt(); if (e.key === 'Escape') cleanup(); };
+  input.addEventListener('keydown', onKey);
+  confirm.onclick = attempt;
+  cancel.onclick  = cleanup;
+  toggle.onclick  = () => {
+    input.type = input.type === 'password' ? 'text' : 'password';
+    eye.className = input.type === 'password' ? 'fa-solid fa-eye' : 'fa-solid fa-eye-slash';
+    input.focus();
+  };
+}
+
 window.switchTab = function(tab) {
   const inventoryPanel = document.getElementById('inventory-panel');
   const searchBar = document.getElementById('header-search-bar');
