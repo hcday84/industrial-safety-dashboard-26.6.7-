@@ -3151,3 +3151,84 @@ button, input, select {
   transition: opacity 0.2s;
 }
 .wlp-deploy-link:hover { opacity: 0.85; }
+
+/* ────────────────────────────────────────
+   전체 자격증 목록 (카테고리별 브라우즈)
+   ──────────────────────────────────────── */
+.welcome-cert-browse {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cert-browse-section {
+  background: var(--card-bg, #1e2533);
+  border: 1px solid var(--border-color, #2e3a4e);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.cert-browse-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  cursor: pointer;
+  user-select: none;
+  background: var(--card-header-bg, rgba(255,255,255,0.03));
+  transition: background 0.2s;
+}
+.cert-browse-header:hover { background: rgba(255,255,255,0.06); }
+.cert-browse-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary, #e2e8f0);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.cert-browse-title i { color: var(--accent, #4f9cf9); }
+.cert-browse-count {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted, #8899aa);
+  font-style: normal;
+  background: rgba(79,156,249,0.12);
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+.cert-browse-chevron {
+  font-size: 12px;
+  color: var(--text-muted, #8899aa);
+  transition: transform 0.25s;
+}
+.cert-browse-section.collapsed .cert-browse-chevron { transform: rotate(-90deg); }
+.cert-browse-grid {
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+.cert-browse-section.collapsed .cert-browse-grid {
+  display: none;
+}
+.browse-cert-tag {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary, #b0bec5);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border-color, #2e3a4e);
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s, border-color 0.18s;
+}
+.browse-cert-tag:hover {
+  background: rgba(79,156,249,0.18);
+  color: #fff;
+  border-color: rgba(79,156,249,0.5);
+}
