@@ -1672,7 +1672,7 @@ function initEventListeners() {
 // ────────────────────────────────────────
 // 관리자 인증 모달
 // ────────────────────────────────────────
-const ADMIN_PW = 'Cert@2026!';
+const ADMIN_PW = 'dnftks0325!!';
 let _adminAuthed = false;
 
 function showAdminAuth(onSuccess) {
