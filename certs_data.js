@@ -15564,6 +15564,43 @@ const CERTIFICATIONS = {
     ],
   },
 
+  'TOEIC Speaking': {
+    name: 'TOEIC Speaking', icon: 'fa-microphone-lines', category: '민간자격 · 어학',
+    heroTitle: '2026년도 TOEIC Speaking 고득점 전략',
+    heroDesc: 'TOEIC Speaking은 ETS가 개발하고 YBM이 국내 시행하는 영어 말하기 평가 시험으로, 200점 만점에 레벨 1~8로 등급을 부여합니다. 공공기관·대기업 취업·승진 시 OPIc과 함께 대표적인 영어 스피킹 지표로 활용됩니다. 사진 묘사·의견 제시·제안 답변 등 11개 문항을 약 20분간 응시하며, 매달 정기 시험이 진행됩니다.',
+    passRateSummary: 'Level 6(130점) 이상 약 30% | Level 7(160점) 이상 약 10%', avgPassRate: 'Level 6 이상 목표',
+    passRates: [
+      { year: 2020, written: 28, practical: null }, { year: 2021, written: 30, practical: null },
+      { year: 2022, written: 31, practical: null }, { year: 2023, written: 30, practical: null },
+      { year: 2024, written: 32, practical: null },
+    ],
+    schedules: [
+      { round: '2026년 7월', writtenExam: '2026-07-20', writtenResult: '2026-08-05', practicalApply: '—', practicalExam: '—', finalResult: '2026-08-05' },
+      { round: '2026년 8월', writtenExam: '2026-08-16', writtenResult: '2026-09-02', practicalApply: '—', practicalExam: '—', finalResult: '2026-09-02' },
+      { round: '2026년 9월', writtenExam: '2026-09-20', writtenResult: '2026-10-07', practicalApply: '—', practicalExam: '—', finalResult: '2026-10-07' },
+      { round: '2026년 10월', writtenExam: '2026-10-18', writtenResult: '2026-11-04', practicalApply: '—', practicalExam: '—', finalResult: '2026-11-04' },
+    ],
+    milestones: [
+      { label: '7월 시험', date: '2026-07-20' }, { label: '8월 시험', date: '2026-08-16' },
+      { label: '9월 시험', date: '2026-09-20' }, { label: '10월 시험', date: '2026-10-18' },
+    ],
+    subjects: [
+      { name: 'Part 1 (문장 읽기)', desc: '발음·억양·강세 정확도 평가, 끊어 읽기 훈련 필수' },
+      { name: 'Part 2 (사진 묘사)', desc: '인물·장소·동작·분위기를 논리적으로 30초 내 묘사' },
+      { name: 'Part 3 (질문에 답하기)', desc: '즉흥 질문 3개에 각 15~30초 자연스러운 답변 구사' },
+      { name: 'Part 4 (정보 활용 답변)', desc: '표·일정 등 자료 기반으로 3개 질문에 정확히 답변' },
+      { name: 'Part 5 (의견 제시)', desc: '주제에 대한 찬반·비교 의견을 60초 내 논리적으로 전달' },
+    ],
+    books: [],
+    defaultTodos: [
+      'Part 1 발음 교정: 받침 발음(ㄹ·ㄴ 영어 대응) 집중 훈련',
+      'Part 2 사진 묘사 30초 템플릿 암기 후 매일 1장 연습',
+      'Part 3 즉흥 답변 속도 향상 — 타이머 15초 훈련',
+      'Part 4 표·일정 보며 정보 정확히 전달하는 연습 10회',
+      '실전 모의시험 월 2회 + 녹음 후 자가 채점',
+    ],
+  },
+
   'OPIc': {
     name: 'OPIc', icon: 'fa-microphone', category: '민간자격 · 어학',
     heroTitle: '2026년도 OPIc 고등급 전략',
