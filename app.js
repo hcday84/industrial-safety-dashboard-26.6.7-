@@ -1417,6 +1417,30 @@ function renderRoadmap(cert) {
 // 16. 자격증 검색 드롭다운
 // ============================================
 
+// ── 받침 감지 (으로/로 조사 선택) ────────────────────────────────────────────
+function hasBatchim(char) {
+  const code = char.charCodeAt(0) - 0xAC00;
+  return code >= 0 && code <= 11171 && (code % 28) !== 0;
+}
+function roSuffix(name) {
+  return hasBatchim(name[name.length - 1]) ? '으로' : '로';
+}
+
+// ── 오타 교정 토스트 알림 ─────────────────────────────────────────────────────
+function showCorrectionToast(originalQuery, correctedName) {
+  const ro = roSuffix(correctedName);
+  let toast = document.getElementById('cert-correction-toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'cert-correction-toast';
+    document.body.appendChild(toast);
+  }
+  toast.innerHTML = `<i class="fa-solid fa-spell-check"></i> <b>${originalQuery}</b> 결과가 없어 <b>${correctedName}</b>(${ro}) 검색되었어요.`;
+  toast.classList.add('visible');
+  clearTimeout(toast._timer);
+  toast._timer = setTimeout(() => toast.classList.remove('visible'), 4000);
+}
+
 // ── 레벤슈타인 편집거리 (오타 교정) ─────────────────────────────────────────
 function levenshtein(a, b) {
   const m = a.length, n = b.length;
