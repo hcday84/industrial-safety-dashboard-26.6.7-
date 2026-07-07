@@ -1164,7 +1164,7 @@ window._nlFallback = async function(img) {
 async function initNLBookImages() {
   // imageUrl 없는 카드(data-nl-title은 있고 src 비어있는 img)만 처리
   const imgs = Array.from(document.querySelectorAll('#books-section img[data-nl-title]'))
-    .filter(img => !img.src || img.src === window.location.href);
+    .filter(img => img.getAttribute('src') === '' || img.getAttribute('src') === null || !img.src || img.src === window.location.href || img.src === window.location.origin + '/');
   if (!imgs.length) return;
 
   await Promise.all(imgs.map(async (img) => {
