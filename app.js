@@ -247,9 +247,9 @@ function initMonthlySection() {
 
   function renderMonthlyResult(month) {
     const data = fetchAllMonthlyExams();
-    const { written, practical } = data[month];
+    const { written, practical, single } = data[month];
 
-    if (!written.length && !practical.length) {
+    if (!written.length && !practical.length && !single.length) {
       resultEl.innerHTML = `<p class="monthly-empty"><i class="fa-solid fa-circle-info"></i> ${month}월에 예정된 시험이 없습니다.</p>`;
       return;
     }
@@ -261,7 +261,7 @@ function initMonthlySection() {
           <h3 class="monthly-group-title monthly-group-title--${type}"><i class="${icon}"></i> ${label} <span class="monthly-count">${items.length}종</span></h3>
           <div class="monthly-cert-list">
             ${items.map(item => `
-              <div class="monthly-cert-card monthly-cert-card--${type}">
+              <div class="monthly-cert-card monthly-cert-card--${type}" onclick="switchCertification('${item.certName}')" style="cursor:pointer">
                 <div class="monthly-cert-header">
                   <span class="monthly-cert-name">${item.certName}</span>
                   <span class="monthly-cert-round">${item.round} · ${item.dateRange}</span>
@@ -275,8 +275,9 @@ function initMonthlySection() {
 
     resultEl.innerHTML = `
       <div class="monthly-columns">
-        ${renderGroup(written, '필기 시험', 'fa-solid fa-pencil', 'written')}
-        ${renderGroup(practical, '실기 시험', 'fa-solid fa-hammer', 'practical')}
+        ${renderGroup(written,   '필기 시험', 'fa-solid fa-pencil',    'written')}
+        ${renderGroup(practical, '실기 시험', 'fa-solid fa-hammer',    'practical')}
+        ${renderGroup(single,    '단일 시험', 'fa-solid fa-file-lines', 'single')}
       </div>
     `;
   }
