@@ -447,13 +447,16 @@ function showWelcomeScreen() {
   document.title = '수험서 All in One 대시보드';
   // 자격증 갯수 자동 업데이트
   if (typeof CERTIFICATIONS !== 'undefined') {
-    const allNames = Object.keys(CERTIFICATIONS);
-    const proCount  = allNames.filter(n => PROFESSIONAL_CERT_NAMES.has(n)).length;
-    const techCount = allNames.length - proCount;
-    const techEl = document.getElementById('tech-cert-count');
-    const proEl  = document.getElementById('pro-cert-count');
+    const allNames   = Object.keys(CERTIFICATIONS);
+    const privCount  = allNames.filter(n => PRIVATE_CERT_NAMES.has(n)).length;
+    const proCount   = allNames.filter(n => PROFESSIONAL_CERT_NAMES.has(n)).length;
+    const techCount  = allNames.length - proCount - privCount;
+    const techEl  = document.getElementById('tech-cert-count');
+    const proEl   = document.getElementById('pro-cert-count');
+    const privEl  = document.getElementById('priv-cert-count');
     if (techEl) techEl.textContent = techCount;
     if (proEl)  proEl.textContent  = proCount;
+    if (privEl) privEl.textContent = privCount;
   }
   // 달력 카드를 웰컴 화면 플레이스홀더로 이동
   const calCard    = document.getElementById('exam-calendar-card');
