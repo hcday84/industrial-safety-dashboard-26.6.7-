@@ -1416,14 +1416,132 @@ function renderRoadmap(cert) {
 // ============================================
 // 16. 자격증 검색 드롭다운
 // ============================================
+
+// ── 초성 추출 ────────────────────────────────────────────────────────────────
+const CHOSUNG = ['ㄱ','ㄲ','ㄴ','ㄷ','ㄸ','ㄹ','ㅁ','ㅂ','ㅃ','ㅅ','ㅆ','ㅇ','ㅈ','ㅉ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
+function extractChosung(str) {
+  return [...str].map(ch => {
+    const code = ch.charCodeAt(0) - 0xAC00;
+    if (code < 0 || code > 11171) return ch;
+    return CHOSUNG[Math.floor(code / 28 / 21)];
+  }).join('');
+}
+
+// ── 별칭 맵 ──────────────────────────────────────────────────────────────────
+const CERT_ALIASES = {
+  // 영어 자격
+  '토익': 'TOEIC', '토플': 'TOEFL', '아이엘츠': 'IELTS', '오픽': 'OPIc',
+  '탑': 'TOPIK', '토픽': 'TOPIK', '한국어능력': 'TOPIK',
+  '제이엘피티': 'JLPT', '일본어능력': 'JLPT',
+  '에이치에스케이': 'HSK', '중국어능력': 'HSK',
+  // IT
+  '정처기': '정보처리기사', '정처산': '정보처리산업기사', '정보처리': '정보처리기사',
+  '빅데': '빅데이터분석기사', '빅분기': '빅데이터분석기사',
+  '보안기사': '정보보안기사', '정보보안': '정보보안기사',
+  'sql개발자': 'SQLD', '에스큐엘': 'SQLD',
+  '네관사': '네트워크관리사2급', '네트워크': '네트워크관리사2급',
+  '리눅스': '리눅스마스터2급', '리마': '리눅스마스터2급',
+  '아이티큐': 'ITQ', '모스': 'MOS',
+  // 금융/회계
+  '공인회계': '공인회계사', '회계사': '공인회계사',
+  '세무': '세무사', '세무사시험': '세무사',
+  '재경': '재경관리사', '에프에이티': 'FAT', '티에이티': 'TAT',
+  '에이에프피케이': 'AFPK', '씨에프피': 'CFP',
+  '펀드': '펀드투자권유대행인', '매경': '매경TEST', '테샛': 'TESAT',
+  'erp': 'ERP정보관리사',
+  // 건설/기계/전기
+  '전기기': '전기기사', '전기산': '전기산업기사', '전기공': '전기공사기사',
+  '전기기능': '전기기능사',
+  '소방설비': '소방설비기사(전기)', '소방전기': '소방설비기사(전기)',
+  '소방기계': '소방설비기사(기계)', '소방': '소방설비기사(전기)',
+  '건축기': '건축기사', '토목기': '토목기사',
+  '기계기': '일반기계기사', '용접기': '용접기사',
+  // 안전
+  '산업안전': '산업안전기사', '산안기': '산업안전기사',
+  '위험물': '위험물산업기사', '가스기': '가스기사',
+  // 의료/보건
+  '간호사': '간호사 국가시험', '간호': '간호사 국가시험',
+  '물치': '물리치료사', '작치': '작업치료사',
+  '방사선': '방사선사', '임상병리': '임상병리사',
+  '치위생': '치과위생사', '치기공': '치과기공사',
+  '요양보호': '요양보호사', '응급구조': '응급구조사',
+  '언어재활': '언어재활사', '언어치료': '언어재활사',
+  '임상심리': '임상심리사', '상담심리': '심리상담사',
+  // 복지/교육
+  '사복': '사회복지사', '사회복지': '사회복지사',
+  '청상': '청소년상담사', '청소년상담': '청소년상담사',
+  '청지': '청소년지도사', '청소년지도': '청소년지도사',
+  '임용': '임용고시', '교원임용': '임용고시', '임용시험': '임용고시',
+  // 관광
+  '국내여행': '국내관광안내사', '국내관광': '국내관광안내사',
+  '국외여행': '국외관광안내사', '국외관광': '국외관광안내사', 'tc': '국외관광안내사',
+  '관광통역': '관광통역안내사', '통역안내': '관광통역안내사',
+  // 한국어/글쓰기
+  '한국사': '한국사능력검정시험', '한능검': '한국사능력검정시험',
+  '실용글쓰기': '한국실용글쓰기', '한실글': '한국실용글쓰기',
+  'kbs한국어': 'KBS한국어능력시험', '방송국어': 'KBS한국어능력시험',
+  '한국어교원': '한국어교원', '한어교': '한국어교원',
+  '한자': '한자능력검정', '한자검정': '한자능력검정',
+  'kiip': '사회통합프로그램', '사회통합': '사회통합프로그램',
+  // 음식/요리
+  '조리기': '한식조리기능사', '한식': '한식조리기능사',
+  '제과': '제과기능사', '제빵': '제빵기능사',
+  '바리스타': '바리스타2급', '커피': '바리스타2급',
+  '소믈': '소믈리에', '바텐': '바텐더',
+  // 운전
+  '운전': '운전면허(1종 보통)', '면허': '운전면허(1종 보통)',
+};
+
+// ── 공백 제거 정규화 ──────────────────────────────────────────────────────────
+function normalize(str) {
+  return str.toLowerCase().replace(/\s+/g, '');
+}
+
+// ── 부분 토큰 매칭 (입력 단어 모두 포함 여부) ────────────────────────────────
+function tokenMatch(name, q) {
+  const tokens = q.trim().split(/\s+/).filter(Boolean);
+  const n = normalize(name);
+  return tokens.every(t => n.includes(normalize(t)));
+}
+
+// ── 통합 검색 스코어 ─────────────────────────────────────────────────────────
+function certSearchScore(name, q) {
+  const nq   = normalize(q);
+  const nn   = normalize(name);
+  const csq  = extractChosung(q);
+  const csn  = extractChosung(name);
+
+  if (nn === nq)                 return 100; // 완전 일치
+  if (nn.startsWith(nq))        return 90;  // 앞부분 일치
+  if (nn.includes(nq))          return 80;  // 포함
+  if (csn === csq)               return 75;  // 초성 완전 일치
+  if (csn.startsWith(csq))      return 65;  // 초성 앞부분
+  if (csn.includes(csq))        return 55;  // 초성 포함
+  if (tokenMatch(name, q))      return 50;  // 토큰 매칭
+  return 0;
+}
+
 function renderCertDropdown(query) {
   const dropdown = document.getElementById('cert-dropdown');
   if (!query.trim()) { dropdown.classList.remove('visible'); return; }
 
-  const q = query.toLowerCase();
-  const matches = Object.keys(CERTIFICATIONS).filter(name =>
-    name.toLowerCase().includes(q) || q.includes(name.toLowerCase().substring(0, 2))
-  ).sort((a, b) => a.localeCompare(b, 'ko'));
+  // 별칭 확장: 쿼리가 alias에 일치하면 해당 자격증명도 후보로 추가
+  const aliasKey = normalize(query);
+  const aliasTarget = Object.keys(CERT_ALIASES).find(k => normalize(k) === aliasKey || aliasKey.includes(normalize(k)));
+  const extraName = aliasTarget ? CERT_ALIASES[aliasTarget] : null;
+
+  const allNames = Object.keys(CERTIFICATIONS);
+  const scored = allNames
+    .map(name => {
+      let score = certSearchScore(name, query);
+      // 별칭으로 직접 지목된 경우 최상위 부스트
+      if (extraName && normalize(name) === normalize(extraName)) score = Math.max(score, 95);
+      return { name, score };
+    })
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name, 'ko'));
+
+  const matches = scored.map(({ name }) => name);
 
   if (matches.length === 0) { dropdown.classList.remove('visible'); return; }
 
