@@ -2924,8 +2924,6 @@ button, input, select {
 .monthly-cert-card:hover {
   opacity: 0.8;
 }
-.monthly-cert-card {
-}
 
 /* 필기 카드: 파란 좌측 테두리 + 연한 파란 배경 */
 .monthly-cert-card--written {
