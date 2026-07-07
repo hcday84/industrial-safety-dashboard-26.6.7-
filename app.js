@@ -1417,6 +1417,21 @@ function renderRoadmap(cert) {
 // 16. 자격증 검색 드롭다운
 // ============================================
 
+// ── 레벤슈타인 편집거리 (오타 교정) ─────────────────────────────────────────
+function levenshtein(a, b) {
+  const m = a.length, n = b.length;
+  const dp = Array.from({ length: m + 1 }, (_, i) => [i, ...Array(n).fill(0)]);
+  for (let j = 0; j <= n; j++) dp[0][j] = j;
+  for (let i = 1; i <= m; i++)
+    for (let j = 1; j <= n; j++)
+      dp[i][j] = a[i-1] === b[j-1]
+        ? dp[i-1][j-1]
+        : 1 + Math.min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]);
+  return dp[m][n];
+}
+// 쿼리 길이에 따라 허용 오타 수: ~3자=1개, 4자↑=2개
+function fuzzyThreshold(q) { return q.length <= 3 ? 1 : 2; }
+
 // ── 초성 추출 ────────────────────────────────────────────────────────────────
 const CHOSUNG = ['ㄱ','ㄲ','ㄴ','ㄷ','ㄸ','ㄹ','ㅁ','ㅂ','ㅃ','ㅅ','ㅆ','ㅇ','ㅈ','ㅉ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
 function extractChosung(str) {
