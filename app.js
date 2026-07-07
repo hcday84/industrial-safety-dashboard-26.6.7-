@@ -180,9 +180,8 @@ function fetchAllMonthlyExams() {
   if (_monthlyExamCache) return _monthlyExamCache;
 
   const monthData = {};
-  for (let m = 1; m <= 12; m++) monthData[m] = { written: [], practical: [] };
+  for (let m = 1; m <= 12; m++) monthData[m] = { written: [], practical: [], single: [] };
 
-  // "YYYY-MM-DD [~ YYYY-MM-DD]" → 시작 월(숫자)과 표시용 "MM/DD[~ MM/DD]" 변환
   const parseExamRange = str => {
     if (!str) return null;
     const range = str.match(/(\d{4})-(\d{2})-(\d{2})\s*~\s*\d{4}-(\d{2})-(\d{2})/);
@@ -192,21 +191,31 @@ function fetchAllMonthlyExams() {
     return null;
   };
 
+  const hasValidDate = str => !!(str && str !== '-' && str !== '—' && /\d{4}-\d{2}-\d{2}/.test(str));
+
   Object.entries(CERTIFICATIONS).forEach(([certName, cert]) => {
     if (!cert.schedules?.length) return;
     cert.schedules.forEach(s => {
       const written = parseExamRange(s.writtenExam);
-      if (written) monthData[written.month].written.push({ certName, round: s.round, dateRange: written.display });
+      const hasPractical = hasValidDate(s.practicalExam);
+
+      if (written) {
+        if (hasPractical) {
+          monthData[written.month].written.push({ certName, round: s.round, dateRange: written.display });
+        } else {
+          monthData[written.month].single.push({ certName, round: s.round, dateRange: written.display });
+        }
+      }
 
       const practical = parseExamRange(s.practicalExam);
       if (practical) monthData[practical.month].practical.push({ certName, round: s.round, dateRange: practical.display });
     });
   });
 
-  // 가나다순 정렬
   for (let m = 1; m <= 12; m++) {
     monthData[m].written.sort((a, b) => a.certName.localeCompare(b.certName, 'ko'));
     monthData[m].practical.sort((a, b) => a.certName.localeCompare(b.certName, 'ko'));
+    monthData[m].single.sort((a, b) => a.certName.localeCompare(b.certName, 'ko'));
   }
 
   _monthlyExamCache = monthData;
