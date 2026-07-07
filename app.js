@@ -1533,6 +1533,18 @@ function certSearchScore(name, q) {
   if (csn.startsWith(csq))      return 65;  // 초성 앞부분
   if (csn.includes(csq))        return 55;  // 초성 포함
   if (tokenMatch(name, q))      return 50;  // 토큰 매칭
+
+  // 오타 교정: 편집거리가 임계값 이하이면 부분 문자열 슬라이딩 체크
+  const thr = fuzzyThreshold(nq);
+  if (nq.length >= 2) {
+    // 자격증명의 각 부분 문자열 슬라이딩 윈도우와 비교
+    const winLen = nq.length;
+    for (let i = 0; i <= nn.length - winLen; i++) {
+      if (levenshtein(nn.slice(i, i + winLen), nq) <= thr) return 40;
+    }
+    // 전체 이름과 비교 (짧은 자격증명 대응)
+    if (levenshtein(nn, nq) <= thr) return 35;
+  }
   return 0;
 }
 
