@@ -1470,7 +1470,7 @@ function extractChosung(str) {
 const CERT_ALIASES = {
   // 영어 자격
   '토익': 'TOEIC', '토플': 'TOEFL', '아이엘츠': 'IELTS', '오픽': 'OPIc',
-  '탑': 'TOPIK', '토픽': 'TOPIK', '한국어능력': 'TOPIK',
+  '탑': '한국어능력시험(TOPIK)', '토픽': '한국어능력시험(TOPIK)', '한국어능력': '한국어능력시험(TOPIK)',
   '제이엘피티': 'JLPT', '일본어능력': 'JLPT',
   '에이치에스케이': 'HSK', '중국어능력': 'HSK',
   // IT
