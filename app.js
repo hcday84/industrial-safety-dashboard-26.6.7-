@@ -1572,7 +1572,19 @@ function renderCertDropdown(query) {
 
   if (matches.length === 0) { dropdown.classList.remove('visible'); return; }
 
-  dropdown.innerHTML = matches.map(name => {
+  // 오타 교정 안내: 최고 스코어가 오타교정(≤40)이고 입력값과 결과가 다를 때만 표시
+  const topScore = scored[0].score;
+  const topName  = scored[0].name;
+  const isFuzzyOnly = topScore <= 40 && normalize(topName) !== normalize(query);
+  const ro = topName.match(/[가-힣]$/) ? (/[ㄱ-ㅎ]/.test(String.fromCharCode(topName.charCodeAt(topName.length-1) - 0xAC00)) ? '으로' : '로') : '로';
+  const correctionBanner = isFuzzyOnly
+    ? `<div class="cert-dd-correction">
+         <i class="fa-solid fa-spell-check"></i>
+         <span><b>${query}</b> 결과가 없어 <b>${topName}</b>(${ro}) 검색되었어요.</span>
+       </div>`
+    : '';
+
+  dropdown.innerHTML = correctionBanner + matches.map(name => {
     const cert = CERTIFICATIONS[name];
     return `
       <div class="cert-dropdown-item" onclick="selectCert('${name}')">
