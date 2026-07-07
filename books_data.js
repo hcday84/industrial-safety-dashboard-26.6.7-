@@ -2020,6 +2020,11 @@ const REAL_BOOKS = {
     { title: '토익 보카 단어장 (빈출 1200)', author: 'YBM 어학연구소', publisher: 'YBM', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.5, reviews: 2134, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=토익+보카+단어장+YBM' },
   ],
 
+  'TOEIC Speaking': [
+    { title: '해커스 토익스피킹 START', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.8, reviews: 2341, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=해커스+토익스피킹+START' },
+    { title: 'YBM 토익스피킹 실전 모의테스트 15회', author: 'YBM 어학연구소', publisher: 'YBM', price: 14400, originalPrice: 16000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=YBM+토익스피킹+실전+모의테스트' },
+  ],
+
   'OPIc': [
     { title: '10일 만에 끝내는 해커스 OPIc 오픽 Advanced 공략', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.8, reviews: 3456, tags: ['베스트'], imageUrl: KB('S000202406853'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000202406853' },
     { title: '10일 만에 끝내는 해커스 OPIc 오픽 START: Intermediate 공략', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.7, reviews: 2987, tags: ['베스트'], imageUrl: KB('S000208578134'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000208578134' },
