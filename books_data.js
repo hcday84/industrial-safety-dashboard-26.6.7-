@@ -2268,7 +2268,7 @@ const REAL_BOOKS = {
     { title: '관광통역안내사 기출문제 완전정복 (최근 5개년)', author: '관광통역수험연구회', publisher: '예문사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=관광통역안내사+기출+5개년' },
   ],
 
-  'TOPIK': [
+  '한국어능력시험(TOPIK)': [
     { title: '한국어능력시험 TOPIK II 한권으로 끝내기', author: '이지원', publisher: '시원스쿨랩', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 5432, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=TOPIK+II+한권으로끝내기' },
     { title: '해커스 TOPIK II 한국어능력시험 실전 기출', author: '해커스 한국어연구소', publisher: '해커스어학연구소', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.8, reviews: 4321, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=해커스+TOPIK+II+실전기출' },
     { title: 'TOPIK II 쓰기 완전정복 (작문 전략서)', author: '김중섭', publisher: '다락원', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.7, reviews: 3210, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=TOPIK+II+쓰기+완전정복' },
