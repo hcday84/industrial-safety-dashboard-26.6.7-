@@ -16851,8 +16851,8 @@ const CERTIFICATIONS = {
     ],
   },
 
-  'TOPIK': {
-    name: 'TOPIK (한국어능력시험)',
+  '한국어능력시험(TOPIK)': {
+    name: '한국어능력시험(TOPIK)',
     icon: 'fa-korean-won-sign',
     category: '민간자격 · 어학',
     heroTitle: '2026년도 TOPIK 한국어능력시험 합격 가이드',
