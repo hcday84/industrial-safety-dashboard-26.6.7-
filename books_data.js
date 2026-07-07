@@ -2228,6 +2228,86 @@ const REAL_BOOKS = {
     { title: 'IELTS Speaking 9.0 공략법', author: 'Caroline Brown', publisher: '시원스쿨랩', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=IELTS+Speaking+9.0' },
   ],
 
+  '한국사능력검정시험': [
+    { title: '2026 큰별쌤 최태성의 별별한국사 심화 상·하', author: '최태성', publisher: '이투스북', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.9, reviews: 12543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=최태성+별별한국사+심화+2026' },
+    { title: '2026 해커스 한국사능력검정시험 심화 (1·2·3급) 한권완성', author: '해커스 역사연구소', publisher: '해커스패스', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 9876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=해커스+한국사능력검정+심화+2026' },
+    { title: '2026 시나공 한국사능력검정시험 심화 기출문제집', author: '길벗 역사연구소', publisher: '길벗', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.8, reviews: 7654, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=시나공+한국사능력검정+심화+기출+2026' },
+    { title: '2026 에듀윌 한국사능력검정시험 2주끝장 심화', author: '에듀윌 한국사연구소', publisher: '에듀윌', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.7, reviews: 6543, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=에듀윌+한국사능력검정+2주끝장+2026' },
+    { title: '2026 이투스 한국사능력검정시험 기출 500제 심화', author: '이투스 한국사팀', publisher: '이투스북', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.7, reviews: 5432, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이투스+한국사능력검정+기출500제+2026' },
+  ],
+
+  '사회통합프로그램': [
+    { title: '사회통합프로그램 종합평가 한국어·한국사회이해 교재 (법무부 공식)', author: '법무부 출입국·외국인청', publisher: '법무부', price: 20000, originalPrice: 20000, discount: '0%', rating: 4.7, reviews: 2345, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회통합프로그램+종합평가+교재' },
+    { title: 'KIIP 한국어와 한국문화 중급 1 (3단계)', author: '국립국어원', publisher: '하우', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=KIIP+한국어+한국문화+중급' },
+    { title: 'KIIP 한국사회이해 (5단계 기본)', author: '국립국어원', publisher: '하우', price: 12000, originalPrice: 13000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=KIIP+한국사회이해+5단계' },
+    { title: '사회통합프로그램 종합평가 기출문제집 (최신판)', author: '이민자교육연구소', publisher: '박문각', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회통합프로그램+종합평가+기출' },
+    { title: '귀화를 위한 한국사회이해 완전정복', author: '한국이민연구소', publisher: '시대에듀', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=귀화+한국사회이해+완전정복' },
+  ],
+
+  '국내관광안내사': [
+    { title: '2026 국내여행안내사 한권으로 끝내기', author: '관광자격연구소', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=국내여행안내사+한권끝내기+2026' },
+    { title: '2026 국내여행안내사 필기+면접 완전정복', author: '관광수험연구회', publisher: '예문사', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=국내여행안내사+필기+면접+2026' },
+    { title: '관광자원해설사 핵심정리 (관광지·문화재 해설)', author: '한국관광공사 교육팀', publisher: '백산출판사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=관광자원해설사+핵심정리' },
+    { title: '국내여행안내사 기출문제 완전분석 (최근 5개년)', author: '관광자격연구소', publisher: '나무와숲', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=국내여행안내사+기출문제+5개년' },
+    { title: '관광법규 완전정복 (관광기본법·관광진흥법)', author: '이재영', publisher: '백산출판사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 765, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=관광법규+완전정복+관광진흥법' },
+  ],
+
+  '국외관광안내사': [
+    { title: '국외여행인솔자(TC) 소양교육 교재 (한국여행업협회 공식)', author: '한국여행업협회', publisher: '한국여행업협회', price: 20000, originalPrice: 20000, discount: '0%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=국외여행인솔자+소양교육+교재' },
+    { title: 'TC(여행인솔자) 실무 완전 가이드', author: '김정훈', publisher: '백산출판사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1234, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=TC+여행인솔자+실무+가이드' },
+    { title: '해외여행 인솔 실무 & 비상상황 대처 매뉴얼', author: '관광인솔연구소', publisher: '예문사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.6, reviews: 987, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=해외여행+인솔실무+비상상황' },
+    { title: '국가별 입국 절차·비자·문화 완전 정리', author: '해외여행실무연구소', publisher: '시대에듀', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 765, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=국가별+입국절차+비자+문화' },
+    { title: '관광법규+여행실무 핵심요약 (TC 시험 대비)', author: '관광수험연구회', publisher: '백산출판사', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.4, reviews: 543, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=관광법규+여행실무+핵심요약+TC' },
+  ],
+
+  '관광통역안내사': [
+    { title: '2026 관광통역안내사 영어 한권으로 합격', author: '관광자격연구소', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=관광통역안내사+영어+2026' },
+    { title: '2026 관광통역안내사 중국어 한권으로 합격', author: '관광자격연구소', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=관광통역안내사+중국어+2026' },
+    { title: '2026 관광통역안내사 일본어 한권으로 합격', author: '관광자격연구소', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=관광통역안내사+일본어+2026' },
+    { title: '관광통역안내사 관광국사·관광자원해설 핵심정리', author: '이재영', publisher: '백산출판사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=관광통역안내사+관광국사+관광자원해설' },
+    { title: '관광통역안내사 기출문제 완전정복 (최근 5개년)', author: '관광통역수험연구회', publisher: '예문사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=관광통역안내사+기출+5개년' },
+  ],
+
+  'TOPIK': [
+    { title: '한국어능력시험 TOPIK II 한권으로 끝내기', author: '이지원', publisher: '시원스쿨랩', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 5432, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=TOPIK+II+한권으로끝내기' },
+    { title: '해커스 TOPIK II 한국어능력시험 실전 기출', author: '해커스 한국어연구소', publisher: '해커스어학연구소', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.8, reviews: 4321, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=해커스+TOPIK+II+실전기출' },
+    { title: 'TOPIK II 쓰기 완전정복 (작문 전략서)', author: '김중섭', publisher: '다락원', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.7, reviews: 3210, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=TOPIK+II+쓰기+완전정복' },
+    { title: 'TOPIK I 한권으로 합격 (1~2급)', author: 'TOPIK연구소', publisher: '시대에듀', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=TOPIK+I+한권합격+1급+2급' },
+    { title: 'TOPIK 어휘·문법 마스터 (3~6급)', author: '국립국어원', publisher: '하우', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.6, reviews: 1987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=TOPIK+어휘+문법+마스터+3급+6급' },
+  ],
+
+  '임용고시': [
+    { title: '2027 임용 교육학 논술 핵심 이론+기출 (이현·박문각)', author: '이현', publisher: '박문각', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.8, reviews: 5432, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임용+교육학+논술+이현+박문각+2027' },
+    { title: '2027 임용 전공 교육학 객관식 기출 (류승희)', author: '류승희', publisher: '에듀윌', price: 32000, originalPrice: 35000, discount: '10%', rating: 4.8, reviews: 4321, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임용+전공교육학+류승희+2027' },
+    { title: '임용 교육학 단권화 노트 (서브노트 최신판)', author: '권지수', publisher: '도서출판 에듀피디', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 3210, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임용+교육학+단권화+노트' },
+    { title: '2027 수업실연·심층면접 완전정복', author: '임용면접연구소', publisher: '박문각', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.7, reviews: 2134, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임용+수업실연+심층면접+2027' },
+    { title: '교육과정 핵심 완성 (2022 개정 교육과정 반영)', author: '양현권', publisher: '에듀피디', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임용+교육과정+핵심완성+2022개정' },
+  ],
+
+  '한국실용글쓰기': [
+    { title: '2026 한국실용글쓰기 1급 한권으로 끝내기', author: '한국언론진흥재단', publisher: '박문각', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 2134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=한국실용글쓰기+1급+한권끝내기+2026' },
+    { title: '2026 한국실용글쓰기 기출문제 완전분석', author: '글쓰기수험연구소', publisher: '시대에듀', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=한국실용글쓰기+기출문제+2026' },
+    { title: '한국실용글쓰기 어문규범 완전정복', author: '이은희', publisher: '이투스북', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=한국실용글쓰기+어문규범+완전정복' },
+    { title: '실용 글쓰기 작문 연습 (요약·논술·보고서)', author: '박영목', publisher: '창비', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=실용+글쓰기+작문+연습+요약' },
+    { title: '한국실용글쓰기 단기완성 요약집', author: '글쓰기연구소', publisher: '에듀윌', price: 11700, originalPrice: 13000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=한국실용글쓰기+단기완성+요약집' },
+  ],
+
+  '임상심리사': [
+    { title: '2026 임상심리사 2급 필기 한권으로 끝내기', author: '박지원', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 2876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상심리사+2급+필기+한권끝내기+2026' },
+    { title: '2026 임상심리사 2급 기출문제집', author: '임상심리수험연구소', publisher: '학지사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상심리사+2급+기출문제집+2026' },
+    { title: '이상심리학 (DSM-5 완전 반영)', author: '권석만', publisher: '학지사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 1987, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이상심리학+권석만+DSM-5' },
+    { title: '심리검사의 이해 (K-WAIS·MMPI·로르샤하)', author: '황순택 외', publisher: '시그마프레스', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=심리검사의이해+K-WAIS+MMPI+로르샤하' },
+    { title: '심리치료의 이론과 실제 (CBT·정신역동·인본주의)', author: '천성문 외', publisher: '학지사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=심리치료+이론과+실제+CBT' },
+  ],
+
+  '심리상담사': [
+    { title: '상담이론과 실제 (코리의 상담이론)', author: 'Gerald Corey', publisher: '시그마프레스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 3210, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=상담이론과실제+코리+시그마프레스' },
+    { title: '심리상담사 2급 한권으로 합격', author: '상담수험연구소', publisher: '시대에듀', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=심리상담사+2급+한권합격' },
+    { title: '상담심리학 핵심이론 총정리', author: '노안영', publisher: '학지사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=상담심리학+핵심이론+총정리+노안영' },
+    { title: '집단상담의 이론과 실제', author: '천성문 외', publisher: '학지사', price: 20000, originalPrice: 22000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=집단상담+이론과실제+천성문' },
+    { title: '상담사례 개념화 실습 가이드', author: '박애선', publisher: '학지사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=상담사례+개념화+실습+가이드' },
+  ],
+
   'TAT': [
     { title: '2026 I CAN TAT 세무실무 2급', author: '아이캔 세무회계연구소', publisher: '아이캔', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 2345, tags: ['베스트'], imageUrl: KB('S000219495682'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219495682' },
     { title: '2026 I Can TAT 세무실무 1급', author: '아이캔 세무회계연구소', publisher: '아이캔', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 1987, tags: ['베스트'], imageUrl: KB('S000219812336'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219812336' },
