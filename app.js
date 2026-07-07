@@ -1600,11 +1600,10 @@ function renderCertDropdown(query) {
   const topScore = scored[0].score;
   const topName  = scored[0].name;
   const isFuzzyOnly = topScore <= 40 && normalize(topName) !== normalize(query);
-  const ro = topName.match(/[가-힣]$/) ? (/[ㄱ-ㅎ]/.test(String.fromCharCode(topName.charCodeAt(topName.length-1) - 0xAC00)) ? '으로' : '로') : '로';
   const correctionBanner = isFuzzyOnly
     ? `<div class="cert-dd-correction">
          <i class="fa-solid fa-spell-check"></i>
-         <span><b>${query}</b> 결과가 없어 <b>${topName}</b>(${ro}) 검색되었어요.</span>
+         <span><b>${query}</b> 결과가 없어 <b>${topName}</b>(${roSuffix(topName)}) 검색되었어요.</span>
        </div>`
     : '';
 
