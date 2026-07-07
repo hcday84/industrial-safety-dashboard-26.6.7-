@@ -2029,10 +2029,11 @@ const REAL_BOOKS = {
   ],
 
   'AFPK': [
-    { title: 'AFPK 핵심노트 모듈1+2 합본', author: '한국FPSB', publisher: '한국FPSB', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 1234, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=AFPK+핵심노트+모듈' },
-    { title: 'AFPK 기출문제집 모듈1 (재무설계·위험관리·투자)', author: '재무설계사수험연구회', publisher: '나무와숲', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 987, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=AFPK+기출문제집+모듈1' },
-    { title: 'AFPK 기출문제집 모듈2 (세금·은퇴·상속설계)', author: '재무설계사수험연구회', publisher: '나무와숲', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=AFPK+기출문제집+모듈2' },
-    { title: 'AFPK 파이널 실전 모의고사 500제', author: 'FP수험연구소', publisher: '세경북스', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 654, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=AFPK+파이널+모의고사' },
+    { title: '2025 해커스 AFPK 핵심문제집 모듈 1', author: '해커스 금융아카데미', publisher: '해커스패스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 2134, tags: ['베스트'], imageUrl: KB('S000216317051'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216317051' },
+    { title: '2025 해커스 AFPK 핵심문제집 모듈 2', author: '해커스 금융아카데미', publisher: '해커스패스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: KB('S000216317054'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216317054' },
+    { title: '2025 해커스 AFPK 최종 실전모의고사', author: '해커스 금융아카데미', publisher: '해커스패스', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['베스트'], imageUrl: KB('S000216497312'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216497312' },
+    { title: '2025 이패스 AFPK 핵심문제집 모듈1', author: '김종희', publisher: '이패스코리아', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: KB('S000216841802'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216841802' },
+    { title: '2025 이패스 AFPK 핵심문제집 모듈2', author: '김종희', publisher: '이패스코리아', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], imageUrl: KB('S000216841809'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216841809' },
   ],
 
   'CFP': [
