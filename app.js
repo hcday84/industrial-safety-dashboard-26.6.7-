@@ -24,7 +24,7 @@ const PRIVATE_CERT_NAMES = new Set([
   '리눅스마스터1급','리눅스마스터2급',
   'FAT','TAT',
   'ITQ','SQLD','SQLP','네트워크관리사1급','네트워크관리사2급',
-  'JLPT','HSK','TOEFL','IELTS','한국어능력시험(TOPIK)',
+  'JLPT','HSK','TOEFL','IELTS','TOEIC Speaking','한국어능력시험(TOPIK)',
   '재경관리사','ERP정보관리사','매경TEST','TESAT','펀드투자권유대행인',
   '소믈리에','바텐더','한자능력검정','KBS한국어능력시험',
   '한국사능력검정시험','사회통합프로그램','국내관광안내사','국외관광안내사','관광통역안내사',
