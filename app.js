@@ -1807,25 +1807,8 @@ function initEventListeners() {
     const query = e.target.value.trim();
     if (!query) return;
 
-    // 드롭다운과 동일한 스코어링 로직으로 최상위 자격증 선택
-    const aliasKey = normalize(query);
-    const aliasTarget = Object.keys(CERT_ALIASES).find(k => normalize(k) === aliasKey || aliasKey.includes(normalize(k)));
-    const extraName = aliasTarget ? CERT_ALIASES[aliasTarget] : null;
-
-    const scored = Object.keys(CERTIFICATIONS)
-      .map(name => {
-        let score = certSearchScore(name, query);
-        if (extraName && normalize(name) === normalize(extraName)) score = Math.max(score, 95);
-        return { name, score };
-      })
-      .filter(({ score }) => score > 0)
-      .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name, 'ko'));
-
+    const { scored, topName, isFuzzyOnly } = searchCerts(query);
     if (scored.length === 0) return;
-
-    const topScore = scored[0].score;
-    const topName = scored[0].name;
-    const isFuzzyOnly = topScore <= 40 && normalize(topName) !== normalize(query);
 
     document.getElementById('cert-dropdown').classList.remove('visible');
     switchCertification(topName);
