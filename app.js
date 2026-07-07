@@ -1537,6 +1537,30 @@ function normalize(str) {
   return str.toLowerCase().replace(/\s+/g, '');
 }
 
+// ── 통합 자격증 검색 (별칭 확장 + 스코어링 + 오타 판별) ──────────────────────
+function searchCerts(query) {
+  const aliasKey = normalize(query);
+  const aliasTarget = Object.keys(CERT_ALIASES)
+    .find(k => normalize(k) === aliasKey || aliasKey.includes(normalize(k)));
+  const extraName = aliasTarget ? CERT_ALIASES[aliasTarget] : null;
+
+  const scored = Object.keys(CERTIFICATIONS)
+    .map(name => {
+      let score = certSearchScore(name, query);
+      if (extraName && normalize(name) === normalize(extraName))
+        score = Math.max(score, 95);
+      return { name, score };
+    })
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name, 'ko'));
+
+  const topScore = scored[0]?.score ?? 0;
+  const topName  = scored[0]?.name  ?? '';
+  const isFuzzyOnly = topScore <= 40 && normalize(topName) !== normalize(query);
+
+  return { scored, topName, topScore, isFuzzyOnly };
+}
+
 // ── 부분 토큰 매칭 (입력 단어 모두 포함 여부) ────────────────────────────────
 function tokenMatch(name, q) {
   const tokens = q.trim().split(/\s+/).filter(Boolean);
