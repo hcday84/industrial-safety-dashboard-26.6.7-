@@ -2520,6 +2520,28 @@ button, input, select {
   color: var(--text-muted);
 }
 
+.cert-dd-correction {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  background: color-mix(in srgb, var(--accent-color) 12%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent-color) 25%, transparent);
+  border-radius: 10px 10px 0 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+.cert-dd-correction i {
+  color: var(--accent-color);
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+.cert-dd-correction b {
+  color: var(--text-color);
+  font-weight: 700;
+}
+
 /* 17. 반응형 브레이크포인트 */
 @media (max-width: 1024px) {
   .main-layout-container {
