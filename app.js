@@ -1812,15 +1812,57 @@ function initEventListeners() {
   searchInput.addEventListener('focus', e => {
     if (e.target.value) renderCertDropdown(e.target.value);
   });
+  let _ddSelectedIdx = -1;
+
+  function updateDropdownSelection(idx) {
+    const dropdown = document.getElementById('cert-dropdown');
+    const items = dropdown.querySelectorAll('.cert-dropdown-item');
+    items.forEach((el, i) => el.classList.toggle('dd-focused', i === idx));
+    _ddSelectedIdx = idx;
+    if (items[idx]) items[idx].scrollIntoView({ block: 'nearest' });
+  }
+
   searchInput.addEventListener('keydown', e => {
+    const dropdown = document.getElementById('cert-dropdown');
+    const isVisible = dropdown.classList.contains('visible');
+    const items = dropdown.querySelectorAll('.cert-dropdown-item');
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      if (isVisible && items.length) updateDropdownSelection(Math.min(_ddSelectedIdx + 1, items.length - 1));
+      return;
+    }
+    if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      if (isVisible && items.length) updateDropdownSelection(Math.max(_ddSelectedIdx - 1, 0));
+      return;
+    }
+    if (e.key === 'Escape') {
+      dropdown.classList.remove('visible');
+      _ddSelectedIdx = -1;
+      return;
+    }
+
     if (e.key !== 'Enter') return;
     const query = e.target.value.trim();
     if (!query) return;
 
+    // 드롭다운에서 키보드로 선택된 항목이 있으면 그 항목 선택
+    if (isVisible && _ddSelectedIdx >= 0 && items[_ddSelectedIdx]) {
+      const certName = items[_ddSelectedIdx].querySelector('.cert-dd-name')?.textContent;
+      if (certName) {
+        dropdown.classList.remove('visible');
+        _ddSelectedIdx = -1;
+        switchCertification(certName);
+        return;
+      }
+    }
+
     const { scored, topName, isFuzzyOnly } = searchCerts(query);
     if (scored.length === 0) return;
 
-    document.getElementById('cert-dropdown').classList.remove('visible');
+    dropdown.classList.remove('visible');
+    _ddSelectedIdx = -1;
     switchCertification(topName);
     if (isFuzzyOnly) showCorrectionToast(query, topName);
   });
