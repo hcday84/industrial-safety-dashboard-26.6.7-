@@ -2941,6 +2941,19 @@ button, input, select {
   background: rgba(251, 191, 36, 0.07);
 }
 
+/* 단일시험 카드: 초록 좌측 테두리 + 연한 초록 배경 */
+.monthly-cert-card--single {
+  border-left: 3px solid #059669;
+  background: rgba(5, 150, 105, 0.05);
+  cursor: pointer;
+}
+.dark-theme .monthly-cert-card--single {
+  border-left-color: #34d399;
+  background: rgba(52, 211, 153, 0.07);
+}
+.monthly-group-title--single { color: #059669; }
+.dark-theme .monthly-group-title--single { color: #34d399; }
+
 /* 수험서 chip 색상 */
 .monthly-book-chip--written {
   border-left: 2px solid var(--primary-light, #2a4aaa);
