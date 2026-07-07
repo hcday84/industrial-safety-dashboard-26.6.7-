@@ -2919,6 +2919,12 @@ button, input, select {
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 12px 14px;
+  transition: opacity 0.15s;
+}
+.monthly-cert-card:hover {
+  opacity: 0.8;
+}
+.monthly-cert-card {
 }
 
 /* 필기 카드: 파란 좌측 테두리 + 연한 파란 배경 */
