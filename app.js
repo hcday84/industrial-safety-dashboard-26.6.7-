@@ -1807,6 +1807,7 @@ function initEventListeners() {
   searchInput.placeholder = STATE.currentCert ? STATE.currentCert : '자격증 이름을 입력하세요 (예: 전기기사)';
 
   searchInput.addEventListener('input', e => {
+    _ddSelectedIdx = -1;
     renderCertDropdown(e.target.value);
   });
   searchInput.addEventListener('focus', e => {
