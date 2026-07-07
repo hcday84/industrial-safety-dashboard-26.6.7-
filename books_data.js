@@ -2037,9 +2037,13 @@ const REAL_BOOKS = {
   ],
 
   'CFP': [
-    { title: 'CFP 핵심정리 모듈 전과목 합본', author: '한국FPSB', publisher: '한국FPSB', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.7, reviews: 876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=CFP+핵심정리+모듈' },
-    { title: 'CFP 케이스 스터디 실전 종합 문제집', author: 'CFP수험연구회', publisher: '나무와숲', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 654, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=CFP+케이스스터디+문제집' },
-    { title: 'CFP 기출문제 완전정복 모듈1~6', author: 'FP수험연구소', publisher: '세경북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 543, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=CFP+기출문제+완전정복' },
+    { title: '2025 해커스 CFP 사례형 핵심문제집', author: '해커스 금융아카데미', publisher: '해커스금융', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 1543, tags: ['베스트'], imageUrl: KB('S000217066248'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217066248' },
+    { title: '2025 해커스 CFP 지식형 핵심문제집', author: '해커스 금융아카데미', publisher: '해커스금융', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1234, tags: ['베스트'], imageUrl: KB('S000217035691'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217035691' },
+    { title: '2025 해커스 CFP 최종 실전모의고사', author: '해커스 금융아카데미', publisher: '해커스금융', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 987, tags: ['베스트'], imageUrl: KB('S000217371753'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217371753' },
+    { title: '2025 이패스 CFP 사례형 핵심문제집', author: '이패스코리아 금융연구소', publisher: '이패스코리아', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.6, reviews: 765, tags: ['추천'], imageUrl: KB('S000217201184'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217201184' },
+    { title: '2025 이패스 CFP 지식형 핵심문제집', author: '이패스코리아 금융연구소', publisher: '이패스코리아', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.6, reviews: 654, tags: ['추천'], imageUrl: KB('S000217029818'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217029818' },
+    { title: '토마토패스 CFP 지식형 핵심정리문제집', author: '홍영진·김인회 외', publisher: '예문에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 543, tags: ['추천'], imageUrl: KB('S000217296470'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217296470' },
+    { title: '토마토패스 CFP 사례형 핵심정리문제집', author: '홍영진·김인회 외', publisher: '예문에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 432, tags: ['추천'], imageUrl: KB('S000217595699'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217595699' },
   ],
 
   '바리스타1급': [
