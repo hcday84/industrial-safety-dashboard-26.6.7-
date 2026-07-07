@@ -2084,6 +2084,158 @@ const REAL_BOOKS = {
     { title: '2026 이패스 FAT 1급 회계실무 이론+실무+최신기출', author: '이패스코리아 편집부', publisher: '이패스코리아', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['추천'], imageUrl: KB('S000219333860'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219333860' },
   ],
 
+  'ITQ': [
+    { title: '2026 이기적 ITQ 아래한글 ver. 2022 기본서', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.8, reviews: 4321, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+ITQ+아래한글+2026' },
+    { title: '2026 이기적 ITQ 엑셀 ver. 2021 기본서', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.8, reviews: 3876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+ITQ+엑셀+2026' },
+    { title: '2026 이기적 ITQ 파워포인트 ver. 2021 기본서', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.8, reviews: 3543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+ITQ+파워포인트+2026' },
+    { title: 'ITQ OA Master 한글+엑셀+파워포인트 한권끝내기', author: '정보문화사 편집부', publisher: '정보문화사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 2134, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=ITQ+OA+Master+한권끝내기' },
+    { title: '시나공 ITQ 한글+엑셀+파워포인트', author: '길벗 R&D', publisher: '길벗', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=시나공+ITQ+한글+엑셀+파워포인트' },
+  ],
+
+  'SQLD': [
+    { title: '2026 이기적 SQLD 데이터베이스 솔루션 개발자', author: '신의철', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 5432, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+SQLD+2026' },
+    { title: 'SQL 자격검정 실전문제 (한국데이터산업진흥원)', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 25000, originalPrice: 25000, discount: '0%', rating: 4.7, reviews: 4321, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=SQL+자격검정+실전문제' },
+    { title: '홍쌤의 SQLD 합격노트', author: '홍성욱', publisher: '앤써북', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 3876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=홍쌤의+SQLD+합격노트' },
+    { title: 'SQLD 단기완성 핵심 요약집', author: 'SQL수험연구소', publisher: '시대에듀', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.6, reviews: 2345, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=SQLD+단기완성+핵심요약' },
+    { title: '데이터베이스 개론 (SQLD 이론 기초)', author: '김연희', publisher: '한빛아카데미', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 1987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=데이터베이스+개론+김연희' },
+  ],
+
+  'SQLP': [
+    { title: 'SQL 전문가 가이드 (한국데이터산업진흥원 공식)', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 40000, originalPrice: 40000, discount: '0%', rating: 4.8, reviews: 2345, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=SQL+전문가+가이드+SQLP' },
+    { title: 'SQLP 핵심 노트 + 실전 모의고사', author: '신의철', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=SQLP+핵심노트+모의고사' },
+    { title: 'Oracle SQL 튜닝 바이블', author: '이병국', publisher: '비제이퍼블릭', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.7, reviews: 1234, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=Oracle+SQL+튜닝+바이블' },
+    { title: 'SQLP 서술형 완전정복', author: 'DB수험연구소', publisher: '시대에듀', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 876, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=SQLP+서술형+완전정복' },
+    { title: '친절한 SQL 튜닝', author: '조시형', publisher: '디비안', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.8, reviews: 765, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=친절한+SQL+튜닝' },
+  ],
+
+  '네트워크관리사1급': [
+    { title: '2026 이기적 네트워크관리사 1급 필기+실기', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+네트워크관리사+1급+2026' },
+    { title: '네트워크관리사 1급 합격 바이블', author: '황종식', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=네트워크관리사+1급+합격+바이블' },
+    { title: 'CCNA 네트워킹 완전정복 (라우터·스위치 실습)', author: '정성재', publisher: '한빛미디어', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.8, reviews: 1234, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=CCNA+네트워킹+완전정복' },
+    { title: '네트워크관리사 1급 기출문제집 (최근 5개년)', author: 'IT수험연구소', publisher: '시대에듀', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=네트워크관리사+1급+기출문제집' },
+    { title: '알기 쉬운 네트워크 (TCP/IP 기초~고급)', author: '오마타 세이치로', publisher: '한빛미디어', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 876, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=알기쉬운+네트워크+TCP+IP' },
+  ],
+
+  '네트워크관리사2급': [
+    { title: '2026 이기적 네트워크관리사 2급 필기+실기', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 2876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+네트워크관리사+2급+2026' },
+    { title: '네트워크관리사 2급 한권으로 끝내기', author: '황종식', publisher: '성안당', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=네트워크관리사+2급+한권으로끝내기' },
+    { title: '2026 네트워크관리사 2급 단기합격', author: 'IT수험연구소', publisher: '시대에듀', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 1987, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=네트워크관리사+2급+단기합격+2026' },
+    { title: '네트워크관리사 2급 기출문제 완전정복', author: 'IT자격연구회', publisher: '예문사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=네트워크관리사+2급+기출문제+완전정복' },
+    { title: '하루 10분 네트워크 기초 (입문서)', author: 'Gene Kim', publisher: '한빛미디어', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=하루+10분+네트워크+기초' },
+  ],
+
+  'JLPT': [
+    { title: 'JLPT 한 권으로 합격 N1', author: '시원스쿨 일본어연구소', publisher: '시원스쿨랩', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 3456, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=JLPT+한권으로합격+N1' },
+    { title: 'JLPT 한 권으로 합격 N2', author: '시원스쿨 일본어연구소', publisher: '시원스쿨랩', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.8, reviews: 3210, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=JLPT+한권으로합격+N2' },
+    { title: '신일본어능력시험 N1 핵심단어·한자', author: '박해리', publisher: '다락원', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=JLPT+N1+핵심단어+한자+다락원' },
+    { title: 'JLPT N2 문법·독해 완전 정복', author: '이치방 일본어연구소', publisher: '이치방', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.6, reviews: 1876, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=JLPT+N2+문법+독해+이치방' },
+    { title: 'JLPT 실전 모의고사 N1·N2 (청해 MP3 포함)', author: '일본어연구회', publisher: '넥서스', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.5, reviews: 1543, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=JLPT+실전모의고사+N1+N2' },
+  ],
+
+  'HSK': [
+    { title: 'HSK 6급 한 권으로 합격', author: '정계도', publisher: '시원스쿨랩', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=HSK+6급+한권으로합격' },
+    { title: 'HSK 5급 한 권으로 합격', author: '정계도', publisher: '시원스쿨랩', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.8, reviews: 2543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=HSK+5급+한권으로합격' },
+    { title: '해커스 중국어 HSK 6급 어휘·독해·듣기', author: '해커스중국어연구소', publisher: '해커스어학연구소', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.7, reviews: 1987, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=해커스+중국어+HSK+6급' },
+    { title: 'HSK 5급 실전 모의고사 5회분', author: '다락원 중국어연구소', publisher: '다락원', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=HSK+5급+실전+모의고사' },
+    { title: 'HSK 핵심단어 2500 (4·5·6급 통합)', author: 'HSK수험연구소', publisher: '넥서스중국어', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=HSK+핵심단어+2500' },
+  ],
+
+  '재경관리사': [
+    { title: '2026 재경관리사 재무회계 이론+기출', author: '김민철', publisher: '삼일인포마인', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 2876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=재경관리사+재무회계+2026' },
+    { title: '2026 재경관리사 세무회계 이론+기출', author: '정정운', publisher: '삼일인포마인', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=재경관리사+세무회계+2026' },
+    { title: '2026 재경관리사 원가관리회계 이론+기출', author: '이훈엽', publisher: '삼일인포마인', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1987, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=재경관리사+원가관리회계+2026' },
+    { title: '재경관리사 3과목 한권 합격 (재무·세무·원가)', author: '회계수험연구회', publisher: '세경북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=재경관리사+3과목+한권합격' },
+    { title: '재경관리사 최신기출 800제', author: '재경수험연구소', publisher: '나무와숲', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=재경관리사+최신기출+800제' },
+  ],
+
+  'ERP정보관리사': [
+    { title: '2026 이기적 ERP 정보관리사 회계 1·2급', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+ERP+정보관리사+회계+2026' },
+    { title: '2026 이기적 ERP 정보관리사 인사 1·2급', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+ERP+정보관리사+인사+2026' },
+    { title: '2026 이기적 ERP 정보관리사 물류 1·2급', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+ERP+정보관리사+물류+2026' },
+    { title: 'ERP 정보관리사 회계 기출문제집', author: 'ERP수험연구소', publisher: '시대에듀', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=ERP+정보관리사+회계+기출' },
+    { title: '더존 SmartA 실무 완전 정복', author: '더존비즈온 교육팀', publisher: '더존비즈온', price: 25000, originalPrice: 25000, discount: '0%', rating: 4.5, reviews: 987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=더존+SmartA+실무' },
+  ],
+
+  '매경TEST': [
+    { title: '매경TEST 공식 기출문제집 (최신판)', author: '매일경제 TEST사업본부', publisher: '매일경제신문사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2345, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=매경TEST+공식+기출문제집' },
+    { title: '매경TEST 경제·경영 핵심 이론서', author: '이재은', publisher: '매일경제신문사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1987, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=매경TEST+경제경영+핵심이론' },
+    { title: '매경TEST 최우수 목표 단기완성', author: '경제경영수험연구소', publisher: '박문각', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=매경TEST+최우수+단기완성' },
+    { title: '맨큐의 경제학 (원리 중심)', author: 'N.G.맨큐', publisher: '센게이지러닝', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=맨큐의+경제학' },
+    { title: '매경TEST 실전 모의고사 3회분', author: '매경TEST연구소', publisher: '매일경제신문사', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=매경TEST+실전+모의고사' },
+  ],
+
+  'TESAT': [
+    { title: 'TESAT 공식 기출문제집 (한국경제신문)', author: '한국경제신문 TESAT운영본부', publisher: '한국경제신문', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=TESAT+공식+기출문제집' },
+    { title: 'TESAT S급 목표 경제이론 핵심정리', author: '이재은', publisher: '한국경제신문', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=TESAT+S급+경제이론+핵심정리' },
+    { title: 'TESAT 시사경제 + 상황판단 집중 공략', author: 'TESAT수험연구소', publisher: '박문각', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=TESAT+시사경제+상황판단' },
+    { title: '경제학 원론 (TESAT 이론 기초)', author: '이준구·이창용', publisher: '문우사', price: 32000, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=경제학원론+이준구' },
+    { title: 'TESAT 실전 모의고사 5회분', author: 'TESAT연구소', publisher: '한국경제신문', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=TESAT+실전모의고사+5회' },
+  ],
+
+  '펀드투자권유대행인': [
+    { title: '2026 펀드투자권유대행인 한권으로 끝내기', author: '금융자격연구소', publisher: '시대에듀', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2345, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=펀드투자권유대행인+한권끝내기+2026' },
+    { title: '펀드투자권유대행인 핵심정리+기출문제', author: '해커스 금융아카데미', publisher: '해커스패스', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.7, reviews: 1987, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=펀드투자권유대행인+해커스+기출' },
+    { title: '2026 와우패스 펀드투자권유대행인', author: '와우패스 교수진', publisher: '와우패스', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=와우패스+펀드투자권유대행인+2026' },
+    { title: '펀드투자권유대행인 단기합격 7일완성', author: '금융시험연구소', publisher: '박문각', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=펀드투자권유대행인+단기합격+7일' },
+    { title: '펀드투자권유대행인 기출문제 완전정복', author: '금융자격연구회', publisher: '나무와숲', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=펀드투자권유대행인+기출+완전정복' },
+  ],
+
+  '소믈리에': [
+    { title: '와인 바이블 (소믈리에 필독서)', author: 'Kevin Zraly', publisher: '바롬웍스', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.8, reviews: 1876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=와인바이블+소믈리에' },
+    { title: '소믈리에 자격증 완전 정복 (필기+실기)', author: '한국소믈리에협회', publisher: '한국소믈리에협회', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=소믈리에+자격증+필기+실기' },
+    { title: 'WSET Level 2 와인 교재 (한국어판)', author: 'WSET', publisher: 'WSET', price: 35000, originalPrice: 35000, discount: '0%', rating: 4.8, reviews: 1234, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=WSET+Level+2+와인+한국어' },
+    { title: '세계의 와인 (산지별 완벽 가이드)', author: '젠시스 로빈슨', publisher: '한스미디어', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.7, reviews: 987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=세계의+와인+젠시스+로빈슨' },
+    { title: '소믈리에 테이스팅 노트 실전 가이드', author: '김경묵', publisher: '백산출판사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 765, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=소믈리에+테이스팅+노트' },
+  ],
+
+  '바텐더': [
+    { title: '바텐더 칵테일 바이블 (레시피 200선)', author: '김성찬', publisher: '백산출판사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 1543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=바텐더+칵테일+바이블' },
+    { title: '조주기능사+바텐더 민간자격 완전정복', author: '조주기능사수험연구회', publisher: '성안당', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1234, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=조주기능사+바텐더+완전정복' },
+    { title: '바텐딩 기법 마스터 (쉐이킹·스터·레이어)', author: '이성철', publisher: '크라운출판사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 987, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=바텐딩+기법+마스터' },
+    { title: 'IBA 공식 칵테일 77 레시피 완전정복', author: '한국바텐더협회', publisher: '백산출판사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.6, reviews: 765, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=IBA+칵테일+77+레시피' },
+    { title: '세계의 술 (증류주·발효주 완벽 가이드)', author: '박재범', publisher: '한스미디어', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 543, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=세계의+술+증류주+발효주' },
+  ],
+
+  '한자능력검정': [
+    { title: '2026 이기적 한자능력검정시험 2급 기본서', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.8, reviews: 2876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+한자능력검정+2급+2026' },
+    { title: '한자능력검정 2급 한권으로 끝내기', author: '김원중', publisher: '성안당', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=한자능력검정+2급+한권끝내기' },
+    { title: '한자능력검정 1급 합격 기본서', author: '한자수험연구소', publisher: '시대에듀', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=한자능력검정+1급+합격+기본서' },
+    { title: '한자능력검정 기출문제 완전분석 (2·3급)', author: '어문회한자수험연구소', publisher: '어문회', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=한자능력검정+기출문제+2급+3급' },
+    { title: '사자성어·한자어 완전 정복 (한자급수 대비)', author: '박인재', publisher: '박문각', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.5, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사자성어+한자어+완전정복' },
+  ],
+
+  'KBS한국어능력시험': [
+    { title: 'KBS 한국어능력시험 기출문제 완전분석 (최신판)', author: 'KBS한국어능력시험연구소', publisher: 'KBS미디어', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=KBS+한국어능력시험+기출문제+완전분석' },
+    { title: 'KBS 한국어능력시험 한권으로 합격', author: '이재훈', publisher: '시대에듀', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=KBS+한국어능력시험+한권으로합격' },
+    { title: 'KBS 한국어능력시험 1급 목표 핵심이론', author: '박인자', publisher: '박문각', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 1987, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=KBS+한국어능력시험+1급+핵심이론' },
+    { title: '국어 어법·어휘 완전 정복 (KBS 대비)', author: '이윤재', publisher: '이투스북', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=국어+어법+어휘+완전정복+KBS' },
+    { title: 'KBS 한국어능력시험 실전 모의고사 5회분', author: 'KBS한국어연구소', publisher: 'KBS미디어', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.5, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=KBS+한국어능력시험+실전모의고사' },
+  ],
+
+  'TOEFL': [
+    { title: '해커스 TOEFL Reading (토플 리딩)', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 3210, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=해커스+TOEFL+Reading' },
+    { title: '해커스 TOEFL Listening (토플 리스닝)', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 2876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=해커스+TOEFL+Listening' },
+    { title: 'The Official Guide to the TOEFL Test (ETS 공식)', author: 'ETS', publisher: 'McGraw-Hill', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.8, reviews: 2543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=Official+Guide+TOEFL+ETS' },
+    { title: '해커스 TOEFL Writing (토플 라이팅)', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 1987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=해커스+TOEFL+Writing' },
+    { title: '해커스 TOEFL Speaking (토플 스피킹)', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 1765, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=해커스+TOEFL+Speaking' },
+  ],
+
+  'IELTS': [
+    { title: '해커스 IELTS Writing (아이엘츠 라이팅)', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2345, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=해커스+IELTS+Writing' },
+    { title: 'Cambridge IELTS 18 (캠브리지 공식 기출)', author: 'Cambridge ESOL', publisher: 'Cambridge', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=Cambridge+IELTS+18+공식기출' },
+    { title: '해커스 IELTS Reading (아이엘츠 리딩)', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=해커스+IELTS+Reading' },
+    { title: 'IELTS Vocabulary (아이엘츠 필수어휘 4000)', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=IELTS+Vocabulary+해커스' },
+    { title: 'IELTS Speaking 9.0 공략법', author: 'Caroline Brown', publisher: '시원스쿨랩', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=IELTS+Speaking+9.0' },
+  ],
+
+  'ERP정보관리사': [
+    { title: '2026 이기적 ERP 정보관리사 회계 1·2급', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+ERP+정보관리사+회계+2026' },
+    { title: '2026 이기적 ERP 정보관리사 인사 1·2급', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+ERP+정보관리사+인사+2026' },
+    { title: '2026 이기적 ERP 정보관리사 물류 1·2급', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+ERP+정보관리사+물류+2026' },
+    { title: 'ERP 정보관리사 회계 기출문제집', author: 'ERP수험연구소', publisher: '시대에듀', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=ERP+정보관리사+회계+기출' },
+    { title: '더존 SmartA 실무 완전 정복', author: '더존비즈온 교육팀', publisher: '더존비즈온', price: 25000, originalPrice: 25000, discount: '0%', rating: 4.5, reviews: 987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=더존+SmartA+실무' },
+  ],
+
   'TAT': [
     { title: '2026 I CAN TAT 세무실무 2급', author: '아이캔 세무회계연구소', publisher: '아이캔', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 2345, tags: ['베스트'], imageUrl: KB('S000219495682'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219495682' },
     { title: '2026 I Can TAT 세무실무 1급', author: '아이캔 세무회계연구소', publisher: '아이캔', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 1987, tags: ['베스트'], imageUrl: KB('S000219812336'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219812336' },
