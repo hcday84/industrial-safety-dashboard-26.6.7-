@@ -2492,8 +2492,13 @@ button, input, select {
   border-bottom: none;
 }
 
-.cert-dropdown-item:hover {
+.cert-dropdown-item:hover,
+.cert-dropdown-item.dd-focused {
   background-color: var(--primary-bg);
+}
+.cert-dropdown-item.dd-focused {
+  outline: 2px solid var(--accent-color);
+  outline-offset: -2px;
 }
 
 .cert-dd-icon {
