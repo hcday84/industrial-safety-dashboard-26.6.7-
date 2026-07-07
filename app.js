@@ -1800,17 +1800,30 @@ function initEventListeners() {
     if (e.key !== 'Enter') return;
     const query = e.target.value.trim();
     if (!query) return;
-    // 정확히 일치하는 자격증 먼저, 없으면 포함하는 첫 번째
-    const qLower = query.toLowerCase();
-    const exact = Object.keys(CERTIFICATIONS).find(name => name.toLowerCase() === qLower);
-    const partial = Object.keys(CERTIFICATIONS).find(name =>
-      name.toLowerCase().includes(qLower) || qLower.includes(name.toLowerCase().substring(0, 2))
-    );
-    const target = exact || partial;
-    if (target) {
-      document.getElementById('cert-dropdown').classList.remove('visible');
-      switchCertification(target);
-    }
+
+    // 드롭다운과 동일한 스코어링 로직으로 최상위 자격증 선택
+    const aliasKey = normalize(query);
+    const aliasTarget = Object.keys(CERT_ALIASES).find(k => normalize(k) === aliasKey || aliasKey.includes(normalize(k)));
+    const extraName = aliasTarget ? CERT_ALIASES[aliasTarget] : null;
+
+    const scored = Object.keys(CERTIFICATIONS)
+      .map(name => {
+        let score = certSearchScore(name, query);
+        if (extraName && normalize(name) === normalize(extraName)) score = Math.max(score, 95);
+        return { name, score };
+      })
+      .filter(({ score }) => score > 0)
+      .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name, 'ko'));
+
+    if (scored.length === 0) return;
+
+    const topScore = scored[0].score;
+    const topName = scored[0].name;
+    const isFuzzyOnly = topScore <= 40 && normalize(topName) !== normalize(query);
+
+    document.getElementById('cert-dropdown').classList.remove('visible');
+    switchCertification(topName);
+    if (isFuzzyOnly) showCorrectionToast(query, topName);
   });
   document.addEventListener('click', e => {
     if (!e.target.closest('.header-search-bar')) {
