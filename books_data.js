@@ -1985,4 +1985,106 @@ const REAL_BOOKS = {
     { title: '2026 양재호의 도시계획기사 필기 기출편', author: '양재호', publisher: '트랜북스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218179861'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218179861' },
   ],
 
+
+  // ────────────────────────────────────────
+  // 민간자격증
+  // ────────────────────────────────────────
+  'GTQ': [
+    { title: '2026 이기적 GTQ 포토샵 1급 기본서 ver. CC', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 2341, tags: ['베스트'], imageUrl: KB('S000218183225'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218183225' },
+    { title: '2026 이기적 GTQ 포토샵+일러스트 1급 올인원 ver.CC', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 1876, tags: ['베스트'], imageUrl: KB('S000218960821'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218960821' },
+    { title: '2026 시대에듀 유선배 GTQ 포토샵 1급 합격노트 ver. Adobe CC', author: '유선배', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: KB('S000217401720'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217401720' },
+    { title: '2026 시대에듀 유선배 GTQ 일러스트 1급 합격노트 ver. Adobe CC', author: '유선배', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1234, tags: ['추천'], imageUrl: KB('S000217119017'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217119017' },
+    { title: 'GTQ 포토샵 2급 기출문제 완전정복', author: '한정수', publisher: '길벗', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=GTQ+포토샵+2급+기출문제' },
+  ],
+
+  'GTQi': [
+    { title: '2026 이기적 GTQ 포토샵+일러스트 1급 올인원 ver.CC', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 1876, tags: ['베스트'], imageUrl: KB('S000218960821'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218960821' },
+    { title: '2026 시대에듀 유선배 GTQ 일러스트 1급 합격노트 ver. Adobe CC', author: '유선배', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1234, tags: ['베스트'], imageUrl: KB('S000217119017'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217119017' },
+    { title: 'GTQi 일러스트 1급 기출문제 완전정복', author: '이재원', publisher: '길벗', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 765, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=GTQi+일러스트+1급+기출' },
+  ],
+
+  'MOS': [
+    { title: '멘토시리즈 MOS 365 엑셀', author: '멘토 IT 연구회', publisher: '멘토르', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], imageUrl: KB('S000219135369'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219135369' },
+    { title: '멘토시리즈 MOS 365 워드', author: '멘토 IT 연구회', publisher: '멘토르', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: KB('S000219135217'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219135217' },
+    { title: 'MOS 2016 Excel Expert 한권으로 끝내기', author: '김경연', publisher: '시나공', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 1432, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=MOS+엑셀+Expert+한권끝내기' },
+    { title: 'MOS PowerPoint 365 한권으로 끝내기', author: '김경연', publisher: '시나공', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=MOS+파워포인트+365' },
+    { title: 'MOS Access 365 합격 기출문제집', author: '한국MOS연구회', publisher: '영진닷컴', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.4, reviews: 654, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=MOS+Access+365' },
+  ],
+
+  'TOEIC': [
+    { title: '해커스 토익 최신기출유형 실전 10회 LC(리스닝)', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.8, reviews: 5678, tags: ['베스트'], imageUrl: KB('S000220438564'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220438564' },
+    { title: '해커스 토익 최신기출유형 실전 10회 RC(리딩)', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.8, reviews: 5432, tags: ['베스트'], imageUrl: KB('S000220438585'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220438585' },
+    { title: '해커스 토익 PART 7 집중공략 777 RC', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 17100, originalPrice: 19000, discount: '10%', rating: 4.8, reviews: 4321, tags: ['베스트'], imageUrl: KB('S000219129734'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219129734' },
+    { title: 'EBS 김대균 토익킹 (2026년 7월)', author: '김대균', publisher: '한국교육방송공사', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.7, reviews: 3210, tags: ['베스트'], imageUrl: KB('S000220240803'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220240803' },
+    { title: '시나공 TOEIC 기출 실전모의고사 10회분', author: '시나공 토익연구팀', publisher: '길벗이지톡', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.6, reviews: 2876, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=시나공+TOEIC+실전모의고사' },
+    { title: '토익 보카 단어장 (빈출 1200)', author: 'YBM 어학연구소', publisher: 'YBM', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.5, reviews: 2134, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=토익+보카+단어장+YBM' },
+  ],
+
+  'OPIc': [
+    { title: '10일 만에 끝내는 해커스 OPIc 오픽 Advanced 공략', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.8, reviews: 3456, tags: ['베스트'], imageUrl: KB('S000202406853'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000202406853' },
+    { title: '10일 만에 끝내는 해커스 OPIc 오픽 START: Intermediate 공략', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.7, reviews: 2987, tags: ['베스트'], imageUrl: KB('S000208578134'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000208578134' },
+    { title: '스파르타 OPIc 오픽 IM2-IH 공략', author: '스파르타 어학연구소', publisher: '스파르타북스', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], imageUrl: KB('S000218846962'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218846962' },
+    { title: '오픽 요정 벨라쌤의 OPIc 초단기 완성 IH-AL 중상급', author: '강다연(벨라쌤)', publisher: '세상모든책', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.6, reviews: 1876, tags: ['추천'], imageUrl: KB('S000215553595'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215553595' },
+    { title: '오픽 요정 벨라쌤의 OPIc 초단기 완성 IL-IM 초급', author: '강다연(벨라쌤)', publisher: '세상모든책', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['추천'], imageUrl: KB('S000215553473'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215553473' },
+  ],
+
+  'AFPK': [
+    { title: 'AFPK 핵심노트 모듈1+2 합본', author: '한국FPSB', publisher: '한국FPSB', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 1234, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=AFPK+핵심노트+모듈' },
+    { title: 'AFPK 기출문제집 모듈1 (재무설계·위험관리·투자)', author: '재무설계사수험연구회', publisher: '나무와숲', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 987, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=AFPK+기출문제집+모듈1' },
+    { title: 'AFPK 기출문제집 모듈2 (세금·은퇴·상속설계)', author: '재무설계사수험연구회', publisher: '나무와숲', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=AFPK+기출문제집+모듈2' },
+    { title: 'AFPK 파이널 실전 모의고사 500제', author: 'FP수험연구소', publisher: '세경북스', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 654, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=AFPK+파이널+모의고사' },
+  ],
+
+  'CFP': [
+    { title: 'CFP 핵심정리 모듈 전과목 합본', author: '한국FPSB', publisher: '한국FPSB', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.7, reviews: 876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=CFP+핵심정리+모듈' },
+    { title: 'CFP 케이스 스터디 실전 종합 문제집', author: 'CFP수험연구회', publisher: '나무와숲', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 654, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=CFP+케이스스터디+문제집' },
+    { title: 'CFP 기출문제 완전정복 모듈1~6', author: 'FP수험연구소', publisher: '세경북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 543, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=CFP+기출문제+완전정복' },
+  ],
+
+  '바리스타1급': [
+    { title: '바리스타 1급 자격시험 예상문제집 (NCS 개정판)', author: '한국커피협회', publisher: '한국커피협회', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 2345, tags: ['베스트'], imageUrl: KB('S000214736527'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214736527' },
+    { title: '바리스타 1급 실기 완전정복 (에스프레소·라떼아트)', author: '김민준', publisher: '크라운출판사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1654, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=바리스타+1급+실기+에스프레소+라떼아트' },
+    { title: '커피 바리스타 이론 핵심 요약 (필기 대비)', author: '이승훈', publisher: '길벗', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=커피+바리스타+이론+필기' },
+    { title: '커피 바리스타 문제집 & 커피용어 해설', author: '한국커피바리스타협회', publisher: '성안당', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], imageUrl: KB('S000001941998'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001941998' },
+  ],
+
+  '바리스타2급': [
+    { title: '2026 이기적 바리스타 2급 7일 끝, 합격', author: '임형준', publisher: '영진닷컴', price: 11700, originalPrice: 13000, discount: '10%', rating: 4.8, reviews: 3210, tags: ['베스트'], imageUrl: KB('S000218917586'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218917586' },
+    { title: '바리스타 2급 필기+실기 한권으로 끝내기', author: '권지현', publisher: '크라운출판사', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.7, reviews: 2456, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=바리스타+2급+필기+실기+한권' },
+    { title: '바리스타 2급 자격시험 기출문제 완전분석', author: '한국커피협회', publisher: '한국커피협회', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.6, reviews: 1876, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=바리스타+2급+기출문제' },
+  ],
+
+  '리눅스마스터1급': [
+    { title: '2026 이기적 리눅스마스터 1급 (1·2차) 기본서 세트', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 49500, originalPrice: 55000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], imageUrl: KB('S000218968390'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218968390' },
+    { title: 'Rocky Linux8로 리눅스마스터 1급 정복하기', author: '우재남', publisher: '한빛미디어', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.8, reviews: 1876, tags: ['베스트'], imageUrl: KB('S000212567319'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212567319' },
+    { title: '최신 기출문제를 수록한 리눅스마스터 1급 2차 실기 정복하기', author: '우재남', publisher: '한빛미디어', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: KB('S000001816547'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001816547' },
+    { title: '국가공인 리눅스마스터 1급', author: '강진수', publisher: '한국정보통신진흥협회', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: KB('S000001958046'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001958046' },
+    { title: '리눅스마스터 1급 서버 실무 핵심 정리', author: '박성진', publisher: '에이콘출판사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.5, reviews: 876, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=리눅스마스터+1급+서버+실무' },
+  ],
+
+  '리눅스마스터2급': [
+    { title: '2026 이기적 리눅스마스터 2급 (1·2차) 기본서', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 3456, tags: ['베스트'], imageUrl: KB('S000218787227'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218787227' },
+    { title: '리눅스마스터 2급 한권으로 끝내기', author: '강진수', publisher: '성안당', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 2876, tags: ['베스트'], imageUrl: KB('S000219391330'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219391330' },
+    { title: '2026 박문각 리눅스마스터 2급 기출원스톱 800제+무료특강', author: '박문각 IT연구소', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 2134, tags: ['베스트'], imageUrl: KB('S000219249403'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219249403' },
+    { title: '2027 빠르게 따는 리눅스마스터 2급 (1, 2차)', author: '리눅스마스터연구회', publisher: '영진닷컴', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['추천'], imageUrl: KB('S000220240746'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220240746' },
+    { title: 'Rocky Linux8로 리눅스마스터 2급 정복하기', author: '우재남', publisher: '한빛미디어', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: KB('S000211820693'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211820693' },
+    { title: '국가공인 리눅스마스터 2급', author: '강진수', publisher: '한국정보통신진흥협회', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], imageUrl: KB('S000001958047'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001958047' },
+  ],
+
+  'FAT': [
+    { title: '2026 I CAN FAT 회계실무 1급', author: '아이캔 세무회계연구소', publisher: '아이캔', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 2876, tags: ['베스트'], imageUrl: KB('S000219117007'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219117007' },
+    { title: '2026 I CAN FAT 회계실무 2급', author: '아이캔 세무회계연구소', publisher: '아이캔', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2543, tags: ['베스트'], imageUrl: KB('S000218979828'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218979828' },
+    { title: '2026 로그인 FAT 1급', author: '박병규', publisher: '세경북스', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 2134, tags: ['베스트'], imageUrl: KB('S000218972562'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218972562' },
+    { title: '2026 로그인 FAT 1급 기출문제', author: '박병규', publisher: '세경북스', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['추천'], imageUrl: KB('S000218620952'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218620952' },
+    { title: '2026 이패스 FAT 1급 회계실무 이론+실무+최신기출', author: '이패스코리아 편집부', publisher: '이패스코리아', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['추천'], imageUrl: KB('S000219333860'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219333860' },
+  ],
+
+  'TAT': [
+    { title: '2026 I CAN TAT 세무실무 2급', author: '아이캔 세무회계연구소', publisher: '아이캔', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 2345, tags: ['베스트'], imageUrl: KB('S000219495682'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219495682' },
+    { title: '2026 I Can TAT 세무실무 1급', author: '아이캔 세무회계연구소', publisher: '아이캔', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 1987, tags: ['베스트'], imageUrl: KB('S000219812336'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219812336' },
+    { title: '2026 로그인 TAT 2급', author: '박병규', publisher: '세경북스', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1765, tags: ['베스트'], imageUrl: KB('S000219349559'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219349559' },
+    { title: '2026 이패스 세무회계 2급 핵심요약 및 문제풀이', author: '이패스코리아 편집부', publisher: '이패스코리아', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 1432, tags: ['추천'], imageUrl: KB('S000219346402'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219346402' },
+    { title: '2026 이패스 세무회계 1급 핵심요약 및 문제풀이', author: '이패스코리아 편집부', publisher: '이패스코리아', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 1123, tags: ['추천'], imageUrl: KB('S000219647804'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219647804' },
+  ],
+
 };
