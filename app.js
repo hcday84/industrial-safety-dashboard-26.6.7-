@@ -1601,30 +1601,11 @@ function renderCertDropdown(query) {
   const dropdown = document.getElementById('cert-dropdown');
   if (!query.trim()) { dropdown.classList.remove('visible'); return; }
 
-  // 별칭 확장: 쿼리가 alias에 일치하면 해당 자격증명도 후보로 추가
-  const aliasKey = normalize(query);
-  const aliasTarget = Object.keys(CERT_ALIASES).find(k => normalize(k) === aliasKey || aliasKey.includes(normalize(k)));
-  const extraName = aliasTarget ? CERT_ALIASES[aliasTarget] : null;
-
-  const allNames = Object.keys(CERTIFICATIONS);
-  const scored = allNames
-    .map(name => {
-      let score = certSearchScore(name, query);
-      // 별칭으로 직접 지목된 경우 최상위 부스트
-      if (extraName && normalize(name) === normalize(extraName)) score = Math.max(score, 95);
-      return { name, score };
-    })
-    .filter(({ score }) => score > 0)
-    .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name, 'ko'));
-
+  const { scored, topName, isFuzzyOnly } = searchCerts(query);
   const matches = scored.map(({ name }) => name);
 
   if (matches.length === 0) { dropdown.classList.remove('visible'); return; }
 
-  // 오타 교정 안내: 최고 스코어가 오타교정(≤40)이고 입력값과 결과가 다를 때만 표시
-  const topScore = scored[0].score;
-  const topName  = scored[0].name;
-  const isFuzzyOnly = topScore <= 40 && normalize(topName) !== normalize(query);
   const correctionBanner = isFuzzyOnly
     ? `<div class="cert-dd-correction">
          <i class="fa-solid fa-spell-check"></i>
