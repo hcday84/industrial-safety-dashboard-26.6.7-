@@ -536,6 +536,7 @@ function switchCertification(certName) {
 
   STATE.currentCert = certName;
   try { localStorage.setItem('lastCert', certName); } catch(e) {}
+  addRecentCert(certName);
 
   // 필터 버튼 초기화
   document.querySelectorAll('.filter-btn').forEach(btn => {
