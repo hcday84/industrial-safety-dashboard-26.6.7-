@@ -516,6 +516,7 @@ function renderAll() {
   restoreCalendarToDashboard();
   updatePageMeta(cert);
   renderHero(cert);
+  updateFavBtn(cert.name);
   renderScheduleCards(cert);
   renderStatCards(cert);
   renderDdays(cert);
