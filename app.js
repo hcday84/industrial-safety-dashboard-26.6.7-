@@ -491,6 +491,7 @@ function showWelcomeScreen() {
   const nextBtn = document.getElementById('cal-next');
   if (prevBtn && !prevBtn._wcBound) { prevBtn.onclick = () => moveCalMonth(-1); prevBtn._wcBound = true; }
   if (nextBtn && !nextBtn._wcBound) { nextBtn.onclick = () => moveCalMonth(1);  nextBtn._wcBound = true; }
+  renderQuickRow();
   // 출판사 검색 위젯 초기화 (최초 1회)
   const pubInput = document.getElementById('publisher-search');
   if (pubInput && !pubInput._pubBound) {
