@@ -1692,7 +1692,7 @@ function renderCertDropdown(query) {
   const dropdown = document.getElementById('cert-dropdown');
   if (!query.trim()) { dropdown.classList.remove('visible'); return; }
 
-  const { scored, topName, isFuzzyOnly } = searchCerts(query);
+  const { scored, topName, isFuzzyOnly, isEngConverted, convertedQuery } = searchCerts(query);
   const matches = scored.map(({ name }) => name);
 
   if (matches.length === 0) { dropdown.classList.remove('visible'); return; }
@@ -1702,7 +1702,12 @@ function renderCertDropdown(query) {
          <i class="fa-solid fa-spell-check"></i>
          <span><b>${query}</b> 결과가 없어 <b>${topName}</b>(${roSuffix(topName)}) 검색되었어요.</span>
        </div>`
-    : '';
+    : isEngConverted
+      ? `<div class="cert-dd-correction cert-dd-eng">
+           <i class="fa-solid fa-keyboard"></i>
+           <span>영문 입력을 <b>${convertedQuery}</b>로 변환해 검색했습니다.</span>
+         </div>`
+      : '';
 
   dropdown.innerHTML = correctionBanner + matches.map(name => {
     const cert = CERTIFICATIONS[name];
