@@ -1550,16 +1550,73 @@ function normalize(str) {
   return str.toLowerCase().replace(/\s+/g, '');
 }
 
+// ── 영문(두벌식) → 한글 자동 변환 ───────────────────────────────────────────
+const ENG_TO_JAMO = {
+  'q':'ㅂ','w':'ㅈ','e':'ㄷ','r':'ㄱ','t':'ㅅ','y':'ㅛ','u':'ㅕ','i':'ㅑ','o':'ㅐ','p':'ㅔ',
+  'a':'ㅁ','s':'ㄴ','d':'ㅇ','f':'ㄹ','g':'ㅎ','h':'ㅗ','j':'ㅓ','k':'ㅏ','l':'ㅣ',
+  'z':'ㅋ','x':'ㅌ','c':'ㅊ','v':'ㅍ','b':'ㅠ','n':'ㅜ','m':'ㅡ',
+  'Q':'ㅃ','W':'ㅉ','E':'ㄸ','R':'ㄲ','T':'ㅆ','O':'ㅒ','P':'ㅖ',
+};
+
+function assembleKorean(jamos) {
+  const CHO  = ['ㄱ','ㄲ','ㄴ','ㄷ','ㄸ','ㄹ','ㅁ','ㅂ','ㅃ','ㅅ','ㅆ','ㅇ','ㅈ','ㅉ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
+  const JUNG = ['ㅏ','ㅐ','ㅑ','ㅒ','ㅓ','ㅔ','ㅕ','ㅖ','ㅗ','ㅘ','ㅙ','ㅚ','ㅛ','ㅜ','ㅝ','ㅞ','ㅟ','ㅠ','ㅡ','ㅢ','ㅣ'];
+  const JONG = ['','ㄱ','ㄲ','ㄳ','ㄴ','ㄵ','ㄶ','ㄷ','ㄹ','ㄺ','ㄻ','ㄼ','ㄽ','ㄾ','ㄿ','ㅀ','ㅁ','ㅂ','ㅄ','ㅅ','ㅆ','ㅇ','ㅈ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
+  const CV = {'ㅗㅏ':'ㅘ','ㅗㅐ':'ㅙ','ㅗㅣ':'ㅚ','ㅜㅓ':'ㅝ','ㅜㅔ':'ㅞ','ㅜㅣ':'ㅟ','ㅡㅣ':'ㅢ'};
+  const CJ = {'ㄱㅅ':'ㄳ','ㄴㅈ':'ㄵ','ㄴㅎ':'ㄶ','ㄹㄱ':'ㄺ','ㄹㅁ':'ㄻ','ㄹㅂ':'ㄼ','ㄹㅅ':'ㄽ','ㄹㅌ':'ㄾ','ㄹㅍ':'ㄿ','ㄹㅎ':'ㅀ','ㅂㅅ':'ㅄ'};
+  const SJ = {'ㄳ':['ㄱ','ㅅ'],'ㄵ':['ㄴ','ㅈ'],'ㄶ':['ㄴ','ㅎ'],'ㄺ':['ㄹ','ㄱ'],'ㄻ':['ㄹ','ㅁ'],'ㄼ':['ㄹ','ㅂ'],'ㄽ':['ㄹ','ㅅ'],'ㄾ':['ㄹ','ㅌ'],'ㄿ':['ㄹ','ㅍ'],'ㅀ':['ㄹ','ㅎ'],'ㅄ':['ㅂ','ㅅ']};
+  const isV = j => JUNG.includes(j);
+  const mkChar = (c, v, j) => {
+    if (!v) return c || '';
+    const ci = CHO.indexOf(c), vi = JUNG.indexOf(v), ji = j ? JONG.indexOf(j) : 0;
+    if (ci < 0 || vi < 0) return (c || '') + v;
+    return String.fromCharCode(0xAC00 + (ci * 21 + vi) * 28 + Math.max(0, ji));
+  };
+  let res = '', c = '', v = '', j = '';
+  for (const jamo of jamos) {
+    if (isV(jamo)) {
+      if (!c && !v)        { c = 'ㅇ'; v = jamo; }
+      else if (c && !v)    { v = jamo; }
+      else if (c && v && !j) {
+        const comp = CV[v + jamo];
+        if (comp) { v = comp; }
+        else { res += mkChar(c, v, ''); c = 'ㅇ'; v = jamo; j = ''; }
+      } else {
+        const sp = SJ[j];
+        if (sp) { res += mkChar(c, v, sp[0]); c = sp[1]; v = jamo; j = ''; }
+        else    { res += mkChar(c, v, '');    c = j;     v = jamo; j = ''; }
+      }
+    } else {
+      if (!c)              { c = jamo; }
+      else if (!v)         { res += c; c = jamo; j = ''; }
+      else if (!j) {
+        if (JONG.includes(jamo)) { j = jamo; }
+        else { res += mkChar(c, v, ''); c = jamo; v = ''; j = ''; }
+      } else {
+        const comp = CJ[j + jamo];
+        if (comp) { j = comp; }
+        else { res += mkChar(c, v, j); c = jamo; v = ''; j = ''; }
+      }
+    }
+  }
+  if (c || v) res += mkChar(c, v, j);
+  return res;
+}
+
+function engToKorean(str) {
+  if (!/^[a-zA-Z]+$/.test(str)) return null;
+  if (![...str].every(ch => ch in ENG_TO_JAMO)) return null;
+  return assembleKorean([...str].map(ch => ENG_TO_JAMO[ch]));
+}
+
 // ── 통합 자격증 검색 (별칭 확장 + 스코어링 + 오타 판별) ──────────────────────
-function searchCerts(query) {
+function _runSearch(query) {
   const aliasKey = normalize(query);
-  // 긴 별칭이 먼저 매칭되도록 정렬 (예: '토익스피킹' > '토익' 충돌 방지)
   const aliasTarget = Object.keys(CERT_ALIASES)
     .sort((a, b) => b.length - a.length)
     .find(k => normalize(k) === aliasKey || aliasKey.includes(normalize(k)));
   const extraName = aliasTarget ? CERT_ALIASES[aliasTarget] : null;
-
-  const scored = Object.keys(CERTIFICATIONS)
+  return Object.keys(CERTIFICATIONS)
     .map(name => {
       let score = certSearchScore(name, query);
       if (extraName && normalize(name) === normalize(extraName))
@@ -1568,12 +1625,31 @@ function searchCerts(query) {
     })
     .filter(({ score }) => score > 0)
     .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name, 'ko'));
+}
 
-  const topScore = scored[0]?.score ?? 0;
-  const topName  = scored[0]?.name  ?? '';
-  const isFuzzyOnly = topScore <= 40 && normalize(topName) !== normalize(query);
+function searchCerts(query) {
+  let scored = _runSearch(query);
+  let topScore = scored[0]?.score ?? 0;
+  let topName  = scored[0]?.name  ?? '';
+  let convertedQuery = null;
+  let isEngConverted = false;
 
-  return { scored, topName, topScore, isFuzzyOnly };
+  // 영문 두벌식 → 한글 자동 변환 시도
+  const conv = engToKorean(query);
+  if (conv && conv !== query) {
+    const convScored = _runSearch(conv);
+    const convTop = convScored[0]?.score ?? 0;
+    if (convTop > topScore) {
+      scored = convScored;
+      topScore = convTop;
+      topName = convScored[0]?.name ?? '';
+      convertedQuery = conv;
+      isEngConverted = true;
+    }
+  }
+
+  const isFuzzyOnly = !isEngConverted && topScore <= 40 && normalize(topName) !== normalize(query);
+  return { scored, topName, topScore, isFuzzyOnly, isEngConverted, convertedQuery };
 }
 
 // ── 부분 토큰 매칭 (입력 단어 모두 포함 여부) ────────────────────────────────
