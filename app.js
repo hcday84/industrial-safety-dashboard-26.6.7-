@@ -1945,13 +1945,14 @@ function initEventListeners() {
       }
     }
 
-    const { scored, topName, isFuzzyOnly } = searchCerts(query);
+    const { scored, topName, isFuzzyOnly, isEngConverted, convertedQuery } = searchCerts(query);
     if (scored.length === 0) return;
 
     dropdown.classList.remove('visible');
     _ddSelectedIdx = -1;
     switchCertification(topName);
     if (isFuzzyOnly) showCorrectionToast(query, topName);
+    else if (isEngConverted) showEngConvertToast(query, convertedQuery, topName);
   });
   document.addEventListener('click', e => {
     if (!e.target.closest('.header-search-bar')) {
