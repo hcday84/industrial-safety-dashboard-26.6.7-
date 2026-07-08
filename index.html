@@ -387,7 +387,12 @@
       <section id="schedule-section" class="dashboard-section card-box">
         <div class="section-header">
           <h2><i class="fa-regular fa-calendar-days text-teal"></i> <span id="schedule-section-title">2026년 정기 시험 일정</span></h2>
-          <span class="badge badge-success">공식 일정 반영</span>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <span class="badge badge-success">공식 일정 반영</span>
+            <button id="ics-download-btn" onclick="window.downloadICS()" class="btn-ics" title="Google/Apple 캘린더에 일정 추가">
+              <i class="fa-regular fa-calendar-plus"></i> 캘린더 내보내기
+            </button>
+          </div>
         </div>
         <div class="timeline-visual-bar">
           <div class="timeline-progress-bar" id="timeline-progress-bar" style="width: 35%;"></div>
