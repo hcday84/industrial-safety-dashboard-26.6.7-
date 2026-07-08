@@ -2779,6 +2779,8 @@ button, input, select {
   color: var(--text-color);
   font-weight: 700;
 }
+.cert-dd-eng i { color: #0d9488; }
+[data-theme="dark"] .cert-dd-eng i { color: #2dd4bf; }
 
 /* 오타 교정 토스트 알림 */
 #cert-correction-toast {
