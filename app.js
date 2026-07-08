@@ -1439,6 +1439,20 @@ function roSuffix(name) {
   return hasBatchim(name[name.length - 1]) ? '으로' : '로';
 }
 
+// ── 영문 변환 토스트 알림 ─────────────────────────────────────────────────────
+function showEngConvertToast(engInput, korQuery, certName) {
+  let toast = document.getElementById('cert-correction-toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'cert-correction-toast';
+    document.body.appendChild(toast);
+  }
+  toast.innerHTML = `<i class="fa-solid fa-keyboard"></i> 영문 입력을 <b>${korQuery}</b>로 변환해 <b>${certName}</b>을(를) 검색했어요.`;
+  toast.classList.add('visible');
+  clearTimeout(toast._timer);
+  toast._timer = setTimeout(() => toast.classList.remove('visible'), 4000);
+}
+
 // ── 오타 교정 토스트 알림 ─────────────────────────────────────────────────────
 function showCorrectionToast(originalQuery, correctedName) {
   const ro = roSuffix(correctedName);
