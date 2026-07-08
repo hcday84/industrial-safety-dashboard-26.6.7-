@@ -2049,3 +2049,255 @@ if (document.readyState === 'loading') {
 } else {
   initInventoryModal();
 }
+
+// ============================================
+// 20. 최근 검색 & 즐겨찾기
+// ============================================
+function getRecentCerts() {
+  try { return JSON.parse(localStorage.getItem('recentCerts') || '[]'); } catch { return []; }
+}
+function addRecentCert(name) {
+  const list = getRecentCerts().filter(n => n !== name);
+  list.unshift(name);
+  try { localStorage.setItem('recentCerts', JSON.stringify(list.slice(0, 5))); } catch {}
+}
+function getFavoriteCerts() {
+  try { return JSON.parse(localStorage.getItem('favoriteCerts') || '[]'); } catch { return []; }
+}
+function isFavoriteCert(name) { return getFavoriteCerts().includes(name); }
+function toggleFavoriteCert() {
+  const name = STATE.currentCert;
+  if (!name) return;
+  const favs = getFavoriteCerts();
+  const idx = favs.indexOf(name);
+  if (idx >= 0) favs.splice(idx, 1); else favs.unshift(name);
+  try { localStorage.setItem('favoriteCerts', JSON.stringify(favs)); } catch {}
+  updateFavBtn(name);
+}
+window.toggleFavoriteCert = toggleFavoriteCert;
+
+function updateFavBtn(name) {
+  const icon = document.getElementById('hero-fav-icon');
+  const btn  = document.getElementById('hero-fav-btn');
+  if (!icon || !btn) return;
+  const fav = isFavoriteCert(name);
+  icon.className = fav ? 'fa-solid fa-star' : 'fa-regular fa-star';
+  btn.classList.toggle('fav-active', fav);
+  btn.title = fav ? '즐겨찾기 제거' : '즐겨찾기 추가';
+}
+
+function renderQuickRow() {
+  const rowEl    = document.getElementById('welcome-quick-row');
+  const recWrap  = document.getElementById('recent-certs-wrap');
+  const favWrap  = document.getElementById('fav-certs-wrap');
+  const recChips = document.getElementById('recent-certs-chips');
+  const favChips = document.getElementById('fav-certs-chips');
+  if (!rowEl) return;
+
+  const recents = getRecentCerts().filter(n => CERTIFICATIONS[n]);
+  const favs    = getFavoriteCerts().filter(n => CERTIFICATIONS[n]);
+
+  const makeChip = name =>
+    `<span class="quick-chip" onclick="window.selectCert('${name}')">${name}</span>`;
+
+  if (recents.length) {
+    recChips.innerHTML = recents.map(makeChip).join('');
+    recWrap.style.display = '';
+  } else { recWrap.style.display = 'none'; }
+
+  if (favs.length) {
+    favChips.innerHTML = favs.map(n =>
+      `<span class="quick-chip fav-chip" onclick="window.selectCert('${n}')"><i class="fa-solid fa-star"></i>${n}</span>`
+    ).join('');
+    favWrap.style.display = '';
+  } else { favWrap.style.display = 'none'; }
+
+  rowEl.style.display = (recents.length || favs.length) ? '' : 'none';
+}
+
+// ============================================
+// 21. ICS 캘린더 내보내기
+// ============================================
+function padICS(n) { return String(n).padStart(2, '0'); }
+
+function toICSDate(dateStr) {
+  const d = new Date(dateStr.trim());
+  if (isNaN(d)) return null;
+  return `${d.getFullYear()}${padICS(d.getMonth()+1)}${padICS(d.getDate())}`;
+}
+
+function generateICS(cert) {
+  const lines = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//수험서 대시보드//KR',
+    'CALSCALE:GREGORIAN',
+    'METHOD:PUBLISH',
+  ];
+
+  const addEvent = (summary, dateStr, description) => {
+    const dt = toICSDate(dateStr);
+    if (!dt) return;
+    const uid = `${dt}-${Math.random().toString(36).slice(2)}@cert-dashboard`;
+    lines.push(
+      'BEGIN:VEVENT',
+      `UID:${uid}`,
+      `DTSTART;VALUE=DATE:${dt}`,
+      `DTEND;VALUE=DATE:${dt}`,
+      `SUMMARY:${summary}`,
+      `DESCRIPTION:${description}`,
+      'END:VEVENT'
+    );
+  };
+
+  cert.schedules.forEach(s => {
+    const base = `[${cert.name}] ${s.round}`;
+    if (s.writtenApply && s.writtenApply !== '-' && s.writtenApply !== '—') {
+      addEvent(`${base} 필기 원서접수`, s.writtenApply.split('~')[0], `${s.round} 필기 원서접수 시작`);
+    }
+    if (s.writtenExam && s.writtenExam !== '-' && s.writtenExam !== '—') {
+      addEvent(`${base} 필기 시험`, s.writtenExam.split('~')[0], `${s.round} 필기 시험 시작`);
+    }
+    if (s.writtenResult && s.writtenResult !== '-' && s.writtenResult !== '—') {
+      addEvent(`${base} 필기 합격발표`, s.writtenResult.split(/[~\/]/)[0], `${s.round} 필기 합격 발표`);
+    }
+    if (s.practicalApply && s.practicalApply !== '-' && s.practicalApply !== '—') {
+      addEvent(`${base} 실기 원서접수`, s.practicalApply.split('~')[0], `${s.round} 실기 원서접수 시작`);
+    }
+    if (s.practicalExam && s.practicalExam !== '-' && s.practicalExam !== '—') {
+      addEvent(`${base} 실기 시험`, s.practicalExam.split('~')[0], `${s.round} 실기 시험 시작`);
+    }
+    const finalDate = s.finalResult || s.practicalResult;
+    if (finalDate && finalDate !== '-' && finalDate !== '—') {
+      addEvent(`${base} 최종 합격발표`, finalDate.split(/[~\/]/)[0], `${s.round} 최종 합격 발표`);
+    }
+  });
+
+  lines.push('END:VCALENDAR');
+  return lines.join('\r\n');
+}
+
+window.downloadICS = function() {
+  const cert = getCert();
+  if (!cert) return;
+  const ics  = generateICS(cert);
+  const blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href     = url;
+  a.download = `${cert.name}_시험일정.ics`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+};
+
+// ============================================
+// 22. 자격증 비교 모달
+// ============================================
+window.openCompareModal = function() {
+  const cert = getCert();
+  if (!cert) return;
+  const overlay = document.getElementById('compare-modal-overlay');
+  const labelA  = document.getElementById('compare-cert-a-label');
+  const input   = document.getElementById('compare-search-input');
+  const panel   = document.getElementById('compare-panel');
+  if (!overlay) return;
+  labelA.textContent = cert.name;
+  input.value = '';
+  panel.innerHTML = '<p class="compare-hint"><i class="fa-solid fa-arrow-up"></i> 비교할 자격증을 검색하세요.</p>';
+  overlay.style.display = 'flex';
+  setTimeout(() => input.focus(), 80);
+};
+
+window.closeCompareModal = function() {
+  const overlay = document.getElementById('compare-modal-overlay');
+  if (overlay) overlay.style.display = 'none';
+};
+
+function renderComparePanel(nameB) {
+  const certA = getCert();
+  const certB = CERTIFICATIONS[nameB];
+  if (!certA || !certB) return;
+
+  const panel = document.getElementById('compare-panel');
+
+  const passA = parseFloat(certA.avgPassRate) || null;
+  const passB = parseFloat(certB.avgPassRate) || null;
+  const winA = passA && passB ? passA > passB : false;
+  const winB = passA && passB ? passB > passA : false;
+
+  const subA = (certA.subjects || []).length;
+  const subB = (certB.subjects || []).length;
+
+  const schA = (certA.schedules || []).length;
+  const schB = (certB.schedules || []).length;
+
+  const periodA = getStudyPeriod(certA);
+  const periodB = getStudyPeriod(certB);
+
+  const typeLabel = n => {
+    if (PRIVATE_CERT_NAMES.has(n)) return '민간자격';
+    if (PROFESSIONAL_CERT_NAMES.has(n)) return '국가전문';
+    return '국가기술';
+  };
+
+  const row = (label, valA, valB, highlightA, highlightB) => `
+    <tr>
+      <td class="cmp-val ${highlightA ? 'cmp-win' : ''}">${valA}</td>
+      <td class="cmp-label">${label}</td>
+      <td class="cmp-val ${highlightB ? 'cmp-win' : ''}">${valB}</td>
+    </tr>`;
+
+  panel.innerHTML = `
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th class="cmp-cert-name">${certA.name}</th>
+          <th class="cmp-center"></th>
+          <th class="cmp-cert-name">${certB.name}</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${row('자격 종류',    typeLabel(certA.name), typeLabel(certB.name), false, false)}
+        ${row('분야',         certA.category, certB.category, false, false)}
+        ${row('평균 합격률',  certA.avgPassRate, certB.avgPassRate, winA, winB)}
+        ${row('시험 횟수',    `연 ${schA}회`, `연 ${schB}회`, schA > schB, schB > schA)}
+        ${row('시험 과목 수', `${subA}과목`, `${subB}과목`, false, false)}
+        ${row('평균 준비기간', periodA, periodB, false, false)}
+      </tbody>
+    </table>
+    <div class="compare-actions">
+      <button class="btn btn-secondary btn-sm" onclick="window.selectCert('${certB.name}');window.closeCompareModal()">
+        <i class="fa-solid fa-arrow-right"></i> ${certB.name} 대시보드로 이동
+      </button>
+    </div>`;
+}
+
+(function initCompareModal() {
+  document.addEventListener('DOMContentLoaded', () => {
+    const input    = document.getElementById('compare-search-input');
+    const dropdown = document.getElementById('compare-dropdown');
+    if (!input || !dropdown) return;
+
+    input.addEventListener('input', () => {
+      const q = input.value.trim();
+      if (!q) { dropdown.style.display = 'none'; return; }
+      const { scored } = searchCerts(q);
+      const matches = scored.slice(0, 8).map(s => s.name);
+      if (!matches.length) { dropdown.style.display = 'none'; return; }
+      dropdown.innerHTML = matches.map(name =>
+        `<div class="compare-dd-item" onclick="(function(){
+          document.getElementById('compare-search-input').value='${name}';
+          document.getElementById('compare-dropdown').style.display='none';
+          renderComparePanel('${name}');
+        })()">${name}</div>`
+      ).join('');
+      dropdown.style.display = '';
+    });
+
+    document.addEventListener('click', e => {
+      if (!e.target.closest('#compare-modal')) dropdown.style.display = 'none';
+    });
+  });
+})();
