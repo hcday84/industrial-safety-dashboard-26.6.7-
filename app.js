@@ -1831,42 +1831,32 @@ const PUBLISHERS = [
 function initPublisherSearch() {
   const input   = document.getElementById('publisher-search');
   const results = document.getElementById('publisher-results');
-  const quickEl = document.getElementById('publisher-quick-tags');
-  if (!input || !results || !quickEl) return;
+  const grid    = document.getElementById('publisher-link-grid');
+  if (!input || !results || !grid) return;
 
-  // 빠른 접근 태그 (자주 쓰는 출판사)
-  const quickList = ['성안당', '예문사', '에듀윌', '시대에듀', '한솔아카데미', '영진닷컴'];
-  quickEl.innerHTML = quickList.map(name => {
-    const pub = PUBLISHERS.find(p => p.name === name);
-    return pub
-      ? `<span class="publisher-quick-tag" onclick="(function(){document.getElementById('publisher-search').value='${name}';renderPublisherResults('${name}');})()">${name}</span>`
-      : '';
-  }).join('');
-
-  input.addEventListener('input', e => window.renderPublisherResults(e.target.value));
-}
-
-window.renderPublisherResults = function renderPublisherResults(query) {
-  const results = document.getElementById('publisher-results');
-  if (!results) return;
-  const q = query.trim().toLowerCase();
-  if (!q) { results.innerHTML = ''; return; }
-
-  const matched = PUBLISHERS.filter(p =>
-    p.name.toLowerCase().includes(q) ||
-    p.keywords.some(k => k.toLowerCase().includes(q))
-  );
-
-  if (matched.length === 0) {
-    results.innerHTML = `<span class="publisher-no-result"><i class="fa-solid fa-circle-info"></i> 검색 결과가 없습니다.</span>`;
-    return;
-  }
-
-  results.innerHTML = matched.map(p =>
-    `<a href="${p.url}" target="_blank" rel="noopener noreferrer" class="publisher-result-btn">
-      <i class="fa-solid fa-arrow-up-right-from-square"></i>${p.name} 홈페이지
+  // 전체 출판사를 링크 칩으로 렌더링 (카테고리별 색상 구분)
+  grid.innerHTML = PUBLISHERS.map(pub =>
+    `<a href="${pub.url}" target="_blank" rel="noopener noreferrer"
+       class="publisher-link-chip"
+       data-category="${pub.category}"
+       data-name="${pub.name.toLowerCase()}"
+       data-kw="${pub.keywords.join(' ').toLowerCase()}">
+      <i class="fa-solid fa-arrow-up-right-from-square"></i>${pub.name}
     </a>`
   ).join('');
+
+  input.addEventListener('input', e => {
+    const q = e.target.value.trim().toLowerCase();
+    let visible = 0;
+    grid.querySelectorAll('.publisher-link-chip').forEach(chip => {
+      const show = !q || chip.dataset.name.includes(q) || chip.dataset.kw.includes(q);
+      chip.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    results.innerHTML = visible === 0 && q
+      ? `<span class="publisher-no-result"><i class="fa-solid fa-circle-info"></i> 검색 결과가 없습니다.</span>`
+      : '';
+  });
 }
 
 // ============================================
