@@ -1008,29 +1008,55 @@ button, input, select {
   padding: 6px 2px;
 }
 
-.publisher-quick-tags {
+.publisher-link-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-top: 10px;
+  margin-top: 12px;
+  max-height: 210px;
+  overflow-y: auto;
+  padding-right: 2px;
 }
 
-.publisher-quick-tag {
-  padding: 5px 12px;
-  background: var(--card-bg);
+.publisher-link-grid::-webkit-scrollbar { width: 4px; }
+.publisher-link-grid::-webkit-scrollbar-track { background: transparent; }
+.publisher-link-grid::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+.publisher-link-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 11px;
   border: 1px solid var(--border-color);
   border-radius: 50px;
   font-size: 0.8rem;
   color: var(--text-secondary);
+  background: var(--card-bg);
+  text-decoration: none;
   cursor: pointer;
   transition: all 0.18s;
+  white-space: nowrap;
 }
 
-.publisher-quick-tag:hover {
+.publisher-link-chip:hover {
   border-color: var(--green-color);
   color: var(--green-color);
   background: var(--green-bg);
+  text-decoration: none;
 }
+
+.publisher-link-chip i {
+  font-size: 0.65rem;
+  opacity: 0.6;
+}
+
+.publisher-link-chip[data-category="기술자격"] { border-color: rgba(99,102,241,0.3); }
+.publisher-link-chip[data-category="공무원고시"] { border-color: rgba(245,158,11,0.3); }
+.publisher-link-chip[data-category="IT개발"] { border-color: rgba(16,185,129,0.3); }
+.publisher-link-chip[data-category="서점"] { border-color: rgba(239,68,68,0.3); }
 
 /* 5. 히어로 배너 영역 */
 .hero-widgets-row {
