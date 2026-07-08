@@ -1553,7 +1553,9 @@ function normalize(str) {
 // ── 통합 자격증 검색 (별칭 확장 + 스코어링 + 오타 판별) ──────────────────────
 function searchCerts(query) {
   const aliasKey = normalize(query);
+  // 긴 별칭이 먼저 매칭되도록 정렬 (예: '토익스피킹' > '토익' 충돌 방지)
   const aliasTarget = Object.keys(CERT_ALIASES)
+    .sort((a, b) => b.length - a.length)
     .find(k => normalize(k) === aliasKey || aliasKey.includes(normalize(k)));
   const extraName = aliasTarget ? CERT_ALIASES[aliasTarget] : null;
 
