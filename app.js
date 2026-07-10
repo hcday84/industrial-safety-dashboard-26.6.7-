@@ -1822,10 +1822,6 @@ const PUBLISHERS = [
   { name: '리코멘드',       url: 'https://www.rdbook.co.kr',         category: '어학기타', keywords: ['리코멘드'] },
   { name: '비엘북스',       url: 'https://vielbooks.com',            category: '어학기타', keywords: ['비엘북스', '비엘'] },
   { name: '엔트미디어',     url: 'https://entmedia.co.kr',           category: '어학기타', keywords: ['엔트미디어'] },
-  // 서점
-  { name: '교보문고',       url: 'https://www.kyobobook.co.kr',      category: '서점', keywords: ['교보'] },
-  { name: '알라딘',         url: 'https://www.aladin.co.kr',         category: '서점', keywords: ['알라딘'] },
-  { name: '예스24',         url: 'https://www.yes24.com',            category: '서점', keywords: ['예스'] },
 ];
 
 function initPublisherSearch() {
