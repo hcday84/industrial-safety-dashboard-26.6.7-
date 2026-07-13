@@ -1508,23 +1508,46 @@ function buildRoadmapRelated(cert, excludeNames) {
 }
 
 function renderRoadmap(cert) {
-  const pathEl = document.getElementById('roadmap-path');
+  const pathEl    = document.getElementById('roadmap-path');
   const relatedEl = document.getElementById('roadmap-related');
   if (!pathEl || !relatedEl) return;
 
   const path = buildRoadmapPath(cert);
   const usedNames = new Set([cert.name, ...((path || []).map(p => p.name))]);
-  const related = buildRoadmapRelated(cert, usedNames);
+  const related   = buildRoadmapRelated(cert, usedNames);
 
+  // ── 계단식 타일 트리 ──────────────────────────────────────────────
   if (path) {
     pathEl.style.display = '';
-    pathEl.innerHTML = path.map((p, i) => `
-      <div class="roadmap-step ${p.current ? 'current' : ''} ${p.exists ? 'clickable' : 'disabled'}" ${p.exists && !p.current ? `onclick="switchCertification('${p.name}')"` : ''}>
-        <span class="roadmap-step-label">${p.label}</span>
-        <span class="roadmap-step-name">${p.name}</span>
-      </div>
-      ${i < path.length - 1 ? '<i class="fa-solid fa-chevron-right roadmap-arrow"></i>' : ''}
-    `).join('');
+    const LEVEL_META = {
+      '기능사':   { color: '#6b7280', bg: 'rgba(107,114,128,0.1)', icon: 'fa-seedling' },
+      '산업기사': { color: '#2563eb', bg: 'rgba(37,99,235,0.1)',   icon: 'fa-layer-group' },
+      '기능장':   { color: '#7c3aed', bg: 'rgba(124,58,237,0.1)',  icon: 'fa-medal' },
+      '기사':     { color: '#0891b2', bg: 'rgba(8,145,178,0.1)',   icon: 'fa-graduation-cap' },
+      '기술사':   { color: '#d97706', bg: 'rgba(217,119,6,0.1)',   icon: 'fa-crown' },
+    };
+    pathEl.innerHTML = `
+      <div class="roadmap-tree">
+        ${path.map((p, i) => {
+          const meta = LEVEL_META[p.label] || { color: '#6b7280', bg: 'rgba(107,114,128,0.1)', icon: 'fa-certificate' };
+          const pop  = CERT_POPULARITY[p.name];
+          const stars = pop ? renderStars(pop.stars) : '';
+          return `
+            <div class="roadmap-tree-col" style="--rm-color:${meta.color};--rm-bg:${meta.bg};">
+              <div class="roadmap-tree-level">${p.label}</div>
+              <div class="roadmap-tree-card ${p.current ? 'rm-current' : ''} ${p.exists && !p.current ? 'rm-clickable' : ''}"
+                   ${p.exists && !p.current ? `onclick="switchCertification('${p.name.replace(/'/g,"\\'")}')"` : ''}>
+                <i class="fa-solid ${meta.icon} rm-icon"></i>
+                <span class="rm-name">${p.name}</span>
+                ${stars ? `<div class="rm-stars">${stars}</div>` : ''}
+                ${p.current ? '<span class="rm-badge">현재</span>' : ''}
+                ${!p.exists ? '<span class="rm-badge rm-badge-gray">미등록</span>' : ''}
+              </div>
+              ${i < path.length - 1 ? '<div class="roadmap-tree-arrow"><i class="fa-solid fa-arrow-right"></i></div>' : ''}
+            </div>
+          `;
+        }).join('')}
+      </div>`;
   } else {
     pathEl.style.display = 'none';
     pathEl.innerHTML = '';
@@ -1532,13 +1555,211 @@ function renderRoadmap(cert) {
 
   if (related.length > 0) {
     relatedEl.innerHTML = related.map(n => {
-      const c = CERTIFICATIONS[n];
-      return `<button class="roadmap-related-chip" onclick="switchCertification('${n}')"><i class="fa-solid ${c.icon || 'fa-certificate'}"></i> ${n}</button>`;
+      const c   = CERTIFICATIONS[n];
+      const pop = CERT_POPULARITY[n];
+      return `<button class="roadmap-related-chip" onclick="switchCertification('${n.replace(/'/g,"\\'")}')">
+        <i class="fa-solid ${c.icon || 'fa-certificate'}"></i>
+        <span>${n}</span>
+        ${pop ? `<span class="roadmap-chip-stars">${renderStars(pop.stars)}</span>` : ''}
+      </button>`;
     }).join('');
   } else {
     relatedEl.innerHTML = `<span class="roadmap-empty">같은 분야의 다른 자격증 정보가 없습니다.</span>`;
   }
 }
+
+// ============================================
+// 합격 가능성 예측기
+// ============================================
+function renderPredictor(cert) {
+  const el = document.getElementById('predictor-body');
+  if (!el) return;
+
+  const subjects = cert.subjects || [];
+  if (!subjects.length) {
+    el.innerHTML = `<p class="predictor-empty"><i class="fa-solid fa-circle-info"></i> 이 자격증은 과목 데이터가 없어 예측기를 사용할 수 없습니다.</p>`;
+    return;
+  }
+
+  // 과목별 점수 입력 렌더
+  el.innerHTML = `
+    <div class="predictor-grid">
+      ${subjects.map((s, i) => `
+        <div class="predictor-subject">
+          <label class="pred-label">${s.name || s}</label>
+          <div class="pred-input-wrap">
+            <input type="number" class="pred-score-input" id="pred-score-${i}"
+              min="0" max="100" placeholder="0~100"
+              oninput="calcPassPredictor(${subjects.length})" />
+            <span class="pred-unit">점</span>
+          </div>
+          <div class="pred-bar-wrap">
+            <div class="pred-bar" id="pred-bar-${i}" style="width:0%"></div>
+          </div>
+        </div>
+      `).join('')}
+    </div>
+    <div class="predictor-result" id="predictor-result">
+      <div class="pred-result-empty">점수를 입력하면 합격 가능성이 표시됩니다</div>
+    </div>
+  `;
+}
+
+window.calcPassPredictor = function(subjectCount) {
+  const scores = [];
+  for (let i = 0; i < subjectCount; i++) {
+    const val = parseFloat(document.getElementById(`pred-score-${i}`)?.value);
+    scores.push(isNaN(val) ? null : Math.min(100, Math.max(0, val)));
+
+    // 개별 바 업데이트
+    const bar = document.getElementById(`pred-bar-${i}`);
+    if (bar) {
+      const v = scores[i] ?? 0;
+      bar.style.width = v + '%';
+      bar.style.background = v < 40 ? '#ef4444' : v < 60 ? '#f59e0b' : '#10b981';
+    }
+  }
+
+  const filled = scores.filter(s => s !== null);
+  if (!filled.length) return;
+
+  const avg = filled.reduce((a, b) => a + b, 0) / filled.length;
+  const minScore = Math.min(...filled);
+  const hasNull = scores.some(s => s === null);
+
+  const resultEl = document.getElementById('predictor-result');
+  if (!resultEl) return;
+
+  // 판정 로직
+  let verdict, cls, icon, detail;
+  if (hasNull) {
+    // 일부 미입력 — 입력된 것만 기준 예측
+    if (filled.some(s => s < 40)) {
+      verdict = '과락 위험'; cls = 'pred-danger'; icon = 'fa-triangle-exclamation';
+      detail = `입력된 과목 중 40점 미만이 있습니다.`;
+    } else if (avg >= 70) {
+      verdict = '합격 가능성 높음'; cls = 'pred-good'; icon = 'fa-circle-check';
+      detail = `현재까지 입력 평균 ${avg.toFixed(1)}점 — 나머지 과목도 40점 이상 유지하세요.`;
+    } else {
+      verdict = '점수 부족'; cls = 'pred-warn'; icon = 'fa-circle-exclamation';
+      detail = `현재 평균 ${avg.toFixed(1)}점 — 나머지 과목을 높여야 합니다.`;
+    }
+  } else if (minScore < 40) {
+    verdict = '불합격 (과락)'; cls = 'pred-fail'; icon = 'fa-xmark-circle';
+    detail = `40점 미만 과목이 있어 과락입니다. 해당 과목 집중 보완이 필요합니다.`;
+  } else if (avg < 60) {
+    verdict = '불합격 (평균 미달)'; cls = 'pred-fail'; icon = 'fa-xmark-circle';
+    detail = `평균 ${avg.toFixed(1)}점 — 합격선(60점) 미달입니다. ${(60 - avg).toFixed(1)}점 더 필요합니다.`;
+  } else if (avg < 65) {
+    verdict = '합격선 근접'; cls = 'pred-warn'; icon = 'fa-circle-exclamation';
+    detail = `평균 ${avg.toFixed(1)}점 — 합격 기준을 넘었지만 여유가 없습니다.`;
+  } else if (avg < 75) {
+    verdict = '합격 가능성 높음'; cls = 'pred-good'; icon = 'fa-circle-check';
+    detail = `평균 ${avg.toFixed(1)}점 — 안정적인 합격권입니다.`;
+  } else {
+    verdict = '합격 확실시'; cls = 'pred-excellent'; icon = 'fa-star';
+    detail = `평균 ${avg.toFixed(1)}점 — 우수한 성적입니다!`;
+  }
+
+  // 예상 점수 바
+  const pct = Math.min(100, (avg / 100) * 100);
+  resultEl.innerHTML = `
+    <div class="pred-result-card ${cls}">
+      <div class="pred-result-header">
+        <i class="fa-solid ${icon}"></i>
+        <span class="pred-verdict">${verdict}</span>
+        <span class="pred-avg-score">평균 ${avg.toFixed(1)}점</span>
+      </div>
+      <div class="pred-score-bar-wrap">
+        <div class="pred-score-bar-track">
+          <div class="pred-score-bar-fill" style="width:${pct}%"></div>
+          <div class="pred-pass-line" style="left:60%"><span>합격선 60</span></div>
+        </div>
+      </div>
+      <p class="pred-detail">${detail}</p>
+      ${minScore < 40 && !hasNull ? `<p class="pred-sub-warn"><i class="fa-solid fa-triangle-exclamation"></i> 최저 점수: ${minScore}점 — 과락 기준(40점) 미달</p>` : ''}
+    </div>
+  `;
+};
+
+// ============================================
+// 시험장 지역 검색
+// ============================================
+const EXAM_REGIONS = [
+  { name: '서울', code: 'S', centers: ['서울지역본부 (강남)', '서울동부센터', '서울서부센터', '서울남부센터', '서울북부센터'] },
+  { name: '부산', code: 'B', centers: ['부산지역본부', '부산남부센터'] },
+  { name: '대구', code: 'D', centers: ['대구지역본부', '대구서부센터'] },
+  { name: '인천', code: 'I', centers: ['인천지역본부', '인천서부센터'] },
+  { name: '광주', code: 'G', centers: ['광주지역본부'] },
+  { name: '대전', code: 'J', centers: ['대전지역본부', '대전세종센터'] },
+  { name: '울산', code: 'U', centers: ['울산지역본부'] },
+  { name: '세종', code: 'SJ', centers: ['대전세종센터(세종)'] },
+  { name: '경기', code: 'GG', centers: ['경기지역본부 (수원)', '경기북부센터 (의정부)', '경기동부센터 (성남)', '경기서부센터 (부천)'] },
+  { name: '강원', code: 'GW', centers: ['강원지역본부 (춘천)', '강원동부센터 (강릉)'] },
+  { name: '충북', code: 'CB', centers: ['충북지역본부 (청주)'] },
+  { name: '충남', code: 'CN', centers: ['충남지역본부 (천안)'] },
+  { name: '전북', code: 'JB', centers: ['전북지역본부 (전주)'] },
+  { name: '전남', code: 'JN', centers: ['전남지역본부 (광주)'] },
+  { name: '경북', code: 'GB', centers: ['경북지역본부 (구미)', '경북동부센터 (포항)'] },
+  { name: '경남', code: 'GN', centers: ['경남지역본부 (창원)', '경남서부센터 (진주)'] },
+  { name: '제주', code: 'JJ', centers: ['제주지역본부'] },
+];
+
+function initLocationSection() {
+  const gridEl = document.getElementById('location-region-grid');
+  if (!gridEl || gridEl._bound) return;
+  gridEl._bound = true;
+
+  gridEl.innerHTML = EXAM_REGIONS.map(r => `
+    <button class="loc-region-btn" onclick="showLocationCenters('${r.code}')">
+      ${r.name}
+    </button>
+  `).join('');
+}
+
+window.showLocationCenters = function(code) {
+  const region = EXAM_REGIONS.find(r => r.code === code);
+  if (!region) return;
+
+  // 버튼 active 토글
+  document.querySelectorAll('.loc-region-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.loc-region-btn').forEach(b => {
+    if (b.textContent.trim() === region.name) b.classList.add('active');
+  });
+
+  const el = document.getElementById('location-centers');
+  if (!el) return;
+
+  // Q-Net 시험장 찾기 URL (지역별 검색 링크)
+  const qnetUrl = `https://www.q-net.or.kr/tst002.do?id=tst00201&gSite=Q&gId=`;
+  const scheduleUrl = `https://www.q-net.or.kr/cst001.do?id=cst00101&gSite=Q&gId=`;
+
+  el.innerHTML = `
+    <div class="location-result">
+      <div class="loc-result-header">
+        <i class="fa-solid fa-map-marker-alt"></i>
+        <strong>${region.name}</strong> 지역 시험센터
+      </div>
+      <div class="loc-centers-list">
+        ${region.centers.map(c => `
+          <div class="loc-center-item">
+            <i class="fa-regular fa-building"></i>
+            <span>${c}</span>
+          </div>
+        `).join('')}
+      </div>
+      <div class="loc-links">
+        <a href="${qnetUrl}" target="_blank" rel="noopener noreferrer" class="loc-link-btn loc-link-primary">
+          <i class="fa-solid fa-map-location-dot"></i> Q-Net 시험장 찾기
+        </a>
+        <a href="${scheduleUrl}" target="_blank" rel="noopener noreferrer" class="loc-link-btn loc-link-secondary">
+          <i class="fa-solid fa-calendar-check"></i> Q-Net 시험 일정 조회
+        </a>
+      </div>
+      <p class="loc-notice"><i class="fa-solid fa-circle-info"></i> 시험장 배정은 원서 접수 후 Q-Net에서 확인됩니다. 위 센터는 참고용이며 실제 시험장과 다를 수 있습니다.</p>
+    </div>
+  `;
+};
 
 // ============================================
 // 16. 자격증 검색 드롭다운
