@@ -2219,7 +2219,8 @@ button, input, select {
 }
 
 .fill-amber { background-color: var(--accent-color); }
-.fill-teal { background-color: var(--primary-color); }
+.fill-teal  { background-color: var(--primary-color); }
+.fill-sky   { background-color: #0ea5e9; }
 
 .subject-guide-container {
   display: flex;
