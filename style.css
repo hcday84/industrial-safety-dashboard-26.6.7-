@@ -4416,3 +4416,272 @@ button, input, select {
   align-items: center;
   gap: 5px;
 }
+
+/* ==============================
+   사이드바 구분선
+   ============================== */
+.nav-divider {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 12px 4px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+.nav-divider::before, .nav-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-color);
+}
+
+/* ==============================
+   D-Day 위젯 (웰컴 페이지)
+   ============================== */
+.dday-widget-section { margin: 0 0 12px; }
+.dday-widget-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 10px;
+}
+.dday-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  cursor: pointer;
+  transition: transform .15s, box-shadow .15s;
+}
+.dday-card:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(0,0,0,.1); }
+.dday-card-icon {
+  width: 34px; height: 34px;
+  border-radius: 9px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem; color: #fff; flex-shrink: 0;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+}
+.dday-card.dday-urgent .dday-card-icon { background: linear-gradient(135deg,#ef4444,#dc2626); }
+.dday-card.dday-soon   .dday-card-icon { background: linear-gradient(135deg,#f59e0b,#d97706); }
+.dday-card-body { flex: 1; min-width: 0; }
+.dday-card-name { font-size: 0.82rem; font-weight: 700; color: var(--text-color); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dday-card-meta { font-size: 0.72rem; color: var(--text-muted); }
+.dday-card-date { font-size: 0.7rem; color: var(--text-muted); }
+.dday-badge {
+  font-size: 0.78rem; font-weight: 800;
+  padding: 4px 10px; border-radius: 20px;
+  white-space: nowrap; flex-shrink: 0;
+}
+.dday-badge.dday-urgent { background:#fef2f2; color:#dc2626; }
+.dday-badge.dday-soon   { background:#fffbeb; color:#d97706; }
+.dday-badge.dday-normal { background:#f0fdf4; color:#16a34a; }
+
+/* ==============================
+   자격증 비교기 (인라인)
+   ============================== */
+.compare-inline-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.compare-inline-a {
+  font-size: 0.9rem; font-weight: 700; color: var(--primary-color);
+  padding: 8px 14px; background: var(--primary-color)15; border-radius: 8px;
+  border: 1.5px solid var(--primary-color); min-width: 140px; text-align: center;
+}
+.compare-vs-badge {
+  font-size: 0.85rem; font-weight: 800; color: var(--text-muted);
+  background: var(--bg-color2); padding: 4px 10px; border-radius: 20px;
+}
+.compare-inline-b-wrap { position: relative; flex: 1; min-width: 200px; }
+.compare-inline-input {
+  width: 100%; padding: 8px 12px; border-radius: 8px;
+  border: 1.5px solid var(--border-color); background: var(--card-bg);
+  color: var(--text-color); font-size: 0.88rem;
+}
+.compare-inline-input:focus { outline: none; border-color: var(--primary-color); }
+.compare-inline-dropdown {
+  position: absolute; top: 100%; left: 0; right: 0;
+  background: var(--card-bg); border: 1px solid var(--border-color);
+  border-radius: 8px; box-shadow: 0 6px 20px rgba(0,0,0,.12);
+  z-index: 50; max-height: 200px; overflow-y: auto; display: none;
+}
+.compare-dropdown-item { padding: 8px 12px; font-size: 0.85rem; cursor: pointer; color: var(--text-color); }
+.compare-dropdown-item:hover { background: var(--hover-bg); }
+.compare-hint { color: var(--text-muted); font-size: 0.85rem; padding: 16px 0; }
+.cmp-table-wrap { overflow-x: auto; margin-bottom: 16px; }
+.cmp-table { width: 100%; border-collapse: collapse; }
+.cmp-table th, .cmp-table td { padding: 9px 12px; font-size: 0.82rem; border-bottom: 1px solid var(--border-color); }
+.cmp-th-a, .cmp-th-b { font-weight: 700; color: var(--primary-color); text-align: center; }
+.cmp-th-mid { text-align: center; color: var(--text-muted); font-size: 0.75rem; }
+.cmp-label { text-align: center; font-size: 0.75rem; color: var(--text-muted); white-space: nowrap; }
+.cmp-val { text-align: center; }
+.cmp-win { font-weight: 700; color: var(--green-color); }
+.cmp-no-data { color: var(--text-muted); }
+.cmp-bar-wrap { display: flex; align-items: center; gap: 6px; justify-content: center; }
+.cmp-bar { height: 8px; border-radius: 4px; min-width: 4px; }
+.cmp-subjects { margin-top: 6px; }
+.cmp-subjects-title { font-size: 0.8rem; font-weight: 700; color: var(--text-muted); margin-bottom: 8px; }
+.cmp-sub-table { width: 100%; border-collapse: collapse; }
+.cmp-sub-table th { padding: 6px 10px; font-size: 0.75rem; color: var(--text-muted); border-bottom: 1px solid var(--border-color); text-align: center; }
+.cmp-sub-table td { padding: 5px 10px; font-size: 0.8rem; border-bottom: 1px solid var(--border-color); }
+.cmp-sub-val { max-width: 160px; }
+.cmp-sub-center { text-align: center; color: var(--text-muted); font-size: 0.75rem; width: 30px; }
+.cmp-sub-dot { color: var(--primary-color); margin-right: 5px; font-size: 0.6rem; }
+
+/* ==============================
+   합격 팁 & 후기
+   ============================== */
+.tip-card {
+  background: var(--card-bg); border: 1px solid var(--border-color);
+  border-radius: 10px; padding: 12px 14px; margin-bottom: 10px;
+}
+.tip-card-header { display: flex; gap: 8px; margin-bottom: 8px; align-items: center; }
+.tip-type-badge, .tip-tag-badge {
+  font-size: 0.72rem; font-weight: 700;
+  padding: 2px 8px; border-radius: 10px;
+}
+.tip-card-text { font-size: 0.84rem; color: var(--text-color); line-height: 1.6; margin: 0; }
+.tips-no-data { font-size: 0.85rem; color: var(--text-muted); padding: 16px; text-align: center; line-height: 1.7; }
+
+/* ==============================
+   자격증 FAQ
+   ============================== */
+.faq-search-wrap { margin-bottom: 14px; }
+.faq-search-input {
+  width: 100%; padding: 8px 14px; border-radius: 8px;
+  border: 1.5px solid var(--border-color); background: var(--card-bg);
+  color: var(--text-color); font-size: 0.88rem;
+}
+.faq-search-input:focus { outline: none; border-color: var(--primary-color); }
+.faq-list { display: flex; flex-direction: column; gap: 8px; }
+.faq-item { border: 1px solid var(--border-color); border-radius: 10px; overflow: hidden; }
+.faq-q {
+  width: 100%; text-align: left; background: var(--card-bg);
+  padding: 12px 14px; border: none; cursor: pointer;
+  font-size: 0.85rem; font-weight: 600; color: var(--text-color);
+  display: flex; justify-content: space-between; align-items: center; gap: 10px;
+}
+.faq-q:hover { background: var(--hover-bg); }
+.faq-chevron { color: var(--text-muted); font-size: 0.78rem; flex-shrink: 0; transition: transform .2s; }
+.faq-a {
+  padding: 10px 14px 12px;
+  font-size: 0.82rem; color: var(--text-secondary);
+  line-height: 1.65; border-top: 1px solid var(--border-color);
+  background: var(--bg-color2);
+}
+
+/* ==============================
+   출판 일정 캘린더
+   ============================== */
+.pub-cal-filter { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+.pub-cal-btn {
+  padding: 5px 14px; border-radius: 20px; border: 1.5px solid var(--border-color);
+  background: var(--card-bg); color: var(--text-muted); font-size: 0.8rem;
+  font-weight: 600; cursor: pointer; transition: all .15s;
+}
+.pub-cal-btn.active { background: var(--primary-color); border-color: var(--primary-color); color: #fff; }
+.pub-calendar-list { display: flex; flex-direction: column; gap: 8px; }
+.pub-cal-card {
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  padding: 12px 14px; border-radius: 10px; border: 1px solid var(--border-color);
+  background: var(--card-bg);
+}
+.pub-cal-cert { font-size: 0.85rem; cursor: pointer; }
+.pub-cal-cert strong:hover { color: var(--primary-color); }
+.pub-cal-round { font-size: 0.75rem; color: var(--text-muted); }
+.pub-cal-dates { display: flex; gap: 12px; flex-wrap: wrap; margin-left: auto; }
+.pub-cal-exam-date, .pub-cal-pub-date { font-size: 0.75rem; padding: 3px 10px; border-radius: 20px; display: flex; align-items: center; gap: 5px; }
+.exam-urgent { background: #fef2f2; color: #dc2626; }
+.exam-soon   { background: #fffbeb; color: #d97706; }
+.exam-normal { background: #f0fdf4; color: #16a34a; }
+.pub-overdue { background: #fef2f2; color: #dc2626; }
+.pub-urgent  { background: #fffbeb; color: #d97706; }
+.pub-normal  { background: #eff6ff; color: #1d4ed8; }
+
+/* ==============================
+   개정판 추적기
+   ============================== */
+.rev-filter { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+.rev-btn {
+  padding: 5px 14px; border-radius: 20px; border: 1.5px solid var(--border-color);
+  background: var(--card-bg); color: var(--text-muted); font-size: 0.8rem;
+  font-weight: 600; cursor: pointer; transition: all .15s;
+}
+.rev-btn.active { background: var(--primary-color); border-color: var(--primary-color); color: #fff; }
+.revision-list { display: flex; flex-direction: column; gap: 10px; }
+.rev-card {
+  padding: 12px 14px; border-radius: 10px; border: 1px solid var(--border-color);
+  background: var(--card-bg);
+}
+.rev-card.rev-update-needed { border-left: 4px solid #f59e0b; }
+.rev-card-header { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+.rev-cert-name { font-weight: 700; font-size: 0.88rem; color: var(--primary-color); cursor: pointer; }
+.rev-cert-name:hover { text-decoration: underline; }
+.rev-type-badge { font-size: 0.72rem; background: var(--bg-color2); color: var(--text-muted); padding: 2px 8px; border-radius: 10px; }
+.rev-urgency { font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 10px; }
+.rev-high   { background: #fef2f2; color: #dc2626; }
+.rev-medium { background: #fffbeb; color: #d97706; }
+.rev-low    { background: #f0fdf4; color: #16a34a; }
+.rev-update-badge { font-size: 0.72rem; background: #fffbeb; color: #d97706; padding: 2px 8px; border-radius: 10px; font-weight: 700; }
+.rev-ok-badge     { font-size: 0.72rem; background: #f0fdf4; color: #16a34a; padding: 2px 8px; border-radius: 10px; font-weight: 700; }
+.rev-date { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 4px; }
+.rev-desc { font-size: 0.82rem; color: var(--text-color); line-height: 1.55; }
+
+/* ==============================
+   공지 게시판
+   ============================== */
+.welcome-notice-banner {
+  margin: 0 0 10px; padding: 10px 16px;
+  background: #fffbeb; border: 1px solid #f59e0b; border-radius: 10px;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.notice-banner-item { display: flex; align-items: center; gap: 10px; font-size: 0.83rem; }
+.notice-banner-item i { color: #d97706; }
+.notice-banner-item strong { color: #92400e; }
+.notice-toolbar { display: flex; justify-content: flex-end; margin-bottom: 10px; }
+.btn-notice-add {
+  padding: 6px 14px; border-radius: 8px;
+  background: var(--primary-color); color: #fff; border: none;
+  font-size: 0.82rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 6px;
+}
+.btn-notice-add:hover { opacity: 0.9; }
+.notice-form {
+  background: var(--bg-color2); border: 1px solid var(--border-color);
+  border-radius: 10px; padding: 14px; margin-bottom: 14px;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.notice-input, .notice-textarea {
+  width: 100%; padding: 8px 12px; border-radius: 8px;
+  border: 1.5px solid var(--border-color); background: var(--card-bg);
+  color: var(--text-color); font-size: 0.85rem; font-family: inherit;
+}
+.notice-input:focus, .notice-textarea:focus { outline: none; border-color: var(--primary-color); }
+.notice-form-row { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.notice-important-label { display: flex; align-items: center; gap: 6px; font-size: 0.82rem; color: var(--text-color); cursor: pointer; }
+.btn-notice-cancel, .btn-notice-save {
+  padding: 6px 14px; border-radius: 8px; font-size: 0.82rem; font-weight: 600; cursor: pointer;
+}
+.btn-notice-cancel { background: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-muted); }
+.btn-notice-save { background: var(--primary-color); border: none; color: #fff; }
+.notice-list { display: flex; flex-direction: column; gap: 10px; }
+.notice-card { padding: 12px 14px; border-radius: 10px; border: 1px solid var(--border-color); background: var(--card-bg); }
+.notice-card.notice-important { border-left: 4px solid #f59e0b; }
+.notice-card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; }
+.notice-title-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.notice-imp-badge { font-size: 0.7rem; background: #fffbeb; color: #d97706; padding: 2px 7px; border-radius: 10px; font-weight: 700; }
+.notice-title { font-size: 0.88rem; color: var(--text-color); }
+.notice-meta { font-size: 0.72rem; color: var(--text-muted); white-space: nowrap; }
+.notice-body { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.6; margin: 0 0 8px; }
+.notice-delete-btn {
+  font-size: 0.75rem; color: var(--text-muted); background: none; border: none;
+  cursor: pointer; padding: 2px 6px; border-radius: 6px;
+}
+.notice-delete-btn:hover { background: #fef2f2; color: #dc2626; }
