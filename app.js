@@ -1589,7 +1589,7 @@ function renderPredictor(cert) {
     <div class="predictor-grid">
       ${subjects.map((s, i) => `
         <div class="predictor-subject">
-          <label class="pred-label">${s.name || s}</label>
+          <label class="pred-label">${typeof s === 'string' ? s : (s.name || s.title || '')}</label>
           <div class="pred-input-wrap">
             <input type="number" class="pred-score-input" id="pred-score-${i}"
               min="0" max="100" placeholder="0~100"
