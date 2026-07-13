@@ -842,6 +842,42 @@ function renderDdays(cert) {
   const progressPct = segments <= 0 ? (doneCount > 0 ? 100 : 0)
     : Math.min(100, Math.round((doneCount / segments) * 100));
   if (timelineEl) timelineEl.style.width = `${progressPct}%`;
+
+  // ── 히어로 D-Day 칩 업데이트 ──────────────────
+  const heroDdayRow = document.getElementById('hero-dday-row');
+  if (heroDdayRow) {
+    const chips = [];
+
+    const addChip = (label, diff, icon) => {
+      if (diff === null) return;
+      const isAlwaysVal = diff === -999;
+      const text = isAlwaysVal ? '상시CBT' : (diff === 0 ? 'D-Day' : diff > 0 ? `D-${diff}` : null);
+      if (!text) return;
+      const cls = diff <= 7 ? 'urgent' : diff <= 30 ? 'soon' : 'normal';
+      chips.push(`<span class="hero-dday-chip hero-dday-${cls}"><i class="${icon}"></i>${label} <strong>${text}</strong></span>`);
+    };
+
+    if (writtenAlways) {
+      addChip('필기', -999, 'fa-solid fa-pencil');
+    } else if (nextWritten) {
+      addChip('필기', nextWritten.diff, 'fa-solid fa-pencil');
+    }
+    if (practicalAlways) {
+      addChip('실기', -999, 'fa-solid fa-screwdriver-wrench');
+    } else if (nextPractical) {
+      addChip('실기', nextPractical.diff, 'fa-solid fa-screwdriver-wrench');
+    }
+    if (nextApply && !writtenAlways && !practicalAlways) {
+      addChip(`${nextApply.type} 접수`, nextApply.diff, 'fa-solid fa-file-pen');
+    }
+
+    if (chips.length) {
+      heroDdayRow.innerHTML = chips.join('');
+      heroDdayRow.style.display = 'flex';
+    } else {
+      heroDdayRow.style.display = 'none';
+    }
+  }
 }
 
 
