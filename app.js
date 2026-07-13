@@ -535,6 +535,8 @@ function renderAll() {
   renderRoadmap(cert);
   renderPredictor(cert);
   initLocationSection();
+  renderCompareSection(cert);
+  renderTipsSection(cert);
 }
 
 // ============================================
