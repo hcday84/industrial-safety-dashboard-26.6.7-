@@ -1825,14 +1825,14 @@ button, input, select {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
 }
 
 .schedule-details li {
   display: flex;
   justify-content: space-between;
-  font-size: 0.85rem;
-  padding-bottom: 8px;
+  font-size: 0.8rem;
+  padding-bottom: 5px;
   border-bottom: 1px solid var(--border-color);
 }
 
