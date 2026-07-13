@@ -1510,24 +1510,24 @@ button, input, select {
 /* 7. 메인 레이아웃 및 사이드바 */
 .main-layout-container {
   max-width: 1300px;
-  margin: 30px auto 60px;
+  margin: 16px auto 40px;
   padding: 0 20px;
   display: grid;
   grid-template-columns: var(--sidebar-width) 1fr;
-  gap: 30px;
+  gap: 18px;
 }
 
 .sidebar-nav {
   position: sticky;
-  top: 90px;
+  top: 70px;
   height: fit-content;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
 }
 
 .sidebar-title {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--primary-color);
   display: flex;
