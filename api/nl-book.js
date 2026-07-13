@@ -1,9 +1,32 @@
-// 도서 표지 이미지 조회 — Aladin → Google Books 이중 폴백
-const TTB_KEY = process.env.ALADIN_TTB_KEY || '';
-const ALADIN_BASE = 'https://www.aladin.co.kr/ttb/api/ItemSearch.aspx';
+// 도서 표지 이미지 조회 — Naver → Aladin → Google Books 3단계 폴백
+const TTB_KEY      = process.env.ALADIN_TTB_KEY       || '';
+const NAVER_ID     = process.env.NAVER_CLIENT_ID      || '';
+const NAVER_SECRET = process.env.NAVER_CLIENT_SECRET  || '';
+const ALADIN_BASE  = 'https://www.aladin.co.kr/ttb/api/ItemSearch.aspx';
 const GOOGLE_BOOKS = 'https://www.googleapis.com/books/v1/volumes';
+const NAVER_BOOKS  = 'https://openapi.naver.com/v1/search/book.json';
 
-// ── Aladin 검색 ──────────────────────────────
+// ── 네이버 도서 검색 (한국 도서 1순위) ──────
+async function searchNaver(query) {
+  if (!NAVER_ID || !NAVER_SECRET) return null;
+  try {
+    const params = new URLSearchParams({ query, display: 10, start: 1 });
+    const res = await fetch(`${NAVER_BOOKS}?${params}`, {
+      headers: {
+        'X-Naver-Client-Id':     NAVER_ID,
+        'X-Naver-Client-Secret': NAVER_SECRET,
+      },
+      signal: AbortSignal.timeout(4000),
+    });
+    if (!res.ok) return null;
+    const data = await res.json();
+    const items = data?.items || [];
+    // noimage / 빈 URL 제외 후 첫 번째 유효 이미지 반환
+    return items.map(i => i.image).find(u => u && !u.includes('noimage') && !u.includes('no_image')) || null;
+  } catch { return null; }
+}
+
+// ── 알라딘 도서 검색 ─────────────────────────
 async function searchAladin(query) {
   if (!TTB_KEY) return null;
   try {
@@ -15,7 +38,6 @@ async function searchAladin(query) {
     const res = await fetch(`${ALADIN_BASE}?${params}`, { signal: AbortSignal.timeout(4000) });
     const data = await res.json();
     const items = data?.item || [];
-    // 빈 이미지(noimg) 제외, 가장 큰 커버 우선
     return items.map(i => i.cover).find(u => u && !u.includes('noimg')) || null;
   } catch { return null; }
 }
@@ -31,7 +53,6 @@ async function searchGoogleBooks(query) {
     const items = data?.items || [];
     for (const item of items) {
       const links = item.volumeInfo?.imageLinks;
-      // thumbnail → zoom 1로 교체해 더 큰 이미지 획득
       if (links?.thumbnail) {
         return links.thumbnail.replace('zoom=1', 'zoom=2').replace('http://', 'https://');
       }
@@ -48,7 +69,7 @@ function extractKeywords(title) {
     '해커스자격증','김영북스','삼원북스','박문각','나무와숲','세경북스','시대고시기획',
     '시대에듀','EBS','학지사','범문에듀케이션','군자출판사','고려의학','보험연수원',
     '법률미디어','기문사','광일문화사','레인보우북스','커뮤니케이션북스','교육과학사',
-    '나눔의집','보험연수원','수의학교육출판부',
+    '나눔의집','수의학교육출판부',
   ];
 
   let cleaned = title
@@ -105,21 +126,32 @@ export default async function handler(req, res) {
 
   try {
     const keywords = extractKeywords(title);
+    let imageUrl = null;
 
-    // 1차: Aladin (전체 제목)
-    let imageUrl = await searchAladin(title);
+    // 1순위: 네이버 (전체 제목) — 한국 도서 DB 최다 보유
+    imageUrl = await searchNaver(title);
 
-    // 2차: Aladin (핵심 키워드)
+    // 2순위: 네이버 (핵심 키워드)
+    if (!imageUrl && keywords !== title) {
+      imageUrl = await searchNaver(keywords);
+    }
+
+    // 3순위: 알라딘 (전체 제목)
+    if (!imageUrl) {
+      imageUrl = await searchAladin(title);
+    }
+
+    // 4순위: 알라딘 (핵심 키워드)
     if (!imageUrl && keywords !== title) {
       imageUrl = await searchAladin(keywords);
     }
 
-    // 3차: Google Books (핵심 키워드)
+    // 5순위: Google Books (핵심 키워드)
     if (!imageUrl) {
       imageUrl = await searchGoogleBooks(keywords);
     }
 
-    // 4차: Google Books (원본 제목)
+    // 6순위: Google Books (원본 제목)
     if (!imageUrl) {
       imageUrl = await searchGoogleBooks(title);
     }
