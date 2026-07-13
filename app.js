@@ -2996,7 +2996,7 @@ function renderHotTopic(tab) {
   const items = Object.entries(CERT_POPULARITY)
     .filter(([name]) => CERTIFICATIONS[name] && getCertType(name) === _hotActiveTab)
     .sort((a, b) => b[1].stars - a[1].stars)
-    .slice(0, 18);
+    .slice(0, 9);
 
   if (items.length === 0) {
     el.innerHTML = '<p class="hot-empty">해당 분류의 선호도 데이터가 없습니다.</p>';
