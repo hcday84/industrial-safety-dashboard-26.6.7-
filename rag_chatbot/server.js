@@ -297,8 +297,9 @@ app.post('/api/chat', async (req, res) => {
   try {
     const { sessionId, session } = getSession(req);
     const apiKey = resolveApiKey(req);
-    const { message, topK, useWebSearch } = req.body;
+    const { message, topK, useWebSearch, useHybridSearch } = req.body;
     const wantsWebSearch = Boolean(useWebSearch);
+    const wantsHybrid = Boolean(useHybridSearch);
 
     if (!apiKey) return res.status(400).json({ error: 'OpenAI API Key가 필요합니다.' });
     if (!message) return res.status(400).json({ error: '질문을 입력해주세요.' });
