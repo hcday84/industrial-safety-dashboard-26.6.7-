@@ -244,6 +244,7 @@ function initMonthlySection() {
     tabsEl.querySelectorAll('.month-tab-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     selectedMonth = parseInt(btn.dataset.month);
+    _selectedMonth = selectedMonth;
     renderMonthlyResult(selectedMonth);
   });
 
