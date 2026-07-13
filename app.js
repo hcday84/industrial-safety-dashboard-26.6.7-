@@ -2416,6 +2416,55 @@ window.downloadICS = function() {
   URL.revokeObjectURL(url);
 };
 
+// ── 월별 전체 ICS 내보내기 ──────────────────────
+window.exportMonthlyICS = function() {
+  const month = _selectedMonth;
+  const data  = fetchAllMonthlyExams();
+  const { written = [], practical = [], single = [] } = data[month] || {};
+  const all = [...written, ...practical, ...single];
+
+  if (!all.length) {
+    alert(`${month}월에 예정된 시험이 없습니다.`);
+    return;
+  }
+
+  const lines = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//수험서 대시보드//KR',
+    'CALSCALE:GREGORIAN',
+    'METHOD:PUBLISH',
+  ];
+
+  all.forEach(item => {
+    const dt = toICSDate(item.dateRange.split('~')[0].trim());
+    if (!dt) return;
+    const uid = `${dt}-monthly-${Math.random().toString(36).slice(2)}@cert-dashboard`;
+    const typeLabel = written.includes(item) ? '[필기]' : practical.includes(item) ? '[실기]' : '[시험]';
+    lines.push(
+      'BEGIN:VEVENT',
+      `UID:${uid}`,
+      `DTSTART;VALUE=DATE:${dt}`,
+      `DTEND;VALUE=DATE:${dt}`,
+      `SUMMARY:${typeLabel} ${item.certName} ${item.round}`,
+      `DESCRIPTION:${item.certName} ${item.round} · ${item.dateRange}`,
+      'END:VEVENT'
+    );
+  });
+
+  lines.push('END:VCALENDAR');
+  const ics  = lines.join('\r\n');
+  const blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href     = url;
+  a.download = `2026년_${month}월_시험일정_전체.ics`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+};
+
 // ============================================
 // 22. 자격증 비교 모달
 // ============================================
