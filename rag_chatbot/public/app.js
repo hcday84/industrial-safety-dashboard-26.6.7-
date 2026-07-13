@@ -140,11 +140,20 @@ function addSourcesBox(bubble, sources) {
       meta.appendChild(document.createTextNode(`문서 ${i + 1} — ${s.source} (p.${s.page})`));
     }
 
+    item.appendChild(meta);
+
+    if (s.hybridScore !== undefined) {
+      const scoreLine = document.createElement('div');
+      scoreLine.className = 'source-score';
+      const rerankPart = s.rerankScore !== null && s.rerankScore !== undefined ? ` · rerank ${s.rerankScore}` : '';
+      scoreLine.textContent = `hybrid ${s.hybridScore} · vector ${s.vectorScore} · bm25 ${s.bm25Score}${rerankPart}`;
+      item.appendChild(scoreLine);
+    }
+
     const text = document.createElement('div');
     text.className = 'source-text';
     text.textContent = s.text;
 
-    item.appendChild(meta);
     item.appendChild(text);
     box.appendChild(item);
   });
