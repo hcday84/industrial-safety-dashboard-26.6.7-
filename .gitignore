@@ -1,2 +1,5 @@
 .claude/
 server.ps1
+rag_chatbot/.env
+rag_chatbot/venv/
+rag_chatbot/__pycache__/
