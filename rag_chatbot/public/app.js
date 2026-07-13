@@ -167,7 +167,11 @@ el.chatForm.addEventListener('submit', async (e) => {
     const res = await fetch('/api/chat', {
       method: 'POST',
       headers: authHeaders({ 'Content-Type': 'application/json' }),
-      body: JSON.stringify({ message, topK: el.topK.value }),
+      body: JSON.stringify({
+        message,
+        topK: el.topK.value,
+        useWebSearch: el.useWebSearch.checked,
+      }),
     });
 
     if (!res.ok) {
