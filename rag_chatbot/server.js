@@ -9,6 +9,8 @@ const OpenAI = require('openai');
 const MODEL_NAME = 'gpt-4o-mini';
 const EMBEDDING_MODEL = 'text-embedding-3-small';
 const EMBEDDING_BATCH_SIZE = 96;
+const TAVILY_SEARCH_URL = 'https://api.tavily.com/search';
+const TAVILY_MAX_RESULTS = 5;
 
 const app = express();
 const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 25 * 1024 * 1024 } });
