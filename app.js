@@ -1237,42 +1237,102 @@ function renderChart(cert) {
   if (!wrapper) return;
 
   const rates = cert.passRates;
-  const xPos = [70, 160, 250, 340, 430];
-  const minV = 10, maxV = 70, chartH = 150;
+  if (!rates || !rates.length) { wrapper.innerHTML = '<p style="text-align:center;color:var(--text-muted);padding:2rem;">데이터 없음</p>'; return; }
 
-  function toY(v) { return 190 - ((v - minV) / (maxV - minV)) * chartH; }
+  const n = rates.length;
+  const allVals = rates.flatMap(r => [r.written, r.practical].filter(v => v != null));
+  const rawMin = Math.min(...allVals);
+  const rawMax = Math.max(...allVals);
+  const pad = Math.max(5, Math.round((rawMax - rawMin) * 0.2));
+  const minV = Math.max(0, Math.floor((rawMin - pad) / 5) * 5);
+  const maxV = Math.min(100, Math.ceil((rawMax + pad) / 5) * 5);
+  const chartH = 150;
+  const LEFT = 55, RIGHT = 470, TOP = 30, BOTTOM = 190;
+  const chartW = RIGHT - LEFT;
 
-  const gridLines = [20, 30, 40, 50, 60].map(v => `
-    <line x1="50" y1="${toY(v).toFixed(1)}" x2="470" y2="${toY(v).toFixed(1)}" stroke="var(--border-color)" stroke-dasharray="4"/>
-    <text x="40" y="${(toY(v) + 5).toFixed(1)}" class="chart-text" text-anchor="end">${v}%</text>
+  function toX(i) { return n <= 1 ? (LEFT + chartW / 2) : LEFT + (i / (n - 1)) * chartW; }
+  function toY(v) { return BOTTOM - ((v - minV) / (maxV - minV)) * chartH; }
+
+  // 그리드 라인
+  const step = (maxV - minV) <= 20 ? 5 : 10;
+  const gridVals = [];
+  for (let v = minV; v <= maxV; v += step) gridVals.push(v);
+  const gridLines = gridVals.map(v => `
+    <line x1="${LEFT}" y1="${toY(v).toFixed(1)}" x2="${RIGHT}" y2="${toY(v).toFixed(1)}" stroke="var(--border-color)" stroke-dasharray="4" opacity="0.5"/>
+    <text x="${LEFT - 8}" y="${(toY(v) + 4).toFixed(1)}" class="chart-text" text-anchor="end" font-size="10">${v}%</text>
   `).join('');
 
   const xLabels = rates.map((r, i) =>
-    `<text x="${xPos[i]}" y="220" class="chart-text" text-anchor="middle">${r.year}년</text>`
+    `<text x="${toX(i).toFixed(1)}" y="${BOTTOM + 22}" class="chart-text" text-anchor="middle" font-size="10">${r.year}</text>`
   ).join('');
 
-  const wPath = rates.map((r, i) => `${i === 0 ? 'M' : 'L'} ${xPos[i]} ${toY(r.written).toFixed(1)}`).join(' ');
-  const pPath = rates.map((r, i) => `${i === 0 ? 'M' : 'L'} ${xPos[i]} ${toY(r.practical).toFixed(1)}`).join(' ');
+  // 부드러운 베지어 커브
+  function smoothPath(pts) {
+    if (pts.length === 1) return `M ${pts[0][0]} ${pts[0][1]}`;
+    let d = `M ${pts[0][0].toFixed(1)} ${pts[0][1].toFixed(1)}`;
+    for (let i = 1; i < pts.length; i++) {
+      const cpx = (pts[i-1][0] + pts[i][0]) / 2;
+      d += ` C ${cpx.toFixed(1)} ${pts[i-1][1].toFixed(1)}, ${cpx.toFixed(1)} ${pts[i][1].toFixed(1)}, ${pts[i][0].toFixed(1)} ${pts[i][1].toFixed(1)}`;
+    }
+    return d;
+  }
+
+  const wPts = rates.map((r, i) => [toX(i), toY(r.written)]);
+  const pPts = rates.map((r, i) => [toX(i), toY(r.practical)]);
+
+  const wPath = smoothPath(wPts);
+  const pPath = smoothPath(pPts);
+
+  // 그라디언트 영역 (하단까지)
+  const wArea = wPath + ` L ${toX(n-1).toFixed(1)} ${BOTTOM} L ${toX(0).toFixed(1)} ${BOTTOM} Z`;
+  const pArea = pPath + ` L ${toX(n-1).toFixed(1)} ${BOTTOM} L ${toX(0).toFixed(1)} ${BOTTOM} Z`;
 
   const wPoints = rates.map((r, i) => `
-    <circle cx="${xPos[i]}" cy="${toY(r.written).toFixed(1)}" r="5" fill="#f59e0b"/>
-    <text x="${xPos[i]}" y="${(toY(r.written) - 10).toFixed(1)}" class="chart-value-label" fill="#f59e0b" text-anchor="middle">${r.written}%</text>
+    <circle cx="${toX(i).toFixed(1)}" cy="${toY(r.written).toFixed(1)}" r="4.5" fill="#f59e0b" stroke="var(--card-bg)" stroke-width="2"/>
+    <text x="${toX(i).toFixed(1)}" y="${(toY(r.written) - 10).toFixed(1)}" class="chart-value-label" fill="#f59e0b" text-anchor="middle" font-size="10" font-weight="600">${r.written}%</text>
   `).join('');
 
   const pPoints = rates.map((r, i) => `
-    <circle cx="${xPos[i]}" cy="${toY(r.practical).toFixed(1)}" r="5" fill="#1a3a6b"/>
-    <text x="${xPos[i]}" y="${(toY(r.practical) - 10).toFixed(1)}" class="chart-value-label" fill="#1a3a6b" text-anchor="middle">${r.practical}%</text>
+    <circle cx="${toX(i).toFixed(1)}" cy="${toY(r.practical).toFixed(1)}" r="4.5" fill="#0ea5e9" stroke="var(--card-bg)" stroke-width="2"/>
+    <text x="${toX(i).toFixed(1)}" y="${(toY(r.practical) - 10).toFixed(1)}" class="chart-value-label" fill="#0ea5e9" text-anchor="middle" font-size="10" font-weight="600">${r.practical}%</text>
   `).join('');
 
+  // 트렌드 계산
+  function trend(arr) {
+    if (arr.length < 2) return '';
+    const diff = arr[arr.length - 1] - arr[0];
+    if (diff > 2) return '↑ 상승';
+    if (diff < -2) return '↓ 하락';
+    return '→ 안정';
+  }
+  const wTrend = trend(rates.map(r => r.written));
+  const pTrend = trend(rates.map(r => r.practical));
+
   wrapper.innerHTML = `
-    <svg viewBox="0 0 500 240" class="pass-rate-svg">
+    <svg viewBox="0 0 500 230" class="pass-rate-svg" style="overflow:visible">
+      <defs>
+        <linearGradient id="wGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.3"/>
+          <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.02"/>
+        </linearGradient>
+        <linearGradient id="pGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.25"/>
+          <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0.02"/>
+        </linearGradient>
+      </defs>
       ${gridLines}
       ${xLabels}
-      <path d="${wPath}" fill="none" stroke="#f59e0b" stroke-width="3"/>
+      <path d="${wArea}" fill="url(#wGrad)"/>
+      <path d="${pArea}" fill="url(#pGrad)"/>
+      <path d="${wPath}" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="${pPath}" fill="none" stroke="#0ea5e9" stroke-width="2.5" stroke-linejoin="round"/>
       ${wPoints}
-      <path d="${pPath}" fill="none" stroke="#1a3a6b" stroke-width="3"/>
       ${pPoints}
     </svg>
+    <div class="chart-trend-summary">
+      <span class="chart-trend-item chart-trend-written"><i class="fa-solid fa-pencil"></i> 필기 ${wTrend}</span>
+      <span class="chart-trend-item chart-trend-practical"><i class="fa-solid fa-screwdriver-wrench"></i> 실기 ${pTrend}</span>
+    </div>
   `;
 }
 
