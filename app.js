@@ -2214,6 +2214,24 @@ function updateFavBtn(name) {
   btn.title = fav ? '즐겨찾기 제거' : '즐겨찾기 추가';
 }
 
+function getNextDdayForCert(certName) {
+  const cert = CERTIFICATIONS[certName];
+  if (!cert || !cert.schedules) return null;
+  const today = new Date(); today.setHours(0,0,0,0);
+  for (const s of cert.schedules) {
+    for (const key of ['writtenExam','practicalExam','writtenApply','practicalApply']) {
+      const val = s[key];
+      if (!val || val === '-' || val === '—' || /상시/.test(val)) continue;
+      const d = new Date(val.split('~')[0].trim().split(' ')[0].trim());
+      if (!isNaN(d)) {
+        const diff = Math.ceil((d - today) / 86400000);
+        if (diff >= 0) return { diff, label: key === 'writtenExam' ? '필기' : key === 'practicalExam' ? '실기' : key === 'writtenApply' ? '필기접수' : '실기접수' };
+      }
+    }
+  }
+  return null;
+}
+
 function renderQuickRow() {
   const rowEl    = document.getElementById('welcome-quick-row');
   const recWrap  = document.getElementById('recent-certs-wrap');
@@ -2234,13 +2252,20 @@ function renderQuickRow() {
   } else { recWrap.style.display = 'none'; }
 
   if (favs.length) {
-    favChips.innerHTML = favs.map(n =>
-      `<span class="quick-chip fav-chip" onclick="window.selectCert('${n}')"><i class="fa-solid fa-star"></i>${n}</span>`
-    ).join('');
+    favChips.innerHTML = favs.map(n => {
+      const dd = getNextDdayForCert(n);
+      const ddBadge = dd
+        ? `<span class="fav-chip-dday ${dd.diff <= 7 ? 'urgent' : dd.diff <= 30 ? 'soon' : ''}">${dd.label} D-${dd.diff}</span>`
+        : '';
+      return `<span class="quick-chip fav-chip" onclick="window.selectCert('${n}')"><i class="fa-solid fa-star"></i>${n}${ddBadge}</span>`;
+    }).join('');
     favWrap.style.display = '';
-  } else { favWrap.style.display = 'none'; }
+  } else {
+    favChips.innerHTML = `<span class="fav-empty-hint"><i class="fa-regular fa-star"></i> 자격증 화면의 ★ 버튼으로 즐겨찾기를 추가하세요</span>`;
+    favWrap.style.display = '';
+  }
 
-  rowEl.style.display = (recents.length || favs.length) ? '' : 'none';
+  rowEl.style.display = '';
 }
 
 // ============================================
