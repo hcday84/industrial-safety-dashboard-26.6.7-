@@ -627,6 +627,9 @@ window.initInventoryApp = function() {
                     <a href="${book.yes24Url}" target="_blank" class="btn-comparison" title="YES24에서 구버전 검색">
                         <span>YES24</span><i data-lucide="shopping-bag"></i>
                     </a>
+                    ${book.certification && (typeof CERTIFICATIONS === 'undefined' || CERTIFICATIONS[book.certification]) ? `<button class="btn-comparison btn-cert-link" onclick="goToCertDashboard('${book.certification.replace(/'/g,"\\'")}'); event.stopPropagation();" title="${book.certification} 대시보드로 이동">
+                        <span>자격증 대시보드</span><i data-lucide="layout-dashboard"></i>
+                    </button>` : ''}
                 </div>
             `;
             booksContainer.appendChild(row);
