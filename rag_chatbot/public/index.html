@@ -24,9 +24,18 @@
 
         <label for="chunkOverlap">중복 길이 (chunk overlap): <span id="chunkOverlapValue">150</span></label>
         <input type="range" id="chunkOverlap" min="0" max="1000" step="50" value="150" />
+      </section>
 
+      <section class="panel">
+        <h2>검색 설정</h2>
         <label for="topK">검색할 문서 조각 수 (top-k): <span id="topKValue">4</span></label>
         <input type="range" id="topK" min="1" max="10" step="1" value="4" />
+
+        <label class="checkbox-label">
+          <input type="checkbox" id="useHybridSearch" checked />
+          하이브리드 서치 + 리랭커 사용
+        </label>
+        <p class="hint">벡터 검색 + BM25 키워드 검색을 RRF로 결합 후, GPT-4o-mini로 재순위화합니다.</p>
       </section>
 
       <section class="panel">
