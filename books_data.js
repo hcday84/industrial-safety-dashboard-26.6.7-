@@ -2021,7 +2021,7 @@ const REAL_BOOKS = {
   ],
 
   'TOEIC Speaking': [
-    { title: '해커스 토익스피킹 START', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.8, reviews: 2341, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=해커스+토익스피킹+START' },
+    { title: '해커스 토익스피킹 START', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.8, reviews: 2341, tags: ['베스트'], imageUrl: KB('S000061350449'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061350449' },
     { title: 'YBM 토익스피킹 실전 모의테스트 15회', author: 'YBM 어학연구소', publisher: 'YBM', price: 14400, originalPrice: 16000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=YBM+토익스피킹+실전+모의테스트' },
   ],
 
