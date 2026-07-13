@@ -36,6 +36,29 @@ function resolveApiKey(req) {
   return req.headers['x-api-key'] || process.env.OPENAI_API_KEY || '';
 }
 
+function resolveTavilyKey(req) {
+  return req.headers['x-tavily-key'] || process.env.TAVILY_API_KEY || '';
+}
+
+async function webSearch(apiKey, query) {
+  const res = await fetch(TAVILY_SEARCH_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      api_key: apiKey,
+      query,
+      search_depth: 'basic',
+      max_results: TAVILY_MAX_RESULTS,
+    }),
+  });
+  if (!res.ok) {
+    const errBody = await res.json().catch(() => ({}));
+    throw new Error(errBody.detail?.error || errBody.error || `Tavily 검색 실패 (${res.status})`);
+  }
+  const data = await res.json();
+  return data.results || [];
+}
+
 function splitText(text, chunkSize, chunkOverlap) {
   const cleaned = text.replace(/\s+/g, ' ').trim();
   if (!cleaned) return [];
