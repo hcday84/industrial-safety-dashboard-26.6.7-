@@ -184,6 +184,52 @@ const CERTIFICATIONS = {
     ],
   },
 
+  '정보처리산업기사': {
+    name: '정보처리산업기사',
+    icon: 'fa-microchip',
+    category: 'IT·정보통신',
+    heroTitle: '2026년도 정보처리산업기사 합격 가이드',
+    heroDesc: '정보처리산업기사는 소프트웨어 개발, 데이터베이스 운영, 네트워크 관리 등 IT 실무 능력을 인증하는 국가기술자격입니다. 정보처리기사보다 범위가 좁고 응시 자격이 완화되어 IT 입문자에게 적합합니다. 2·4년제 대학 IT 계열 학과 재학·졸업자나 실무 경력자가 많이 응시합니다.',
+    passRateSummary: '필기 55% | 실기 38%',
+    avgPassRate: '47%',
+    passRates: [
+      { year: 2020, written: 52, practical: 35 },
+      { year: 2021, written: 54, practical: 37 },
+      { year: 2022, written: 56, practical: 39 },
+      { year: 2023, written: 55, practical: 38 },
+      { year: 2024, written: 57, practical: 40 },
+    ],
+    schedules: [
+      { round: '1회', writtenApply: '2026-01-06 ~ 2026-01-09', writtenExam: '2026-02-07 ~ 2026-02-28', writtenResult: '2026-03-11', practicalApply: '2026-03-23 ~ 2026-03-26', practicalExam: '2026-04-18 ~ 2026-05-11', practicalResult: '2026-06-05' },
+      { round: '2회', writtenApply: '2026-04-13 ~ 2026-04-16', writtenExam: '2026-05-11 ~ 2026-06-01', writtenResult: '2026-06-10', practicalApply: '2026-06-22 ~ 2026-06-25', practicalExam: '2026-07-18 ~ 2026-08-10', practicalResult: '2026-09-04' },
+      { round: '3회', writtenApply: '2026-07-27 ~ 2026-07-30', writtenExam: '2026-08-17 ~ 2026-09-08', writtenResult: '2026-09-16', practicalApply: '2026-09-28 ~ 2026-10-01', practicalExam: '2026-10-26 ~ 2026-11-16', practicalResult: '2026-12-11' },
+    ],
+    milestones: [
+      { label: '1회 필기', date: '2026-02-07' },
+      { label: '1회 실기', date: '2026-04-18' },
+      { label: '2회 필기', date: '2026-05-11' },
+      { label: '2회 실기', date: '2026-07-18' },
+    ],
+    subjects: [
+      { name: '정보시스템 기반 기술', desc: '운영체제, 네트워크, 데이터베이스 기초 이론' },
+      { name: '프로그래밍 언어 활용', desc: 'C, Java, Python 기본 문법 및 알고리즘 구현' },
+      { name: '데이터베이스 활용', desc: 'SQL 기초, 데이터 모델링, 정규화 이론' },
+      { name: '정보보안 기초', desc: '암호화, 보안 공격 유형, 보안 프로토콜 기초' },
+    ],
+    books: [
+      { title: '정보처리산업기사 필기 합격완성', author: '강윤철', publisher: '시나공(길벗)', year: 2024, rating: 4.6 },
+      { title: '정보처리산업기사 실기 핵심요약+기출', author: '정미혜', publisher: '이기적(영진닷컴)', year: 2024, rating: 4.5 },
+      { title: '정보처리산업기사 기출문제 완전정복', author: '이수진', publisher: '에듀윌', year: 2024, rating: 4.4 },
+    ],
+    defaultTodos: [
+      '필기 핵심 이론 과목별 정리',
+      'SQL 기초 쿼리 작성 연습',
+      'C/Java/Python 코드 추적 문제 풀기',
+      '최근 3개년 기출문제 풀기',
+      '실기 약술형 답안 작성 연습',
+    ],
+  },
+
   '정보처리기사': {
     name: '정보처리기사', icon: 'fa-microchip', category: 'IT·정보통신',
     heroTitle: '2026년도 정보처리기사 합격 전략',
