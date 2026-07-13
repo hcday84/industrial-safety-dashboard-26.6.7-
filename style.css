@@ -1617,9 +1617,9 @@ button, input, select {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--text-secondary);
-  padding: 8px 0;
+  padding: 5px 0;
   border-bottom: 1px dashed var(--border-color);
   transition: var(--transition);
 }
