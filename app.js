@@ -2168,6 +2168,14 @@ window.switchTab = function(tab) {
   }
 };
 
+// 발주재고관리에서 자격증 대시보드로 이동
+window.goToCertDashboard = function(certName) {
+  if (!CERTIFICATIONS[certName]) return;
+  window.switchTab('dashboard');
+  window.selectCert(certName);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 function initInventoryModal() {
   // 탭 방식으로 대체됨 — 기존 모달 참조 없음
 }
