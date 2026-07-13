@@ -110,20 +110,39 @@ function addSourcesBox(bubble, sources) {
   const toggle = document.createElement('button');
   toggle.className = 'sources-toggle';
   toggle.type = 'button';
-  toggle.textContent = '🔍 검색된 문서 보기';
+  toggle.textContent = '🔍 검색된 문서/웹 결과 보기';
 
   const box = document.createElement('div');
   box.className = 'sources-box';
 
   sources.forEach((s, i) => {
+    const isWeb = s.type === 'web';
     const item = document.createElement('div');
-    item.className = 'source-item';
+    item.className = `source-item ${isWeb ? 'web' : 'pdf'}`;
+
+    const badge = document.createElement('span');
+    badge.className = `source-badge ${isWeb ? 'web' : 'pdf'}`;
+    badge.textContent = isWeb ? 'WEB' : 'PDF';
+
     const meta = document.createElement('div');
     meta.className = 'source-meta';
-    meta.textContent = `문서 ${i + 1} — ${s.source} (p.${s.page})`;
+    meta.appendChild(badge);
+    if (isWeb) {
+      const link = document.createElement('a');
+      link.href = s.url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = s.source;
+      meta.appendChild(document.createTextNode(`문서 ${i + 1} — `));
+      meta.appendChild(link);
+    } else {
+      meta.appendChild(document.createTextNode(`문서 ${i + 1} — ${s.source} (p.${s.page})`));
+    }
+
     const text = document.createElement('div');
     text.className = 'source-text';
     text.textContent = s.text;
+
     item.appendChild(meta);
     item.appendChild(text);
     box.appendChild(item);
