@@ -11,6 +11,10 @@ const EMBEDDING_MODEL = 'text-embedding-3-small';
 const EMBEDDING_BATCH_SIZE = 96;
 const TAVILY_SEARCH_URL = 'https://api.tavily.com/search';
 const TAVILY_MAX_RESULTS = 5;
+const HYBRID_CANDIDATE_POOL = 20;
+const RRF_K = 60;
+const BM25_K1 = 1.5;
+const BM25_B = 0.75;
 
 const app = express();
 const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 25 * 1024 * 1024 } });
