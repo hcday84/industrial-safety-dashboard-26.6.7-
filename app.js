@@ -222,6 +222,8 @@ function fetchAllMonthlyExams() {
   return monthData;
 }
 
+let _selectedMonth = new Date().getMonth() + 1;
+
 function initMonthlySection() {
   const tabsEl = document.getElementById('month-tabs');
   const loadingEl = document.getElementById('monthly-loading');
@@ -230,7 +232,7 @@ function initMonthlySection() {
 
   const months = ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'];
   const currentMonth = new Date().getMonth() + 1;
-  let selectedMonth = currentMonth;
+  let selectedMonth = _selectedMonth;
 
   tabsEl.innerHTML = months.map((m, i) => `
     <button class="month-tab-btn${i + 1 === currentMonth ? ' active' : ''}" data-month="${i + 1}">${m}</button>
