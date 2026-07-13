@@ -1079,7 +1079,7 @@ button, input, select {
   background: linear-gradient(135deg, #0d1f5e 0%, #1a3aaa 50%, #4db843 100%);
   border-radius: var(--radius-lg);
   color: #ffffff;
-  padding: 28px 50px;
+  padding: 18px 32px;
   display: flex;
   overflow: hidden;
   position: relative;
