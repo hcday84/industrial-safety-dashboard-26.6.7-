@@ -132,6 +132,17 @@ button:disabled {
   padding: 2px 0;
 }
 
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.checkbox-label input {
+  width: auto;
+}
+
 .chat-area {
   flex: 1;
   display: flex;
