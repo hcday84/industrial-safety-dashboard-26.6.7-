@@ -1151,7 +1151,7 @@ async function fetchAladinImage(title) {
     const res = await fetch(`/api/nl-book?title=${encodeURIComponent(title)}`);
     const data = await res.json();
     const imageUrl = data.imageUrl || '';
-    sessionStorage.setItem(cacheKey, imageUrl);
+    if (imageUrl) sessionStorage.setItem(cacheKey, imageUrl); // 빈 결과는 캐시 안 함 → 재시도 가능
     return imageUrl;
   } catch (e) {
     return '';
