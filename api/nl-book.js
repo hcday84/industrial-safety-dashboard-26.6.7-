@@ -1,14 +1,15 @@
-// 도서 표지 이미지 조회 — Naver → Aladin → Google Books 3단계 폴백
-const TTB_KEY      = process.env.ALADIN_TTB_KEY       || '';
-const NAVER_ID     = process.env.NAVER_CLIENT_ID      || '';
-const NAVER_SECRET = process.env.NAVER_CLIENT_SECRET  || '';
+// 도서 표지 이미지 조회 — 교보 → 네이버 → 알라딘 → Google Books
+const TTB_KEY      = process.env.ALADIN_TTB_KEY      || '';
+const NAVER_ID     = process.env.NAVER_CLIENT_ID     || '';
+const NAVER_SECRET = process.env.NAVER_CLIENT_SECRET || '';
 const ALADIN_BASE  = 'https://www.aladin.co.kr/ttb/api/ItemSearch.aspx';
 const GOOGLE_BOOKS = 'https://www.googleapis.com/books/v1/volumes';
 const NAVER_BOOKS  = 'https://openapi.naver.com/v1/search/book.json';
 
-// ── 네이버 도서 검색 (한국 도서 1순위) ──────
-async function searchNaver(query) {
-  if (!NAVER_ID || !NAVER_SECRET) return null;
+// ── 1순위: 교보 CDN (ISBN → URL 직접 구성) ──
+// 네이버 검색으로 ISBN13을 얻어 교보 CDN URL을 검증 후 반환
+async function searchKyoboViaNaver(query) {
+  if (!NAVER_ID || !NAVER_SECRET) return { kyoboUrl: null, naverImage: null };
   try {
     const params = new URLSearchParams({ query, display: 10, start: 1 });
     const res = await fetch(`${NAVER_BOOKS}?${params}`, {
@@ -16,17 +17,38 @@ async function searchNaver(query) {
         'X-Naver-Client-Id':     NAVER_ID,
         'X-Naver-Client-Secret': NAVER_SECRET,
       },
-      signal: AbortSignal.timeout(4000),
+      signal: AbortSignal.timeout(5000),
     });
-    if (!res.ok) return null;
+    if (!res.ok) return { kyoboUrl: null, naverImage: null };
     const data = await res.json();
     const items = data?.items || [];
-    // noimage / 빈 URL 제외 후 첫 번째 유효 이미지 반환
-    return items.map(i => i.image).find(u => u && !u.includes('noimage') && !u.includes('no_image')) || null;
-  } catch { return null; }
+
+    for (const item of items) {
+      const naverImage = (item.image && !item.image.includes('noimage')) ? item.image : null;
+      // isbn 필드: "ISBN10 ISBN13" 형태 — 13자리 추출
+      const isbn13 = item.isbn?.split(' ').find(p => p.length === 13) || null;
+
+      if (isbn13) {
+        const kyoboUrl = `https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/${isbn13}.jpg`;
+        // HEAD 요청으로 실제 이미지 존재 여부 확인
+        try {
+          const check = await fetch(kyoboUrl, { method: 'HEAD', signal: AbortSignal.timeout(2500) });
+          // Content-Length 0 또는 200 미만은 플레이스홀더로 간주
+          const contentLength = parseInt(check.headers.get('content-length') || '0', 10);
+          if (check.ok && contentLength > 1000) {
+            return { kyoboUrl, naverImage };
+          }
+        } catch { /* HEAD 실패 시 스킵 */ }
+        if (naverImage) return { kyoboUrl: null, naverImage };
+      } else if (naverImage) {
+        return { kyoboUrl: null, naverImage };
+      }
+    }
+    return { kyoboUrl: null, naverImage: null };
+  } catch { return { kyoboUrl: null, naverImage: null }; }
 }
 
-// ── 알라딘 도서 검색 ─────────────────────────
+// ── 3순위: 알라딘 ────────────────────────────
 async function searchAladin(query) {
   if (!TTB_KEY) return null;
   try {
@@ -42,7 +64,7 @@ async function searchAladin(query) {
   } catch { return null; }
 }
 
-// ── Google Books 검색 (키 불필요) ────────────
+// ── 4순위: Google Books ───────────────────────
 async function searchGoogleBooks(query) {
   try {
     const params = new URLSearchParams({
@@ -82,7 +104,6 @@ function extractKeywords(title) {
 
   const words = cleaned.split(' ').filter(Boolean);
 
-  // 국가기술자격: 기사·기능사·기술사 포함 단어 감지
   const techIdx = words.findIndex(w => /기사|기능사|기술사|SQLD|빅데이터|정보보안/.test(w));
   if (techIdx !== -1) {
     const cert = words[techIdx];
@@ -90,7 +111,6 @@ function extractKeywords(title) {
     return level ? `${cert} ${level}` : cert;
   }
 
-  // 국가전문자격: 자격명 + 차수(1차/2차) 또는 과목명 조합
   const proKeywords = [
     '공인중개사','세무사','공인회계사','감정평가사','변리사','법무사','공인노무사',
     '관세사','손해사정사','보험계리사','행정사','주택관리사','변호사',
@@ -111,7 +131,6 @@ function extractKeywords(title) {
     return extra ? `${proWord} ${extra}` : proWord;
   }
 
-  // 기타: 앞 3단어
   return words.slice(0, 3).join(' ');
 }
 
@@ -128,33 +147,25 @@ export default async function handler(req, res) {
     const keywords = extractKeywords(title);
     let imageUrl = null;
 
-    // 1순위: 네이버 (전체 제목) — 한국 도서 DB 최다 보유
-    imageUrl = await searchNaver(title);
+    // 1·2순위: 교보(ISBN 검증) → 네이버 이미지 — 전체 제목
+    const { kyoboUrl, naverImage } = await searchKyoboViaNaver(title);
+    imageUrl = kyoboUrl || naverImage;
 
-    // 2순위: 네이버 (핵심 키워드)
+    // 키워드로 재시도
     if (!imageUrl && keywords !== title) {
-      imageUrl = await searchNaver(keywords);
+      const { kyoboUrl: ku2, naverImage: ni2 } = await searchKyoboViaNaver(keywords);
+      imageUrl = ku2 || ni2;
     }
 
     // 3순위: 알라딘 (전체 제목)
-    if (!imageUrl) {
-      imageUrl = await searchAladin(title);
-    }
+    if (!imageUrl) imageUrl = await searchAladin(title);
 
-    // 4순위: 알라딘 (핵심 키워드)
-    if (!imageUrl && keywords !== title) {
-      imageUrl = await searchAladin(keywords);
-    }
+    // 알라딘 키워드 재시도
+    if (!imageUrl && keywords !== title) imageUrl = await searchAladin(keywords);
 
-    // 5순위: Google Books (핵심 키워드)
-    if (!imageUrl) {
-      imageUrl = await searchGoogleBooks(keywords);
-    }
-
-    // 6순위: Google Books (원본 제목)
-    if (!imageUrl) {
-      imageUrl = await searchGoogleBooks(title);
-    }
+    // 4순위: Google Books (키워드 → 전체 제목)
+    if (!imageUrl) imageUrl = await searchGoogleBooks(keywords);
+    if (!imageUrl && keywords !== title) imageUrl = await searchGoogleBooks(title);
 
     res.status(200).json({ imageUrl: imageUrl || null });
   } catch (e) {
