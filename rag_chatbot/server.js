@@ -113,6 +113,140 @@ function cosineSimilarity(a, b) {
   return dot / (Math.sqrt(normA) * Math.sqrt(normB) || 1);
 }
 
+function tokenize(text) {
+  return (text.toLowerCase().match(/[a-z0-9가-힣]+/gi) || []);
+}
+
+// BM25 역색인 구성 (키워드 기반 스파스 검색용)
+function buildBm25Index(chunks) {
+  const docTermFreqs = [];
+  const docLengths = [];
+  const df = new Map();
+  let totalLength = 0;
+
+  chunks.forEach((chunk) => {
+    const tokens = tokenize(chunk.text);
+    const tf = new Map();
+    tokens.forEach((t) => tf.set(t, (tf.get(t) || 0) + 1));
+    docTermFreqs.push(tf);
+    docLengths.push(tokens.length);
+    totalLength += tokens.length;
+    for (const term of tf.keys()) {
+      df.set(term, (df.get(term) || 0) + 1);
+    }
+  });
+
+  return {
+    docTermFreqs,
+    docLengths,
+    df,
+    avgLength: chunks.length ? totalLength / chunks.length : 0,
+    N: chunks.length,
+  };
+}
+
+function bm25Scores(index, queryTokens) {
+  const scores = new Array(index.N).fill(0);
+  const uniqueTerms = [...new Set(queryTokens)];
+
+  for (const term of uniqueTerms) {
+    const df = index.df.get(term);
+    if (!df) continue;
+    const idf = Math.log(1 + (index.N - df + 0.5) / (df + 0.5));
+    for (let i = 0; i < index.N; i++) {
+      const tf = index.docTermFreqs[i].get(term);
+      if (!tf) continue;
+      const denom = tf + BM25_K1 * (1 - BM25_B + (BM25_B * index.docLengths[i]) / (index.avgLength || 1));
+      scores[i] += idf * ((tf * (BM25_K1 + 1)) / denom);
+    }
+  }
+  return scores;
+}
+
+// LLM 기반 리랭커: 후보 조각들을 질의와의 관련도(0~10)로 재채점
+async function rerankWithLLM(openai, query, passages) {
+  try {
+    const passagesText = passages.map((p, i) => `[${i}] ${p.slice(0, 400)}`).join('\n\n');
+
+    const response = await openai.chat.completions.create({
+      model: MODEL_NAME,
+      temperature: 0,
+      response_format: { type: 'json_object' },
+      messages: [
+        {
+          role: 'system',
+          content:
+            '당신은 검색 결과 재순위화(rerank) 전문가입니다. 주어진 질의와 번호가 매겨진 문서 조각들을 보고 ' +
+            '각 조각이 질의에 얼마나 관련이 있는지 0~10 점수로 평가하세요. ' +
+            '응답은 반드시 다음 JSON 형식으로만 답하세요: {"scores": [{"id": 0, "score": 7}, ...]}',
+        },
+        { role: 'user', content: `질의: ${query}\n\n문서 조각:\n${passagesText}` },
+      ],
+    });
+
+    const parsed = JSON.parse(response.choices[0].message.content);
+    const scoreMap = new Map((parsed.scores || []).map((s) => [s.id, s.score]));
+    return passages.map((_, i) => (scoreMap.has(i) ? Number(scoreMap.get(i)) : null));
+  } catch (err) {
+    console.error('rerank 실패, 하이브리드 점수로 대체합니다:', err.message);
+    return passages.map(() => null);
+  }
+}
+
+function round3(n) {
+  return Math.round(n * 1000) / 1000;
+}
+
+// 벡터 검색 + BM25 검색을 RRF로 결합한 뒤 LLM 리랭커로 최종 순위를 재조정
+async function hybridRetrieve(openai, session, message, k) {
+  const chunks = session.chunks;
+  if (!chunks || chunks.length === 0) return [];
+
+  const [queryEmbedding] = await embedTexts(openai, [message]);
+  const vectorScores = chunks.map((c) => cosineSimilarity(c.embedding, queryEmbedding));
+  const bm25 = bm25Scores(session.bm25Index, tokenize(message));
+
+  const poolSize = Math.min(HYBRID_CANDIDATE_POOL, chunks.length);
+  const vectorRanked = vectorScores
+    .map((score, idx) => ({ idx, score }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, poolSize);
+
+  const bm25Ranked = bm25
+    .map((score, idx) => ({ idx, score }))
+    .filter((x) => x.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, poolSize);
+
+  const fused = new Map();
+  vectorRanked.forEach((item, rank) => {
+    fused.set(item.idx, (fused.get(item.idx) || 0) + 1 / (RRF_K + rank + 1));
+  });
+  bm25Ranked.forEach((item, rank) => {
+    fused.set(item.idx, (fused.get(item.idx) || 0) + 1 / (RRF_K + rank + 1));
+  });
+
+  const candidatePool = [...fused.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, poolSize)
+    .map(([idx, hybridScore]) => ({ idx, hybridScore, vectorScore: vectorScores[idx], bm25Score: bm25[idx] }));
+
+  if (candidatePool.length === 0) return [];
+
+  const rerankScores = await rerankWithLLM(openai, message, candidatePool.map((c) => chunks[c.idx].text));
+
+  const merged = candidatePool.map((c, i) => ({
+    ...chunks[c.idx],
+    hybridScore: round3(c.hybridScore),
+    vectorScore: round3(c.vectorScore),
+    bm25Score: round3(c.bm25Score),
+    rerankScore: rerankScores[i] === null ? null : round3(rerankScores[i]),
+  }));
+
+  merged.sort((a, b) => (b.rerankScore ?? b.hybridScore) - (a.rerankScore ?? a.hybridScore));
+  return merged.slice(0, k);
+}
+
 app.post('/api/upload', upload.array('files'), async (req, res) => {
   try {
     const { sessionId, session } = getSession(req);
