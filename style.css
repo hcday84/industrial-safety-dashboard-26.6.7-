@@ -3820,3 +3820,98 @@ button, input, select {
   border-color: #818cf8;
   color: #a5b4fc;
 }
+
+/* ── Feature 4: 합격률 차트 트렌드 요약 ─────────────────────────── */
+.chart-trend-summary {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+.chart-trend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+.chart-trend-written   { background: rgba(245,158,11,0.15); color: #f59e0b; border: 1px solid rgba(245,158,11,0.3); }
+.chart-trend-practical { background: rgba(14,165,233,0.12); color: #0ea5e9; border: 1px solid rgba(14,165,233,0.3); }
+
+/* ── Feature 6: 월별 ICS 내보내기 버튼 ───────────────────────────── */
+.monthly-controls-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.btn-monthly-ics {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: rgba(20,184,166,0.12);
+  border: 1.5px solid rgba(20,184,166,0.4);
+  border-radius: 8px;
+  color: #14b8a6;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.18s, border-color 0.18s;
+}
+.btn-monthly-ics:hover { background: rgba(20,184,166,0.22); border-color: #14b8a6; }
+
+/* ── Feature 7: 비교 모달 개선 ───────────────────────────────────── */
+.cmp-section-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 14px 0 8px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--border-color);
+}
+.cmp-pass-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+.cmp-pass-col {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.cmp-pass-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+.cmp-pass-label.cmp-win-label { color: #10b981; }
+.cmp-pass-bar-wrap {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.cmp-pass-bar {
+  height: 8px;
+  border-radius: 4px;
+  min-width: 4px;
+  transition: width 0.4s ease;
+}
+.cmp-no-data { color: var(--text-muted); font-size: 0.8rem; }
+.cmp-sub-table { margin-top: 0; }
+.cmp-sub-val { font-size: 0.78rem; padding: 3px 6px !important; }
+.cmp-sub-center { font-size: 0.72rem; color: var(--text-muted); text-align: center; width: 24px; padding: 3px 4px !important; }
+.cmp-sub-dot { color: var(--accent-color); font-size: 0.5rem; margin-right: 4px; vertical-align: middle; }
