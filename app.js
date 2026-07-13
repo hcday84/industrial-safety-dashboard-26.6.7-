@@ -2948,15 +2948,60 @@ function renderStars(stars, interactive = false, certName = '') {
     + `</span>`;
 }
 
-function renderHotTopic() {
+// 국가전문자격증 명단 (의료·법률·경제·사회복지 계열)
+const PRO_CERT_SET = new Set([
+  '의사','치과의사','한의사','약사','한약사','간호사','수의사','조산사',
+  '물리치료사','작업치료사','방사선사','임상병리사','치과위생사','치과기공사',
+  '안경사','간호조무사','요양보호사','의무기록사','응급구조사1급','응급구조사2급',
+  '영양사','위생사','보건교육사',
+  '변호사','법무사','변리사','공인회계사','세무사','공인노무사',
+  '감정평가사','손해사정사','보험계리사','관세사','주택관리사','행정사',
+  '사회복지사1급','임상심리사','언어재활사','정신건강임상심리사',
+  '청소년상담사','청소년지도사','평생교육사',
+  '스포츠지도사','관광통역안내사','국내관광안내사','국외관광안내사',
+  '농산물품질관리사','수산물품질관리사','나무의사','맞춤형화장품조제관리사',
+  '임용고시',
+]);
+
+// 민간자격증 명단
+const PRIVATE_CERT_SET = new Set([
+  'TOEIC','TOEFL','IELTS','OPIc','TOEIC Speaking',
+  'JLPT','HSK','한국어능력시험(TOPIK)',
+  'ITQ','MOS','GTQ','GTQi',
+  'SQLD','SQLP','ADsP','ADP',
+  'ERP정보관리사','ISMS',
+  'AFPK','CFP','FAT','TAT',
+  '매경TEST','TESAT','재경관리사',
+  '네트워크관리사1급','네트워크관리사2급',
+  '리눅스마스터1급','리눅스마스터2급',
+  '바리스타1급','바리스타2급','소믈리에','바텐더',
+  '한국사능력검정시험','KBS한국어능력시험','한국실용글쓰기','한자능력검정',
+  '한국어교원','사회통합프로그램',
+  '펀드투자권유대행인','심리상담사','드론조종자격증',
+]);
+
+function getCertType(name) {
+  if (PRIVATE_CERT_SET.has(name)) return 'private';
+  if (PRO_CERT_SET.has(name)) return 'pro';
+  return 'tech';
+}
+
+let _hotActiveTab = 'tech';
+
+function renderHotTopic(tab) {
   const el = document.getElementById('hot-topic-grid');
   if (!el) return;
+  if (tab) _hotActiveTab = tab;
 
-  // 등록된 자격증 중 선호도 데이터 있는 것만, 별점 내림차순
   const items = Object.entries(CERT_POPULARITY)
-    .filter(([name]) => CERTIFICATIONS[name])
+    .filter(([name]) => CERTIFICATIONS[name] && getCertType(name) === _hotActiveTab)
     .sort((a, b) => b[1].stars - a[1].stars)
     .slice(0, 18);
+
+  if (items.length === 0) {
+    el.innerHTML = '<p class="hot-empty">해당 분류의 선호도 데이터가 없습니다.</p>';
+    return;
+  }
 
   el.innerHTML = items.map(([name, info]) => {
     const cert = CERTIFICATIONS[name];
@@ -2974,6 +3019,15 @@ function renderHotTopic() {
       </div>`;
   }).join('');
 }
+
+window.switchHotTab = function(tab) {
+  _hotActiveTab = tab;
+  document.querySelectorAll('.hot-tab-btn').forEach(btn => btn.classList.remove('active'));
+  const idx = {tech:0, pro:1, private:2}[tab] ?? 0;
+  const btns = document.querySelectorAll('.hot-tab-btn');
+  if (btns[idx]) btns[idx].classList.add('active');
+  renderHotTopic(tab);
+};
 
 // ============================================
 // 21. ICS 캘린더 내보내기
