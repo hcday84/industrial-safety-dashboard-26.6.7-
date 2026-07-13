@@ -237,6 +237,12 @@ button:disabled {
   white-space: pre-wrap;
 }
 
+.source-item .source-score {
+  color: #9ca3af;
+  font-size: 11px;
+  margin-bottom: 4px;
+}
+
 .source-item.web .source-meta a {
   color: #2563eb;
   text-decoration: none;
