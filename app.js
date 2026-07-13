@@ -497,6 +497,11 @@ function showWelcomeScreen() {
   renderQuickRow();
   renderHotTopic();
   initLocationSection();
+  renderDDayWidget();
+  renderFAQSection();
+  renderPubCalendar();
+  renderRevisionTracker();
+  renderNoticeBoard();
   // 출판사 검색 위젯 초기화 (최초 1회)
   const pubInput = document.getElementById('publisher-search');
   if (pubInput && !pubInput._pubBound) {
