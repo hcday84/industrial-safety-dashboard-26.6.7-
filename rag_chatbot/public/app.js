@@ -42,6 +42,7 @@ function setStatus(message, type) {
 function authHeaders(extra) {
   const headers = { ...extra };
   if (el.apiKey.value) headers['X-Api-Key'] = el.apiKey.value;
+  if (el.tavilyKey.value) headers['X-Tavily-Key'] = el.tavilyKey.value;
   if (state.sessionId) headers['X-Session-Id'] = state.sessionId;
   return headers;
 }
