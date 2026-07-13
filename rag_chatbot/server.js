@@ -357,6 +357,14 @@ app.post('/api/chat', async (req, res) => {
         source: c.source,
         page: c.page,
         text: c.text.slice(0, 500),
+        ...(c.hybridScore !== undefined
+          ? {
+              hybridScore: c.hybridScore,
+              vectorScore: c.vectorScore,
+              bm25Score: c.bm25Score,
+              rerankScore: c.rerankScore,
+            }
+          : {}),
       })),
       ...webResults.map((r) => ({
         type: 'web',
