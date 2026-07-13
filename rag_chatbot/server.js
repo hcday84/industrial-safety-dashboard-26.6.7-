@@ -283,6 +283,7 @@ app.post('/api/upload', upload.array('files'), async (req, res) => {
 
     session.chunks = newChunks;
     session.files = req.files.map((f) => f.originalname);
+    session.bm25Index = buildBm25Index(newChunks);
 
     res.setHeader('X-Session-Id', sessionId);
     res.json({ sessionId, files: session.files, chunkCount: newChunks.length });
