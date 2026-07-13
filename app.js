@@ -2695,6 +2695,47 @@ function renderQuickRow() {
   rowEl.style.display = '';
 }
 
+// ── Hot Topic: 자격증 선호도 ──────────────────────────────────────────────────
+function renderStars(stars, interactive = false, certName = '') {
+  const full  = Math.floor(stars);
+  const half  = stars % 1 >= 0.5 ? 1 : 0;
+  const empty = 5 - full - half;
+  const pct   = (stars / 5 * 100).toFixed(0);
+  return `<span class="cert-stars" title="선호도 ${stars}점/5점 (${pct}%)">`
+    + '<i class="fa-solid fa-star"></i>'.repeat(full)
+    + (half ? '<i class="fa-solid fa-star-half-stroke"></i>' : '')
+    + '<i class="fa-regular fa-star"></i>'.repeat(empty)
+    + `<span class="cert-stars-val">${stars.toFixed(1)}</span>`
+    + `</span>`;
+}
+
+function renderHotTopic() {
+  const el = document.getElementById('hot-topic-grid');
+  if (!el) return;
+
+  // 등록된 자격증 중 선호도 데이터 있는 것만, 별점 내림차순
+  const items = Object.entries(CERT_POPULARITY)
+    .filter(([name]) => CERTIFICATIONS[name])
+    .sort((a, b) => b[1].stars - a[1].stars)
+    .slice(0, 18);
+
+  el.innerHTML = items.map(([name, info]) => {
+    const cert = CERTIFICATIONS[name];
+    const icon = cert?.icon || 'fa-certificate';
+    const cat  = cert?.category || '';
+    return `
+      <div class="hot-card" onclick="window.selectCert('${name.replace(/'/g,"\\'")}')">
+        <div class="hot-card-icon"><i class="fa-solid ${icon}"></i></div>
+        <div class="hot-card-body">
+          <div class="hot-card-name">${name}</div>
+          <div class="hot-card-cat">${cat}</div>
+          ${renderStars(info.stars)}
+          <div class="hot-card-tag">${info.tag}</div>
+        </div>
+      </div>`;
+  }).join('');
+}
+
 // ============================================
 // 21. ICS 캘린더 내보내기
 // ============================================
