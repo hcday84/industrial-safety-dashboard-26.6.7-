@@ -1001,7 +1001,7 @@
     // 스크롤 위치에 따라 사이드바 메뉴 자동 활성화
     document.addEventListener('DOMContentLoaded', () => {
       const invPanel = document.getElementById('inventory-panel');
-      const sections = ['inv-search-section','inv-stats-section','inv-upload-section','inv-books-section'];
+      const sections = ['inv-search-section','inv-stats-section','inv-upload-section','inv-books-section','inv-newbooks-section'];
       invPanel.addEventListener('scroll', () => {
         let current = sections[0];
         sections.forEach(id => {
