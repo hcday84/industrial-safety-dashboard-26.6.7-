@@ -3925,8 +3925,8 @@ button, input, select {
 
 /* ── Hot Topic 섹션 ────────────────────────────────────────────────── */
 .hot-topic-section {
-  margin: 0 0 18px 0;
-  padding: 20px 24px 24px;
+  margin: 0 0 12px 0;
+  padding: 14px 18px 18px;
 }
 .hot-topic-desc {
   font-size: 0.8rem;
