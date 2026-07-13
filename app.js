@@ -606,6 +606,20 @@ function renderHero(cert) {
   document.getElementById('hero-desc').textContent = cert.heroDesc;
   const iconEl = document.querySelector('.shield-graphic i');
   if (iconEl) { iconEl.className = `fa-solid ${cert.icon}`; }
+
+  // 선호도 별점 표시
+  const popEl = document.getElementById('hero-popularity');
+  if (popEl) {
+    const pop = CERT_POPULARITY[cert.name];
+    if (pop) {
+      popEl.innerHTML = renderStars(pop.stars)
+        + `<span class="hero-pop-tag">${pop.tag}</span>`
+        + `<span class="hero-pop-reason">${pop.reason}</span>`;
+      popEl.style.display = '';
+    } else {
+      popEl.style.display = 'none';
+    }
+  }
 }
 
 // ============================================
