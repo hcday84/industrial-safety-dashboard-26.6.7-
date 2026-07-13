@@ -629,6 +629,101 @@
         <div id="location-centers" class="location-centers"></div>
       </section>
 
+      <!-- ── 자격증 비교기 ── -->
+      <section id="compare-section" class="dashboard-section card-box">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-scale-balanced text-teal"></i> 자격증 비교기</h2>
+          <span class="badge badge-info">나란히 비교</span>
+        </div>
+        <p class="predictor-desc"><i class="fa-solid fa-circle-info"></i> 현재 선택한 자격증과 다른 자격증을 나란히 비교합니다.</p>
+        <div class="compare-inline-search">
+          <div class="compare-inline-a" id="compare-inline-a-label">— 자격증을 먼저 선택하세요 —</div>
+          <span class="compare-vs-badge">VS</span>
+          <div class="compare-inline-b-wrap">
+            <input type="text" id="compare-inline-input" class="compare-inline-input" placeholder="비교할 자격증 검색..." autocomplete="off" />
+            <div id="compare-inline-dropdown" class="compare-inline-dropdown"></div>
+          </div>
+        </div>
+        <div id="compare-inline-panel"></div>
+      </section>
+
+      <!-- ── 합격 팁 & 후기 모음 ── -->
+      <section id="tips-section" class="dashboard-section card-box">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-medal text-teal"></i> 합격 팁 &amp; 후기 모음</h2>
+          <span class="badge badge-success">합격자 전략</span>
+        </div>
+        <div id="tips-body">
+          <p class="predictor-empty"><i class="fa-solid fa-magnifying-glass"></i> 자격증을 먼저 선택하면 합격 팁이 표시됩니다.</p>
+        </div>
+      </section>
+
+      <!-- ── 자격증 FAQ ── -->
+      <section id="faq-section" class="dashboard-section card-box">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-circle-question text-teal"></i> 자격증 FAQ</h2>
+          <span class="badge badge-info">자주 묻는 질문</span>
+        </div>
+        <div class="faq-search-wrap">
+          <input type="text" id="faq-search" class="faq-search-input" placeholder="질문 검색..." oninput="window.filterFAQ(this.value)" />
+        </div>
+        <div id="faq-list" class="faq-list"></div>
+      </section>
+
+      <!-- ── 출판 일정 캘린더 ── -->
+      <section id="pub-calendar-section" class="dashboard-section card-box">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-calendar-check text-teal"></i> 출판 일정 캘린더</h2>
+          <span class="badge badge-warning">담당자·직원</span>
+        </div>
+        <p class="predictor-desc"><i class="fa-solid fa-circle-info"></i> 시험 D-60일을 기준으로 수험서 출판 권장 시기를 자동 산출합니다.</p>
+        <div class="pub-cal-filter">
+          <button class="pub-cal-btn active" onclick="window.filterPubCal('all',this)">전체</button>
+          <button class="pub-cal-btn" onclick="window.filterPubCal('soon',this)">30일 이내</button>
+          <button class="pub-cal-btn" onclick="window.filterPubCal('prep',this)">출판 준비 시기</button>
+        </div>
+        <div id="pub-calendar-list" class="pub-calendar-list"></div>
+      </section>
+
+      <!-- ── 개정판 추적기 ── -->
+      <section id="revision-section" class="dashboard-section card-box">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-code-compare text-teal"></i> 개정판 추적기</h2>
+          <span class="badge badge-warning">담당자·직원</span>
+        </div>
+        <div class="rev-filter">
+          <button class="rev-btn active" onclick="window.filterRevisions('all',this)">전체</button>
+          <button class="rev-btn" onclick="window.filterRevisions('high',this)">긴급</button>
+          <button class="rev-btn" onclick="window.filterRevisions('update',this)">업데이트 필요</button>
+        </div>
+        <div id="revision-list" class="revision-list"></div>
+      </section>
+
+      <!-- ── 공지 게시판 ── -->
+      <section id="notice-section" class="dashboard-section card-box">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-bullhorn text-teal"></i> 공지 게시판</h2>
+          <span class="badge badge-warning">담당자·직원</span>
+        </div>
+        <div class="notice-toolbar">
+          <button class="btn-notice-add" onclick="window.openNoticeForm()"><i class="fa-solid fa-plus"></i> 공지 등록</button>
+        </div>
+        <div id="notice-form" class="notice-form" style="display:none;">
+          <input type="text" id="notice-title-input" class="notice-input" placeholder="공지 제목" />
+          <textarea id="notice-body-input" class="notice-textarea" placeholder="공지 내용을 입력하세요..." rows="3"></textarea>
+          <div class="notice-form-row">
+            <label class="notice-important-label">
+              <input type="checkbox" id="notice-important-chk" /> 중요 공지 (웰컴 배너 표시)
+            </label>
+            <div style="display:flex;gap:8px;">
+              <button class="btn-notice-cancel" onclick="window.closeNoticeForm()">취소</button>
+              <button class="btn-notice-save" onclick="window.saveNotice()">등록</button>
+            </div>
+          </div>
+        </div>
+        <div id="notice-list" class="notice-list"></div>
+      </section>
+
     </main>
   </div>
 
