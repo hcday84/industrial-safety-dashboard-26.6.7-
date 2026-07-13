@@ -3743,3 +3743,80 @@ button, input, select {
 }
 .admin-auth-btn-confirm:hover { opacity: 0.88; transform: translateY(-1px); }
 .admin-auth-btn-confirm:active { transform: translateY(0); }
+
+/* ── Feature 1: 히어로 D-Day 칩 ──────────────────────────────────── */
+.hero-dday-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.hero-dday-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border: 1.5px solid rgba(255,255,255,0.25);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  background: rgba(255,255,255,0.12);
+}
+.hero-dday-chip i { font-size: 0.75rem; opacity: 0.85; }
+.hero-dday-chip strong { font-weight: 800; letter-spacing: -0.3px; }
+.hero-dday-chip.hero-dday-urgent {
+  background: rgba(239,68,68,0.32);
+  border-color: rgba(239,68,68,0.6);
+}
+.hero-dday-chip.hero-dday-soon {
+  background: rgba(245,158,11,0.28);
+  border-color: rgba(245,158,11,0.55);
+}
+.hero-dday-chip.hero-dday-normal {
+  background: rgba(99,102,241,0.22);
+  border-color: rgba(99,102,241,0.45);
+}
+
+/* ── Feature 2: 즐겨찾기 D-Day 뱃지 & 빈 상태 힌트 ──────────────── */
+.fav-chip-dday {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 7px;
+  border-radius: 10px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  background: rgba(99,102,241,0.18);
+  color: var(--accent-color);
+  border: 1px solid rgba(99,102,241,0.3);
+  margin-left: 4px;
+}
+.fav-chip-dday.urgent { background: rgba(239,68,68,0.18); color: #ef4444; border-color: rgba(239,68,68,0.35); }
+.fav-chip-dday.soon   { background: rgba(245,158,11,0.18); color: #f59e0b; border-color: rgba(245,158,11,0.35); }
+.fav-empty-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  padding: 4px 10px;
+  border: 1.5px dashed var(--border-color);
+  border-radius: 20px;
+  opacity: 0.75;
+}
+.fav-empty-hint i { color: #f59e0b; }
+
+/* ── Feature 3: 자격증 대시보드 이동 버튼 ─────────────────────────── */
+.btn-cert-link {
+  background: linear-gradient(135deg, rgba(99,102,241,0.15), rgba(139,92,246,0.15));
+  border: 1.5px solid rgba(99,102,241,0.4);
+  color: #818cf8;
+  cursor: pointer;
+  font-family: inherit;
+}
+.btn-cert-link:hover {
+  background: linear-gradient(135deg, rgba(99,102,241,0.3), rgba(139,92,246,0.3));
+  border-color: #818cf8;
+  color: #a5b4fc;
+}
