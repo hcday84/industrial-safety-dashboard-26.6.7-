@@ -22,7 +22,7 @@ npm start
 브라우저에서 `http://localhost:3000` 접속.
 
 ## 구조
-- `server.js` — Express 백엔드. PDF 파싱(pdf-parse), 청크 분할, OpenAI 임베딩(text-embedding-3-small)으로 메모리 내 벡터 저장소 구성, 코사인 유사도 검색, GPT-4o-mini 스트리밍 응답 제공
+- `server.js` — Express 백엔드. PDF 파싱(pdf-parse), 청크 분할, OpenAI 임베딩(text-embedding-3-small)으로 메모리 내 벡터 저장소 구성 + BM25 역색인 구성, 하이브리드 검색(RRF) 및 GPT-4o-mini 기반 리랭킹, GPT-4o-mini 스트리밍 응답 제공
 - `public/` — 순수 HTML/CSS/JS 프론트엔드 (사이드바 설정 + 채팅 UI)
 
 ## 기능
