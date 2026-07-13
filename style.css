@@ -3916,3 +3916,136 @@ button, input, select {
 .cmp-sub-val { font-size: 0.78rem; padding: 3px 6px !important; }
 .cmp-sub-center { font-size: 0.72rem; color: var(--text-muted); text-align: center; width: 24px; padding: 3px 4px !important; }
 .cmp-sub-dot { color: var(--accent-color); font-size: 0.5rem; margin-right: 4px; vertical-align: middle; }
+
+/* ── Hot Topic 섹션 ────────────────────────────────────────────────── */
+.hot-topic-section {
+  margin: 0 0 18px 0;
+  padding: 20px 24px 24px;
+}
+.hot-topic-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 4px 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.hot-topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+.hot-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  padding: 13px 14px;
+  border-radius: 12px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+}
+.hot-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  border-color: var(--primary-color);
+}
+.hot-card-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+.hot-card-body {
+  flex: 1;
+  min-width: 0;
+}
+.hot-card-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 2px;
+}
+.hot-card-cat {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hot-card-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 20px;
+  background: rgba(var(--primary-rgb, 45,90,160), 0.12);
+  color: var(--primary-color);
+  margin-top: 5px;
+  white-space: nowrap;
+}
+
+/* ── 별점 공통 ──────────────────────────────────────────────────────── */
+.cert-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+  font-size: 0.78rem;
+  color: #f59e0b;
+  cursor: default;
+}
+.cert-stars .fa-star,
+.cert-stars .fa-star-half-stroke,
+.cert-stars .fa-regular { font-size: 0.78rem; }
+.cert-stars .fa-regular { color: #d1d5db; }
+.cert-stars-val {
+  margin-left: 4px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+/* ── Hero 선호도 배지 ───────────────────────────────────────────────── */
+.hero-popularity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0 10px;
+  flex-wrap: wrap;
+}
+.hero-popularity .cert-stars {
+  font-size: 1rem;
+}
+.hero-popularity .cert-stars .fa-star,
+.hero-popularity .cert-stars .fa-star-half-stroke,
+.hero-popularity .cert-stars .fa-regular { font-size: 1rem; }
+.hero-popularity .cert-stars-val {
+  font-size: 0.88rem;
+}
+.hero-pop-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 20px;
+  background: rgba(245,158,11,0.18);
+  color: #d97706;
+  white-space: nowrap;
+}
+.hero-pop-reason {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.6);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
