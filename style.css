@@ -3162,8 +3162,8 @@ button, input, select {
 .monthly-cert-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  max-height: 360px;
+  gap: 8px;
+  max-height: 280px;
   overflow-y: auto;
   padding-right: 4px;
   scrollbar-width: thin;
