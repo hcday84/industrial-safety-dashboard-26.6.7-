@@ -532,6 +532,7 @@ function renderAll() {
   renderSubjects(cert);
   renderStudyGuide(cert);
   renderRoadmap(cert);
+  renderPredictor(cert);
 }
 
 // ============================================
