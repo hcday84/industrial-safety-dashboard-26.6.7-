@@ -4,6 +4,8 @@ const state = {
 
 const el = {
   apiKey: document.getElementById('apiKey'),
+  tavilyKey: document.getElementById('tavilyKey'),
+  useWebSearch: document.getElementById('useWebSearch'),
   chunkSize: document.getElementById('chunkSize'),
   chunkSizeValue: document.getElementById('chunkSizeValue'),
   chunkOverlap: document.getElementById('chunkOverlap'),
