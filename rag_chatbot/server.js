@@ -158,38 +158,69 @@ app.post('/api/chat', async (req, res) => {
   try {
     const { sessionId, session } = getSession(req);
     const apiKey = resolveApiKey(req);
-    const { message, topK } = req.body;
+    const { message, topK, useWebSearch } = req.body;
+    const wantsWebSearch = Boolean(useWebSearch);
 
     if (!apiKey) return res.status(400).json({ error: 'OpenAI API Key가 필요합니다.' });
     if (!message) return res.status(400).json({ error: '질문을 입력해주세요.' });
-    if (!session.chunks || session.chunks.length === 0) {
+    if ((!session.chunks || session.chunks.length === 0) && !wantsWebSearch) {
       return res.status(400).json({ error: '먼저 PDF를 업로드하고 문서 처리를 진행해주세요.' });
+    }
+
+    let tavilyKey = '';
+    if (wantsWebSearch) {
+      tavilyKey = resolveTavilyKey(req);
+      if (!tavilyKey) return res.status(400).json({ error: 'Tavily API Key를 입력해주세요.' });
     }
 
     const openai = new OpenAI({ apiKey });
     const k = Math.min(10, Math.max(1, parseInt(topK, 10) || 4));
 
-    const [queryEmbedding] = await embedTexts(openai, [message]);
-    const scored = session.chunks
-      .map((c) => ({ ...c, score: cosineSimilarity(c.embedding, queryEmbedding) }))
-      .sort((a, b) => b.score - a.score)
-      .slice(0, k);
+    let scored = [];
+    if (session.chunks && session.chunks.length > 0) {
+      const [queryEmbedding] = await embedTexts(openai, [message]);
+      scored = session.chunks
+        .map((c) => ({ ...c, score: cosineSimilarity(c.embedding, queryEmbedding) }))
+        .sort((a, b) => b.score - a.score)
+        .slice(0, k);
+    }
 
-    const context = scored
-      .map((c, i) => `[문서 ${i + 1} | ${c.source} p.${c.page}]\n${c.text}`)
+    let webResults = [];
+    if (wantsWebSearch) {
+      webResults = await webSearch(tavilyKey, message);
+    }
+
+    const pdfContext = scored
+      .map((c, i) => `[PDF 문서 ${i + 1} | ${c.source} p.${c.page}]\n${c.text}`)
       .join('\n\n');
 
-    const systemPrompt =
-      '당신은 업로드된 PDF 문서를 기반으로 답변하는 어시스턴트입니다. ' +
-      '아래 제공된 문서 내용을 참고하여 질문에 답변하세요. ' +
-      '문서에서 답을 찾을 수 없으면 모른다고 솔직히 답변하세요.\n\n' +
-      `참고 문서:\n${context}`;
+    const webContext = webResults
+      .map((r, i) => `[웹 검색 결과 ${i + 1} | ${r.title} | ${r.url}]\n${r.content}`)
+      .join('\n\n');
 
-    const sourcesPayload = scored.map((c) => ({
-      source: c.source,
-      page: c.page,
-      text: c.text.slice(0, 500),
-    }));
+    const context = [pdfContext, webContext].filter(Boolean).join('\n\n');
+
+    const systemPrompt =
+      '당신은 업로드된 PDF 문서와 웹 검색 결과를 기반으로 답변하는 어시스턴트입니다. ' +
+      '아래 제공된 참고 자료를 활용하여 질문에 답변하세요. ' +
+      '참고 자료에서 답을 찾을 수 없으면 모른다고 솔직히 답변하세요. ' +
+      '웹 검색 결과를 인용할 때는 출처 URL을 함께 언급하세요.\n\n' +
+      `참고 자료:\n${context}`;
+
+    const sourcesPayload = [
+      ...scored.map((c) => ({
+        type: 'pdf',
+        source: c.source,
+        page: c.page,
+        text: c.text.slice(0, 500),
+      })),
+      ...webResults.map((r) => ({
+        type: 'web',
+        source: r.title,
+        url: r.url,
+        text: (r.content || '').slice(0, 500),
+      })),
+    ];
 
     res.setHeader('Content-Type', 'text/plain; charset=utf-8');
     res.setHeader('X-Session-Id', sessionId);
