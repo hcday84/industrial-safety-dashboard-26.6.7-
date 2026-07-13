@@ -3334,3 +3334,468 @@ function renderComparePanel(nameB) {
     });
   });
 })();
+
+// ============================================================
+// 22. 정적 데이터 — 합격 팁, FAQ, 개정판 이력
+// ============================================================
+const CERT_TIPS = {
+  '전기기사': [
+    { type:'필기', tag:'고득점', tip:'전기자기학은 공식 암기보다 원리 이해 우선 — 맥스웰 방정식 적용 예제 위주로 학습하세요.' },
+    { type:'필기', tag:'주의', tip:'회로이론 계산에서 위상각 부호 실수가 잦습니다. 기호 규약을 처음부터 통일해 두세요.' },
+    { type:'실기', tag:'핵심', tip:'배선도 시공 작업은 색상 코드(갈·흑·회·녹황) 암기가 필수. 접속 불량이 가장 많은 감점 항목입니다.' },
+  ],
+  '산업안전기사': [
+    { type:'필기', tag:'고득점', tip:'산업안전보건법 조문 번호까지 외울 필요 없음. "요건·효과·예외" 3단 구조로 정리하세요.' },
+    { type:'필기', tag:'주의', tip:'인간공학 파트의 FMEA·FTA 기호는 도식화로 암기하면 혼동을 줄일 수 있습니다.' },
+    { type:'실기', tag:'핵심', tip:'필답형은 핵심어 포함 여부로 채점 — "위험성 평가", "개선조치" 등 법적 용어를 정확히 사용하세요.' },
+  ],
+  '정보처리기사': [
+    { type:'필기', tag:'고득점', tip:'UML 다이어그램 유형은 최근 기출 5개년 선지 암기로 대부분 커버됩니다.' },
+    { type:'필기', tag:'주의', tip:'SQL 문제는 실행 결과값을 직접 손으로 트레이싱하는 연습이 필수입니다.' },
+    { type:'실기', tag:'핵심', tip:'알고리즘 코드 출력값 추적 문제가 30% 이상 — 빠른 손 계산이 합격을 결정합니다.' },
+  ],
+  '소방설비기사': [
+    { type:'필기', tag:'고득점', tip:'소방시설 설치기준 수치(수원량·방수압력·방수량)를 표로 정리해 반복 암기하세요.' },
+    { type:'실기', tag:'핵심', tip:'설계도면 해석 문제 — 화재감지기·스프링클러 심볼을 모르면 풀 수 없습니다. 이미지로 암기하세요.' },
+  ],
+  '건설안전기사': [
+    { type:'필기', tag:'고득점', tip:'KOSHA 가이드 기준 빈출 — 비계·거푸집 관련 수치를 집중 암기하세요.' },
+    { type:'실기', tag:'핵심', tip:'재해 유형별 원인·대책 3가지 쓰기 문제가 매회 출제됩니다. 틀에 맞춰 암기하세요.' },
+  ],
+  '위험물산업기사': [
+    { type:'필기', tag:'고득점', tip:'위험물 류별 특성(인화점·발화점·비중)은 표 비교 암기가 가장 효율적입니다.' },
+    { type:'실기', tag:'주의', tip:'지정수량 배수 계산식에서 단위 실수가 많습니다. 풀이 과정에 단위를 항상 명시하세요.' },
+  ],
+  '컴퓨터활용능력1급': [
+    { type:'필기', tag:'고득점', tip:'스프레드시트 VLOOKUP·INDEX·MATCH·IF 중첩 공식 문제가 핵심 — 손으로 써가며 연습하세요.' },
+    { type:'실기', tag:'핵심', tip:'실기는 속도가 합격을 결정 — 단축키(Ctrl+Shift+Enter 등) 근육기억이 필수입니다.' },
+  ],
+  '산업안전산업기사': [
+    { type:'필기', tag:'고득점', tip:'기사 대비 법령 암기 비중이 낮고 개념 이해 문제가 많습니다. 기본서 1회독 후 기출 집중.' },
+    { type:'실기', tag:'주의', tip:'안전보건표지 색상·형태 문제는 실제 이미지로 확인하며 공부하면 혼동이 줄어듭니다.' },
+  ],
+  '전기산업기사': [
+    { type:'필기', tag:'고득점', tip:'전기기사와 범위가 유사 — 기사 기출도 병행하면 학습 효율이 올라갑니다.' },
+    { type:'실기', tag:'핵심', tip:'측정 계기 사용법과 절연저항 측정 절차 서술 문제가 자주 출제됩니다.' },
+  ],
+  '산업위생관리기사': [
+    { type:'필기', tag:'고득점', tip:'허용기준 수치(TLV-TWA, STEL)는 주요 물질 10개 이상을 외워 두세요.' },
+    { type:'실기', tag:'핵심', tip:'측정·평가 계산 문제에서 단위 변환 실수가 가장 많습니다. 단위를 항상 명시하세요.' },
+  ],
+};
+
+const CERT_FAQ_GENERAL = [
+  { q:'기능사 시험은 응시자격 제한이 있나요?', a:'기능사는 응시자격 제한 없이 누구나 응시 가능합니다. 단, 산업기사·기사는 학력 또는 관련 실무 경력이 요구됩니다.' },
+  { q:'필기 합격 후 실기는 언제까지 응시해야 하나요?', a:'필기 합격일로부터 2년 이내에 동일 종목 실기에 합격해야 합니다. 2년이 지나면 필기부터 재응시해야 합니다.' },
+  { q:'원서 접수는 어디서 하나요?', a:'Q-Net(www.q-net.or.kr)에서 회원가입 후 온라인 접수합니다. 접수 기간 이후에는 추가 접수가 불가하므로 일정을 미리 확인하세요.' },
+  { q:'합격 기준이 어떻게 되나요?', a:'100점 만점 기준 평균 60점 이상이면 합격입니다. 단, 과목별 40점 미만(과락)이 있으면 불합격 처리됩니다.' },
+  { q:'자격증 취득 시 어떤 혜택이 있나요?', a:'공기업·공무원 채용 가산점, 취업 우대, 법정 선임 요건 충족(안전관리자 등), 자격수당 지급 등의 혜택이 있습니다.' },
+  { q:'수험서는 어떤 기준으로 선택해야 하나요?', a:'최근 개정 출제기준 반영 여부, 기출문제 수록 분량, 해설의 충실도를 기준으로 선택하세요. 최신판 위주로 구입하세요.' },
+  { q:'시험장에 반입 가능한 물품은 무엇인가요?', a:'신분증(주민등록증·운전면허증 등)과 수험표가 필수입니다. 전자기기·스마트기기는 원칙적으로 금지됩니다.' },
+  { q:'합격자 발표는 어디서 확인하나요?', a:'Q-Net 홈페이지 및 Q-Net 앱에서 발표일 당일 오전 9시부터 조회 가능합니다. SMS 수신 신청도 가능합니다.' },
+];
+
+const EXAM_REVISIONS = [
+  { cert:'산업안전기사', type:'출제기준 개정', date:'2026-01-01', desc:'화학물질관리법·중대재해처벌법 개정사항 반영. 위험성 평가 관련 문항 비중 증가.', urgency:'high', updateNeeded:true },
+  { cert:'전기기사', type:'출제기준 변경', date:'2026-01-01', desc:'전기설비기술기준(KEC) 최신 개정 반영. 구 기준 대체 문항 정리 필요.', urgency:'high', updateNeeded:true },
+  { cert:'소방설비기사', type:'법령 개정', date:'2026-01-15', desc:'화재예방법 시행령 개정 — 특정소방대상물 분류 기준 변경사항 반영 필요.', urgency:'medium', updateNeeded:true },
+  { cert:'건설안전기사', type:'출제기준 개정', date:'2026-02-01', desc:'타워크레인·고소작업대 관련 내용 추가. KOSHA 가이드 최신판 반영.', urgency:'medium', updateNeeded:true },
+  { cert:'정보처리기사', type:'출제기준 개정', date:'2025-01-01', desc:'Python 실기 비중 확대, 구형 언어(COBOL) 완전 삭제. 이미 반영 완료.', urgency:'low', updateNeeded:false },
+  { cert:'환경기사', type:'출제기준 개정', date:'2026-01-01', desc:'탄소중립 관련 법규 반영. 환경영향평가법 개정사항 포함.', urgency:'medium', updateNeeded:true },
+  { cert:'위험물산업기사', type:'법령 개정', date:'2025-12-31', desc:'위험물 안전관리법 시행규칙 개정. 탱크 기준 일부 수치 변경.', urgency:'low', updateNeeded:false },
+  { cert:'산업위생관리기사', type:'고시 개정', date:'2025-07-01', desc:'작업환경측정 및 정도관리 고시 개정. 측정 방법·분석 기준 일부 변경.', urgency:'low', updateNeeded:false },
+];
+
+// ============================================================
+// 23. D-Day 위젯 (웰컴 페이지)
+// ============================================================
+function renderDDayWidget() {
+  const el = document.getElementById('dday-widget-grid');
+  if (!el) return;
+  const today = new Date(); today.setHours(0,0,0,0);
+
+  const entries = [];
+  Object.values(CERTIFICATIONS).forEach(cert => {
+    (cert.schedules || []).forEach(sch => {
+      [['writtenExam','필기'], ['practicalExam','실기'], ['singleExam','단일']].forEach(([key, label]) => {
+        const v = sch[key];
+        if (!v || v==='-' || v==='—' || /상시/.test(v)) return;
+        const dateStr = v.split('~')[0].trim().replace(/\(.*?\)/g,'').trim();
+        const d = new Date(dateStr);
+        if (isNaN(d) || d < today) return;
+        const diff = Math.ceil((d - today) / 86400000);
+        if (diff > 180) return;
+        entries.push({ name: cert.name, label, diff, date: dateStr, round: sch.round || '', icon: cert.icon || 'fa-certificate' });
+      });
+    });
+  });
+
+  entries.sort((a,b) => a.diff - b.diff);
+  const shown = [];
+  const seen = new Set();
+  for (const e of entries) {
+    const key = e.name + e.label;
+    if (!seen.has(key)) { seen.add(key); shown.push(e); }
+    if (shown.length >= 10) break;
+  }
+
+  if (!shown.length) {
+    el.innerHTML = '<p class="hot-empty">향후 6개월 이내 예정된 시험이 없습니다.</p>';
+    return;
+  }
+
+  el.innerHTML = shown.map(e => {
+    const cls = e.diff <= 7 ? 'dday-urgent' : e.diff <= 30 ? 'dday-soon' : 'dday-normal';
+    const dLabel = e.diff === 0 ? 'D-Day' : `D-${e.diff}`;
+    return `
+      <div class="dday-card ${cls}" onclick="window.selectCert('${e.name.replace(/'/g,"\\'")}')">
+        <div class="dday-card-icon"><i class="fa-solid ${e.icon}"></i></div>
+        <div class="dday-card-body">
+          <div class="dday-card-name">${e.name}</div>
+          <div class="dday-card-meta">${e.round} ${e.label}</div>
+          <div class="dday-card-date">${e.date}</div>
+        </div>
+        <div class="dday-badge ${cls}">${dLabel}</div>
+      </div>`;
+  }).join('');
+}
+
+// ============================================================
+// 24. 자격증 비교기 (인라인 섹션)
+// ============================================================
+function renderCompareSection(cert) {
+  const labelEl = document.getElementById('compare-inline-a-label');
+  const panel   = document.getElementById('compare-inline-panel');
+  if (!labelEl || !panel) return;
+
+  if (!cert) {
+    labelEl.textContent = '— 자격증을 먼저 선택하세요 —';
+    panel.innerHTML = '';
+    return;
+  }
+  labelEl.textContent = cert.name;
+  panel.innerHTML = '<p class="compare-hint"><i class="fa-solid fa-arrow-up"></i> 비교할 자격증을 위 검색창에서 선택하세요.</p>';
+
+  const input = document.getElementById('compare-inline-input');
+  const dropdown = document.getElementById('compare-inline-dropdown');
+  if (!input || input._inlineBound) return;
+  input._inlineBound = true;
+
+  input.addEventListener('input', () => {
+    const q = input.value.trim().toLowerCase();
+    if (!q) { dropdown.style.display='none'; return; }
+    const matches = Object.keys(CERTIFICATIONS).filter(n => n !== cert.name && normalize(n).includes(normalize(q))).slice(0,8);
+    if (!matches.length) { dropdown.style.display='none'; return; }
+    dropdown.innerHTML = matches.map(n =>
+      `<div class="compare-dropdown-item" onclick="(()=>{
+        document.getElementById('compare-inline-input').value='${n.replace(/'/g,"\\'")}';
+        document.getElementById('compare-inline-dropdown').style.display='none';
+        renderInlineCompare('${n.replace(/'/g,"\\'")}');
+      })()">${n}</div>`
+    ).join('');
+    dropdown.style.display='';
+  });
+  document.addEventListener('click', e => {
+    if (!e.target.closest('#compare-section')) dropdown.style.display='none';
+  });
+}
+
+function renderInlineCompare(nameB) {
+  const certA = getCert();
+  const certB = CERTIFICATIONS[nameB];
+  if (!certA || !certB) return;
+
+  const panel = document.getElementById('compare-inline-panel');
+  const today = new Date(); today.setHours(0,0,0,0);
+  function nextExam(c) {
+    for (const s of (c.schedules||[])) {
+      for (const k of ['writtenExam','practicalExam']) {
+        const v = s[k];
+        if (!v||v==='-'||/상시/.test(v)) continue;
+        const d = new Date(v.split('~')[0].trim());
+        if (!isNaN(d) && d>=today) return `${s.round} ${k==='writtenExam'?'필기':'실기'} (D-${Math.ceil((d-today)/86400000)})`;
+      }
+    }
+    return '일정 없음';
+  }
+  const pA = parseFloat(certA.avgPassRate)||0, pB = parseFloat(certB.avgPassRate)||0;
+  const subA = (certA.subjects||[]).map(s=>s.title||s.name||'').filter(Boolean);
+  const subB = (certB.subjects||[]).map(s=>s.title||s.name||'').filter(Boolean);
+  const maxSub = Math.max(subA.length, subB.length);
+
+  const typeOf = n => PRIVATE_CERT_SET.has(n)?'민간자격':PRO_CERT_SET.has(n)?'국가전문':'국가기술';
+  const starOf = n => (CERT_POPULARITY[n]||{}).stars||'—';
+  const bar = (v,max,color) => v?`<div class="cmp-bar-wrap"><div class="cmp-bar" style="width:${Math.round(v/Math.max(max,60)*100)}%;background:${color}"></div><span>${v}%</span></div>`:'<span class="cmp-no-data">–</span>';
+
+  panel.innerHTML = `
+    <div class="cmp-table-wrap">
+      <table class="cmp-table">
+        <thead>
+          <tr><th class="cmp-th-a">${certA.name}</th><th class="cmp-th-mid">항목</th><th class="cmp-th-b">${certB.name}</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="cmp-val">${typeOf(certA.name)}</td><td class="cmp-label">자격 유형</td><td class="cmp-val">${typeOf(certB.name)}</td></tr>
+          <tr><td class="cmp-val">${certA.category||'—'}</td><td class="cmp-label">분류</td><td class="cmp-val">${certB.category||'—'}</td></tr>
+          <tr><td class="cmp-val ${pA>pB?'cmp-win':''}">${bar(pA,Math.max(pA,pB),'#10b981')}</td><td class="cmp-label">평균 합격률</td><td class="cmp-val ${pB>pA?'cmp-win':''}">${bar(pB,Math.max(pA,pB),'#3b82f6')}</td></tr>
+          <tr><td class="cmp-val">${renderStars(starOf(certA.name))}</td><td class="cmp-label">선호도</td><td class="cmp-val">${renderStars(starOf(certB.name))}</td></tr>
+          <tr><td class="cmp-val">${nextExam(certA)}</td><td class="cmp-label">다음 시험</td><td class="cmp-val">${nextExam(certB)}</td></tr>
+          <tr><td class="cmp-val">${subA.length}과목</td><td class="cmp-label">시험 과목 수</td><td class="cmp-val">${subB.length}과목</td></tr>
+        </tbody>
+      </table>
+    </div>
+    ${maxSub ? `
+    <div class="cmp-subjects">
+      <div class="cmp-subjects-title">시험 과목 비교</div>
+      <table class="cmp-sub-table">
+        <thead><tr><th>${certA.name}</th><th>#</th><th>${certB.name}</th></tr></thead>
+        <tbody>${Array.from({length:maxSub},(_,i)=>`
+          <tr>
+            <td class="cmp-sub-val">${subA[i]?`<i class="fa-solid fa-circle-dot cmp-sub-dot"></i>${subA[i]}`:''}</td>
+            <td class="cmp-sub-center">${i+1}</td>
+            <td class="cmp-sub-val">${subB[i]?`<i class="fa-solid fa-circle-dot cmp-sub-dot"></i>${subB[i]}`:''}</td>
+          </tr>`).join('')}
+        </tbody>
+      </table>
+    </div>` : ''}
+    <div style="text-align:right;margin-top:10px;">
+      <button class="btn btn-secondary btn-sm" onclick="window.selectCert('${certA.name.replace(/'/g,"\\'")}')">← ${certA.name} 대시보드로</button>
+      <button class="btn btn-secondary btn-sm" onclick="window.selectCert('${certB.name.replace(/'/g,"\\'")}')">→ ${certB.name} 대시보드로</button>
+    </div>`;
+}
+window.renderInlineCompare = renderInlineCompare;
+
+// ============================================================
+// 25. 합격 팁 & 후기
+// ============================================================
+function renderTipsSection(cert) {
+  const el = document.getElementById('tips-body');
+  if (!el || !cert) return;
+  const tips = CERT_TIPS[cert.name];
+  if (!tips) {
+    el.innerHTML = `<div class="tips-no-data"><i class="fa-solid fa-circle-info"></i> <strong>${cert.name}</strong>의 합격 팁 데이터가 준비 중입니다.<br>자격증별 팁은 순차적으로 추가됩니다.</div>`;
+    return;
+  }
+  const typeColor = { '필기':'var(--primary-color)', '실기':'var(--accent-color)', '학습법':'#f59e0b' };
+  const tagBg = { '고득점':'#d1fae5', '주의':'#fef3c7', '핵심':'#dbeafe' };
+  const tagColor = { '고득점':'#065f46', '주의':'#92400e', '핵심':'#1e40af' };
+  el.innerHTML = tips.map(t => `
+    <div class="tip-card">
+      <div class="tip-card-header">
+        <span class="tip-type-badge" style="background:${typeColor[t.type]}20;color:${typeColor[t.type]}">${t.type}</span>
+        <span class="tip-tag-badge" style="background:${tagBg[t.tag]||'#f3f4f6'};color:${tagColor[t.tag]||'#374151'}">${t.tag}</span>
+      </div>
+      <p class="tip-card-text">${t.tip}</p>
+    </div>`).join('');
+}
+
+// ============================================================
+// 26. 자격증 FAQ
+// ============================================================
+function renderFAQSection() {
+  const el = document.getElementById('faq-list');
+  if (!el) return;
+  _renderFAQList(CERT_FAQ_GENERAL);
+}
+
+function _renderFAQList(items) {
+  const el = document.getElementById('faq-list');
+  if (!el) return;
+  el.innerHTML = items.map((item, i) => `
+    <div class="faq-item" id="faq-item-${i}">
+      <button class="faq-q" onclick="window.toggleFAQ(${i})">
+        <span>${item.q}</span>
+        <i class="fa-solid fa-chevron-down faq-chevron" id="faq-chev-${i}"></i>
+      </button>
+      <div class="faq-a" id="faq-a-${i}" style="display:none;">${item.a}</div>
+    </div>`).join('');
+}
+
+window.toggleFAQ = function(i) {
+  const a = document.getElementById(`faq-a-${i}`);
+  const chev = document.getElementById(`faq-chev-${i}`);
+  if (!a) return;
+  const open = a.style.display !== 'none';
+  a.style.display = open ? 'none' : 'block';
+  if (chev) chev.style.transform = open ? '' : 'rotate(180deg)';
+};
+
+window.filterFAQ = function(q) {
+  const term = q.toLowerCase();
+  if (!term) { _renderFAQList(CERT_FAQ_GENERAL); return; }
+  _renderFAQList(CERT_FAQ_GENERAL.filter(f => f.q.toLowerCase().includes(term) || f.a.toLowerCase().includes(term)));
+};
+
+// ============================================================
+// 27. 출판 일정 캘린더
+// ============================================================
+function renderPubCalendar() {
+  const el = document.getElementById('pub-calendar-list');
+  if (!el) return;
+  const today = new Date(); today.setHours(0,0,0,0);
+  const in6m = new Date(today); in6m.setMonth(in6m.getMonth() + 6);
+
+  const entries = [];
+  Object.values(CERTIFICATIONS).forEach(cert => {
+    (cert.schedules||[]).forEach(sch => {
+      [['writtenExam','필기'],['practicalExam','실기']].forEach(([key,label]) => {
+        const v = sch[key];
+        if (!v||v==='-'||/상시/.test(v)) return;
+        const d = new Date(v.split('~')[0].trim().replace(/\(.*?\)/g,'').trim());
+        if (isNaN(d)||d<today||d>in6m) return;
+        const diff = Math.ceil((d-today)/86400000);
+        const pubDate = new Date(d); pubDate.setDate(pubDate.getDate()-60);
+        const pubDiff = Math.ceil((pubDate-today)/86400000);
+        entries.push({ name:cert.name, label, examDate:d, examDateStr:v.split('~')[0].trim(), diff, pubDate, pubDiff, round:sch.round||'' });
+      });
+    });
+  });
+
+  entries.sort((a,b)=>a.diff-b.diff);
+  el._allEntries = entries;
+  _renderPubCalList(entries);
+}
+
+function _renderPubCalList(entries) {
+  const el = document.getElementById('pub-calendar-list');
+  if (!el) return;
+  if (!entries.length) { el.innerHTML='<p class="hot-empty">향후 6개월 이내 예정된 시험이 없습니다.</p>'; return; }
+  el.innerHTML = entries.slice(0,20).map(e => {
+    const examCls = e.diff<=7?'exam-urgent':e.diff<=30?'exam-soon':'exam-normal';
+    const pubCls = e.pubDiff<=0?'pub-overdue':e.pubDiff<=14?'pub-urgent':'pub-normal';
+    const pubLabel = e.pubDiff<=0?'출판 시기 초과':`출판 권장 D-${e.pubDiff}`;
+    return `
+      <div class="pub-cal-card">
+        <div class="pub-cal-cert" onclick="window.selectCert('${e.name.replace(/'/g,"\\'")}')">
+          <strong>${e.name}</strong> <span class="pub-cal-round">${e.round} ${e.label}</span>
+        </div>
+        <div class="pub-cal-dates">
+          <span class="pub-cal-exam-date ${examCls}"><i class="fa-solid fa-pen-to-square"></i> 시험일 ${e.examDateStr} (D-${e.diff})</span>
+          <span class="pub-cal-pub-date ${pubCls}"><i class="fa-solid fa-book"></i> ${pubLabel}</span>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+window.filterPubCal = function(type, btn) {
+  document.querySelectorAll('.pub-cal-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const el = document.getElementById('pub-calendar-list');
+  if (!el || !el._allEntries) return;
+  let list = el._allEntries;
+  if (type==='soon') list = list.filter(e=>e.diff<=30);
+  else if (type==='prep') list = list.filter(e=>e.pubDiff>=0 && e.pubDiff<=14);
+  _renderPubCalList(list);
+};
+
+// ============================================================
+// 28. 개정판 추적기
+// ============================================================
+function renderRevisionTracker() {
+  const el = document.getElementById('revision-list');
+  if (!el) return;
+  el._data = EXAM_REVISIONS;
+  _renderRevList(EXAM_REVISIONS);
+}
+
+function _renderRevList(items) {
+  const el = document.getElementById('revision-list');
+  if (!el) return;
+  const urgClass = { high:'rev-high', medium:'rev-medium', low:'rev-low' };
+  const urgLabel = { high:'긴급', medium:'보통', low:'낮음' };
+  el.innerHTML = items.map(r => `
+    <div class="rev-card ${r.updateNeeded?'rev-update-needed':''}">
+      <div class="rev-card-header">
+        <span class="rev-cert-name" onclick="window.selectCert('${r.cert.replace(/'/g,"\\'")}') ">${r.cert}</span>
+        <span class="rev-type-badge">${r.type}</span>
+        <span class="rev-urgency ${urgClass[r.urgency]}">${urgLabel[r.urgency]}</span>
+        ${r.updateNeeded?'<span class="rev-update-badge"><i class="fa-solid fa-triangle-exclamation"></i> 업데이트 필요</span>':'<span class="rev-ok-badge"><i class="fa-solid fa-circle-check"></i> 반영 완료</span>'}
+      </div>
+      <div class="rev-date"><i class="fa-solid fa-calendar"></i> 시행일: ${r.date}</div>
+      <div class="rev-desc">${r.desc}</div>
+    </div>`).join('');
+}
+
+window.filterRevisions = function(type, btn) {
+  document.querySelectorAll('.rev-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const el = document.getElementById('revision-list');
+  if (!el || !el._data) return;
+  let list = el._data;
+  if (type==='high') list = list.filter(r=>r.urgency==='high');
+  else if (type==='update') list = list.filter(r=>r.updateNeeded);
+  _renderRevList(list);
+};
+
+// ============================================================
+// 29. 공지 게시판 (localStorage)
+// ============================================================
+function _loadNotices() {
+  try { return JSON.parse(localStorage.getItem('notices')||'[]'); } catch(e) { return []; }
+}
+function _saveNotices(arr) {
+  try { localStorage.setItem('notices', JSON.stringify(arr)); } catch(e) {}
+}
+
+function renderNoticeBoard() {
+  const el = document.getElementById('notice-list');
+  if (!el) return;
+  const notices = _loadNotices();
+  if (!notices.length) {
+    el.innerHTML = '<p class="hot-empty">등록된 공지가 없습니다.</p>';
+  } else {
+    el.innerHTML = notices.map((n,i) => `
+      <div class="notice-card ${n.important?'notice-important':''}">
+        <div class="notice-card-header">
+          <div class="notice-title-row">
+            ${n.important?'<span class="notice-imp-badge"><i class="fa-solid fa-star"></i> 중요</span>':''}
+            <strong class="notice-title">${n.title}</strong>
+          </div>
+          <div class="notice-meta">${n.date}</div>
+        </div>
+        <p class="notice-body">${n.body.replace(/\n/g,'<br>')}</p>
+        <button class="notice-delete-btn" onclick="window.deleteNotice(${i})"><i class="fa-solid fa-trash"></i> 삭제</button>
+      </div>`).join('');
+  }
+  renderNoticeBanner();
+}
+
+function renderNoticeBanner() {
+  const banner = document.getElementById('welcome-notice-banner');
+  if (!banner) return;
+  const notices = _loadNotices().filter(n=>n.important);
+  if (!notices.length) { banner.style.display='none'; return; }
+  banner.style.display='block';
+  banner.innerHTML = notices.map(n=>`
+    <div class="notice-banner-item">
+      <i class="fa-solid fa-bullhorn"></i>
+      <strong>${n.title}</strong>
+      <span>${n.body.split('\n')[0]}</span>
+    </div>`).join('');
+}
+
+window.openNoticeForm = function() {
+  document.getElementById('notice-form').style.display='block';
+  document.getElementById('notice-title-input').focus();
+};
+window.closeNoticeForm = function() {
+  document.getElementById('notice-form').style.display='none';
+  document.getElementById('notice-title-input').value='';
+  document.getElementById('notice-body-input').value='';
+  document.getElementById('notice-important-chk').checked=false;
+};
+window.saveNotice = function() {
+  const title = document.getElementById('notice-title-input').value.trim();
+  const body  = document.getElementById('notice-body-input').value.trim();
+  if (!title || !body) return;
+  const notices = _loadNotices();
+  notices.unshift({ title, body, important: document.getElementById('notice-important-chk').checked, date: new Date().toLocaleDateString('ko-KR') });
+  _saveNotices(notices);
+  window.closeNoticeForm();
+  renderNoticeBoard();
+};
+window.deleteNotice = function(i) {
+  const notices = _loadNotices();
+  notices.splice(i,1);
+  _saveNotices(notices);
+  renderNoticeBoard();
+};
