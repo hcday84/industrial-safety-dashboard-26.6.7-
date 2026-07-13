@@ -146,7 +146,11 @@ el.chatForm.addEventListener('submit', async (e) => {
     alert('OpenAI API Key를 입력해주세요.');
     return;
   }
-  if (!state.sessionId) {
+  if (el.useWebSearch.checked && !el.tavilyKey.value) {
+    alert('Tavily API Key를 입력해주세요.');
+    return;
+  }
+  if (!state.sessionId && !el.useWebSearch.checked) {
     alert('먼저 PDF를 업로드하고 문서 처리를 진행해주세요.');
     return;
   }
