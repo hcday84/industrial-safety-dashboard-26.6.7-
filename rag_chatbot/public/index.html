@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PDF RAG 챗봇</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h1>📄 PDF RAG 챗봇</h1>
+      <p class="model-badge">모델: gpt-4o-mini · OpenAI API</p>
+
+      <section class="panel">
+        <label for="apiKey">OpenAI API Key</label>
+        <input type="password" id="apiKey" placeholder="sk-..." />
+      </section>
+
+      <section class="panel">
+        <h2>텍스트 분할 설정</h2>
+        <label for="chunkSize">청크 길이 (chunk size): <span id="chunkSizeValue">1000</span></label>
+        <input type="range" id="chunkSize" min="200" max="4000" step="100" value="1000" />
+
+        <label for="chunkOverlap">중복 길이 (chunk overlap): <span id="chunkOverlapValue">150</span></label>
+        <input type="range" id="chunkOverlap" min="0" max="1000" step="50" value="150" />
+
+        <label for="topK">검색할 문서 조각 수 (top-k): <span id="topKValue">4</span></label>
+        <input type="range" id="topK" min="1" max="10" step="1" value="4" />
+      </section>
+
+      <section class="panel">
+        <h2>PDF 업로드</h2>
+        <input type="file" id="pdfFiles" accept="application/pdf" multiple />
+        <button id="processBtn" class="primary">문서 처리</button>
+        <div id="processStatus" class="status"></div>
+        <ul id="fileList" class="file-list"></ul>
+      </section>
+
+      <button id="resetBtn" class="secondary">대화 초기화</button>
+    </aside>
+
+    <main class="chat-area">
+      <div id="emptyState" class="empty-state">
+        왼쪽에서 PDF를 업로드하고 '문서 처리' 버튼을 눌러주세요.
+      </div>
+      <div id="messages" class="messages"></div>
+
+      <form id="chatForm" class="chat-input">
+        <textarea id="chatInput" placeholder="PDF 내용에 대해 질문해보세요..." rows="1"></textarea>
+        <button type="submit" id="sendBtn">전송</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
