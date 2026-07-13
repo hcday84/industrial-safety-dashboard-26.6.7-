@@ -191,6 +191,7 @@ el.chatForm.addEventListener('submit', async (e) => {
         message,
         topK: el.topK.value,
         useWebSearch: el.useWebSearch.checked,
+        useHybridSearch: el.useHybridSearch.checked,
       }),
     });
 
