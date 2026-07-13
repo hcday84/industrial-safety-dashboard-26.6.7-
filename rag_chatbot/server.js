@@ -318,11 +318,15 @@ app.post('/api/chat', async (req, res) => {
 
     let scored = [];
     if (session.chunks && session.chunks.length > 0) {
-      const [queryEmbedding] = await embedTexts(openai, [message]);
-      scored = session.chunks
-        .map((c) => ({ ...c, score: cosineSimilarity(c.embedding, queryEmbedding) }))
-        .sort((a, b) => b.score - a.score)
-        .slice(0, k);
+      if (wantsHybrid) {
+        scored = await hybridRetrieve(openai, session, message, k);
+      } else {
+        const [queryEmbedding] = await embedTexts(openai, [message]);
+        scored = session.chunks
+          .map((c) => ({ ...c, score: cosineSimilarity(c.embedding, queryEmbedding) }))
+          .sort((a, b) => b.score - a.score)
+          .slice(0, k);
+      }
     }
 
     let webResults = [];
