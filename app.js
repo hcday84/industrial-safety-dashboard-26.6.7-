@@ -2502,10 +2502,8 @@ function renderComparePanel(nameB) {
 
   const subA = (certA.subjects || []).length;
   const subB = (certB.subjects || []).length;
-
   const schA = (certA.schedules || []).length;
   const schB = (certB.schedules || []).length;
-
   const periodA = getStudyPeriod(certA);
   const periodB = getStudyPeriod(certB);
 
@@ -2522,6 +2520,55 @@ function renderComparePanel(nameB) {
       <td class="cmp-val ${highlightB ? 'cmp-win' : ''}">${valB}</td>
     </tr>`;
 
+  // 합격률 미니 바 차트
+  const passBarMax = Math.max(passA || 0, passB || 0, 60);
+  const makeBar = (val, color) => val
+    ? `<div class="cmp-pass-bar-wrap"><div class="cmp-pass-bar" style="width:${Math.round((val/passBarMax)*100)}%;background:${color}"></div><span>${val}%</span></div>`
+    : '<span class="cmp-no-data">–</span>';
+
+  // 다음 시험일 계산
+  const today = new Date(); today.setHours(0,0,0,0);
+  function nextExamDate(cert) {
+    for (const s of (cert.schedules || [])) {
+      for (const k of ['writtenExam','practicalExam']) {
+        const v = s[k];
+        if (!v || v === '-' || v === '—' || /상시/.test(v)) continue;
+        const d = new Date(v.split('~')[0].trim().split(' ')[0]);
+        if (!isNaN(d) && d >= today) {
+          const diff = Math.ceil((d - today) / 86400000);
+          return `${s.round} ${k === 'writtenExam' ? '필기' : '실기'} (D-${diff})`;
+        }
+      }
+    }
+    return '일정 종료';
+  }
+
+  // 시험 과목 최대 5개
+  const subListA = (certA.subjects || []).slice(0, 5).map(s => s.title || s.name || '').filter(Boolean);
+  const subListB = (certB.subjects || []).slice(0, 5).map(s => s.title || s.name || '').filter(Boolean);
+  const maxSub = Math.max(subListA.length, subListB.length);
+  const subRows = Array.from({ length: maxSub }, (_, i) => `
+    <tr>
+      <td class="cmp-sub-val">${subListA[i] ? `<i class="fa-solid fa-circle-dot cmp-sub-dot"></i>${subListA[i]}` : ''}</td>
+      <td class="cmp-sub-center">${i + 1}</td>
+      <td class="cmp-sub-val">${subListB[i] ? `<i class="fa-solid fa-circle-dot cmp-sub-dot"></i>${subListB[i]}` : ''}</td>
+    </tr>`).join('');
+
+  // 합격률 5개년 미니 스파크라인
+  function sparkline(rates, color) {
+    if (!rates || rates.length < 2) return '';
+    const wVals = rates.map(r => r.written).filter(v => v != null);
+    if (!wVals.length) return '';
+    const mn = Math.min(...wVals), mx = Math.max(...wVals);
+    const h = 24, w = 70;
+    const pts = wVals.map((v, i) => {
+      const x = (i / (wVals.length - 1)) * w;
+      const y = h - ((mx === mn ? 0.5 : (v - mn) / (mx - mn)) * h);
+      return `${x.toFixed(1)},${y.toFixed(1)}`;
+    }).join(' ');
+    return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" style="display:block"><polyline points="${pts}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round"/></svg>`;
+  }
+
   panel.innerHTML = `
     <table class="compare-table">
       <thead>
@@ -2532,17 +2579,40 @@ function renderComparePanel(nameB) {
         </tr>
       </thead>
       <tbody>
-        ${row('자격 종류',    typeLabel(certA.name), typeLabel(certB.name), false, false)}
-        ${row('분야',         certA.category, certB.category, false, false)}
-        ${row('평균 합격률',  certA.avgPassRate, certB.avgPassRate, winA, winB)}
-        ${row('시험 횟수',    `연 ${schA}회`, `연 ${schB}회`, schA > schB, schB > schA)}
-        ${row('시험 과목 수', `${subA}과목`, `${subB}과목`, false, false)}
-        ${row('평균 준비기간', periodA, periodB, false, false)}
+        ${row('자격 종류', typeLabel(certA.name), typeLabel(certB.name), false, false)}
+        ${row('분야', certA.category, certB.category, false, false)}
+        ${row('시험 횟수', `연 ${schA}회`, `연 ${schB}회`, schA > schB, schB > schA)}
+        ${row('준비기간 목표', periodA.replace('평균 준비기간 ',''), periodB.replace('평균 준비기간 ',''), false, false)}
+        ${row('다음 시험', nextExamDate(certA), nextExamDate(certB), false, false)}
       </tbody>
     </table>
+
+    <div class="cmp-section-title"><i class="fa-solid fa-chart-line"></i> 평균 합격률 비교</div>
+    <div class="cmp-pass-section">
+      <div class="cmp-pass-col">
+        <div class="cmp-pass-label ${winA ? 'cmp-win-label' : ''}">${certA.name}</div>
+        ${makeBar(passA, '#f59e0b')}
+        ${sparkline(certA.passRates, '#f59e0b')}
+      </div>
+      <div class="cmp-pass-col">
+        <div class="cmp-pass-label ${winB ? 'cmp-win-label' : ''}">${certB.name}</div>
+        ${makeBar(passB, '#0ea5e9')}
+        ${sparkline(certB.passRates, '#0ea5e9')}
+      </div>
+    </div>
+
+    ${maxSub ? `
+    <div class="cmp-section-title"><i class="fa-solid fa-list-check"></i> 시험 과목 비교 (필기 기준)</div>
+    <table class="compare-table cmp-sub-table">
+      <tbody>${subRows}</tbody>
+    </table>` : ''}
+
     <div class="compare-actions">
+      <button class="btn btn-secondary btn-sm" onclick="window.selectCert('${certA.name}');window.closeCompareModal()">
+        <i class="fa-solid fa-arrow-left"></i> ${certA.name}
+      </button>
       <button class="btn btn-secondary btn-sm" onclick="window.selectCert('${certB.name}');window.closeCompareModal()">
-        <i class="fa-solid fa-arrow-right"></i> ${certB.name} 대시보드로 이동
+        <i class="fa-solid fa-arrow-right"></i> ${certB.name}
       </button>
     </div>`;
 }
