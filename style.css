@@ -597,7 +597,13 @@ button, input, select {
   flex: 1;
   min-height: 0;
   overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
+.welcome-lower-row .hot-topic-section .hot-topic-grid::-webkit-scrollbar { width: 5px; }
+.welcome-lower-row .hot-topic-section .hot-topic-grid::-webkit-scrollbar-track { background: var(--scrollbar-track); border-radius: 4px; }
+.welcome-lower-row .hot-topic-section .hot-topic-grid::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 4px; }
+.welcome-lower-row .hot-topic-section .hot-topic-grid::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-thumb-hover); }
 
 .welcome-bottom-row .publisher-search-wrap {
   width: 400px;
