@@ -120,19 +120,24 @@ button, input, select {
 }
 
 /* 스크롤바 커스텀 */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--bg-color);
+  background: var(--scrollbar-track);
+  border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-light);
+  background: var(--scrollbar-thumb);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-color);
+  background: var(--scrollbar-thumb-hover);
 }
 
 /* 3. 공통 컴포넌트 */
