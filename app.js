@@ -2606,14 +2606,30 @@ const PUBLISHERS = [
   { name: '엔트미디어',     url: 'https://entmedia.co.kr',           category: '어학기타', keywords: ['엔트미디어'] },
 ];
 
-function initPublisherSearch() {
-  const input   = document.getElementById('publisher-search');
-  const results = document.getElementById('publisher-results');
-  const grid    = document.getElementById('publisher-link-grid');
-  if (!input || !results || !grid) return;
+const PUB_TABS = [
+  { key: '기술자격',  label: '기술자격',   icon: 'fa-screwdriver-wrench', color: '#3b82f6', cats: ['기술자격'] },
+  { key: '공무원고시', label: '공무원·고시', icon: 'fa-landmark',           color: '#f59e0b', cats: ['공무원고시'] },
+  { key: 'IT어학',    label: 'IT·어학',    icon: 'fa-laptop-code',        color: '#10b981', cats: ['IT개발', '어학기타'] },
+];
+let _pubActiveTab = '기술자격';
 
-  // 전체 출판사를 링크 칩으로 렌더링 (카테고리별 색상 구분)
-  grid.innerHTML = PUBLISHERS.map(pub =>
+function applyPubTabColor(key) {
+  const t = PUB_TABS.find(t => t.key === key) || PUB_TABS[0];
+  const wrap = document.querySelector('.publisher-search-wrap');
+  if (wrap) wrap.style.setProperty('--pub-tab-color', t.color);
+}
+
+function renderPubTabChips(key, query) {
+  const t = PUB_TABS.find(t => t.key === key) || PUB_TABS[0];
+  const grid = document.getElementById('publisher-link-grid');
+  const results = document.getElementById('publisher-results');
+  if (!grid) return;
+  const q = (query || '').trim().toLowerCase();
+  const filtered = PUBLISHERS.filter(p => t.cats.includes(p.category));
+  const chips = filtered.filter(p =>
+    !q || p.name.toLowerCase().includes(q) || p.keywords.join(' ').toLowerCase().includes(q)
+  );
+  grid.innerHTML = chips.map(pub =>
     `<a href="${pub.url}" target="_blank" rel="noopener noreferrer"
        class="publisher-link-chip"
        data-category="${pub.category}"
@@ -2622,19 +2638,45 @@ function initPublisherSearch() {
       <i class="fa-solid fa-arrow-up-right-from-square"></i>${pub.name}
     </a>`
   ).join('');
-
-  input.addEventListener('input', e => {
-    const q = e.target.value.trim().toLowerCase();
-    let visible = 0;
-    grid.querySelectorAll('.publisher-link-chip').forEach(chip => {
-      const show = !q || chip.dataset.name.includes(q) || chip.dataset.kw.includes(q);
-      chip.style.display = show ? '' : 'none';
-      if (show) visible++;
-    });
-    results.innerHTML = visible === 0 && q
+  if (results) {
+    results.innerHTML = chips.length === 0 && q
       ? `<span class="publisher-no-result"><i class="fa-solid fa-circle-info"></i> 검색 결과가 없습니다.</span>`
       : '';
+  }
+}
+
+window.switchPubTab = function(key) {
+  _pubActiveTab = key;
+  document.querySelectorAll('.publisher-tab-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.tab === key);
   });
+  applyPubTabColor(key);
+  const input = document.getElementById('publisher-search');
+  renderPubTabChips(key, input ? input.value : '');
+};
+
+function initPublisherSearch() {
+  const input   = document.getElementById('publisher-search');
+  const tabBar  = document.getElementById('publisher-tab-bar');
+  if (!tabBar) return;
+
+  // 탭 버튼 렌더링
+  tabBar.innerHTML = PUB_TABS.map(t =>
+    `<button class="publisher-tab-btn${t.key === _pubActiveTab ? ' active' : ''}"
+       data-tab="${t.key}" onclick="window.switchPubTab('${t.key}')">
+      <i class="fa-solid ${t.icon}"></i> ${t.label}
+    </button>`
+  ).join('');
+
+  applyPubTabColor(_pubActiveTab);
+  renderPubTabChips(_pubActiveTab, '');
+
+  if (input && !input._pubBound) {
+    input.addEventListener('input', e => {
+      renderPubTabChips(_pubActiveTab, e.target.value);
+    });
+    input._pubBound = true;
+  }
 }
 
 // ============================================
