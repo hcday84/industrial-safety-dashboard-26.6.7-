@@ -2995,10 +2995,26 @@ function getCertType(name) {
 
 let _hotActiveTab = 'tech';
 
+const HOT_TAB_COLORS = {
+  tech:    { main: '#3b82f6', dark: '#1d4ed8' },
+  pro:     { main: '#8b5cf6', dark: '#6d28d9' },
+  private: { main: '#f59e0b', dark: '#d97706' },
+};
+
+function applyHotTabColor(tab) {
+  const c = HOT_TAB_COLORS[tab] || HOT_TAB_COLORS.tech;
+  const section = document.querySelector('.hot-topic-section');
+  if (section) {
+    section.style.setProperty('--hot-tab-color', c.main);
+    section.style.setProperty('--hot-tab-color-2', c.dark);
+  }
+}
+
 function renderHotTopic(tab) {
   const el = document.getElementById('hot-topic-grid');
   if (!el) return;
   if (tab) _hotActiveTab = tab;
+  applyHotTabColor(_hotActiveTab);
 
   const items = Object.entries(CERT_POPULARITY)
     .filter(([name]) => CERTIFICATIONS[name] && getCertType(name) === _hotActiveTab)
@@ -3033,6 +3049,7 @@ window.switchHotTab = function(tab) {
   const idx = {tech:0, pro:1, private:2}[tab] ?? 0;
   const btns = document.querySelectorAll('.hot-tab-btn');
   if (btns[idx]) btns[idx].classList.add('active');
+  applyHotTabColor(tab);
   renderHotTopic(tab);
 };
 
