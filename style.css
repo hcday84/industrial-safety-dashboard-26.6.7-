@@ -771,6 +771,43 @@ button, input, select {
   flex-shrink: 0;
 }
 
+/* 검색 섹션 펄스 아이콘 애니메이션 */
+.welcome-icon-pulse {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  animation: wipBg 3s ease-in-out infinite;
+}
+.welcome-icon-pulse i {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  position: relative;
+  z-index: 1;
+}
+.wip-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  opacity: 0;
+  animation: wipExpand 3s ease-out infinite;
+}
+.wip-ring-2 { animation-delay: 1s; }
+
+@keyframes wipExpand {
+  0%   { transform: scale(0.85); opacity: 0.6; }
+  100% { transform: scale(2.8);  opacity: 0; }
+}
+@keyframes wipBg {
+  0%, 100% { background: color-mix(in srgb, var(--primary-color) 8%, transparent); }
+  50%       { background: color-mix(in srgb, var(--primary-color) 20%, transparent); }
+}
+
 .welcome-inner h2 {
   font-size: 1.7rem;
   font-weight: 800;
