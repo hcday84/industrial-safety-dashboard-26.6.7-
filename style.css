@@ -460,7 +460,7 @@ button, input, select {
 /* 하단 행: 출판사 위젯 + 월별 일정 나란히 */
 .welcome-bottom-row {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 24px;
   width: 100%;
   margin-top: 20px;
