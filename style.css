@@ -119,11 +119,7 @@ button, input, select {
   outline: none;
 }
 
-/* 스크롤바 커스텀 */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
-}
+/* 스크롤바 커스텀 — Webkit(Chrome/Edge) */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
