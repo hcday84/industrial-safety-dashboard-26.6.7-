@@ -458,6 +458,86 @@ function showWeatherError(msg) {
   setWeatherEl('wc-weather-error-msg','textContent', msg);
 }
 
+// ============================================
+// 역할 선택 탭 & 바로가기 패널
+// ============================================
+const ROLE_SHORTCUTS = {
+  customer: [
+    { icon: 'fa-scale-balanced',  label: '자격증 비교기',      desc: '두 자격증을 나란히 비교',          section: 'compare',              color: '#3b82f6' },
+    { icon: 'fa-medal',           label: '합격 팁 & 후기',     desc: '시험별 합격 전략 & 수험 후기',      section: 'tips-section',         color: '#f59e0b' },
+    { icon: 'fa-bullseye',        label: '합격 가능성 예측기',  desc: '학습 현황으로 합격률 예측',         section: 'predictor-section',    color: '#10b981' },
+    { icon: 'fa-circle-question', label: '자격증 FAQ',         desc: '자주 묻는 질문 모음',               section: 'faq-section',          color: '#8b5cf6' },
+  ],
+  manager: [
+    { icon: 'fa-calendar-check',  label: '출판 일정 캘린더',   desc: '수험서 출판 권장 시기 자동 산출',    section: 'pub-calendar-section', color: '#3b82f6' },
+    { icon: 'fa-code-compare',    label: '개정판 추적기',      desc: '출제기준 개정 여부 모니터링',        section: 'revision-section',     color: '#8b5cf6' },
+    { icon: 'fa-bullhorn',        label: '공지 게시판',        desc: '팀 공지사항 등록 및 확인',           section: 'notice-section',       color: '#f59e0b' },
+    { icon: 'fa-chart-pie',       label: '합격 통계',          desc: '자격증별 합격률 & 과목 공략',        section: 'analytics-section',    color: '#10b981' },
+  ],
+  employee: [
+    { icon: 'fa-calendar-check',  label: '출판 일정 캘린더',   desc: '수험서 출판 일정 확인',              section: 'pub-calendar-section', color: '#3b82f6' },
+    { icon: 'fa-route',           label: '합격 전략 가이드',   desc: '자격증별 최적 공부 방법',            section: 'study-section',        color: '#10b981' },
+    { icon: 'fa-diagram-project', label: '자격증 로드맵',      desc: '자격증 연계 진행 경로',              section: 'roadmap-section',      color: '#8b5cf6' },
+    { icon: 'fa-code-compare',    label: '개정판 추적기',      desc: '출제기준 개정 여부 확인',            section: 'revision-section',     color: '#f59e0b' },
+  ],
+};
+
+let _activeRole = (function() { try { return localStorage.getItem('activeRole') || 'customer'; } catch { return 'customer'; } })();
+
+function renderRoleQuickPanel(role) {
+  const el = document.getElementById('role-quick-panel');
+  if (!el) return;
+  const shortcuts = ROLE_SHORTCUTS[role] || ROLE_SHORTCUTS.customer;
+  el.innerHTML = shortcuts.map(s => `
+    <div class="role-quick-card" onclick="window.jumpToSection('${s.section}')" style="--rqc-color:${s.color}">
+      <div class="role-quick-icon"><i class="fa-solid ${s.icon}"></i></div>
+      <div class="role-quick-body">
+        <div class="role-quick-label">${s.label}</div>
+        <div class="role-quick-desc">${s.desc}</div>
+      </div>
+      <i class="fa-solid fa-arrow-right role-quick-arrow"></i>
+    </div>`).join('');
+}
+
+window.switchRoleTab = function(role) {
+  _activeRole = role;
+  try { localStorage.setItem('activeRole', role); } catch {}
+  document.querySelectorAll('.role-tab-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.role === role);
+  });
+  renderRoleQuickPanel(role);
+};
+
+window.jumpToSection = function(sectionId) {
+  if (sectionId === 'compare') {
+    window.openCompareModal && window.openCompareModal();
+    return;
+  }
+  const recent = (typeof getRecentCerts === 'function' ? getRecentCerts() : [])[0];
+  if (recent) {
+    window.selectCert(recent);
+    setTimeout(() => {
+      const target = document.getElementById(sectionId);
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 200);
+  } else {
+    const searchEl = document.getElementById('global-search');
+    if (searchEl) {
+      searchEl.focus();
+      const orig = searchEl.placeholder;
+      searchEl.placeholder = '먼저 자격증을 검색해주세요!';
+      setTimeout(() => { searchEl.placeholder = orig; }, 2500);
+    }
+  }
+};
+
+function initRoleTabUI() {
+  document.querySelectorAll('.role-tab-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.role === _activeRole);
+  });
+  renderRoleQuickPanel(_activeRole);
+}
+
 function showWelcomeScreen() {
   document.getElementById('dashboard-content').style.display = 'none';
   document.getElementById('welcome-screen').style.display = 'flex';
