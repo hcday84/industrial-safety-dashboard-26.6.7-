@@ -1185,9 +1185,6 @@ button, input, select {
 }
 
 .publisher-link-chip:hover {
-  border-color: var(--green-color);
-  color: var(--green-color);
-  background: var(--green-bg);
   text-decoration: none;
 }
 
