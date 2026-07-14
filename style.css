@@ -1194,10 +1194,10 @@ button, input, select {
   padding-right: 2px;
 }
 
-.publisher-link-grid::-webkit-scrollbar { width: 4px; }
-.publisher-link-grid::-webkit-scrollbar-track { background: transparent; }
+.publisher-link-grid::-webkit-scrollbar { width: 5px; }
+.publisher-link-grid::-webkit-scrollbar-track { background: var(--scrollbar-track); border-radius: 4px; }
 .publisher-link-grid::-webkit-scrollbar-thumb {
-  background: var(--border-color);
+  background: var(--scrollbar-thumb);
   border-radius: 4px;
 }
 
