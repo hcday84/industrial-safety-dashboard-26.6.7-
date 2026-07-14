@@ -182,38 +182,41 @@
     <!-- 공지 배너 (localStorage 중요 공지) -->
     <div id="welcome-notice-banner" style="display:none;" class="welcome-notice-banner"></div>
 
-    <!-- D-Day 카운터 위젯 -->
-    <section class="dday-widget-section card-box">
-      <div class="section-header">
-        <h2><i class="fa-solid fa-stopwatch text-teal"></i> 다가오는 시험 D-Day</h2>
-        <span class="badge badge-info">전체 자격증 기준</span>
-      </div>
-      <div id="dday-widget-grid" class="dday-widget-grid"></div>
-    </section>
+    <!-- D-Day + Hot Topic 나란히 -->
+    <div class="welcome-lower-row">
+      <!-- D-Day 카운터 위젯 -->
+      <section class="dday-widget-section card-box">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-stopwatch text-teal"></i> 다가오는 시험 D-Day</h2>
+          <span class="badge badge-info">전체 자격증 기준</span>
+        </div>
+        <div id="dday-widget-grid" class="dday-widget-grid"></div>
+      </section>
 
-    <!-- Hot Topic: 자격증 선호도 -->
-    <section class="hot-topic-section card-box">
-      <div class="section-header">
-        <h2><i class="fa-solid fa-fire text-orange"></i> Hot Topic — 자격증 선호도 랭킹</h2>
-        <span class="badge badge-info">별점 5점 만점</span>
-      </div>
-      <p class="hot-topic-desc">
-        <i class="fa-solid fa-circle-info"></i>
-        Q-Net 통계연보(응시자 규모) · 사람인/잡코리아 채용공고 우대빈도 · 법정 선임 의무 · 산업 활용 범위를 종합 산출한 선호도입니다.
-      </p>
-      <div class="hot-tab-bar">
-        <button class="hot-tab-btn active" onclick="window.switchHotTab('tech')">
-          <i class="fa-solid fa-gear"></i> 국가기술자격증
-        </button>
-        <button class="hot-tab-btn" onclick="window.switchHotTab('pro')">
-          <i class="fa-solid fa-user-tie"></i> 국가전문자격증
-        </button>
-        <button class="hot-tab-btn" onclick="window.switchHotTab('private')">
-          <i class="fa-solid fa-building"></i> 민간자격증
-        </button>
-      </div>
-      <div id="hot-topic-grid" class="hot-topic-grid"></div>
-    </section>
+      <!-- Hot Topic: 자격증 선호도 -->
+      <section class="hot-topic-section card-box">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-fire text-orange"></i> Hot Topic — 자격증 선호도 랭킹</h2>
+          <span class="badge badge-info">별점 5점 만점</span>
+        </div>
+        <p class="hot-topic-desc">
+          <i class="fa-solid fa-circle-info"></i>
+          Q-Net 통계연보(응시자 규모) · 사람인/잡코리아 채용공고 우대빈도 · 법정 선임 의무 · 산업 활용 범위를 종합 산출한 선호도입니다.
+        </p>
+        <div class="hot-tab-bar">
+          <button class="hot-tab-btn active" onclick="window.switchHotTab('tech')">
+            <i class="fa-solid fa-gear"></i> 국가기술자격증
+          </button>
+          <button class="hot-tab-btn" onclick="window.switchHotTab('pro')">
+            <i class="fa-solid fa-user-tie"></i> 국가전문자격증
+          </button>
+          <button class="hot-tab-btn" onclick="window.switchHotTab('private')">
+            <i class="fa-solid fa-building"></i> 민간자격증
+          </button>
+        </div>
+        <div id="hot-topic-grid" class="hot-topic-grid"></div>
+      </section>
+    </div><!-- /.welcome-lower-row -->
   </div>
 
   <!-- 자격증 비교 모달 -->
