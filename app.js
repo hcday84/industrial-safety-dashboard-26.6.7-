@@ -2570,6 +2570,8 @@ const PUBLISHERS = [
   { name: '메카피아',       url: 'https://www.mechapia.com',         category: '기술자격', keywords: ['메카피아'] },
   { name: '형설출판사',     url: 'https://www.hyungseul.co.kr',      category: '기술자격', keywords: ['형설'] },
   { name: '모아북스',       url: 'http://www.moabooks.com',          category: '기술자격', keywords: ['모아북스', '모아'] },
+  { name: '동화기술',       url: 'https://www.donghwapub.co.kr',     category: '기술자격', keywords: ['동화기술', '동화'] },
+  { name: '청문각(교문사)', url: 'https://www.gyomoon.com',           category: '기술자격', keywords: ['청문각', '교문사'] },
   // 공무원/고시
   { name: '에듀윌',         url: 'https://www.eduwill.net',          category: '공무원고시', keywords: ['에듀윌'] },
   { name: '시대에듀',       url: 'https://www.sdedu.co.kr',          category: '공무원고시', keywords: ['시대에듀', '시대고시'] },
