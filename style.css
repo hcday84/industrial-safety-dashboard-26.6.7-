@@ -453,8 +453,7 @@ button, input, select {
 .welcome-top-row {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
-  gap: 60px;
+  gap: 40px;
   width: 100%;
 }
 
