@@ -708,6 +708,9 @@ button, input, select {
   .welcome-bottom-row .publisher-search-wrap {
     width: 100%;
   }
+  .role-quick-panel {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .welcome-title-row {
