@@ -182,6 +182,22 @@
     <!-- 공지 배너 (localStorage 중요 공지) -->
     <div id="welcome-notice-banner" style="display:none;" class="welcome-notice-banner"></div>
 
+    <!-- 역할 선택 탭 + 바로가기 카드 -->
+    <div class="role-select-section">
+      <div class="role-tab-bar">
+        <button class="role-tab-btn" data-role="customer" onclick="window.switchRoleTab('customer')">
+          <i class="fa-solid fa-user"></i> 고객
+        </button>
+        <button class="role-tab-btn" data-role="manager" onclick="window.switchRoleTab('manager')">
+          <i class="fa-solid fa-user-tie"></i> 담당자
+        </button>
+        <button class="role-tab-btn" data-role="employee" onclick="window.switchRoleTab('employee')">
+          <i class="fa-solid fa-users"></i> 직원
+        </button>
+      </div>
+      <div id="role-quick-panel" class="role-quick-panel"></div>
+    </div>
+
     <!-- D-Day + Hot Topic 나란히 -->
     <div class="welcome-lower-row">
       <!-- D-Day 카운터 위젯 -->
