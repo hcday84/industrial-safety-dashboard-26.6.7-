@@ -562,7 +562,7 @@ button, input, select {
 /* 최하단 행: D-Day + Hot Topic 나란히 */
 .welcome-lower-row {
   display: flex;
-  align-items: stretch;
+  align-items: flex-start;
   gap: 20px;
   width: 100%;
   margin-top: 20px;
@@ -574,6 +574,9 @@ button, input, select {
   margin: 0;
   display: flex;
   flex-direction: column;
+}
+.welcome-lower-row .hot-topic-section {
+  overflow: hidden;
 }
 .welcome-lower-row .hot-topic-section .hot-topic-grid {
   flex: 1;
