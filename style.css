@@ -303,12 +303,11 @@ button, input, select {
 }
 
 .header-search-bar input:focus {
+  border-color: #3da832;
+  background-color: var(--card-bg);
+  box-shadow: 0 0 0 4px rgba(77, 184, 67, 0.3), 0 0 18px rgba(77,184,67,0.2);
   outline: none;
-  background-color: #0a1840;
-}
-
-.dark-theme .header-search-bar input:focus {
-  background-color: #0a0a0a;
+  animation: none;
 }
 
 .search-icon {
