@@ -4026,13 +4026,13 @@ button, input, select {
 .hot-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-  border-color: var(--primary-color);
+  border-color: var(--hot-tab-color, var(--primary-color));
 }
 .hot-card-icon {
   width: 36px;
   height: 36px;
   border-radius: 9px;
-  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  background: linear-gradient(135deg, var(--hot-tab-color, var(--primary-color)), var(--hot-tab-color-2, var(--accent-color)));
   display: flex;
   align-items: center;
   justify-content: center;
