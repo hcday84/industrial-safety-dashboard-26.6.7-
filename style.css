@@ -247,36 +247,25 @@ button, input, select {
   position: relative;
 }
 
-@property --search-angle {
-  syntax: '<angle>';
-  inherits: false;
-  initial-value: 0deg;
-}
-
-.search-gradient-ring {
-  position: relative;
-  width: 100%;
-  border-radius: 30px;
-  padding: 2px;
-  background: conic-gradient(from var(--search-angle), #4db843, #2a4aaa, #f59e0b, #ef4444, #4db843);
-  animation: searchBorderRotate 3s linear infinite;
-}
-
-@keyframes searchBorderRotate {
-  to { --search-angle: 360deg; }
-}
-
 .header-search-bar input {
   width: 100%;
   padding: 10px 15px 10px 45px;
-  background-color: #0d1f5e;
-  border: none;
-  border-radius: 28px;
-  transition: background-color 0.3s;
+  background-color: var(--bg-color);
+  border: 1.5px solid #4db843;
+  border-radius: 30px;
+  transition: border-color 0.3s, background-color 0.3s;
+  animation: searchGlowPulse 2.5s ease-in-out infinite;
 }
 
-.dark-theme .header-search-bar input {
-  background-color: #000000;
+@keyframes searchGlowPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0px rgba(77,184,67,0);
+    border-color: #4db843;
+  }
+  50% {
+    box-shadow: 0 0 0 5px rgba(77,184,67,0.25), 0 0 16px rgba(77,184,67,0.18);
+    border-color: #6fd165;
+  }
 }
 
 .reset-btn {
