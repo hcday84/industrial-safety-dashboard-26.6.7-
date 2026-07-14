@@ -596,6 +596,10 @@ button, input, select {
   text-align: center;
   flex: 1;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* 웰컴 화면 오른쪽 위젯 컬럼 */
