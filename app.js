@@ -2582,8 +2582,9 @@ const PUBLISHERS = [
   { name: '에듀피디',       url: 'https://www.edupd.com',            category: '공무원고시', keywords: ['에듀피디'] },
   { name: '김영북스',       url: 'https://www.kimnbook.co.kr',       category: '공무원고시', keywords: ['김영북스', '김영'] },
   // IT/개발
-  { name: '영진닷컴',       url: 'https://www.youngjin.com',         category: 'IT개발', keywords: ['영진'] },
-  { name: '길벗',           url: 'https://www.gilbut.co.kr',         category: 'IT개발', keywords: ['길벗'] },
+  { name: '영진닷컴',       url: 'https://www.youngjin.com',         category: 'IT개발', keywords: ['영진', '이기적'] },
+  { name: '길벗',           url: 'https://www.gilbut.co.kr',         category: 'IT개발', keywords: ['길벗', '시나공'] },
+  { name: '수제비',         url: 'https://www.soojebi.com',          category: 'IT개발', keywords: ['수제비'] },
   { name: '한빛미디어',     url: 'https://www.hanbit.co.kr',         category: 'IT개발', keywords: ['한빛'] },
   { name: '이지스퍼블리싱', url: 'https://www.easyspub.co.kr',       category: 'IT개발', keywords: ['이지스', 'do it', 'doit'] },
   { name: '생능출판사',     url: 'https://www.booksr.co.kr',         category: 'IT개발', keywords: ['생능'] },
