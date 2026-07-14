@@ -4549,6 +4549,18 @@ button, input, select {
   padding: 2px 8px; border-radius: 10px;
 }
 .tip-card-text { font-size: 0.84rem; color: var(--text-color); line-height: 1.6; margin: 0; }
+.tip-source {
+  margin-left: auto; font-size: 0.70rem; color: var(--text-muted);
+  background: var(--bg-color); border: 1px solid var(--border-color);
+  border-radius: 8px; padding: 2px 7px; white-space: nowrap;
+}
+.tip-source i { margin-right: 3px; }
+.tips-disclaimer {
+  font-size: 0.75rem; color: var(--text-muted); margin-top: 6px;
+  padding: 8px 10px; background: var(--bg-color);
+  border-left: 3px solid var(--border-color); border-radius: 4px;
+}
+.tips-disclaimer i { margin-right: 4px; }
 .tips-no-data { font-size: 0.85rem; color: var(--text-muted); padding: 16px; text-align: center; line-height: 1.7; }
 
 /* ==============================
