@@ -76,9 +76,9 @@
   --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.5);
 
   /* 스크롤바 */
-  --scrollbar-thumb: #3d5590;
-  --scrollbar-thumb-hover: #6080c0;
-  --scrollbar-track: #111830;
+  --scrollbar-thumb: #5878c8;
+  --scrollbar-thumb-hover: #7898e0;
+  --scrollbar-track: #1a2545;
 }
 
 .dark-theme .app-header {
