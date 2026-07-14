@@ -3590,9 +3590,11 @@ function renderTipsSection(cert) {
       <div class="tip-card-header">
         <span class="tip-type-badge" style="background:${typeColor[t.type]}20;color:${typeColor[t.type]}">${t.type}</span>
         <span class="tip-tag-badge" style="background:${tagBg[t.tag]||'#f3f4f6'};color:${tagColor[t.tag]||'#374151'}">${t.tag}</span>
+        ${t.source ? `<span class="tip-source"><i class="fa-solid fa-file-lines"></i> ${t.source}</span>` : ''}
       </div>
       <p class="tip-card-text">${t.tip}</p>
-    </div>`).join('');
+    </div>`).join('') +
+    `<p class="tips-disclaimer"><i class="fa-solid fa-circle-info"></i> 본 팁은 기출문제·출제기준·채점기준 분석을 바탕으로 작성된 참고 자료이며, 공식 수험 정보와 다를 수 있습니다.</p>`;
 }
 
 // ============================================================
