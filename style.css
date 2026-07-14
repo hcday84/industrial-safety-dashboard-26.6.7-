@@ -40,6 +40,11 @@
   --shadow-md: 0 8px 20px rgba(13, 31, 94, 0.08);
   --shadow-lg: 0 16px 36px rgba(13, 31, 94, 0.12);
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* 스크롤바 */
+  --scrollbar-thumb: #8fa5cc;
+  --scrollbar-thumb-hover: #4f6fbf;
+  --scrollbar-track: #e8ecf5;
 }
 
 /* Dark Theme 클래스 */
