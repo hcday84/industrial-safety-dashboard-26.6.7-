@@ -610,6 +610,9 @@ button, input, select {
   .welcome-bottom-row {
     flex-direction: column;
   }
+  .welcome-lower-row {
+    flex-direction: column;
+  }
   .welcome-bottom-row .publisher-search-wrap {
     width: 100%;
   }
