@@ -1196,10 +1196,43 @@ button, input, select {
   opacity: 0.6;
 }
 
-.publisher-link-chip[data-category="기술자격"] { border-color: rgba(99,102,241,0.3); }
+.publisher-tab-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.publisher-tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1.5px solid var(--border-color);
+  background: var(--card-bg);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.publisher-tab-btn:hover {
+  border-color: var(--pub-tab-color, var(--primary-color));
+  color: var(--pub-tab-color, var(--primary-color));
+}
+.publisher-tab-btn.active {
+  background: var(--pub-tab-color, var(--primary-color));
+  border-color: var(--pub-tab-color, var(--primary-color));
+  color: #fff;
+}
+.publisher-link-chip:hover {
+  border-color: var(--pub-tab-color, var(--green-color));
+  color: var(--pub-tab-color, var(--green-color));
+  background: var(--bg-color);
+}
+.publisher-link-chip[data-category="기술자격"] { border-color: rgba(59,130,246,0.3); }
 .publisher-link-chip[data-category="공무원고시"] { border-color: rgba(245,158,11,0.3); }
 .publisher-link-chip[data-category="IT개발"] { border-color: rgba(16,185,129,0.3); }
-.publisher-link-chip[data-category="서점"] { border-color: rgba(239,68,68,0.3); }
+.publisher-link-chip[data-category="어학기타"] { border-color: rgba(16,185,129,0.3); }
 
 /* 5. 히어로 배너 영역 */
 .hero-widgets-row {
