@@ -589,6 +589,15 @@ function showWelcomeScreen() {
     initPublisherSearch();
     pubInput._pubBound = true;
   }
+  // D-Day 섹션 높이 기준으로 Hot Topic 높이 동기화
+  requestAnimationFrame(() => {
+    const ddaySection = document.querySelector('#welcome-screen .dday-widget-section');
+    const hotSection  = document.querySelector('#welcome-screen .hot-topic-section');
+    if (ddaySection && hotSection) {
+      const h = ddaySection.offsetHeight;
+      if (h > 0) hotSection.style.maxHeight = h + 'px';
+    }
+  });
 }
 
 function restoreCalendarToDashboard() {
