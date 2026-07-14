@@ -526,7 +526,8 @@ button, input, select {
   width: 38px;
   height: 38px;
   border-radius: 10px;
-  background: color-mix(in srgb, var(--rqc-color, var(--primary-color)) 15%, transparent);
+  background: var(--bg-color);
+  border: 1.5px solid var(--rqc-color, var(--primary-color));
   color: var(--rqc-color, var(--primary-color));
   display: flex;
   align-items: center;
