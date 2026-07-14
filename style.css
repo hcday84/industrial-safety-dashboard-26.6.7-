@@ -3375,17 +3375,18 @@ button, input, select {
   overflow-y: auto;
   padding-right: 4px;
   scrollbar-width: thin;
-  scrollbar-color: var(--border-color) transparent;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
 .monthly-cert-list::-webkit-scrollbar {
-  width: 4px;
+  width: 5px;
 }
 .monthly-cert-list::-webkit-scrollbar-track {
-  background: transparent;
+  background: var(--scrollbar-track);
+  border-radius: 4px;
 }
 .monthly-cert-list::-webkit-scrollbar-thumb {
-  background: var(--border-color);
-  border-radius: 2px;
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
 }
 
 .monthly-cert-card {
