@@ -468,6 +468,21 @@ button, input, select {
   margin-top: 28px;
 }
 
+/* 최하단 행: D-Day + Hot Topic 나란히 */
+.welcome-lower-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+.welcome-lower-row .dday-widget-section,
+.welcome-lower-row .hot-topic-section {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+}
+
 .welcome-bottom-row .publisher-search-wrap {
   width: 400px;
   flex-shrink: 0;
