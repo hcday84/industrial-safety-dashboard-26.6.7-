@@ -3600,9 +3600,10 @@ button, input, select {
   flex-direction: column;
   gap: 14px;
 }
-.wlp-body::-webkit-scrollbar { width: 4px; }
-.wlp-body::-webkit-scrollbar-track { background: transparent; }
-.wlp-body::-webkit-scrollbar-thumb { background: rgba(99,102,241,0.4); border-radius: 2px; }
+.wlp-body::-webkit-scrollbar { width: 5px; }
+.wlp-body::-webkit-scrollbar-track { background: var(--scrollbar-track); border-radius: 4px; }
+.wlp-body::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 4px; }
+.wlp-body::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-thumb-hover); border-radius: 4px; }
 
 .wlp-meta {
   display: flex;
