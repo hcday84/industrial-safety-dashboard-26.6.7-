@@ -508,7 +508,6 @@ button, input, select {
 .welcome-bottom-row,
 .welcome-lower-row {
   position: relative;
-  z-index: 1;
 }
 
 .welcome-top-row {
