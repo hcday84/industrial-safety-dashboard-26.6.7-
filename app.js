@@ -2738,13 +2738,14 @@ function renderPubTabChips(key, query) {
   }
 
   grid.innerHTML = chips.map(pub =>
-    `<a href="${pub.url}" target="_blank" rel="noopener noreferrer"
-       class="publisher-link-chip"
+    `<button class="publisher-link-chip"
+       data-pub="${pub.name}"
        data-category="${pub.category}"
        data-name="${pub.name.toLowerCase()}"
-       data-kw="${pub.keywords.join(' ').toLowerCase()}">
-      <i class="fa-solid fa-arrow-up-right-from-square"></i>${pub.name}
-    </a>`
+       data-kw="${pub.keywords.join(' ').toLowerCase()}"
+       onclick="window.showPubLineup('${pub.name.replace(/'/g, "\\'")}')">
+      <i class="fa-solid fa-building-columns"></i>${pub.name}
+    </button>`
   ).join('');
 
   if (results) results.innerHTML = banner;
