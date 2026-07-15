@@ -533,9 +533,14 @@
       <section id="books-section" class="dashboard-section card-box">
         <div class="section-header">
           <h2><i class="fa-solid fa-book-open text-teal"></i> 교보문고 베스트셀러 및 추천 수험서</h2>
-          <a href="https://product.kyobobook.co.kr/category/KOR/26" target="_blank" rel="noopener noreferrer" class="link-more">
-            카테고리 전체보기 <i class="fa-solid fa-chevron-right"></i>
-          </a>
+          <div class="section-header-actions">
+            <button onclick="window.showBookChecklist()" class="btn-checklist" id="btn-book-checklist">
+              <i class="fa-solid fa-list-check"></i> 구입 체크리스트
+            </button>
+            <a href="https://product.kyobobook.co.kr/category/KOR/26" target="_blank" rel="noopener noreferrer" class="link-more">
+              카테고리 전체보기 <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
         </div>
 
         <!-- 베스트셀러 -->
