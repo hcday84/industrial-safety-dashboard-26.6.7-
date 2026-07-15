@@ -490,7 +490,11 @@ button, input, select {
   font-size: var(--fi-s);
   opacity: var(--fi-o);
   color: var(--primary-color);
-  animation: floatIcon var(--fi-d) ease-in-out infinite var(--fi-dl) both;
+  animation-name: floatIcon;
+  animation-duration: var(--fi-d);
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: var(--fi-dl);
 }
 .dark-theme .float-icons i {
   color: #7a9de8;
