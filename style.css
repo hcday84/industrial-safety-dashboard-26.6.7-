@@ -1276,6 +1276,16 @@ button, input, select {
   color: var(--text-muted);
   padding: 6px 2px;
 }
+.pub-correction-msg {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  padding: 6px 2px;
+}
+.pub-correction-msg i { color: var(--accent-color); font-size: 0.85rem; flex-shrink: 0; }
+.pub-correction-msg b { color: var(--text-color); font-weight: 700; }
 
 .publisher-link-grid {
   display: flex;
