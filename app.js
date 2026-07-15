@@ -2649,6 +2649,7 @@ const PUBLISHERS = [
   { name: '해커스잡',       url: 'https://ejob.hackers.com',         category: '어학기타', keywords: ['해커스잡', '해커스 취업', 'hackers job'] },
   { name: '이투스',         url: 'https://www.etoos.com',            category: '어학기타', keywords: ['이투스', 'etoos', '이투스북'] },
   { name: '시원스쿨',       url: 'https://www.siwonschool.com',      category: '어학기타', keywords: ['시원스쿨', 'siwonschool', '시원'] },
+  { name: '잉글리쉬앤',     url: 'https://www.english.co.kr',        category: '어학기타', keywords: ['잉글리쉬앤', 'englishand', '잉글리쉬'] },
 ];
 
 const PUB_TABS = [
