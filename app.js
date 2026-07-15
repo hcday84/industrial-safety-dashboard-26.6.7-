@@ -2697,12 +2697,12 @@ function pubSearchScore(pub, q) {
 }
 
 function renderPubTabChips(key, query) {
-  const t = PUB_TABS.find(t => t.key === key) || PUB_TABS[0];
+  const t = key ? PUB_TABS.find(t => t.key === key) : null;
   const grid = document.getElementById('publisher-link-grid');
   const results = document.getElementById('publisher-results');
   if (!grid) return;
   const q = (query || '').trim();
-  const filtered = PUBLISHERS.filter(p => t.cats.includes(p.category));
+  const filtered = t ? PUBLISHERS.filter(p => t.cats.includes(p.category)) : PUBLISHERS;
 
   let chips = filtered;
   let banner = '';
