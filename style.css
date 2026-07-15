@@ -472,6 +472,8 @@ button, input, select {
   margin: 0 auto;
   padding: 60px 20px;
   box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
 }
 
 .welcome-top-row {
