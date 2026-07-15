@@ -2499,7 +2499,7 @@ button, input, select {
 }
 
 .book-cover-container {
-  height: 220px;
+  height: 160px;
   background-color: var(--bg-color);
   border-radius: var(--radius-sm);
   display: flex;
@@ -2512,9 +2512,9 @@ button, input, select {
 }
 
 .book-cover-img {
-  height: 200px;
+  height: 140px;
   width: auto;
-  max-width: 140px;
+  max-width: 100px;
   object-fit: contain;
   border-radius: 3px;
   box-shadow: 4px 6px 16px rgba(0,0,0,0.18);
