@@ -2822,19 +2822,6 @@ window.showBookChecklist = function() {
           </div>`;
       }).join('');
 
-  // 체크박스 이벤트 위임
-  body.addEventListener('change', function handler(e) {
-    const cb = e.target.closest('.cl-cb');
-    if (!cb) return;
-    const key2 = `checklist_${cb.dataset.cert}`;
-    let arr = JSON.parse(localStorage.getItem(key2) || '[]');
-    if (cb.checked) { if (!arr.includes(cb.dataset.title)) arr.push(cb.dataset.title); }
-    else { arr = arr.filter(t => t !== cb.dataset.title); }
-    localStorage.setItem(key2, JSON.stringify(arr));
-    cb.closest('.cl-item')?.classList.toggle('cl-checked', cb.checked);
-    refreshTotal();
-  }, { once: true }); // once: 모달 재오픈 시 중복 방지를 위해 body를 매번 교체하므로 OK
-
   titleEl.innerHTML = `<i class="fa-solid fa-list-check"></i> ${certName} 구입 체크리스트`;
   refreshTotal();
   modal.style.display = 'flex';
