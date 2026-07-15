@@ -2657,12 +2657,12 @@ const PUB_TABS = [
   { key: '공무원고시', label: '공무원·고시', icon: 'fa-landmark',           color: '#f59e0b', cats: ['공무원고시'] },
   { key: 'IT어학',    label: 'IT·어학',    icon: 'fa-laptop-code',        color: '#10b981', cats: ['IT개발', '어학기타'] },
 ];
-let _pubActiveTab = '기술자격';
+let _pubActiveTab = null; // null = 전체 (탭 미선택)
 
 function applyPubTabColor(key) {
-  const t = PUB_TABS.find(t => t.key === key) || PUB_TABS[0];
+  const t = key ? PUB_TABS.find(t => t.key === key) : null;
   const wrap = document.querySelector('.publisher-search-wrap');
-  if (wrap) wrap.style.setProperty('--pub-tab-color', t.color);
+  if (wrap) wrap.style.setProperty('--pub-tab-color', t ? t.color : 'var(--accent-color)');
 }
 
 // ── 출판사 검색 스코어 ────────────────────────────────────────────────────────
