@@ -2751,6 +2751,176 @@ function renderPubTabChips(key, query) {
   if (results) results.innerHTML = banner;
 }
 
+// ── 공통 모달 닫기 ───────────────────────────────────────────────────────────
+window.closeClModal = function(id) {
+  const el = document.getElementById(id);
+  if (el) el.style.display = 'none';
+};
+
+// ── 구입 체크리스트 ──────────────────────────────────────────────────────────
+window.showBookChecklist = function() {
+  const certName = STATE.currentCert;
+  if (!certName) return;
+
+  const rawBooks = (typeof REAL_BOOKS !== 'undefined' && REAL_BOOKS[certName])
+    ? REAL_BOOKS[certName]
+    : (getCert().books || []);
+
+  const seen = new Set();
+  const books = rawBooks.filter(b => {
+    if (seen.has(b.title)) return false;
+    seen.add(b.title);
+    return true;
+  });
+
+  const modal  = document.getElementById('book-checklist-modal');
+  const body   = document.getElementById('book-checklist-body');
+  const titleEl = document.getElementById('checklist-modal-title');
+  if (!modal || !body) return;
+
+  const storageKey = `checklist_${certName}`;
+
+  function calcTotal() {
+    const checked = JSON.parse(localStorage.getItem(storageKey) || '[]');
+    return books.filter(b => checked.includes(b.title) && b.price > 0)
+                .reduce((s, b) => s + b.price, 0);
+  }
+
+  function refreshTotal() {
+    const totalEl = document.getElementById('checklist-total');
+    const total = calcTotal();
+    if (totalEl) totalEl.innerHTML = total > 0
+      ? `선택 도서 합계: <strong>${total.toLocaleString()}원</strong>`
+      : '';
+  }
+
+  const checked = JSON.parse(localStorage.getItem(storageKey) || '[]');
+
+  body.innerHTML = books.length === 0
+    ? `<p style="text-align:center;color:var(--text-muted);padding:24px 0">등록된 수험서 데이터가 없습니다.</p>`
+    : books.map(book => {
+        const isChecked = checked.includes(book.title);
+        const q = encodeURIComponent(book.title);
+        const kyoboUrl = book.pageUrl || `https://search.kyobobook.co.kr/search?keyword=${q}`;
+        const yes24Url  = `https://www.yes24.com/Product/Search?query=${q}&domain=BOOK`;
+        const aladinUrl = `https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=${q}`;
+        const safeTitle = book.title.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+        return `
+          <div class="cl-item${isChecked ? ' cl-checked' : ''}">
+            <label class="cl-label">
+              <input type="checkbox" class="cl-cb" data-cert="${certName}" data-title="${safeTitle}" ${isChecked ? 'checked' : ''}>
+              <div class="cl-info">
+                <span class="cl-title">${book.title}</span>
+                <span class="cl-meta">${book.publisher}${book.price ? ' · ' + book.price.toLocaleString() + '원' : ''}</span>
+              </div>
+            </label>
+            <div class="cl-store-links">
+              <a href="${kyoboUrl}" target="_blank" rel="noopener noreferrer" class="cl-store kyobo">교보</a>
+              <a href="${yes24Url}"  target="_blank" rel="noopener noreferrer" class="cl-store yes24">YES24</a>
+              <a href="${aladinUrl}" target="_blank" rel="noopener noreferrer" class="cl-store aladin">알라딘</a>
+            </div>
+          </div>`;
+      }).join('');
+
+  // 체크박스 이벤트 위임
+  body.addEventListener('change', function handler(e) {
+    const cb = e.target.closest('.cl-cb');
+    if (!cb) return;
+    const key2 = `checklist_${cb.dataset.cert}`;
+    let arr = JSON.parse(localStorage.getItem(key2) || '[]');
+    if (cb.checked) { if (!arr.includes(cb.dataset.title)) arr.push(cb.dataset.title); }
+    else { arr = arr.filter(t => t !== cb.dataset.title); }
+    localStorage.setItem(key2, JSON.stringify(arr));
+    cb.closest('.cl-item')?.classList.toggle('cl-checked', cb.checked);
+    refreshTotal();
+  }, { once: true }); // once: 모달 재오픈 시 중복 방지를 위해 body를 매번 교체하므로 OK
+
+  titleEl.innerHTML = `<i class="fa-solid fa-list-check"></i> ${certName} 구입 체크리스트`;
+  refreshTotal();
+  modal.style.display = 'flex';
+};
+
+// ── 출판사 라인업 ────────────────────────────────────────────────────────────
+window.showPubLineup = function(pubName) {
+  const pub = PUBLISHERS.find(p => p.name === pubName);
+  if (!pub) return;
+
+  const modal   = document.getElementById('pub-lineup-modal');
+  const body    = document.getElementById('pub-lineup-body');
+  const titleEl = document.getElementById('pub-lineup-title');
+  const siteLink = document.getElementById('pub-lineup-sitelink');
+  if (!modal || !body) return;
+
+  const catLabel = { '기술자격': '기술자격', '공무원고시': '공무원·고시', 'IT개발': 'IT·개발', '어학기타': '어학·기타' }[pub.category] || pub.category;
+
+  // REAL_BOOKS에서 이 출판사 책 검색 (pubName 부분 포함 여부 매칭)
+  const baseName = pub.name.replace(/\([^)]*\)/g, '').trim();
+  const dbBooks  = [];
+  if (typeof REAL_BOOKS !== 'undefined') {
+    for (const [certName, books] of Object.entries(REAL_BOOKS)) {
+      for (const book of books) {
+        if (book.publisher && book.publisher.includes(baseName)) {
+          dbBooks.push({ certName, ...book });
+        }
+      }
+    }
+  }
+
+  // 시리즈·브랜드 키워드 (한글, 3자 이하 제외, 출판사 이름과 다른 것)
+  const seriesTags = pub.keywords.filter(k =>
+    /[가-힣]/.test(k) && k.length >= 2 && k !== pub.name && k !== baseName
+  );
+
+  const q = encodeURIComponent(pub.name);
+  const kyoboUrl  = `https://search.kyobobook.co.kr/search?keyword=${q}`;
+  const yes24Url  = `https://www.yes24.com/Product/Search?query=${q}&domain=BOOK`;
+  const aladinUrl = `https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=${q}`;
+
+  body.innerHTML = `
+    <div class="plu-info-row">
+      <span class="badge badge-info">${catLabel}</span>
+      ${seriesTags.length ? `<div class="plu-series">${seriesTags.map(k => `<span class="plu-tag">${k}</span>`).join('')}</div>` : ''}
+    </div>
+    <div class="plu-store-section">
+      <p class="plu-store-label">온라인 서점에서 이 출판사 도서 검색</p>
+      <div class="plu-store-btns">
+        <a href="${kyoboUrl}" target="_blank" rel="noopener noreferrer" class="plu-store-btn kyobo-btn">
+          <i class="fa-solid fa-magnifying-glass"></i> 교보문고
+        </a>
+        <a href="${yes24Url}" target="_blank" rel="noopener noreferrer" class="plu-store-btn yes24-btn">
+          <i class="fa-solid fa-magnifying-glass"></i> YES24
+        </a>
+        <a href="${aladinUrl}" target="_blank" rel="noopener noreferrer" class="plu-store-btn aladin-btn">
+          <i class="fa-solid fa-magnifying-glass"></i> 알라딘
+        </a>
+      </div>
+    </div>
+    ${dbBooks.length > 0 ? `
+    <div class="plu-db-section">
+      <p class="plu-db-label"><i class="fa-solid fa-database"></i> 대시보드 등록 수험서 ${dbBooks.length}종</p>
+      ${dbBooks.map(book => {
+        const bq = encodeURIComponent(book.title);
+        const url = book.pageUrl || `https://search.kyobobook.co.kr/search?keyword=${bq}`;
+        return `
+          <div class="plu-book-row">
+            <div class="plu-book-main">
+              <span class="plu-cert-tag">${book.certName}</span>
+              <span class="plu-book-title">${book.title}</span>
+            </div>
+            <div class="plu-book-right">
+              ${book.price ? `<span class="plu-price">${book.price.toLocaleString()}원</span>` : ''}
+              <a href="${url}" target="_blank" rel="noopener noreferrer" class="cl-store kyobo">교보</a>
+            </div>
+          </div>`;
+      }).join('')}
+    </div>` : ''}
+  `;
+
+  titleEl.innerHTML = `<i class="fa-solid fa-building-columns"></i> ${pub.name}`;
+  siteLink.href = pub.url;
+  modal.style.display = 'flex';
+};
+
 window.switchPubTab = function(key) {
   _pubActiveTab = (_pubActiveTab === key) ? null : key; // 같은 탭 재클릭 → 전체 해제
   document.querySelectorAll('.publisher-tab-btn').forEach(btn => {
