@@ -660,7 +660,7 @@ button, input, select {
 .welcome-bottom-row .publisher-search-wrap .publisher-link-grid {
   flex: 1;
   min-height: 80px;
-  max-height: none;
+  max-height: 260px;
 }
 
 .welcome-bottom-row .publisher-search-label {
