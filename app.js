@@ -2644,6 +2644,8 @@ const PUBLISHERS = [
   { name: '리코멘드',       url: 'https://www.rdbook.co.kr',         category: '어학기타', keywords: ['리코멘드'] },
   { name: '비엘북스',       url: 'https://vielbooks.com',            category: '어학기타', keywords: ['비엘북스', '비엘'] },
   { name: '엔트미디어',     url: 'https://entmedia.co.kr',           category: '어학기타', keywords: ['엔트미디어'] },
+  { name: '에스티유니타스', url: 'https://www.ybm.co.kr',            category: '어학기타', keywords: ['에스티유니타스', 'ybm', '영단기', '공단기', 'stuniverse'] },
+  { name: '해커스잡',       url: 'https://ejob.hackers.com',         category: '어학기타', keywords: ['해커스잡', '해커스 취업', 'hackers job'] },
 ];
 
 const PUB_TABS = [
