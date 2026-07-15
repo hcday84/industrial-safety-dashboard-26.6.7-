@@ -489,7 +489,7 @@ button, input, select {
   top: var(--fi-y);
   font-size: var(--fi-s);
   opacity: var(--fi-o);
-  color: var(--primary-color);
+  color: var(--fi-c, var(--primary-color));
   animation-name: floatIcon;
   animation-duration: var(--fi-d);
   animation-timing-function: ease-in-out;
@@ -497,7 +497,8 @@ button, input, select {
   animation-delay: var(--fi-dl);
 }
 .dark-theme .float-icons i {
-  color: #7a9de8;
+  color: var(--fi-cd, #7a9de8);
+  opacity: calc(var(--fi-o) * 1.6);
 }
 @keyframes floatIcon {
   0%, 100% { transform: translateY(0px) rotate(0deg); }
