@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cert-dashboard-v85';
+const CACHE_NAME = 'cert-dashboard-v86';
 const ASSETS = [
   '/style.css',
   '/manifest.json',
