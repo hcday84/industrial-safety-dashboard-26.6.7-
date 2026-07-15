@@ -2827,6 +2827,20 @@ window.showBookChecklist = function() {
   modal.style.display = 'flex';
 };
 
+// 체크박스 변경 핸들러 (inline onchange에서 호출)
+window._clChange = function(cb) {
+  const key = `checklist_${cb.dataset.cert}`;
+  let arr = JSON.parse(localStorage.getItem(key) || '[]');
+  if (cb.checked) { if (!arr.includes(cb.dataset.title)) arr.push(cb.dataset.title); }
+  else { arr = arr.filter(t => t !== cb.dataset.title); }
+  localStorage.setItem(key, JSON.stringify(arr));
+  cb.closest('.cl-item')?.classList.toggle('cl-checked', cb.checked);
+  const certBooks = (typeof REAL_BOOKS !== 'undefined' && REAL_BOOKS[cb.dataset.cert]) || [];
+  const total = certBooks.filter(b => arr.includes(b.title) && b.price > 0).reduce((s, b) => s + b.price, 0);
+  const totalEl = document.getElementById('checklist-total');
+  if (totalEl) totalEl.innerHTML = total > 0 ? `선택 도서 합계: <strong>${total.toLocaleString()}원</strong>` : '';
+};
+
 // ── 출판사 라인업 ────────────────────────────────────────────────────────────
 window.showPubLineup = function(pubName) {
   const pub = PUBLISHERS.find(p => p.name === pubName);
