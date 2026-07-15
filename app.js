@@ -2808,7 +2808,7 @@ window.showBookChecklist = function() {
         return `
           <div class="cl-item${isChecked ? ' cl-checked' : ''}">
             <label class="cl-label">
-              <input type="checkbox" class="cl-cb" data-cert="${certName}" data-title="${safeTitle}" ${isChecked ? 'checked' : ''}>
+              <input type="checkbox" class="cl-cb" data-cert="${certName}" data-title="${safeTitle}" ${isChecked ? 'checked' : ''} onchange="window._clChange(this)">
               <div class="cl-info">
                 <span class="cl-title">${book.title}</span>
                 <span class="cl-meta">${book.publisher}${book.price ? ' · ' + book.price.toLocaleString() + '원' : ''}</span>
