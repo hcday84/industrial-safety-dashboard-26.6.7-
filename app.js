@@ -2751,13 +2751,13 @@ function renderPubTabChips(key, query) {
 }
 
 window.switchPubTab = function(key) {
-  _pubActiveTab = key;
+  _pubActiveTab = (_pubActiveTab === key) ? null : key; // 같은 탭 재클릭 → 전체 해제
   document.querySelectorAll('.publisher-tab-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.tab === key);
+    btn.classList.toggle('active', btn.dataset.tab === _pubActiveTab);
   });
-  applyPubTabColor(key);
+  applyPubTabColor(_pubActiveTab);
   const input = document.getElementById('publisher-search');
-  renderPubTabChips(key, input ? input.value : '');
+  renderPubTabChips(_pubActiveTab, input ? input.value : '');
 };
 
 function initPublisherSearch() {
