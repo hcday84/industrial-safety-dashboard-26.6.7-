@@ -3882,6 +3882,12 @@ button, input, select {
   color: #56d9a0;
   letter-spacing: -0.5px;
 }
+#priv-cert-count {
+  font-size: 1.45em;
+  font-weight: 800;
+  color: #f59e4f;
+  letter-spacing: -0.5px;
+}
 
 /* ────────────────────────────────────────
    관리자 인증 모달
