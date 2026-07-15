@@ -476,6 +476,37 @@ button, input, select {
   overflow: hidden;
 }
 
+/* 플로팅 배경 아이콘 */
+.float-icons {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+.float-icons i {
+  position: absolute;
+  left: var(--fi-x);
+  top: var(--fi-y);
+  font-size: var(--fi-s);
+  opacity: var(--fi-o);
+  color: var(--primary-color);
+  animation: floatIcon var(--fi-d) ease-in-out infinite var(--fi-dl) both;
+}
+.dark-theme .float-icons i {
+  color: #7a9de8;
+}
+@keyframes floatIcon {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  40%       { transform: translateY(-18px) rotate(4deg); }
+  70%       { transform: translateY(-8px) rotate(-3deg); }
+}
+.welcome-top-row,
+.welcome-bottom-row,
+.welcome-lower-row {
+  position: relative;
+  z-index: 1;
+}
+
 .welcome-top-row {
   display: flex;
   align-items: stretch;
