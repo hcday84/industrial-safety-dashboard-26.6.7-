@@ -2665,16 +2665,78 @@ function applyPubTabColor(key) {
   if (wrap) wrap.style.setProperty('--pub-tab-color', t.color);
 }
 
+// ── 출판사 검색 스코어 ────────────────────────────────────────────────────────
+function pubSearchScore(pub, q) {
+  const nq  = normalize(q);
+  const nn  = normalize(pub.name);
+  const nks = pub.keywords.map(normalize);
+  const csq = extractChosung(q);
+  const csn = extractChosung(pub.name);
+
+  if (nn === nq)                                             return 100;
+  if (nn.startsWith(nq))                                    return 90;
+  if (nn.includes(nq))                                      return 80;
+  if (nks.some(k => k === nq))                              return 75;
+  if (nks.some(k => k.startsWith(nq)))                      return 70;
+  if (nks.some(k => k.includes(nq)))                        return 65;
+  if (csn === csq)                                          return 60;
+  if (csn.startsWith(csq))                                  return 55;
+  if (csn.includes(csq))                                    return 50;
+  if (pub.keywords.some(k => extractChosung(k).includes(csq))) return 45;
+
+  if (nq.length >= 2) {
+    const thr = fuzzyThreshold(nq);
+    const wl = nq.length;
+    for (let i = 0; i <= nn.length - wl; i++) {
+      if (levenshtein(nn.slice(i, i + wl), nq) <= thr) return 40;
+    }
+    if (levenshtein(nn, nq) <= thr)                   return 35;
+    if (nks.some(k => levenshtein(k, nq) <= thr))     return 30;
+  }
+  return 0;
+}
+
 function renderPubTabChips(key, query) {
   const t = PUB_TABS.find(t => t.key === key) || PUB_TABS[0];
   const grid = document.getElementById('publisher-link-grid');
   const results = document.getElementById('publisher-results');
   if (!grid) return;
-  const q = (query || '').trim().toLowerCase();
+  const q = (query || '').trim();
   const filtered = PUBLISHERS.filter(p => t.cats.includes(p.category));
-  const chips = filtered.filter(p =>
-    !q || p.name.toLowerCase().includes(q) || p.keywords.join(' ').toLowerCase().includes(q)
-  );
+
+  let chips = filtered;
+  let banner = '';
+
+  if (q) {
+    const scoreWith = src =>
+      filtered
+        .map(p => ({ pub: p, score: pubSearchScore(p, src) }))
+        .filter(({ score }) => score > 0)
+        .sort((a, b) => b.score - a.score);
+
+    let scored = scoreWith(q);
+    let isEngConverted = false;
+
+    const conv = engToKorean(q);
+    if (conv && conv !== q) {
+      const convScored = scoreWith(conv);
+      if (convScored.length > 0 && convScored[0].score > (scored[0]?.score ?? 0)) {
+        scored = convScored;
+        isEngConverted = true;
+        banner = `<span class="pub-correction-msg"><i class="fa-solid fa-keyboard"></i> 영문 입력을 <b>${conv}</b>으로 변환해 검색했습니다.</span>`;
+      }
+    }
+
+    chips = scored.map(({ pub }) => pub);
+    const topScore = scored[0]?.score ?? 0;
+
+    if (chips.length === 0) {
+      banner = `<span class="publisher-no-result"><i class="fa-solid fa-circle-info"></i> 검색 결과가 없습니다.</span>`;
+    } else if (!isEngConverted && topScore <= 40) {
+      banner = `<span class="pub-correction-msg"><i class="fa-solid fa-spell-check"></i> <b>${q}</b>와(과) 비슷한 출판사를 검색했습니다.</span>`;
+    }
+  }
+
   grid.innerHTML = chips.map(pub =>
     `<a href="${pub.url}" target="_blank" rel="noopener noreferrer"
        class="publisher-link-chip"
@@ -2684,11 +2746,8 @@ function renderPubTabChips(key, query) {
       <i class="fa-solid fa-arrow-up-right-from-square"></i>${pub.name}
     </a>`
   ).join('');
-  if (results) {
-    results.innerHTML = chips.length === 0 && q
-      ? `<span class="publisher-no-result"><i class="fa-solid fa-circle-info"></i> 검색 결과가 없습니다.</span>`
-      : '';
-  }
+
+  if (results) results.innerHTML = banner;
 }
 
 window.switchPubTab = function(key) {
