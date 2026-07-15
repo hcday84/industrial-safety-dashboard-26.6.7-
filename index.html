@@ -272,6 +272,38 @@
     </div>
   </div>
 
+  <!-- 구입 체크리스트 모달 -->
+  <div id="book-checklist-modal" class="cl-modal-overlay" style="display:none" onclick="if(event.target===this)window.closeClModal('book-checklist-modal')">
+    <div class="cl-modal-box">
+      <div class="cl-modal-header">
+        <h3 id="checklist-modal-title"><i class="fa-solid fa-list-check"></i> 구입 체크리스트</h3>
+        <button class="cl-modal-close" onclick="window.closeClModal('book-checklist-modal')"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div id="book-checklist-body" class="cl-modal-body"></div>
+      <div class="cl-modal-footer">
+        <span id="checklist-total" class="checklist-total"></span>
+        <button onclick="window.closeClModal('book-checklist-modal')" class="btn btn-secondary btn-sm">닫기</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 출판사 라인업 모달 -->
+  <div id="pub-lineup-modal" class="cl-modal-overlay" style="display:none" onclick="if(event.target===this)window.closeClModal('pub-lineup-modal')">
+    <div class="cl-modal-box">
+      <div class="cl-modal-header">
+        <h3 id="pub-lineup-title"><i class="fa-solid fa-building-columns"></i> 출판사 라인업</h3>
+        <button class="cl-modal-close" onclick="window.closeClModal('pub-lineup-modal')"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div id="pub-lineup-body" class="cl-modal-body"></div>
+      <div class="cl-modal-footer">
+        <a id="pub-lineup-sitelink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> 출판사 사이트 방문
+        </a>
+        <button onclick="window.closeClModal('pub-lineup-modal')" class="btn btn-secondary btn-sm">닫기</button>
+      </div>
+    </div>
+  </div>
+
   <!-- 관리자 인증 모달 -->
   <div id="admin-auth-overlay" style="display:none;">
     <div id="admin-auth-modal">
