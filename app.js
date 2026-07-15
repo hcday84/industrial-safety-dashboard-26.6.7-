@@ -2647,6 +2647,8 @@ const PUBLISHERS = [
   { name: '에스티유니타스', url: 'https://www.stunitas.com',          category: '어학기타', keywords: ['에스티유니타스', '공단기', '영단기', 'st unitas', 'stunitas'] },
   { name: 'YBM',           url: 'https://www.ybm.co.kr',            category: '어학기타', keywords: ['ybm', '토익 ybm', 'ybm어학원', 'toeic ybm'] },
   { name: '해커스잡',       url: 'https://ejob.hackers.com',         category: '어학기타', keywords: ['해커스잡', '해커스 취업', 'hackers job'] },
+  { name: '이투스',         url: 'https://www.etoos.com',            category: '어학기타', keywords: ['이투스', 'etoos', '이투스북'] },
+  { name: '시원스쿨',       url: 'https://www.siwonschool.com',      category: '어학기타', keywords: ['시원스쿨', 'siwonschool', '시원'] },
 ];
 
 const PUB_TABS = [
