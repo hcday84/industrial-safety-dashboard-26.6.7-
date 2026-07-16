@@ -16340,7 +16340,12 @@ const CERTIFICATIONS = {
       { name: '데이터 모델링의 이해', desc: '데이터 모델링 개념·ERD·정규화·성능 데이터 모델링' },
       { name: 'SQL 기본 및 활용', desc: 'DML·DDL·DCL·조인·서브쿼리·윈도우 함수·PL/SQL' },
     ],
-    books: [],
+    books: [
+      { title: 'SQL 자격검정 실전문제 (SQLD)', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', year: 2024, rating: 4.7 },
+      { title: 'SQLD 노랭이 (핵심이론+문제집)', author: '조시형', publisher: '영진닷컴', year: 2024, rating: 4.6 },
+      { title: 'SQLD 단기완성 핵심요약', author: '강현우', publisher: '이기적', year: 2023, rating: 4.5 },
+      { title: 'SQL 개발자 기출문제 완전정복', author: '박성호', publisher: '성안당', year: 2024, rating: 4.4 },
+    ],
     defaultTodos: [
       '데이터 모델링(정규화·ERD) 이론 개념 정리',
       'SELECT 기본 문법부터 윈도우 함수까지 단계별 학습',
