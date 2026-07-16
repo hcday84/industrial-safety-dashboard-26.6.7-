@@ -702,30 +702,47 @@ function updatePageMeta(cert) {
 // 6. 히어로 섹션 업데이트
 // ============================================
 let _typeTimer = null;
+let _heroGen = 0;
+
 function typeEffect(el, text, speed = 15) {
-  if (_typeTimer) { clearInterval(_typeTimer); _typeTimer = null; }
-  el.textContent = '';
-  let i = 0;
-  _typeTimer = setInterval(() => {
-    if (i < text.length) {
-      el.textContent += text[i++];
-    } else {
-      clearInterval(_typeTimer);
-      _typeTimer = null;
+  return new Promise(resolve => {
+    if (_typeTimer) { clearTimeout(_typeTimer); _typeTimer = null; }
+    el.textContent = '';
+    let i = 0;
+    function step() {
+      if (i < text.length) {
+        el.textContent += text[i++];
+        _typeTimer = setTimeout(step, speed);
+      } else {
+        _typeTimer = null;
+        resolve();
+      }
     }
-  }, speed);
+    step();
+  });
 }
 
 function renderHero(cert) {
-  document.getElementById('hero-title').textContent = cert.heroTitle;
-  typeEffect(document.getElementById('hero-desc'), cert.heroDesc);
-  const iconEl = document.querySelector('.shield-graphic i');
-  if (iconEl) { iconEl.className = `fa-solid ${cert.icon}`; }
+  const gen      = ++_heroGen;
+  const titleEl  = document.getElementById('hero-title');
+  const descEl   = document.getElementById('hero-desc');
+  const ddayEl   = document.getElementById('hero-dday-row');
+  const popEl    = document.getElementById('hero-popularity');
+  const shieldEl = document.querySelector('.shield-graphic');
+  const btnsEl   = document.querySelector('.slide-buttons');
+  const iconEl   = document.querySelector('.shield-graphic i');
 
-  // 선호도 별점 표시
-  const popEl = document.getElementById('hero-popularity');
+  if (iconEl) iconEl.className = `fa-solid ${cert.icon}`;
+
+  // 초기 상태: 타이틀·설명 비우기, 일부 요소 투명화
+  titleEl.textContent = '';
+  descEl.textContent  = '';
+  const hide = el => { if (el) { el.style.transition = 'none'; el.style.opacity = '0'; } };
+  hide(ddayEl); hide(popEl); hide(shieldEl); hide(btnsEl);
+
+  // 선호도 컨텐츠 세팅 (display 결정, opacity는 0 유지)
+  const pop = CERT_POPULARITY[cert.name];
   if (popEl) {
-    const pop = CERT_POPULARITY[cert.name];
     if (pop) {
       popEl.innerHTML = renderStars(pop.stars)
         + `<span class="hero-pop-tag">${pop.tag}</span>`
@@ -735,6 +752,31 @@ function renderHero(cert) {
       popEl.style.display = 'none';
     }
   }
+
+  const fadeIn = (el, dur = '0.4s') => {
+    if (!el) return;
+    el.style.transition = `opacity ${dur}`;
+    el.style.opacity = '1';
+  };
+
+  // 시퀀스: 제목 타이핑 → D-Day·별점 페이드인 → 설명 타이핑 → 쉴드·버튼 페이드인
+  typeEffect(titleEl, cert.heroTitle)
+    .then(() => {
+      if (_heroGen !== gen) return Promise.reject('cancelled');
+      fadeIn(ddayEl);
+      if (pop) fadeIn(popEl);
+      return new Promise(r => setTimeout(r, 300));
+    })
+    .then(() => {
+      if (_heroGen !== gen) return Promise.reject('cancelled');
+      return typeEffect(descEl, cert.heroDesc);
+    })
+    .then(() => {
+      if (_heroGen !== gen) return Promise.reject('cancelled');
+      fadeIn(shieldEl, '0.5s');
+      fadeIn(btnsEl, '0.5s');
+    })
+    .catch(() => {});
 }
 
 // ============================================
