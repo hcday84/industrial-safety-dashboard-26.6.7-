@@ -701,9 +701,24 @@ function updatePageMeta(cert) {
 // ============================================
 // 6. 히어로 섹션 업데이트
 // ============================================
+let _typeTimer = null;
+function typeEffect(el, text, speed = 30) {
+  if (_typeTimer) { clearInterval(_typeTimer); _typeTimer = null; }
+  el.textContent = '';
+  let i = 0;
+  _typeTimer = setInterval(() => {
+    if (i < text.length) {
+      el.textContent += text[i++];
+    } else {
+      clearInterval(_typeTimer);
+      _typeTimer = null;
+    }
+  }, speed);
+}
+
 function renderHero(cert) {
   document.getElementById('hero-title').textContent = cert.heroTitle;
-  document.getElementById('hero-desc').textContent = cert.heroDesc;
+  typeEffect(document.getElementById('hero-desc'), cert.heroDesc);
   const iconEl = document.querySelector('.shield-graphic i');
   if (iconEl) { iconEl.className = `fa-solid ${cert.icon}`; }
 
