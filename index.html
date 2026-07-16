@@ -29,6 +29,21 @@
   <link rel="apple-touch-icon" href="icons/icon-192.png">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css?v=20260701c">
+  <!-- 수험서 그리드 5열 고정 (SW 캐시 우회) -->
+  <style>
+    .books-grid{display:grid!important;grid-template-columns:repeat(5,1fr)!important;gap:12px!important}
+    .book-card{padding:12px!important;gap:8px!important}
+    .book-cover-container{height:160px!important}
+    .book-cover-img{height:140px!important;max-width:100px!important}
+    .book-cover-mock{width:95px!important;height:132px!important;padding:10px 8px!important}
+    .book-cover-title{font-size:0.72rem!important}
+    .book-info{gap:4px!important}
+    .book-publisher{font-size:0.7rem!important}
+    .book-title{font-size:0.8rem!important;height:36px!important}
+    .book-rating-link{font-size:0.68rem!important}
+    .book-price{font-size:0.92rem!important}
+    .book-btn{padding:6px!important;font-size:0.72rem!important}
+  </style>
 </head>
 <body>
   <!-- Header Navigation -->
