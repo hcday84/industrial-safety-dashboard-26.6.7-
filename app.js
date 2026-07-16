@@ -664,7 +664,15 @@ function switchCertification(certName) {
     fetchCertInfo(cert.name).then(info => {
       if (!info) return;
       const descEl = document.getElementById('hero-desc');
-      if (descEl && info.overview) typeEffect(descEl, info.overview);
+      if (descEl && info.overview) {
+        typeEffect(descEl, info.overview).then(() => {
+          // API 응답이 늦게 오는 경우 쉴드·버튼이 아직 안 보일 수 있으므로 보장
+          const shieldEl = document.querySelector('.shield-graphic');
+          const btnsEl   = document.querySelector('.slide-buttons');
+          if (shieldEl && shieldEl.style.opacity !== '1') { shieldEl.style.transition = 'opacity 0.5s'; shieldEl.style.opacity = '1'; }
+          if (btnsEl   && btnsEl.style.opacity   !== '1') { btnsEl.style.transition   = 'opacity 0.5s'; btnsEl.style.opacity   = '1'; }
+        });
+      }
     });
 
     fetchExamSchedule(cert.name).then(schedules => {
