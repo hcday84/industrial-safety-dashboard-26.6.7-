@@ -6142,6 +6142,53 @@ const CERTIFICATIONS = {
       '최근 5개년 기출문제 1회분 실전 조건으로 풀고 오답 분석',
     ],
   },
+
+  '임베디드기사': {
+    name: '임베디드기사',
+    icon: 'fa-microchip',
+    category: 'IT·정보',
+    heroTitle: '2026년도 임베디드기사 합격 가이드',
+    heroDesc: '임베디드기사는 임베디드 시스템의 설계·개발·테스트 능력을 검증하는 국가기술자격증입니다. 자동차 전장, 스마트홈, 산업용 제어기기, IoT 기기 등 임베디드 소프트웨어 분야 전반에서 활용됩니다. 반도체·전자 산업 확장과 함께 수요가 꾸준히 증가하는 미래 유망 자격입니다.',
+    passRateSummary: '필기 38% | 실기 40%',
+    avgPassRate: '39%',
+    passRates: [
+      { year: 2020, written: 33, practical: 36 },
+      { year: 2021, written: 35, practical: 38 },
+      { year: 2022, written: 38, practical: 40 },
+      { year: 2023, written: 40, practical: 42 },
+      { year: 2024, written: 38, practical: 40 },
+    ],
+    schedules: [
+      { round: '1회', writtenExam: '2026-01-30 ~ 2026-03-03', writtenResult: '2026-03-11', practicalExam: '2026-04-18 ~ 2026-05-06', practicalResult: '2026-06-05' },
+      { round: '2회', writtenExam: '2026-05-09 ~ 2026-05-29', writtenResult: '2026-06-10', practicalExam: '2026-07-18 ~ 2026-08-05', practicalResult: '2026-09-04' },
+      { round: '3회', writtenExam: '2026-08-07 ~ 2026-09-01', writtenResult: '2026-09-09', practicalExam: '2026-10-24 ~ 2026-11-13', practicalResult: '2026-12-11' },
+    ],
+    milestones: [
+      { label: '1회 필기', date: '2026-01-30' },
+      { label: '1회 실기', date: '2026-04-18' },
+      { label: '2회 필기', date: '2026-05-09' },
+      { label: '2회 실기', date: '2026-07-18' },
+    ],
+    subjects: [
+      { name: '임베디드 소프트웨어', desc: 'C언어 기반 펌웨어 개발, RTOS 구조 및 태스크 관리' },
+      { name: '임베디드 하드웨어', desc: 'MCU 아키텍처, 메모리 구조, 인터럽트 처리' },
+      { name: '인터페이스 설계', desc: 'UART·SPI·I2C·USB·CAN 통신 인터페이스 설계' },
+      { name: '임베디드 시스템 응용', desc: '디바이스 드라이버 개발, 부트로더, BSP 구성' },
+    ],
+    books: [
+      { title: '임베디드기사 필기 핵심이론+기출문제', author: '임베디드기술연구회', publisher: '성안당', year: 2024, rating: 4.4 },
+      { title: '임베디드기사 실기 완전정복', author: '김현수', publisher: '예문사', year: 2024, rating: 4.3 },
+      { title: 'C언어 기반 임베디드 시스템 프로그래밍', author: '이정훈', publisher: '한빛미디어', year: 2023, rating: 4.2 },
+    ],
+    defaultTodos: [
+      '임베디드 C언어 문법 및 포인터 완전 정복',
+      'MCU 아키텍처와 인터럽트 처리 원리 학습',
+      '통신 인터페이스(UART·SPI·I2C) 특징 비교 정리',
+      '기출문제 최근 3개년 풀고 오답 노트 작성',
+      '실기 디바이스 드라이버 코드 구현 반복 연습',
+    ],
+  },
+
   '무선설비기사': {
     name: '무선설비기사',
     icon: 'fa-wifi',
