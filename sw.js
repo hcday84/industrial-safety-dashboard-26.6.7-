@@ -33,6 +33,8 @@ self.addEventListener('fetch', e => {
   if (
     e.request.url.includes('api.odcloud.kr') ||
     e.request.url.includes('apis.data.go.kr') ||
+    e.request.url.includes('open-meteo.com') ||
+    e.request.url.includes('nominatim.openstreetmap.org') ||
     e.request.headers.get('accept')?.includes('text/html') ||
     e.request.url.endsWith('.html') ||
     e.request.url.endsWith('/')
