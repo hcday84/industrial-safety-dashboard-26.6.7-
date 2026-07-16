@@ -3131,10 +3131,12 @@ function initEventListeners() {
     }
   });
 
-  // 플래너
-  document.getElementById('planner-add-btn').addEventListener('click', window.addTodo);
-  document.getElementById('planner-input').addEventListener('keypress', e => {
-    if (e.key === 'Enter') window.addTodo();
+  // 플래너 (요소가 있을 때만 등록)
+  const plannerBtn = document.getElementById('planner-add-btn');
+  const plannerInput = document.getElementById('planner-input');
+  if (plannerBtn) plannerBtn.addEventListener('click', window.addTodo);
+  if (plannerInput) plannerInput.addEventListener('keypress', e => {
+    if (e.key === 'Enter') window.addTodo?.();
   });
 
   // 사이드바 스크롤 싱크 (클릭 이벤트만)
