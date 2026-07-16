@@ -702,7 +702,7 @@ function updatePageMeta(cert) {
 // 6. 히어로 섹션 업데이트
 // ============================================
 let _typeTimer = null;
-function typeEffect(el, text, speed = 30) {
+function typeEffect(el, text, speed = 15) {
   if (_typeTimer) { clearInterval(_typeTimer); _typeTimer = null; }
   el.textContent = '';
   let i = 0;
