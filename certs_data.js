@@ -16312,7 +16312,7 @@ const CERTIFICATIONS = {
   },
 
   'SQLD': {
-    name: 'SQLD (SQL개발자)',
+    name: 'SQLD',
     icon: 'fa-database',
     category: '민간자격 · IT',
     heroTitle: '2026년도 SQLD 합격 가이드',
