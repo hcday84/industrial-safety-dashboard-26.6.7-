@@ -767,6 +767,7 @@ function renderHero(cert) {
     if (!el) return;
     el.style.transition = `opacity ${dur}`;
     el.style.opacity = '1';
+    el.style.pointerEvents = '';
   };
 
   // 시퀀스: 제목 타이핑 → D-Day·별점 페이드인 → 설명 타이핑 → 쉴드·버튼 페이드인
