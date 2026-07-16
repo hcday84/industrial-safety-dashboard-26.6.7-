@@ -1516,6 +1516,52 @@ const CERTIFICATIONS = {
     ],
   },
 
+  '용접산업기사': {
+    name: '용접산업기사',
+    icon: 'fa-fire-flame-curved',
+    category: '기계·설비',
+    heroTitle: '2026년도 용접산업기사 합격 가이드',
+    heroDesc: '용접산업기사는 각종 용접 작업의 시공 및 품질 관리 능력을 검증하는 국가기술자격증입니다. 자동차, 조선, 건설, 플랜트 등 제조업 현장에서 용접 공정을 담당하는 기술 인력으로 활동할 수 있으며, 용접기사 취득을 위한 전 단계 자격으로도 활용됩니다.',
+    passRateSummary: '필기 40% | 실기 45%',
+    avgPassRate: '42%',
+    passRates: [
+      { year: 2020, written: 36, practical: 41 },
+      { year: 2021, written: 38, practical: 43 },
+      { year: 2022, written: 41, practical: 46 },
+      { year: 2023, written: 42, practical: 47 },
+      { year: 2024, written: 40, practical: 45 },
+    ],
+    schedules: [
+      { round: '1회', writtenExam: '2026-01-30 ~ 2026-03-03', writtenResult: '2026-03-11', practicalExam: '2026-04-18 ~ 2026-05-06', practicalResult: '2026-06-05' },
+      { round: '2회', writtenExam: '2026-05-09 ~ 2026-05-29', writtenResult: '2026-06-10', practicalExam: '2026-07-18 ~ 2026-08-05', practicalResult: '2026-09-04' },
+      { round: '3회', writtenExam: '2026-08-07 ~ 2026-09-01', writtenResult: '2026-09-09', practicalExam: '2026-10-24 ~ 2026-11-13', practicalResult: '2026-12-11' },
+    ],
+    milestones: [
+      { label: '1회 필기', date: '2026-01-30' },
+      { label: '1회 실기', date: '2026-04-18' },
+      { label: '2회 필기', date: '2026-05-09' },
+      { label: '2회 실기', date: '2026-07-18' },
+    ],
+    subjects: [
+      { name: '용접야금 및 재료', desc: '금속 결정 구조, 열영향부, 용접 재료 특성' },
+      { name: '용접구조 설계', desc: '용접 이음 강도, 변형 제어, 잔류응력 해석' },
+      { name: '용접 시공', desc: '피복아크·MIG·TIG 용접 시공법 및 결함 종류' },
+      { name: '용접 검사', desc: '비파괴검사(RT, UT, MT, PT) 방법 및 판정 기준' },
+    ],
+    books: [
+      { title: '용접산업기사 필기 핵심요약+기출', author: '이현석', publisher: '성안당', year: 2024, rating: 4.4 },
+      { title: '용접산업기사 과년도 기출문제 해설', author: '용접기술연구회', publisher: '일진사', year: 2024, rating: 4.3 },
+      { title: '용접산업기사 실기 완전정복', author: '정재환', publisher: '동일출판사', year: 2023, rating: 4.2 },
+    ],
+    defaultTodos: [
+      '용접야금·재료 핵심 이론 정리 및 기출문제 풀기',
+      '용접 결함 종류 및 비파괴검사 방법 암기',
+      '용접 시공법별 특징 비교 정리',
+      '기출문제 최근 3개년 풀고 오답 노트 작성',
+      '실기 용접 작업 반복 연습 및 외관 검사 기준 숙지',
+    ],
+  },
+
   '공조냉동기계산업기사': {
     name: '공조냉동기계산업기사',
     icon: 'fa-snowflake',
