@@ -2901,7 +2901,8 @@ window._clChange = function(cb) {
   else { arr = arr.filter(t => t !== cb.dataset.title); }
   localStorage.setItem(key, JSON.stringify(arr));
   cb.closest('.cl-item')?.classList.toggle('cl-checked', cb.checked);
-  const certBooks = (typeof REAL_BOOKS !== 'undefined' && REAL_BOOKS[cb.dataset.cert]) || [];
+  const certBooks = (typeof REAL_BOOKS !== 'undefined' && REAL_BOOKS[cb.dataset.cert])
+    || (CERTIFICATIONS[cb.dataset.cert]?.books) || [];
   const total = certBooks.filter(b => arr.includes(b.title) && b.price > 0).reduce((s, b) => s + b.price, 0);
   const totalEl = document.getElementById('checklist-total');
   if (totalEl) totalEl.innerHTML = total > 0 ? `선택 도서 합계: <strong>${total.toLocaleString()}원</strong>` : '';
