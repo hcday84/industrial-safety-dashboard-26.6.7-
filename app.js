@@ -661,12 +661,13 @@ function switchCertification(certName) {
   // 공공데이터 API — 종목 정보 + 시험 일정 비동기 업데이트
   const cert = getCert();
   if (cert) {
+    const apiGen = _heroGen;
     fetchCertInfo(cert.name).then(info => {
-      if (!info) return;
+      if (!info || _heroGen !== apiGen) return;
       const descEl = document.getElementById('hero-desc');
       if (descEl && info.overview) {
         typeEffect(descEl, info.overview).then(() => {
-          // API 응답이 늦게 오는 경우 쉴드·버튼이 아직 안 보일 수 있으므로 보장
+          if (_heroGen !== apiGen) return;
           const shieldEl = document.querySelector('.shield-graphic');
           const btnsEl   = document.querySelector('.slide-buttons');
           if (shieldEl && shieldEl.style.opacity !== '1') { shieldEl.style.transition = 'opacity 0.5s'; shieldEl.style.opacity = '1'; }
