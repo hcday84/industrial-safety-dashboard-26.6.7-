@@ -792,6 +792,53 @@ const CERTIFICATIONS = {
       '최근 5개년 기출문제 1회분 실전 조건으로 풀고 오답 분석',
     ],
   },
+
+  '화공산업기사': {
+    name: '화공산업기사',
+    icon: 'fa-flask',
+    category: '화학·환경',
+    heroTitle: '2026년도 화공산업기사 합격 가이드',
+    heroDesc: '화공산업기사는 화학 공정의 설계·운영·관리 능력을 검증하는 국가기술자격증입니다. 석유화학, 제약, 고분자 소재 등 화학 관련 산업체에서 공정 운전과 품질 관리를 담당하는 실무 자격으로 활용됩니다. 화공기사 취득 전 단계로 관련 학과 재학생이 많이 취득합니다.',
+    passRateSummary: '필기 35% | 실기 42%',
+    avgPassRate: '38%',
+    passRates: [
+      { year: 2020, written: 32, practical: 38 },
+      { year: 2021, written: 34, practical: 40 },
+      { year: 2022, written: 36, practical: 42 },
+      { year: 2023, written: 37, practical: 44 },
+      { year: 2024, written: 35, practical: 42 },
+    ],
+    schedules: [
+      { round: '1회', writtenExam: '2026-01-30 ~ 2026-03-03', writtenResult: '2026-03-11', practicalExam: '2026-04-18 ~ 2026-05-06', practicalResult: '2026-06-05' },
+      { round: '2회', writtenExam: '2026-05-09 ~ 2026-05-29', writtenResult: '2026-06-10', practicalExam: '2026-07-18 ~ 2026-08-05', practicalResult: '2026-09-04' },
+      { round: '3회', writtenExam: '2026-08-07 ~ 2026-09-01', writtenResult: '2026-09-09', practicalExam: '2026-10-24 ~ 2026-11-13', practicalResult: '2026-12-11' },
+    ],
+    milestones: [
+      { label: '1회 필기', date: '2026-01-30' },
+      { label: '1회 실기', date: '2026-04-18' },
+      { label: '2회 필기', date: '2026-05-09' },
+      { label: '2회 실기', date: '2026-07-18' },
+    ],
+    subjects: [
+      { name: '화공열역학', desc: '상평형, 반응열, 엔탈피·엔트로피 계산' },
+      { name: '단위조작', desc: '증류, 흡수, 추출, 여과, 건조 등 분리 공정' },
+      { name: '반응공학', desc: '반응속도론, 반응기 설계 및 전환율 계산' },
+      { name: '공정제어', desc: '제어계 구성, PID 제어, 공정 안전 개요' },
+    ],
+    books: [
+      { title: '화공산업기사 필기 핵심이론+기출', author: '화학기술연구회', publisher: '성안당', year: 2024, rating: 4.4 },
+      { title: '화공산업기사 과년도 기출문제 해설', author: '이재영', publisher: '일진사', year: 2024, rating: 4.3 },
+      { title: '화공산업기사 실기 완전정복', author: '박재웅', publisher: '동일출판사', year: 2023, rating: 4.2 },
+    ],
+    defaultTodos: [
+      '화공열역학 상평형·반응열 핵심 계산 문제 집중 풀기',
+      '단위조작 각 공정별 이론 정리 및 계산식 암기',
+      '반응공학 반응기 설계 유형별 문제 반복',
+      '기출문제 최근 3개년 풀고 오답 노트 작성',
+      '실기 필답형 핵심 계산 문제 시간 내 완성 훈련',
+    ],
+  },
+
   '위험물산업기사': {
     name: '위험물산업기사',
     icon: 'fa-biohazard',
