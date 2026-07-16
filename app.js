@@ -664,7 +664,7 @@ function switchCertification(certName) {
     fetchCertInfo(cert.name).then(info => {
       if (!info) return;
       const descEl = document.getElementById('hero-desc');
-      if (descEl && info.overview) descEl.textContent = info.overview;
+      if (descEl && info.overview) typeEffect(descEl, info.overview);
     });
 
     fetchExamSchedule(cert.name).then(schedules => {
