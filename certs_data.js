@@ -11907,50 +11907,6 @@ const CERTIFICATIONS = {
   // 컴퓨터·IT 추가 자격증
   // ────────────────────────────────────────
 
-  '네트워크관리사1급': {
-    name: '네트워크관리사1급', icon: 'fa-network-wired', category: 'IT·정보통신',
-    heroTitle: '2026년도 네트워크관리사 1급 합격 전략',
-    heroDesc: '네트워크 설계·구축·관리 전반을 다루는 국내 대표 민간 네트워크 자격증. 서버·스위치·라우터 운용 역량을 증명하고 IT 인프라 취업을 노리세요.',
-    passRateSummary: '필기 45% | 실기 38%', avgPassRate: '41%',
-    passRates: [{year:2020,written:42,practical:35},{year:2021,written:44,practical:36},{year:2022,written:45,practical:37},{year:2023,written:46,practical:38},{year:2024,written:45,practical:38}],
-    schedules: [{round:'상시',writtenExam:'상시접수',practicalExam:'상시접수',writtenResult:'-',practicalResult:'-',registerStart:'-',registerEnd:'-'}],
-    subjects: [{name:'네트워크 일반',desc:'OSI 7계층, TCP/IP, 라우팅 프로토콜'},{name:'NOS',desc:'Windows/Linux 서버 관리'},{name:'네트워크 운용기기',desc:'스위치·라우터·방화벽 설정'},{name:'보안',desc:'네트워크 보안 정책 및 암호화'}],
-    schedules: [
-      { round: '2026년도', isCurrent: false, isDone: true,
-        writtenApply: '2025.11.17 ~ 2025.11.21', writtenExam: '2026.01.24', writtenResult: '2026.02.14',
-        practicalApply: '-', practicalExam: '-', finalResult: '2026.02.14' },
-      { round: '2027년도', isCurrent: true, isDone: false,
-        writtenApply: '2026.11월 예정', writtenExam: '2027.01월 예정', writtenResult: '2027.02월 예정',
-        practicalApply: '-', practicalExam: '-', finalResult: '2027.02월 예정' },
-    ],
-    milestones: [
-      { label: '2027년도 원서접수 시작', date: '2026-11-16' },
-      { label: '2027년도 필기시험', date: '2027-01-23' },
-      { label: '2027년도 합격자 발표', date: '2027-02-13' },
-    ],
-    subjects: [
-      { title: '성인간호학', tip: '가장 출제 비중이 높은 과목. 순환·호흡·소화기 계통 질환 간호, 수술 전후 간호를 중심으로 기출 반복 학습.' },
-      { title: '모성간호학', tip: '임신·분만·산욕기 정상/이상 경과와 신생아 간호. 계산 문제(EDD, APGAR)를 반드시 숙지.' },
-      { title: '아동간호학', tip: '성장발달 이론(에릭슨, 피아제)과 소아 주요 질환 간호를 함께 정리하면 효율적.' },
-      { title: '정신간호학', tip: '정신간호 이론과 치료적 의사소통, DSM-5 진단 기준을 중심으로 정리. 오답 선지 패턴 파악이 핵심.' },
-      { title: '지역사회간호학', tip: '역학적 연구 설계, 가족 간호, 보건지표 계산 문제 위주로 학습.' },
-      { title: '간호관리학', tip: '간호조직, 기획·조직·인사·지휘·통제 기능별 개념을 표로 정리.' },
-      { title: '기본간호학', tip: '활력징후, 투약, 감염관리, 상처간호 등 실무 직결 개념은 반드시 암기.' },
-      { title: '의료법규', tip: '의료법·간호법 주요 조항과 숫자(벌칙 금액, 자격정지 기간 등)를 집중 암기.' },
-    ],
-    books: [
-      { id: 'nurse-b1', title: '2027 군자출판사 간호사 국가시험 문제집', publisher: '군자출판사', rating: 9.8, reviews: 1823, originalPrice: 65000, price: 58500, discount: '10%', coverBg: 'linear-gradient(135deg,#0d4f8b,#1a7fc1)', tags: ['베스트'] },
-      { id: 'nurse-b2', title: '2027 메디시언 간호사 국시 핵심요약', publisher: '메디시언', rating: 9.7, reviews: 1240, originalPrice: 55000, price: 49500, discount: '10%', coverBg: 'linear-gradient(135deg,#1a5276,#2e86c1)', tags: ['추천'] },
-    ],
-    defaultTodos: [
-      '성인간호학 심장·호흡기 파트 기출 문제 100선 풀기',
-      '모성간호학 분만 단계별 간호 정리',
-      '정신간호학 치료적 의사소통 기법 암기',
-      '의료법규 간호사 관련 조항 핵심 정리',
-      '5개년 국시 기출 1회독 완료',
-    ],
-  },
-
   '임상병리사': {
     name: '임상병리사', icon: 'fa-flask', category: '의료·보건',
     heroTitle: '2027년도 임상병리사 국가시험 합격 전략',
