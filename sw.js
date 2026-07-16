@@ -6,6 +6,7 @@ const ASSETS = [
   '/app.js',
   '/books_data.js',
   '/jm-codes.js',
+  '/kuksiwon_api.js',
   '/inventory-app.js',
   '/inventory-styles-scoped.css',
   '/icons/icon-192.png',
