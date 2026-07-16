@@ -747,7 +747,7 @@ function renderHero(cert) {
   // 초기 상태: 타이틀·설명 비우기, 일부 요소 투명화
   titleEl.textContent = '';
   descEl.textContent  = '';
-  const hide = el => { if (el) { el.style.transition = 'none'; el.style.opacity = '0'; } };
+  const hide = el => { if (el) { el.style.transition = 'none'; el.style.opacity = '0'; el.style.pointerEvents = 'none'; } };
   hide(ddayEl); hide(popEl); hide(shieldEl); hide(btnsEl);
 
   // 선호도 컨텐츠 세팅 (display 결정, opacity는 0 유지)
