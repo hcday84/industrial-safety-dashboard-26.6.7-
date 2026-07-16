@@ -741,6 +741,7 @@ function renderHero(cert) {
   const btnsEl   = document.querySelector('.slide-buttons');
   const iconEl   = document.querySelector('.shield-graphic i');
 
+  if (!titleEl || !descEl) return;
   if (iconEl) iconEl.className = `fa-solid ${cert.icon}`;
 
   // 초기 상태: 타이틀·설명 비우기, 일부 요소 투명화
