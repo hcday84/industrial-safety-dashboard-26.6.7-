@@ -1853,24 +1853,25 @@ window.calcPassPredictor = function(subjectCount) {
 // ============================================
 // 시험장 지역 검색
 // ============================================
+// 한국산업인력공단 공식 지역본부/지사 명칭 (hrdkorea.or.kr/5/1/1 기준, 2026-07-17 확인)
 const EXAM_REGIONS = [
-  { name: '서울', code: 'S', centers: ['서울지역본부 (강남)', '서울동부센터', '서울서부센터', '서울남부센터', '서울북부센터'] },
-  { name: '부산', code: 'B', centers: ['부산지역본부', '부산남부센터'] },
-  { name: '대구', code: 'D', centers: ['대구지역본부', '대구서부센터'] },
-  { name: '인천', code: 'I', centers: ['인천지역본부', '인천서부센터'] },
+  { name: '서울', code: 'S', centers: ['서울지역본부 (동대문)', '서울서부지사 (은평)', '서울남부지사 (영등포)', '서울강남지사'] },
+  { name: '부산', code: 'B', centers: ['부산지역본부', '부산남부지사'] },
+  { name: '대구', code: 'D', centers: ['대구지역본부'] },
+  { name: '인천', code: 'I', centers: ['인천지사'] },
   { name: '광주', code: 'G', centers: ['광주지역본부'] },
-  { name: '대전', code: 'J', centers: ['대전지역본부', '대전세종센터'] },
-  { name: '울산', code: 'U', centers: ['울산지역본부'] },
-  { name: '세종', code: 'SJ', centers: ['대전세종센터(세종)'] },
-  { name: '경기', code: 'GG', centers: ['경기지역본부 (수원)', '경기북부센터 (의정부)', '경기동부센터 (성남)', '경기서부센터 (부천)'] },
-  { name: '강원', code: 'GW', centers: ['강원지역본부 (춘천)', '강원동부센터 (강릉)'] },
-  { name: '충북', code: 'CB', centers: ['충북지역본부 (청주)'] },
-  { name: '충남', code: 'CN', centers: ['충남지역본부 (천안)'] },
-  { name: '전북', code: 'JB', centers: ['전북지역본부 (전주)'] },
-  { name: '전남', code: 'JN', centers: ['전남지역본부 (광주)'] },
-  { name: '경북', code: 'GB', centers: ['경북지역본부 (구미)', '경북동부센터 (포항)'] },
-  { name: '경남', code: 'GN', centers: ['경남지역본부 (창원)', '경남서부센터 (진주)'] },
-  { name: '제주', code: 'JJ', centers: ['제주지역본부'] },
+  { name: '대전', code: 'J', centers: ['대전지역본부'] },
+  { name: '울산', code: 'U', centers: ['울산지사'] },
+  { name: '세종', code: 'SJ', centers: ['세종지사'] },
+  { name: '경기', code: 'GG', centers: ['경인지역본부 (수원)', '경기북부지사 (의정부)', '경기동부지사 (성남)', '경기남부지사 (안성)', '경기서부지사 (부천)'] },
+  { name: '강원', code: 'GW', centers: ['강원지사 (춘천)', '강원동부지사 (강릉)'] },
+  { name: '충북', code: 'CB', centers: ['충북지사 (청주)', '충북북부지사 (충주)'] },
+  { name: '충남', code: 'CN', centers: ['충남지사 (천안)'] },
+  { name: '전북', code: 'JB', centers: ['전북지사 (전주)', '전북서부지사 (군산)'] },
+  { name: '전남', code: 'JN', centers: ['전남지사 (순천)', '전남서부지사 (목포)'] },
+  { name: '경북', code: 'GB', centers: ['경북지사 (안동)', '경북동부지사 (포항)', '경북서부지사 (구미)'] },
+  { name: '경남', code: 'GN', centers: ['경남지사 (창원)', '경남서부지사 (진주)'] },
+  { name: '제주', code: 'JJ', centers: ['제주지사'] },
 ];
 
 function initLocationSection() {
