@@ -5077,6 +5077,8 @@ button, input, select {
   border-radius: 8px; padding: 2px 7px; white-space: nowrap;
 }
 .tip-source i { margin-right: 3px; }
+.tip-source-link { text-decoration: none; cursor: pointer; }
+.tip-source-link:hover { color: var(--primary-color); border-color: var(--primary-color); }
 .tips-disclaimer {
   font-size: 0.75rem; color: var(--text-muted); margin-top: 6px;
   padding: 8px 10px; background: var(--bg-color);

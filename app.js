@@ -3884,49 +3884,76 @@ function renderComparePanel(nameB) {
 // ============================================================
 // 22. 정적 데이터 — 합격 팁, FAQ, 개정판 이력
 // ============================================================
+// Q-Net 종목별 상세정보(출제기준) 페이지 — 2026-07-17 Q-Net 종목검색 API로 jmCd 검증됨
+const QNET_JM = jmCd => `https://www.q-net.or.kr/crf005.do?id=crf00503&jmCd=${jmCd}`;
+// Q-Net 기출문제내려받기 목록 (자격증명으로 직접 검색해서 확인)
+const QNET_PASTEXAM = 'https://www.q-net.or.kr/cst003.do?id=cst00309';
+// KOSHA(한국산업안전보건공단) 기술지원규정(KOSHA GUIDE) 안내
+const KOSHA_GUIDE = 'https://portal.kosha.or.kr/archive/resources/tech-support/guide';
+
 const CERT_TIPS = {
   '전기기사': [
-    { type:'필기', tag:'고득점', tip:'전기자기학은 공식 암기보다 원리 이해 우선 — 맥스웰 방정식 적용 예제 위주로 학습하세요.', source:'기출문제 패턴 분석' },
-    { type:'필기', tag:'주의',   tip:'회로이론 계산에서 위상각 부호 실수가 잦습니다. 기호 규약을 처음부터 통일해 두세요.',        source:'기출문제 패턴 분석' },
-    { type:'실기', tag:'핵심',   tip:'배선도 시공 작업은 색상 코드(갈·흑·회·녹황) 암기가 필수. 접속 불량이 가장 많은 감점 항목입니다.', source:'실기 채점 기준 분석' },
+    { type:'필기', tag:'고득점', tip:'전기자기학은 공식 암기보다 원리 이해 우선 — 맥스웰 방정식 적용 예제 위주로 학습하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'필기', tag:'주의',   tip:'회로이론 계산에서 위상각 부호 실수가 잦습니다. 기호 규약을 처음부터 통일해 두세요.',        source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'배선도 시공 작업은 색상 코드(갈·흑·회·녹황) 암기가 필수. 접속 불량이 가장 많은 감점 항목입니다.', source:'Q-Net 출제기준', sourceUrl: QNET_JM('1150') },
   ],
   '산업안전기사': [
-    { type:'필기', tag:'고득점', tip:'산업안전보건법 조문 번호까지 외울 필요 없음. "요건·효과·예외" 3단 구조로 정리하세요.', source:'출제기준 분석' },
-    { type:'필기', tag:'주의',   tip:'인간공학 파트의 FMEA·FTA 기호는 도식화로 암기하면 혼동을 줄일 수 있습니다.',           source:'기출문제 패턴 분석' },
-    { type:'실기', tag:'핵심',   tip:'필답형은 핵심어 포함 여부로 채점 — "위험성 평가", "개선조치" 등 법적 용어를 정확히 사용하세요.', source:'실기 채점 기준 분석' },
+    { type:'필기', tag:'고득점', tip:'산업안전보건법 조문 번호까지 외울 필요 없음. "요건·효과·예외" 3단 구조로 정리하세요.', source:'Q-Net 출제기준', sourceUrl: QNET_JM('1431') },
+    { type:'필기', tag:'주의',   tip:'인간공학 파트의 FMEA·FTA 기호는 도식화로 암기하면 혼동을 줄일 수 있습니다.',           source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'필답형은 핵심어 포함 여부로 채점 — "위험성 평가", "개선조치" 등 법적 용어를 정확히 사용하세요.', source:'Q-Net 출제기준', sourceUrl: QNET_JM('1431') },
   ],
   '정보처리기사': [
-    { type:'필기', tag:'고득점', tip:'UML 다이어그램 유형은 최근 기출 5개년 선지 암기로 대부분 커버됩니다.',                source:'기출문제 패턴 분석' },
-    { type:'필기', tag:'주의',   tip:'SQL 문제는 실행 결과값을 직접 손으로 트레이싱하는 연습이 필수입니다.',                source:'기출문제 패턴 분석' },
-    { type:'실기', tag:'핵심',   tip:'알고리즘 코드 출력값 추적 문제가 30% 이상 — 빠른 손 계산이 합격을 결정합니다.',        source:'출제기준 분석' },
+    { type:'필기', tag:'고득점', tip:'UML 다이어그램 유형은 최근 기출 5개년 선지 암기로 대부분 커버됩니다.',                source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'필기', tag:'주의',   tip:'SQL 문제는 실행 결과값을 직접 손으로 트레이싱하는 연습이 필수입니다.',                source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'알고리즘 코드 출력값 추적 문제가 30% 이상 — 빠른 손 계산이 합격을 결정합니다.',        source:'Q-Net 출제기준', sourceUrl: QNET_JM('1320') },
   ],
   '소방설비기사': [
-    { type:'필기', tag:'고득점', tip:'소방시설 설치기준 수치(수원량·방수압력·방수량)를 표로 정리해 반복 암기하세요.',         source:'출제기준 분석' },
-    { type:'실기', tag:'핵심',   tip:'설계도면 해석 문제 — 화재감지기·스프링클러 심볼을 모르면 풀 수 없습니다. 이미지로 암기하세요.', source:'실기 채점 기준 분석' },
+    { type:'필기', tag:'고득점', tip:'소방시설 설치기준 수치(수원량·방수압력·방수량)를 표로 정리해 반복 암기하세요.',         source:'Q-Net 출제기준', sourceUrl: QNET_JM('1910') },
+    { type:'실기', tag:'핵심',   tip:'설계도면 해석 문제 — 화재감지기·스프링클러 심볼을 모르면 풀 수 없습니다. 이미지로 암기하세요.', source:'Q-Net 출제기준', sourceUrl: QNET_JM('1910') },
   ],
   '건설안전기사': [
-    { type:'필기', tag:'고득점', tip:'KOSHA 가이드 기준 빈출 — 비계·거푸집 관련 수치를 집중 암기하세요.',                  source:'KOSHA 가이드 기반' },
-    { type:'실기', tag:'핵심',   tip:'재해 유형별 원인·대책 3가지 쓰기 문제가 매회 출제됩니다. 틀에 맞춰 암기하세요.',       source:'실기 채점 기준 분석' },
+    { type:'필기', tag:'고득점', tip:'KOSHA 가이드 기준 빈출 — 비계·거푸집 관련 수치를 집중 암기하세요.',                  source:'KOSHA 기술지원규정', sourceUrl: KOSHA_GUIDE },
+    { type:'실기', tag:'핵심',   tip:'재해 유형별 원인·대책 3가지 쓰기 문제가 매회 출제됩니다. 틀에 맞춰 암기하세요.',       source:'Q-Net 출제기준', sourceUrl: QNET_JM('1440') },
   ],
   '위험물산업기사': [
-    { type:'필기', tag:'고득점', tip:'위험물 류별 특성(인화점·발화점·비중)은 표 비교 암기가 가장 효율적입니다.',             source:'출제기준 분석' },
-    { type:'실기', tag:'주의',   tip:'지정수량 배수 계산식에서 단위 실수가 많습니다. 풀이 과정에 단위를 항상 명시하세요.',    source:'기출문제 패턴 분석' },
+    { type:'필기', tag:'고득점', tip:'위험물 류별 특성(인화점·발화점·비중)은 표 비교 암기가 가장 효율적입니다.',             source:'Q-Net 출제기준', sourceUrl: QNET_JM('2121') },
+    { type:'실기', tag:'주의',   tip:'지정수량 배수 계산식에서 단위 실수가 많습니다. 풀이 과정에 단위를 항상 명시하세요.',    source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
   ],
   '컴퓨터활용능력1급': [
-    { type:'필기', tag:'고득점', tip:'스프레드시트 VLOOKUP·INDEX·MATCH·IF 중첩 공식 문제가 핵심 — 손으로 써가며 연습하세요.', source:'기출문제 패턴 분석' },
-    { type:'실기', tag:'핵심',   tip:'실기는 속도가 합격을 결정 — 단축키(Ctrl+Shift+Enter 등) 근육기억이 필수입니다.',      source:'실기 채점 기준 분석' },
+    { type:'필기', tag:'고득점', tip:'스프레드시트 VLOOKUP·INDEX·MATCH·IF 중첩 공식 문제가 핵심 — 손으로 써가며 연습하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 속도가 합격을 결정 — 단축키(Ctrl+Shift+Enter 등) 근육기억이 필수입니다.',      source:'Q-Net 출제기준', sourceUrl: QNET_JM('0492') },
   ],
   '산업안전산업기사': [
-    { type:'필기', tag:'고득점', tip:'기사 대비 법령 암기 비중이 낮고 개념 이해 문제가 많습니다. 기본서 1회독 후 기출 집중.', source:'출제기준 분석' },
-    { type:'실기', tag:'주의',   tip:'안전보건표지 색상·형태 문제는 실제 이미지로 확인하며 공부하면 혼동이 줄어듭니다.',     source:'기출문제 패턴 분석' },
+    { type:'필기', tag:'고득점', tip:'기사 대비 법령 암기 비중이 낮고 개념 이해 문제가 많습니다. 기본서 1회독 후 기출 집중.', source:'Q-Net 출제기준', sourceUrl: QNET_JM('2381') },
+    { type:'실기', tag:'주의',   tip:'안전보건표지 색상·형태 문제는 실제 이미지로 확인하며 공부하면 혼동이 줄어듭니다.',     source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
   ],
   '전기산업기사': [
-    { type:'필기', tag:'고득점', tip:'전기기사와 범위가 유사 — 기사 기출도 병행하면 학습 효율이 올라갑니다.',               source:'출제기준 분석' },
-    { type:'실기', tag:'핵심',   tip:'측정 계기 사용법과 절연저항 측정 절차 서술 문제가 자주 출제됩니다.',                  source:'실기 채점 기준 분석' },
+    { type:'필기', tag:'고득점', tip:'전기기사와 범위가 유사 — 기사 기출도 병행하면 학습 효율이 올라갑니다.',               source:'Q-Net 출제기준', sourceUrl: QNET_JM('2140') },
+    { type:'실기', tag:'핵심',   tip:'측정 계기 사용법과 절연저항 측정 절차 서술 문제가 자주 출제됩니다.',                  source:'Q-Net 출제기준', sourceUrl: QNET_JM('2140') },
   ],
   '산업위생관리기사': [
-    { type:'필기', tag:'고득점', tip:'허용기준 수치(TLV-TWA, STEL)는 주요 물질 10개 이상을 외워 두세요.',                  source:'출제기준 분석' },
-    { type:'실기', tag:'핵심',   tip:'측정·평가 계산 문제에서 단위 변환 실수가 가장 많습니다. 단위를 항상 명시하세요.',      source:'실기 채점 기준 분석' },
+    { type:'필기', tag:'고득점', tip:'허용기준 수치(TLV-TWA, STEL)는 주요 물질 10개 이상을 외워 두세요.',                  source:'Q-Net 출제기준', sourceUrl: QNET_JM('1472') },
+    { type:'실기', tag:'핵심',   tip:'측정·평가 계산 문제에서 단위 변환 실수가 가장 많습니다. 단위를 항상 명시하세요.',      source:'Q-Net 출제기준', sourceUrl: QNET_JM('1472') },
+  ],
+  '위험물기능사': [
+    { type:'필기', tag:'고득점', tip:'위험물 유별 성질(인화점·발화점·비중)과 저장·취급 기준을 표로 비교 암기하면 문제 유형에 관계없이 대응할 수 있습니다.', source:'Q-Net 출제기준', sourceUrl: QNET_JM('6697') },
+    { type:'실기', tag:'핵심',   tip:'실기는 필답형(단답·서술)으로, 소화방법·위험등급·지정수량 배수 계산 문제 비중이 높습니다.', source:'Q-Net 출제기준', sourceUrl: QNET_JM('6697') },
+  ],
+  '지게차운전기능사': [
+    { type:'필기', tag:'고득점', tip:'건설기계기관·전기·섀시, 유압일반, 건설기계관리법규·도로교통법으로 구성 — 법규 과목은 최신 개정사항을 확인하세요.', source:'Q-Net 출제기준', sourceUrl: QNET_JM('7875') },
+    { type:'실기', tag:'핵심',   tip:'장내 코스에서 주행·화물 적재·하역을 평가하는 작업형 실기입니다. 이론보다 실차 조작 연습이 합격을 좌우합니다.', source:'Q-Net 출제기준', sourceUrl: QNET_JM('7875') },
+  ],
+  '가스기능사': [
+    { type:'필기', tag:'고득점', tip:'가스 안전관리 및 법령, 가스장치 및 기기, 가스 일반 중 법령 과목 비중이 높아 고압가스안전관리법 조문 구조를 정리해두면 유리합니다.', source:'Q-Net 출제기준', sourceUrl: QNET_JM('6335') },
+    { type:'실기', tag:'주의',   tip:'실기는 필답형으로, 가스설비 명칭과 안전장치 작동 원리를 서술하는 문제가 반복 출제됩니다.', source:'Q-Net 출제기준', sourceUrl: QNET_JM('6335') },
+  ],
+  '공조냉동기계기사': [
+    { type:'필기', tag:'고득점', tip:'냉동공학·공조냉동설계·유체기계·전기제어공학 중 계산 문제 비중이 높은 냉동공학·공조냉동설계에 학습 시간을 우선 배분하세요.', source:'Q-Net 출제기준', sourceUrl: QNET_JM('1730') },
+    { type:'실기', tag:'핵심',   tip:'실기(작업형)는 배관·전기 시공 및 설비 조립 작업으로 진행되어 실습 위주 연습이 필수입니다.', source:'Q-Net 출제기준', sourceUrl: QNET_JM('1730') },
+  ],
+  '소방안전관리자 1급': [
+    { type:'필기', tag:'고득점', tip:'강습교육 이수 후 CBT 시험으로 치러지며 그 자리에서 합격 여부가 확인됩니다. 소방관계법령·소방계획서 작성 파트의 출제 비중이 높습니다.', source:'Q-Net 출제기준', sourceUrl: QNET_JM('2224') },
+    { type:'필기', tag:'주의',   tip:'접수는 매월 말일 10시 공고 후 선착순 마감됩니다. 원하는 지부·일정으로 접수하려면 공고 시각에 맞춰 신청하세요.', source:'한국소방안전원', sourceUrl: 'https://www.kfsi.or.kr/' },
   ],
 };
 
@@ -4129,11 +4156,13 @@ function renderTipsSection(cert) {
       <div class="tip-card-header">
         <span class="tip-type-badge" style="background:${typeColor[t.type]}20;color:${typeColor[t.type]}">${t.type}</span>
         <span class="tip-tag-badge" style="background:${tagBg[t.tag]||'#f3f4f6'};color:${tagColor[t.tag]||'#374151'}">${t.tag}</span>
-        ${t.source ? `<span class="tip-source"><i class="fa-solid fa-file-lines"></i> ${t.source}</span>` : ''}
+        ${t.sourceUrl
+          ? `<a class="tip-source tip-source-link" href="${t.sourceUrl}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> ${t.source}</a>`
+          : (t.source ? `<span class="tip-source"><i class="fa-solid fa-file-lines"></i> ${t.source}</span>` : '')}
       </div>
       <p class="tip-card-text">${t.tip}</p>
     </div>`).join('') +
-    `<p class="tips-disclaimer"><i class="fa-solid fa-circle-info"></i> 본 팁은 기출문제·출제기준·채점기준 분석을 바탕으로 작성된 참고 자료이며, 공식 수험 정보와 다를 수 있습니다.</p>`;
+    `<p class="tips-disclaimer"><i class="fa-solid fa-circle-info"></i> 본 팁은 아래 표기된 공식 출처(Q-Net 출제기준, 소관기관 자료 등)를 참고해 작성되었습니다. 자세한 내용은 출처 링크에서 직접 확인하세요.</p>`;
 }
 
 // ============================================================
