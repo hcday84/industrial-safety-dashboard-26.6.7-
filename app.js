@@ -1926,7 +1926,7 @@ window.showLocationCenters = function(code) {
             <i class="fa-regular fa-building"></i>
             <span>${c}</span>
             <span class="loc-center-maps">
-              <a href="${naverUrl}" target="_blank" rel="noopener noreferrer" class="loc-map-btn loc-map-naver" title="네이버지도로 보기">네이버</a>
+              <a href="${naverUrl}" target="_blank" rel="noopener noreferrer" class="loc-map-btn loc-map-naver" title="네이버지도로 보기">네이버지도</a>
               <a href="${googleUrl}" target="_blank" rel="noopener noreferrer" class="loc-map-btn loc-map-google" title="구글맵으로 보기">구글맵</a>
             </span>
           </div>
