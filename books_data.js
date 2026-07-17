@@ -360,21 +360,6 @@ const REAL_BOOKS = {
     { title: '2025 에듀윌 산업안전기사 실기 한권끝장 세트', author: '최창률', publisher: '에듀윌', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.3, reviews: 134, tags: ['추천'], imageUrl: KB('S000214965114'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214965114' },
   ],
 
-  '산업안전기술사': [
-    // 베스트셀러 5
-    { title: '산업안전기술사 핵심이론 총정리', author: '이상도', publisher: '성안당', price: 49500, originalPrice: 55000, discount: '10%', rating: 4.6, reviews: 187, tags: ['베스트'], isbn: '9791137234208', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=산업안전기술사+핵심이론' },
-    { title: '산업안전기술사 기출문제 완전분석', author: '김재원', publisher: '예문사', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.5, reviews: 143, tags: ['베스트'], isbn: '9791137234208', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=산업안전기술사+기출문제' },
-    { title: '산업안전기술사 서술형 답안 작성법', author: '박성현', publisher: '세화', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.5, reviews: 112, tags: ['베스트'], isbn: '9788927458678', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=산업안전기술사+답안작성' },
-    { title: '산업안전기술사 면접 완전정복', author: '최용국', publisher: '일진사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.4, reviews: 98, tags: ['베스트'], isbn: '9788927458678', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=산업안전기술사+면접' },
-    { title: '산업안전기술사 최신 기출 해설집', author: '이경민', publisher: '구민사', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.4, reviews: 76, tags: ['베스트'], isbn: '9788927458678', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=산업안전기술사+최신기출' },
-    // 추천수험서 5
-    { title: '산업안전기술사 위험성평가 심화', author: '강동호', publisher: '성안당', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.5, reviews: 89, tags: ['추천'], isbn: '9788927458678', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=산업안전기술사+위험성평가' },
-    { title: '산업안전기술사 법규 핵심정리', author: '정재수', publisher: '예문사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.4, reviews: 72, tags: ['추천'], isbn: '9788927458678', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=산업안전기술사+법규' },
-    { title: '산업안전기술사 FTA FMEA 완전정복', author: '박용기', publisher: '세화', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.4, reviews: 65, tags: ['추천'], isbn: '9788927458678', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=산업안전기술사+FTA' },
-    { title: '산업안전기술사 실전 모의고사', author: '허원회', publisher: '일진사', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.3, reviews: 58, tags: ['추천'], isbn: '9788927458678', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=산업안전기술사+모의고사' },
-    { title: '산업안전기술사 단기완성', author: '이재원', publisher: '구민사', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.3, reviews: 51, tags: ['추천'], isbn: '9791137234208', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=산업안전기술사+단기완성' },
-  ],
-
   '건설안전기술사': [
     // 베스트셀러 5
     { title: '건설안전기술사 핵심이론 총정리', author: '강동호', publisher: '성안당', price: 49500, originalPrice: 55000, discount: '10%', rating: 4.6, reviews: 172, tags: ['베스트'], isbn: '9788927462002', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건설안전기술사+핵심이론' },
@@ -495,21 +480,6 @@ const REAL_BOOKS = {
     { title: '정보관리기술사 단기완성', author: '이재원', publisher: '구민사', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.3, reviews: 57, tags: ['추천'], isbn: '9788931589955', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=정보관리기술사+단기완성' },
   ],
 
-  '정보보안기술사': [
-    // 베스트셀러 5
-    { title: '정보보안기술사 핵심이론 총정리', author: '이상도', publisher: '성안당', price: 49500, originalPrice: 55000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], isbn: '9788966113217', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=정보보안기술사+핵심이론' },
-    { title: '정보보안기술사 기출문제 완전분석', author: '박성현', publisher: '예문사', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.5, reviews: 162, tags: ['베스트'], isbn: '9788966113217', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=정보보안기술사+기출문제' },
-    { title: '정보보안기술사 서술형 답안 작성법', author: '정재수', publisher: '세화', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.5, reviews: 131, tags: ['베스트'], isbn: '9788931481303', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=정보보안기술사+답안작성' },
-    { title: '정보보안기술사 면접 완전정복', author: '강동호', publisher: '일진사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.4, reviews: 109, tags: ['베스트'], isbn: '9788931481303', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=정보보안기술사+면접' },
-    { title: '정보보안기술사 최신 기출 해설집', author: '이경민', publisher: '구민사', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.4, reviews: 87, tags: ['베스트'], isbn: '9791198881007', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=정보보안기술사+최신기출' },
-    // 추천수험서 5
-    { title: '정보보안기술사 ISMS-P 심화', author: '김재원', publisher: '성안당', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.5, reviews: 98, tags: ['추천'], isbn: '9788931481303', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=정보보안기술사+ISMS' },
-    { title: '정보보안기술사 암호학 완전정복', author: '최용국', publisher: '예문사', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.4, reviews: 81, tags: ['추천'], isbn: '9788931481303', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=정보보안기술사+암호학' },
-    { title: '정보보안기술사 침해사고대응 심화', author: '박용기', publisher: '세화', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.4, reviews: 69, tags: ['추천'], isbn: '9788931481303', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=정보보안기술사+침해사고' },
-    { title: '정보보안기술사 실전 모의고사', author: '허원회', publisher: '일진사', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.3, reviews: 60, tags: ['추천'], isbn: '9788962695915', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=정보보안기술사+모의고사' },
-    { title: '정보보안기술사 단기완성', author: '이재원', publisher: '구민사', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.3, reviews: 53, tags: ['추천'], isbn: '9788966113217', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=정보보안기술사+단기완성' },
-  ],
-
   '컴퓨터시스템응용기술사': [
     // 베스트셀러 5
     { title: '컴퓨터시스템응용기술사 핵심이론 총정리', author: '박재현', publisher: '성안당', price: 49500, originalPrice: 55000, discount: '10%', rating: 4.6, reviews: 167, tags: ['베스트'], isbn: '9788931589955', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=컴퓨터시스템응용기술사+핵심이론' },
@@ -538,21 +508,6 @@ const REAL_BOOKS = {
     { title: '토목기술사 도로·교량 심화', author: '박용기', publisher: '세화', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.4, reviews: 79, tags: ['추천'], isbn: '9791194599241', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=토목기술사+도로교량' },
     { title: '토목기술사 실전 모의고사', author: '허원회', publisher: '일진사', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.3, reviews: 68, tags: ['추천'], isbn: '9791194599241', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=토목기술사+모의고사' },
     { title: '토목기술사 단기완성', author: '이재원', publisher: '구민사', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.3, reviews: 59, tags: ['추천'], isbn: '9788931512441', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=토목기술사+단기완성' },
-  ],
-
-  '건축기술사': [
-    // 베스트셀러 5
-    { title: '건축기술사 핵심이론 총정리', author: '박용기', publisher: '성안당', price: 49500, originalPrice: 55000, discount: '10%', rating: 4.6, reviews: 208, tags: ['베스트'], isbn: '9788927462477', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건축기술사+핵심이론' },
-    { title: '건축기술사 기출문제 완전분석', author: '이순규', publisher: '예문사', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.5, reviews: 169, tags: ['베스트'], isbn: '9788927462477', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건축기술사+기출문제' },
-    { title: '건축기술사 서술형 답안 작성법', author: '강동호', publisher: '세화', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.5, reviews: 136, tags: ['베스트'], isbn: '9788927462569', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건축기술사+답안작성' },
-    { title: '건축기술사 면접 완전정복', author: '박재현', publisher: '구민사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.4, reviews: 114, tags: ['베스트'], isbn: '9788927462330', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건축기술사+면접' },
-    { title: '건축기술사 최신 기출 해설집', author: '이경민', publisher: '일진사', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.4, reviews: 92, tags: ['베스트'], isbn: '9788992657716', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건축기술사+최신기출' },
-    // 추천수험서 5
-    { title: '건축기술사 구조·내진 심화', author: '김재원', publisher: '성안당', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.5, reviews: 105, tags: ['추천'], isbn: '9788927462569', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건축기술사+구조내진' },
-    { title: '건축기술사 시공·재료 완전정복', author: '최용국', publisher: '예문사', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.4, reviews: 87, tags: ['추천'], isbn: '9788927462569', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건축기술사+시공재료' },
-    { title: '건축기술사 환경·설비 심화', author: '정재수', publisher: '세화', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.4, reviews: 74, tags: ['추천'], isbn: '9788927462569', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건축기술사+환경설비' },
-    { title: '건축기술사 실전 모의고사', author: '허원회', publisher: '일진사', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.3, reviews: 63, tags: ['추천'], isbn: '9788927462569', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건축기술사+모의고사' },
-    { title: '건축기술사 단기완성', author: '이재원', publisher: '구민사', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.3, reviews: 55, tags: ['추천'], isbn: '9788927462477', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건축기술사+단기완성' },
   ],
 
   // ────────────────────────────────────────
@@ -964,19 +919,6 @@ const REAL_BOOKS = {
     { title: '2026 위험물산업기사 실기 단기완성', author: '모아합격전략연구소', publisher: '모아교육그룹', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 89, tags: ['추천'], isbn: '9788931529364', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=위험물산업기사+실기+단기완성+2026' },
   ],
 
-  '기계설계기사': [
-    { title: '2026 시대에듀 Win-Q 기계설계산업기사 필기 단기합격', author: '정의', publisher: '시대에듀', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.7, reviews: 345, tags: ['베스트'], isbn: '9791143401878', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=Win-Q+기계설계산업기사+필기+단기합격+2026' },
-    { title: '2023 기계설계기사 필기', author: '김영기', publisher: '구민사', price: 37800, originalPrice: 42000, discount: '10%', rating: 4.6, reviews: 289, tags: ['베스트'], isbn: '9791168751590', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=기계설계기사+필기+구민사+2023' },
-    { title: '기계설계기사 필기 - 최신 개정판', author: '정연택 외', publisher: '건기원', price: 32400, originalPrice: 36000, discount: '10%', rating: 4.6, reviews: 234, tags: ['베스트'], isbn: '9791194997931', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=기계설계기사+필기+최신+개정판+건기원' },
-    { title: '2026 나합격 기계설계산업기사 필기+무료특강', author: '나합격콘텐츠연구소', publisher: '삼원북스', price: 32400, originalPrice: 36000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], isbn: '9791194997085', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=나합격+기계설계산업기사+필기+무료특강+2026' },
-    { title: '일반기계기사·기계설계산업기사·건설기계설비기사 작업형 실기', author: '메카피아', publisher: '메카피아', price: 30600, originalPrice: 34000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], isbn: '9791194997931', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=일반기계기사+기계설계산업기사+작업형+실기' },
-    { title: '생산자동화 기능사·산업기사 기계요소설계·기계설계 작업', author: '김진원', publisher: '공학기술', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], isbn: '9791162481790', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=생산자동화+기능사+기계요소설계+기계설계+작업' },
-    { title: '2026 기계설계기사 필기 기출문제 풀이', author: '김영기', publisher: '구민사', price: 37800, originalPrice: 42000, discount: '10%', rating: 4.5, reviews: 123, tags: ['추천'], isbn: '9791194997931', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=기계설계기사+필기+기출문제+풀이+구민사' },
-    { title: '2026 기계설계산업기사 실기', author: '정의', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], isbn: '9791193858981', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=기계설계산업기사+실기+시대에듀+2026' },
-    { title: '나합격 전산응용기계제도기능사 실기 유형별 빈출 도면집', author: '최현석', publisher: '삼원북스', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.4, reviews: 76, tags: ['추천'], isbn: '9791194997931', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=전산응용기계제도기능사+실기+유형별+빈출+도면집' },
-    { title: '2026 기계설계기사 핵심이론+기출문제', author: '정연택', publisher: '건기원', price: 32400, originalPrice: 36000, discount: '10%', rating: 4.3, reviews: 54, tags: ['추천'], isbn: '9791194997931', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=기계설계기사+핵심이론+기출문제+건기원+2026' },
-  ],
-
   '공조냉동기계기사': [
     { title: '2026 공조냉동기계기사 필기 5주완성', author: '조성안, 이승원, 강희중', publisher: '한솔아카데미', price: 36900, originalPrice: 41000, discount: '10%', rating: 4.8, reviews: 445, tags: ['베스트'], isbn: '9791166547638', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공조냉동기계기사+필기+5주완성+한솔아카데미+2026' },
     { title: '2026 이패스 임재기의 공조냉동기계기사 필기 - 이론편+기출문제편', author: '임재기', publisher: '이패스코리아', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.8, reviews: 389, tags: ['베스트'], isbn: '9791172092948', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이패스+임재기+공조냉동기계기사+필기+2026' },
@@ -1027,19 +969,6 @@ const REAL_BOOKS = {
     { title: '이산화탄소가스아크 용접기능사 실기', author: '김명선', publisher: '크라운출판사', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.4, reviews: 123, tags: ['추천'], isbn: '9788940649107', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이산화탄소가스아크+용접기능사+실기+크라운출판사' },
     { title: '2026 용접기능사 필기 기출문제 풀이', author: '이동명', publisher: '크라운출판사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.3, reviews: 89, tags: ['추천'], isbn: '9788940649749', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=용접기능사+필기+기출문제+풀이+2026' },
     { title: '2026 용접기능사 단기합격', author: '정명호', publisher: '메카피아', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.3, reviews: 67, tags: ['추천'], isbn: '9791143404268', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=용접기능사+단기합격+메카피아+2026' },
-  ],
-
-  '생산자동화기능사': [
-    { title: '생산자동화 기능사 생산자동화 산업기사 기계요소설계·기계설계 작업 - 인벤터를 활용한 공개문제 풀이', author: '김진원', publisher: '공학기술', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], isbn: '9791194997269', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=생산자동화+기능사+인벤터+공개문제+풀이' },
-    { title: '생산자동화 기능사 생산자동화 산업기사 기계요소설계·기계설계 작업 - 솔리드웍스를 활용한 공개문제 풀이', author: '김진원', publisher: '공학기술', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 267, tags: ['베스트'], isbn: '9791194997269', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=생산자동화+기능사+솔리드웍스+공개문제+풀이' },
-    { title: '2026 나합격 자동화설비기능사 필기+무료특강', author: '나합격콘텐츠연구소', publisher: '삼원북스', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.6, reviews: 223, tags: ['베스트'], isbn: '9791194997269', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=나합격+자동화설비기능사+필기+무료특강+2026' },
-    { title: '실무를 위한 SolidWorks - 생산자동화기능사 / 산업기사', author: '고성우, 성재경', publisher: '예문사', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.6, reviews: 189, tags: ['베스트'], isbn: '9791194997269', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=SolidWorks+생산자동화기능사+산업기사+예문사' },
-    { title: '생산자동화기능사 필기', author: '한홍걸', publisher: '예문사', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.5, reviews: 156, tags: ['베스트'], isbn: '9791194997269', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=생산자동화기능사+필기+예문사' },
-    { title: '생산자동화기능사 - 문제.해설', author: '생산자동화연구회', publisher: '일진사', price: 17100, originalPrice: 19000, discount: '10%', rating: 4.5, reviews: 134, tags: ['추천'], isbn: '9791162481790', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=생산자동화기능사+문제+해설+일진사' },
-    { title: '2020 생산자동화기능사 필기 - 개정 5판', author: '정연택 외', publisher: '건기원', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], isbn: '9791162481790', imageUrl: null, pageUrl: 'https://search.kyободook.co.kr/search?keyword=생산자동화기능사+필기+건기원' },
-    { title: 'Melsec-Q PLC를 활용한 생산자동화(MPS) 제어실습', author: '오선일', publisher: '복두출판사', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.4, reviews: 89, tags: ['추천'], isbn: '9791166754517', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=PLC+생산자동화+제어실습+복두출판사' },
-    { title: '2026 생산자동화기능사 필기 기출문제 풀이', author: '한홍걸', publisher: '예문사', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.3, reviews: 67, tags: ['추천'], isbn: '9791162481790', imageUrl: null, pageUrl: 'https://search.kyободook.co.kr/search?keyword=생산자동화기능사+필기+기출문제+예문사+2026' },
-    { title: '2026 생산자동화기능사 단기완성', author: '나합격콘텐츠연구소', publisher: '삼원북스', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.3, reviews: 54, tags: ['추천'], isbn: '9791162481790', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=생산자동화기능사+단기완성+2026' },
   ],
 
   '전산응용기계제도기능사': [
@@ -1254,33 +1183,7 @@ const REAL_BOOKS = {
   ],
 
   // ────────────────────────────────────────
-  '소방설비기능사(전기)': [
-    { title: '2026 대해부 7개년 기출문제 소방설비기사 전기 필기', author: '공하성', publisher: '성안당', price: 32400, originalPrice: 36000, discount: '10%', rating: 4.7, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218839670'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218839670' },
-    { title: '2026 에듀윌 소방설비기사 전기 기출문제집 필기', author: '손익희', publisher: '에듀윌', price: 27900, originalPrice: 31000, discount: '10%', rating: 4.6, reviews: 156, tags: ['베스트'], imageUrl: KB('S000219195829'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219195829' },
-    { title: '2026 소방설비기사 필기(전기분야)', author: '표정은', publisher: '동화기술', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.5, reviews: 134, tags: ['베스트'], imageUrl: KB('S000217529077'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217529077' },
-    { title: '2026 찐합격 7개년 과년도 소방설비기사 전기 필기', author: '공하성', publisher: '성안당', price: 26550, originalPrice: 29500, discount: '10%', rating: 4.5, reviews: 112, tags: ['베스트'], imageUrl: KB('S000218276598'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218276598' },
-    { title: '2026 체크업 소방설비기사·산업기사 기계 필기', author: '김종상', publisher: '일진사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 98, tags: ['베스트'], imageUrl: KB('S000218934350'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218934350' },
-    { title: '2026 소방설비기사 실기 전기 완전정복', author: '공하성', publisher: '성안당', price: 39600, originalPrice: 44000, discount: '10%', rating: 4.6, reviews: 145, tags: ['추천'], isbn: '9788927439103', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+소방설비기사+실기+전기' },
-    { title: '2026 소방설비기사 핵심요약 소방전기시설론', author: '공하성', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 123, tags: ['추천'], isbn: '9791186028582', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+소방설비기사+소방전기시설론' },
-    { title: '2026 벼락치기 소방설비기사 전기 요점+기출', author: '정재수', publisher: '세화', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], isbn: '9788931513844', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+소방설비기사+벼락치기+전기' },
-    { title: '2026 소방설비기사 전기 CBT 최신기출', author: '이현철', publisher: '일진사', price: 26100, originalPrice: 29000, discount: '10%', rating: 4.3, reviews: 87, tags: ['추천'], isbn: '9788969656841', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+소방설비기사+전기+CBT' },
-    { title: '소방관계법규 핵심정리', author: '공하성', publisher: '성안당', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 76, tags: ['추천'], isbn: '9791167043597', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=소방관계법규+핵심정리' },
-  ],
-
   // ────────────────────────────────────────
-  '소방설비기능사(기계)': [
-    { title: '2026 에듀윌 소방설비기사 기계 기출문제집 필기', author: '김윤수', publisher: '에듀윌', price: 27900, originalPrice: 31000, discount: '10%', rating: 4.6, reviews: 178, tags: ['베스트'], imageUrl: KB('S000216719513'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216719513' },
-    { title: '2026 소방설비기사 필기 최근 기출문제: 기계편', author: '강석민', publisher: '동화기술', price: 32400, originalPrice: 36000, discount: '10%', rating: 4.5, reviews: 143, tags: ['베스트'], imageUrl: KB('S000217127579'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217127579' },
-    { title: '2026 체크업 소방설비기사·산업기사 기계 1차 필기', author: '김종상', publisher: '일진사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.5, reviews: 134, tags: ['베스트'], imageUrl: KB('S000218934350'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218934350' },
-    { title: '2026 찐합격 7개년 과년도 소방설비기사 기계 필기', author: '공하성', publisher: '성안당', price: 26550, originalPrice: 29500, discount: '10%', rating: 4.4, reviews: 112, tags: ['베스트'], imageUrl: KB('S000218276598'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218276598' },
-    { title: '2026 소방설비기사 필기 기계분야', author: '표정은', publisher: '동화기술', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.4, reviews: 98, tags: ['베스트'], isbn: '9788931514179', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+소방설비기사+필기+기계분야' },
-    { title: '2026 소방설비기사 실기 기계 완전정복', author: '공하성', publisher: '성안당', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 132, tags: ['추천'], isbn: '9788927439295', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+소방설비기사+실기+기계' },
-    { title: '2026 소방설비기사 소방기계시설론 핵심이론', author: '공하성', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 112, tags: ['추천'], isbn: '9791136017611', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+소방설비기사+소방기계시설론' },
-    { title: '2026 벼락치기 소방설비기사 기계 요점+기출', author: '정재수', publisher: '세화', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], isbn: '9791186028582', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+소방설비기사+벼락치기+기계' },
-    { title: '2026 소방설비기사 기계 CBT 최신기출', author: '이현철', publisher: '일진사', price: 26100, originalPrice: 29000, discount: '10%', rating: 4.3, reviews: 87, tags: ['추천'], isbn: '9788969656254', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+소방설비기사+기계+CBT' },
-    { title: '2026 소방설비기사 수계 및 화재진압시스템', author: '손석규', publisher: '예문사', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], isbn: '9791136017611', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+소방설비기사+수계+화재진압' },
-  ],
-
   // ────────────────────────────────────────
   'SQLP': [
     { title: '2024 국가공인 SQLP 자격검정 핵심노트 1', author: '조시형', publisher: '디비안(DBian)', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 312, tags: ['베스트'], imageUrl: KB('S000213913597'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213913597' },
@@ -1296,19 +1199,6 @@ const REAL_BOOKS = {
   ],
 
   // ────────────────────────────────────────
-  '정보처리기능사': [
-    { title: '2025 이기적 정보처리기능사 실기 기본서', author: '임승현', publisher: '영진닷컴', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.6, reviews: 312, tags: ['베스트'], imageUrl: KB('S000214936721'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214936721' },
-    { title: '2025 시나공 정보처리기능사 실기 기본서', author: '길벗알앤디', publisher: '길벗', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 256, tags: ['베스트'], imageUrl: KB('S000214490446'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214490446' },
-    { title: '2026 이기적 정보처리기능사 필기 기본서', author: '영진정보연구소', publisher: '영진닷컴', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], isbn: '9788931479737', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+이기적+정보처리기능사+필기' },
-    { title: '2026 정보처리기능사 필기 한권으로 합격', author: '신용권', publisher: '성안당', price: 18900, originalPrice: 21000, discount: '10%', rating: 4.4, reviews: 167, tags: ['베스트'], isbn: '9788940636183', imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+정보처리기능사+성안당' },
-    { title: '2026 정보처리기능사 기출문제 완전분석', author: '이미영', publisher: '크라운출판사', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.4, reviews: 143, tags: ['베스트'], isbn: '9791136030269', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+정보처리기능사+기출문제' },
-    { title: '2026 정보처리기능사 CBT 실전 모의고사', author: '서경선', publisher: '엠페이퍼', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.3, reviews: 112, tags: ['추천'], isbn: '9791136030269', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+정보처리기능사+CBT' },
-    { title: '2026 정보처리기능사 필기 단기완성', author: '홍길동', publisher: '동일출판사', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], isbn: '9788940690697', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+정보처리기능사+단기완성' },
-    { title: '2026 정보처리기능사 실기 파이썬+SQL', author: '이지현', publisher: '에듀윌', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.3, reviews: 87, tags: ['추천'], isbn: '9791136030269', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+정보처리기능사+실기+파이썬' },
-    { title: '2026 정보처리기능사 핵심이론+기출문제', author: '정보처리연구회', publisher: '예문사', price: 17100, originalPrice: 19000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], isbn: '9788931468595', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+정보처리기능사+핵심이론' },
-    { title: '2026 Win-Q 정보처리기능사 필기 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.2, reviews: 65, tags: ['추천'], isbn: '9788931479744', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+Win-Q+정보처리기능사' },
-  ],
-
   // ────────────────────────────────────────
   '정보보안산업기사': [
     { title: '2026 알기사 정보보안기사(산업기사) 필기+핵심기출 1200제 세트', author: '조현준', publisher: '지안에듀', price: 54000, originalPrice: 60000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000218322836'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218322836' },
@@ -1466,19 +1356,6 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
 
   // ────────────────────────────────────────
-  '특수용접기능사': [
-    { title: '2023 특수용접기능사 필기', author: '정균호', publisher: '구민사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 245, tags: ['베스트'], imageUrl: KB('S000200014069'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200014069' },
-    { title: '2022 고수열강 용접·특수용접기능사 필기실기', author: '정균호', publisher: '구민사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: KB('S000001763692'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001763692' },
-    { title: '용접기능사 필기시험문제 (특수용접 포함)', author: '국가기술자격시험연구회', publisher: '예문사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 167, tags: ['베스트'], imageUrl: KB('S000000642260'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000642260' },
-    { title: '2026 특수용접기능사 핵심이론+기출문제', author: '이광호', publisher: '성안당', price: 18900, originalPrice: 21000, discount: '10%', rating: 4.3, reviews: 134, tags: ['베스트'], isbn: '9791158137199', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+특수용접기능사+필기' },
-    { title: '2026 Win-Q 특수용접기능사 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.3, reviews: 112, tags: ['베스트'], isbn: '9791157455393', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=Win-Q+특수용접기능사' },
-    { title: '특수용접기능사 실기 핵심기술 TIG·MIG', author: '김철수', publisher: '일진사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 145, tags: ['추천'], isbn: '9791162481141', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=특수용접기능사+실기+TIG+MIG' },
-    { title: '2026 특수용접기능사 과년도 기출해설', author: '최동훈', publisher: '에듀윌', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.2, reviews: 98, tags: ['추천'], isbn: '9791162481141', imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+특수용접기능사+과년도' },
-    { title: '용접공학 기초', author: '박재원', publisher: '크라운출판사', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.2, reviews: 87, tags: ['추천'], isbn: '9791157455393', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=용접공학+기초' },
-    { title: '특수용접 실무 기술서', author: '한국용접협회', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.1, reviews: 76, tags: ['추천'], isbn: '9791157455393', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=특수용접+실무+기술서' },
-    { title: '2026 특수용접기능사 CBT 모의고사', author: '용접기술연구회', publisher: '일진사', price: 14400, originalPrice: 16000, discount: '10%', rating: 4.1, reviews: 65, tags: ['추천'], isbn: '9791156463429', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+특수용접기능사+CBT' },
-  ],
-
   // ────────────────────────────────────────
   '미용사(일반)': [
     { title: '2026 미용사 일반 필기', author: '김지연', publisher: '책과상상', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000218629883'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218629883' },
@@ -1552,19 +1429,6 @@ const REAL_BOOKS = {
   ],
 
   // ────────────────────────────────────────
-  '항공기체기능사': [
-    { title: '2026 항공기정비기능사 필기', author: '항공기술교육아카데미', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: KB('S000217577886'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217577886' },
-    { title: '2026 항공기체기능사 필기 핵심이론+기출', author: '국가기술자격시험연구회', publisher: '예문사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 156, tags: ['베스트'], isbn: '9788940629741', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+항공기체기능사+필기' },
-    { title: '2026 항공기체기능사 과년도 기출문제집', author: '이상도', publisher: '세화', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], isbn: '9788940629741', imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+항공기체기능사+과년도' },
-    { title: '2026 항공기체기능사 실기 완전정복', author: '항공기술교육아카데미', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 112, tags: ['베스트'], isbn: '9788940629741', imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=2026+항공기체기능사+실기' },
-    { title: '2026 Win-Q 항공기체기능사 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.2, reviews: 87, tags: ['베스트'], isbn: '9791138337601', imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=Win-Q+항공기체기능사' },
-    { title: '항공기구조 이론과 실제', author: '김태환', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.4, reviews: 145, tags: ['추천'], isbn: '9788966769797', imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=항공기구조+이론과+실제' },
-    { title: '항공법규 핵심정리', author: '항공기술연구회', publisher: '구민사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], isbn: '9791197947506', imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=항공법규+핵심정리' },
-    { title: '2026 항공기체기능사 CBT 모의고사', author: '항공교육연구회', publisher: '일진사', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], isbn: '9788940629741', imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=2026+항공기체기능사+CBT' },
-    { title: '항공기 기체 정비 실무', author: '신완섭', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.2, reviews: 65, tags: ['추천'], isbn: '9788966769797', imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=항공기+기체+정비+실무' },
-    { title: '항공역학 개론', author: '박인규', publisher: '경문사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.1, reviews: 54, tags: ['추천'], isbn: '9788966769797', imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=항공역학+개론' },
-  ],
-
   // ────────────────────────────────────────
   '항공산업기사': [
     { title: '2026 항공산업기사 필기', author: '장성희', publisher: '성안당', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000218227489'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218227489' },
