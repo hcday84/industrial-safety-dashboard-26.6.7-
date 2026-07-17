@@ -694,12 +694,12 @@ const CERTIFICATIONS = {
       '최근 5개년 기출문제 1회분 실전 조건으로 풀고 오답 분석',
     ],
   },
-  '건설기계기사': {
-    name: '건설기계기사',
+  '건설기계설비기사': {
+    name: '건설기계설비기사',
     icon: 'fa-truck-pickup',
     category: '기계',
-    heroTitle: '2026년도 건설기계기사 합격 가이드',
-    heroDesc: '건설기계기사는 굴착기, 지게차, 크레인 등 건설기계의 점검·정비 및 안전 운용에 관한 전문 기술을 인증하는 국가자격증입니다. 건설·토목 현장의 기계 관리 전문가로 취업에 유리합니다. 건설 경기 회복과 인프라 투자 확대로 꾸준한 수요가 예상됩니다.',
+    heroTitle: '2026년도 건설기계설비기사 합격 가이드',
+    heroDesc: '건설기계설비기사는 굴착기, 지게차, 크레인 등 건설기계의 설계·정비 및 안전 운용에 관한 전문 기술을 인증하는 국가자격증입니다. 건설·토목 현장의 기계 관리 전문가로 취업에 유리합니다. 건설 경기 회복과 인프라 투자 확대로 꾸준한 수요가 예상됩니다.',
     passRateSummary: '필기 33% | 실기 47%',
     avgPassRate: '40%',
     avgExamRate: '73%',
@@ -728,12 +728,6 @@ const CERTIFICATIONS = {
       { name: '건설기계 전기·전자', desc: '전기 회로 및 전자 제어 장치 원리' },
       { name: '건설기계 유압', desc: '유압 시스템 원리, 부품 기능 및 정비' },
       { name: '건설기계 관련 법규', desc: '건설기계관리법 및 안전 관련 기준' },
-    ],
-    books: [
-      { title: '건설기계기사 필기 이론+기출', author: '강현준', publisher: '성안당', year: 2024, rating: 4.4 },
-      { title: '건설기계기사 실기 집중완성', author: '송민석', publisher: '예문사', year: 2024, rating: 4.2 },
-      { title: '건설기계기사 과년도 기출해설', author: '윤태성', publisher: '일진사', year: 2023, rating: 4.3 },
-      { title: '건설기계 유압·전기 완전정복', author: '홍성진', publisher: '동일출판사', year: 2024, rating: 4.1 },
     ],
     defaultTodos: [
       '필기 시험 범위 파악 및 출제 경향 분석',
@@ -790,52 +784,6 @@ const CERTIFICATIONS = {
       '기출문제 풀이 (최근 3개년)',
       '실기 대비 실습 또는 계산 문제 반복',
       '최근 5개년 기출문제 1회분 실전 조건으로 풀고 오답 분석',
-    ],
-  },
-
-  '화공산업기사': {
-    name: '화공산업기사',
-    icon: 'fa-flask',
-    category: '화학·환경',
-    heroTitle: '2026년도 화공산업기사 합격 가이드',
-    heroDesc: '화공산업기사는 화학 공정의 설계·운영·관리 능력을 검증하는 국가기술자격증입니다. 석유화학, 제약, 고분자 소재 등 화학 관련 산업체에서 공정 운전과 품질 관리를 담당하는 실무 자격으로 활용됩니다. 화공기사 취득 전 단계로 관련 학과 재학생이 많이 취득합니다.',
-    passRateSummary: '필기 35% | 실기 42%',
-    avgPassRate: '38%',
-    passRates: [
-      { year: 2020, written: 32, practical: 38 },
-      { year: 2021, written: 34, practical: 40 },
-      { year: 2022, written: 36, practical: 42 },
-      { year: 2023, written: 37, practical: 44 },
-      { year: 2024, written: 35, practical: 42 },
-    ],
-    schedules: [
-      { round: '1회', writtenExam: '2026-01-30 ~ 2026-03-03', writtenResult: '2026-03-11', practicalExam: '2026-04-18 ~ 2026-05-06', practicalResult: '2026-06-05' },
-      { round: '2회', writtenExam: '2026-05-09 ~ 2026-05-29', writtenResult: '2026-06-10', practicalExam: '2026-07-18 ~ 2026-08-05', practicalResult: '2026-09-04' },
-      { round: '3회', writtenExam: '2026-08-07 ~ 2026-09-01', writtenResult: '2026-09-09', practicalExam: '2026-10-24 ~ 2026-11-13', practicalResult: '2026-12-11' },
-    ],
-    milestones: [
-      { label: '1회 필기', date: '2026-01-30' },
-      { label: '1회 실기', date: '2026-04-18' },
-      { label: '2회 필기', date: '2026-05-09' },
-      { label: '2회 실기', date: '2026-07-18' },
-    ],
-    subjects: [
-      { name: '화공열역학', desc: '상평형, 반응열, 엔탈피·엔트로피 계산' },
-      { name: '단위조작', desc: '증류, 흡수, 추출, 여과, 건조 등 분리 공정' },
-      { name: '반응공학', desc: '반응속도론, 반응기 설계 및 전환율 계산' },
-      { name: '공정제어', desc: '제어계 구성, PID 제어, 공정 안전 개요' },
-    ],
-    books: [
-      { title: '화공산업기사 필기 핵심이론+기출', author: '화학기술연구회', publisher: '성안당', year: 2024, rating: 4.4 },
-      { title: '화공산업기사 과년도 기출문제 해설', author: '이재영', publisher: '일진사', year: 2024, rating: 4.3 },
-      { title: '화공산업기사 실기 완전정복', author: '박재웅', publisher: '동일출판사', year: 2023, rating: 4.2 },
-    ],
-    defaultTodos: [
-      '화공열역학 상평형·반응열 핵심 계산 문제 집중 풀기',
-      '단위조작 각 공정별 이론 정리 및 계산식 암기',
-      '반응공학 반응기 설계 유형별 문제 반복',
-      '기출문제 최근 3개년 풀고 오답 노트 작성',
-      '실기 필답형 핵심 계산 문제 시간 내 완성 훈련',
     ],
   },
 
@@ -1610,12 +1558,12 @@ const CERTIFICATIONS = {
     ],
   },
 
-  '배관기사': {
-    name: '배관기사',
+  '배관산업기사': {
+    name: '배관산업기사',
     icon: 'fa-wrench',
     category: '기계·설비',
-    heroTitle: '2026년도 배관기사 합격 가이드',
-    heroDesc: '배관기사는 산업용 배관, 플랜트 배관, 건설 배관 등의 설계·시공·검사 업무를 수행하는 자격증입니다. 석유화학, 가스, 발전, 조선 등 기간산업 전반에 걸쳐 전문 배관 기술 인력의 수요가 지속되고 있습니다.',
+    heroTitle: '2026년도 배관산업기사 합격 가이드',
+    heroDesc: '배관산업기사는 산업용 배관, 플랜트 배관, 건설 배관 등의 설계·시공·검사 업무를 수행하는 자격증입니다. 석유화학, 가스, 발전, 조선 등 기간산업 전반에 걸쳐 전문 배관 기술 인력의 수요가 지속되고 있습니다.',
     passRateSummary: '필기 33% | 실기 38%',
     avgPassRate: '35%',
     passRates: [
@@ -1642,12 +1590,6 @@ const CERTIFICATIONS = {
       { name: '배관 시공', desc: '배관 절단·접합·시험, 내압 시험 및 기밀 시험' },
       { name: '유체역학', desc: '관 내 유동, 압력 손실 계산, 펌프 및 압축기 특성' },
       { name: '배관 관계 법규', desc: '도시가스사업법, 고압가스 안전관리법, 산업배관 기준' },
-    ],
-    books: [
-      { title: '배관기사 필기 핵심이론+기출문제', author: '한상욱', publisher: '성안당', year: 2024, rating: 4.5 },
-      { title: '배관기사 과년도 문제 해설집', author: '배관기술연구회', publisher: '일진사', year: 2024, rating: 4.4 },
-      { title: '배관기사 실기 완전정복', author: '오진석', publisher: '동일출판사', year: 2023, rating: 4.3 },
-      { title: '플랜트 배관 설계 실무', author: '김동현', publisher: '기문당', year: 2024, rating: 4.2 },
     ],
     defaultTodos: [
       '필기 시험 범위 파악 및 출제 경향 분석',
@@ -3319,54 +3261,6 @@ const CERTIFICATIONS = {
       { title: '전기기능사 실기 완전정복', author: '김동현', publisher: '일진사', year: 2024, rating: 4.4 },
       { title: '전기기능사 기출문제해설집', author: '박진호', publisher: '크라운출판사', year: 2024, rating: 4.3 },
       { title: '전기기능사 7일완성', author: '유재성', publisher: '에듀윌', year: 2023, rating: 4.2 },
-    ],
-    defaultTodos: [
-      '필기 시험 범위 파악 및 출제 경향 분석',
-      '주요 과목 핵심 이론 정리',
-      '기출문제 풀이 (최근 3개년)',
-      '실기 대비 실습 또는 계산 문제 반복',
-      '최근 5개년 기출문제 1회분 실전 조건으로 풀고 오답 분석',
-    ],
-  },
-
-  '전기공사기능사': {
-    name: '전기공사기능사',
-    icon: 'fa-plug',
-    category: '전기·에너지',
-    heroTitle: '2026년도 전기공사기능사 합격 가이드',
-    heroDesc: '전기공사기능사는 전기공사 현장에서 배선공사·분전반 설치 등을 수행하는 자격입니다. 건축 및 인프라 확대로 현장 인력 수요가 꾸준하며, 전기공사산업기사로 이어지는 경력 경로로 인기가 높습니다.',
-    passRateSummary: '필기 48% | 실기 55%',
-    avgPassRate: '52%',
-    passRates: [
-      { year: 2020, written: 45, practical: 52 },
-      { year: 2021, written: 47, practical: 54 },
-      { year: 2022, written: 49, practical: 56 },
-      { year: 2023, written: 50, practical: 57 },
-      { year: 2024, written: 48, practical: 55 },
-    ],
-    schedules: [
-      { round: '1회', writtenExam: '2026-01-19 ~ 2026-01-22', writtenResult: '2026-02-12', practicalExam: '2026-03-23 ~ 2026-04-05', practicalResult: '2026-04-18' },
-      { round: '2회', writtenExam: '2026-04-13 ~ 2026-04-16', writtenResult: '2026-05-07', practicalExam: '2026-06-28 ~ 2026-07-12', practicalResult: '2026-07-24' },
-      { round: '3회', writtenExam: '2026-07-27 ~ 2026-07-30', writtenResult: '2026-08-20', practicalExam: '2026-10-04 ~ 2026-10-17', practicalResult: '2026-11-06' },
-    ],
-    milestones: [
-      { label: '1회 필기', date: '2026-01-19' },
-      { label: '1회 실기', date: '2026-03-23' },
-      { label: '2회 필기', date: '2026-04-13' },
-      { label: '2회 실기', date: '2026-06-28' },
-    ],
-    subjects: [
-      { name: '전기이론', desc: '기초 전기 회로 이론 및 전자기학 개요' },
-      { name: '전기기기', desc: '변압기·전동기 등 주요 전기기기 구조와 특성' },
-      { name: '전기공사 일반', desc: '옥내·옥외 전기공사 방법 및 시공 기준' },
-      { name: '전기설비기술기준', desc: '전기공사 관련 법규 및 안전기준' },
-      { name: '배선설계', desc: '분전반 설계·케이블 선정 및 접지공사 방법' },
-    ],
-    books: [
-      { title: '전기공사기능사 필기 완전정복', author: '이상호', publisher: '성안당', year: 2024, rating: 4.5 },
-      { title: '전기공사기능사 실기 합격노트', author: '최성진', publisher: '일진사', year: 2024, rating: 4.4 },
-      { title: '전기공사기능사 최신 기출문제집', author: '김우식', publisher: '크라운출판사', year: 2024, rating: 4.3 },
-      { title: '전기공사기능사 단기완성', author: '박준혁', publisher: '에듀윌', year: 2023, rating: 4.2 },
     ],
     defaultTodos: [
       '필기 시험 범위 파악 및 출제 경향 분석',
@@ -10601,54 +10495,6 @@ const CERTIFICATIONS = {
       { title: '철도차량산업기사 과년도 기출문제 해설', author: '이영호', publisher: '예문사', year: 2024, rating: 4.4 },
       { title: '차량공학·차량전기 핵심이론', author: '박재민', publisher: '크라운출판사', year: 2023, rating: 4.3 },
       { title: '철도차량산업기사 실기 작업형 가이드', author: '최준호', publisher: '성안당', year: 2024, rating: 4.2 },
-    ],
-    defaultTodos: [
-      '필기 시험 범위 파악 및 출제 경향 분석',
-      '주요 과목 핵심 이론 정리',
-      '기출문제 풀이 (최근 3개년)',
-      '실기 작업 반복 연습',
-      '최근 5개년 기출문제 1회분 실전 조건으로 풀고 오답 분석',
-    ],
-  },
-
-  '식품기사': {
-    name: '식품기사',
-    icon: 'fa-utensils',
-    category: '식품·위생',
-    heroTitle: '2026년도 식품기사 합격 가이드',
-    heroDesc: '식품기사는 식품의 제조, 가공, 품질 관리 및 위생 검사 업무를 전문으로 하는 국가기술자격증입니다. 식품 제조업, 식품 연구소, 식품의약품안전처 등 공공 및 민간 기관에서 광범위하게 활용되는 필수 자격입니다. 식품안전 의식 강화와 함께 수요가 꾸준히 증가하고 있습니다.',
-    passRateSummary: '필기 44% | 실기 50%',
-    avgPassRate: '47%',
-    passRates: [
-      { year: 2020, written: 42, practical: 48 },
-      { year: 2021, written: 43, practical: 49 },
-      { year: 2022, written: 45, practical: 51 },
-      { year: 2023, written: 44, practical: 50 },
-      { year: 2024, written: 46, practical: 52 },
-    ],
-    schedules: [
-      { round: '1회', writtenExam: '2026-01-19 ~ 2026-01-22', writtenResult: '2026-02-12', practicalExam: '2026-03-23 ~ 2026-04-05', practicalResult: '2026-04-18' },
-      { round: '2회', writtenExam: '2026-04-13 ~ 2026-04-16', writtenResult: '2026-05-07', practicalExam: '2026-06-28 ~ 2026-07-12', practicalResult: '2026-07-24' },
-      { round: '3회', writtenExam: '2026-07-27 ~ 2026-07-30', writtenResult: '2026-08-20', practicalExam: '2026-10-04 ~ 2026-10-17', practicalResult: '2026-11-06' },
-    ],
-    milestones: [
-      { label: '1회 필기', date: '2026-01-19' },
-      { label: '1회 실기', date: '2026-03-23' },
-      { label: '2회 필기', date: '2026-04-13' },
-      { label: '2회 실기', date: '2026-06-28' },
-    ],
-    subjects: [
-      { name: '식품위생학', desc: '식품 오염원, 식중독 원인균, 식품 보존 방법 및 위생 관리 기준' },
-      { name: '식품화학', desc: '식품 성분(수분·단백질·지방·탄수화물·비타민), 식품 첨가물 화학' },
-      { name: '식품가공학', desc: '식품 제조 공정, 가열·냉동·건조·발효 처리 기술 및 품질 관리' },
-      { name: '식품미생물학', desc: '유익균·유해균 특성, 발효 미생물, 식품 미생물 검사 방법' },
-      { name: '식품관계법규', desc: '식품위생법, 건강기능식품법, HACCP 기준 및 식품 표시 규정' },
-    ],
-    books: [
-      { title: '식품기사 필기 완전정복', author: '김미진', publisher: '성안당', year: 2024, rating: 4.5 },
-      { title: '식품기사 과년도 기출문제 해설', author: '이수연', publisher: '예문사', year: 2024, rating: 4.4 },
-      { title: '식품화학·식품미생물학 핵심이론', author: '박지영', publisher: '크라운출판사', year: 2023, rating: 4.3 },
-      { title: '식품기사 실기 필답형 대비서', author: '최현주', publisher: '성안당', year: 2024, rating: 4.2 },
     ],
     defaultTodos: [
       '필기 시험 범위 파악 및 출제 경향 분석',

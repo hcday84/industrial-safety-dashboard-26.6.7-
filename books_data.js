@@ -755,7 +755,7 @@ const REAL_BOOKS = {
     { title: '2026 위생사 소독학·구강보건 핵심이론', author: '한국위생사협회 편집부', publisher: '고려의학', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.3, reviews: 54, tags: ['추천'], isbn: '9791143415400', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=위생사+소독학+구강보건+2026' },
   ],
 
-  '건설기계기사': [
+  '건설기계설비기사': [
     { title: '2026 건설기계설비 기사 필기대비', author: '위을복', publisher: '학진북스', price: 50400, originalPrice: 56000, discount: '10%', rating: 4.8, reviews: 312, tags: ['베스트'], isbn: '9788968780547', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건설기계설비+기사+필기+2026' },
     { title: '2026 건설기계설비기사 필기', author: '김영기', publisher: '구민사', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.7, reviews: 256, tags: ['베스트'], isbn: '9791124051382', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건설기계설비기사+필기+구민사+2026' },
     { title: '2026 합격비법 건설기계설비기사 필기 핵심이론 및 예상문제', author: '이태랑', publisher: '오스틴북스', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], isbn: '9791124051375', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건설기계설비기사+필기+핵심이론+2026' },
@@ -1184,18 +1184,6 @@ const REAL_BOOKS = {
     { title: '2026 박문각 전기기능사 실기 + 무료특강', author: '정용걸', publisher: '박문각', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], isbn: '9791175193116', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=박문각+전기기능사+실기+2026' },
   ],
 
-  '전기공사기능사': [
-    { title: '전기공사기능사', author: '강홍석', publisher: '영원', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.5, reviews: 189, tags: ['베스트'], isbn: '9788909026772', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=전기공사기능사+필기' },
-    { title: '전기공사기능사', author: '전기공사검정시험연구회', publisher: '교학사', price: 10800, originalPrice: 12000, discount: '10%', rating: 4.4, reviews: 156, tags: ['베스트'], isbn: '9788909026772', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=전기공사기능사+교학사' },
-    { title: '전기공사기능사', author: '전기기능연구회', publisher: '기문사', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], isbn: '9788909026772', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=전기공사기능사+기문사' },
-    { title: '최신판 전기공사기능사 - 이론요약.문제해설', author: '장영태', publisher: '크라운출판사', price: 17100, originalPrice: 19000, discount: '10%', rating: 4.3, reviews: 112, tags: ['베스트'], isbn: '9788931522181', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=전기공사기능사+이론요약+문제해설' },
-    { title: '전기공사기능사 1.2급 - 손자병법 학과문제집', author: '강홍석', publisher: '영원', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.3, reviews: 98, tags: ['베스트'], isbn: '9788931522181', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=전기공사기능사+학과문제집' },
-    { title: '전기공사기능사 - 문제총정리', author: '국가기술자격검정시험연구회', publisher: '학문당', price: 8100, originalPrice: 9000, discount: '10%', rating: 4.2, reviews: 87, tags: ['추천'], isbn: '9788909026772', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=전기공사기능사+문제총정리' },
-    { title: '전기공사 기능사 - 이론요약 문제해설', author: '장영태', publisher: '크라운출판사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], isbn: '9788931522181', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=전기공사기능사+이론요약+문제해설+크라운' },
-    { title: '전기공사기능사 적중 예상문제집', author: '오철균', publisher: '한국전기학원', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.1, reviews: 65, tags: ['추천'], isbn: '9788987262192', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=전기공사기능사+적중+예상문제집' },
-    { title: '2026 이기적 전기기능사 필기 + 실기 올인원', author: '안경재', publisher: '영진.com', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.5, reviews: 54, tags: ['추천'], isbn: '9788931480290', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+전기기능사+올인원+2026' },
-    { title: '2026 에듀윌 전기 전기기능사 필기 한권끝장', author: '유치형, 홍석묵, 최대규', publisher: '에듀윌', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.4, reviews: 43, tags: ['추천'], isbn: '9791136039194', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=에듀윌+전기기능사+필기+한권끝장+2026' },
-  ],
 
   // ────────────────────────────────────────
   '화학분석기사': [
@@ -1488,18 +1476,6 @@ const REAL_BOOKS = {
   ],
 
   // ────────────────────────────────────────
-  '배관기사': [
-    { title: '배관기사 필기 핵심이론+기출문제', author: '한상욱', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], isbn: '9788958432555', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=배관기사+필기+핵심이론+기출문제' },
-    { title: '배관기사 과년도 문제 해설집', author: '배관기술연구회', publisher: '일진사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 156, tags: ['베스트'], isbn: '9788958432555', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=배관기사+과년도+문제+해설집' },
-    { title: '배관기사 실기 완전정복', author: '오진석', publisher: '동일출판사', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], isbn: '9788958432555', imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=배관기사+실기+완전정복' },
-    { title: '2026 배관기사 기출문제 완전분석', author: '이상도', publisher: '세화', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 112, tags: ['베스트'], isbn: '9788958432555', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+배관기사+기출문제' },
-    { title: '2026 Win-Q 배관기사 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.2, reviews: 87, tags: ['베스트'], isbn: '9788958432555', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=Win-Q+배관기사' },
-    { title: '배관 설계·시공 실무', author: '오진석', publisher: '동일출판사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 145, tags: ['추천'], isbn: '9788993954128', imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=배관+설계+시공+실무' },
-    { title: '플랜트 배관 설계 실무', author: '김민수', publisher: '성안당', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], isbn: '9791187244349', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=플랜트+배관+설계+실무' },
-    { title: '2026 배관기사 필기 핵심요약노트', author: '배관기술연구회', publisher: '일진사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], isbn: '9788958432555', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+배관기사+핵심요약노트' },
-    { title: '2026 배관기사 CBT 최신기출', author: '이현철', publisher: '일진사', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.1, reviews: 65, tags: ['추천'], isbn: '9788958432555', imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+배관기사+CBT' },
-    { title: '배관공학 이론과 실제', author: '한국배관공학회', publisher: '기전연구사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.1, reviews: 54, tags: ['추천'], isbn: '9788958432555', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=배관공학+이론과+실제' },
-  ],
 
   // ────────────────────────────────────────
   '특수용접기능사': [
@@ -1572,18 +1548,6 @@ const REAL_BOOKS = {
   ],
 
   // ────────────────────────────────────────
-  '식품기사': [
-    { title: '2026 해커스 식품산업기사 필기 한권완성 이론+최신기출', author: '권유진', publisher: '해커스', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: KB('S000217941979'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217941979' },
-    { title: '2026 식품기사 필기 핵심이론+과년도 기출문제', author: '정진경·유연희', publisher: '예문에듀', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], isbn: '9788969656223', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+식품기사+필기+예문에듀' },
-    { title: '2026 나합격 식품기사 필기+무료특강', author: '김현우', publisher: '삼원북스', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.4, reviews: 143, tags: ['베스트'], isbn: '9791194997290', imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+식품기사+나합격' },
-    { title: '2026 식품기사 과년도 기출문제 해설집', author: '이상도', publisher: '세화', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 112, tags: ['베스트'], isbn: '9791143411136', imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+식품기사+과년도+기출' },
-    { title: '2026 식품기사 실기 완전정복', author: '정진경', publisher: '예문에듀', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.3, reviews: 98, tags: ['베스트'], isbn: '9791143411136', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+식품기사+실기' },
-    { title: '2026 식품기사 CBT 최신기출문제', author: '이현철', publisher: '일진사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 87, tags: ['추천'], isbn: '9791143411136', imageUrl: null, pageUrl: 'https://search.kyodobook.co.kr/search?keyword=2026+식품기사+CBT' },
-    { title: '2026 식품기사 벼락치기 핵심요약', author: '정재수', publisher: '세화', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], isbn: '9791143411136', imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=2026+식품기사+벼락치기' },
-    { title: '식품위생법 핵심정리', author: '식품기술사연구회', publisher: '구민사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.2, reviews: 65, tags: ['추천'], isbn: '9791124342466', imageUrl: null, pageUrl: 'https://search.kyobookook.co.kr/search?keyword=식품위생법+핵심정리' },
-    { title: '식품가공학 총론', author: '김영태', publisher: '광문각', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.1, reviews: 54, tags: ['추천'], isbn: '9788940650738', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=식품가공학+총론' },
-    { title: '2026 Win-Q 식품기사 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.1, reviews: 45, tags: ['추천'], isbn: '9788940650738', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=Win-Q+식품기사' },
-  ],
 
   // ────────────────────────────────────────
   '식품산업기사': [
