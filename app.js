@@ -666,12 +666,18 @@ function switchCertification(certName) {
       if (!info || _heroGen !== apiGen) return;
       const descEl = document.getElementById('hero-desc');
       if (descEl && info.overview) {
-        typeEffect(descEl, info.overview).then(() => {
+        // 메인 히어로 타이핑 애니메이션(cert.heroDesc)이 끝난 뒤에 재타이핑해야
+        // 같은 hero-desc에 대한 typeEffect 호출이 공유 타이머(_typeTimer)를
+        // 서로 취소시켜 버튼 pointer-events가 영원히 복구되지 않는 문제를 피할 수 있음
+        _heroReady.then(() => {
           if (_heroGen !== apiGen) return;
-          const shieldEl = document.querySelector('.shield-graphic');
-          const btnsEl   = document.querySelector('.slide-buttons');
-          if (shieldEl && shieldEl.style.opacity !== '1') { shieldEl.style.transition = 'opacity 0.5s'; shieldEl.style.opacity = '1'; }
-          if (btnsEl   && btnsEl.style.opacity   !== '1') { btnsEl.style.transition   = 'opacity 0.5s'; btnsEl.style.opacity   = '1'; }
+          typeEffect(descEl, info.overview).then(() => {
+            if (_heroGen !== apiGen) return;
+            const shieldEl = document.querySelector('.shield-graphic');
+            const btnsEl   = document.querySelector('.slide-buttons');
+            if (shieldEl) { shieldEl.style.transition = 'opacity 0.5s'; shieldEl.style.opacity = '1'; shieldEl.style.pointerEvents = ''; }
+            if (btnsEl)   { btnsEl.style.transition   = 'opacity 0.5s'; btnsEl.style.opacity   = '1'; btnsEl.style.pointerEvents   = ''; }
+          });
         });
       }
     });
@@ -712,6 +718,7 @@ function updatePageMeta(cert) {
 // ============================================
 let _typeTimer = null;
 let _heroGen = 0;
+let _heroReady = Promise.resolve();
 
 function typeEffect(el, text, speed = 15) {
   return new Promise(resolve => {
@@ -771,6 +778,9 @@ function renderHero(cert) {
   };
 
   // 시퀀스: 제목 타이핑 → D-Day·별점 페이드인 → 설명 타이핑 → 쉴드·버튼 페이드인
+  let resolveHeroReady;
+  _heroReady = new Promise(r => { resolveHeroReady = r; });
+
   typeEffect(titleEl, cert.heroTitle)
     .then(() => {
       if (_heroGen !== gen) return Promise.reject('cancelled');
@@ -787,7 +797,8 @@ function renderHero(cert) {
       fadeIn(shieldEl, '0.5s');
       fadeIn(btnsEl, '0.5s');
     })
-    .catch(() => {});
+    .catch(() => {})
+    .then(() => resolveHeroReady());
 }
 
 // ============================================
