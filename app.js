@@ -1853,6 +1853,12 @@ window.calcPassPredictor = function(subjectCount) {
 // ============================================
 // 시험장 지역 검색
 // ============================================
+// 네이버/구글 지도에 "한국산업인력공단 [지사명]"으로 검색해도 매칭이 안 되는 지사는
+// 주소 검색으로 대체 (2026-07-17 확인: 충북북부지사는 청주 충북지사로 잘못 연결됨)
+const EXAM_MAP_QUERY_OVERRIDES = {
+  '충북북부지사 (충주)': '충청북도 충주시 호암수청2로 14',
+};
+
 // 한국산업인력공단 공식 지역본부/지사 명칭 (hrdkorea.or.kr/5/1/1 기준, 2026-07-17 확인)
 const EXAM_REGIONS = [
   { name: '서울', code: 'S', centers: ['서울지역본부 (동대문)', '서울서부지사 (은평)', '서울남부지사 (영등포)', '서울강남지사'] },
@@ -1911,7 +1917,8 @@ window.showLocationCenters = function(code) {
       </div>
       <div class="loc-centers-list">
         ${region.centers.map(c => {
-          const q = encodeURIComponent(`한국산업인력공단 ${c}`);
+          const query = EXAM_MAP_QUERY_OVERRIDES[c] || `한국산업인력공단 ${c}`;
+          const q = encodeURIComponent(query);
           const naverUrl = `https://map.naver.com/p/search/${q}`;
           const googleUrl = `https://www.google.com/maps/search/?api=1&query=${q}`;
           return `
