@@ -755,18 +755,6 @@ const REAL_BOOKS = {
     { title: '2026 위생사 소독학·구강보건 핵심이론', author: '한국위생사협회 편집부', publisher: '고려의학', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.3, reviews: 54, tags: ['추천'], isbn: '9791143415400', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=위생사+소독학+구강보건+2026' },
   ],
 
-  '건설기계설비기사': [
-    { title: '2026 건설기계설비 기사 필기대비', author: '위을복', publisher: '학진북스', price: 50400, originalPrice: 56000, discount: '10%', rating: 4.8, reviews: 312, tags: ['베스트'], isbn: '9788968780547', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건설기계설비+기사+필기+2026' },
-    { title: '2026 건설기계설비기사 필기', author: '김영기', publisher: '구민사', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.7, reviews: 256, tags: ['베스트'], isbn: '9791124051382', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건설기계설비기사+필기+구민사+2026' },
-    { title: '2026 합격비법 건설기계설비기사 필기 핵심이론 및 예상문제', author: '이태랑', publisher: '오스틴북스', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], isbn: '9791124051375', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건설기계설비기사+필기+핵심이론+2026' },
-    { title: '2026 합격비법 건설기계설비기사 필기 기출문제', author: '이태랑', publisher: '오스틴북스', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.6, reviews: 167, tags: ['베스트'], isbn: '9791124051382', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건설기계설비기사+필기+기출문제+2026' },
-    { title: '건설기계설비 기사 필답형 실기', author: '위을복', publisher: '학진북스', price: 41400, originalPrice: 46000, discount: '10%', rating: 4.5, reviews: 145, tags: ['베스트'], isbn: '9788968780752', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건설기계설비+기사+필답형+실기' },
-    { title: '일반기계기사 기계설계산업기사 건설기계설비기사 작업형 실기', author: '메카피아', publisher: '메카피아', price: 30600, originalPrice: 34000, discount: '10%', rating: 4.5, reviews: 123, tags: ['추천'], isbn: '9791162480311', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건설기계설비기사+작업형+실기' },
-    { title: '패스 건설기계정비산업기사 필기', author: '김인호, 김기홍, 류상렬, 최만용', publisher: '골든벨', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], isbn: '9791158066376', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건설기계정비산업기사+필기' },
-    { title: '2023 건설기계설비 일반기계 기사 필기 과년도 문제집', author: '위을복', publisher: '학진북스', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.4, reviews: 87, tags: ['추천'], isbn: '9788968780318', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건설기계설비+일반기계+기사+과년도' },
-    { title: '2026 건설기계설비 기사 필기대비', author: '위을복', publisher: '학진북스', price: 50400, originalPrice: 56000, discount: '10%', rating: 4.3, reviews: 65, tags: ['추천'], isbn: '9788968780547', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건설기계설비+기사+2026+학진북스' },
-    { title: '2026 합격비법 건설기계설비기사 필기', author: '이태랑', publisher: '오스틴북스', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.3, reviews: 54, tags: ['추천'], isbn: '9791124051382', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=합격비법+건설기계설비기사+2026' },
-  ],
 
   '토목산업기사': [
     { title: '2026 토목산업기사 필기 4주완성 8개년 과년도 문제해설', author: '이상도, 정경동, 고길용, 안광호 외', publisher: '한솔아카데미', price: 37800, originalPrice: 42000, discount: '10%', rating: 4.8, reviews: 445, tags: ['베스트'], isbn: '9791166547478', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=토목산업기사+필기+4주완성+2026' },
