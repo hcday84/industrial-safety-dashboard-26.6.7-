@@ -1909,12 +1909,21 @@ window.showLocationCenters = function(code) {
         <strong>${region.name}</strong> 지역 시험센터
       </div>
       <div class="loc-centers-list">
-        ${region.centers.map(c => `
+        ${region.centers.map(c => {
+          const q = encodeURIComponent(`한국산업인력공단 ${c}`);
+          const naverUrl = `https://map.naver.com/p/search/${q}`;
+          const googleUrl = `https://www.google.com/maps/search/?api=1&query=${q}`;
+          return `
           <div class="loc-center-item">
             <i class="fa-regular fa-building"></i>
             <span>${c}</span>
+            <span class="loc-center-maps">
+              <a href="${naverUrl}" target="_blank" rel="noopener noreferrer" class="loc-map-btn loc-map-naver" title="네이버지도로 보기">네이버</a>
+              <a href="${googleUrl}" target="_blank" rel="noopener noreferrer" class="loc-map-btn loc-map-google" title="구글맵으로 보기">구글맵</a>
+            </span>
           </div>
-        `).join('')}
+        `;
+        }).join('')}
       </div>
       <div class="loc-links">
         <a href="${qnetUrl}" target="_blank" rel="noopener noreferrer" class="loc-link-btn loc-link-primary">

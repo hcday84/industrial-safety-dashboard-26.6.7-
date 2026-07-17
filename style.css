@@ -4883,6 +4883,26 @@ button, input, select {
   color: var(--text-secondary);
 }
 .loc-center-item i { color: var(--text-muted); width: 14px; }
+.loc-center-item span:not(.loc-center-maps) { flex: 1; }
+.loc-center-maps {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.loc-map-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid var(--border-color);
+  transition: opacity 0.15s;
+}
+.loc-map-btn:hover { opacity: 0.78; }
+.loc-map-naver { background: #03c75a; border-color: #03c75a; color: #fff; }
+.loc-map-google { background: #4285f4; border-color: #4285f4; color: #fff; }
 .loc-links {
   display: flex;
   gap: 10px;
