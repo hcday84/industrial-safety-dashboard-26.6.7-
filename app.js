@@ -1319,16 +1319,17 @@ function renderBooks() {
       return `<span class="${cls}" style="margin-right:4px">${t}</span>`;
     }).join('');
 
-    // 이미지 폴백 체인: 1) KB 상품코드 or 교보CDN(ISBN) → 2) Aladin API → 3) CSS 목업
+    // 이미지 폴백 체인: 1) KB 상품코드(수기 검증된 imageUrl) → 2) nl-book.js API(제목 검증 통과 시) → 3) CSS 목업
     // 단, 실데이터가 없어 자동 생성된 placeholder 도서는 실존하지 않는 가짜 제목이므로
     // 제목 기반 이미지 검색(Aladin) 자체를 시도하지 않고 항상 CSS 목업만 표시한다
     // (검색 결과가 나오더라도 전혀 다른 실제 도서 표지가 붙어 제목·표지 불일치를 유발하기 때문)
+    // book.isbn으로 교보 CDN URL을 직접 만들지 않는다: books_data.js의 isbn 값 상당수가
+    // 같은 자격증 내 서로 다른 도서끼리 중복돼 있고, 교보 CDN이 ISBN13도 상품코드처럼
+    // 그대로 인식해 실제 존재하는 "엉뚱한 책" 표지를 에러 없이 반환해버려 검증을 우회함
     const mockBg = book.coverBg || 'linear-gradient(135deg,#0d1f5e,#4db843)';
     const mockTitle = book.title.replace(/\([^)]*\)/g, '').trim();
     const nlAttr = `data-nl-title="${encodeURIComponent(book.title)}"`;
-    const imgSrc = book.isPlaceholder
-      ? ''
-      : (book.imageUrl || (book.isbn ? `https://contents.kyobobook.co.kr/sih/fit-in/200x0/pdt/${book.isbn}.jpg` : ''));
+    const imgSrc = book.isPlaceholder ? '' : (book.imageUrl || '');
     const coverHTML = book.isPlaceholder
       ? `<div class="book-cover-mock" style="background:${mockBg}">
            <span class="book-cover-title">${mockTitle}</span>
