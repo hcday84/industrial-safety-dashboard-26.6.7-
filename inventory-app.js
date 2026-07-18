@@ -629,6 +629,26 @@ window.initInventoryApp = function() {
         setTimeout(() => exportToast.classList.remove("show"), 4000);
     }
 
+    // 업데이트 버튼 클릭 시 "다시 불러오는 중" 느낌의 로딩 연출 후 실제 재계산 실행
+    function refreshWithSpin(btn, updateFn) {
+        if (!btn || btn.disabled) return;
+        const icon = btn.querySelector("svg, i");
+        const label = btn.querySelector(".btn-refresh-label");
+        const originalLabel = label ? label.textContent : null;
+        btn.disabled = true;
+        if (icon) icon.classList.add("spin");
+        if (label) label.textContent = "불러오는 중...";
+        setTimeout(() => {
+            updateFn();
+            if (label) label.textContent = "완료";
+            setTimeout(() => {
+                if (icon) icon.classList.remove("spin");
+                if (label && originalLabel !== null) label.textContent = originalLabel;
+                btn.disabled = false;
+            }, 1000);
+        }, 500);
+    }
+
     // ── Initialization ─────────────────────────────
     updateTitleVolumeStats();
     updateOutOfPrintStats();
@@ -638,16 +658,14 @@ window.initInventoryApp = function() {
     const btnRefreshOutOfPrintStats = document.getElementById("btnRefreshOutOfPrintStats");
     if (btnRefreshOutOfPrintStats) {
         btnRefreshOutOfPrintStats.addEventListener("click", () => {
-            updateOutOfPrintStats();
-            lucide.createIcons();
+            refreshWithSpin(btnRefreshOutOfPrintStats, updateOutOfPrintStats);
         });
     }
 
     const btnRefreshTitleStats = document.getElementById("btnRefreshTitleStats");
     if (btnRefreshTitleStats) {
         btnRefreshTitleStats.addEventListener("click", () => {
-            updateTitleVolumeStats();
-            lucide.createIcons();
+            refreshWithSpin(btnRefreshTitleStats, updateTitleVolumeStats);
         });
     }
 
