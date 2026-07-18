@@ -383,7 +383,7 @@ window.initInventoryApp = function() {
         format = format || (n => n.toLocaleString());
         const startValue = parseInt(String(el.textContent).replace(/[^0-9]/g, ""), 10) || 0;
         if (startValue === endValue) { el.textContent = format(endValue); return; }
-        const duration = 500;
+        const duration = 1000;
         const startTime = performance.now();
         function step(now) {
             const progress = Math.min((now - startTime) / duration, 1);
