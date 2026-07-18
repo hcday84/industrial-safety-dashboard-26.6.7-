@@ -674,7 +674,7 @@ const REAL_BOOKS = {
     { title: '2026 요양보호사 신체활동지원 실기 집중', author: '최수정', publisher: '박문각', price: 18900, originalPrice: 21000, discount: '10%', rating: 4.4, reviews: 234, tags: ['추천'], isbn: '9788940650233', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=요양보호사+신체활동지원+실기+2026' },
   ],
 
-  '의무기록사': [
+  '보건의료정보관리사': [
     { title: '2026 의무기록사 국가시험 핵심요약 총정리', author: '대한의무기록협회 편집부', publisher: '군자출판사', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 334, tags: ['베스트'], isbn: '9788961303569', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=의무기록사+국가시험+핵심요약+2026' },
     { title: '2026 의무기록사 기출문제 완전분석', author: '메디시언 편집부', publisher: '메디시언', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 267, tags: ['베스트'], isbn: '9791191036626', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=의무기록사+기출문제+완전분석+2026' },
     { title: '2026 의무기록사 의학용어·질병분류 핵심', author: '고려의학 편집부', publisher: '고려의학', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 212, tags: ['베스트'], isbn: '9791191036633', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=의무기록사+의학용어+질병분류+2026' },
@@ -1572,7 +1572,7 @@ const REAL_BOOKS = {
     { title: '2026 보험계리사 회계원리 핵심이론+기출', author: '김동현', publisher: '나무와숲', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 198, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=보험계리사+회계원리+2026' },
   ],
 
-  '행정사': [
+  '일반행정사': [
     { title: '2026 에듀윌 행정사 1차 행정법 한권끝장', author: '에듀윌 행정사연구소', publisher: '에듀윌', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=에듀윌+행정사+1차+행정법+2026' },
     { title: '2026 박문각 행정사 1차 민법 핵심이론+기출', author: '이동규', publisher: '박문각', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=박문각+행정사+1차+민법+2026' },
     { title: '2026 행정사 2차 행정사실무법 기출+예상', author: '이병철 외', publisher: '에듀윌', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 654, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=행정사+2차+행정사실무법+2026' },
@@ -1581,7 +1581,7 @@ const REAL_BOOKS = {
     { title: '2026 행정사 최종 모의고사 5회분', author: '박문각 행정사연구소', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 378, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=행정사+최종+모의고사+5회분+2026' },
   ],
 
-  '주택관리사': [
+  '주택관리사보': [
     { title: '2026 에듀윌 주택관리사 1차 한권끝장+무료특강', author: '에듀윌 주택관리사연구소', publisher: '에듀윌', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=에듀윌+주택관리사+1차+한권끝장+2026' },
     { title: '2026 에듀윌 주택관리사 2차 한권끝장+무료특강', author: '에듀윌 주택관리사연구소', publisher: '에듀윌', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 1876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=에듀윌+주택관리사+2차+한권끝장+2026' },
     { title: '2026 박문각 주택관리사 1차 기출문제집', author: '박문각 주택관리사연구소', publisher: '박문각', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 1456, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=박문각+주택관리사+1차+기출문제+2026' },
@@ -1605,7 +1605,7 @@ const REAL_BOOKS = {
     { title: '2026 사회복지사 1급 단기완성 벼락치기', author: '에듀윌 사회복지사연구소', publisher: '에듀윌', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 876, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회복지사+1급+단기완성+벼락치기+2026' },
   ],
 
-  '청소년상담사': [
+  '청소년상담사2급': [
     { title: '2026 청소년상담사 3급 한권으로 끝내기', author: '청소년상담사연구회', publisher: '시대고시기획', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년상담사+3급+한권으로+끝내기+2026' },
     { title: '2026 청소년상담사 2급 한권으로 끝내기', author: '청소년상담사연구회', publisher: '시대고시기획', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년상담사+2급+한권으로+끝내기+2026' },
     { title: '2026 청소년상담사 기출문제 완전분석', author: '김형태 외', publisher: '학지사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 654, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년상담사+기출문제+완전분석+2026' },
@@ -1614,7 +1614,7 @@ const REAL_BOOKS = {
     { title: '2026 청소년상담사 심리검사 이론과 실제', author: '황순택 외', publisher: '학지사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 378, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년상담사+심리검사+이론+2026' },
   ],
 
-  '청소년지도사': [
+  '청소년지도사2급': [
     { title: '2026 청소년지도사 2·3급 한권으로 끝내기', author: '청소년지도사연구회', publisher: '시대고시기획', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년지도사+2급+3급+한권으로+2026' },
     { title: '2026 청소년지도사 기출문제 완전분석', author: '정건희 외', publisher: '시대고시기획', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.6, reviews: 612, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년지도사+기출문제+완전분석+2026' },
     { title: '2026 청소년지도사 청소년활동·복지·문화 핵심', author: '한국청소년활동진흥원', publisher: '학지사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년지도사+청소년활동+복지+문화+2026' },
@@ -1652,7 +1652,7 @@ const REAL_BOOKS = {
     { title: '수의사를 위한 소동물 임상 매뉴얼', author: '대한수의사회', publisher: '광일문화사', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.5, reviews: 189, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyободook.co.kr/search?keyword=수의사+소동물+임상+매뉴얼' },
   ],
 
-  '스포츠지도사': [
+  '2급생활스포츠지도사': [
     { title: '2026 스포츠지도사 2급 생활스포츠 필기 한권끝장', author: '스포츠지도사연구회', publisher: '시대고시기획', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyободook.co.kr/search?keyword=스포츠지도사+2급+생활스포츠+필기+2026' },
     { title: '2026 스포츠지도사 필기 기출문제 완전분석', author: '국민체육진흥공단 편집부', publisher: '시대고시기획', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyободook.co.kr/search?keyword=스포츠지도사+필기+기출문제+완전분석+2026' },
     { title: '2026 스포츠지도사 스포츠심리학+운동생리학 핵심', author: '김선진 외', publisher: '레인보우북스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 654, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyободook.co.kr/search?keyword=스포츠지도사+스포츠심리학+운동생리학+2026' },
@@ -2083,7 +2083,7 @@ const REAL_BOOKS = {
     { title: '귀화를 위한 한국사회이해 완전정복', author: '한국이민연구소', publisher: '시대에듀', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=귀화+한국사회이해+완전정복' },
   ],
 
-  '국내관광안내사': [
+  '국내여행안내사': [
     { title: '2026 국내여행안내사 한권으로 끝내기', author: '관광자격연구소', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=국내여행안내사+한권끝내기+2026' },
     { title: '2026 국내여행안내사 필기+면접 완전정복', author: '관광수험연구회', publisher: '예문사', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=국내여행안내사+필기+면접+2026' },
     { title: '관광자원해설사 핵심정리 (관광지·문화재 해설)', author: '한국관광공사 교육팀', publisher: '백산출판사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=관광자원해설사+핵심정리' },
@@ -2131,7 +2131,7 @@ const REAL_BOOKS = {
     { title: '한국실용글쓰기 단기완성 요약집', author: '글쓰기연구소', publisher: '에듀윌', price: 11700, originalPrice: 13000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=한국실용글쓰기+단기완성+요약집' },
   ],
 
-  '임상심리사': [
+  '임상심리사2급': [
     { title: '2026 임상심리사 2급 필기 한권으로 끝내기', author: '박지원', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 2876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상심리사+2급+필기+한권끝내기+2026' },
     { title: '2026 임상심리사 2급 기출문제집', author: '임상심리수험연구소', publisher: '학지사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상심리사+2급+기출문제집+2026' },
     { title: '이상심리학 (DSM-5 완전 반영)', author: '권석만', publisher: '학지사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 1987, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이상심리학+권석만+DSM-5' },

@@ -4555,12 +4555,12 @@ const CERTIFICATIONS = {
     ],
   },
 
-  '의무기록사': {
-    name: '의무기록사',
+  '보건의료정보관리사': {
+    name: '보건의료정보관리사',
     icon: 'fa-file-medical',
     category: '의료·보건',
-    heroTitle: '2026년도 의무기록사 국가시험 합격 가이드',
-    heroDesc: '의무기록사 국가시험은 한국보건의료인국가시험원(국시원)에서 매년 1월 시행합니다. 의무기록학과 졸업 예정·졸업자가 응시할 수 있으며, 의료정보 분류·관리·분석 전문가로서 병원의 의료정보팀, 보건 데이터 분석기관, 건강보험공단 등에서 활약합니다.',
+    heroTitle: '2026년도 보건의료정보관리사 국가시험 합격 가이드',
+    heroDesc: '보건의료정보관리사(구 의무기록사, 2018년 명칭 변경) 국가시험은 한국보건의료인국가시험원(국시원)에서 매년 1월 시행합니다. 보건의료정보관리학과 졸업 예정·졸업자가 응시할 수 있으며, 의료정보 분류·관리·분석 전문가로서 병원의 의료정보팀, 보건 데이터 분석기관, 건강보험공단 등에서 활약합니다.',
     passRateSummary: '72~80%',
     avgPassRate: '76%',
     passRates: [
@@ -12534,12 +12534,12 @@ const CERTIFICATIONS = {
     ],
   },
 
-  '행정사': {
-    name: '행정사',
+  '일반행정사': {
+    name: '일반행정사',
     icon: 'fa-stamp',
     category: '금융·법률',
-    heroTitle: '2026년도 행정사 합격 가이드',
-    heroDesc: '행정사 시험은 한국산업인력공단이 매년 시행하는 1·2차 시험입니다. 행정 서류 작성·번역·조사 대리, 인허가 신청 업무를 수행하는 전문 자격으로 행정사 사무소·법무법인·컨설팅 회사에서 활동합니다. 행정법 이론과 행정 실무 능력을 키우는 것이 합격의 핵심입니다.',
+    heroTitle: '2026년도 일반행정사 합격 가이드',
+    heroDesc: '일반행정사 시험은 한국산업인력공단이 매년 시행하는 1·2차 시험입니다. 행정 서류 작성·번역·조사 대리, 인허가 신청 업무를 수행하는 전문 자격으로 행정사 사무소·법무법인·컨설팅 회사에서 활동합니다. 행정법 이론과 행정 실무 능력을 키우는 것이 합격의 핵심입니다.',
     passRateSummary: '1차 30~45% | 2차 25~40%',
     avgPassRate: '32%',
     passRates: [
@@ -12575,11 +12575,93 @@ const CERTIFICATIONS = {
     ],
   },
 
-  '주택관리사': {
-    name: '주택관리사',
+  '외국어번역행정사': {
+    name: '외국어번역행정사',
+    icon: 'fa-stamp',
+    category: '금융·법률',
+    heroTitle: '2026년도 외국어번역행정사 합격 가이드',
+    heroDesc: '외국어번역행정사 시험은 한국산업인력공단이 매년 시행하는 1·2차 시험입니다. 외국어 서류 번역·공증 대리 업무를 전문으로 하는 자격으로, 행정사 사무소·법무법인·번역 전문 사무소에서 활동합니다. 행정법 이론과 지정 외국어 번역 능력을 함께 갖춰야 합니다.',
+    passRateSummary: '1차 30~45% | 2차 25~40%',
+    avgPassRate: '32%',
+    passRates: [
+      { year: 2020, written: 35, practical: 28 },
+      { year: 2021, written: 38, practical: 31 },
+      { year: 2022, written: 33, practical: 27 },
+      { year: 2023, written: 40, practical: 33 },
+      { year: 2024, written: 37, practical: 30 },
+    ],
+    schedules: [
+      { round: '2026년도', writtenExam: '2026-04-18', writtenResult: '2026-06-04', practicalExam: '2026-09-12', practicalResult: '2026-11-05' },
+    ],
+    milestones: [
+      { label: '1차 시험', date: '2026-04-18' },
+      { label: '1차 합격 발표', date: '2026-06-04' },
+      { label: '2차 시험', date: '2026-09-12' },
+      { label: '최종 합격 발표', date: '2026-11-05' },
+    ],
+    subjects: [
+      { name: '민법', desc: '총칙·물권·채권 기초, 번역 서류 작성 관련 판례 중심' },
+      { name: '행정법', desc: '행정작용법·행정절차법·행정심판법·행정소송법 체계' },
+      { name: '행정학개론', desc: '행정이론·조직론·인사·재무행정·정책학 핵심' },
+      { name: '행정사법', desc: '행정사 업무 범위, 자격·등록·의무·징계 관련 규정' },
+      { name: '지정 외국어 번역', desc: '영어 등 지정 외국어 문서의 행정 서류 번역 실무' },
+    ],
+    books: [],
+    defaultTodos: [
+      '행정법 기본 개념 및 주요 판례 정리',
+      '민법 행정 관련 쟁점 기출 풀이',
+      '행정학개론 핵심 이론 요약',
+      '행정사법 관련 법규 암기',
+      '지정 외국어 행정 서류 번역 실습',
+    ],
+  },
+
+  '해사행정사': {
+    name: '해사행정사',
+    icon: 'fa-stamp',
+    category: '금융·법률',
+    heroTitle: '2026년도 해사행정사 합격 가이드',
+    heroDesc: '해사행정사 시험은 한국산업인력공단이 매년 시행하는 1·2차 시험입니다. 선박·해운·항만 관련 행정 서류 작성·인허가 신청 대리 업무를 전문으로 하는 자격으로, 해운회사·항만공사·해사 전문 행정사 사무소에서 활동합니다.',
+    passRateSummary: '1차 30~45% | 2차 25~40%',
+    avgPassRate: '32%',
+    passRates: [
+      { year: 2020, written: 35, practical: 28 },
+      { year: 2021, written: 38, practical: 31 },
+      { year: 2022, written: 33, practical: 27 },
+      { year: 2023, written: 40, practical: 33 },
+      { year: 2024, written: 37, practical: 30 },
+    ],
+    schedules: [
+      { round: '2026년도', writtenExam: '2026-04-18', writtenResult: '2026-06-04', practicalExam: '2026-09-12', practicalResult: '2026-11-05' },
+    ],
+    milestones: [
+      { label: '1차 시험', date: '2026-04-18' },
+      { label: '1차 합격 발표', date: '2026-06-04' },
+      { label: '2차 시험', date: '2026-09-12' },
+      { label: '최종 합격 발표', date: '2026-11-05' },
+    ],
+    subjects: [
+      { name: '민법', desc: '총칙·물권·채권 기초, 해사 관련 판례 중심' },
+      { name: '행정법', desc: '행정작용법·행정절차법·행정심판법·행정소송법 체계' },
+      { name: '해사행정법규', desc: '선박법·해운법·항만법 등 해사 관련 행정 법규' },
+      { name: '행정사법', desc: '행정사 업무 범위, 자격·등록·의무·징계 관련 규정' },
+      { name: '사무관리론', desc: '문서 작성·관리·결재 체계, 공공기록물 관리 절차' },
+    ],
+    books: [],
+    defaultTodos: [
+      '행정법 기본 개념 및 주요 판례 정리',
+      '해사행정법규(선박법·해운법·항만법) 조문 정리',
+      '행정학개론 핵심 이론 요약',
+      '행정사법 관련 법규 암기',
+      '2차 해사 행정 서류 작성 실습',
+    ],
+  },
+
+  '주택관리사보': {
+    name: '주택관리사보',
     icon: 'fa-building',
     category: '금융·법률',
-    heroTitle: '2026년도 주택관리사 합격 가이드',
+    heroTitle: '2026년도 주택관리사보 합격 가이드',
     heroDesc: '주택관리사(보) 시험은 한국산업인력공단이 매년 5~9월에 1·2차로 시행합니다. 공동주택 관리·운영·유지·보수를 총괄하는 전문 자격으로 아파트 관리소장으로 활동할 수 있습니다. 주택 관련 법규와 회계 원리, 전기·시설 관리 이론을 균형 있게 학습하는 것이 합격 전략입니다.',
     passRateSummary: '1차 20~35% | 2차 30~50%',
     avgPassRate: '30%',
@@ -12658,14 +12740,14 @@ const CERTIFICATIONS = {
     ],
   },
 
-  '청소년상담사': {
-    name: '청소년상담사',
+  '청소년상담사3급': {
+    name: '청소년상담사3급',
     icon: 'fa-comments',
     category: '복지·교육',
-    heroTitle: '2026년도 청소년상담사 합격 가이드',
-    heroDesc: '청소년상담사 시험은 여성가족부(한국청소년상담복지개발원)가 매년 시행하는 1·2·3급 국가시험입니다. 청소년 심리·위기·비행 관련 상담 전문 자격으로 청소년상담복지센터·Wee센터·학교·복지관 등에서 활동합니다. 상담이론과 심리검사, 청소년 관련 법규가 핵심 출제 영역입니다.',
-    passRateSummary: '3급 50~65% | 2급 40~55% | 1급 35~50%',
-    avgPassRate: '52%',
+    heroTitle: '2026년도 청소년상담사3급 합격 가이드',
+    heroDesc: '청소년상담사3급 시험은 여성가족부(한국청소년상담복지개발원)가 매년 시행하는 국가시험입니다. 청소년 심리·위기·비행 관련 상담 기초 자격으로 청소년상담복지센터·Wee센터·학교·복지관 등에서 활동합니다. 상담이론과 심리검사, 청소년 관련 법규가 핵심 출제 영역입니다.',
+    passRateSummary: '필기 50~65%',
+    avgPassRate: '58%',
     passRates: [
       { year: 2020, written: 55, practical: null },
       { year: 2021, written: 58, practical: null },
@@ -12685,12 +12767,11 @@ const CERTIFICATIONS = {
       { name: '상담이론', desc: '정신분석·인지행동·인간중심·해결중심 주요 상담 이론' },
       { name: '청소년발달', desc: '신체·인지·정서·사회성 발달 이론, 청소년기 특성 이해' },
       { name: '심리검사', desc: 'MMPI·SCT·그림검사 등 심리검사 종류·실시·해석 방법' },
-      { name: '집단상담', desc: '집단 발달 단계, 집단 역동, 집단 상담 기법 및 윤리' },
       { name: '청소년 관계법규', desc: '청소년기본법·보호법·복지지원법·성보호법 주요 조항' },
     ],
     books: [],
     defaultTodos: [
-      '응시 등급 요건(1·2·3급) 확인 후 계획 수립',
+      '응시 요건 확인 후 계획 수립',
       '상담이론 주요 학자·기법 정리',
       '청소년발달 이론 및 위기 유형 학습',
       '심리검사 종류 및 해석 핵심 내용 암기',
@@ -12698,14 +12779,90 @@ const CERTIFICATIONS = {
     ],
   },
 
-  '청소년지도사': {
-    name: '청소년지도사',
+  '청소년상담사2급': {
+    name: '청소년상담사2급',
+    icon: 'fa-comments',
+    category: '복지·교육',
+    heroTitle: '2026년도 청소년상담사2급 합격 가이드',
+    heroDesc: '청소년상담사2급 시험은 여성가족부(한국청소년상담복지개발원)가 매년 시행하는 국가시험입니다. 3급보다 심화된 상담 실무·집단상담 능력을 요구하며, 청소년상담복지센터·Wee센터 중간관리자급으로 활동합니다.',
+    passRateSummary: '필기 40~55%',
+    avgPassRate: '48%',
+    passRates: [
+      { year: 2020, written: 45, practical: null },
+      { year: 2021, written: 48, practical: null },
+      { year: 2022, written: 43, practical: null },
+      { year: 2023, written: 51, practical: null },
+      { year: 2024, written: 46, practical: null },
+    ],
+    schedules: [
+      { round: '2026년도 1차', writtenExam: '2026-07-11', writtenResult: '2026-08-14', practicalApply: '—', practicalExam: '—', finalResult: '2026-08-14' },
+      { round: '2026년도 2차', writtenExam: '2026-10-03', writtenResult: '2026-11-06', practicalApply: '—', practicalExam: '—', finalResult: '2026-11-06' },
+    ],
+    milestones: [
+      { label: '1차 필기시험', date: '2026-07-11' },
+      { label: '2차 필기시험', date: '2026-10-03' },
+    ],
+    subjects: [
+      { name: '상담이론', desc: '정신분석·인지행동·인간중심·해결중심 주요 상담 이론' },
+      { name: '집단상담', desc: '집단 발달 단계, 집단 역동, 집단 상담 기법 및 윤리' },
+      { name: '심리검사', desc: 'MMPI·SCT·그림검사 등 심리검사 종류·실시·해석 방법' },
+      { name: '청소년 관계법규', desc: '청소년기본법·보호법·복지지원법·성보호법 주요 조항' },
+    ],
+    books: [],
+    defaultTodos: [
+      '응시 요건(관련 경력·학위) 확인 후 계획 수립',
+      '상담이론 및 집단상담 기법 정리',
+      '심리검사 종류 및 해석 핵심 내용 암기',
+      '청소년 관계법규 주요 조항 정리',
+    ],
+  },
+
+  '청소년상담사1급': {
+    name: '청소년상담사1급',
+    icon: 'fa-comments',
+    category: '복지·교육',
+    heroTitle: '2026년도 청소년상담사1급 합격 가이드',
+    heroDesc: '청소년상담사1급 시험은 여성가족부(한국청소년상담복지개발원)가 매년 시행하는 최상위 등급 국가시험입니다. 상담 슈퍼비전·기관 운영 능력을 요구하며, 청소년상담복지센터·Wee센터 등의 책임자급으로 활동합니다.',
+    passRateSummary: '필기 35~50%',
+    avgPassRate: '42%',
+    passRates: [
+      { year: 2020, written: 38, practical: null },
+      { year: 2021, written: 41, practical: null },
+      { year: 2022, written: 36, practical: null },
+      { year: 2023, written: 44, practical: null },
+      { year: 2024, written: 40, practical: null },
+    ],
+    schedules: [
+      { round: '2026년도 1차', writtenExam: '2026-07-11', writtenResult: '2026-08-14', practicalApply: '—', practicalExam: '—', finalResult: '2026-08-14' },
+      { round: '2026년도 2차', writtenExam: '2026-10-03', writtenResult: '2026-11-06', practicalApply: '—', practicalExam: '—', finalResult: '2026-11-06' },
+    ],
+    milestones: [
+      { label: '1차 필기시험', date: '2026-07-11' },
+      { label: '2차 필기시험', date: '2026-10-03' },
+    ],
+    subjects: [
+      { name: '상담슈퍼비전', desc: '상담자 교육·수퍼비전 이론 및 실습 지도 방법' },
+      { name: '상담기관 운영', desc: '기관 운영·행정·정책, 지역사회 연계 체계' },
+      { name: '심리검사', desc: '심화 심리검사 실시·해석 및 사례 적용' },
+      { name: '청소년 관계법규', desc: '청소년기본법·보호법·복지지원법·성보호법 주요 조항' },
+    ],
+    books: [],
+    defaultTodos: [
+      '응시 요건(2급 취득 후 경력) 확인 후 계획 수립',
+      '상담슈퍼비전 이론 및 사례 정리',
+      '상담기관 운영·정책 핵심 내용 학습',
+      '청소년 관계법규 주요 조항 정리',
+    ],
+  },
+
+  '청소년지도사3급': {
+    name: '청소년지도사3급',
     icon: 'fa-person-chalkboard',
     category: '복지·교육',
-    heroTitle: '2026년도 청소년지도사 합격 가이드',
-    heroDesc: '청소년지도사 시험은 여성가족부(한국청소년활동진흥원)가 매년 시행하는 2·3급 필기+면접 시험입니다. 청소년 활동·수련·야영·자원봉사 프로그램을 기획·운영하는 전문 자격으로 청소년수련관·청소년문화의집·학교 밖 청소년 지원센터에서 활동합니다.',
-    passRateSummary: '3급 55~70% | 2급 50~65%',
-    avgPassRate: '58%',
+    heroTitle: '2026년도 청소년지도사3급 합격 가이드',
+    heroDesc: '청소년지도사3급 시험은 여성가족부(한국청소년활동진흥원)가 매년 시행하는 필기+면접 시험입니다. 청소년 활동·수련·야영·자원봉사 프로그램을 기획·운영하는 기초 자격으로 청소년수련관·청소년문화의집 등에서 활동합니다.',
+    passRateSummary: '필기 55~70%',
+    avgPassRate: '62%',
     passRates: [
       { year: 2020, written: 58, practical: null },
       { year: 2021, written: 61, practical: null },
@@ -12723,17 +12880,88 @@ const CERTIFICATIONS = {
     ],
     subjects: [
       { name: '청소년활동', desc: '청소년 활동 유형, 수련 활동 인증제, 국제 청소년 교류' },
-      { name: '청소년복지', desc: '청소년 복지 개념, 위기 청소년 지원 체계 및 정책' },
       { name: '청소년문화', desc: '청소년 문화 특성, 또래문화·미디어 문화 이해 및 지도' },
+      { name: '청소년 관계법규', desc: '청소년기본법·활동진흥법·보호법 주요 조항 및 시행령' },
+    ],
+    books: [],
+    defaultTodos: [
+      '응시 요건 확인 후 계획 수립',
+      '청소년활동·문화 핵심 이론 정리',
+      '청소년 관계법규 주요 조문 암기',
+      '면접 청소년 지도 사례 준비',
+    ],
+  },
+
+  '청소년지도사2급': {
+    name: '청소년지도사2급',
+    icon: 'fa-person-chalkboard',
+    category: '복지·교육',
+    heroTitle: '2026년도 청소년지도사2급 합격 가이드',
+    heroDesc: '청소년지도사2급 시험은 여성가족부(한국청소년활동진흥원)가 매년 시행하는 필기+면접 시험입니다. 3급보다 심화된 프로그램 기획·복지 지원 능력을 요구하며, 청소년수련관·학교 밖 청소년 지원센터 등에서 중간관리자급으로 활동합니다.',
+    passRateSummary: '필기 50~65%',
+    avgPassRate: '56%',
+    passRates: [
+      { year: 2020, written: 52, practical: null },
+      { year: 2021, written: 55, practical: null },
+      { year: 2022, written: 50, practical: null },
+      { year: 2023, written: 58, practical: null },
+      { year: 2024, written: 54, practical: null },
+    ],
+    schedules: [
+      { round: '2026년도 1차', writtenExam: '2026-07-11', writtenResult: '2026-08-14', practicalApply: '2026-08-17', practicalExam: '2026-10-17', finalResult: '2026-11-06' },
+    ],
+    milestones: [
+      { label: '1차 필기시험', date: '2026-07-11' },
+      { label: '면접(2차)', date: '2026-10-17' },
+      { label: '최종 합격 발표', date: '2026-11-06' },
+    ],
+    subjects: [
+      { name: '청소년복지', desc: '청소년 복지 개념, 위기 청소년 지원 체계 및 정책' },
       { name: '청소년프로그램 개발', desc: '프로그램 기획·실행·평가 절차, 요구 분석 방법론' },
       { name: '청소년 관계법규', desc: '청소년기본법·활동진흥법·보호법 주요 조항 및 시행령' },
     ],
     books: [],
     defaultTodos: [
-      '2·3급 응시 요건 확인 및 등급 결정',
-      '청소년활동·복지·문화 핵심 이론 정리',
+      '응시 요건(관련 경력·학위) 확인 후 계획 수립',
+      '청소년복지·프로그램 개발론 핵심 이론 정리',
       '청소년 관계법규 주요 조문 암기',
-      '프로그램 개발론 기출문제 반복 풀이',
+      '면접 청소년 지도 사례 준비',
+    ],
+  },
+
+  '청소년지도사1급': {
+    name: '청소년지도사1급',
+    icon: 'fa-person-chalkboard',
+    category: '복지·교육',
+    heroTitle: '2026년도 청소년지도사1급 합격 가이드',
+    heroDesc: '청소년지도사1급 시험은 여성가족부(한국청소년활동진흥원)가 매년 시행하는 최상위 등급 시험입니다. 청소년 기관 운영·정책 기획 능력을 요구하며, 청소년수련관·지자체 청소년 기관 책임자급으로 활동합니다.',
+    passRateSummary: '필기 40~55%',
+    avgPassRate: '48%',
+    passRates: [
+      { year: 2020, written: 42, practical: null },
+      { year: 2021, written: 45, practical: null },
+      { year: 2022, written: 40, practical: null },
+      { year: 2023, written: 48, practical: null },
+      { year: 2024, written: 44, practical: null },
+    ],
+    schedules: [
+      { round: '2026년도 1차', writtenExam: '2026-07-11', writtenResult: '2026-08-14', practicalApply: '2026-08-17', practicalExam: '2026-10-17', finalResult: '2026-11-06' },
+    ],
+    milestones: [
+      { label: '1차 필기시험', date: '2026-07-11' },
+      { label: '면접(2차)', date: '2026-10-17' },
+      { label: '최종 합격 발표', date: '2026-11-06' },
+    ],
+    subjects: [
+      { name: '청소년기관 운영', desc: '기관 운영·행정, 지자체 청소년 정책 연계 체계' },
+      { name: '청소년정책론', desc: '청소년 정책 수립·평가, 국제 청소년 교류 정책' },
+      { name: '청소년 관계법규', desc: '청소년기본법·활동진흥법·보호법 주요 조항 및 시행령' },
+    ],
+    books: [],
+    defaultTodos: [
+      '응시 요건(2급 취득 후 경력) 확인 후 계획 수립',
+      '청소년기관 운영·정책론 핵심 내용 학습',
+      '청소년 관계법규 주요 조문 암기',
       '면접 청소년 지도 사례 준비',
     ],
   },
@@ -12849,12 +13077,12 @@ const CERTIFICATIONS = {
     ],
   },
 
-  '스포츠지도사': {
-    name: '스포츠지도사',
+  '2급생활스포츠지도사': {
+    name: '2급생활스포츠지도사',
     icon: 'fa-running',
     category: '복지·교육',
-    heroTitle: '2026년도 스포츠지도사 자격시험 합격 가이드',
-    heroDesc: '스포츠지도사 시험은 문화체육관광부(국민체육진흥공단)가 매년 시행하는 1·2급 필기+실기+구술 시험입니다. 생활스포츠·전문스포츠·유소년·노인·장애인 스포츠 분야로 세분화되어 있으며, 스포츠센터·학교·복지관·클럽 등에서 운동 지도를 수행합니다.',
+    heroTitle: '2026년도 2급생활스포츠지도사 자격시험 합격 가이드',
+    heroDesc: '2급생활스포츠지도사는 문화체육관광부(국민체육진흥공단)가 매년 시행하는 필기+실기+구술 시험으로, 스포츠지도사 중 가장 많이 응시하는 기본 등급입니다. 국민의 생활체육 참여를 지도하는 자격으로, 스포츠센터·학교·복지관·클럽 등에서 활동합니다.',
     passRateSummary: '필기 50~65% | 실기 60~75%',
     avgPassRate: '58%',
     passRates: [
@@ -12881,11 +13109,89 @@ const CERTIFICATIONS = {
     ],
     books: [],
     defaultTodos: [
-      '전공 종목(생활·전문·유소년 등) 선택 및 요건 확인',
+      '응시 종목 선택 및 응시 요건 확인',
       '스포츠심리학·운동생리학 핵심 이론 정리',
       '운동역학·스포츠사회학 기출문제 풀이',
       '실기 종목 기술 훈련 계획 수립',
       '구술시험 대비 지도 시나리오 연습',
+    ],
+  },
+
+  '1급전문스포츠지도사': {
+    name: '1급전문스포츠지도사',
+    icon: 'fa-medal',
+    category: '복지·교육',
+    heroTitle: '2026년도 1급전문스포츠지도사 자격시험 합격 가이드',
+    heroDesc: '1급전문스포츠지도사는 문화체육관광부(국민체육진흥공단)가 매년 시행하는 필기+실기+구술 시험으로, 선수 경력·2급전문스포츠지도사 취득 등 응시 요건이 까다로운 상위 등급입니다. 실업팀·프로팀·국가대표 코치로 활동할 수 있습니다.',
+    passRateSummary: '필기 35~50% | 실기 45~60%',
+    avgPassRate: '42%',
+    passRates: [
+      { year: 2020, written: 36, practical: 44 },
+      { year: 2021, written: 39, practical: 46 },
+      { year: 2022, written: 34, practical: 42 },
+      { year: 2023, written: 42, practical: 48 },
+      { year: 2024, written: 38, practical: 45 },
+    ],
+    schedules: [
+      { round: '2026년도', writtenExam: '2026-05-09', writtenResult: '2026-06-18', practicalApply: '2026-06-22', practicalExam: '2026-07-18 ~ 2026-08-29', finalResult: '2026-09-17' },
+    ],
+    milestones: [
+      { label: '필기시험', date: '2026-05-09' },
+      { label: '실기·구술 시험', date: '2026-07-18' },
+      { label: '최종 합격 발표', date: '2026-09-17' },
+    ],
+    subjects: [
+      { name: '스포츠 심리학', desc: '선수 심리 관리, 경기력 향상 심리 기술 훈련' },
+      { name: '운동생리학', desc: '엘리트 선수 체력 훈련, 에너지 시스템 심화 이론' },
+      { name: '운동역학', desc: '경기 동작 정밀 분석, 부상 예방 역학' },
+      { name: '트레이닝론', desc: '경기력 향상을 위한 훈련 계획 수립 및 주기화' },
+    ],
+    books: [],
+    defaultTodos: [
+      '응시 요건(선수 경력·하위 등급 취득) 확인',
+      '스포츠심리학·운동생리학 심화 이론 정리',
+      '트레이닝론·운동역학 기출문제 풀이',
+      '실기 종목 전문 기술 훈련 계획 수립',
+      '구술시험 대비 지도 시나리오 연습',
+    ],
+  },
+
+  '유소년스포츠지도사': {
+    name: '유소년스포츠지도사',
+    icon: 'fa-child-reaching',
+    category: '복지·교육',
+    heroTitle: '2026년도 유소년스포츠지도사 자격시험 합격 가이드',
+    heroDesc: '유소년스포츠지도사는 문화체육관광부(국민체육진흥공단)가 매년 시행하는 필기+실기+구술 시험으로, 유소년(만 3~13세)의 신체 발달 단계에 맞춘 스포츠 지도 능력을 인증합니다. 유소년 스포츠클럽·학교 방과후 체육 프로그램에서 활동합니다.',
+    passRateSummary: '필기 50~65% | 실기 60~75%',
+    avgPassRate: '58%',
+    passRates: [
+      { year: 2020, written: 52, practical: 63 },
+      { year: 2021, written: 55, practical: 65 },
+      { year: 2022, written: 50, practical: 61 },
+      { year: 2023, written: 58, practical: 67 },
+      { year: 2024, written: 54, practical: 64 },
+    ],
+    schedules: [
+      { round: '2026년도', writtenExam: '2026-05-09', writtenResult: '2026-06-18', practicalApply: '2026-06-22', practicalExam: '2026-07-18 ~ 2026-08-29', finalResult: '2026-09-17' },
+    ],
+    milestones: [
+      { label: '필기시험', date: '2026-05-09' },
+      { label: '실기·구술 시험', date: '2026-07-18' },
+      { label: '최종 합격 발표', date: '2026-09-17' },
+    ],
+    subjects: [
+      { name: '유아체육론', desc: '유소년 신체·운동 발달 단계별 특성 및 지도 원리' },
+      { name: '스포츠 교육학', desc: '유소년 대상 교수법·지도 계획 수립, 안전 관리' },
+      { name: '스포츠 심리학', desc: '유소년 운동 동기 부여, 놀이 중심 지도 심리 기법' },
+      { name: '운동생리학', desc: '유소년 체력 요소 및 발달 단계별 훈련 이론' },
+    ],
+    books: [],
+    defaultTodos: [
+      '응시 요건 확인 및 종목 선택',
+      '유아체육론·스포츠교육학 핵심 이론 정리',
+      '스포츠심리학·운동생리학 기출문제 풀이',
+      '실기 종목 지도 시연 연습',
+      '구술시험 대비 유소년 지도 시나리오 연습',
     ],
   },
 
@@ -13219,12 +13525,51 @@ const CERTIFICATIONS = {
     books: [],
   },
 
-  '한국어교원': {
-    name: '한국어교원',
+  '한국어교원3급': {
+    name: '한국어교원3급',
     icon: 'fa-language',
     category: '교육',
-    heroTitle: '한국어교원 자격증(2·3급) 취득 가이드',
-    heroDesc: '한국어교원 자격증은 문화체육관광부가 국립국어원에 위탁하여 발급하는 국가전문자격입니다. 3급(한국어교원 양성과정 이수)·2급(대학교 관련 학과 졸업 또는 한국어교육능력검정시험 합격)·1급(2급 취득 후 경력 5년 이상)으로 나뉩니다. 한국어교육능력검정시험은 매년 11월 시행됩니다.',
+    heroTitle: '한국어교원3급 자격증 취득 가이드',
+    heroDesc: '한국어교원3급은 문화체육관광부가 국립국어원에 위탁하여 발급하는 국가전문자격으로, 한국어교원 양성과정(120시간) 이수 후 취득할 수 있습니다. 한국어교육능력검정시험 없이 지정 교육기관 과정 이수로 취득하는 입문 등급입니다.',
+    passRateSummary: '양성과정 이수 기준',
+    avgPassRate: '90%',
+    passRates: [
+      { year: 2020, written: 88, practical: null },
+      { year: 2021, written: 89, practical: null },
+      { year: 2022, written: 90, practical: null },
+      { year: 2023, written: 90, practical: null },
+      { year: 2024, written: 91, practical: null },
+    ],
+    schedules: [
+      { round: '2026년도 상반기 양성과정', writtenApply: '2026-02-01 ~ 2026-02-28', writtenExam: '2026-03-02', writtenResult: '2026-06-30' },
+      { round: '2026년도 하반기 양성과정', writtenApply: '2026-08-01 ~ 2026-08-31', writtenExam: '2026-09-01', writtenResult: '2026-12-30' },
+    ],
+    milestones: [
+      { label: '상반기 양성과정 시작', date: '2026-03-02' },
+      { label: '하반기 양성과정 시작', date: '2026-09-01' },
+    ],
+    subjects: [
+      { name: '한국어학 기초', desc: '음운론·형태론·통사론 기초, 한국어 구조 이해' },
+      { name: '외국어로서의 한국어 교육론', desc: '교수법 기초(과제중심·의사소통), 교안 작성 입문' },
+      { name: '한국 문화', desc: '한국 역사·전통문화·현대문화 기초' },
+      { name: '한국어 교육 실습', desc: '모의 수업 설계 및 실습' },
+    ],
+    defaultTodos: [
+      '지정 양성기관 및 과정 일정 확인 후 신청',
+      '한국어학 기초 이론 정리',
+      '교수법 기초 및 교안 작성 연습',
+      '모의 수업 실습 준비',
+      '120시간 과정 이수 후 자격 신청',
+    ],
+    books: [],
+  },
+
+  '한국어교원2급': {
+    name: '한국어교원2급',
+    icon: 'fa-language',
+    category: '교육',
+    heroTitle: '한국어교원2급 자격증 취득 가이드',
+    heroDesc: '한국어교원2급은 문화체육관광부가 국립국어원에 위탁하여 발급하는 국가전문자격입니다. 대학교 한국어교육 관련 학과 졸업 또는 한국어교육능력검정시험 합격으로 취득할 수 있습니다. 한국어교육능력검정시험은 매년 11월 시행됩니다.',
     passRateSummary: '한국어교육능력검정시험 필기 40~55% | 면접 85~90%',
     avgPassRate: '45%',
     passRates: [
@@ -13257,6 +13602,40 @@ const CERTIFICATIONS = {
       '교수법 및 교안 작성 연습',
       '한국 문화 테마별 정리',
       '면접(수업 시연) 모의 훈련',
+    ],
+    books: [],
+  },
+
+  '한국어교원1급': {
+    name: '한국어교원1급',
+    icon: 'fa-language',
+    category: '교육',
+    heroTitle: '한국어교원1급 자격증 취득 가이드',
+    heroDesc: '한국어교원1급은 문화체육관광부가 국립국어원에 위탁하여 발급하는 최상위 국가전문자격입니다. 2급 취득 후 한국어 교육 경력 5년 이상을 충족하면 신청으로 승급할 수 있습니다. 대학 한국어교육원·기관장급 교원으로 활동합니다.',
+    passRateSummary: '경력 승급 요건 충족 시 신청',
+    avgPassRate: '95%',
+    passRates: [
+      { year: 2020, written: 93, practical: null },
+      { year: 2021, written: 94, practical: null },
+      { year: 2022, written: 95, practical: null },
+      { year: 2023, written: 95, practical: null },
+      { year: 2024, written: 96, practical: null },
+    ],
+    schedules: [
+      { round: '2026년도 상시 신청', writtenApply: '연중 상시', writtenExam: '—', writtenResult: '신청 후 심사' },
+    ],
+    milestones: [
+      { label: '경력 요건 충족 확인', date: '2026-01-01' },
+      { label: '승급 신청', date: '2026-12-31' },
+    ],
+    subjects: [
+      { name: '경력 심사', desc: '2급 취득 후 한국어 교육 경력 5년 이상 증빙 서류 심사' },
+      { name: '교육기관 인정 요건', desc: '국립국어원 인정 기관에서의 교육 경력 산정 기준' },
+    ],
+    defaultTodos: [
+      '2급 취득 여부 및 경력 5년 요건 확인',
+      '교육 경력 증빙 서류(경력증명서 등) 준비',
+      '국립국어원 승급 신청 절차 확인',
     ],
     books: [],
   },
@@ -14811,12 +15190,12 @@ const CERTIFICATIONS = {
     ],
   },
 
-  '국내관광안내사': {
+  '국내여행안내사': {
     name: '국내여행안내사',
     icon: 'fa-map-location-dot',
-    category: '민간자격 · 관광',
+    category: '복지·교육',
     heroTitle: '2026년도 국내여행안내사 합격 가이드',
-    heroDesc: '국내여행안내사는 한국관광공사가 주관하는 국가공인 민간자격으로, 필기(관광국사·관광자원해설·관광법규·관광학개론)와 면접으로 구성됩니다. 국내 여행지 안내·해설·인솔 업무를 수행하며, 국내 관광업 취업의 기본 자격증입니다. 연 1회 시행됩니다.',
+    heroDesc: '국내여행안내사는 한국산업인력공단(Q-Net)이 문화체육관광부 소관으로 시행하는 국가전문자격으로, 필기(관광국사·관광자원해설·관광법규·관광학개론)와 면접으로 구성됩니다. 국내 여행지 안내·해설·인솔 업무를 수행하며, 국내 관광업 취업의 기본 자격증입니다. 연 1회 시행됩니다.',
     passRateSummary: '필기 40~55% | 면접 75~85%',
     avgPassRate: '48%',
     passRates: [
@@ -14891,9 +15270,9 @@ const CERTIFICATIONS = {
   '관광통역안내사': {
     name: '관광통역안내사',
     icon: 'fa-earth-asia',
-    category: '민간자격 · 관광',
+    category: '복지·교육',
     heroTitle: '2026년도 관광통역안내사 합격 가이드',
-    heroDesc: '관광통역안내사는 한국관광공사가 주관하는 국가공인 민간자격으로, 외국어 가이드로 활동하기 위한 필수 자격입니다. 영어·일본어·중국어·프랑스어·독일어·스페인어 등 14개 언어별로 시험이 시행됩니다. 필기(관광국사·관광자원해설·관광법규·관광학개론·외국어)와 면접(외국어 구술)으로 구성되며, 서울·제주 등지에서 외국인 관광객 인솔·해설 업무를 합니다.',
+    heroDesc: '관광통역안내사는 한국산업인력공단(Q-Net)이 문화체육관광부 소관으로 시행하는 국가전문자격으로, 외국어 가이드로 활동하기 위한 필수 자격입니다. 영어·일본어·중국어·프랑스어·독일어·스페인어 등 14개 언어별로 시험이 시행됩니다. 필기(관광국사·관광자원해설·관광법규·관광학개론·외국어)와 면접(외국어 구술)으로 구성되며, 서울·제주 등지에서 외국인 관광객 인솔·해설 업무를 합니다.',
     passRateSummary: '필기 25~40% | 면접 70~80%',
     avgPassRate: '33%',
     passRates: [
@@ -15040,10 +15419,10 @@ const CERTIFICATIONS = {
     ],
   },
 
-  '임상심리사': {
-    name: '임상심리사 2급',
+  '임상심리사2급': {
+    name: '임상심리사2급',
     icon: 'fa-brain',
-    category: '민간자격 · 기타',
+    category: '의료·보건',
     heroTitle: '2026년도 임상심리사 2급 합격 가이드',
     heroDesc: '임상심리사는 한국산업인력공단이 시행하는 국가기술자격으로, 이상심리·심리평가·심리치료·심리재활 능력을 검정합니다. 2급은 필기(이상심리학·심리평가·심리치료·임상심리학 실제)와 실기(사례연구·심리검사 해석)로 구성되며, 정신건강복지센터·병원·상담센터 취업에 유리합니다. 정신건강임상심리사(보건복지부)와는 별개의 자격입니다.',
     passRateSummary: '필기 40~55% | 실기 30~45%',
