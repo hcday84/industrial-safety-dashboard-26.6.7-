@@ -1277,6 +1277,7 @@ function renderBooks() {
         price: 22000 + i * 1000,
         coverBg: bgs[i % bgs.length],
         tags: [],
+        isPlaceholder: true,
       });
     }
     return padded;
@@ -1319,12 +1320,21 @@ function renderBooks() {
     }).join('');
 
     // 이미지 폴백 체인: 1) KB 상품코드 or 교보CDN(ISBN) → 2) Aladin API → 3) CSS 목업
+    // 단, 실데이터가 없어 자동 생성된 placeholder 도서는 실존하지 않는 가짜 제목이므로
+    // 제목 기반 이미지 검색(Aladin) 자체를 시도하지 않고 항상 CSS 목업만 표시한다
+    // (검색 결과가 나오더라도 전혀 다른 실제 도서 표지가 붙어 제목·표지 불일치를 유발하기 때문)
     const mockBg = book.coverBg || 'linear-gradient(135deg,#0d1f5e,#4db843)';
     const mockTitle = book.title.replace(/\([^)]*\)/g, '').trim();
     const nlAttr = `data-nl-title="${encodeURIComponent(book.title)}"`;
-    const imgSrc = book.imageUrl
-      || (book.isbn ? `https://contents.kyobobook.co.kr/sih/fit-in/200x0/pdt/${book.isbn}.jpg` : '');
-    const coverHTML = imgSrc
+    const imgSrc = book.isPlaceholder
+      ? ''
+      : (book.imageUrl || (book.isbn ? `https://contents.kyobobook.co.kr/sih/fit-in/200x0/pdt/${book.isbn}.jpg` : ''));
+    const coverHTML = book.isPlaceholder
+      ? `<div class="book-cover-mock" style="background:${mockBg}">
+           <span class="book-cover-title">${mockTitle}</span>
+           <span class="book-cover-publisher">${book.publisher}</span>
+         </div>`
+      : imgSrc
       ? `<img src="${imgSrc}" alt="${book.title}" class="book-cover-img" crossorigin="anonymous" ${nlAttr}
            onerror="this.removeAttribute('src');this.style.display='none';this.nextElementSibling.style.display='flex';window._nlFallback&&window._nlFallback(this)"
            onload="(function(img){try{var c=document.createElement('canvas');c.width=40;c.height=40;var x=c.getContext('2d');x.drawImage(img,0,0,40,40,0,0,40,40);var d=x.getImageData(0,0,40,40).data,s=0,s2=0,n=d.length/4;for(var i=0;i<d.length;i+=4){var v=(d[i]+d[i+1]+d[i+2])/3;s+=v;s2+=v*v;}var variance=s2/n-(s/n)*(s/n);if(variance<30){img.removeAttribute('src');img.style.display='none';img.nextElementSibling.style.display='flex';window._nlFallback&&window._nlFallback(img);}}catch(e){}})(this)">
