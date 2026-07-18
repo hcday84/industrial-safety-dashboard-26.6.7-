@@ -1644,22 +1644,24 @@ button, input, select {
 }
 
 .slide-buttons .btn-primary {
-  background-color: #ffffff;
-  color: var(--primary-color) !important;
+  background-color: #f59e0b;
+  border: 1px solid #f59e0b;
+  color: #ffffff !important;
 }
 
 .slide-buttons .btn-primary:hover {
-  background-color: var(--primary-bg);
+  background-color: #d97706;
 }
 
 .slide-buttons .btn-secondary {
-  border-color: rgba(255, 255, 255, 0.3);
-  background: rgba(255, 255, 255, 0.08);
+  border-color: #06b6d4;
+  background: #06b6d4;
   color: #ffffff !important;
 }
 
 .slide-buttons .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.18);
+  background: #0891b2;
+  border-color: #0891b2;
 }
 
 .slide-visual {
