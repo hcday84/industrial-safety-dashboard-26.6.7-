@@ -321,63 +321,6 @@ const examBooksData = [
     }
 ];
 
-const ALL_CERTIFICATIONS = [
-  '산업안전산업기사','전기기사','소방설비기사(기계분야)','소방설비기사(전기분야)','정보처리기사','건설안전산업기사',
-  '전기산업기사','신재생에너지발전설비기사','전기공사기사','에너지관리기사','일반기계기사',
-  '공조냉동기계기사','승강기기사','건설기계정비기사','화공기사','위험물산업기사',
-  '가스기사','대기환경기사','수질환경기사','산업안전기사','정보보안기사',
-  '빅데이터분석기사','SQLD','토목기사','건축기사','품질경영기사',
-  '전기공사산업기사','신재생에너지발전설비기능사(태양광)','에너지관리산업기사','용접기사','공조냉동기계산업기사',
-  '배관산업기사','해양환경기사','소음진동기사','폐기물처리기사',
-  '토양환경기사','소방설비산업기사(기계분야)','소방설비산업기사(전기분야)','소방안전관리자특급','소방안전관리자1급','소방안전관리자2급',
-  '소방안전관리자3급','위험물기능사','가스산업기사','산업위생관리기사','토목산업기사',
-  '건축산업기사','실내건축기사','조경기능사','조경기사','측량및지형공간정보기사',
-  '품질경영산업기사','물류관리사','전기기능장','용접기능장',
-  '배관기능장','금형기능장','기계가공조립기능사','위험물기능장',
-  
-  '전기기능사','피복아크용접기능사','가스텅스텐아크용접기능사','이산화탄소가스아크용접기능사','배관기능사',
-  '공조냉동기계기능사','승강기기능사','화학분석기능사',
-  '전산응용건축제도기능사','콘크리트기능사','건설재료시험기능사','측량기능사',
-  '웹디자인기능사','미용사(일반)','미용사(피부)','미용사(네일)',
-  '미용사(메이크업)','맞춤형화장품조제관리사','이용사',
-  '산업위생관리산업기사','소음진동산업기사','인간공학기사','온실가스관리기사',
-  '신재생에너지발전설비산업기사','조경산업기사','도시계획기사','지적기사','로봇기구개발기사',
-  '3D프린터운용기능사','간호사','간호조무사','물리치료사','작업치료사',
-  '임상병리사','방사선사','치위생사','응급구조사1급','응급구조사2급',
-  '요양보호사','보건의료정보관리사','보건교육사','위생사','영양사',
-  '산림기능사','산림기능장','나무의사','산림기사','식물보호기사',
-  '건설안전기사','초음파비파괴검사기사','방사선비파괴검사기사','침투비파괴검사기사','자기비파괴검사기사','재료기사',
-  '전자기사','무선설비기사','자동차기사','화재감식평가기사','철도차량기사',
-  '전자산업기사','정보통신산업기사',
-  '금속재료산업기사','가스기능장',
-  '가스기능사','자동차정비기능사','지게차운전기능사',
-  '굴착기운전기능사','정보통신기능사','도배기능사',
-  '건설기계정비산업기사','기중기운전기능사','타워크레인운전기능사','컨테이너크레인운전기능사','농기계운전기능사',
-  '천장크레인운전기능사','불도저운전기능사','로더운전기능사','롤러운전기능사',
-  '천공기운전기능사',
-  '1종운전면허(대형)','1종운전면허(보통)','2종운전면허(보통)','화물운송종사','버스운전자격',
-  '택시운전자격','이륜자동차운전면허','자동차정비기사','자동차정비산업기사','자동차정비기능장',
-  '자동차차체수리기능사','자동차보수도장기능사',
-  '기계설계산업기사',
-  '선반기능사','밀링기능사','판금제관기능사',
-  '기계정비산업기사','건축설비기사','건축설비산업기사','건설재료시험기사','거푸집기능사',
-  '비계기능사','타일기능사','유리시공기능사','수질환경산업기사','대기환경산업기사',
-  '정보보안산업기사',
-  '항공산업기사','항공기사','철도신호기사',
-  '철도신호산업기사','철도차량산업기사','식품안전기사','식품산업기사','유기농업기능사',
-  '원예기능사','화훼장식기능사','화훼장식산업기사','화훼장식기사','축산기사',
-  '축산기능사','농산물품질관리사','수산물품질관리사','종자기사','종자기능사',
-  '버섯종균기능사','식육처리기능사','가축인공수정사','유기농업기사','원예기사',
-  '전산응용기계제도기능사','건설안전기술사','소방기술사','발송배전기술사',
-  '전기응용기술사','기계기술사','화공기술사','가스기술사','정보관리기술사',
-  '컴퓨터시스템응용기술사','토목기술사',
-  '네트워크관리사1급','네트워크관리사2급','리눅스마스터1급','리눅스마스터2급',
-  'ADsP','ADP','SQLP','임베디드기사','멀티미디어콘텐츠제작전문가',
-  'CCNA','CCNP','AWS Solutions Architect','GCP','Azure Fundamentals',
-  '컴퓨터활용능력1급','컴퓨터활용능력2급','ITQ','MOS','CISA','CISSP',
-  '치과위생사','ISMS','정보통신기사','사무자동화산업기사'
-];
-
 let _invInit = false;
 
 window.initInventoryApp = function() {
@@ -388,16 +331,7 @@ window.initInventoryApp = function() {
     let currentBooks = [...examBooksData];
 
     // Dom Elements
-    const statTotal = document.getElementById("statTotal");
-    const statOutOfPrint = document.getElementById("statOutOfPrint");
-    const statRevised = document.getElementById("statRevised");
-    const searchInput = document.getElementById("searchInput");
-    const filterStatus = document.getElementById("filterStatus");
-    const filterPublisher = document.getElementById("filterPublisher");
-    const sortBy = document.getElementById("sortBy");
-    const filterYear = document.getElementById("filterYear");
     const booksContainer = document.getElementById("booksContainer");
-    const btnExportExcel = document.getElementById("btnExportExcel");
     const compareModal = document.getElementById("compareModal");
     const btnMinClose = document.getElementById("btnMinClose");
     const modalOrigTitle = document.getElementById("modalOrigTitle");
@@ -434,51 +368,6 @@ window.initInventoryApp = function() {
 
     let analyzedRows = [];
     let filterTag = "all";
-
-    // Publisher autocomplete
-    const publisherList = [...new Set(examBooksData.map(b => b.publisher))].sort();
-    const publisherSuggestions = document.getElementById("publisherSuggestions");
-
-    function setupPublisherAutocomplete() {
-        filterPublisher.addEventListener("input", () => {
-            const val = filterPublisher.value.trim();
-            publisherSuggestions.innerHTML = "";
-            if (!val) { publisherSuggestions.classList.remove("open"); filterAndRender(); return; }
-            const matches = publisherList.filter(p => p.includes(val));
-            if (matches.length === 0) { publisherSuggestions.classList.remove("open"); filterAndRender(); return; }
-            matches.forEach(pub => {
-                const li = document.createElement("li");
-                li.textContent = pub;
-                li.addEventListener("mousedown", () => {
-                    filterPublisher.value = pub;
-                    publisherSuggestions.classList.remove("open");
-                    filterAndRender();
-                });
-                publisherSuggestions.appendChild(li);
-            });
-            publisherSuggestions.classList.add("open");
-            filterAndRender();
-        });
-        filterPublisher.addEventListener("blur", () => {
-            setTimeout(() => publisherSuggestions.classList.remove("open"), 150);
-        });
-        filterPublisher.addEventListener("keydown", e => {
-            if (e.key === "Escape") { filterPublisher.value = ""; publisherSuggestions.classList.remove("open"); filterAndRender(); }
-        });
-    }
-
-    function populatePublishers() {
-        setupPublisherAutocomplete();
-    }
-
-    function updateStats() {
-        const total = examBooksData.length;
-        const outOfPrint = examBooksData.filter(b => b.status === "out_of_print").length;
-        const revised = examBooksData.filter(b => b.revised !== null).length;
-        statTotal.textContent = total;
-        statOutOfPrint.textContent = outOfPrint;
-        statRevised.textContent = revised;
-    }
 
     function formatAsOfDate() {
         const now = new Date();
@@ -644,92 +533,10 @@ window.initInventoryApp = function() {
         showExportToast();
     }
 
-    function filterAndRender() {
-        const query = searchInput.value.toLowerCase().trim();
-        const statusVal = filterStatus.value;
-        const publisherVal = filterPublisher.value.trim();
-        const sortVal = sortBy.value;
-        const yearVal = filterYear.value;
-
-        let filtered = examBooksData.filter(book => {
-            const matchesQuery =
-                book.title.toLowerCase().includes(query) ||
-                book.author.toLowerCase().includes(query) ||
-                book.publisher.toLowerCase().includes(query) ||
-                book.isbn.includes(query) ||
-                (book.certification && book.certification.toLowerCase().includes(query)) ||
-                (book.revised && book.revised.title.toLowerCase().includes(query));
-
-            let matchesStatus = true;
-            if (statusVal === "out-of-print") matchesStatus = book.status === "out_of_print";
-            else if (statusVal === "out-of-stock") matchesStatus = book.status === "out_of_stock";
-            else if (statusVal === "has-revised") matchesStatus = book.revised !== null;
-            else if (statusVal === "no-revised") matchesStatus = book.revised === null;
-
-            const matchesPublisher = !publisherVal || book.publisher.includes(publisherVal);
-            const matchesYear = yearVal === "all" || book.pubDate.startsWith(yearVal);
-
-            return matchesQuery && matchesStatus && matchesPublisher && matchesYear;
-        });
-
-        filtered.sort((a, b) => {
-            if (sortVal === "titleAsc") return a.title.localeCompare(b.title, "ko");
-            else if (sortVal === "pubDateDesc") return new Date(b.pubDate) - new Date(a.pubDate);
-            else if (sortVal === "priceDesc") return b.price - a.price;
-            return 0;
-        });
-
-        currentBooks = filtered;
-        renderIsbnBanner(query);
-        renderBooksList();
-    }
-
-    function isIsbnQuery(query) {
-        return /^97[89]\d{10}$/.test(query.replace(/-/g, ""));
-    }
-
-    function renderIsbnBanner(query) {
-        let banner = document.getElementById("isbnBanner");
-        const cleanIsbn = query.replace(/-/g, "");
-        if (!isIsbnQuery(cleanIsbn)) { if (banner) banner.remove(); return; }
-        const kyoboUrl = `https://search.kyobobook.co.kr/search?keyword=${cleanIsbn}`;
-        const yes24Url = `https://www.yes24.com/Product/Search?domain=ALL&query=${cleanIsbn}`;
-        if (!banner) {
-            banner = document.createElement("div");
-            banner.id = "isbnBanner";
-            booksContainer.parentNode.insertBefore(banner, booksContainer);
-        }
-        banner.innerHTML = `
-            <div class="isbn-banner card-glass">
-                <div class="isbn-banner-label">
-                    <i data-lucide="barcode"></i>
-                    <span>ISBN <strong>${cleanIsbn}</strong> 으로 외부 서점 검색</span>
-                </div>
-                <div class="isbn-banner-links">
-                    <a href="${kyoboUrl}" target="_blank" class="btn btn-gradient btn-sm">
-                        <i data-lucide="shopping-bag"></i> 교보문고에서 검색
-                    </a>
-                    <a href="${yes24Url}" target="_blank" class="btn btn-cyan btn-sm">
-                        <i data-lucide="shopping-bag"></i> YES24에서 검색
-                    </a>
-                </div>
-            </div>
-        `;
-        lucide.createIcons();
-    }
-
     function renderBooksList() {
         booksContainer.innerHTML = "";
         if (currentBooks.length === 0) {
-            const query = searchInput.value.toLowerCase().trim();
-            const matchedCert = query ? ALL_CERTIFICATIONS.find(c => c.toLowerCase().includes(query) || query.includes(c.toLowerCase())) : null;
-            booksContainer.innerHTML = matchedCert
-              ? `<div class="empty-state">
-                  <i data-lucide="search-x"></i>
-                  <p><strong>${matchedCert}</strong> 관련 도서가 재고에 없습니다.</p>
-                  <a href="https://search.kyobobook.co.kr/search?keyword=${encodeURIComponent(matchedCert)}+수험서" target="_blank" rel="noopener noreferrer" class="btn btn-gradient btn-sm" style="margin-top:12px;display:inline-flex;align-items:center;gap:6px;"><i data-lucide="external-link"></i> 교보문고에서 수험서 찾기</a>
-                </div>`
-              : `<div class="empty-state"><i data-lucide="search-x"></i><p>검색 결과가 없습니다.</p></div>`;
+            booksContainer.innerHTML = `<div class="empty-state"><i data-lucide="search-x"></i><p>등록된 도서가 없습니다.</p></div>`;
             lucide.createIcons();
             return;
         }
@@ -832,28 +639,6 @@ window.initInventoryApp = function() {
 
     function closeModal() { compareModal.classList.remove("show"); }
 
-    function exportToExcel() {
-        const wsData = [["도서 고유ID","구버전 도서명 (절판)","출판사","저자(구버전)","출판일(구버전)","정가(구버전)","ISBN(구버전)","구버전 교보링크","구버전 YES24링크","개정판 유무","개정판 도서명 (신버전)","저자(개정판)","출판일(개정판)","정가(개정판)","ISBN(개정판)","개정판 교보링크","개정판 YES24링크"]];
-        currentBooks.forEach(book => {
-            const revisedStatus = book.revised ? "개정판 존재" : "완전 절판 (개정판 없음)";
-            wsData.push([book.id,book.title,book.publisher,book.author,book.pubDate,book.price,book.isbn,book.kyoboUrl,book.yes24Url,revisedStatus,book.revised?book.revised.title:"-",book.revised?book.revised.author:"-",book.revised?book.revised.pubDate:"-",book.revised?book.revised.price:"-",book.revised?book.revised.isbn:"-",book.revised?book.revised.kyoboUrl:"-",book.revised?book.revised.yes24Url:"-"]);
-        });
-        const wb = XLSX.utils.book_new();
-        const ws = XLSX.utils.aoa_to_sheet(wsData);
-        const maxCols = wsData[0].length;
-        const colWidths = [];
-        for (let c = 0; c < maxCols; c++) {
-            let maxLen = 10;
-            for (let r = 0; r < wsData.length; r++) { const val = String(wsData[r][c]||""); if (val.length > maxLen) maxLen = val.length; }
-            colWidths.push({ wch: maxLen + 2 });
-        }
-        ws["!cols"] = colWidths;
-        XLSX.utils.book_append_sheet(wb, ws, "수험서_절판_개정대조표");
-        const dateStamp = new Date().toISOString().slice(0, 10).replace(/-/g, "");
-        XLSX.writeFile(wb, `기술수험서_절판및개정_조회대장_${dateStamp}.xlsx`);
-        showExportToast();
-    }
-
     function showExportToast() {
         exportToast.classList.add("show");
         setTimeout(() => exportToast.classList.remove("show"), 4000);
@@ -942,26 +727,11 @@ window.initInventoryApp = function() {
         showExportToast();
     }
 
-function populateYears() {
-        const dataYears = new Set(examBooksData.map(b => b.pubDate.slice(0, 4)));
-        ["2026", "2025", "2024"].forEach(y => dataYears.add(y));
-        const years = [...dataYears].sort((a, b) => b - a);
-        years.forEach(year => {
-            const option = document.createElement("option");
-            option.value = year;
-            option.textContent = year + "년";
-            filterYear.appendChild(option);
-        });
-    }
-
     // ── Initialization ─────────────────────────────
-    populatePublishers();
-    updateStats();
     updateTitleVolumeStats();
     updateOutOfPrintStats();
     renderBooksList();
     lucide.createIcons();
-    populateYears();
 
     const btnRefreshOutOfPrintStats = document.getElementById("btnRefreshOutOfPrintStats");
     if (btnRefreshOutOfPrintStats) {
@@ -985,12 +755,6 @@ function populateYears() {
     const btnExportOutOfPrintStats = document.getElementById("btnExportOutOfPrintStats");
     if (btnExportOutOfPrintStats) btnExportOutOfPrintStats.addEventListener("click", exportOutOfPrintStats);
 
-    searchInput.addEventListener("input", filterAndRender);
-    filterStatus.addEventListener("change", filterAndRender);
-    filterPublisher.addEventListener("change", filterAndRender);
-    sortBy.addEventListener("change", filterAndRender);
-    filterYear.addEventListener("change", filterAndRender);
-    btnExportExcel.addEventListener("click", exportToExcel);
     btnMinClose.addEventListener("click", closeModal);
     compareModal.addEventListener("click", e => { if (e.target === compareModal) closeModal(); });
 

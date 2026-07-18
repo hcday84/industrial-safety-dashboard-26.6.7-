@@ -844,10 +844,7 @@
           <i class="fa-solid fa-list"></i> 발주&amp;재고관리 메뉴
         </div>
         <nav class="inv-nav-links">
-          <a href="#inv-search-section" class="inv-nav-item active" onclick="invNavActivate(this)">
-            <i class="fa-solid fa-magnifying-glass"></i> 수험서 발주 관리
-          </a>
-          <a href="#inv-stats-section" class="inv-nav-item" onclick="invNavActivate(this)">
+          <a href="#inv-title-count-section" class="inv-nav-item active" onclick="invNavActivate(this)">
             <i class="fa-solid fa-chart-bar"></i> 수험서 종.권수 보유 현황
           </a>
           <a href="#inv-upload-section" class="inv-nav-item" onclick="invNavActivate(this)">
@@ -878,81 +875,6 @@
 
       <!-- 발주&재고관리 메인 콘텐츠 -->
       <div class="inv-main-content">
-
-      <div id="inv-search-section" class="filter-controls card-glass">
-        <div class="search-box">
-          <i data-lucide="search" class="search-icon"></i>
-          <input type="text" id="searchInput" placeholder="ISBN, 도서명, 저자, 출판사, 자격증 검색...">
-        </div>
-        <div class="filters-row">
-          <div class="filter-group">
-            <label for="filterStatus">상태 구분</label>
-            <select id="filterStatus" class="select-custom">
-              <option value="all">전체 도서</option>
-              <option value="out-of-print">절판 도서만</option>
-              <option value="out-of-stock">품절 도서만</option>
-              <option value="has-revised">개정판 존재 도서만</option>
-              <option value="no-revised">개정판 없음 (완전절판)</option>
-            </select>
-          </div>
-          <div class="filter-group">
-            <label for="filterPublisher">출판사</label>
-            <div class="publisher-input-wrap">
-              <input type="text" id="filterPublisher" class="select-custom publisher-input" placeholder="출판사명 입력..." autocomplete="off">
-              <ul id="publisherSuggestions" class="publisher-suggestions"></ul>
-            </div>
-          </div>
-          <div class="filter-group">
-            <label for="sortBy">정렬 기준</label>
-            <select id="sortBy" class="select-custom">
-              <option value="titleAsc">도서명 오름차순</option>
-              <option value="pubDateDesc">구버전 출판일 최신순</option>
-              <option value="priceDesc">구버전 가격 높은순</option>
-            </select>
-          </div>
-          <div class="filter-group">
-            <label for="filterYear">기준 연도</label>
-            <select id="filterYear" class="select-custom">
-              <option value="all">전체 연도</option>
-            </select>
-          </div>
-        </div>
-      </div>
-
-      <section id="inv-stats-section" class="stats-grid">
-        <div class="stats-card card-glass">
-          <div class="stats-info">
-            <span class="stats-label">전체 수험서 데이터</span>
-            <span class="stats-value" id="statTotal">0</span>
-            <span class="stats-desc">교보문고 &amp; YES24 대조군</span>
-          </div>
-          <div class="stats-icon text-indigo"><i data-lucide="database"></i></div>
-        </div>
-        <div class="stats-card card-glass text-warning-border">
-          <div class="stats-info">
-            <span class="stats-label">절판 도서</span>
-            <span class="stats-value text-red" id="statOutOfPrint">0</span>
-            <span class="stats-desc">재고 부족 및 절판 처리 완료</span>
-          </div>
-          <div class="stats-icon text-red"><i data-lucide="slash"></i></div>
-        </div>
-        <div class="stats-card card-glass text-success-border">
-          <div class="stats-info">
-            <span class="stats-label">개정판 출간 완료</span>
-            <span class="stats-value text-cyan" id="statRevised">0</span>
-            <span class="stats-desc">후속 개정 도서 매핑 정보 보유</span>
-          </div>
-          <div class="stats-icon text-cyan"><i data-lucide="refresh-cw"></i></div>
-        </div>
-        <div class="stats-card card-glass">
-          <div class="stats-info">
-            <span class="stats-label">수동 엑셀 추출</span>
-            <button class="btn btn-gradient btn-export" id="btnExportExcel">
-              <i data-lucide="file-spreadsheet"></i> 엑셀 내보내기
-            </button>
-          </div>
-        </div>
-      </section>
 
       <section id="inv-title-count-section" class="card-glass" style="margin-bottom:2.5rem; padding:1.5rem;">
         <div class="upload-analyzer-title" style="margin-bottom:1rem; justify-content:space-between; width:100%;">
@@ -1362,7 +1284,7 @@
   <script src="books_data.js?v=20260701e"></script>
   <script src="jm-codes.js"></script>
   <!-- 발주&재고관리 탭 JS -->
-  <script src="inventory-app.js?v=20260718d"></script>
+  <script src="inventory-app.js?v=20260718e"></script>
   <!-- App Javascript -->
   <script src="app.js?v=20260701e"></script>
   <!-- 한국보건의료인국가시험원 시험일정 API -->
@@ -1377,7 +1299,7 @@
     // 스크롤 위치에 따라 사이드바 메뉴 자동 활성화
     document.addEventListener('DOMContentLoaded', () => {
       const invPanel = document.getElementById('inventory-panel');
-      const sections = ['inv-search-section','inv-stats-section','inv-upload-section','inv-books-section','inv-newbooks-section'];
+      const sections = ['inv-title-count-section','inv-upload-section','inv-books-section','inv-newbooks-section'];
       invPanel.addEventListener('scroll', () => {
         let current = sections[0];
         sections.forEach(id => {
