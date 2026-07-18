@@ -526,6 +526,48 @@ window.initInventoryApp = function() {
         if (updatedEl) updatedEl.textContent = formatAsOfDate();
     }
 
+    // 수험서 종·권수 보유 현황 엑셀 내보내기 (분류별 요약 + 자격증별 상세)
+    function exportTitleVolumeStats() {
+        if (typeof REAL_BOOKS === "undefined") return;
+        function certType(name) {
+            if (typeof PRIVATE_CERT_NAMES !== "undefined" && PRIVATE_CERT_NAMES.has(name)) return "민간자격";
+            if (typeof PROFESSIONAL_CERT_NAMES !== "undefined" && PROFESSIONAL_CERT_NAMES.has(name)) return "국가전문자격";
+            return "국가기술자격";
+        }
+        const detailRows = [["분류", "자격증명", "종수", "권수"]];
+        const summary = { "국가기술자격": { titles: 0, volumes: 0 }, "국가전문자격": { titles: 0, volumes: 0 }, "민간자격": { titles: 0, volumes: 0 } };
+        for (const cert of Object.keys(REAL_BOOKS)) {
+            const type = certType(cert);
+            const titleSet = new Set(REAL_BOOKS[cert].map(b => b.title));
+            const volumes = REAL_BOOKS[cert].length;
+            detailRows.push([type, cert, titleSet.size, volumes]);
+            summary[type].titles += titleSet.size;
+            summary[type].volumes += volumes;
+        }
+        const totalTitles = summary["국가기술자격"].titles + summary["국가전문자격"].titles + summary["민간자격"].titles;
+        const totalVolumes = summary["국가기술자격"].volumes + summary["국가전문자격"].volumes + summary["민간자격"].volumes;
+        const summaryRows = [
+            ["분류", "종수", "권수"],
+            ["국가기술자격", summary["국가기술자격"].titles, summary["국가기술자격"].volumes],
+            ["국가전문자격", summary["국가전문자격"].titles, summary["국가전문자격"].volumes],
+            ["민간자격", summary["민간자격"].titles, summary["민간자격"].volumes],
+            ["전체 합계", totalTitles, totalVolumes],
+        ];
+
+        const wb = XLSX.utils.book_new();
+        const wsSummary = XLSX.utils.aoa_to_sheet(summaryRows);
+        wsSummary["!cols"] = [{ wch: 16 }, { wch: 10 }, { wch: 10 }];
+        XLSX.utils.book_append_sheet(wb, wsSummary, "분류별_요약");
+
+        const wsDetail = XLSX.utils.aoa_to_sheet(detailRows);
+        wsDetail["!cols"] = [{ wch: 14 }, { wch: 28 }, { wch: 10 }, { wch: 10 }];
+        XLSX.utils.book_append_sheet(wb, wsDetail, "자격증별_상세");
+
+        const dateStamp = new Date().toISOString().slice(0, 10).replace(/-/g, "");
+        XLSX.writeFile(wb, `수험서_종권수_보유현황_${dateStamp}.xlsx`);
+        showExportToast();
+    }
+
     // 수험서 품.절판 현황 (절판/품절 종·권수, examBooksData 기준 실시간 집계)
     function updateOutOfPrintStats() {
         const groups = { out_of_print: new Set(), out_of_stock: new Set() };
@@ -549,6 +591,39 @@ window.initInventoryApp = function() {
 
         const updatedEl = document.getElementById("inv-outofprint-updated");
         if (updatedEl) updatedEl.textContent = formatAsOfDate();
+    }
+
+    // 수험서 품.절판 현황 엑셀 내보내기 (요약 + 도서별 상세)
+    function exportOutOfPrintStats() {
+        const oop = examBooksData.filter(b => b.status === "out_of_print");
+        const oos = examBooksData.filter(b => b.status === "out_of_stock");
+        const summaryRows = [
+            ["구분", "종수", "권수"],
+            ["절판", new Set(oop.map(b => b.title)).size, oop.length],
+            ["품절", new Set(oos.map(b => b.title)).size, oos.length],
+            ["합계", new Set(examBooksData.map(b => b.title)).size, examBooksData.length],
+        ];
+        const detailRows = [["구분", "도서명", "자격증", "출판사", "출판일", "정가", "ISBN", "개정판 유무"]];
+        examBooksData.forEach(b => {
+            detailRows.push([
+                b.status === "out_of_print" ? "절판" : "품절",
+                b.title, b.certification || "-", b.publisher, b.pubDate, b.price, b.isbn,
+                b.revised ? "있음" : "없음"
+            ]);
+        });
+
+        const wb = XLSX.utils.book_new();
+        const wsSummary = XLSX.utils.aoa_to_sheet(summaryRows);
+        wsSummary["!cols"] = [{ wch: 10 }, { wch: 10 }, { wch: 10 }];
+        XLSX.utils.book_append_sheet(wb, wsSummary, "품절판_요약");
+
+        const wsDetail = XLSX.utils.aoa_to_sheet(detailRows);
+        wsDetail["!cols"] = [{ wch: 8 }, { wch: 40 }, { wch: 16 }, { wch: 14 }, { wch: 12 }, { wch: 10 }, { wch: 16 }, { wch: 10 }];
+        XLSX.utils.book_append_sheet(wb, wsDetail, "도서별_상세");
+
+        const dateStamp = new Date().toISOString().slice(0, 10).replace(/-/g, "");
+        XLSX.writeFile(wb, `수험서_품절판_현황_${dateStamp}.xlsx`);
+        showExportToast();
     }
 
     function filterAndRender() {
@@ -885,6 +960,12 @@ function populateYears() {
             lucide.createIcons();
         });
     }
+
+    const btnExportTitleStats = document.getElementById("btnExportTitleStats");
+    if (btnExportTitleStats) btnExportTitleStats.addEventListener("click", exportTitleVolumeStats);
+
+    const btnExportOutOfPrintStats = document.getElementById("btnExportOutOfPrintStats");
+    if (btnExportOutOfPrintStats) btnExportOutOfPrintStats.addEventListener("click", exportOutOfPrintStats);
 
     searchInput.addEventListener("input", filterAndRender);
     filterStatus.addEventListener("change", filterAndRender);
