@@ -1920,9 +1920,9 @@ window.showLocationCenters = function(code) {
   const el = document.getElementById('location-centers');
   if (!el) return;
 
-  // Q-Net 시험장 찾기 URL (지역별 검색 링크)
-  const qnetUrl = `https://www.q-net.or.kr/tst002.do?id=tst00201&gSite=Q&gId=`;
-  const scheduleUrl = `https://www.q-net.or.kr/cst001.do?id=cst00101&gSite=Q&gId=`;
+  // Q-Net 시험장 찾기(필기관할구역안내) / 시험일정(월간시험일정) URL — 2026-07-18 죽은 링크(tst002/cst001) 교체
+  const qnetUrl = `https://www.q-net.or.kr/rcv011.do?id=rcv01104&gSite=Q&gId=`;
+  const scheduleUrl = `https://www.q-net.or.kr/crf021.do?id=crf02103&gSite=Q&gId=`;
 
   el.innerHTML = `
     <div class="location-result">
