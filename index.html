@@ -955,9 +955,17 @@
       </section>
 
       <section id="inv-title-count-section" class="card-glass" style="margin-bottom:2.5rem; padding:1.5rem;">
-        <div class="upload-analyzer-title" style="margin-bottom:1rem;">
-          <i data-lucide="library"></i>
-          <span>수험서 종.권수 보유 현황 (자격증 분류별)</span>
+        <div class="upload-analyzer-title" style="margin-bottom:1rem; justify-content:space-between; width:100%;">
+          <div style="display:flex; align-items:center; gap:0.6rem;">
+            <i data-lucide="library"></i>
+            <span>수험서 종.권수 보유 현황 (자격증 분류별)</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <span id="inv-title-count-updated" class="stats-desc" style="font-weight:400;"></span>
+            <button type="button" id="btnRefreshTitleStats" class="btn btn-gradient btn-sm">
+              <i data-lucide="refresh-cw"></i> 업데이트
+            </button>
+          </div>
         </div>
         <div class="stats-grid" style="margin-bottom:0;">
           <div class="stats-card card-glass">

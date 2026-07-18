@@ -513,6 +513,15 @@ window.initInventoryApp = function() {
         setStat("Pro", counts.pro.titles, counts.pro.volumes);
         setStat("Priv", counts.private.titles, counts.private.volumes);
         setStat("All", allTitles, allVolumes);
+
+        const updatedEl = document.getElementById("inv-title-count-updated");
+        if (updatedEl) {
+            const now = new Date();
+            const y = now.getFullYear();
+            const m = String(now.getMonth() + 1).padStart(2, "0");
+            const d = String(now.getDate()).padStart(2, "0");
+            updatedEl.textContent = `(${y}년${m}월${d}일 기준)`;
+        }
     }
 
     function filterAndRender() {
@@ -832,6 +841,14 @@ function populateYears() {
     renderBooksList();
     lucide.createIcons();
     populateYears();
+
+    const btnRefreshTitleStats = document.getElementById("btnRefreshTitleStats");
+    if (btnRefreshTitleStats) {
+        btnRefreshTitleStats.addEventListener("click", () => {
+            updateTitleVolumeStats();
+            lucide.createIcons();
+        });
+    }
 
     searchInput.addEventListener("input", filterAndRender);
     filterStatus.addEventListener("change", filterAndRender);
