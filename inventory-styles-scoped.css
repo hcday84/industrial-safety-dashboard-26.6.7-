@@ -414,6 +414,36 @@
 #inventory-panel .text-cyan{ color: var(--color-cyan); }
 #inventory-panel .text-red{ color: var(--color-red); }
 
+/* 수험서 종.권수 보유 현황 - 한 줄 4개 컴팩트 카드 */
+#inv-title-count-section .stats-grid{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+}
+#inv-title-count-section .stats-card{
+    padding: 0.85rem 1rem;
+}
+#inv-title-count-section .stats-label{
+    font-size: 0.72rem;
+}
+#inv-title-count-section .stats-value{
+    font-size: 1.5rem;
+}
+#inv-title-count-section .stats-desc{
+    font-size: 0.65rem;
+}
+#inv-title-count-section .stats-icon{
+    font-size: 1.2rem;
+}
+#inv-title-count-section .stats-icon i{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+@media (max-width: 700px){
+    #inv-title-count-section .stats-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* Main Dashboard Workspace */
 #inventory-panel .dashboard-workspace{
     padding: 2rem;
