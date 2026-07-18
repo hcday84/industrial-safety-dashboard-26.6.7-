@@ -847,7 +847,7 @@
           <a href="#inv-title-count-section" class="inv-nav-item active" onclick="invNavActivate(this)">
             <i class="fa-solid fa-chart-bar"></i> 수험서 종.권수 보유 현황
           </a>
-          <a href="#inv-upload-section" class="inv-nav-item" onclick="invNavActivate(this)">
+          <a href="#inv-outofprint-stats-section" class="inv-nav-item" onclick="invNavActivate(this)">
             <i class="fa-solid fa-file-arrow-up"></i> 수험서 품.절판 현황
           </a>
           <a href="#inv-books-section" class="inv-nav-item" onclick="invNavActivate(this)">
@@ -968,38 +968,6 @@
               <span class="stats-desc" id="statOOPAllDesc">총 0권</span>
             </div>
             <div class="stats-icon text-cyan"><i data-lucide="layers"></i></div>
-          </div>
-        </div>
-      </section>
-
-      <section id="inv-upload-section" class="upload-analyzer card-glass">
-        <div class="upload-analyzer-header" id="analyzerToggle">
-          <div class="upload-analyzer-title">
-            <i data-lucide="file-search"></i>
-            <span>엑셀 업로드 &mdash; 절판/품절 도서 추출</span>
-          </div>
-          <i data-lucide="chevron-down" id="analyzerChevron"></i>
-        </div>
-        <div class="upload-analyzer-body" id="analyzerBody">
-          <div class="upload-zone" id="uploadZone">
-            <i data-lucide="upload-cloud"></i>
-            <p>엑셀 파일을 여기에 끌어다 놓거나 클릭하여 업로드</p>
-            <span class="upload-hint">.xlsx / .xls 지원 &nbsp;|&nbsp; ISBN 컬럼 또는 상태 컬럼 자동 감지</span>
-            <input type="file" id="excelUpload" accept=".xlsx,.xls" hidden>
-          </div>
-          <div class="upload-results" id="uploadResults" style="display:none">
-            <div class="upload-results-toolbar">
-              <div class="upload-summary" id="uploadSummary"></div>
-              <div class="upload-filter-btns">
-                <button class="btn-filter-tag active" data-filter="all">전체</button>
-                <button class="btn-filter-tag" data-filter="out_of_print">절판</button>
-                <button class="btn-filter-tag" data-filter="out_of_stock">품절</button>
-              </div>
-              <button class="btn btn-gradient btn-sm" id="btnExportFiltered">
-                <i data-lucide="download"></i> 결과 엑셀 저장
-              </button>
-            </div>
-            <div class="upload-cards" id="uploadTableBody"></div>
           </div>
         </div>
       </section>
@@ -1284,7 +1252,7 @@
   <script src="books_data.js?v=20260701e"></script>
   <script src="jm-codes.js"></script>
   <!-- 발주&재고관리 탭 JS -->
-  <script src="inventory-app.js?v=20260718f"></script>
+  <script src="inventory-app.js?v=20260718g"></script>
   <!-- App Javascript -->
   <script src="app.js?v=20260701e"></script>
   <!-- 한국보건의료인국가시험원 시험일정 API -->
@@ -1299,7 +1267,7 @@
     // 스크롤 위치에 따라 사이드바 메뉴 자동 활성화
     document.addEventListener('DOMContentLoaded', () => {
       const invPanel = document.getElementById('inventory-panel');
-      const sections = ['inv-title-count-section','inv-upload-section','inv-books-section','inv-newbooks-section'];
+      const sections = ['inv-title-count-section','inv-outofprint-stats-section','inv-books-section','inv-newbooks-section'];
       invPanel.addEventListener('scroll', () => {
         let current = sections[0];
         sections.forEach(id => {

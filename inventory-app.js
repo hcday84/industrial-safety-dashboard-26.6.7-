@@ -353,21 +353,6 @@ window.initInventoryApp = function() {
     const modalRevKyobo = document.getElementById("modalRevKyobo");
     const modalRevYes24 = document.getElementById("modalRevYes24");
     const exportToast = document.getElementById("exportToast");
-    const invPanel = document.getElementById("inventory-panel");
-
-    // Upload Analyzer DOM
-    const uploadZone     = document.getElementById("uploadZone");
-    const excelUpload    = document.getElementById("excelUpload");
-    const uploadResults  = document.getElementById("uploadResults");
-    const uploadSummary  = document.getElementById("uploadSummary");
-    const uploadTableBody = document.getElementById("uploadTableBody");
-    const btnExportFiltered = document.getElementById("btnExportFiltered");
-    const analyzerToggle = document.getElementById("analyzerToggle");
-    const analyzerBody   = document.getElementById("analyzerBody");
-    const analyzerChevron = document.getElementById("analyzerChevron");
-
-    let analyzedRows = [];
-    let filterTag = "all";
 
     function formatAsOfDate() {
         const now = new Date();
@@ -644,89 +629,6 @@ window.initInventoryApp = function() {
         setTimeout(() => exportToast.classList.remove("show"), 4000);
     }
 
-    function processExcelFile(file) {
-        const reader = new FileReader();
-        reader.onload = e => {
-            const wb = XLSX.read(e.target.result, { type: "array" });
-            const ws = wb.Sheets[wb.SheetNames[0]];
-            const rows = XLSX.utils.sheet_to_json(ws, { defval: "" });
-            analyzedRows = analyzeRows(rows);
-            renderAnalyzerTable();
-            uploadResults.style.display = "block";
-            lucide.createIcons();
-        };
-        reader.readAsArrayBuffer(file);
-    }
-
-    const COL_ISBN   = ["isbn", "ISBN", "아이에스비엔", "국제표준도서번호"];
-    const COL_TITLE  = ["title", "도서명", "책이름", "제목", "서명"];
-    const COL_PUB    = ["publisher", "출판사", "발행처"];
-    const COL_STATUS = ["status", "상태", "재고상태", "도서상태"];
-
-    function findCol(row, candidates) {
-        const keys = Object.keys(row);
-        for (const c of candidates) { const found = keys.find(k => k.trim().toLowerCase() === c.toLowerCase()); if (found) return found; }
-        return null;
-    }
-
-    function detectStatus(val) {
-        const v = String(val).trim();
-        if (/절판|out.?of.?print/i.test(v)) return "out_of_print";
-        if (/품절|out.?of.?stock/i.test(v)) return "out_of_stock";
-        return null;
-    }
-
-    function analyzeRows(rows) {
-        if (rows.length === 0) return [];
-        const sample = rows[0];
-        const isbnCol = findCol(sample, COL_ISBN);
-        const titleCol = findCol(sample, COL_TITLE);
-        const pubCol = findCol(sample, COL_PUB);
-        const statusCol = findCol(sample, COL_STATUS);
-        return rows.map((row, i) => {
-            const isbn  = isbnCol  ? String(row[isbnCol]).replace(/-/g, "").trim()  : "";
-            const title = titleCol ? String(row[titleCol]).trim() : Object.values(row)[0] || "";
-            const pub   = pubCol   ? String(row[pubCol]).trim()   : "";
-            let status = null, basis = "";
-            if (statusCol) { status = detectStatus(row[statusCol]); if (status) basis = "상태 컬럼"; }
-            if (!status && isbn) { const dbBook = examBooksData.find(b => b.isbn === isbn || (b.revised && b.revised.isbn === isbn)); if (dbBook) { status = dbBook.status; basis = "ISBN DB 대조"; } }
-            return { rowNum: i + 1, title, isbn, pub, status, basis };
-        });
-    }
-
-    function renderAnalyzerTable() {
-        const filtered = filterTag === "all"
-            ? analyzedRows.filter(r => r.status === "out_of_print" || r.status === "out_of_stock")
-            : analyzedRows.filter(r => r.status === filterTag);
-        const total = analyzedRows.length;
-        const oop = analyzedRows.filter(r => r.status === "out_of_print").length;
-        const oos = analyzedRows.filter(r => r.status === "out_of_stock").length;
-        uploadSummary.innerHTML = `전체 <strong>${total}</strong>건 분석 &nbsp;|&nbsp; <span class="badge badge-red">절판</span> <strong>${oop}</strong>건 &nbsp; <span class="badge badge-orange">품절</span> <strong>${oos}</strong>건`;
-        if (filtered.length === 0) { uploadTableBody.innerHTML = `<div class="upload-empty">해당하는 도서가 없습니다.</div>`; return; }
-        uploadTableBody.innerHTML = filtered.map(r => {
-            const imgUrl = r.isbn ? `https://books.google.com/books/content?vid=ISBN${r.isbn}&printsec=frontcover&img=1&zoom=1&source=gbs_api` : "";
-            const imgHtml = imgUrl ? `<div class="upload-card-cover"><img src="${imgUrl}" alt="${r.title}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="upload-cover-fallback" style="display:none"><i data-lucide="${r.status === "out_of_print" ? "book-x" : "book-minus"}"></i></div></div>` : `<div class="upload-card-cover"><div class="upload-cover-fallback" style="display:flex"><i data-lucide="book-x"></i></div></div>`;
-            const badgeClass = r.status === "out_of_print" ? "badge-red" : "badge-orange";
-            const badgeText  = r.status === "out_of_print" ? "절판" : "품절";
-            const dbBook = r.isbn ? examBooksData.find(b => b.isbn === r.isbn || (b.revised && b.revised.isbn === r.isbn)) : null;
-            const revisedHtml = dbBook && dbBook.revised ? `<div class="upload-card-revised"><i data-lucide="arrow-right"></i><span>개정판: ${dbBook.revised.title} (${dbBook.revised.pubDate.slice(0,4)})</span></div>` : "";
-            return `<div class="upload-card">${imgHtml}<div class="upload-card-info"><div class="upload-card-top"><span class="badge ${badgeClass}">${badgeText}</span>${r.basis ? `<span class="upload-basis-tag">${r.basis}</span>` : ""}</div><h4 class="upload-card-title">${r.title || "제목 없음"}</h4><div class="upload-card-meta">${r.pub ? `<span>${r.pub}</span>` : ""}${r.isbn ? `<span class="upload-isbn">ISBN: ${r.isbn}</span>` : ""}</div>${revisedHtml}</div><div class="upload-card-num">#${r.rowNum}</div></div>`;
-        }).join("");
-        lucide.createIcons();
-    }
-
-    function exportFilteredResult() {
-        const filtered = filterTag === "all" ? analyzedRows.filter(r => r.status === "out_of_print" || r.status === "out_of_stock") : analyzedRows.filter(r => r.status === filterTag);
-        const wsData = [["#","도서명","ISBN","출판사","상태","판단 근거"], ...filtered.map(r => [r.rowNum,r.title,r.isbn,r.pub,r.status === "out_of_print" ? "절판" : "품절",r.basis])];
-        const wb = XLSX.utils.book_new();
-        const ws = XLSX.utils.aoa_to_sheet(wsData);
-        ws["!cols"] = [4,40,16,16,8,14].map(w => ({ wch: w }));
-        XLSX.utils.book_append_sheet(wb, ws, "절판_품절_추출결과");
-        const stamp = new Date().toISOString().slice(0, 10).replace(/-/g, "");
-        XLSX.writeFile(wb, `절판품절_추출결과_${stamp}.xlsx`);
-        showExportToast();
-    }
-
     // ── Initialization ─────────────────────────────
     updateTitleVolumeStats();
     updateOutOfPrintStats();
@@ -757,29 +659,4 @@ window.initInventoryApp = function() {
 
     btnMinClose.addEventListener("click", closeModal);
     compareModal.addEventListener("click", e => { if (e.target === compareModal) closeModal(); });
-
-    analyzerToggle.addEventListener("click", () => {
-        analyzerBody.classList.toggle("open");
-        analyzerChevron.style.transform = analyzerBody.classList.contains("open") ? "rotate(180deg)" : "";
-    });
-    uploadZone.addEventListener("click", () => excelUpload.click());
-    uploadZone.addEventListener("dragover", e => { e.preventDefault(); uploadZone.classList.add("drag-over"); });
-    uploadZone.addEventListener("dragleave", () => uploadZone.classList.remove("drag-over"));
-    uploadZone.addEventListener("drop", e => {
-        e.preventDefault();
-        uploadZone.classList.remove("drag-over");
-        const file = e.dataTransfer.files[0];
-        if (file) processExcelFile(file);
-    });
-    excelUpload.addEventListener("change", () => { if (excelUpload.files[0]) processExcelFile(excelUpload.files[0]); });
-
-    invPanel.querySelectorAll(".btn-filter-tag").forEach(btn => {
-        btn.addEventListener("click", () => {
-            invPanel.querySelectorAll(".btn-filter-tag").forEach(b => b.classList.remove("active"));
-            btn.classList.add("active");
-            filterTag = btn.dataset.filter;
-            renderAnalyzerTable();
-        });
-    });
-    btnExportFiltered.addEventListener("click", exportFilteredResult);
 };
