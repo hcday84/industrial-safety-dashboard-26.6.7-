@@ -480,6 +480,41 @@ window.initInventoryApp = function() {
         statRevised.textContent = revised;
     }
 
+    // 수험서 종·권수 보유 현황 (국가기술/국가전문/민간 자격 분류별, REAL_BOOKS 기준 실시간 집계)
+    function updateTitleVolumeStats() {
+        if (typeof REAL_BOOKS === "undefined") return;
+        function certType(name) {
+            if (typeof PRIVATE_CERT_NAMES !== "undefined" && PRIVATE_CERT_NAMES.has(name)) return "private";
+            if (typeof PROFESSIONAL_CERT_NAMES !== "undefined" && PROFESSIONAL_CERT_NAMES.has(name)) return "pro";
+            return "tech";
+        }
+        const counts = {
+            tech:    { titles: new Set(), volumes: 0 },
+            pro:     { titles: new Set(), volumes: 0 },
+            private: { titles: new Set(), volumes: 0 },
+        };
+        for (const cert of Object.keys(REAL_BOOKS)) {
+            const type = certType(cert);
+            for (const book of REAL_BOOKS[cert]) {
+                counts[type].titles.add(book.title);
+                counts[type].volumes += 1;
+            }
+        }
+        const allTitles = new Set([...counts.tech.titles, ...counts.pro.titles, ...counts.private.titles]);
+        const allVolumes = counts.tech.volumes + counts.pro.volumes + counts.private.volumes;
+
+        const setStat = (prefix, titleSet, volumes) => {
+            const titleEl = document.getElementById(`stat${prefix}TitleCount`);
+            const descEl  = document.getElementById(`stat${prefix}Desc`);
+            if (titleEl) titleEl.textContent = titleSet.size.toLocaleString();
+            if (descEl)  descEl.textContent  = `총 ${volumes.toLocaleString()}권 보유`;
+        };
+        setStat("Tech", counts.tech.titles, counts.tech.volumes);
+        setStat("Pro", counts.pro.titles, counts.pro.volumes);
+        setStat("Priv", counts.private.titles, counts.private.volumes);
+        setStat("All", allTitles, allVolumes);
+    }
+
     function filterAndRender() {
         const query = searchInput.value.toLowerCase().trim();
         const statusVal = filterStatus.value;
@@ -793,6 +828,7 @@ function populateYears() {
     // ── Initialization ─────────────────────────────
     populatePublishers();
     updateStats();
+    updateTitleVolumeStats();
     renderBooksList();
     lucide.createIcons();
     populateYears();
