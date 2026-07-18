@@ -444,6 +444,36 @@
     }
 }
 
+/* 수험서 품.절판 현황 - 한 줄 3개 컴팩트 카드 */
+#inv-outofprint-stats-section .stats-grid{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+}
+#inv-outofprint-stats-section .stats-card{
+    padding: 0.85rem 1rem;
+}
+#inv-outofprint-stats-section .stats-label{
+    font-size: 0.72rem;
+}
+#inv-outofprint-stats-section .stats-value{
+    font-size: 1.5rem;
+}
+#inv-outofprint-stats-section .stats-desc{
+    font-size: 0.65rem;
+}
+#inv-outofprint-stats-section .stats-icon{
+    font-size: 1.2rem;
+}
+#inv-outofprint-stats-section .stats-icon i{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+@media (max-width: 700px){
+    #inv-outofprint-stats-section .stats-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 /* Main Dashboard Workspace */
 #inventory-panel .dashboard-workspace{
     padding: 2rem;

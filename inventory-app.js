@@ -480,6 +480,14 @@ window.initInventoryApp = function() {
         statRevised.textContent = revised;
     }
 
+    function formatAsOfDate() {
+        const now = new Date();
+        const y = now.getFullYear();
+        const m = String(now.getMonth() + 1).padStart(2, "0");
+        const d = String(now.getDate()).padStart(2, "0");
+        return `(${y}년${m}월${d}일 기준)`;
+    }
+
     // 수험서 종·권수 보유 현황 (국가기술/국가전문/민간 자격 분류별, REAL_BOOKS 기준 실시간 집계)
     function updateTitleVolumeStats() {
         if (typeof REAL_BOOKS === "undefined") return;
@@ -515,13 +523,32 @@ window.initInventoryApp = function() {
         setStat("All", allTitles, allVolumes);
 
         const updatedEl = document.getElementById("inv-title-count-updated");
-        if (updatedEl) {
-            const now = new Date();
-            const y = now.getFullYear();
-            const m = String(now.getMonth() + 1).padStart(2, "0");
-            const d = String(now.getDate()).padStart(2, "0");
-            updatedEl.textContent = `(${y}년${m}월${d}일 기준)`;
-        }
+        if (updatedEl) updatedEl.textContent = formatAsOfDate();
+    }
+
+    // 수험서 품.절판 현황 (절판/품절 종·권수, examBooksData 기준 실시간 집계)
+    function updateOutOfPrintStats() {
+        const groups = { out_of_print: new Set(), out_of_stock: new Set() };
+        let oopVolumes = 0, oosVolumes = 0;
+        examBooksData.forEach(b => {
+            if (b.status === "out_of_print") { groups.out_of_print.add(b.title); oopVolumes++; }
+            else if (b.status === "out_of_stock") { groups.out_of_stock.add(b.title); oosVolumes++; }
+        });
+        const allTitles = new Set([...groups.out_of_print, ...groups.out_of_stock]);
+        const allVolumes = oopVolumes + oosVolumes;
+
+        const setStat = (prefix, titleSet, volumes) => {
+            const titleEl = document.getElementById(`stat${prefix}TitleCount`);
+            const descEl  = document.getElementById(`stat${prefix}Desc`);
+            if (titleEl) titleEl.textContent = titleSet.size.toLocaleString();
+            if (descEl)  descEl.textContent  = `총 ${volumes.toLocaleString()}권`;
+        };
+        setStat("OOP", groups.out_of_print, oopVolumes);
+        setStat("OOS", groups.out_of_stock, oosVolumes);
+        setStat("OOPAll", allTitles, allVolumes);
+
+        const updatedEl = document.getElementById("inv-outofprint-updated");
+        if (updatedEl) updatedEl.textContent = formatAsOfDate();
     }
 
     function filterAndRender() {
@@ -838,9 +865,18 @@ function populateYears() {
     populatePublishers();
     updateStats();
     updateTitleVolumeStats();
+    updateOutOfPrintStats();
     renderBooksList();
     lucide.createIcons();
     populateYears();
+
+    const btnRefreshOutOfPrintStats = document.getElementById("btnRefreshOutOfPrintStats");
+    if (btnRefreshOutOfPrintStats) {
+        btnRefreshOutOfPrintStats.addEventListener("click", () => {
+            updateOutOfPrintStats();
+            lucide.createIcons();
+        });
+    }
 
     const btnRefreshTitleStats = document.getElementById("btnRefreshTitleStats");
     if (btnRefreshTitleStats) {
