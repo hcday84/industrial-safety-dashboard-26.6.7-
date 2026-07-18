@@ -488,6 +488,24 @@ window.initInventoryApp = function() {
         return `(${y}년${m}월${d}일 기준)`;
     }
 
+    // 통계 카드 숫자 카운팅 애니메이션 (현재 표시값 -> 목표값)
+    function animateStatValue(el, endValue, format) {
+        if (!el) return;
+        format = format || (n => n.toLocaleString());
+        const startValue = parseInt(String(el.textContent).replace(/[^0-9]/g, ""), 10) || 0;
+        if (startValue === endValue) { el.textContent = format(endValue); return; }
+        const duration = 500;
+        const startTime = performance.now();
+        function step(now) {
+            const progress = Math.min((now - startTime) / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            const current = Math.round(startValue + (endValue - startValue) * eased);
+            el.textContent = format(current);
+            if (progress < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+    }
+
     // 수험서 종·권수 보유 현황 (국가기술/국가전문/민간 자격 분류별, REAL_BOOKS 기준 실시간 집계)
     function updateTitleVolumeStats() {
         if (typeof REAL_BOOKS === "undefined") return;
@@ -514,8 +532,8 @@ window.initInventoryApp = function() {
         const setStat = (prefix, titleSet, volumes) => {
             const titleEl = document.getElementById(`stat${prefix}TitleCount`);
             const descEl  = document.getElementById(`stat${prefix}Desc`);
-            if (titleEl) titleEl.textContent = titleSet.size.toLocaleString();
-            if (descEl)  descEl.textContent  = `총 ${volumes.toLocaleString()}권 보유`;
+            animateStatValue(titleEl, titleSet.size);
+            animateStatValue(descEl, volumes, n => `총 ${n.toLocaleString()}권 보유`);
         };
         setStat("Tech", counts.tech.titles, counts.tech.volumes);
         setStat("Pro", counts.pro.titles, counts.pro.volumes);
@@ -582,8 +600,8 @@ window.initInventoryApp = function() {
         const setStat = (prefix, titleSet, volumes) => {
             const titleEl = document.getElementById(`stat${prefix}TitleCount`);
             const descEl  = document.getElementById(`stat${prefix}Desc`);
-            if (titleEl) titleEl.textContent = titleSet.size.toLocaleString();
-            if (descEl)  descEl.textContent  = `총 ${volumes.toLocaleString()}권`;
+            animateStatValue(titleEl, titleSet.size);
+            animateStatValue(descEl, volumes, n => `총 ${n.toLocaleString()}권`);
         };
         setStat("OOP", groups.out_of_print, oopVolumes);
         setStat("OOS", groups.out_of_stock, oosVolumes);
