@@ -14,7 +14,7 @@
   <!-- FontAwesome for Premium Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- 발주&재고관리 탭 전용 CSS (scoped to #inventory-panel) -->
-  <link rel="stylesheet" href="inventory-styles-scoped.css?v=20260718c">
+  <link rel="stylesheet" href="inventory-styles-scoped.css?v=20260718d">
   <!-- Lucide Icons (발주&재고관리 탭용) -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <!-- SheetJS (엑셀 업로드/다운로드) -->
@@ -970,6 +970,29 @@
             <div class="stats-icon text-cyan"><i data-lucide="layers"></i></div>
           </div>
         </div>
+        <div class="reorder-subsection" style="margin-top:1rem; padding-top:1rem; border-top:1px solid var(--border-color);">
+          <div class="stats-desc" style="margin-bottom:0.6rem; font-weight:700; display:flex; align-items:center; gap:0.4rem;">
+            <i data-lucide="repeat"></i> 발주 전환 대상 (개정판 유무 기준)
+          </div>
+          <div class="stats-grid" id="inv-reorder-stats-grid" style="margin-bottom:0;">
+            <div class="stats-card card-glass text-success-border">
+              <div class="stats-info">
+                <span class="stats-label">발주 전환 가능</span>
+                <span class="stats-value text-cyan" id="statReorderableCount">0</span>
+                <span class="stats-desc">개정판으로 즉시 발주 전환 가능</span>
+              </div>
+              <div class="stats-icon text-cyan"><i data-lucide="repeat"></i></div>
+            </div>
+            <div class="stats-card card-glass">
+              <div class="stats-info">
+                <span class="stats-label">발주 불가 (폐간)</span>
+                <span class="stats-value" id="statDiscontinuedCount">0</span>
+                <span class="stats-desc">후속 개정판 없음</span>
+              </div>
+              <div class="stats-icon"><i data-lucide="ban"></i></div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <main id="inv-books-section" class="dashboard-workspace card-glass">
@@ -1252,7 +1275,7 @@
   <script src="books_data.js?v=20260701e"></script>
   <script src="jm-codes.js"></script>
   <!-- 발주&재고관리 탭 JS -->
-  <script src="inventory-app.js?v=20260718h"></script>
+  <script src="inventory-app.js?v=20260718i"></script>
   <!-- App Javascript -->
   <script src="app.js?v=20260718b"></script>
   <!-- 한국보건의료인국가시험원 시험일정 API -->

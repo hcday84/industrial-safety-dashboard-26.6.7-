@@ -485,6 +485,17 @@ window.initInventoryApp = function() {
         if (updatedEl) updatedEl.textContent = formatAsOfDate();
     }
 
+    // 발주 전환 대상 (절판·품절 도서 중 개정판 유무 기준, examBooksData 기준 실시간 집계)
+    function updateReorderStatus() {
+        const reorderableTitles = new Set(examBooksData.filter(b => b.revised !== null).map(b => b.title));
+        const discontinuedTitles = new Set(examBooksData.filter(b => b.revised === null).map(b => b.title));
+
+        const reorderableEl = document.getElementById("statReorderableCount");
+        const discontinuedEl = document.getElementById("statDiscontinuedCount");
+        animateStatValue(reorderableEl, reorderableTitles.size);
+        animateStatValue(discontinuedEl, discontinuedTitles.size);
+    }
+
     // 수험서 품.절판 현황 엑셀 내보내기 (요약 + 도서별 상세)
     function exportOutOfPrintStats() {
         const oop = examBooksData.filter(b => b.status === "out_of_print");
@@ -652,13 +663,17 @@ window.initInventoryApp = function() {
     // ── Initialization ─────────────────────────────
     updateTitleVolumeStats();
     updateOutOfPrintStats();
+    updateReorderStatus();
     renderBooksList();
     lucide.createIcons();
 
     const btnRefreshOutOfPrintStats = document.getElementById("btnRefreshOutOfPrintStats");
     if (btnRefreshOutOfPrintStats) {
         btnRefreshOutOfPrintStats.addEventListener("click", () => {
-            refreshWithSpin(btnRefreshOutOfPrintStats, updateOutOfPrintStats);
+            refreshWithSpin(btnRefreshOutOfPrintStats, () => {
+                updateOutOfPrintStats();
+                updateReorderStatus();
+            });
         });
     }
 

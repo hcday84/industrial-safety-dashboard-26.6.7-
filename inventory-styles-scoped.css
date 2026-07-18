@@ -473,6 +473,14 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
+#inv-reorder-stats-grid{
+    grid-template-columns: repeat(2, 1fr) !important;
+}
+@media (max-width: 700px){
+    #inv-reorder-stats-grid{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}
 
 /* Main Dashboard Workspace */
 #inventory-panel .dashboard-workspace{
