@@ -3219,6 +3219,7 @@ function initEventListeners() {
 // 관리자 인증 모달
 // ────────────────────────────────────────
 const ADMIN_PW = 'dnftks0325!!';
+const ADMIN_AUTH_ENABLED = false; // 임시 비활성화 — 다시 켜려면 true로 변경
 let _adminAuthed = false;
 
 function showAdminAuth(onSuccess) {
@@ -3281,7 +3282,7 @@ window.switchTab = function(tab) {
   const dashboardContent = document.getElementById('dashboard-content');
 
   if (tab === 'inventory') {
-    if (!_adminAuthed) { showAdminAuth(() => window.switchTab('inventory')); return; }
+    if (ADMIN_AUTH_ENABLED && !_adminAuthed) { showAdminAuth(() => window.switchTab('inventory')); return; }
     // 인벤토리로 이동 전 현재 화면 상태 저장
     window._prevDashboardState = {
       welcomeVisible: welcomeScreen && welcomeScreen.style.display !== 'none' && getComputedStyle(welcomeScreen).display !== 'none',
