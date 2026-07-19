@@ -3031,6 +3031,7 @@ window.showBookChecklist = function() {
 
   titleEl.innerHTML = `<i class="fa-solid fa-list-check"></i> ${certName} 구입 체크리스트`;
   refreshTotal();
+  renderBookCompareTable(certName, books, checked);
   modal.style.display = 'flex';
 };
 
@@ -3047,6 +3048,94 @@ window._clChange = function(cb) {
   const total = certBooks.filter(b => arr.includes(b.title) && b.price > 0).reduce((s, b) => s + b.price, 0);
   const totalEl = document.getElementById('checklist-total');
   if (totalEl) totalEl.innerHTML = total > 0 ? `선택 도서 합계: <strong>${total.toLocaleString()}원</strong>` : '';
+  renderBookCompareTable(cb.dataset.cert, certBooks, arr);
+};
+
+// ── 찜한 도서 (자격증 전체를 넘나드는 위시리스트) ────────────────────────────
+const WISHLIST_KEY = 'book_wishlist';
+
+function _loadWishlist() {
+  try { return JSON.parse(localStorage.getItem(WISHLIST_KEY) || '[]'); } catch { return []; }
+}
+function _saveWishlist(arr) {
+  localStorage.setItem(WISHLIST_KEY, JSON.stringify(arr));
+}
+
+window._isWished = function(cert, title) {
+  return _loadWishlist().some(w => w.cert === cert && w.title === title);
+};
+
+function updateWishlistBadge() {
+  const badge = document.getElementById('wishlist-count-badge');
+  if (!badge) return;
+  const n = _loadWishlist().length;
+  badge.textContent = n;
+  badge.style.display = n > 0 ? '' : 'none';
+}
+
+window._toggleWishlist = function(btn) {
+  const { cert, title, publisher, pageurl } = btn.dataset;
+  const price = parseInt(btn.dataset.price, 10) || 0;
+  let arr = _loadWishlist();
+  const idx = arr.findIndex(w => w.cert === cert && w.title === title);
+  if (idx >= 0) {
+    arr.splice(idx, 1);
+    btn.classList.remove('active');
+    btn.querySelector('i').className = 'fa-regular fa-heart';
+  } else {
+    arr.push({ cert, title, publisher, price, pageUrl: pageurl, addedAt: Date.now() });
+    btn.classList.add('active');
+    btn.querySelector('i').className = 'fa-solid fa-heart';
+  }
+  _saveWishlist(arr);
+  updateWishlistBadge();
+};
+
+window.showWishlist = function() {
+  const modal = document.getElementById('wishlist-modal');
+  const body  = document.getElementById('wishlist-body');
+  if (!modal || !body) return;
+  const items = _loadWishlist().sort((a, b) => b.addedAt - a.addedAt);
+
+  body.innerHTML = items.length === 0
+    ? `<p style="text-align:center;color:var(--text-muted);padding:24px 0">찜한 도서가 없습니다.<br>도서 카드의 <i class="fa-regular fa-heart"></i> 아이콘을 눌러 담아보세요.</p>`
+    : items.map(w => {
+        const q = encodeURIComponent(w.title);
+        const kyoboUrl = w.pageUrl || `https://search.kyobobook.co.kr/search?keyword=${q}`;
+        const yes24Url  = `https://www.yes24.com/Product/Search?query=${q}&domain=BOOK`;
+        const aladinUrl = `https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=${q}`;
+        const safeCert  = w.cert.replace(/'/g, "\\'");
+        return `
+          <div class="cl-item wish-item">
+            <div class="cl-info">
+              <span class="cl-title">${w.title}</span>
+              <span class="cl-meta">${w.publisher || ''}${w.price ? ' · ' + w.price.toLocaleString() + '원' : ''} · <a href="javascript:void(0)" onclick="window.closeClModal('wishlist-modal');window.selectCert('${safeCert}')">${w.cert}</a></span>
+            </div>
+            <div class="cl-store-links">
+              <a href="${kyoboUrl}" target="_blank" rel="noopener noreferrer" class="cl-store kyobo">교보</a>
+              <a href="${yes24Url}"  target="_blank" rel="noopener noreferrer" class="cl-store yes24">YES24</a>
+              <a href="${aladinUrl}" target="_blank" rel="noopener noreferrer" class="cl-store aladin">알라딘</a>
+              <button class="wish-remove-btn" title="찜 해제" onclick="window._removeWish('${w.cert.replace(/'/g,"\\'")}','${w.title.replace(/'/g,"\\'")}')"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+          </div>`;
+      }).join('');
+
+  modal.style.display = 'flex';
+};
+
+window._removeWish = function(cert, title) {
+  const arr = _loadWishlist().filter(w => !(w.cert === cert && w.title === title));
+  _saveWishlist(arr);
+  updateWishlistBadge();
+  window.showWishlist();
+  // 현재 화면의 도서 카드가 같은 책이면 하트 아이콘도 즉시 갱신
+  document.querySelectorAll(`.book-wish-btn[data-cert="${CSS.escape(cert)}"]`).forEach(btn => {
+    if (btn.dataset.title === title) {
+      btn.classList.remove('active');
+      const i = btn.querySelector('i');
+      if (i) i.className = 'fa-regular fa-heart';
+    }
+  });
 };
 
 // ── 출판사 라인업 ────────────────────────────────────────────────────────────
