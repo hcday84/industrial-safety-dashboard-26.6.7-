@@ -1539,23 +1539,23 @@ function renderChart(cert) {
           <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.3"/>
           <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.02"/>
         </linearGradient>
-        <linearGradient id="pGrad" x1="0" y1="0" x2="0" y2="1">
+        ${hasPractical ? `<linearGradient id="pGrad" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.25"/>
           <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0.02"/>
-        </linearGradient>
+        </linearGradient>` : ''}
       </defs>
       ${gridLines}
       ${xLabels}
       <path d="${wArea}" fill="url(#wGrad)"/>
-      <path d="${pArea}" fill="url(#pGrad)"/>
+      ${hasPractical ? `<path d="${pArea}" fill="url(#pGrad)"/>` : ''}
       <path d="${wPath}" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linejoin="round"/>
-      <path d="${pPath}" fill="none" stroke="#0ea5e9" stroke-width="2.5" stroke-linejoin="round"/>
+      ${hasPractical ? `<path d="${pPath}" fill="none" stroke="#0ea5e9" stroke-width="2.5" stroke-linejoin="round"/>` : ''}
       ${wPoints}
       ${pPoints}
     </svg>
     <div class="chart-trend-summary">
       <span class="chart-trend-item chart-trend-written"><i class="fa-solid fa-pencil"></i> 필기 ${wTrend}</span>
-      <span class="chart-trend-item chart-trend-practical"><i class="fa-solid fa-screwdriver-wrench"></i> 실기 ${pTrend}</span>
+      ${hasPractical ? `<span class="chart-trend-item chart-trend-practical"><i class="fa-solid fa-screwdriver-wrench"></i> 실기 ${pTrend}</span>` : ''}
     </div>
   `;
 }
