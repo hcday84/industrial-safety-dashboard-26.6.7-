@@ -67,12 +67,14 @@ function extractRequiredTokens(title) {
 }
 
 // 후보 도서 제목이 우리가 찾는 도서와 실제로 같은 자격증/출판사/필기·실기 상품을 가리키는지 검증
-function titleMatches(queryTitle, candidateTitle) {
+// candidatePublisher: API가 제목과 별도로 내려주는 출판사 메타데이터(있으면 함께 검사)
+function titleMatches(queryTitle, candidateTitle, candidatePublisher) {
   if (!candidateTitle) return false;
   const candidate = normalize(candidateTitle);
+  const candidatePub = normalize(candidatePublisher);
   const tokens = extractRequiredTokens(queryTitle).map(normalize);
   if (!tokens.length) return false;
-  return tokens.every(t => candidate.includes(t));
+  return tokens.every(t => candidate.includes(t) || (candidatePub && candidatePub.includes(t)));
 }
 
 // ── 1순위: 교보 CDN (ISBN → URL 직접 구성) ──
