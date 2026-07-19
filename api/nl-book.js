@@ -135,7 +135,7 @@ async function searchAladin(query) {
     const res = await fetch(`${ALADIN_BASE}?${params}`, { signal: AbortSignal.timeout(4000) });
     const data = await res.json();
     const items = data?.item || [];
-    const match = items.find(i => i.cover && !i.cover.includes('noimg') && titleMatches(query, i.title));
+    const match = items.find(i => i.cover && !i.cover.includes('noimg') && titleMatches(query, i.title, i.publisher));
     return match ? match.cover : null;
   } catch { return null; }
 }
