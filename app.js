@@ -4779,7 +4779,7 @@ function renderInlineCompare(nameB) {
 window.renderInlineCompare = renderInlineCompare;
 
 // ============================================================
-// 25. 합격 팁 & 후기
+// 25. 합격 팁
 // ============================================================
 function renderTipsSection(cert) {
   const el = document.getElementById('tips-body');
