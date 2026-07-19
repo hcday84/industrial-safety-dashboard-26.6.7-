@@ -2852,56 +2852,6 @@ button, input, select {
 .fill-teal  { background-color: var(--primary-color); }
 .fill-sky   { background-color: #0ea5e9; }
 
-.subject-guide-container {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.subject-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.subject-item {
-  display: flex;
-  gap: 15px;
-  padding: 12px;
-  background-color: var(--bg-color);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-}
-
-.subject-num {
-  width: 24px;
-  height: 24px;
-  background-color: var(--green-color);
-  color: #ffffff;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 800;
-  font-size: 0.85rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.subject-details h5 {
-  font-size: 0.9rem;
-  font-weight: 700;
-  margin-bottom: 4px;
-  color: var(--text-color);
-}
-
-.subject-details p {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  line-height: 1.5;
-  word-break: keep-all;
-}
-
 /* 12-1. 합격 전략 가이드 */
 .study-guide-layout {
   display: grid;
