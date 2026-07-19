@@ -3981,6 +3981,70 @@ const CERT_TIPS = {
     { type:'실기', tag:'핵심',   tip:'기능시험은 경사로 정차·직각주차·굴절코스 등 구간별 감점 기준이 정해져 있습니다. 코스 순서를 몸으로 익히는 반복 연습이 합격을 좌우합니다.', source:'한국도로교통공단 면허시험순서', sourceUrl: 'https://www.safedriving.or.kr/guide/rerGuide01View.do?menuCode=MN-PO-1111' },
     { type:'실기', tag:'주의',   tip:'도로주행은 안전벨트·좌우 확인·방향지시등 같은 기본 동작을 생략하면 감점이 누적돼 탈락하기 쉽습니다. 코스 암기보다 기본 동작을 습관화하는 데 집중하세요.', source:'한국도로교통공단', sourceUrl: 'https://www.safedriving.or.kr/main.do' },
   ],
+  '정보처리산업기사': [
+    { type:'필기', tag:'고득점', tip:'정보처리기사보다 출제 범위가 좁습니다. 기본서 1회독 후 최근 5개년 기출을 반복 풀이하는 게 가장 효율적입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'주의',   tip:'실기는 필답형으로 프로그래밍 언어 활용·정보시스템 구축관리 실무 문제 비중이 높습니다. 코드를 눈으로만 읽지 말고 직접 손으로 써보며 익히세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  'SQLD': [
+    { type:'필기', tag:'고득점', tip:'데이터 모델링의 이해 과목은 이론 암기보다 ERD(개체-관계 다이어그램)를 직접 그려보는 연습이 훨씬 이해가 빠릅니다.', source:'한국데이터산업진흥원(K-DATA)', sourceUrl: 'https://www.dataq.or.kr/www/main.do' },
+    { type:'필기', tag:'주의',   tip:'총점 60점 이상이어도 과목별 40% 미만이면 과락으로 불합격 처리됩니다. SQL 기본 및 활용 과목의 서브쿼리·조인 문제를 약점으로 남기지 마세요.', source:'한국데이터산업진흥원(K-DATA)', sourceUrl: 'https://www.dataq.or.kr/www/main.do' },
+  ],
+  '공인중개사': [
+    { type:'필기', tag:'고득점', tip:'1차(5과목)와 2차(5과목)를 같은 해에 동시 응시할 수 있습니다. 1차 부동산학개론·민법이 2차 과목과 연계되므로 순차 학습보다 병행 학습이 효율적입니다.', source:'Q-Net', sourceUrl: 'https://www.q-net.or.kr/' },
+    { type:'필기', tag:'주의',   tip:'매 과목 40점 미만이면 과락으로 불합격 처리됩니다. 특정 과목에 올인하기보다 5과목 전체를 균형 있게 학습하세요.', source:'Q-Net', sourceUrl: 'https://www.q-net.or.kr/' },
+  ],
+  '전기공사기사': [
+    { type:'필기', tag:'고득점', tip:'전기기사와 과목 구성이 유사합니다. 전기기사 기출을 병행 풀이하면 학습 효율이 높아집니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 전기설비 설계·시공 실무 위주로 출제됩니다. 도면 해석과 견적 산출 연습을 반복하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '사회복지사1급': [
+    { type:'필기', tag:'고득점', tip:'8개 영역이 골고루 출제되므로 특정 과목에 편중하지 말고, 매년 반복 출제되는 사회복지실천기술론·사회복지법제 핵심 개념 위주로 회독 수를 늘리세요.', source:'Q-Net 사회복지사', sourceUrl: 'https://www.q-net.or.kr/site/welfare' },
+    { type:'학습법', tag:'핵심', tip:'매년 1월 단 1회만 시행됩니다. 응시 기회가 적은 만큼 최근 5개년 기출을 시간을 재며 실전처럼 풀어보는 연습이 중요합니다.', source:'Q-Net 사회복지사', sourceUrl: 'https://www.q-net.or.kr/site/welfare' },
+  ],
+  '요양보호사': [
+    { type:'필기', tag:'고득점', tip:'이론·실기·실습 240시간 교육 이수가 응시 자격입니다. 시험 자체 합격률이 높은 편이니 교육 과정 중 배운 내용을 정리 노트로 만들어두면 충분히 대비됩니다.', source:'한국보건의료인국가시험원(국시원)', sourceUrl: 'https://www.kuksiwon.or.kr/ss/index.do' },
+    { type:'실기', tag:'핵심',   tip:'실기는 요양보호 업무 절차와 감염관리·응급처치 상황 대응이 핵심입니다. 실습 시간에 익힌 동작 순서를 그대로 복기하는 연습을 하세요.', source:'한국보건의료인국가시험원(국시원)', sourceUrl: 'https://www.kuksiwon.or.kr/ss/index.do' },
+  ],
+  '건설안전산업기사': [
+    { type:'필기', tag:'고득점', tip:'산업안전산업기사와 과목이 겹칩니다. 두 자격을 병행 준비하면 학습 시너지가 큽니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'주의',   tip:'건설현장 재해 유형별 원인·대책 서술형 문제가 자주 출제됩니다. 답안 틀(원인 2~3가지+대책 2~3가지)을 미리 정해두고 연습하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '컴퓨터활용능력2급': [
+    { type:'필기', tag:'고득점', tip:'1급과 달리 데이터베이스(액세스) 실기가 없어 스프레드시트 함수 위주로 범위가 좁습니다. 단기 취득에 유리한 자격이니 부담 갖지 말고 시작하세요.', source:'대한상공회의소 자격평가사업단', sourceUrl: 'https://license.korcham.net/indexmain.jsp' },
+    { type:'실기', tag:'핵심',   tip:'실기는 상시 CBT로 연중 응시 가능합니다. 함수(IF·VLOOKUP 등)와 차트·피벗테이블 작성 속도를 늘리는 반복 연습이 합격을 좌우합니다.', source:'대한상공회의소 자격평가사업단', sourceUrl: 'https://license.korcham.net/indexmain.jsp' },
+  ],
+  '정보보안기사': [
+    { type:'필기', tag:'고득점', tip:'필기·실기 모두 합격률이 낮은 고난도 자격입니다. 암호학·네트워크 보안의 기본 원리를 이해하지 않고 암기만 하면 응용문제에서 막히기 쉽습니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'주의',   tip:'실기는 서술형과 실무형 문제가 섞여 있습니다. 보안 사고 대응 절차처럼 단계별 서술이 필요한 문제는 핵심 키워드를 순서대로 나열하는 연습을 하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '빅데이터분석기사': [
+    { type:'필기', tag:'고득점', tip:'필기는 5과목(빅데이터 분석 기획~분석모형 평가) 객관식입니다. 통계 이론만 외우기보다 R·Python 함수를 실제로 어떻게 활용하는지 맥락을 이해하는 게 고득점에 유리합니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 작업형 코딩 시험입니다. 데이터 전처리부터 모델링·평가까지 전체 파이프라인을 직접 코드로 짜보는 연습을 반복하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '간호사': [
+    { type:'필기', tag:'고득점', tip:'합격률 자체는 95% 이상으로 높지만 응시자 대부분이 4년제 간호대 졸업(예정)자라 상대적 경쟁이 치열합니다. 7개 영역 중 비중이 가장 높은 성인간호학에 우선순위를 두세요.', source:'한국보건의료인국가시험원(국시원)', sourceUrl: 'https://www.kuksiwon.or.kr/index.do' },
+    { type:'학습법', tag:'핵심', tip:'매년 1월 단 1회 시행되는 필기시험입니다. 최근 5개년 기출을 시간 안에 푸는 실전 훈련을 여러 번 반복하는 게 핵심입니다.', source:'한국보건의료인국가시험원(국시원)', sourceUrl: 'https://www.kuksiwon.or.kr/index.do' },
+  ],
+  '소방설비산업기사(기계분야)': [
+    { type:'필기', tag:'고득점', tip:'소방설비기사(기계분야)보다 응시 자격이 완화된 하위 자격입니다. 기사 기출문제도 함께 풀어보면 학습에 도움이 됩니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 소화설비 설계·시공 도면 해석이 핵심입니다. 스프링클러·옥내소화전 계통도를 이미지로 암기하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '소방설비산업기사(전기분야)': [
+    { type:'필기', tag:'고득점', tip:'소방설비기사(전기분야)와 과목이 유사합니다. 기사 기출도 함께 풀어보면 학습 효율이 올라갑니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 경보설비·피난구조설비 계통도 해석이 핵심입니다. 감지기·수신기 심볼을 이미지로 암기해두세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  'ITQ (정보기술자격)': [
+    { type:'필기', tag:'고득점', tip:'6개 과목(아래한글·워드·엑셀·파워포인트·액세스·인터넷)을 개별 응시하며 과목당 500점 만점에 400점 이상이 A등급입니다. 취업에 필요한 과목 1~2개만 선택 응시해도 됩니다.', source:'한국생산성본부(KPC)', sourceUrl: 'https://license.kpc.or.kr/nasec/qlfint/qlfint/selectItqinfotchnlgyqc.do' },
+    { type:'학습법', tag:'핵심', tip:'매월 시행되므로 시험 부담이 적습니다. 실무에서 자주 쓰는 엑셀·파워포인트부터 먼저 취득하고 필요에 따라 과목을 넓혀가는 전략이 효율적입니다.', source:'한국생산성본부(KPC)', sourceUrl: 'https://license.kpc.or.kr/nasec/qlfint/qlfint/selectItqinfotchnlgyqc.do' },
+  ],
+  '한식조리기능사': [
+    { type:'필기', tag:'고득점', tip:'필기는 위생관리·식재료관리·조리이론 위주로 암기 비중이 높습니다. 최근 5개년 기출 반복이 가장 빠른 합격 지름길입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 제한시간 내 지정 메뉴 조리·플레이팅까지 완성해야 합니다. 시간을 재며 반복 연습해 표준 레시피 순서를 몸에 익히세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '조주기능사': [
+    { type:'필기', tag:'고득점', tip:'필기는 주류학·칵테일 이론·서비스 위생 위주로 출제됩니다. 칵테일 레시피와 재료 비율을 표로 정리해 암기하면 효율적입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 지정된 칵테일을 제한시간 내 제조하는 작업형입니다. 재료 계량과 셰이킹·스터링 동작을 반복 연습해 손에 익혀야 합니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
 };
 
 const CERT_FAQ_GENERAL = [
