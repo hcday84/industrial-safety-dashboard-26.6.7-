@@ -4045,6 +4045,94 @@ const CERT_TIPS = {
     { type:'필기', tag:'고득점', tip:'필기는 주류학·칵테일 이론·서비스 위생 위주로 출제됩니다. 칵테일 레시피와 재료 비율을 표로 정리해 암기하면 효율적입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
     { type:'실기', tag:'핵심',   tip:'실기는 지정된 칵테일을 제한시간 내 제조하는 작업형입니다. 재료 계량과 셰이킹·스터링 동작을 반복 연습해 손에 익혀야 합니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
   ],
+  '에너지관리기사': [
+    { type:'필기', tag:'고득점', tip:'보일러·압력용기 관련 법정 수치(설계압력, 안전밸브 작동압력 등)를 표로 정리해 반복 암기하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 작업형(보일러 설비 취급)과 필답형이 혼합됩니다. 설비 명칭과 작동 원리를 정확한 용어로 서술하는 연습이 필요합니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '화공기사': [
+    { type:'필기', tag:'주의',   tip:'필기 합격률이 30% 이하로 낮은 편입니다. 단위조작·화공열역학 계산 문제는 공식 암기보다 물질·에너지 수지 개념을 확실히 잡아야 응용문제에 대응할 수 있습니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 필답형으로 공정 설계·안전관리 서술 문제 비중이 높습니다. 화학공정 안전관리 관련 용어를 정확히 사용하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '전기기능사': [
+    { type:'필기', tag:'고득점', tip:'전기산업기사·전기기사 취득 전 발판으로 많이 응시합니다. 기초 회로이론과 전기설비 기준 위주로 학습하면 무난히 합격할 수 있습니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 배선 작업형입니다. 결선도를 보고 실제 배선판에 옮기는 반복 연습이 합격을 좌우합니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '물류관리사': [
+    { type:'필기', tag:'고득점', tip:'물류관련법규·보관하역론·국제물류론 등 과목이 많아 보이지만 암기와 계산 문제가 절반씩입니다. 최근 5개년 기출을 과목별로 분류해 반복 풀이하세요.', source:'Q-Net', sourceUrl: 'https://www.q-net.or.kr/' },
+    { type:'필기', tag:'주의',   tip:'과목별 40점 미만이면 과락으로 불합격 처리됩니다. 취약 과목을 만들지 말고 5과목을 균형 있게 학습하세요.', source:'Q-Net', sourceUrl: 'https://www.q-net.or.kr/' },
+  ],
+  'ADsP': [
+    { type:'필기', tag:'고득점', tip:'필기 단일 시험으로 데이터 이해·분석 기획·통계 기초 3과목입니다. SQLD보다 통계 이론 비중이 높으니 평균·분산·가설검정 같은 기초 통계 개념을 확실히 잡아두세요.', source:'한국데이터산업진흥원(K-DATA)', sourceUrl: 'https://www.dataq.or.kr/www/main.do' },
+    { type:'학습법', tag:'핵심', tip:'데이터 관련 업무 입문자용 자격이라 난이도는 낮은 편입니다. 최근 3개년 기출만 반복해도 합격권에 도달할 수 있습니다.', source:'한국데이터산업진흥원(K-DATA)', sourceUrl: 'https://www.dataq.or.kr/www/main.do' },
+  ],
+  '워드프로세서': [
+    { type:'필기', tag:'고득점', tip:'필기는 워드프로세싱 용어·OA 일반·PC운영체제 3과목 객관식입니다. 기출 반복만으로도 충분히 고득점이 가능합니다.', source:'대한상공회의소 자격평가사업단', sourceUrl: 'https://license.korcham.net/indexmain.jsp' },
+    { type:'실기', tag:'핵심',   tip:'실기는 한글(HWP) 또는 MS Word로 지정 문서를 제한시간 내 작성해야 합니다. 표·차트 삽입, 스타일 지정 등 채점 항목을 빠짐없이 반영하는 연습이 중요합니다.', source:'대한상공회의소 자격평가사업단', sourceUrl: 'https://license.korcham.net/indexmain.jsp' },
+  ],
+  '교원임용시험 (임용고시)': [
+    { type:'필기', tag:'고득점', tip:'1차는 교육학(공통)과 전공(과목별) 필기시험입니다. 최근 3개년 평가원 기출의 서술형 배점 배분을 분석해 답안 작성 틀을 미리 만들어두세요.', source:'한국교육과정평가원(KICE)', sourceUrl: 'https://kice.re.kr/' },
+    { type:'실기', tag:'핵심',   tip:'2차 수업실연·심층면접은 정해진 답이 없는 만큼, 스터디 그룹을 통한 모의 실연 연습이 실전 감각을 키우는 데 가장 효과적입니다.', source:'한국교육과정평가원(KICE)', sourceUrl: 'https://kice.re.kr/' },
+  ],
+  'OPIc': [
+    { type:'필기', tag:'고득점', tip:'시험 시작 전 배경설문·자가진단으로 난이도가 결정됩니다. 목표 등급보다 한 단계 높게 자가진단해야 고득점에 유리한 문항 구성으로 이어집니다.', source:'OPIc 공식 사이트', sourceUrl: 'https://www.opic.or.kr/' },
+    { type:'학습법', tag:'핵심', tip:'매주 응시 가능해 진입장벽이 낮습니다. 자기소개·취미·거주지 등 배경설문 기반 주제는 답변을 미리 만들어 반복 암송해두면 실전에서 유리합니다.', source:'OPIc 공식 사이트', sourceUrl: 'https://www.opic.or.kr/' },
+  ],
+  '공인회계사': [
+    { type:'필기', tag:'고득점', tip:'1차는 객관식 5과목, 2차는 주관식 5과목으로 나뉩니다. 1차 합격 후 2차까지 최소 1~2년의 장기 학습 계획을 세우는 게 일반적입니다.', source:'금융감독원 공인회계사시험', sourceUrl: 'https://cpa.fss.or.kr/' },
+    { type:'필기', tag:'주의',   tip:'회계학·세법의 계산량이 방대합니다. 이해 없는 공식 암기는 응용문제에서 무너지기 쉬우니 원리 중심으로 학습하세요.', source:'금융감독원 공인회계사시험', sourceUrl: 'https://cpa.fss.or.kr/' },
+  ],
+  '세무사': [
+    { type:'필기', tag:'고득점', tip:'1차는 객관식, 2차는 주관식·서술형입니다. 세법(소득세법·법인세법·부가가치세법)의 최신 개정사항을 매년 확인하며 학습하세요.', source:'Q-Net 세무사', sourceUrl: 'https://www.q-net.or.kr/site/semu' },
+    { type:'필기', tag:'주의',   tip:'계산 문제에서 세율·공제 항목을 헷갈리는 실수가 잦습니다. 풀이 과정에 적용 조문을 함께 적는 습관을 들이세요.', source:'Q-Net 세무사', sourceUrl: 'https://www.q-net.or.kr/site/semu' },
+  ],
+  '공인노무사': [
+    { type:'필기', tag:'고득점', tip:'1차는 객관식, 2차는 주관식·논술형입니다. 노동법 조문을 기계적으로 암기하기보다 판례 중심으로 이해하면 2차 논술 답안 작성에 유리합니다.', source:'Q-Net 공인노무사', sourceUrl: 'https://www.q-net.or.kr/site/nomu' },
+    { type:'필기', tag:'주의',   tip:'2차 합격률이 1차보다 훨씬 낮습니다(8~15%). 1차 합격 후에도 긴장을 늦추지 말고 논술형 답안 작성 연습을 꾸준히 해야 합니다.', source:'Q-Net 공인노무사', sourceUrl: 'https://www.q-net.or.kr/site/nomu' },
+  ],
+  '굴착기운전기능사': [
+    { type:'필기', tag:'고득점', tip:'필기는 건설기계기관·전기·섀시, 유압일반, 관계법규로 구성됩니다. 문제은행 방식이라 기출 반복만으로 충분히 합격 가능합니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 지정된 굴착 작업(굴착·선회·적재) 코스를 평가합니다. 실제 장비로 반복 연습해 레버 조작을 몸에 익히는 게 핵심입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '조경기사': [
+    { type:'필기', tag:'고득점', tip:'조경사·조경식재·조경시공구조학 등 과목이 많아 보이지만 실제 출제는 반복되는 개념 위주입니다. 최근 5개년 기출로 범위를 좁혀 학습하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기(필답형+작업형)는 식재 설계도면 작성과 수목 감별이 핵심입니다. 도면 표기법과 대표 수종 특징을 사진과 함께 암기하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '건축기사': [
+    { type:'필기', tag:'고득점', tip:'필기는 5과목(건축계획~건축설비)으로 범위가 넓습니다. 과목별 기출 빈도를 파악해 자주 나오는 파트부터 우선순위를 두세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'주의',   tip:'실기는 시공+설계 실무 서술형입니다. 공법·자재 명칭을 정확한 전문 용어로 쓰지 않으면 감점되니 용어를 정확히 암기하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '토목기사': [
+    { type:'필기', tag:'고득점', tip:'응용역학·수리학 등 계산 과목 비중이 높습니다. 공식 암기보다 단위와 조건을 정확히 대입하는 연습이 실수를 줄여줍니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 시공실무 위주 서술형입니다. 공정별 표준 시공 순서를 흐름도로 정리해두면 답안 작성이 빨라집니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  'TOEIC Speaking': [
+    { type:'학습법', tag:'고득점', tip:'11개 문항 중 사진 묘사·의견 제시 문항은 도입-본론-마무리 형태의 정형화된 답변 구조를 쓰면 채점자가 평가하기 쉬운 답변이 됩니다.', source:'TOEIC Speaking 공식 사이트', sourceUrl: 'https://www.toeicswt.co.kr/' },
+    { type:'학습법', tag:'주의', tip:'답변 시간이 문항별로 정해져 있어 시간을 넘기면 자동으로 다음 문항으로 넘어갑니다. 실전과 동일한 시간 제한으로 모의 연습을 반복하세요.', source:'TOEIC Speaking 공식 사이트', sourceUrl: 'https://www.toeicswt.co.kr/' },
+  ],
+  '미용사(일반)': [
+    { type:'필기', tag:'고득점', tip:'필기는 미용이론·공중보건학·소독학·피부학 위주입니다. 기출 반복만으로도 합격권에 쉽게 도달합니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 커트·퍼머넌트 웨이브 등 지정 과제를 제한시간 내 완성해야 합니다. 시간을 재며 반복 연습해 손동작을 몸에 익히세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '간호조무사': [
+    { type:'필기', tag:'고득점', tip:'5과목(기초간호학개요·보건간호학개요·공중보건학·의료관계법규·실기) 중 기초간호학개요 출제 비중이 가장 높습니다. 우선순위를 두고 반복 학습하세요.', source:'한국보건의료인국가시험원(국시원)', sourceUrl: 'https://www.kuksiwon.or.kr/index.do' },
+    { type:'실기', tag:'핵심',   tip:'실기는 간호 술기 시연입니다. 양성교육 실습 시간에 익힌 절차를 순서대로 정확히 재현하는 연습이 중요합니다.', source:'한국보건의료인국가시험원(국시원)', sourceUrl: 'https://www.kuksiwon.or.kr/index.do' },
+  ],
+  '제과기능사': [
+    { type:'필기', tag:'고득점', tip:'필기는 위생안전관리·재료과학·제과이론 위주입니다. 최근 5개년 기출 반복이 가장 빠른 합격 지름길입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 제한시간 내 지정 과자류를 완성해야 합니다. 배합비 계산과 반죽 온도 관리를 반복 연습하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '제빵기능사': [
+    { type:'필기', tag:'고득점', tip:'제과기능사와 필기 과목이 상당 부분 겹칩니다. 두 자격을 함께 준비하면 학습 효율이 높습니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 발효·성형·굽기까지 제한시간 내 완성해야 합니다. 발효 시간 관리가 합격을 가르는 핵심 변수입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '양식조리기능사': [
+    { type:'필기', tag:'고득점', tip:'필기는 위생관리·식재료관리·양식조리이론 위주입니다. 소스류 분류와 조리법 명칭을 표로 정리해 암기하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 지정 메뉴(스톡·소스·전채 등)를 제한시간 내 완성해야 합니다. 기본 소스 5가지 조리법을 우선 숙달하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '중식조리기능사': [
+    { type:'필기', tag:'고득점', tip:'필기는 중식 조리 이론·식재료 손질법 위주입니다. 최근 5개년 기출 반복이 효율적입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 화력 조절이 관건인 볶음·튀김 요리가 많습니다. 제한시간 내 화력·타이밍 감각을 몸에 익히는 반복 연습이 필요합니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
 };
 
 const CERT_FAQ_GENERAL = [
