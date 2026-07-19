@@ -3966,6 +3966,11 @@ const CERT_TIPS = {
     { type:'필기', tag:'고득점', tip:'강습교육 이수 후 CBT 시험으로 치러지며 그 자리에서 합격 여부가 확인됩니다. 소방관계법령·소방계획서 작성 파트의 출제 비중이 높습니다.', source:'Q-Net 출제기준', sourceUrl: QNET_JM('2224') },
     { type:'필기', tag:'주의',   tip:'접수는 매월 말일 10시 공고 후 선착순 마감됩니다. 원하는 지부·일정으로 접수하려면 공고 시각에 맞춰 신청하세요.', source:'한국소방안전원', sourceUrl: 'https://www.kfsi.or.kr/' },
   ],
+  '한국사능력검정시험': [
+    { type:'필기', tag:'고득점', tip:'심화 1·2·3급은 같은 문제지를 풀고 점수 구간(80점/70점/60점 이상)만 다릅니다. 목표 급수의 커트라인에 맞춰 시간 배분 전략을 먼저 정하세요.', source:'국사편찬위원회', sourceUrl: 'https://www.historyexam.go.kr/' },
+    { type:'필기', tag:'주의',   tip:'연표 암기만으로는 부족합니다 — 사진·지도·사료(史料) 등 자료 제시형 문항 비중이 높으니 교과서 도판 자료를 함께 봐 두세요.', source:'국사편찬위원회', sourceUrl: 'https://www.historyexam.go.kr/' },
+    { type:'학습법', tag:'핵심', tip:'최근 5개년 기출문제를 국사편찬위원회 홈페이지에서 무료로 풀어볼 수 있습니다. 근현대사(개항기~현대)는 매회 출제 빈도가 높아 우선순위를 두고 반복하세요.', source:'국사편찬위원회 기출문제', sourceUrl: 'http://tok.historyexam.go.kr/pc/grade.html' },
+  ],
 };
 
 const CERT_FAQ_GENERAL = [
