@@ -469,7 +469,7 @@ function showWeatherError(msg) {
 const ROLE_SHORTCUTS = {
   customer: [
     { icon: 'fa-scale-balanced',  label: '자격증 비교기',      desc: '두 자격증을 나란히 비교',          section: 'compare',              color: '#3b82f6' },
-    { icon: 'fa-medal',           label: '합격 팁 & 후기',     desc: '시험별 합격 전략 & 수험 후기',      section: 'tips-section',         color: '#f59e0b' },
+    { icon: 'fa-medal',           label: '합격 팁',            desc: '시험별 합격 전략 & 학습 포인트',    section: 'tips-section',         color: '#f59e0b' },
     { icon: 'fa-bullseye',        label: '합격 가능성 예측기',  desc: '학습 현황으로 합격률 예측',         section: 'predictor-section',    color: '#10b981' },
     { icon: 'fa-circle-question', label: '자격증 FAQ',         desc: '자주 묻는 질문 모음',               section: 'faq-section',          color: '#8b5cf6' },
   ],
