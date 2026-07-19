@@ -1414,7 +1414,35 @@ function renderBooks() {
     ? recBooks.map(b => bookCard(b, '추천')).join('')
     : '<p class="books-empty">추천 수험서 데이터가 없습니다.</p>';
 
+  // 입문자 추천 1권: 베스트셀러 1위(실데이터가 있을 때만) 하나를 강조 표시해 선택 피로를 줄여준다
+  const beginnerPickEl = document.getElementById('beginner-pick-container');
+  if (beginnerPickEl) {
+    const pick = bestBooks[0];
+    if (pick && !pick.isPlaceholder) {
+      const q = encodeURIComponent(pick.title);
+      const pickUrl = pick.pageUrl || `https://search.kyobobook.co.kr/search?keyword=${q}`;
+      const priceText = pick.price > 0 ? `${pick.price.toLocaleString()}원` : '가격은 상세페이지에서 확인';
+      beginnerPickEl.innerHTML = `
+        <div class="beginner-pick-banner">
+          <div class="beginner-pick-icon"><i class="fa-solid fa-flag-checkered"></i></div>
+          <div class="beginner-pick-body">
+            <span class="beginner-pick-label">처음이라면 이 책부터</span>
+            <span class="beginner-pick-title">${pick.title}</span>
+            <span class="beginner-pick-meta">${pick.publisher} · ${priceText}</span>
+          </div>
+          <a href="${pickUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm beginner-pick-btn">
+            바로 보기 <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>`;
+      beginnerPickEl.style.display = '';
+    } else {
+      beginnerPickEl.style.display = 'none';
+      beginnerPickEl.innerHTML = '';
+    }
+  }
+
   initNLBookImages();
+  updateWishlistBadge();
 }
 
 async function fetchAladinImage(title) {
