@@ -52,13 +52,27 @@ function normalize(s) {
   return String(s || '').replace(/<[^>]*>/g, '').replace(/\s+/g, '').toLowerCase();
 }
 
-// 후보 도서 제목이 우리가 찾는 도서와 실제로 같은 자격증/상품을 가리키는지 검증
+// 자격증명 하나만으로는 같은 자격증의 다른 출판사·다른 판형 도서와 구분이 안 되므로,
+// 제목에 드러나는 출판사명 / 필기·실기 구분도 함께 필수 토큰으로 뽑는다
+function extractRequiredTokens(title) {
+  const tokens = [extractCoreToken(title)];
+
+  const examType = title.match(/필기|실기/);
+  if (examType) tokens.push(examType[0]);
+
+  const publisher = PUBLISHERS.find(p => title.includes(p));
+  if (publisher) tokens.push(publisher);
+
+  return tokens.filter(Boolean);
+}
+
+// 후보 도서 제목이 우리가 찾는 도서와 실제로 같은 자격증/출판사/필기·실기 상품을 가리키는지 검증
 function titleMatches(queryTitle, candidateTitle) {
   if (!candidateTitle) return false;
-  const coreToken = normalize(extractCoreToken(queryTitle));
   const candidate = normalize(candidateTitle);
-  if (!coreToken) return false;
-  return candidate.includes(coreToken);
+  const tokens = extractRequiredTokens(queryTitle).map(normalize);
+  if (!tokens.length) return false;
+  return tokens.every(t => candidate.includes(t));
 }
 
 // ── 1순위: 교보 CDN (ISBN → URL 직접 구성) ──
