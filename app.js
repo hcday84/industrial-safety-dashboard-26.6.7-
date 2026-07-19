@@ -4241,6 +4241,174 @@ const CERT_TIPS = {
     { type:'필기', tag:'고득점', tip:'소음·진동 측정 계산 문제가 핵심입니다. 데시벨(dB) 단위 환산과 로그 계산에 익숙해지세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
     { type:'실기', tag:'핵심',   tip:'실기는 필답형으로 소음·진동 관계 법규와 저감 대책 서술 문제가 많습니다. 법정 허용기준 수치를 표로 정리해 암기하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
   ],
+  '초음파비파괴검사기사': [
+    { type:'필기', tag:'고득점', tip:'결함 검출 원리(반사법·투과법)를 정확히 구분해 암기하세요. 공식은 실제 검사 절차와 연결해 이해하면 응용력이 높아집니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 필답형+작업형입니다. 실제 장비로 시험편 결함을 판독하는 연습이 합격을 좌우합니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '방사선비파괴검사기사': [
+    { type:'필기', tag:'고득점', tip:'방사선 안전관리 법정 기준(피폭선량 한도 등)을 표로 정리해 반복 암기하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 필름 판독 및 촬영조건 계산이 핵심입니다. 기출 필름 사례로 반복 판독 연습을 하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '복어조리기능사': [
+    { type:'필기', tag:'주의',   tip:'복어 독(테트로도톡신) 부위별 위험도와 안전 처리 기준을 정확히 암기해야 합니다. 안전과 직결된 문제라 출제 비중이 높습니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 독성 부위 제거 과정이 채점의 핵심입니다. 정해진 절차를 순서대로 정확히 수행하는 연습이 가장 중요합니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '양식조리산업기사': [
+    { type:'필기', tag:'고득점', tip:'양식조리기능사보다 조리 관리·위생 관리 이론 비중이 높습니다. 관리자 관점에서 공정 전체를 이해하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 기능사보다 높은 완성도를 요구합니다. 플레이팅과 시간 관리를 함께 연습하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '중식조리산업기사': [
+    { type:'필기', tag:'고득점', tip:'중식조리기능사와 과목이 겹치는 부분이 많아 병행 학습하면 효율적입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 관리자 수준의 완성도를 요구합니다. 화력 조절과 플레이팅을 함께 반복 연습하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '일식조리산업기사': [
+    { type:'필기', tag:'고득점', tip:'일식조리기능사보다 조리 관리·위생 관리 이론 비중이 높습니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 칼 기술과 관리자 수준의 완성도를 함께 평가합니다. 시간 배분 연습을 반복하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '품질경영기사': [
+    { type:'필기', tag:'고득점', tip:'SPC(통계적 공정 관리)와 ISO 품질시스템 이론이 핵심입니다. 관리도·공정능력지수 계산 문제를 반복 연습하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 필답형으로 품질 개선 사례 서술 문제가 많습니다. QC 7가지 도구를 실제 사례에 적용하는 연습을 하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '수질환경기사': [
+    { type:'필기', tag:'고득점', tip:'수질 오염 지표(BOD·COD·SS 등)의 정의와 측정법을 정확히 구분해 암기하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 필답형으로 하수·폐수처리 공법 설계 계산이 핵심입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '대기환경기사': [
+    { type:'필기', tag:'고득점', tip:'대기오염 확산 이론과 방지시설 원리를 함께 이해하면 계산 문제 응용력이 높아집니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 필답형으로 배출허용기준 관련 계산·법규 문제 비중이 높습니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '화재감식평가기사': [
+    { type:'필기', tag:'주의',   tip:'국내 유일한 화재감정 분야 기사 자격이라 참고 자료가 적습니다. Q-Net 기출을 반복 학습하며 화재 발화 원인 분류 체계를 확실히 익히세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 화재 현장 사진·도면을 보고 발화 원인을 추정하는 서술형입니다. 실제 화재 사례 연구가 큰 도움이 됩니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '전자기사': [
+    { type:'필기', tag:'고득점', tip:'전자회로·반도체공학 계산 문제가 핵심입니다. 회로도를 직접 그려가며 이해하는 연습이 효과적입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 필답형으로 회로 설계·신호처리 계산 문제가 많습니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '일반기계기사': [
+    { type:'필기', tag:'고득점', tip:'기계설계·유체역학·열역학 등 계산 과목 비중이 높습니다. 단위 환산 실수를 줄이는 연습이 중요합니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 필답형으로 기계요소 설계 계산이 핵심입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '관광통역안내사': [
+    { type:'필기', tag:'고득점', tip:'관광국사·관광자원해설 암기 비중이 높습니다. 최근 3개년 기출로 출제 경향을 파악하세요.', source:'Q-Net 관광통역안내사', sourceUrl: 'https://www.q-net.or.kr/site/interpreter' },
+    { type:'학습법', tag:'핵심', tip:'면접은 외국어 구술입니다. 관광 안내 상황을 가정한 롤플레이 연습을 반복하면 실전 감각이 크게 향상됩니다.', source:'Q-Net 관광통역안내사', sourceUrl: 'https://www.q-net.or.kr/site/interpreter' },
+  ],
+  'ADP': [
+    { type:'필기', tag:'주의',   tip:'ADsP보다 훨씬 심화된 머신러닝·빅데이터 기술 문제가 출제됩니다. 실무 프로젝트 경험 없이 이론만으로는 실기 대응이 어렵습니다.', source:'한국데이터산업진흥원(K-DATA)', sourceUrl: 'https://www.dataq.or.kr/www/main.do' },
+    { type:'실기', tag:'핵심',   tip:'실기는 작업형(코딩) 시험입니다. R·Python으로 데이터 분석 전 과정을 직접 구현해보는 연습이 필수입니다.', source:'한국데이터산업진흥원(K-DATA)', sourceUrl: 'https://www.dataq.or.kr/www/main.do' },
+  ],
+  '변리사': [
+    { type:'필기', tag:'고득점', tip:'1차는 객관식(산업재산권법 등), 2차는 논문형(특허법·상표법·민사소송법)입니다. 이공계 배경이 있다면 명세서 작성 실습을 병행하세요.', source:'Q-Net', sourceUrl: 'https://www.q-net.or.kr/' },
+    { type:'필기', tag:'주의',   tip:'2차는 답안 분량과 논리 전개가 채점에 큰 영향을 미칩니다. 모의고사로 실전 답안 작성 시간을 반드시 연습하세요.', source:'Q-Net', sourceUrl: 'https://www.q-net.or.kr/' },
+  ],
+  '법무사': [
+    { type:'필기', tag:'주의',   tip:'2차 합격률이 3~8%로 매우 낮은 최난도 시험입니다. 민법·부동산등기법 조문을 판례와 함께 정확히 이해해야 합니다.', source:'대한민국 법원 시험정보', sourceUrl: 'https://exam.scourt.go.kr/' },
+    { type:'필기', tag:'핵심',   tip:'등기·공탁 서류 작성 실무는 반복 작성 연습 없이는 감점을 피하기 어렵습니다. 실제 서식으로 반복 연습하세요.', source:'대한민국 법원 시험정보', sourceUrl: 'https://exam.scourt.go.kr/' },
+  ],
+  '미용사(피부)': [
+    { type:'필기', tag:'고득점', tip:'피부학·공중보건학·소독학 위주로 기출 반복만으로도 합격권입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 피부 관리 지정 과제를 제한시간 내 완성해야 합니다. 클렌징부터 마무리까지 순서를 몸에 익히세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '치과기공사': [
+    { type:'필기', tag:'고득점', tip:'치아형태학·치과재료학 위주입니다. 최근 5개년 기출 반복이 효율적입니다.', source:'한국보건의료인국가시험원(국시원)', sourceUrl: 'https://www.kuksiwon.or.kr/index.do' },
+    { type:'실기', tag:'핵심',   tip:'실기는 보철물 제작 작업형입니다. CAD/CAM 등 디지털 기공 트렌드도 함께 익혀두면 실무 적응이 빠릅니다.', source:'한국보건의료인국가시험원(국시원)', sourceUrl: 'https://www.kuksiwon.or.kr/index.do' },
+  ],
+  '언어재활사': [
+    { type:'필기', tag:'고득점', tip:'조음장애·언어발달지연 등 장애 유형별 평가·치료 이론을 구분해서 정리하세요.', source:'한국보건의료인국가시험원(국시원)', sourceUrl: 'https://www.kuksiwon.or.kr/index.do' },
+    { type:'실기', tag:'핵심',   tip:'실기는 사례 기반 평가·치료 계획 수립형입니다. 실습 사례를 최대한 많이 접해보는 게 도움이 됩니다.', source:'한국보건의료인국가시험원(국시원)', sourceUrl: 'https://www.kuksiwon.or.kr/index.do' },
+  ],
+  '전기기능장': [
+    { type:'필기', tag:'고득점', tip:'전기산업기사·전기기사 수준을 아우르는 심화 문제가 출제됩니다. 현장 실무 경험이 있어도 이론 정리가 따로 필요합니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 복합 작업형입니다. 배선·제어반 결선을 시간 내 완성하는 반복 연습이 필수입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '폐기물처리기사': [
+    { type:'필기', tag:'고득점', tip:'폐기물 처리 공법(소각·매립·재활용)의 원리와 관련 법령을 함께 학습하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 필답형으로 처리 시설 설계 계산 문제가 핵심입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '한국실용글쓰기검정': [
+    { type:'학습법', tag:'고득점', tip:'단답형·서술형·작문 3개 유형입니다. 목표 급수에 따라 작문 배점 비중이 달라지니 목표 등급을 먼저 정하세요.', source:'한국실용글쓰기검정', sourceUrl: 'https://www.klata.or.kr/' },
+    { type:'학습법', tag:'핵심', tip:'실생활 문서(공문서·이메일·기획서) 작성 유형이 자주 출제됩니다. 실제 양식으로 써보는 연습이 효과적입니다.', source:'한국실용글쓰기검정', sourceUrl: 'https://www.klata.or.kr/' },
+  ],
+  'KBS한국어능력시험': [
+    { type:'학습법', tag:'고득점', tip:'듣기·어휘·어법·쓰기·창안·국어문화 6개 영역 중 어휘·어법은 암기로 빠르게 점수를 올릴 수 있는 영역입니다.', source:'KBS한국어진흥원', sourceUrl: 'https://www.kbskorean.org/' },
+    { type:'학습법', tag:'핵심', tip:'창안 영역은 정답이 정해지지 않은 유형이 많아 기출 예시로 답안 작성 감각을 익혀두는 게 중요합니다.', source:'KBS한국어진흥원', sourceUrl: 'https://www.kbskorean.org/' },
+  ],
+  '에너지관리산업기사': [
+    { type:'필기', tag:'고득점', tip:'에너지관리기사보다 응시 자격이 완화된 하위 자격입니다. 기사 기출도 병행하면 도움이 됩니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 보일러 설비 취급 작업형+필답형입니다. 설비 명칭과 안전수칙을 정확히 암기하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '건축설비기사': [
+    { type:'필기', tag:'고득점', tip:'전기·위생·냉난방·소방 설비를 모두 다뤄 범위가 넓습니다. 설비별로 나눠 단계적으로 학습하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 설비 설계 도면 해석·계산이 핵심입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '토양환경기사': [
+    { type:'필기', tag:'고득점', tip:'토양오염 공정시험기준과 지하수 오염 원리를 함께 이해하면 응용문제 대응이 쉬워집니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 필답형으로 토양 정화 공법 설계 계산이 핵심입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '온실가스관리기사': [
+    { type:'필기', tag:'고득점', tip:'온실가스 배출량 산정 방법론(Tier1~3)을 구분해서 이해하세요. 최신 탄소배출권 거래제 개정사항도 확인하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 필답형으로 배출량 산정·검증 절차 서술 문제가 핵심입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '항공기사': [
+    { type:'필기', tag:'고득점', tip:'항공산업기사보다 심화된 설계·정비 이론이 출제됩니다. 산업기사 기출도 함께 복습하면 기초를 다지는 데 도움이 됩니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 필답형+작업형입니다. 항공기 정비 절차를 순서대로 정확히 서술하는 연습을 하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '철도차량기사': [
+    { type:'필기', tag:'고득점', tip:'철도차량 구조·제어 이론 비중이 높습니다. 공기업(코레일 등) 채용 연계형 자격이라 기출 반복이 특히 중요합니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 필답형으로 차량 정비·검사 절차 서술이 핵심입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '식품산업기사': [
+    { type:'필기', tag:'고득점', tip:'식품위생학·식품가공학 위주로 기출 반복만으로 충분히 합격권입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 필답형으로 품질관리·위생점검 실무 문제가 핵심입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '나무의사': [
+    { type:'필기', tag:'고득점', tip:'1차는 수목병리학·해충학 등 객관식입니다. 관련 학과 출신이 아니라면 기초 용어부터 정리하세요.', source:'한국임업진흥원 나무의사', sourceUrl: 'https://namudr.kofpi.or.kr/' },
+    { type:'실기', tag:'핵심',   tip:'2차는 실기(수목 진단) 시험입니다. 실제 병해충 증상 사진으로 판별 연습을 반복하세요.', source:'한국임업진흥원 나무의사', sourceUrl: 'https://namudr.kofpi.or.kr/' },
+  ],
+  '미용사(네일)': [
+    { type:'필기', tag:'고득점', tip:'네일 이론·공중보건학 위주로 기출 반복만으로도 합격권입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 지정 네일 아트 과제를 제한시간 내 완성해야 합니다. 손 모형으로 반복 연습해 속도를 높이세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '미용사(메이크업)': [
+    { type:'필기', tag:'고득점', tip:'색채 이론과 메이크업 기법 위주로 기출 반복이 효율적입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 지정 메이크업(시대·무대 등)을 제한시간 내 완성해야 합니다. 반복 연습으로 손 속도를 높이세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '화학분석기사': [
+    { type:'필기', tag:'고득점', tip:'기기분석·습식분석 이론을 균형 있게 학습하세요. 계산 문제는 유효숫자 처리에 유의하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 작업형으로 실제 분석기기 조작 능력을 평가합니다. 실습 시간을 최대한 활용해 기기 조작에 익숙해지세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '임상심리사2급': [
+    { type:'필기', tag:'주의',   tip:'이상심리학·심리평가·심리치료 등 4과목입니다. 정신건강임상심리사(보건복지부 별도 자격)와 혼동하지 않도록 자격 범위를 명확히 구분해서 학습하세요.', source:'Q-Net', sourceUrl: 'https://www.q-net.or.kr/' },
+    { type:'실기', tag:'핵심',   tip:'실기는 사례연구·심리검사 해석형입니다. 실제 검사 결과지를 해석해보는 연습이 큰 도움이 됩니다.', source:'Q-Net', sourceUrl: 'https://www.q-net.or.kr/' },
+  ],
+  '평생교육사': [
+    { type:'학습법', tag:'핵심', tip:'시험이 아닌 학점은행제·대학원 과정 이수로 취득하는 자격입니다. 필요 과목을 미리 확인해 이수 계획을 세우는 게 핵심입니다.', source:'국가평생교육진흥원 평생교육사 자격관리', sourceUrl: 'https://lledu.nile.or.kr/' },
+    { type:'학습법', tag:'주의', tip:'일부 기관은 승급을 위한 별도 시험이나 실습을 요구합니다. 소속 기관의 최신 이수 기준을 국가평생교육진흥원 홈페이지에서 꼭 확인하세요.', source:'국가평생교육진흥원 평생교육사 자격관리', sourceUrl: 'https://lledu.nile.or.kr/' },
+  ],
+  'TOEFL': [
+    { type:'학습법', tag:'고득점', tip:'읽기·듣기·말하기·쓰기 4영역 통합형 문제 비중이 높습니다. 노트테이킹 훈련이 통합형 문제 대응에 큰 도움이 됩니다.', source:'ETS TOEFL 한국 시행처(Fulbright)', sourceUrl: 'https://testing.fulbright.or.kr/exams/toefl/' },
+    { type:'학습법', tag:'핵심', tip:'목표 대학원의 최소 점수 기준을 먼저 확인하고, 취약 영역 하나를 집중적으로 끌어올리는 전략이 효율적입니다.', source:'ETS TOEFL 한국 시행처(Fulbright)', sourceUrl: 'https://testing.fulbright.or.kr/exams/toefl/' },
+  ],
+  'IELTS': [
+    { type:'학습법', tag:'주의',   tip:'Academic과 General Training 중 목적에 맞는 유형을 정확히 선택해서 응시하세요. 유학은 Academic이 기본입니다.', source:'IELTS Korea(IDP)', sourceUrl: 'https://ieltskorea.org/' },
+    { type:'학습법', tag:'핵심', tip:'스피킹은 대면 인터뷰 방식입니다. 실전과 동일한 형식으로 모의 인터뷰 연습을 반복하는 게 가장 효과적입니다.', source:'IELTS Korea(IDP)', sourceUrl: 'https://ieltskorea.org/' },
+  ],
+  'JLPT (일본어능력시험)': [
+    { type:'학습법', tag:'주의',   tip:'레벨별 합격 기준 점수(과목별 최저점 포함)를 충족해야 합니다. 특정 과목에서 과락이 나지 않도록 균형 있게 학습하세요.', source:'JLPT 일본어능력시험', sourceUrl: 'https://www.jlpt.or.kr/html/' },
+    { type:'학습법', tag:'핵심', tip:'한국에서는 연 2회(7월·12월)만 시행됩니다. 응시 기회가 적은 만큼 목표 회차를 정하고 역산해서 학습 계획을 세우세요.', source:'JLPT 일본어능력시험', sourceUrl: 'https://www.jlpt.or.kr/html/' },
+  ],
+  'HSK (한어수평고사)': [
+    { type:'학습법', tag:'고득점', tip:'300점 만점에 180점 이상이면 합격입니다. 급수를 낮춰 여러 번 응시하기보다 목표 급수를 정해 집중 학습하는 게 효율적입니다.', source:'HSK한국사무국', sourceUrl: 'https://www.hsk-korea.co.kr/' },
+    { type:'학습법', tag:'핵심', tip:'매월 시행되어 응시 기회가 많습니다. 실전 감각 유지를 위해 최근 3개년 기출문제를 정기적으로 풀어보세요.', source:'HSK한국사무국', sourceUrl: 'https://www.hsk-korea.co.kr/' },
+  ],
+  '광산보안기사': [
+    { type:'필기', tag:'고득점', tip:'광산보안법에 따른 채굴·환기·배수 관련 법정 기준을 표로 정리해 암기하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+    { type:'실기', tag:'핵심',   tip:'실기는 필답형으로 광산 안전관리 실무 서술 문제가 핵심입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
+  ],
+  '수의사': [
+    { type:'필기', tag:'고득점', tip:'수의과대학 6년 과정을 이수한 응시자 대상 시험이라 합격률이 높은 편입니다. 다만 과목 수가 많아 최근 5개년 기출 반복 풀이로 범위를 관리하는 게 중요합니다.', source:'농림축산검역본부', sourceUrl: 'https://www.qia.go.kr/' },
+    { type:'학습법', tag:'핵심', tip:'매년 1회 시행되는 필기시험입니다. 실전과 동일한 시간 배분으로 모의고사를 반복하는 연습이 핵심입니다.', source:'농림축산검역본부', sourceUrl: 'https://www.qia.go.kr/' },
+  ],
 };
 
 const CERT_FAQ_GENERAL = [
