@@ -2787,7 +2787,7 @@ button, input, select {
 /* 12. 통계 분석 및 SVG 차트 */
 .analytics-layout {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1fr;
   gap: 30px;
 }
 
@@ -2797,8 +2797,7 @@ button, input, select {
   gap: 15px;
 }
 
-.chart-container h4,
-.subject-guide-container h4 {
+.chart-container h4 {
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--text-color);
