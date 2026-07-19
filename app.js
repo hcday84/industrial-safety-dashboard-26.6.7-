@@ -1319,6 +1319,30 @@ function renderBooks() {
       return `<span class="${cls}" style="margin-right:4px">${t}</span>`;
     }).join('');
 
+    // 최신판 여부: 제목 맨 앞 연도(예: "2026")가 올해보다 이전이면 구판일 수 있음 배지 표시
+    const titleYearMatch = !book.isPlaceholder && book.title.match(/^(20\d{2})\b/);
+    const titleYear = titleYearMatch ? parseInt(titleYearMatch[1], 10) : null;
+    const currentYear = new Date().getFullYear();
+    const editionBadgeHTML = (titleYear && titleYear < currentYear)
+      ? `<span class="edition-badge" title="제목에 표기된 ${titleYear}년판입니다. 최신판 출간 여부를 확인해보세요."><i class="fa-solid fa-triangle-exclamation"></i> ${titleYear}년판</span>`
+      : '';
+
+    // 목차 미리보기: 교보문고 실제 상품 상세페이지가 연결된 도서만 (검색 링크는 미리보기 탭이 없음)
+    const hasRealDetailPage = !!(book.pageUrl && book.pageUrl.includes('product.kyobobook.co.kr/detail/'));
+
+    // 찜하기 버튼 (자격증 전체를 넘나드는 위시리스트, localStorage 저장)
+    const wishTitle = book.title.replace(/'/g, '&#39;').replace(/"/g, '&quot;');
+    const wishPublisher = (book.publisher || '').replace(/'/g, '&#39;').replace(/"/g, '&quot;');
+    const wishPageUrl = (book.pageUrl || `https://search.kyobobook.co.kr/search?keyword=${encodeURIComponent(book.title)}`).replace(/'/g, '&#39;');
+    const isWished = !book.isPlaceholder && window._isWished && window._isWished(certName, book.title);
+    const wishBtnHTML = book.isPlaceholder ? '' : `
+      <button class="book-wish-btn${isWished ? ' active' : ''}" title="찜하기"
+        data-cert="${certName}" data-title="${wishTitle}" data-publisher="${wishPublisher}"
+        data-price="${book.price || 0}" data-pageurl="${wishPageUrl}"
+        onclick="event.stopPropagation();window._toggleWishlist(this)">
+        <i class="${isWished ? 'fa-solid' : 'fa-regular'} fa-heart"></i>
+      </button>`;
+
     // 이미지 폴백 체인: 1) KB 상품코드(수기 검증된 imageUrl) → 2) nl-book.js API(제목 검증 통과 시) → 3) CSS 목업
     // 단, 실데이터가 없어 자동 생성된 placeholder 도서는 실존하지 않는 가짜 제목이므로
     // 제목 기반 이미지 검색(Aladin) 자체를 시도하지 않고 항상 CSS 목업만 표시한다
