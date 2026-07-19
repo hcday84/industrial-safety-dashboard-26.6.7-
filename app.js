@@ -1495,24 +1495,31 @@ function renderChart(cert) {
   }
 
   const wPts = rates.map((r, i) => [toX(i), toY(r.written)]);
-  const pPts = rates.map((r, i) => [toX(i), toY(r.practical)]);
 
   const wPath = smoothPath(wPts);
-  const pPath = smoothPath(pPts);
 
   // 그라디언트 영역 (하단까지)
   const wArea = wPath + ` L ${toX(n-1).toFixed(1)} ${BOTTOM} L ${toX(0).toFixed(1)} ${BOTTOM} Z`;
-  const pArea = pPath + ` L ${toX(n-1).toFixed(1)} ${BOTTOM} L ${toX(0).toFixed(1)} ${BOTTOM} Z`;
 
   const wPoints = rates.map((r, i) => `
     <circle cx="${toX(i).toFixed(1)}" cy="${toY(r.written).toFixed(1)}" r="4.5" fill="#f59e0b" stroke="var(--card-bg)" stroke-width="2"/>
     <text x="${toX(i).toFixed(1)}" y="${(toY(r.written) - 10).toFixed(1)}" class="chart-value-label" fill="#f59e0b" text-anchor="middle" font-size="10" font-weight="600">${r.written}%</text>
   `).join('');
 
-  const pPoints = rates.map((r, i) => `
+  // 실기 시험이 없는 자격증은 practical 관련 선/영역/점/범례/트렌드를 아예 그리지 않는다
+  let pPath = '', pArea = '', pPoints = '';
+  if (hasPractical) {
+    const pPts = rates.map((r, i) => [toX(i), toY(r.practical)]);
+    pPath = smoothPath(pPts);
+    pArea = pPath + ` L ${toX(n-1).toFixed(1)} ${BOTTOM} L ${toX(0).toFixed(1)} ${BOTTOM} Z`;
+    pPoints = rates.map((r, i) => {
+      if (r.practical == null) return '';
+      return `
     <circle cx="${toX(i).toFixed(1)}" cy="${toY(r.practical).toFixed(1)}" r="4.5" fill="#0ea5e9" stroke="var(--card-bg)" stroke-width="2"/>
     <text x="${toX(i).toFixed(1)}" y="${(toY(r.practical) - 10).toFixed(1)}" class="chart-value-label" fill="#0ea5e9" text-anchor="middle" font-size="10" font-weight="600">${r.practical}%</text>
-  `).join('');
+  `;
+    }).join('');
+  }
 
   // 트렌드 계산
   function trend(arr) {
@@ -1523,7 +1530,7 @@ function renderChart(cert) {
     return '→ 안정';
   }
   const wTrend = trend(rates.map(r => r.written));
-  const pTrend = trend(rates.map(r => r.practical));
+  const pTrend = hasPractical ? trend(rates.map(r => r.practical)) : '';
 
   wrapper.innerHTML = `
     <svg viewBox="0 0 500 230" class="pass-rate-svg" style="overflow:visible">
