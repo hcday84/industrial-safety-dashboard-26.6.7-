@@ -1451,6 +1451,11 @@ function renderChart(cert) {
   const rates = cert.passRates;
   if (!rates || !rates.length) { wrapper.innerHTML = '<p style="text-align:center;color:var(--text-muted);padding:2rem;">데이터 없음</p>'; return; }
 
+  // 실기 시험 자체가 없는 자격증(예: 한국사능력검정시험)은 practical이 전부 null
+  const hasPractical = rates.some(r => r.practical != null);
+  const legendPractical = document.getElementById('legend-practical');
+  if (legendPractical) legendPractical.style.display = hasPractical ? '' : 'none';
+
   const n = rates.length;
   const allVals = rates.flatMap(r => [r.written, r.practical].filter(v => v != null));
   const rawMin = Math.min(...allVals);
