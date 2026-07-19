@@ -1617,26 +1617,8 @@ function renderChart(cert) {
 // ============================================
 // 15. 과목 분석 렌더링
 // ============================================
-function renderSubjects(cert) {
-  const list = document.getElementById('subject-list');
-  if (!list) return;
-  list.innerHTML = cert.subjects.map((s, i) => {
-    const title = s.title || s.name || '';
-    const desc  = s.tip   || s.desc  || '';
-    return `
-    <div class="subject-item">
-      <span class="subject-num">${i + 1}</span>
-      <div class="subject-details">
-        <h5>${title}</h5>
-        <p>${desc}</p>
-      </div>
-    </div>
-  `;
-  }).join('');
-}
-
 // ============================================
-// 15-1. 합격 전략 가이드 (공략 순서 + 흔한 실수)
+// 15-1. 합격 전략 가이드 (과목별 분석 + 공략 순서 + 흔한 실수)
 // ============================================
 const STUDY_MISTAKE_GROUPS = [
   { keys: ['안전', '소방'], mistakes: [
