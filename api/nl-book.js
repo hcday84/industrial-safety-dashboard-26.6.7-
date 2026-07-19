@@ -151,7 +151,7 @@ async function searchGoogleBooks(query) {
     const data = await res.json();
     const items = data?.items || [];
     for (const item of items) {
-      if (!titleMatches(query, item.volumeInfo?.title)) continue;
+      if (!titleMatches(query, item.volumeInfo?.title, item.volumeInfo?.publisher)) continue;
       const links = item.volumeInfo?.imageLinks;
       if (links?.thumbnail) {
         return links.thumbnail.replace('zoom=1', 'zoom=2').replace('http://', 'https://');
