@@ -2887,7 +2887,7 @@ button, input, select {
 
 .study-order-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
   padding: 10px 14px;
   background-color: var(--bg-color);
@@ -2908,12 +2908,27 @@ button, input, select {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.study-order-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
 }
 
 .study-order-title {
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--text-color);
+  word-break: keep-all;
+}
+
+.study-order-desc {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
   word-break: keep-all;
 }
 
