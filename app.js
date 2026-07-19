@@ -3971,6 +3971,16 @@ const CERT_TIPS = {
     { type:'필기', tag:'주의',   tip:'연표 암기만으로는 부족합니다 — 사진·지도·사료(史料) 등 자료 제시형 문항 비중이 높으니 교과서 도판 자료를 함께 봐 두세요.', source:'국사편찬위원회', sourceUrl: 'https://www.historyexam.go.kr/' },
     { type:'학습법', tag:'핵심', tip:'최근 5개년 기출문제를 국사편찬위원회 홈페이지에서 무료로 풀어볼 수 있습니다. 근현대사(개항기~현대)는 매회 출제 빈도가 높아 우선순위를 두고 반복하세요.', source:'국사편찬위원회 기출문제', sourceUrl: 'http://tok.historyexam.go.kr/pc/grade.html' },
   ],
+  'TOEIC': [
+    { type:'필기', tag:'고득점', tip:'RC는 75분에 100문항이 기본 — Part 5·6을 20분 안에 끝내고 남은 시간을 Part 7 독해에 몰아주는 시간 배분이 고득점의 핵심입니다.', source:'YBM TOEIC 공식 사이트', sourceUrl: 'https://exam.toeic.co.kr/' },
+    { type:'필기', tag:'주의',   tip:'LC Part 3·4는 대화·설명문의 흐름을 한 번 놓치면 복구가 어렵습니다. 모르는 문항에 매달리지 말고 바로 다음 문제로 넘어가는 연습을 하세요.', source:'YBM TOEIC 공식 사이트', sourceUrl: 'https://exam.toeic.co.kr/' },
+    { type:'학습법', tag:'핵심', tip:'시험 접수·성적 확인은 YBM 공식 사이트에서만 가능합니다. 목표 점수는 한 번의 성적이 아니라 최근 2~3회 응시 평균으로 판단하는 게 안정적입니다.', source:'YBM TOEIC 공식 사이트', sourceUrl: 'https://exam.toeic.co.kr/' },
+  ],
+  '1종운전면허(보통)': [
+    { type:'필기', tag:'고득점', tip:'학과시험은 CBT로 응시 직후 합격 여부가 나옵니다. 도로교통공단 문제은행 기반 모의시험을 반복 풀이하면 실제 시험과 거의 동일한 유형을 미리 접할 수 있습니다.', source:'한국도로교통공단', sourceUrl: 'https://www.safedriving.or.kr/main.do' },
+    { type:'실기', tag:'핵심',   tip:'기능시험은 경사로 정차·직각주차·굴절코스 등 구간별 감점 기준이 정해져 있습니다. 코스 순서를 몸으로 익히는 반복 연습이 합격을 좌우합니다.', source:'한국도로교통공단 면허시험순서', sourceUrl: 'https://www.safedriving.or.kr/guide/rerGuide01View.do?menuCode=MN-PO-1111' },
+    { type:'실기', tag:'주의',   tip:'도로주행은 안전벨트·좌우 확인·방향지시등 같은 기본 동작을 생략하면 감점이 누적돼 탈락하기 쉽습니다. 코스 암기보다 기본 동작을 습관화하는 데 집중하세요.', source:'한국도로교통공단', sourceUrl: 'https://www.safedriving.or.kr/main.do' },
+  ],
 };
 
 const CERT_FAQ_GENERAL = [
