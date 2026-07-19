@@ -96,7 +96,7 @@ async function searchKyoboViaNaver(query) {
     const items = data?.items || [];
 
     for (const item of items) {
-      if (!titleMatches(query, item.title)) continue;
+      if (!titleMatches(query, item.title, item.publisher)) continue;
 
       const naverImage = (item.image && !item.image.includes('noimage')) ? item.image : null;
       // isbn 필드: "ISBN10 ISBN13" 형태 — 13자리 추출
