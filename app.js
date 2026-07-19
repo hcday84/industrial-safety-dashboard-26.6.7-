@@ -1389,12 +1389,14 @@ function renderBooks() {
       <div class="book-card">
         <div class="book-cover-container">
           ${coverHTML}
-          <div class="book-badge-container">${badgesHTML}</div>
+          <div class="book-badge-container">${badgesHTML}${editionBadgeHTML}</div>
+          ${wishBtnHTML}
         </div>
         <div class="book-info">
           <span class="book-publisher">${book.publisher} 수험서</span>
           <h4 class="book-title" title="${book.title}">${book.title}</h4>
           <a href="${pageUrl}" target="_blank" rel="noopener noreferrer" class="book-rating-link"><i class="fa-solid fa-star"></i>교보문고에서 별점 확인</a>
+          ${hasRealDetailPage ? `<span class="book-preview-hint"><i class="fa-solid fa-eye"></i> 상세페이지에서 목차 미리보기 가능</span>` : ''}
           <div class="book-price-area">
             ${priceHTML}
           </div>
