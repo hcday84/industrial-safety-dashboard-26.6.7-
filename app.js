@@ -1689,10 +1689,14 @@ function renderStudyGuide(cert) {
 
   orderEl.innerHTML = (cert.subjects || []).map((s, i) => {
     const title = s.title || s.name || '';
+    const desc  = s.tip   || s.desc  || '';
     return `
       <div class="study-order-item">
         <span class="study-order-num">${i + 1}</span>
-        <span class="study-order-title">${title}</span>
+        <div class="study-order-details">
+          <span class="study-order-title">${title}</span>
+          ${desc ? `<p class="study-order-desc">${desc}</p>` : ''}
+        </div>
       </div>
     `;
   }).join('');
