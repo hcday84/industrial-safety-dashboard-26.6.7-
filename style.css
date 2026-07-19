@@ -3623,6 +3623,14 @@ button, input, select {
   align-items: center;
   gap: 6px;
 }
+.books-hint {
+  margin: 4px 0 16px;
+  font-size: 0.8rem;
+  color: var(--text-muted, #9ca3af);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 .news-loading {
   padding: 24px;
   text-align: center;
