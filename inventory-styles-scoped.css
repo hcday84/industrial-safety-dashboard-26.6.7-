@@ -38,7 +38,7 @@
 
 /* Color Palette - Light Mode Override */
 #inventory-panel.light-mode{
-    --bg-primary: #e8f0fe;
+    --bg-primary: #f5f7fc;
     --bg-secondary: #f0f6f0;
     --card-bg: rgba(255, 255, 255, 0.80);
     --card-border: rgba(7, 24, 64, 0.10);
