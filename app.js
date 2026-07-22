@@ -655,27 +655,6 @@ function switchCertification(certName) {
   // 공공데이터 API — 종목 정보 + 시험 일정 비동기 업데이트
   const cert = getCert();
   if (cert) {
-    const apiGen = _heroGen;
-    fetchCertInfo(cert.name).then(info => {
-      if (!info || _heroGen !== apiGen) return;
-      const descEl = document.getElementById('hero-desc');
-      if (descEl && info.overview) {
-        // 메인 히어로 타이핑 애니메이션(cert.heroDesc)이 끝난 뒤에 재타이핑해야
-        // 같은 hero-desc에 대한 typeEffect 호출이 공유 타이머(_typeTimer)를
-        // 서로 취소시켜 버튼 pointer-events가 영원히 복구되지 않는 문제를 피할 수 있음
-        _heroReady.then(() => {
-          if (_heroGen !== apiGen) return;
-          typeEffect(descEl, info.overview).then(() => {
-            if (_heroGen !== apiGen) return;
-            const shieldEl = document.querySelector('.shield-graphic');
-            const btnsEl   = document.querySelector('.slide-buttons');
-            if (shieldEl) { shieldEl.style.transition = 'opacity 0.5s'; shieldEl.style.opacity = '1'; shieldEl.style.pointerEvents = ''; }
-            if (btnsEl)   { btnsEl.style.transition   = 'opacity 0.5s'; btnsEl.style.opacity   = '1'; btnsEl.style.pointerEvents   = ''; }
-          });
-        });
-      }
-    });
-
     fetchExamSchedule(cert.name).then(schedules => {
       if (!schedules || !schedules.length) return;
       // CERTIFICATIONS 데이터 갱신
