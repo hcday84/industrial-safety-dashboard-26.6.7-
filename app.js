@@ -4455,7 +4455,7 @@ const CERT_TIPS = {
     { type:'필기', tag:'고득점', tip:'폐기물 처리 공법(소각·매립·재활용)의 원리와 관련 법령을 함께 학습하세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
     { type:'실기', tag:'핵심',   tip:'실기는 필답형으로 처리 시설 설계 계산 문제가 핵심입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
   ],
-  '한국실용글쓰기검정': [
+  '한국실용글쓰기': [
     { type:'학습법', tag:'고득점', tip:'단답형·서술형·작문 3개 유형입니다. 목표 급수에 따라 작문 배점 비중이 달라지니 목표 등급을 먼저 정하세요.', source:'한국실용글쓰기검정', sourceUrl: 'https://www.klata.or.kr/' },
     { type:'학습법', tag:'핵심', tip:'실생활 문서(공문서·이메일·기획서) 작성 유형이 자주 출제됩니다. 실제 양식으로 써보는 연습이 효과적입니다.', source:'한국실용글쓰기검정', sourceUrl: 'https://www.klata.or.kr/' },
   ],
