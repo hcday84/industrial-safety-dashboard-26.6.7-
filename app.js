@@ -4319,7 +4319,7 @@ const CERT_TIPS = {
     { type:'필기', tag:'고득점', tip:'가스기능사보다 심화된 법규·설계 계산 문제가 출제됩니다. 고압가스안전관리법 조문 구조를 정리해두면 유리합니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
     { type:'실기', tag:'핵심',   tip:'실기는 필답형으로 가스설비 설계·안전관리 서술 문제가 핵심입니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
   ],
-  'MOS (Microsoft Office Specialist)': [
+  'MOS': [
     { type:'필기', tag:'고득점', tip:'과목별(Word·Excel·PowerPoint·Access) 개별 응시입니다. 실무에서 가장 많이 쓰는 Excel부터 취득하는 전략이 효율적입니다.', source:'YBM IT (MOS 공식)', sourceUrl: 'https://www.ybmit.com/' },
     { type:'학습법', tag:'핵심', tip:'Certiport 공인 센터에서 상시 응시 가능합니다. 실제 시험과 동일한 인터페이스로 제공되는 모의 프로그램으로 반복 연습하세요.', source:'YBM IT (MOS 공식)', sourceUrl: 'https://www.ybmit.com/' },
   ],
