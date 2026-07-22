@@ -4527,7 +4527,7 @@ const CERT_TIPS = {
     { type:'학습법', tag:'주의',   tip:'레벨별 합격 기준 점수(과목별 최저점 포함)를 충족해야 합니다. 특정 과목에서 과락이 나지 않도록 균형 있게 학습하세요.', source:'JLPT 일본어능력시험', sourceUrl: 'https://www.jlpt.or.kr/html/' },
     { type:'학습법', tag:'핵심', tip:'한국에서는 연 2회(7월·12월)만 시행됩니다. 응시 기회가 적은 만큼 목표 회차를 정하고 역산해서 학습 계획을 세우세요.', source:'JLPT 일본어능력시험', sourceUrl: 'https://www.jlpt.or.kr/html/' },
   ],
-  'HSK (한어수평고사)': [
+  'HSK': [
     { type:'학습법', tag:'고득점', tip:'300점 만점에 180점 이상이면 합격입니다. 급수를 낮춰 여러 번 응시하기보다 목표 급수를 정해 집중 학습하는 게 효율적입니다.', source:'HSK한국사무국', sourceUrl: 'https://www.hsk-korea.co.kr/' },
     { type:'학습법', tag:'핵심', tip:'매월 시행되어 응시 기회가 많습니다. 실전 감각 유지를 위해 최근 3개년 기출문제를 정기적으로 풀어보세요.', source:'HSK한국사무국', sourceUrl: 'https://www.hsk-korea.co.kr/' },
   ],
