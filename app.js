@@ -4523,7 +4523,7 @@ const CERT_TIPS = {
     { type:'학습법', tag:'주의',   tip:'Academic과 General Training 중 목적에 맞는 유형을 정확히 선택해서 응시하세요. 유학은 Academic이 기본입니다.', source:'IELTS Korea(IDP)', sourceUrl: 'https://ieltskorea.org/' },
     { type:'학습법', tag:'핵심', tip:'스피킹은 대면 인터뷰 방식입니다. 실전과 동일한 형식으로 모의 인터뷰 연습을 반복하는 게 가장 효과적입니다.', source:'IELTS Korea(IDP)', sourceUrl: 'https://ieltskorea.org/' },
   ],
-  'JLPT (일본어능력시험)': [
+  'JLPT': [
     { type:'학습법', tag:'주의',   tip:'레벨별 합격 기준 점수(과목별 최저점 포함)를 충족해야 합니다. 특정 과목에서 과락이 나지 않도록 균형 있게 학습하세요.', source:'JLPT 일본어능력시험', sourceUrl: 'https://www.jlpt.or.kr/html/' },
     { type:'학습법', tag:'핵심', tip:'한국에서는 연 2회(7월·12월)만 시행됩니다. 응시 기회가 적은 만큼 목표 회차를 정하고 역산해서 학습 계획을 세우세요.', source:'JLPT 일본어능력시험', sourceUrl: 'https://www.jlpt.or.kr/html/' },
   ],
