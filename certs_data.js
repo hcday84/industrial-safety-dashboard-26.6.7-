@@ -15383,7 +15383,7 @@ const CERTIFICATIONS = {
 
   '한국어능력시험(TOPIK)': {
     name: '한국어능력시험(TOPIK)',
-    icon: 'fa-korean-won-sign',
+    icon: 'fa-comments',
     category: '민간자격 · 어학',
     heroTitle: '2026년도 TOPIK 한국어능력시험 합격 가이드',
     heroDesc: 'TOPIK(Test of Proficiency in Korean)은 교육부 국립국제교육원이 주관하는 한국어 능력 공인 시험으로, 국내외 외국인 및 재외동포를 대상으로 합니다. TOPIK Ⅰ(1~2급)과 TOPIK Ⅱ(3~6급) 두 종류로 시행되며, 국내 대학 입학·취업 비자·영주권 신청 시 요구됩니다. 전 세계 70여 개국에서 연간 4~6회 시행됩니다.',
