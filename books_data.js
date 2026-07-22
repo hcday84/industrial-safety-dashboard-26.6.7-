@@ -635,19 +635,6 @@ const REAL_BOOKS = {
     { title: '2026 작업치료사 아동작업치료학 완성', author: '강민정', publisher: '고려의학', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=작업치료사+아동작업치료학+2026' },
   ],
 
-  '치위생사': [
-    { title: '2026 치위생사 국가시험 핵심요약 총정리', author: '대한치과위생사협회 편집부', publisher: '군자출판사', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 612, tags: ['베스트'], isbn: '9788957417232', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치위생사+국가시험+핵심요약+2026' },
-    { title: '2026 치위생사 기출문제 10개년 완전분석', author: '군자출판사 편집부', publisher: '군자출판사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 498, tags: ['베스트'], isbn: '9791191036404', imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치위생사+기출문제+10개년+2026' },
-    { title: '2026 치위생사 구강해부학+조직학 핵심정리', author: '고려의학 편집부', publisher: '고려의학', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.7, reviews: 389, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치위생사+구강해부학+조직학+2026' },
-    { title: '2026 치위생사 임상치위생학 완성', author: '박민희', publisher: '고려의학', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 312, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치위생사+임상치위생학+2026' },
-    { title: '2026 치위생사 모의고사 5회분', author: '메디시언 편집부', publisher: '메디시언', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 234, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치위생사+모의고사+5회분+2026' },
-    { title: '2026 치위생사 구강보건행정학 집중공략', author: '김수진', publisher: '고려의학', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 198, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치위생사+구강보건행정학+2026' },
-    { title: '2026 치위생사 치과재료학 핵심이론', author: '이상호', publisher: '군자출판사', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치위생사+치과재료학+2026' },
-    { title: '2026 치위생사 치주학·예방치학 완성', author: '박지현', publisher: '메디시언', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 134, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치위생사+치주학+예방치학+2026' },
-    { title: '2026 치위생사 벼락치기 핵심노트', author: '최은정', publisher: '군자출판사', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치위생사+벼락치기+2026' },
-    { title: '2026 치위생사 방사선학 이론+실습', author: '한국치위생학교수협의회', publisher: '군자출판사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 89, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치위생사+방사선학+2026' },
-  ],
-
   '응급구조사2급': [
     { title: '2026 응급구조사 2급 국가시험 핵심요약', author: '에듀팩토리 편집부', publisher: '에듀팩토리', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.7, reviews: 445, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=응급구조사+2급+국가시험+핵심요약+2026' },
     { title: '2026 응급구조사 2급 기출문제 완전분석', author: '메디시언 편집부', publisher: '메디시언', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 356, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=응급구조사+2급+기출문제+2026' },
