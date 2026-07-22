@@ -4199,7 +4199,7 @@ const CERT_TIPS = {
     { type:'필기', tag:'고득점', tip:'필기는 워드프로세싱 용어·OA 일반·PC운영체제 3과목 객관식입니다. 기출 반복만으로도 충분히 고득점이 가능합니다.', source:'대한상공회의소 자격평가사업단', sourceUrl: 'https://license.korcham.net/indexmain.jsp' },
     { type:'실기', tag:'핵심',   tip:'실기는 한글(HWP) 또는 MS Word로 지정 문서를 제한시간 내 작성해야 합니다. 표·차트 삽입, 스타일 지정 등 채점 항목을 빠짐없이 반영하는 연습이 중요합니다.', source:'대한상공회의소 자격평가사업단', sourceUrl: 'https://license.korcham.net/indexmain.jsp' },
   ],
-  '교원임용시험 (임용고시)': [
+  '임용고시': [
     { type:'필기', tag:'고득점', tip:'1차는 교육학(공통)과 전공(과목별) 필기시험입니다. 최근 3개년 평가원 기출의 서술형 배점 배분을 분석해 답안 작성 틀을 미리 만들어두세요.', source:'한국교육과정평가원(KICE)', sourceUrl: 'https://kice.re.kr/' },
     { type:'실기', tag:'핵심',   tip:'2차 수업실연·심층면접은 정해진 답이 없는 만큼, 스터디 그룹을 통한 모의 실연 연습이 실전 감각을 키우는 데 가장 효과적입니다.', source:'한국교육과정평가원(KICE)', sourceUrl: 'https://kice.re.kr/' },
   ],
