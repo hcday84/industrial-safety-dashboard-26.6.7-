@@ -4303,7 +4303,7 @@ const CERT_TIPS = {
     { type:'필기', tag:'고득점', tip:'영양학 이론과 급식경영학이 핵심입니다. 영양소별 대사 과정을 도식화해서 정리하면 암기가 수월합니다.', source:'한국보건의료인국가시험원(국시원)', sourceUrl: 'https://www.kuksiwon.or.kr/index.do' },
     { type:'실기', tag:'핵심',   tip:'실기는 급식 실무(식단 작성·위생관리) 위주의 서술형입니다. 실제 급식 현장 사례를 함께 익혀두세요.', source:'한국보건의료인국가시험원(국시원)', sourceUrl: 'https://www.kuksiwon.or.kr/index.do' },
   ],
-  'GTQ (그래픽기술자격)': [
+  'GTQ': [
     { type:'필기', tag:'고득점', tip:'1급은 고급 합성·보정, 2급은 기본 편집 능력을 평가합니다. 목표에 맞는 급수를 먼저 정하고 해당 급수 기출만 집중하세요.', source:'한국생산성본부(KPC)', sourceUrl: 'https://license.kpc.or.kr/' },
     { type:'실기', tag:'핵심',   tip:'실기는 포토샵 실습형입니다. 제한시간 내 지정 이미지를 완성해야 하므로 단축키 숙달이 속도를 크게 좌우합니다.', source:'한국생산성본부(KPC)', sourceUrl: 'https://license.kpc.or.kr/' },
   ],
