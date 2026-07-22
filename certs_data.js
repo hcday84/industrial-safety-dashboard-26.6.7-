@@ -8843,7 +8843,7 @@ const CERTIFICATIONS = {
 
   '조리기능장': {
     name: '조리기능장',
-    icon: 'fa-hat-chef',
+    icon: 'fa-kitchen-set',
     category: '식품·조리',
     heroTitle: '2026년도 조리기능장 합격 가이드',
     heroDesc: '조리기능장은 한식·양식·중식·일식·복어 조리 분야 전체를 아우르는 최고 등급 국가기술자격증입니다. 조리 분야의 기능장은 조리 업무 전반의 최상급 숙련 기능을 보유하고 현장 지도·감독을 수행할 수 있는 전문가에게 부여됩니다. 호텔·리조트 총주방장, 외식 기업 총괄 셰프 등으로 활동할 수 있는 최정상 자격입니다.',
@@ -10612,7 +10612,7 @@ const CERTIFICATIONS = {
   },
 
   '조적기능사': {
-    name: '조적기능사', icon: 'fa-bricks', category: '건설·토목',
+    name: '조적기능사', icon: 'fa-trowel-bricks', category: '건설·토목',
     heroTitle: '2026년도 조적기능사 합격 전략',
     heroDesc: '벽돌·블록·석재 쌓기의 전문가! 건축 마감 공사의 기본이 되는 조적 시공 능력을 인정받는 국가기술자격입니다.',
     passRateSummary: '필기 57.1% | 실기 51.2%',
@@ -13810,7 +13810,7 @@ const CERTIFICATIONS = {
 
   '언어재활사': {
     name: '언어재활사',
-    icon: 'fa-comments-medical',
+    icon: 'fa-comment-medical',
     category: '의료·보건',
     heroTitle: '2026년도 언어재활사 국가시험 합격 가이드',
     heroDesc: '언어재활사 국가시험은 한국보건의료인국가시험원(국시원)에서 매년 시행합니다. 언어치료학과 졸업 예정·졸업자가 응시할 수 있으며, 말더듬·조음장애·언어발달지연·실어증 등 의사소통 장애를 평가하고 치료하는 전문가입니다. 아동발달센터·재활병원·특수학교·복지관에서 수요가 빠르게 증가하고 있습니다.',
