@@ -66,6 +66,38 @@ function extractRequiredTokens(title) {
   return tokens.filter(Boolean);
 }
 
+// 급수/등급 표시(1급·2급 등)는 서로 다른 시험을 가리키므로, 있으면 정확히 같은 표시가
+// 후보 제목에도 있어야 한다 ("2급"이 있는 후보를 "3급" 검색어로 잘못 채택하는 것 방지)
+function extractGradeMarker(title) {
+  const m = title.match(/([1-9])\s*급/);
+  return m ? `${m[1]}급` : null;
+}
+
+// 제목을 단어 단위로 쪼갠다 (연도 접두어 제거, 괄호/구분기호 기준 분리)
+function tokenizeWords(title) {
+  return String(title || '')
+    .replace(/^(20\d{2})\s+/, '')
+    .replace(/[()]/g, ' ')
+    .split(/[\s+/·,\-~]+/)
+    .map(w => w.toLowerCase())
+    .filter(Boolean);
+}
+
+// 두 제목의 단어 집합 자카드 유사도 — 자격증명·필기실기 등 짧은 공통 토큰만으로는
+// "2주끝장" vs "한권끝장"처럼 저자·출판사·시리즈가 전혀 다른 별개의 책을 걸러내지 못해서
+// 전체 단어 겹침 비율까지 함께 확인한다
+function titleSimilarity(queryTitle, candidateTitle) {
+  const a = new Set(tokenizeWords(queryTitle));
+  const b = new Set(tokenizeWords(candidateTitle));
+  if (!a.size || !b.size) return 0;
+  let intersection = 0;
+  for (const w of a) if (b.has(w)) intersection++;
+  const union = new Set([...a, ...b]).size;
+  return union === 0 ? 0 : intersection / union;
+}
+
+const TITLE_SIMILARITY_THRESHOLD = 0.5;
+
 // 후보 도서 제목이 우리가 찾는 도서와 실제로 같은 자격증/출판사/필기·실기 상품을 가리키는지 검증
 // candidatePublisher: API가 제목과 별도로 내려주는 출판사 메타데이터(있으면 함께 검사)
 function titleMatches(queryTitle, candidateTitle, candidatePublisher) {
@@ -74,7 +106,13 @@ function titleMatches(queryTitle, candidateTitle, candidatePublisher) {
   const candidatePub = normalize(candidatePublisher);
   const tokens = extractRequiredTokens(queryTitle).map(normalize);
   if (!tokens.length) return false;
-  return tokens.every(t => candidate.includes(t) || (candidatePub && candidatePub.includes(t)));
+  const tokensOk = tokens.every(t => candidate.includes(t) || (candidatePub && candidatePub.includes(t)));
+  if (!tokensOk) return false;
+
+  const gradeMarker = extractGradeMarker(queryTitle);
+  if (gradeMarker && !normalize(candidateTitle).includes(normalize(gradeMarker))) return false;
+
+  return titleSimilarity(queryTitle, candidateTitle) >= TITLE_SIMILARITY_THRESHOLD;
 }
 
 // ── 1순위: 교보 CDN (ISBN → URL 직접 구성) ──
