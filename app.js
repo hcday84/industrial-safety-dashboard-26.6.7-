@@ -38,16 +38,6 @@ const PRIVATE_CERT_NAMES = new Set([
 // ============================================
 // 0. 공공데이터 API 설정 (서버리스 프록시 경유)
 // ============================================
-async function fetchCertInfo(certName) {
-  try {
-    const res = await fetch(`/api/cert-info?certName=${encodeURIComponent(certName)}`);
-    if (!res.ok) return null;
-    return await res.json();
-  } catch (e) {
-    return null;
-  }
-}
-
 // 시험 일정 자동 업데이트 (Vercel 서버리스 프록시 경유)
 async function fetchExamSchedule(certName, implYy) {
   const jmCd = (typeof JM_CODES !== 'undefined') ? JM_CODES[certName] : null;
