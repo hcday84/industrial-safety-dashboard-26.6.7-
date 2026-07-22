@@ -4163,7 +4163,7 @@ const CERT_TIPS = {
     { type:'필기', tag:'고득점', tip:'소방설비기사(전기분야)와 과목이 유사합니다. 기사 기출도 함께 풀어보면 학습 효율이 올라갑니다.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
     { type:'실기', tag:'핵심',   tip:'실기는 경보설비·피난구조설비 계통도 해석이 핵심입니다. 감지기·수신기 심볼을 이미지로 암기해두세요.', source:'Q-Net 기출문제', sourceUrl: QNET_PASTEXAM },
   ],
-  'ITQ (정보기술자격)': [
+  'ITQ': [
     { type:'필기', tag:'고득점', tip:'6개 과목(아래한글·워드·엑셀·파워포인트·액세스·인터넷)을 개별 응시하며 과목당 500점 만점에 400점 이상이 A등급입니다. 취업에 필요한 과목 1~2개만 선택 응시해도 됩니다.', source:'한국생산성본부(KPC)', sourceUrl: 'https://license.kpc.or.kr/nasec/qlfint/qlfint/selectItqinfotchnlgyqc.do' },
     { type:'학습법', tag:'핵심', tip:'매월 시행되므로 시험 부담이 적습니다. 실무에서 자주 쓰는 엑셀·파워포인트부터 먼저 취득하고 필요에 따라 과목을 넓혀가는 전략이 효율적입니다.', source:'한국생산성본부(KPC)', sourceUrl: 'https://license.kpc.or.kr/nasec/qlfint/qlfint/selectItqinfotchnlgyqc.do' },
   ],
