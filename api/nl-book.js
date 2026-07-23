@@ -173,7 +173,7 @@ async function searchKyoboViaNaver(query, publisher) {
 
 // ── 3순위: 알라딘 ────────────────────────────
 // 후보 제목이 검색어와 대응하는 첫 항목만 채택
-async function searchAladin(query) {
+async function searchAladin(query, publisher) {
   if (!TTB_KEY) return null;
   try {
     const params = new URLSearchParams({
@@ -184,14 +184,14 @@ async function searchAladin(query) {
     const res = await fetch(`${ALADIN_BASE}?${params}`, { signal: AbortSignal.timeout(4000) });
     const data = await res.json();
     const items = data?.item || [];
-    const match = items.find(i => i.cover && !i.cover.includes('noimg') && titleMatches(query, i.title, i.publisher));
+    const match = items.find(i => i.cover && !i.cover.includes('noimg') && titleMatches(query, i.title, i.publisher, publisher));
     return match ? match.cover : null;
   } catch { return null; }
 }
 
 // ── 4순위: Google Books ───────────────────────
 // 후보 제목이 검색어와 대응하는 첫 항목만 채택
-async function searchGoogleBooks(query) {
+async function searchGoogleBooks(query, publisher) {
   try {
     const params = new URLSearchParams({
       q: query, langRestrict: 'ko', maxResults: 5, printType: 'books',
@@ -200,7 +200,7 @@ async function searchGoogleBooks(query) {
     const data = await res.json();
     const items = data?.items || [];
     for (const item of items) {
-      if (!titleMatches(query, item.volumeInfo?.title, item.volumeInfo?.publisher)) continue;
+      if (!titleMatches(query, item.volumeInfo?.title, item.volumeInfo?.publisher, publisher)) continue;
       const links = item.volumeInfo?.imageLinks;
       if (links?.thumbnail) {
         return links.thumbnail.replace('zoom=1', 'zoom=2').replace('http://', 'https://');
