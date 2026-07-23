@@ -219,21 +219,21 @@ export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Methods', 'GET');
   res.setHeader('Cache-Control', 's-maxage=86400, stale-while-revalidate=3600');
 
-  const { title } = req.query;
+  const { title, publisher } = req.query;
   if (!title) return res.status(400).json({ imageUrl: null });
 
   try {
     let imageUrl = null;
 
     // 1·2순위: 교보(ISBN 검증) → 네이버 이미지
-    const { kyoboUrl, naverImage } = await searchKyoboViaNaver(title);
+    const { kyoboUrl, naverImage } = await searchKyoboViaNaver(title, publisher);
     imageUrl = kyoboUrl || naverImage;
 
     // 3순위: 알라딘
-    if (!imageUrl) imageUrl = await searchAladin(title);
+    if (!imageUrl) imageUrl = await searchAladin(title, publisher);
 
     // 4순위: Google Books
-    if (!imageUrl) imageUrl = await searchGoogleBooks(title);
+    if (!imageUrl) imageUrl = await searchGoogleBooks(title, publisher);
 
     res.status(200).json({ imageUrl: imageUrl || null });
   } catch (e) {
