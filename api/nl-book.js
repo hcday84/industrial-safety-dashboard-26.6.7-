@@ -129,7 +129,7 @@ function titleMatches(queryTitle, candidateTitle, candidatePublisher, queryPubli
 // ── 1순위: 교보 CDN (ISBN → URL 직접 구성) ──
 // 네이버 검색으로 ISBN13을 얻어 교보 CDN URL을 검증 후 반환
 // 후보 도서 제목이 검색어와 실제로 대응하는지 확인한 뒤에만 채택한다
-async function searchKyoboViaNaver(query) {
+async function searchKyoboViaNaver(query, publisher) {
   if (!NAVER_ID || !NAVER_SECRET) return { kyoboUrl: null, naverImage: null };
   try {
     const params = new URLSearchParams({ query, display: 10, start: 1 });
@@ -145,7 +145,7 @@ async function searchKyoboViaNaver(query) {
     const items = data?.items || [];
 
     for (const item of items) {
-      if (!titleMatches(query, item.title, item.publisher)) continue;
+      if (!titleMatches(query, item.title, item.publisher, publisher)) continue;
 
       const naverImage = (item.image && !item.image.includes('noimage')) ? item.image : null;
       // isbn 필드: "ISBN10 ISBN13" 형태 — 13자리 추출
