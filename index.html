@@ -14,7 +14,7 @@
   <!-- FontAwesome for Premium Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- 발주&재고관리 탭 전용 CSS (scoped to #inventory-panel) -->
-  <link rel="stylesheet" href="inventory-styles-scoped.css?v=20260719a">
+  <link rel="stylesheet" href="inventory-styles-scoped.css?v=20260723a">
   <!-- Lucide Icons (발주&재고관리 탭용) -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <!-- SheetJS (엑셀 업로드/다운로드) -->
@@ -1013,19 +1013,28 @@
       </section>
 
       <main id="inv-books-section" class="dashboard-workspace card-glass">
-        <div class="books-display-wrapper">
-          <div class="table-header-row">
-            <div class="col-title">구버전(절판) 도서 정보</div>
-            <div class="col-status">상태</div>
-            <div class="col-revised">개정판(신버전) 정보</div>
-            <div class="col-links">온라인 서점 비교 (Kyobo / YES24)</div>
-          </div>
-          <div id="booksContainer" class="books-list">
-            <div class="loading-state">
-              <i data-lucide="loader-2" class="spin"></i>
-              <p>수험서 데이터를 분석 중입니다...</p>
+        <div class="inv-books-layout">
+          <div class="books-display-wrapper">
+            <div class="table-header-row">
+              <div class="col-title">구버전(절판) 도서 정보</div>
+              <div class="col-status">상태</div>
+              <div class="col-revised">개정판(신버전) 정보</div>
+              <div class="col-links">온라인 서점 비교 (Kyobo / YES24)</div>
+            </div>
+            <div id="booksContainer" class="books-list">
+              <div class="loading-state">
+                <i data-lucide="loader-2" class="spin"></i>
+                <p>수험서 데이터를 분석 중입니다...</p>
+              </div>
             </div>
           </div>
+          <aside class="inv-rotation-filter">
+            <h5><i class="fa-solid fa-clock-rotate-left"></i> 미회전 기간별 보기</h5>
+            <button type="button" class="inv-rotation-btn active" data-months="0" onclick="invRotationFilter(this)">전체</button>
+            <button type="button" class="inv-rotation-btn" data-months="12" onclick="invRotationFilter(this)">12개월 미회전</button>
+            <button type="button" class="inv-rotation-btn" data-months="15" onclick="invRotationFilter(this)">15개월 미회전</button>
+            <button type="button" class="inv-rotation-btn" data-months="18" onclick="invRotationFilter(this)">18개월 미회전</button>
+          </aside>
         </div>
       </main>
 
@@ -1302,6 +1311,13 @@
     // 발주&재고관리 사이드바 활성화
     function invNavActivate(el) {
       document.querySelectorAll('#inventory-panel .inv-nav-item').forEach(i => i.classList.remove('active'));
+      el.classList.add('active');
+    }
+    // 수험서 미회전 현황 - 미회전 기간별 메뉴 (12/15/18개월 이상 누적 필터)
+    // TODO: "N개월 미회전" 판정 기준(개정판 출시일 vs 원서 출판일)이 아직 정해지지 않아
+    // 현재는 메뉴 활성 상태만 토글하고 실제 목록 필터링은 다음 작업에서 연결 예정
+    function invRotationFilter(el) {
+      document.querySelectorAll('#inventory-panel .inv-rotation-btn').forEach(b => b.classList.remove('active'));
       el.classList.add('active');
     }
     // 스크롤 위치에 따라 사이드바 메뉴 자동 활성화

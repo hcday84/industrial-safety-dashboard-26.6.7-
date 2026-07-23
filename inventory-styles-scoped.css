@@ -685,6 +685,66 @@
     gap: 0.75rem;
 }
 
+/* 미회전 현황 - 도서 목록 + 우측 필터 레이아웃 */
+#inventory-panel .inv-books-layout{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+#inventory-panel .inv-books-layout .books-display-wrapper{
+    flex: 1;
+    min-width: 0;
+}
+#inventory-panel .inv-rotation-filter{
+    flex-shrink: 0;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius-md);
+    padding: 1rem;
+    position: sticky;
+    top: 20px;
+}
+#inventory-panel .inv-rotation-filter h5{
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 0.3rem;
+}
+#inventory-panel .inv-rotation-btn{
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.6rem 0.75rem;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--text-secondary);
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+#inventory-panel .inv-rotation-btn:hover{
+    background: rgba(76, 175, 48, 0.08);
+    color: var(--color-indigo);
+}
+#inventory-panel .inv-rotation-btn.active{
+    background: rgba(76, 175, 48, 0.15);
+    color: var(--color-indigo);
+    font-weight: 700;
+    border-color: rgba(76, 175, 48, 0.3);
+}
+
 /* Book Row Card Design */
 #inventory-panel .book-row-card{
     display: grid;
@@ -1336,6 +1396,21 @@
 
 /* Responsive UI Adjustments */
 @media (max-width: 1024px) {
+    #inventory-panel .inv-books-layout{
+        flex-direction: column;
+    }
+    #inventory-panel .inv-rotation-filter{
+        width: 100%;
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #inventory-panel .inv-rotation-btn{
+        width: auto;
+        flex: 1;
+        min-width: 120px;
+        text-align: center;
+    }
     #inventory-panel .table-header-row{
         display: none;
     }
