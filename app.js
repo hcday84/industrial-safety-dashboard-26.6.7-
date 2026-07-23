@@ -1486,8 +1486,8 @@ function renderChart(cert) {
   const pad = Math.max(5, Math.round((rawMax - rawMin) * 0.2));
   const minV = Math.max(0, Math.floor((rawMin - pad) / 5) * 5);
   const maxV = Math.min(100, Math.ceil((rawMax + pad) / 5) * 5);
-  const chartH = 150;
-  const LEFT = 55, RIGHT = 470, TOP = 30, BOTTOM = 190;
+  const chartH = 115;
+  const LEFT = 55, RIGHT = 470, TOP = 30, BOTTOM = 155;
   const chartW = RIGHT - LEFT;
 
   function toX(i) { return n <= 1 ? (LEFT + chartW / 2) : LEFT + (i / (n - 1)) * chartW; }
@@ -1556,7 +1556,7 @@ function renderChart(cert) {
   const pTrend = hasPractical ? trend(rates.map(r => r.practical)) : '';
 
   wrapper.innerHTML = `
-    <svg viewBox="0 0 500 230" class="pass-rate-svg" style="overflow:visible">
+    <svg viewBox="0 0 500 195" class="pass-rate-svg" style="overflow:visible">
       <defs>
         <linearGradient id="wGrad" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.3"/>
