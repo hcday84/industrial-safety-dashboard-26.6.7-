@@ -100,7 +100,10 @@ const TITLE_SIMILARITY_THRESHOLD = 0.5;
 
 // 후보 도서 제목이 우리가 찾는 도서와 실제로 같은 자격증/출판사/필기·실기 상품을 가리키는지 검증
 // candidatePublisher: API가 제목과 별도로 내려주는 출판사 메타데이터(있으면 함께 검사)
-function titleMatches(queryTitle, candidateTitle, candidatePublisher) {
+// queryPublisher: 우리 DB가 이미 알고 있는 이 책의 실제 출판사 — 전달되면 필수 조건이 된다.
+// "2026 자동차정비산업기사 필기" 같은 제목은 저자·출판사만 다른 여러 책이 동시에 공유하기 때문에,
+// 제목 유사도만으로는 서로 다른 책을 구분하지 못하고 엉뚱한 표지가 채택될 수 있다.
+function titleMatches(queryTitle, candidateTitle, candidatePublisher, queryPublisher) {
   if (!candidateTitle) return false;
   const candidate = normalize(candidateTitle);
   const candidatePub = normalize(candidatePublisher);
@@ -112,7 +115,15 @@ function titleMatches(queryTitle, candidateTitle, candidatePublisher) {
   const gradeMarker = extractGradeMarker(queryTitle);
   if (gradeMarker && !normalize(candidateTitle).includes(normalize(gradeMarker))) return false;
 
-  return titleSimilarity(queryTitle, candidateTitle) >= TITLE_SIMILARITY_THRESHOLD;
+  if (titleSimilarity(queryTitle, candidateTitle) < TITLE_SIMILARITY_THRESHOLD) return false;
+
+  if (queryPublisher) {
+    const qPub = normalize(queryPublisher);
+    const publisherOk = (candidatePub && (candidatePub.includes(qPub) || qPub.includes(candidatePub))) || candidate.includes(qPub);
+    if (!publisherOk) return false;
+  }
+
+  return true;
 }
 
 // ── 1순위: 교보 CDN (ISBN → URL 직접 구성) ──
