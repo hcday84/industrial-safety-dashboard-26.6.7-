@@ -1,10 +1,11 @@
-// 도서 표지 이미지 조회 — 교보 → 네이버 → 알라딘 → Google Books
-const TTB_KEY      = process.env.ALADIN_TTB_KEY      || '';
-const NAVER_ID     = process.env.NAVER_CLIENT_ID     || '';
-const NAVER_SECRET = process.env.NAVER_CLIENT_SECRET || '';
-const ALADIN_BASE  = 'https://www.aladin.co.kr/ttb/api/ItemSearch.aspx';
-const GOOGLE_BOOKS = 'https://www.googleapis.com/books/v1/volumes';
-const NAVER_BOOKS  = 'https://openapi.naver.com/v1/search/book.json';
+// 도서 표지 이미지 조회 — 외부 도서 정보 API를 우선순위대로 순차 조회
+const CATALOG_API_KEY    = process.env.ALADIN_TTB_KEY      || '';
+const SEARCH_API_ID      = process.env.NAVER_CLIENT_ID     || '';
+const SEARCH_API_SECRET  = process.env.NAVER_CLIENT_SECRET || '';
+const CATALOG_API_BASE   = 'https://www.aladin.co.kr/ttb/api/ItemSearch.aspx';
+const BOOKS_API_BASE     = 'https://www.googleapis.com/books/v1/volumes';
+const SEARCH_API_BASE    = 'https://openapi.naver.com/v1/search/book.json';
+const COVER_CDN_TEMPLATE = 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/';
 
 const PUBLISHERS = [
   '에듀윌','시나공','길벗','성안당','예문사','일진사','세화','구민사','해커스',
@@ -126,62 +127,62 @@ function titleMatches(queryTitle, candidateTitle, candidatePublisher, queryPubli
   return true;
 }
 
-// ── 1순위: 교보 CDN (ISBN → URL 직접 구성) ──
-// 네이버 검색으로 ISBN13을 얻어 교보 CDN URL을 검증 후 반환
+// ── 1순위: 표지 CDN (ISBN → URL 직접 구성) ──
+// 검색 API로 ISBN13을 얻어 CDN URL을 검증 후 반환
 // 후보 도서 제목이 검색어와 실제로 대응하는지 확인한 뒤에만 채택한다
-async function searchKyoboViaNaver(query, publisher) {
-  if (!NAVER_ID || !NAVER_SECRET) return { kyoboUrl: null, naverImage: null };
+async function searchPrimarySource(query, publisher) {
+  if (!SEARCH_API_ID || !SEARCH_API_SECRET) return { cdnUrl: null, fallbackImage: null };
   try {
     const params = new URLSearchParams({ query, display: 10, start: 1 });
-    const res = await fetch(`${NAVER_BOOKS}?${params}`, {
+    const res = await fetch(`${SEARCH_API_BASE}?${params}`, {
       headers: {
-        'X-Naver-Client-Id':     NAVER_ID,
-        'X-Naver-Client-Secret': NAVER_SECRET,
+        'X-Naver-Client-Id':     SEARCH_API_ID,
+        'X-Naver-Client-Secret': SEARCH_API_SECRET,
       },
       signal: AbortSignal.timeout(5000),
     });
-    if (!res.ok) return { kyoboUrl: null, naverImage: null };
+    if (!res.ok) return { cdnUrl: null, fallbackImage: null };
     const data = await res.json();
     const items = data?.items || [];
 
     for (const item of items) {
       if (!titleMatches(query, item.title, item.publisher, publisher)) continue;
 
-      const naverImage = (item.image && !item.image.includes('noimage')) ? item.image : null;
+      const fallbackImage = (item.image && !item.image.includes('noimage')) ? item.image : null;
       // isbn 필드: "ISBN10 ISBN13" 형태 — 13자리 추출
       const isbn13 = item.isbn?.split(' ').find(p => p.length === 13) || null;
 
       if (isbn13) {
-        const kyoboUrl = `https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/${isbn13}.jpg`;
+        const cdnUrl = `${COVER_CDN_TEMPLATE}${isbn13}.jpg`;
         // HEAD 요청으로 실제 이미지 존재 여부 확인
         try {
-          const check = await fetch(kyoboUrl, { method: 'HEAD', signal: AbortSignal.timeout(2500) });
+          const check = await fetch(cdnUrl, { method: 'HEAD', signal: AbortSignal.timeout(2500) });
           // Content-Length 0 또는 200 미만은 플레이스홀더로 간주
           const contentLength = parseInt(check.headers.get('content-length') || '0', 10);
           if (check.ok && contentLength > 1000) {
-            return { kyoboUrl, naverImage };
+            return { cdnUrl, fallbackImage };
           }
         } catch { /* HEAD 실패 시 스킵 */ }
-        if (naverImage) return { kyoboUrl: null, naverImage };
-      } else if (naverImage) {
-        return { kyoboUrl: null, naverImage };
+        if (fallbackImage) return { cdnUrl: null, fallbackImage };
+      } else if (fallbackImage) {
+        return { cdnUrl: null, fallbackImage };
       }
     }
-    return { kyoboUrl: null, naverImage: null };
-  } catch { return { kyoboUrl: null, naverImage: null }; }
+    return { cdnUrl: null, fallbackImage: null };
+  } catch { return { cdnUrl: null, fallbackImage: null }; }
 }
 
-// ── 3순위: 알라딘 ────────────────────────────
+// ── 3순위: 보조 카탈로그 소스 ────────────────────────────
 // 후보 제목이 검색어와 대응하는 첫 항목만 채택
-async function searchAladin(query, publisher) {
-  if (!TTB_KEY) return null;
+async function searchSecondarySource(query, publisher) {
+  if (!CATALOG_API_KEY) return null;
   try {
     const params = new URLSearchParams({
-      TTBKey: TTB_KEY, Query: query, QueryType: 'Title',
+      TTBKey: CATALOG_API_KEY, Query: query, QueryType: 'Title',
       MaxResults: 5, start: 1, SearchTarget: 'Book',
       output: 'js', Version: '20131101',
     });
-    const res = await fetch(`${ALADIN_BASE}?${params}`, { signal: AbortSignal.timeout(4000) });
+    const res = await fetch(`${CATALOG_API_BASE}?${params}`, { signal: AbortSignal.timeout(4000) });
     const data = await res.json();
     const items = data?.item || [];
     const match = items.find(i => i.cover && !i.cover.includes('noimg') && titleMatches(query, i.title, i.publisher, publisher));
@@ -189,14 +190,14 @@ async function searchAladin(query, publisher) {
   } catch { return null; }
 }
 
-// ── 4순위: Google Books ───────────────────────
+// ── 4순위: 보조 도서 API 소스 ───────────────────────────
 // 후보 제목이 검색어와 대응하는 첫 항목만 채택
-async function searchGoogleBooks(query, publisher) {
+async function searchTertiarySource(query, publisher) {
   try {
     const params = new URLSearchParams({
       q: query, langRestrict: 'ko', maxResults: 5, printType: 'books',
     });
-    const res = await fetch(`${GOOGLE_BOOKS}?${params}`, { signal: AbortSignal.timeout(4000) });
+    const res = await fetch(`${BOOKS_API_BASE}?${params}`, { signal: AbortSignal.timeout(4000) });
     const data = await res.json();
     const items = data?.items || [];
     for (const item of items) {
@@ -225,15 +226,15 @@ export default async function handler(req, res) {
   try {
     let imageUrl = null;
 
-    // 1·2순위: 교보(ISBN 검증) → 네이버 이미지
-    const { kyoboUrl, naverImage } = await searchKyoboViaNaver(title, publisher);
-    imageUrl = kyoboUrl || naverImage;
+    // 1·2순위: 표지 CDN(ISBN 검증) → 검색 API 이미지
+    const { cdnUrl, fallbackImage } = await searchPrimarySource(title, publisher);
+    imageUrl = cdnUrl || fallbackImage;
 
-    // 3순위: 알라딘
-    if (!imageUrl) imageUrl = await searchAladin(title, publisher);
+    // 3순위: 보조 카탈로그 소스
+    if (!imageUrl) imageUrl = await searchSecondarySource(title, publisher);
 
-    // 4순위: Google Books
-    if (!imageUrl) imageUrl = await searchGoogleBooks(title, publisher);
+    // 4순위: 보조 도서 API 소스
+    if (!imageUrl) imageUrl = await searchTertiarySource(title, publisher);
 
     res.status(200).json({ imageUrl: imageUrl || null });
   } catch (e) {
