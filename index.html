@@ -14,7 +14,7 @@
   <!-- FontAwesome for Premium Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- 발주&재고관리 탭 전용 CSS (scoped to #inventory-panel) -->
-  <link rel="stylesheet" href="inventory-styles-scoped.css?v=20260723a">
+  <link rel="stylesheet" href="inventory-styles-scoped.css?v=20260723b">
   <!-- Lucide Icons (발주&재고관리 탭용) -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <!-- SheetJS (엑셀 업로드/다운로드) -->
@@ -1013,28 +1013,14 @@
       </section>
 
       <main id="inv-books-section" class="dashboard-workspace card-glass">
-        <div class="inv-books-layout">
-          <div class="books-display-wrapper">
-            <div class="table-header-row">
-              <div class="col-title">구버전(절판) 도서 정보</div>
-              <div class="col-status">상태</div>
-              <div class="col-revised">개정판(신버전) 정보</div>
-              <div class="col-links">온라인 서점 비교 (Kyobo / YES24)</div>
-            </div>
-            <div id="booksContainer" class="books-list">
-              <div class="loading-state">
-                <i data-lucide="loader-2" class="spin"></i>
-                <p>수험서 데이터를 분석 중입니다...</p>
-              </div>
-            </div>
-          </div>
-          <aside class="inv-rotation-filter">
-            <h5><i class="fa-solid fa-clock-rotate-left"></i> 미회전 기간별 보기</h5>
+        <div class="inv-rotation-filter">
+          <h5><i class="fa-solid fa-clock-rotate-left"></i> 미회전 기간별 보기</h5>
+          <div class="inv-rotation-btn-group">
             <button type="button" class="inv-rotation-btn active" data-months="0" onclick="invRotationFilter(this)">전체</button>
             <button type="button" class="inv-rotation-btn" data-months="12" onclick="invRotationFilter(this)">12개월 미회전</button>
             <button type="button" class="inv-rotation-btn" data-months="15" onclick="invRotationFilter(this)">15개월 미회전</button>
             <button type="button" class="inv-rotation-btn" data-months="18" onclick="invRotationFilter(this)">18개월 미회전</button>
-          </aside>
+          </div>
         </div>
       </main>
 
@@ -1301,7 +1287,7 @@
   <script src="books_data.js?v=20260722a"></script>
   <script src="jm-codes.js"></script>
   <!-- 발주&재고관리 탭 JS -->
-  <script src="inventory-app.js?v=20260718i"></script>
+  <script src="inventory-app.js?v=20260723a"></script>
   <!-- App Javascript -->
   <script src="app.js?v=20260722b"></script>
   <!-- 한국보건의료인국가시험원 시험일정 API -->

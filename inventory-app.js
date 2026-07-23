@@ -530,6 +530,7 @@ window.initInventoryApp = function() {
     }
 
     function renderBooksList() {
+        if (!booksContainer) return;
         booksContainer.innerHTML = "";
         if (currentBooks.length === 0) {
             booksContainer.innerHTML = `<div class="empty-state"><i data-lucide="search-x"></i><p>등록된 도서가 없습니다.</p></div>`;

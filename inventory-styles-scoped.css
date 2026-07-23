@@ -685,28 +685,16 @@
     gap: 0.75rem;
 }
 
-/* 미회전 현황 - 도서 목록 + 우측 필터 레이아웃 */
-#inventory-panel .inv-books-layout{
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-}
-#inventory-panel .inv-books-layout .books-display-wrapper{
-    flex: 1;
-    min-width: 0;
-}
+/* 미회전 현황 - 미회전 기간별 필터 메뉴 (가로 배치) */
 #inventory-panel .inv-rotation-filter{
-    flex-shrink: 0;
-    width: 190px;
     display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
     background: var(--card-bg);
     border: 1px solid var(--card-border);
     border-radius: var(--border-radius-md);
-    padding: 1rem;
-    position: sticky;
-    top: 20px;
+    padding: 1rem 1.25rem;
 }
 #inventory-panel .inv-rotation-filter h5{
     font-size: 0.78rem;
@@ -717,13 +705,16 @@
     display: flex;
     align-items: center;
     gap: 6px;
-    margin-bottom: 0.3rem;
+    white-space: nowrap;
+    margin: 0;
+}
+#inventory-panel .inv-rotation-btn-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 #inventory-panel .inv-rotation-btn{
-    display: block;
-    width: 100%;
-    text-align: left;
-    padding: 0.6rem 0.75rem;
+    padding: 0.6rem 1.1rem;
     border-radius: var(--border-radius-sm);
     border: 1px solid transparent;
     background: transparent;
@@ -1396,17 +1387,11 @@
 
 /* Responsive UI Adjustments */
 @media (max-width: 1024px) {
-    #inventory-panel .inv-books-layout{
-        flex-direction: column;
-    }
     #inventory-panel .inv-rotation-filter{
-        width: 100%;
-        position: static;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
     }
     #inventory-panel .inv-rotation-btn{
-        width: auto;
         flex: 1;
         min-width: 120px;
         text-align: center;
