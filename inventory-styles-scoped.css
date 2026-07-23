@@ -736,6 +736,46 @@
     border-color: rgba(76, 175, 48, 0.3);
 }
 
+/* 미회전 기간별 조회 버튼 - 기간이 길수록(심각도) 파랑 -> 주황 -> 빨강 */
+#inventory-panel .inv-rotation-btn--m12{
+    color: var(--color-cyan);
+    border-color: color-mix(in srgb, var(--color-cyan) 25%, transparent);
+}
+#inventory-panel .inv-rotation-btn--m12:hover{
+    background: color-mix(in srgb, var(--color-cyan) 10%, transparent);
+}
+#inventory-panel .inv-rotation-btn--m12.active{
+    background: color-mix(in srgb, var(--color-cyan) 18%, transparent);
+    border-color: color-mix(in srgb, var(--color-cyan) 45%, transparent);
+    color: var(--color-cyan);
+}
+
+#inventory-panel .inv-rotation-btn--m15{
+    color: var(--color-warning);
+    border-color: color-mix(in srgb, var(--color-warning) 25%, transparent);
+}
+#inventory-panel .inv-rotation-btn--m15:hover{
+    background: color-mix(in srgb, var(--color-warning) 10%, transparent);
+}
+#inventory-panel .inv-rotation-btn--m15.active{
+    background: color-mix(in srgb, var(--color-warning) 18%, transparent);
+    border-color: color-mix(in srgb, var(--color-warning) 45%, transparent);
+    color: var(--color-warning);
+}
+
+#inventory-panel .inv-rotation-btn--m18{
+    color: var(--color-red);
+    border-color: color-mix(in srgb, var(--color-red) 25%, transparent);
+}
+#inventory-panel .inv-rotation-btn--m18:hover{
+    background: color-mix(in srgb, var(--color-red) 10%, transparent);
+}
+#inventory-panel .inv-rotation-btn--m18.active{
+    background: color-mix(in srgb, var(--color-red) 18%, transparent);
+    border-color: color-mix(in srgb, var(--color-red) 45%, transparent);
+    color: var(--color-red);
+}
+
 /* Book Row Card Design */
 #inventory-panel .book-row-card{
     display: grid;

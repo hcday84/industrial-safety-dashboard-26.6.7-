@@ -14,7 +14,7 @@
   <!-- FontAwesome for Premium Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- 발주&재고관리 탭 전용 CSS (scoped to #inventory-panel) -->
-  <link rel="stylesheet" href="inventory-styles-scoped.css?v=20260723b">
+  <link rel="stylesheet" href="inventory-styles-scoped.css?v=20260723c">
   <!-- Lucide Icons (발주&재고관리 탭용) -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <!-- SheetJS (엑셀 업로드/다운로드) -->
@@ -1017,9 +1017,9 @@
           <h5><i class="fa-solid fa-clock-rotate-left"></i> 미회전 기간별 보기</h5>
           <div class="inv-rotation-btn-group">
             <button type="button" class="inv-rotation-btn active" data-months="0" onclick="invRotationFilter(this)">전체</button>
-            <button type="button" class="inv-rotation-btn" data-months="12" onclick="invRotationFilter(this)">12개월 미회전</button>
-            <button type="button" class="inv-rotation-btn" data-months="15" onclick="invRotationFilter(this)">15개월 미회전</button>
-            <button type="button" class="inv-rotation-btn" data-months="18" onclick="invRotationFilter(this)">18개월 미회전</button>
+            <button type="button" class="inv-rotation-btn inv-rotation-btn--m12" data-months="12" onclick="invRotationFilter(this)">12개월 미회전 조회</button>
+            <button type="button" class="inv-rotation-btn inv-rotation-btn--m15" data-months="15" onclick="invRotationFilter(this)">15개월 미회전 조회</button>
+            <button type="button" class="inv-rotation-btn inv-rotation-btn--m18" data-months="18" onclick="invRotationFilter(this)">18개월 미회전 조회</button>
           </div>
         </div>
       </main>
