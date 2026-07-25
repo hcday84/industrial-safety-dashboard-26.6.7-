@@ -1596,11 +1596,11 @@
   color: var(--text-muted);
   flex-shrink: 0;
 }
-#inventory-panel .inv-newbooks-kyobo {
+#inventory-panel .inv-newbooks-store {
   display: flex;
   justify-content: center;
 }
-#inventory-panel .inv-newbooks-kyobo-btn {
+#inventory-panel .inv-newbooks-store-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -1613,7 +1613,7 @@
   font-weight: 600;
   transition: opacity 0.2s, transform 0.2s;
 }
-#inventory-panel .inv-newbooks-kyobo-btn:hover {
+#inventory-panel .inv-newbooks-store-btn:hover {
   opacity: 0.88;
   transform: translateY(-1px);
 }

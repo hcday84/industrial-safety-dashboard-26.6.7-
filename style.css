@@ -1418,9 +1418,9 @@ button, input, select {
   white-space: nowrap;
 }
 .cl-store:hover { opacity: 0.8; }
-.cl-store.kyobo  { background: #008cd6; color: #fff; }
-.cl-store.yes24  { background: #e4122d; color: #fff; }
-.cl-store.aladin { background: #ef6c00; color: #fff; }
+.cl-store.store-a  { background: #008cd6; color: #fff; }
+.cl-store.store-b  { background: #e4122d; color: #fff; }
+.cl-store.store-c { background: #ef6c00; color: #fff; }
 .checklist-total { font-size: 0.88rem; color: var(--text-muted); margin-right: auto; }
 .checklist-total strong { color: var(--text-color); font-size: 0.95rem; }
 
@@ -1569,9 +1569,9 @@ button, input, select {
   transition: opacity .15s;
 }
 .plu-store-btn:hover { opacity: 0.85; }
-.kyobo-btn  { background: #008cd6; color: #fff; }
-.yes24-btn  { background: #e4122d; color: #fff; }
-.aladin-btn { background: #ef6c00; color: #fff; }
+.store-a-btn  { background: #008cd6; color: #fff; }
+.store-b-btn  { background: #e4122d; color: #fff; }
+.store-c-btn { background: #ef6c00; color: #fff; }
 .plu-db-section { border-top: 1px solid var(--border-color); padding-top: 14px; }
 .plu-db-label { font-size: 0.78rem; color: var(--text-muted); margin: 0 0 10px; display: flex; align-items: center; gap: 6px; }
 .plu-book-row {

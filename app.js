@@ -2963,9 +2963,9 @@ window.showBookChecklist = function() {
     : books.map(book => {
         const isChecked = checked.includes(book.title);
         const q = encodeURIComponent(book.title);
-        const kyoboUrl = book.pageUrl || `https://search.kyobobook.co.kr/search?keyword=${q}`;
-        const yes24Url  = `https://www.yes24.com/Product/Search?query=${q}&domain=BOOK`;
-        const aladinUrl = `https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=${q}`;
+        const storeUrlA = book.pageUrl || `https://search.kyobobook.co.kr/search?keyword=${q}`;
+        const storeUrlB  = `https://www.yes24.com/Product/Search?query=${q}&domain=BOOK`;
+        const storeUrlC = `https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=${q}`;
         const safeTitle = book.title.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
         return `
           <div class="cl-item${isChecked ? ' cl-checked' : ''}">
@@ -2977,9 +2977,9 @@ window.showBookChecklist = function() {
               </div>
             </label>
             <div class="cl-store-links">
-              <a href="${kyoboUrl}" target="_blank" rel="noopener noreferrer" class="cl-store kyobo">교보</a>
-              <a href="${yes24Url}"  target="_blank" rel="noopener noreferrer" class="cl-store yes24">YES24</a>
-              <a href="${aladinUrl}" target="_blank" rel="noopener noreferrer" class="cl-store aladin">알라딘</a>
+              <a href="${storeUrlA}" target="_blank" rel="noopener noreferrer" class="cl-store store-a">교보</a>
+              <a href="${storeUrlB}"  target="_blank" rel="noopener noreferrer" class="cl-store store-b">YES24</a>
+              <a href="${storeUrlC}" target="_blank" rel="noopener noreferrer" class="cl-store store-c">알라딘</a>
             </div>
           </div>`;
       }).join('');
@@ -3056,9 +3056,9 @@ window.showWishlist = function() {
     ? `<p style="text-align:center;color:var(--text-muted);padding:24px 0">찜한 도서가 없습니다.<br>도서 카드의 <i class="fa-regular fa-heart"></i> 아이콘을 눌러 담아보세요.</p>`
     : items.map(w => {
         const q = encodeURIComponent(w.title);
-        const kyoboUrl = w.pageUrl || `https://search.kyobobook.co.kr/search?keyword=${q}`;
-        const yes24Url  = `https://www.yes24.com/Product/Search?query=${q}&domain=BOOK`;
-        const aladinUrl = `https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=${q}`;
+        const storeUrlA = w.pageUrl || `https://search.kyobobook.co.kr/search?keyword=${q}`;
+        const storeUrlB  = `https://www.yes24.com/Product/Search?query=${q}&domain=BOOK`;
+        const storeUrlC = `https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=${q}`;
         const safeCert  = w.cert.replace(/'/g, "\\'");
         return `
           <div class="cl-item wish-item">
@@ -3067,9 +3067,9 @@ window.showWishlist = function() {
               <span class="cl-meta">${w.publisher || ''}${w.price ? ' · ' + w.price.toLocaleString() + '원' : ''} · <a href="javascript:void(0)" onclick="window.closeClModal('wishlist-modal');window.selectCert('${safeCert}')">${w.cert}</a></span>
             </div>
             <div class="cl-store-links">
-              <a href="${kyoboUrl}" target="_blank" rel="noopener noreferrer" class="cl-store kyobo">교보</a>
-              <a href="${yes24Url}"  target="_blank" rel="noopener noreferrer" class="cl-store yes24">YES24</a>
-              <a href="${aladinUrl}" target="_blank" rel="noopener noreferrer" class="cl-store aladin">알라딘</a>
+              <a href="${storeUrlA}" target="_blank" rel="noopener noreferrer" class="cl-store store-a">교보</a>
+              <a href="${storeUrlB}"  target="_blank" rel="noopener noreferrer" class="cl-store store-b">YES24</a>
+              <a href="${storeUrlC}" target="_blank" rel="noopener noreferrer" class="cl-store store-c">알라딘</a>
               <button class="wish-remove-btn" title="찜 해제" onclick="window._removeWish('${w.cert.replace(/'/g,"\\'")}','${w.title.replace(/'/g,"\\'")}')"><i class="fa-solid fa-trash-can"></i></button>
             </div>
           </div>`;
@@ -3125,9 +3125,9 @@ window.showPubLineup = function(pubName) {
   );
 
   const q = encodeURIComponent(pub.name);
-  const kyoboUrl  = `https://search.kyobobook.co.kr/search?keyword=${q}`;
-  const yes24Url  = `https://www.yes24.com/Product/Search?query=${q}&domain=BOOK`;
-  const aladinUrl = `https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=${q}`;
+  const storeUrlA  = `https://search.kyobobook.co.kr/search?keyword=${q}`;
+  const storeUrlB  = `https://www.yes24.com/Product/Search?query=${q}&domain=BOOK`;
+  const storeUrlC = `https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=${q}`;
 
   body.innerHTML = `
     <div class="plu-info-row">
@@ -3137,13 +3137,13 @@ window.showPubLineup = function(pubName) {
     <div class="plu-store-section">
       <p class="plu-store-label">온라인 서점에서 이 출판사 도서 검색</p>
       <div class="plu-store-btns">
-        <a href="${kyoboUrl}" target="_blank" rel="noopener noreferrer" class="plu-store-btn kyobo-btn">
+        <a href="${storeUrlA}" target="_blank" rel="noopener noreferrer" class="plu-store-btn store-a-btn">
           <i class="fa-solid fa-magnifying-glass"></i> 교보문고
         </a>
-        <a href="${yes24Url}" target="_blank" rel="noopener noreferrer" class="plu-store-btn yes24-btn">
+        <a href="${storeUrlB}" target="_blank" rel="noopener noreferrer" class="plu-store-btn store-b-btn">
           <i class="fa-solid fa-magnifying-glass"></i> YES24
         </a>
-        <a href="${aladinUrl}" target="_blank" rel="noopener noreferrer" class="plu-store-btn aladin-btn">
+        <a href="${storeUrlC}" target="_blank" rel="noopener noreferrer" class="plu-store-btn store-c-btn">
           <i class="fa-solid fa-magnifying-glass"></i> 알라딘
         </a>
       </div>
@@ -3162,7 +3162,7 @@ window.showPubLineup = function(pubName) {
             </div>
             <div class="plu-book-right">
               ${book.price ? `<span class="plu-price">${book.price.toLocaleString()}원</span>` : ''}
-              <a href="${url}" target="_blank" rel="noopener noreferrer" class="cl-store kyobo">교보</a>
+              <a href="${url}" target="_blank" rel="noopener noreferrer" class="cl-store store-a">교보</a>
             </div>
           </div>`;
       }).join('')}

@@ -10,8 +10,8 @@ const examBooksData = [
         isbn: "9791140701605",
         certification: "정보처리기사",
         status: "out_of_print",
-        kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791140701605",
-        yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791140701605",
+        storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9791140701605",
+        storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9791140701605",
         revised: {
             title: "2025 시나공 정보처리기사 필기 (기본서)",
             author: "강윤철, 김용갑, 김정준, 이지현",
@@ -19,8 +19,8 @@ const examBooksData = [
             pubDate: "2024-10-25",
             price: 42000,
             isbn: "9791140711901",
-            kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791140711901",
-            yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791140711901"
+            storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9791140711901",
+            storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9791140711901"
         }
     },
     {
@@ -33,8 +33,8 @@ const examBooksData = [
         isbn: "9788931466027",
         certification: "정보보안기사",
         status: "out_of_print",
-        kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9788931466027",
-        yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931466027",
+        storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9788931466027",
+        storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931466027",
         revised: {
             title: "2025 이기적 정보보안기사 필기 이론서+기출문제",
             author: "임호진, 영진전문연구소",
@@ -42,8 +42,8 @@ const examBooksData = [
             pubDate: "2024-11-20",
             price: 39000,
             isbn: "9788931471014",
-            kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9788931471014",
-            yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931471014"
+            storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9788931471014",
+            storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931471014"
         }
     },
     {
@@ -56,8 +56,8 @@ const examBooksData = [
         isbn: "9791188070275",
         certification: "SQLP",
         status: "out_of_print",
-        kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791188070275",
-        yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791188070275",
+        storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9791188070275",
+        storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9791188070275",
         revised: {
             title: "SQL 전문가 가이드 (2024 개정판)",
             author: "한국데이터산업진흥원 편집부",
@@ -65,8 +65,8 @@ const examBooksData = [
             pubDate: "2024-02-15",
             price: 50000,
             isbn: "9791188070442",
-            kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791188070442",
-            yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791188070442"
+            storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9791188070442",
+            storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9791188070442"
         }
     },
     {
@@ -79,8 +79,8 @@ const examBooksData = [
         isbn: "9791186712399",
         certification: "SQLD",
         status: "out_of_print",
-        kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791186712399",
-        yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791186712399",
+        storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9791186712399",
+        storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9791186712399",
         revised: {
             title: "2025 유선배 SQL 개발자(SQLD) 과외노트 (2024 개정 출제기준 반영)",
             author: "민광근",
@@ -88,8 +88,8 @@ const examBooksData = [
             pubDate: "2024-12-10",
             price: 26000,
             isbn: "9791186712856",
-            kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791186712856",
-            yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791186712856"
+            storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9791186712856",
+            storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9791186712856"
         }
     },
     {
@@ -102,8 +102,8 @@ const examBooksData = [
         isbn: "9791197475146",
         certification: "ADsP",
         status: "out_of_print",
-        kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791197475146",
-        yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791197475146",
+        storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9791197475146",
+        storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9791197475146",
         revised: {
             title: "2025 데이터분석 준전문가(ADsP) (2025 ADsP 시험 대비 개정판)",
             author: "윤종식",
@@ -111,8 +111,8 @@ const examBooksData = [
             pubDate: "2024-11-30",
             price: 32000,
             isbn: "9791193241565",
-            kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791193241565",
-            yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791193241565"
+            storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9791193241565",
+            storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9791193241565"
         }
     },
     {
@@ -125,8 +125,8 @@ const examBooksData = [
         isbn: "9788931556940",
         certification: "리눅스마스터1급",
         status: "out_of_print",
-        kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9788931556940",
-        yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931556940",
+        storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9788931556940",
+        storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931556940",
         revised: {
             title: "2024 리눅스마스터 1급 기본서 + 실기 기출 포함",
             author: "정성재",
@@ -134,8 +134,8 @@ const examBooksData = [
             pubDate: "2024-02-15",
             price: 38000,
             isbn: "9788931558234",
-            kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9788931558234",
-            yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931558234"
+            storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9788931558234",
+            storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931558234"
         }
     },
     {
@@ -148,8 +148,8 @@ const examBooksData = [
         isbn: "9791162244340",
         certification: "AWS Solutions Architect",
         status: "out_of_print",
-        kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791162244340",
-        yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791162244340",
+        storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9791162244340",
+        storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9791162244340",
         revised: {
             title: "AWS 공인 솔루션스 아키텍트 올인원 가이드 [개정2판]",
             author: "한승민",
@@ -157,8 +157,8 @@ const examBooksData = [
             pubDate: "2024-05-10",
             price: 35000,
             isbn: "9791169212212",
-            kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791169212212",
-            yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791169212212"
+            storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9791169212212",
+            storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9791169212212"
         }
     },
     {
@@ -171,8 +171,8 @@ const examBooksData = [
         isbn: "9791157676645",
         certification: "정보처리기사",
         status: "out_of_print",
-        kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791157676645",
-        yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791157676645",
+        storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9791157676645",
+        storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9791157676645",
         revised: {
             title: "2025 수제비 정보처리기사 실기 (1, 2권 합본)",
             author: "NCS 정보처리연구회 (윤영빈, 이지은, 김학배)",
@@ -180,8 +180,8 @@ const examBooksData = [
             pubDate: "2024-12-05",
             price: 43000,
             isbn: "9791157678564",
-            kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791157678564",
-            yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791157678564"
+            storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9791157678564",
+            storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9791157678564"
         }
     },
     {
@@ -194,8 +194,8 @@ const examBooksData = [
         isbn: "9788931709926",
         certification: "정보통신기사",
         status: "out_of_print",
-        kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9788931709926",
-        yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931709926",
+        storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9788931709926",
+        storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931709926",
         revised: null // Discontinued due to major exam syllabus change in 2022
     },
     {
@@ -208,8 +208,8 @@ const examBooksData = [
         isbn: "9788931458824",
         certification: "사무자동화산업기사",
         status: "out_of_print",
-        kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9788931458824",
-        yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931458824",
+        storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9788931458824",
+        storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931458824",
         revised: null // Discontinued due to declining demand of the certification
     },
     {
@@ -222,8 +222,8 @@ const examBooksData = [
         isbn: "9791136024103",
         certification: "정보처리기사",
         status: "out_of_print",
-        kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791136024103",
-        yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791136024103",
+        storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9791136024103",
+        storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9791136024103",
         revised: {
             title: "2025 에듀윌 정보처리기사 필기 3주 완성 단기합격",
             author: "신혜성, 에듀윌 IT 전문연구원",
@@ -231,8 +231,8 @@ const examBooksData = [
             pubDate: "2024-11-15",
             price: 33000,
             isbn: "9791136035017",
-            kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791136035017",
-            yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791136035017"
+            storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9791136035017",
+            storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9791136035017"
         }
     },
     {
@@ -245,8 +245,8 @@ const examBooksData = [
         isbn: "9788931466850",
         certification: "네트워크관리사2급",
         status: "out_of_print",
-        kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9788931466850",
-        yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931466850",
+        storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9788931466850",
+        storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931466850",
         revised: {
             title: "2025 이기적 네트워크관리사 1·2급 필기 종합본",
             author: "안정근, 영진전문연구소",
@@ -254,8 +254,8 @@ const examBooksData = [
             pubDate: "2024-10-15",
             price: 28000,
             isbn: "9788931470727",
-            kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9788931470727",
-            yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931470727"
+            storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9788931470727",
+            storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931470727"
         }
     }
     ,
@@ -269,8 +269,8 @@ const examBooksData = [
         isbn: "9791140706419",
         certification: "정보처리기사",
         status: "out_of_stock",
-        kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791140706419",
-        yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791140706419",
+        storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9791140706419",
+        storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9791140706419",
         revised: {
             title: "2025 시나공 정보처리기사 필기 (기본서)",
             author: "강윤철, 김용갑, 김정준, 이지현",
@@ -278,8 +278,8 @@ const examBooksData = [
             pubDate: "2024-10-25",
             price: 42000,
             isbn: "9791140711901",
-            kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791140711901",
-            yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791140711901"
+            storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9791140711901",
+            storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9791140711901"
         }
     },
     {
@@ -292,8 +292,8 @@ const examBooksData = [
         isbn: "9788931469042",
         certification: "SQLD",
         status: "out_of_stock",
-        kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9788931469042",
-        yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931469042",
+        storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9788931469042",
+        storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9788931469042",
         revised: null
     },
     {
@@ -306,8 +306,8 @@ const examBooksData = [
         isbn: "9791157677023",
         certification: "정보처리기사",
         status: "out_of_stock",
-        kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791157677023",
-        yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791157677023",
+        storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9791157677023",
+        storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9791157677023",
         revised: {
             title: "2025 수제비 정보처리기사 필기 합격 비밀노트",
             author: "NCS 정보처리연구회",
@@ -315,8 +315,8 @@ const examBooksData = [
             pubDate: "2024-11-10",
             price: 24000,
             isbn: "9791157678571",
-            kyoboUrl: "https://search.kyobobook.co.kr/search?keyword=9791157678571",
-            yes24Url: "https://www.yes24.com/Product/Search?domain=ALL&query=9791157678571"
+            storeUrlA: "https://search.kyobobook.co.kr/search?keyword=9791157678571",
+            storeUrlB: "https://www.yes24.com/Product/Search?domain=ALL&query=9791157678571"
         }
     }
 ];
@@ -340,8 +340,8 @@ window.initInventoryApp = function() {
     const modalOrigDate = document.getElementById("modalOrigDate");
     const modalOrigPrice = document.getElementById("modalOrigPrice");
     const modalOrigIsbn = document.getElementById("modalOrigIsbn");
-    const modalOrigKyobo = document.getElementById("modalOrigKyobo");
-    const modalOrigYes24 = document.getElementById("modalOrigYes24");
+    const modalOrigStoreA = document.getElementById("modalOrigStoreA");
+    const modalOrigStoreB = document.getElementById("modalOrigStoreB");
     const modalRevisedCard = document.getElementById("modalRevisedCard");
     const modalNoRevisedCard = document.getElementById("modalNoRevisedCard");
     const modalRevTitle = document.getElementById("modalRevTitle");
@@ -350,8 +350,8 @@ window.initInventoryApp = function() {
     const modalRevDate = document.getElementById("modalRevDate");
     const modalRevPrice = document.getElementById("modalRevPrice");
     const modalRevIsbn = document.getElementById("modalRevIsbn");
-    const modalRevKyobo = document.getElementById("modalRevKyobo");
-    const modalRevYes24 = document.getElementById("modalRevYes24");
+    const modalRevStoreA = document.getElementById("modalRevStoreA");
+    const modalRevStoreB = document.getElementById("modalRevStoreB");
     const exportToast = document.getElementById("exportToast");
 
     function formatAsOfDate() {
@@ -589,10 +589,10 @@ window.initInventoryApp = function() {
                     ${revisedSectionHtml}
                 </div>
                 <div class="store-comparison-links">
-                    <a href="${book.kyoboUrl}" target="_blank" class="btn-comparison" title="교보문고에서 구버전 검색">
+                    <a href="${book.storeUrlA}" target="_blank" class="btn-comparison" title="교보문고에서 구버전 검색">
                         <span>교보문고</span><i data-lucide="shopping-bag"></i>
                     </a>
-                    <a href="${book.yes24Url}" target="_blank" class="btn-comparison" title="YES24에서 구버전 검색">
+                    <a href="${book.storeUrlB}" target="_blank" class="btn-comparison" title="YES24에서 구버전 검색">
                         <span>YES24</span><i data-lucide="shopping-bag"></i>
                     </a>
                     ${book.certification && (typeof CERTIFICATIONS === 'undefined' || CERTIFICATIONS[book.certification]) ? `<button class="btn-comparison btn-cert-link" onclick="goToCertDashboard('${book.certification.replace(/'/g,"\\'")}'); event.stopPropagation();" title="${book.certification} 대시보드로 이동">
@@ -614,8 +614,8 @@ window.initInventoryApp = function() {
         modalOrigDate.textContent = book.pubDate;
         modalOrigPrice.textContent = book.price.toLocaleString() + "원";
         modalOrigIsbn.textContent = book.isbn;
-        modalOrigKyobo.href = book.kyoboUrl;
-        modalOrigYes24.href = book.yes24Url;
+        modalOrigStoreA.href = book.storeUrlA;
+        modalOrigStoreB.href = book.storeUrlB;
         if (book.revised) {
             modalRevisedCard.style.display = "flex";
             modalNoRevisedCard.style.display = "none";
@@ -625,8 +625,8 @@ window.initInventoryApp = function() {
             modalRevDate.textContent = book.revised.pubDate;
             modalRevPrice.textContent = book.revised.price.toLocaleString() + "원";
             modalRevIsbn.textContent = book.revised.isbn;
-            modalRevKyobo.href = book.revised.kyoboUrl;
-            modalRevYes24.href = book.revised.yes24Url;
+            modalRevStoreA.href = book.revised.storeUrlA;
+            modalRevStoreB.href = book.revised.storeUrlB;
         } else {
             modalRevisedCard.style.display = "none";
             modalNoRevisedCard.style.display = "flex";
