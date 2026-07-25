@@ -1443,7 +1443,7 @@ function applyBookImage(img, imageUrl) {
   };
 }
 
-// KB 이미지 onerror 시 Aladin으로 자동 대체
+// 표지 이미지 onerror 시 보조 소스로 자동 대체
 window._nlFallback = async function(img) {
   const title = decodeURIComponent(img.dataset.nlTitle || '');
   if (!title) return;
