@@ -38,7 +38,7 @@ const PRIVATE_CERT_NAMES = new Set([
 // ============================================
 // 0. 공공데이터 API 설정 (서버리스 프록시 경유)
 // ============================================
-// 시험 일정 자동 업데이트 (Vercel 서버리스 프록시 경유)
+// 시험 일정 자동 업데이트 (서버리스 프록시 경유)
 async function fetchExamSchedule(certName, implYy) {
   const jmCd = (typeof JM_CODES !== 'undefined') ? JM_CODES[certName] : null;
   if (!jmCd) return null;
