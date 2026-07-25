@@ -1,5 +1,5 @@
-// 12개월 미회전 수험서 목록 (등록일: 2026-07 재고 미회전 리스트 기반)
-// 원본: 12개월미회전.xlsx (전체 1,292건) 중 자격증명/출판사/ISBN 대조로 수험서 47종 추출
+// 미회전 수험서 목록 (등록일: 2026-07 재고 미회전 리스트 기반)
+// 원본: 12개월미회전.xlsx / 15개월미회전.xlsx / 18개월미회전.xlsx 각각 자격증명/출판사/ISBN 대조로 수험서 추출
 const ROTATION_BOOKS_DATA = {
   12: [
     { title: '기분좋은 한국사능력검정시험 심화 1·2·3급 75회 저격모의고사', publisher: '시대에듀', author: '정일영', isbn: '9791138395502', store: '울산점', months: 12, stock: 1, reason: '자격증명:한국사능력검정시험+패턴:모의고사+출판사:시대에듀' },
@@ -50,6 +50,33 @@ const ROTATION_BOOKS_DATA = {
     { title: '경력 1년 차부터 30년 차까지 미국 간호사(RN, NP) 10명의 리얼 성공스토리 미국 간호사로 살아남기', publisher: '라온북', author: '고세라', isbn: '9791169582186', store: '울산점', months: 9, stock: 1, reason: '수동포함(검토후 승인)' },
     { title: '간호사 취업', publisher: '가나북스', author: '정해성', isbn: '9791186562291', store: '울산점', months: 12, stock: 1, reason: '수동포함(검토후 승인)' },
   ],
-  15: [],
-  18: [],
+  15: [
+    { title: '노동법 핵심이론(전면개정판 3판)', publisher: '북랩', author: '이상도', isbn: '9791172243814', store: '울산점', months: 6, stock: 1, reason: '출판사:북랩+패턴:핵심이론' },
+    { title: '생산자동화산업기사 필기 2000제(2020)', publisher: '일진사', author: '이학재', isbn: '9788942916184', store: '울산점', months: 15, stock: 1, reason: '출판사:일진+패턴:필기' },
+    { title: '2025 MUST 행정법총론 최종 모의고사(개정판)', publisher: '이패스코리아', author: '백영민', isbn: '9791172091224', store: '울산점', months: 15, stock: 1, reason: '출판사:이패스+패턴:모의고사' },
+    { title: '2025 경록 공인중개사 에센스노트 2차 부동산공시법및세법', publisher: '경록', author: '경록 공인중개사 교재편찬위원회', isbn: '9791193559529', store: '울산점', months: 15, stock: 2, reason: '자격증명:공인중개사+패턴:2차+출판사:경록' },
+    { title: '딱! 한권으로 정리되는 구문독해(English one)', publisher: '탑플러스잉글리쉬', author: '안천구(Glenn An)', isbn: '9788992652452', store: '울산점', months: 15, stock: 1, reason: '출판사:잉글리쉬+패턴:한권으로' },
+    { title: '2026 시대에듀 사관학교 10개년 기출문제 다잡기: 국어영역', publisher: '시대에듀', author: '시대특수대학연구소', isbn: '9791138382441', store: '울산점', months: 12, stock: 1, reason: '출판사:시대에듀+패턴:기출' },
+    { title: 'Best Korean TOPIK2 한국어능력시험 실전모의고사3회', publisher: '시원스쿨닷컴', author: '시원스쿨 한국어평가연구소', isbn: '9791161507132', store: '울산점', months: 15, stock: 2, reason: '출판사:시원+패턴:모의고사' },
+    { title: 'Cambridge IELTS 14 Academic Student\'s Book with Answers with Audio(Paperback)', publisher: 'Cambridge University Press', author: 'Cambridge University Press', isbn: '9781108681315', store: '울산점', months: 12, stock: 1, reason: '자격증명(영문):IELTS' },
+    { title: 'Building Skills for the TOEFL iBT Reading, 3/E', publisher: 'Compass Publishing', author: 'Paul Edmunds', isbn: '9781685913489', store: '울산점', months: 12, stock: 1, reason: '자격증명(영문):TOEFL' },
+    { title: '의사, 주석중(반양장)', publisher: '소북소북', author: '', isbn: '9788939870055', store: '울산점', months: 12, stock: 1, reason: '수동포함(검토후 승인)' },
+    { title: '변호사 실격', publisher: '지노', author: '류동훈', isbn: '9791190282499', store: '울산점', months: 6, stock: 1, reason: '수동포함(검토후 승인)' },
+    { title: '약사 선배 실전 개국 노트 2: 판례에서 길을 찾다', publisher: '지식과감성', author: '이태영', isbn: '9791139227512', store: '울산점', months: 9, stock: 1, reason: '수동포함(검토후 승인)' },
+    { title: '경력 1년 차부터 30년 차까지 미국 간호사(RN, NP) 10명의 리얼 성공스토리 미국 간호사로 살아남기', publisher: '라온북', author: '고세라', isbn: '9791169582186', store: '울산점', months: 9, stock: 1, reason: '수동포함(검토후 승인)' },
+  ],
+  18: [
+    { title: '노동법 핵심이론(전면개정판 3판)', publisher: '북랩', author: '이상도', isbn: '9791172243814', store: '울산점', months: 6, stock: 1, reason: '출판사:북랩+패턴:핵심이론' },
+    { title: '생산자동화산업기사 필기 2000제(2020)', publisher: '일진사', author: '이학재', isbn: '9788942916184', store: '울산점', months: 18, stock: 1, reason: '출판사:일진+패턴:필기' },
+    { title: '2025 MUST 행정법총론 최종 모의고사(개정판)', publisher: '이패스코리아', author: '백영민', isbn: '9791172091224', store: '울산점', months: 18, stock: 1, reason: '출판사:이패스+패턴:모의고사' },
+    { title: '2025 경록 공인중개사 에센스노트 2차 부동산공시법및세법', publisher: '경록', author: '경록 공인중개사 교재편찬위원회', isbn: '9791193559529', store: '울산점', months: 18, stock: 2, reason: '자격증명:공인중개사+패턴:2차+출판사:경록' },
+    { title: '딱! 한권으로 정리되는 구문독해(English one)', publisher: '탑플러스잉글리쉬', author: '안천구(Glenn An)', isbn: '9788992652452', store: '울산점', months: 18, stock: 1, reason: '출판사:잉글리쉬+패턴:한권으로' },
+    { title: '2026 시대에듀 사관학교 10개년 기출문제 다잡기: 국어영역', publisher: '시대에듀', author: '시대특수대학연구소', isbn: '9791138382441', store: '울산점', months: 12, stock: 1, reason: '출판사:시대에듀+패턴:기출' },
+    { title: 'Building Skills for the TOEFL iBT Reading, 3/E', publisher: 'Compass Publishing', author: 'Paul Edmunds', isbn: '9781685913489', store: '울산점', months: 12, stock: 1, reason: '자격증명(영문):TOEFL' },
+    { title: 'Cambridge IELTS 14 Academic Student\'s Book with Answers with Audio(Paperback)', publisher: 'Cambridge University Press', author: 'Cambridge University Press', isbn: '9781108681315', store: '울산점', months: 12, stock: 1, reason: '자격증명(영문):IELTS' },
+    { title: '의사, 주석중(반양장)', publisher: '소북소북', author: '', isbn: '9788939870055', store: '울산점', months: 12, stock: 1, reason: '수동포함(검토후 승인)' },
+    { title: '변호사 실격', publisher: '지노', author: '류동훈', isbn: '9791190282499', store: '울산점', months: 6, stock: 1, reason: '수동포함(검토후 승인)' },
+    { title: '약사 선배 실전 개국 노트 2: 판례에서 길을 찾다', publisher: '지식과감성', author: '이태영', isbn: '9791139227512', store: '울산점', months: 9, stock: 1, reason: '수동포함(검토후 승인)' },
+    { title: '경력 1년 차부터 30년 차까지 미국 간호사(RN, NP) 10명의 리얼 성공스토리 미국 간호사로 살아남기', publisher: '라온북', author: '고세라', isbn: '9791169582186', store: '울산점', months: 9, stock: 1, reason: '수동포함(검토후 승인)' },
+  ],
 };
