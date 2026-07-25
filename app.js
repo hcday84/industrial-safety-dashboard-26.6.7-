@@ -1414,7 +1414,7 @@ function renderBooks() {
   updateWishlistBadge();
 }
 
-async function fetchAladinImage(title) {
+async function fetchBookCoverImage(title) {
   const cacheKey = 'nl_img_' + title;
   const cached = sessionStorage.getItem(cacheKey);
   if (cached !== null) return cached;
@@ -1447,7 +1447,7 @@ function applyBookImage(img, imageUrl) {
 window._nlFallback = async function(img) {
   const title = decodeURIComponent(img.dataset.nlTitle || '');
   if (!title) return;
-  const imageUrl = await fetchAladinImage(title);
+  const imageUrl = await fetchBookCoverImage(title);
   applyBookImage(img, imageUrl);
 };
 
@@ -1459,7 +1459,7 @@ async function initNLBookImages() {
 
   await Promise.all(imgs.map(async (img) => {
     const title = decodeURIComponent(img.dataset.nlTitle);
-    const imageUrl = await fetchAladinImage(title);
+    const imageUrl = await fetchBookCoverImage(title);
     applyBookImage(img, imageUrl);
   }));
 }
