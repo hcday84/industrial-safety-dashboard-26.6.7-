@@ -1350,6 +1350,7 @@
     }
     // 스크롤 위치에 따라 사이드바 메뉴 자동 활성화
     document.addEventListener('DOMContentLoaded', () => {
+      renderRotationView(0);
       const invPanel = document.getElementById('inventory-panel');
       const sections = ['inv-title-count-section','inv-outofprint-stats-section','inv-books-section','inv-newbooks-section'];
       invPanel.addEventListener('scroll', () => {
