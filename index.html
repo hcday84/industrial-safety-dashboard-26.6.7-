@@ -1307,15 +1307,25 @@
     }
     // 수험서 미회전 현황 - 미회전 기간별 메뉴 (12/15/18개월 이상 누적 필터)
     // ROTATION_BOOKS_DATA(inventory-rotation-data.js)에 등록된 미회전 재고 목록을 기간별로 집계·표시
+    // 같은 재고(안 팔린 같은 책)가 12/15/18개월 리스트에 중복으로 잡히는 경우가 있어,
+    // "전체" 보기에서는 ISBN(없으면 제목) 기준으로 중복을 제거하고 가장 긴 미회전 기간(18→15→12) 항목만 남긴다.
+    function dedupeRotationItems() {
+      const map = new Map();
+      [18, 15, 12].forEach(bucket => {
+        (ROTATION_BOOKS_DATA[bucket] || []).forEach(b => {
+          const key = (b.isbn && b.isbn.trim()) ? b.isbn.trim() : b.title;
+          if (!map.has(key)) map.set(key, Object.assign({}, b, { _bucket: bucket }));
+        });
+      });
+      return Array.from(map.values());
+    }
     function renderRotationView(months) {
       const countEl = document.getElementById('invRotationCount');
       const volumeEl = document.getElementById('invRotationVolume');
       const listEl = document.getElementById('invRotationList');
       if (!listEl || typeof ROTATION_BOOKS_DATA === 'undefined') return;
 
-      const items = months === 0
-        ? [12, 15, 18].flatMap(m => ROTATION_BOOKS_DATA[m] || [])
-        : (ROTATION_BOOKS_DATA[months] || []);
+      const items = months === 0 ? dedupeRotationItems() : (ROTATION_BOOKS_DATA[months] || []);
 
       const titleCount = new Set(items.map(b => b.title)).size;
       const volumeCount = items.reduce((sum, b) => sum + (b.stock || 0), 0);
@@ -1331,6 +1341,7 @@
       listEl.innerHTML = items.map(b => `
         <div class="rotation-row-card">
           <div class="book-title-meta">
+            ${months === 0 ? `<span class="badge badge-gray">${b._bucket}개월+</span>` : ''}
             <h4>${b.title}</h4>
             <div class="book-meta-inline"><span class="pub-name">${b.publisher}</span>${b.author ? ' | ' + b.author : ''}</div>
           </div>
