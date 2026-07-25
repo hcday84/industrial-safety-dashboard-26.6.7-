@@ -773,6 +773,72 @@
     color: #fff;
 }
 
+/* 미회전 기간별 보기 - 종수/권수 요약 배지 */
+#inventory-panel .inv-rotation-summary{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-left: auto;
+    padding-left: 1rem;
+}
+#inventory-panel .inv-rotation-summary-item{
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    background: rgba(76, 175, 48, 0.1);
+    border: 1px solid rgba(76, 175, 48, 0.25);
+    border-radius: var(--border-radius-sm);
+    padding: 0.4rem 0.8rem;
+}
+#inventory-panel .inv-rotation-summary-item strong{
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--color-indigo);
+    margin-right: 2px;
+}
+
+/* 미회전 도서 목록 카드 */
+#inventory-panel .inv-rotation-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+}
+#inventory-panel .rotation-row-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius-md);
+    transition: var(--transition-smooth);
+}
+#inventory-panel.light-mode .rotation-row-card{
+    background: rgba(255, 255, 255, 0.5);
+}
+#inventory-panel .rotation-row-card:hover{
+    border-color: rgba(76, 175, 48, 0.45);
+    background: rgba(76, 175, 48, 0.04);
+}
+#inventory-panel .rotation-row-side{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.3rem;
+    flex-shrink: 0;
+}
+#inventory-panel .rotation-row-store{
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+#inventory-panel .rotation-row-stock{
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-cyan);
+}
+
 /* Book Row Card Design */
 #inventory-panel .book-row-card{
     display: grid;
