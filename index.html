@@ -1352,6 +1352,18 @@
         </div>
       `).join('');
       if (typeof lucide !== 'undefined') lucide.createIcons();
+
+      // 10번째 항목까지만 보이도록 높이를 맞추고, 11번째부터는 스크롤로 확인
+      const cards = listEl.querySelectorAll('.rotation-row-card');
+      if (cards.length > 10) {
+        const listTop = listEl.getBoundingClientRect().top;
+        const tenthBottom = cards[9].getBoundingClientRect().bottom;
+        listEl.style.maxHeight = Math.ceil(tenthBottom - listTop) + 'px';
+        listEl.classList.add('inv-rotation-list--scroll');
+      } else {
+        listEl.style.maxHeight = '';
+        listEl.classList.remove('inv-rotation-list--scroll');
+      }
     }
     function invRotationFilter(el) {
       document.querySelectorAll('#inventory-panel .inv-rotation-btn').forEach(b => b.classList.remove('active'));
