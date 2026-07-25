@@ -2579,9 +2579,11 @@ button, input, select {
   flex-shrink: 0;
 }
 .books-empty {
+  grid-column: 1 / -1;
   color: var(--text-muted);
   font-size: 0.9rem;
-  padding: 20px 0;
+  text-align: center;
+  padding: 32px 0;
 }
 
 .books-intro {
