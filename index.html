@@ -1306,11 +1306,47 @@
       el.classList.add('active');
     }
     // 수험서 미회전 현황 - 미회전 기간별 메뉴 (12/15/18개월 이상 누적 필터)
-    // TODO: "N개월 미회전" 판정 기준(개정판 출시일 vs 원서 출판일)이 아직 정해지지 않아
-    // 현재는 메뉴 활성 상태만 토글하고 실제 목록 필터링은 다음 작업에서 연결 예정
+    // ROTATION_BOOKS_DATA(inventory-rotation-data.js)에 등록된 미회전 재고 목록을 기간별로 집계·표시
+    function renderRotationView(months) {
+      const countEl = document.getElementById('invRotationCount');
+      const volumeEl = document.getElementById('invRotationVolume');
+      const listEl = document.getElementById('invRotationList');
+      if (!listEl || typeof ROTATION_BOOKS_DATA === 'undefined') return;
+
+      const items = months === 0
+        ? [12, 15, 18].flatMap(m => ROTATION_BOOKS_DATA[m] || [])
+        : (ROTATION_BOOKS_DATA[months] || []);
+
+      const titleCount = new Set(items.map(b => b.title)).size;
+      const volumeCount = items.reduce((sum, b) => sum + (b.stock || 0), 0);
+      if (countEl) countEl.textContent = titleCount.toLocaleString();
+      if (volumeEl) volumeEl.textContent = volumeCount.toLocaleString();
+
+      if (items.length === 0) {
+        listEl.innerHTML = '<div class="empty-state"><i data-lucide="search-x"></i><p>등록된 미회전 도서가 없습니다.</p></div>';
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+        return;
+      }
+
+      listEl.innerHTML = items.map(b => `
+        <div class="rotation-row-card">
+          <div class="book-title-meta">
+            <span class="badge badge-gray">${b.months}개월 미회전</span>
+            <h4>${b.title}</h4>
+            <div class="book-meta-inline"><span class="pub-name">${b.publisher}</span>${b.author ? ' | ' + b.author : ''}</div>
+          </div>
+          <div class="rotation-row-side">
+            <span class="rotation-row-store">${b.store || '-'}</span>
+            <span class="rotation-row-stock">재고 ${b.stock}권</span>
+          </div>
+        </div>
+      `).join('');
+      if (typeof lucide !== 'undefined') lucide.createIcons();
+    }
     function invRotationFilter(el) {
       document.querySelectorAll('#inventory-panel .inv-rotation-btn').forEach(b => b.classList.remove('active'));
       el.classList.add('active');
+      renderRotationView(parseInt(el.dataset.months, 10) || 0);
     }
     // 스크롤 위치에 따라 사이드바 메뉴 자동 활성화
     document.addEventListener('DOMContentLoaded', () => {
