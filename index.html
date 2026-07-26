@@ -1090,6 +1090,21 @@
       </section>
 
       <main id="inv-books-section" class="dashboard-workspace card-glass">
+        <div class="upload-analyzer-title" style="margin-bottom:1rem; justify-content:space-between; width:100%;">
+          <div style="display:flex; align-items:center; gap:0.6rem;">
+            <i data-lucide="rotate-ccw"></i>
+            <span>수험서 미회전 현황</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <span id="inv-rotation-updated" class="stats-desc" style="font-weight:400;"></span>
+            <button type="button" id="btnRefreshRotationStats" class="btn btn-gradient btn-sm" onclick="refreshRotationStats()">
+              <i data-lucide="refresh-cw"></i> <span class="btn-refresh-label">업데이트</span>
+            </button>
+            <button type="button" id="btnExportRotationStats" class="btn btn-cyan btn-sm" onclick="exportRotationStats()">
+              <i data-lucide="file-spreadsheet"></i> 엑셀로 내보내기
+            </button>
+          </div>
+        </div>
         <div class="inv-rotation-filter">
           <h5><i class="fa-solid fa-clock-rotate-left"></i> 미회전 기간별 보기</h5>
           <div class="inv-rotation-btn-group">
