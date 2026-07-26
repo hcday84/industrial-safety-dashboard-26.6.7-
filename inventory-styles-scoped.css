@@ -1624,3 +1624,162 @@
     color: rgba(252,165,165,0.7);
     margin-left: auto;
 }
+
+/* ── 수험서 출간예정신간 (담당자 직접 등록, localStorage) ── */
+#inventory-panel .inv-upcoming-desc {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+#inventory-panel .inv-upcoming-form {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius-md);
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+#inventory-panel.light-mode .inv-upcoming-form {
+    background: rgba(255, 255, 255, 0.5);
+}
+#inventory-panel .inv-upcoming-form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.6rem;
+}
+#inventory-panel .inv-upcoming-input,
+#inventory-panel .inv-upcoming-textarea {
+    width: 100%;
+    padding: 0.6rem 0.85rem;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--card-border);
+    background: rgba(0, 0, 0, 0.2);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    outline: none;
+    transition: var(--transition-smooth);
+}
+#inventory-panel.light-mode .inv-upcoming-input,
+#inventory-panel.light-mode .inv-upcoming-textarea {
+    background: rgba(255, 255, 255, 0.7);
+}
+#inventory-panel .inv-upcoming-input:focus,
+#inventory-panel .inv-upcoming-textarea:focus {
+    border-color: var(--color-indigo);
+    box-shadow: 0 0 0 3px var(--color-indigo-glow);
+}
+#inventory-panel .inv-upcoming-textarea {
+    resize: vertical;
+    min-height: 44px;
+}
+#inventory-panel .inv-upcoming-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.6rem;
+}
+#inventory-panel .inv-upcoming-cancel-btn,
+#inventory-panel .inv-upcoming-save-btn {
+    padding: 0.5rem 1.1rem;
+    border-radius: var(--border-radius-sm);
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+#inventory-panel .inv-upcoming-cancel-btn {
+    background: transparent;
+    border: 1px solid var(--card-border);
+    color: var(--text-secondary);
+}
+#inventory-panel .inv-upcoming-cancel-btn:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+#inventory-panel .inv-upcoming-save-btn {
+    background: var(--color-indigo);
+    border: 1px solid var(--color-indigo);
+    color: #fff;
+}
+#inventory-panel .inv-upcoming-save-btn:hover {
+    background: var(--color-indigo-hover);
+    border-color: var(--color-indigo-hover);
+}
+#inventory-panel .inv-upcoming-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+#inventory-panel .inv-upcoming-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition-smooth);
+}
+#inventory-panel.light-mode .inv-upcoming-card {
+    background: rgba(255, 255, 255, 0.5);
+}
+#inventory-panel .inv-upcoming-card:hover {
+    border-color: rgba(76, 175, 48, 0.45);
+    background: rgba(76, 175, 48, 0.04);
+}
+#inventory-panel .inv-upcoming-card-main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    min-width: 0;
+}
+#inventory-panel .inv-upcoming-card-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+#inventory-panel .inv-upcoming-card-meta {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+#inventory-panel .inv-upcoming-card-memo {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-top: 0.15rem;
+}
+#inventory-panel .inv-upcoming-card-side {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-shrink: 0;
+}
+#inventory-panel .inv-upcoming-month-badge {
+    padding: 0.25rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    background: rgba(46, 111, 224, 0.12);
+    border: 1px solid rgba(46, 111, 224, 0.35);
+    color: var(--color-cyan);
+    white-space: nowrap;
+}
+#inventory-panel .inv-upcoming-delete-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--card-border);
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+#inventory-panel .inv-upcoming-delete-btn:hover {
+    background: rgba(239, 68, 68, 0.12);
+    border-color: rgba(239, 68, 68, 0.4);
+    color: var(--color-red);
+}
