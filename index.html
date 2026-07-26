@@ -1384,6 +1384,20 @@
       });
       return Array.from(map.values());
     }
+    // 리스트가 길어지는 것을 막기 위해 N번째 카드까지만 보이도록 높이를 맞추고 그 이하는 스크롤 처리
+    function applyListScrollCap(listEl, cardSelector, scrollClass, maxVisible) {
+      if (!listEl) return;
+      const cards = listEl.querySelectorAll(cardSelector);
+      if (cards.length > maxVisible) {
+        const listTop = listEl.getBoundingClientRect().top;
+        const cutoffBottom = cards[maxVisible - 1].getBoundingClientRect().bottom;
+        listEl.style.maxHeight = Math.ceil(cutoffBottom - listTop) + 'px';
+        listEl.classList.add(scrollClass);
+      } else {
+        listEl.style.maxHeight = '';
+        listEl.classList.remove(scrollClass);
+      }
+    }
     function formatRotationAsOfDate() {
       const now = new Date();
       const y = now.getFullYear();
