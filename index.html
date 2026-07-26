@@ -1600,7 +1600,7 @@
     //  10번째 항목 높이 계산이 깨지기 때문에, 패널이 실제로 열린 뒤(탭 클릭 시)에만 호출한다)
     document.addEventListener('DOMContentLoaded', () => {
       const invPanel = document.getElementById('inventory-panel');
-      const sections = ['inv-title-count-section','inv-outofprint-stats-section','inv-books-section'];
+      const sections = ['inv-title-count-section','inv-outofprint-stats-section','inv-upcoming-section','inv-books-section'];
       invPanel.addEventListener('scroll', () => {
         let current = sections[0];
         sections.forEach(id => {
