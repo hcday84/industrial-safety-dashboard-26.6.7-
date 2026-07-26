@@ -1514,6 +1514,38 @@
       }
     }
 
+    // ── 수험서 출간예정신간 - 교보문고 매칭 리스트 (inventory-upcoming-newbooks-data.js) ──
+    function renderUpcomingNewbooksMatch() {
+      const listEl = document.getElementById('inv-upcoming-match-list');
+      const periodEl = document.getElementById('inv-upcoming-match-period');
+      const countEl = document.getElementById('inv-upcoming-match-count');
+      if (!listEl || typeof UPCOMING_NEWBOOKS_DATA === 'undefined') return;
+
+      if (periodEl && typeof UPCOMING_NEWBOOKS_PERIOD !== 'undefined') {
+        periodEl.textContent = `${UPCOMING_NEWBOOKS_PERIOD.from} ~ ${UPCOMING_NEWBOOKS_PERIOD.to} 기준`;
+      }
+      if (countEl) countEl.innerHTML = `<strong>${UPCOMING_NEWBOOKS_DATA.length}</strong>종 매칭`;
+
+      if (!UPCOMING_NEWBOOKS_DATA.length) {
+        listEl.innerHTML = '<div class="empty-state"><i data-lucide="search-x"></i><p>매칭된 출간예정 수험서가 없습니다.</p></div>';
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+        return;
+      }
+
+      listEl.innerHTML = UPCOMING_NEWBOOKS_DATA.map(b => `
+        <div class="inv-upcoming-card">
+          <div class="inv-upcoming-card-main">
+            <span class="inv-upcoming-card-title">${b.title}</span>
+            <span class="inv-upcoming-card-meta">${b.publisher} · ${b.category}${b.storeIncoming ? ` · 울산점 입고예정 ${b.storeIncoming}권` : ''}</span>
+          </div>
+          <div class="inv-upcoming-card-side">
+            <span class="inv-upcoming-cert-badge">${b.certification}</span>
+          </div>
+        </div>
+      `).join('');
+      if (typeof lucide !== 'undefined') lucide.createIcons();
+    }
+
     // ── 수험서 출간예정신간 (담당자 직접 등록, localStorage 저장) ──
     function _loadUpcomingBooks() {
       try { return JSON.parse(localStorage.getItem('inv_upcoming_books') || '[]'); } catch (e) { return []; }
