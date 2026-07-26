@@ -1395,25 +1395,33 @@
       renderRotationView(parseInt(el.dataset.months, 10) || 0);
     }
     // 미회전 현황 - 업데이트 버튼 (현재 선택된 기간 필터 기준으로 재계산 + 로딩 연출)
+    // renderRotationView() 내부에서 예외가 나거나 lucide.createIcons()가 아이콘 엘리먼트를
+    // 교체하는 경우에도 스피너가 영구히 멈추지 않는 사고를 막기 위해, 종료 처리는
+    // btn.querySelector로 매번 다시 조회하고 try/finally로 반드시 실행되도록 한다.
     function refreshRotationStats() {
       const btn = document.getElementById('btnRefreshRotationStats');
       if (!btn || btn.disabled) return;
-      const icon = btn.querySelector('svg, i');
       const label = btn.querySelector('.btn-refresh-label');
-      const originalLabel = label ? label.textContent : null;
+      const originalLabel = label ? label.textContent : '업데이트';
       btn.disabled = true;
-      if (icon) icon.classList.add('spin');
+      btn.querySelector('svg, i')?.classList.add('spin');
       if (label) label.textContent = '불러오는 중...';
       setTimeout(() => {
-        const activeBtn = document.querySelector('#inventory-panel .inv-rotation-btn.active');
-        const months = activeBtn ? (parseInt(activeBtn.dataset.months, 10) || 0) : 0;
-        renderRotationView(months);
-        if (label) label.textContent = '완료';
-        setTimeout(() => {
-          if (icon) icon.classList.remove('spin');
-          if (label && originalLabel !== null) label.textContent = originalLabel;
-          btn.disabled = false;
-        }, 1000);
+        try {
+          const activeBtn = document.querySelector('#inventory-panel .inv-rotation-btn.active');
+          const months = activeBtn ? (parseInt(activeBtn.dataset.months, 10) || 0) : 0;
+          renderRotationView(months);
+          if (label) label.textContent = '완료';
+        } catch (err) {
+          console.error('[수험서 미회전 현황] 업데이트 실패:', err);
+          if (label) label.textContent = '오류';
+        } finally {
+          setTimeout(() => {
+            btn.querySelector('svg, i')?.classList.remove('spin');
+            if (label) label.textContent = originalLabel;
+            btn.disabled = false;
+          }, 1000);
+        }
       }, 500);
     }
     // 미회전 현황 - 엑셀로 내보내기 (기간별 요약 + 도서별 상세)
