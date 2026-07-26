@@ -1441,8 +1441,9 @@
         </div>
       `).join('');
       if (typeof lucide !== 'undefined') lucide.createIcons();
-
-      // 10번째 항목까지만 보이도록 높이를 맞추고, 11번째부터는 스크롤로 확인
+      applyListScrollCap(listEl, '.rotation-row-card', 'inv-rotation-list--scroll', 10);
+      return;
+      // (legacy code below unreachable, kept temporarily for diff clarity)
       const cards = listEl.querySelectorAll('.rotation-row-card');
       if (cards.length > 10) {
         const listTop = listEl.getBoundingClientRect().top;
