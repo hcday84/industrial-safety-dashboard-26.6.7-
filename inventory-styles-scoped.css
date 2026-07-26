@@ -415,6 +415,7 @@
 }
 #inventory-panel .text-indigo{ color: var(--color-indigo); }
 #inventory-panel .text-cyan{ color: var(--color-cyan); }
+#inventory-panel .text-warning{ color: var(--color-warning); }
 #inventory-panel .text-red{ color: var(--color-red); }
 
 /* 수험서 종.권수 보유 현황 - 한 줄 4개 컴팩트 카드 */
