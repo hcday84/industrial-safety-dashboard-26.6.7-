@@ -1625,11 +1625,43 @@
     margin-left: auto;
 }
 
-/* ── 수험서 출간예정신간 (담당자 직접 등록, localStorage) ── */
+/* ── 수험서 출간예정신간 (교보문고 매칭 + 담당자 직접 등록, localStorage) ── */
 #inventory-panel .inv-upcoming-desc {
     font-size: 0.82rem;
     color: var(--text-muted);
     margin-bottom: 1rem;
+}
+#inventory-panel .inv-upcoming-subheader {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0.75rem 0;
+}
+#inventory-panel .inv-upcoming-subheader h5 {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    margin: 0;
+}
+#inventory-panel .inv-upcoming-divider {
+    margin: 1.5rem 0;
+    border-top: 1px solid var(--card-border);
+}
+#inventory-panel .inv-upcoming-cert-badge {
+    padding: 0.25rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    background: rgba(76, 175, 48, 0.12);
+    border: 1px solid rgba(76, 175, 48, 0.35);
+    color: var(--color-indigo);
+    white-space: nowrap;
 }
 #inventory-panel .inv-upcoming-form {
     background: rgba(0, 0, 0, 0.2);
