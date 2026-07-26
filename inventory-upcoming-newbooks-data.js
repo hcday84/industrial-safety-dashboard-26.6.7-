@@ -1,0 +1,40 @@
+﻿// 수험서 출간예정신간 (등록일: 2026-07 교보문고 출간예정신간 리스트 기반)
+// 원본: 출간예정신간(26.7.20-7.26).xlsx — 전체 845건 중 '취업/수험서·기술/공학·컴퓨터·외국어' 분류에서
+// certs_data.js에 등록된 자격증명과 도서명을 대조해 매칭되는 34건만 추출
+const UPCOMING_NEWBOOKS_PERIOD = { from: '2026-07-20', to: '2026-07-26' };
+const UPCOMING_NEWBOOKS_DATA = [
+  { title: '2027 go래 전기기능사 필기(개정판)', publisher: '예문사', isbn: '9788927462903', category: '기술/공학', certification: '전기기능사', storeIncoming: 2 },
+  { title: '2027 에듀윌 지게차운전기능사 독학으로 필기끝장+9개년 기출문제(개정판)', publisher: '에듀윌', isbn: '9791136043245', category: '기술/공학', certification: '지게차운전기능사', storeIncoming: 11 },
+  { title: '2027 합격포인트 자동차정비기능사', publisher: '골든벨', isbn: '9791124114681', category: '기술/공학', certification: '자동차정비기능사', storeIncoming: 0 },
+  { title: '2027 시대에듀 버스운전자격시험 문제지(개정판 13판)', publisher: '시대고시기획', isbn: '9791143418098', category: '기술/공학', certification: '버스운전자격', storeIncoming: 1 },
+  { title: '2027 기분좋은 초초초 지게차운전기능사 필기(개정판 2판)', publisher: '시대고시기획', isbn: '9791143418357', category: '기술/공학', certification: '지게차운전기능사', storeIncoming: 1 },
+  { title: '2027 시대에듀 소방시설관리사 1차 한권으로 끝내기(개정판 14판)', publisher: '시대고시기획', isbn: '9791143413628', category: '기술/공학', certification: '소방시설관리사', storeIncoming: 1 },
+  { title: '100% 무료특강 자력 3D프린터운용기능사 필기+실기 한권쏙(개정판)', publisher: '박영사', isbn: '9791144200142', category: '컴퓨터', certification: '3D프린터운용기능사', storeIncoming: 0 },
+  { title: '2027 해커스변호사 Law Man 형법 최근 3개년 판례정리(개정판)', publisher: '해커스변호사', isbn: '9791176446136', category: '취업/수험서', certification: '변호사', storeIncoming: 0 },
+  { title: '2027 해커스변호사 Law Man 형사소송법 최근 3개년 판례정리(개정판)', publisher: '해커스변호사', isbn: '9791176446051', category: '취업/수험서', certification: '변호사', storeIncoming: 0 },
+  { title: '세무사 민법(9판)', publisher: '윌비스', isbn: '9791175611528', category: '취업/수험서', certification: '세무사', storeIncoming: 0 },
+  { title: '2027 해커스변호사 형사법 최신판례의 맥(개정판 5판)', publisher: '해커스변호사', isbn: '9791176446044', category: '취업/수험서', certification: '변호사', storeIncoming: 0 },
+  { title: '객관식 외부감사법과 공인회계사법(3판)', publisher: '샘앤북스', isbn: '9791156266204', category: '취업/수험서', certification: '공인회계사', storeIncoming: 0 },
+  { title: '2027 박문각 감정평가사 2차 S+감정평가이론 각론 기본서(5판)', publisher: '박문각', isbn: '9791176492362', category: '취업/수험서', certification: '감정평가사', storeIncoming: 1 },
+  { title: '해커스변호사 헌법 2026년 상반기 최신판례', publisher: '해커스변호사', isbn: '9791176446068', category: '취업/수험서', certification: '변호사', storeIncoming: 0 },
+  { title: '2027 해커스변호사 행정법 최근 3개년 최신판례(개정판)', publisher: '해커스변호사', isbn: '9791176446037', category: '취업/수험서', certification: '변호사', storeIncoming: 0 },
+  { title: '2027 시대에듀 합격자 관세사 1차 3개년 기출문제집 한권으로 끝내기(개정판 14판)', publisher: '시대고시기획', isbn: '9791143416711', category: '취업/수험서', certification: '관세사', storeIncoming: 0 },
+  { title: '2027 해커스변호사 상법 핵심 지문의 맥', publisher: '해커스변호사', isbn: '9791176446280', category: '취업/수험서', certification: '변호사', storeIncoming: 0 },
+  { title: '2027 해커스 감정평가사(감평사) 서호성 경제학원론 1차 기출+예상문제집', publisher: '해커스 감정평가사', isbn: '9791176443333', category: '취업/수험서', certification: '감정평가사', storeIncoming: 0 },
+  { title: '2027 공인회계사·세무사 원가관리회계 기출문제 10개년(2017-2026)(4판)', publisher: '세경북스', isbn: '9791159735226', category: '취업/수험서', certification: '공인회계사', storeIncoming: 0 },
+  { title: '2027 세무사 객관식 상법(10판)', publisher: '세경북스', isbn: '9791159735073', category: '취업/수험서', certification: '세무사', storeIncoming: 0 },
+  { title: '2027 박문각 감정평가사 1차 4개년 전과목 기출문제집(4판)', publisher: '박문각', isbn: '9791176491600', category: '취업/수험서', certification: '감정평가사', storeIncoming: 0 },
+  { title: '2027 나눔의집 사회복지사1급 기출회독과정 세트(전3권)', publisher: '나눔의집', isbn: '9788958105343', category: '취업/수험서', certification: '사회복지사1급', storeIncoming: 0 },
+  { title: '2027 나눔의집 사회복지사1급 기출회독과정 1과목 사회복지기초', publisher: '나눔의집', isbn: '9788958105350', category: '취업/수험서', certification: '사회복지사1급', storeIncoming: 0 },
+  { title: '2027 나눔의집 사회복지사1급 기출회독과정 2과목 사회복지실천', publisher: '나눔의집', isbn: '9788958105367', category: '취업/수험서', certification: '사회복지사1급', storeIncoming: 0 },
+  { title: '2027 나눔의집 사회복지사1급 기출회독과정 3과목 사회복지정책과 제도', publisher: '나눔의집', isbn: '9788958105374', category: '취업/수험서', certification: '사회복지사1급', storeIncoming: 0 },
+  { title: '2027 해커스 감정평가사(감평사) 양기백 감정평가관계법규 1차 기출+예상문제집', publisher: '해커스 감정평가사', isbn: '9791176446204', category: '취업/수험서', certification: '감정평가사', storeIncoming: 0 },
+  { title: '공인회계사 2차 재무관리 기출풀이집(8판)', publisher: '북캉스', isbn: '9791199221765', category: '취업/수험서', certification: '공인회계사', storeIncoming: 0 },
+  { title: '2027 시대에듀 EBS 공인노무사 1차 노동법 기출문제 한권으로 끝내기', publisher: '시대고시기획', isbn: '9791143417985', category: '취업/수험서', certification: '공인노무사', storeIncoming: 0 },
+  { title: '토마토패스 단한권 공인중개사 적중문제집 1차', publisher: '토마토북스', isbn: '9791199723061', category: '취업/수험서', certification: '공인중개사', storeIncoming: 0 },
+  { title: '2027 감정평가사 통합 보상법규(4판)', publisher: '새흐름', isbn: '9791162938676', category: '취업/수험서', certification: '감정평가사', storeIncoming: 0 },
+  { title: '2027 인사이트 세무사 상법', publisher: '자비스', isbn: '9791192685519', category: '취업/수험서', certification: '세무사', storeIncoming: 0 },
+  { title: '토마토패스 단한권 공인중개사 적중문제집 2차', publisher: '토마토북스', isbn: '9791199723078', category: '취업/수험서', certification: '공인중개사', storeIncoming: 0 },
+  { title: '해커스 JLPT N1(일본어능력시험) 한권합격(개정판 3판)', publisher: '해커스어학연구소', isbn: '9788965426905', category: '외국어', certification: 'JLPT', storeIncoming: 1 },
+  { title: '노베토스 TOEIC SPEAKING AM-AH', publisher: '파고다북스', isbn: '9788962814101', category: '외국어', certification: 'TOEIC', storeIncoming: 1 }
+];
