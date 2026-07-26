@@ -1394,6 +1394,66 @@
       el.classList.add('active');
       renderRotationView(parseInt(el.dataset.months, 10) || 0);
     }
+    // 미회전 현황 - 업데이트 버튼 (현재 선택된 기간 필터 기준으로 재계산 + 로딩 연출)
+    function refreshRotationStats() {
+      const btn = document.getElementById('btnRefreshRotationStats');
+      if (!btn || btn.disabled) return;
+      const icon = btn.querySelector('svg, i');
+      const label = btn.querySelector('.btn-refresh-label');
+      const originalLabel = label ? label.textContent : null;
+      btn.disabled = true;
+      if (icon) icon.classList.add('spin');
+      if (label) label.textContent = '불러오는 중...';
+      setTimeout(() => {
+        const activeBtn = document.querySelector('#inventory-panel .inv-rotation-btn.active');
+        const months = activeBtn ? (parseInt(activeBtn.dataset.months, 10) || 0) : 0;
+        renderRotationView(months);
+        if (label) label.textContent = '완료';
+        setTimeout(() => {
+          if (icon) icon.classList.remove('spin');
+          if (label && originalLabel !== null) label.textContent = originalLabel;
+          btn.disabled = false;
+        }, 1000);
+      }, 500);
+    }
+    // 미회전 현황 - 엑셀로 내보내기 (기간별 요약 + 도서별 상세)
+    function exportRotationStats() {
+      if (typeof ROTATION_BOOKS_DATA === 'undefined' || typeof XLSX === 'undefined') return;
+      const buckets = [12, 15, 18];
+      const summaryRows = [['미회전 기간', '종수', '권수']];
+      const detailRows = [['미회전 기간', '도서명', '출판사', '저자', '매장', '재고(권)', 'ISBN']];
+      buckets.forEach(months => {
+        const items = ROTATION_BOOKS_DATA[months] || [];
+        const titleSet = new Set(items.map(b => b.title));
+        const volumes = items.reduce((sum, b) => sum + (b.stock || 0), 0);
+        summaryRows.push([`${months}개월+`, titleSet.size, volumes]);
+        items.forEach(b => {
+          detailRows.push([`${months}개월+`, b.title, b.publisher || '-', b.author || '-', b.store || '-', b.stock || 0, b.isbn || '-']);
+        });
+      });
+      const dedupItems = dedupeRotationItems();
+      const dedupTitleSet = new Set(dedupItems.map(b => b.title));
+      const dedupVolumes = dedupItems.reduce((sum, b) => sum + (b.stock || 0), 0);
+      summaryRows.push(['전체(중복제거)', dedupTitleSet.size, dedupVolumes]);
+
+      const wb = XLSX.utils.book_new();
+      const wsSummary = XLSX.utils.aoa_to_sheet(summaryRows);
+      wsSummary['!cols'] = [{ wch: 16 }, { wch: 10 }, { wch: 10 }];
+      XLSX.utils.book_append_sheet(wb, wsSummary, '미회전_요약');
+
+      const wsDetail = XLSX.utils.aoa_to_sheet(detailRows);
+      wsDetail['!cols'] = [{ wch: 12 }, { wch: 40 }, { wch: 16 }, { wch: 14 }, { wch: 10 }, { wch: 10 }, { wch: 16 }];
+      XLSX.utils.book_append_sheet(wb, wsDetail, '도서별_상세');
+
+      const dateStamp = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+      XLSX.writeFile(wb, `수험서_미회전현황_${dateStamp}.xlsx`);
+
+      const toast = document.getElementById('exportToast');
+      if (toast) {
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 4000);
+      }
+    }
     // 스크롤 위치에 따라 사이드바 메뉴 자동 활성화
     // (renderRotationView(0)의 최초 호출은 inventory-app.js의 initInventoryApp에서 처리 —
     //  #inventory-panel이 display:none인 상태에서 호출하면 getBoundingClientRect가 전부 0을 반환해
