@@ -11,7 +11,7 @@
 | **서비스명** | 기술수험서 올인원 대시보드 |
 | **배포 URL** | https://industrial-safety-dashboard-26-6-7.vercel.app |
 | **GitHub** | https://github.com/hcday84/industrial-safety-dashboard-26.6.7-.git |
-| **로컬 경로** | `C:\Users\user\Desktop\industrial_safety_dashboard` |
+| **로컬 경로** | `C:\Users\user\Desktop\industrial_safety_dashboard` (다른 PC에는 `...\.gemini\antigravity\scratch\industrial_safety_dashboard` 경로에도 동일 클론 존재, 2026-07-26부터 동일 auto-push 훅 설정) |
 | **브랜치** | `main` (auto-push 훅 — Edit/Write 후 자동 커밋·푸시) |
 | **배포 환경** | Vercel (main 브랜치 push 감지 후 1~2분 내 자동 배포) |
 | **총 커밋 수** | 235회+ |
