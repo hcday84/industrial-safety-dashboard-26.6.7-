@@ -736,41 +736,56 @@
     border-color: rgba(76, 175, 48, 0.3);
 }
 
-/* 미회전 기간별 조회 버튼 - 기간이 길수록(심각도) 파랑 -> 주황 -> 빨강, 흰색 글자 */
+/* 미회전 기간별 조회 버튼 - 기간이 길수록(심각도) 파랑 -> 주황 -> 빨강, 채우기 없는 아웃라인 스타일 */
 #inventory-panel .inv-rotation-btn--m12{
-    background: var(--color-cyan);
+    background: transparent;
     border-color: var(--color-cyan);
-    color: #fff;
+    color: var(--color-cyan);
 }
-#inventory-panel .inv-rotation-btn--m12:hover,
-#inventory-panel .inv-rotation-btn--m12.active{
-    background: var(--color-cyan-hover);
+#inventory-panel .inv-rotation-btn--m12:hover{
+    background: color-mix(in srgb, var(--color-cyan) 12%, transparent);
     border-color: var(--color-cyan-hover);
-    color: #fff;
+    color: var(--color-cyan-hover);
+}
+#inventory-panel .inv-rotation-btn--m12.active{
+    background: color-mix(in srgb, var(--color-cyan) 18%, transparent);
+    border-color: var(--color-cyan);
+    color: var(--color-cyan);
+    font-weight: 700;
 }
 
 #inventory-panel .inv-rotation-btn--m15{
-    background: var(--color-warning);
+    background: transparent;
     border-color: var(--color-warning);
-    color: #fff;
+    color: var(--color-warning);
 }
-#inventory-panel .inv-rotation-btn--m15:hover,
+#inventory-panel .inv-rotation-btn--m15:hover{
+    background: color-mix(in srgb, var(--color-warning) 15%, transparent);
+    border-color: var(--color-warning);
+    color: var(--color-warning);
+}
 #inventory-panel .inv-rotation-btn--m15.active{
-    background: color-mix(in srgb, var(--color-warning) 80%, black);
-    border-color: color-mix(in srgb, var(--color-warning) 80%, black);
-    color: #fff;
+    background: color-mix(in srgb, var(--color-warning) 22%, transparent);
+    border-color: var(--color-warning);
+    color: var(--color-warning);
+    font-weight: 700;
 }
 
 #inventory-panel .inv-rotation-btn--m18{
-    background: var(--color-red);
+    background: transparent;
     border-color: var(--color-red);
-    color: #fff;
+    color: var(--color-red);
 }
-#inventory-panel .inv-rotation-btn--m18:hover,
+#inventory-panel .inv-rotation-btn--m18:hover{
+    background: color-mix(in srgb, var(--color-red) 12%, transparent);
+    border-color: var(--color-red);
+    color: var(--color-red);
+}
 #inventory-panel .inv-rotation-btn--m18.active{
-    background: color-mix(in srgb, var(--color-red) 80%, black);
-    border-color: color-mix(in srgb, var(--color-red) 80%, black);
-    color: #fff;
+    background: color-mix(in srgb, var(--color-red) 18%, transparent);
+    border-color: var(--color-red);
+    color: var(--color-red);
+    font-weight: 700;
 }
 
 /* 미회전 기간별 보기 - 종수/권수 요약 배지 */
