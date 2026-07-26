@@ -271,6 +271,86 @@
         <div id="hot-topic-grid" class="hot-topic-grid"></div>
       </section>
     </div><!-- /.welcome-lower-row -->
+
+    <!-- 이달의 신간 확인하기 (발주&재고관리에서 이동) -->
+    <section id="newbooks-section" class="dashboard-section card-box">
+      <div class="section-header">
+        <h2><i class="fa-solid fa-star text-orange"></i> 이달의 신간 확인하기</h2>
+        <span class="badge badge-info">수험서 출판사 신간</span>
+      </div>
+      <p class="monthly-section-desc">수험서 전문 출판사의 이달 신간을 확인하고 발주를 검토하세요.</p>
+      <div class="inv-newbooks-grid">
+        <a class="inv-newbooks-card" href="https://book.eduwill.net/main.action" target="_blank" rel="noopener noreferrer">
+          <div class="inv-newbooks-card-icon" style="background:#4f46e5;"><i class="fa-solid fa-book"></i></div>
+          <div class="inv-newbooks-card-body">
+            <strong>에듀윌</strong>
+            <span>신간 도서 목록 보기</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square inv-newbooks-arrow"></i>
+        </a>
+        <a class="inv-newbooks-card" href="https://www.sinagong.co.kr/" target="_blank" rel="noopener noreferrer">
+          <div class="inv-newbooks-card-icon" style="background:#0891b2;"><i class="fa-solid fa-book"></i></div>
+          <div class="inv-newbooks-card-body">
+            <strong>시나공(길벗)</strong>
+            <span>신간 도서 목록 보기</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square inv-newbooks-arrow"></i>
+        </a>
+        <a class="inv-newbooks-card" href="https://www.cyber.co.kr/book/cmall/lists?cit_type3=1" target="_blank" rel="noopener noreferrer">
+          <div class="inv-newbooks-card-icon" style="background:#0f766e;"><i class="fa-solid fa-book"></i></div>
+          <div class="inv-newbooks-card-body">
+            <strong>성안당</strong>
+            <span>신간 도서 목록 보기</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square inv-newbooks-arrow"></i>
+        </a>
+        <a class="inv-newbooks-card" href="https://www.yeamoonsa.com/" target="_blank" rel="noopener noreferrer">
+          <div class="inv-newbooks-card-icon" style="background:#b45309;"><i class="fa-solid fa-book"></i></div>
+          <div class="inv-newbooks-card-body">
+            <strong>예문사</strong>
+            <span>신간 도서 목록 보기</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square inv-newbooks-arrow"></i>
+        </a>
+        <a class="inv-newbooks-card" href="https://www.youngjin.com/" target="_blank" rel="noopener noreferrer">
+          <div class="inv-newbooks-card-icon" style="background:#dc2626;"><i class="fa-solid fa-book"></i></div>
+          <div class="inv-newbooks-card-body">
+            <strong>이기적(영진)</strong>
+            <span>신간 도서 목록 보기</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square inv-newbooks-arrow"></i>
+        </a>
+        <a class="inv-newbooks-card" href="https://pass.hackers.com/?r=pass&c=book&g_id=1" target="_blank" rel="noopener noreferrer">
+          <div class="inv-newbooks-card-icon" style="background:#7c3aed;"><i class="fa-solid fa-book"></i></div>
+          <div class="inv-newbooks-card-body">
+            <strong>해커스</strong>
+            <span>신간 도서 목록 보기</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square inv-newbooks-arrow"></i>
+        </a>
+        <a class="inv-newbooks-card" href="http://www.pmg.co.kr/jehu/pmg/pmg_main.asp" target="_blank" rel="noopener noreferrer">
+          <div class="inv-newbooks-card-icon" style="background:#065f46;"><i class="fa-solid fa-book"></i></div>
+          <div class="inv-newbooks-card-body">
+            <strong>박문각</strong>
+            <span>신간 도서 목록 보기</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square inv-newbooks-arrow"></i>
+        </a>
+        <a class="inv-newbooks-card" href="https://www.sdedu.co.kr/" target="_blank" rel="noopener noreferrer">
+          <div class="inv-newbooks-card-icon" style="background:#9d174d;"><i class="fa-solid fa-book"></i></div>
+          <div class="inv-newbooks-card-body">
+            <strong>시대에듀</strong>
+            <span>신간 도서 목록 보기</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square inv-newbooks-arrow"></i>
+        </a>
+      </div>
+      <div class="inv-newbooks-store">
+        <a href="https://product.kyobobook.co.kr/category/KOR/26" target="_blank" rel="noopener noreferrer" class="inv-newbooks-store-btn">
+          <i class="fa-solid fa-store"></i> 교보문고 수험서 전체 신간 보기
+        </a>
+      </div>
+    </section>
   </div>
 
   <!-- 자격증 비교 모달 -->
@@ -870,9 +950,6 @@
           <a href="#inv-books-section" class="inv-nav-item" onclick="invNavActivate(this)">
             <i class="fa-solid fa-book-open"></i> 수험서 미회전 현황
           </a>
-          <a href="#inv-newbooks-section" class="inv-nav-item" onclick="invNavActivate(this)">
-            <i class="fa-solid fa-star"></i> 이달의 신간 확인하기
-          </a>
         </nav>
         <div class="inv-sidebar-banner">
           <h4><i class="fa-solid fa-circle-info"></i> 관리 안내</h4>
@@ -1028,84 +1105,6 @@
         </div>
         <div class="inv-rotation-list" id="invRotationList"></div>
       </main>
-
-      <section id="inv-newbooks-section" class="inv-newbooks-section card-glass">
-        <div class="inv-newbooks-header">
-          <h2><i class="fa-solid fa-star"></i> 이달의 신간 확인하기</h2>
-          <p class="inv-newbooks-desc">수험서 전문 출판사의 이달 신간을 확인하고 발주를 검토하세요.</p>
-        </div>
-        <div class="inv-newbooks-grid">
-          <a class="inv-newbooks-card" href="https://book.eduwill.net/main.action" target="_blank" rel="noopener noreferrer">
-            <div class="inv-newbooks-card-icon" style="background:#4f46e5;"><i class="fa-solid fa-book"></i></div>
-            <div class="inv-newbooks-card-body">
-              <strong>에듀윌</strong>
-              <span>신간 도서 목록 보기</span>
-            </div>
-            <i class="fa-solid fa-arrow-up-right-from-square inv-newbooks-arrow"></i>
-          </a>
-          <a class="inv-newbooks-card" href="https://www.sinagong.co.kr/" target="_blank" rel="noopener noreferrer">
-            <div class="inv-newbooks-card-icon" style="background:#0891b2;"><i class="fa-solid fa-book"></i></div>
-            <div class="inv-newbooks-card-body">
-              <strong>시나공(길벗)</strong>
-              <span>신간 도서 목록 보기</span>
-            </div>
-            <i class="fa-solid fa-arrow-up-right-from-square inv-newbooks-arrow"></i>
-          </a>
-          <a class="inv-newbooks-card" href="https://www.cyber.co.kr/book/cmall/lists?cit_type3=1" target="_blank" rel="noopener noreferrer">
-            <div class="inv-newbooks-card-icon" style="background:#0f766e;"><i class="fa-solid fa-book"></i></div>
-            <div class="inv-newbooks-card-body">
-              <strong>성안당</strong>
-              <span>신간 도서 목록 보기</span>
-            </div>
-            <i class="fa-solid fa-arrow-up-right-from-square inv-newbooks-arrow"></i>
-          </a>
-          <a class="inv-newbooks-card" href="https://www.yeamoonsa.com/" target="_blank" rel="noopener noreferrer">
-            <div class="inv-newbooks-card-icon" style="background:#b45309;"><i class="fa-solid fa-book"></i></div>
-            <div class="inv-newbooks-card-body">
-              <strong>예문사</strong>
-              <span>신간 도서 목록 보기</span>
-            </div>
-            <i class="fa-solid fa-arrow-up-right-from-square inv-newbooks-arrow"></i>
-          </a>
-          <a class="inv-newbooks-card" href="https://www.youngjin.com/" target="_blank" rel="noopener noreferrer">
-            <div class="inv-newbooks-card-icon" style="background:#dc2626;"><i class="fa-solid fa-book"></i></div>
-            <div class="inv-newbooks-card-body">
-              <strong>이기적(영진)</strong>
-              <span>신간 도서 목록 보기</span>
-            </div>
-            <i class="fa-solid fa-arrow-up-right-from-square inv-newbooks-arrow"></i>
-          </a>
-          <a class="inv-newbooks-card" href="https://pass.hackers.com/?r=pass&c=book&g_id=1" target="_blank" rel="noopener noreferrer">
-            <div class="inv-newbooks-card-icon" style="background:#7c3aed;"><i class="fa-solid fa-book"></i></div>
-            <div class="inv-newbooks-card-body">
-              <strong>해커스</strong>
-              <span>신간 도서 목록 보기</span>
-            </div>
-            <i class="fa-solid fa-arrow-up-right-from-square inv-newbooks-arrow"></i>
-          </a>
-          <a class="inv-newbooks-card" href="http://www.pmg.co.kr/jehu/pmg/pmg_main.asp" target="_blank" rel="noopener noreferrer">
-            <div class="inv-newbooks-card-icon" style="background:#065f46;"><i class="fa-solid fa-book"></i></div>
-            <div class="inv-newbooks-card-body">
-              <strong>박문각</strong>
-              <span>신간 도서 목록 보기</span>
-            </div>
-            <i class="fa-solid fa-arrow-up-right-from-square inv-newbooks-arrow"></i>
-          </a>
-          <a class="inv-newbooks-card" href="https://www.sdedu.co.kr/" target="_blank" rel="noopener noreferrer">
-            <div class="inv-newbooks-card-icon" style="background:#9d174d;"><i class="fa-solid fa-book"></i></div>
-            <div class="inv-newbooks-card-body">
-              <strong>시대에듀</strong>
-              <span>신간 도서 목록 보기</span>
-            </div>
-            <i class="fa-solid fa-arrow-up-right-from-square inv-newbooks-arrow"></i>
-          </a>
-        </div>
-        <div class="inv-newbooks-store">
-          <a href="https://product.kyobobook.co.kr/category/KOR/26" target="_blank" rel="noopener noreferrer" class="inv-newbooks-store-btn">
-            <i class="fa-solid fa-store"></i> 교보문고 수험서 전체 신간 보기
-          </a>
-        </div>
-      </section>
 
       </div><!-- /.inv-main-content -->
       </div><!-- /.inv-layout -->
@@ -1376,7 +1375,7 @@
     //  10번째 항목 높이 계산이 깨지기 때문에, 패널이 실제로 열린 뒤(탭 클릭 시)에만 호출한다)
     document.addEventListener('DOMContentLoaded', () => {
       const invPanel = document.getElementById('inventory-panel');
-      const sections = ['inv-title-count-section','inv-outofprint-stats-section','inv-books-section','inv-newbooks-section'];
+      const sections = ['inv-title-count-section','inv-outofprint-stats-section','inv-books-section'];
       invPanel.addEventListener('scroll', () => {
         let current = sections[0];
         sections.forEach(id => {
