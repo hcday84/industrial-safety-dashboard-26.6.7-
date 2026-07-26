@@ -1636,7 +1636,7 @@
         UPCOMING_NEWBOOKS_DATA.forEach(b => matchRows.push([b.title, b.publisher, b.category, b.certification, b.isbn, b.storeIncoming || 0]));
         const wsMatch = XLSX.utils.aoa_to_sheet(matchRows);
         wsMatch['!cols'] = [{ wch: 45 }, { wch: 16 }, { wch: 12 }, { wch: 16 }, { wch: 16 }, { wch: 14 }];
-        XLSX.utils.book_append_sheet(wb, wsMatch, '교보문고_매칭결과');
+        XLSX.utils.book_append_sheet(wb, wsMatch, '출간예정_매칭결과');
       }
 
       const items = _loadUpcomingBooks();
