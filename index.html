@@ -1333,6 +1333,13 @@
       });
       return Array.from(map.values());
     }
+    function formatRotationAsOfDate() {
+      const now = new Date();
+      const y = now.getFullYear();
+      const m = String(now.getMonth() + 1).padStart(2, '0');
+      const d = String(now.getDate()).padStart(2, '0');
+      return `(${y}년${m}월${d}일 기준)`;
+    }
     function renderRotationView(months) {
       const countEl = document.getElementById('invRotationCount');
       const volumeEl = document.getElementById('invRotationVolume');
@@ -1345,6 +1352,9 @@
       const volumeCount = items.reduce((sum, b) => sum + (b.stock || 0), 0);
       if (countEl) countEl.textContent = titleCount.toLocaleString();
       if (volumeEl) volumeEl.textContent = volumeCount.toLocaleString();
+
+      const updatedEl = document.getElementById('inv-rotation-updated');
+      if (updatedEl) updatedEl.textContent = formatRotationAsOfDate();
 
       if (items.length === 0) {
         listEl.innerHTML = '<div class="empty-state"><i data-lucide="search-x"></i><p>등록된 미회전 도서가 없습니다.</p></div>';
