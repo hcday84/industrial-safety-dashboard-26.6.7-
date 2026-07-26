@@ -1092,6 +1092,41 @@
         </div>
       </section>
 
+      <section id="inv-upcoming-section" class="card-glass" style="margin-bottom:2.5rem; padding:1.5rem;">
+        <div class="upload-analyzer-title" style="margin-bottom:1rem; justify-content:space-between; width:100%;">
+          <div style="display:flex; align-items:center; gap:0.6rem;">
+            <i data-lucide="calendar-plus"></i>
+            <span>수험서 출간예정신간</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <span id="inv-upcoming-count" class="stats-desc" style="font-weight:400;"></span>
+            <button type="button" id="btnAddUpcomingBook" class="btn btn-gradient btn-sm" onclick="openUpcomingBookForm()">
+              <i data-lucide="plus"></i> 신규 등록
+            </button>
+            <button type="button" id="btnExportUpcomingBooks" class="btn btn-cyan btn-sm" onclick="exportUpcomingBooks()">
+              <i data-lucide="file-spreadsheet"></i> 엑셀로 내보내기
+            </button>
+          </div>
+        </div>
+        <p class="inv-upcoming-desc">출판사에서 공지한 출간예정 수험서를 직접 등록해 발주 시기를 미리 준비하세요. 직접 입력한 정보이며 실제 출간일은 변경될 수 있습니다.</p>
+
+        <div id="inv-upcoming-form" class="inv-upcoming-form" style="display:none;">
+          <div class="inv-upcoming-form-grid">
+            <input type="text" id="upcoming-title-input" class="inv-upcoming-input" placeholder="도서명 *" />
+            <input type="text" id="upcoming-publisher-input" class="inv-upcoming-input" placeholder="출판사 *" />
+            <input type="text" id="upcoming-cert-input" class="inv-upcoming-input" placeholder="관련 자격증명" />
+            <input type="month" id="upcoming-month-input" class="inv-upcoming-input" placeholder="예상 출간월" />
+          </div>
+          <textarea id="upcoming-memo-input" class="inv-upcoming-textarea" placeholder="메모 (예: 개정판 여부, 예약주문 링크 등)" rows="2"></textarea>
+          <div class="inv-upcoming-form-actions">
+            <button class="btn-notice-cancel" onclick="closeUpcomingBookForm()">취소</button>
+            <button class="btn-notice-save" onclick="saveUpcomingBook()">등록</button>
+          </div>
+        </div>
+
+        <div id="inv-upcoming-list" class="inv-upcoming-list"></div>
+      </section>
+
       <main id="inv-books-section" class="dashboard-workspace card-glass">
         <div class="upload-analyzer-title" style="margin-bottom:1rem; justify-content:space-between; width:100%;">
           <div style="display:flex; align-items:center; gap:0.6rem;">
