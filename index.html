@@ -1623,13 +1623,24 @@
     }
     function exportUpcomingBooks() {
       if (typeof XLSX === 'undefined') return;
+      const wb = XLSX.utils.book_new();
+
+      if (typeof UPCOMING_NEWBOOKS_DATA !== 'undefined' && UPCOMING_NEWBOOKS_DATA.length) {
+        const period = typeof UPCOMING_NEWBOOKS_PERIOD !== 'undefined' ? `${UPCOMING_NEWBOOKS_PERIOD.from}~${UPCOMING_NEWBOOKS_PERIOD.to}` : '';
+        const matchRows = [['도서명', '출판사', '분류', '매칭 자격증', 'ISBN', `울산점 입고예정(${period})`]];
+        UPCOMING_NEWBOOKS_DATA.forEach(b => matchRows.push([b.title, b.publisher, b.category, b.certification, b.isbn, b.storeIncoming || 0]));
+        const wsMatch = XLSX.utils.aoa_to_sheet(matchRows);
+        wsMatch['!cols'] = [{ wch: 45 }, { wch: 16 }, { wch: 12 }, { wch: 16 }, { wch: 16 }, { wch: 14 }];
+        XLSX.utils.book_append_sheet(wb, wsMatch, '교보문고_매칭결과');
+      }
+
       const items = _loadUpcomingBooks();
       const rows = [['도서명', '출판사', '관련 자격증', '예상 출간월', '메모', '등록일']];
       items.forEach(b => rows.push([b.title, b.publisher, b.certification || '-', b.expectedMonth || '미정', b.memo || '-', b.addedDate]));
-      const wb = XLSX.utils.book_new();
       const ws = XLSX.utils.aoa_to_sheet(rows);
       ws['!cols'] = [{ wch: 40 }, { wch: 16 }, { wch: 18 }, { wch: 12 }, { wch: 30 }, { wch: 12 }];
-      XLSX.utils.book_append_sheet(wb, ws, '출간예정신간');
+      XLSX.utils.book_append_sheet(wb, ws, '직접등록');
+
       const dateStamp = new Date().toISOString().slice(0, 10).replace(/-/g, '');
       XLSX.writeFile(wb, `수험서_출간예정신간_${dateStamp}.xlsx`);
       const toast = document.getElementById('exportToast');
