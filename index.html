@@ -1591,6 +1591,7 @@
         </div>`;
       }).join('');
       if (typeof lucide !== 'undefined') lucide.createIcons();
+      applyListScrollCap(listEl, '.inv-upcoming-card', 'inv-upcoming-list--scroll', 10);
     }
     function openUpcomingBookForm() {
       const form = document.getElementById('inv-upcoming-form');
