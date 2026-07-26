@@ -1500,6 +1500,100 @@
         setTimeout(() => toast.classList.remove('show'), 4000);
       }
     }
+
+    // ── 수험서 출간예정신간 (담당자 직접 등록, localStorage 저장) ──
+    function _loadUpcomingBooks() {
+      try { return JSON.parse(localStorage.getItem('inv_upcoming_books') || '[]'); } catch (e) { return []; }
+    }
+    function _saveUpcomingBooksData(arr) {
+      try { localStorage.setItem('inv_upcoming_books', JSON.stringify(arr)); } catch (e) {}
+    }
+    function _formatUpcomingMonth(monthStr) {
+      if (!monthStr) return '출간월 미정';
+      const [y, m] = monthStr.split('-');
+      return `${y}년 ${parseInt(m, 10)}월 출간예정`;
+    }
+    function renderUpcomingBooks() {
+      const listEl = document.getElementById('inv-upcoming-list');
+      const countEl = document.getElementById('inv-upcoming-count');
+      if (!listEl) return;
+      const items = _loadUpcomingBooks();
+      if (countEl) countEl.textContent = items.length ? `총 ${items.length}종 등록됨` : '';
+      if (!items.length) {
+        listEl.innerHTML = '<div class="empty-state"><i data-lucide="calendar-x"></i><p>등록된 출간예정 수험서가 없습니다.</p></div>';
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+        return;
+      }
+      // 예상 출간월이 빠른 순으로 정렬 (미정은 뒤로)
+      const sorted = items.slice().sort((a, b) => (a.expectedMonth || '9999') > (b.expectedMonth || '9999') ? 1 : -1);
+      listEl.innerHTML = sorted.map(b => {
+        const i = items.indexOf(b);
+        return `
+        <div class="inv-upcoming-card">
+          <div class="inv-upcoming-card-main">
+            <span class="inv-upcoming-card-title">${b.title}</span>
+            <span class="inv-upcoming-card-meta">${b.publisher}${b.certification ? ' · ' + b.certification : ''} · 등록일 ${b.addedDate}</span>
+            ${b.memo ? `<span class="inv-upcoming-card-memo">${b.memo}</span>` : ''}
+          </div>
+          <div class="inv-upcoming-card-side">
+            <span class="inv-upcoming-month-badge">${_formatUpcomingMonth(b.expectedMonth)}</span>
+            <button type="button" class="inv-upcoming-delete-btn" title="삭제" onclick="deleteUpcomingBook(${i})"><i data-lucide="trash-2"></i></button>
+          </div>
+        </div>`;
+      }).join('');
+      if (typeof lucide !== 'undefined') lucide.createIcons();
+    }
+    function openUpcomingBookForm() {
+      const form = document.getElementById('inv-upcoming-form');
+      if (form) form.style.display = 'flex';
+      const titleInput = document.getElementById('upcoming-title-input');
+      if (titleInput) titleInput.focus();
+    }
+    function closeUpcomingBookForm() {
+      const form = document.getElementById('inv-upcoming-form');
+      if (form) form.style.display = 'none';
+      ['upcoming-title-input', 'upcoming-publisher-input', 'upcoming-cert-input', 'upcoming-month-input', 'upcoming-memo-input'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.value = '';
+      });
+    }
+    function saveUpcomingBook() {
+      const title = document.getElementById('upcoming-title-input').value.trim();
+      const publisher = document.getElementById('upcoming-publisher-input').value.trim();
+      const certification = document.getElementById('upcoming-cert-input').value.trim();
+      const expectedMonth = document.getElementById('upcoming-month-input').value;
+      const memo = document.getElementById('upcoming-memo-input').value.trim();
+      if (!title || !publisher) return;
+      const items = _loadUpcomingBooks();
+      items.unshift({ title, publisher, certification, expectedMonth, memo, addedDate: new Date().toLocaleDateString('ko-KR') });
+      _saveUpcomingBooksData(items);
+      closeUpcomingBookForm();
+      renderUpcomingBooks();
+    }
+    function deleteUpcomingBook(i) {
+      const items = _loadUpcomingBooks();
+      items.splice(i, 1);
+      _saveUpcomingBooksData(items);
+      renderUpcomingBooks();
+    }
+    function exportUpcomingBooks() {
+      if (typeof XLSX === 'undefined') return;
+      const items = _loadUpcomingBooks();
+      const rows = [['도서명', '출판사', '관련 자격증', '예상 출간월', '메모', '등록일']];
+      items.forEach(b => rows.push([b.title, b.publisher, b.certification || '-', b.expectedMonth || '미정', b.memo || '-', b.addedDate]));
+      const wb = XLSX.utils.book_new();
+      const ws = XLSX.utils.aoa_to_sheet(rows);
+      ws['!cols'] = [{ wch: 40 }, { wch: 16 }, { wch: 18 }, { wch: 12 }, { wch: 30 }, { wch: 12 }];
+      XLSX.utils.book_append_sheet(wb, ws, '출간예정신간');
+      const dateStamp = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+      XLSX.writeFile(wb, `수험서_출간예정신간_${dateStamp}.xlsx`);
+      const toast = document.getElementById('exportToast');
+      if (toast) {
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 4000);
+      }
+    }
+
     // 스크롤 위치에 따라 사이드바 메뉴 자동 활성화
     // (renderRotationView(0)의 최초 호출은 inventory-app.js의 initInventoryApp에서 처리 —
     //  #inventory-panel이 display:none인 상태에서 호출하면 getBoundingClientRect가 전부 0을 반환해
