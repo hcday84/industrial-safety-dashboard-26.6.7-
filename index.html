@@ -1442,18 +1442,6 @@
       `).join('');
       if (typeof lucide !== 'undefined') lucide.createIcons();
       applyListScrollCap(listEl, '.rotation-row-card', 'inv-rotation-list--scroll', 10);
-      return;
-      // (legacy code below unreachable, kept temporarily for diff clarity)
-      const cards = listEl.querySelectorAll('.rotation-row-card');
-      if (cards.length > 10) {
-        const listTop = listEl.getBoundingClientRect().top;
-        const tenthBottom = cards[9].getBoundingClientRect().bottom;
-        listEl.style.maxHeight = Math.ceil(tenthBottom - listTop) + 'px';
-        listEl.classList.add('inv-rotation-list--scroll');
-      } else {
-        listEl.style.maxHeight = '';
-        listEl.classList.remove('inv-rotation-list--scroll');
-      }
     }
     function invRotationFilter(el) {
       document.querySelectorAll('#inventory-panel .inv-rotation-btn').forEach(b => b.classList.remove('active'));
