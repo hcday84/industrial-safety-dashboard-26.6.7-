@@ -60,6 +60,9 @@
     --color-green: #3d9226;
     --color-green-bg: rgba(61, 146, 38, 0.10);
 
+    --color-warning: #b45309;
+    --color-warning-bg: rgba(180, 83, 9, 0.08);
+
     --card-shadow: 0 10px 30px -10px rgba(7, 24, 64, 0.08);
 }
 
