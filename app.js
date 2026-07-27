@@ -3870,6 +3870,7 @@ function renderComparePanel(nameB) {
   const typeLabel = n => {
     if (PRIVATE_CERT_NAMES.has(n)) return '민간자격';
     if (PROFESSIONAL_CERT_NAMES.has(n)) return '국가전문';
+    if (GOVERNMENT_CERT_NAMES.has(n)) return '공무원';
     return '국가기술';
   };
 
