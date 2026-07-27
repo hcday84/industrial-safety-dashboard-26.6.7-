@@ -508,6 +508,14 @@ window.jumpToSection = function(sectionId) {
     window.openCompareModal && window.openCompareModal();
     return;
   }
+  if (sectionId === 'inventory:upcoming') {
+    window.switchTab('inventory');
+    setTimeout(() => {
+      const target = document.getElementById('inv-upcoming-section');
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 150);
+    return;
+  }
   const recent = (typeof getRecentCerts === 'function' ? getRecentCerts() : [])[0];
   if (recent) {
     window.selectCert(recent);
