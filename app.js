@@ -557,7 +557,8 @@ function showWelcomeScreen() {
     const allNames   = Object.keys(CERTIFICATIONS);
     const privCount  = allNames.filter(n => PRIVATE_CERT_NAMES.has(n)).length;
     const proCount   = allNames.filter(n => PROFESSIONAL_CERT_NAMES.has(n)).length;
-    const techCount  = allNames.length - proCount - privCount;
+    const govCount   = allNames.filter(n => GOVERNMENT_CERT_NAMES.has(n)).length;
+    const techCount  = allNames.length - proCount - privCount - govCount;
     const techEl  = document.getElementById('tech-cert-count');
     const proEl   = document.getElementById('pro-cert-count');
     const privEl  = document.getElementById('priv-cert-count');
