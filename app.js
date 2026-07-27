@@ -575,7 +575,6 @@ function showWelcomeScreen() {
   renderDDayWidget();
   renderFAQSection();
   renderPubCalendar();
-  renderRevisionTracker();
   renderNoticeBoard();
   initRoleTabUI();
   // 출판사 검색 위젯 초기화 (최초 1회)
