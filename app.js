@@ -4833,43 +4833,8 @@ window.filterPubCal = function(type, btn) {
 };
 
 // ============================================================
-// 28. 개정판 추적기
+// 28. 개정판 추적기 데이터 (렌더링은 발주&재고관리 모드 "개정판·신간 추적"에서 처리 — index.html 참고)
 // ============================================================
-function renderRevisionTracker() {
-  const el = document.getElementById('revision-list');
-  if (!el) return;
-  el._data = EXAM_REVISIONS;
-  _renderRevList(EXAM_REVISIONS);
-}
-
-function _renderRevList(items) {
-  const el = document.getElementById('revision-list');
-  if (!el) return;
-  const urgClass = { high:'rev-high', medium:'rev-medium', low:'rev-low' };
-  const urgLabel = { high:'긴급', medium:'보통', low:'낮음' };
-  el.innerHTML = items.map(r => `
-    <div class="rev-card ${r.updateNeeded?'rev-update-needed':''}">
-      <div class="rev-card-header">
-        <span class="rev-cert-name" onclick="window.selectCert('${r.cert.replace(/'/g,"\\'")}') ">${r.cert}</span>
-        <span class="rev-type-badge">${r.type}</span>
-        <span class="rev-urgency ${urgClass[r.urgency]}">${urgLabel[r.urgency]}</span>
-        ${r.updateNeeded?'<span class="rev-update-badge"><i class="fa-solid fa-triangle-exclamation"></i> 업데이트 필요</span>':'<span class="rev-ok-badge"><i class="fa-solid fa-circle-check"></i> 반영 완료</span>'}
-      </div>
-      <div class="rev-date"><i class="fa-solid fa-calendar"></i> 시행일: ${r.date}</div>
-      <div class="rev-desc">${r.desc}</div>
-    </div>`).join('');
-}
-
-window.filterRevisions = function(type, btn) {
-  document.querySelectorAll('.rev-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  const el = document.getElementById('revision-list');
-  if (!el || !el._data) return;
-  let list = el._data;
-  if (type==='high') list = list.filter(r=>r.urgency==='high');
-  else if (type==='update') list = list.filter(r=>r.updateNeeded);
-  _renderRevList(list);
-};
 
 // ============================================================
 // 29. 공지 게시판 (localStorage)
