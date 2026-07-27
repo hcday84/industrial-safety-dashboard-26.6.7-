@@ -798,6 +798,11 @@ function renderStatCards(cert) {
     if (passLabelEl) passLabelEl.textContent = '선택 자격증 합격률';
     if (passValEl)   passValEl.textContent   = cert.avgPassRate;
     if (passDescEl)  passDescEl.textContent  = cert.passRateSummary;
+  } else if (cert.avgCompetitionRatio) {
+    // Q-Net식 "필기 합격률 %"가 공개되지 않는 공무원 임용시험 등: 경쟁률로 대체 표시
+    if (passLabelEl) passLabelEl.textContent = '선택 자격증 평균 경쟁률';
+    if (passValEl)   passValEl.textContent   = cert.avgCompetitionRatio;
+    if (passDescEl)  passDescEl.textContent  = cert.competitionRatioSummary || '';
   }
 
 }
