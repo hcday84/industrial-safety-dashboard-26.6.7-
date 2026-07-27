@@ -1078,8 +1078,8 @@
       <section id="inv-upcoming-section" class="card-glass" style="padding:1.5rem;">
         <div class="upload-analyzer-title" style="margin-bottom:1rem; justify-content:space-between; width:100%;">
           <div class="text-cyan" style="display:flex; align-items:center; gap:0.6rem;">
-            <i data-lucide="calendar-plus"></i>
-            <span>수험서 출간예정신간</span>
+            <i data-lucide="git-compare-arrows"></i>
+            <span>개정판·신간 추적</span>
           </div>
           <div style="display:flex; align-items:center; gap:0.75rem;">
             <span id="inv-upcoming-count" class="stats-desc" style="font-weight:400;"></span>
@@ -1091,7 +1091,19 @@
             </button>
           </div>
         </div>
-        <p class="inv-upcoming-desc">출간예정신간 리스트를 등록된 자격증 정보와 대조해 관련 수험서만 자동으로 추출합니다. 담당자가 직접 등록한 항목도 함께 관리할 수 있습니다.</p>
+        <p class="inv-upcoming-desc">자격증별 출제기준·법령 개정 현황과, 그 개정에 대응하는 신간·개정판 입고 소식을 자격증 기준으로 함께 확인합니다. 개정은 됐는데 대응 신간이 아직 없으면 경고로 표시됩니다.</p>
+
+        <div class="inv-upcoming-subheader">
+          <h5><i class="fa-solid fa-code-compare"></i> 출제기준 개정 현황</h5>
+          <div class="inv-rev-filter">
+            <button class="inv-rev-btn active" onclick="window.filterRevisions('all',this)">전체</button>
+            <button class="inv-rev-btn" onclick="window.filterRevisions('high',this)">긴급</button>
+            <button class="inv-rev-btn" onclick="window.filterRevisions('update',this)">업데이트 필요</button>
+          </div>
+        </div>
+        <div id="inv-revision-list" class="inv-upcoming-list"></div>
+
+        <div class="inv-upcoming-divider"></div>
 
         <div class="inv-upcoming-subheader">
           <h5><i class="fa-solid fa-store"></i> 신간 매칭 결과</h5>
