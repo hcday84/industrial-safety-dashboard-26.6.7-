@@ -15696,11 +15696,11 @@ const CERTIFICATIONS = {
     competitionRatioSummary: '2025년 1차 기준 (남 1,754명 모집·17,775명 지원 / 여 435명 모집·9,709명 지원)',
     schedules: [
       { round: '2026년 1차', isCurrent: false, isDone: true,
-        writtenApply: '-', writtenExam: '03.14', writtenResult: '-',
-        practicalApply: '-', practicalExam: '-', finalResult: '06.19' },
+        writtenApply: '-', writtenExam: '2026-03-14', writtenResult: '-',
+        practicalApply: '-', practicalExam: '-', finalResult: '2026-06-19' },
       { round: '2026년 2차', isCurrent: true, isDone: false,
-        writtenApply: '07.10 ~ 07.20', writtenExam: '08.22', writtenResult: '08.28',
-        practicalApply: '-', practicalExam: '09.07 ~ 10.24', finalResult: '12.11' },
+        writtenApply: '2026-07-10 ~ 2026-07-20', writtenExam: '2026-08-22', writtenResult: '2026-08-28',
+        practicalApply: '-', practicalExam: '2026-09-07 ~ 2026-10-24', finalResult: '2026-12-11' },
     ],
     milestones: [
       { label: '1차 필기시험', date: '2026-03-14' },
