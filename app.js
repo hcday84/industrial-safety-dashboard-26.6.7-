@@ -465,7 +465,7 @@ const ROLE_SHORTCUTS = {
   ],
   manager: [
     { icon: 'fa-calendar-check',  label: '출판 일정 캘린더',   desc: '수험서 출판 권장 시기 자동 산출',    section: 'pub-calendar-section', color: '#3b82f6' },
-    { icon: 'fa-code-compare',    label: '개정판·신간 추적',   desc: '출제기준 개정 및 대응 신간 확인',     section: 'inventory:upcoming',   color: '#8b5cf6' },
+    { icon: 'fa-code-compare',    label: '수험서 개정판·신간 추적',   desc: '출제기준 개정 및 대응 신간 확인',     section: 'inventory:upcoming',   color: '#8b5cf6' },
     { icon: 'fa-bullhorn',        label: '공지 게시판',        desc: '팀 공지사항 등록 및 확인',           section: 'notice-section',       color: '#f59e0b' },
     { icon: 'fa-chart-pie',       label: '합격 통계',          desc: '자격증별 합격률 & 과목 공략',        section: 'analytics-section',    color: '#10b981' },
   ],
@@ -473,7 +473,7 @@ const ROLE_SHORTCUTS = {
     { icon: 'fa-calendar-check',  label: '출판 일정 캘린더',   desc: '수험서 출판 일정 확인',              section: 'pub-calendar-section', color: '#3b82f6' },
     { icon: 'fa-route',           label: '합격 전략 가이드',   desc: '자격증별 최적 공부 방법',            section: 'study-section',        color: '#10b981' },
     { icon: 'fa-diagram-project', label: '자격증 로드맵',      desc: '자격증 연계 진행 경로',              section: 'roadmap-section',      color: '#8b5cf6' },
-    { icon: 'fa-code-compare',    label: '개정판·신간 추적',   desc: '출제기준 개정 및 대응 신간 확인',     section: 'inventory:upcoming',   color: '#f59e0b' },
+    { icon: 'fa-code-compare',    label: '수험서 개정판·신간 추적',   desc: '출제기준 개정 및 대응 신간 확인',     section: 'inventory:upcoming',   color: '#f59e0b' },
   ],
 };
 
