@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cert-dashboard-v120';
+const CACHE_NAME = 'cert-dashboard-v121';
 const ASSETS = [
   '/style.css',
   '/manifest.json',
@@ -9,6 +9,7 @@ const ASSETS = [
   '/kuksiwon_api.js',
   '/inventory-app.js',
   '/inventory-rotation-data.js',
+  '/inventory-upcoming-newbooks-data.js',
   '/inventory-styles-scoped.css',
   '/icons/icon-192.png',
   '/icons/icon-512.png',
