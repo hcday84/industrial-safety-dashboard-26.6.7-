@@ -1512,6 +1512,57 @@
       }
     }
 
+    // ── 개정판 추적기 + 신간 매칭 (자격증명 기준 연결) ──────────────────────────
+    // EXAM_REVISIONS(app.js, 출제기준·법령 개정 현황)와 UPCOMING_NEWBOOKS_DATA(입고예정 신간)를
+    // certification 필드로 연결해, "개정됐는데 대응 신간이 아직 없는" 자격증을 바로 찾을 수 있게 한다.
+    function _matchingUpcomingBooks(certName) {
+      if (typeof UPCOMING_NEWBOOKS_DATA === 'undefined') return [];
+      return UPCOMING_NEWBOOKS_DATA.filter(b => b.certification === certName);
+    }
+    function renderRevisionTrackerMerged(items) {
+      const el = document.getElementById('inv-revision-list');
+      if (!el || typeof EXAM_REVISIONS === 'undefined') return;
+      const data = items || EXAM_REVISIONS;
+      el._data = EXAM_REVISIONS;
+      const urgClass = { high: 'inv-rev-high', medium: 'inv-rev-medium', low: 'inv-rev-low' };
+      const urgLabel = { high: '긴급', medium: '보통', low: '낮음' };
+      if (!data.length) {
+        el.innerHTML = '<div class="empty-state"><i data-lucide="search-x"></i><p>해당하는 항목이 없습니다.</p></div>';
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+        return;
+      }
+      el.innerHTML = data.map(r => {
+        const matched = _matchingUpcomingBooks(r.cert);
+        const matchHtml = matched.length
+          ? `<div class="inv-rev-newbooks">${matched.map(b => `<span class="inv-rev-newbook-chip"><i class="fa-solid fa-book"></i> ${b.title}</span>`).join('')}</div>`
+          : (r.updateNeeded ? '<div class="inv-rev-newbooks"><span class="inv-rev-gap-chip"><i class="fa-solid fa-triangle-exclamation"></i> 대응 신간 미확인</span></div>' : '');
+        return `
+        <div class="inv-rev-card ${r.updateNeeded ? 'inv-rev-update-needed' : ''}">
+          <div class="inv-rev-card-header">
+            <span class="inv-rev-cert-name" onclick="goToCertDashboard('${r.cert.replace(/'/g, "\\'")}')">${r.cert}</span>
+            <span class="inv-rev-type-badge">${r.type}</span>
+            <span class="inv-rev-urgency ${urgClass[r.urgency]}">${urgLabel[r.urgency]}</span>
+            ${r.updateNeeded
+              ? '<span class="inv-rev-update-badge"><i class="fa-solid fa-triangle-exclamation"></i> 업데이트 필요</span>'
+              : '<span class="inv-rev-ok-badge"><i class="fa-solid fa-circle-check"></i> 반영 완료</span>'}
+          </div>
+          <div class="inv-rev-date"><i class="fa-solid fa-calendar"></i> 시행일: ${r.date}</div>
+          <div class="inv-rev-desc">${r.desc}</div>
+          ${matchHtml}
+        </div>`;
+      }).join('');
+      if (typeof lucide !== 'undefined') lucide.createIcons();
+    }
+    window.filterRevisions = function(type, btn) {
+      document.querySelectorAll('#inventory-panel .inv-rev-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      if (typeof EXAM_REVISIONS === 'undefined') return;
+      let list = EXAM_REVISIONS;
+      if (type === 'high') list = list.filter(r => r.urgency === 'high');
+      else if (type === 'update') list = list.filter(r => r.updateNeeded);
+      renderRevisionTrackerMerged(list);
+    };
+
     // ── 수험서 출간예정신간 - 매칭 리스트 (inventory-upcoming-newbooks-data.js) ──
     function renderUpcomingNewbooksMatch() {
       const listEl = document.getElementById('inv-upcoming-match-list');
@@ -1530,6 +1581,7 @@
         return;
       }
 
+      const revisedCerts = typeof EXAM_REVISIONS !== 'undefined' ? new Set(EXAM_REVISIONS.map(r => r.cert)) : new Set();
       listEl.innerHTML = UPCOMING_NEWBOOKS_DATA.map(b => `
         <div class="inv-upcoming-card">
           <div class="inv-upcoming-card-main">
@@ -1537,6 +1589,7 @@
             <span class="inv-upcoming-card-meta">${b.publisher} · ${b.category}${b.storeIncoming ? ` · 울산점 입고예정 ${b.storeIncoming}권` : ''}</span>
           </div>
           <div class="inv-upcoming-card-side">
+            ${revisedCerts.has(b.certification) ? '<span class="inv-rev-cross-badge" title="출제기준 개정 대응 신간"><i class="fa-solid fa-code-compare"></i></span>' : ''}
             <span class="inv-upcoming-cert-badge">${b.certification}</span>
           </div>
         </div>
