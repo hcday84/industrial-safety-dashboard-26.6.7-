@@ -1824,3 +1824,138 @@
     border-color: rgba(239, 68, 68, 0.4);
     color: var(--color-red);
 }
+
+/* ── 개정판 추적기 (출제기준·법령 개정 현황 + 대응 신간 연결) ── */
+#inventory-panel .inv-rev-filter {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+#inventory-panel .inv-rev-btn {
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    border: 1px solid var(--card-border);
+    background: transparent;
+    color: var(--text-secondary);
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+#inventory-panel .inv-rev-btn:hover {
+    background: rgba(76, 175, 48, 0.08);
+    color: var(--color-indigo);
+}
+#inventory-panel .inv-rev-btn.active {
+    background: var(--color-indigo);
+    border-color: var(--color-indigo);
+    color: #fff;
+}
+#inventory-panel .inv-rev-card {
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition-smooth);
+}
+#inventory-panel.light-mode .inv-rev-card {
+    background: rgba(255, 255, 255, 0.5);
+}
+#inventory-panel .inv-rev-card.inv-rev-update-needed {
+    border-left: 3px solid var(--color-warning);
+}
+#inventory-panel .inv-rev-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.35rem;
+}
+#inventory-panel .inv-rev-cert-name {
+    font-weight: 700;
+    font-size: 0.88rem;
+    color: var(--color-indigo);
+    cursor: pointer;
+}
+#inventory-panel .inv-rev-cert-name:hover {
+    text-decoration: underline;
+}
+#inventory-panel .inv-rev-type-badge {
+    font-size: 0.72rem;
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text-muted);
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+}
+#inventory-panel .inv-rev-urgency {
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+}
+#inventory-panel .inv-rev-high   { background: rgba(248, 113, 113, 0.12); color: var(--color-red); }
+#inventory-panel .inv-rev-medium { background: rgba(251, 191, 36, 0.12); color: var(--color-warning); }
+#inventory-panel .inv-rev-low    { background: rgba(76, 175, 48, 0.12); color: var(--color-indigo); }
+#inventory-panel .inv-rev-update-badge {
+    font-size: 0.72rem;
+    font-weight: 700;
+    background: rgba(251, 191, 36, 0.12);
+    color: var(--color-warning);
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+}
+#inventory-panel .inv-rev-ok-badge {
+    font-size: 0.72rem;
+    font-weight: 700;
+    background: rgba(76, 175, 48, 0.12);
+    color: var(--color-indigo);
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+}
+#inventory-panel .inv-rev-date {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+}
+#inventory-panel .inv-rev-desc {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+#inventory-panel .inv-rev-newbooks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.6rem;
+}
+#inventory-panel .inv-rev-newbook-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.72rem;
+    color: var(--color-cyan);
+    background: rgba(46, 111, 224, 0.1);
+    border: 1px solid rgba(46, 111, 224, 0.3);
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+}
+#inventory-panel .inv-rev-gap-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--color-red);
+    background: rgba(248, 113, 113, 0.1);
+    border: 1px solid rgba(248, 113, 113, 0.3);
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+}
+#inventory-panel .inv-rev-cross-badge {
+    display: inline-flex;
+    align-items: center;
+    color: var(--color-warning);
+    font-size: 0.85rem;
+}
