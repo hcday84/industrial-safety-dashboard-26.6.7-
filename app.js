@@ -2643,7 +2643,7 @@ function renderCertDropdown(query) {
         <i class="fa-solid ${cert.icon} cert-dd-icon"></i>
         <div class="cert-dd-info">
           <span class="cert-dd-name">${name}</span>
-          <span class="cert-dd-meta">${cert.category} · 평균 합격률 ${cert.avgPassRate}</span>
+          <span class="cert-dd-meta">${cert.category} · ${cert.avgPassRate ? '평균 합격률 ' + cert.avgPassRate : (cert.avgCompetitionRatio ? '평균 경쟁률 ' + cert.avgCompetitionRatio : '')}</span>
         </div>
       </div>
     `;
