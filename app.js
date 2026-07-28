@@ -803,6 +803,11 @@ function renderStatCards(cert) {
     if (passLabelEl) passLabelEl.textContent = '선택 자격증 평균 경쟁률';
     if (passValEl)   passValEl.textContent   = cert.avgCompetitionRatio;
     if (passDescEl)  passDescEl.textContent  = cert.competitionRatioSummary || '';
+  } else {
+    // 둘 다 없으면 이전에 선택했던 자격증 값이 남아있지 않도록 기본값으로 리셋
+    if (passLabelEl) passLabelEl.textContent = '전국 평균 합격률';
+    if (passValEl)   passValEl.textContent   = '–';
+    if (passDescEl)  passDescEl.textContent  = '집계된 데이터가 없습니다.';
   }
 
 }
