@@ -829,15 +829,25 @@
 }
 #inventory-panel .inv-return-btn--consider{
     background: transparent;
-    border-color: var(--color-warning);
-    color: var(--color-warning);
+    border-color: var(--color-green);
+    color: var(--color-green);
 }
 #inventory-panel .inv-return-btn--consider:hover,
 #inventory-panel .inv-return-btn--consider.active{
-    background: color-mix(in srgb, var(--color-warning) 22%, transparent);
-    border-color: var(--color-warning);
-    color: var(--color-warning);
+    background: color-mix(in srgb, var(--color-green) 22%, transparent);
+    border-color: var(--color-green);
+    color: var(--color-green);
     font-weight: 700;
+}
+#inventory-panel .inv-return-badge-urgent{
+    background: color-mix(in srgb, var(--color-red) 15%, transparent);
+    color: var(--color-red);
+    border: 1px solid color-mix(in srgb, var(--color-red) 35%, transparent);
+}
+#inventory-panel .inv-return-badge-consider{
+    background: color-mix(in srgb, var(--color-green) 15%, transparent);
+    color: var(--color-green);
+    border: 1px solid color-mix(in srgb, var(--color-green) 35%, transparent);
 }
 #inventory-panel .inv-return-chips{
     display: flex;
