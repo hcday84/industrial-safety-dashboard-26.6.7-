@@ -792,6 +792,69 @@
     font-weight: 700;
 }
 
+/* 반품 권고 도서 - 우선순위 필터 버튼 (기본 스타일은 .inv-rotation-btn과 공유) */
+#inventory-panel .inv-return-btn{
+    padding: 0.6rem 1.1rem;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--text-secondary);
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+#inventory-panel .inv-return-btn:hover{
+    background: rgba(76, 175, 48, 0.08);
+    color: var(--color-indigo);
+}
+#inventory-panel .inv-return-btn.active{
+    background: rgba(76, 175, 48, 0.15);
+    color: var(--color-indigo);
+    font-weight: 700;
+    border-color: rgba(76, 175, 48, 0.3);
+}
+#inventory-panel .inv-return-btn--urgent{
+    background: transparent;
+    border-color: var(--color-red);
+    color: var(--color-red);
+}
+#inventory-panel .inv-return-btn--urgent:hover,
+#inventory-panel .inv-return-btn--urgent.active{
+    background: color-mix(in srgb, var(--color-red) 18%, transparent);
+    border-color: var(--color-red);
+    color: var(--color-red);
+    font-weight: 700;
+}
+#inventory-panel .inv-return-btn--consider{
+    background: transparent;
+    border-color: var(--color-warning);
+    color: var(--color-warning);
+}
+#inventory-panel .inv-return-btn--consider:hover,
+#inventory-panel .inv-return-btn--consider.active{
+    background: color-mix(in srgb, var(--color-warning) 22%, transparent);
+    border-color: var(--color-warning);
+    color: var(--color-warning);
+    font-weight: 700;
+}
+#inventory-panel .inv-return-chips{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: 0.4rem;
+}
+#inventory-panel .inv-return-chip{
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--card-border);
+    padding: 0.12rem 0.5rem;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
 /* 미회전 기간별 보기 - 종수/권수 요약 배지 */
 #inventory-panel .inv-rotation-summary{
     display: flex;
