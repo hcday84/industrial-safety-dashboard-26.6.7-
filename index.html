@@ -1137,6 +1137,35 @@
         <div id="inv-upcoming-list" class="inv-upcoming-list"></div>
       </section>
 
+      <main id="inv-return-section" class="dashboard-workspace card-glass">
+        <div class="upload-analyzer-title" style="margin-bottom:1rem; justify-content:space-between; width:100%;">
+          <div class="text-red" style="display:flex; align-items:center; gap:0.6rem;">
+            <i data-lucide="package-x"></i>
+            <span>반품 권고 도서</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <span id="inv-return-updated" class="stats-desc" style="font-weight:400;"></span>
+            <button type="button" id="btnExportReturnRecs" class="btn btn-cyan btn-sm" onclick="exportReturnRecommendations()">
+              <i data-lucide="file-spreadsheet"></i> 엑셀로 내보내기
+            </button>
+          </div>
+        </div>
+        <p class="inv-upcoming-desc">미회전 기간·구판(제목 표기 연도) 여부·재고 수량·출제기준 개정 대응 필요 여부를 종합해 반품 검토 대상을 자동으로 골라냅니다. 최종 반품 여부는 담당자가 직접 판단해 주세요.</p>
+        <div class="inv-rotation-filter">
+          <h5><i class="fa-solid fa-triangle-exclamation"></i> 반품 우선순위</h5>
+          <div class="inv-rotation-btn-group">
+            <button type="button" class="inv-return-btn active" data-tier="all" onclick="invReturnFilter(this)">전체</button>
+            <button type="button" class="inv-return-btn inv-return-btn--urgent" data-tier="urgent" onclick="invReturnFilter(this)">최우선 반품</button>
+            <button type="button" class="inv-return-btn inv-return-btn--consider" data-tier="consider" onclick="invReturnFilter(this)">반품 검토</button>
+          </div>
+          <div class="inv-rotation-summary">
+            <span class="inv-rotation-summary-item"><strong id="invReturnCount">0</strong>종</span>
+            <span class="inv-rotation-summary-item"><strong id="invReturnVolume">0</strong>권</span>
+          </div>
+        </div>
+        <div class="inv-rotation-list" id="invReturnList"></div>
+      </main>
+
       <main id="inv-books-section" class="dashboard-workspace card-glass">
         <div class="upload-analyzer-title" style="margin-bottom:1rem; justify-content:space-between; width:100%;">
           <div class="text-warning" style="display:flex; align-items:center; gap:0.6rem;">
@@ -1167,35 +1196,6 @@
           </div>
         </div>
         <div class="inv-rotation-list" id="invRotationList"></div>
-      </main>
-
-      <main id="inv-return-section" class="dashboard-workspace card-glass">
-        <div class="upload-analyzer-title" style="margin-bottom:1rem; justify-content:space-between; width:100%;">
-          <div class="text-red" style="display:flex; align-items:center; gap:0.6rem;">
-            <i data-lucide="package-x"></i>
-            <span>반품 권고 도서</span>
-          </div>
-          <div style="display:flex; align-items:center; gap:0.75rem;">
-            <span id="inv-return-updated" class="stats-desc" style="font-weight:400;"></span>
-            <button type="button" id="btnExportReturnRecs" class="btn btn-cyan btn-sm" onclick="exportReturnRecommendations()">
-              <i data-lucide="file-spreadsheet"></i> 엑셀로 내보내기
-            </button>
-          </div>
-        </div>
-        <p class="inv-upcoming-desc">미회전 기간·구판(제목 표기 연도) 여부·재고 수량·출제기준 개정 대응 필요 여부를 종합해 반품 검토 대상을 자동으로 골라냅니다. 최종 반품 여부는 담당자가 직접 판단해 주세요.</p>
-        <div class="inv-rotation-filter">
-          <h5><i class="fa-solid fa-triangle-exclamation"></i> 반품 우선순위</h5>
-          <div class="inv-rotation-btn-group">
-            <button type="button" class="inv-return-btn active" data-tier="all" onclick="invReturnFilter(this)">전체</button>
-            <button type="button" class="inv-return-btn inv-return-btn--urgent" data-tier="urgent" onclick="invReturnFilter(this)">최우선 반품</button>
-            <button type="button" class="inv-return-btn inv-return-btn--consider" data-tier="consider" onclick="invReturnFilter(this)">반품 검토</button>
-          </div>
-          <div class="inv-rotation-summary">
-            <span class="inv-rotation-summary-item"><strong id="invReturnCount">0</strong>종</span>
-            <span class="inv-rotation-summary-item"><strong id="invReturnVolume">0</strong>권</span>
-          </div>
-        </div>
-        <div class="inv-rotation-list" id="invReturnList"></div>
       </main>
 
       </div><!-- /.inv-main-content -->
