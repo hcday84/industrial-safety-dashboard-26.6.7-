@@ -1612,7 +1612,7 @@
       listEl.innerHTML = items.map(b => `
         <div class="rotation-row-card">
           <div class="book-title-meta">
-            <span class="badge ${b.tier === 'urgent' ? 'badge-danger' : 'badge-warning'}">${tierLabel[b.tier]}</span>
+            <span class="badge ${b.tier === 'urgent' ? 'badge-red' : 'badge-orange'}">${tierLabel[b.tier]}</span>
             <h4>${b.title}</h4>
             <div class="book-meta-inline"><span class="pub-name">${b.publisher}</span>${b.author ? ' | ' + b.author : ''}</div>
             <div class="inv-return-chips">${b.reasonChips.map(c => `<span class="inv-return-chip">${c}</span>`).join('')}</div>
