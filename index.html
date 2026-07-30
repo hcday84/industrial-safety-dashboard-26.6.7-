@@ -1544,6 +1544,114 @@
       }
     }
 
+    // ── 반품 권고 도서 ───────────────────────────────────────────────────────
+    // 미회전 데이터(ROTATION_BOOKS_DATA)만으로 자동 산출한다. 다음 신호를 점수로 합산:
+    //   미회전 기간(18/15/12개월+), 제목에 표기된 연도가 올해보다 이전(구판),
+    //   재고 2권 이상, (자격증명을 알 수 있는 경우) 그 자격증의 출제기준 개정 대응 필요 여부.
+    // 점수는 담당자 판단을 돕는 참고용 신호일 뿐 — 최종 반품 여부는 항상 사람이 확인해야 한다.
+    function computeReturnRecommendations() {
+      if (typeof ROTATION_BOOKS_DATA === 'undefined') return [];
+      const items = dedupeRotationItems();
+      const currentYear = new Date().getFullYear();
+      const revisedCerts = typeof EXAM_REVISIONS !== 'undefined'
+        ? new Set(EXAM_REVISIONS.filter(r => r.updateNeeded).map(r => r.cert))
+        : new Set();
+
+      return items.map(b => {
+        const yearMatch = b.title.match(/^(20\d{2})\b/);
+        const titleYear = yearMatch ? parseInt(yearMatch[1], 10) : null;
+        const isOutdated = titleYear !== null && titleYear < currentYear;
+        const certMatch = (b.reason || '').match(/자격증명:([^+]+)/);
+        const cert = certMatch ? certMatch[1] : null;
+        const examRevised = !!(cert && revisedCerts.has(cert));
+
+        let score = 0;
+        if (b._bucket === 18) score += 3;
+        else if (b._bucket === 15) score += 2;
+        else if (b._bucket === 12) score += 1;
+        if (isOutdated) score += 2;
+        if ((b.stock || 0) >= 2) score += 1;
+        if (examRevised) score += 2;
+
+        let tier = null;
+        if (score >= 5) tier = 'urgent';
+        else if (score >= 3) tier = 'consider';
+
+        const reasonChips = [`${b._bucket}개월+ 미회전`];
+        if (isOutdated) reasonChips.push(`${titleYear}년판(구판)`);
+        if ((b.stock || 0) >= 2) reasonChips.push(`재고 ${b.stock}권`);
+        if (examRevised) reasonChips.push('출제기준 개정 대응 필요');
+
+        return Object.assign({}, b, { score, tier, isOutdated, titleYear, cert, examRevised, reasonChips });
+      }).filter(b => b.tier)
+        .sort((a, b) => b.score - a.score);
+    }
+    function renderReturnRecommendations(tier) {
+      const countEl = document.getElementById('invReturnCount');
+      const volumeEl = document.getElementById('invReturnVolume');
+      const listEl = document.getElementById('invReturnList');
+      const updatedEl = document.getElementById('inv-return-updated');
+      if (!listEl) return;
+      if (updatedEl) updatedEl.textContent = formatRotationAsOfDate();
+
+      const all = computeReturnRecommendations();
+      const items = (!tier || tier === 'all') ? all : all.filter(b => b.tier === tier);
+
+      const titleCount = new Set(items.map(b => b.title)).size;
+      const volumeCount = items.reduce((sum, b) => sum + (b.stock || 0), 0);
+      if (countEl) countEl.textContent = titleCount.toLocaleString();
+      if (volumeEl) volumeEl.textContent = volumeCount.toLocaleString();
+
+      if (items.length === 0) {
+        listEl.innerHTML = '<div class="empty-state"><i data-lucide="thumbs-up"></i><p>해당하는 반품 권고 도서가 없습니다.</p></div>';
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+        return;
+      }
+
+      const tierLabel = { urgent: '최우선 반품', consider: '반품 검토' };
+      listEl.innerHTML = items.map(b => `
+        <div class="rotation-row-card">
+          <div class="book-title-meta">
+            <span class="badge ${b.tier === 'urgent' ? 'badge-danger' : 'badge-warning'}">${tierLabel[b.tier]}</span>
+            <h4>${b.title}</h4>
+            <div class="book-meta-inline"><span class="pub-name">${b.publisher}</span>${b.author ? ' | ' + b.author : ''}</div>
+            <div class="inv-return-chips">${b.reasonChips.map(c => `<span class="inv-return-chip">${c}</span>`).join('')}</div>
+          </div>
+          <div class="rotation-row-side">
+            <span class="rotation-row-store">${b.store || '-'}</span>
+            <span class="rotation-row-stock">재고 ${b.stock}권</span>
+          </div>
+        </div>
+      `).join('');
+      if (typeof lucide !== 'undefined') lucide.createIcons();
+      applyListScrollCap(listEl, '.rotation-row-card', 'inv-rotation-list--scroll', 10);
+    }
+    function invReturnFilter(el) {
+      document.querySelectorAll('#inventory-panel .inv-return-btn').forEach(b => b.classList.remove('active'));
+      el.classList.add('active');
+      renderReturnRecommendations(el.dataset.tier);
+    }
+    function exportReturnRecommendations() {
+      if (typeof XLSX === 'undefined') return;
+      const items = computeReturnRecommendations();
+      const tierLabel = { urgent: '최우선 반품', consider: '반품 검토' };
+      const rows = [['우선순위', '점수', '도서명', '출판사', '저자', '매장', '재고(권)', 'ISBN', '판정 근거']];
+      items.forEach(b => {
+        rows.push([tierLabel[b.tier], b.score, b.title, b.publisher || '-', b.author || '-', b.store || '-', b.stock || 0, b.isbn || '-', b.reasonChips.join(', ')]);
+      });
+      const wb = XLSX.utils.book_new();
+      const ws = XLSX.utils.aoa_to_sheet(rows);
+      ws['!cols'] = [{ wch: 12 }, { wch: 6 }, { wch: 40 }, { wch: 16 }, { wch: 14 }, { wch: 10 }, { wch: 10 }, { wch: 16 }, { wch: 36 }];
+      XLSX.utils.book_append_sheet(wb, ws, '반품_권고');
+      const dateStamp = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+      XLSX.writeFile(wb, `수험서_반품권고_${dateStamp}.xlsx`);
+      const toast = document.getElementById('exportToast');
+      if (toast) {
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 4000);
+      }
+    }
+
     // ── 개정판 추적기 + 신간 매칭 (자격증명 기준 연결) ──────────────────────────
     // EXAM_REVISIONS(app.js, 출제기준·법령 개정 현황)와 UPCOMING_NEWBOOKS_DATA(입고예정 신간)를
     // certification 필드로 연결해, "개정됐는데 대응 신간이 아직 없는" 자격증을 바로 찾을 수 있게 한다.
