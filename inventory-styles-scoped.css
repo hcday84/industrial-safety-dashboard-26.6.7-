@@ -640,9 +640,9 @@
     color: #4caf30;
 }
 #inventory-panel .badge-red{
-    background: rgba(76, 175, 48, 0.12);
-    color: #4caf30;
-    border: 1px solid rgba(76, 175, 48, 0.3);
+    background: color-mix(in srgb, var(--color-red) 12%, transparent);
+    color: var(--color-red);
+    border: 1px solid color-mix(in srgb, var(--color-red) 30%, transparent);
 }
 #inventory-panel .badge-cyan{
     background: rgba(46, 111, 224, 0.15);
