@@ -2026,6 +2026,18 @@
     padding: 0.2rem 0.6rem;
     border-radius: 999px;
 }
+/* ── 다음 달 발주 예측 ── */
+#inventory-panel .inv-forecast-action {
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    margin-left: auto;
+}
+#inventory-panel .inv-forecast-action--danger { background: rgba(248, 113, 113, 0.12); color: var(--color-red); }
+#inventory-panel .inv-forecast-action--hold   { background: rgba(251, 191, 36, 0.12); color: var(--color-warning); }
+#inventory-panel .inv-forecast-action--info   { background: rgba(46, 111, 224, 0.12); color: var(--color-cyan); }
+#inventory-panel .inv-forecast-action--ok     { background: rgba(76, 175, 48, 0.12); color: var(--color-indigo); }
 #inventory-panel .inv-rev-cross-badge {
     display: inline-flex;
     align-items: center;
