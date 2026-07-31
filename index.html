@@ -1140,6 +1140,27 @@
         <div id="inv-upcoming-list" class="inv-upcoming-list"></div>
       </section>
 
+      <main id="inv-forecast-section" class="dashboard-workspace card-glass">
+        <div class="upload-analyzer-title" style="margin-bottom:1rem; justify-content:space-between; width:100%;">
+          <div class="text-indigo" style="display:flex; align-items:center; gap:0.6rem;">
+            <i data-lucide="calendar-clock"></i>
+            <span>다음 달 발주 예측</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <span id="inv-forecast-month" class="badge badge-info"></span>
+            <span id="inv-forecast-updated" class="stats-desc" style="font-weight:400;"></span>
+            <button type="button" id="btnExportForecast" class="btn btn-cyan btn-sm" onclick="exportNextMonthForecast()">
+              <i data-lucide="file-spreadsheet"></i> 엑셀로 내보내기
+            </button>
+          </div>
+        </div>
+        <p class="inv-upcoming-desc">다음 달 시행 예정 시험을 자격증별로 모아, 등록된 수험서 종수·미회전 재고·입고 예정 신간을 함께 보여줍니다. 재고가 이미 쌓여 있으면 소진을 우선하고, 재고가 부족하면 발주를 검토하세요.</p>
+        <div class="inv-rotation-summary" style="margin-bottom:0.75rem;">
+          <span class="inv-rotation-summary-item"><strong id="invForecastCount">0</strong>개 자격증</span>
+        </div>
+        <div class="inv-upcoming-list" id="invForecastList"></div>
+      </main>
+
       <main id="inv-return-section" class="dashboard-workspace card-glass">
         <div class="upload-analyzer-title" style="margin-bottom:1rem; justify-content:space-between; width:100%;">
           <div class="text-red" style="display:flex; align-items:center; gap:0.6rem;">
