@@ -667,6 +667,7 @@ window.initInventoryApp = function() {
     updateReorderStatus();
     renderBooksList();
     // 패널이 display:block으로 전환된 뒤에 호출해야 10번째 항목 높이 계산(getBoundingClientRect)이 정상 동작함
+    if (typeof renderNextMonthForecast === 'function') renderNextMonthForecast();
     if (typeof renderReturnRecommendations === 'function') renderReturnRecommendations('all');
     if (typeof renderRotationView === 'function') renderRotationView(0);
     if (typeof renderRevisionTrackerMerged === 'function') renderRevisionTrackerMerged();
