@@ -1573,6 +1573,122 @@
     //   미회전 기간(18/15/12개월+), 제목에 표기된 연도가 올해보다 이전(구판),
     //   재고 2권 이상, (자격증명을 알 수 있는 경우) 그 자격증의 출제기준 개정 대응 필요 여부.
     // 점수는 담당자 판단을 돕는 참고용 신호일 뿐 — 최종 반품 여부는 항상 사람이 확인해야 한다.
+    // ── 다음 달 발주 예측 (등록된 시험일정 + 재고/신간 현황 조합) ──────────────
+    function _nextMonthCertExams() {
+      if (typeof fetchAllMonthlyExams !== 'function') return { month: null, items: [] };
+      const now = new Date();
+      const nextMonth = now.getMonth() + 2 > 12 ? 1 : now.getMonth() + 2;
+      const data = fetchAllMonthlyExams();
+      const bucket = data[nextMonth] || { written: [], practical: [], single: [] };
+      const merged = {};
+      const addAll = (arr, type) => {
+        arr.forEach(it => {
+          if (!merged[it.certName]) merged[it.certName] = { certName: it.certName, exams: [] };
+          merged[it.certName].exams.push({ type, round: it.round, dateRange: it.dateRange });
+        });
+      };
+      addAll(bucket.written, '필기');
+      addAll(bucket.practical, '실기');
+      addAll(bucket.single, '단일');
+      return { month: nextMonth, items: Object.values(merged).sort((a, b) => a.certName.localeCompare(b.certName, 'ko')) };
+    }
+    function computeNextMonthForecast() {
+      const { month, items } = _nextMonthCertExams();
+      if (!items.length) return { month, items: [] };
+
+      const rotationAll = (typeof dedupeRotationItems === 'function') ? dedupeRotationItems() : [];
+      const priority = { danger: 0, hold: 1, info: 2, ok: 3 };
+
+      const enriched = items.map(entry => {
+        const certName = entry.certName;
+        const registeredBooks = (typeof REAL_BOOKS !== 'undefined' && REAL_BOOKS[certName]) ? REAL_BOOKS[certName].length : 0;
+        const rotationMatches = rotationAll.filter(b => {
+          const m = (b.reason || '').match(/자격증명:([^+]+)/);
+          return m && m[1] === certName;
+        });
+        const rotationStock = rotationMatches.reduce((s, b) => s + (b.stock || 0), 0);
+        const upcoming = (typeof UPCOMING_NEWBOOKS_DATA !== 'undefined') ? UPCOMING_NEWBOOKS_DATA.filter(b => b.certification === certName) : [];
+        const upcomingIncoming = upcoming.reduce((s, b) => s + (b.storeIncoming || 0), 0);
+
+        let action, actionKey;
+        if (registeredBooks === 0) {
+          action = '등록된 수험서 없음 · 소싱 필요'; actionKey = 'danger';
+        } else if (rotationMatches.length > 0) {
+          action = '기존 재고 소진 우선'; actionKey = 'hold';
+        } else if (upcoming.length > 0) {
+          action = '신간 입고 확인 필요'; actionKey = 'info';
+        } else {
+          action = '정상 발주 검토'; actionKey = 'ok';
+        }
+
+        return Object.assign({}, entry, { registeredBooks, rotationCount: rotationMatches.length, rotationStock, upcomingCount: upcoming.length, upcomingIncoming, action, actionKey });
+      });
+
+      enriched.sort((a, b) => priority[a.actionKey] - priority[b.actionKey] || a.certName.localeCompare(b.certName, 'ko'));
+      return { month, items: enriched };
+    }
+    function renderNextMonthForecast() {
+      const listEl = document.getElementById('invForecastList');
+      const countEl = document.getElementById('invForecastCount');
+      const monthEl = document.getElementById('inv-forecast-month');
+      const updatedEl = document.getElementById('inv-forecast-updated');
+      if (!listEl) return;
+      if (updatedEl) updatedEl.textContent = formatRotationAsOfDate();
+
+      const { month, items } = computeNextMonthForecast();
+      if (monthEl) monthEl.textContent = month ? `${month}월 기준` : '-';
+      if (countEl) countEl.textContent = items.length.toLocaleString();
+
+      if (items.length === 0) {
+        listEl.innerHTML = '<div class="empty-state"><i data-lucide="calendar-x"></i><p>다음 달에 예정된 시험이 없습니다.</p></div>';
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+        return;
+      }
+
+      const actionLabel = { danger: '소싱 필요', hold: '재고 소진 우선', info: '신간 확인', ok: '발주 검토' };
+      listEl.innerHTML = items.map(it => `
+        <div class="inv-rev-card">
+          <div class="inv-rev-card-header">
+            <span class="inv-rev-cert-name" onclick="goToCertDashboard('${it.certName.replace(/'/g, "\\'")}')">${it.certName}</span>
+            ${it.exams.map(e => `<span class="inv-rev-type-badge">${e.type} ${e.dateRange}</span>`).join('')}
+            <span class="inv-forecast-action inv-forecast-action--${it.actionKey}">${it.action}</span>
+          </div>
+          <div class="inv-return-chips">
+            <span class="inv-return-chip">등록 수험서 ${it.registeredBooks}종</span>
+            ${it.rotationCount ? `<span class="inv-return-chip">미회전 재고 ${it.rotationCount}종 · ${it.rotationStock}권</span>` : ''}
+            ${it.upcomingCount ? `<span class="inv-return-chip">입고예정 신간 ${it.upcomingCount}종${it.upcomingIncoming ? ' · ' + it.upcomingIncoming + '권' : ''}</span>` : ''}
+          </div>
+        </div>
+      `).join('');
+      if (typeof lucide !== 'undefined') lucide.createIcons();
+      applyListScrollCap(listEl, '.inv-rev-card', 'inv-upcoming-list--scroll', 10);
+    }
+    function exportNextMonthForecast() {
+      if (typeof XLSX === 'undefined') return;
+      const { month, items } = computeNextMonthForecast();
+      const actionLabel = { danger: '소싱 필요', hold: '재고 소진 우선', info: '신간 확인', ok: '발주 검토' };
+      const rows = [['자격증명', '시험 일정', '조치 필요', '등록 수험서(종)', '미회전 재고(종)', '미회전 재고(권)', '입고예정 신간(종)', '입고예정 신간(권)']];
+      items.forEach(it => {
+        rows.push([
+          it.certName,
+          it.exams.map(e => `${e.type} ${e.dateRange}`).join(' / '),
+          actionLabel[it.actionKey],
+          it.registeredBooks, it.rotationCount, it.rotationStock, it.upcomingCount, it.upcomingIncoming,
+        ]);
+      });
+      const wb = XLSX.utils.book_new();
+      const ws = XLSX.utils.aoa_to_sheet(rows);
+      ws['!cols'] = [{ wch: 22 }, { wch: 28 }, { wch: 20 }, { wch: 14 }, { wch: 14 }, { wch: 14 }, { wch: 16 }, { wch: 16 }];
+      XLSX.utils.book_append_sheet(wb, ws, `${month || ''}월_발주예측`);
+      const dateStamp = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+      XLSX.writeFile(wb, `다음달_발주예측_${dateStamp}.xlsx`);
+      const toast = document.getElementById('exportToast');
+      if (toast) {
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 4000);
+      }
+    }
+
     function computeReturnRecommendations() {
       if (typeof ROTATION_BOOKS_DATA === 'undefined') return [];
       const items = dedupeRotationItems();
