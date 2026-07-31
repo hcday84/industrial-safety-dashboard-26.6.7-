@@ -1661,7 +1661,7 @@
     function exportNextMonthForecast() {
       if (typeof XLSX === 'undefined') return;
       const { month, items } = computeNextMonthForecast();
-      const actionLabel = { danger: '소싱 필요', hold: '재고 소진 우선', info: '신간 확인', ok: '발주 검토' };
+      const actionLabel = { hold: '재고 소진 우선', info: '신간 확인', ok: '발주 검토' };
       const rows = [['자격증명', '시험 일정', '조치 필요', '등록 수험서(종)', '미회전 재고(종)', '미회전 재고(권)', '입고예정 신간(종)', '입고예정 신간(권)']];
       items.forEach(it => {
         rows.push([
