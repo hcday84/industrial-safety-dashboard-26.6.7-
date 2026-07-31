@@ -2034,7 +2034,6 @@
     border-radius: 999px;
     margin-left: auto;
 }
-#inventory-panel .inv-forecast-action--danger { background: rgba(248, 113, 113, 0.12); color: var(--color-red); }
 #inventory-panel .inv-forecast-action--hold   { background: rgba(251, 191, 36, 0.12); color: var(--color-warning); }
 #inventory-panel .inv-forecast-action--info   { background: rgba(46, 111, 224, 0.12); color: var(--color-cyan); }
 #inventory-panel .inv-forecast-action--ok     { background: rgba(76, 175, 48, 0.12); color: var(--color-indigo); }
