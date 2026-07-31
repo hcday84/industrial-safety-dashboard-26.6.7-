@@ -1587,18 +1587,19 @@
       addAll(bucket.written, '필기');
       addAll(bucket.practical, '실기');
       addAll(bucket.single, '단일');
-      return { month: nextMonth, items: Object.values(merged).sort((a, b) => a.certName.localeCompare(b.certName, 'ko')) };
+      const tracked = Object.values(merged).filter(entry => typeof REAL_BOOKS !== 'undefined' && REAL_BOOKS[entry.certName]?.length > 0);
+      return { month: nextMonth, items: tracked.sort((a, b) => a.certName.localeCompare(b.certName, 'ko')) };
     }
     function computeNextMonthForecast() {
       const { month, items } = _nextMonthCertExams();
       if (!items.length) return { month, items: [] };
 
       const rotationAll = (typeof dedupeRotationItems === 'function') ? dedupeRotationItems() : [];
-      const priority = { danger: 0, hold: 1, info: 2, ok: 3 };
+      const priority = { hold: 0, info: 1, ok: 2 };
 
       const enriched = items.map(entry => {
         const certName = entry.certName;
-        const registeredBooks = (typeof REAL_BOOKS !== 'undefined' && REAL_BOOKS[certName]) ? REAL_BOOKS[certName].length : 0;
+        const registeredBooks = REAL_BOOKS[certName].length;
         const rotationMatches = rotationAll.filter(b => {
           const m = (b.reason || '').match(/자격증명:([^+]+)/);
           return m && m[1] === certName;
@@ -1608,9 +1609,7 @@
         const upcomingIncoming = upcoming.reduce((s, b) => s + (b.storeIncoming || 0), 0);
 
         let action, actionKey;
-        if (registeredBooks === 0) {
-          action = '등록된 수험서 없음 · 소싱 필요'; actionKey = 'danger';
-        } else if (rotationMatches.length > 0) {
+        if (rotationMatches.length > 0) {
           action = '기존 재고 소진 우선'; actionKey = 'hold';
         } else if (upcoming.length > 0) {
           action = '신간 입고 확인 필요'; actionKey = 'info';
