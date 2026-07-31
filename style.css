@@ -186,6 +186,11 @@ button, input, select {
   color: var(--info-color);
 }
 
+.badge-warning {
+  background-color: rgba(245, 158, 11, 0.12);
+  color: var(--accent-color);
+}
+
 .badge-secondary {
   background-color: var(--border-color);
   color: var(--text-secondary);
