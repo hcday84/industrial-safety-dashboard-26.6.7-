@@ -15694,6 +15694,7 @@ const CERTIFICATIONS = {
     // Q-Net식 "필기 합격률 %" 통계가 공개되지 않아 avgPassRate 대신 실제 공표되는 경쟁률을 사용
     avgCompetitionRatio: '남 10.1:1 · 여 22.3:1',
     competitionRatioSummary: '2025년 1차 기준 (남 1,754명 모집·17,775명 지원 / 여 435명 모집·9,709명 지원)',
+    scheduleSource: { url: 'https://gosi.police.go.kr/', asOf: '2026-08' },
     schedules: [
       { round: '2026년 1차', isCurrent: false, isDone: true,
         writtenApply: '-', writtenExam: '2026-03-14', writtenResult: '-',
