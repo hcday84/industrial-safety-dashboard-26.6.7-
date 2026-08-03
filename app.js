@@ -856,6 +856,17 @@ function renderScheduleCards(cert) {
   const titleEl = document.getElementById('schedule-section-title');
   if (titleEl) titleEl.textContent = `2026년 ${cert.name} 정기 시험 일정`;
 
+  const sourceNoteEl = document.getElementById('schedule-source-note');
+  if (sourceNoteEl) {
+    if (cert.scheduleSource) {
+      sourceNoteEl.style.display = '';
+      sourceNoteEl.innerHTML = `<i class="fa-solid fa-circle-info"></i> 이 일정은 공식 API 연동 없이 담당자가 직접 확인·등록한 정보입니다 (${cert.scheduleSource.asOf} 기준). 변경될 수 있으니 <a href="${cert.scheduleSource.url}" target="_blank" rel="noopener noreferrer">원문 출처</a>에서 다시 확인하세요.`;
+    } else {
+      sourceNoteEl.style.display = 'none';
+      sourceNoteEl.innerHTML = '';
+    }
+  }
+
   // 하위 호환 — 내부에서도 동일 로직 사용
   function getStatus(s) { return getScheduleStatus(s); }
 
