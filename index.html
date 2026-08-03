@@ -1861,6 +1861,7 @@
           </div>
           <div class="inv-rev-date"><i class="fa-solid fa-calendar"></i> 시행일: ${r.date}</div>
           <div class="inv-rev-desc">${r.desc}</div>
+          ${r.source ? `<a href="${r.source}" target="_blank" rel="noopener noreferrer" class="inv-rev-source-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> 원문 출처 확인</a>` : ''}
           ${matchHtml}
         </div>`;
       }).join('');
