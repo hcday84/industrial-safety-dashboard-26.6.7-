@@ -1104,7 +1104,7 @@
           <div class="inv-rev-filter">
             <button class="inv-rev-btn active" onclick="window.filterRevisions('all',this)">전체</button>
             <button class="inv-rev-btn" onclick="window.filterRevisions('high',this)">긴급</button>
-            <button class="inv-rev-btn" onclick="window.filterRevisions('update',this)">업데이트 필요</button>
+            <button class="inv-rev-btn" data-filter="update" onclick="window.filterRevisions('update',this)">업데이트 필요</button>
           </div>
         </div>
         <div id="inv-revision-list" class="inv-upcoming-list"></div>
