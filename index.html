@@ -923,6 +923,16 @@
         <div class="inv-sidebar-title">
           <i class="fa-solid fa-list"></i> 발주&amp;재고관리 메뉴
         </div>
+        <div class="inv-quick-menu">
+          <div class="inv-quick-menu-label"><i class="fa-solid fa-bolt"></i> 빠른 메뉴</div>
+          <div class="inv-quick-chip-row">
+            <button type="button" class="inv-quick-chip" onclick="invQuickJump('inv-forecast-section')">다음 달 발주 준비는?</button>
+            <button type="button" class="inv-quick-chip" onclick="invQuickJumpReturnUrgent()">최우선 반품 도서는?</button>
+            <button type="button" class="inv-quick-chip" onclick="invQuickJumpRotation18()">18개월 이상 미회전 도서는?</button>
+            <button type="button" class="inv-quick-chip" onclick="invQuickJumpRevisionUpdate()">출제기준 개정 대응 필요한 자격증은?</button>
+            <button type="button" class="inv-quick-chip" onclick="invQuickJump('inv-outofprint-stats-section')">절판 수험서 현황은?</button>
+          </div>
+        </div>
         <nav class="inv-nav-links">
           <a href="#inv-title-count-section" class="inv-nav-item active" onclick="invNavActivate(this)">
             <i class="fa-solid fa-chart-bar"></i> 수험서 종.권수 보유 현황
