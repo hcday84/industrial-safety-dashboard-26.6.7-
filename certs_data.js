@@ -16023,7 +16023,7 @@ const CERTIFICATIONS = {
   '전산직 공무원(9급)': {
     name: '전산직 공무원(9급)', icon: 'fa-laptop-code', category: '공무원',
     heroTitle: '2026년도 전산직 공무원(9급) 채용 가이드',
-    heroDesc: '국가·지자체 전산 시스템 구축·운영을 담당하는 직렬입니다. 전산개발·데이터·정보보호 3개 부직류로 나뉘며, 전산개발 기준 컴�터일반·정보보호론이 전공과목입니다. 국가직은 다른 9급 직렬과 같은 날 시행됩니다.',
+    heroDesc: '국가·지자체 전산 시스템 구축·운영을 담당하는 직렬입니다. 전산개발·데이터·정보보호 3개 부직류로 나뉘며, 전산개발 기준 컴퓨터일반·정보보호론이 전공과목입니다. 국가직은 다른 9급 직렬과 같은 날 시행됩니다.',
     scheduleSource: { url: 'https://www.mpm.go.kr/mpm/etc/yearlySchedule/', asOf: '2026-08' },
     schedules: [
       { round: '2026년 국가직', isCurrent: false, isDone: true,
