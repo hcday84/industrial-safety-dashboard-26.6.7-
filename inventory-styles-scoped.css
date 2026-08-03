@@ -2041,6 +2041,28 @@
     color: var(--text-secondary);
     line-height: 1.5;
 }
+#inventory-panel .inv-rev-disclaimer {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+#inventory-panel .inv-rev-source-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--color-cyan);
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+#inventory-panel .inv-rev-source-link:hover {
+    text-decoration: underline;
+}
 #inventory-panel .inv-rev-newbooks {
     display: flex;
     flex-wrap: wrap;
