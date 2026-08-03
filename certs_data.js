@@ -15741,6 +15741,7 @@ const CERTIFICATIONS = {
     heroDesc: '9급 공채 중 가장 많은 인원을 선발하는 대표 직렬입니다. 국가직은 매년 4월 둘째주 토요일 전 직렬 동시시행, 지방직은 6월에 별도로 시행됩니다. 국어·영어·한국사·행정법총론·행정학개론 5과목을 준비하세요.',
     avgCompetitionRatio: '국가직 24.2:1',
     competitionRatioSummary: '2025년 국가직 9급 전체 평균 경쟁률 기준 (일반행정 필기 합격선 평균 90.3점/100점)',
+    scheduleSource: { url: 'https://www.mpm.go.kr/mpm/etc/yearlySchedule/', asOf: '2026-08' },
     schedules: [
       { round: '2026년 국가직', isCurrent: false, isDone: true,
         writtenApply: '2026-02-02 ~ 2026-02-06', writtenExam: '2026-04-04', writtenResult: '2026-05-07',
