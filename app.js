@@ -566,9 +566,11 @@ function showWelcomeScreen() {
     const techEl  = document.getElementById('tech-cert-count');
     const proEl   = document.getElementById('pro-cert-count');
     const privEl  = document.getElementById('priv-cert-count');
+    const govEl   = document.getElementById('gov-cert-count');
     if (techEl) techEl.textContent = techCount;
     if (proEl)  proEl.textContent  = proCount;
     if (privEl) privEl.textContent = privCount;
+    if (govEl)  govEl.textContent  = govCount;
   }
   // 달력 카드를 웰컴 화면 플레이스홀더로 이동
   const calCard    = document.getElementById('exam-calendar-card');
