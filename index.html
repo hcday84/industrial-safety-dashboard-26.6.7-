@@ -1431,6 +1431,29 @@
       document.querySelectorAll('#inventory-panel .inv-nav-item').forEach(i => i.classList.remove('active'));
       el.classList.add('active');
     }
+    // ── 빠른 메뉴 (사이드바 상단 예시질문 칩) — 어디를 봐야 할지 모를 때 클릭 한 번으로 이동+필터 ──
+    function invQuickJump(sectionId) {
+      const sectionEl = document.getElementById(sectionId);
+      if (!sectionEl) return;
+      sectionEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const navEl = document.querySelector(`#inventory-panel .inv-nav-item[href="#${sectionId}"]`);
+      if (navEl) invNavActivate(navEl);
+    }
+    function invQuickJumpReturnUrgent() {
+      invQuickJump('inv-return-section');
+      const btn = document.querySelector('#inventory-panel .inv-return-btn[data-tier="urgent"]');
+      if (btn) btn.click();
+    }
+    function invQuickJumpRotation18() {
+      invQuickJump('inv-books-section');
+      const btn = document.querySelector('#inventory-panel .inv-rotation-btn[data-months="18"]');
+      if (btn) btn.click();
+    }
+    function invQuickJumpRevisionUpdate() {
+      invQuickJump('inv-upcoming-section');
+      const btn = document.querySelector('#inventory-panel .inv-rev-btn[data-filter="update"]');
+      if (btn) btn.click();
+    }
     // 수험서 미회전 현황 - 미회전 기간별 메뉴 (12/15/18개월 이상 누적 필터)
     // ROTATION_BOOKS_DATA(inventory-rotation-data.js)에 등록된 미회전 재고 목록을 기간별로 집계·표시
     // 같은 재고(안 팔린 같은 책)가 12/15/18개월 리스트에 중복으로 잡히는 경우가 있어,
