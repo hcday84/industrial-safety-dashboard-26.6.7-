@@ -15788,6 +15788,7 @@ const CERTIFICATIONS = {
     heroDesc: '2022년 개편 이후 국어·선택과목이 사라지고 소방학개론·소방관계법규·행정법총론 필수 3과목 체제로 운영됩니다. 필기 이후 체력시험·면접까지 단계별로 준비해야 합니다.',
     avgCompetitionRatio: '평균 9~10.5:1',
     competitionRatioSummary: '2025년 기준 (남 13.6:1·여 17.2:1, 응시 17,617명 중 필기합격 3,735명) · 필기 합격선 평균 230.4점(300점 만점)',
+    scheduleSource: { url: 'https://gongmuwon.gosi.kr/spcsv/indexMain3.do', asOf: '2026-08' },
     schedules: [
       { round: '2026년 공채', isCurrent: false, isDone: true,
         writtenApply: '2026-02-09 ~ 2026-02-13', writtenExam: '2026-03-07', writtenResult: '-',
