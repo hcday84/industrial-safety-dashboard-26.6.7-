@@ -4564,16 +4564,17 @@ const CERT_FAQ_GENERAL = [
   { q:'합격자 발표는 어디서 확인하나요?', a:'Q-Net 홈페이지 및 Q-Net 앱에서 발표일 당일 오전 9시부터 조회 가능합니다. SMS 수신 신청도 가능합니다.' },
 ];
 
+// 2026-08 WebSearch로 개별 재검증 — 원문 확인이 안 되는 항목(산업안전기사, 정보처리기사)은
+// 목록에서 제외했고, 나머지는 실제 법령·Q-Net 출처에 맞춰 날짜·내용을 수정했다.
+// source: 담당자가 직접 원문을 확인할 수 있는 실제 출처 링크(법제처 또는 Q-Net).
 const EXAM_REVISIONS = [
-  { cert:'산업안전기사', type:'출제기준 개정', date:'2026-01-01', desc:'화학물질관리법·중대재해처벌법 개정사항 반영. 위험성 평가 관련 문항 비중 증가.', urgency:'high', updateNeeded:true },
-  { cert:'전기기사', type:'출제기준 변경', date:'2026-01-01', desc:'전기설비기술기준(KEC) 최신 개정 반영. 구 기준 대체 문항 정리 필요.', urgency:'high', updateNeeded:true },
-  { cert:'소방설비기사(기계분야)', type:'법령 개정', date:'2026-01-15', desc:'화재예방법 시행령 개정 — 특정소방대상물 분류 기준 변경사항 반영 필요.', urgency:'medium', updateNeeded:true },
-  { cert:'소방설비기사(전기분야)', type:'법령 개정', date:'2026-01-15', desc:'화재예방법 시행령 개정 — 특정소방대상물 분류 기준 변경사항 반영 필요.', urgency:'medium', updateNeeded:true },
-  { cert:'건설안전기사', type:'출제기준 개정', date:'2026-02-01', desc:'타워크레인·고소작업대 관련 내용 추가. KOSHA 가이드 최신판 반영.', urgency:'medium', updateNeeded:true },
-  { cert:'정보처리기사', type:'출제기준 개정', date:'2025-01-01', desc:'Python 실기 비중 확대, 구형 언어(COBOL) 완전 삭제. 이미 반영 완료.', urgency:'low', updateNeeded:false },
-  { cert:'대기환경기사', type:'출제기준 개정', date:'2026-01-01', desc:'탄소중립 관련 법규 반영. 환경영향평가법 개정사항 포함.', urgency:'medium', updateNeeded:true },
-  { cert:'위험물산업기사', type:'법령 개정', date:'2025-12-31', desc:'위험물 안전관리법 시행규칙 개정. 탱크 기준 일부 수치 변경.', urgency:'low', updateNeeded:false },
-  { cert:'산업위생관리기사', type:'고시 개정', date:'2025-07-01', desc:'작업환경측정 및 정도관리 고시 개정. 측정 방법·분석 기준 일부 변경.', urgency:'low', updateNeeded:false },
+  { cert:'전기기사', type:'법령 개정', date:'2026-01-05', desc:'한국전기설비규정(KEC) 개정(기후에너지환경부 공고 제2025-227호) — 전기자동차 충전장치 원격감시·제어시스템, 지하주차장 화재대피 관련 안전기준 반영.', urgency:'high', updateNeeded:true, source:'https://www.law.go.kr/%ED%96%89%EC%A0%95%EA%B7%9C%EC%B9%99/%ED%95%9C%EA%B5%AD%EC%A0%84%EA%B8%B0%EC%84%A4%EB%B9%84%EA%B7%9C%EC%A0%95' },
+  { cert:'소방설비기사(기계분야)', type:'법령 개정', date:'2026-03-24', desc:'화재의 예방 및 안전관리에 관한 법률 시행령 개정(제36220호) — 방염성능기준 이상 실내장식물 등을 설치해야 하는 특정소방대상물 조항 변경.', urgency:'medium', updateNeeded:true, source:'https://lbox.kr/v2/statute/%ED%99%94%EC%9E%AC%EC%9D%98%EC%98%88%EB%B0%A9%EB%B0%8F%EC%95%88%EC%A0%84%EA%B4%80%EB%A6%AC%EC%97%90%EA%B4%80%ED%95%9C%EB%B2%95%EB%A5%A0%EC%8B%9C%ED%96%89%EB%A0%B9' },
+  { cert:'소방설비기사(전기분야)', type:'법령 개정', date:'2026-03-24', desc:'화재의 예방 및 안전관리에 관한 법률 시행령 개정(제36220호) — 방염성능기준 이상 실내장식물 등을 설치해야 하는 특정소방대상물 조항 변경.', urgency:'medium', updateNeeded:true, source:'https://lbox.kr/v2/statute/%ED%99%94%EC%9E%AC%EC%9D%98%EC%98%88%EB%B0%A9%EB%B0%8F%EC%95%88%EC%A0%84%EA%B4%80%EB%A6%AC%EC%97%90%EA%B4%80%ED%95%9C%EB%B2%95%EB%A5%A0%EC%8B%9C%ED%96%89%EB%A0%B9' },
+  { cert:'건설안전기사', type:'출제기준 개정', date:'2026-01-01', desc:'필기 6과목→5과목·120문항→100문항으로 축소 개편. 위험성평가·근골격계질환·화학/생물학적 요인 관리, 공정별 안전시설 관리 내용 추가. 실기는 현장 중심 평가준거로 구체화.', urgency:'high', updateNeeded:true, source:'https://www.q-net.or.kr/crf005.do?id=crf00503&jmCd=1440' },
+  { cert:'대기환경기사', type:'출제기준 개정', date:'2026-01-01', desc:'2026~2030년 출제기준 개정판 적용 중. 2027년부터 에너지관리기사와의 과목면제가 폐지될 예정이니 관련 수험서 안내 확인 필요.', urgency:'medium', updateNeeded:true, source:'https://www.q-net.or.kr/crf005.do?id=crf00503&jmCd=1661' },
+  { cert:'위험물산업기사', type:'출제기준 개정', date:'2025-01-01', desc:'출제기준 개정판(2025.1.1~2029.12.31) 적용 중 — 과목명 일부 변경, 시험범위 큰 틀은 유지. (별도로 위험물안전관리법 시행령이 2025-08-07 유해성물질 분류 용어 변경으로 개정됨)', urgency:'low', updateNeeded:false, source:'https://www.q-net.or.kr/crf005.do?id=crf00503&jmCd=2121' },
+  { cert:'산업위생관리기사', type:'출제기준 개정', date:'2025-01-01', desc:'출제기준 개정판(2025.1.1~2029.12.31) 적용 중 — 작업환경측정 및 정도관리 등에 관한 고시가 출제범위에 포함.', urgency:'low', updateNeeded:false, source:'https://www.q-net.or.kr/cst006.do?id=cst00601&code=1202' },
 ];
 
 // ============================================================
