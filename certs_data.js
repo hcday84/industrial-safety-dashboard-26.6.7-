@@ -15824,6 +15824,7 @@ const CERTIFICATIONS = {
     name: '운전직 공무원(9급)', icon: 'fa-bus', category: '공무원',
     heroTitle: '2026년도 운전직 공무원(9급) 채용 가이드',
     heroDesc: '지방직 9급 공채의 한 직렬로, 다른 9급 직렬과 같은 날 시행됩니다. 옛 기능직에서 9급으로 전환된 직렬 특성상 영어 과목이 없고, 국어·한국사·자동차구조원리 및 도로교통법규 3과목으로 준비 부담이 상대적으로 적습니다.',
+    scheduleSource: { url: 'https://www.mois.go.kr/frt/bbs/type010/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000008&nttId=126921', asOf: '2026-08' },
     schedules: [
       { round: '2026년 지방직', isCurrent: true, isDone: false,
         writtenApply: '2026-03-23 ~ 2026-03-27', writtenExam: '2026-06-20', writtenResult: '-',
