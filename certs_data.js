@@ -15862,6 +15862,7 @@ const CERTIFICATIONS = {
     heroDesc: '법원사무직렬은 헌법·국어·영어·한국사·민법·민사소송법·형법·형사소송법 8과목으로, 9급 직렬 중 법학 비중이 가장 큽니다. 필기 이후 인성검사와 면접까지 거쳐야 최종 합격합니다.',
     avgCompetitionRatio: '법원사무 13:1 · 등기사무 14.1:1',
     competitionRatioSummary: '2025년 기준 (필기 합격선: 법원사무 78.5점·등기사무 64점, 100점 만점)',
+    scheduleSource: { url: 'https://att.pmg.co.kr/EtcData/board/3406/2026%EB%85%84%EB%8F%84%20%EB%B2%95%EC%9B%90%EA%B3%B5%EB%AC%B4%EC%9B%90%20%EA%B3%B5%EA%B0%9C%EA%B2%BD%EC%9F%81%EC%B1%84%EC%9A%A9%EC%8B%9C%ED%97%98%20%EC%8B%9C%ED%96%89%EA%B3%84%ED%9A%8D%20%EA%B3%B5%EA%B3%A0.pdf', asOf: '2026-08' },
     schedules: [
       { round: '2026년 공채', isCurrent: true, isDone: false,
         writtenApply: '2026-03-16 ~ 2026-03-27', writtenExam: '2026-06-20', writtenResult: '2026-07-10',
