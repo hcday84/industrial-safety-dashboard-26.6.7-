@@ -886,6 +886,14 @@ button, input, select {
   color: var(--primary-color);
   font-weight: 700;
 }
+.welcome-desc-compact .stat-num {
+  font-size: 1rem;
+  font-weight: 800;
+}
+.stat-num--tech { color: var(--info-color); }
+.stat-num--pro  { color: var(--success-color); }
+.stat-num--priv { color: var(--accent-color); }
+.stat-num--gov  { color: var(--primary-color); }
 
 .welcome-inner p {
   font-size: 1rem;
