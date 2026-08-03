@@ -148,6 +148,50 @@
     border-bottom: 2px solid var(--color-indigo);
 }
 
+#inventory-panel .inv-quick-menu{
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius-md);
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+#inventory-panel .inv-quick-menu-label{
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-cyan);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+#inventory-panel .inv-quick-chip-row{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#inventory-panel .inv-quick-chip{
+    text-align: left;
+    font-family: var(--font-body);
+    font-size: 0.76rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: rgba(46, 111, 224, 0.06);
+    border: 1px solid rgba(46, 111, 224, 0.18);
+    border-radius: 999px;
+    padding: 7px 12px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+#inventory-panel .inv-quick-chip:hover{
+    background: rgba(46, 111, 224, 0.14);
+    border-color: var(--color-cyan);
+    color: var(--color-cyan);
+}
+
 #inventory-panel .inv-nav-links{
     background-color: var(--card-bg);
     border: 1px solid var(--card-border);
