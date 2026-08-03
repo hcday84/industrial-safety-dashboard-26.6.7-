@@ -2978,6 +2978,19 @@ button, input, select {
   word-break: keep-all;
 }
 
+.schedule-source-note {
+  margin: 4px 0 14px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  word-break: keep-all;
+}
+.schedule-source-note a {
+  color: var(--info-color);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 /* 12-2. 자격증 연계 로드맵 */
 .roadmap-path-container,
 .roadmap-related-container {
