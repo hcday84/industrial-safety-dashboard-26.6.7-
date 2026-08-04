@@ -258,10 +258,13 @@
     font-size: 0.85rem;
     font-weight: 700;
     margin-bottom: 7px;
-    color: var(--color-cyan);
+    color: var(--text-primary);
     display: flex;
     align-items: center;
     gap: 6px;
+}
+#inventory-panel .inv-sidebar-banner h4 i{
+    color: var(--color-cyan);
 }
 
 #inventory-panel .inv-sidebar-banner p{
