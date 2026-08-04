@@ -146,12 +146,15 @@
 #inventory-panel .inv-sidebar-title{
     font-size: 1rem;
     font-weight: 700;
-    color: var(--color-indigo);
+    color: var(--text-primary);
     display: flex;
     align-items: center;
     gap: 8px;
     padding-bottom: 10px;
     border-bottom: 2px solid var(--color-indigo);
+}
+#inventory-panel .inv-sidebar-title i{
+    color: var(--color-indigo);
 }
 
 #inventory-panel .inv-quick-menu{
