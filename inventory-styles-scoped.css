@@ -132,10 +132,16 @@
 #inventory-panel .inv-sidebar{
     position: sticky;
     top: 20px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     gap: 18px;
 }
+#inventory-panel .inv-sidebar::-webkit-scrollbar{ width: 6px; }
+#inventory-panel .inv-sidebar::-webkit-scrollbar-track{ background: var(--scrollbar-track); border-radius: 4px; }
+#inventory-panel .inv-sidebar::-webkit-scrollbar-thumb{ background: var(--scrollbar-thumb); border-radius: 4px; }
+#inventory-panel .inv-sidebar::-webkit-scrollbar-thumb:hover{ background: var(--scrollbar-thumb-hover); }
 
 #inventory-panel .inv-sidebar-title{
     font-size: 1rem;
