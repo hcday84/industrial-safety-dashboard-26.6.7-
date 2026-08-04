@@ -1761,6 +1761,18 @@
       }).filter(b => b.tier)
         .sort((a, b) => b.score - a.score);
     }
+    function copyIsbnToClipboard(btnEl, isbn) {
+      navigator.clipboard.writeText(isbn).then(() => {
+        const icon = btnEl.querySelector('i');
+        if (!icon) return;
+        btnEl.classList.add('copied');
+        icon.className = 'fa-solid fa-check';
+        setTimeout(() => {
+          icon.className = 'fa-regular fa-copy';
+          btnEl.classList.remove('copied');
+        }, 1200);
+      }).catch(() => {});
+    }
     function renderReturnRecommendations(tier) {
       const countEl = document.getElementById('invReturnCount');
       const volumeEl = document.getElementById('invReturnVolume');
