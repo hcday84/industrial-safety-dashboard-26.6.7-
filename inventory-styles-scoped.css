@@ -222,7 +222,7 @@
     font-size: 0.82rem;
     font-weight: 500;
     border-radius: var(--border-radius-sm);
-    color: var(--text-secondary);
+    color: var(--text-primary);
     text-decoration: none;
     transition: var(--transition-smooth);
 }
@@ -231,6 +231,7 @@
     font-size: 0.9rem;
     width: 16px;
     text-align: center;
+    color: var(--text-secondary);
 }
 
 #inventory-panel .inv-nav-item:hover{
