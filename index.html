@@ -1789,7 +1789,7 @@
           <div class="book-title-meta">
             <span class="badge ${b.tier === 'urgent' ? 'inv-return-badge-urgent' : 'inv-return-badge-consider'}">${tierLabel[b.tier]}</span>
             <h4>${b.title}</h4>
-            ${b.isbn ? `<div class="inv-return-isbn">ISBN ${b.isbn}</div>` : ''}
+            ${b.isbn ? `<div class="inv-return-isbn">ISBN ${b.isbn} <button type="button" class="inv-isbn-copy-btn" onclick="copyIsbnToClipboard(this, '${b.isbn}')" title="ISBN 복사"><i class="fa-regular fa-copy"></i></button></div>` : ''}
             <div class="book-meta-inline"><span class="pub-name">${b.publisher}</span>${b.author ? ' | ' + b.author : ''}</div>
             <div class="inv-return-chips">${b.reasonChips.map(c => `<span class="inv-return-chip">${c}</span>`).join('')}</div>
           </div>
