@@ -293,11 +293,14 @@
     align-items: center;
     gap: 8px;
     font-size: 0.82rem;
-    color: var(--text-secondary);
+    color: var(--text-primary);
     padding: 7px 0;
     border-bottom: 1px dashed var(--card-border);
     text-decoration: none;
     transition: var(--transition-smooth);
+}
+#inventory-panel .inv-external-links a i{
+    color: var(--text-secondary);
 }
 
 #inventory-panel .inv-external-links a:last-child{
