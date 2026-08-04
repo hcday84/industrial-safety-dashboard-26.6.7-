@@ -1557,9 +1557,14 @@
     color: var(--text-primary);
 }
 #inventory-panel .upload-analyzer-title i{ width: 1.1rem; height: 1.1rem; color: #4caf30; }
-#inventory-panel .upload-analyzer-title .text-indigo{ color: var(--text-primary); }
-#inventory-panel .upload-analyzer-title .text-indigo i,
-#inventory-panel .upload-analyzer-title .text-indigo svg{ color: var(--color-indigo); }
+#inventory-panel .upload-analyzer-title .text-indigo,
+#inventory-panel .upload-analyzer-title .text-cyan,
+#inventory-panel .upload-analyzer-title .text-warning,
+#inventory-panel .upload-analyzer-title .text-red{ color: var(--text-primary); }
+#inventory-panel .upload-analyzer-title .text-indigo i, #inventory-panel .upload-analyzer-title .text-indigo svg{ color: var(--color-indigo); }
+#inventory-panel .upload-analyzer-title .text-cyan i, #inventory-panel .upload-analyzer-title .text-cyan svg{ color: var(--color-cyan); }
+#inventory-panel .upload-analyzer-title .text-warning i, #inventory-panel .upload-analyzer-title .text-warning svg{ color: var(--color-warning); }
+#inventory-panel .upload-analyzer-title .text-red i, #inventory-panel .upload-analyzer-title .text-red svg{ color: var(--color-red); }
 #inventory-panel #analyzerChevron{ width: 1.1rem; height: 1.1rem; color: var(--text-secondary); transition: transform 0.3s ease; }
 
 #inventory-panel .upload-analyzer-body{
