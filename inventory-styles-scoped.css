@@ -1557,6 +1557,9 @@
     color: var(--text-primary);
 }
 #inventory-panel .upload-analyzer-title i{ width: 1.1rem; height: 1.1rem; color: #4caf30; }
+#inventory-panel .upload-analyzer-title .text-indigo{ color: var(--text-primary); }
+#inventory-panel .upload-analyzer-title .text-indigo i,
+#inventory-panel .upload-analyzer-title .text-indigo svg{ color: var(--color-indigo); }
 #inventory-panel #analyzerChevron{ width: 1.1rem; height: 1.1rem; color: var(--text-secondary); transition: transform 0.3s ease; }
 
 #inventory-panel .upload-analyzer-body{
