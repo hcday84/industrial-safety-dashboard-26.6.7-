@@ -168,11 +168,14 @@
 #inventory-panel .inv-quick-menu-label{
     font-size: 0.75rem;
     font-weight: 700;
-    color: var(--color-cyan);
+    color: var(--text-primary);
     display: flex;
     align-items: center;
     gap: 6px;
     margin-bottom: 8px;
+}
+#inventory-panel .inv-quick-menu-label i{
+    color: var(--color-cyan);
 }
 
 #inventory-panel .inv-quick-chip-row{
