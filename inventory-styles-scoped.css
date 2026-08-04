@@ -976,6 +976,12 @@
 #inventory-panel .rotation-row-card .book-meta-inline{
     font-size: 0.72rem;
 }
+#inventory-panel .inv-return-isbn{
+    font-size: 0.68rem;
+    color: var(--text-secondary);
+    font-variant-numeric: tabular-nums;
+    opacity: 0.75;
+}
 #inventory-panel .rotation-row-card .badge{
     padding: 0.1rem 0.45rem;
     font-size: 0.65rem;
