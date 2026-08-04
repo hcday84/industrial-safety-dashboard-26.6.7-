@@ -1762,7 +1762,7 @@
         .sort((a, b) => b.score - a.score);
     }
     function copyIsbnToClipboard(btnEl, isbn) {
-      navigator.clipboard.writeText(isbn).then(() => {
+      const showCopied = () => {
         const icon = btnEl.querySelector('i');
         if (!icon) return;
         btnEl.classList.add('copied');
@@ -1771,7 +1771,26 @@
           icon.className = 'fa-regular fa-copy';
           btnEl.classList.remove('copied');
         }, 1200);
-      }).catch(() => {});
+      };
+      const fallbackCopy = () => {
+        try {
+          const textarea = document.createElement('textarea');
+          textarea.value = isbn;
+          textarea.style.position = 'fixed';
+          textarea.style.opacity = '0';
+          document.body.appendChild(textarea);
+          textarea.focus();
+          textarea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textarea);
+          showCopied();
+        } catch { /* 복사 실패 시 조용히 무시 */ }
+      };
+      if (navigator.clipboard?.writeText) {
+        navigator.clipboard.writeText(isbn).then(showCopied).catch(fallbackCopy);
+      } else {
+        fallbackCopy();
+      }
     }
     function renderReturnRecommendations(tier) {
       const countEl = document.getElementById('invReturnCount');
