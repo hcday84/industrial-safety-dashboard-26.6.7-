@@ -948,22 +948,6 @@ const REAL_BOOKS = {
   ],
 
   // ────────────────────────────────────────
-  // ────────────────────────────────────────
-  // ────────────────────────────────────────
-  'SQLP': [
-    { title: '2024 국가공인 SQLP 자격검정 핵심노트 1', author: '조시형', publisher: '디비안(DBian)', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 312, tags: ['베스트'], imageUrl: KB('S000213913597'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213913597' },
-    { title: '국가공인 SQLP 자격검정 핵심노트 1', author: '조시형', publisher: '디비안(DBian)', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.8, reviews: 567, tags: ['베스트'], imageUrl: KB('S000001953873'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001953873' },
-    { title: 'SQL 자격검정 실전문제', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.7, reviews: 445, tags: ['베스트'], imageUrl: KB('S000212021705'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212021705' },
-    { title: 'SQL 전문가 가이드 (공식 교재)', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 389, tags: ['베스트'], imageUrl: KB('S000001399869'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001399869' },
-    { title: '국가공인 SQLP 자격검정 핵심노트 2', author: '조시형', publisher: '디비안(DBian)', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.6, reviews: 278, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791191941098.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=SQLP+자격검정+핵심노트+2' },
-    { title: '친절한 SQL 튜닝', author: '조시형', publisher: '디비안(DBian)', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.7, reviews: 534, tags: ['추천'], isbn: '9791196395704', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791196395704.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=친절한+SQL+튜닝' },
-    { title: '오라클 성능 고도화 원리와 해법 1', author: '조시형', publisher: '비투엔컨설팅', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 312, tags: ['추천'], isbn: '9791191941043', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791191941043.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=오라클+성능고도화+원리와해법' },
-    { title: 'SQL 레벨업', author: '미크', publisher: '한빛미디어', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.5, reviews: 267, tags: ['추천'], isbn: '9788968482519', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788968482519.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=SQL+레벨업' },
-    { title: '데이터베이스 개론', author: '김연희', publisher: '한빛아카데미', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 189, tags: ['추천'], isbn: '9791156645771', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791173400650.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=데이터베이스+개론+김연희' },
-  ],
-
-  // ────────────────────────────────────────
-  // ────────────────────────────────────────
   '정보보안산업기사': [
     { title: '2026 알기사 정보보안기사(산업기사) 필기+핵심기출 1200제 세트', author: '조현준', publisher: '지안에듀', price: 54000, originalPrice: 60000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000218322836'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218322836' },
     { title: '2026 알기사 정보보안기사(산업기사) 실기', author: '정일영', publisher: '지안에듀', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000219083573'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219083573' },
