@@ -959,53 +959,6 @@ const REAL_BOOKS = {
   ],
 
   // ────────────────────────────────────────
-  '네트워크관리사1급': [
-    { title: '2026 최적합 네트워크관리사 1·2급 필기+실기', author: '허준·선세리', publisher: '성안당', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000216966558'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216966558' },
-    { title: '이기적 네트워크관리사 1·2급 필기+실기 올인원', author: '영진닷컴 편집부', publisher: '영진닷컴', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000218204635'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218204635' },
-    { title: '이기적 네트워크관리사 1·2급 필기+실기 올인원 (구판)', author: '영진닷컴 편집부', publisher: '영진닷컴', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: KB('S000214158140'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214158140' },
-    { title: '2026 네트워크관리사 1급 실기 완전정복', author: '허준', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.4, reviews: 112, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+네트워크관리사+1급+실기' },
-    { title: '네트워크 개론', author: '진강훈', publisher: '한빛아카데미', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 189, tags: ['추천'], isbn: '9791156644521', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791156644521.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=네트워크+개론+진강훈' },
-    { title: '모두의 네트워크', author: '미즈구치 카츠야', publisher: '길벗', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 678, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791140707218.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=모두의+네트워크' },
-    { title: '네트워크 보안 에센셜', author: '윌리엄 스톨링스', publisher: '피어슨에듀케이션코리아', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.3, reviews: 123, tags: ['추천'], isbn: '9791185504766', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788970507606.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=네트워크+보안+에센셜' },
-  ],
-
-  // ────────────────────────────────────────
-  '네트워크관리사2급': [
-    { title: '2026 최적합 네트워크관리사 1·2급 필기+실기', author: '허준·선세리', publisher: '성안당', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000216966558'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216966558' },
-    { title: '이기적 네트워크관리사 1·2급 필기+실기 올인원', author: '영진닷컴 편집부', publisher: '영진닷컴', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000218204635'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218204635' },
-    { title: '2026 네트워크관리사 2급 필기 단기완성', author: '선세리', publisher: '성안당', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], isbn: '9788956741659', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788956741659.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+네트워크관리사+2급+단기완성' },
-    { title: '2026 네트워크관리사 2급 기출문제집', author: '시대에듀 편집부', publisher: '시대에듀', price: 18900, originalPrice: 21000, discount: '10%', rating: 4.4, reviews: 143, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931457360.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+네트워크관리사+2급+기출' },
-    { title: '모두의 네트워크', author: '미즈구치 카츠야', publisher: '길벗', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 678, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791140707218.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=모두의+네트워크' },
-    { title: 'TCP/IP 쉽게, 더 쉽게', author: '마스이 토시카츠', publisher: '영진닷컴', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 345, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791185890678.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=TCP+IP+쉽게+더+쉽게' },
-    { title: '네트워크 기초 완성', author: '강진우', publisher: '한빛미디어', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 156, tags: ['추천'], isbn: '9788931554823', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931554823.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=네트워크+기초+완성' },
-  ],
-
-  // ────────────────────────────────────────
-  '리눅스마스터1급': [
-    { title: '2026 이기적 리눅스마스터 1급(1·2차) 기본서 세트', author: '김윤수·최정현', publisher: '영진닷컴', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000218968390'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218968390' },
-    { title: '2025 이기적 리눅스마스터 1급(1·2차)', author: '김윤수', publisher: '영진닷컴', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000214883324'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214883324' },
-    { title: 'Rocky Linux8로 리눅스마스터 1급 정복하기', author: '정성재', publisher: '한빛미디어', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000212567319'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212567319' },
-    { title: '리눅스마스터 2급 한권으로 끝내기', author: '박성업', publisher: '한빛미디어', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: KB('S000211514857'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211514857' },
-    { title: '2026 리눅스마스터 1급 기출문제집', author: '시대에듀 편집부', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], isbn: '9791195609857', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931481402.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+리눅스마스터+1급+기출' },
-    { title: '리눅스 커맨드라인 완벽 입문서', author: '윌리엄 E. 샤츠 주니어', publisher: '비제이퍼블릭', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 456, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788994774299.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=리눅스+커맨드라인+완벽입문서' },
-    { title: '이것이 리눅스다 (개정판)', author: '우재남', publisher: '한빛미디어', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 389, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791162242605.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이것이+리눅스다+개정판' },
-    { title: '유닉스·리눅스 프로그래밍 필수 유틸리티', author: '백창우', publisher: '한빛미디어', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 234, tags: ['추천'], isbn: '9788979147599', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788979147599.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=유닉스+리눅스+프로그래밍+필수유틸리티' },
-    { title: '2026 리눅스마스터 1급 핵심요약+기출', author: '최정현', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], isbn: '9791162891193', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791162891193.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+리눅스마스터+1급+핵심요약' },
-    { title: '리눅스 시스템 관리 실무', author: '조훈·심효섭', publisher: '위키북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], isbn: '9791185123738', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791185123738.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=리눅스+시스템+관리+실무' },
-  ],
-
-  // ────────────────────────────────────────
-  '리눅스마스터2급': [
-    { title: '리눅스마스터 2급 한권으로 끝내기', author: '박성업', publisher: '한빛미디어', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000211514857'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211514857' },
-    { title: '2025 이기적 리눅스마스터 2급 1·2차', author: '권소라', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000214822089'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214822089' },
-    { title: '2026 이기적 리눅스마스터 1급(1·2차) 기본서 세트', author: '김윤수·최정현', publisher: '영진닷컴', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218968390'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218968390' },
-    { title: '2026 리눅스마스터 2급 기출문제집', author: '영진닷컴 편집부', publisher: '영진닷컴', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], isbn: '9791195609833', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791175197763.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+리눅스마스터+2급+기출' },
-    { title: '이것이 리눅스다 (개정판)', author: '우재남', publisher: '한빛미디어', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 389, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791162242605.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이것이+리눅스다+개정판' },
-    { title: '리눅스 커맨드라인 완벽 입문서', author: '윌리엄 E. 샤츠 주니어', publisher: '비제이퍼블릭', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 456, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788994774299.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=리눅스+커맨드라인+완벽입문서' },
-    { title: '2026 리눅스마스터 2급 핵심요약+기출', author: '권소라', publisher: '영진닷컴', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+리눅스마스터+2급+핵심요약' },
-  ],
-
-  // ────────────────────────────────────────
   '자동차정비기사': [
     { title: '2026 패스 자동차정비기사 필기', author: '박만재·국창호·문학훈', publisher: '골든벨', price: 30600, originalPrice: 34000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000218935739'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218935739' },
     { title: '2026 Win-Q 자동차정비기사 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.2, reviews: 54, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=Win-Q+자동차정비기사' },
