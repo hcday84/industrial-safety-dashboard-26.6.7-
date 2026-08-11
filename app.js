@@ -2954,7 +2954,7 @@ function renderBookCompareTable(certName, books, checkedTitles) {
     { label: '가격', get: b => b.price > 0 ? `${b.price.toLocaleString()}원` : '상세페이지 확인' },
     { label: '연도', get: b => (b.title.match(/^(20\d{2})\b/) || [])[1] || '-' },
     { label: '태그', get: b => (b.tags && b.tags.length) ? b.tags.join(', ') : '-' },
-    { label: '평점', get: b => b.rating ? `${b.rating.toFixed(1)} (${b.reviews || 0}건)` : '-' },
+    { label: '평점(추정)', get: b => b.rating ? `${b.rating.toFixed(1)} (${b.reviews || 0}건)` : '-' },
   ];
   el.innerHTML = `
     <h4 class="cl-compare-title"><i class="fa-solid fa-table-columns"></i> 선택한 ${picked.length}권 비교</h4>
@@ -2967,6 +2967,7 @@ function renderBookCompareTable(certName, books, checkedTitles) {
           ${rows.map(r => `<tr><th>${r.label}</th>${picked.map(b => `<td>${r.get(b)}</td>`).join('')}</tr>`).join('')}
         </tbody>
       </table>
+      <p class="books-hint" style="margin:8px 0 0;"><i class="fa-solid fa-circle-info"></i> 평점·리뷰수는 참고용 추정치로, 교보문고 실시간 집계와 다를 수 있습니다.</p>
     </div>`;
 }
 
