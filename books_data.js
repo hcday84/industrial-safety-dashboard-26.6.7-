@@ -266,21 +266,6 @@ const REAL_BOOKS = {
   ],
 
   // ────────────────────────────────────────
-  'SQLD': [
-    // 베스트셀러 5
-    { title: '2026 이기적 SQLD SQL 개발자 기본서 이론+기출문제', author: '강태우', publisher: '영진닷컴', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.8, reviews: 534, tags: ['베스트'], imageUrl: KB('S000217937565'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217937565' },
-    { title: '2026 에듀윌 SQLD SQL 개발자 2주끝장+무료특강', author: '김남규', publisher: '에듀윌', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.7, reviews: 423, tags: ['베스트'], imageUrl: KB('S000218965390'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218965390' },
-    { title: '2026 이기적 정보처리기사 필기 절대족보', author: '신면철', publisher: '영진닷컴', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.6, reviews: 356, tags: ['베스트'], imageUrl: KB('S000217191918'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217191918' },
-    { title: '2025 이기적 SQL 개발자 이론서+기출문제', author: '임호진', publisher: '영진닷컴', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.5, reviews: 298, tags: ['베스트'], imageUrl: KB('S000214962008'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214962008' },
-    { title: '2026 SQLD 기출문제집 핵심요약+실전문제', author: '강태우', publisher: '영진닷컴', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 267, tags: ['베스트'], isbn: '9788931477849', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931477849.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+SQLD+기출' },
-    // 추천수험서 5
-    { title: '이기적 SQL 개발자 기출문제 500제', author: '임호진', publisher: '영진닷컴', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.6, reviews: 312, tags: ['추천'], imageUrl: KB('S000200826826'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200826826' },
-    { title: '2026 혼자 공부하는 SQL+SQLD 자격증', author: '강성욱', publisher: '한빛미디어', price: 27900, originalPrice: 31000, discount: '10%', rating: 4.5, reviews: 267, tags: ['추천'], isbn: '9791162244739', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791162244739.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+SQLD+한빛미디어' },
-    { title: '2026 알기사 SQLD 핵심기출', author: '조현준', publisher: '지안에듀', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 234, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788966113217.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+알기사+SQLD' },
-    { title: '2026 수제비 정보처리기사 필기 기출문제집', author: '윤영빈 외', publisher: '수제비', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 167, tags: ['추천'], imageUrl: KB('S000218609731'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218609731' },
-  ],
-
-  // ────────────────────────────────────────
   '토목기사': [
     // 베스트셀러 5
     { title: '2026 토목기사 필기 4주완성 핵심 및 과년도', author: '이상도 외', publisher: '한솔아카데미', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.7, reviews: 289, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791166547461.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+토목기사+한솔아카데미' },
