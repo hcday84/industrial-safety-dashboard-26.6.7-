@@ -857,7 +857,7 @@ const REAL_BOOKS = {
     { title: '2026 최신판 답이 보인다 30일 단기완성 전기공사기사·산업기사 실기', author: '검정연구회', publisher: '동일출판사', price: 35100, originalPrice: 39000, discount: '10%', rating: 4.5, reviews: 134, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788938117595.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=전기공사기사+산업기사+실기+30일+2026' },
     { title: '2026 D30-3 전기공사기사실기', author: '검정연구회', publisher: '엔트미디어', price: 35100, originalPrice: 39000, discount: '10%', rating: 4.5, reviews: 112, tags: ['추천'], isbn: '9791192810850', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791192810850.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=D30-3+전기공사기사+실기+2026' },
     { title: '2026 전기공사기사 필기 파이널 특강', author: '김상훈, 한빛전기수험연구회', publisher: '윤조', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791194702191.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=전기공사기사+필기+파이널+특강+2026' },
-    { title: '2026 에듀윌 전기 제어공학 필기', author: '에듀윌 전기수험연구소', publisher: '에듀윌', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.3, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=에듀윌+전기+제어공학+필기+2026' },
+    { title: '2026 에듀윌 전기 제어공학 필기+무료특강', author: '에듀윌 전기수험연구소', publisher: '에듀윌', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], isbn: '9791136038128', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136038128.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217252282' },
   ],
 
   '전기공사산업기사': [
