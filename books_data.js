@@ -1397,7 +1397,7 @@ const REAL_BOOKS = {
     { title: '해커스 토익 최신기출유형 실전 10회 RC(리딩)', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.8, reviews: 5432, tags: ['베스트'], imageUrl: KB('S000220438585'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220438585' },
     { title: '해커스 토익 PART 7 집중공략 777 RC', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 17100, originalPrice: 19000, discount: '10%', rating: 4.8, reviews: 4321, tags: ['베스트'], imageUrl: KB('S000219129734'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219129734' },
     { title: 'EBS 김대균 토익킹 (2026년 7월)', author: '김대균', publisher: '한국교육방송공사', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.7, reviews: 3210, tags: ['베스트'], imageUrl: KB('S000220240803'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220240803' },
-    { title: '토익 보카 단어장 (빈출 1200)', author: 'YBM 어학연구소', publisher: 'YBM', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.5, reviews: 2134, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=토익+보카+단어장+YBM' },
+    { title: 'ETS 토익 기출보카(VOCA)', author: 'ETS', publisher: 'YBM', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.9, reviews: 23, tags: ['추천'], isbn: '9788917244168', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788917244168.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000220226890' },
   ],
 
   'TOEIC Speaking': [
