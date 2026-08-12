@@ -976,6 +976,32 @@ const REAL_BOOKS = {
   ],
 
   // ────────────────────────────────────────
+  // 네트워크관리사 1급·2급은 필기+실기 통합 교재로 시험이 시행되어 동일 도서가 두 등급에 공통으로 쓰입니다.
+  '네트워크관리사1급': [
+    { title: '이기적 네트워크관리사 1, 2급 필기+실기 올인원', author: '임호진, 황성하', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], isbn: '9788931481211', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931481211.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218204635' },
+    { title: '2027 최적합 네트워크 관리사 1·2급 필기+실기', author: '허준, 선세리', publisher: '성안당', price: 27000, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2027+최적합+네트워크관리사+필기+실기' },
+    { title: '2025 최적합 네트워크 관리사 1·2급 필기+실기', author: '허준, 선세리', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.9, reviews: 10, tags: ['추천'], isbn: '9788931586718', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931586718.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000213673627' },
+  ],
+
+  // ────────────────────────────────────────
+  '네트워크관리사2급': [
+    { title: '이기적 네트워크관리사 1, 2급 필기+실기 올인원', author: '임호진, 황성하', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], isbn: '9788931481211', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931481211.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218204635' },
+    { title: '2027 최적합 네트워크 관리사 1·2급 필기+실기', author: '허준, 선세리', publisher: '성안당', price: 27000, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2027+최적합+네트워크관리사+필기+실기' },
+    { title: '2025 최적합 네트워크 관리사 1·2급 필기+실기', author: '허준, 선세리', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.9, reviews: 10, tags: ['추천'], isbn: '9788931586718', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931586718.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000213673627' },
+  ],
+
+  // ────────────────────────────────────────
+  '리눅스마스터1급': [
+    { title: '2026 이기적 리눅스마스터 1급(1·2차) 기본서 세트', author: '김윤수, 최정현', publisher: '영진닷컴', price: 34200, originalPrice: 38000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], isbn: '9788931481402', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931481402.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218968390' },
+  ],
+
+  // ────────────────────────────────────────
+  '리눅스마스터2급': [
+    { title: '2024 이기적 리눅스마스터 2급 기본서', author: '권소라', publisher: '영진닷컴', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 9, tags: ['베스트'], isbn: '9788931468366', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931468366.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000212326688' },
+    { title: '2027 빠르게 따는 리눅스마스터 2급(1·2차)', author: '권대우', publisher: '골든래빗(주)', price: 25200, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2027+빠르게+따는+리눅스마스터+2급' },
+  ],
+
+  // ────────────────────────────────────────
   '정보보안산업기사': [
     { title: '2026 알기사 정보보안기사(산업기사) 필기+핵심기출 1200제 세트', author: '조현준', publisher: '지안에듀', price: 54000, originalPrice: 60000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000218322836'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218322836' },
     { title: '2026 알기사 정보보안기사(산업기사) 실기', author: '정일영', publisher: '지안에듀', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000219083573'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219083573' },
