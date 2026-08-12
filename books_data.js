@@ -1449,7 +1449,7 @@ const REAL_BOOKS = {
   ],
 
   'ITQ': [
-    { title: '2026 이기적 ITQ 아래한글 ver. 2022 기본서', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.8, reviews: 4321, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+ITQ+아래한글+2026' },
+    { title: '2027 이기적 ITQ 한글 ver.2022', author: '영진정보연구소', publisher: '영진닷컴', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.8, reviews: 4321, tags: ['베스트'], isbn: '9788931482386', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931482386.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000220121037' },
     { title: '2026 이기적 ITQ 엑셀 ver. 2021 기본서', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.8, reviews: 3876, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931479447.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+ITQ+엑셀+2026' },
     { title: '2026 이기적 ITQ 파워포인트 ver. 2021 기본서', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.8, reviews: 3543, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931479461.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+ITQ+파워포인트+2026' },
     { title: 'ITQ OA Master 한글+엑셀+파워포인트 한권끝내기', author: '정보문화사 편집부', publisher: '정보문화사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 2134, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791125421832.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=ITQ+OA+Master+한권끝내기' },
