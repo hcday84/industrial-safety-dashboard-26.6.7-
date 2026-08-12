@@ -242,7 +242,7 @@ const REAL_BOOKS = {
     // 추천수험서 5
     { title: '2026 시나공 컴퓨터활용능력 2급 필기 기출문제집', author: '길벗 R&D', publisher: '길벗', price: 11700, originalPrice: 13000, discount: '10%', rating: 4.6, reviews: 267, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791140716647.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+시나공+컴활+2급+기출문제집' },
     { title: '2026 에듀윌 컴퓨터활용능력 2급 필기 한권끝장', author: '에듀윌 IT수험연구소', publisher: '에듀윌', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.5, reviews: 223, tags: ['추천'], isbn: '9791136037947', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136037947.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+에듀윌+컴퓨터활용능력+2급' },
-    { title: '2026 컴활 2급 필기 CBT 기출예상문제집', author: '홍태성', publisher: '영진닷컴', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.5, reviews: 189, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+컴활+2급+CBT' },
+    { title: '2026 이기적 컴퓨터활용능력 2급 필기+실기 올인원', author: '홍태성, 박윤정', publisher: '영진닷컴', price: 26100, originalPrice: 29000, discount: '10%', rating: 4.9, reviews: 89, tags: ['추천'], isbn: '9788931479362', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931479362.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217187013' },
   ],
 
   // ────────────────────────────────────────
