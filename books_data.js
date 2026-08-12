@@ -647,7 +647,7 @@ const REAL_BOOKS = {
   ],
 
   '소방설비산업기사(전기분야)': [
-    { title: '2026 찐합격 소방설비산업기사 필기 (전기 ③)', author: '공하성', publisher: '성안당', price: 41400, originalPrice: 46000, discount: '10%', rating: 4.8, reviews: 445, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=찐합격+소방설비산업기사+필기+전기+2026' },
+    { title: '2026 소방설비산업기사 필기 전기 3', author: '공하성', publisher: '성안당', price: 41400, originalPrice: 46000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], isbn: '9788931514032', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931514032.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218735475' },
     { title: '2026 찐합격 소방설비산업기사 실기 (전기⑥)', author: '공하성', publisher: '성안당', price: 41400, originalPrice: 46000, discount: '10%', rating: 4.7, reviews: 356, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931514063.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=찐합격+소방설비산업기사+실기+전기+2026' },
     { title: '2026 찐합격 7개년 과년도 소방설비산업기사 필기 (전기 ③-7)', author: '공하성', publisher: '성안당', price: 26550, originalPrice: 29500, discount: '10%', rating: 4.6, reviews: 267, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931514094.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=찐합격+7개년+소방설비산업기사+필기+전기+2026' },
     { title: '2026 초격차 소방설비산업기사 과년도 7개년 실기 전기', author: '황모아, 오민정', publisher: '모아교육그룹', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.5, reviews: 223, tags: ['추천'], isbn: '9791168045187', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791168045187.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=초격차+소방설비산업기사+실기+전기+2026' },
