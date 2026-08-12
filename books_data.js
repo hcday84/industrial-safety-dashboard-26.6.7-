@@ -266,6 +266,34 @@ const REAL_BOOKS = {
   ],
 
   // ────────────────────────────────────────
+  'SQLD': [
+    // 베스트셀러 5
+    { title: '2026 빠르게 따는 SQLD SQL 개발자', author: '이유성, 조영훈, 임한울', publisher: '골든래빗(주)', price: 21600, originalPrice: 24000, discount: '10%', rating: 5.0, reviews: 27, tags: ['베스트'], isbn: '9791194383710', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791194383710.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219025005' },
+    { title: '2026 에듀윌 SQLD SQL 개발자 2주끝장+무료특강', author: '김남규', publisher: '에듀윌', price: 21600, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+에듀윌+SQLD+2주끝장' },
+    { title: '2026 이기적 SQLD SQL 개발자 기본서 이론+기출문제', author: '강태우', publisher: '영진닷컴', price: 21600, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+이기적+SQLD+기본서' },
+    { title: '2027 한 권으로 끝내는 시나공 SQLD', author: '서동재', publisher: '길벗', price: 23400, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=시나공+SQLD' },
+    { title: '이지패스 2026 SQLD SQL 개발자', author: '전용문, 송영민', publisher: '한올출판사', price: 23400, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이지패스+SQLD' },
+    // 추천수험서 5
+    { title: '2024 국가공인 SQLD 자격검정 핵심노트', author: '조시형, 신동민, 정희락, 김경수', publisher: '디비안(주)(DBian)', price: 21600, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=국가공인+SQLD+자격검정+핵심노트' },
+    { title: 'SQL 자격검정 실전문제', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 18000, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=SQL+자격검정+실전문제' },
+    { title: '2026 아이리포 SQL 개발자 SQLD 모든 것', author: '조용학', publisher: '아이리포', price: 23400, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=아이리포+SQLD' },
+    { title: '2026 시대에듀 유선배 SQL개발자(SQLD) 합격노트', author: '정미나', publisher: '시대에듀', price: 21600, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=시대에듀+유선배+SQLD' },
+  ],
+
+  // ────────────────────────────────────────
+  'SQLP': [
+    // 베스트셀러 5
+    { title: '2024 국가공인 SQLP 자격검정 핵심노트 1', author: '조시형', publisher: '디비안(주)(DBian)', price: 32000, tags: ['베스트'], isbn: '9791191941081', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791191941081.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000213913597' },
+    { title: '2024 국가공인 SQLP 자격검정 핵심노트 2', author: '조시형', publisher: '디비안(주)(DBian)', price: 32000, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=국가공인+SQLP+자격검정+핵심노트+2' },
+    { title: 'SQL 전문가 가이드', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 50000, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=SQL+전문가+가이드' },
+    { title: 'SQL 자격검정 실전문제', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 18000, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=SQL+자격검정+실전문제' },
+    { title: '친절한 SQL 튜닝', author: '조시형', publisher: '디비안(주)(DBian)', price: 34200, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=친절한+SQL+튜닝' },
+    // 추천수험서 5
+    { title: '오라클 성능 고도화 원리와 해법 1', author: '조시형', publisher: '비투엔컨설팅', price: 39000, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=오라클+성능+고도화+원리와+해법' },
+    { title: '데이터아키텍처 전문가 가이드', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 50000, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=데이터아키텍처+전문가+가이드' },
+  ],
+
+  // ────────────────────────────────────────
   '토목기사': [
     // 베스트셀러 5
     { title: '2026 토목기사 필기 4주완성 핵심 및 과년도', author: '이상도 외', publisher: '한솔아카데미', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.7, reviews: 289, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791166547461.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+토목기사+한솔아카데미' },
