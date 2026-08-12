@@ -1463,25 +1463,6 @@ const REAL_BOOKS = {
     { title: '시나공 ITQ 한글+엑셀+파워포인트', author: '길벗 R&D', publisher: '길벗', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791140708536.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=시나공+ITQ+한글+엑셀+파워포인트' },
   ],
 
-  'SQLD': [
-    { title: 'SQL 자격검정 실전문제 (한국데이터산업진흥원)', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 25000, originalPrice: 25000, discount: '0%', rating: 4.7, reviews: 4321, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788988474914.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=SQL+자격검정+실전문제' },
-    { title: '데이터베이스 개론 (SQLD 이론 기초)', author: '김연희', publisher: '한빛아카데미', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 1987, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=데이터베이스+개론+김연희' },
-  ],
-
-  'SQLP': [
-    { title: 'SQL 전문가 가이드 (한국데이터산업진흥원 공식)', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 40000, originalPrice: 40000, discount: '0%', rating: 4.8, reviews: 2345, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=SQL+전문가+가이드+SQLP' },
-    { title: '친절한 SQL 튜닝', author: '조시형', publisher: '디비안', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.8, reviews: 765, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791196395704.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=친절한+SQL+튜닝' },
-  ],
-
-  '네트워크관리사1급': [
-    { title: '2026 이기적 네트워크관리사 1급 필기+실기', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+네트워크관리사+1급+2026' },
-  ],
-
-  '네트워크관리사2급': [
-    { title: '2026 이기적 네트워크관리사 2급 필기+실기', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 2876, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931481211.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+네트워크관리사+2급+2026' },
-    { title: '네트워크관리사 2급 한권으로 끝내기', author: '황종식', publisher: '성안당', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788965121565.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=네트워크관리사+2급+한권으로끝내기' },
-  ],
-
   'JLPT': [
     { title: 'JLPT 한 권으로 합격 N1', author: '시원스쿨 일본어연구소', publisher: '시원스쿨랩', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 3456, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788965426073.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=JLPT+한권으로합격+N1' },
     { title: 'JLPT 한 권으로 합격 N2', author: '시원스쿨 일본어연구소', publisher: '시원스쿨랩', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.8, reviews: 3210, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788965423393.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=JLPT+한권으로합격+N2' },
