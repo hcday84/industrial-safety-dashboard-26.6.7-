@@ -565,6 +565,34 @@ button, input, select {
   border-color: var(--primary-color);
   color: #fff;
 }
+/* 역할별 구분 색상 — 고객(네이비)·담당자(오렌지)·직원(그린) */
+.role-tab-btn[data-role="customer"]:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+.role-tab-btn[data-role="customer"].active {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+}
+.role-tab-btn[data-role="manager"]:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+.role-tab-btn[data-role="manager"].active {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #fff;
+}
+.role-tab-btn[data-role="employee"]:hover {
+  border-color: var(--green-color);
+  color: var(--green-color);
+}
+.role-tab-btn[data-role="employee"].active {
+  background: var(--green-color);
+  border-color: var(--green-color);
+  color: #fff;
+}
 .role-quick-panel {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
