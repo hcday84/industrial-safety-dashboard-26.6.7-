@@ -1447,22 +1447,6 @@ const REAL_BOOKS = {
     { title: '바리스타 2급 자격시험 기출문제 완전분석', author: '한국커피협회', publisher: '한국커피협회', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.6, reviews: 1876, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=바리스타+2급+기출문제' },
   ],
 
-  '리눅스마스터1급': [
-    { title: '2026 이기적 리눅스마스터 1급 (1·2차) 기본서 세트', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 49500, originalPrice: 55000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], imageUrl: KB('S000218968390'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218968390' },
-    { title: 'Rocky Linux8로 리눅스마스터 1급 정복하기', author: '우재남', publisher: '한빛미디어', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.8, reviews: 1876, tags: ['베스트'], imageUrl: KB('S000212567319'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212567319' },
-    { title: '최신 기출문제를 수록한 리눅스마스터 1급 2차 실기 정복하기', author: '우재남', publisher: '한빛미디어', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: KB('S000001816547'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001816547' },
-    { title: '국가공인 리눅스마스터 1급', author: '강진수', publisher: '한국정보통신진흥협회', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: KB('S000001958046'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001958046' },
-  ],
-
-  '리눅스마스터2급': [
-    { title: '2026 이기적 리눅스마스터 2급 (1·2차) 기본서', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 3456, tags: ['베스트'], imageUrl: KB('S000218787227'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218787227' },
-    { title: '리눅스마스터 2급 한권으로 끝내기', author: '강진수', publisher: '성안당', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 2876, tags: ['베스트'], imageUrl: KB('S000219391330'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219391330' },
-    { title: '2026 박문각 리눅스마스터 2급 기출원스톱 800제+무료특강', author: '박문각 IT연구소', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 2134, tags: ['베스트'], imageUrl: KB('S000219249403'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219249403' },
-    { title: '2027 빠르게 따는 리눅스마스터 2급 (1, 2차)', author: '리눅스마스터연구회', publisher: '영진닷컴', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['추천'], imageUrl: KB('S000220240746'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220240746' },
-    { title: 'Rocky Linux8로 리눅스마스터 2급 정복하기', author: '우재남', publisher: '한빛미디어', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: KB('S000211820693'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211820693' },
-    { title: '국가공인 리눅스마스터 2급', author: '강진수', publisher: '한국정보통신진흥협회', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], imageUrl: KB('S000001958047'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001958047' },
-  ],
-
   'FAT': [
     { title: '2026 I CAN FAT 회계실무 1급', author: '아이캔 세무회계연구소', publisher: '아이캔', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 2876, tags: ['베스트'], imageUrl: KB('S000219117007'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219117007' },
     { title: '2026 I CAN FAT 회계실무 2급', author: '아이캔 세무회계연구소', publisher: '아이캔', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2543, tags: ['베스트'], imageUrl: KB('S000218979828'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218979828' },
