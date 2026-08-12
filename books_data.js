@@ -395,7 +395,7 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   '간호사': [
     // 베스트셀러 5
-    { title: '2027 에듀팩토리 간호사 국시 5개년 기출문제집', author: '에듀팩토리 편집부', publisher: '에듀팩토리', price: 35100, originalPrice: 39000, discount: '10%', rating: 4.7, reviews: 1245, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=간호사+국시+기출문제+2027' },
+    { title: '2027 시대에듀 간호사 국가고시 기출동형 문제집', author: '강경순', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], isbn: '9791143415530', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143415530.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000220119482' },
     // 추천수험서 5
     { title: '2027 성인간호학 한권완성 국시 핵심요약', author: '이은희 외', publisher: '군자출판사', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.8, reviews: 876, tags: ['추천'], isbn: '9791173841477', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791173841477.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=성인간호학+국시+핵심요약+2027' },
     { title: '2027 간호관리학 국시 완전정복', author: '김진희', publisher: '메디시언', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.7, reviews: 743, tags: ['추천'], isbn: '9791194995296', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791194995296.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=간호관리학+국시+2027' },
