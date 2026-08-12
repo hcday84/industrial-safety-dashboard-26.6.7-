@@ -269,28 +269,28 @@ const REAL_BOOKS = {
   'SQLD': [
     // 베스트셀러 5
     { title: '2026 빠르게 따는 SQLD SQL 개발자', author: '이유성, 조영훈, 임한울', publisher: '골든래빗(주)', price: 21600, originalPrice: 24000, discount: '10%', rating: 5.0, reviews: 27, tags: ['베스트'], isbn: '9791194383710', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791194383710.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219025005' },
-    { title: '2026 에듀윌 SQLD SQL 개발자 2주끝장+무료특강', author: '김남규', publisher: '에듀윌', price: 21600, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+에듀윌+SQLD+2주끝장' },
-    { title: '2026 이기적 SQLD SQL 개발자 기본서 이론+기출문제', author: '강태우', publisher: '영진닷컴', price: 21600, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+이기적+SQLD+기본서' },
-    { title: '2027 한 권으로 끝내는 시나공 SQLD', author: '서동재', publisher: '길벗', price: 23400, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=시나공+SQLD' },
-    { title: '이지패스 2026 SQLD SQL 개발자', author: '전용문, 송영민', publisher: '한올출판사', price: 23400, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이지패스+SQLD' },
+    { title: '2026 에듀윌 SQLD SQL 개발자 2주끝장+무료특강', author: '김남규', publisher: '에듀윌', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.9, reviews: 23, tags: ['베스트'], isbn: '9791136040596', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136040596.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218965390' },
+    { title: '2026 이기적 SQLD SQL 개발자 기본서 이론+기출문제', author: '강태우', publisher: '영진닷컴', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.7, reviews: 87, tags: ['베스트'], isbn: '9788931477849', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931477849.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217937565' },
+    { title: '2027 한 권으로 끝내는 시나공 SQLD', author: '서동재', publisher: '길벗', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 21, tags: ['베스트'], isbn: '9791140719457', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791140719457.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000220308524' },
+    { title: '이지패스 2026 SQLD SQL 개발자', author: '전용문, 송영민', publisher: '위키북스', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 172, tags: ['베스트'], isbn: '9791158396589', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791158396589.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218962409' },
     // 추천수험서 5
-    { title: '2024 국가공인 SQLD 자격검정 핵심노트', author: '조시형, 신동민, 정희락, 김경수', publisher: '디비안(주)(DBian)', price: 21600, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=국가공인+SQLD+자격검정+핵심노트' },
-    { title: 'SQL 자격검정 실전문제', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 18000, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=SQL+자격검정+실전문제' },
-    { title: '2026 아이리포 SQL 개발자 SQLD 모든 것', author: '조용학', publisher: '아이리포', price: 23400, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=아이리포+SQLD' },
-    { title: '2026 시대에듀 유선배 SQL개발자(SQLD) 합격노트', author: '정미나', publisher: '시대에듀', price: 21600, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=시대에듀+유선배+SQLD' },
+    { title: '2024 국가공인 SQLD 자격검정 핵심노트', author: '조시형, 신동민, 정희락, 김경수', publisher: '디비안(주)(DBian)', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.0, reviews: 4, tags: ['추천'], isbn: '9791191941067', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791191941067.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000212773783' },
+    { title: 'SQL 자격검정 실전문제', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 18000, rating: 4.9, reviews: 207, tags: ['추천'], isbn: '9788988474914', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788988474914.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000212021705' },
+    { title: '2026 아이리포 SQL 개발자 SQLD 모든 것', author: '조용학', publisher: '아이리포', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 65, tags: ['추천'], isbn: '9791193747094', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791193747094.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218822223' },
+    { title: '2026 시대에듀 유선배 SQL개발자(SQLD) 합격노트', author: '정미나', publisher: '시대고시기획', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.2, reviews: 23, tags: ['추천'], isbn: '9791143402929', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143402929.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218641284' },
   ],
 
   // ────────────────────────────────────────
   'SQLP': [
     // 베스트셀러 5
     { title: '2024 국가공인 SQLP 자격검정 핵심노트 1', author: '조시형', publisher: '디비안(주)(DBian)', price: 32000, tags: ['베스트'], isbn: '9791191941081', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791191941081.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000213913597' },
-    { title: '2024 국가공인 SQLP 자격검정 핵심노트 2', author: '조시형', publisher: '디비안(주)(DBian)', price: 32000, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=국가공인+SQLP+자격검정+핵심노트+2' },
-    { title: 'SQL 전문가 가이드', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 50000, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=SQL+전문가+가이드' },
-    { title: 'SQL 자격검정 실전문제', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 18000, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=SQL+자격검정+실전문제' },
-    { title: '친절한 SQL 튜닝', author: '조시형', publisher: '디비안(주)(DBian)', price: 34200, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=친절한+SQL+튜닝' },
+    { title: '2024 국가공인 SQLP 자격검정 핵심노트 2', author: '조시형', publisher: '디비안(주)(DBian)', price: 32000, rating: 5.0, reviews: 4, tags: ['베스트'], isbn: '9791191941098', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791191941098.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000213914864' },
+    { title: 'SQL 전문가 가이드', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 50000, rating: 4.9, reviews: 32, tags: ['베스트'], isbn: '9788988474860', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788988474860.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001399869' },
+    { title: 'SQL 자격검정 실전문제', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 18000, rating: 4.9, reviews: 207, tags: ['베스트'], isbn: '9788988474914', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788988474914.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000212021705' },
+    { title: '친절한 SQL 튜닝', author: '조시형', publisher: '디비안(주)(DBian)', price: 34200, originalPrice: 38000, discount: '10%', rating: 5.0, reviews: 61, tags: ['베스트'], isbn: '9791196395704', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791196395704.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001975837' },
     // 추천수험서 5
-    { title: '오라클 성능 고도화 원리와 해법 1', author: '조시형', publisher: '비투엔컨설팅', price: 39000, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=오라클+성능+고도화+원리와+해법' },
-    { title: '데이터아키텍처 전문가 가이드', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 50000, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=데이터아키텍처+전문가+가이드' },
+    { title: '오라클 성능 고도화 원리와 해법 1', author: '조시형', publisher: '디비안(주)(DBian)', price: 39000, rating: 5.0, reviews: 17, tags: ['추천'], isbn: '9791191941043', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791191941043.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000061696047' },
+    { title: '데이터아키텍처 전문가 가이드', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 50000, rating: 4.9, reviews: 32, tags: ['추천'], isbn: '9788988474877', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788988474877.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001399870' },
   ],
 
   // ────────────────────────────────────────
