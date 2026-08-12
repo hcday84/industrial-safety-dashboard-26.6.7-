@@ -227,7 +227,7 @@ const REAL_BOOKS = {
     // 추천수험서 5
     { title: '2026 시나공 컴퓨터활용능력 1급 필기 기출문제집', author: '길벗 R&D', publisher: '길벗', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.6, reviews: 245, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791140716630.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+시나공+컴활+1급+기출문제집' },
     { title: '2026 에듀윌 컴퓨터활용능력 1급 필기 한권끝장', author: '에듀윌 IT수험연구소', publisher: '에듀윌', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 198, tags: ['추천'], isbn: '9791136037923', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136037923.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+에듀윌+컴퓨터활용능력+1급' },
-    { title: '2026 컴퓨터활용능력 1급 CBT 기출예상문제집', author: '홍태성', publisher: '영진닷컴', price: 18900, originalPrice: 21000, discount: '10%', rating: 4.4, reviews: 143, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+컴활+1급+CBT' },
+    { title: '2026 이기적 컴퓨터활용능력 1급 필기+실기 올인원', author: '홍태성, 박윤정', publisher: '영진닷컴', price: 36000, originalPrice: 40000, discount: '10%', rating: 5.0, reviews: 41, tags: ['추천'], isbn: '9788931479355', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931479355.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217281540' },
     { title: '2026 합격이 보이는 컴퓨터활용능력 1급 필기', author: '박윤정', publisher: '성안당', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.4, reviews: 123, tags: ['추천'], isbn: '9788931479645', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931479645.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+컴퓨터활용능력+1급+합격' },
   ],
 
