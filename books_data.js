@@ -951,7 +951,6 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   '리눅스마스터2급': [
     { title: '2024 이기적 리눅스마스터 2급 기본서', author: '권소라', publisher: '영진닷컴', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 9, tags: ['베스트'], isbn: '9788931468366', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931468366.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000212326688' },
-    { title: '2027 빠르게 따는 리눅스마스터 2급(1·2차)', author: '권대우', publisher: '골든래빗(주)', price: 25200, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2027+빠르게+따는+리눅스마스터+2급' },
   ],
 
   // ────────────────────────────────────────
