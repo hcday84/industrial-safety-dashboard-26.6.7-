@@ -898,9 +898,8 @@ const REAL_BOOKS = {
     { title: '2026 한번에 합격하는 화학분석기사 필기', author: '박수경', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 167, tags: ['베스트'], isbn: '9788931585308', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931585308.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+화학분석기사+필기+성안당' },
     { title: '2026 Win-Q 화학분석기사 필기 단기합격', author: '박지은', publisher: '시대에듀', price: 32400, originalPrice: 36000, discount: '10%', rating: 4.5, reviews: 143, tags: ['베스트'], isbn: '9791143404145', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143404145.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+Win-Q+화학분석기사' },
     // 추천수험서 5
-    { title: '2026 화학분석기사 핵심이론+기출문제', author: '정나나', publisher: '예문사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.4, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+화학분석기사+핵심이론' },
-    { title: '2026 화학분석기사 실기 완전정복', author: '박수경', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+화학분석기사+실기' },
-    { title: '2026 화학분석기사 7개년 과년도 해설집', author: '박지은', publisher: '시대에듀', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.3, reviews: 54, tags: ['추천'], isbn: '9788931585315', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931585315.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+화학분석기사+7개년' },
+    { title: '2026 한번에 합격하는 화학분석기사 실기(필답형+작업형)', author: '박수경', publisher: '성안당', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.4, reviews: 76, tags: ['추천'], isbn: '9788931585315', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931585315.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219304491' },
+    { title: '2026 시대에듀 Win-Q 화학분석기사 실기 단기합격', author: '김영호, 김혜경', publisher: '시대고시기획', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.3, reviews: 54, tags: ['추천'], isbn: '9791143406675', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143406675.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218913894' },
   ],
 
   // ────────────────────────────────────────
