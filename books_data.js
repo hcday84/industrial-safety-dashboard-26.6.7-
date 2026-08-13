@@ -1534,9 +1534,8 @@ const REAL_BOOKS = {
   ],
 
   '관광통역안내사': [
-    { title: '2026 관광통역안내사 영어 한권으로 합격', author: '관광자격연구소', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=관광통역안내사+영어+2026' },
-    { title: '2026 관광통역안내사 중국어 한권으로 합격', author: '관광자격연구소', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788998444617.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=관광통역안내사+중국어+2026' },
-    { title: '2026 관광통역안내사 일본어 한권으로 합격', author: '관광자격연구소', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=관광통역안내사+일본어+2026' },
+    { title: '2026 관광통역안내사 영어면접 핵심 기출문제 200', author: '호기헌', publisher: '창조와지식', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], isbn: '9791176270106', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791176270106.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219407374' },
+    { title: '시대에듀 50일 만에 끝내는 중국어 관광통역안내사 2차 면접', author: '김미숙', publisher: '시대고시기획', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], isbn: '9791143410245', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143410245.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219391364' },
   ],
 
   '한국어능력시험(TOPIK)': [
