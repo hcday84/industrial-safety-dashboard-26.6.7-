@@ -1013,7 +1013,6 @@ const REAL_BOOKS = {
     { title: '2026 시대에듀 답만 외우는 미용사 일반 필기 CBT기출문제', author: '시대에듀 편집부', publisher: '시대고시기획', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: KB('S000217049157'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217049157' },
     { title: '2026 적중100% 미용사일반 필기시험 총정리문제', author: '크라운출판사 편집부', publisher: '크라운출판사', price: 14400, originalPrice: 16000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], imageUrl: KB('S000217049878'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217049878' },
     { title: '2026 미용사 일반 필기 핵심요약+기출모의', author: '타임 NCS 연구소', publisher: '시대에듀', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: KB('S000218448172'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218448172' },
-    { title: '2026 미용사 일반 실기 완전정복', author: '김지연', publisher: '책과상상', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+미용사+일반+실기' },
     { title: '2026 Win-Q 미용사(일반) 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.3, reviews: 87, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791138395991.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=Win-Q+미용사+일반' },
   ],
 
