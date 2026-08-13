@@ -1215,8 +1215,8 @@ const REAL_BOOKS = {
   ],
 
   '평생교육사': [
-    { title: '2026 평생교육사 평생교육론·방법론 핵심', author: '권두승 외', publisher: '교육과학사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 456, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=평생교육사+평생교육론+방법론+2026' },
-    { title: '2026 평생교육사 프로그램개발론 핵심', author: '기영화 외', publisher: '학지사', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.5, reviews: 378, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=평생교육사+프로그램개발론+핵심+2026' },
+    { title: '평생교육경영론', author: '권두승, 최운실', publisher: '교육과학사', price: 20000, originalPrice: 20000, discount: '0%', rating: 4.5, reviews: 456, tags: ['베스트'], isbn: '9788925408040', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788925408040.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000000474068' },
+    { title: '평생교육 프로그램개발', author: '기영화', publisher: '학지사', price: 10000, originalPrice: 10000, discount: '0%', rating: 4.5, reviews: 378, tags: ['추천'], isbn: '9788975485855', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788975485855.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001175547' },
   ],
 
   // ────────────────────────────────────────
