@@ -934,14 +934,12 @@ const REAL_BOOKS = {
   // 네트워크관리사 1급·2급은 필기+실기 통합 교재로 시험이 시행되어 동일 도서가 두 등급에 공통으로 쓰입니다.
   '네트워크관리사1급': [
     { title: '이기적 네트워크관리사 1, 2급 필기+실기 올인원', author: '임호진, 황성하', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], isbn: '9788931481211', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931481211.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218204635' },
-    { title: '2027 최적합 네트워크 관리사 1·2급 필기+실기', author: '허준, 선세리', publisher: '성안당', price: 27000, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2027+최적합+네트워크관리사+필기+실기' },
     { title: '2025 최적합 네트워크 관리사 1·2급 필기+실기', author: '허준, 선세리', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.9, reviews: 10, tags: ['추천'], isbn: '9788931586718', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931586718.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000213673627' },
   ],
 
   // ────────────────────────────────────────
   '네트워크관리사2급': [
     { title: '이기적 네트워크관리사 1, 2급 필기+실기 올인원', author: '임호진, 황성하', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], isbn: '9788931481211', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931481211.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218204635' },
-    { title: '2027 최적합 네트워크 관리사 1·2급 필기+실기', author: '허준, 선세리', publisher: '성안당', price: 27000, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2027+최적합+네트워크관리사+필기+실기' },
     { title: '2025 최적합 네트워크 관리사 1·2급 필기+실기', author: '허준, 선세리', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.9, reviews: 10, tags: ['추천'], isbn: '9788931586718', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931586718.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000213673627' },
   ],
 
