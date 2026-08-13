@@ -1220,7 +1220,6 @@ const REAL_BOOKS = {
 
   // ────────────────────────────────────────
   '조산사': [
-    { title: '조산사를 위한 분만 임상 가이드', author: '이경혜 외', publisher: '현문사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.5, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=조산사+분만+임상+가이드' },
   ],
 
   // ────────────────────────────────────────
