@@ -1140,7 +1140,7 @@ const REAL_BOOKS = {
   ],
 
   '보험계리사': [
-    { title: '2026 보험계리사 1차 경제학 핵심이론+기출', author: '정병열', publisher: '세경북스', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 378, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=보험계리사+1차+경제학+2026' },
+    { title: '경제학연습 미시편', author: '정병열', publisher: '세경북스', price: 47700, originalPrice: 53000, discount: '10%', rating: 4.6, reviews: 378, tags: ['베스트'], isbn: '9791159734526', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791159734526.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216352206' },
   ],
 
   '일반행정사': [
