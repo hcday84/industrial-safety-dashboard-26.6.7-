@@ -873,7 +873,7 @@ const REAL_BOOKS = {
     { title: '전기기능장 PLC제어 & 시공 실무 마스터', author: '이해춘', publisher: '사이버북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 134, tags: ['추천'], isbn: '9791193683187', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791193683187.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=전기기능장+PLC제어+시공+실무' },
     { title: '전기기능장 실기 PLC 완전정복', author: '검정연구회', publisher: '이나무', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], isbn: '9791191569292', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791191569292.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=전기기능장+실기+PLC+완전정복' },
     { title: '전기기능장 실기 PLC 과년도 기출문제', author: '최병남', publisher: '세진사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.4, reviews: 89, tags: ['추천'], isbn: '9791160456844', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791160456844.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=전기기능장+실기+PLC+과년도+기출문제' },
-    { title: '전기기능장 실기 - 작업형/필답형 실기총정리', author: '유영규', publisher: '일진사', price: 30600, originalPrice: 34000, discount: '10%', rating: 4.3, reviews: 67, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=전기기능장+실기+작업형+필답형' },
+    { title: '전기기능장 실기 - 작업형/필답형 실기총정리', author: '유영규', publisher: '일진사', price: 30600, originalPrice: 34000, discount: '10%', rating: 4.3, reviews: 67, tags: ['추천'], isbn: '9788942916733', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788942916733.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000000671439' },
   ],
 
   '전기기능사': [
