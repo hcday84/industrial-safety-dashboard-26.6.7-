@@ -1403,7 +1403,7 @@ const REAL_BOOKS = {
   'HSK': [
     { title: 'HSK 6급 한 권으로 합격', author: '정계도', publisher: '시원스쿨랩', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2876, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791157200078.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=HSK+6급+한권으로합격' },
     { title: 'HSK 5급 한 권으로 합격', author: '정계도', publisher: '시원스쿨랩', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.8, reviews: 2543, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791164302918.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=HSK+5급+한권으로합격' },
-    { title: '해커스 중국어 HSK 6급 어휘·독해·듣기', author: '해커스중국어연구소', publisher: '해커스어학연구소', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.7, reviews: 1987, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=해커스+중국어+HSK+6급' },
+    { title: '해커스 중국어 HSK 6급 한 권으로 고득점 달성 기본서 + 실전모의고사 + 핵심어휘집', author: '리우윈, 해커스 HSK연구소', publisher: '해커스', price: 24210, originalPrice: 26900, discount: '10%', rating: 4.7, reviews: 1987, tags: ['베스트'], isbn: '9791137904385', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791137904385.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000061351817' },
     { title: 'HSK 5급 실전 모의고사 5회분', author: '다락원 중국어연구소', publisher: '다락원', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791190074322.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=HSK+5급+실전+모의고사' },
   ],
 
