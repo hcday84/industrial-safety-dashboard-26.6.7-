@@ -185,7 +185,6 @@ const REAL_BOOKS = {
     { title: '가스기능장 필기 과년도 기출문제', author: '권오수 외', publisher: '예문사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.4, reviews: 87, tags: ['베스트'], isbn: '9788927456551', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788927456551.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=가스기능장+과년도+기출문제' },
     { title: '한권으로 필기와 실기를 끝내는 가스기능장', author: '최갑규', publisher: '세진북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.4, reviews: 76, tags: ['베스트'], isbn: '9791157457007', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791157457007.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=가스기능장+필기+실기+한권' },
     // 추천수험서 5
-    { title: '가스기능장 실기 완전정복', author: '최갑규', publisher: '세진북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.3, reviews: 43, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=가스기능장+실기' },
   ],
 
   // ────────────────────────────────────────
