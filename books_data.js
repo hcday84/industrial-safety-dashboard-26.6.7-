@@ -1492,7 +1492,6 @@ const REAL_BOOKS = {
 
   '한국어능력시험(TOPIK)': [
     { title: '한국어능력시험 TOPIK II 한권으로 끝내기', author: '이지원', publisher: '시원스쿨랩', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 5432, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788927774372.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=TOPIK+II+한권으로끝내기' },
-    { title: '해커스 TOPIK II 한국어능력시험 실전 기출', author: '해커스 한국어연구소', publisher: '해커스어학연구소', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.8, reviews: 4321, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=해커스+TOPIK+II+실전기출' },
   ],
 
   '임용고시': [
