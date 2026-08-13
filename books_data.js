@@ -1210,7 +1210,6 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   '언어재활사': [
     { title: '2026 언어재활사 모의고사 5회분', author: '언어치료국시연구회', publisher: '학지사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 167, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143416964.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=언어재활사+모의고사+5회분+2026' },
-    { title: '언어재활사를 위한 AAC 보완대체의사소통', author: '이소현 외', publisher: '학지사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 108, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=언어재활사+AAC+보완대체의사소통' },
     { title: '언어재활 임상 실습 가이드', author: '김영태 외', publisher: '학지사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.3, reviews: 82, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788998521714.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=언어재활+임상+실습+가이드' },
   ],
 
