@@ -1168,7 +1168,6 @@ const REAL_BOOKS = {
   '청소년상담사2급': [
     { title: '2026 청소년상담사 3급 한권으로 끝내기', author: '청소년상담사연구회', publisher: '시대고시기획', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 876, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143406095.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년상담사+3급+한권으로+끝내기+2026' },
     { title: '2026 청소년상담사 2급 한권으로 끝내기', author: '청소년상담사연구회', publisher: '시대고시기획', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143406071.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년상담사+2급+한권으로+끝내기+2026' },
-    { title: '2026 청소년상담사 기출문제 완전분석', author: '김형태 외', publisher: '학지사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 654, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년상담사+기출문제+완전분석+2026' },
   ],
 
   '청소년지도사2급': [
