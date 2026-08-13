@@ -400,7 +400,6 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   '임상병리사': [
     // 베스트셀러 5
-    { title: '2027 임상병리사 기출문제 완전분석 10개년', author: '군자출판사 편집부', publisher: '군자출판사', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.7, reviews: 612, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상병리사+기출문제+10개년+2027' },
     { title: '2027 임상화학 핵심이론+문제', author: '이상철', publisher: '고려의학', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.7, reviews: 498, tags: ['베스트'], isbn: '9791192422015', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791192422015.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상화학+핵심이론+2027' },
     { title: '2027 임상미생물학 핵심요약', author: '박재원', publisher: '고려의학', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 312, tags: ['베스트'], isbn: '9791192422763', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791192422763.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상미생물학+핵심요약+2027' },
     // 추천수험서 5
