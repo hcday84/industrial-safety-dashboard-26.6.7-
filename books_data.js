@@ -506,8 +506,6 @@ const REAL_BOOKS = {
     { title: '2025 토목기사/토목산업기사 대비 핵심시리즈 6: 상하수도공학', author: '박재성', publisher: '성안당', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], isbn: '9788931511666', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931511666.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=토목기사+토목산업기사+핵심시리즈+상하수도공학' },
     { title: '2025 토목기사/토목산업기사 대비 핵심시리즈 3: 수리수문학', author: '박영태', publisher: '성안당', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], isbn: '9788931511635', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931511635.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=토목기사+토목산업기사+핵심시리즈+수리수문학' },
     { title: '철도토목기사.산업기사 필기.실기 합격 바이블', author: '정대호, 정찬묵, 배석복', publisher: 'CIR', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], isbn: '9791156109501', imageUrl: 'https://image.aladin.co.kr/product/26895/63/coversum/k602730508_1.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=철도토목기사+산업기사+합격+바이블' },
-    { title: '2026 토목산업기사 필기 4주완성', author: '이상도 외', publisher: '한솔아카데미', price: 37800, originalPrice: 42000, discount: '10%', rating: 4.4, reviews: 89, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=토목산업기사+필기+한솔아카데미+2026' },
-    { title: '2025 토목기사/토목산업기사 핵심시리즈: 토목일반', author: '이상도', publisher: '성안당', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 67, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=토목기사+토목산업기사+핵심시리즈+성안당' },
   ],
 
   '건축산업기사': [
