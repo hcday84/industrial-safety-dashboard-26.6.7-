@@ -758,7 +758,6 @@ const REAL_BOOKS = {
   ],
 
   '승강기기사': [
-    { title: '승강기 기사.산업기사 - NCS 기반 출제기준에 맞춘 최고의 수험서', author: '최기호, 이명상', publisher: '대광서림', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.8, reviews: 356, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=승강기+기사+산업기사+NCS+대광서림' },
     { title: '2026 승강기 기사.산업기사 필기', author: '이도흠', publisher: '엔트미디어', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.7, reviews: 289, tags: ['베스트'], isbn: '9791192810614', imageUrl: 'https://image.aladin.co.kr/product/37123/58/coversum/k722031774_1.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=승강기+기사+산업기사+필기+엔트미디어+2026' },
     { title: '2026 승강기 기사.산업기사 실기', author: '이도흠', publisher: '엔트미디어', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.7, reviews: 234, tags: ['베스트'], isbn: '9791192810805', imageUrl: 'https://image.aladin.co.kr/product/37985/78/coversum/k802034671_1.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=승강기+기사+산업기사+실기+엔트미디어+2026' },
     { title: '2024 기발한 승강기기사.산업기사 필기', author: '김인호', publisher: '크라운출판사', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.6, reviews: 189, tags: ['베스트'], isbn: '9788940647691', imageUrl: 'https://image.aladin.co.kr/product/32862/66/coversum/8940647696_1.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=기발한+승강기기사+산업기사+필기+크라운출판사' },
