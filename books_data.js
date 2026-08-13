@@ -1139,21 +1139,20 @@ const REAL_BOOKS = {
   ],
 
   '세무사': [
-    { title: '2026 세무사 1차 세법학개론 한권으로 끝내기', author: '이철재 외', publisher: '세경북스', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 1234, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=세무사+1차+세법학개론+2026' },
+    { title: '세법개론 1(2026)', author: '이철재, 정우승, 유은종', publisher: '리즈북스', price: 36000, originalPrice: 36000, discount: '0%', rating: 4.8, reviews: 1234, tags: ['베스트'], isbn: '9791124345016', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791124345016.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219470255' },
     { title: '2026 세무사 1차 재정학 핵심이론+기출문제', author: '임병진', publisher: '나무와숲', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143402943.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=세무사+1차+재정학+핵심이론+2026' },
-    { title: '2026 세무사 부가가치세법 핵심요약+기출', author: '이승철', publisher: '세경북스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 456, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=세무사+부가가치세법+핵심요약+2026' },
   ],
 
   '공인회계사': [
-    { title: '2026 공인회계사 1차 세법개론 핵심이론+기출', author: '이철재', publisher: '세경북스', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 1234, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인회계사+1차+세법개론+2026' },
+    { title: '세법개론 1(2026)', author: '이철재, 정우승, 유은종', publisher: '리즈북스', price: 36000, originalPrice: 36000, discount: '0%', rating: 4.8, reviews: 1234, tags: ['베스트'], isbn: '9791124345016', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791124345016.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219470255' },
     { title: '2026 공인회계사 2차 원가관리회계 기출+예상', author: '임세진', publisher: '세경북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 765, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791198777645.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인회계사+2차+원가관리회계+2026' },
-    { title: '2026 공인회계사 1차 경제원론 핵심이론', author: '정병열', publisher: '세경북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 543, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인회계사+1차+경제원론+2026' },
+    { title: '경제학연습 미시편', author: '정병열', publisher: '세경북스', price: 47700, originalPrice: 53000, discount: '10%', rating: 4.5, reviews: 543, tags: ['추천'], isbn: '9791159734526', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791159734526.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216352206' },
   ],
 
   '감정평가사': [
     { title: '2026 감정평가사 1차 부동산학원론 한권으로 끝내기', author: '강정규 외', publisher: '박문각', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 876, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791138389082.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=감정평가사+1차+부동산학원론+2026' },
     { title: '2026 감정평가사 2차 감정평가이론 기출+예상', author: '유선종 외', publisher: '나무와숲', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.7, reviews: 654, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791175191068.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=감정평가사+2차+감정평가이론+2026' },
-    { title: '2026 감정평가사 1차 경제학 핵심이론+기출', author: '정병열', publisher: '세경북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=감정평가사+1차+경제학+2026' },
+    { title: '경제학연습 미시편', author: '정병열', publisher: '세경북스', price: 47700, originalPrice: 53000, discount: '10%', rating: 4.6, reviews: 543, tags: ['베스트'], isbn: '9791159734526', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791159734526.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216352206' },
     { title: '2026 감정평가사 감정평가 관계법규 핵심이론', author: '이병준', publisher: '박문각', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 456, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791174042873.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=감정평가사+관계법규+핵심이론+2026' },
     { title: '2026 감정평가사 감정평가실무 기출+예상문제', author: '박성용', publisher: '나무와숲', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.5, reviews: 378, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791174044105.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=감정평가사+감정평가실무+2026' },
     { title: '2026 감정평가사 1차 회계학 핵심요약', author: '강경태', publisher: '나무와숲', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 312, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791174047137.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=감정평가사+1차+회계학+2026' },
