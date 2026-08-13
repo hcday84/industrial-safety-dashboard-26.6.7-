@@ -602,11 +602,8 @@ const REAL_BOOKS = {
 
   '건설재료시험기능사': [
     { title: '2026 건설재료시험기능사 필기 및 실기', author: '박종삼', publisher: '금호출판사', price: 23400, originalPrice: 26000, discount: '10%', rating: 4.8, reviews: 334, tags: ['베스트'], isbn: '9791192089300', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791192089300.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건설재료시험기능사+필기+실기+금호출판사+2026' },
-    { title: '2026 시대에듀 Win-Q 건설재료시험기능사 필기 단기합격', author: '최광희', publisher: '시대에듀', price: 23400, originalPrice: 26000, discount: '10%', rating: 4.7, reviews: 278, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=Win-Q+건설재료시험기능사+필기+단기합격+2026' },
+    { title: '2026 시대에듀 Win-Q 건설재료시험기능사 필기 단기합격', author: '최광희', publisher: '시대고시기획', price: 23400, originalPrice: 26000, discount: '10%', rating: 4.7, reviews: 278, tags: ['베스트'], isbn: '9791138397841', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791138397841.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217304240' },
     { title: '2026 건설재료시험기능사 실기', author: '박종삼', publisher: '금호출판사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 223, tags: ['베스트'], isbn: '9791192089331', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791192089331.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건설재료시험기능사+실기+금호출판사+2026' },
-    { title: '2026 건설재료시험기능사 핵심이론 기출문제', author: '최광희', publisher: '시대에듀', price: 23400, originalPrice: 26000, discount: '10%', rating: 4.6, reviews: 156, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건설재료시험기능사+핵심이론+기출문제+2026' },
-    { title: '2026 건설재료시험기능사 필기 단기완성', author: '박종삼', publisher: '금호출판사', price: 23400, originalPrice: 26000, discount: '10%', rating: 4.5, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건설재료시험기능사+필기+단기완성+2026' },
-    { title: '2026 건설재료시험기능사 필기 기출문제 풀이', author: '박종삼', publisher: '금호출판사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.3, reviews: 54, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건설재료시험기능사+필기+기출문제+금호출판사' },
   ],
 
   '건설안전기사': [
