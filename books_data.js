@@ -669,8 +669,6 @@ const REAL_BOOKS = {
     { title: '2026 [직8딴] 직접 8일 만에 딴 산업위생관리기사 실기', author: '김진태', publisher: '김영북스', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.6, reviews: 198, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791173491429.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=직8딴+산업위생관리기사+실기+2026' },
     { title: '2026 에듀윌 산업위생관리기사 실기 2주끝장', author: '최창률', publisher: '에듀윌', price: 23400, originalPrice: 26000, discount: '10%', rating: 4.6, reviews: 167, tags: ['추천'], isbn: '9791136039057', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136039057.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=에듀윌+산업위생관리기사+실기+2주끝장+2026' },
     { title: '2026 2주완성 산업위생관리기사 실기', author: '서영민', publisher: '성안당', price: 26100, originalPrice: 29000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], isbn: '9788931585056', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931585056.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2주완성+산업위생관리기사+실기+2026' },
-    { title: '2026 산업위생관리기사 필기 단기완성', author: '최윤정', publisher: '구민사', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.5, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=산업위생관리기사+필기+단기완성+구민사+2026' },
-    { title: '2026 산업위생관리기사 실기 단기완성', author: '서영민', publisher: '성안당', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.4, reviews: 89, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=산업위생관리기사+실기+단기완성+성안당+2026' },
   ],
 
   '위험물기능사': [
