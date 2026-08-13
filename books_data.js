@@ -159,7 +159,6 @@ const REAL_BOOKS = {
     { title: '2026 모아 가스산업기사 필기 빵꾸노트', author: '오민정', publisher: '모아교육그룹', price: 9900, originalPrice: 11000, discount: '10%', rating: 4.5, reviews: 112, tags: ['추천'], isbn: '9791168041950', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791168041950.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+모아+가스산업기사+빵꾸노트' },
     { title: '2026 가스산업기사 필기 기출문제집', author: '김재호', publisher: '예문사', price: 27900, originalPrice: 31000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], isbn: '9788931713688', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931713688.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+가스산업기사+기출문제집' },
     { title: '2026 가스산업기사 실기', author: '서상희', publisher: '일진사', price: 41400, originalPrice: 46000, discount: '10%', rating: 4.3, reviews: 76, tags: ['추천'], isbn: '9788942920822', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788942920822.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219135745' },
-    { title: '2026 가스산업기사 CBT 최신기출문제해설', author: '이윤기', publisher: '삼원북스', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 65, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+가스산업기사+CBT' },
   ],
 
   // ────────────────────────────────────────
