@@ -1377,7 +1377,6 @@ const REAL_BOOKS = {
 
   '바리스타2급': [
     { title: '2026 이기적 바리스타 2급 7일 끝, 합격', author: '임형준', publisher: '영진닷컴', price: 11700, originalPrice: 13000, discount: '10%', rating: 4.8, reviews: 3210, tags: ['베스트'], imageUrl: KB('S000218917586'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218917586' },
-    { title: '바리스타 2급 자격시험 기출문제 완전분석', author: '한국커피협회', publisher: '한국커피협회', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.6, reviews: 1876, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=바리스타+2급+기출문제' },
   ],
 
   'FAT': [
