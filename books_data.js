@@ -1460,9 +1460,8 @@ const REAL_BOOKS = {
   ],
 
   'ERP정보관리사': [
-    { title: '2026 이기적 ERP 정보관리사 회계 1·2급', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+ERP+정보관리사+회계+2026' },
-    { title: '2026 이기적 ERP 정보관리사 인사 1·2급', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931479096.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+ERP+정보관리사+인사+2026' },
-    { title: '2026 이기적 ERP 정보관리사 물류 1·2급', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+ERP+정보관리사+물류+2026' },
+    { title: '2026 이기적 ERP 정보관리사 인사 1급 기본서', author: '한선생', publisher: '영진닷컴', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931479096.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+ERP+정보관리사+인사+2026' },
+    { title: '2026 에듀윌 ERP 정보관리사 물류 1·2급 한권끝장+무료특강', author: '최주영', publisher: '에듀윌', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=에듀윌+ERP+정보관리사+물류+1·2급+2026' },
     { title: 'ERP 정보관리사 회계 기출문제집', author: 'ERP수험연구소', publisher: '시대에듀', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791138395014.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=ERP+정보관리사+회계+기출' },
   ],
 
