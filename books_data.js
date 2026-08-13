@@ -1502,9 +1502,9 @@ const REAL_BOOKS = {
   ],
 
   '사회통합프로그램': [
-    { title: '사회통합프로그램 종합평가 한국어·한국사회이해 교재 (법무부 공식)', author: '법무부 출입국·외국인청', publisher: '법무부', price: 20000, originalPrice: 20000, discount: '0%', rating: 4.7, reviews: 2345, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회통합프로그램+종합평가+교재' },
-    { title: 'KIIP 한국어와 한국문화 중급 1 (3단계)', author: '국립국어원', publisher: '하우', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=KIIP+한국어+한국문화+중급' },
-    { title: 'KIIP 한국사회이해 (5단계 기본)', author: '국립국어원', publisher: '하우', price: 12000, originalPrice: 13000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=KIIP+한국사회이해+5단계' },
+    { title: '사회통합프로그램 종합평가 한권으로 합격하기 영주용 귀화용', author: '사회통합프로그램연구소', publisher: '신지원', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], isbn: '9791166335433', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791166335433.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216717808' },
+    { title: '한국어와 한국문화 중급 1', author: '국립국어원 기획, 이미혜 외', publisher: '도서출판 하우', price: 10000, originalPrice: 10000, discount: '0%', rating: 4.7, reviews: 1876, tags: ['베스트'], isbn: '9791190154840', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791190154840.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001936459' },
+    { title: '사회통합프로그램(KIIP) 한국사회 이해: 기본', author: '법무부 출입국·외국인정책본부', publisher: '박영스토리', price: 10000, originalPrice: 10000, discount: '0%', rating: 4.6, reviews: 1543, tags: ['베스트'], isbn: '9791186140291', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791186140291.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001880312' },
   ],
 
   '국내여행안내사': [
