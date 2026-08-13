@@ -699,7 +699,6 @@ const REAL_BOOKS = {
     { title: '이패스 최부길의 공조냉동기계기능사 실기 (필답형+작업형)', author: '최부길', publisher: '이패스코리아', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], isbn: '9791172094447', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791172094447.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이패스+공조냉동기계기능사+실기+필답형+작업형' },
     { title: '2026 공조냉동기계기능사 필기 기출문제 - 기출 + 적중모의고사', author: '나중식', publisher: '책과상상', price: 14400, originalPrice: 16000, discount: '10%', rating: 4.4, reviews: 123, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791169672818.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공조냉동기계기능사+필기+기출문제+적중모의고사+2026' },
     { title: '2026 공조냉동기계기능사 단기완성', author: '이지원', publisher: '모아교육그룹', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], isbn: '9788942914159', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788942914159.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공조냉동기계기능사+단기완성+2026' },
-    { title: '2026 공조냉동기계기능사 핵심이론', author: '이정근', publisher: '건기원', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.3, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공조냉동기계기능사+핵심이론+건기원+2026' },
   ],
 
   '용접기사': [
