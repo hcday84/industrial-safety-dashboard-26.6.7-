@@ -289,12 +289,11 @@ const REAL_BOOKS = {
   '토목기사': [
     // 베스트셀러 5
     { title: '2026 토목기사 필기 4주완성 핵심 및 과년도', author: '이상도 외', publisher: '한솔아카데미', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.7, reviews: 289, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791166547461.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+토목기사+한솔아카데미' },
-    { title: '2026 에듀윌 토목기사 필기 한권끝장', author: '에듀윌 토목수험연구소', publisher: '에듀윌', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 234, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+에듀윌+토목기사' },
     { title: '2026 나합격 토목기사 필기+무료특강', author: '김동영', publisher: '삼원북스', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], isbn: '9791194997696', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791194997696.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+나합격+토목기사' },
     { title: '2026 토목기사 필기 과년도 10개년 문제풀이', author: '채수하 외', publisher: '예문사', price: 32400, originalPrice: 36000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], isbn: '9788927462088', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788927462088.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+토목기사+과년도' },
     // 추천수험서 5
     { title: '2026 토목기사·산업기사 응용역학 핵심이론', author: '안광호 외', publisher: '한솔아카데미', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.6, reviews: 198, tags: ['추천'], isbn: '9791166547485', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791166547485.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+토목기사+응용역학' },
-    { title: '2026 토목기사 실기 완전정복', author: '이상도 외', publisher: '한솔아카데미', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+토목기사+실기' },
+    { title: '2026 토목기사실기', author: '김태선 외', publisher: '한솔아카데미', price: 46800, originalPrice: 52000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], isbn: '9791166548239', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791166548239.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219061617' },
     { title: '2026 스마트 7개년 토목기사 과년도 기출해설', author: '허원회 외', publisher: '성안당', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], isbn: '9788931511604', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931511604.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+토목기사+성안당' },
   ],
 
