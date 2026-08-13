@@ -1557,8 +1557,8 @@ const REAL_BOOKS = {
   ],
 
   '심리상담사': [
-    { title: '상담이론과 실제 (코리의 상담이론)', author: 'Gerald Corey', publisher: '시그마프레스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 3210, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=상담이론과실제+코리+시그마프레스' },
-    { title: '상담심리학 핵심이론 총정리', author: '노안영', publisher: '학지사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=상담심리학+핵심이론+총정리+노안영' },
+    { title: '심리상담과 치료의 이론과 실제', author: 'Gerald Corey', publisher: '학지사', price: 39000, originalPrice: 39000, discount: '0%', rating: 4.8, reviews: 3210, tags: ['베스트'], isbn: '9788962185706', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788962185706.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216797281' },
+    { title: '상담심리학의 이론과 실제', author: '노안영', publisher: '학지사', price: 22000, originalPrice: 22000, discount: '0%', rating: 4.7, reviews: 1876, tags: ['베스트'], isbn: '9788999714948', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788999714948.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001643218' },
     { title: '집단상담의 이론과 실제', author: '천성문 외', publisher: '학지사', price: 20000, originalPrice: 22000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788999732041.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=집단상담+이론과실제+천성문' },
   ],
 
