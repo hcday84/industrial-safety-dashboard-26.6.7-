@@ -132,8 +132,7 @@ const REAL_BOOKS = {
     { title: '2026 나합격 화공기사 필기+무료특강', author: '이윤기', publisher: '삼원북스', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], isbn: '9791188883981', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791188883981.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+나합격+화공기사' },
     // 추천수험서 5
     { title: '2025 정나나의 화공기사 필기 과년도 문제해설', author: '정나나', publisher: '예문사', price: 35100, originalPrice: 39000, discount: '10%', rating: 4.6, reviews: 167, tags: ['추천'], imageUrl: KB('S000213942242'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213942242' },
-    { title: '2026 스마트 화공기사 과년도 기출해설', author: '허원회', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 123, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+화공기사+과년도' },
-    { title: '2026 화공기사 CBT 실전모의고사+핵심요약', author: '화공기사연구회', publisher: '성안당', price: 23400, originalPrice: 26000, discount: '10%', rating: 4.3, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+화공기사+CBT' },
+    { title: '2026 한번에 합격하는 화공기사 기출문제집 필기', author: '화공기사연구회', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.3, reviews: 112, tags: ['추천'], isbn: '9788931585124', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931585124.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218329721' },
   ],
 
   // ────────────────────────────────────────
