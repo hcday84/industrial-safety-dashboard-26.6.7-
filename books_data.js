@@ -405,7 +405,6 @@ const REAL_BOOKS = {
     // 추천수험서 5
     { title: '2027 임상생리학 핵심이론+기출', author: '한상훈', publisher: '메디시언', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 234, tags: ['추천'], isbn: '9791124381038', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791124381038.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상생리학+핵심이론+2027' },
     { title: '2027 요·체액검사 단기완성', author: '김미래', publisher: '고려의학', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 198, tags: ['추천'], isbn: '9791159431043', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791159431043.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=요검사+체액검사+임상병리사+2027' },
-    { title: '2027 임상병리사 모의고사 5회분', author: '박재현', publisher: '군자출판사', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상병리사+모의고사+2027' },
   ],
 
   // ────────────────────────────────────────
