@@ -976,7 +976,6 @@ const REAL_BOOKS = {
   '자동차정비기능장': [
     { title: '최신판 자동차정비기능장 필기', author: '전봉준·고동원', publisher: '예문사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000214983155'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214983155' },
     { title: '자동차 엔진전자제어 실무', author: '신완섭', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], isbn: '9788963451060', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788963451060.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=자동차+엔진전자제어+실무' },
-    { title: '2026 자동차정비기능장 핵심요약노트', author: '전봉준', publisher: '예문사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 76, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기능장+핵심요약' },
     { title: '자동차 전자제어 시스템 완전정복', author: '정병연', publisher: '성안당', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.2, reviews: 65, tags: ['추천'], isbn: '9788931535211', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931535211.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=자동차+전자제어+시스템+완전정복' },
   ],
 
