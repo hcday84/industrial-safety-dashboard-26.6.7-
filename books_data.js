@@ -545,8 +545,6 @@ const REAL_BOOKS = {
     { title: '2026 시대에듀 조경기사·산업기사 실기 한권으로 끝내기', author: '이우설', publisher: '시대에듀', price: 36900, originalPrice: 41000, discount: '10%', rating: 4.6, reviews: 223, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143406606.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=시대에듀+조경기사+산업기사+실기+한권으로+끝내기+2026' },
     { title: '최신개정판 Conquest 조경기사.조경산업기사 필기정복 - 개정13판', author: '성운환경조경, 김진호', publisher: '도서출판조경', price: 42300, originalPrice: 47000, discount: '10%', rating: 4.6, reviews: 189, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791160280326.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=Conquest+조경기사+조경산업기사+필기정복' },
     { title: '202X 조경기사 필기 - 서양조경사 계보 수록', author: '구민아', publisher: '구민사', price: 41400, originalPrice: 46000, discount: '10%', rating: 4.5, reviews: 156, tags: ['추천'], isbn: '9791168756687', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791168756687.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=조경기사+필기+구민사' },
-    { title: '2026 조경기사 필기 핵심이론 기출문제', author: '홍석윤', publisher: '시대에듀', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.5, reviews: 123, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=조경기사+필기+핵심이론+기출문제+2026' },
-    { title: '2026 조경기사 단기완성 실기', author: '이윤진', publisher: '한솔아카데미', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=조경기사+단기완성+실기+한솔아카데미+2026' },
   ],
 
   '조경산업기사': [
