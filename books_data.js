@@ -531,7 +531,6 @@ const REAL_BOOKS = {
     { title: '2025 실내건축기사 필기 문제해설', author: '이상화', publisher: '엔플북스', price: 32400, originalPrice: 36000, discount: '10%', rating: 4.5, reviews: 123, tags: ['추천'], isbn: '9788968134173', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788968134173.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=실내건축기사+필기+문제해설+엔플북스' },
     { title: '2026 스마트 실내건축산업기사 작업형 실기', author: '황두환', publisher: '성안당', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931512427.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=실내건축산업기사+작업형+실기+성안당+2026' },
     { title: '2026 실내건축기사 필기 단기완성', author: '남재호', publisher: '한솔아카데미', price: 35100, originalPrice: 39000, discount: '10%', rating: 4.4, reviews: 76, tags: ['추천'], isbn: '9791125489214', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791125489214.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=실내건축기사+필기+단기완성+한솔아카데미' },
-    { title: '2026 실내건축기사 실기', author: '유희정', publisher: '예문사', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.3, reviews: 54, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=실내건축기사+실기+예문사+2026' },
   ],
 
   '조경기사': [
