@@ -765,8 +765,6 @@ const REAL_BOOKS = {
     { title: '승강기기사.산업기사', author: '정재수', publisher: '남양문화', price: 35100, originalPrice: 39000, discount: '10%', rating: 4.5, reviews: 134, tags: ['추천'], imageUrl: 'https://image.aladin.co.kr/product/5241/15/coversum/8955540736_1.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=승강기기사+산업기사+남양문화' },
     { title: '승강기기사 실기', author: '정재수', publisher: '남양문화', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.5, reviews: 112, tags: ['추천'], isbn: '9788955540826', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788955540826.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=승강기기사+실기+남양문화' },
     { title: '승강기 기사', author: '이도흠', publisher: '동일출판사', price: 14400, originalPrice: 16000, discount: '10%', rating: 4.4, reviews: 89, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788938452108.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=승강기+기사+동일출판사+이도흠' },
-    { title: '2026 승강기기사 필기 단기완성', author: '이도흠', publisher: '엔트미디어', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.4, reviews: 67, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=승강기기사+필기+단기완성+엔트미디어+2026' },
-    { title: '2026 승강기기사 실기 단기완성', author: '한영규', publisher: '건기원', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.3, reviews: 54, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=승강기기사+실기+단기완성+건기원+2026' },
   ],
 
   '품질경영기사': [
