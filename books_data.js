@@ -898,8 +898,7 @@ const REAL_BOOKS = {
     { title: '2026 합격포인트 자동차정비산업기사 필기', author: '김광석 외', publisher: '골든벨', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 156, tags: ['베스트'], isbn: '9791124114049', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791124114049.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+합격포인트+자동차정비산업기사' },
     { title: '2026 자동차정비산업기사 필기', author: '소철호', publisher: '책과상상', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 132, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791169673198.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비산업기사+필기' },
     // 추천수험서 5
-    { title: '자동차정비산업기사 필기', author: '정장만', publisher: '에듀피디', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 112, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=자동차정비산업기사+필기+에듀피디' },
-    { title: '2026 자동차정비산업기사 과년도 기출해설', author: '소철호', publisher: '책과상상', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.3, reviews: 65, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비산업기사+과년도' },
+    { title: '자동차전문가 정장만과 함께하는 자동차정비산업기사 필기', author: '정장만', publisher: '에듀피디', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 112, tags: ['추천'], isbn: '9791155866160', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791155866160.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219081001' },
   ],
 
   // ────────────────────────────────────────
