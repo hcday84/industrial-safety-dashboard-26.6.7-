@@ -1482,7 +1482,7 @@ const REAL_BOOKS = {
   ],
 
   '국외관광안내사': [
-    { title: '국외여행인솔자(TC) 소양교육 교재 (한국여행업협회 공식)', author: '한국여행업협회', publisher: '한국여행업협회', price: 20000, originalPrice: 20000, discount: '0%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=국외여행인솔자+소양교육+교재' },
+    { title: '국외여행인솔자 실무', author: '장서진, 정연국', publisher: '백산출판사', price: 31000, originalPrice: 31000, discount: '0%', rating: 4.7, reviews: 1543, tags: ['베스트'], isbn: '9791165675523', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791165675523.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000061757729' },
   ],
 
   '관광통역안내사': [
