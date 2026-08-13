@@ -172,8 +172,7 @@ const REAL_BOOKS = {
     // 추천수험서 5
     { title: '홍까스와 함께하는 가스기능사 필기 핵심강의노트', author: '홍경표', publisher: '에듀피디', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 132, tags: ['추천'], isbn: '9791155865668', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791155865668.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=홍까스+가스기능사+필기' },
     { title: '2026 가스기능사 필기 CBT 기출문제집', author: '김재호', publisher: '예문사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], isbn: '9788931584684', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931584684.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+가스기능사+CBT' },
-    { title: '2026 가스기능사 필기 한권끝장', author: '이윤기', publisher: '삼원북스', price: 18900, originalPrice: 21000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+가스기능사+필기+한권끝장' },
-    { title: '2026 가스기능사 실기 완전정복', author: '서상희', publisher: '일진사', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.3, reviews: 87, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+가스기능사+실기' },
+    { title: '2026 가스기능사실기', author: '서상희', publisher: '일진사', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.3, reviews: 87, tags: ['추천'], isbn: '9788942920679', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788942920679.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218965392' },
     { title: '2026 Win-Q 가스기능사 필기 단기합격', author: '함성훈', publisher: '시대에듀', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.3, reviews: 73, tags: ['추천'], isbn: '9791138398435', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791138398435.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+Win-Q+가스기능사' },
   ],
 
