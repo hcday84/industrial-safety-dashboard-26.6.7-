@@ -1551,9 +1551,9 @@ const REAL_BOOKS = {
   '임상심리사2급': [
     { title: '2026 임상심리사 2급 필기 한권으로 끝내기', author: '박지원', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 2876, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143400666.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상심리사+2급+필기+한권끝내기+2026' },
     { title: '2026 임상심리사 2급 기출문제집', author: '임상심리수험연구소', publisher: '학지사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791166431463.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상심리사+2급+기출문제집+2026' },
-    { title: '이상심리학 (DSM-5 완전 반영)', author: '권석만', publisher: '학지사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 1987, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이상심리학+권석만+DSM-5' },
-    { title: '심리검사의 이해 (K-WAIS·MMPI·로르샤하)', author: '황순택 외', publisher: '시그마프레스', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=심리검사의이해+K-WAIS+MMPI+로르샤하' },
-    { title: '심리치료의 이론과 실제 (CBT·정신역동·인본주의)', author: '천성문 외', publisher: '학지사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=심리치료+이론과+실제+CBT' },
+    { title: '현대 이상심리학', author: '권석만', publisher: '학지사', price: 32000, originalPrice: 32000, discount: '0%', rating: 4.8, reviews: 1987, tags: ['베스트'], isbn: '9788999729126', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788999729126.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000210527594' },
+    { title: '심리검사의 이해', author: '최정윤', publisher: '시그마프레스', price: 23000, originalPrice: 23000, discount: '0%', rating: 4.7, reviews: 1543, tags: ['추천'], isbn: '9788968666957', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788968666957.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001059352' },
+    { title: '상담심리학의 이론과 실제', author: '천성문, 이영순, 박명숙, 이동훈, 함경애', publisher: '학지사', price: 23000, originalPrice: 23000, discount: '0%', rating: 4.6, reviews: 1234, tags: ['추천'], isbn: '9788999723711', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788999723711.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001644049' },
   ],
 
   '심리상담사': [
