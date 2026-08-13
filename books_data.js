@@ -1425,7 +1425,7 @@ const REAL_BOOKS = {
 
   'TESAT': [
     { title: 'TESAT 공식 기출문제집 (한국경제신문)', author: '한국경제신문 TESAT운영본부', publisher: '한국경제신문', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136042224.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=TESAT+공식+기출문제집' },
-    { title: '경제학 원론 (TESAT 이론 기초)', author: '이준구·이창용', publisher: '문우사', price: 32000, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=경제학원론+이준구' },
+    { title: '경제학원론', author: '이준구, 이창용', publisher: '문우사', price: 41610, originalPrice: 43000, discount: '3%', rating: 4.6, reviews: 1234, tags: ['추천'], isbn: '9791198642790', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791198642790.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000215621723' },
   ],
 
   '펀드투자권유대행인': [
