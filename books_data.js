@@ -687,7 +687,6 @@ const REAL_BOOKS = {
     { title: '모아 공조냉동기계기사 실기', author: '이지원', publisher: '모아교육그룹', price: 32400, originalPrice: 36000, discount: '10%', rating: 4.6, reviews: 189, tags: ['추천'], isbn: '9791168045125', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791168045125.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=모아+공조냉동기계기사+실기' },
     { title: '2026 스마트 7개년 과년도 공조냉동기계기사 필기', author: '최승일', publisher: '성안당', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 156, tags: ['추천'], isbn: '9788931512311', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931512311.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=스마트+7개년+공조냉동기계기사+필기+2026' },
     { title: '2026 공조냉동기계기사 필기 과년도 7주완성', author: '이래운, 유기창', publisher: '엔플북스', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.5, reviews: 134, tags: ['추천'], isbn: '9788968134265', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788968134265.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공조냉동기계기사+필기+과년도+7주완성+2026' },
-    { title: '2026 공조냉동기계기사 필기 기출문제 풀이', author: '조성안', publisher: '한솔아카데미', price: 36900, originalPrice: 41000, discount: '10%', rating: 4.4, reviews: 89, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공조냉동기계기사+필기+기출문제+풀이+2026' },
   ],
 
   '공조냉동기계기능사': [
