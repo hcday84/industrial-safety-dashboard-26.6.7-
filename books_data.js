@@ -1184,7 +1184,6 @@ const REAL_BOOKS = {
   // 국가전문자격증 — 건축·기타 계열
   // ────────────────────────────────────────
   '건축사': [
-    { title: '2026 건축사 자격시험 대지 계획+건축 계획 종합', author: '건축사시험연구회', publisher: '기문사', price: 49500, originalPrice: 55000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건축사+자격시험+대지+계획+건축+계획+2026' },
   ],
 
   '수의사': [
