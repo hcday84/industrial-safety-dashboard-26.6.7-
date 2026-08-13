@@ -1144,7 +1144,6 @@ const REAL_BOOKS = {
   ],
 
   '일반행정사': [
-    { title: '2026 에듀윌 행정사 1차 행정법 한권끝장', author: '에듀윌 행정사연구소', publisher: '에듀윌', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=에듀윌+행정사+1차+행정법+2026' },
     { title: '2026 행정사 최종 모의고사 5회분', author: '박문각 행정사연구소', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 378, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791199790506.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=행정사+최종+모의고사+5회분+2026' },
   ],
 
