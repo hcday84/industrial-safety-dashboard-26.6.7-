@@ -1445,7 +1445,7 @@ const REAL_BOOKS = {
   ],
 
   'KBS한국어능력시험': [
-    { title: 'KBS 한국어능력시험 기출문제 완전분석 (최신판)', author: 'KBS한국어능력시험연구소', publisher: 'KBS미디어', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2876, tags: ['베스트'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=KBS+한국어능력시험+기출문제+완전분석' },
+    { title: 'KBS 한국어능력시험 기출문제 23', author: 'KBS한국어진흥원', publisher: '형설출판사', price: 29000, originalPrice: 29000, discount: '0%', rating: 4.8, reviews: 2876, tags: ['베스트'], isbn: '9788947287319', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788947287319.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000215764087' },
     { title: 'KBS 한국어능력시험 한권으로 합격', author: '이재훈', publisher: '시대에듀', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788969654762.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=KBS+한국어능력시험+한권으로합격' },
     { title: 'KBS 한국어능력시험 실전 모의고사 5회분', author: 'KBS한국어연구소', publisher: 'KBS미디어', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.5, reviews: 1234, tags: ['추천'], imageUrl: 'https://image.aladin.co.kr/product/17173/87/coversum/k192534686_1.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=KBS+한국어능력시험+실전모의고사' },
   ],
