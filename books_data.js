@@ -744,7 +744,6 @@ const REAL_BOOKS = {
     { title: '2026 전산응용기계제도기능사 필기 기출문제', author: '김원중', publisher: '책과상상', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], isbn: '9791169673433', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791169673433.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=전산응용기계제도기능사+필기+기출문제+책과상상+2026' },
     { title: '2025 시대에듀 Win-Q 전산응용기계제도기능사 실기', author: '정인훈', publisher: '시대에듀', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], isbn: '9791138390163', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791138390163.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=Win-Q+전산응용기계제도기능사+실기+시대에듀' },
     { title: '2026 전산응용기계제도기능사 단기완성', author: '홍순규', publisher: '시대에듀', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], isbn: '9791157454822', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791157454822.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=전산응용기계제도기능사+단기완성+2026' },
-    { title: '2026 전산응용기계제도기능사 핵심이론', author: '나합격콘텐츠연구소', publisher: '삼원북스', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.4, reviews: 89, tags: ['추천'], imageUrl: null, pageUrl: 'https://search.kyobobook.co.kr/search?keyword=전산응용기계제도기능사+핵심이론+삼원북스+2026' },
   ],
 
   '승강기기사': [
