@@ -3319,6 +3319,17 @@ function initEventListeners() {
   });
   let _ddSelectedIdx = -1;
 
+  // 검색창 X 버튼 — 검색어 일괄 지우기
+  const searchClearBtn = document.getElementById('global-search-clear');
+  if (searchClearBtn) {
+    searchClearBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      _ddSelectedIdx = -1;
+      renderCertDropdown('');
+      searchInput.focus();
+    });
+  }
+
   function updateDropdownSelection(idx) {
     const dropdown = document.getElementById('cert-dropdown');
     const items = dropdown.querySelectorAll('.cert-dropdown-item');
