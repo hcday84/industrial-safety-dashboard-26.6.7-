@@ -1419,6 +1419,7 @@ function renderBooks() {
           <h4 class="book-title" title="${book.title}">${book.title}</h4>
           <a href="${pageUrl}" target="_blank" rel="noopener noreferrer" class="book-rating-link"><i class="fa-solid fa-star"></i>교보문고에서 별점 확인</a>
           ${hasRealDetailPage ? `<span class="book-preview-hint"><i class="fa-solid fa-eye"></i> 상세페이지에서 목차 미리보기 가능</span>` : ''}
+          ${ebookBadgeHTML}
           <div class="book-price-area">
             ${priceHTML}
           </div>
