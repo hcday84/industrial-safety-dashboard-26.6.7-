@@ -254,7 +254,7 @@ button, input, select {
 
 .header-search-bar input {
   width: 100%;
-  padding: 10px 15px 10px 45px;
+  padding: 10px 38px 10px 45px;
   background-color: var(--bg-color);
   border: 1.5px solid #ef4444;
   border-radius: 30px;
