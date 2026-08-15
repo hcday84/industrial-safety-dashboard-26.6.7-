@@ -1402,7 +1402,7 @@ const REAL_BOOKS = {
   'HSK': [
     { title: 'HSK 6급 한 권으로 합격', author: '정계도', publisher: '시원스쿨랩', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2876, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791157200078.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=HSK+6급+한권으로합격' },
     { title: 'HSK 5급 한 권으로 합격', author: '정계도', publisher: '시원스쿨랩', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.8, reviews: 2543, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791164302918.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=HSK+5급+한권으로합격' },
-    { title: '해커스 중국어 HSK 6급 한 권으로 고득점 달성 기본서 + 실전모의고사 + 핵심어휘집', author: '리우윈, 해커스 HSK연구소', publisher: '해커스', price: 24210, originalPrice: 26900, discount: '10%', rating: 4.7, reviews: 1987, tags: ['베스트'], isbn: '9791137904385', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791137904385.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000061351817' },
+    { title: '해커스 중국어 HSK 6급 한 권으로 고득점 달성 기본서 + 실전모의고사 + 핵심어휘집', author: '리우윈, 해커스 HSK연구소', publisher: '해커스', price: 24210, originalPrice: 26900, discount: '10%', rating: 4.7, reviews: 1987, tags: ['베스트'], hasEbook: false, isbn: '9791137904385', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791137904385.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000061351817' },
     { title: 'HSK 5급 실전 모의고사 5회분', author: '다락원 중국어연구소', publisher: '다락원', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791190074322.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=HSK+5급+실전+모의고사' },
   ],
 
@@ -1411,20 +1411,20 @@ const REAL_BOOKS = {
   ],
 
   'ERP정보관리사': [
-    { title: '2026 이기적 ERP 정보관리사 인사 1급 기본서', author: '한선생', publisher: '영진닷컴', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], isbn: '9788931479096', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931479096.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219521399' },
-    { title: '2026 에듀윌 ERP 정보관리사 물류 1·2급 한권끝장+무료특강', author: '최주영', publisher: '에듀윌', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], isbn: '9791136042019', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136042019.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219786616' },
-    { title: '2026 에듀윌 ERP 정보관리사 회계 2급 한권끝장+무료특강', author: '유슬기', publisher: '에듀윌', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], isbn: '9791136041753', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136041753.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219542368' },
+    { title: '2026 이기적 ERP 정보관리사 인사 1급 기본서', author: '한선생', publisher: '영진닷컴', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], hasEbook: true, isbn: '9788931479096', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931479096.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219521399' },
+    { title: '2026 에듀윌 ERP 정보관리사 물류 1·2급 한권끝장+무료특강', author: '최주영', publisher: '에듀윌', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], hasEbook: false, isbn: '9791136042019', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136042019.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219786616' },
+    { title: '2026 에듀윌 ERP 정보관리사 회계 2급 한권끝장+무료특강', author: '유슬기', publisher: '에듀윌', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], hasEbook: false, isbn: '9791136041753', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136041753.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219542368' },
   ],
 
   '매경TEST': [
-    { title: '2026 에듀윌 매경Test 2주끝장', author: '신경수, 황선일', publisher: '에듀윌', price: 28350, originalPrice: 31500, discount: '10%', rating: 4.8, reviews: 2345, tags: ['베스트'], isbn: '9791136039866', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136039866.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218741787' },
+    { title: '2026 에듀윌 매경Test 2주끝장', author: '신경수, 황선일', publisher: '에듀윌', price: 28350, originalPrice: 31500, discount: '10%', rating: 4.8, reviews: 2345, tags: ['베스트'], hasEbook: true, isbn: '9791136039866', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136039866.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218741787' },
     { title: '맨큐의 경제학 (원리 중심)', author: 'N.G.맨큐', publisher: '센게이지러닝', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 1234, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791189168018.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=맨큐의+경제학' },
     { title: '매경TEST 실전 모의고사 3회분', author: '매경TEST연구소', publisher: '매일경제신문사', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791125747178.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=매경TEST+실전+모의고사' },
   ],
 
   'TESAT': [
     { title: 'TESAT 공식 기출문제집 (한국경제신문)', author: '한국경제신문 TESAT운영본부', publisher: '한국경제신문', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136042224.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=TESAT+공식+기출문제집' },
-    { title: '경제학원론', author: '이준구, 이창용', publisher: '문우사', price: 41610, originalPrice: 43000, discount: '3%', rating: 4.6, reviews: 1234, tags: ['추천'], isbn: '9791198642790', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791198642790.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000215621723' },
+    { title: '경제학원론', author: '이준구, 이창용', publisher: '문우사', price: 41610, originalPrice: 43000, discount: '3%', rating: 4.6, reviews: 1234, tags: ['추천'], hasEbook: false, isbn: '9791198642790', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791198642790.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000215621723' },
   ],
 
   '펀드투자권유대행인': [
@@ -1444,7 +1444,7 @@ const REAL_BOOKS = {
   ],
 
   'KBS한국어능력시험': [
-    { title: 'KBS 한국어능력시험 기출문제 23', author: 'KBS한국어진흥원', publisher: '형설출판사', price: 29000, originalPrice: 29000, discount: '0%', rating: 4.8, reviews: 2876, tags: ['베스트'], isbn: '9788947287319', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788947287319.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000215764087' },
+    { title: 'KBS 한국어능력시험 기출문제 23', author: 'KBS한국어진흥원', publisher: '형설출판사', price: 29000, originalPrice: 29000, discount: '0%', rating: 4.8, reviews: 2876, tags: ['베스트'], hasEbook: false, isbn: '9788947287319', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788947287319.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000215764087' },
     { title: 'KBS 한국어능력시험 한권으로 합격', author: '이재훈', publisher: '시대에듀', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788969654762.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=KBS+한국어능력시험+한권으로합격' },
     { title: 'KBS 한국어능력시험 실전 모의고사 5회분', author: 'KBS한국어연구소', publisher: 'KBS미디어', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.5, reviews: 1234, tags: ['추천'], imageUrl: 'https://image.aladin.co.kr/product/17173/87/coversum/k192534686_1.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=KBS+한국어능력시험+실전모의고사' },
   ],
@@ -1471,8 +1471,8 @@ const REAL_BOOKS = {
   ],
 
   '사회통합프로그램': [
-    { title: '사회통합프로그램 종합평가 한권으로 합격하기 영주용 귀화용', author: '사회통합프로그램연구소', publisher: '신지원', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], isbn: '9791166335433', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791166335433.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216717808' },
-    { title: '한국어와 한국문화 중급 1', author: '국립국어원 기획, 이미혜 외', publisher: '도서출판 하우', price: 10000, originalPrice: 10000, discount: '0%', rating: 4.7, reviews: 1876, tags: ['베스트'], isbn: '9791190154840', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791190154840.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001936459' },
+    { title: '사회통합프로그램 종합평가 한권으로 합격하기 영주용 귀화용', author: '사회통합프로그램연구소', publisher: '신지원', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], hasEbook: false, isbn: '9791166335433', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791166335433.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216717808' },
+    { title: '한국어와 한국문화 중급 1', author: '국립국어원 기획, 이미혜 외', publisher: '도서출판 하우', price: 10000, originalPrice: 10000, discount: '0%', rating: 4.7, reviews: 1876, tags: ['베스트'], hasEbook: false, isbn: '9791190154840', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791190154840.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001936459' },
     { title: '사회통합프로그램(KIIP) 한국사회 이해: 기본', author: '법무부 출입국·외국인정책본부', publisher: '박영스토리', price: 10000, originalPrice: 10000, discount: '0%', rating: 4.6, reviews: 1543, tags: ['베스트'], isbn: '9791186140291', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791186140291.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001880312' },
   ],
 
