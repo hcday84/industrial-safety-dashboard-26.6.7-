@@ -1459,7 +1459,7 @@ const REAL_BOOKS = {
 
   'IELTS': [
     { title: '해커스 IELTS Writing (아이엘츠 라이팅)', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2345, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788965422327.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=해커스+IELTS+Writing' },
-    { title: "IELTS 18 Academic Student's Book with Answers", author: 'Cambridge University Press', publisher: 'Cambridge University Press', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], isbn: '9781009275187', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9781009275187.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000208475314' },
+    { title: "IELTS 18 Academic Student's Book with Answers", author: 'Cambridge University Press', publisher: 'Cambridge University Press', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], hasEbook: false, isbn: '9781009275187', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9781009275187.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000208475314' },
     { title: '해커스 IELTS Reading (아이엘츠 리딩)', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788965422297.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=해커스+IELTS+Reading' },
   ],
 
