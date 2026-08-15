@@ -1090,25 +1090,25 @@ const REAL_BOOKS = {
     { title: '2026 에듀윌 공인중개사 2차 단원별 기출문제집 공인중개사법령 및 중개실무', author: '임선정', publisher: '에듀윌', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 1432, tags: ['추천'], hasEbook: true, imageUrl: KB('S000219085089'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219085089' },
     { title: '2026 에듀윌 공인중개사 2차 단원별 기출문제집 부동산공시법', author: '김민석', publisher: '에듀윌', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 1123, tags: ['추천'], hasEbook: true, imageUrl: KB('S000219085095'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219085095' },
     { title: '2026 박문각 공인중개사 2차 단원별 기출문제집', author: '박문각 공인중개사연구소', publisher: '박문각', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], hasEbook: false, imageUrl: KB('S000219931403'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219931403' },
-    { title: '2026 에듀윌 공인중개사 1차 핵심요약집+기출팩', author: '에듀윌 공인중개사연구소', publisher: '에듀윌', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.5, reviews: 876, tags: ['추천'], imageUrl: KB('S000219387826'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219387826' },
-    { title: '2026 메가랜드 공인중개사 2차 회차별 기출문제집', author: '메가랜드 부동산교육연구소', publisher: '메가랜드', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 765, tags: ['추천'], imageUrl: KB('S000220452545'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220452545' },
+    { title: '2026 에듀윌 공인중개사 1차 핵심요약집+기출팩', author: '에듀윌 공인중개사연구소', publisher: '에듀윌', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.5, reviews: 876, tags: ['추천'], hasEbook: true, imageUrl: KB('S000219387826'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219387826' },
+    { title: '2026 메가랜드 공인중개사 2차 회차별 기출문제집', author: '메가랜드 부동산교육연구소', publisher: '메가랜드', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 765, tags: ['추천'], hasEbook: false, imageUrl: KB('S000220452545'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220452545' },
   ],
 
   '세무사': [
-    { title: '세법개론 1(2026)', author: '이철재, 정우승, 유은종', publisher: '리즈북스', price: 36000, originalPrice: 36000, discount: '0%', rating: 4.8, reviews: 1234, tags: ['베스트'], isbn: '9791124345016', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791124345016.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219470255' },
+    { title: '세법개론 1(2026)', author: '이철재, 정우승, 유은종', publisher: '리즈북스', price: 36000, originalPrice: 36000, discount: '0%', rating: 4.8, reviews: 1234, tags: ['베스트'], hasEbook: false, isbn: '9791124345016', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791124345016.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219470255' },
     { title: '2026 세무사 1차 재정학 핵심이론+기출문제', author: '임병진', publisher: '나무와숲', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143402943.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=세무사+1차+재정학+핵심이론+2026' },
   ],
 
   '공인회계사': [
-    { title: '세법개론 1(2026)', author: '이철재, 정우승, 유은종', publisher: '리즈북스', price: 36000, originalPrice: 36000, discount: '0%', rating: 4.8, reviews: 1234, tags: ['베스트'], isbn: '9791124345016', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791124345016.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219470255' },
+    { title: '세법개론 1(2026)', author: '이철재, 정우승, 유은종', publisher: '리즈북스', price: 36000, originalPrice: 36000, discount: '0%', rating: 4.8, reviews: 1234, tags: ['베스트'], hasEbook: false, isbn: '9791124345016', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791124345016.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219470255' },
     { title: '2026 공인회계사 2차 원가관리회계 기출+예상', author: '임세진', publisher: '세경북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 765, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791198777645.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인회계사+2차+원가관리회계+2026' },
-    { title: '경제학연습 미시편', author: '정병열', publisher: '세경북스', price: 47700, originalPrice: 53000, discount: '10%', rating: 4.5, reviews: 543, tags: ['추천'], isbn: '9791159734526', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791159734526.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216352206' },
+    { title: '경제학연습 미시편', author: '정병열', publisher: '세경북스', price: 47700, originalPrice: 53000, discount: '10%', rating: 4.5, reviews: 543, tags: ['추천'], hasEbook: false, isbn: '9791159734526', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791159734526.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216352206' },
   ],
 
   '감정평가사': [
     { title: '2026 감정평가사 1차 부동산학원론 한권으로 끝내기', author: '강정규 외', publisher: '박문각', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 876, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791138389082.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=감정평가사+1차+부동산학원론+2026' },
     { title: '2026 감정평가사 2차 감정평가이론 기출+예상', author: '유선종 외', publisher: '나무와숲', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.7, reviews: 654, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791175191068.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=감정평가사+2차+감정평가이론+2026' },
-    { title: '경제학연습 미시편', author: '정병열', publisher: '세경북스', price: 47700, originalPrice: 53000, discount: '10%', rating: 4.6, reviews: 543, tags: ['베스트'], isbn: '9791159734526', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791159734526.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216352206' },
+    { title: '경제학연습 미시편', author: '정병열', publisher: '세경북스', price: 47700, originalPrice: 53000, discount: '10%', rating: 4.6, reviews: 543, tags: ['베스트'], hasEbook: false, isbn: '9791159734526', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791159734526.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216352206' },
     { title: '2026 감정평가사 감정평가 관계법규 핵심이론', author: '이병준', publisher: '박문각', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 456, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791174042873.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=감정평가사+관계법규+핵심이론+2026' },
     { title: '2026 감정평가사 감정평가실무 기출+예상문제', author: '박성용', publisher: '나무와숲', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.5, reviews: 378, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791174044105.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=감정평가사+감정평가실무+2026' },
     { title: '2026 감정평가사 1차 회계학 핵심요약', author: '강경태', publisher: '나무와숲', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 312, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791174047137.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=감정평가사+1차+회계학+2026' },
@@ -1139,7 +1139,7 @@ const REAL_BOOKS = {
   ],
 
   '보험계리사': [
-    { title: '경제학연습 미시편', author: '정병열', publisher: '세경북스', price: 47700, originalPrice: 53000, discount: '10%', rating: 4.6, reviews: 378, tags: ['베스트'], isbn: '9791159734526', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791159734526.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216352206' },
+    { title: '경제학연습 미시편', author: '정병열', publisher: '세경북스', price: 47700, originalPrice: 53000, discount: '10%', rating: 4.6, reviews: 378, tags: ['베스트'], hasEbook: false, isbn: '9791159734526', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791159734526.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216352206' },
   ],
 
   '일반행정사': [
@@ -1175,8 +1175,8 @@ const REAL_BOOKS = {
   ],
 
   '평생교육사': [
-    { title: '평생교육경영론', author: '권두승, 최운실', publisher: '교육과학사', price: 20000, originalPrice: 20000, discount: '0%', rating: 4.5, reviews: 456, tags: ['베스트'], isbn: '9788925408040', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788925408040.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000000474068' },
-    { title: '평생교육 프로그램개발', author: '기영화', publisher: '학지사', price: 10000, originalPrice: 10000, discount: '0%', rating: 4.5, reviews: 378, tags: ['추천'], isbn: '9788975485855', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788975485855.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001175547' },
+    { title: '평생교육경영론', author: '권두승, 최운실', publisher: '교육과학사', price: 20000, originalPrice: 20000, discount: '0%', rating: 4.5, reviews: 456, tags: ['베스트'], hasEbook: false, isbn: '9788925408040', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788925408040.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000000474068' },
+    { title: '평생교육 프로그램개발', author: '기영화', publisher: '학지사', price: 10000, originalPrice: 10000, discount: '0%', rating: 4.5, reviews: 378, tags: ['추천'], hasEbook: false, isbn: '9788975485855', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788975485855.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001175547' },
   ],
 
   // ────────────────────────────────────────
@@ -1223,15 +1223,15 @@ const REAL_BOOKS = {
 
   // ────────────────────────────────────────
   '소방안전관리자2급': [
-    { title: '2027 찐합격 소방안전관리자 2급 기출문제 총집합+5개년 기출문제', author: '공하성', publisher: '성안당', price: 23400, originalPrice: 26000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000220176733'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220176733' },
-    { title: '2027 박문각 소방안전관리자 2급 8개년 기출문제집+무료강의', author: '김연진', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 256, tags: ['베스트'], imageUrl: KB('S000219791382'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219791382' },
-    { title: '2027 박문각 소방안전관리자 2급 핵심이론서+무료특강', author: '김연진', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000219787574'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219787574' },
-    { title: '2026 챕스랜드 소방안전관리자 2급 찐정리 문신 이론서', author: '서채빈', publisher: '종이향기', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: KB('S000218666591'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218666591' },
-    { title: '2026 에듀윌 소방안전관리자 2급 7개년 기출문제집+무료특강', author: '손익희', publisher: '에듀윌', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 145, tags: ['베스트'], imageUrl: KB('S000218235489'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218235489' },
-    { title: '2027 찐합격 소방안전관리자 2급 합격노트+8개년 기출문제', author: '공하성', publisher: '성안당', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 221, tags: ['추천'], imageUrl: KB('S000220176737'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220176737' },
-    { title: '2027 박문각 소방안전관리자 2급 (핵심이론+기출문제) 세트', author: '김연진', publisher: '박문각', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.5, reviews: 178, tags: ['추천'], imageUrl: KB('S000219791389'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219791389' },
-    { title: '2027 모아 소방안전관리자 2급 이론서 무료특강', author: '모아합격전략연구소', publisher: '모아교육그룹', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.4, reviews: 134, tags: ['추천'], imageUrl: KB('S000219868641'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219868641' },
-    { title: '2026 시대에듀 소방안전관리자 2급 기출예상문제집', author: '김미현', publisher: '시대고시기획', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: KB('S000219381978'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219381978' },
+    { title: '2027 찐합격 소방안전관리자 2급 기출문제 총집합+5개년 기출문제', author: '공하성', publisher: '성안당', price: 23400, originalPrice: 26000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000220176733'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220176733' },
+    { title: '2027 박문각 소방안전관리자 2급 8개년 기출문제집+무료강의', author: '김연진', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 256, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000219791382'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219791382' },
+    { title: '2027 박문각 소방안전관리자 2급 핵심이론서+무료특강', author: '김연진', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000219787574'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219787574' },
+    { title: '2026 챕스랜드 소방안전관리자 2급 찐정리 문신 이론서', author: '서채빈', publisher: '종이향기', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218666591'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218666591' },
+    { title: '2026 에듀윌 소방안전관리자 2급 7개년 기출문제집+무료특강', author: '손익희', publisher: '에듀윌', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 145, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000218235489'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218235489' },
+    { title: '2027 찐합격 소방안전관리자 2급 합격노트+8개년 기출문제', author: '공하성', publisher: '성안당', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 221, tags: ['추천'], hasEbook: true, imageUrl: KB('S000220176737'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220176737' },
+    { title: '2027 박문각 소방안전관리자 2급 (핵심이론+기출문제) 세트', author: '김연진', publisher: '박문각', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.5, reviews: 178, tags: ['추천'], hasEbook: true, imageUrl: KB('S000219791389'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219791389' },
+    { title: '2027 모아 소방안전관리자 2급 이론서 무료특강', author: '모아합격전략연구소', publisher: '모아교육그룹', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.4, reviews: 134, tags: ['추천'], hasEbook: true, imageUrl: KB('S000219868641'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219868641' },
+    { title: '2026 시대에듀 소방안전관리자 2급 기출예상문제집', author: '김미현', publisher: '시대고시기획', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], hasEbook: true, imageUrl: KB('S000219381978'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219381978' },
     { title: '2027 김영북스 소방안전관리자 2급 기출예상 단권끝장', author: '심승아', publisher: '김영북스', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: KB('S000219791300'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219791300' },
   ],
 
