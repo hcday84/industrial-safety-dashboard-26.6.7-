@@ -1473,7 +1473,7 @@ const REAL_BOOKS = {
   '사회통합프로그램': [
     { title: '사회통합프로그램 종합평가 한권으로 합격하기 영주용 귀화용', author: '사회통합프로그램연구소', publisher: '신지원', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], hasEbook: false, isbn: '9791166335433', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791166335433.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216717808' },
     { title: '한국어와 한국문화 중급 1', author: '국립국어원 기획, 이미혜 외', publisher: '도서출판 하우', price: 10000, originalPrice: 10000, discount: '0%', rating: 4.7, reviews: 1876, tags: ['베스트'], hasEbook: false, isbn: '9791190154840', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791190154840.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001936459' },
-    { title: '사회통합프로그램(KIIP) 한국사회 이해: 기본', author: '법무부 출입국·외국인정책본부', publisher: '박영스토리', price: 10000, originalPrice: 10000, discount: '0%', rating: 4.6, reviews: 1543, tags: ['베스트'], isbn: '9791186140291', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791186140291.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001880312' },
+    { title: '사회통합프로그램(KIIP) 한국사회 이해: 기본', author: '법무부 출입국·외국인정책본부', publisher: '박영스토리', price: 10000, originalPrice: 10000, discount: '0%', rating: 4.6, reviews: 1543, tags: ['베스트'], hasEbook: false, isbn: '9791186140291', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791186140291.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001880312' },
   ],
 
   '국내여행안내사': [
@@ -1481,12 +1481,12 @@ const REAL_BOOKS = {
   ],
 
   '국외관광안내사': [
-    { title: '국외여행인솔자 실무', author: '장서진, 정연국', publisher: '백산출판사', price: 31000, originalPrice: 31000, discount: '0%', rating: 4.7, reviews: 1543, tags: ['베스트'], isbn: '9791165675523', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791165675523.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000061757729' },
+    { title: '국외여행인솔자 실무', author: '장서진, 정연국', publisher: '백산출판사', price: 31000, originalPrice: 31000, discount: '0%', rating: 4.7, reviews: 1543, tags: ['베스트'], hasEbook: true, isbn: '9791165675523', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791165675523.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000061757729' },
   ],
 
   '관광통역안내사': [
-    { title: '2026 관광통역안내사 영어면접 핵심 기출문제 200', author: '호기헌', publisher: '창조와지식', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], isbn: '9791176270106', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791176270106.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219407374' },
-    { title: '시대에듀 50일 만에 끝내는 중국어 관광통역안내사 2차 면접', author: '김미숙', publisher: '시대고시기획', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], isbn: '9791143410245', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143410245.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219391364' },
+    { title: '2026 관광통역안내사 영어면접 핵심 기출문제 200', author: '호기헌', publisher: '창조와지식', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], hasEbook: false, isbn: '9791176270106', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791176270106.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219407374' },
+    { title: '시대에듀 50일 만에 끝내는 중국어 관광통역안내사 2차 면접', author: '김미숙', publisher: '시대고시기획', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], hasEbook: true, isbn: '9791143410245', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143410245.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219391364' },
   ],
 
   '한국어능력시험(TOPIK)': [
@@ -1504,19 +1504,19 @@ const REAL_BOOKS = {
   '임상심리사2급': [
     { title: '2026 임상심리사 2급 필기 한권으로 끝내기', author: '박지원', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 2876, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143400666.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상심리사+2급+필기+한권끝내기+2026' },
     { title: '2026 임상심리사 2급 기출문제집', author: '임상심리수험연구소', publisher: '학지사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791166431463.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상심리사+2급+기출문제집+2026' },
-    { title: '현대 이상심리학', author: '권석만', publisher: '학지사', price: 32000, originalPrice: 32000, discount: '0%', rating: 4.8, reviews: 1987, tags: ['베스트'], isbn: '9788999729126', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788999729126.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000210527594' },
-    { title: '심리검사의 이해', author: '최정윤', publisher: '시그마프레스', price: 23000, originalPrice: 23000, discount: '0%', rating: 4.7, reviews: 1543, tags: ['추천'], isbn: '9788968666957', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788968666957.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001059352' },
-    { title: '상담심리학의 이론과 실제', author: '천성문, 이영순, 박명숙, 이동훈, 함경애', publisher: '학지사', price: 23000, originalPrice: 23000, discount: '0%', rating: 4.6, reviews: 1234, tags: ['추천'], isbn: '9788999723711', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788999723711.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001644049' },
+    { title: '현대 이상심리학', author: '권석만', publisher: '학지사', price: 32000, originalPrice: 32000, discount: '0%', rating: 4.8, reviews: 1987, tags: ['베스트'], hasEbook: false, isbn: '9788999729126', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788999729126.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000210527594' },
+    { title: '심리검사의 이해', author: '최정윤', publisher: '시그마프레스', price: 23000, originalPrice: 23000, discount: '0%', rating: 4.7, reviews: 1543, tags: ['추천'], hasEbook: true, isbn: '9788968666957', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788968666957.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001059352' },
+    { title: '상담심리학의 이론과 실제', author: '천성문, 이영순, 박명숙, 이동훈, 함경애', publisher: '학지사', price: 23000, originalPrice: 23000, discount: '0%', rating: 4.6, reviews: 1234, tags: ['추천'], hasEbook: false, isbn: '9788999723711', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788999723711.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001644049' },
   ],
 
   '심리상담사': [
-    { title: '심리상담과 치료의 이론과 실제', author: 'Gerald Corey', publisher: '학지사', price: 39000, originalPrice: 39000, discount: '0%', rating: 4.8, reviews: 3210, tags: ['베스트'], isbn: '9788962185706', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788962185706.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216797281' },
-    { title: '상담심리학의 이론과 실제', author: '노안영', publisher: '학지사', price: 22000, originalPrice: 22000, discount: '0%', rating: 4.7, reviews: 1876, tags: ['베스트'], isbn: '9788999714948', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788999714948.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001643218' },
+    { title: '심리상담과 치료의 이론과 실제', author: 'Gerald Corey', publisher: '학지사', price: 39000, originalPrice: 39000, discount: '0%', rating: 4.8, reviews: 3210, tags: ['베스트'], hasEbook: false, isbn: '9788962185706', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788962185706.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216797281' },
+    { title: '상담심리학의 이론과 실제', author: '노안영', publisher: '학지사', price: 22000, originalPrice: 22000, discount: '0%', rating: 4.7, reviews: 1876, tags: ['베스트'], hasEbook: false, isbn: '9788999714948', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788999714948.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001643218' },
     { title: '집단상담의 이론과 실제', author: '천성문 외', publisher: '학지사', price: 20000, originalPrice: 22000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788999732041.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=집단상담+이론과실제+천성문' },
   ],
 
   'TAT': [
-    { title: '2026 I CAN TAT 세무실무 2급', author: '아이캔 세무회계연구소', publisher: '아이캔', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 2345, tags: ['베스트'], imageUrl: KB('S000219495682'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219495682' },
+    { title: '2026 I CAN TAT 세무실무 2급', author: '아이캔 세무회계연구소', publisher: '아이캔', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 2345, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000219495682'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219495682' },
     { title: '2026 I Can TAT 세무실무 1급', author: '아이캔 세무회계연구소', publisher: '아이캔', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 1987, tags: ['베스트'], imageUrl: KB('S000219812336'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219812336' },
     { title: '2026 로그인 TAT 2급', author: '박병규', publisher: '세경북스', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1765, tags: ['베스트'], imageUrl: KB('S000219349559'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219349559' },
     { title: '2026 이패스 세무회계 2급 핵심요약 및 문제풀이', author: '이패스코리아 편집부', publisher: '이패스코리아', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 1432, tags: ['추천'], imageUrl: KB('S000219346402'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219346402' },
