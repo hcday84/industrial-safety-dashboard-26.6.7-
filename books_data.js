@@ -1318,25 +1318,25 @@ const REAL_BOOKS = {
     { title: '2026 이기적 GTQ 포토샵 1급 기본서 ver. CC', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 2341, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000218183225'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218183225' },
     { title: '2026 이기적 GTQ 포토샵+일러스트 1급 올인원 ver.CC', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 1876, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000218960821'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218960821' },
     { title: '2026 시대에듀 유선배 GTQ 포토샵 1급 합격노트 ver. Adobe CC', author: '유선배', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000217401720'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217401720' },
-    { title: '2026 시대에듀 유선배 GTQ 일러스트 1급 합격노트 ver. Adobe CC', author: '유선배', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1234, tags: ['추천'], imageUrl: KB('S000217119017'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217119017' },
+    { title: '2026 시대에듀 유선배 GTQ 일러스트 1급 합격노트 ver. Adobe CC', author: '유선배', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1234, tags: ['추천'], hasEbook: true, imageUrl: KB('S000217119017'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217119017' },
   ],
 
   'GTQi': [
     { title: '2026 이기적 GTQ 포토샵+일러스트 1급 올인원 ver.CC', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 1876, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000218960821'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218960821' },
-    { title: '2026 시대에듀 유선배 GTQ 일러스트 1급 합격노트 ver. Adobe CC', author: '유선배', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1234, tags: ['베스트'], imageUrl: KB('S000217119017'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217119017' },
+    { title: '2026 시대에듀 유선배 GTQ 일러스트 1급 합격노트 ver. Adobe CC', author: '유선배', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1234, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000217119017'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217119017' },
   ],
 
   'MOS': [
-    { title: '멘토시리즈 MOS 365 엑셀', author: '멘토 IT 연구회', publisher: '멘토르', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], imageUrl: KB('S000219135369'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219135369' },
-    { title: '멘토시리즈 MOS 365 워드', author: '멘토 IT 연구회', publisher: '멘토르', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: KB('S000219135217'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219135217' },
+    { title: '멘토시리즈 MOS 365 엑셀', author: '멘토 IT 연구회', publisher: '멘토르', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000219135369'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219135369' },
+    { title: '멘토시리즈 MOS 365 워드', author: '멘토 IT 연구회', publisher: '멘토르', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000219135217'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219135217' },
   ],
 
   'TOEIC': [
-    { title: '해커스 토익 최신기출유형 실전 10회 LC(리스닝)', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.8, reviews: 5678, tags: ['베스트'], imageUrl: KB('S000220438564'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220438564' },
-    { title: '해커스 토익 최신기출유형 실전 10회 RC(리딩)', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.8, reviews: 5432, tags: ['베스트'], imageUrl: KB('S000220438585'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220438585' },
-    { title: '해커스 토익 PART 7 집중공략 777 RC', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 17100, originalPrice: 19000, discount: '10%', rating: 4.8, reviews: 4321, tags: ['베스트'], imageUrl: KB('S000219129734'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219129734' },
-    { title: 'EBS 김대균 토익킹 (2026년 7월)', author: '김대균', publisher: '한국교육방송공사', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.7, reviews: 3210, tags: ['베스트'], imageUrl: KB('S000220240803'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220240803' },
-    { title: 'ETS 토익 기출보카(VOCA)', author: 'ETS', publisher: 'YBM', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.9, reviews: 23, tags: ['추천'], isbn: '9788917244168', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788917244168.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000220226890' },
+    { title: '해커스 토익 최신기출유형 실전 10회 LC(리스닝)', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.8, reviews: 5678, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000220438564'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220438564' },
+    { title: '해커스 토익 최신기출유형 실전 10회 RC(리딩)', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.8, reviews: 5432, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000220438585'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220438585' },
+    { title: '해커스 토익 PART 7 집중공략 777 RC', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 17100, originalPrice: 19000, discount: '10%', rating: 4.8, reviews: 4321, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000219129734'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219129734' },
+    { title: 'EBS 김대균 토익킹 (2026년 7월)', author: '김대균', publisher: '한국교육방송공사', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.7, reviews: 3210, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000220240803'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220240803' },
+    { title: 'ETS 토익 기출보카(VOCA)', author: 'ETS', publisher: 'YBM', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.9, reviews: 23, tags: ['추천'], hasEbook: false, isbn: '9788917244168', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788917244168.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000220226890' },
   ],
 
   'TOEIC Speaking': [
@@ -1344,15 +1344,15 @@ const REAL_BOOKS = {
   ],
 
   'OPIc': [
-    { title: '10일 만에 끝내는 해커스 OPIc 오픽 Advanced 공략', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.8, reviews: 3456, tags: ['베스트'], imageUrl: KB('S000202406853'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000202406853' },
-    { title: '10일 만에 끝내는 해커스 OPIc 오픽 START: Intermediate 공략', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.7, reviews: 2987, tags: ['베스트'], imageUrl: KB('S000208578134'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000208578134' },
-    { title: '스파르타 OPIc 오픽 IM2-IH 공략', author: '스파르타 어학연구소', publisher: '스파르타북스', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], imageUrl: KB('S000218846962'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218846962' },
-    { title: '오픽 요정 벨라쌤의 OPIc 초단기 완성 IH-AL 중상급', author: '강다연(벨라쌤)', publisher: '세상모든책', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.6, reviews: 1876, tags: ['추천'], imageUrl: KB('S000215553595'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215553595' },
-    { title: '오픽 요정 벨라쌤의 OPIc 초단기 완성 IL-IM 초급', author: '강다연(벨라쌤)', publisher: '세상모든책', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['추천'], imageUrl: KB('S000215553473'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215553473' },
+    { title: '10일 만에 끝내는 해커스 OPIc 오픽 Advanced 공략', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.8, reviews: 3456, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000202406853'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000202406853' },
+    { title: '10일 만에 끝내는 해커스 OPIc 오픽 START: Intermediate 공략', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.7, reviews: 2987, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000208578134'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000208578134' },
+    { title: '스파르타 OPIc 오픽 IM2-IH 공략', author: '스파르타 어학연구소', publisher: '스파르타북스', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000218846962'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218846962' },
+    { title: '오픽 요정 벨라쌤의 OPIc 초단기 완성 IH-AL 중상급', author: '강다연(벨라쌤)', publisher: '세상모든책', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.6, reviews: 1876, tags: ['추천'], hasEbook: true, imageUrl: KB('S000215553595'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215553595' },
+    { title: '오픽 요정 벨라쌤의 OPIc 초단기 완성 IL-IM 초급', author: '강다연(벨라쌤)', publisher: '세상모든책', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['추천'], hasEbook: true, imageUrl: KB('S000215553473'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215553473' },
   ],
 
   'AFPK': [
-    { title: '2025 해커스 AFPK 핵심문제집 모듈 1', author: '해커스 금융아카데미', publisher: '해커스패스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 2134, tags: ['베스트'], imageUrl: KB('S000216317051'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216317051' },
+    { title: '2025 해커스 AFPK 핵심문제집 모듈 1', author: '해커스 금융아카데미', publisher: '해커스패스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 2134, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000216317051'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216317051' },
     { title: '2025 해커스 AFPK 핵심문제집 모듈 2', author: '해커스 금융아카데미', publisher: '해커스패스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: KB('S000216317054'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216317054' },
     { title: '2025 해커스 AFPK 최종 실전모의고사', author: '해커스 금융아카데미', publisher: '해커스패스', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['베스트'], imageUrl: KB('S000216497312'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216497312' },
     { title: '2025 이패스 AFPK 핵심문제집 모듈1', author: '김종희', publisher: '이패스코리아', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], imageUrl: KB('S000216841802'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216841802' },
