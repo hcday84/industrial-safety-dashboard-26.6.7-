@@ -932,24 +932,24 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   // 네트워크관리사 1급·2급은 필기+실기 통합 교재로 시험이 시행되어 동일 도서가 두 등급에 공통으로 쓰입니다.
   '네트워크관리사1급': [
-    { title: '이기적 네트워크관리사 1, 2급 필기+실기 올인원', author: '임호진, 황성하', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], isbn: '9788931481211', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931481211.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218204635' },
-    { title: '2025 최적합 네트워크 관리사 1·2급 필기+실기', author: '허준, 선세리', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.9, reviews: 10, tags: ['추천'], isbn: '9788931586718', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931586718.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000213673627' },
+    { title: '이기적 네트워크관리사 1, 2급 필기+실기 올인원', author: '임호진, 황성하', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], hasEbook: true, isbn: '9788931481211', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931481211.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218204635' },
+    { title: '2025 최적합 네트워크 관리사 1·2급 필기+실기', author: '허준, 선세리', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.9, reviews: 10, tags: ['추천'], hasEbook: true, isbn: '9788931586718', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931586718.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000213673627' },
   ],
 
   // ────────────────────────────────────────
   '네트워크관리사2급': [
-    { title: '이기적 네트워크관리사 1, 2급 필기+실기 올인원', author: '임호진, 황성하', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], isbn: '9788931481211', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931481211.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218204635' },
-    { title: '2025 최적합 네트워크 관리사 1·2급 필기+실기', author: '허준, 선세리', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.9, reviews: 10, tags: ['추천'], isbn: '9788931586718', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931586718.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000213673627' },
+    { title: '이기적 네트워크관리사 1, 2급 필기+실기 올인원', author: '임호진, 황성하', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], hasEbook: true, isbn: '9788931481211', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931481211.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218204635' },
+    { title: '2025 최적합 네트워크 관리사 1·2급 필기+실기', author: '허준, 선세리', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.9, reviews: 10, tags: ['추천'], hasEbook: true, isbn: '9788931586718', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931586718.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000213673627' },
   ],
 
   // ────────────────────────────────────────
   '리눅스마스터1급': [
-    { title: '2026 이기적 리눅스마스터 1급(1·2차) 기본서 세트', author: '김윤수, 최정현', publisher: '영진닷컴', price: 34200, originalPrice: 38000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], isbn: '9788931481402', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931481402.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218968390' },
+    { title: '2026 이기적 리눅스마스터 1급(1·2차) 기본서 세트', author: '김윤수, 최정현', publisher: '영진닷컴', price: 34200, originalPrice: 38000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: true, isbn: '9788931481402', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931481402.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218968390' },
   ],
 
   // ────────────────────────────────────────
   '리눅스마스터2급': [
-    { title: '2024 이기적 리눅스마스터 2급 기본서', author: '권소라', publisher: '영진닷컴', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 9, tags: ['베스트'], isbn: '9788931468366', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931468366.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000212326688' },
+    { title: '2024 이기적 리눅스마스터 2급 기본서', author: '권소라', publisher: '영진닷컴', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 9, tags: ['베스트'], hasEbook: true, isbn: '9788931468366', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931468366.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000212326688' },
   ],
 
   // ────────────────────────────────────────
@@ -957,37 +957,37 @@ const REAL_BOOKS = {
     { title: '2026 알기사 정보보안기사(산업기사) 필기+핵심기출 1200제 세트', author: '조현준', publisher: '지안에듀', price: 54000, originalPrice: 60000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218322836'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218322836' },
     { title: '2026 알기사 정보보안기사(산업기사) 실기', author: '정일영', publisher: '지안에듀', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000219083573'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219083573' },
     { title: '2026 이기적 정보보안기사 필기+실기 올인원', author: '임호진', publisher: '영진닷컴', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000218331600'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218331600' },
-    { title: '2026 이기적 정보보안기사 실기 기출 600제', author: '임호진', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: KB('S000219382035'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219382035' },
-    { title: '2026 수제비 정보보안기사 실기 기본서', author: '윤영빈', publisher: '수제비', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.5, reviews: 143, tags: ['베스트'], imageUrl: KB('S000219127791'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219127791' },
+    { title: '2026 이기적 정보보안기사 실기 기출 600제', author: '임호진', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000219382035'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219382035' },
+    { title: '2026 수제비 정보보안기사 실기 기본서', author: '윤영빈', publisher: '수제비', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.5, reviews: 143, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000219127791'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219127791' },
     { title: '2026 정보보안 법령 및 정책 완전정복', author: '박진일', publisher: '에듀윌', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], isbn: '9788966113422', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788966113422.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+정보보안+법령+정책' },
     { title: '2026 네트워크 보안·시스템 보안 단기완성', author: '최철환', publisher: '한빛미디어', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 76, tags: ['추천'], isbn: '9791199551084', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791199551084.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+네트워크보안+시스템보안' },
   ],
 
   // ────────────────────────────────────────
   '자동차정비기사': [
-    { title: '2026 패스 자동차정비기사 필기', author: '박만재·국창호·문학훈', publisher: '골든벨', price: 30600, originalPrice: 34000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000218935739'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218935739' },
+    { title: '2026 패스 자동차정비기사 필기', author: '박만재·국창호·문학훈', publisher: '골든벨', price: 30600, originalPrice: 34000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218935739'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218935739' },
   ],
 
   // ────────────────────────────────────────
   '자동차정비기능장': [
-    { title: '최신판 자동차정비기능장 필기', author: '전봉준·고동원', publisher: '예문사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000214983155'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214983155' },
+    { title: '최신판 자동차정비기능장 필기', author: '전봉준·고동원', publisher: '예문사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000214983155'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214983155' },
     { title: '자동차 엔진전자제어 실무', author: '신완섭', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], isbn: '9788963451060', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788963451060.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=자동차+엔진전자제어+실무' },
     { title: '자동차 전자제어 시스템 완전정복', author: '정병연', publisher: '성안당', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.2, reviews: 65, tags: ['추천'], isbn: '9788931535211', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931535211.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=자동차+전자제어+시스템+완전정복' },
   ],
 
   // ────────────────────────────────────────
   '수질환경산업기사': [
-    { title: '2026 수질환경기사·산업기사 필기', author: '이철한', publisher: '예문사', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000218914137'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218914137' },
+    { title: '2026 수질환경기사·산업기사 필기', author: '이철한', publisher: '예문사', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218914137'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218914137' },
     { title: '2026 물쌤닷컴 수질환경기사/산업기사 필기+기출해설 세트', author: '이종혁', publisher: '미교원', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218615044'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218615044' },
-    { title: '2026 수질환경기사, 산업기사 필기', author: '신동성·하부영', publisher: '세진사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218854932'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218854932' },
+    { title: '2026 수질환경기사, 산업기사 필기', author: '신동성·하부영', publisher: '세진사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218854932'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218854932' },
     { title: '2026 수질오염공정시험기준 해설', author: '국가기술자격시험연구회', publisher: '구민사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], isbn: '9791160456981', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791160456981.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+수질오염공정시험기준' },
   ],
 
   // ────────────────────────────────────────
   '대기환경산업기사': [
-    { title: '2026 대기환경기사 필기+과년도+무료동영상+핸드북', author: '전화택', publisher: '구민사', price: 37800, originalPrice: 42000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000218031344'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218031344' },
-    { title: '2026 나합격 대기환경기사 필기+무료특강+온라인 CBT', author: '김현우', publisher: '삼원북스', price: 39600, originalPrice: 44000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000218086849'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218086849' },
-    { title: '2026 합격Easy 대기환경기사 필기', author: '신은상', publisher: '건기원', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218358598'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218358598' },
+    { title: '2026 대기환경기사 필기+과년도+무료동영상+핸드북', author: '전화택', publisher: '구민사', price: 37800, originalPrice: 42000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218031344'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218031344' },
+    { title: '2026 나합격 대기환경기사 필기+무료특강+온라인 CBT', author: '김현우', publisher: '삼원북스', price: 39600, originalPrice: 44000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218086849'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218086849' },
+    { title: '2026 합격Easy 대기환경기사 필기', author: '신은상', publisher: '건기원', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000218358598'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218358598' },
     { title: '2026 대기오염공정시험기준 해설', author: '국가기술자격시험연구회', publisher: '구민사', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.2, reviews: 87, tags: ['추천'], isbn: '9788942591855', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788942591855.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+대기오염공정시험기준' },
     { title: '2026 대기환경산업기사 핵심요약+예상문제', author: '박영태', publisher: '성안당', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.1, reviews: 65, tags: ['추천'], isbn: '9791168756441', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791168756441.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+대기환경산업기사+핵심요약' },
   ],
@@ -995,8 +995,8 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   // ────────────────────────────────────────
   '배관기능사': [
-    { title: '2026 배관기능사 필기+실기 한권 완성', author: '국가기술자격시험연구회', publisher: '예문사', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000217122019'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217122019' },
-    { title: '배관기능사 필기·실기 단기완성', author: '이상휘', publisher: '일진사', price: 18900, originalPrice: 21000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218440656'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218440656' },
+    { title: '2026 배관기능사 필기+실기 한권 완성', author: '국가기술자격시험연구회', publisher: '예문사', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000217122019'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217122019' },
+    { title: '배관기능사 필기·실기 단기완성', author: '이상휘', publisher: '일진사', price: 18900, originalPrice: 21000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218440656'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218440656' },
     { title: '배관기능사 필기', author: '최종만', publisher: '성안당', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 167, tags: ['베스트'], imageUrl: KB('S000216719085'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216719085' },
     { title: '배관 설계·시공 실무 가이드', author: '오진석', publisher: '동일출판사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 145, tags: ['추천'], isbn: '9788993954128', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788993954128.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=배관+설계+시공+실무' },
   ],
