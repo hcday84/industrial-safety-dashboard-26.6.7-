@@ -1283,31 +1283,31 @@ const REAL_BOOKS = {
 
   // ────────────────────────────────────────
   '정보통신기사': [
-    { title: '2026 이기적 정보통신기사 필기+실기 올인원', author: '안영준, 육철민, 윤경수 외', publisher: '영진닷컴', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], imageUrl: KB('S000219011189'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219011189' },
-    { title: '2026 시대에듀 유선배 정보통신기사 필기 합격노트', author: '변세현, 손대호 외', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], imageUrl: KB('S000218751552'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218751552' },
-    { title: '정보통신기술사들이 저술한 2026 정보통신기사 필기', author: '박배영, 박희남, 백윤철 감수 외', publisher: '정림사', price: 49500, originalPrice: 55000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218673825'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218673825' },
-    { title: '2026 정보통신기사 필기', author: '김남선, 양윤석 외', publisher: '세화', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: KB('S000219412311'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219412311' },
-    { title: '2026 이패스 정보통신기사 필기(이론편+문제편) 6주 CUT', author: '권병철', publisher: '이패스코리아', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 145, tags: ['베스트'], imageUrl: KB('S000218934630'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218934630' },
-    { title: '2026 정보통신기사 필기 기출문제집+실전모의고사', author: '김한기, 김영현 외', publisher: '세화', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 189, tags: ['추천'], imageUrl: KB('S000219085254'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219085254' },
-    { title: '2026 이패스 정보통신기사 필기 실기 세트', author: '권병철', publisher: '이패스코리아', price: 63000, originalPrice: 70000, discount: '10%', rating: 4.4, reviews: 134, tags: ['추천'], imageUrl: KB('S000219434445'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219434445' },
+    { title: '2026 이기적 정보통신기사 필기+실기 올인원', author: '안영준, 육철민, 윤경수 외', publisher: '영진닷컴', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000219011189'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219011189' },
+    { title: '2026 시대에듀 유선배 정보통신기사 필기 합격노트', author: '변세현, 손대호 외', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000218751552'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218751552' },
+    { title: '정보통신기술사들이 저술한 2026 정보통신기사 필기', author: '박배영, 박희남, 백윤철 감수 외', publisher: '정림사', price: 49500, originalPrice: 55000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218673825'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218673825' },
+    { title: '2026 정보통신기사 필기', author: '김남선, 양윤석 외', publisher: '세화', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000219412311'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219412311' },
+    { title: '2026 이패스 정보통신기사 필기(이론편+문제편) 6주 CUT', author: '권병철', publisher: '이패스코리아', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 145, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000218934630'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218934630' },
+    { title: '2026 정보통신기사 필기 기출문제집+실전모의고사', author: '김한기, 김영현 외', publisher: '세화', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 189, tags: ['추천'], hasEbook: false, imageUrl: KB('S000219085254'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219085254' },
+    { title: '2026 이패스 정보통신기사 필기 실기 세트', author: '권병철', publisher: '이패스코리아', price: 63000, originalPrice: 70000, discount: '10%', rating: 4.4, reviews: 134, tags: ['추천'], hasEbook: false, imageUrl: KB('S000219434445'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219434445' },
   ],
 
   // ────────────────────────────────────────
   '건축설비기사': [
-    { title: '2026 건축설비기사 필기 이론/문제', author: '조성안, 이석훈 외', publisher: '기문사', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.7, reviews: 256, tags: ['베스트'], imageUrl: KB('S000218180959'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218180959' },
-    { title: '2026 핵심기출 건축설비기사 필기 기출모의고사', author: '조성안, 이석훈 외', publisher: '기문사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218356158'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218356158' },
-    { title: '2026 건축설비기사 필기 기출공략 문제로 한번에 합격하기', author: '정하정', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], imageUrl: KB('S000218322930'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218322930' },
-    { title: '2026 건축설비기사 필기', author: '안병관', publisher: '예문사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 145, tags: ['베스트'], imageUrl: KB('S000219004244'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219004244' },
-    { title: '2026 compact 건축설비기사 필기', author: '조성안, 이석훈 외', publisher: '기문사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], imageUrl: KB('S000218790132'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218790132' },
-    { title: '2026 건축설비산업기사 필기 이론/문제', author: '조성안, 이석훈 외', publisher: '기문사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.5, reviews: 156, tags: ['추천'], imageUrl: KB('S000217941990'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217941990' },
-    { title: '2026 compact 건축설비산업기사 필기', author: '조성안, 이석훈 외', publisher: '기문사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], imageUrl: KB('S000218790134'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218790134' },
+    { title: '2026 건축설비기사 필기 이론/문제', author: '조성안, 이석훈 외', publisher: '기문사', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.7, reviews: 256, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218180959'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218180959' },
+    { title: '2026 핵심기출 건축설비기사 필기 기출모의고사', author: '조성안, 이석훈 외', publisher: '기문사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218356158'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218356158' },
+    { title: '2026 건축설비기사 필기 기출공략 문제로 한번에 합격하기', author: '정하정', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000218322930'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218322930' },
+    { title: '2026 건축설비기사 필기', author: '안병관', publisher: '예문사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 145, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000219004244'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219004244' },
+    { title: '2026 compact 건축설비기사 필기', author: '조성안, 이석훈 외', publisher: '기문사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218790132'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218790132' },
+    { title: '2026 건축설비산업기사 필기 이론/문제', author: '조성안, 이석훈 외', publisher: '기문사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.5, reviews: 156, tags: ['추천'], hasEbook: false, imageUrl: KB('S000217941990'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217941990' },
+    { title: '2026 compact 건축설비산업기사 필기', author: '조성안, 이석훈 외', publisher: '기문사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], hasEbook: false, imageUrl: KB('S000218790134'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218790134' },
   ],
 
   // ────────────────────────────────────────
   '도시계획기사': [
-    { title: '2026 도시계획기사 필기 세트', author: 'Urban. Lee', publisher: '예문사', price: 49500, originalPrice: 55000, discount: '10%', rating: 4.8, reviews: 312, tags: ['베스트'], imageUrl: KB('S000219117166'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219117166' },
-    { title: '2026 양재호의 도시계획기사 필기 이론편', author: '양재호', publisher: '트랜북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 256, tags: ['베스트'], imageUrl: KB('S000218229943'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218229943' },
-    { title: '2026 양재호의 도시계획기사 필기 기출편', author: '양재호', publisher: '트랜북스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], imageUrl: KB('S000218179861'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218179861' },
+    { title: '2026 도시계획기사 필기 세트', author: 'Urban. Lee', publisher: '예문사', price: 49500, originalPrice: 55000, discount: '10%', rating: 4.8, reviews: 312, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000219117166'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219117166' },
+    { title: '2026 양재호의 도시계획기사 필기 이론편', author: '양재호', publisher: '트랜북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 256, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218229943'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218229943' },
+    { title: '2026 양재호의 도시계획기사 필기 기출편', author: '양재호', publisher: '트랜북스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000218179861'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218179861' },
   ],
 
 
@@ -1315,14 +1315,14 @@ const REAL_BOOKS = {
   // 민간자격증
   // ────────────────────────────────────────
   'GTQ': [
-    { title: '2026 이기적 GTQ 포토샵 1급 기본서 ver. CC', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 2341, tags: ['베스트'], imageUrl: KB('S000218183225'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218183225' },
-    { title: '2026 이기적 GTQ 포토샵+일러스트 1급 올인원 ver.CC', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 1876, tags: ['베스트'], imageUrl: KB('S000218960821'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218960821' },
-    { title: '2026 시대에듀 유선배 GTQ 포토샵 1급 합격노트 ver. Adobe CC', author: '유선배', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: KB('S000217401720'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217401720' },
+    { title: '2026 이기적 GTQ 포토샵 1급 기본서 ver. CC', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 2341, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000218183225'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218183225' },
+    { title: '2026 이기적 GTQ 포토샵+일러스트 1급 올인원 ver.CC', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 1876, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000218960821'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218960821' },
+    { title: '2026 시대에듀 유선배 GTQ 포토샵 1급 합격노트 ver. Adobe CC', author: '유선배', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000217401720'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217401720' },
     { title: '2026 시대에듀 유선배 GTQ 일러스트 1급 합격노트 ver. Adobe CC', author: '유선배', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1234, tags: ['추천'], imageUrl: KB('S000217119017'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217119017' },
   ],
 
   'GTQi': [
-    { title: '2026 이기적 GTQ 포토샵+일러스트 1급 올인원 ver.CC', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 1876, tags: ['베스트'], imageUrl: KB('S000218960821'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218960821' },
+    { title: '2026 이기적 GTQ 포토샵+일러스트 1급 올인원 ver.CC', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 1876, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000218960821'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218960821' },
     { title: '2026 시대에듀 유선배 GTQ 일러스트 1급 합격노트 ver. Adobe CC', author: '유선배', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1234, tags: ['베스트'], imageUrl: KB('S000217119017'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217119017' },
   ],
 
