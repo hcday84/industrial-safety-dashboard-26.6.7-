@@ -1340,7 +1340,7 @@ const REAL_BOOKS = {
   ],
 
   'TOEIC Speaking': [
-    { title: '해커스 토익스피킹 START', author: '해커스어학연구소', publisher: '해커스어학연구소', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.8, reviews: 2341, tags: ['베스트'], imageUrl: KB('S000061350449'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061350449' },
+    { title: '10일 만에 끝내는 해커스 토익스피킹(토스) 스타트', author: '해커스 어학연구소', publisher: '해커스어학연구소', price: 17010, originalPrice: 18900, discount: '10%', rating: 4.9, reviews: 112, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000060622715'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000060622715' },
   ],
 
   'OPIc': [
