@@ -443,7 +443,7 @@ const REAL_BOOKS = {
   ],
 
   '간호조무사': [
-    { title: '2026 간호조무사 국가시험 핵심요약 총정리', author: '에듀팩토리 편집부', publisher: '에듀팩토리', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.8, reviews: 1240, tags: ['베스트'], isbn: '9788961544764', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788961544764.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=간호조무사+국가시험+핵심요약+2026' },
+    { title: '간호조무사 국가시험 과목별 문제은행', author: '간호조무사 학술연구회', publisher: '라이프사이언스', price: 29000, tags: ['베스트'], hasEbook: false, isbn: '9788961544764', imageUrl: KB('S000217114056'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217114056' },
     { title: '2026 간호조무사 핵심이론+실전문제집', author: '수문사 편집부', publisher: '수문사', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 856, tags: ['베스트'], isbn: '9791169417679', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791169417679.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=간호조무사+핵심이론+실전문제+2026' },
     { title: '2026 간호조무사 국가시험 최신기출 5개년', author: '이지패스 편집부', publisher: '이지패스', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 634, tags: ['베스트'], isbn: '9788931686289', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931686289.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=간호조무사+최신기출+5개년+2026' },
     { title: '2026 간호조무사 벼락치기 핵심노트', author: '김민지', publisher: '에듀팩토리', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 445, tags: ['베스트'], isbn: '9791197473906', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791197473906.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=간호조무사+벼락치기+2026' },
