@@ -418,11 +418,11 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   '물리치료사': [
     // 베스트셀러 5
-    { title: '2027 물리치료사 국가시험 핵심요약 총정리', author: '대한물리치료사협회 편집부', publisher: '고려의학', price: 52200, originalPrice: 58000, discount: '10%', rating: 4.8, reviews: 789, tags: ['베스트'], isbn: '9788969400550', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788969400550.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=물리치료사+국가시험+핵심요약+2027' },
-    { title: '2027 물리치료사 기출문제 완전분석 10개년', author: '군자출판사 편집부', publisher: '군자출판사', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.7, reviews: 634, tags: ['베스트'], isbn: '9788960697539', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788960697539.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=물리치료사+기출문제+2027' },
-    { title: '2027 근골격계 물리치료학 완전정복', author: '이재훈', publisher: '고려의학', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.7, reviews: 523, tags: ['베스트'], isbn: '9788957415375', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788957415375.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=근골격계+물리치료학+2027' },
-    { title: '2027 신경계 물리치료학 핵심이론+기출', author: '박진수', publisher: '메디시언', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.6, reviews: 445, tags: ['베스트'], isbn: '9791159435171', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791159435171.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=신경계+물리치료학+2027' },
-    { title: '2027 물리인자치료학 완전정복', author: '김상호', publisher: '군자출판사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 367, tags: ['베스트'], isbn: '9791163752431', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791163752431.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=물리인자치료학+2027' },
+    { title: '물리치료사 국가시험 예상문제집(실기편)(2014)', author: '대학서림 편집부', publisher: '대학서림', price: 20000, tags: ['베스트'], hasEbook: false, isbn: '9788969400550', imageUrl: KB('S000001062761'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001062761' },
+    { title: '물리치료사되기', author: '안소윤', publisher: '학지사메디컬', price: 14000, rating: 5.0, reviews: 11, tags: ['베스트'], hasEbook: false, isbn: '9788960697539', imageUrl: KB('S000000933285'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000933285' },
+    { title: '최신 근골격계 물리치료 중재학', author: '하성민 외', publisher: '학지사메디컬', price: 50000, tags: ['베스트'], hasEbook: false, isbn: '9788957415375', imageUrl: KB('S000219604982'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219604982' },
+    { title: '신경계 물리치료학', author: '김종만', publisher: '범문에듀케이션', price: 48000, tags: ['베스트'], hasEbook: false, isbn: '9791159435171', imageUrl: KB('S000219212157'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219212157' },
+    { title: '퍼시픽 물리치료학 개념서 2: 물리적 인자치료(2021)', author: '퍼시픽북스 학술편찬국', publisher: '퍼시픽북스', price: 18000, tags: ['베스트'], hasEbook: false, isbn: '9791163752431', imageUrl: KB('S000001823101'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001823101' },
     // 추천수험서 5
   ],
 
