@@ -1069,7 +1069,7 @@ const REAL_BOOKS = {
     { title: '2026 항공산업기사 필기', author: '항공기술교육아카데미', publisher: '성안당', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000217577896'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217577896' },
     { title: '2026 Win-Q 항공산업기사 단기합격', author: '시대에듀 편집부', publisher: '시대에듀', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.3, reviews: 112, tags: ['베스트'], hasEbook: true, isbn: '9791138396103', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791138396103.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=Win-Q+항공산업기사' },
     { title: '항공기 전기·전자 시스템', author: '신완섭', publisher: '성안당', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.4, reviews: 156, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931511963.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=항공기+전기+전자+시스템' },
-    { title: '항공법규 완전정복', author: '박인규', publisher: '경문사', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], isbn: '9791197947506', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791197947506.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=항공법규+완전정복' },
+    { title: '항공법규 필기', author: '항공출판사 편집부', publisher: '항공출판사', price: 20000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791197947506', imageUrl: KB('S000061672004'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061672004' },
   ],
 
   '영양사': [
