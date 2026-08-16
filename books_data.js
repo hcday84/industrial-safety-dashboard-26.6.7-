@@ -720,7 +720,7 @@ const REAL_BOOKS = {
     { title: '용접기능사 필기 핵심요약', author: '최부길', publisher: '이패스코리아', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 189, tags: ['베스트'], hasEbook: false, isbn: '9791192515083', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791192515083.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=용접기능사+필기+핵심요약+이패스코리아' },
     { title: '용접기능사 실기', author: '김승대 외', publisher: '세진사', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.4, reviews: 145, tags: ['추천'], hasEbook: false, imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788971219201.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=용접기능사+실기+세진사' },
     { title: '2026 용접기능사 필기 기출문제 풀이', author: '이동명', publisher: '크라운출판사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.3, reviews: 89, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791175197466.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=용접기능사+필기+기출문제+풀이+2026' },
-    { title: '2026 용접기능사 단기합격', author: '정명호', publisher: '메카피아', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.3, reviews: 67, tags: ['추천'], isbn: '9791143404268', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143404268.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=용접기능사+단기합격+메카피아+2026' },
+    { title: '2026 시대에듀 Win-Q 피복아크용접기능사 필기 단기합격(가스텅스텐아크용접/이산화탄소가스아크용접기능사 포함)', author: '홍순규', publisher: '시대고시기획', price: 20700, originalPrice: 23000, discount: '10%', rating: 5.0, reviews: 11, tags: ['추천'], hasEbook: true, imageUrl: KB('S000218641303'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218641303' },
   ],
 
   '가스텅스텐아크용접기능사': [
