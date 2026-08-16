@@ -1048,7 +1048,7 @@ const REAL_BOOKS = {
     { title: '2026 퍼펙트 미용사 메이크업 실기시험문제', author: '김리나', publisher: '크라운출판사', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], hasEbook: false, imageUrl: KB('S000218676679'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218676679' },
     { title: '2026 에듀윌 메이크업 필기 1주끝장', author: '에듀윌 편집부', publisher: '에듀윌', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], hasEbook: false, isbn: '9791136039385', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136039385.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+에듀윌+메이크업+필기' },
     { title: '2026 미용사(메이크업) CBT 최신기출', author: '메이크업연구회', publisher: '일진사', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143404312.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+미용사+메이크업+CBT' },
-    { title: '메이크업 테크닉 완전정복', author: '김리나', publisher: '크라운출판사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], isbn: '9791167692320', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791167692320.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=메이크업+테크닉+완전정복' },
+    { title: 'NCS 아틀라스 메이크업 미용사 실기', author: '유승혜 외 12명', publisher: '씨마스', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, imageUrl: KB('S000001744071'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001744071' },
   ],
 
   // ────────────────────────────────────────
