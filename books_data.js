@@ -402,8 +402,8 @@ const REAL_BOOKS = {
     { title: '임상화학 핵심정리 및 문제해설', author: '박화진', publisher: '범문에듀케이션', price: 45000, rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791192422015', imageUrl: KB('S000201853118'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201853118' },
     { title: '임상미생물학실습', author: '한국임상병리학과 미생물학 연구회', publisher: '고려의학', price: 41000, tags: ['베스트'], hasEbook: false, isbn: '9791192422763', imageUrl: KB('S000217005821'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217005821' },
     // 추천수험서 5
-    { title: '2027 임상생리학 핵심이론+기출', author: '한상훈', publisher: '메디시언', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 234, tags: ['추천'], isbn: '9791124381038', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791124381038.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상생리학+핵심이론+2027' },
-    { title: '2027 요·체액검사 단기완성', author: '김미래', publisher: '고려의학', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 198, tags: ['추천'], isbn: '9791159431043', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791159431043.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=요검사+체액검사+임상병리사+2027' },
+    { title: '임상생리학 최신경향 문제', author: '한국임상생리학연구회', publisher: '고려의학', price: 38000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791124381038', imageUrl: KB('S000219570701'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219570701' },
+    { title: '요화학 및 체액검사', author: 'Lillian Mundt, Kristy Shanahan', publisher: '범문에듀케이션', price: 35000, tags: ['추천'], hasEbook: false, isbn: '9791159431043', imageUrl: KB('S000001778450'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001778450' },
   ],
 
   // ────────────────────────────────────────
