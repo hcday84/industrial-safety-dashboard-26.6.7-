@@ -361,7 +361,7 @@ const REAL_BOOKS = {
 
   '가스기술사': [
     // 베스트셀러 5
-    { title: '가스기술사 기출문제 완전분석', author: '박재현', publisher: '예문사', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.5, reviews: 107, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791157676903.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=가스기술사+기출문제' },
+    { title: '합격Easy 가스기술사 1 - 이론 및 기출문제 완벽분석', author: '(사)한국가스기술사회', publisher: '건기원', price: 45000, originalPrice: 50000, discount: '10%', tags: ['베스트'], hasEbook: true, imageUrl: KB('S000213862078'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213862078' },
     // 추천수험서 5
   ],
 
