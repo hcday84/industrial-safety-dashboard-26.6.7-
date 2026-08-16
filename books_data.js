@@ -250,7 +250,7 @@ const REAL_BOOKS = {
     { title: '2026 선넘는 ADsP 데이터분석 준전문가 라임북', author: '공석민', publisher: '쏠티북스', price: 27900, originalPrice: 31000, discount: '10%', rating: 4.5, reviews: 178, tags: ['베스트'], hasEbook: false, isbn: '9791192967363', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791192967363.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+선넘는+ADsP+라임북' },
     // 추천수험서 5
     { title: '2026 박문각 ADsP 기출원스톱 400제+무료특강', author: '육근수', publisher: '박문각', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], hasEbook: true, isbn: '9791175194472', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791175194472.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+박문각+ADsP+기출원스톱' },
-    { title: '2026 데이터 분석 준전문가 ADsP 단기완성', author: '이재원', publisher: '예문사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 89, tags: ['추천'], isbn: '9791163864998', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791163864998.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+ADsP+단기완성' },
+    { title: '데이터분석준전문가(ADsP) 단기완성', author: '박영식', publisher: '예문에듀', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791163864998', imageUrl: KB('S000217223939'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217223939' },
   ],
 
   // ────────────────────────────────────────
