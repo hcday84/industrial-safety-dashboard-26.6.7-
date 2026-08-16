@@ -335,7 +335,7 @@ const REAL_BOOKS = {
 
   '발송배전기술사': [
     // 베스트셀러 5
-    { title: '발송배전기술사 최신 기출 해설집', author: '정성훈', publisher: '구민사', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.4, reviews: 67, tags: ['베스트'], isbn: '9788973742561', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788973742561.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=발송배전기술사+최신기출' },
+    { title: '인강으로 합격하는 발송배전기술사(상) 기출+예상문제집', author: '양재학, 김재구, 구본우, 정일재, 공영초 외', publisher: '성안당', price: 76500, originalPrice: 85000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788973742561', imageUrl: KB('S000217018748'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217018748' },
     // 추천수험서 5
     { title: '발송배전기술사 전력계통 심화', author: '이경민', publisher: '성안당', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.5, reviews: 76, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931525311.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=발송배전기술사+전력계통' },
   ],
