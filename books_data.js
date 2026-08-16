@@ -349,7 +349,7 @@ const REAL_BOOKS = {
 
   '기계기술사': [
     // 베스트셀러 5
-    { title: '기계기술사 면접 완전정복', author: '최용국', publisher: '일진사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.4, reviews: 109, tags: ['베스트'], isbn: '9791158136659', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791158136659.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=기계기술사+면접' },
+    { title: '건축기계설비 공조냉동기계기술사', author: '이석훈', publisher: '예문사', price: 58500, originalPrice: 65000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791158136659', imageUrl: KB('S000217349506'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217349506' },
     { title: '기계기술사 최신 기출 해설집', author: '이경민', publisher: '구민사', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.4, reviews: 88, tags: ['베스트'], isbn: '9791124092057', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791124092057.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=기계기술사+최신기출' },
     // 추천수험서 5
   ],
