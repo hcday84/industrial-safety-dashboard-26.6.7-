@@ -885,7 +885,7 @@ const REAL_BOOKS = {
     { title: '2026 Win-Q 자동차정비기능사 필기 단기합격', author: '함성훈 외', publisher: '시대에듀', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.5, reviews: 189, tags: ['베스트'], hasEbook: true, isbn: '9791143401724', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143401724.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+Win-Q+자동차정비기능사' },
     // 추천수험서 5
     { title: '2026 자동차정비기능사 필기 최근기출문제', author: '김형진', publisher: '책과상상', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 156, tags: ['추천'], hasEbook: false, isbn: '9791169673211', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791169673211.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기능사+최근기출' },
-    { title: '2026 합격이 보이는 자동차정비기능사 필기', author: '국가기술자격연구회', publisher: '구민사', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], isbn: '9791143414168', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143414168.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+자동차정비기능사+구민사' },
+    { title: '2026 자동차정비기능사 필기', author: '김형진, 김승수', publisher: '구민사', price: 26100, originalPrice: 29000, discount: '10%', tags: ['추천'], hasEbook: false, imageUrl: KB('S000218918186'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218918186' },
   ],
 
   // ────────────────────────────────────────
