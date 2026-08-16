@@ -208,8 +208,8 @@ const REAL_BOOKS = {
     // 추천수험서 5
     { title: '2026 이기적 빅데이터분석기사 실기 기본서', author: '나홍석 외', publisher: '영진닷컴', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.6, reviews: 289, tags: ['추천'], hasEbook: true, imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931480344.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+이기적+빅데이터분석기사+실기' },
     { title: '2026 단·축·키 빅데이터 분석기사 실기 파이썬', author: '김계철', publisher: '에이아이에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 7, tags: ['추천'], hasEbook: false, isbn: '9791199721623', imageUrl: KB('S000219882324'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219882324' },
-    { title: '2026 수제비 빅데이터분석기사 실기', author: '윤영빈 외', publisher: '수제비', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.4, reviews: 134, tags: ['추천'], isbn: '9791157677917', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791157677917.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+수제비+빅데이터분석기사+실기' },
-    { title: '2026 빅데이터분석기사 CBT 실전모의고사', author: '나홍석', publisher: '영진닷컴', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.3, reviews: 112, tags: ['추천'], isbn: '9791163864271', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791163864271.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+빅데이터분석기사+모의고사' },
+    { title: '2024 수제비 빅데이터분석기사 실기 R+파이썬', author: '윤영빈 외', publisher: '건기원', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.3, reviews: 8, tags: ['추천'], hasEbook: false, isbn: '9791157677917', imageUrl: KB('S000210626612'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000210626612' },
+    { title: '2025 빅데이터분석기사 필기 한권완성', author: '최예신 외', publisher: '예문에듀', price: 29700, originalPrice: 33000, discount: '10%', rating: 3.2, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791163864271', imageUrl: KB('S000215723054'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215723054' },
   ],
 
   // ────────────────────────────────────────
