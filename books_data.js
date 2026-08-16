@@ -485,7 +485,7 @@ const REAL_BOOKS = {
     { title: '문운당 위생사 필기', author: '한국식품영양학회', publisher: '문운당', price: 47000, tags: ['베스트'], hasEbook: false, isbn: '9791170684206', imageUrl: KB('S000219745110'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219745110' },
     { title: '2026 시대에듀 위생사 한권으로 끝내기', author: '국민건강교육학회', publisher: '시대고시기획', price: 37800, originalPrice: 42000, discount: '10%', rating: 5.0, reviews: 11, tags: ['베스트'], hasEbook: true, isbn: '9791143410191', imageUrl: KB('S000219411769'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219411769' },
     { title: '공중보건학문제집', author: '강병우', publisher: '청구문화사', price: 28000, tags: ['베스트'], hasEbook: false, isbn: '9791188944675', imageUrl: KB('S000000817035'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000817035' },
-    { title: '2026 위생사 모의고사 5회분', author: '박문각 편집부', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 123, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143413260.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=위생사+모의고사+5회분+2026' },
+    { title: '2026 시대에듀 위생사 최종모의고사', author: '국민건강교육학회', publisher: '시대에듀', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 7, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000219681339'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219681339' },
     { title: '최신 식품위생관계법규', author: '한국식품영양학회', publisher: '문운당', price: 33000, tags: ['추천'], hasEbook: false, isbn: '9791188516711', imageUrl: KB('S000220783242'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220783242' },
   ],
 
