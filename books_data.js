@@ -791,7 +791,7 @@ const REAL_BOOKS = {
     { title: '2026 에듀윌 수질환경기사 실기 2주끝장+무료특강', author: '이찬범', publisher: '에듀윌', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.6, reviews: 167, tags: ['추천'], hasEbook: true, isbn: '9791136050434', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136050434.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=에듀윌+수질환경기사+실기+2주끝장+2026' },
     { title: '2026 물쌤닷컴 수질환경기사 산업기사 실기 + 기출해설', author: '이종혁', publisher: '미교원', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], hasEbook: false, imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791194457145.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=물쌤닷컴+수질환경기사+산업기사+실기+기출해설+2026' },
     { title: '2026 수질환경기사 필기 단기완성', author: '정윤성', publisher: '에듀윌', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 112, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931534818.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=수질환경기사+필기+단기완성+에듀윌+2026' },
-    { title: '2026 수질환경기사 실기 단기완성', author: '전화택', publisher: '구민사', price: 37800, originalPrice: 42000, discount: '10%', rating: 4.4, reviews: 89, tags: ['추천'], isbn: '9791160452457', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791160452457.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=수질환경기사+실기+단기완성+구민사+2026' },
+    { title: '수질환경기사 실기 단기완성(2018)', author: '신동성, 하부영, 조희경', publisher: '세진사', price: 15000, rating: 3.8, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791160452457', imageUrl: KB('S000001791742'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001791742' },
   ],
 
   '초음파비파괴검사기사': [
