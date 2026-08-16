@@ -1158,20 +1158,20 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   '사회복지사1급': [
     { title: '2026 나눔의집 사회복지사 1급 기출문제집 10개년', author: '나눔의집 사회복지사연구소', publisher: '나눔의집', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.8, reviews: 2345, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788958105213.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=나눔의집+사회복지사+1급+기출문제+10개년+2026' },
-    { title: '2026 시대에듀 사회복지사 1급 한권으로 끝내기', author: '시대사회복지연구소', publisher: '시대고시기획', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 1654, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791138385541.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=시대에듀+사회복지사+1급+한권으로+2026' },
+    { title: '2026 시대에듀 사회복지사 1급 한권으로 끝내기', author: '시대사회복지연구소', publisher: '시대고시기획', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 1654, tags: ['베스트'], hasEbook: false, imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791138385541.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=시대에듀+사회복지사+1급+한권으로+2026' },
     { title: '2026 사회복지사 1급 사회복지법제 핵심정리', author: '윤찬영', publisher: '나눔의집', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1345, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791189357856.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회복지사+1급+사회복지법제+핵심정리+2026' },
     { title: '2026 사회복지사 1급 사회복지실천기술론 핵심', author: '엄명용 외', publisher: '학지사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 1123, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791189357832.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회복지사+1급+사회복지실천기술론+2026' },
     { title: '2026 사회복지사 1급 모의고사 5회분', author: '나눔의집 사회복지사연구소', publisher: '나눔의집', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 987, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791169416276.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회복지사+1급+모의고사+5회분+2026' },
   ],
 
   '청소년상담사2급': [
-    { title: '2026 청소년상담사 3급 한권으로 끝내기', author: '청소년상담사연구회', publisher: '시대고시기획', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 876, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143406095.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년상담사+3급+한권으로+끝내기+2026' },
-    { title: '2026 청소년상담사 2급 한권으로 끝내기', author: '청소년상담사연구회', publisher: '시대고시기획', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143406071.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년상담사+2급+한권으로+끝내기+2026' },
+    { title: '2026 청소년상담사 3급 한권으로 끝내기', author: '청소년상담사연구회', publisher: '시대고시기획', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 876, tags: ['베스트'], hasEbook: true, imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143406095.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년상담사+3급+한권으로+끝내기+2026' },
+    { title: '2026 청소년상담사 2급 한권으로 끝내기', author: '청소년상담사연구회', publisher: '시대고시기획', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], hasEbook: true, imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143406071.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년상담사+2급+한권으로+끝내기+2026' },
   ],
 
   '청소년지도사2급': [
-    { title: '2026 청소년지도사 2·3급 한권으로 끝내기', author: '청소년지도사연구회', publisher: '시대고시기획', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143402967.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년지도사+2급+3급+한권으로+2026' },
-    { title: '2026 청소년지도사 면접 완벽 대비', author: '면접연구회', publisher: '시대고시기획', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 356, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143412003.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년지도사+면접+완벽+대비+2026' },
+    { title: '2026 청소년지도사 2·3급 한권으로 끝내기', author: '청소년지도사연구회', publisher: '시대고시기획', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], hasEbook: true, imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143402967.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년지도사+2급+3급+한권으로+2026' },
+    { title: '2026 청소년지도사 면접 완벽 대비', author: '면접연구회', publisher: '시대고시기획', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 356, tags: ['추천'], hasEbook: true, imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143412003.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=청소년지도사+면접+완벽+대비+2026' },
   ],
 
   '평생교육사': [
@@ -1194,7 +1194,7 @@ const REAL_BOOKS = {
   ],
 
   '사회조사분석사2급': [
-    { title: '2026 사회조사분석사 기출문제 완전분석', author: '시대통계연구소', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791138397490.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회조사분석사+기출문제+완전분석+2026' },
+    { title: '2026 사회조사분석사 기출문제 완전분석', author: '시대통계연구소', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], hasEbook: true, imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791138397490.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회조사분석사+기출문제+완전분석+2026' },
     { title: '2026 사회조사분석사 조사방법론 핵심이론', author: '김경회 외', publisher: '에듀윌', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 654, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788969656483.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회조사분석사+조사방법론+핵심이론+2026' },
   ],
 
@@ -1388,10 +1388,10 @@ const REAL_BOOKS = {
 
   'ITQ': [
     { title: '2027 이기적 ITQ 한글 ver.2022', author: '영진정보연구소', publisher: '영진닷컴', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.8, reviews: 4321, tags: ['베스트'], hasEbook: false, isbn: '9788931482386', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931482386.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000220121037' },
-    { title: '2026 이기적 ITQ 엑셀 ver. 2021 기본서', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.8, reviews: 3876, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931479447.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+ITQ+엑셀+2026' },
-    { title: '2026 이기적 ITQ 파워포인트 ver. 2021 기본서', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.8, reviews: 3543, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931479461.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+ITQ+파워포인트+2026' },
+    { title: '2026 이기적 ITQ 엑셀 ver. 2021 기본서', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.8, reviews: 3876, tags: ['베스트'], hasEbook: true, imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931479447.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+ITQ+엑셀+2026' },
+    { title: '2026 이기적 ITQ 파워포인트 ver. 2021 기본서', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.8, reviews: 3543, tags: ['베스트'], hasEbook: true, imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931479461.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=이기적+ITQ+파워포인트+2026' },
     { title: 'ITQ OA Master 한글+엑셀+파워포인트 한권끝내기', author: '정보문화사 편집부', publisher: '정보문화사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 2134, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791125421832.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=ITQ+OA+Master+한권끝내기' },
-    { title: '시나공 ITQ 한글+엑셀+파워포인트', author: '길벗 R&D', publisher: '길벗', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791140708536.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=시나공+ITQ+한글+엑셀+파워포인트' },
+    { title: '시나공 ITQ 한글+엑셀+파워포인트', author: '길벗 R&D', publisher: '길벗', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['추천'], hasEbook: false, imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791140708536.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=시나공+ITQ+한글+엑셀+파워포인트' },
   ],
 
   'JLPT': [
