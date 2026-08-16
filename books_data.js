@@ -439,7 +439,7 @@ const REAL_BOOKS = {
   '치과위생사': [
     // 베스트셀러 5
     // 추천수험서 5
-    { title: '2027 임상치위생학 핵심이론+기출', author: '박민희', publisher: '고려의학', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], isbn: '9788957418796', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788957418796.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임상치위생학+2027' },
+    { title: '임상치위생학실습', author: '임상치위생학실습 편집위원회', publisher: '청구문화사', price: 40000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788957418796', imageUrl: KB('S000000817220'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000817220' },
   ],
 
   '간호조무사': [
