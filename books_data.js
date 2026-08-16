@@ -302,7 +302,7 @@ const REAL_BOOKS = {
     // 추천수험서 5
     { title: '2025 에듀윌 건축기사 실기 한권끝장', author: '김강섭', publisher: '에듀윌', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], hasEbook: false, imageUrl: KB('S000215791790'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215791790' },
     { title: '2026 건축기사 필기 The Bible 세트', author: '안광호, 백종엽, 이병억', publisher: '한솔아카데미', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.7, reviews: 45, tags: ['추천'], hasEbook: true, isbn: '9788931707526', imageUrl: KB('S000218271509'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218271509' },
-    { title: '2026 건축기사 필기 7개년 기출문제해설', author: '허원회 외', publisher: '성안당', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 123, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143400307.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+건축기사+성안당' },
+    { title: '2026 시대에듀 건축기사 필기 7개년 기출문제집', author: '이문호', publisher: '시대고시기획', price: 33300, originalPrice: 37000, discount: '10%', rating: 5.0, reviews: 11, tags: ['추천'], hasEbook: true, imageUrl: KB('S000218330694'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218330694' },
   ],
 
   // ────────────────────────────────────────
