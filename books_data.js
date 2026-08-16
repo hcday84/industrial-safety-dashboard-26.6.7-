@@ -661,7 +661,7 @@ const REAL_BOOKS = {
     { title: '2026 위험물기능사 실기 - 요약이론 & 13개년 기출문제집', author: '파이팅혼공TV', publisher: '지식오름', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 198, tags: ['추천'], hasEbook: false, imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791174910196.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=위험물기능사+실기+요약이론+13개년+기출문제집+2026' },
     { title: '2026 위험물기능사 필기 기출문제집', author: '김재호', publisher: '세화', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], hasEbook: false, imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931713992.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=위험물기능사+필기+기출문제집+세화+2026' },
     { title: '2026 위험물기능사 필기 핵심이론', author: '박수경', publisher: '성안당', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.4, reviews: 134, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788940650561.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=위험물기능사+필기+핵심이론+성안당+2026' },
-    { title: '2026 위험물기능사 단기완성', author: '최창률', publisher: '에듀윌', price: 23400, originalPrice: 26000, discount: '10%', rating: 4.4, reviews: 109, tags: ['추천'], isbn: '9788957617144', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788957617144.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=위험물기능사+단기완성+에듀윌+2026' },
+    { title: '위험물기능사 필기 단기완성', author: '충남산업기술교육원 부설 CNI 융합기술연구소', publisher: '아진', price: 23000, tags: ['추천'], hasEbook: false, imageUrl: KB('S000000855087'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000855087' },
   ],
 
   '위험물산업기사': [
