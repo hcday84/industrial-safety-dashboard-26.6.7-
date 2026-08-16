@@ -1073,8 +1073,8 @@ const REAL_BOOKS = {
   ],
 
   '영양사': [
-    { title: '2026 영양사 국가시험 핵심요약 총정리', author: '대한영양사협회 편집부', publisher: '군자출판사', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 678, tags: ['베스트'], isbn: '9791143412232', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143412232.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=영양사+국가시험+핵심요약+2026' },
-    { title: '2026 영양사 기출문제 완전분석 10개년', author: '메디시언 편집부', publisher: '메디시언', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.8, reviews: 556, tags: ['베스트'], isbn: '9791156928423', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791156928423.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=영양사+기출문제+완전분석+10개년+2026' },
+    { title: '2026 시대에듀 영양사 한권으로 끝내기', author: '만점해법저자진', publisher: '시대고시기획', price: 40500, originalPrice: 45000, discount: '10%', rating: 5.0, reviews: 10, tags: ['베스트'], hasEbook: true, isbn: '9791143412232', imageUrl: KB('S000219601314'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219601314' },
+    { title: '2026 문운당 영양사 시험문제집', author: '한국식품영양관련학과 교수협의회', publisher: '문운당', price: 47000, tags: ['베스트'], hasEbook: false, isbn: '9791156928423', imageUrl: KB('S000220166891'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220166891' },
     { title: '2026 영양사 모의고사 5회분', author: '메디시언 편집부', publisher: '메디시언', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 289, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788940650776.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=영양사+모의고사+5회분+2026' },
   ],
 
