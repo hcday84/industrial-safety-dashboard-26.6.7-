@@ -18,7 +18,7 @@ const REAL_BOOKS = {
     { title: '2026 해커스 산업안전산업기사 필기 핵심요약+기출', author: '해커스자격증', publisher: '해커스자격증', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788969656230.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+해커스+산업안전산업기사' },
     // 추천수험서 5
     { title: '2026 벼락치기 산업안전산업기사 필기', author: '정재수', publisher: '세화', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], hasEbook: false, isbn: '9788931713503', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931713503.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218149433' },
-    { title: '2026 스마트 산업안전산업기사 과년도 문제해설', author: '허원회', publisher: '성안당', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], isbn: '9791168756663', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791168756663.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+산업안전산업기사+과년도' },
+    { title: '2026 산업안전산업기사 실기(필답형+작업형)+무료동영상+스마트북', author: '최윤정', publisher: '구민사', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.9, reviews: 14, tags: ['추천'], hasEbook: false, isbn: '9791168756663', imageUrl: KB('S000218935586'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218935586' },
   ],
 
   // ────────────────────────────────────────
