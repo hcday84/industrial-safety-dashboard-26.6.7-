@@ -558,7 +558,7 @@ const REAL_BOOKS = {
     { title: '2026 시대에듀 조경기능사 필기 기출문제집', author: '최광희', publisher: '시대에듀', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], hasEbook: true, isbn: '9791138397803', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791138397803.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=시대에듀+조경기능사+필기+기출문제집+2026' },
     { title: '2026 조경기능사 실기 초단기 합격', author: '파이팅혼공TV 컨텐츠 개발팀', publisher: '지식오름', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 123, tags: ['추천'], hasEbook: false, imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791174910035.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=조경기능사+실기+초단기+합격+2026' },
     { title: '2026 조경기능사 실기', author: '정용민', publisher: '예문사', price: 26100, originalPrice: 29000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788938504968.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=조경기능사+실기+예문사+2026' },
-    { title: '2026 조경기능사 필기 단기완성', author: '조은정', publisher: '삼원북스', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.3, reviews: 76, tags: ['추천'], isbn: '9791191188073', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791191188073.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=조경기능사+필기+단기완성+2026' },
+    { title: 'NCS기반 단기완성 조경기능사 필기(2021)', author: 'NCS조경시험연구회', publisher: '피앤피북', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791191188073', imageUrl: KB('S000001948769'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001948769' },
   ],
 
   '측량및지형공간정보기사': [
