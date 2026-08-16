@@ -472,7 +472,7 @@ const REAL_BOOKS = {
   ],
 
   '보건의료정보관리사': [
-    { title: '2026 의무기록사 국가시험 핵심요약 총정리', author: '대한의무기록협회 편집부', publisher: '군자출판사', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 334, tags: ['베스트'], isbn: '9788961303569', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788961303569.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=의무기록사+국가시험+핵심요약+2026' },
+    { title: '의무기록정보학 실전문제', author: '아카데미아 편집국', publisher: '아카데미아', price: 25000, tags: ['베스트'], hasEbook: false, isbn: '9788961303569', imageUrl: KB('S000001878901'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001878901' },
     { title: '2026 의무기록사 기출문제 완전분석', author: '메디시언 편집부', publisher: '메디시언', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 267, tags: ['베스트'], isbn: '9791191036626', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791191036626.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=의무기록사+기출문제+완전분석+2026' },
   ],
 
