@@ -409,10 +409,10 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   '방사선사': [
     // 베스트셀러 5
-    { title: '2027 의료영상학 핵심이론+기출', author: '박상훈', publisher: '메디시언', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 356, tags: ['베스트'], isbn: '9791189487980', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791189487980.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=의료영상학+방사선사+2027' },
-    { title: '2027 핵의학기술학+방사선치료물리학 완성', author: '김동현', publisher: '고려의학', price: 35100, originalPrice: 39000, discount: '10%', rating: 4.5, reviews: 289, tags: ['베스트'], isbn: '9788980163717', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788980163717.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=핵의학기술학+방사선사+2027' },
+    { title: '디지털 의료 영상학', author: '김선칠 외', publisher: '메디컬사이언스', price: 35000, tags: ['베스트'], hasEbook: false, isbn: '9791189487980', imageUrl: KB('S000001927327'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001927327' },
+    { title: '임상 핵의학검사기술학', author: '서일택 외', publisher: '고려의학', price: 35000, tags: ['베스트'], hasEbook: false, isbn: '9788980163717', imageUrl: KB('S000001924284'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001924284' },
     // 추천수험서 5
-    { title: '2027 방사선생물학 핵심이론 단기완성', author: '최재원', publisher: '군자출판사', price: 27900, originalPrice: 31000, discount: '10%', rating: 4.6, reviews: 234, tags: ['추천'], isbn: '9788973868285', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788973868285.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=방사선생물학+2027' },
+    { title: '핵심방사선생물학', author: '구연화 외', publisher: 'JMK', price: 25000, tags: ['추천'], hasEbook: false, isbn: '9788973868285', imageUrl: KB('S000001864086'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001864086' },
   ],
 
   // ────────────────────────────────────────
