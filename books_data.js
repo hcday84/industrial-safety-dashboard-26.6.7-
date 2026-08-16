@@ -369,7 +369,7 @@ const REAL_BOOKS = {
     // 베스트셀러 5
     // 추천수험서 5
     { title: '정보관리기술사 & 컴퓨터시스템응용기술사 8: 데이터베이스', author: '권영식', publisher: '성안당', price: 40500, originalPrice: 45000, discount: '10%', rating: 5.0, reviews: 6, tags: ['추천'], hasEbook: true, isbn: '9788931555028', imageUrl: KB('S000000559796'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000559796' },
-    { title: '정보관리기술사 소프트웨어공학 심화', author: '박용기', publisher: '세화', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.4, reviews: 76, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931559972.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=정보관리기술사+소프트웨어공학' },
+    { title: '정보관리기술사&컴퓨터시스템응용기술사 5: 소프트웨어 공학', author: '권영식', publisher: '성안당', price: 49500, originalPrice: 55000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: true, imageUrl: KB('S000211901156'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211901156' },
   ],
 
   '컴퓨터시스템응용기술사': [
