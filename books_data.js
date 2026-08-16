@@ -342,9 +342,9 @@ const REAL_BOOKS = {
 
   '전기응용기술사': [
     // 베스트셀러 5
-    { title: '전기응용기술사 최신 기출 해설집', author: '김재원', publisher: '구민사', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.4, reviews: 61, tags: ['베스트'], isbn: '9791187180029', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791187180029.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=전기응용기술사+최신기출' },
+    { title: '2026 오승용기술사의 전기응용기술사 7개년 과년도 기출문제 해설', author: '오승용', publisher: '전기박사드림', price: 81000, originalPrice: 90000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791187180029', imageUrl: KB('S000219865017'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219865017' },
     // 추천수험서 5
-    { title: '전기응용기술사 전기철도 완전정복', author: '최용국', publisher: '예문사', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.4, reviews: 57, tags: ['추천'], isbn: '9788931527629', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931527629.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=전기응용기술사+전기철도' },
+    { title: '2022 KEC 한국전기설비규정 관련 건축전기설비기술사 기출·예상문제집', author: '양재학, 김용운, 윤종철, 김석태', publisher: '성안당', price: 45000, originalPrice: 50000, discount: '10%', rating: 5.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9788931527629', imageUrl: KB('S000000557656'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000557656' },
   ],
 
   '기계기술사': [
