@@ -1057,9 +1057,9 @@ const REAL_BOOKS = {
   '식품산업기사': [
     { title: '2026 식품산업기사 필기', author: '정진경·유연희·이다빈·이아랑', publisher: '예문에듀', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000217049829'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217049829' },
     { title: '2026 해커스 식품산업기사 필기 한권완성', author: '권유진', publisher: '해커스', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000217941979'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217941979' },
-    { title: '2026 나합격 식품산업기사 필기+무료특강', author: '김현우', publisher: '삼원북스', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.4, reviews: 167, tags: ['베스트'], isbn: '9791163864967', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791163864967.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+식품산업기사+나합격' },
+    { title: '2024 원큐패스 식품산업기사 필기 기출문제', author: '차광종', publisher: '다락원', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791163864967', imageUrl: KB('S000211622192'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211622192' },
     { title: '2026 식품산업기사 CBT 최신기출', author: '이현철', publisher: '일진사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 112, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788969656445.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+식품산업기사+CBT' },
-    { title: '식품미생물학 핵심정리', author: '이영진', publisher: '광문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.2, reviews: 76, tags: ['추천'], isbn: '9788981604608', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788981604608.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=식품미생물학+핵심정리' },
+    { title: '식품미생물학', author: '이종경, 윤기선, 오세욱, 이선영', publisher: '파워북', price: 21000, rating: 4.6, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9788981604608', imageUrl: KB('S000001259878'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001259878' },
   ],
 
   // ────────────────────────────────────────
