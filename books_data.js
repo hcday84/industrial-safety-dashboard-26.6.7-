@@ -477,8 +477,8 @@ const REAL_BOOKS = {
   ],
 
   '보건교육사': [
-    { title: '2026 보건교육사 보건교육학 핵심이론', author: '고려의학 편집부', publisher: '고려의학', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], isbn: '9791190839457', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791190839457.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=보건교육사+보건교육학+핵심이론+2026' },
-    { title: '2026 보건교육사 보건의사소통 핵심정리', author: '최민정', publisher: '고려의학', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.3, reviews: 65, tags: ['추천'], isbn: '9788962201239', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788962201239.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=보건교육사+보건의사소통+2026' },
+    { title: '에센스 보건교육학', author: '남철현 외', publisher: '메디시언', price: 18000, tags: ['베스트'], hasEbook: true, isbn: '9791190839457', imageUrl: KB('S000001944678'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001944678' },
+    { title: '보건의사소통 핵심문제집', author: '보건의사소통핵심문제연구회, 노성신', publisher: '한미의학', price: 18000, tags: ['추천'], hasEbook: false, isbn: '9788962201239', imageUrl: KB('S000001878901'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001878901' },
   ],
 
   '위생사': [
