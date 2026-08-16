@@ -429,10 +429,10 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   '응급구조사1급': [
     // 베스트셀러 5
-    { title: '2027 응급구조사 1급 국가시험 핵심요약 총정리', author: '대한응급구조사협회 편집부', publisher: '군자출판사', price: 49500, originalPrice: 55000, discount: '10%', rating: 4.8, reviews: 534, tags: ['베스트'], isbn: '9788985210058', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788985210058.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=응급구조사+1급+국가시험+핵심요약+2027' },
-    { title: '2027 응급처치론 핵심이론+기출', author: '박상호', publisher: '메디시언', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 289, tags: ['베스트'], isbn: '9791176440936', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791176440936.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=응급처치론+핵심이론+2027' },
+    { title: '응급구조사 1급 국가시험예상문제집(2014)', author: 'JMK 편집부', publisher: 'JMK', price: 29000, tags: ['베스트'], hasEbook: false, isbn: '9788985210058', imageUrl: KB('S000001333093'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001333093' },
+    { title: '2027 해커스소방 심규식 응급처치학개론 기본서 1: 총론', author: '심규식', publisher: '해커스소방', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.7, reviews: 12, tags: ['베스트'], hasEbook: false, isbn: '9791176440936', imageUrl: KB('S000219975317'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219975317' },
     // 추천수험서 5
-    { title: '2027 외상응급처치 핵심정리', author: '박재현', publisher: '군자출판사', price: 27900, originalPrice: 31000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], isbn: '9788985578707', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788985578707.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=외상응급처치+응급구조사+2027' },
+    { title: '전투외상 응급처치', author: '데루이 모토키', publisher: '호비스트', price: 15000, rating: 5.0, reviews: 15, tags: ['추천'], hasEbook: false, isbn: '9788985578707', imageUrl: KB('S000001343044'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001343044' },
   ],
 
   // ────────────────────────────────────────
