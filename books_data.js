@@ -290,7 +290,7 @@ const REAL_BOOKS = {
     // 추천수험서 5
     { title: '2026 토목기사·토목산업기사 시리즈 1: 응용역학', author: '안광호, 김창원, 염창열, 정용욱', publisher: '한솔아카데미', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 12, tags: ['추천'], hasEbook: false, isbn: '9791166547485', imageUrl: KB('S000218366537'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218366537' },
     { title: '2026 토목기사실기', author: '김태선 외', publisher: '한솔아카데미', price: 46800, originalPrice: 52000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], hasEbook: true, isbn: '9791166548239', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791166548239.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219061617' },
-    { title: '2026 스마트 7개년 토목기사 과년도 기출해설', author: '허원회 외', publisher: '성안당', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], isbn: '9788931511604', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931511604.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+토목기사+성안당' },
+    { title: '2025 스마트 7개년 과년도 토목기사 필기', author: '박영태, 고영주, 송낙원, 송용희, 김효성 외', publisher: '성안당', price: 37800, originalPrice: 42000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931511604', imageUrl: KB('S000214662565'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214662565' },
   ],
 
   // ────────────────────────────────────────
