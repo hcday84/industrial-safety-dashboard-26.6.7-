@@ -988,8 +988,8 @@ const REAL_BOOKS = {
     { title: '2026 대기환경기사 필기+과년도+무료동영상+핸드북', author: '전화택', publisher: '구민사', price: 37800, originalPrice: 42000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218031344'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218031344' },
     { title: '2026 나합격 대기환경기사 필기+무료특강+온라인 CBT', author: '김현우', publisher: '삼원북스', price: 39600, originalPrice: 44000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218086849'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218086849' },
     { title: '2026 합격Easy 대기환경기사 필기', author: '신은상', publisher: '건기원', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000218358598'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218358598' },
-    { title: '2026 대기오염공정시험기준 해설', author: '국가기술자격시험연구회', publisher: '구민사', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.2, reviews: 87, tags: ['추천'], isbn: '9788942591855', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788942591855.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+대기오염공정시험기준' },
-    { title: '2026 대기환경산업기사 핵심요약+예상문제', author: '박영태', publisher: '성안당', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.1, reviews: 65, tags: ['추천'], isbn: '9791168756441', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791168756441.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+대기환경산업기사+핵심요약' },
+    { title: '공정시험기준에 따른 대기오염물질분석', author: '조용준', publisher: '동화기술', price: 15000, tags: ['추천'], hasEbook: true, imageUrl: KB('S000000660069'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000660069' },
+    { title: '2026 대기환경산업기사 실기+무료동영상', author: '전화택', publisher: '구민사', price: 28800, originalPrice: 32000, discount: '10%', tags: ['추천'], hasEbook: false, imageUrl: KB('S000218853956'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218853956' },
   ],
 
   // ────────────────────────────────────────
