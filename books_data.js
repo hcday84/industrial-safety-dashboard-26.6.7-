@@ -709,7 +709,7 @@ const REAL_BOOKS = {
     { title: '2026 용접산업기사 필기 10년간 기출문제', author: '나중식', publisher: '책과상상', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], hasEbook: false, isbn: '9791169672900', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791169672900.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=용접산업기사+필기+10년간+기출문제+2026' },
     { title: '2020 완전정복 용접산업기사 실기', author: 'NDT 시험연구회', publisher: '세진사', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.4, reviews: 123, tags: ['추천'], hasEbook: false, isbn: '9791160453683', imageUrl: 'https://image.aladin.co.kr/product/22900/13/coversum/k692636944_1.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=완전정복+용접산업기사+실기+세진사' },
     { title: '과년도 용접산업기사', author: '김명선, 김용구, 임정운', publisher: 'HJ골든벨타임', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.4, reviews: 98, tags: ['추천'], hasEbook: false, isbn: '9788986412659', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788986412659.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=과년도+용접산업기사+골든벨' },
-    { title: '2026 용접기사 필기 단기완성', author: '홍순규', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 54, tags: ['추천'], isbn: '9791158131708', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791158131708.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=용접기사+필기+단기완성+시대에듀+2026' },
+    { title: '평생 무료 동영상과 함께하는 용접산업기사 필기', author: '최갑규', publisher: '세진북스', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: true, imageUrl: KB('S000218472931'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218472931' },
   ],
 
   '피복아크용접기능사': [
