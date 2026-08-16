@@ -321,7 +321,7 @@ const REAL_BOOKS = {
 
   '건설안전기술사': [
     // 베스트셀러 5
-    { title: '건설안전기술사 면접 완전정복', author: '박용기', publisher: '구민사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.4, reviews: 91, tags: ['베스트'], isbn: '9788927441137', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788927441137.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건설안전기술사+면접' },
+    { title: '건설안전기술사 실전면접', author: '한경보, Willy.H', publisher: '예문사', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788927441137', imageUrl: KB('S000000523650'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000523650' },
     { title: '건설안전기술사 최신 기출 해설집', author: '김재원', publisher: '일진사', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.4, reviews: 74, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788936327125.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건설안전기술사+최신기출' },
     // 추천수험서 5
   ],
