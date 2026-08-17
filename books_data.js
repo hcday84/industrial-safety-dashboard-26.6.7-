@@ -1101,7 +1101,7 @@ const REAL_BOOKS = {
 
   '공인회계사': [
     { title: '세법개론 1(2026)', author: '이철재, 정우승, 유은종', publisher: '리즈북스', price: 36000, originalPrice: 36000, discount: '0%', rating: 4.8, reviews: 1234, tags: ['베스트'], hasEbook: false, isbn: '9791124345016', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791124345016.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219470255' },
-    { title: '2026 공인회계사 2차 원가관리회계 기출+예상', author: '임세진', publisher: '세경북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.6, reviews: 765, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791198777645.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인회계사+2차+원가관리회계+2026' },
+    { title: '2026 공인회계사 2차 대비 원가관리회계 기출문제집', author: '김상욱', publisher: '테이크잇이지', price: 18700, rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000219085406'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219085406' },
     { title: '경제학연습 미시편', author: '정병열', publisher: '세경북스', price: 47700, originalPrice: 53000, discount: '10%', rating: 4.5, reviews: 543, tags: ['추천'], hasEbook: false, isbn: '9791159734526', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791159734526.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216352206' },
   ],
 
