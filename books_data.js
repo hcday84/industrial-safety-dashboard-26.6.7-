@@ -1096,7 +1096,7 @@ const REAL_BOOKS = {
 
   '세무사': [
     { title: '세법개론 1(2026)', author: '이철재, 정우승, 유은종', publisher: '리즈북스', price: 36000, originalPrice: 36000, discount: '0%', rating: 4.8, reviews: 1234, tags: ['베스트'], hasEbook: false, isbn: '9791124345016', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791124345016.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219470255' },
-    { title: '2026 세무사 1차 재정학 핵심이론+기출문제', author: '임병진', publisher: '나무와숲', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143402943.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=세무사+1차+재정학+핵심이론+2026' },
+    { title: '2026 시대에듀 기출이답이다 CTA 세무사 1차 재정학 10개년 기출문제해설', author: '송지은', publisher: '시대고시기획', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.6, reviews: 17, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000218330722'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218330722' },
   ],
 
   '공인회계사': [
