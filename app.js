@@ -4771,7 +4771,7 @@ function renderCompareSection(cert) {
     dropdown.innerHTML = matches.map(n =>
       `<div class="compare-dropdown-item" onclick="(()=>{
         document.getElementById('compare-inline-input').value='${n.replace(/'/g,"\\'")}';
-        document.getElementById('compare-inline-dropdown').style.display='none'; /*__PLACEHOLDER__*/
+        document.getElementById('compare-inline-dropdown').style.display='none';
         renderInlineCompare('${n.replace(/'/g,"\\'")}');
       })()">${n}</div>`
     ).join('');
