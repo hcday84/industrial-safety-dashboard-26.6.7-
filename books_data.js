@@ -1133,7 +1133,7 @@ const REAL_BOOKS = {
 
   '손해사정사': [
     { title: '2026 시대에듀 손해사정사 1차 보험계약법 한권으로 끝내기', author: '김명규, 강문우, 김창영', publisher: '시대고시기획', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 14, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000218053992'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218053992' },
-    { title: '2026 손해사정사 2차 손해사정이론 기출+예상', author: '이병욱 외', publisher: '나무와숲', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 456, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791194695288.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=손해사정사+2차+손해사정이론+2026' },
+    { title: '2026 박손사의 신체손해사정사 2차 의학이론 + 기출예상문제', author: '박관양', publisher: '직업상점', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 11, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218642144'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218642144' },
     { title: '2026 손해사정사 의학이론 핵심요약', author: '손해사정연구회', publisher: '나무와숲', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 378, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788966314126.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=손해사정사+의학이론+핵심요약+2026' },
     { title: '2026 손해사정사 자동차손해사정 실무', author: '김현진', publisher: '보험연수원', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 312, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788966313914.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=손해사정사+자동차손해사정+실무+2026' },
   ],
