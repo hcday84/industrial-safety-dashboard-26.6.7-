@@ -1124,7 +1124,7 @@ const REAL_BOOKS = {
   ],
 
   '공인노무사': [
-    { title: '2026 공인노무사 1차 노동법 한권으로 끝내기', author: '이승렬 외', publisher: '세경북스', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 1123, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791138395885.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인노무사+1차+노동법+한권으로+2026' },
+    { title: '2026 시대에듀 EBS 공인노무사 1차 노동법 기출문제 한권으로 끝내기', author: 'EBS 교수진', publisher: '시대고시기획', price: 34200, originalPrice: 38000, discount: '10%', rating: 5.0, reviews: 14, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000217119498'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217119498' },
     { title: '2026 공인노무사 1차 사회보험법 핵심이론', author: '김대환', publisher: '세경북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791175191464.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=공인노무사+1차+사회보험법+2026' },
   ],
 
