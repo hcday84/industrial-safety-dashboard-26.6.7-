@@ -3416,14 +3416,23 @@ function initEventListeners() {
   const SECTION_IDS = ['schedule-section', 'monthly-section', 'books-section', 'news-section', 'analytics-section', 'study-section', 'roadmap-section', 'predictor-section', 'location-section', 'compare-section', 'tips-section', 'faq-section', 'pub-calendar-section', 'notice-section'];
 
   function syncNavOnScroll() {
-    const threshold = window.scrollY + window.innerHeight * 0.5;
+    // 뷰포트 정중앙(50%) 대신, 상단에서 살짝 아래(120px) 지점을 기준점으로 사용.
+    // 자격증 비교기(compare-section)처럼 뷰포트 높이보다 훨씬 짧은 섹션은
+    // 정중앙 기준으로는 자기 영역이 기준점을 절대 포함할 수 없어 활성 표시가
+    // 항상 다음 섹션(예: 합격 팁)으로 새는 문제가 있었음 → [top, bottom) 범위 판정으로 교체.
+    const probe = window.scrollY + 120;
     let activeId = null;
-    SECTION_IDS.forEach(id => {
+    for (const id of SECTION_IDS) {
       const el = document.getElementById(id);
-      if (el && threshold >= el.getBoundingClientRect().top + window.scrollY) {
+      if (!el) continue;
+      const top = el.getBoundingClientRect().top + window.scrollY;
+      const bottom = top + el.offsetHeight;
+      if (probe >= top && probe < bottom) {
         activeId = id;
+        break;
       }
-    });
+      if (probe >= top) activeId = id; // 폴백: 마지막으로 통과한 섹션
+    }
     if (!activeId) return;
     document.querySelectorAll('.nav-item').forEach(item => {
       item.classList.toggle('active', item.getAttribute('href') === '#' + activeId);
