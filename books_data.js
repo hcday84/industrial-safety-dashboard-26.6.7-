@@ -926,7 +926,7 @@ const REAL_BOOKS = {
     // 추천수험서 5
     { title: '2026 ALL PASS 굴착기운전기능사 필기시험 총정리문제', author: '한국건설기계기술연구회', publisher: '크라운출판사', price: 11700, originalPrice: 13000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, imageUrl: KB('S000219027050'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219027050' },
     { title: '2027 완전합격 1주 완성 굴착기운전기능사 필기시험문제', author: '황은정', publisher: '크라운출판사', price: 12600, originalPrice: 14000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, imageUrl: KB('S000220293010'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220293010' },
-    { title: '2026 굴착기운전기능사 필기 핵심요약 노트', author: '전국중장비교사협의회', publisher: '골든벨', price: 10800, originalPrice: 12000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791192315218.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=2026+굴착기운전기능사+핵심요약' },
+    { title: '2027 굴착기 운전기능사 필기 핵심요약 및 기출문제집', author: '박상언', publisher: '브레인21', price: 13500, originalPrice: 15000, discount: '10%', tags: ['추천'], hasEbook: false, imageUrl: KB('S000217820310'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217820310' },
   ],
 
   // ────────────────────────────────────────
