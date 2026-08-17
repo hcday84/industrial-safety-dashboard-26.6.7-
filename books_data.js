@@ -1208,7 +1208,7 @@ const REAL_BOOKS = {
 
   // ────────────────────────────────────────
   '언어재활사': [
-    { title: '2026 언어재활사 모의고사 5회분', author: '언어치료국시연구회', publisher: '학지사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 167, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143416964.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=언어재활사+모의고사+5회분+2026' },
+    { title: '2026 시대에듀 언어재활사 최종모의고사', author: '곽경미, 곽은정, 엄지연, 이보람', publisher: '시대고시기획', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: true, imageUrl: KB('S000220455785'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220455785' },
     { title: '언어재활 임상 실습 가이드', author: '김영태 외', publisher: '학지사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.3, reviews: 82, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788998521714.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=언어재활+임상+실습+가이드' },
   ],
 
