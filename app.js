@@ -4085,10 +4085,13 @@ function renderComparePanel(nameB) {
 window.goToCertBooks = function(certName) {
   window.closeCompareModal && window.closeCompareModal();
   window.selectCert(certName);
+  // switchCertification()이 자체적으로 scrollTo({top:0, behavior:'smooth'})를 실행하므로,
+  // 이후 곧바로 이어서 스크롤하면 두 smooth 애니메이션이 충돌해 엉뚱한 위치(페이지 최하단 등)에
+  // 멈추는 경우가 있음 → behavior:'auto'로 즉시 이동시켜 앞선 애니메이션을 확실히 덮어씀.
   setTimeout(() => {
     const target = document.getElementById('books-section');
-    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }, 300);
+    if (target) target.scrollIntoView({ behavior: 'auto', block: 'start' });
+  }, 350);
 };
 
 (function initCompareModal() {
