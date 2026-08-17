@@ -1477,7 +1477,7 @@ const REAL_BOOKS = {
   ],
 
   '국내여행안내사': [
-    { title: '2026 국내여행안내사 한권으로 끝내기', author: '관광자격연구소', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143401502.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=국내여행안내사+한권끝내기+2026' },
+    { title: '2026 시대에듀 관광국사 한권으로 끝내기', author: '곽희정', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 17, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000218277203'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218277203' },
   ],
 
   '국외관광안내사': [
