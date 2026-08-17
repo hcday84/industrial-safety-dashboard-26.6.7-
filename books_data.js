@@ -1203,7 +1203,7 @@ const REAL_BOOKS = {
 
   // ────────────────────────────────────────
   '안경사': [
-    { title: '2026 안경사 모의고사 5회분', author: '안경국시연구회', publisher: '범문에듀케이션', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 178, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143414052.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=안경사+모의고사+5회분+2026' },
+    { title: '2026 시대에듀 안경사 최종모의고사+무료강의', author: '김정복, 이종하', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 5, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000219930183'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219930183' },
   ],
 
   // ────────────────────────────────────────
