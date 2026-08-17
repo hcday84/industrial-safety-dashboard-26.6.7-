@@ -4797,7 +4797,23 @@ function renderInlineCompare(nameB) {
   const starOf = n => (CERT_POPULARITY[n]||{}).stars||'—';
   const bar = (v,max,color) => v?`<div class="cmp-bar-wrap"><div class="cmp-bar" style="width:${Math.round(v/Math.max(max,60)*100)}%;background:${color}"></div><span>${v}%</span></div>`:'<span class="cmp-no-data">–</span>';
 
+  // 종합 요약 — 표를 다 읽지 않아도 핵심만 바로 파악하도록
+  const schCountA = (certA.schedules||[]).length, schCountB = (certB.schedules||[]).length;
+  const verdictParts = [];
+  if (pA && pB && pA !== pB) {
+    const winner = pA > pB ? certA.name : certB.name;
+    verdictParts.push(`합격률은 <strong>${winner}</strong>이(가) ${Math.abs(pA-pB).toFixed(1)}%p 더 높음`);
+  }
+  if (schCountA !== schCountB) {
+    const winner2 = schCountA > schCountB ? certA.name : certB.name;
+    verdictParts.push(`연간 응시 기회는 <strong>${winner2}</strong>이(가) 더 많음 (${schCountA}회 vs ${schCountB}회)`);
+  }
+  const verdictHTML = verdictParts.length
+    ? `<div class="cmp-verdict"><i class="fa-solid fa-lightbulb"></i> ${verdictParts.join(' · ')}</div>`
+    : `<div class="cmp-verdict cmp-verdict-neutral"><i class="fa-solid fa-circle-info"></i> 두 자격증의 합격률·시험 횟수 데이터가 비슷합니다. 아래 표에서 과목 구성을 직접 비교해보세요.</div>`;
+
   panel.innerHTML = `
+    ${verdictHTML}
     <div class="cmp-table-wrap">
       <table class="cmp-table">
         <thead>
