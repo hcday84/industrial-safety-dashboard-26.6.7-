@@ -1214,7 +1214,7 @@ const REAL_BOOKS = {
 
   // ────────────────────────────────────────
   '치과기공사': [
-    { title: '치과 재료학 이론과 실습', author: '대한치과기공학회', publisher: '신광출판사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 76, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788957413838.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=치과+재료학+이론+실습' },
+    { title: '치과재료학', author: '한국치과재료학교수협의회', publisher: '군자출판사', price: 80000, tags: ['추천'], hasEbook: false, imageUrl: KB('S000219647914'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219647914' },
   ],
 
   // ────────────────────────────────────────
