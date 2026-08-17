@@ -1115,7 +1115,7 @@ const REAL_BOOKS = {
   ],
 
   '변리사': [
-    { title: '2026 변리사 1차 산업재산권법 한권으로 끝내기', author: '원용수 외', publisher: '세경북스', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.8, reviews: 765, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791138393348.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=변리사+1차+산업재산권법+2026' },
+    { title: '2027 시대에듀 변리사 1차 산업재산권법 한권으로 끝내기', author: '정은석, 이유정, 오윤정', publisher: '시대고시기획', price: 50400, originalPrice: 56000, discount: '10%', rating: 5.0, reviews: 8, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000219811941'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219811941' },
   ],
 
   '법무사': [
