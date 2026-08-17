@@ -511,7 +511,7 @@ const REAL_BOOKS = {
     { title: 'No. 1건축산업기사 핵심이론 및 문제해설(2016)', author: '김선호, 정지현, 김중철', publisher: '예문사', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168042117', imageUrl: KB('S000000521674'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000521674' },
     { title: '이패스 실내건축기사(산업기사) 실기 작업형', author: '강덕진', publisher: '이패스코리아', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.0, reviews: 6, tags: ['추천'], hasEbook: true, imageUrl: KB('S000220161851'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220161851' },
     { title: '2026 건축산업기사 실기', author: '안광호, 백종엽, 이병억', publisher: '한솔아카데미', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 6, tags: ['추천'], hasEbook: true, imageUrl: KB('S000219061141'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219061141' },
-    { title: '2026 실전 단기 완성 건축설비산업기사 실기', author: '조성안', publisher: '기문사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.3, reviews: 67, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791194568483.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=건축설비산업기사+실기+2026' },
+    { title: '2026 실전단기완성 건축설비산업기사 실기', author: '조성안', publisher: '기문사', price: 22500, originalPrice: 25000, discount: '10%', rating: 3.8, reviews: 1, tags: ['추천'], hasEbook: false, imageUrl: KB('S000219976107'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219976107' },
   ],
 
   '실내건축기사': [
