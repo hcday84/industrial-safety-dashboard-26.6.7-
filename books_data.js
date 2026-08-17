@@ -1195,7 +1195,7 @@ const REAL_BOOKS = {
 
   '사회조사분석사2급': [
     { title: '2026 사회조사분석사 기출문제 완전분석', author: '시대통계연구소', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], hasEbook: true, imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791138397490.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회조사분석사+기출문제+완전분석+2026' },
-    { title: '2026 사회조사분석사 조사방법론 핵심이론', author: '김경회 외', publisher: '에듀윌', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 654, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788969656483.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회조사분석사+조사방법론+핵심이론+2026' },
+    { title: '2026 해커스 사회조사분석사 2급 필기 한권합격 이론+최신기출+핵심노트', author: '김홍규', publisher: '해커스자격증', price: 30510, originalPrice: 33900, discount: '10%', tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218560804'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218560804' },
   ],
 
   '사회조사분석사1급': [
