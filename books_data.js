@@ -1423,7 +1423,7 @@ const REAL_BOOKS = {
   ],
 
   'TESAT': [
-    { title: 'TESAT 공식 기출문제집 (한국경제신문)', author: '한국경제신문 TESAT운영본부', publisher: '한국경제신문', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136042224.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=TESAT+공식+기출문제집' },
+    { title: '2026 에듀윌 TESAT 회차별 기출문제집+무료특강', author: '조시현, 손기준, 김상헌, 임재현', publisher: '에듀윌', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 6, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000219869628'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219869628' },
     { title: '경제학원론', author: '이준구, 이창용', publisher: '문우사', price: 41610, originalPrice: 43000, discount: '3%', rating: 4.6, reviews: 1234, tags: ['추천'], hasEbook: false, isbn: '9791198642790', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791198642790.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000215621723' },
   ],
 
