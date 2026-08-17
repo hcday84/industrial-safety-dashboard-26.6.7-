@@ -1572,8 +1572,17 @@ button, input, select {
   font-size: 0.65rem;
   font-weight: 700;
   border-radius: 4px;
+  text-decoration: none;
 }
 .ebook-badge i { color: #4338ca; }
+a.ebook-badge {
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+a.ebook-badge:hover {
+  background-color: #e0e7ff;
+  text-decoration: underline;
+}
 
 /* ── 입문자 추천 1권 배너 ────────────────────────────────────────────────────── */
 .beginner-pick-banner {
