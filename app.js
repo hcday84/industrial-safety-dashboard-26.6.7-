@@ -4017,7 +4017,24 @@ function renderComparePanel(nameB) {
     return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" style="display:block"><polyline points="${pts}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round"/></svg>`;
   }
 
+  // 종합 요약 — 표를 다 읽지 않아도 핵심만 바로 파악하도록
+  const verdictParts = [];
+  if (passA && passB && passA !== passB) {
+    const winner = passA > passB ? certA.name : certB.name;
+    const diff = Math.abs(passA - passB).toFixed(1);
+    verdictParts.push(`합격률은 <strong>${winner}</strong>이(가) ${diff}%p 더 높음`);
+  }
+  if (schA !== schB) {
+    const winner2 = schA > schB ? certA.name : certB.name;
+    verdictParts.push(`연간 응시 기회는 <strong>${winner2}</strong>이(가) 더 많음 (${schA}회 vs ${schB}회)`);
+  }
+  const nextA = nextExamDate(certA), nextB = nextExamDate(certB);
+  const verdictHTML = verdictParts.length
+    ? `<div class="cmp-verdict"><i class="fa-solid fa-lightbulb"></i> ${verdictParts.join(' · ')}</div>`
+    : `<div class="cmp-verdict cmp-verdict-neutral"><i class="fa-solid fa-circle-info"></i> 두 자격증의 합격률·시험 횟수 데이터가 비슷합니다. 아래 표에서 과목 구성을 직접 비교해보세요.</div>`;
+
   panel.innerHTML = `
+    ${verdictHTML}
     <table class="compare-table">
       <thead>
         <tr>
