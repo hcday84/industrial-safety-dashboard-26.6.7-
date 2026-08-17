@@ -1407,7 +1407,7 @@ const REAL_BOOKS = {
   ],
 
   '재경관리사': [
-    { title: '2026 재경관리사 세무회계 이론+기출', author: '정정운', publisher: '삼일인포마인', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791174040893.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=재경관리사+세무회계+2026' },
+    { title: '2026 해커스 기초회계원리 초단기 7일 완성 이론+기출+분개연습', author: '이남호', publisher: '해커스금융', price: 16200, originalPrice: 18000, discount: '10%', rating: 5.0, reviews: 12, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218668709'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218668709' },
   ],
 
   'ERP정보관리사': [
