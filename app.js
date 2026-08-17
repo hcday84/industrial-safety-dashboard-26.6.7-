@@ -1345,8 +1345,11 @@ function renderBooks() {
     // 전자책(eBook) 존재 여부: 교보문고 상품페이지를 직접 대조해 수기 검증된 도서만 표시.
     // hasEbook이 true/false로 명시된 경우에만 배지를 노출하고, 미확인(undefined)인 도서는
     // 아무 것도 표시하지 않는다 (확인 안 된 것을 "없음"으로 잘못 단정하지 않기 위함)
+    // ebookUrl이 검증되어 있으면 실제 교보 eBook 상품페이지로 바로 연결되는 링크로 렌더링
     const ebookBadgeHTML = book.hasEbook === true
-      ? `<span class="ebook-badge" title="전자책(eBook)으로도 구매 가능합니다."><i class="fa-solid fa-tablet-screen-button"></i> eBook 있음</span>`
+      ? (book.ebookUrl
+          ? `<a href="${book.ebookUrl}" target="_blank" rel="noopener noreferrer" class="ebook-badge" title="전자책(eBook) 상품페이지로 이동합니다."><i class="fa-solid fa-tablet-screen-button"></i> eBook 있음</a>`
+          : `<span class="ebook-badge" title="전자책(eBook)으로도 구매 가능합니다."><i class="fa-solid fa-tablet-screen-button"></i> eBook 있음</span>`)
       : '';
 
     // 목차 미리보기: 교보문고 실제 상품 상세페이지가 연결된 도서만 (검색 링크는 미리보기 탭이 없음)
