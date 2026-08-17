@@ -1494,7 +1494,7 @@ const REAL_BOOKS = {
   ],
 
   '임용고시': [
-    { title: '교육과정 핵심 완성 (2022 개정 교육과정 반영)', author: '양현권', publisher: '에듀피디', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791193153680.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=임용+교육과정+핵심완성+2022개정' },
+    { title: '쌍끌이 교육학 완전학습', author: '신태식', publisher: '미래가치', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, imageUrl: KB('S000001718999'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001718999' },
   ],
 
   '한국실용글쓰기': [
