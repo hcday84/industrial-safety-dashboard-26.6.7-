@@ -1150,7 +1150,7 @@ const REAL_BOOKS = {
     { title: '2026 박문각 주택관리사 1차 핵심기출문제', author: '김종화, 김용규, 설신재 외', publisher: '박문각', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218840718'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218840718' },
     { title: '2026 해커스 주택관리사 2차 핵심요약집 공동주택관리실무', author: '김성환, 해커스 주택관리사시험 연구소', publisher: '해커스주택관리사', price: 17100, originalPrice: 19000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000219980768'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219980768' },
     { title: '2026 에듀윌 주택관리사 2차 핵심요약집 공동주택관리실무 이론편+문제편', author: '김영곤', publisher: '에듀윌', price: 27900, originalPrice: 31000, discount: '10%', tags: ['베스트'], hasEbook: false, imageUrl: KB('S000219717643'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219717643' },
-    { title: '2026 주택관리사 최종 모의고사 1·2차', author: '에듀윌 주택관리사연구소', publisher: '에듀윌', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 654, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791194560784.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=주택관리사+최종+모의고사+2026' },
+    { title: '2026 경록 주택관리사 적중실전모의고사 1, 2차 세트', author: '경록 신한부동산연구소', publisher: '경록', price: 61200, originalPrice: 68000, discount: '10%', tags: ['추천'], hasEbook: false, imageUrl: KB('S000219668570'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219668570' },
   ],
 
   // ────────────────────────────────────────
