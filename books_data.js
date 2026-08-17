@@ -795,7 +795,7 @@ const REAL_BOOKS = {
   ],
 
   '초음파비파괴검사기사': [
-    { title: '비파괴검사기사 문제해설', author: '여화연', publisher: '일진사', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.6, reviews: 256, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791160455281.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=비파괴검사기사+문제해설+일진사' },
+    { title: '비파괴검사 기사 산업기사 실기 필답형 기출문제집', author: 'NDT시험연구회', publisher: '세진사', price: 30000, rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000061352238'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061352238' },
   ],
 
   '방사선비파괴검사기사': [
@@ -808,7 +808,7 @@ const REAL_BOOKS = {
   ],
 
   '자기비파괴검사기사': [
-    { title: '비파괴검사기사 문제해설', author: '여화연', publisher: '일진사', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.6, reviews: 256, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791160455281.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=비파괴검사기사+문제해설+일진사' },
+    { title: '비파괴검사 기사 산업기사 실기 필답형 기출문제집', author: 'NDT시험연구회', publisher: '세진사', price: 30000, rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000061352238'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061352238' },
   ],
 
   '전기공사기사': [
