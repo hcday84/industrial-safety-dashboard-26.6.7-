@@ -4843,9 +4843,13 @@ function renderInlineCompare(nameB) {
         </tbody>
       </table>
     </div>` : ''}
-    <div style="text-align:right;margin-top:10px;">
-      <button class="btn btn-secondary btn-sm" onclick="window.selectCert('${certA.name.replace(/'/g,"\\'")}')">← ${certA.name} 대시보드로</button>
-      <button class="btn btn-secondary btn-sm" onclick="window.selectCert('${certB.name.replace(/'/g,"\\'")}')">→ ${certB.name} 대시보드로</button>
+    <div class="compare-actions">
+      <button class="btn btn-secondary btn-sm" onclick="window.goToCertBooks('${certA.name.replace(/'/g,"\\'")}')">
+        <i class="fa-solid fa-book"></i> ${certA.name} 수험서 보러가기
+      </button>
+      <button class="btn btn-secondary btn-sm" onclick="window.goToCertBooks('${certB.name.replace(/'/g,"\\'")}')">
+        <i class="fa-solid fa-book"></i> ${certB.name} 수험서 보러가기
+      </button>
     </div>`;
 }
 window.renderInlineCompare = renderInlineCompare;
