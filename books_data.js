@@ -1428,7 +1428,7 @@ const REAL_BOOKS = {
   ],
 
   '펀드투자권유대행인': [
-    { title: '2026 펀드투자권유대행인 한권으로 끝내기', author: '금융자격연구소', publisher: '시대에듀', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2345, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791125495383.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=펀드투자권유대행인+한권끝내기+2026' },
+    { title: '펀드투자권유대행인 한권으로 끝내기(2021)', author: '박정호', publisher: '시대고시기획', price: 16200, originalPrice: 18000, discount: '10%', rating: 5.0, reviews: 9, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000001657250'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001657250' },
     { title: '펀드투자권유대행인 핵심정리+기출문제', author: '해커스 금융아카데미', publisher: '해커스패스', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.7, reviews: 1987, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791163865698.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=펀드투자권유대행인+해커스+기출' },
     { title: '2026 와우패스 펀드투자권유대행인', author: '와우패스 교수진', publisher: '와우패스', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.7, reviews: 1543, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788966139071.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=와우패스+펀드투자권유대행인+2026' },
   ],
