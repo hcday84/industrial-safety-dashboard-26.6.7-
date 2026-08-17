@@ -1186,7 +1186,7 @@ const REAL_BOOKS = {
   ],
 
   '수의사': [
-    { title: '수의사를 위한 소동물 임상 매뉴얼', author: '대한수의사회', publisher: '광일문화사', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.5, reviews: 189, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791193218044.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=수의사+소동물+임상+매뉴얼' },
+    { title: '수의사 국가시험 대비 KVLE 모의고사 2024', author: '수의미래연구소', publisher: '젊수', price: 35000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, imageUrl: KB('S000212461033'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212461033' },
   ],
 
   '2급생활스포츠지도사': [
