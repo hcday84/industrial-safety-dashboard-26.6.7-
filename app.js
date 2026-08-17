@@ -4775,7 +4775,10 @@ function renderCompareSection(cert) {
         renderInlineCompare('${n.replace(/'/g,"\\'")}');
       })()">${n}</div>`
     ).join('');
-    dropdown.style.display='';
+    // CSS의 .compare-inline-dropdown이 기본값으로 display:none을 갖고 있어서
+    // 인라인 스타일을 ''(빈 문자열)로 비우면 그 class 규칙이 그대로 다시 적용되어
+    // 드롭다운이 절대 보이지 않는 버그가 있었음 → 명시적으로 'block' 지정.
+    dropdown.style.display='block';
   });
   document.addEventListener('click', e => {
     if (!e.target.closest('#compare-section')) dropdown.style.display='none';
