@@ -1498,7 +1498,7 @@ const REAL_BOOKS = {
   ],
 
   '한국실용글쓰기': [
-    { title: '한국실용글쓰기 단기완성 요약집', author: '글쓰기연구소', publisher: '에듀윌', price: 11700, originalPrice: 13000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791125406259.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=한국실용글쓰기+단기완성+요약집' },
+    { title: '한국 실용글쓰기 3배속 끝내기', author: '김남미', publisher: '박문각', price: 14400, originalPrice: 16000, discount: '10%', rating: 2.5, reviews: 1, tags: ['추천'], hasEbook: true, imageUrl: KB('S000001849113'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001849113' },
   ],
 
   '임상심리사2급': [
