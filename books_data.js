@@ -616,7 +616,7 @@ const REAL_BOOKS = {
     { title: '2026 찐합격 소방설비산업기사 실기 (기계⑥)', author: '공하성', publisher: '성안당', price: 41400, originalPrice: 46000, discount: '10%', rating: 4.7, reviews: 389, tags: ['베스트'], hasEbook: false, imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931514162.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=찐합격+소방설비산업기사+실기+기계+2026' },
     { title: '2026 찐합격 7개년 과년도 소방설비산업기사 필기 (기계 ③-7)', author: '공하성', publisher: '성안당', price: 26550, originalPrice: 29500, discount: '10%', rating: 4.6, reviews: 298, tags: ['베스트'], hasEbook: false, imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931514193.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=찐합격+7개년+소방설비산업기사+필기+기계+2026' },
     { title: '2026 소방설비산업기사 필기 기출문제 (기계편)', author: '강석민', publisher: '세진북스', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 156, tags: ['추천'], hasEbook: true, imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791157457366.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=소방설비산업기사+필기+기출문제+기계편+2026' },
-    { title: '2026 소방설비산업기사 실기 단기완성', author: '공하성', publisher: '성안당', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.4, reviews: 123, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791157455232.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=소방설비산업기사+실기+단기완성+2026' },
+    { title: '2022 단기완성 소방설비산업기사 실기 + 무료 동영상 강의: 기계편', author: '정진홍, 김명희', publisher: '세진북스', price: 36000, originalPrice: 40000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791157455232', imageUrl: KB('S000001754721'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001754721' },
   ],
 
   '소방설비산업기사(전기분야)': [
