@@ -1440,7 +1440,7 @@ const REAL_BOOKS = {
   ],
 
   '한자능력검정': [
-    { title: '한자능력검정 2급 한권으로 끝내기', author: '김원중', publisher: '성안당', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.7, reviews: 2345, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143402332.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=한자능력검정+2급+한권끝내기' },
+    { title: '2026 어문회 한자능력검정시험 2급 한 권으로 끝내기', author: '박정서, 박원길', publisher: '시대고시기획', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 23, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000218277194'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218277194' },
   ],
 
   'KBS한국어능력시험': [
