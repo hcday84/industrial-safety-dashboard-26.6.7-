@@ -1143,7 +1143,7 @@ const REAL_BOOKS = {
   ],
 
   '일반행정사': [
-    { title: '2026 행정사 최종 모의고사 5회분', author: '박문각 행정사연구소', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 378, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791199790506.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=행정사+최종+모의고사+5회분+2026' },
+    { title: '2026 The준 행정법 최종 점검 실전 모의고사', author: '이재준', publisher: '도담북스', price: 13500, originalPrice: 15000, discount: '10%', rating: 2.5, reviews: 1, tags: ['추천'], hasEbook: false, imageUrl: KB('S000219411742'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219411742' },
   ],
 
   '주택관리사보': [
