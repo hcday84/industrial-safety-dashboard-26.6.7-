@@ -1161,7 +1161,7 @@ const REAL_BOOKS = {
     { title: '2026 시대에듀 사회복지사 1급 한권으로 끝내기', author: '시대사회복지연구소', publisher: '시대고시기획', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 1654, tags: ['베스트'], hasEbook: false, imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791138385541.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=시대에듀+사회복지사+1급+한권으로+2026' },
     { title: '2027 에듀윌 사회복지사 1급 핵심요약집+무료특강', author: '손용근, 최승희, 윤나랑, 신경안, 임화영', publisher: '에듀윌', price: 26100, originalPrice: 29000, discount: '10%', rating: 4.7, reviews: 6, tags: ['베스트'], hasEbook: true, imageUrl: KB('S000219972916'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219972916' },
     { title: '2027 해커스 사회복지사 1급 한권합격+무료특강 (8영역 이론+최신기출+기출 OX)', author: '박정훈', publisher: '해커스 사회복지사', price: 36000, originalPrice: 40000, discount: '10%', rating: 5.0, reviews: 19, tags: ['추천'], hasEbook: false, imageUrl: KB('S000219249165'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219249165' },
-    { title: '2026 사회복지사 1급 모의고사 5회분', author: '나눔의집 사회복지사연구소', publisher: '나눔의집', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 987, tags: ['추천'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791169416276.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=사회복지사+1급+모의고사+5회분+2026' },
+    { title: '2027 사회복지사 1급 빈출 1000제', author: '김광현', publisher: '시스컴', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, imageUrl: KB('S000219019111'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219019111' },
   ],
 
   '청소년상담사2급': [
