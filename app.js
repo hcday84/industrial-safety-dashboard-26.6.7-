@@ -4072,14 +4072,24 @@ function renderComparePanel(nameB) {
     </table>` : ''}
 
     <div class="compare-actions">
-      <button class="btn btn-secondary btn-sm" onclick="window.selectCert('${certA.name}');window.closeCompareModal()">
-        <i class="fa-solid fa-arrow-left"></i> ${certA.name}
+      <button class="btn btn-secondary btn-sm" onclick="window.goToCertBooks('${certA.name.replace(/'/g,"\\'")}')">
+        <i class="fa-solid fa-book"></i> ${certA.name} 수험서 보러가기
       </button>
-      <button class="btn btn-secondary btn-sm" onclick="window.selectCert('${certB.name}');window.closeCompareModal()">
-        <i class="fa-solid fa-arrow-right"></i> ${certB.name}
+      <button class="btn btn-secondary btn-sm" onclick="window.goToCertBooks('${certB.name.replace(/'/g,"\\'")}')">
+        <i class="fa-solid fa-book"></i> ${certB.name} 수험서 보러가기
       </button>
     </div>`;
 }
+
+// 비교 결과에서 바로 결정 → 해당 자격증의 추천 수험서 섹션으로 이동
+window.goToCertBooks = function(certName) {
+  window.closeCompareModal && window.closeCompareModal();
+  window.selectCert(certName);
+  setTimeout(() => {
+    const target = document.getElementById('books-section');
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 300);
+};
 
 (function initCompareModal() {
   document.addEventListener('DOMContentLoaded', () => {
