@@ -1396,7 +1396,7 @@ const REAL_BOOKS = {
 
   'JLPT': [
     { title: '해커스 JLPT N1(일본어능력시험) 한 권으로 합격', author: '해커스 JLPT 연구소', publisher: '해커스어학연구소', price: 24210, originalPrice: 26900, discount: '10%', rating: 4.8, reviews: 81, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000203100592'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000203100592' },
-    { title: 'JLPT 한 권으로 합격 N2', author: '시원스쿨 일본어연구소', publisher: '시원스쿨랩', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.8, reviews: 3210, tags: ['베스트'], imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788965423393.jpg', pageUrl: 'https://search.kyobobook.co.kr/search?keyword=JLPT+한권으로합격+N2' },
+    { title: '해커스 JLPT N2(일본어능력시험) 한권합격', author: '해커스 JLPT 연구소', publisher: '해커스어학연구소', price: 24300, originalPrice: 27000, discount: '10%', rating: 5.0, reviews: 26, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000217243407'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217243407' },
   ],
 
   'HSK': [
