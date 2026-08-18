@@ -362,7 +362,7 @@ button, input, select {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 8px;
+  gap: 6px;
 }
 
 .control-btn {
