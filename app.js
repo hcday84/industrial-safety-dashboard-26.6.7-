@@ -4047,8 +4047,8 @@ function renderComparePanel(nameB) {
     verdictParts.push(`연간 응시 기회는 <strong>${winner2}</strong>이(가) 더 많음 (${schA}회 vs ${schB}회)`);
   }
   const verdictHTML = verdictParts.length
-    ? `<div class="cmp-verdict"><i class="fa-solid fa-lightbulb"></i> ${verdictParts.join(' · ')}</div>`
-    : `<div class="cmp-verdict cmp-verdict-neutral"><i class="fa-solid fa-circle-info"></i> 두 자격증의 합격률·시험 횟수 데이터가 비슷합니다. 아래 표에서 과목 구성을 직접 비교해보세요.</div>`;
+    ? `<div class="cmp-verdict"><i class="fa-solid fa-lightbulb"></i><span>${verdictParts.join(' · ')}</span></div>`
+    : `<div class="cmp-verdict cmp-verdict-neutral"><i class="fa-solid fa-circle-info"></i><span>두 자격증의 합격률·시험 횟수 데이터가 비슷합니다. 아래 표에서 과목 구성을 직접 비교해보세요.</span></div>`;
 
   panel.innerHTML = `
     ${verdictHTML}
@@ -4833,8 +4833,8 @@ function renderInlineCompare(nameB) {
     verdictParts.push(`연간 응시 기회는 <strong>${winner2}</strong>이(가) 더 많음 (${schCountA}회 vs ${schCountB}회)`);
   }
   const verdictHTML = verdictParts.length
-    ? `<div class="cmp-verdict"><i class="fa-solid fa-lightbulb"></i> ${verdictParts.join(' · ')}</div>`
-    : `<div class="cmp-verdict cmp-verdict-neutral"><i class="fa-solid fa-circle-info"></i> 두 자격증의 합격률·시험 횟수 데이터가 비슷합니다. 아래 표에서 과목 구성을 직접 비교해보세요.</div>`;
+    ? `<div class="cmp-verdict"><i class="fa-solid fa-lightbulb"></i><span>${verdictParts.join(' · ')}</span></div>`
+    : `<div class="cmp-verdict cmp-verdict-neutral"><i class="fa-solid fa-circle-info"></i><span>두 자격증의 합격률·시험 횟수 데이터가 비슷합니다. 아래 표에서 과목 구성을 직접 비교해보세요.</span></div>`;
 
   panel.innerHTML = `
     ${verdictHTML}
