@@ -4779,9 +4779,9 @@ function renderCompareSection(cert) {
     if (!matches.length) { dropdown.style.display='none'; return; }
     dropdown.innerHTML = matches.map(n =>
       `<div class="compare-dropdown-item" onclick="(()=>{
-        document.getElementById('compare-inline-input').value='';
+        document.getElementById('compare-inline-input').value='${n.replace(/'/g,"\\'")}';
         document.getElementById('compare-inline-dropdown').style.display='none';
-        window.openCompareModalWith('${n.replace(/'/g,"\\'")}');
+        renderInlineCompare('${n.replace(/'/g,"\\'")}');
       })()">${n}</div>`
     ).join('');
     // CSS의 .compare-inline-dropdown이 기본값으로 display:none을 갖고 있어서
