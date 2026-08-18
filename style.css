@@ -441,11 +441,11 @@ button, input, select {
 .header-tab {
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 7px 16px;
+  gap: 5px;
+  padding: 7px 11px;
   border: none;
   border-radius: 7px;
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   font-weight: 600;
   cursor: pointer;
   background: transparent;
