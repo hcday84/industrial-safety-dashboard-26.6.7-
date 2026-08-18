@@ -1520,7 +1520,7 @@ button, input, select {
 .checklist-total strong { color: var(--text-color); font-size: 0.95rem; }
 
 /* ── 찜한 도서 (위시리스트) ──────────────────────────────────────────────────── */
-.wishlist-btn { width: auto; border-radius: 20px; padding: 0 13px; gap: 6px; font-size: 0.82rem; font-weight: 600; white-space: nowrap; position: relative; }
+.wishlist-btn { width: auto; border-radius: 20px; padding: 0 9px; gap: 5px; font-size: 0.76rem; font-weight: 600; white-space: nowrap; position: relative; }
 .wishlist-btn i { color: var(--danger-color); }
 .wishlist-btn:hover { border-color: var(--danger-color); color: var(--danger-color); }
 .wishlist-count-badge {
