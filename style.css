@@ -278,14 +278,14 @@ button, input, select {
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
   background: none;
   border: 1.5px solid #4db843;
   border-radius: 20px;
   cursor: pointer;
   color: #4db843;
-  font-size: 0.82rem;
-  padding: 7px 13px;
+  font-size: 0.76rem;
+  padding: 7px 9px;
   white-space: nowrap;
   transition: var(--transition);
   font-weight: 600;
