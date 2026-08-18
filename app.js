@@ -4794,6 +4794,17 @@ function renderCompareSection(cert) {
   });
 }
 
+// 비교 결과를 지우고 새로 검색할 수 있도록 입력창의 X 버튼에서 호출
+window.clearInlineCompare = function() {
+  const input = document.getElementById('compare-inline-input');
+  const dropdown = document.getElementById('compare-inline-dropdown');
+  const panel = document.getElementById('compare-inline-panel');
+  if (input) input.value = '';
+  if (dropdown) dropdown.style.display = 'none';
+  if (panel) panel.innerHTML = '<p class="compare-hint"><i class="fa-solid fa-arrow-up"></i> 비교할 자격증을 위 검색창에서 선택하세요.</p>';
+  if (input) input.focus();
+};
+
 function renderInlineCompare(nameB) {
   const certA = getCert();
   const certB = CERTIFICATIONS[nameB];
