@@ -387,9 +387,9 @@ button, input, select {
 .theme-toggle-btn {
   width: auto;
   border-radius: 20px;
-  padding: 0 13px;
-  gap: 6px;
-  font-size: 0.82rem;
+  padding: 0 9px;
+  gap: 5px;
+  font-size: 0.76rem;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -397,14 +397,14 @@ button, input, select {
 .vercel-link-btn {
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 0 13px;
+  gap: 5px;
+  padding: 0 9px;
   height: 40px;
   border-radius: 20px;
   background-color: var(--bg-color);
   border: 1px solid var(--border-color);
   color: var(--text-color);
-  font-size: 0.82rem;
+  font-size: 0.76rem;
   font-weight: 600;
   white-space: nowrap;
   text-decoration: none;
