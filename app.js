@@ -4818,7 +4818,8 @@ function renderInlineCompare(nameB) {
   const maxSub = Math.max(subA.length, subB.length);
 
   const typeOf = n => PRIVATE_CERT_SET.has(n)?'민간자격':PRO_CERT_SET.has(n)?'국가전문':'국가기술';
-  const starOf = n => (CERT_POPULARITY[n]||{}).stars||'—';
+  const starOf = n => { const s = (CERT_POPULARITY[n]||{}).stars; return typeof s === 'number' ? s : null; };
+  const starsHTML = n => { const s = starOf(n); return s != null ? renderStars(s) : '<span class="cmp-no-data">—</span>'; };
   const bar = (v,max,color) => v?`<div class="cmp-bar-wrap"><div class="cmp-bar" style="width:${Math.round(v/Math.max(max,60)*100)}%;background:${color}"></div><span>${v}%</span></div>`:'<span class="cmp-no-data">–</span>';
 
   // 종합 요약 — 표를 다 읽지 않아도 핵심만 바로 파악하도록
