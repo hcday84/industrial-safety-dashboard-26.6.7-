@@ -4848,7 +4848,7 @@ function renderInlineCompare(nameB) {
           <tr><td class="cmp-val">${typeOf(certA.name)}</td><td class="cmp-label">자격 유형</td><td class="cmp-val">${typeOf(certB.name)}</td></tr>
           <tr><td class="cmp-val">${certA.category||'—'}</td><td class="cmp-label">분류</td><td class="cmp-val">${certB.category||'—'}</td></tr>
           <tr><td class="cmp-val ${pA>pB?'cmp-win':''}">${bar(pA,Math.max(pA,pB),'#10b981')}</td><td class="cmp-label">평균 합격률</td><td class="cmp-val ${pB>pA?'cmp-win':''}">${bar(pB,Math.max(pA,pB),'#3b82f6')}</td></tr>
-          <tr><td class="cmp-val">${renderStars(starOf(certA.name))}</td><td class="cmp-label">선호도</td><td class="cmp-val">${renderStars(starOf(certB.name))}</td></tr>
+          <tr><td class="cmp-val">${starsHTML(certA.name)}</td><td class="cmp-label">선호도</td><td class="cmp-val">${starsHTML(certB.name)}</td></tr>
           <tr><td class="cmp-val">${nextExam(certA)}</td><td class="cmp-label">다음 시험</td><td class="cmp-val">${nextExam(certB)}</td></tr>
           <tr><td class="cmp-val">${subA.length}과목</td><td class="cmp-label">시험 과목 수</td><td class="cmp-val">${subB.length}과목</td></tr>
         </tbody>
