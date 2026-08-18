@@ -258,6 +258,7 @@ button, input, select {
   background-color: var(--bg-color);
   border: 1.5px solid #ef4444;
   border-radius: 30px;
+  font-size: 0.85rem;
   transition: border-color 0.3s, background-color 0.3s;
   animation: searchGlowPulse 2.5s ease-in-out infinite;
 }
