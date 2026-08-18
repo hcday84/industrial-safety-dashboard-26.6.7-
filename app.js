@@ -4765,7 +4765,7 @@ function renderCompareSection(cert) {
     return;
   }
   labelEl.textContent = cert.name;
-  panel.innerHTML = '<p class="compare-hint"><i class="fa-solid fa-arrow-up"></i> 비교할 자격증을 위 검색창에서 선택하세요.</p>';
+  panel.innerHTML = '';
 
   const input = document.getElementById('compare-inline-input');
   const dropdown = document.getElementById('compare-inline-dropdown');
