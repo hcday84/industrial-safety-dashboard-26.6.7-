@@ -5349,23 +5349,23 @@ a.ebook-badge:hover {
 .compare-hint { color: var(--text-muted); font-size: 0.85rem; padding: 16px 0; }
 .cmp-table-wrap { overflow-x: auto; margin-bottom: 16px; }
 .cmp-table { width: 100%; border-collapse: collapse; }
-.cmp-table th, .cmp-table td { padding: 9px 12px; font-size: 0.82rem; border-bottom: 1px solid var(--border-color); }
+.cmp-table th, .cmp-table td { padding: 10px 12px; font-size: 0.95rem; border-bottom: 1px solid var(--border-color); }
 .cmp-th-a, .cmp-th-b { font-weight: 700; color: var(--primary-color); text-align: center; }
-.cmp-th-mid { text-align: center; color: var(--text-muted); font-size: 0.75rem; }
-.cmp-label { text-align: center; font-size: 0.75rem; color: var(--text-muted); white-space: nowrap; }
+.cmp-th-mid { text-align: center; color: var(--text-muted); font-size: 0.85rem; }
+.cmp-label { text-align: center; font-size: 0.85rem; color: var(--text-muted); white-space: nowrap; }
 .cmp-val { text-align: center; }
 .cmp-win { font-weight: 700; color: var(--green-color); }
 .cmp-no-data { color: var(--text-muted); }
 .cmp-bar-wrap { display: flex; align-items: center; gap: 6px; justify-content: center; }
 .cmp-bar { height: 8px; border-radius: 4px; min-width: 4px; }
 .cmp-subjects { margin-top: 6px; }
-.cmp-subjects-title { font-size: 0.8rem; font-weight: 700; color: var(--text-muted); margin-bottom: 8px; }
+.cmp-subjects-title { font-size: 0.9rem; font-weight: 700; color: var(--text-muted); margin-bottom: 8px; }
 .cmp-sub-table { width: 100%; border-collapse: collapse; }
-.cmp-sub-table th { padding: 6px 10px; font-size: 0.75rem; color: var(--text-muted); border-bottom: 1px solid var(--border-color); text-align: center; }
-.cmp-sub-table td { padding: 5px 10px; font-size: 0.8rem; border-bottom: 1px solid var(--border-color); }
+.cmp-sub-table th { padding: 7px 10px; font-size: 0.85rem; color: var(--text-muted); border-bottom: 1px solid var(--border-color); text-align: center; }
+.cmp-sub-table td { padding: 6px 10px; font-size: 0.9rem; border-bottom: 1px solid var(--border-color); }
 .cmp-sub-val { max-width: 160px; }
-.cmp-sub-center { text-align: center; color: var(--text-muted); font-size: 0.75rem; width: 30px; }
-.cmp-sub-dot { color: var(--primary-color); margin-right: 5px; font-size: 0.6rem; }
+.cmp-sub-center { text-align: center; color: var(--text-muted); font-size: 0.85rem; width: 30px; }
+.cmp-sub-dot { color: var(--primary-color); margin-right: 5px; font-size: 0.65rem; }
 
 /* ==============================
    합격 팁 & 후기
