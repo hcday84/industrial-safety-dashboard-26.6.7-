@@ -3944,6 +3944,15 @@ window.closeCompareModal = function() {
   if (overlay) overlay.style.display = 'none';
 };
 
+// 인라인 비교 섹션에서 자격증을 선택했을 때도, 저울 아이콘을 눌렀을 때와
+// 완전히 동일한 비교 모달 창으로 결과를 보여주기 위한 헬퍼.
+window.openCompareModalWith = function(nameB) {
+  window.openCompareModal();
+  const input = document.getElementById('compare-search-input');
+  if (input) input.value = nameB;
+  renderComparePanel(nameB);
+};
+
 function renderComparePanel(nameB) {
   const certA = getCert();
   const certB = CERTIFICATIONS[nameB];
