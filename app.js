@@ -4801,7 +4801,7 @@ window.clearInlineCompare = function() {
   const panel = document.getElementById('compare-inline-panel');
   if (input) input.value = '';
   if (dropdown) dropdown.style.display = 'none';
-  if (panel) panel.innerHTML = '<p class="compare-hint"><i class="fa-solid fa-arrow-up"></i> 비교할 자격증을 위 검색창에서 선택하세요.</p>';
+  if (panel) panel.innerHTML = '';
   if (input) input.focus();
 };
 
