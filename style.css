@@ -237,9 +237,10 @@ button, input, select {
 }
 
 .logo-area h1 {
-  font-size: 1.55rem;
+  font-size: 1.28rem;
   font-weight: 900;
   color: #111111;
+  white-space: nowrap;
 }
 
 .dark-theme .logo-area h1 {
