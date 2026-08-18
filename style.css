@@ -5355,6 +5355,23 @@ a.ebook-badge:hover {
 .cmp-label { text-align: center; font-size: 0.85rem; color: var(--text-muted); white-space: nowrap; }
 .cmp-val { text-align: center; }
 .cmp-win { font-weight: 700; color: var(--green-color); }
+/* 항목(자격 유형/분류/평균 합격률/선호도/다음 시험/시험 과목 수)별로 서로 다른 색을 부여해
+   한눈에 구분되도록 함 — 행마다 강조색을 --row-color로 지정하고, 라벨 텍스트 색상 +
+   왼쪽 컬러 바 + 옅은 배경 틴트로 표현. */
+.cmp-table tbody tr:nth-child(1) { --row-color: #3b82f6; }
+.cmp-table tbody tr:nth-child(2) { --row-color: #8b5cf6; }
+.cmp-table tbody tr:nth-child(3) { --row-color: #f59e0b; }
+.cmp-table tbody tr:nth-child(4) { --row-color: #14b8a6; }
+.cmp-table tbody tr:nth-child(5) { --row-color: #ec4899; }
+.cmp-table tbody tr:nth-child(6) { --row-color: #10b981; }
+.cmp-table tbody tr {
+  background: color-mix(in srgb, var(--row-color, transparent) 7%, transparent);
+  box-shadow: inset 3px 0 0 0 var(--row-color, transparent);
+}
+.cmp-table tbody tr .cmp-label {
+  color: var(--row-color, var(--text-muted));
+  font-weight: 700;
+}
 .cmp-no-data { color: var(--text-muted); }
 .cmp-bar-wrap { display: flex; align-items: center; gap: 6px; justify-content: center; }
 .cmp-bar { height: 8px; border-radius: 4px; min-width: 4px; }
