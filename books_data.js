@@ -1563,7 +1563,7 @@ const REAL_BOOKS = {
     { title: '2026 해커스경찰 갓대환 형사법 핵심요약집 형법', author: '김대환', publisher: '해커스경찰', price: 40500, originalPrice: 45000, discount: '10%', rating: 5.0, reviews: 31, tags: ['베스트'], hasEbook: false, isbn: '9791174049018', imageUrl: KB('S000219562645'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219562645' },
     { title: '2026 해커스경찰 김민철 경찰학 기출 1000제', author: '김민철', publisher: '해커스경찰', price: 39600, originalPrice: 44000, discount: '10%', rating: 5.0, reviews: 57, tags: ['추천'], hasEbook: false, isbn: '9791174048929', imageUrl: KB('S000219544931'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219544931' },
     { title: '2027 해커스경찰 박철한 경찰헌법 최신 5개년 판례집', author: '박철한', publisher: '해커스경찰', price: 17100, originalPrice: 19000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791176445580', imageUrl: KB('S000220428017'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220428017' },
-    { title: '2026 해커스경찰 킹재규 경찰학 총알 총정리 모의고사 2차 시험 대비', author: '김재규', publisher: '해커스경찰', price: 21600, originalPrice: 24000, discount: '10%', rating: 5.0, reviews: 8, tags: ['추천'], hasEbook: false, imageUrl: KB('S000220350323'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220350323' },
+    { title: '2026 해커스경찰 킹재규 경찰학 총알 총정리 모의고사 2차 시험 대비', author: '김재규', publisher: '해커스경찰', price: 21600, originalPrice: 24000, discount: '10%', rating: 5.0, reviews: 8, tags: ['추천'], hasEbook: false, isbn: '9791176442770', imageUrl: KB('S000220350323'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220350323' },
   ],
 
   // ────────────────────────────────────────
