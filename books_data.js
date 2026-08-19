@@ -127,7 +127,7 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   '화공기사': [
     // 베스트셀러 5
-    { title: '2026 화공기사 필기 세트', author: '정나나', publisher: '예문사', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.8, reviews: 278, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000219080786'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219080786' },
+    { title: '2026 화공기사 필기 세트', author: '정나나', publisher: '예문사', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.8, reviews: 278, tags: ['베스트'], hasEbook: false, isbn: '9788927461289', imageUrl: KB('S000219080786'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219080786' },
     { title: '2026 화공기사 기출문제집(필기)', author: '김재호', publisher: '예문사', price: 27900, originalPrice: 31000, discount: '10%', rating: 4.6, reviews: 234, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000217304501'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217304501' },
     { title: '2026 시대에듀 무단뽀 화공기사 실기(필답형+작업형)', author: '최영화', publisher: '시대고시기획', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.8, reviews: 14, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012462422', isbn: '9791188883981', imageUrl: KB('S000218973159'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218973159' },
     // 추천수험서 5
