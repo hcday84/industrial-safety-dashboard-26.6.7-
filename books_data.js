@@ -1597,7 +1597,7 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   // 법원직 공무원(9급) — 교보문고 법원직/검찰사무직 카테고리 + 공무원 과목별(국어/영어/한국사) 베스트셀러 기준, 2026-07-29 확인
   '법원직 공무원(9급)': [
-    { title: '2026 해커스공무원 박철한 헌법 기본서', author: '박철한', publisher: '해커스공무원', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.95, reviews: 20, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000217349571'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217349571' },
+    { title: '2026 해커스공무원 박철한 헌법 기본서', author: '박철한', publisher: '해커스공무원', price: 40500, originalPrice: 45000, discount: '10%', rating: 4.95, reviews: 20, tags: ['베스트'], hasEbook: false, isbn: '9791174044044', imageUrl: KB('S000217349571'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217349571' },
     { title: '2027 단기완성 민법 1: 민법총칙 물권법', author: '황보수정', publisher: '새흐름', price: 35100, originalPrice: 39000, discount: '10%', reviews: 0, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013316408', imageUrl: KB('S000220588930'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220588930' },
     { title: '2026 신호진 핵심기출 1000제 형사법 2: 형법각론', author: '신호진', publisher: '렉스스터디', price: 34200, originalPrice: 38000, discount: '10%', rating: 5.0, reviews: 7, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000219182554'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219182554' },
     { title: '2027 해커스공무원 신민숙 쉬운국어 한 권으로 끝', author: '신민숙', publisher: '해커스공무원', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 18, tags: ['추천'], hasEbook: false, isbn: '9791176440981', imageUrl: KB('S000219853841'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219853841' },
