@@ -1017,7 +1017,7 @@ const REAL_BOOKS = {
 
   // ────────────────────────────────────────
   '미용사(피부)': [
-    { title: '2026 피부미용사 필기 한권으로 합격하기', author: '황해정·김승아', publisher: '크라운출판사', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000217059166'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217059166' },
+    { title: '2026 피부미용사 필기 한권으로 합격하기', author: '황해정·김승아', publisher: '크라운출판사', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: false, isbn: '9788940649497', imageUrl: KB('S000217059166'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217059166' },
     { title: '2026 이기적 권쌤TV 미용사(피부) 필기 기본서', author: '권순현', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012567052', imageUrl: KB('S000219159023'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219159023' },
     { title: '2026 원큐패스 미용사 피부 필기', author: '이지안', publisher: '크라운출판사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218938455'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218938455' },
     { title: '2026 시대에듀 답만 외우는 미용사 피부 필기 CBT기출문제', author: '시대에듀 편집부', publisher: '시대고시기획', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012497240', imageUrl: KB('S000219023470'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219023470' },
