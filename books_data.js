@@ -1133,7 +1133,7 @@ const REAL_BOOKS = {
 
   '손해사정사': [
     { title: '2026 시대에듀 손해사정사 1차 보험계약법 한권으로 끝내기', author: '김명규, 강문우, 김창영', publisher: '시대고시기획', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 14, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012067631', imageUrl: KB('S000218053992'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218053992' },
-    { title: '2026 박손사의 신체손해사정사 2차 의학이론 + 기출예상문제', author: '박관양', publisher: '직업상점', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 11, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218642144'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218642144' },
+    { title: '2026 박손사의 신체손해사정사 2차 의학이론 + 기출예상문제', author: '박관양', publisher: '직업상점', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 11, tags: ['베스트'], hasEbook: false, isbn: '9791194695288', imageUrl: KB('S000218642144'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218642144' },
     { title: '2026 신체손해사정사 2차 의학이론 핵심노트+기출정복', author: '김윤아', publisher: '고시아카데미', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.9, reviews: 24, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218907715'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218907715' },
     { title: '2026 인스TV 손해사정사 2차 핵심 자동차보험 이론과 실무', author: '박세원', publisher: '고시아카데미', price: 26100, originalPrice: 29000, discount: '10%', rating: 4.9, reviews: 12, tags: ['추천'], hasEbook: false, imageUrl: KB('S000217756182'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217756182' },
   ],
