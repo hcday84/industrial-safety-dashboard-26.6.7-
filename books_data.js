@@ -1186,7 +1186,7 @@ const REAL_BOOKS = {
   ],
 
   '수의사': [
-    { title: '수의사 국가시험 대비 KVLE 모의고사 2024', author: '수의미래연구소', publisher: '젊수', price: 35000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, imageUrl: KB('S000212461033'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212461033' },
+    { title: '수의사 국가시험 대비 KVLE 모의고사 2024', author: '수의미래연구소', publisher: '젊수', price: 35000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791198381057', imageUrl: KB('S000212461033'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212461033' },
   ],
 
   '2급생활스포츠지도사': [
