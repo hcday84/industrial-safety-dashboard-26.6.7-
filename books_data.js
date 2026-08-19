@@ -1209,7 +1209,7 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   '언어재활사': [
     { title: '2026 시대에듀 언어재활사 최종모의고사', author: '곽경미, 곽은정, 엄지연, 이보람', publisher: '시대고시기획', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013268945', imageUrl: KB('S000220455785'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220455785' },
-    { title: '언어재활사를 위한 임상 가이드', author: 'Froma P. Roth, Colleen K. Worthington', publisher: '박학사', price: 27000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, imageUrl: KB('S000001633635'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001633635' },
+    { title: '언어재활사를 위한 임상 가이드', author: 'Froma P. Roth, Colleen K. Worthington', publisher: '박학사', price: 27000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788998521714', imageUrl: KB('S000001633635'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001633635' },
   ],
 
   // ────────────────────────────────────────
