@@ -1300,7 +1300,7 @@ const REAL_BOOKS = {
     { title: '2026 건축설비기사 필기', author: '안병관', publisher: '예문사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 145, tags: ['베스트'], hasEbook: false, isbn: '9788927461029', imageUrl: KB('S000219004244'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219004244' },
     { title: '2026 compact 건축설비기사 필기', author: '조성안, 이석훈 외', publisher: '기문사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], hasEbook: false, isbn: '9791194568339', imageUrl: KB('S000218790132'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218790132' },
     { title: '2026 건축설비산업기사 필기 이론/문제', author: '조성안, 이석훈 외', publisher: '기문사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.5, reviews: 156, tags: ['추천'], hasEbook: false, isbn: '9791194568247', imageUrl: KB('S000217941990'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217941990' },
-    { title: '2026 compact 건축설비산업기사 필기', author: '조성안, 이석훈 외', publisher: '기문사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], hasEbook: false, imageUrl: KB('S000218790134'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218790134' },
+    { title: '2026 compact 건축설비산업기사 필기', author: '조성안, 이석훈 외', publisher: '기문사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], hasEbook: false, isbn: '9791194568346', imageUrl: KB('S000218790134'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218790134' },
   ],
 
   // ────────────────────────────────────────
