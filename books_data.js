@@ -1602,7 +1602,7 @@ const REAL_BOOKS = {
     { title: '2026 신호진 핵심기출 1000제 형사법 2: 형법각론', author: '신호진', publisher: '렉스스터디', price: 34200, originalPrice: 38000, discount: '10%', rating: 5.0, reviews: 7, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000219182554'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219182554' },
     { title: '2027 해커스공무원 신민숙 쉬운국어 한 권으로 끝', author: '신민숙', publisher: '해커스공무원', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 18, tags: ['추천'], hasEbook: false, isbn: '9791176440981', imageUrl: KB('S000219853841'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219853841' },
     { title: '2027 공단기 심슨 보카', author: '심우철', publisher: '에스티유니타스', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 29, tags: ['추천'], hasEbook: false, isbn: '9791169666152', imageUrl: KB('S000220053944'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220053944' },
-    { title: '2026 해커스공무원 이중석 맵핑 한국사 올인원 블랭크노트', author: '이중석', publisher: '해커스공무원', price: 17100, originalPrice: 19000, discount: '10%', rating: 5.0, reviews: 135, tags: ['추천'], hasEbook: false, imageUrl: KB('S000216937190'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216937190' },
+    { title: '2026 해커스공무원 이중석 맵핑 한국사 올인원 블랭크노트', author: '이중석', publisher: '해커스공무원', price: 17100, originalPrice: 19000, discount: '10%', rating: 5.0, reviews: 135, tags: ['추천'], hasEbook: false, isbn: '9791174040404', imageUrl: KB('S000216937190'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216937190' },
   ],
 
 };
