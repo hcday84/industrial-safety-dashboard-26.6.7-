@@ -1400,7 +1400,7 @@ const REAL_BOOKS = {
   ],
 
   'HSK': [
-    { title: '신 HSK 한권으로 합격하기 6급', author: '리홍, 고강민, 김영주', publisher: '시사중국어사', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000001752009'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001752009' },
+    { title: '신 HSK 한권으로 합격하기 6급', author: '리홍, 고강민, 김영주', publisher: '시사중국어사', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791157200078', imageUrl: KB('S000001752009'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001752009' },
     { title: '해커스 중국어 HSK 5급 한 권으로 정복 기본서 + 실전모의고사 + 핵심어휘집', author: '해커스 HSK연구소', publisher: '해커스', price: 24210, originalPrice: 26900, discount: '10%', rating: 5.0, reviews: 105, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000001715842'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001715842' },
     { title: '해커스 중국어 HSK 6급 한 권으로 고득점 달성 기본서 + 실전모의고사 + 핵심어휘집', author: '리우윈, 해커스 HSK연구소', publisher: '해커스', price: 24210, originalPrice: 26900, discount: '10%', rating: 4.7, reviews: 1987, tags: ['베스트'], hasEbook: false, isbn: '9791137904385', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791137904385.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000061351817' },
     { title: '드림중국어 HSK 5급 실전 모의고사(1-5회분 해석집 포함)', author: '드림중국어', publisher: '드림중국어', price: 26820, originalPrice: 29800, discount: '10%', tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000002987114', imageUrl: KB('S000001935017'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001935017' },
