@@ -144,7 +144,7 @@ const REAL_BOOKS = {
     { title: '2026 나합격 가스기사 필기 핵심요약+기출', author: '이윤기', publisher: '삼원북스', price: 37800, originalPrice: 42000, discount: '10%', rating: 4.4, reviews: 143, tags: ['베스트'], hasEbook: false, isbn: '9791194997351', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791194997351.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218787649' },
     // 추천수험서 5
     { title: '2026 가스기사 실기', author: '서상희', publisher: '일진사', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.7, reviews: 178, tags: ['추천'], hasEbook: false, isbn: '9788942920815', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788942920815.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219138942' },
-    { title: '2026 가스기능사 필기 총정리', author: '서상희', publisher: '일진사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 156, tags: ['추천'], hasEbook: false, imageUrl: KB('S000217622875'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217622875' },
+    { title: '2026 가스기능사 필기 총정리', author: '서상희', publisher: '일진사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 156, tags: ['추천'], hasEbook: false, isbn: '9788942920402', imageUrl: KB('S000217622875'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217622875' },
   ],
 
   // ────────────────────────────────────────
