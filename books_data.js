@@ -1494,7 +1494,7 @@ const REAL_BOOKS = {
   ],
 
   '임용고시': [
-    { title: '쌍끌이 교육학 완전학습', author: '신태식', publisher: '미래가치', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, imageUrl: KB('S000001718999'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001718999' },
+    { title: '쌍끌이 교육학 완전학습', author: '신태식', publisher: '미래가치', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791155028186', imageUrl: KB('S000001718999'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001718999' },
   ],
 
   '한국실용글쓰기': [
