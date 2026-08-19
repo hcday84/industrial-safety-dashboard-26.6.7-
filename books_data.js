@@ -1360,7 +1360,7 @@ const REAL_BOOKS = {
   ],
 
   'CFP': [
-    { title: '2025 해커스 CFP 사례형 핵심문제집', author: '해커스 금융아카데미', publisher: '해커스금융', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 1543, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000217066248'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217066248' },
+    { title: '2025 해커스 CFP 사례형 핵심문제집', author: '해커스 금융아카데미', publisher: '해커스금융', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 1543, tags: ['베스트'], hasEbook: false, isbn: '9791174042057', imageUrl: KB('S000217066248'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217066248' },
     { title: '2025 해커스 CFP 지식형 핵심문제집', author: '해커스 금융아카데미', publisher: '해커스금융', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1234, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000217035691'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217035691' },
     { title: '2025 해커스 CFP 최종 실전모의고사', author: '해커스 금융아카데미', publisher: '해커스금융', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 987, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000217371753'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217371753' },
     { title: '2025 이패스 CFP 사례형 핵심문제집', author: '이패스코리아 금융연구소', publisher: '이패스코리아', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.6, reviews: 765, tags: ['추천'], hasEbook: false, imageUrl: KB('S000217201184'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217201184' },
