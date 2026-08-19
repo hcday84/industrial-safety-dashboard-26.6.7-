@@ -985,7 +985,7 @@ const REAL_BOOKS = {
 
   // ────────────────────────────────────────
   '대기환경산업기사': [
-    { title: '2026 대기환경기사 필기+과년도+무료동영상+핸드북', author: '전화택', publisher: '구민사', price: 37800, originalPrice: 42000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218031344'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218031344' },
+    { title: '2026 대기환경기사 필기+과년도+무료동영상+핸드북', author: '전화택', publisher: '구민사', price: 37800, originalPrice: 42000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: false, isbn: '9791168756120', imageUrl: KB('S000218031344'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218031344' },
     { title: '2026 나합격 대기환경기사 필기+무료특강+온라인 CBT', author: '김현우', publisher: '삼원북스', price: 39600, originalPrice: 44000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218086849'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218086849' },
     { title: '2026 합격Easy 대기환경기사 필기', author: '신은상', publisher: '건기원', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013049817', imageUrl: KB('S000218358598'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218358598' },
     { title: '공정시험기준에 따른 대기오염물질분석', author: '조용준', publisher: '동화기술', price: 15000, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000008002107', imageUrl: KB('S000000660069'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000660069' },
