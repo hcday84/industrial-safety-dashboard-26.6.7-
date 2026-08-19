@@ -752,7 +752,7 @@ const REAL_BOOKS = {
     { title: '2024 한 권으로 끝내는 승강기기사.산업기사 필기', author: '한영규', publisher: '건기원', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.6, reviews: 156, tags: ['베스트'], hasEbook: false, isbn: '9791157677825', imageUrl: 'https://image.aladin.co.kr/product/32409/38/coversum/k742935389_1.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000208952492' },
     { title: '2025 승강기 기사 산업기사', author: '정재수', publisher: '남양문화', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9788955540734', imageUrl: KB('S000000803189'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000803189' },
     { title: '승강기기사 실기', author: '정재수', publisher: '남양문화', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.5, reviews: 112, tags: ['추천'], hasEbook: false, isbn: '9788955540826', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788955540826.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000000803198' },
-    { title: '승강기 기사·산업기사', author: '최기호, 이명상', publisher: '대광서림', price: 33300, originalPrice: 37000, discount: '10%', tags: ['추천'], hasEbook: false, imageUrl: KB('S000219665341'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219665341' },
+    { title: '승강기 기사·산업기사', author: '최기호, 이명상', publisher: '대광서림', price: 33300, originalPrice: 37000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788938452108', imageUrl: KB('S000219665341'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219665341' },
   ],
 
   '품질경영기사': [
