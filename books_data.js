@@ -1582,7 +1582,7 @@ const REAL_BOOKS = {
     { title: '2027 소방직 시험대비 So Nice 백소나 소방학개론 기본서', author: '백소나', publisher: '더나은', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.95, reviews: 14, tags: ['베스트'], hasEbook: false, isbn: '9791194158547', imageUrl: KB('S000219789746'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219789746' },
     { title: '2027 소방직 시험대비 So Nice 백소나 소방관계법규 1', author: '백소나', publisher: '더나은', price: 35100, originalPrice: 39000, discount: '10%', rating: 5.0, reviews: 8, tags: ['베스트'], hasEbook: false, isbn: '9791194158554', imageUrl: KB('S000219789752'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219789752' },
     { title: '2027 해커스공무원 3분의 1로 줄여 쓴 김대현 행정법총론 기본서', author: '김대현', publisher: '해커스공무원', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 16, tags: ['추천'], hasEbook: false, isbn: '9791176442220', imageUrl: KB('S000220221375'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220221375' },
-    { title: '2027 심승아 Simple, Detail 심테일 소방관계법규 1', author: '심승아', publisher: '모두공북스', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, imageUrl: KB('S000220490616'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220490616' },
+    { title: '2027 심승아 Simple, Detail 심테일 소방관계법규 1', author: '심승아', publisher: '모두공북스', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791173603761', imageUrl: KB('S000220490616'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220490616' },
   ],
 
   // ────────────────────────────────────────
