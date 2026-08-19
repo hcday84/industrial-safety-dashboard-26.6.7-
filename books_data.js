@@ -439,7 +439,7 @@ const REAL_BOOKS = {
   '치과위생사': [
     // 베스트셀러 5
     // 추천수험서 5
-    { title: '임상치위생학실습', author: '임상치위생학실습 편집위원회', publisher: '청구문화사', price: 40000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788957418796', imageUrl: KB('S000000817220'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000817220' },
+    { title: '임상치위생학실습', author: '임상치위생학실습 편집위원회', publisher: '청구문화사', price: 40000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788956168661', imageUrl: KB('S000000817220'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000817220' },
   ],
 
   '간호조무사': [
