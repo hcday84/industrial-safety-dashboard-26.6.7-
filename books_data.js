@@ -1041,7 +1041,7 @@ const REAL_BOOKS = {
 
   // ────────────────────────────────────────
   '미용사(메이크업)': [
-    { title: '2026 기분파 미용사 메이크업 필기', author: '김효정', publisher: '에듀웨이', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000217613656'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217613656' },
+    { title: '2026 기분파 미용사 메이크업 필기', author: '김효정', publisher: '에듀웨이', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], hasEbook: false, isbn: '9791194328308', imageUrl: KB('S000217613656'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217613656' },
     { title: '2026 완전합격 미용사 메이크업 필기시험문제', author: '메이크업자격연구회', publisher: '크라운출판사', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218704738'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218704738' },
     { title: '2026 적중 100% 합격 미용사 메이크업 필기 총정리문제', author: '크라운출판사 편집부', publisher: '크라운출판사', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218565610'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218565610' },
     { title: '2026 원큐패스 미용사 메이크업 필기 빈출문제 10회', author: '김미나', publisher: '다락원', price: 13500, originalPrice: 15000, discount: '10%', tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218783513'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218783513' },
