@@ -637,7 +637,7 @@ const REAL_BOOKS = {
     { title: '뇌박힘 소방시설관리사 점검실무행정', author: '김정희', publisher: '모아교육그룹', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.5, reviews: 123, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000010903232', isbn: '9791168045545', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791168045545.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219194908' },
     { title: '2026 체크업 소방시설관리사 2차 실기', author: '김종상', publisher: '북스케치', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.5, reviews: 98, tags: ['추천'], hasEbook: false, isbn: '9791124496039', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791124496039.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219595342' },
     { title: '2026 찐합격 소방시설관리사 1차 본문 및 과년도 핵심문제', author: '공하성', publisher: '성안당', price: 44100, originalPrice: 49000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788931513936', imageUrl: KB('S000218400495'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218400495' },
-    { title: '2026 체크업 소방시설관리사 1차 필기 단원별 기출문제집', author: '김종상', publisher: '북스케치', price: 39600, originalPrice: 44000, discount: '10%', tags: ['추천'], hasEbook: false, imageUrl: KB('S000218980533'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218980533' },
+    { title: '2026 체크업 소방시설관리사 1차 필기 단원별 기출문제집', author: '김종상', publisher: '북스케치', price: 39600, originalPrice: 44000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791194041849', imageUrl: KB('S000218980533'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218980533' },
   ],
 
   '산업위생관리기사': [
