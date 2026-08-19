@@ -4073,6 +4073,7 @@ function renderComparePanel(nameB) {
     </table>
 
     <div class="cmp-section-title"><i class="fa-solid fa-chart-line"></i> 평균 합격률 비교</div>
+    <div class="cmp-pass-caption"><i class="fa-solid fa-circle-info"></i> 막대그래프는 최근 5개년 평균 합격률, 꺾은선그래프는 연도별 필기 합격률 변화 추이입니다 (왼쪽=과거 → 오른쪽=최근 연도).</div>
     <div class="cmp-pass-section">
       <div class="cmp-pass-col">
         <div class="cmp-pass-label ${winA ? 'cmp-win-label' : ''}">${certA.name}</div>
