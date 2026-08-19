@@ -322,7 +322,7 @@ const REAL_BOOKS = {
   '건설안전기술사': [
     // 베스트셀러 5
     { title: '건설안전기술사 실전면접', author: '한경보, Willy.H', publisher: '예문사', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788927441137', imageUrl: KB('S000000523650'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000523650' },
-    { title: '건설안전기술사 최신 기출문제 풀이', author: '이호행', publisher: '교문사', price: 69000, rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218565187'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218565187' },
+    { title: '건설안전기술사 최신 기출문제 풀이', author: '이호행', publisher: '교문사', price: 69000, rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788936327125', imageUrl: KB('S000218565187'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218565187' },
     // 추천수험서 5
   ],
 
