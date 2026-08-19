@@ -1120,7 +1120,7 @@ const REAL_BOOKS = {
 
   '법무사': [
     { title: '2026 시대에듀 법무사 1차 전과목 주요 최신판례 한권으로 끝내기', author: '박종화, 시대법학연구소', publisher: '시대고시기획', price: 34200, originalPrice: 38000, discount: '10%', rating: 5.0, reviews: 15, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012695779', imageUrl: KB('S000219391338'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219391338' },
-    { title: '2026 박문각 법무사 2차 김기찬 등기신청서류의 작성 기본서', author: '김기찬', publisher: '박문각', price: 27000, originalPrice: 30000, discount: '10%', rating: 3.8, reviews: 2, tags: ['추천'], hasEbook: false, imageUrl: KB('S000219570542'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219570542' },
+    { title: '2026 박문각 법무사 2차 김기찬 등기신청서류의 작성 기본서', author: '김기찬', publisher: '박문각', price: 27000, originalPrice: 30000, discount: '10%', rating: 3.8, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791175199750', imageUrl: KB('S000219570542'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219570542' },
   ],
 
   '공인노무사': [
