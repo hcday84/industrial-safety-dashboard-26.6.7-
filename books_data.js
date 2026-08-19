@@ -977,7 +977,7 @@ const REAL_BOOKS = {
 
   // ────────────────────────────────────────
   '수질환경산업기사': [
-    { title: '2026 수질환경기사·산업기사 필기', author: '이철한', publisher: '예문사', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218914137'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218914137' },
+    { title: '2026 수질환경기사·산업기사 필기', author: '이철한', publisher: '예문사', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: false, isbn: '9788927460879', imageUrl: KB('S000218914137'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218914137' },
     { title: '2026 물쌤닷컴 수질환경기사/산업기사 필기+기출해설 세트', author: '이종혁', publisher: '미교원', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218615044'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218615044' },
     { title: '2026 수질환경기사, 산업기사 필기', author: '신동성·하부영', publisher: '세진사', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218854932'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218854932' },
     { title: '수질오염공정시험기준 해설집', author: '박승우', publisher: '세진사', price: 55000, tags: ['추천'], hasEbook: false, imageUrl: KB('S000218268159'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218268159' },
