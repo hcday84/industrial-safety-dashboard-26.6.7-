@@ -1190,7 +1190,7 @@ const REAL_BOOKS = {
   ],
 
   '2급생활스포츠지도사': [
-    { title: '2026 메인에듀 2급 생활스포츠지도사 필기 한 권으로 끝내기', author: '메인에듀 스포츠지도사 연구소', publisher: '메인에듀', price: 27900, originalPrice: 31000, discount: '10%', tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218881268'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218881268' },
+    { title: '2026 메인에듀 2급 생활스포츠지도사 필기 한 권으로 끝내기', author: '메인에듀 스포츠지도사 연구소', publisher: '메인에듀', price: 27900, originalPrice: 31000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791189357931', imageUrl: KB('S000218881268'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218881268' },
   ],
 
   '사회조사분석사2급': [
