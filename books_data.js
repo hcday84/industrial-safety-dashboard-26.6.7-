@@ -1257,7 +1257,7 @@ const REAL_BOOKS = {
     { title: '모아 에너지관리기사 필기: 핵심이론+과년도 8개년', author: '모아합격기술연구소', publisher: '모아교육그룹', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 156, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012128113', imageUrl: KB('S000217524828'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217524828' },
     { title: '2026 에너지관리기사 필기', author: '서상희', publisher: '동일출판사', price: 39600, originalPrice: 44000, discount: '10%', rating: 4.4, reviews: 132, tags: ['추천'], hasEbook: false, isbn: '9788938117151', imageUrl: KB('S000217454947'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217454947' },
     { title: '2026 물쌤닷컴 에너지관리기사 필기+기출해설', author: '김선태', publisher: '미교원', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 112, tags: ['추천'], hasEbook: false, isbn: '9791194457251', imageUrl: KB('S000218632205'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218632205' },
-    { title: '2026 과년도 출제문제 중심 에너지관리기사 필기', author: '서상희', publisher: '동일출판사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], hasEbook: false, imageUrl: KB('S000217454935'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217454935' },
+    { title: '2026 과년도 출제문제 중심 에너지관리기사 필기', author: '서상희', publisher: '동일출판사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], hasEbook: false, isbn: '9788938117144', imageUrl: KB('S000217454935'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217454935' },
   ],
 
   // ────────────────────────────────────────
