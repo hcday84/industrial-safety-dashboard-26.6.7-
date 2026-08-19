@@ -608,7 +608,7 @@ const REAL_BOOKS = {
     { title: '모아 건설안전기사 실기', author: '윤경화', publisher: '모아교육그룹', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.5, reviews: 189, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013372538', isbn: '9791168045996', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791168045996.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219926360' },
     { title: '2026 벼락치기 건설안전기사 필기 요점', author: '정재수', publisher: '세화', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 156, tags: ['추천'], hasEbook: false, isbn: '9788931713954', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931713954.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219564277' },
     { title: '2026 한번에 합격하는 건설안전기사 기출문제집 필기', author: '강윤진', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 9, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012691543', imageUrl: KB('S000218749521'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218749521' },
-    { title: '건설안전기사.산업기사(과년도단기완성)', author: '최창률 편', publisher: '세문사', price: 17000, tags: ['추천'], hasEbook: false, imageUrl: KB('S000001379061'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001379061' },
+    { title: '건설안전기사.산업기사(과년도단기완성)', author: '최창률 편', publisher: '세문사', price: 17000, tags: ['추천'], hasEbook: false, isbn: '9788987342429', imageUrl: KB('S000001379061'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001379061' },
   ],
 
   '소방설비산업기사(기계분야)': [
