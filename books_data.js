@@ -349,7 +349,7 @@ const REAL_BOOKS = {
 
   '기계기술사': [
     // 베스트셀러 5
-    { title: '건축기계설비 공조냉동기계기술사', author: '이석훈', publisher: '예문사', price: 58500, originalPrice: 65000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791158136659', imageUrl: KB('S000217349506'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217349506' },
+    { title: '건축기계설비 공조냉동기계기술사', author: '이석훈', publisher: '예문사', price: 58500, originalPrice: 65000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927459309', imageUrl: KB('S000217349506'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217349506' },
     { title: 'Perfect 기계기술사', author: '김순채', publisher: '엔지니어데이터넷', price: 90000, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012272074', isbn: '9791124092057', imageUrl: KB('S000218233120'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218233120' },
     // 추천수험서 5
   ],
