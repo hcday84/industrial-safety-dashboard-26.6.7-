@@ -4020,11 +4020,12 @@ function renderComparePanel(nameB) {
       <td class="cmp-sub-val">${subListB[i] ? `<i class="fa-solid fa-circle-dot cmp-sub-dot"></i>${subListB[i]}` : ''}</td>
     </tr>`).join('');
 
-  // 합격률 5개년 미니 스파크라인
+  // 합격률 5개년 미니 스파크라인 — 연도별 필기 합격률 추이(왼쪽=과거 → 오른쪽=최근)
   function sparkline(rates, color) {
     if (!rates || rates.length < 2) return '';
-    const wVals = rates.map(r => r.written).filter(v => v != null);
-    if (!wVals.length) return '';
+    const valid = rates.filter(r => r.written != null);
+    if (valid.length < 2) return '';
+    const wVals = valid.map(r => r.written);
     const mn = Math.min(...wVals), mx = Math.max(...wVals);
     const h = 24, w = 70;
     const pts = wVals.map((v, i) => {
@@ -4032,7 +4033,9 @@ function renderComparePanel(nameB) {
       const y = h - ((mx === mn ? 0.5 : (v - mn) / (mx - mn)) * h);
       return `${x.toFixed(1)},${y.toFixed(1)}`;
     }).join(' ');
-    return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" style="display:block"><polyline points="${pts}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round"/></svg>`;
+    const yFirst = valid[0].year, yLast = valid[valid.length - 1].year;
+    const tip = `${yFirst}~${yLast}년 필기 합격률 추이 (${wVals[0]}% → ${wVals[wVals.length - 1]}%)`;
+    return `<span class="cmp-spark-wrap" title="${tip}"><svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" style="display:block"><polyline points="${pts}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round"/></svg></span>`;
   }
 
   // 종합 요약 — 표를 다 읽지 않아도 핵심만 바로 파악하도록
