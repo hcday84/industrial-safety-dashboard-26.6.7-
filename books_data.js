@@ -1445,7 +1445,7 @@ const REAL_BOOKS = {
 
   'KBS한국어능력시험': [
     { title: 'KBS 한국어능력시험 기출문제 23', author: 'KBS한국어진흥원', publisher: '형설출판사', price: 29000, originalPrice: 29000, discount: '0%', rating: 4.8, reviews: 2876, tags: ['베스트'], hasEbook: false, isbn: '9788947287319', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788947287319.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000215764087' },
-    { title: '해커스 KBS한국어능력시험 한 권으로 끝', author: '해커스 한국어연구소', publisher: '해커스자격증', price: 30600, originalPrice: 34000, discount: '10%', rating: 4.9, reviews: 49, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000212713829'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212713829' },
+    { title: '해커스 KBS한국어능력시험 한 권으로 끝', author: '해커스 한국어연구소', publisher: '해커스자격증', price: 30600, originalPrice: 34000, discount: '10%', rating: 4.9, reviews: 49, tags: ['베스트'], hasEbook: false, isbn: '9788969654762', imageUrl: KB('S000212713829'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212713829' },
     { title: '해커스 KBS한국어능력시험 봉투모의고사', author: '해커스 한국어연구소', publisher: '해커스자격증', price: 19710, originalPrice: 21900, discount: '10%', rating: 4.9, reviews: 24, tags: ['추천'], hasEbook: false, imageUrl: KB('S000061351286'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061351286' },
   ],
 
