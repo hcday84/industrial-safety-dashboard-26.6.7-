@@ -117,7 +117,7 @@ const REAL_BOOKS = {
   '일반기계기사': [
     // 베스트셀러 5
     { title: '2026 해커스 일반기계기사 필기 한권합격 이론+최신기출', author: '이선형', publisher: '해커스자격증', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: false, isbn: '9788969656506', imageUrl: KB('S000218366558'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218366558' },
-    { title: '2026 해커스 일반기계기사 실기 작업형 출제 도면집', author: '해커스자격증', publisher: '해커스자격증', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218980950'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218980950' },
+    { title: '2026 해커스 일반기계기사 실기 작업형 출제 도면집', author: '해커스자격증', publisher: '해커스자격증', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], hasEbook: false, isbn: '9788969656520', imageUrl: KB('S000218980950'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218980950' },
     { title: '일반기계기사 필기대비', author: '위을복', publisher: '학진북스', price: 63000, originalPrice: 70000, discount: '10%', rating: 4.6, reviews: 50, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000009734917', isbn: '9791136017611', imageUrl: KB('S000209577622'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000209577622' },
     { title: '2027 나합격 일반기계기사 필기 세트(핵심이론+13개년 기출)', author: '나합격 콘텐츠 연구소', publisher: '삼원북스', price: 40500, originalPrice: 45000, discount: '10%', rating: 1.3, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791176400145', imageUrl: KB('S000220308919'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220308919' },
     // 추천수험서 5
