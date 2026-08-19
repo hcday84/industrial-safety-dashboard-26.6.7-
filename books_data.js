@@ -1430,7 +1430,7 @@ const REAL_BOOKS = {
   '펀드투자권유대행인': [
     { title: '펀드투자권유대행인 한권으로 끝내기(2021)', author: '박정호', publisher: '시대고시기획', price: 16200, originalPrice: 18000, discount: '10%', rating: 5.0, reviews: 9, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000002888378', imageUrl: KB('S000001657250'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001657250' },
     { title: '토마토패스 펀드투자권유대행인 핵심정리문제집', author: '송범용, 조성', publisher: '예문에듀', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791163865698', imageUrl: KB('S000219546353'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219546353' },
-    { title: '2026~2027 펀드투자권유자문인력 기출유형문제집', author: '와우패스 교수진', publisher: '와우패스', price: 21600, originalPrice: 24000, discount: '10%', tags: ['베스트'], hasEbook: false, imageUrl: KB('S000219549898'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219549898' },
+    { title: '2026~2027 펀드투자권유자문인력 기출유형문제집', author: '와우패스 교수진', publisher: '와우패스', price: 21600, originalPrice: 24000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788966139071', imageUrl: KB('S000219549898'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219549898' },
   ],
 
   '소믈리에': [
