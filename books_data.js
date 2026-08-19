@@ -478,7 +478,7 @@ const REAL_BOOKS = {
 
   '보건교육사': [
     { title: '에센스 보건교육학', author: '남철현 외', publisher: '메디시언', price: 18000, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000007592207', isbn: '9791190839457', imageUrl: KB('S000001944678'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001944678' },
-    { title: '보건의사소통 핵심문제집', author: '보건의사소통핵심문제연구회, 노성신', publisher: '한미의학', price: 18000, tags: ['추천'], hasEbook: false, isbn: '9788962201239', imageUrl: KB('S000001878901'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001878901' },
+    { title: '보건의사소통 핵심문제집', author: '보건의사소통핵심문제연구회, 노성신', publisher: '한미의학', price: 18000, tags: ['추천'], hasEbook: false, isbn: '9791186089095', imageUrl: KB('S000001878901'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001878901' },
   ],
 
   '위생사': [
