@@ -1370,7 +1370,7 @@ const REAL_BOOKS = {
   ],
 
   '바리스타1급': [
-    { title: '바리스타 1급 자격시험 예상문제집 (NCS 개정판)', author: '한국커피협회', publisher: '한국커피협회', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 2345, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000214736527'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214736527' },
+    { title: '바리스타 1급 자격시험 예상문제집 (NCS 개정판)', author: '한국커피협회', publisher: '한국커피협회', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 2345, tags: ['베스트'], hasEbook: false, isbn: '9791186627259', imageUrl: KB('S000214736527'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214736527' },
     { title: '커피 바리스타 문제집 & 커피용어 해설', author: '한국커피바리스타협회', publisher: '성안당', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], hasEbook: false, imageUrl: KB('S000001941998'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001941998' },
   ],
 
