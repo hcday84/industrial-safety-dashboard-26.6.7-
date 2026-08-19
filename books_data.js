@@ -1419,7 +1419,7 @@ const REAL_BOOKS = {
   '매경TEST': [
     { title: '2026 에듀윌 매경Test 2주끝장', author: '신경수, 황선일', publisher: '에듀윌', price: 28350, originalPrice: 31500, discount: '10%', rating: 4.8, reviews: 2345, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013223834', isbn: '9791136039866', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136039866.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218741787' },
     { title: '맨큐의 경제학', author: 'N. Gregory Mankiw (이병락 역)', publisher: '경문사', price: 46500, originalPrice: 49000, discount: '5%', rating: 4.9, reviews: 39, tags: ['추천'], hasEbook: false, isbn: '9788962185638', imageUrl: KB('S000215768656'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215768656' },
-    { title: '매경Test 실전모의고사 10회분', author: '자격시험연구소', publisher: '서원각', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, imageUrl: KB('S000218961378'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218961378' },
+    { title: '매경Test 실전모의고사 10회분', author: '자격시험연구소', publisher: '서원각', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791125747178', imageUrl: KB('S000218961378'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218961378' },
   ],
 
   'TESAT': [
