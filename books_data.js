@@ -1572,7 +1572,7 @@ const REAL_BOOKS = {
     { title: '2027 해커스공무원 신민숙 쉬운국어 한 권으로 끝', author: '신민숙', publisher: '해커스공무원', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 18, tags: ['베스트'], hasEbook: false, isbn: '9791176440981', imageUrl: KB('S000219853841'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219853841' },
     { title: '2027 공단기 심슨 보카', author: '심우철', publisher: '에스티유니타스', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 29, tags: ['베스트'], hasEbook: false, isbn: '9791169666152', imageUrl: KB('S000220053944'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220053944' },
     { title: '2026 해커스공무원 이중석 맵핑 한국사 올인원 블랭크노트', author: '이중석', publisher: '해커스공무원', price: 17100, originalPrice: 19000, discount: '10%', rating: 5.0, reviews: 135, tags: ['베스트'], hasEbook: false, isbn: '9791174040404', imageUrl: KB('S000216937190'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216937190' },
-    { title: '2027 해커스공무원 3분의 1로 줄여 쓴 김대현 행정법총론 기본서', author: '김대현', publisher: '해커스공무원', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 16, tags: ['추천'], hasEbook: false, imageUrl: KB('S000220221375'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220221375' },
+    { title: '2027 해커스공무원 3분의 1로 줄여 쓴 김대현 행정법총론 기본서', author: '김대현', publisher: '해커스공무원', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 16, tags: ['추천'], hasEbook: false, isbn: '9791176442220', imageUrl: KB('S000220221375'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220221375' },
     { title: '2027 김중규 원픽 선행정학', author: '김중규', publisher: '카스파', price: 24300, originalPrice: 27000, discount: '10%', rating: 5.0, reviews: 14, tags: ['추천'], hasEbook: false, imageUrl: KB('S000219882824'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219882824' },
   ],
 
@@ -1581,7 +1581,7 @@ const REAL_BOOKS = {
   '소방공무원(소방직)': [
     { title: '2027 소방직 시험대비 So Nice 백소나 소방학개론 기본서', author: '백소나', publisher: '더나은', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.95, reviews: 14, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000219789746'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219789746' },
     { title: '2027 소방직 시험대비 So Nice 백소나 소방관계법규 1', author: '백소나', publisher: '더나은', price: 35100, originalPrice: 39000, discount: '10%', rating: 5.0, reviews: 8, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000219789752'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219789752' },
-    { title: '2027 해커스공무원 3분의 1로 줄여 쓴 김대현 행정법총론 기본서', author: '김대현', publisher: '해커스공무원', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 16, tags: ['추천'], hasEbook: false, imageUrl: KB('S000220221375'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220221375' },
+    { title: '2027 해커스공무원 3분의 1로 줄여 쓴 김대현 행정법총론 기본서', author: '김대현', publisher: '해커스공무원', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 16, tags: ['추천'], hasEbook: false, isbn: '9791176442220', imageUrl: KB('S000220221375'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220221375' },
     { title: '2027 심승아 Simple, Detail 심테일 소방관계법규 1', author: '심승아', publisher: '모두공북스', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, imageUrl: KB('S000220490616'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220490616' },
   ],
 
