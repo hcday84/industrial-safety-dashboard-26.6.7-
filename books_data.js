@@ -410,7 +410,7 @@ const REAL_BOOKS = {
   '방사선사': [
     // 베스트셀러 5
     { title: '디지털 의료 영상학', author: '김선칠 외', publisher: '메디컬사이언스', price: 35000, tags: ['베스트'], hasEbook: false, isbn: '9791189487980', imageUrl: KB('S000001927327'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001927327' },
-    { title: '임상 핵의학검사기술학', author: '서일택 외', publisher: '고려의학', price: 35000, tags: ['베스트'], hasEbook: false, isbn: '9788980163717', imageUrl: KB('S000001924284'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001924284' },
+    { title: '임상 핵의학검사기술학', author: '서일택 외', publisher: '고려의학', price: 35000, tags: ['베스트'], hasEbook: false, isbn: '9791189210229', imageUrl: KB('S000001924284'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001924284' },
     // 추천수험서 5
     { title: '핵심방사선생물학', author: '구연화 외', publisher: 'JMK', price: 25000, tags: ['추천'], hasEbook: false, isbn: '9788973868285', imageUrl: KB('S000001864086'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001864086' },
   ],
