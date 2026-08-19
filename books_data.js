@@ -330,7 +330,7 @@ const REAL_BOOKS = {
     // 베스트셀러 5
     { title: '금화도감 소방기술사 기출문제풀이 2', author: '유쾌한', publisher: '모아교육그룹', price: 63000, originalPrice: 70000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791168043121', imageUrl: KB('S000214128774'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214128774' },
     // 추천수험서 5
-    { title: '소방/기술사·관리사·실무자를 위한 소방·건축관계법규 화재안전성능기술기준', author: '권순택', publisher: '예문사', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791157451654', imageUrl: KB('S000219931270'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219931270' },
+    { title: '소방/기술사·관리사·실무자를 위한 소방·건축관계법규 화재안전성능기술기준', author: '권순택', publisher: '예문사', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788927462453', imageUrl: KB('S000219931270'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219931270' },
   ],
 
   '발송배전기술사': [
