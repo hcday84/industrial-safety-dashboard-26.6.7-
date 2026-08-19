@@ -463,7 +463,7 @@ const REAL_BOOKS = {
   ],
 
   '요양보호사': [
-    { title: '2026 한권으로 합격하는 요양보호사 최종모의고사 10회', author: '심은주', publisher: '크라운출판사', price: 14400, originalPrice: 16000, discount: '10%', tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218476855'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218476855' },
+    { title: '2026 한권으로 합격하는 요양보호사 최종모의고사 10회', author: '심은주', publisher: '크라운출판사', price: 14400, originalPrice: 16000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788940649718', imageUrl: KB('S000218476855'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218476855' },
     { title: '2025 요양보호사 표준교재 핵심요약', author: '요양보호사 학술연구회', publisher: '사람과경영', price: 12000, tags: ['베스트'], hasEbook: false, isbn: '9788998581640', imageUrl: KB('S000215097955'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215097955' },
     { title: '2026 20회로 끝내는 요양보호사 합격마침표 모의고사 필기+실기', author: '자격시험연구소', publisher: '서원각', price: 16200, originalPrice: 18000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791125748021', imageUrl: KB('S000219787325'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219787325' },
     { title: '2026 원큐패스 클립 준희쌤의 요양보호사 적중모의고사 7회', author: '조준희', publisher: '다락원', price: 13500, originalPrice: 15000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927775881', imageUrl: KB('S000220100431'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220100431' },
