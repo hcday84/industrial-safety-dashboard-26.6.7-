@@ -1569,7 +1569,7 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   // 일반행정직 공무원(9급) — 교보문고 공무원 과목별(국어/영어/한국사/행정법/행정학) 베스트셀러 기준, 2026-07-29 확인
   '일반행정직 공무원(9급)': [
-    { title: '2027 해커스공무원 신민숙 쉬운국어 한 권으로 끝', author: '신민숙', publisher: '해커스공무원', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 18, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000219853841'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219853841' },
+    { title: '2027 해커스공무원 신민숙 쉬운국어 한 권으로 끝', author: '신민숙', publisher: '해커스공무원', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 18, tags: ['베스트'], hasEbook: false, isbn: '9791176440981', imageUrl: KB('S000219853841'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219853841' },
     { title: '2027 공단기 심슨 보카', author: '심우철', publisher: '에스티유니타스', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 29, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000220053944'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220053944' },
     { title: '2026 해커스공무원 이중석 맵핑 한국사 올인원 블랭크노트', author: '이중석', publisher: '해커스공무원', price: 17100, originalPrice: 19000, discount: '10%', rating: 5.0, reviews: 135, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000216937190'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216937190' },
     { title: '2027 해커스공무원 3분의 1로 줄여 쓴 김대현 행정법총론 기본서', author: '김대현', publisher: '해커스공무원', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 16, tags: ['추천'], hasEbook: false, imageUrl: KB('S000220221375'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220221375' },
@@ -1589,7 +1589,7 @@ const REAL_BOOKS = {
   // 운전직 공무원(9급) — 교보문고 운전직 카테고리 + 공무원 과목별(국어/한국사) 베스트셀러 기준, 2026-07-29 확인
   // 참고: 운전직 카테고리 자체는 거래량이 적어(주간 베스트 1건) 신뢰 가능한 후보가 한정적임
   '운전직 공무원(9급)': [
-    { title: '2027 해커스공무원 신민숙 쉬운국어 한 권으로 끝', author: '신민숙', publisher: '해커스공무원', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 18, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000219853841'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219853841' },
+    { title: '2027 해커스공무원 신민숙 쉬운국어 한 권으로 끝', author: '신민숙', publisher: '해커스공무원', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 18, tags: ['베스트'], hasEbook: false, isbn: '9791176440981', imageUrl: KB('S000219853841'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219853841' },
     { title: '2026 해커스공무원 이중석 맵핑 한국사 올인원 블랭크노트', author: '이중석', publisher: '해커스공무원', price: 17100, originalPrice: 19000, discount: '10%', rating: 5.0, reviews: 135, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000216937190'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216937190' },
     { title: '2026 9급 운전직 Final 동형모의고사 7회분 자동차구조원리+도로교통법', author: '김진아, 이윤승', publisher: '서울고시각(SG P&E)', price: 13500, originalPrice: 15000, discount: '10%', reviews: 0, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013195472', imageUrl: KB('S000220108922'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220108922' },
   ],
