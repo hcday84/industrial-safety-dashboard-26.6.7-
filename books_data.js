@@ -1048,7 +1048,7 @@ const REAL_BOOKS = {
     { title: '2026 퍼펙트 미용사 메이크업 실기시험문제', author: '김리나', publisher: '크라운출판사', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], hasEbook: false, isbn: '9788940649602', imageUrl: KB('S000218676679'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218676679' },
     { title: '2026 에듀윌 메이크업 필기 1주끝장', author: '에듀윌 편집부', publisher: '에듀윌', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], hasEbook: false, isbn: '9791136039385', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136039385.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218096461' },
     { title: '2026 시대에듀 답만 외우는 미용사 메이크업 필기 CBT기출문제+모의고사 14회', author: '이정연', publisher: '시대고시기획', price: 20700, originalPrice: 23000, discount: '10%', rating: 5.0, reviews: 11, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012280566', imageUrl: KB('S000218641305'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218641305' },
-    { title: 'NCS 아틀라스 메이크업 미용사 실기', author: '유승혜 외 12명', publisher: '씨마스', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, imageUrl: KB('S000001744071'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001744071' },
+    { title: 'NCS 아틀라스 메이크업 미용사 실기', author: '유승혜 외 12명', publisher: '씨마스', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791156722908', imageUrl: KB('S000001744071'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001744071' },
   ],
 
   // ────────────────────────────────────────
