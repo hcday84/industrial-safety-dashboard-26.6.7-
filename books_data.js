@@ -996,7 +996,7 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   '배관기능사': [
     { title: '2026 배관기능사 필기+실기 한권 완성', author: '국가기술자격시험연구회', publisher: '예문사', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], hasEbook: false, isbn: '9788927459088', imageUrl: KB('S000217122019'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217122019' },
-    { title: '배관기능사 필기·실기 단기완성', author: '이상휘', publisher: '일진사', price: 18900, originalPrice: 21000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218440656'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218440656' },
+    { title: '배관기능사 필기·실기 단기완성', author: '이상휘', publisher: '일진사', price: 18900, originalPrice: 21000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: false, isbn: '9788940649794', imageUrl: KB('S000218440656'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218440656' },
     { title: '배관기능사 필기', author: '최종만', publisher: '성안당', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 167, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000216719085'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216719085' },
     { title: '플랜트배관 설계 시공 실무 가이드북 Q&A', author: '박영희', publisher: '신기술', price: 28800, originalPrice: 32000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788993954128', imageUrl: KB('S000001538363'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001538363' },
   ],
