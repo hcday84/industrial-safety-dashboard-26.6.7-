@@ -1091,7 +1091,7 @@ const REAL_BOOKS = {
     { title: '2026 에듀윌 공인중개사 2차 단원별 기출문제집 부동산공시법', author: '김민석', publisher: '에듀윌', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 1123, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012574437', imageUrl: KB('S000219085095'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219085095' },
     { title: '2026 박문각 공인중개사 2차 단원별 기출문제집', author: '박문각 공인중개사연구소', publisher: '박문각', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], hasEbook: false, isbn: '9791176490429', imageUrl: KB('S000219931403'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219931403' },
     { title: '2026 에듀윌 공인중개사 1차 핵심요약집+기출팩', author: '에듀윌 공인중개사연구소', publisher: '에듀윌', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.5, reviews: 876, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012731725', imageUrl: KB('S000219387826'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219387826' },
-    { title: '2026 메가랜드 공인중개사 2차 회차별 기출문제집', author: '메가랜드 부동산교육연구소', publisher: '메가랜드', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 765, tags: ['추천'], hasEbook: false, imageUrl: KB('S000220452545'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220452545' },
+    { title: '2026 메가랜드 공인중개사 2차 회차별 기출문제집', author: '메가랜드 부동산교육연구소', publisher: '메가랜드', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 765, tags: ['추천'], hasEbook: false, isbn: '9791176221375', imageUrl: KB('S000220452545'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220452545' },
   ],
 
   '세무사': [
