@@ -1328,7 +1328,7 @@ const REAL_BOOKS = {
 
   'MOS': [
     { title: '멘토시리즈 MOS 365 엑셀', author: '멘토 IT 연구회', publisher: '멘토르', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], hasEbook: false, isbn: '9791189028510', imageUrl: KB('S000219135369'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219135369' },
-    { title: '멘토시리즈 MOS 365 워드', author: '멘토 IT 연구회', publisher: '멘토르', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000219135217'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219135217' },
+    { title: '멘토시리즈 MOS 365 워드', author: '멘토 IT 연구회', publisher: '멘토르', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], hasEbook: false, isbn: '9791189028534', imageUrl: KB('S000219135217'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219135217' },
   ],
 
   'TOEIC': [
