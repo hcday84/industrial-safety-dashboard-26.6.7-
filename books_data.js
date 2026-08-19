@@ -1573,7 +1573,7 @@ const REAL_BOOKS = {
     { title: '2027 공단기 심슨 보카', author: '심우철', publisher: '에스티유니타스', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 29, tags: ['베스트'], hasEbook: false, isbn: '9791169666152', imageUrl: KB('S000220053944'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220053944' },
     { title: '2026 해커스공무원 이중석 맵핑 한국사 올인원 블랭크노트', author: '이중석', publisher: '해커스공무원', price: 17100, originalPrice: 19000, discount: '10%', rating: 5.0, reviews: 135, tags: ['베스트'], hasEbook: false, isbn: '9791174040404', imageUrl: KB('S000216937190'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216937190' },
     { title: '2027 해커스공무원 3분의 1로 줄여 쓴 김대현 행정법총론 기본서', author: '김대현', publisher: '해커스공무원', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 16, tags: ['추천'], hasEbook: false, isbn: '9791176442220', imageUrl: KB('S000220221375'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220221375' },
-    { title: '2027 김중규 원픽 선행정학', author: '김중규', publisher: '카스파', price: 24300, originalPrice: 27000, discount: '10%', rating: 5.0, reviews: 14, tags: ['추천'], hasEbook: false, imageUrl: KB('S000219882824'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219882824' },
+    { title: '2027 김중규 원픽 선행정학', author: '김중규', publisher: '카스파', price: 24300, originalPrice: 27000, discount: '10%', rating: 5.0, reviews: 14, tags: ['추천'], hasEbook: false, isbn: '9791192405896', imageUrl: KB('S000219882824'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219882824' },
   ],
 
   // ────────────────────────────────────────
