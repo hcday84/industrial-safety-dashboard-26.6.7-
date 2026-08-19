@@ -1075,7 +1075,7 @@ const REAL_BOOKS = {
   '영양사': [
     { title: '2026 시대에듀 영양사 한권으로 끝내기', author: '만점해법저자진', publisher: '시대고시기획', price: 40500, originalPrice: 45000, discount: '10%', rating: 5.0, reviews: 10, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012840425', isbn: '9791143412232', imageUrl: KB('S000219601314'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219601314' },
     { title: '2026 문운당 영양사 시험문제집', author: '한국식품영양관련학과 교수협의회', publisher: '문운당', price: 47000, tags: ['베스트'], hasEbook: false, isbn: '9791156928423', imageUrl: KB('S000220166891'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220166891' },
-    { title: '2026 최종 마무리 영양사 모의고사문제', author: '식품영양생리학회', publisher: '크라운출판사', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, imageUrl: KB('S000219189432'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219189432' },
+    { title: '2026 최종 마무리 영양사 모의고사문제', author: '식품영양생리학회', publisher: '크라운출판사', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788940650776', imageUrl: KB('S000219189432'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219189432' },
   ],
 
   // ────────────────────────────────────────
