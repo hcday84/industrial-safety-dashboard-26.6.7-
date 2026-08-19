@@ -1243,7 +1243,7 @@ const REAL_BOOKS = {
     { title: '2026 소방안전관리자 3급 합격노트+8개년 기출문제', author: '공하성', publisher: '성안당', price: 17100, originalPrice: 19000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], hasEbook: false, isbn: '9788931513905', imageUrl: KB('S000219332877'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219332877' },
     { title: '2026 쇼츠 소방안전관리자 3급 기출예상문제집', author: '소방안전관리자회', publisher: '서울고시각', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012495359', imageUrl: KB('S000218907730'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218907730' },
     { title: '2027 찐합격 소방안전관리자3급 합격노트+8개년 기출문제', author: '공하성', publisher: '성안당', price: 17100, originalPrice: 19000, discount: '10%', rating: 4.7, reviews: 221, tags: ['추천'], hasEbook: false, isbn: '9788931515268', imageUrl: KB('S000220362739'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220362739' },
-    { title: '2026 소방안전관리자 3급 기출+적중예상문제', author: '소방안전연구회', publisher: '책과상상', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], hasEbook: false, imageUrl: KB('S000218229062'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218229062' },
+    { title: '2026 소방안전관리자 3급 기출+적중예상문제', author: '소방안전연구회', publisher: '책과상상', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], hasEbook: false, isbn: '9791169673341', imageUrl: KB('S000218229062'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218229062' },
   ],
 
   // ────────────────────────────────────────
