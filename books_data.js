@@ -420,7 +420,7 @@ const REAL_BOOKS = {
     // 베스트셀러 5
     { title: '물리치료사 국가시험 예상문제집(실기편)(2014)', author: '대학서림 편집부', publisher: '대학서림', price: 20000, tags: ['베스트'], hasEbook: false, isbn: '9788969400550', imageUrl: KB('S000001062761'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001062761' },
     { title: '물리치료사되기', author: '안소윤', publisher: '학지사메디컬', price: 14000, rating: 5.0, reviews: 11, tags: ['베스트'], hasEbook: false, isbn: '9788960697539', imageUrl: KB('S000000933285'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000933285' },
-    { title: '최신 근골격계 물리치료 중재학', author: '하성민 외', publisher: '학지사메디컬', price: 50000, tags: ['베스트'], hasEbook: false, isbn: '9788957415375', imageUrl: KB('S000219604982'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219604982' },
+    { title: '최신 근골격계 물리치료 중재학', author: '하성민 외', publisher: '학지사메디컬', price: 50000, tags: ['베스트'], hasEbook: false, isbn: '9791175310339', imageUrl: KB('S000219604982'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219604982' },
     { title: '신경계 물리치료학', author: '김종만', publisher: '범문에듀케이션', price: 48000, tags: ['베스트'], hasEbook: false, isbn: '9791159435171', imageUrl: KB('S000219212157'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219212157' },
     { title: '퍼시픽 물리치료학 개념서 2: 물리적 인자치료(2021)', author: '퍼시픽북스 학술편찬국', publisher: '퍼시픽북스', price: 18000, tags: ['베스트'], hasEbook: false, isbn: '9791163752431', imageUrl: KB('S000001823101'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001823101' },
     // 추천수험서 5
