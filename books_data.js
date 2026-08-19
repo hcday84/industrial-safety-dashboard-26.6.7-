@@ -472,7 +472,7 @@ const REAL_BOOKS = {
   ],
 
   '보건의료정보관리사': [
-    { title: '의무기록정보학 실전문제', author: '아카데미아 편집국', publisher: '아카데미아', price: 25000, tags: ['베스트'], hasEbook: false, isbn: '9788961303569', imageUrl: KB('S000000896710'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000896710' },
+    { title: '의무기록정보학 실전문제', author: '아카데미아 편집국', publisher: '아카데미아', price: 25000, tags: ['베스트'], hasEbook: false, isbn: '9788959384211', imageUrl: KB('S000000896710'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000896710' },
     { title: '의무기록사 시험 합격을 위한 의학용어 암기법: 순환계와 근골계', author: '의학수험연구회', publisher: '수학연구사', price: 17550, originalPrice: 19500, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791191036626', imageUrl: KB('S000001947337'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001947337' },
   ],
 
