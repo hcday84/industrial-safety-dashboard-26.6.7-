@@ -1223,7 +1223,7 @@ const REAL_BOOKS = {
 
   // ────────────────────────────────────────
   '소방안전관리자2급': [
-    { title: '2027 찐합격 소방안전관리자 2급 기출문제 총집합+5개년 기출문제', author: '공하성', publisher: '성안당', price: 23400, originalPrice: 26000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000220176733'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220176733' },
+    { title: '2027 찐합격 소방안전관리자 2급 기출문제 총집합+5개년 기출문제', author: '공하성', publisher: '성안당', price: 23400, originalPrice: 26000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: false, isbn: '9788931515237', imageUrl: KB('S000220176733'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220176733' },
     { title: '2027 박문각 소방안전관리자 2급 8개년 기출문제집+무료강의', author: '김연진', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 256, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012889218', imageUrl: KB('S000219791382'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219791382' },
     { title: '2027 박문각 소방안전관리자 2급 핵심이론서+무료특강', author: '김연진', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012881442', imageUrl: KB('S000219787574'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219787574' },
     { title: '2026 챕스랜드 소방안전관리자 2급 찐정리 문신 이론서', author: '서채빈', publisher: '종이향기', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218666591'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218666591' },
