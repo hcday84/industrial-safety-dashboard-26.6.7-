@@ -1526,7 +1526,7 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   '컬러리스트기사': [
     // 베스트셀러 5
-    { title: '2027 컬러리스트기사 · 산업기사 필기 세트', author: '조영우, 김남일 외', publisher: '예문사', price: 37800, originalPrice: 42000, discount: '10%', rating: 4.6, reviews: 58, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000220502349'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220502349' },
+    { title: '2027 컬러리스트기사 · 산업기사 필기 세트', author: '조영우, 김남일 외', publisher: '예문사', price: 37800, originalPrice: 42000, discount: '10%', rating: 4.6, reviews: 58, tags: ['베스트'], hasEbook: false, isbn: '9788927462811', imageUrl: KB('S000220502349'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220502349' },
     { title: '2026 이기적 컬러리스트기사·산업기사 필기 기본서', author: '선앤미', publisher: '영진닷컴', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.6, reviews: 71, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012694396', imageUrl: KB('S000219382451'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219382451' },
     { title: '2026 동영상 강의로 배우는 컬러리스트 기사·산업기사 실기 세트', author: '조영우, 김남일, 김수예 외', publisher: '예문사', price: 37800, originalPrice: 42000, discount: '10%', rating: 4.9, reviews: 94, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218229360'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218229360' },
     { title: '2025 컬러리스트 실기시험 산업기사·기사 문제집+해설집 세트', author: '신현지', publisher: '미진사', price: 39000, originalPrice: 39000, discount: '0%', rating: 4.9, reviews: 63, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000215822561'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215822561' },
@@ -1542,7 +1542,7 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   '컬러리스트산업기사': [
     // 베스트셀러 5
-    { title: '2027 컬러리스트기사 · 산업기사 필기 세트', author: '조영우, 김남일 외', publisher: '예문사', price: 37800, originalPrice: 42000, discount: '10%', rating: 4.6, reviews: 58, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000220502349'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220502349' },
+    { title: '2027 컬러리스트기사 · 산업기사 필기 세트', author: '조영우, 김남일 외', publisher: '예문사', price: 37800, originalPrice: 42000, discount: '10%', rating: 4.6, reviews: 58, tags: ['베스트'], hasEbook: false, isbn: '9788927462811', imageUrl: KB('S000220502349'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220502349' },
     { title: '2026 이기적 컬러리스트기사·산업기사 필기 기본서', author: '선앤미', publisher: '영진닷컴', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.6, reviews: 71, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012694396', imageUrl: KB('S000219382451'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219382451' },
     { title: '2026 동영상 강의로 배우는 컬러리스트 기사·산업기사 실기 세트', author: '조영우, 김남일, 김수예 외', publisher: '예문사', price: 37800, originalPrice: 42000, discount: '10%', rating: 4.9, reviews: 94, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218229360'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218229360' },
     { title: '2025 컬러리스트 실기시험 산업기사·기사 문제집+해설집 세트', author: '신현지', publisher: '미진사', price: 39000, originalPrice: 39000, discount: '0%', rating: 4.9, reviews: 63, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000215822561'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215822561' },
