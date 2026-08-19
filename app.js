@@ -4769,6 +4769,10 @@ function renderCompareSection(cert) {
 
   const input = document.getElementById('compare-inline-input');
   const dropdown = document.getElementById('compare-inline-dropdown');
+  // 다른 자격증으로 전환될 때마다(예: 상단 검색창으로 다른 자격증 검색) 이전에
+  // 비교기에 입력해뒀던 자격증 이름이 그대로 남아있던 버그 → 매번 입력값을 비움.
+  if (input) input.value = '';
+  if (dropdown) dropdown.style.display = 'none';
   if (!input || input._inlineBound) return;
   input._inlineBound = true;
 
