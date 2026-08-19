@@ -824,7 +824,7 @@ const REAL_BOOKS = {
   ],
 
   '전기공사산업기사': [
-    { title: '2026 전기공사산업기사 실기', author: '김상훈, 한빛전기수험연구회', publisher: '윤조', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.8, reviews: 378, tags: ['베스트'], hasEbook: false, imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791194702313.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219190912' },
+    { title: '2026 전기공사산업기사 실기', author: '김상훈, 한빛전기수험연구회', publisher: '윤조', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.8, reviews: 378, tags: ['베스트'], hasEbook: false, isbn: '9791194702313', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791194702313.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219190912' },
     { title: '배울학 전기공사산업기사 필기 1033 10개년 기출문제집', author: '윤석만, 강장규, 황민욱', publisher: '배울학', price: 23400, originalPrice: 26000, discount: '10%', rating: 4.4, reviews: 2, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000001931034'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001931034' },
     { title: '2026 E90-4 전기공사산업기사 필기', author: '검정연구회', publisher: '엔트미디어', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.7, reviews: 256, tags: ['베스트'], hasEbook: false, isbn: '9791192810652', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791192810652.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218309680' },
     { title: '2026 완벽대비 전기공사산업기사 필기', author: '검정연구회', publisher: '동일출판사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], hasEbook: false, isbn: '9788938117281', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788938117281.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218309595' },
