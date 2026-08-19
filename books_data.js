@@ -960,7 +960,7 @@ const REAL_BOOKS = {
     { title: '2026 이기적 정보보안기사 실기 기출 600제', author: '임호진', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012694406', imageUrl: KB('S000219382035'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219382035' },
     { title: '2026 수제비 정보보안기사 실기 기본서', author: '윤영빈', publisher: '수제비', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.5, reviews: 143, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012547157', imageUrl: KB('S000219127791'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219127791' },
     { title: '정보보안 기사ㆍ산업기사 필기 한권으로 끝내기', author: '박성업', publisher: '시대고시기획', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.6, reviews: 14, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000002887365', imageUrl: KB('S000001656127'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001656127' },
-    { title: '정보보안 기사 산업기사 필기 2주완성 출제적중문제집(2016)', author: '공병철 외', publisher: '인포더북스', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, imageUrl: KB('S000001551469'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001551469' },
+    { title: '정보보안 기사 산업기사 필기 2주완성 출제적중문제집(2016)', author: '공병철 외', publisher: '인포더북스', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788994567624', imageUrl: KB('S000001551469'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001551469' },
   ],
 
   // ────────────────────────────────────────
