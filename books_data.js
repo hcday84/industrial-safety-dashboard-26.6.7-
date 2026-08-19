@@ -1407,7 +1407,7 @@ const REAL_BOOKS = {
   ],
 
   '재경관리사': [
-    { title: '2026 해커스 기초회계원리 초단기 7일 완성 이론+기출+분개연습', author: '이남호', publisher: '해커스금융', price: 16200, originalPrice: 18000, discount: '10%', rating: 5.0, reviews: 12, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218668709'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218668709' },
+    { title: '2026 해커스 기초회계원리 초단기 7일 완성 이론+기출+분개연습', author: '이남호', publisher: '해커스금융', price: 16200, originalPrice: 18000, discount: '10%', rating: 5.0, reviews: 12, tags: ['베스트'], hasEbook: false, isbn: '9791174040893', imageUrl: KB('S000218668709'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218668709' },
   ],
 
   'ERP정보관리사': [
