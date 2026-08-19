@@ -1490,7 +1490,7 @@ const REAL_BOOKS = {
   ],
 
   '한국어능력시험(TOPIK)': [
-    { title: '합격특강 한국어능력시험 TOPIK 토픽 2 한권으로 끝내기', author: '전나영, 손성희', publisher: '다락원', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, imageUrl: KB('S000213024398'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213024398' },
+    { title: '합격특강 한국어능력시험 TOPIK 토픽 2 한권으로 끝내기', author: '전나영, 손성희', publisher: '다락원', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927773818', imageUrl: KB('S000213024398'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213024398' },
   ],
 
   '임용고시': [
