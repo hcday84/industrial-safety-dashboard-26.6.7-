@@ -399,7 +399,7 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   '임상병리사': [
     // 베스트셀러 5
-    { title: '임상화학 핵심정리 및 문제해설', author: '박화진', publisher: '범문에듀케이션', price: 45000, rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791192422015', imageUrl: KB('S000200051910'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200051910' },
+    { title: '임상화학 핵심정리 및 문제해설', author: '박화진', publisher: '범문에듀케이션', price: 45000, rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791159433412', imageUrl: KB('S000200051910'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200051910' },
     { title: '임상미생물학실습', author: '한국임상병리학과 미생물학 연구회', publisher: '고려의학', price: 41000, tags: ['베스트'], hasEbook: false, isbn: '9791192422763', imageUrl: KB('S000217005821'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217005821' },
     // 추천수험서 5
     { title: '임상생리학 최신경향 문제', author: '한국임상생리학연구회', publisher: '고려의학', price: 38000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791124381038', imageUrl: KB('S000219570701'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219570701' },
