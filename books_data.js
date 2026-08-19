@@ -1006,7 +1006,7 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   // ────────────────────────────────────────
   '미용사(일반)': [
-    { title: '2026 미용사 일반 필기', author: '김지연', publisher: '책과상상', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218629883'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218629883' },
+    { title: '2026 미용사 일반 필기', author: '김지연', publisher: '책과상상', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: false, isbn: '9791169673129', imageUrl: KB('S000218629883'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218629883' },
     { title: '2026 에듀윌 일반(헤어)미용사 필기 1주끝장', author: '최묘선', publisher: '에듀윌', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.6, reviews: 256, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218235656'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218235656' },
     { title: '2026 원큐패스 미용사 일반 필기', author: '김선희', publisher: '크라운출판사', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000218681294'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218681294' },
     { title: '2026 시대에듀 답만 외우는 미용사 일반 필기 CBT기출문제', author: '시대에듀 편집부', publisher: '시대고시기획', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], hasEbook: false, imageUrl: KB('S000217049157'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217049157' },
