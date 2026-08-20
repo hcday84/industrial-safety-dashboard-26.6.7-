@@ -337,6 +337,8 @@ const REAL_BOOKS = {
 
   '소방기술사': [
     // 베스트셀러 5
+    { title: '합격내비 소방기술사 1', author: '전병호', publisher: '모아교육그룹', price: 67500, originalPrice: 75000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791168046641', imageUrl: KB('9791168046641'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220704780' },
+    { title: '합격내비 소방기술사 2', author: '전병호', publisher: '모아교육그룹', price: 67500, originalPrice: 75000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791168046658', imageUrl: KB('9791168046658'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220704794' },
     { title: '금화도감 소방기술사 기출문제풀이 2', author: '유쾌한', publisher: '모아교육그룹', price: 63000, originalPrice: 70000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791168043121', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791168043121.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000214128774' },
     // 추천수험서 5
     { title: '소방/기술사·관리사·실무자를 위한 소방·건축관계법규 화재안전성능기술기준', author: '권순택', publisher: '예문사', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788927462453', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788927462453.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219931270' },
