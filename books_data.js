@@ -95,7 +95,7 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   '건설안전산업기사': [
     // 베스트셀러 5
-    { title: '2026 에듀윌 건설안전기사 필기 기출문제집', author: '김충민', publisher: '에듀윌', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013244076', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791136039873.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218278437' },
+    { title: '2026 에듀윌 건설안전산업기사 필기 한권끝장', author: '김충민, 최석훈, 권윤아', publisher: '에듀윌', price: 36000, originalPrice: 40000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791136039798', imageUrl: KB('9791136039798'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218278440' },
     { title: '2026 직8딴 건설안전산업기사 필기', author: '김진태', publisher: '김영북스', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012697335', isbn: '9791173491467', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791173491467.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219407296' },
     { title: '2026 건설안전산업기사 필기 기출문제', author: '김응주', publisher: '책과상상', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673235', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791169673235.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218055110' },
     // 추천수험서 5
