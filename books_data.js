@@ -24,6 +24,7 @@ const REAL_BOOKS = {
     // 추천수험서 5
     { title: '2026 벼락치기 산업안전산업기사 필기', author: '정재수', publisher: '세화', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], hasEbook: false, isbn: '9788931713503', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931713503.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218149433' },
     { title: '2026 산업안전산업기사 실기(필답형+작업형)+무료동영상+스마트북', author: '최윤정', publisher: '구민사', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.9, reviews: 14, tags: ['추천'], hasEbook: false, isbn: '9791168756663', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791168756663.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218935586' },
+    { title: '2026 에듀윌 산업안전산업기사 실기 한권끝장+무료특강 필답형+작업형 세트', author: '최창률', publisher: '에듀윌', price: 36000, originalPrice: 40000, discount: '10%', rating: 5.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9791136040855', imageUrl: KB('9791136040855'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218821464' },
   ],
 
   // ────────────────────────────────────────
