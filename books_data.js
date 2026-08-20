@@ -75,6 +75,7 @@ const REAL_BOOKS = {
     { title: '2026 에듀윌 소방설비기사 실기 전기+무료특강', author: '손익희', publisher: '에듀윌', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.7, reviews: 221, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013223859', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791136041357.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219195829' },
     { title: '2026 해커스 소방설비기사 실기 전기 한권합격 이론+최신기출+핵심노트', author: '김진성', publisher: '해커스자격증', price: 33300, originalPrice: 37000, discount: '10%', rating: 5.0, reviews: 9, tags: ['추천'], hasEbook: false, isbn: '9788969656322', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788969656322.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219084839' },
     { title: '2026 대해부 12개년 기출문제 소방설비기사 실기 전기세트', author: '공하성', publisher: '성안당', price: 44100, originalPrice: 49000, discount: '10%', rating: 4.4, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788931513844', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788931513844.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219604442' },
+    { title: '2026 에듀윌 소방설비기사 필기 전기분야+무료특강', author: '손익희, 김윤수', publisher: '에듀윌', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 12, tags: ['추천'], hasEbook: false, isbn: '9791136038029', imageUrl: KB('9791136038029'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217555252' },
   ],
 
   // ────────────────────────────────────────
