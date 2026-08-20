@@ -61,11 +61,11 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   '소방설비기사(기계분야)': [
     // 베스트셀러 5
-    { title: '2026 찐합격 7개년 과년도 소방설비기사 필기 전기1-7', author: '공하성', publisher: '성안당', price: 26550, originalPrice: 29500, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: false, isbn: '9788931514070', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788931514070.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218276598' },
+    { title: '2026 찐합격 10개년 과년도 소방설비기사 필기(기계1-10)', author: '공하성', publisher: '성안당', price: 34200, originalPrice: 38000, discount: '10%', rating: 5.0, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9788931514186', imageUrl: KB('9788931514186'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218305525' },
     { title: '2026 에듀윌 소방설비기사 기계 기출문제집 필기', author: '김윤수', publisher: '에듀윌', price: 27900, originalPrice: 31000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: false, isbn: '9791136037473', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791136037473.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216719513' },
-    { title: '2026 체크업 소방설비기사·산업기사 기계 분야 필기', author: '김종상', publisher: '일진사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], hasEbook: false, isbn: '9791194041757', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791194041757.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218934350' },
+    { title: '2026 체크업 소방설비기사·산업기사 기계 분야 1차 필기 이론+예상문제', author: '김종상', publisher: '북스케치', price: 49500, originalPrice: 55000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791194041757', imageUrl: KB('9791194041757'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218934350' },
     { title: '2026 이것이 진짜 해설이다 소방설비기사 실기(기계) 최근 13년(26년1회까지) 기출문제 재분류집', author: '오철호', publisher: '공부한수', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.6, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791186028582', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791186028582.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219940364' },
-    { title: '2026 찐합격 소방안전관리자 3급 기출문제 총집합', author: '공하성', publisher: '성안당', price: 26100, originalPrice: 29000, discount: '10%', rating: 4.6, reviews: 189, tags: ['추천'], hasEbook: false, isbn: '9788931513899', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788931513899.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219332876' },
+    { title: '2026 에듀윌 소방설비기사 필기 기계분야+무료특강', author: '손익희, 김윤수', publisher: '에듀윌', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 6, tags: ['추천'], hasEbook: false, isbn: '9791136038036', imageUrl: KB('9791136038036'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217555206' },
   ],
 
   '소방설비기사(전기분야)': [
