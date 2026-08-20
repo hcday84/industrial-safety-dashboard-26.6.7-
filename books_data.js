@@ -1,10 +1,15 @@
 // ============================================
 // 실제 도서 데이터 (교보문고 상품코드 기준, 2026년도)
-// 이미지: https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/{상품코드}.jpg
-// 링크:   https://product.kyobobook.co.kr/detail/{상품코드}
+// 이미지: https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/{ISBN}.jpg
+//   ⚠ 2026-08-20 확인: 이 CDN은 반드시 ISBN(예: 9791194997054)으로만 서빙됨.
+//     교보 판매코드(S000...)를 넣으면 200 OK로 "제공된 상품이미지가 없습니다"
+//     플레이스홀더(고정 34,150바이트)가 내려온다 — 매칭 오류가 아니라도 깨짐.
+//     새 도서 추가 시 KB()에는 반드시 ISBN을 넣을 것. S코드밖에 없으면 imageUrl은
+//     ISBN을 찾기 전까지 null로 두는 편이 낫다 (교보 플레이스홀더보다 자체 CSS가 나음).
+// 링크:   https://product.kyobobook.co.kr/detail/{상품코드}  (이건 판매코드 그대로 사용)
 // imageUrl: null 이면 CSS 표지 placeholder 자동 표시
 // ============================================
-const KB = (code) => code ? `https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/${code}.jpg` : null;
+const KB = (isbn) => isbn ? `https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/${isbn}.jpg` : null;
 
 const REAL_BOOKS = {
 
