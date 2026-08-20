@@ -328,6 +328,8 @@ const REAL_BOOKS = {
 
   '건설안전기술사': [
     // 베스트셀러 5
+    { title: '2026 최신 건설안전기술사 1', author: '한경보, Willy. H', publisher: '예문사', price: 42300, originalPrice: 47000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927462002', imageUrl: KB('9788927462002'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219570704' },
+    { title: '2026 최신 건설안전기술사 2', author: '한경보, Willy. H', publisher: '예문사', price: 43200, originalPrice: 48000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927460794', imageUrl: KB('9788927460794'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218858723' },
     { title: '건설안전기술사 실전면접', author: '한경보, Willy.H', publisher: '예문사', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788927441137', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788927441137.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000000523650' },
     { title: '건설안전기술사 최신 기출문제 풀이', author: '이호행', publisher: '교문사', price: 69000, rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788936327125', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788936327125.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218565187' },
     // 추천수험서 5
