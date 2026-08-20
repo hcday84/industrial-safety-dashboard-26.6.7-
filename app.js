@@ -1387,7 +1387,7 @@ function renderBooks() {
       : imgSrc
       ? `<img src="${imgSrc}" alt="${book.title}" class="book-cover-img" crossorigin="anonymous" ${nlAttr}
            onerror="this.removeAttribute('src');this.style.display='none';this.nextElementSibling.style.display='flex';window._nlFallback&&window._nlFallback(this)"
-           onload="(function(img){try{var c=document.createElement('canvas');c.width=40;c.height=40;var x=c.getContext('2d');x.drawImage(img,0,0,40,40,0,0,40,40);var d=x.getImageData(0,0,40,40).data,s=0,s2=0,n=d.length/4;for(var i=0;i<d.length;i+=4){var v=(d[i]+d[i+1]+d[i+2])/3;s+=v;s2+=v*v;}var variance=s2/n-(s/n)*(s/n);if(variance<30){img.removeAttribute('src');img.style.display='none';img.nextElementSibling.style.display='flex';window._nlFallback&&window._nlFallback(img);}}catch(e){}})(this)">
+           onload="(function(img){try{var c=document.createElement('canvas');c.width=40;c.height=40;var x=c.getContext('2d');x.drawImage(img,0,0,40,40);var d=x.getImageData(0,0,40,40).data,s=0,s2=0,n=d.length/4;for(var i=0;i<d.length;i+=4){var v=(d[i]+d[i+1]+d[i+2])/3;s+=v;s2+=v*v;}var variance=s2/n-(s/n)*(s/n);if(variance<30){img.removeAttribute('src');img.style.display='none';img.nextElementSibling.style.display='flex';window._nlFallback&&window._nlFallback(img);}}catch(e){}})(this)">
          <div class="book-cover-mock" style="background:${mockBg}; display:none;">
            <span class="book-cover-title">${mockTitle}</span>
            <span class="book-cover-publisher">${book.publisher}</span>
