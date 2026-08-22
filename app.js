@@ -546,6 +546,14 @@ window.switchRoleTab = function(role) {
 
 window.jumpToSection = function(sectionId) {
   if (sectionId === 'compare') {
+    // openCompareModal()은 자격증 미선택 시 아무 반응 없이 조용히 return돼서
+    // 여기서 먼저 걸러줘야 토스트가 뜸 (2026-08-23 발견된 버그 수정).
+    if (!STATE.currentCert) {
+      showInfoToast('먼저 자격증을 검색해주세요!');
+      const searchEl = document.getElementById('global-search');
+      if (searchEl) searchEl.focus();
+      return;
+    }
     window.openCompareModal && window.openCompareModal();
     return;
   }
