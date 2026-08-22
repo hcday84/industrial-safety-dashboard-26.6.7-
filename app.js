@@ -557,13 +557,15 @@ window.jumpToSection = function(sectionId) {
     }, 150);
     return;
   }
-  const recent = (typeof getRecentCerts === 'function' ? getRecentCerts() : [])[0];
-  if (recent) {
-    window.selectCert(recent);
-    setTimeout(() => {
-      const target = document.getElementById(sectionId);
-      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 200);
+  // 현재 선택된 자격증이 있을 때만 해당 섹션으로 이동.
+  // ⚠ 2026-08-23 수정: 과거엔 선택된 자격증이 없으면 "최근 조회 자격증"으로 몰래
+  //   이동했는데, 초기화 버튼이 recentCerts(최근 조회 목록, localStorage)는 지우지
+  //   않아서 "초기화 후에도 직전 검색 자격증 정보가 뜬다"는 버그로 보였음.
+  //   최근 조회 자격증은 웰컴화면의 "최근 조회" 칩으로 이미 접근 가능하므로,
+  //   이 메뉴는 항상 현재 선택 상태만 따르도록 단순화.
+  if (STATE.currentCert) {
+    const target = document.getElementById(sectionId);
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   } else {
     const searchEl = document.getElementById('global-search');
     if (searchEl) {
