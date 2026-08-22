@@ -2094,6 +2094,20 @@ function showCorrectionToast(originalQuery, correctedName) {
   toast._timer = setTimeout(() => toast.classList.remove('visible'), 4000);
 }
 
+// ── 범용 안내 토스트 (예: "먼저 자격증을 검색해주세요") ────────────────────
+function showInfoToast(message, iconClass = 'fa-magnifying-glass') {
+  let toast = document.getElementById('cert-correction-toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'cert-correction-toast';
+    document.body.appendChild(toast);
+  }
+  toast.innerHTML = `<i class="fa-solid ${iconClass}"></i> ${message}`;
+  toast.classList.add('visible');
+  clearTimeout(toast._timer);
+  toast._timer = setTimeout(() => toast.classList.remove('visible'), 2000);
+}
+
 // ── 레벤슈타인 편집거리 (오타 교정) ─────────────────────────────────────────
 function levenshtein(a, b) {
   const m = a.length, n = b.length;
