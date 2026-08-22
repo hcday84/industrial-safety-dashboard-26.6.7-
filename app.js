@@ -567,13 +567,11 @@ window.jumpToSection = function(sectionId) {
     const target = document.getElementById(sectionId);
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   } else {
+    // 화면 중앙 하단에 토스트로 안내 — placeholder 텍스트 변경 방식은 사용자
+    // 시선이 클릭한 버튼(화면 아래쪽)에 있을 때 놓치기 쉬워서 토스트로 교체(2026-08-23).
+    showInfoToast('먼저 자격증을 검색해주세요!');
     const searchEl = document.getElementById('global-search');
-    if (searchEl) {
-      searchEl.focus();
-      const orig = searchEl.placeholder;
-      searchEl.placeholder = '먼저 자격증을 검색해주세요!';
-      setTimeout(() => { searchEl.placeholder = orig; }, 2500);
-    }
+    if (searchEl) searchEl.focus();
   }
 };
 
