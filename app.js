@@ -3686,7 +3686,7 @@ function renderQuickRow() {
   const favChips = document.getElementById('fav-certs-chips');
   if (!rowEl) return;
 
-  const recents = getRecentCerts().filter(n => CERTIFICATIONS[n]);
+  const recents = getRecentCerts().map(item => item.name).filter(n => CERTIFICATIONS[n]).slice(0, 5);
   const favs    = getFavoriteCerts().filter(n => CERTIFICATIONS[n]);
 
   const makeChip = name =>
