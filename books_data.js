@@ -459,7 +459,6 @@ const REAL_BOOKS = {
   ],
 
   '작업치료사': [
-    { title: '2026 시대에듀 작업치료사 최종모의고사', author: '최봉근, 박한글', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013252247', isbn: '9788995300022', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788995300022.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000220363388' },
     { title: '2026 시대에듀 작업치료사 최종모의고사', author: '최봉근, 박한글', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013252247', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791143416865.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000220363388' },
     { title: '2024 작업치료 문제집 9: 그림 실기형 문제', author: '작업치료 국시연구회', publisher: '퍼시픽북스', price: 19950, originalPrice: 21000, discount: '5%', tags: ['추천'], hasEbook: false, isbn: '9791163754657', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791163754657.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000213096777' },
   ],
