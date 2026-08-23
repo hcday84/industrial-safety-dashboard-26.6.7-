@@ -4882,9 +4882,12 @@ function renderCompareSection(cert) {
   input._inlineBound = true;
 
   input.addEventListener('input', () => {
-    const q = input.value.trim().toLowerCase();
+    const q = input.value.trim();
     if (!q) { dropdown.style.display='none'; return; }
-    const matches = Object.keys(CERTIFICATIONS).filter(n => n !== cert.name && normalize(n).includes(normalize(q))).slice(0,8);
+    // 상단 검색창(global-search)과 동일하게 별칭·초성·오타·영문 자동변환을 모두 지원하는
+    // searchCerts()를 재사용 — 예전엔 단순 includes()만 써서 오타·초성·영문 입력이 전혀 안 먹혔음.
+    const { scored } = searchCerts(q);
+    const matches = scored.map(s => s.name).filter(n => n !== cert.name).slice(0,8);
     if (!matches.length) { dropdown.style.display='none'; return; }
     dropdown.innerHTML = matches.map(n =>
       `<div class="compare-dropdown-item" onclick="(()=>{
