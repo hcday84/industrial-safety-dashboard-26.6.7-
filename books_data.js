@@ -1300,11 +1300,12 @@ const REAL_BOOKS = {
   ],
 
   'AFPK': [
-    { title: '2025 해커스 AFPK 핵심문제집 모듈 1', author: '해커스 금융아카데미', publisher: '해커스패스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 2134, tags: ['베스트'], hasEbook: false, isbn: '9791172449049', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791172449049.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216317051' },
-    { title: '2025 해커스 AFPK 핵심문제집 모듈 2', author: '해커스 금융아카데미', publisher: '해커스패스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], hasEbook: false, isbn: '9791172449056', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791172449056.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216317054' },
-    { title: '2025 해커스 AFPK 최종 실전모의고사', author: '해커스 금융아카데미', publisher: '해커스패스', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 1543, tags: ['베스트'], hasEbook: false, isbn: '9791172449063', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791172449063.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216497312' },
-    { title: '2025 이패스 AFPK 핵심문제집 모듈1', author: '김종희', publisher: '이패스코리아', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.6, reviews: 1234, tags: ['추천'], hasEbook: false, isbn: '9791172092320', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791172092320.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216841802' },
-    { title: '2025 이패스 AFPK 핵심문제집 모듈2', author: '김종희', publisher: '이패스코리아', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], hasEbook: false, isbn: '9791172092313', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791172092313.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216841809' },
+    // 2026-08-23: 기존 등록 5권 전부 절판 확인되어 2026년판 신간으로 전면 교체
+    { title: '2026 단기합격 해커스 AFPK 핵심문제집 모듈 1', author: '해커스 금융아카데미', publisher: '해커스금융', price: 27900, originalPrice: 31000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176441636', imageUrl: KB('9791176441636'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219981040' },
+    { title: '2026 단기합격 해커스 AFPK 핵심문제집 모듈 2', author: '해커스 금융아카데미', publisher: '해커스금융', price: 27900, originalPrice: 31000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791176441643', imageUrl: KB('9791176441643'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219981047' },
+    { title: '2026 해커스 AFPK 최종 실전모의고사', author: '해커스 금융아카데미', publisher: '해커스금융', price: 18900, originalPrice: 21000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176441650', imageUrl: KB('9791176441650'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220053946' },
+    { title: '2026 이패스 AFPK 최종실전 모의고사', author: '김종희, 김종모, 최동진, 이패스코리아 금융연구소', publisher: '이패스코리아', price: 18900, originalPrice: 21000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791172095215', imageUrl: KB('9791172095215'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220341492' },
+    { title: '토마토패스 친절한 홍교수의 AFPK 합격비기 모의고사', author: '홍영진', publisher: '토마토북스', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791124719022', imageUrl: KB('9791124719022'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220457844' },
   ],
 
   'CFP': [
