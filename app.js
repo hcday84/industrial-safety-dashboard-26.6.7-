@@ -3615,13 +3615,25 @@ if (document.readyState === 'loading') {
 // ============================================
 // 20. 최근 검색 & 즐겨찾기
 // ============================================
+// 검색 히스토리 최대 보관 개수. 웰컴 화면 "최근 검색" 칩은 이 중 상위 5개만 노출하고,
+// 히스토리 모달(window.showSearchHistory)에서는 전체를 다 보여준다.
+const SEARCH_HISTORY_LIMIT = 50;
+
+// 과거엔 recentCerts를 문자열 배열(["전기기사", ...])로 저장했다.
+// {name, at} 객체 배열로 바뀌었으니, 문자열 항목이 섞여 있으면 타임스탬프 없이 감싸서 호환 유지.
 function getRecentCerts() {
-  try { return JSON.parse(localStorage.getItem('recentCerts') || '[]'); } catch { return []; }
+  let raw;
+  try { raw = JSON.parse(localStorage.getItem('recentCerts') || '[]'); } catch { return []; }
+  if (!Array.isArray(raw)) return [];
+  return raw.map(item =>
+    typeof item === 'string' ? { name: item, at: null } : item
+  ).filter(item => item && item.name);
 }
 function addRecentCert(name) {
-  const list = getRecentCerts().filter(n => n !== name);
-  list.unshift(name);
-  try { localStorage.setItem('recentCerts', JSON.stringify(list.slice(0, 5))); } catch {}
+  const list = getRecentCerts().filter(item => item.name !== name);
+  list.unshift({ name, at: Date.now() });
+  try { localStorage.setItem('recentCerts', JSON.stringify(list.slice(0, SEARCH_HISTORY_LIMIT))); } catch {}
+  try { updateHistoryBadge(); } catch(e) {}
 }
 function getFavoriteCerts() {
   try { return JSON.parse(localStorage.getItem('favoriteCerts') || '[]'); } catch { return []; }
