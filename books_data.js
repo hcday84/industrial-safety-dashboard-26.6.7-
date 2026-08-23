@@ -96,12 +96,13 @@ const REAL_BOOKS = {
 
   // ────────────────────────────────────────
   '건설안전산업기사': [
-    // 베스트셀러 5
+    // 베스트셀러 5 (2026-08-23 재검증: 구민사 필기 추가, 직8딴 실기 오표기 수정)
     { title: '2026 에듀윌 건설안전산업기사 필기 한권끝장', author: '김충민, 최석훈, 권윤아', publisher: '에듀윌', price: 36000, originalPrice: 40000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791136039798', imageUrl: KB('9791136039798'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218278440' },
-    { title: '2026 직8딴 건설안전산업기사 필기', author: '김진태', publisher: '김영북스', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012697335', isbn: '9791173491467', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791173491467.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219407296' },
+    { title: '2026 건설안전산업기사 필기 과년도 무료동영상+핸드북', author: '최윤정', publisher: '구민사', price: 43200, originalPrice: 48000, discount: '10%', rating: 5.0, reviews: 12, tags: ['베스트'], hasEbook: false, isbn: '9791168756304', imageUrl: KB('9791168756304'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218313316' },
+    { title: '2026 직8딴 김영북스 직접 8일 만에 딴 건설안전산업기사 실기 필답형+작업형', author: '김진태', publisher: '김영북스', price: 36000, originalPrice: 40000, discount: '10%', tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012697335', isbn: '9791173491467', imageUrl: KB('9791173491467'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219407296' },
     { title: '2026 건설안전산업기사 필기 기출문제', author: '김응주', publisher: '책과상상', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673235', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791169673235.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218055110' },
     { title: '2026 에듀윌 건설안전산업기사 실기 한권끝장', author: '최석훈', publisher: '에듀윌', price: 34200, originalPrice: 38000, discount: '10%', rating: 5.0, reviews: 55, tags: ['베스트'], hasEbook: false, isbn: '9791136040374', imageUrl: KB('9791136040374'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218797477' },
-    // 추천수험서 5
+    // 추천수험서 3
     { title: '2026 건설안전산업기사 실기 필답형+작업형+무료동영상+스마트북', author: '최윤정', publisher: '구민사', price: 43200, originalPrice: 48000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168756793', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791168756793.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219137733' },
     { title: '2026 따다 건설안전산업기사 실기 초간단 핵심완성 필답형+작업형 세트', author: '김병진, 김희권', publisher: '예문사', price: 34200, originalPrice: 38000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927462125', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788927462125.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219602363' },
     { title: '2026 벼락치기 건설안전산업기사 필기 요점+기출', author: '정재수', publisher: '세화', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.3, reviews: 112, tags: ['추천'], hasEbook: false, isbn: '9788931714005', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931714005.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219648814' },
