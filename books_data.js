@@ -361,7 +361,6 @@ const REAL_BOOKS = {
 
   '가스기술사': [
     // 베스트셀러 5
-    { title: '합격Easy 가스기술사 1 - 이론 및 기출문제 완벽분석', author: '(사)한국가스기술사회', publisher: '건기원', price: 45000, originalPrice: 50000, discount: '10%', tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000008556169', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791157678464.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000213862078' },
     // 추천수험서 5
   ],
 
