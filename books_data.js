@@ -146,7 +146,6 @@ const REAL_BOOKS = {
   '가스기사': [
     // 베스트셀러 5
     { title: '2026 평생 무료 동영상과 함께하는 가스기사 필기', author: '서상희', publisher: '일진사', price: 39600, originalPrice: 44000, discount: '10%', rating: 4.7, reviews: 245, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012246310', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791157457700.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218666990' },
-    { title: '가스기사·가스산업기사 필기 총정리', author: '서상희', publisher: '일진사', price: 32400, originalPrice: 36000, discount: '10%', rating: 4.6, reviews: 189, tags: ['베스트'], hasEbook: false, isbn: '9788942919482', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788942919482.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000214202695' },
     { title: '2026 가스산업기사 필기 기출문제집', author: '김재호', publisher: '예문사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 167, tags: ['베스트'], hasEbook: false, isbn: '9788931713688', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788931713688.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218667744' },
     { title: '2026 나합격 가스기사 필기 핵심요약+기출', author: '이윤기', publisher: '삼원북스', price: 37800, originalPrice: 42000, discount: '10%', rating: 4.4, reviews: 143, tags: ['베스트'], hasEbook: false, isbn: '9791194997351', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791194997351.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218787649' },
     // 추천수험서 5
