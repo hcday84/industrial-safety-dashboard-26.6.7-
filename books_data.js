@@ -1457,7 +1457,6 @@ const REAL_BOOKS = {
   ],
 
   '한국실용글쓰기': [
-    { title: '한국 실용글쓰기 3배속 끝내기', author: '김남미', publisher: '박문각', price: 14400, originalPrice: 16000, discount: '10%', rating: 2.5, reviews: 1, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000005064926', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791167046970.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001849113' },
   ],
 
   '임상심리사2급': [
