@@ -793,7 +793,6 @@ const REAL_BOOKS = {
 
   '침투비파괴검사기사': [
     { title: '침투비파괴검사 산업기사·기사 실기 필답형', author: '조정현', publisher: '피앤피북', price: 17100, originalPrice: 19000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000011689030', imageUrl: 'https://image.aladin.co.kr/product/36664/67/coversum/k492030187_1.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216904888' },
-    { title: '2026 시대에듀 Win-Q 침투비파괴검사기능사 필기 단기합격', author: '신원장', publisher: '시대고시기획', price: 24300, originalPrice: 27000, discount: '10%', rating: 5.0, reviews: 13, tags: ['추천'], hasEbook: false, isbn: '9791143406514', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791143406514.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218778105' },
   ],
 
   '자기비파괴검사기사': [
