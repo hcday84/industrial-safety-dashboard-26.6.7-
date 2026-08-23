@@ -3635,6 +3635,72 @@ function addRecentCert(name) {
   try { localStorage.setItem('recentCerts', JSON.stringify(list.slice(0, SEARCH_HISTORY_LIMIT))); } catch {}
   try { updateHistoryBadge(); } catch(e) {}
 }
+
+// "5분 전" / "어제" 같은 상대 시각 표시. at이 없으면(구버전 데이터) 빈 문자열.
+function formatRelativeTime(at) {
+  if (!at) return '';
+  const diffMs = Date.now() - at;
+  const min = Math.floor(diffMs / 60000);
+  if (min < 1) return '방금 전';
+  if (min < 60) return `${min}분 전`;
+  const hour = Math.floor(min / 60);
+  if (hour < 24) return `${hour}시간 전`;
+  const day = Math.floor(hour / 24);
+  if (day === 1) return '어제';
+  if (day < 7) return `${day}일 전`;
+  return new Date(at).toLocaleDateString('ko-KR', { month: 'long', day: 'numeric' });
+}
+
+function updateHistoryBadge() {
+  const badge = document.getElementById('history-count-badge');
+  if (!badge) return;
+  const n = getRecentCerts().length;
+  badge.textContent = n;
+  badge.style.display = n > 0 ? '' : 'none';
+}
+
+window.showSearchHistory = function() {
+  const modal = document.getElementById('search-history-modal');
+  const body  = document.getElementById('search-history-body');
+  if (!modal || !body) return;
+  const items = getRecentCerts();
+
+  body.innerHTML = items.length === 0
+    ? `<p style="text-align:center;color:var(--text-muted);padding:24px 0">아직 검색한 자격증이 없습니다.<br>자격증을 검색해서 살펴보면 여기에 기록됩니다.</p>`
+    : items.map(item => {
+        const exists = !!CERTIFICATIONS[item.name];
+        const safeName = item.name.replace(/'/g, "\\'");
+        const time = formatRelativeTime(item.at);
+        return `
+          <div class="cl-item history-item">
+            <div class="cl-info">
+              ${exists
+                ? `<a href="javascript:void(0)" class="history-cert-link" onclick="window.closeClModal('search-history-modal');window.selectCert('${safeName}')">${item.name}</a>`
+                : `<span class="cl-title" style="color:var(--text-muted)">${item.name} <span style="font-weight:400">(삭제된 자격증)</span></span>`}
+              ${time ? `<span class="cl-meta">${time}</span>` : ''}
+            </div>
+            <button class="wish-remove-btn" title="히스토리에서 삭제" onclick="window._removeHistoryItem('${safeName}')"><i class="fa-solid fa-trash-can"></i></button>
+          </div>`;
+      }).join('');
+
+  modal.style.display = 'flex';
+};
+
+window._removeHistoryItem = function(name) {
+  const list = getRecentCerts().filter(item => item.name !== name);
+  try { localStorage.setItem('recentCerts', JSON.stringify(list)); } catch {}
+  updateHistoryBadge();
+  window.showSearchHistory();
+  renderQuickRow();
+};
+
+window.clearSearchHistory = function() {
+  try { localStorage.removeItem('recentCerts'); } catch {}
+  updateHistoryBadge();
+  window.showSearchHistory();
+  renderQuickRow();
+};
+
 function getFavoriteCerts() {
   try { return JSON.parse(localStorage.getItem('favoriteCerts') || '[]'); } catch { return []; }
 }
