@@ -205,7 +205,6 @@ const REAL_BOOKS = {
   '빅데이터분석기사': [
     // 베스트셀러 5
     { title: '2026 에듀윌 빅데이터분석기사 필기 한권끝장', author: '윤소영', publisher: '에듀윌', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.5, reviews: 267, tags: ['베스트'], hasEbook: false, isbn: '9791136041142', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136041142.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219026770' },
-    { title: '2025 수제비 빅데이터분석기사 필기', author: '윤영빈 외', publisher: '수제비', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: false, isbn: '9791157678808', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791157678808.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000215667184' },
     // 추천수험서 5
     { title: '2026 이기적 빅데이터분석기사 실기 기본서', author: '나홍석 외', publisher: '영진닷컴', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.6, reviews: 289, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012028299', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931480344.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217937669' },
     { title: '2026 단·축·키 빅데이터 분석기사 실기 파이썬', author: '김계철', publisher: '에이아이에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 7, tags: ['추천'], hasEbook: false, isbn: '9791199721623', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791199721623.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219882324' },
