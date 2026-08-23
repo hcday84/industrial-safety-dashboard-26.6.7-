@@ -1445,6 +1445,8 @@ const REAL_BOOKS = {
   ],
 
   '한국실용글쓰기': [
+    // 2026-08-23: 기존 유일 등록 도서 절판 확인되어 교체
+    { title: '2026 시대에듀 한국실용글쓰기 실제 기출로 끝내기', author: '이원근, 김슬옹', publisher: '시대고시기획', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.9, reviews: 83, tags: ['베스트'], hasEbook: false, isbn: '9791143406422', imageUrl: KB('9791143406422'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218787224' },
   ],
 
   '임상심리사2급': [
