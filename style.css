@@ -2988,127 +2988,49 @@ a.ebook-badge:hover {
 .fill-teal  { background-color: var(--primary-color); }
 .fill-sky   { background-color: #0ea5e9; }
 
-/* 합격률 차트 - 추가 시각화 샘플 3종 (검토용) */
-.chart-samples-note {
-  margin: 20px 0 12px;
-  padding-top: 16px;
-  border-top: 1px dashed var(--border-color);
-  font-size: 0.78rem;
-  color: var(--text-secondary);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.chart-samples-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
-
-.chart-sample-card {
+/* 필기-실기 합격률 격차 막대그래프 (연도별 추이 그래프와 나란히 배치) */
+.gap-chart-wrapper {
   background-color: var(--bg-color);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  padding: 14px;
+  padding: 16px 10px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
+  flex: 1;
 }
 
-.chart-sample-disabled { opacity: 0.6; }
+.gap-chart-desc { font-size: 0.72rem; color: var(--text-secondary); line-height: 1.4; text-align: center; }
 
-.chart-sample-head { display: flex; align-items: center; gap: 8px; }
-
-.chart-sample-badge {
-  font-size: 0.65rem;
-  font-weight: 700;
-  padding: 2px 8px;
-  border-radius: 999px;
-  background: rgba(99, 102, 241, 0.15);
-  color: #6366f1;
-  white-space: nowrap;
-}
-
-.chart-sample-head h5 { font-size: 0.88rem; font-weight: 700; color: var(--text-color); }
-
-.chart-sample-desc { font-size: 0.72rem; color: var(--text-secondary); line-height: 1.45; min-height: 2.6em; }
-
-/* 샘플 A: 격차 막대그래프 */
 .gap-bar-chart {
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
-  gap: 6px;
-  height: 110px;
+  gap: 4px;
+  height: 130px;
   padding-top: 20px;
-  margin-top: auto;
 }
 
 .gap-bar-col { display: flex; flex-direction: column; align-items: center; gap: 4px; flex: 1; }
 .gap-bar-val { font-size: 0.62rem; font-weight: 700; }
-.gap-bar { width: 60%; min-width: 12px; border-radius: 4px 4px 0 0; }
+.gap-bar { width: 55%; min-width: 10px; border-radius: 4px 4px 0 0; }
 .gap-bar-year { font-size: 0.6rem; color: var(--text-secondary); }
 
-/* 샘플 B: 최신 연도 하이라이트 카드 */
-.highlight-stat-grid { display: flex; flex-direction: column; gap: 10px; margin-top: auto; }
-
-.highlight-stat-card {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  padding: 10px 12px;
+.gap-chart-trend {
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding-top: 6px;
+  border-top: 1px dashed var(--border-color);
 }
 
-.highlight-label { font-size: 0.72rem; color: var(--text-secondary); display: flex; align-items: center; gap: 6px; }
-.highlight-value { font-size: 1.5rem; font-weight: 800; color: var(--text-color); font-family: 'Outfit', sans-serif; }
-
-.sample-diff {
-  align-self: flex-start;
-  font-size: 0.66rem;
-  font-weight: 700;
-  padding: 2px 6px;
-  border-radius: 6px;
-}
-
-.sample-diff-up   { color: #16a34a; background: rgba(22, 163, 74, 0.12); }
-.sample-diff-down { color: #dc2626; background: rgba(220, 38, 38, 0.12); }
-.sample-diff-flat { color: var(--text-secondary); background: rgba(148, 163, 184, 0.15); }
-
-/* 샘플 C: 5개년 평균 대비 도넛 */
-.donut-grid { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: auto; }
-.donut-col { display: flex; flex-direction: column; align-items: center; gap: 6px; }
-
-.donut-ring {
-  width: 84px;
-  height: 84px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.donut-hole {
-  width: 62px;
-  height: 62px;
-  border-radius: 50%;
-  background-color: var(--card-bg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.donut-value { font-size: 0.82rem; font-weight: 800; color: var(--text-color); }
-.donut-label { font-size: 0.72rem; font-weight: 600; color: var(--text-secondary); }
-.donut-avg { font-size: 0.62rem; color: var(--text-secondary); text-align: center; }
-.text-up   { color: #16a34a; }
-.text-down { color: #dc2626; }
-
-@media (max-width: 900px) {
-  .chart-samples-grid { grid-template-columns: 1fr; }
+.gap-chart-empty {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  padding: 2.5rem 1rem;
+  line-height: 1.5;
 }
 
 /* 12-1. 합격 전략 가이드 */
