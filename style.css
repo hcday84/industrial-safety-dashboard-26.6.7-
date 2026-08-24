@@ -2922,7 +2922,6 @@ a.ebook-badge:hover {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
   gap: 24px;
-  align-items: start;
 }
 
 .chart-container {
