@@ -4253,6 +4253,11 @@ a.ebook-badge:hover {
 .history-slide-panel .cl-modal-header h3 { color: #fff; }
 .history-slide-panel .cl-modal-close { color: #fff; }
 .history-slide-panel .cl-modal-close:hover { background: rgba(255,255,255,0.2); }
+/* 다크모드에서 --text-muted 대비가 너무 낮아(3.24:1) 잘 안 보이는 문제 보완 */
+.history-slide-panel .cl-meta,
+.history-slide-panel .wish-remove-btn {
+  color: var(--text-secondary);
+}
 
 /* ────────────────────────────────────────
    전체 자격증 목록 (카테고리별 브라우즈)
