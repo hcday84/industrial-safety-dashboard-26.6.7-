@@ -1552,9 +1552,6 @@ button, input, select {
 .wish-remove-btn:hover { background: var(--danger-color); color: #fff; }
 
 /* ── 검색 히스토리 ────────────────────────────────────────────────────────── */
-.history-btn i { color: var(--primary-color); }
-.history-btn:hover { border-color: var(--primary-color); color: var(--primary-color); }
-.history-btn .wishlist-count-badge { background: var(--primary-color); }
 .history-item .cl-info { flex: 1; display: flex; flex-direction: column; gap: 2px; }
 .history-cert-link {
   font-size: 0.85rem;
