@@ -3719,7 +3719,7 @@ window.showSearchHistory = function() {
   const items = getRecentCerts();
 
   body.innerHTML = items.length === 0
-    ? `<p style="text-align:center;color:var(--text-muted);padding:24px 0">아직 검색한 자격증이 없습니다.<br>자격증을 검색해서 살펴보면 여기에 기록됩니다.</p>`
+    ? `<p style="text-align:center;color:var(--text-secondary);padding:24px 0">아직 검색한 자격증이 없습니다.<br>자격증을 검색해서 살펴보면 여기에 기록됩니다.</p>`
     : items.map(item => {
         const exists = !!CERTIFICATIONS[item.name];
         const safeName = item.name.replace(/'/g, "\\'");
