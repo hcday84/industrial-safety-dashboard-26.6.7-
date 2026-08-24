@@ -2942,8 +2942,10 @@ a.ebook-badge:hover {
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 16px 10px;
-  max-width: 480px;
-  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pass-rate-svg {
