@@ -191,7 +191,8 @@ button, input, select {
   color: var(--accent-color);
 }
 
-.badge-secondary {
+.badge-secondary,
+.badge-gray {
   background-color: var(--border-color);
   color: var(--text-secondary);
 }
