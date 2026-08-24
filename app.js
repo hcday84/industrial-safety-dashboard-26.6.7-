@@ -3736,7 +3736,12 @@ window.showSearchHistory = function() {
           </div>`;
       }).join('');
 
-  modal.style.display = 'flex';
+  modal.classList.add('open');
+};
+
+window.closeSearchHistory = function() {
+  const modal = document.getElementById('search-history-modal');
+  if (modal) modal.classList.remove('open');
 };
 
 window._removeHistoryItem = function(name) {
