@@ -405,18 +405,16 @@
     </div>
   </div>
 
-  <!-- 검색 히스토리 모달 -->
-  <div id="search-history-modal" class="cl-modal-overlay" style="display:none" onclick="if(event.target===this)window.closeClModal('search-history-modal')">
-    <div class="cl-modal-box">
-      <div class="cl-modal-header">
-        <h3><i class="fa-solid fa-clock-rotate-left"></i> 검색 히스토리</h3>
-        <button class="cl-modal-close" onclick="window.closeClModal('search-history-modal')"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div id="search-history-body" class="cl-modal-body"></div>
-      <div class="cl-modal-footer">
-        <button onclick="window.clearSearchHistory()" class="btn btn-secondary btn-sm"><i class="fa-solid fa-trash-can"></i> 전체 삭제</button>
-        <button onclick="window.closeClModal('search-history-modal')" class="btn btn-secondary btn-sm" style="margin-left:auto">닫기</button>
-      </div>
+  <!-- 검색 히스토리 슬라이드 패널 (우측에서 슬라이드로 열림) -->
+  <div id="search-history-modal" class="history-slide-panel">
+    <div class="cl-modal-header">
+      <h3><i class="fa-solid fa-clock-rotate-left"></i> 검색 히스토리</h3>
+      <button class="cl-modal-close" onclick="window.closeSearchHistory()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div id="search-history-body" class="cl-modal-body"></div>
+    <div class="cl-modal-footer">
+      <button onclick="window.clearSearchHistory()" class="btn btn-secondary btn-sm"><i class="fa-solid fa-trash-can"></i> 전체 삭제</button>
+      <button onclick="window.closeSearchHistory()" class="btn btn-secondary btn-sm" style="margin-left:auto">닫기</button>
     </div>
   </div>
 
