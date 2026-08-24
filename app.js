@@ -1651,111 +1651,55 @@ function renderChart(cert) {
 }
 
 // ============================================
-// 14-1. 합격률 차트 - 추가 시각화 샘플 3종 (검토용)
+// 14-1. 필기-실기 합격률 격차 막대그래프 (연도별 합격률 추이 그래프와 나란히 배치)
 // ============================================
-function renderChartSamples(cert) {
-  const grid = document.getElementById('chart-samples-grid');
-  if (!grid) return;
+function renderGapChart(cert) {
+  const wrapper = document.getElementById('gap-chart-wrapper');
+  const legend = document.getElementById('gap-chart-legend');
+  if (!wrapper) return;
 
   const rates = cert.passRates;
-  if (!rates || !rates.length) { grid.innerHTML = ''; return; }
+  if (!rates || !rates.length) { wrapper.innerHTML = '<p class="gap-chart-empty">데이터 없음</p>'; if (legend) legend.style.display = 'none'; return; }
 
   const hasPractical = rates.some(r => r.practical != null);
-  const n = rates.length;
-  const last = rates[n - 1];
-  const prev = n >= 2 ? rates[n - 2] : null;
+  if (!hasPractical) {
+    wrapper.innerHTML = '<p class="gap-chart-empty">이 자격증은 실기 시험이 없어<br>필기-실기 격차를 계산할 수 없습니다.</p>';
+    if (legend) legend.style.display = 'none';
+    return;
+  }
+  if (legend) legend.style.display = '';
+
   const round1 = v => Math.round(v * 10) / 10;
+  const gaps = rates.map(r => (r.practical != null ? round1(r.written - r.practical) : null));
+  const maxGap = Math.max(1, ...gaps.filter(g => g != null).map(g => Math.abs(g)));
 
-  function diffBadge(curr, prevVal) {
-    if (curr == null || prevVal == null) return '';
-    const d = round1(curr - prevVal);
-    if (d > 0) return `<span class="sample-diff sample-diff-up"><i class="fa-solid fa-arrow-up"></i> ${d}%p</span>`;
-    if (d < 0) return `<span class="sample-diff sample-diff-down"><i class="fa-solid fa-arrow-down"></i> ${Math.abs(d)}%p</span>`;
-    return `<span class="sample-diff sample-diff-flat"><i class="fa-solid fa-minus"></i> 전년 동일</span>`;
-  }
-
-  // ---- 샘플 A: 필기-실기 합격률 격차 막대그래프 ----
-  let sampleA;
-  if (hasPractical) {
-    const gaps = rates.map(r => (r.practical != null ? round1(r.written - r.practical) : null));
-    const maxGap = Math.max(1, ...gaps.filter(g => g != null).map(g => Math.abs(g)));
-    const bars = rates.map((r, i) => {
-      const g = gaps[i];
-      if (g == null) return '<div class="gap-bar-col"></div>';
-      const h = Math.max(6, Math.round((Math.abs(g) / maxGap) * 60));
-      const color = g >= 0 ? '#f59e0b' : '#0ea5e9';
-      return `
-        <div class="gap-bar-col">
-          <span class="gap-bar-val" style="color:${color}">${g > 0 ? '+' : ''}${g}</span>
-          <div class="gap-bar" style="height:${h}px;background:${color}"></div>
-          <span class="gap-bar-year">${r.year}</span>
-        </div>`;
-    }).join('');
-    sampleA = `
-      <div class="chart-sample-card">
-        <div class="chart-sample-head"><span class="chart-sample-badge">샘플 A</span><h5>필기-실기 합격률 격차</h5></div>
-        <p class="chart-sample-desc">필기 합격률에서 실기 합격률을 뺀 값(%p)입니다. 주황(+)일수록 실기가 상대적으로 더 어려웠다는 의미입니다.</p>
-        <div class="gap-bar-chart">${bars}</div>
-      </div>`;
-  } else {
-    sampleA = `
-      <div class="chart-sample-card chart-sample-disabled">
-        <div class="chart-sample-head"><span class="chart-sample-badge">샘플 A</span><h5>필기-실기 합격률 격차</h5></div>
-        <p class="chart-sample-desc">이 자격증은 실기 시험이 없어 격차를 계산할 수 없습니다.</p>
-      </div>`;
-  }
-
-  // ---- 샘플 B: 최신 연도 하이라이트 카드 ----
-  const cardW = `
-    <div class="highlight-stat-card">
-      <span class="highlight-label"><span class="legend-dot fill-amber"></span> 필기 합격률 (${last.year})</span>
-      <span class="highlight-value">${last.written}%</span>
-      ${diffBadge(last.written, prev ? prev.written : null)}
-    </div>`;
-  const cardP = (hasPractical && last.practical != null) ? `
-    <div class="highlight-stat-card">
-      <span class="highlight-label"><span class="legend-dot fill-sky"></span> 실기 합격률 (${last.year})</span>
-      <span class="highlight-value">${last.practical}%</span>
-      ${diffBadge(last.practical, prev ? prev.practical : null)}
-    </div>` : '';
-  const sampleB = `
-    <div class="chart-sample-card">
-      <div class="chart-sample-head"><span class="chart-sample-badge">샘플 B</span><h5>최신 연도 하이라이트</h5></div>
-      <p class="chart-sample-desc">가장 최근 연도 합격률을 전년 대비 증감(%p)과 함께 강조 표시합니다.</p>
-      <div class="highlight-stat-grid">${cardW}${cardP}</div>
-    </div>`;
-
-  // ---- 샘플 C: 5개년 평균 대비 비교 (도넛) ----
-  function donut(vals, latest, color, label) {
-    const valid = vals.filter(v => v != null);
-    if (!valid.length || latest == null) return '';
-    const avg = round1(valid.reduce((a, b) => a + b, 0) / valid.length);
-    const diff = round1(latest - avg);
-    const pct = Math.max(0, Math.min(100, latest));
-    const diffHtml = diff > 0
-      ? `<b class="text-up">▲${diff}%p</b>`
-      : diff < 0
-        ? `<b class="text-down">▼${Math.abs(diff)}%p</b>`
-        : '동일';
+  const bars = rates.map((r, i) => {
+    const g = gaps[i];
+    if (g == null) return '<div class="gap-bar-col"></div>';
+    const h = Math.max(6, Math.round((Math.abs(g) / maxGap) * 90));
+    const color = g >= 0 ? '#f59e0b' : '#0ea5e9';
     return `
-      <div class="donut-col">
-        <div class="donut-ring" style="background: conic-gradient(${color} ${(pct * 3.6).toFixed(1)}deg, var(--border-color) 0deg)">
-          <div class="donut-hole"><span class="donut-value">${latest}%</span></div>
-        </div>
-        <span class="donut-label">${label}</span>
-        <span class="donut-avg">5개년 평균 ${avg}% 대비 ${diffHtml}</span>
+      <div class="gap-bar-col">
+        <span class="gap-bar-val" style="color:${color}">${g > 0 ? '+' : ''}${g}</span>
+        <div class="gap-bar" style="height:${h}px;background:${color}"></div>
+        <span class="gap-bar-year">${r.year}</span>
       </div>`;
-  }
-  const donutW = donut(rates.map(r => r.written), last.written, '#f59e0b', '필기');
-  const donutP = hasPractical ? donut(rates.map(r => r.practical), last.practical, '#0ea5e9', '실기') : '';
-  const sampleC = `
-    <div class="chart-sample-card">
-      <div class="chart-sample-head"><span class="chart-sample-badge">샘플 C</span><h5>5개년 평균 대비 비교</h5></div>
-      <p class="chart-sample-desc">최신 연도 합격률이 5개년 평균 대비 얼마나 높거나 낮은지 도넛으로 보여줍니다.</p>
-      <div class="donut-grid">${donutW}${donutP}</div>
-    </div>`;
+  }).join('');
 
-  grid.innerHTML = sampleA + sampleB + sampleC;
+  // 최근 추세: 격차가 벌어지는지 좁혀지는지
+  const validGaps = gaps.filter(g => g != null);
+  let trendText = '→ 격차 안정적';
+  if (validGaps.length >= 2) {
+    const d = validGaps[validGaps.length - 1] - validGaps[0];
+    if (d > 2) trendText = '↑ 격차 확대 (실기 상대적으로 쉬워짐)';
+    else if (d < -2) trendText = '↓ 격차 축소 (실기 상대적으로 어려워짐)';
+  }
+
+  wrapper.innerHTML = `
+    <p class="gap-chart-desc">필기 합격률에서 실기 합격률을 뺀 값(%p)입니다.</p>
+    <div class="gap-bar-chart">${bars}</div>
+    <div class="gap-chart-trend">${trendText}</div>
+  `;
 }
 
 // ============================================
