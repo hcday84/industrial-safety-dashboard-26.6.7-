@@ -680,7 +680,7 @@ function renderAll() {
   renderNews();
   renderBooks();
   renderChart(cert);
-  renderChartSamples(cert);
+  renderGapChart(cert);
   renderStudyGuide(cert);
   renderRoadmap(cert);
   renderPredictor(cert);
