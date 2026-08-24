@@ -4226,6 +4226,34 @@ a.ebook-badge:hover {
   writing-mode: horizontal-tb;
 }
 
+/* 검색 히스토리 슬라이드 패널 (우측 탭 클릭 시 옆에서 슬라이드로 열림) */
+.history-slide-panel {
+  position: fixed;
+  right: -380px;
+  top: 0;
+  height: 100vh;
+  width: 360px;
+  max-width: 90vw;
+  background: var(--card-bg);
+  border-left: 1px solid var(--border-color);
+  box-shadow: -8px 0 40px rgba(0,0,0,0.4);
+  z-index: 1300;
+  display: flex;
+  flex-direction: column;
+  transition: right 0.35s cubic-bezier(0.4,0,0.2,1);
+  overflow: hidden;
+}
+.history-slide-panel.open {
+  right: 0;
+}
+.history-slide-panel .cl-modal-header {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border-bottom: none;
+}
+.history-slide-panel .cl-modal-header h3 { color: #fff; }
+.history-slide-panel .cl-modal-close { color: #fff; }
+.history-slide-panel .cl-modal-close:hover { background: rgba(255,255,255,0.2); }
+
 /* ────────────────────────────────────────
    전체 자격증 목록 (카테고리별 브라우즈)
    ──────────────────────────────────────── */
