@@ -2920,8 +2920,9 @@ a.ebook-badge:hover {
 /* 12. 통계 분석 및 SVG 차트 */
 .analytics-layout {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 24px;
+  align-items: start;
 }
 
 .chart-container {
