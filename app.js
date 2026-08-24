@@ -3728,7 +3728,7 @@ window.showSearchHistory = function() {
           <div class="cl-item history-item">
             <div class="cl-info">
               ${exists
-                ? `<a href="javascript:void(0)" class="history-cert-link" onclick="window.closeClModal('search-history-modal');window.selectCert('${safeName}')">${item.name}</a>`
+                ? `<a href="javascript:void(0)" class="history-cert-link" onclick="window.closeSearchHistory();window.selectCert('${safeName}')">${item.name}</a>`
                 : `<span class="cl-title" style="color:var(--text-muted)">${item.name} <span style="font-weight:400">(삭제된 자격증)</span></span>`}
               ${time ? `<span class="cl-meta">${time}</span>` : ''}
             </div>
