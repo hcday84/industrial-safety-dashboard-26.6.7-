@@ -331,6 +331,7 @@ const REAL_BOOKS = {
   '발송배전기술사': [
     // 베스트셀러 5
     { title: '인강으로 합격하는 발송배전기술사(상) 기출+예상문제집', author: '양재학, 김재구, 구본우, 정일재, 공영초 외', publisher: '성안당', price: 76500, originalPrice: 85000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931513691', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788931513691.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217018748' },
+    { title: '인강으로 합격하는 발송배전기술사(하) 기출+예상문제집', author: '양재학, 김재구, 구본우, 정일재, 공영초 외', publisher: '성안당', price: 75600, originalPrice: 84000, discount: '10%', tags: ['베스트'], isbn: '9788931513707', imageUrl: KB('S000217303700'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217303700' },
     // 추천수험서 5
     { title: '발송배전기술사 기술계산문제해설', author: '이국찬', publisher: '엔트미디어', price: 72000, originalPrice: 80000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791192810904', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791192810904.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219545212' },
   ],
