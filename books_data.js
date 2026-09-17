@@ -366,6 +366,8 @@ const REAL_BOOKS = {
 
   '정보관리기술사': [
     // 베스트셀러 5
+    { title: '정보관리기술사&컴퓨터시스템응용기술사 Vol 9: 인공지능', author: '권영식, 권대호', publisher: '성안당', price: 45000, originalPrice: 50000, discount: '10%', tags: ['베스트'], isbn: '9788931589955', imageUrl: KB('S000219682467'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219682467' },
+    { title: '정보관리기술사 & 컴퓨터시스템응용기술사 Vol 1: 컴퓨터 구조', author: '권영식, 권대호', publisher: '성안당', price: 45000, originalPrice: 50000, discount: '10%', tags: ['베스트'], isbn: '9788931528497', imageUrl: KB('S000211345493'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211345493' },
     // 추천수험서 5
     { title: '정보관리기술사 & 컴퓨터시스템응용기술사 8: 데이터베이스', author: '권영식', publisher: '성안당', price: 40500, originalPrice: 45000, discount: '10%', rating: 5.0, reviews: 6, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000003079925', isbn: '9788931555028', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788931555028.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000000559796' },
     { title: '정보관리기술사&컴퓨터시스템응용기술사 5: 소프트웨어 공학', author: '권영식', publisher: '성안당', price: 49500, originalPrice: 55000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000005902310', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788931559972.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000211901156' },
