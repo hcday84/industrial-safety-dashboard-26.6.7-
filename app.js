@@ -337,6 +337,7 @@ document.addEventListener('DOMContentLoaded', () => {
   try { initWeather(); } catch(e) {}
   try { initEventListeners(); } catch(e) {}
   try { updateWishlistBadge(); } catch(e) {}
+  try { updateHistoryBadge(); } catch(e) {}
 
   // 마지막으로 선택한 자격증 복원 (새로고침 시 유지)
   let restored = false;
@@ -546,6 +547,14 @@ window.switchRoleTab = function(role) {
 
 window.jumpToSection = function(sectionId) {
   if (sectionId === 'compare') {
+    // openCompareModal()은 자격증 미선택 시 아무 반응 없이 조용히 return돼서
+    // 여기서 먼저 걸러줘야 토스트가 뜸 (2026-08-23 발견된 버그 수정).
+    if (!STATE.currentCert) {
+      showInfoToast('먼저 자격증을 검색해주세요!');
+      const searchEl = document.getElementById('global-search');
+      if (searchEl) searchEl.focus();
+      return;
+    }
     window.openCompareModal && window.openCompareModal();
     return;
   }
@@ -557,21 +566,21 @@ window.jumpToSection = function(sectionId) {
     }, 150);
     return;
   }
-  const recent = (typeof getRecentCerts === 'function' ? getRecentCerts() : [])[0];
-  if (recent) {
-    window.selectCert(recent);
-    setTimeout(() => {
-      const target = document.getElementById(sectionId);
-      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 200);
+  // 현재 선택된 자격증이 있을 때만 해당 섹션으로 이동.
+  // ⚠ 2026-08-23 수정: 과거엔 선택된 자격증이 없으면 "최근 조회 자격증"으로 몰래
+  //   이동했는데, 초기화 버튼이 recentCerts(최근 조회 목록, localStorage)는 지우지
+  //   않아서 "초기화 후에도 직전 검색 자격증 정보가 뜬다"는 버그로 보였음.
+  //   최근 조회 자격증은 웰컴화면의 "최근 조회" 칩으로 이미 접근 가능하므로,
+  //   이 메뉴는 항상 현재 선택 상태만 따르도록 단순화.
+  if (STATE.currentCert) {
+    const target = document.getElementById(sectionId);
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   } else {
+    // 화면 중앙 하단에 토스트로 안내 — placeholder 텍스트 변경 방식은 사용자
+    // 시선이 클릭한 버튼(화면 아래쪽)에 있을 때 놓치기 쉬워서 토스트로 교체(2026-08-23).
+    showInfoToast('먼저 자격증을 검색해주세요!');
     const searchEl = document.getElementById('global-search');
-    if (searchEl) {
-      searchEl.focus();
-      const orig = searchEl.placeholder;
-      searchEl.placeholder = '먼저 자격증을 검색해주세요!';
-      setTimeout(() => { searchEl.placeholder = orig; }, 2500);
-    }
+    if (searchEl) searchEl.focus();
   }
 };
 
@@ -671,6 +680,7 @@ function renderAll() {
   renderNews();
   renderBooks();
   renderChart(cert);
+  renderGapChart(cert);
   renderStudyGuide(cert);
   renderRoadmap(cert);
   renderPredictor(cert);
@@ -1387,7 +1397,7 @@ function renderBooks() {
       : imgSrc
       ? `<img src="${imgSrc}" alt="${book.title}" class="book-cover-img" crossorigin="anonymous" ${nlAttr}
            onerror="this.removeAttribute('src');this.style.display='none';this.nextElementSibling.style.display='flex';window._nlFallback&&window._nlFallback(this)"
-           onload="(function(img){try{var c=document.createElement('canvas');c.width=40;c.height=40;var x=c.getContext('2d');x.drawImage(img,0,0,40,40,0,0,40,40);var d=x.getImageData(0,0,40,40).data,s=0,s2=0,n=d.length/4;for(var i=0;i<d.length;i+=4){var v=(d[i]+d[i+1]+d[i+2])/3;s+=v;s2+=v*v;}var variance=s2/n-(s/n)*(s/n);if(variance<30){img.removeAttribute('src');img.style.display='none';img.nextElementSibling.style.display='flex';window._nlFallback&&window._nlFallback(img);}}catch(e){}})(this)">
+           onload="(function(img){try{var c=document.createElement('canvas');c.width=40;c.height=40;var x=c.getContext('2d');x.drawImage(img,0,0,40,40);var d=x.getImageData(0,0,40,40).data,s=0,s2=0,n=d.length/4;for(var i=0;i<d.length;i+=4){var v=(d[i]+d[i+1]+d[i+2])/3;s+=v;s2+=v*v;}var variance=s2/n-(s/n)*(s/n);if(variance<30){img.removeAttribute('src');img.style.display='none';img.nextElementSibling.style.display='flex';window._nlFallback&&window._nlFallback(img);}}catch(e){}})(this)">
          <div class="book-cover-mock" style="background:${mockBg}; display:none;">
            <span class="book-cover-title">${mockTitle}</span>
            <span class="book-cover-publisher">${book.publisher}</span>
@@ -1637,6 +1647,58 @@ function renderChart(cert) {
       <span class="chart-trend-item chart-trend-written"><i class="fa-solid fa-pencil"></i> 필기 ${wTrend}</span>
       ${hasPractical ? `<span class="chart-trend-item chart-trend-practical"><i class="fa-solid fa-screwdriver-wrench"></i> 실기 ${pTrend}</span>` : ''}
     </div>
+  `;
+}
+
+// ============================================
+// 14-1. 필기-실기 합격률 격차 막대그래프 (연도별 합격률 추이 그래프와 나란히 배치)
+// ============================================
+function renderGapChart(cert) {
+  const wrapper = document.getElementById('gap-chart-wrapper');
+  const legend = document.getElementById('gap-chart-legend');
+  if (!wrapper) return;
+
+  const rates = cert.passRates;
+  if (!rates || !rates.length) { wrapper.innerHTML = '<p class="gap-chart-empty">데이터 없음</p>'; if (legend) legend.style.display = 'none'; return; }
+
+  const hasPractical = rates.some(r => r.practical != null);
+  if (!hasPractical) {
+    wrapper.innerHTML = '<p class="gap-chart-empty">이 자격증은 실기 시험이 없어<br>필기-실기 격차를 계산할 수 없습니다.</p>';
+    if (legend) legend.style.display = 'none';
+    return;
+  }
+  if (legend) legend.style.display = '';
+
+  const round1 = v => Math.round(v * 10) / 10;
+  const gaps = rates.map(r => (r.practical != null ? round1(r.written - r.practical) : null));
+  const maxGap = Math.max(1, ...gaps.filter(g => g != null).map(g => Math.abs(g)));
+
+  const bars = rates.map((r, i) => {
+    const g = gaps[i];
+    if (g == null) return '<div class="gap-bar-col"></div>';
+    const h = Math.max(6, Math.round((Math.abs(g) / maxGap) * 90));
+    const color = g >= 0 ? '#f59e0b' : '#0ea5e9';
+    return `
+      <div class="gap-bar-col">
+        <span class="gap-bar-val" style="color:${color}">${g > 0 ? '+' : ''}${g}</span>
+        <div class="gap-bar" style="height:${h}px;background:${color}"></div>
+        <span class="gap-bar-year">${r.year}</span>
+      </div>`;
+  }).join('');
+
+  // 최근 추세: 격차가 벌어지는지 좁혀지는지
+  const validGaps = gaps.filter(g => g != null);
+  let trendText = '→ 격차 안정적';
+  if (validGaps.length >= 2) {
+    const d = validGaps[validGaps.length - 1] - validGaps[0];
+    if (d > 2) trendText = '↑ 격차 확대 (실기 상대적으로 쉬워짐)';
+    else if (d < -2) trendText = '↓ 격차 축소 (실기 상대적으로 어려워짐)';
+  }
+
+  wrapper.innerHTML = `
+    <p class="gap-chart-desc">필기 합격률에서 실기 합격률을 뺀 값(%p)입니다.</p>
+    <div class="gap-bar-chart">${bars}</div>
+    <div class="gap-chart-trend">${trendText}</div>
   `;
 }
 
@@ -2092,6 +2154,20 @@ function showCorrectionToast(originalQuery, correctedName) {
   toast._timer = setTimeout(() => toast.classList.remove('visible'), 4000);
 }
 
+// ── 범용 안내 토스트 (예: "먼저 자격증을 검색해주세요") ────────────────────
+function showInfoToast(message, iconClass = 'fa-magnifying-glass') {
+  let toast = document.getElementById('cert-correction-toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'cert-correction-toast';
+    document.body.appendChild(toast);
+  }
+  toast.innerHTML = `<i class="fa-solid ${iconClass}"></i> ${message}`;
+  toast.classList.add('visible');
+  clearTimeout(toast._timer);
+  toast._timer = setTimeout(() => toast.classList.remove('visible'), 2000);
+}
+
 // ── 레벤슈타인 편집거리 (오타 교정) ─────────────────────────────────────────
 function levenshtein(a, b) {
   const m = a.length, n = b.length;
@@ -2438,6 +2514,7 @@ const CERT_POPULARITY = {
   '에너지관리기사':     { stars: 3.5, tag: '법정 필수', reason: '에너지사용시설 법정 에너지관리자 자격' },
   '화공기사':           { stars: 3.5, tag: '화학산업 필수', reason: '화학공장·석유화학 분야 필수 자격' },
   '전기기능사':         { stars: 3.5, tag: '전기 현장 기초', reason: '전기기능장·기사 취득 경력 발판' },
+  '자동차정비기능사':   { stars: 3.5, tag: '자동차 정비 실무', reason: '자동차 정비업체 취업 기초 자격, 기능사 중 응시자 규모가 큰 편' },
   '물류관리사':         { stars: 3.5, tag: '유통·물류 필수', reason: '물류회사 채용 우대, 물류 분야 대표 전문자격' },
   'ADsP':               { stars: 3.5, tag: '데이터 입문', reason: '비전공자 데이터직군 입문, 단기 취득 가능' },
   '워드프로세서':       { stars: 3.5, tag: '사무직 기본', reason: '사무·행정직 채용 우대, 대표적인 사무 자격증' },
@@ -2474,10 +2551,12 @@ const CERT_POPULARITY = {
   '농산물품질관리사':   { stars: 3.0, tag: '농업 법정', reason: '농협·농업법인 법정 품질관리 인력' },
   '산업위생관리기사':   { stars: 3.0, tag: '보건 법정', reason: '산업체 작업환경 법정 관리 자격' },
   '가스기사':           { stars: 3.0, tag: '법정 필수', reason: '가스사업자 법정 안전관리 자격' },
+  '가스기능사':         { stars: 3.0, tag: '가스설비 실무', reason: '가스 배관·설비 점검 기초 자격, 기능사 중 응시 규모가 준수한 편' },
   'MOS':                { stars: 3.0, tag: '사무 활용', reason: 'MS오피스 숙련도 국제 공인 자격' },
   '자동차정비기사':     { stars: 3.0, tag: '정비업 필수', reason: '자동차 정비업체 법정 기술인력' },
   '용접기사':           { stars: 3.0, tag: '제조 필수', reason: '조선·중공업 제조업 현장 필수' },
   '용접산업기사':       { stars: 3.0, tag: '제조 현장', reason: '용접 현장 기술인력, 용접기사 취득 발판' },
+  '피복아크용접기능사': { stars: 3.0, tag: '용접 기초 실무', reason: '가장 보편적인 용접 공정(SMAW) 기초 자격, 용접기능사 중 응시 규모 최대' },
   '식품안전기사':       { stars: 3.0, tag: '식품업 필수', reason: '식품제조업 품질관리 우대 자격' },
   '임베디드기사':       { stars: 3.0, tag: 'IT·전자 전문', reason: '임베디드 SW·펌웨어 개발 분야 국가자격' },
   '일식조리기능사':     { stars: 3.0, tag: '일식 전문', reason: '호텔·초밥집 일식 전문 자격, 희소성 있음' },
@@ -2487,11 +2566,15 @@ const CERT_POPULARITY = {
   '주택관리사보':       { stars: 3.0, tag: '아파트 관리', reason: '공동주택 법정 의무 관리 자격' },
   '감정평가사':         { stars: 3.0, tag: '고난이도 전문', reason: '감정평가법인 필수 자격' },
   '소음진동기사':       { stars: 3.0, tag: '환경 법정', reason: '소음·진동 측정 법정 자격' },
+  '공조냉동기계기능사': { stars: 3.0, tag: '냉동공조 실무', reason: '냉동·공조 설비 설치·정비 기초 자격, 냉난방기 보급 확대로 수요 꾸준' },
+  '조경기능사':         { stars: 3.0, tag: '조경 실무', reason: '조경시설물 설치·식재 기초 자격, 조경업체·공원녹지 분야 취업 활용' },
+  '정보보안산업기사':   { stars: 3.0, tag: 'IT보안 중급', reason: '보안 실무 입문 국가자격, 정보보안기사 취득 전 단계' },
 
   // ★★½
   '초음파비파괴검사기사': { stars: 2.5, tag: '특수 제조', reason: '원전·조선 비파괴 검사 전문 자격' },
   '방사선비파괴검사기사': { stars: 2.5, tag: '특수 제조', reason: '원전·조선 비파괴 검사 전문 자격' },
   '복어조리기능사':     { stars: 2.5, tag: '특수·희소', reason: '법정 독 제거 자격, 취득자 희소해 현장 대우 높음' },
+  '가스산업기사':       { stars: 2.5, tag: '가스설비 중급', reason: '가스안전관리자 선임 자격, 가스기사 취득 전 단계로 응시 규모는 기능사보다 작음' },
   '양식조리산업기사':   { stars: 2.5, tag: '조리 중급', reason: '양식 조리 관리자 자격, 응시자 규모 비교적 작음' },
   '중식조리산업기사':   { stars: 2.5, tag: '조리 중급', reason: '중식 조리 관리자 자격, 응시자 규모 비교적 작음' },
   '일식조리산업기사':   { stars: 2.5, tag: '조리 중급', reason: '일식 조리 관리자 자격, 응시자 규모 비교적 작음' },
@@ -2513,6 +2596,17 @@ const CERT_POPULARITY = {
   '폐기물처리기사':     { stars: 2.5, tag: '환경 법정', reason: '폐기물처리시설 법정 기술 자격' },
   '한국실용글쓰기':     { stars: 2.5, tag: '공기업 우대', reason: '공기업 채용 우대 어문 자격' },
   'KBS한국어능력시험':  { stars: 2.5, tag: '언론·방송', reason: '언론사·방송국 채용 우대 어문 자격' },
+  '공조냉동기계산업기사': { stars: 2.5, tag: '냉동공조 중급', reason: '냉동·공조 설비 중급 기술자격, 공조냉동기계기사 취득 전 단계' },
+  '조경산업기사':       { stars: 2.5, tag: '조경 중급', reason: '조경 설계·시공 중급 자격, 조경기사 취득 전 단계' },
+  '자동차정비산업기사': { stars: 2.5, tag: '자동차 정비 중급', reason: '정비업체 중급 기술자격, 자동차정비기사 취득 전 단계' },
+  '산업위생관리산업기사': { stars: 2.5, tag: '보건 법정 중급', reason: '작업환경 중급 관리 자격, 산업위생관리기사 취득 전 단계' },
+  '건축산업기사':       { stars: 2.5, tag: '건축 중급', reason: '건설사·설계사무소 중급 기술자격, 건축기사 취득 전 단계' },
+  '토목산업기사':       { stars: 2.5, tag: '토목 중급', reason: '토목 현장 중급 기술자격, 토목기사 취득 전 단계' },
+  '1종운전면허(대형)':  { stars: 2.5, tag: '버스·특수차량', reason: '대형버스·특수차량 운전에 필요한 전문 면허, 보통면허보다 응시자 적음' },
+  '이산화탄소가스아크용접기능사': { stars: 2.5, tag: '조선·플랜트 용접', reason: '조선·플랜트 현장에서 흔한 CO2 아크용접 공정 자격' },
+  '용접기능장':         { stars: 2.5, tag: '용접 최상급', reason: '용접 분야 최고 기능등급, 조선·플랜트 현장 경력자 우대' },
+  '자기비파괴검사기사': { stars: 2.5, tag: '특수 제조', reason: '원전·조선 비파괴 검사 전문 자격' },
+  '침투비파괴검사기사': { stars: 2.5, tag: '특수 제조', reason: '원전·조선 비파괴 검사 전문 자격' },
 
   // ★★
   '에너지관리산업기사': { stars: 2.0, tag: '에너지 전문', reason: '에너지관리기사 취득 전 단계' },
@@ -2528,14 +2622,255 @@ const CERT_POPULARITY = {
   '화학분석기사':       { stars: 2.0, tag: '화학 전문', reason: '화학·제약 분야 분석 기술 자격' },
   '임상심리사2급':      { stars: 2.0, tag: '심리 전문', reason: '병원·상담센터 임상심리 전문 자격' },
   '평생교육사':         { stars: 2.0, tag: '교육기관 필수', reason: '평생교육기관 법정 배치 자격' },
+  '전자산업기사':       { stars: 2.0, tag: '전자산업 중급', reason: '전자제품·반도체 제조 현장 중급 기술자격, 전자기사 취득 전 단계' },
+  '소음진동산업기사':   { stars: 2.0, tag: '환경 법정 중급', reason: '소음·진동 측정 중급 자격, 소음진동기사 취득 전 단계' },
+  '수질환경산업기사':   { stars: 2.0, tag: '환경 법정 중급', reason: '폐수처리시설 중급 관리 자격, 수질환경기사 취득 전 단계' },
+  '대기환경산업기사':   { stars: 2.0, tag: '환경 법정 중급', reason: '대기오염방지시설 중급 관리 자격, 대기환경기사 취득 전 단계' },
+  '품질경영산업기사':   { stars: 2.0, tag: '품질 관리 중급', reason: '제조업 품질관리 중급 자격, 품질경영기사 취득 전 단계' },
+  '위험물기능장':       { stars: 2.0, tag: '위험물 최상급', reason: '위험물 분야 최고 기능등급, 현장 경력자 대상이라 응시자는 적음' },
+  '가스기능장':         { stars: 2.0, tag: '가스설비 최상급', reason: '가스 분야 최고 기능등급, 현장 경력자 대상이라 응시자는 적음' },
+  '가스텅스텐아크용접기능사': { stars: 2.0, tag: '정밀 용접(TIG)', reason: '정밀 용접(TIG) 공정 특화 자격, 다른 용접 공정보다 수요 작음' },
+  '사회조사분석사1급':  { stars: 2.0, tag: '통계·리서치 상급', reason: '사회조사분석사2급의 상위 자격, 통계청 주관으로 2급보다 응시자 적음' },
+  'GTQi':               { stars: 2.0, tag: '일러스트 디자인', reason: 'GTQ의 일러스트레이터 버전, 포토샵 기반 GTQ보다 응시 규모 작음' },
+  'SQLP':               { stars: 2.0, tag: 'DB 전문가', reason: 'SQLD의 상위 전문가 자격, 고난이도로 응시자 규모 작음' },
+  '화학분석기능사':     { stars: 2.0, tag: '화학분석 실무', reason: '화학·제약 분야 분석 기초 자격, 화학분석기사 취득 전 단계' },
+  '자동차정비기능장':   { stars: 2.0, tag: '자동차 정비 최상급', reason: '자동차정비 분야 최고 기능등급, 현장 경력자 대상이라 응시자는 적음' },
 
   // ★½~★ (특수·전문 분야)
   'TOEFL':              { stars: 1.5, tag: '해외 유학', reason: '해외 대학원 입학 요건, 고난이도' },
   'IELTS':              { stars: 1.5, tag: '해외 취업', reason: '영국·호주 취업·이민 어학 기준' },
   'JLPT':               { stars: 1.5, tag: '일본어 전문', reason: '일본계 기업 취업·일본 유학 우대' },
   'HSK':                { stars: 1.5, tag: '중국어 전문', reason: '중국계 기업 취업·중국 유학 우대' },
+  '철도차량산업기사':   { stars: 1.5, tag: '철도 중급', reason: '철도차량 정비·검사 중급 자격, 철도차량기사 취득 전 단계' },
+  '항공산업기사':       { stars: 1.5, tag: '항공 중급', reason: '항공기 정비·검사 중급 자격, 항공기사 취득 전 단계' },
+  '건축설비산업기사':   { stars: 1.5, tag: '건축설비 중급', reason: '건축물 설비 중급 기술자격, 건축설비기사 취득 전 단계' },
   '광산보안기사':       { stars: 1.0, tag: '특수 광업', reason: '광산사업장 법정 보안담당자, 극소수 활용' },
   '수의사':             { stars: 2.0, tag: '동물병원 필수', reason: '동물의료기관 법정 자격, 고난이도' },
+
+  // ── 전문 면허 (국가전문자격사·의료 면허) — 2026-08-24 추가 ──
+  // 응시자 수는 적지만 사회적 상징성·난이도가 다른 자격증들과 비교 불가한 카테고리.
+  // 기존 변리사·법무사·감정평가사·공인회계사·세무사·공인노무사와 같은 축의 정성적 근거로 산정.
+  '변호사':             { stars: 3.5, tag: '법조인 필수', reason: '변호사 자격 취득 최종 관문, 로스쿨 졸업생 전원이 응시하는 필수 시험' },
+  '건축사':             { stars: 3.0, tag: '건축 최상위 전문', reason: '건축물 설계 최종 책임자 법정 자격, 건축기사 실무경력 후 응시' },
+  '의사':               { stars: 3.0, tag: '의료 최상위 필수', reason: '의사 면허 취득 국가고시, 의대 졸업생 전원이 응시하는 필수 관문' },
+  '치과의사':           { stars: 2.5, tag: '치과의료 최상위', reason: '치과의사 면허 취득 국가고시, 치의학과 졸업생 필수 관문' },
+  '한의사':             { stars: 2.5, tag: '한의료 최상위', reason: '한의사 면허 취득 국가고시, 한의대 졸업생 필수 관문' },
+  '약사':               { stars: 2.5, tag: '약료 최상위', reason: '약사 면허 취득 국가고시, 약대 졸업생 필수 관문' },
+  '관세사':             { stars: 2.0, tag: '관세 전문', reason: '관세사무소·기업 관세팀 필수 자격, 선발인원 제한(연 90명 내외)' },
+  '한약사':             { stars: 1.5, tag: '한약 전문', reason: '한약 조제·판매 법정 면허, 응시자 매우 적음' },
+  '손해사정사':         { stars: 1.5, tag: '보험 전문', reason: '보험사고 손해사정 전문 자격, 합격자 규모가 작은 편' },
+  '보험계리사':         { stars: 1.5, tag: '보험 전문', reason: '보험사 계리업무 법정 자격, 최종합격자 연 100~200명대로 매우 적음' },
+  '조산사':             { stars: 1.0, tag: '조산 전문', reason: '분만 전담 간호 전문직 법정 면허, 응시자 극소수' },
+
+  // ── 공무원 9급(GOVERNMENT_CERT_NAMES 37개 전 직렬) — 2026-08-24 추가 ──
+  // 응시 규모는 실제 통계 대신, 선발인원·직렬 인지도 등 공개적으로 확인 가능한 정성적 근거로 산정.
+  '일반행정직 공무원(9급)': { stars: 4.0, tag: '공무원 대표직렬', reason: '가장 많은 인원을 선발하는 9급 공채 대표 직렬, 응시자 최상위권' },
+  '경찰공무원(순경)':   { stars: 4.0, tag: '공무원 인기직렬', reason: '매년 대규모 선발하는 대표 공안직, 응시자 수 최상위권' },
+  '소방공무원(소방직)': { stars: 4.0, tag: '공무원 인기직렬', reason: '매년 대규모 선발하는 구조·구급 직렬, 안정적 직업 선호도 높음' },
+  '세무직 공무원(9급)': { stars: 4.0, tag: '공무원 인기직렬', reason: '국세청 산하 대규모 선발 직렬, 행정직 다음으로 지원자 많음' },
+  '검찰사무직 공무원(9급)': { stars: 3.5, tag: '공무원 채용', reason: '검찰청 사무 담당 직렬, 법조 관련 직군 선호도 높음' },
+  '관세직 공무원(9급)': { stars: 3.5, tag: '공무원 채용', reason: '관세청 산하 세관 업무 직렬, 안정적 선발 규모' },
+  '교육행정직 공무원(9급)': { stars: 3.5, tag: '공무원 채용', reason: '교육청·학교 행정 담당 직렬, 지역별 선발 규모가 큰 편' },
+  '사회복지직 공무원(9급)': { stars: 3.5, tag: '공무원 채용', reason: '복지 수요 증가로 선발 규모가 꾸준히 확대되는 직렬' },
+  '전산직 공무원(9급)': { stars: 3.5, tag: '공무원 채용', reason: 'IT 전공자 대상 공직 진출 직렬, 전산직 수요 증가 추세' },
+  '우정9급(계리직)':    { stars: 3.5, tag: '공무원 채용', reason: '우체국 금융·보험 업무 담당, 우정사업본부 자체 선발' },
+  '간호직 공무원(9급)': { stars: 3.0, tag: '공무원 채용', reason: '보건소·공공의료기관 간호 인력, 간호사 면허 소지자 대상' },
+  '고용노동직 공무원(9급)': { stars: 3.0, tag: '공무원 채용', reason: '고용센터 실업급여·노동상담 업무 담당 직렬' },
+  '교정직 공무원(9급)': { stars: 3.0, tag: '공무원 채용', reason: '교정시설 근무 공안직, 안정적 채용 규모' },
+  '법원직 공무원(9급)': { stars: 3.0, tag: '공무원 채용', reason: '법원 행정 업무 담당, 법원행정처 자체 선발' },
+  '보건직 공무원(9급)': { stars: 3.0, tag: '공무원 채용', reason: '보건소 등 공공보건 업무 담당 직렬' },
+  '사서직 공무원(9급)': { stars: 3.0, tag: '공무원 채용', reason: '공공도서관 사서 업무 담당, 사서 자격 소지자 대상' },
+  '일반행정직 공무원(7급)': { stars: 3.0, tag: '공무원 채용', reason: '9급보다 선발 인원은 적지만 난이도·위상이 높은 상위 직급' },
+  '출입국관리직 공무원(9급)': { stars: 3.0, tag: '공무원 채용', reason: '출입국·외국인 관리 업무 담당 직렬' },
+  '건축직 공무원(9급)': { stars: 2.5, tag: '공무원 채용', reason: '지자체·공공기관 건축 인허가·감리 업무 담당' },
+  '운전직 공무원(9급)': { stars: 2.5, tag: '공무원 채용', reason: '관용차량 운전 담당 기술직, 소규모 선발' },
+  '일반기계직 공무원(9급)': { stars: 2.5, tag: '공무원 채용', reason: '기계설비 유지관리 담당 기술직 직렬' },
+  '일반토목직 공무원(9급)': { stars: 2.5, tag: '공무원 채용', reason: '도로·상하수도 등 토목 공공사업 담당 직렬' },
+  '전기직 공무원(9급)': { stars: 2.5, tag: '공무원 채용', reason: '공공시설 전기설비 유지관리 담당 직렬' },
+  '화공직 공무원(9급)': { stars: 2.5, tag: '공무원 채용', reason: '환경·화학 관련 공공기관 기술직 직렬' },
+  '환경직 공무원(9급)': { stars: 2.5, tag: '공무원 채용', reason: '환경 정책·오염관리 담당 기술직 직렬' },
+  '방송통신직 공무원(9급)': { stars: 2.0, tag: '공무원 채용', reason: '방송·통신 인프라 관리 담당, 선발 규모가 작은 편' },
+  '산림자원직 공무원(9급)': { stars: 2.0, tag: '공무원 채용', reason: '산림청·지자체 산림자원 관리 담당 직렬' },
+  '식품위생직 공무원(9급)': { stars: 2.0, tag: '공무원 채용', reason: '식품위생 점검·관리 담당 직렬' },
+  '일반농업직 공무원(9급)': { stars: 2.0, tag: '공무원 채용', reason: '농업기술센터 등 농업 지도·행정 담당 직렬' },
+  '해양수산직 공무원(9급)': { stars: 2.0, tag: '공무원 채용', reason: '해양수산 관련 공공기관 업무 담당 직렬' },
+  '기상직 공무원(9급)': { stars: 1.5, tag: '공무원 채용', reason: '기상청 산하 관측·예보 업무, 선발 인원 매우 적음' },
+  '마약수사직 공무원(9급)': { stars: 1.5, tag: '공무원 채용', reason: '마약류 수사 전담 공안직, 선발 인원 매우 적음' },
+  '방재안전직 공무원(9급)': { stars: 1.5, tag: '공무원 채용', reason: '재난안전 관리 담당 직렬, 선발 인원이 적은 편' },
+  '보호직 공무원(9급)': { stars: 1.5, tag: '공무원 채용', reason: '보호관찰·소년원 업무 담당 공안직, 선발 규모 작음' },
+  '지적직 공무원(9급)': { stars: 1.5, tag: '공무원 채용', reason: '지적측량·토지행정 담당 직렬, 선발 인원이 적은 편' },
+  '철도경찰직 공무원(9급)': { stars: 1.5, tag: '공무원 채용', reason: '철도 치안 담당 공안직, 선발 인원 매우 적음' },
+  '통계직 공무원(9급)': { stars: 1.5, tag: '공무원 채용', reason: '통계청 산하 통계조사 업무, 국가직 전용 소규모 선발' },
+
+  // ── 신규 계열 전체 미등록 보정 — 2026-08-27 추가 (형제 등급 범위를 넘어선 전면 신규 등록) ──
+  // 정밀 응시자 통계 대신 법정 선임 의무·업계 활용도·자격 서열(기능사<산업기사<기사<기능장) 기반 정성적 산정.
+  '2종운전면허(보통)': { stars: 4.0, tag: '생활 필수', reason: '1종보통과 함께 가장 보편적인 운전면허, 승용차 운전 가능' },
+  '드론조종자격증':     { stars: 3.0, tag: '신산업 급성장', reason: '초경량비행장치 조종 자격, 최근 수요 급증' },
+  '소형선박조종사':     { stars: 3.0, tag: '레저 활용', reason: '레저보트·낚시어선 조종 법정 자격, 응시자 규모 있음' },
+  '소방안전관리자2급': { stars: 3.5, tag: '건물 관리 최다', reason: '소규모 건물까지 폭넓게 해당하는 소방안전관리자 최다 등급' },
+  '소방안전관리자1급': { stars: 3.0, tag: '건물 관리 필수', reason: '중대형 건물 소방안전관리자 법정 선임 자격' },
+  '소방안전관리자3급': { stars: 3.0, tag: '건물 관리 기초', reason: '소규모 건물 대상 소방안전관리자, 강습 이수 병행 취득' },
+  '소방안전관리자특급': { stars: 2.5, tag: '초고층 관리', reason: '초고층·대형 특정소방대상물 전담 최상위 등급, 대상 건물 한정적' },
+  '응급구조사2급':      { stars: 3.0, tag: '응급의료 기초', reason: '응급의료기관·구급차 법정 인력, 1급보다 진입장벽 낮음' },
+  '응급구조사1급':      { stars: 2.5, tag: '응급의료 상급', reason: '응급구조사 상위 등급, 대학 전공자 대상이라 2급보다 응시자 적음' },
+  '한국어능력시험(TOPIK)': { stars: 3.0, tag: '외국인 대상 최다', reason: '유학·취업 비자 요건, 외국인 응시자 전 세계 최다 규모' },
+  '바리스타2급':        { stars: 3.0, tag: '카페 창업 기초', reason: '카페 취업·창업 기초 민간자격, 응시자 규모 큰 편' },
+  '청소년상담사3급':    { stars: 3.0, tag: '상담직 기초', reason: '청소년상담사 최다 응시 등급, 상담 관련 취업 기초' },
+  '청소년지도사3급':    { stars: 3.0, tag: '지도사 기초', reason: '청소년지도사 최다 응시 등급, 청소년시설 취업 기초' },
+  '산림기능사':         { stars: 2.5, tag: '산림 실무 기초', reason: '산림사업체 취업 기초 자격, 산림청 관련 사업 활용' },
+  '실내건축기사':       { stars: 2.5, tag: '인테리어 필수', reason: '인테리어 설계·시공업체 채용 우대, 활용도 높은 편' },
+  '실내건축기능사':     { stars: 2.5, tag: '인테리어 기초', reason: '인테리어 시공 기초 자격, 실내건축기사 취득 전 단계' },
+  '신재생에너지발전설비기능사(태양광)': { stars: 2.5, tag: '태양광 트렌드', reason: '태양광 설비 보급 확대로 수요 증가하는 신생 자격' },
+  '배관기능사':         { stars: 2.5, tag: '설비 실무 기초', reason: '배관 시공·정비 기초 자격, 건설·설비업체 활용' },
+  '안경사':             { stars: 2.5, tag: '안경원 필수', reason: '안경원 개설·조제 법정 면허' },
+  '반려동물스타일리스트': { stars: 2.5, tag: '반려동물 산업 성장', reason: '애견미용 수요 증가로 관심 확대되는 민간자격' },
+  '맞춤형화장품조제관리사': { stars: 2.5, tag: '화장품 매장 법정', reason: '맞춤형화장품판매장 법정 필수 인력, 신설 후 수요 급증' },
+  'AFPK':               { stars: 2.5, tag: '금융자산관리 기초', reason: '은행·증권사 재무설계 담당자 기본 자격, CFP 취득 전 단계' },
+  '재경관리사':         { stars: 2.5, tag: '경리·회계 실무', reason: '경리·회계 실무자 채용 우대, 응시자 규모 있는 편' },
+  '펀드투자권유대행인': { stars: 2.5, tag: '금융권 필수', reason: '펀드 판매 법정 자격, 은행·증권사 취업 필수' },
+  '한자능력검정':       { stars: 2.5, tag: '전통 인기 자격', reason: '학생·취업준비생 대상 전통적으로 응시자 많은 어문 자격' },
+  '리눅스마스터2급':    { stars: 2.5, tag: 'IT 인프라 기초', reason: '서버·인프라 직군 입문 자격, 1급보다 진입장벽 낮음' },
+  '네트워크관리사2급':  { stars: 2.5, tag: 'IT 인프라 기초', reason: '네트워크 관리 입문 자격, 1급보다 진입장벽 낮음' },
+  '청소년상담사2급':    { stars: 2.5, tag: '상담직 중급', reason: '청소년상담사 중급 등급, 3급보다 경력 요건 높음' },
+  '청소년지도사2급':    { stars: 2.5, tag: '지도사 중급', reason: '청소년지도사 중급 등급, 3급보다 경력 요건 높음' },
+  '수산물품질관리사':   { stars: 2.5, tag: '수산 법정', reason: '수협·수산물 유통업체 법정 품질관리 인력' },
+  '타워크레인운전기능사': { stars: 2.5, tag: '건설 현장 필수', reason: '건설현장 타워크레인 운전 법정 자격, 중장비 기능사 중 수요 큰 편' },
+  '화물운송종사':       { stars: 2.5, tag: '화물차 법정 필수', reason: '화물차 운전 법정 자격, 택배·물류 기사 필수' },
+  '한국어교원3급':      { stars: 2.5, tag: '한국어 교육 기초', reason: '한류 확산으로 수요 느는 한국어 교육 자격, 3급이 가장 대중적' },
+  '기계설계산업기사':   { stars: 2.0, tag: '기계설계 실무', reason: '제조업 기계설계 보조 인력 자격' },
+  '기중기운전기능사':   { stars: 2.0, tag: '중장비 실무', reason: '건설현장 기중기 운전 법정 자격' },
+  '로더운전기능사':     { stars: 2.0, tag: '중장비 실무', reason: '건설현장 로더 운전 법정 자격' },
+  '불도저운전기능사':   { stars: 2.0, tag: '중장비 실무', reason: '건설현장 불도저 운전 법정 자격' },
+  '도배기능사':         { stars: 2.0, tag: '생활 밀접 창업', reason: '도배업 창업·취업 기초 자격, 생활 밀접 업종' },
+  '매경TEST':           { stars: 2.0, tag: '경제 이해력', reason: '경제 이해력 검증 시험, 대학생·취업준비생 응시' },
+  '무선설비기사':       { stars: 1.5, tag: '통신 전문', reason: '무선통신설비 설계·운용 국가기술자격' },
+  '무선설비산업기사':   { stars: 1.5, tag: '통신 전문', reason: '무선통신설비 운용 중급 자격, 무선설비기사 전 단계' },
+  '바텐더':             { stars: 2.0, tag: '민간 바텐더 자격', reason: '조주기능사보다 규모 작은 민간 바텐더 자격' },
+  '반려동물행동지도사': { stars: 2.0, tag: '반려동물 훈련', reason: '반려동물 행동교정 전문 자격, 관련 산업 성장' },
+  '배관산업기사':       { stars: 2.0, tag: '설비 중급', reason: '배관 시공·정비 중급 자격, 배관기사 계열 없이 산업기사가 상위' },
+  '버스운전자격':       { stars: 2.0, tag: '버스기사 법정', reason: '노선버스·전세버스 운전 법정 자격' },
+  '비계기능사':         { stars: 2.0, tag: '건설 안전 실무', reason: '건설현장 비계 설치 기초 자격, 추락사고 관리 이슈로 수요 유지' },
+  '사무자동화산업기사': { stars: 2.0, tag: '사무 IT 활용', reason: '사무자동화 프로그램 활용 능력 우대 자격' },
+  '사회통합프로그램':   { stars: 2.0, tag: '이민자 대상', reason: '귀화·체류자격 요건, 이민자 대상 특수 프로그램' },
+  '산림기사':           { stars: 2.0, tag: '산림 전문', reason: '산림청·산림조합 관련 기술직 자격' },
+  '산림산업기사':       { stars: 2.0, tag: '산림 중급', reason: '산림사업 중급 기술자격, 산림기사 전 단계' },
+  '소믈리에':           { stars: 2.0, tag: '와인 전문', reason: '레스토랑·호텔 와인 서비스 전문 민간자격' },
+  '수산양식기사':       { stars: 2.0, tag: '수산 전문', reason: '수산양식업체 기술인력 자격' },
+  '승강기기사':         { stars: 2.0, tag: '설비 법정', reason: '승강기 설치·유지보수 법정 기술인력' },
+  '승강기기능사':       { stars: 2.0, tag: '설비 실무', reason: '승강기 유지보수 기초 자격, 엘리베이터 보급 확대로 수요 유지' },
+  '식물보호기사':       { stars: 2.0, tag: '농업 법정', reason: '농약 관리·병해충 방제 관련 법정 자격' },
+  '심리상담사':         { stars: 2.0, tag: '상담 민간자격', reason: '심리상담 관련 민간자격, 상담업 관심 증가로 응시 늘어남' },
+  '보건의료정보관리사': { stars: 2.0, tag: '의료정보 법정', reason: '병원 의무기록 관리 법정 인력, 의료정보화로 수요 증가' },
+  '유기농업기능사':     { stars: 2.0, tag: '친환경 농업', reason: '유기농 인증 확대로 수요 증가하는 농업 자격' },
+  '원예기능사':         { stars: 2.0, tag: '원예 실무', reason: '조경·화훼업체 원예 기초 자격' },
+  '이륜자동차운전면허': { stars: 2.0, tag: '오토바이 면허', reason: '배달업 확대로 이륜차 면허 수요 증가' },
+  '일반행정사':         { stars: 2.0, tag: '행정 서류 대행', reason: '행정 서류 작성·대행 법정 자격, 행정사 중 가장 대중적' },
+  '자동차보수도장기능사': { stars: 2.0, tag: '사고차량 수리', reason: '자동차 사고 수리 도장 기초 자격, 정비업체 수요 꾸준' },
+  '자동차차체수리기능사': { stars: 2.0, tag: '사고차량 수리', reason: '자동차 사고 차체 수리 기초 자격, 정비업체 수요 꾸준' },
+  '전산응용건축제도기능사': { stars: 2.0, tag: 'CAD 실무', reason: '건축 CAD 도면 작성 실무 자격' },
+  '전산응용기계제도기능사': { stars: 2.0, tag: 'CAD 실무', reason: '기계 CAD 도면 작성 실무 자격' },
+  '전자상거래관리사2급': { stars: 2.0, tag: '전자상거래 실무', reason: '온라인 쇼핑몰 운영 실무 자격' },
+  '전자상거래운용사':   { stars: 2.0, tag: '전자상거래 실무', reason: '전자상거래 실무 운용 자격' },
+  '정보통신기사':       { stars: 2.0, tag: '통신 필수', reason: '정보통신공사업 법정 기술인력' },
+  '정보통신산업기사':   { stars: 2.0, tag: '통신 중급', reason: '정보통신공사업 중급 기술자격, 정보통신기사 전 단계' },
+  '축산기능사':         { stars: 2.0, tag: '축산 실무', reason: '축산농가·사료업체 기초 자격' },
+  '측량기능사':         { stars: 2.0, tag: '측량 실무', reason: '측량업체 실무 보조 인력, 측량및지형공간정보기사 하위 등급' },
+  '택시운전자격':       { stars: 2.0, tag: '택시기사 법정', reason: '택시 운전 법정 자격' },
+  '한국어교원2급':      { stars: 2.0, tag: '한국어 교육 중급', reason: '한국어 교육 중급 자격, 대학 전공 이수자 대상' },
+  '화훼장식기능사':     { stars: 2.0, tag: '화훼 실무', reason: '꽃집·이벤트업체 화훼장식 기초 자격' },
+  '유소년스포츠지도사': { stars: 2.0, tag: '유소년 체육', reason: '유소년 대상 스포츠 지도 법정 자격, 학교스포츠클럽 수요' },
+  'FAT':                { stars: 2.0, tag: '세무회계 기초', reason: '세무회계 실무 기초 민간자격' },
+  '2급생활스포츠지도사': { stars: 2.5, tag: '체육시설 필수', reason: '체육시설·헬스장 등 법정 배치 자격, 스포츠지도사 중 가장 대중적' },
+  '1급전문스포츠지도사': { stars: 1.5, tag: '체육 최상급', reason: '엘리트 선수 출신·경력자 대상 최상위 등급, 응시자 매우 적음' },
+  'TESAT':              { stars: 2.0, tag: '경제 이해력', reason: '경제 이해력 검증 시험, 매경TEST와 유사한 성격' },
+  '건설기계정비기사':   { stars: 1.5, tag: '중장비 정비', reason: '건설기계 정비업체 기술인력 자격' },
+  '건설기계정비산업기사': { stars: 1.5, tag: '중장비 정비 중급', reason: '건설기계 정비 중급 자격, 건설기계정비기사 전 단계' },
+  '건설재료시험기능사': { stars: 1.5, tag: '건설 품질관리', reason: '건설현장 재료시험 기초 자격' },
+  '건설재료시험기사':   { stars: 1.5, tag: '건설 품질관리', reason: '건설현장 재료시험 기술인력 자격' },
+  '교통기사':           { stars: 1.5, tag: '교통 전문', reason: '교통영향평가·신호체계 관련 기술자격' },
+  '국내여행안내사':     { stars: 1.5, tag: '관광 안내', reason: '내국인 대상 국내 여행 안내 법정 자격, 관광통역안내사보다 응시 규모 작음' },
+  '국외관광안내사':     { stars: 1.5, tag: '관광 안내', reason: '내국인 해외여행 인솔 법정 자격, 관광통역안내사보다 응시 규모 작음' },
+  '금속재료기사':       { stars: 1.5, tag: '재료공학 전문', reason: '금속재료 시험·분석 기술자격' },
+  '금속재료산업기사':   { stars: 1.5, tag: '재료공학 중급', reason: '금속재료 시험 중급 자격, 금속재료기사 전 단계' },
+  '금형기능장':         { stars: 1.5, tag: '금형 최상급', reason: '금형제작 최고 기능등급, 현장 경력자 대상' },
+  '기계가공조립기능사': { stars: 1.5, tag: '기계가공 실무', reason: '기계부품 가공·조립 기초 자격' },
+  '기계정비산업기사':   { stars: 1.5, tag: '설비 정비', reason: '공장 기계설비 정비 중급 자격' },
+  '농기계운전기능사':   { stars: 1.5, tag: '농업 중장비', reason: '농기계 운전 기초 자격, 농촌 활용' },
+  '농업기계기사':       { stars: 1.5, tag: '농기계 전문', reason: '농기계 제조·정비 기술자격' },
+  '로봇기구개발기사':   { stars: 1.5, tag: '로봇산업 신규', reason: '로봇산업 성장에 따른 신설 자격, 아직 응시자 규모 작음' },
+  '롤러운전기능사':     { stars: 1.5, tag: '중장비 실무', reason: '건설현장 롤러 운전 기초 자격' },
+  '리눅스마스터1급':    { stars: 2.0, tag: 'IT 인프라 상급', reason: '서버·인프라 전문 자격, 2급 취득 후 도전하는 상위 등급' },
+  '네트워크관리사1급':  { stars: 2.0, tag: 'IT 인프라 상급', reason: '네트워크 관리 상급 자격, 2급 취득 후 도전하는 상위 등급' },
+  '바리스타1급':        { stars: 2.5, tag: '카페 창업 상급', reason: '카페 창업·매니저급 상급 자격, 2급 취득 후 도전' },
+  '목재가공기능사':     { stars: 1.0, tag: '목공 실무', reason: '가구·목공업체 기초 자격, 응시 규모 작음' },
+  '미장기능사':         { stars: 1.5, tag: '건축 마감 실무', reason: '건축 미장 마감 기초 자격' },
+  '밀링기능사':         { stars: 1.5, tag: '기계가공 실무', reason: '밀링 가공 기초 자격' },
+  '방수기능사':         { stars: 1.5, tag: '건축 마감 실무', reason: '건축 방수 시공 기초 자격' },
+  '보건교육사':         { stars: 1.5, tag: '보건교육 전문', reason: '보건소·학교 보건교육 담당 자격' },
+  '선반기능사':         { stars: 1.5, tag: '기계가공 실무', reason: '선반 가공 기초 자격' },
+  '식육처리기능사':     { stars: 1.5, tag: '축산물 가공', reason: '정육점·식육가공업체 기초 자격' },
+  '식품가공기능사':     { stars: 1.5, tag: '식품 가공 실무', reason: '식품제조업체 가공 기초 자격' },
+  '신재생에너지발전설비기사': { stars: 2.0, tag: '태양광 전문', reason: '신재생에너지 설비 설계·감리 기술자격' },
+  '신재생에너지발전설비산업기사': { stars: 2.0, tag: '태양광 중급', reason: '신재생에너지 설비 중급 자격' },
+  '배관기능장':         { stars: 1.5, tag: '배관 최상급', reason: '배관 분야 최고 기능등급, 현장 경력자 대상' },
+  '산림기능장':         { stars: 1.5, tag: '산림 최상급', reason: '산림 분야 최고 기능등급, 현장 경력자 대상' },
+  '철도신호기사':       { stars: 1.5, tag: '철도 신호 전문', reason: '철도 신호설비 설계·유지보수 기술자격' },
+  '철도신호산업기사':   { stars: 1.5, tag: '철도 신호 중급', reason: '철도 신호설비 중급 자격, 철도신호기사 전 단계' },
+  '외국어번역행정사':   { stars: 1.5, tag: '행정+어학', reason: '외국어 번역 행정 업무 특화 행정사, 일반행정사보다 협소' },
+  '원예기사':           { stars: 1.5, tag: '원예 전문', reason: '조경·화훼업체 원예 기술자격' },
+  '웹디자인기능사':     { stars: 1.5, tag: '웹디자인 기초', reason: '과거 대비 응시자 감소한 웹디자인 기초 자격' },
+  '위생사':             { stars: 1.5, tag: '식품위생 법정', reason: '집단급식소 법정 위생관리 인력' },
+  '유기농업기사':       { stars: 1.5, tag: '친환경 농업 전문', reason: '유기농업 기술 전문 자격, 유기농업기능사 상위 등급' },
+  '유리시공기능사':     { stars: 1.5, tag: '건축 마감 실무', reason: '건축 유리시공 기초 자격' },
+  '이용사':             { stars: 1.5, tag: '이발업 법정', reason: '이발소 취업·창업 법정 면허, 미용사보다 응시 규모 작음' },
+  '인간공학기사':       { stars: 1.5, tag: '인간공학 전문', reason: '작업환경 설계·안전 관련 신생 기술자격' },
+  '임업종묘기능사':     { stars: 1.0, tag: '산림 특수', reason: '산림 종묘 생산 특수 자격, 응시 규모 매우 작음' },
+  '자동차기사':         { stars: 1.5, tag: '자동차 설계', reason: '자동차 설계·품질관리 기술자격, 정비기사와는 별개' },
+  '재료기사':           { stars: 1.5, tag: '재료공학 전문', reason: '신소재·재료 시험분석 기술자격' },
+  '전자상거래관리사1급': { stars: 1.5, tag: '전자상거래 상급', reason: '전자상거래 실무 상급 자격, 2급보다 응시 규모 작음' },
+  '정보통신기능사':     { stars: 1.5, tag: '통신 실무 기초', reason: '정보통신 설비 시공 기초 자격' },
+  '정신건강임상심리사': { stars: 1.5, tag: '정신건강 전문', reason: '정신건강복지센터 법정 전문 인력, 임상심리사보다 협소' },
+  '조선산업기사':       { stars: 1.5, tag: '조선업 중급', reason: '조선소 생산관리 중급 기술자격' },
+  '조적기능사':         { stars: 1.5, tag: '건축 마감 실무', reason: '건축 조적 시공 기초 자격' },
+  '종자기능사':         { stars: 1.5, tag: '종자산업 특화', reason: '종자 생산·유통 기초 자격, 종자산업 특화로 협소' },
+  '종자기사':           { stars: 1.5, tag: '종자산업 특화', reason: '종자 품질관리 기술자격, 종자산업 특화로 협소' },
+  '지적기사':           { stars: 1.5, tag: '지적측량 전문', reason: '지적측량업체 기술자격, 지적직 공무원과는 별개 자격' },
+  '천공기운전기능사':   { stars: 1.5, tag: '중장비 실무', reason: '건설현장 천공기 운전 기초 자격, 응시 규모 작은 편' },
+  '천장크레인운전기능사': { stars: 1.5, tag: '중장비 실무', reason: '공장 내 천장크레인 운전 기초 자격, 협소한 수요' },
+  '청소년상담사1급':    { stars: 1.5, tag: '상담직 최상급', reason: '청소년상담사 최상위 등급, 박사급·경력자 대상이라 응시자 적음' },
+  '청소년지도사1급':    { stars: 1.5, tag: '지도사 최상급', reason: '청소년지도사 최상위 등급, 경력자 대상이라 응시자 적음' },
+  '축산기사':           { stars: 1.5, tag: '축산 전문', reason: '축산업체 기술인력 자격' },
+  '축산산업기사':       { stars: 1.5, tag: '축산 중급', reason: '축산업 중급 기술자격' },
+  '컨테이너크레인운전기능사': { stars: 1.5, tag: '항만 특화', reason: '항만 컨테이너크레인 운전 자격, 항만 업종 한정' },
+  '컬러리스트기사':     { stars: 1.5, tag: '색채 전문', reason: '디자인·제조업 색채계획 기술자격' },
+  '컬러리스트산업기사': { stars: 1.5, tag: '색채 중급', reason: '색채계획 중급 자격, 컬러리스트기사 전 단계' },
+  '콘크리트기능사':     { stars: 1.5, tag: '건설 품질관리', reason: '콘크리트 시험·품질관리 기초 자격' },
+  '타일기능사':         { stars: 1.5, tag: '건축 마감 실무', reason: '건축 타일시공 기초 자격' },
+  '판금제관기능사':     { stars: 1.5, tag: '금속가공 실무', reason: '판금·제관 가공 기초 자격' },
+  '한국어교원1급':      { stars: 1.5, tag: '한국어 교육 최상급', reason: '한국어 교육 최상위 등급, 경력자 대상이라 응시자 적음' },
+  '해양환경기사':       { stars: 1.5, tag: '해양환경 전문', reason: '해양오염 관리 관련 기술자격, 수질·대기환경기사보다 협소' },
+  '화약류관리기사':     { stars: 1.5, tag: '화약류 법정', reason: '화약류 제조·저장 법정 안전관리자, 광업·발파업 한정' },
+  '화약류관리산업기사': { stars: 1.5, tag: '화약류 법정 중급', reason: '화약류 안전관리 중급 자격' },
+  '화훼장식기사':       { stars: 1.5, tag: '화훼 전문', reason: '화훼장식 전문 기술자격, 화훼장식기능사 상위 등급' },
+  '화훼장식산업기사':   { stars: 1.5, tag: '화훼 중급', reason: '화훼장식 중급 자격' },
+  '수산양식산업기사':   { stars: 1.5, tag: '수산 중급', reason: '수산양식업 중급 기술자격' },
+  '수산제조기사':       { stars: 1.5, tag: '수산가공 전문', reason: '수산물 가공업체 기술자격' },
+  '가축인공수정사':     { stars: 1.5, tag: '축산 특수', reason: '축산농가 인공수정 특수 법정 자격' },
+  'CFP':                { stars: 1.5, tag: '국제 재무설계 최상급', reason: '국제공인재무설계사, AFPK보다 고난이도로 응시자 적음' },
+  'TAT':                { stars: 1.5, tag: '세무회계 상급', reason: '세무회계 실무 상급 민간자격, FAT보다 응시자 적음' },
+  'ISMS':               { stars: 1.5, tag: '정보보호 심사', reason: '정보보호관리체계 인증심사원, 매우 전문화된 소수 자격' },
+  '해사행정사':         { stars: 1.0, tag: '해사 특화', reason: '해운·항만 특화 행정사, 행정사 중 가장 협소' },
+  '3D프린터운용기능사': { stars: 1.5, tag: '신산업 관심', reason: '3D프린팅 산업 관심 증가하나 아직 응시자 규모 작음' },
+  '거푸집기능사':       { stars: 1.5, tag: '건설 마감 실무', reason: '건설현장 거푸집 시공 기초 자격' },
+  '귀금속가공기능사':   { stars: 1.0, tag: '귀금속 특화', reason: '귀금속 세공업체 특화 자격, 응시 규모 작음' },
+  '금속재창호기능사':   { stars: 1.0, tag: '건축 마감 특화', reason: '금속 창호 시공 특화 자격, 응시 규모 작음' },
+  '버섯종균기능사':     { stars: 1.0, tag: '농업 특수', reason: '버섯 종균 생산 특수 자격, 응시 규모 매우 작음' },
+  '선체건조기능사':     { stars: 1.0, tag: '조선업 특화', reason: '선박 건조 기초 자격, 조선업 한정' },
+  '열처리기능사':       { stars: 1.0, tag: '금속가공 특화', reason: '금속 열처리 특화 자격, 응시 규모 작음' },
+  '온수온돌기능사':     { stars: 1.0, tag: '건축 설비 특화', reason: '온돌 시공 특화 자격, 응시 규모 매우 작음' },
+  '주조기능사':         { stars: 1.0, tag: '금속가공 특화', reason: '주조 가공 특화 자격, 응시 규모 작음' },
+  '펄프종이제조기능사': { stars: 1.0, tag: '제지업 특화', reason: '제지업체 특화 자격, 응시 규모 매우 작음' },
+  '플라스틱창호기능사': { stars: 1.0, tag: '건축 마감 특화', reason: '플라스틱 창호 시공 특화 자격, 응시 규모 작음' },
 };
 
 // ── 공백 제거 정규화 ──────────────────────────────────────────────────────────
@@ -3592,14 +3927,97 @@ if (document.readyState === 'loading') {
 // ============================================
 // 20. 최근 검색 & 즐겨찾기
 // ============================================
+// 검색 히스토리 최대 보관 개수. 웰컴 화면 "최근 검색" 칩은 이 중 상위 5개만 노출하고,
+// 히스토리 모달(window.showSearchHistory)에서는 전체를 다 보여준다.
+const SEARCH_HISTORY_LIMIT = 50;
+
+// 과거엔 recentCerts를 문자열 배열(["전기기사", ...])로 저장했다.
+// {name, at} 객체 배열로 바뀌었으니, 문자열 항목이 섞여 있으면 타임스탬프 없이 감싸서 호환 유지.
 function getRecentCerts() {
-  try { return JSON.parse(localStorage.getItem('recentCerts') || '[]'); } catch { return []; }
+  let raw;
+  try { raw = JSON.parse(localStorage.getItem('recentCerts') || '[]'); } catch { return []; }
+  if (!Array.isArray(raw)) return [];
+  return raw.map(item =>
+    typeof item === 'string' ? { name: item, at: null } : item
+  ).filter(item => item && item.name);
 }
 function addRecentCert(name) {
-  const list = getRecentCerts().filter(n => n !== name);
-  list.unshift(name);
-  try { localStorage.setItem('recentCerts', JSON.stringify(list.slice(0, 5))); } catch {}
+  const list = getRecentCerts().filter(item => item.name !== name);
+  list.unshift({ name, at: Date.now() });
+  try { localStorage.setItem('recentCerts', JSON.stringify(list.slice(0, SEARCH_HISTORY_LIMIT))); } catch {}
+  try { updateHistoryBadge(); } catch(e) {}
 }
+
+// "5분 전" / "어제" 같은 상대 시각 표시. at이 없으면(구버전 데이터) 빈 문자열.
+function formatRelativeTime(at) {
+  if (!at) return '';
+  const diffMs = Date.now() - at;
+  const min = Math.floor(diffMs / 60000);
+  if (min < 1) return '방금 전';
+  if (min < 60) return `${min}분 전`;
+  const hour = Math.floor(min / 60);
+  if (hour < 24) return `${hour}시간 전`;
+  const day = Math.floor(hour / 24);
+  if (day === 1) return '어제';
+  if (day < 7) return `${day}일 전`;
+  return new Date(at).toLocaleDateString('ko-KR', { month: 'long', day: 'numeric' });
+}
+
+function updateHistoryBadge() {
+  const badge = document.getElementById('history-count-badge');
+  if (!badge) return;
+  const n = getRecentCerts().length;
+  badge.textContent = n;
+  badge.style.display = n > 0 ? '' : 'none';
+}
+
+window.showSearchHistory = function() {
+  const modal = document.getElementById('search-history-modal');
+  const body  = document.getElementById('search-history-body');
+  if (!modal || !body) return;
+  const items = getRecentCerts();
+
+  body.innerHTML = items.length === 0
+    ? `<p style="text-align:center;color:var(--text-secondary);padding:24px 0">아직 검색한 자격증이 없습니다.<br>자격증을 검색해서 살펴보면 여기에 기록됩니다.</p>`
+    : items.map(item => {
+        const exists = !!CERTIFICATIONS[item.name];
+        const safeName = item.name.replace(/'/g, "\\'");
+        const time = formatRelativeTime(item.at);
+        return `
+          <div class="cl-item history-item">
+            <div class="cl-info">
+              ${exists
+                ? `<a href="javascript:void(0)" class="history-cert-link" onclick="window.closeSearchHistory();window.selectCert('${safeName}')">${item.name}</a>`
+                : `<span class="cl-title" style="color:var(--text-muted)">${item.name} <span style="font-weight:400">(삭제된 자격증)</span></span>`}
+              ${time ? `<span class="cl-meta">${time}</span>` : ''}
+            </div>
+            <button class="wish-remove-btn" title="히스토리에서 삭제" onclick="window._removeHistoryItem('${safeName}')"><i class="fa-solid fa-trash-can"></i></button>
+          </div>`;
+      }).join('');
+
+  modal.classList.add('open');
+};
+
+window.closeSearchHistory = function() {
+  const modal = document.getElementById('search-history-modal');
+  if (modal) modal.classList.remove('open');
+};
+
+window._removeHistoryItem = function(name) {
+  const list = getRecentCerts().filter(item => item.name !== name);
+  try { localStorage.setItem('recentCerts', JSON.stringify(list)); } catch {}
+  updateHistoryBadge();
+  window.showSearchHistory();
+  renderQuickRow();
+};
+
+window.clearSearchHistory = function() {
+  try { localStorage.removeItem('recentCerts'); } catch {}
+  updateHistoryBadge();
+  window.showSearchHistory();
+  renderQuickRow();
+};
+
 function getFavoriteCerts() {
   try { return JSON.parse(localStorage.getItem('favoriteCerts') || '[]'); } catch { return []; }
 }
@@ -3651,7 +4069,7 @@ function renderQuickRow() {
   const favChips = document.getElementById('fav-certs-chips');
   if (!rowEl) return;
 
-  const recents = getRecentCerts().filter(n => CERTIFICATIONS[n]);
+  const recents = getRecentCerts().map(item => item.name).filter(n => CERTIFICATIONS[n]).slice(0, 5);
   const favs    = getFavoriteCerts().filter(n => CERTIFICATIONS[n]);
 
   const makeChip = name =>
@@ -4781,9 +5199,12 @@ function renderCompareSection(cert) {
   input._inlineBound = true;
 
   input.addEventListener('input', () => {
-    const q = input.value.trim().toLowerCase();
+    const q = input.value.trim();
     if (!q) { dropdown.style.display='none'; return; }
-    const matches = Object.keys(CERTIFICATIONS).filter(n => n !== cert.name && normalize(n).includes(normalize(q))).slice(0,8);
+    // 상단 검색창(global-search)과 동일하게 별칭·초성·오타·영문 자동변환을 모두 지원하는
+    // searchCerts()를 재사용 — 예전엔 단순 includes()만 써서 오타·초성·영문 입력이 전혀 안 먹혔음.
+    const { scored } = searchCerts(q);
+    const matches = scored.map(s => s.name).filter(n => n !== cert.name).slice(0,8);
     if (!matches.length) { dropdown.style.display='none'; return; }
     dropdown.innerHTML = matches.map(n =>
       `<div class="compare-dropdown-item" onclick="(()=>{
