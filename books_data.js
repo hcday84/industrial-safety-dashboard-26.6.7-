@@ -375,6 +375,8 @@ const REAL_BOOKS = {
 
   '컴퓨터시스템응용기술사': [
     // 베스트셀러 5
+    { title: '정보관리기술사&컴퓨터시스템응용기술사 Vol 9: 인공지능', author: '권영식, 권대호', publisher: '성안당', price: 45000, originalPrice: 50000, discount: '10%', tags: ['베스트'], isbn: '9788931589955', imageUrl: KB('S000219682467'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219682467' },
+    { title: '정보관리기술사 & 컴퓨터시스템응용기술사 Vol 1: 컴퓨터 구조', author: '권영식, 권대호', publisher: '성안당', price: 45000, originalPrice: 50000, discount: '10%', tags: ['베스트'], isbn: '9788931528497', imageUrl: KB('S000211345493'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211345493' },
     // 추천수험서 5
   ],
 
