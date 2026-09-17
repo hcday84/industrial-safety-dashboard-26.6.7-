@@ -356,6 +356,7 @@ const REAL_BOOKS = {
 
   '화공기술사': [
     // 베스트셀러 5
+    { title: '화공기술사 합격노트', author: '박정호', publisher: '부크크', price: 19800, originalPrice: 19800, discount: '0%', tags: ['추천'], isbn: '9791127218188', imageUrl: KB('S000060604116'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000060604116' },
     // 추천수험서 5
   ],
 
