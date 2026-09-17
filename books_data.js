@@ -384,6 +384,7 @@ const REAL_BOOKS = {
     // 베스트셀러 5
     { title: '토목시공기술사 실전면접문제해설', author: '류재복', publisher: '예문사', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788982547034', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788982547034.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001273774' },
     { title: '고득점자와 함께하는 21세기 토목시공기술사 고득점 기출문제 1, 2', author: '신경수, 김재권, 조준호', publisher: '예문사', price: 58500, originalPrice: 65000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927462804', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788927462804.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000220716870' },
+    { title: '21세기 토목시공기술사 Key point 114', author: '신경수, 서정필', publisher: '예문사', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], isbn: '9788927461371', imageUrl: KB('S000219117053'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219117053' },
     // 추천수험서 5
   ],
 
