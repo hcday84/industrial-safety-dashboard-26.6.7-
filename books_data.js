@@ -338,8 +338,10 @@ const REAL_BOOKS = {
   '전기응용기술사': [
     // 베스트셀러 5
     { title: '2026 오승용기술사의 전기응용기술사 7개년 과년도 기출문제 해설', author: '오승용', publisher: '전기박사드림', price: 81000, originalPrice: 90000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791124543016', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791124543016.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219865017' },
+    { title: 'Perfect 전기응용기술사 기출문제풀이', author: 'EDN 기술사 연구회', publisher: '엔지니어데이터넷', price: 85000, originalPrice: 85000, discount: '0%', tags: ['베스트'], isbn: '9791124092439', imageUrl: KB('S000219025008'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219025008' },
     // 추천수험서 5
     { title: '2022 KEC 한국전기설비규정 관련 건축전기설비기술사 기출·예상문제집', author: '양재학, 김용운, 윤종철, 김석태', publisher: '성안당', price: 45000, originalPrice: 50000, discount: '10%', rating: 5.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9788931527629', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788931527629.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000000557656' },
+    { title: '전기응용기술사(상)', author: '오진택, 이동주', publisher: '명인북스', price: 49500, originalPrice: 55000, discount: '10%', tags: ['추천'], isbn: '9791189757762', imageUrl: KB('S000201325549'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201325549' },
   ],
 
   '기계기술사': [
@@ -711,13 +713,13 @@ const REAL_BOOKS = {
     { title: '2026 피복, 가스텅스텐, 이산화탄소가스 용접기능사 필기시험문제', author: '이동명', publisher: '크라운출판사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 389, tags: ['베스트'], hasEbook: false, isbn: '9788940649749', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788940649749.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218570168' },
     { title: '2026 평생 무료 동영상과 함께하는 가스텅스텐아크용접기능사 필기', author: '최갑규', publisher: '세진북스', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012222847', isbn: '9791157458677', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791157458677.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000220241342' },
     { title: '용접기능사 실기', author: '김승대 외', publisher: '세진사', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.4, reviews: 145, tags: ['추천'], hasEbook: false, isbn: '9788971219201', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788971219201.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001097753' },
-    { title: '2026 기분파 피복아크용접기능사 필기 (가스텅스텐아크용접/이산화탄소가스아크용접기능사 포함)', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], isbn: '9791194328216', imageUrl: 'https://image.aladin.co.kr/product/37622/56/coversum/k672034671_1.jpg', pageUrl: 'https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=376256841' },
+    { title: '2026 기분파 피복아크용접기능사 필기 (가스텅스텐아크용접/이산화탄소가스아크용접기능사 포함)', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], isbn: '9791194328216', imageUrl: null, pageUrl: 'https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=376256841' },
   ],
 
   '이산화탄소가스아크용접기능사': [
     { title: '2026 피복, 가스텅스텐, 이산화탄소가스 용접기능사 필기시험문제', author: '이동명', publisher: '크라운출판사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 389, tags: ['베스트'], hasEbook: false, isbn: '9788940649749', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788940649749.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218570168' },
     { title: '이산화탄소가스아크 용접기능사 실기', author: '김명선', publisher: '크라운출판사', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.4, reviews: 123, tags: ['추천'], hasEbook: false, isbn: '9788940649107', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788940649107.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000214378451' },
-    { title: '2026 기분파 피복아크용접기능사 필기 (가스텅스텐아크용접/이산화탄소가스아크용접기능사 포함)', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], isbn: '9791194328216', imageUrl: 'https://image.aladin.co.kr/product/37622/56/coversum/k672034671_1.jpg', pageUrl: 'https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=376256841' },
+    { title: '2026 기분파 피복아크용접기능사 필기 (가스텅스텐아크용접/이산화탄소가스아크용접기능사 포함)', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], isbn: '9791194328216', imageUrl: null, pageUrl: 'https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=376256841' },
   ],
 
   '전산응용기계제도기능사': [
