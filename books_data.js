@@ -999,6 +999,11 @@ const REAL_BOOKS = {
     // 추천수험서 5
     { title: '2026 자동차정비기능사 필기 최근기출문제', author: '김형진', publisher: '책과상상', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 156, tags: ['추천'], hasEbook: false, isbn: '9791169673211', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791169673211.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218086675' },
     { title: '2026 자동차정비기능사 필기', author: '김형진, 김승수', publisher: '구민사', price: 26100, originalPrice: 29000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168756557', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791168756557.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218918186' },
+    { title: '2027 에듀윌 자동차정비기능사 필기 한권끝장+무료특강', author: '김정혁', publisher: '에듀윌', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791136040657', imageUrl: KB('9791136040657'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220861093' },
+    { title: '2027 뻥! 뚫린 패스 자동차정비기능사 필기', author: '김연수, 김광수, 최범석, 이상호', publisher: '골든벨', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791124114698', imageUrl: KB('9791124114698'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220716543' },
+    { title: 'PASS 자동차정비기능사 안별 실기', author: '강대진, 전영민, 유재용, 김진혁', publisher: '골든벨', price: 19800, originalPrice: 22000, discount: '10%', rating: 6.3, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791158064587', imageUrl: KB('9791158064587'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001762158' },
+    { title: '2026 합격포인트 자동차정비기능사 필기', author: 'GB자격시험편성위원회', publisher: '골든벨', price: 21600, originalPrice: 24000, discount: '10%', rating: 7.5, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791124114032', imageUrl: KB('9791124114032'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218631600' },
+    { title: '자동차정비기능사 실기', author: '임춘무, 최종기, 이호상, 최필식', publisher: '일진사', price: 26100, originalPrice: 29000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788942919772', imageUrl: KB('9788942919772'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214764140' },
   ],
 
   // ────────────────────────────────────────
