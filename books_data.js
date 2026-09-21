@@ -1447,6 +1447,10 @@ const REAL_BOOKS = {
 
   '바리스타2급': [
     { title: '2026 이기적 바리스타 2급 7일 끝, 합격', author: '임형준', publisher: '영진닷컴', price: 11700, originalPrice: 13000, discount: '10%', rating: 4.8, reviews: 3210, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012448164', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788931479836.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218917586' },
+    { title: '이기적 바리스타 2급 필기 기본서', author: '임형준', publisher: '영진닷컴', price: 15300, originalPrice: 17000, discount: '10%', rating: 10.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9788931479829', imageUrl: KB('9788931479829'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217421997' },
+    { title: '바리스타 2급 자격시험 예상문제집', author: '한국커피협회', publisher: '커피투데이', price: 17000, originalPrice: 17000, discount: '0%', rating: 10.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791186627280', imageUrl: KB('9791186627280'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219668492' },
+    { title: 'New 바리스타 2급 자격시험 기본서', author: '타임 NCS 바리스타연구소', publisher: '시스컴', price: 15300, originalPrice: 17000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791169419505', imageUrl: KB('9791169419505'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219181714' },
+    { title: '시대에듀 답만 외우는 바리스타 2급 기출예상문제집', author: '류중호', publisher: '시대에듀', price: 15300, originalPrice: 17000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791138391627', imageUrl: KB('9791138391627'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216274987' },
   ],
 
   'FAT': [
