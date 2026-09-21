@@ -530,6 +530,11 @@ const REAL_BOOKS = {
     { title: '전투외상 응급처치', author: '데루이 모토키', publisher: '호비스트', price: 15000, rating: 5.0, reviews: 15, tags: ['추천'], hasEbook: false, isbn: '9788985578707', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788985578707.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001343044' },
     { title: '2027 해커스소방 심규식 응급처치학개론 핵심요약집', author: '심규식', publisher: '해커스소방', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176448710', imageUrl: KB('9791176448710'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221336727' },
     { title: '2027 해커스소방 심규식 응급처치학개론 단원별 기출문제집', author: '심규식', publisher: '해커스소방', price: 35100, originalPrice: 39000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176448727', imageUrl: KB('9791176448727'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221336763' },
+    { title: '응급구조사 국가시험 문제집 2', author: '메디컬스타 편집부', publisher: '메디컬스타', price: 36000, rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791191163575', imageUrl: KB('9791191163575'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000060628189' },
+    { title: '응급의료관련법령 문제집(2025)', author: '강병우', publisher: '청구문화사', price: 23000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788956169521', imageUrl: KB('9788956169521'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216124685' },
+    { title: '2026 시대에듀 응급구조사 1·2급 만점문제해설 한권으로 끝내기', author: '응급의료연구회', publisher: '시대에듀', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 9, tags: ['추천'], hasEbook: true, isbn: '9791143405944', imageUrl: KB('9791143405944'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218972628' },
+    { title: '특수상황 전문응급처치학', author: '전국응급구조과교수협의회', publisher: '대학서림', price: 65000, rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9788969402486', imageUrl: KB('9788969402486'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001062928' },
+    { title: '내과전문응급처치학', author: 'Bledsoe, Porter, Cherry, 전국응급구조학과교수협의회', publisher: '한미의학', price: 50000, rating: 5.0, reviews: 6, tags: ['추천'], hasEbook: false, isbn: '9791186089811', imageUrl: KB('9791186089811'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001878960' },
   ],
 
   // ────────────────────────────────────────
