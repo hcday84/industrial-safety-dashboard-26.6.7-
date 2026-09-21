@@ -983,6 +983,11 @@ const REAL_BOOKS = {
     // 추천수험서 5
     { title: '2026 한번에 합격하는 화학분석기사 실기(필답형+작업형)', author: '박수경', publisher: '성안당', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.4, reviews: 76, tags: ['추천'], hasEbook: false, isbn: '9788931585315', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931585315.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219304491' },
     { title: '2026 시대에듀 Win-Q 화학분석기사 실기 단기합격', author: '김영호, 김혜경', publisher: '시대고시기획', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.3, reviews: 54, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012401406', isbn: '9791143406675', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143406675.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218913894' },
+    { title: '2027 go래 정나나의 화학분석기사 필기 세트', author: '정나나', publisher: '예문사', price: 35100, originalPrice: 39000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927463061', imageUrl: KB('9788927463061'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220853624' },
+    { title: '2027 시대에듀 무료 특강이 있는 Win-Q 화학분석기사 필기 단기합격', author: '박지은', publisher: '시대고시기획', price: 33300, originalPrice: 37000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791143419606', imageUrl: KB('9791143419606'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221248133' },
+    { title: '화학분석기사를 대비한 최신 분석화학', author: '유은숙, 차상원, 최재성', publisher: '북스힐', price: 29000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791159713927', imageUrl: KB('9791159713927'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001784656' },
+    { title: '화학분석기사', author: '분석화학연구회', publisher: '자유아카데미', price: 38000, tags: ['추천'], hasEbook: false, isbn: '9791158082161', imageUrl: KB('9791158082161'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001762459' },
+    // 2026-09-21 확인: 현재 판매 중인 화학분석기사 교재는 위 9종이 전부(과거 연도판은 모두 절판/품절). 10종 채우기용 중복 등록 없음.
   ],
 
   // ────────────────────────────────────────
