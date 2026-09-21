@@ -1173,6 +1173,12 @@ const REAL_BOOKS = {
   // 국가전문자격증 — 건축·기타 계열
   // ────────────────────────────────────────
   '건축사': [
+    { title: '대지계획 (건축사 자격시험대비)', author: '김영훈, 김보근, 원미영, 김보선, 정선교', publisher: '예문사', price: 24300, originalPrice: 27000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927454267', imageUrl: KB('9788927454267'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212971511' },
+    { title: '건축설계 1 (건축사자격시험대비)', author: '김영훈, 김보근, 원미영, 김보선, 정선교', publisher: '예문사', price: 24300, originalPrice: 27000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927454274', imageUrl: KB('9788927454274'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212971631' },
+    { title: '건축설계 2 (건축사자격시험대비)', author: '김영훈, 김보근, 원미영, 김보선, 정선교 외', publisher: '예문사', price: 24300, originalPrice: 27000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927454281', imageUrl: KB('9788927454281'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212971507' },
+    { title: '2024 건축사자격시험 과년도 출제문제 1교시 과목 대지계획', author: '한솔아카데미수험연구회', publisher: '한솔아카데미', price: 33000, originalPrice: 33000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791166544439', imageUrl: KB('9791166544439'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211900789' },
+    { title: '2024 건축사자격시험 과년도 출제문제 2교시 과목 건축설계 1', author: '한솔아카데미수험연구회', publisher: '한솔아카데미', price: 33000, originalPrice: 33000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791166544446', imageUrl: KB('9791166544446'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211900803' },
+    { title: '2024 건축사자격시험 과년도 출제문제 3교시 과목 건축설계 2', author: '한솔아카데미수험연구회', publisher: '한솔아카데미', price: 33000, originalPrice: 33000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791166544453', imageUrl: KB('9791166544453'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211901043' },
   ],
 
   '수의사': [
