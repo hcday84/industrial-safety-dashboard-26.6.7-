@@ -1248,6 +1248,10 @@ const REAL_BOOKS = {
 
   '2급생활스포츠지도사': [
     { title: '2026 메인에듀 2급 생활스포츠지도사 필기 한 권으로 끝내기', author: '메인에듀 스포츠지도사 연구소', publisher: '메인에듀', price: 27900, originalPrice: 31000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791189357931', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791189357931.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218881268' },
+    { title: '2027 에듀윌 스포츠지도사 필기 한권끝장(빈출이론+기출문제+모의고사+무료특강)', author: '정수봉, 이준영, 이성열, 구본재', publisher: '에듀윌', price: 33300, originalPrice: 37000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791136043740', imageUrl: KB('9791136043740'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221048964' },
+    { title: '2026 성피티의 생활스포츠지도사 2급 필기 합격공식', author: '성우재, 정빛나', publisher: '좋은땅', price: 29700, originalPrice: 33000, discount: '10%', rating: 10.0, tags: ['베스트'], hasEbook: false, isbn: '9791138848664', imageUrl: KB('9791138848664'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218448152' },
+    { title: '2026 생활스포츠지도사 2급 7개년 기출문제집', author: '스포츠지도사연구소', publisher: '예문에듀', price: 23400, originalPrice: 26000, discount: '10%', rating: 10.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791163865117', imageUrl: KB('9791163865117'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218149561' },
+    { title: '2026 헝그리스포츠 생활/전문 스포츠지도사 2급 파이널 모의고사 기출문제집', author: '한현근', publisher: '직업상점', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791194695196', imageUrl: KB('9791194695196'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217556262' },
   ],
 
   '사회조사분석사2급': [
