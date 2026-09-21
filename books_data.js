@@ -1082,6 +1082,8 @@ const REAL_BOOKS = {
     { title: '2026 합격Easy 대기환경기사 필기', author: '신은상', publisher: '건기원', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013049817', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791157678976.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218358598' },
     { title: '공정시험기준에 따른 대기오염물질분석', author: '조용준', publisher: '동화기술', price: 15000, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000008002107', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788942591855.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000000660069' },
     { title: '2026 대기환경산업기사 실기+무료동영상', author: '전화택', publisher: '구민사', price: 28800, originalPrice: 32000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168756441', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791168756441.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218853956' },
+    { title: '2026 대기환경산업기사 필기', author: '서영민, 이철한, 달팽이', publisher: '예문사', price: 43200, originalPrice: 48000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927461388', imageUrl: KB('9788927461388'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219139711' },
+    { title: '2026 대기환경기사·산업기사 실기', author: '서영민, 이철한, 달팽이', publisher: '예문사', price: 32400, originalPrice: 36000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927461463', imageUrl: KB('9788927461463'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219198709' },
   ],
 
   // ────────────────────────────────────────
