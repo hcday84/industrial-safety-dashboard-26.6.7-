@@ -1282,6 +1282,7 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   '치과기공사': [
     { title: '치과재료학', author: '한국치과재료학교수협의회', publisher: '군자출판사', price: 80000, tags: ['추천'], hasEbook: false, isbn: '9791170684626', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791170684626.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219647914' },
+    { title: '치과기공사 국가시험예상문제집 세트', author: '대학서림 편집부', publisher: '대학서림', price: 60000, originalPrice: 60000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788969403735', imageUrl: KB('9788969403735'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219509416' },
   ],
 
   // ────────────────────────────────────────
