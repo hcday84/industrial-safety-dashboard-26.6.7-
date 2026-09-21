@@ -1024,6 +1024,9 @@ const REAL_BOOKS = {
   '자동차정비기능장': [
     { title: '최신판 자동차정비기능장 필기', author: '전봉준·고동원', publisher: '예문사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], hasEbook: false, isbn: '9788927456742', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788927456742.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000214983155' },
     { title: '자동차 미케닉을 위한 자동차 전자제어 시스템(자동차 시스템 제어 2)', author: '정태균', publisher: '성안당', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788931535211', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788931535211.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000000558012' },
+    { title: '202X 자동차정비기능장 필기', author: '김형진, 김승수', publisher: '구민사', price: 37800, originalPrice: 42000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791168756632', imageUrl: KB('9791168756632'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218918190' },
+    { title: '자동차정비기능장 실기 필답형+작업형', author: '전봉준, 임병철', publisher: '예문사', price: 31500, originalPrice: 35000, discount: '10%', rating: 10.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788927459149', imageUrl: KB('9788927459149'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217165438' },
+    { title: '자동차정비기능장 작업형 실기', author: '정우규, 김광수', publisher: '골든벨', price: 35100, originalPrice: 39000, discount: '10%', rating: 10.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791124114285', imageUrl: KB('9791124114285'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219238549' },
   ],
 
   // ────────────────────────────────────────
