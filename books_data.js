@@ -1271,6 +1271,11 @@ const REAL_BOOKS = {
     { title: '2026 최종 마무리 영양사 모의고사문제', author: '식품영양생리학회', publisher: '크라운출판사', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788940650776', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788940650776.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219189432' },
     { title: '2026 영양사 문제집 (전2권)', author: '영양사국가고시시험연구회', publisher: '교문사', price: 42000, originalPrice: 42000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788936327507', imageUrl: KB('9788936327507'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219725161' },
     { title: '2026 시대에듀 영양사 실제시험보기', author: '만점해법저자진', publisher: '시대고시기획', price: 23400, originalPrice: 26000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143415103', imageUrl: KB('9791143415103'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220004106' },
+    { title: '최신 식품위생관계법규', author: '한국식품영양학회', publisher: '문운당', price: 33000, tags: ['추천'], hasEbook: false, isbn: '9791156928553', imageUrl: KB('9791156928553'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220783242' },
+    { title: '영양사 핵심요약집', author: '영양사국가시험 교육연구회', publisher: '교문사', price: 28000, tags: ['추천'], hasEbook: false, isbn: '9788936322267', imageUrl: KB('9788936322267'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000609675' },
+    { title: '2024 영양사 모의고사 핵심 문제집', author: '영양사국가고시시험연구회', publisher: '광문각', price: 30000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: true, isbn: '9791193965030', imageUrl: KB('9791193965030'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214160633' },
+    { title: '2022 영양사 1교시+2교시 마무리문제집', author: '이민경, 영양사국가시험연구소', publisher: '예문에듀', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791163861027', imageUrl: KB('9791163861027'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061450411' },
+    { title: '2022 신 SD에듀 영양사 1교시 완벽마무리를 책임진다!', author: '최미희', publisher: '시대고시기획', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 6, tags: ['추천'], hasEbook: true, isbn: '9791138327015', imageUrl: KB('9791138327015'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000060624494' },
   ],
 
   // ────────────────────────────────────────
