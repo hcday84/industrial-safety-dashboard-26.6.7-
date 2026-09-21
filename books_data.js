@@ -934,6 +934,13 @@ const REAL_BOOKS = {
 
   // ────────────────────────────────────────
   '리눅스마스터2급': [
+    { title: '2026 이기적 리눅스마스터 2급(1·2차) 기본서', author: '권소라', publisher: '영진닷컴', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931481419', imageUrl: KB('9788931481419'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218787227' },
+    { title: '2027 빠르게 따는 리눅스마스터 2급(1, 2차)', author: '권대우', publisher: '골든래빗(주)', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791124516232', imageUrl: KB('9791124516232'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220240746' },
+    { title: '리눅스마스터 2급 한권으로 끝내기', author: '박성업', publisher: '시대고시기획', price: 23400, originalPrice: 26000, discount: '10%', rating: 10.0, reviews: 12, tags: ['베스트'], hasEbook: false, isbn: '9791143411198', imageUrl: KB('9791143411198'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219391330' },
+    { title: '2026 박문각 리눅스마스터 2급 기출원스톱 800제+무료특강', author: '오재관', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791175197763', imageUrl: KB('9791175197763'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219249403' },
+    { title: 'Rocky Linux8로 리눅스마스터 2급 정복하기', author: '정성재, 이재웅', publisher: '북스홀릭퍼블리싱', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791162891186', imageUrl: KB('9791162891186'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211820693' },
+    { title: '국가공인 리눅스마스터 2급', author: '박성수, 강기봉, 정우영', publisher: '수퍼유저코리아', price: 25000, originalPrice: 25000, discount: '0%', rating: 7.5, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791195178612', imageUrl: KB('9791195178612'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001958047' },
+    { title: '2023 이기적 리눅스마스터 2급 기본서', author: '권소라', publisher: '영진닷컴', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931466683', imageUrl: KB('9788931466683'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200456451' },
   ],
 
   // ────────────────────────────────────────
