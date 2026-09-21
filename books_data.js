@@ -1252,6 +1252,9 @@ const REAL_BOOKS = {
   '평생교육사': [
     { title: '평생교육경영론', author: '권두승, 최운실', publisher: '교육과학사', price: 20000, originalPrice: 20000, discount: '0%', rating: 4.5, reviews: 456, tags: ['베스트'], hasEbook: false, isbn: '9788925408040', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788925408040.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000000474068' },
     { title: '평생교육 프로그램개발', author: '기영화', publisher: '학지사', price: 10000, originalPrice: 10000, discount: '0%', rating: 4.5, reviews: 378, tags: ['추천'], hasEbook: false, isbn: '9788975485855', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788975485855.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001175547' },
+    { title: '평생교육사를 위한 성인학습 및 상담', author: '김현진, 이수란, 최혜라', publisher: '공동체', price: 21000, originalPrice: 21000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791175540583', imageUrl: KB('9791175540583'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218960471' },
+    { title: '현장실습 이론과 실제 (글로벌 리더 역량 평생교육사)', author: '정은희, 신의현, 민경화, 허현자', publisher: '양성원', price: 20000, originalPrice: 20000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791161265155', imageUrl: KB('9791161265155'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201054316' },
+    { title: '평생교육사 현장실습 이렇게 하라', author: '이흥수, 조현정', publisher: '로뎀출판사', price: 13500, originalPrice: 15000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791197951510', imageUrl: KB('9791197951510'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219981672' },
   ],
 
   // ────────────────────────────────────────
