@@ -1482,6 +1482,10 @@ const REAL_BOOKS = {
 
   '재경관리사': [
     { title: '2026 해커스 기초회계원리 초단기 7일 완성 이론+기출+분개연습', author: '이남호', publisher: '해커스금융', price: 16200, originalPrice: 18000, discount: '10%', rating: 5.0, reviews: 12, tags: ['베스트'], hasEbook: false, isbn: '9791174040893', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791174040893.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218668709' },
+    { title: '2026 국가공인 재경관리사 재무회계', author: '삼일회계법인', publisher: '삼일인포마인', price: 24300, originalPrice: 27000, discount: '10%', rating: 9.5, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9791167844675', imageUrl: KB('9791167844675'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219026128' },
+    { title: '2026 국가공인 재경관리사 원가관리회계', author: '삼일회계법인', publisher: '삼일인포마인', price: 24300, originalPrice: 27000, discount: '10%', rating: 10.0, reviews: 13, tags: ['베스트'], hasEbook: false, isbn: '9791167844743', imageUrl: KB('9791167844743'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219116791' },
+    { title: '2026 국가공인 재경관리사 세무회계', author: '삼일회계법인', publisher: '삼일인포마인', price: 24300, originalPrice: 27000, discount: '10%', rating: 9.7, reviews: 8, tags: ['추천'], hasEbook: false, isbn: '9791167845344', imageUrl: KB('9791167845344'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219562199' },
+    { title: '2026 에듀윌 재경관리사 한권합격(핵심이론+기출문제+무료특강)', author: '이원주', publisher: '에듀윌', price: 29700, originalPrice: 33000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791136041951', imageUrl: KB('9791136041951'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219682601' },
   ],
 
   'ERP정보관리사': [
