@@ -627,6 +627,10 @@ const REAL_BOOKS = {
     { title: '보건의료정보관리사 국시 문제집 세트 (전5권)', author: '김정임', publisher: '한올', price: 74000, originalPrice: 74000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791166471384', imageUrl: KB('9791166471384'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001845025' },
     { title: '에센스 보건의료 정보관리학', author: '이경미, 김미정, 김선희, 김재윤, 김환희, 선미옥, 유진영', publisher: '메디컬사이언스', price: 30000, originalPrice: 30000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791190839297', imageUrl: KB('9791190839297'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001944665' },
     { title: '새로운 경향에 맞춘 보건의료정보관리사 실전모의고사', author: '김정임', publisher: '군자출판사', price: 38000, originalPrice: 38000, discount: '0%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791159555794', imageUrl: KB('9791159555794'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001780562' },
+    { title: '의료관계법규', author: '황성완, 현숙정, 김민경, 김한성, 전상남, 박명배, 신숙', publisher: '계축문화사', price: 33000, tags: ['추천'], hasEbook: false, isbn: '9788956299013', imageUrl: KB('9788956299013'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220036159' },
+    { title: '보건의료정보관리사 및 보건교육사를 위한 에센스 보건의료관계법규(2026-2027)', author: '남철현 외', publisher: '메디시언', price: 30000, tags: ['추천'], hasEbook: false, isbn: '9791193920893', imageUrl: KB('9791193920893'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220923031' },
+    { title: '쎈 최신 의료관계법규 핵심정리와 예상문제(2021)', author: '김태현, 정상진, 조현주, 용왕식, 김선희', publisher: '보문각', price: 18000, tags: ['추천'], hasEbook: false, isbn: '9788962204131', imageUrl: KB('9788962204131'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000963391' },
+    { title: '보건의료관계법규', author: '권용현, 권재일, 박사라, 손기연', publisher: '학지사메디컬', price: 32000, tags: ['추천'], hasEbook: false, isbn: '9791192867281', imageUrl: KB('9791192867281'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201140932' },
   ],
 
   '보건교육사': [
