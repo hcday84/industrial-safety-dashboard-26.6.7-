@@ -1243,6 +1243,11 @@ const REAL_BOOKS = {
     { title: '식품미생물학', author: '이종경, 윤기선, 오세욱, 이선영', publisher: '파워북', price: 21000, rating: 4.6, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9788981604608', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788981604608.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001259878' },
     { title: '2026 식품산업기사 실전모의고사', author: '식품생명과학연구회', publisher: '크라운출판사', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788940650738', imageUrl: KB('9788940650738'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219303021' },
     { title: '2023 식품기사 산업기사 실기시험문제', author: '식품생명과학연구회', publisher: '크라운출판사', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788940647103', imageUrl: KB('9788940647103'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201603431' },
+    { title: '식품분석', author: '금종화, 김정숙, 김지상, 남진식, 배지현, 손흥수, 오성훈', publisher: '지구문화사', price: 23000, rating: 4.6, reviews: 3, tags: ['추천'], hasEbook: true, isbn: '9788970068237', imageUrl: KB('9788970068237'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001066010' },
+    { title: '한국산업인력공단 출제기준에 따른 식품기사 2차 필기시험 문제 해설서', author: '이성갑, 이옥환', publisher: '진로', price: 18000, tags: ['추천'], hasEbook: false, isbn: '9791189464042', imageUrl: KB('9791189464042'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001927103' },
+    { title: '최신 출제경향에 따른 식품기사(산업기사) 시험문제', author: '이성갑, 강성태, 이옥환, 정순영', publisher: '백산출판사', price: 38000, tags: ['추천'], hasEbook: true, isbn: '9791157630660', imageUrl: KB('9791157630660'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001757490' },
+    { title: '식품기사 & 식품산업기사(신경향 출제대비)', author: '이성갑, 심상국, 장재권', publisher: '석학당', price: 34200, originalPrice: 38000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788993158861', imageUrl: KB('9788993158861'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001519074' },
+    { title: '식품기사산업기사 필기', author: '윤장호, 정진경, 차윤환', publisher: '예문사', price: 33300, originalPrice: 37000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788927440161', imageUrl: KB('9788927440161'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000523561' },
   ],
 
   // ────────────────────────────────────────
