@@ -807,6 +807,8 @@ const REAL_BOOKS = {
     { title: '2026 평생 무료 동영상과 함께하는 가스텅스텐아크용접기능사 필기', author: '최갑규', publisher: '세진북스', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012222847', isbn: '9791157458677', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791157458677.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000220241342' },
     { title: '용접기능사 실기', author: '김승대 외', publisher: '세진사', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.4, reviews: 145, tags: ['추천'], hasEbook: false, isbn: '9788971219201', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788971219201.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001097753' },
     { title: '2026 기분파 피복아크용접기능사 필기 (가스텅스텐아크용접/이산화탄소가스아크용접기능사 포함)', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], isbn: '9791194328216', imageUrl: null, pageUrl: 'https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=376256841' },
+    { title: '2026 단기완성 가스텅스텐아크용접기능사 필기', author: '최갑규', publisher: '세진북스', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791157458660', imageUrl: KB('9791157458660'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220241334' },
+    { title: '가스 텅스텐아크 용접기능사 실기', author: '김명선, 이상원, 홍상현, 윤상준', publisher: '크라운출판사', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788940648933', imageUrl: KB('9788940648933'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213691384' },
   ],
 
   '이산화탄소가스아크용접기능사': [
