@@ -1547,6 +1547,7 @@ const REAL_BOOKS = {
     { title: '2025 이패스 CFP 지식형 핵심문제집', author: '이패스코리아 금융연구소', publisher: '이패스코리아', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.6, reviews: 654, tags: ['추천'], hasEbook: false, isbn: '9791172092399', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791172092399.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217029818' },
     { title: '토마토패스 CFP 지식형 핵심정리문제집', author: '홍영진·김인회 외', publisher: '예문에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 543, tags: ['추천'], hasEbook: false, isbn: '9791163865018', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791163865018.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217296470' },
     { title: '토마토패스 CFP 사례형 핵심정리문제집', author: '홍영진·김인회 외', publisher: '예문에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 432, tags: ['추천'], hasEbook: false, isbn: '9791163865100', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791163865100.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217595699' },
+    { title: '2023 이패스 CFP 최종실전 모의고사', author: '이패스코리아 금융연구소, 김종희, 박성현, 최동진', publisher: '이패스코리아', price: 26100, originalPrice: 29000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791193111215', imageUrl: KB('9791193111215'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000203246783' },
   ],
 
   '바리스타1급': [
