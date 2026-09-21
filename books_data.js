@@ -355,6 +355,8 @@ const REAL_BOOKS = {
     { title: '2026 건축기사실기 세트', author: '한규대, 김형중, 안광호, 이병억', publisher: '한솔아카데미', price: 47700, originalPrice: 53000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791166548192', imageUrl: KB('9791166548192'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219085506' },
     { title: '2026 에듀윌 건축기사 실기 한권끝장+무료특강', author: '김강섭, 김준섭, 송영웅', publisher: '에듀윌', price: 34200, originalPrice: 38000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791136040732', imageUrl: KB('9791136040732'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219447038' },
     { title: '2026 건축기사 실기 13+2개년 기출유형(스프링분권)', author: '안광호, 백종엽, 이병억', publisher: '한솔아카데미', price: 30600, originalPrice: 34000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791166548697', imageUrl: KB('9791166548697'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219350643' },
+    { title: '2026 건축기사·건축산업기사 시리즈 4: 건축설비', author: '오병칠, 권영철, 오호영', publisher: '한솔아카데미', price: 24300, originalPrice: 27000, discount: '10%', rating: 5.0, reviews: 18, tags: ['추천'], hasEbook: false, isbn: '9791166547577', imageUrl: KB('9791166547577'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218353214' },
+    { title: '2026 건축기사·건축산업기사 시리즈 1: 건축계획', author: '이종석, 이병억', publisher: '한솔아카데미', price: 24300, originalPrice: 27000, discount: '10%', rating: 5.0, reviews: 18, tags: ['추천'], hasEbook: false, isbn: '9791166547546', imageUrl: KB('9791166547546'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218353203' },
   ],
 
   // ────────────────────────────────────────
