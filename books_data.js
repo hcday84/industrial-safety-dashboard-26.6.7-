@@ -520,6 +520,10 @@ const REAL_BOOKS = {
   '보건의료정보관리사': [
     { title: '의무기록정보학 실전문제', author: '아카데미아 편집국', publisher: '아카데미아', price: 25000, tags: ['베스트'], hasEbook: false, isbn: '9788959384211', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788959384211.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000000896710' },
     { title: '의무기록사 시험 합격을 위한 의학용어 암기법: 순환계와 근골계', author: '의학수험연구회', publisher: '수학연구사', price: 17550, originalPrice: 19500, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791191036626', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791191036626.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001947337' },
+    { title: '의무기록정보 분석실무 (보건의료정보관리사 실무서)', author: '이경미, 강선희, 권현주, 김귀현, 남영희, 이혜승, 홍경란', publisher: '메디컬사이언스', price: 35000, originalPrice: 35000, discount: '0%', tags: ['베스트'], hasEbook: false, isbn: '9791193920459', imageUrl: KB('9791193920459'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216038594' },
+    { title: '보건의료정보관리사 국시 문제집 세트 (전5권)', author: '김정임', publisher: '한올', price: 74000, originalPrice: 74000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791166471384', imageUrl: KB('9791166471384'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001845025' },
+    { title: '에센스 보건의료 정보관리학', author: '이경미, 김미정, 김선희, 김재윤, 김환희, 선미옥, 유진영', publisher: '메디컬사이언스', price: 30000, originalPrice: 30000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791190839297', imageUrl: KB('9791190839297'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001944665' },
+    { title: '새로운 경향에 맞춘 보건의료정보관리사 실전모의고사', author: '김정임', publisher: '군자출판사', price: 38000, originalPrice: 38000, discount: '0%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791159555794', imageUrl: KB('9791159555794'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001780562' },
   ],
 
   '보건교육사': [
