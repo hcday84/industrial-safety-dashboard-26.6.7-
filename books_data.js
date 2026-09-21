@@ -1309,6 +1309,11 @@ const REAL_BOOKS = {
     { title: '경제학연습 미시편', author: '정병열', publisher: '세경북스', price: 47700, originalPrice: 53000, discount: '10%', rating: 4.5, reviews: 543, tags: ['추천'], hasEbook: false, isbn: '9791159734526', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791159734526.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216352206' },
     { title: '해커스 IFRS 정윤돈 객관식 재무회계 (전2권)', author: '정윤돈', publisher: '해커스 경영아카데미', price: 40000, originalPrice: 40000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791174043535', imageUrl: KB('9791174043535'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217543628' },
     { title: '해커스 윤민호 객관식 재무관리', author: '윤민호', publisher: '해커스 경영아카데미', price: 29000, originalPrice: 29000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791169993487', imageUrl: KB('9791169993487'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000202690317' },
+    { title: '해커스 IFRS 정윤돈 중급회계 1', author: '정윤돈', publisher: '해커스 경영아카데미', price: 34000, rating: 4.9, reviews: 27, tags: ['추천'], hasEbook: false, isbn: '9791174045232', imageUrl: KB('9791174045232'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219301301' },
+    { title: '해커스 윤 원가관리회계', author: '엄윤', publisher: '해커스 경영아카데미', price: 40000, rating: 5.0, reviews: 13, tags: ['추천'], hasEbook: false, isbn: '9791174040169', imageUrl: KB('9791174040169'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216831632' },
+    { title: '2026 세법기본서', author: '김문철, 이병현', publisher: '가치산책컴퍼니', price: 45000, originalPrice: 50000, discount: '10%', rating: 5.0, reviews: 6, tags: ['추천'], hasEbook: false, isbn: '9791193961551', imageUrl: KB('9791193961551'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219411452' },
+    { title: '해커스 윤민호 재무관리', author: '윤민호', publisher: '해커스 경영아카데미', price: 43000, rating: 4.9, reviews: 30, tags: ['추천'], hasEbook: false, isbn: '9791169990165', imageUrl: KB('9791169990165'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201054234' },
+    { title: '회계감사', author: '손보승', publisher: '한국세무정보', price: 35100, originalPrice: 39000, discount: '10%', tags: ['추천'], hasEbook: true, isbn: '9791193725528', imageUrl: KB('9791193725528'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221248783' },
   ],
 
   '감정평가사': [
