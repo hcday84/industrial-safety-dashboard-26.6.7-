@@ -359,9 +359,9 @@ const REAL_BOOKS = {
   ],
 
   '화공기술사': [
-    // 베스트셀러 5
-    { title: '화공기술사 합격노트', author: '박정호', publisher: '부크크', price: 19800, originalPrice: 19800, discount: '0%', tags: ['추천'], isbn: '9791127218188', imageUrl: KB('S000060604116'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000060604116' },
-    // 추천수험서 5
+    // 2026-09-21 확인: 교보문고에 '화공기술사'(화공안전기술사와는 다른 종목) 전용 도서는 아래 2종이 전부.
+    { title: 'PERFECT 화공기술사(상,하권 스프링형)', author: 'EDN 기술사 연구회', publisher: '엔지니어데이터넷', price: 95000, originalPrice: 95000, discount: '0%', tags: ['베스트'], hasEbook: false, isbn: '9791124092835', imageUrl: KB('9791124092835'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220774175' },
+    { title: '화공기술사 합격노트', author: '박정호', publisher: '부크크', price: 19800, originalPrice: 19800, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791127218188', imageUrl: KB('9791127218188'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000060604116' },
   ],
 
   '가스기술사': [
