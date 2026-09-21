@@ -922,6 +922,7 @@ const REAL_BOOKS = {
     { title: '최신 비파괴검사 실기 완전정복', author: 'NDT시험연구회', publisher: '세진사', price: 26000, rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791160455892', imageUrl: KB('9791160455892'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000209591913' },
     { title: '최신 이론과 기법을 적용한 비파괴검사공학', author: '박익근, 장경영, 김정석, 변재원', publisher: '노드미디어', price: 36000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788984583542', imageUrl: KB('9788984583542'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213501572' },
     { title: '최신 비파괴검사 개론', author: '이형준, 노명수, 서동만', publisher: '엔플북스', price: 26100, originalPrice: 29000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788968130649', imageUrl: KB('9788968130649'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001051666' },
+    // 2026-09-21 확인: '침투비파괴검사기사' 전용 도서는 1종뿐이라 기사/산업기사 공통 NDT 이론서 5종으로 보강, 위 7종이 현재 판매 중인 실질 상한.
   ],
 
   '자기비파괴검사기사': [
