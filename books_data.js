@@ -416,6 +416,9 @@ const REAL_BOOKS = {
     // 추천수험서 5
     { title: '정보관리기술사 & 컴퓨터시스템응용기술사 8: 데이터베이스', author: '권영식', publisher: '성안당', price: 40500, originalPrice: 45000, discount: '10%', rating: 5.0, reviews: 6, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000003079925', isbn: '9788931555028', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788931555028.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000000559796' },
     { title: '정보관리기술사&컴퓨터시스템응용기술사 5: 소프트웨어 공학', author: '권영식', publisher: '성안당', price: 49500, originalPrice: 55000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000005902310', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788931559972.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000211901156' },
+    { title: '정보관리기술사 컴퓨터시스템응용기술사 Vol 2 운영체제', author: '권영식', publisher: '성안당', price: 36000, originalPrice: 40000, discount: '10%', rating: 10.0, reviews: 6, tags: ['추천'], hasEbook: false, isbn: '9788931558371', imageUrl: KB('9788931558371'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000060621635' },
+    { title: '정보관리기술사 & 컴퓨터시스템응용기술사 Vol 4 보안', author: '권영식', publisher: '성안당', price: 45000, originalPrice: 50000, discount: '10%', rating: 9.0, reviews: 7, tags: ['추천'], hasEbook: false, isbn: '9788931559958', imageUrl: KB('9788931559958'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000202705815' },
+    { title: '정보관리기술사&컴퓨터시스템응용기술사 Vol 11 Cloud Native', author: '권영식', publisher: '성안당', price: 40500, originalPrice: 45000, discount: '10%', rating: 10.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9788931584912', imageUrl: KB('9788931584912'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217371039' },
   ],
 
   '컴퓨터시스템응용기술사': [
