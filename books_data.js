@@ -1155,6 +1155,10 @@ const REAL_BOOKS = {
 
   '공인노무사': [
     { title: '2026 박문각 공인노무사 1차 정율 사회보험법 기본이론', author: '류호진', publisher: '박문각', price: 20700, originalPrice: 23000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791175191464', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791175191464.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217327377' },
+    { title: '2027 시대에듀 EBS 공인노무사 1차 노동법Ⅰ·Ⅱ', author: 'EBS 교수진', publisher: '시대고시기획', price: 37800, originalPrice: 42000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143417961', imageUrl: KB('9791143417961'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220844520' },
+    { title: '2027 시대에듀 EBS 공인노무사 1차 경영학개론', author: '이근필', publisher: '시대고시기획', price: 34200, originalPrice: 38000, discount: '10%', rating: 10.0, tags: ['베스트'], hasEbook: false, isbn: '9791143419002', imageUrl: KB('9791143419002'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220988819' },
+    { title: '2027 시대에듀 EBS 공인노무사 1차 7개년 기출문제해설', author: 'EBS 교수진', publisher: '시대에듀', price: 54000, originalPrice: 60000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143416513', imageUrl: KB('9791143416513'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220455703' },
+    { title: '2026 해커스노무사 박결 민법 객관식 기출문제집', author: '박결', publisher: '해커스노무사', price: 29700, originalPrice: 33000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791174048110', imageUrl: KB('9791174048110'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219386158' },
   ],
 
   '관세사': [
