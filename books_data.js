@@ -1449,6 +1449,11 @@ const REAL_BOOKS = {
     { title: '2023 청소년지도사 면접시험 한권으로 끝내기', author: '이정서', publisher: '동문사', price: 22000, originalPrice: 22000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791163285236', imageUrl: KB('9791163285236'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000202673902' },
     { title: '청소년지도사 면접시험 적중문제집(2급 및 3급)', author: '이정서', publisher: '공동체', price: 20000, originalPrice: 20000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791161054322', imageUrl: KB('9791161054322'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001798327' },
     { title: '청소년지도사 2급 2차 면접시험 대비 가이드북', author: '최용진', publisher: '퍼플', price: 9400, originalPrice: 9400, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788924055542', imageUrl: null, pageUrl: 'https://product.kyobobook.co.kr/detail/S000060606124' },
+    { title: '청소년 교육론', author: '김동일, 이미나, 신재한, 김형수, 김영춘, 김병남, 박은영, 임운나', publisher: '교육과학사', price: 20000, tags: ['추천'], hasEbook: false, isbn: '9788925415079', imageUrl: KB('9788925415079'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000474731' },
+    { title: '2026 김형준의 청소년지도사 면접가이드 1·2·3급', author: '김형준', publisher: '나눔Book', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791174911490', imageUrl: KB('9791174911490'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220575392' },
+    { title: '합격의 지름길 청소년지도사 면접시험 2·3급', author: '(사)청소년과 미래', publisher: '학지사', price: 13500, originalPrice: 15000, discount: '10%', tags: ['추천'], hasEbook: true, isbn: '9788999730085', imageUrl: KB('9788999730085'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211314634' },
+    { title: '한 권으로 OK 청소년지도사 면접시험 2·3급', author: '청소년 활짝', publisher: '양성원', price: 20000, tags: ['추천'], hasEbook: false, isbn: '9791161266589', imageUrl: KB('9791161266589'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217278600' },
+    { title: '청소년 지도사 2, 3급 면접 가이드', author: '백현옥', publisher: '박영스토리', price: 16000, tags: ['추천'], hasEbook: true, isbn: '9791165192259', imageUrl: KB('9791165192259'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001834290' },
   ],
 
   '평생교육사': [
