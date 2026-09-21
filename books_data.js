@@ -163,6 +163,7 @@ const REAL_BOOKS = {
     { title: '2026 정나나의 화공기사 필기 과년도 문제해설', author: '정나나', publisher: '예문사', price: 35100, originalPrice: 39000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927460077', imageUrl: KB('9788927460077'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218183499' },
     { title: '2024 화공기사 필기총정리', author: '박병호', publisher: '일진사', price: 46800, originalPrice: 52000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788942919246', imageUrl: KB('9788942919246'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211992576' },
     { title: '100주 공업화학 (기술고시·기술사·변리사·공무원·공사·공단·화공기사 대비)', author: '이홍주', publisher: '성안당', price: 49500, originalPrice: 55000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931584608', imageUrl: KB('9788931584608'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216237800' },
+    // 2026-09-21 확인: 현재 판매 중인 화공기사 교재는 위 8종이 전부(과거 연도판은 모두 절판/품절, 정나나·화공기사연구회 시리즈 구판 다수 포함). 10종 채우기용 중복 등록 없음.
   ],
 
   // ────────────────────────────────────────
