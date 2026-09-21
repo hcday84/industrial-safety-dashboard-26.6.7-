@@ -298,6 +298,7 @@ const REAL_BOOKS = {
     { title: 'SQL 자격검정 실전문제', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 18000, rating: 4.9, reviews: 207, tags: ['추천'], hasEbook: false, isbn: '9788988474914', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788988474914.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000212021705' },
     { title: '2026 아이리포 SQL 개발자 SQLD 모든 것', author: '조용학', publisher: '아이리포', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 65, tags: ['추천'], hasEbook: false, isbn: '9791193747094', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791193747094.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218822223' },
     { title: '2026 시대에듀 유선배 SQL개발자(SQLD) 합격노트', author: '정미나', publisher: '시대고시기획', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.2, reviews: 23, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012275439', isbn: '9791143402929', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143402929.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218641284' },
+    { title: '혼자 공부하는 SQL with AI', author: '우재남', publisher: '한빛미디어', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: true, isbn: '9791175790865', imageUrl: KB('9791175790865'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221063059' },
   ],
 
   // ────────────────────────────────────────
