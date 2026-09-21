@@ -1410,6 +1410,10 @@ const REAL_BOOKS = {
 
   'TOEIC Speaking': [
     { title: '10일 만에 끝내는 해커스 토익스피킹(토스) 스타트', author: '해커스 어학연구소', publisher: '해커스어학연구소', price: 17010, originalPrice: 18900, discount: '10%', rating: 4.9, reviews: 112, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000003158150', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788965424864.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000060622715' },
+    { title: '2026 제이크쌤의 28시간에 끝내는 토익스피킹 All in One', author: '황인기, 시원스쿨어학연구소', publisher: '시원스쿨닷컴', price: 16110, originalPrice: 17900, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791186858387', imageUrl: KB('9791186858387'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001893506' },
+    { title: '10일 만에 끝내는 해커스 토익스피킹(토스)', author: '해커스 어학연구소', publisher: '해커스어학연구소', price: 17010, originalPrice: 18900, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788965424871', imageUrl: KB('9788965424871'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061351206' },
+    { title: 'ETS 토익스피킹 기출문제집 최신 12회', author: 'ETS', publisher: 'YBM', price: 14400, originalPrice: 16000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788917238877', imageUrl: KB('9788917238877'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061350449' },
+    { title: '만능문장으로 끝내는 토익스피킹 시계토끼 올인원 기본서 7일 완성', author: '시계토끼제니쌤(차지영)', publisher: '시계토끼', price: 19980, originalPrice: 22200, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791198843845', imageUrl: KB('9791198843845'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218847135' },
   ],
 
   'OPIc': [
