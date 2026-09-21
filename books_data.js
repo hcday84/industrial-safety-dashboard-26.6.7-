@@ -1571,6 +1571,10 @@ const REAL_BOOKS = {
 
   '국내여행안내사': [
     { title: '2026 시대에듀 관광국사 한권으로 끝내기', author: '곽희정', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 17, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012162709', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791143401502.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218277203' },
+    { title: '2026 시대에듀 관광학개론 한권으로 끝내기', author: '시대관광교육연구소', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143401472', imageUrl: KB('9791143401472'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218277207' },
+    { title: '2026 시대에듀 관광자원해설 한권으로 끝내기', author: '시대관광교육연구소', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143401496', imageUrl: KB('9791143401496'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218277204' },
+    { title: '2026 시대에듀 국내여행안내사 필기+면접 기출문제집', author: '시대관광교육연구소', publisher: '시대고시기획', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143408389', imageUrl: KB('9791143408389'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219205976' },
+    { title: '2026 국내여행안내사 자격증 한 번에 따기', author: '자격시험연구소', publisher: '서원각', price: 36000, originalPrice: 40000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125747260', imageUrl: KB('9791125747260'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219198685' },
   ],
 
   '국외관광안내사': [
