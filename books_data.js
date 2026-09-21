@@ -771,6 +771,7 @@ const REAL_BOOKS = {
   ],
 
   '승강기기사': [
+    // 2026-09-21 확인: 교보문고에 실판매 중인 승강기기사 전용 도서는 아래 6종이 전부(니치 시장 소진, 모두 국내산업기사 겸용).
     { title: '2026 승강기 기사.산업기사 필기', author: '이도흠', publisher: '엔트미디어', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.7, reviews: 289, tags: ['베스트'], hasEbook: false, isbn: '9791192810614', imageUrl: 'https://image.aladin.co.kr/product/37123/58/coversum/k722031774_1.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217456496' },
     { title: '2026 승강기 기사.산업기사 실기', author: '이도흠', publisher: '엔트미디어', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.7, reviews: 234, tags: ['베스트'], hasEbook: false, isbn: '9791192810805', imageUrl: 'https://image.aladin.co.kr/product/37985/78/coversum/k802034671_1.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218778963' },
     { title: '2024 기발한 승강기기사.산업기사 필기', author: '김인호', publisher: '크라운출판사', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.6, reviews: 189, tags: ['베스트'], hasEbook: false, isbn: '9788940647691', imageUrl: 'https://image.aladin.co.kr/product/32862/66/coversum/8940647696_1.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000211236389' },
