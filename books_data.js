@@ -506,6 +506,11 @@ const REAL_BOOKS = {
     { title: '신경계 물리치료학', author: '김종만', publisher: '범문에듀케이션', price: 48000, tags: ['베스트'], hasEbook: false, isbn: '9791159435171', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791159435171.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219212157' },
     { title: '퍼시픽 물리치료학 개념서 2: 물리적 인자치료(2021)', author: '퍼시픽북스 학술편찬국', publisher: '퍼시픽북스', price: 18000, tags: ['베스트'], hasEbook: false, isbn: '9791163752431', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791163752431.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001823101' },
     // 추천수험서 5
+    { title: '물리치료학 개론', author: '물리치료학개론 편찬위원회', publisher: '대학서림', price: 38000, tags: ['추천'], hasEbook: false, isbn: '9788969403407', imageUrl: KB('9788969403407'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215579196' },
+    { title: '물리치료사 입문을 위한 물리치료학개론', author: '물리치료학개론 편찬위원회', publisher: '범문에듀케이션', price: 40000, tags: ['추천'], hasEbook: false, isbn: '9791159433672', imageUrl: KB('9791159433672'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201117321' },
+    { title: '지역사회 물리치료학', author: '김창주 외', publisher: '범문에듀케이션', price: 33000, tags: ['추천'], hasEbook: false, isbn: '9791159431982', imageUrl: KB('9791159431982'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001778540' },
+    { title: '소아 청소년 물리치료', author: '전재근 외', publisher: '범문에듀케이션', price: 43000, tags: ['추천'], hasEbook: false, isbn: '9791159433047', imageUrl: KB('9791159433047'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001778612' },
+    { title: '스포츠 재활총론', author: '대한스포츠물리치료학회', publisher: '범문에듀케이션', price: 50000, rating: 4.8, reviews: 6, tags: ['추천'], hasEbook: false, isbn: '9791159430541', imageUrl: KB('9791159430541'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001778400' },
   ],
 
   // ────────────────────────────────────────
