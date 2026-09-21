@@ -140,8 +140,13 @@ const REAL_BOOKS = {
     // 베스트셀러 5
     { title: '2026 화공기사 기출문제집(필기)', author: '김재호', publisher: '예문사', price: 27900, originalPrice: 31000, discount: '10%', rating: 4.6, reviews: 234, tags: ['베스트'], hasEbook: false, isbn: '9791192584126', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791192584126.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217304501' },
     { title: '2026 시대에듀 무단뽀 화공기사 실기(필답형+작업형)', author: '최영화', publisher: '시대고시기획', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.8, reviews: 14, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012462422', isbn: '9791188883981', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791188883981.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218973159' },
+    { title: '2027 정나나의 화공기사 필기 세트', author: '정나나', publisher: '예문사', price: 45000, originalPrice: 50000, discount: '10%', rating: 10.0, tags: ['베스트'], hasEbook: false, isbn: '9788927462910', imageUrl: KB('9788927462910'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220716815' },
     // 추천수험서 5
     { title: '2026 한번에 합격하는 화공기사 기출문제집 필기', author: '화공기사연구회', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.3, reviews: 112, tags: ['추천'], hasEbook: false, isbn: '9788931585124', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931585124.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218329721' },
+    { title: '2026 정나나의 화공기사 실기 필답형+작업형', author: '정나나', publisher: '예문사', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927462163', imageUrl: KB('9788927462163'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219570691' },
+    { title: '2026 정나나의 화공기사 필기 과년도 문제해설', author: '정나나', publisher: '예문사', price: 35100, originalPrice: 39000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927460077', imageUrl: KB('9788927460077'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218183499' },
+    { title: '2024 화공기사 필기총정리', author: '박병호', publisher: '일진사', price: 46800, originalPrice: 52000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788942919246', imageUrl: KB('9788942919246'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211992576' },
+    { title: '100주 공업화학 (기술고시·기술사·변리사·공무원·공사·공단·화공기사 대비)', author: '이홍주', publisher: '성안당', price: 49500, originalPrice: 55000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931584608', imageUrl: KB('9788931584608'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216237800' },
   ],
 
   // ────────────────────────────────────────
