@@ -2090,6 +2090,7 @@ const REAL_BOOKS = {
     { title: '교육학 개론', author: '김성제, 강주영', publisher: '행복에너지', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791192486130', imageUrl: KB('9791192486130'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061586055' },
     { title: 'EOS 교육학 카운터펀치 2: 요약의 모든 것', author: '이지원', publisher: '포러스', price: 14400, originalPrice: 16000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791191321470', imageUrl: KB('9791191321470'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001950403' },
     { title: '2024 김신 교육학 백신 심화', author: '김신', publisher: '지스쿨', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788962518702', imageUrl: KB('9788962518702'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201174430' },
+    { title: '2027 설보연 SANTA 교육학 단권화', author: '설보연', publisher: '계획된우연', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.9, reviews: 11, tags: ['추천'], hasEbook: false, isbn: '9791194798156', imageUrl: KB('9791194798156'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219654398' },
   ],
 
   '한국실용글쓰기': [
