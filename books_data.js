@@ -905,7 +905,12 @@ const REAL_BOOKS = {
   '초음파비파괴검사기사': [
     { title: '비파괴검사 기사 산업기사 실기 필답형 기출문제집', author: 'NDT시험연구회', publisher: '세진사', price: 30000, rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791160455281', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791160455281.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000061352238' },
     { title: '초음파 비파괴검사 실기 (기사·산업기사·기능사 시험대비)', author: 'NDT시험연구회', publisher: '세진사', price: 24000, originalPrice: 24000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791160454277', imageUrl: KB('9791160454277'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001791900' },
-    { title: '초음파탐상검사 (비파괴검사 이론&응용 3)', author: '한치현, 박익근', publisher: '노드미디어', price: 39000, originalPrice: 39000, discount: '0%', rating: 10.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788984582538', imageUrl: KB('9788984582538'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001316296' },
+    { title: '초음파탐상검사 (비파괴검사 이론&응용 3)', author: '한치현, 박익근', publisher: '노드미디어', price: 39000, originalPrice: 39000, discount: '0%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788984582538', imageUrl: KB('9788984582538'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001316296' },
+    { title: '비파괴검사 필기 공통과목 완전정복', author: 'NDT시험연구회', publisher: '세진사', price: 30000, tags: ['추천'], hasEbook: false, isbn: '9791160455885', imageUrl: KB('9791160455885'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000208784132' },
+    { title: '최신 비파괴검사 실기 완전정복', author: 'NDT시험연구회', publisher: '세진사', price: 26000, rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791160455892', imageUrl: KB('9791160455892'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000209591913' },
+    { title: '최신 이론과 기법을 적용한 비파괴검사공학', author: '박익근, 장경영, 김정석, 변재원', publisher: '노드미디어', price: 36000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788984583542', imageUrl: KB('9788984583542'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213501572' },
+    { title: '최신 비파괴검사 개론', author: '이형준, 노명수, 서동만', publisher: '엔플북스', price: 26100, originalPrice: 29000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788968130649', imageUrl: KB('9788968130649'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001051666' },
+    // 2026-09-21 확인: 기사/산업기사 공통 NDT 이론서로 보강, 위 7종이 실질 상한(전용 도서 시장 협소).
   ],
 
   '방사선비파괴검사기사': [
