@@ -716,6 +716,7 @@ const REAL_BOOKS = {
     { title: '최신개정판 Conquest 조경기사.조경산업기사 필기정복 - 개정13판', author: '성운환경조경, 김진호', publisher: '도서출판조경', price: 42300, originalPrice: 47000, discount: '10%', rating: 4.5, reviews: 156, tags: ['추천'], hasEbook: false, isbn: '9791160280326', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791160280326.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219513850' },
     { title: '조경산업기사 필기시험문제', author: '임권희', publisher: '크라운출판사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.4, reviews: 123, tags: ['추천'], hasEbook: false, isbn: '9788940623619', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788940623619.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000000642472' },
     { title: '조경기사산업기사 실기', author: '김진성', publisher: '엔플북스', price: 34200, originalPrice: 38000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788968134234', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788968134234.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216701446' },
+    { title: '조경기사산업기사 필기', author: '김여정, 이선아, 서울덕성기술학원', publisher: '엔플북스', price: 38700, originalPrice: 43000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788968134302', imageUrl: KB('9788968134302'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218935545' },
   ],
 
   '조경기능사': [
