@@ -170,6 +170,9 @@ const REAL_BOOKS = {
     // 추천수험서 5
     { title: '2026 가스기사 실기', author: '서상희', publisher: '일진사', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.7, reviews: 178, tags: ['추천'], hasEbook: false, isbn: '9788942920815', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788942920815.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219138942' },
     { title: '2026 가스기능사 필기 총정리', author: '서상희', publisher: '일진사', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 156, tags: ['추천'], hasEbook: false, isbn: '9788942920402', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788942920402.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217622875' },
+    { title: '2026 가스기사 & 산업기사 실기', author: '서상희', publisher: '일진사', price: 54000, originalPrice: 60000, discount: '10%', rating: 10.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788942920792', imageUrl: KB('9788942920792'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219135738' },
+    { title: '2027 모아 가스기사 필기 핵심이론+과년도 8개년', author: 'MCC(MOA Creator Center)', publisher: '모아교육그룹', price: 36000, originalPrice: 40000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168046870', imageUrl: KB('9791168046870'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220996991' },
+    { title: '모아 가스 KGS CODE 뽀개기 (가스기능장, 가스기사, 가스산업기사, 가스기능사 대비)', author: 'MCC(MOA Creator Center)', publisher: '모아교육그룹', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168046900', imageUrl: KB('9791168046900'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221062620' },
   ],
 
   // ────────────────────────────────────────
