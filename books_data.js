@@ -529,6 +529,10 @@ const REAL_BOOKS = {
   '보건교육사': [
     { title: '에센스 보건교육학', author: '남철현 외', publisher: '메디시언', price: 18000, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000007592207', isbn: '9791190839457', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791190839457.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001944678' },
     { title: '보건의사소통 핵심문제집', author: '보건의사소통핵심문제연구회, 노성신', publisher: '한미의학', price: 18000, tags: ['추천'], hasEbook: false, isbn: '9791186089095', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791186089095.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001878901' },
+    { title: '2027 시대에듀 보건교육사 3급 한권으로 끝내기', author: '보건교육연구소', publisher: '시대고시기획', price: 32400, originalPrice: 36000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143415776', imageUrl: KB('9791143415776'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220053072' },
+    { title: '종합수험서 보건교육사 2급', author: '장호봉', publisher: '부크크(Bookk)', price: 42000, originalPrice: 42000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791112198396', imageUrl: KB('9791112198396'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220165993' },
+    { title: '보건교육사 및 보건직 공무원을 위한 최신 보건학', author: '조현 외', publisher: '한미의학', price: 25000, originalPrice: 25000, discount: '0%', rating: 8.4, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791186089149', imageUrl: KB('9791186089149'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001878906' },
+    { title: '보건교육사 및 보건직 공무원을 위한 최신 조사방법론', author: '장창곡 외', publisher: '한미의학', price: 25000, originalPrice: 25000, discount: '0%', rating: 10.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791190322225', imageUrl: KB('9791190322225'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001938850' },
   ],
 
   '위생사': [
