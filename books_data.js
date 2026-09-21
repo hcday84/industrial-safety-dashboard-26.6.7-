@@ -395,6 +395,10 @@ const REAL_BOOKS = {
     { title: 'Perfect 발송배전기술사', author: 'EDN 기술사 연구회', publisher: '엔지니어데이터넷', price: 72000, originalPrice: 72000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791199298293', imageUrl: KB('9791199298293'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218233129' },
     { title: '발송배전기술사 필독서', author: '김세동', publisher: '동일출판사', price: 74700, originalPrice: 83000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788938117205', imageUrl: KB('9788938117205'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217602375' },
     { title: '발송배전기술사 기술계산문제해설', author: '이국찬', publisher: '엔트미디어', price: 72000, originalPrice: 80000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791192810904', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791192810904.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219545212' },
+    { title: '모아 발송배전기술사 기본서 세트', author: '하용일', publisher: '모아교육그룹', price: 99000, originalPrice: 110000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: true, isbn: '9791168044265', imageUrl: KB('9791168044265'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216370700' },
+    { title: '발송배전기술사 기본기초이론 1', author: '이종수', publisher: '전기박사드림', price: 45000, originalPrice: 50000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791198683564', imageUrl: KB('9791198683564'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217333384' },
+    { title: '2022 KEC 한국전기설비규정 관련 건축전기설비기술사 기출·예상문제집', author: '양재학, 김용운, 윤종철, 김석태', publisher: '성안당', price: 45000, originalPrice: 50000, discount: '10%', rating: 5.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9788931527629', imageUrl: KB('9788931527629'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000557656' },
+    { title: 'FINAL 발송배전기술사 실전문제', author: '나상용', publisher: '예문사', price: 63000, originalPrice: 70000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788927413486', imageUrl: KB('9788927413486'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000521433' },
   ],
 
   '전기응용기술사': [
