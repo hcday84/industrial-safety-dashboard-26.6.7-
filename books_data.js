@@ -1847,6 +1847,7 @@ const REAL_BOOKS = {
     { title: 'New 바리스타 2급 자격시험 예상문제집', author: '타임 NCS 바리스타연구소', publisher: '시스컴', price: 15300, originalPrice: 17000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: true, isbn: '9791169419512', imageUrl: KB('9791169419512'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219181717' },
     { title: '커피 바리스타 자격수험서 1급,2급', author: '한국외식음료개발원', publisher: '양림출판사', price: 19000, rating: 5.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9791189369378', imageUrl: KB('9791189369378'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212909072' },
     { title: '바리스타 2급 필기 대비 모의고사집', author: '정설화, 김인환, 한국바리스타자격검정협회', publisher: '아이콕스', price: 12600, originalPrice: 14000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791164260935', imageUrl: KB('9791164260935'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001826792' },
+    { title: '바리스타 2급 무한반복 빈출문제', author: '타임 NCS 바리스타연구소', publisher: '시스컴', price: 15300, originalPrice: 17000, discount: '10%', tags: ['추천'], hasEbook: true, isbn: '9791169415675', imageUrl: KB('9791169415675'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214826514' },
   ],
 
   'FAT': [
