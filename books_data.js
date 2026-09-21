@@ -1463,6 +1463,9 @@ const REAL_BOOKS = {
     { title: '2026 쇼츠 소방안전관리자 3급 기출예상문제집', author: '소방안전관리자회', publisher: '서울고시각', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.4, reviews: 134, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012495359', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788952652102.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218907730' },
     { title: '2027 찐합격 소방안전관리자3급 합격노트+8개년 기출문제', author: '공하성', publisher: '성안당', price: 17100, originalPrice: 19000, discount: '10%', rating: 4.7, reviews: 221, tags: ['베스트'], hasEbook: false, isbn: '9788931515268', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788931515268.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000220362739' },
     { title: '2026 소방안전관리자 3급 기출+적중예상문제', author: '소방안전연구회', publisher: '책과상상', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], hasEbook: false, isbn: '9791169673341', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791169673341.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218229062' },
+    { title: '소방안전관리자 2급(3급포함) 예상문제집(2021)', author: '기획실', publisher: '구민사', price: 14400, originalPrice: 16000, discount: '10%', rating: 5.0, reviews: 5, tags: ['추천'], hasEbook: false, isbn: '9791158138448', imageUrl: KB('9791158138448'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001763566' },
+    { title: '2027 쇼츠 소방안전관리자 핵심요약집(2·3급)', author: '소방안전관리자회', publisher: '서울고시각', price: 13500, originalPrice: 15000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788952653765', imageUrl: KB('9788952653765'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221048489' },
+    // 2026-09-21 확인: 소방안전관리자3급 전용 교재는 위 7종이 전부(나머지는 절판/구판이거나 eBook 전용). 10종 채우기용 중복 등록 없음.
   ],
 
   // ────────────────────────────────────────
