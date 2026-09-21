@@ -2144,6 +2144,7 @@ const REAL_BOOKS = {
     { title: '2023 컬러리스트 기사/산업기사 필기', author: '배용진, 황상윤 외', publisher: '지구문화', price: 33000, originalPrice: 33000, discount: '0%', rating: 4.5, reviews: 42, tags: ['추천'], hasEbook: false, isbn: '9788970062754', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788970062754.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000200846908' },
     { title: '2023 NEW출제경향대비 컬러리스트 필기시험 산업기사·기사 세트', author: '빈혜진', publisher: '미진사', price: 37000, originalPrice: 37000, discount: '0%', rating: 4.4, reviews: 39, tags: ['추천'], hasEbook: false, isbn: '9788940806685', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788940806685.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000200833726' },
     { title: 'New 컬러리스트(Colorist) 기사 산업기사', author: '배용진, 이정은, 박희경 외', publisher: '지구문화사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 51, tags: ['추천'], hasEbook: false, isbn: '9788970067933', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788970067933.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001065999' },
+    { title: '새 출제기준에 따른 컬러리스트 기사 산업기사 실기', author: '배용진, 황상윤', publisher: '지구문화', price: 28000, tags: ['추천'], hasEbook: false, isbn: '9788970068886', imageUrl: KB('9788970068886'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001066055' },
   ],
 
   // ────────────────────────────────────────
@@ -2159,6 +2160,7 @@ const REAL_BOOKS = {
     { title: '2023 컬러리스트 기사/산업기사 필기', author: '배용진, 황상윤 외', publisher: '지구문화', price: 33000, originalPrice: 33000, discount: '0%', rating: 4.5, reviews: 42, tags: ['추천'], hasEbook: false, isbn: '9788970062754', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788970062754.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000200846908' },
     { title: '2023 NEW출제경향대비 컬러리스트 필기시험 산업기사·기사 세트', author: '빈혜진', publisher: '미진사', price: 37000, originalPrice: 37000, discount: '0%', rating: 4.4, reviews: 39, tags: ['추천'], hasEbook: false, isbn: '9788940806685', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788940806685.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000200833726' },
     { title: 'New 컬러리스트(Colorist) 기사 산업기사', author: '배용진, 이정은, 박희경 외', publisher: '지구문화사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 51, tags: ['추천'], hasEbook: false, isbn: '9788970067933', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788970067933.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001065999' },
+    { title: '새 출제기준에 따른 컬러리스트 기사 산업기사 실기', author: '배용진, 황상윤', publisher: '지구문화', price: 28000, tags: ['추천'], hasEbook: false, isbn: '9788970068886', imageUrl: KB('9788970068886'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001066055' },
   ],
 
   // ────────────────────────────────────────
