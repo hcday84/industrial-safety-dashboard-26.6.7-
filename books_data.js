@@ -1462,6 +1462,11 @@ const REAL_BOOKS = {
     { title: '평생교육사를 위한 성인학습 및 상담', author: '김현진, 이수란, 최혜라', publisher: '공동체', price: 21000, originalPrice: 21000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791175540583', imageUrl: KB('9791175540583'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218960471' },
     { title: '현장실습 이론과 실제 (글로벌 리더 역량 평생교육사)', author: '정은희, 신의현, 민경화, 허현자', publisher: '양성원', price: 20000, originalPrice: 20000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791161265155', imageUrl: KB('9791161265155'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201054316' },
     { title: '평생교육사 현장실습 이렇게 하라', author: '이흥수, 조현정', publisher: '로뎀출판사', price: 13500, originalPrice: 15000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791197951510', imageUrl: KB('9791197951510'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219981672' },
+    { title: '평생교육방법론', author: '권영선, 배철우, 윤영남, 이종훈, 조용', publisher: '동문사', price: 22000, rating: 4.6, reviews: 4, tags: ['추천'], hasEbook: true, isbn: '9791163282952', imageUrl: KB('9791163282952'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001819024' },
+    { title: '평생교육방법론', author: '양숙자, 안은선, 김수려', publisher: '공동체', price: 24000, tags: ['추천'], hasEbook: true, isbn: '9791175542143', imageUrl: KB('9791175542143'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220767176' },
+    { title: '평생교육방법론', author: '현영섭, 김선화, 배홍연, 신은경, 유정록, 이영희, 장경미', publisher: '박영스토리', price: 30000, tags: ['추천'], hasEbook: true, isbn: '9791172791452', imageUrl: KB('9791172791452'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220052088' },
+    { title: '질문과 사례로 배우는 평생교육방법론', author: '류영철', publisher: '어가', price: 28000, tags: ['추천'], hasEbook: false, isbn: '9791170752745', imageUrl: KB('9791170752745'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221142962' },
+    { title: '평생 교육사의 역량개발을 위한 스피치 교육방법론', author: '전용복', publisher: '조은', price: 18000, originalPrice: 20000, discount: '10%', rating: 3.8, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791191735208', imageUrl: KB('9791191735208'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001952876' },
   ],
 
   // ────────────────────────────────────────
