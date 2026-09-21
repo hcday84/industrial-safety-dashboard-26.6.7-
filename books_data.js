@@ -1181,6 +1181,10 @@ const REAL_BOOKS = {
 
   '보험계리사': [
     { title: '경제학연습 미시편', author: '정병열', publisher: '세경북스', price: 47700, originalPrice: 53000, discount: '10%', rating: 4.6, reviews: 378, tags: ['베스트'], hasEbook: false, isbn: '9791159734526', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791159734526.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216352206' },
+    { title: '시대에듀 보험계리사 1차 한권으로 끝내기 (전4권)', author: '이상호, 황사빈, 홍지민, 유준수', publisher: '시대고시기획', price: 81000, originalPrice: 90000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143404299', imageUrl: KB('9791143404299'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218615607' },
+    { title: '2027 박후서 보험계약법(5판)', author: '박후서', publisher: '배움', price: 29700, originalPrice: 33000, discount: '10%', rating: 10.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791124262757', imageUrl: KB('9791124262757'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220663155' },
+    { title: '2027 박소연 보험업법', author: '박소연', publisher: '배움', price: 29700, originalPrice: 33000, discount: '10%', rating: 10.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791124262764', imageUrl: KB('9791124262764'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220761820' },
+    { title: '보험수학 기출이 답이다', author: '이수각', publisher: '미래보험교육원', price: 22500, originalPrice: 25000, discount: '10%', rating: 10.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9791186287989', imageUrl: KB('9791186287989'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218080862' },
   ],
 
   '일반행정사': [
