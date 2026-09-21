@@ -1241,6 +1241,9 @@ const REAL_BOOKS = {
 
   '수의사': [
     { title: '수의사 국가시험 대비 KVLE 모의고사 2024', author: '수의미래연구소', publisher: '젊수', price: 35000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791198381057', imageUrl: null, pageUrl: 'https://product.kyobobook.co.kr/detail/S000212461033' },
+    { title: '수의사 국가시험 대비 KVLE 월간국시 2023년 상반기', author: '수의미래연구소', publisher: '젊수', price: 20000, originalPrice: 20000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791198381040', imageUrl: null, pageUrl: 'https://product.kyobobook.co.kr/detail/S000208597804' },
+    { title: '수의사 국가시험 대비 KVLE 월간국시 2022년 상반기', author: '수의미래연구소', publisher: '젊수', price: 20000, originalPrice: 20000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791198381026', imageUrl: null, pageUrl: 'https://product.kyobobook.co.kr/detail/S000208597807' },
+    { title: '수의사 국가시험 대비 KVLE 월간국시 2022년 하반기', author: '수의미래연구소', publisher: '젊수', price: 20000, originalPrice: 20000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791198381033', imageUrl: null, pageUrl: 'https://product.kyobobook.co.kr/detail/S000208597803' },
   ],
 
   '2급생활스포츠지도사': [
