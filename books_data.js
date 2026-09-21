@@ -1526,6 +1526,7 @@ const REAL_BOOKS = {
     { title: '우리들이 궁금했던 시력&안경이야기', author: '박창원', publisher: '대학서림', price: 20000, tags: ['추천'], hasEbook: false, isbn: '9788969402677', imageUrl: KB('9788969402677'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001062940' },
     { title: '안경학개론', author: '한국안경광학과교수협의회', publisher: '대학서림', price: 25000, tags: ['추천'], hasEbook: false, isbn: '9788969403049', imageUrl: KB('9788969403049'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201174652' },
     { title: '최신 콘택트렌즈 임상학', author: '한국콘택트렌즈학회', publisher: '군자출판사', price: 150000, tags: ['추천'], hasEbook: false, isbn: '9791170681120', imageUrl: KB('9791170681120'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212806925' },
+    { title: '안경 물리광학', author: '안경광학 교재편찬위원회', publisher: '북스힐', price: 13000, tags: ['추천'], hasEbook: false, isbn: '9788955262544', imageUrl: KB('9788955262544'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000796544' },
   ],
 
   // ────────────────────────────────────────
