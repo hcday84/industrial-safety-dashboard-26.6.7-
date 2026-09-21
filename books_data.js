@@ -743,6 +743,8 @@ const REAL_BOOKS = {
     { title: '2026 콘크리트 기능사 필기 및 실기', author: '김영국, 박종삼', publisher: '금호', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 256, tags: ['베스트'], hasEbook: false, isbn: '9791192089324', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791192089324.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218203396' },
     { title: '2025 콘크리트기능사 필기 실기 - 개정증보 제20판', author: '박종삼', publisher: '금호출판사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 198, tags: ['베스트'], hasEbook: false, isbn: '9791192089232', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791192089232.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000214506873' },
     { title: '2024 콘크리트 기능사 필기', author: '박종삼', publisher: '금호출판사', price: 14400, originalPrice: 16000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], hasEbook: false, isbn: '9791192089225', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791192089225.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000212390214' },
+    { title: '2025 콘크리트 기능사 필기 실기', author: '고행만', publisher: '건기원', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791157678655', imageUrl: KB('9791157678655'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215015509' },
+    // 2026-09-21 확인: 현재 판매 중인 콘크리트기능사 교재는 위 7종이 전부(니치 시장 소진, 나머지는 절판).
   ],
 
   '측량기능사': [
