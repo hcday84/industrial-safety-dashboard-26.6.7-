@@ -1235,6 +1235,10 @@ const REAL_BOOKS = {
   '청소년상담사2급': [
     { title: '2026 청소년상담사 3급 한권으로 끝내기', author: '청소년상담사연구회', publisher: '시대고시기획', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 876, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012527017', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143406095.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219059292' },
     { title: '2026 청소년상담사 2급 한권으로 끝내기', author: '청소년상담사연구회', publisher: '시대고시기획', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012704563', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143406071.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219411773' },
+    { title: '2026 시대에듀 청소년상담사 2급 2차 면접대비 한권으로 끝내기', author: '문두식', publisher: '시대고시기획', price: 28800, originalPrice: 32000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143409881', imageUrl: KB('9791143409881'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219337906' },
+    { title: '청소년상담사 2급 필기 이론편 1, 2', author: '이우경, 이미옥', publisher: '학지사', price: 40500, originalPrice: 45000, discount: '10%', rating: 10.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9788999737053', imageUrl: KB('9788999737053'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219665356' },
+    { title: '청소년상담사 2급 필기 기출문제편', author: '이우경, 이미옥', publisher: '학지사', price: 31500, originalPrice: 35000, discount: '10%', rating: 9.2, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9788999737060', imageUrl: KB('9788999737060'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219665358' },
+    { title: '2026 청소년상담사 2급 이론서 전과목 통합서', author: '김형준, 유상현', publisher: '나눔Book', price: 41400, originalPrice: 46000, discount: '10%', rating: 10.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791174910424', imageUrl: KB('9791174910424'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218603866' },
   ],
 
   '청소년지도사2급': [
