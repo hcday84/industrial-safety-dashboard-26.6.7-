@@ -572,6 +572,10 @@ const REAL_BOOKS = {
     { title: '2026 더 CORE 치과위생사 국가시험 핵심요약집 세트', author: '나래e러닝아카데미', publisher: '나래출판사', price: 50000, originalPrice: 50000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791171332458', imageUrl: KB('9791171332458'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219311971' },
     { title: '2026 더 CORE Final 치과위생사 국가시험 예상문제집 세트', author: '나래e러닝아카데미', publisher: '나래출판사', price: 50000, originalPrice: 50000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791171332496', imageUrl: KB('9791171332496'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219311975' },
     { title: '임상치위생학실습', author: '임상치위생학실습 편집위원회', publisher: '청구문화사', price: 40000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788956168661', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788956168661.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000000817220' },
+    { title: '2026 시대에듀 치과위생사 최종모의고사', author: '강찬예, 이소희', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: true, isbn: '9791143415400', imageUrl: KB('9791143415400'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220053370' },
+    { title: '치과위생사 국가시험 핵심요약집', author: '대한나래출판사학술연구회', publisher: '대한나래출판사', price: 55000, tags: ['추천'], hasEbook: false, isbn: '9788957417287', imageUrl: KB('9788957417287'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000850013' },
+    { title: '2023 무료 동영상이 있는 치과위생사 국가시험 기출유형문제집', author: '이남숙', publisher: '시대고시기획', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 8, tags: ['추천'], hasEbook: true, isbn: '9791138328760', imageUrl: KB('9791138328760'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061450087' },
+    { title: '치과위생사 국가시험대비 핵심요약집 세트', author: '북샘출판사 편집부', publisher: '북샘출판사', price: 45000, rating: 1.3, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788994345802', imageUrl: KB('9788994345802'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001547194' },
   ],
 
   '간호조무사': [
