@@ -279,6 +279,10 @@ const REAL_BOOKS = {
     // 추천수험서 5
     { title: '2026 박문각 ADsP 기출원스톱 400제+무료특강', author: '육근수', publisher: '박문각', price: 13500, originalPrice: 15000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012507926', isbn: '9791175194472', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791175194472.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219001219' },
     { title: '데이터분석준전문가(ADsP) 단기완성', author: '박영식', publisher: '예문에듀', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791163864998', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791163864998.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217223939' },
+    { title: '2027 이기적 ADsP 데이터분석 준전문가 이론+기출문제', author: '임경덕', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: true, isbn: '9788931482997', imageUrl: KB('9788931482997'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220716727' },
+    { title: '2026 시나공 ADsP 데이터분석 준전문가 기출문제의 재구성', author: '이상미', publisher: '길벗', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.8, reviews: 5, tags: ['추천'], hasEbook: true, isbn: '9791140717347', imageUrl: KB('9791140717347'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218960995' },
+    { title: '2026 빠르게 따는 ADsP 데이터분석 준전문가', author: '임한울, 조영훈, 이유성', publisher: '골든래빗', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 25, tags: ['추천'], hasEbook: true, isbn: '9791194383697', imageUrl: KB('9791194383697'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218942038' },
+    { title: '2026 ADsP 데이터 분석 자격검정 실전문제', author: '김계철', publisher: '에이아이에듀', price: 14400, originalPrice: 16000, discount: '10%', rating: 5.0, reviews: 12, tags: ['추천'], hasEbook: false, isbn: '9791199074453', imageUrl: KB('9791199074453'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217847196' },
   ],
 
   // ────────────────────────────────────────
