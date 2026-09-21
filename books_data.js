@@ -1227,6 +1227,10 @@ const REAL_BOOKS = {
     { title: '수질오염공정시험기준 해설집', author: '박승우', publisher: '세진사', price: 55000, tags: ['추천'], hasEbook: false, isbn: '9791160456981', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791160456981.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218268159' },
     { title: '2026 수질환경산업기사 실기+무료동영상', author: '전화택', publisher: '구민사', price: 28800, originalPrice: 32000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168756465', imageUrl: KB('9791168756465'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218853968' },
     { title: '2026 수질환경산업기사 필기 문제풀이', author: '이철한, 이승민', publisher: '예문사', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927461579', imageUrl: KB('9788927461579'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219212361' },
+    { title: '2026 물쌤닷컴 수질환경기사 산업기사 실기+기출해설', author: '이종혁', publisher: '미교원', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9791194457145', imageUrl: KB('9791194457145'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218971292' },
+    { title: '2027 수질환경기사·산업기사 실기', author: '이철한, 서영민, 이승민, 이준명', publisher: '예문사', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927462484', imageUrl: KB('9788927462484'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220041047' },
+    { title: '2024 SD에듀 Win-Q 수질환경기사·산업기사 필기 단기합격', author: '문진영', publisher: '시대고시기획', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 11, tags: ['추천'], hasEbook: true, isbn: '9791138369626', imageUrl: KB('9791138369626'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212863471' },
+    { title: '2026 수질환경산업기사 필기+과년도 세트+무료동영상+핸드북', author: '전화택', publisher: '구민사', price: 36000, originalPrice: 40000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168756052', imageUrl: KB('9791168756052'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217579934' },
   ],
 
   // ────────────────────────────────────────
