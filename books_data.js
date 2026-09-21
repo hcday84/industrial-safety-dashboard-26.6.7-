@@ -917,6 +917,11 @@ const REAL_BOOKS = {
   '침투비파괴검사기사': [
     { title: '침투비파괴검사 산업기사·기사 실기 필답형', author: '조정현', publisher: '피앤피북', price: 17100, originalPrice: 19000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000011689030', imageUrl: 'https://image.aladin.co.kr/product/36664/67/coversum/k492030187_1.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216904888' },
     { title: '침투탐상검사 (비파괴검사 이론&응용 5)', author: '한기수', publisher: '노드미디어', price: 28000, originalPrice: 28000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788984582545', imageUrl: KB('9788984582545'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001316297' },
+    { title: '비파괴검사 기사 산업기사 실기 필답형 기출문제집', author: 'NDT시험연구회', publisher: '세진사', price: 30000, rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791160455281', imageUrl: KB('9791160455281'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061352238' },
+    { title: '비파괴검사 필기 공통과목 완전정복', author: 'NDT시험연구회', publisher: '세진사', price: 30000, tags: ['추천'], hasEbook: false, isbn: '9791160455885', imageUrl: KB('9791160455885'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000208784132' },
+    { title: '최신 비파괴검사 실기 완전정복', author: 'NDT시험연구회', publisher: '세진사', price: 26000, rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791160455892', imageUrl: KB('9791160455892'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000209591913' },
+    { title: '최신 이론과 기법을 적용한 비파괴검사공학', author: '박익근, 장경영, 김정석, 변재원', publisher: '노드미디어', price: 36000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788984583542', imageUrl: KB('9788984583542'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213501572' },
+    { title: '최신 비파괴검사 개론', author: '이형준, 노명수, 서동만', publisher: '엔플북스', price: 26100, originalPrice: 29000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788968130649', imageUrl: KB('9788968130649'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001051666' },
   ],
 
   '자기비파괴검사기사': [
