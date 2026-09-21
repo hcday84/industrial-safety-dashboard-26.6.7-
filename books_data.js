@@ -1439,6 +1439,11 @@ const REAL_BOOKS = {
   ],
 
   '바텐더': [
+    { title: '호텔바텐더칵테일실무 (조주기능사시험 대비를 위한 완벽서)', author: '김연선, 송영석, 이두진', publisher: '백산출판사', price: 30000, originalPrice: 30000, discount: '0%', tags: ['베스트'], hasEbook: false, isbn: '9791166392573', imageUrl: KB('9791166392573'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061757760' },
+    { title: 'I Love Cocktail (조주기능사 실기 시험 준비생과 바텐더를 위한 필독서)', author: '이석현, 김용식, 김종규, 류중호', publisher: '백산출판사', price: 15000, originalPrice: 15000, discount: '0%', tags: ['베스트'], hasEbook: false, isbn: '9791157639915', imageUrl: KB('9791157639915'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001757823' },
+    { title: 'FLAIR & CLASSIC — 21세기 바텐더와 칵테일 실무', author: '한상진', publisher: '기문사', price: 17000, originalPrice: 17000, discount: '0%', rating: 10.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788977232754', imageUrl: KB('9788977232754'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001200355' },
+    { title: '칵테일 테크닉', author: '우에다 카즈오', publisher: '예문당', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788970016382', imageUrl: KB('9788970016382'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212055362' },
+    { title: '칵테일의 기술', author: '파라곤 북스', publisher: '진선북스', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791193003671', imageUrl: KB('9791193003671'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215747571' },
   ],
 
   '한자능력검정': [
