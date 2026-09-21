@@ -1122,6 +1122,8 @@ const REAL_BOOKS = {
     { title: '2026 식품산업기사 필기', author: '정진경·유연희·이다빈·이아랑', publisher: '예문에듀', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: false, isbn: '9791163864967', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791163864967.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217049829' },
     { title: '2026 해커스 식품산업기사 필기 한권완성', author: '권유진', publisher: '해커스', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], hasEbook: false, isbn: '9788969656445', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788969656445.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217941979' },
     { title: '식품미생물학', author: '이종경, 윤기선, 오세욱, 이선영', publisher: '파워북', price: 21000, rating: 4.6, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9788981604608', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788981604608.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001259878' },
+    { title: '2026 식품산업기사 실전모의고사', author: '식품생명과학연구회', publisher: '크라운출판사', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788940650738', imageUrl: KB('9788940650738'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219303021' },
+    { title: '2023 식품기사 산업기사 실기시험문제', author: '식품생명과학연구회', publisher: '크라운출판사', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788940647103', imageUrl: KB('9788940647103'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201603431' },
   ],
 
   // ────────────────────────────────────────
