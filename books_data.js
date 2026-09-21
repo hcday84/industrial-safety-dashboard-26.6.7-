@@ -596,11 +596,15 @@ const REAL_BOOKS = {
 
   '응급구조사2급': [
     { title: '2026 시대에듀 응급구조사 1·2급 만점문제해설 한권으로 끝내기', author: '응급의료연구회', publisher: '시대에듀', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143405944', imageUrl: KB('9791143405944'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218972628' },
-    { title: '응급의료관련법령 문제집(2025)', author: '강병우', publisher: '청구문화사', price: 23000, originalPrice: 23000, discount: '0%', rating: 10.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788956169521', imageUrl: KB('9788956169521'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216124685' },
+    { title: '응급의료관련법령 문제집(2025)', author: '강병우', publisher: '청구문화사', price: 23000, originalPrice: 23000, discount: '0%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788956169521', imageUrl: KB('9788956169521'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216124685' },
     { title: '응급구조사 1,2급 시험수험서 술술 읽히고 암기되게 하는 책', author: '자격증수험연구회', publisher: '수학연구사', price: 17550, originalPrice: 19500, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791191036435', imageUrl: KB('9791191036435'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001947318' },
     { title: '2급 응급구조사를 위한 기본응급환자관리학', author: '최은숙 외 15인', publisher: '대학서림', price: 24000, originalPrice: 24000, discount: '0%', tags: ['베스트'], hasEbook: false, isbn: '9788969403612', imageUrl: KB('9788969403612'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218777453' },
     { title: '응급구조사 2급(소방승진) 평가문제', author: '대학서림 편집부', publisher: '대학서림', price: 35000, originalPrice: 35000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788969402035', imageUrl: KB('9788969402035'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001062889' },
-    { title: '1.2급 응급구조사를 위한 현장실습기록지 작성: 응급의료기관', author: '방성환 외', publisher: '메디컬에듀케이션', price: 17000, originalPrice: 17000, discount: '0%', rating: 10.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791169002608', imageUrl: KB('9791169002608'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215031245' },
+    { title: '1.2급 응급구조사를 위한 현장실습기록지 작성: 응급의료기관', author: '방성환 외', publisher: '메디컬에듀케이션', price: 17000, originalPrice: 17000, discount: '0%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791169002608', imageUrl: KB('9791169002608'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215031245' },
+    { title: '2급 응급구조사를 위한 응급환자 관리학', author: '강신우 외', publisher: '우리의학서적', price: 22000, rating: 1.3, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791185658056', imageUrl: KB('9791185658056'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001871807' },
+    { title: '1.2급 응급구조사를 위한 현장실습기록지 작성: 구급차 동승실습', author: '방성환 외', publisher: '메디컬에듀케이션', price: 17000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791169002615', imageUrl: KB('9791169002615'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215031231' },
+    { title: '1.2급 응급구조사를 위한 임상실습 기록지', author: '권선양, 이효주, 정은경, 황순중', publisher: '군자출판사', price: 9000, tags: ['추천'], hasEbook: false, isbn: '9791159553431', imageUrl: KB('9791159553431'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001780406' },
+    { title: '응급의료 관련법령(1.2급 응급구조사)', author: '진수진', publisher: '메디컬스타', price: 22000, tags: ['추천'], hasEbook: false, isbn: '9791157323265', imageUrl: KB('9791157323265'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001753426' },
   ],
 
   '요양보호사': [
