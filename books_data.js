@@ -1606,6 +1606,11 @@ const REAL_BOOKS = {
     { title: '2026 해커스 AFPK 최종 실전모의고사', author: '해커스 금융아카데미', publisher: '해커스금융', price: 18900, originalPrice: 21000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176441650', imageUrl: KB('9791176441650'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220053946' },
     { title: '2026 이패스 AFPK 최종실전 모의고사', author: '김종희, 김종모, 최동진, 이패스코리아 금융연구소', publisher: '이패스코리아', price: 18900, originalPrice: 21000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791172095215', imageUrl: KB('9791172095215'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220341492' },
     { title: '토마토패스 친절한 홍교수의 AFPK 합격비기 모의고사', author: '홍영진', publisher: '토마토북스', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791124719022', imageUrl: KB('9791124719022'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220457844' },
+    { title: '2026 이패스 AFPK 모듈2 핵심문제집', author: '김종희, 김종모, 이패스코리아 금융연구소', publisher: '이패스코리아', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791172095208', imageUrl: KB('9791172095208'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220341500' },
+    { title: '2026 이패스 AFPK 핵심문제집 모듈1', author: '김종희, 최동진, 이패스코리아 금융연구소', publisher: '이패스코리아', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791172095192', imageUrl: KB('9791172095192'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220341496' },
+    { title: '토마토패스 친절한 홍교수의 AFPK 모듈2 합격비기 문제집', author: '홍영진', publisher: '토마토북스', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791199723085', imageUrl: KB('9791199723085'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220457855' },
+    { title: '토마토패스 친절한 홍교수의 AFPK 모듈 1 합격비기 문제집', author: '홍영진', publisher: '토마토북스', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791124719015', imageUrl: KB('9791124719015'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220457796' },
+    // 2026-09-21 확인: 현재 판매 중인 AFPK 교재는 위 9종이 전부(과거 연도판은 모두 절판). 10종 채우기용 중복 등록 없음.
   ],
 
   'CFP': [
