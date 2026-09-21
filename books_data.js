@@ -1544,6 +1544,10 @@ const REAL_BOOKS = {
   'TESAT': [
     { title: '2026 에듀윌 TESAT 회차별 기출문제집+무료특강', author: '조시현, 손기준, 김상헌, 임재현', publisher: '에듀윌', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 6, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013223823', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791136042224.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219869628' },
     { title: '경제학원론', author: '이준구, 이창용', publisher: '문우사', price: 41610, originalPrice: 43000, discount: '3%', rating: 4.6, reviews: 1234, tags: ['추천'], hasEbook: false, isbn: '9791198642790', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791198642790.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000215621723' },
+    { title: '2026 에듀윌 TESAT 실제 기출로 한권끝장', author: 'David Kim', publisher: '에듀윌', price: 24300, originalPrice: 27000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791136038999', imageUrl: KB('9791136038999'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218606446' },
+    { title: '2027 시대에듀 TESAT(테셋) 한권으로 끝내기', author: '시대경제경영연구소', publisher: '시대고시기획', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143418739', imageUrl: KB('9791143418739'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220646350' },
+    { title: '해커스 TESAT(테셋) 2주 완성 이론+적중문제+모의고사', author: '서호성', publisher: '해커스금융', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791172444426', imageUrl: KB('9791172444426'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214923233' },
+    { title: '에듀윌 TESAT 영역별 600제(필수기출 208제 포함)', author: 'David Kim', publisher: '에듀윌', price: 23400, originalPrice: 26000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791136041999', imageUrl: KB('9791136041999'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219564278' },
   ],
 
   '펀드투자권유대행인': [
