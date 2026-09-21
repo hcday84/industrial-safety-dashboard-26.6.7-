@@ -1970,6 +1970,10 @@ const REAL_BOOKS = {
     { title: '2026 메인에듀 관광통역안내사 필기 1차 한권으로 끝내기', author: '김성태, 이한용', publisher: '메인에듀', price: 33300, originalPrice: 37000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791189357887', imageUrl: KB('9791189357887'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218681412' },
     { title: '2026 시대에듀 관광통역안내사 2차 면접 한권으로 끝내기', author: '김희경, 어용수, 류걸', publisher: '시대고시기획', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143406125', imageUrl: KB('9791143406125'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219128342' },
     { title: '2026 관광통역안내사 실전 모의고사 7회분', author: '자격시험연구소', publisher: '서원각', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125746898', imageUrl: KB('9791125746898'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218666756' },
+    { title: '2026 시대에듀 관광학개론 한권으로 끝내기', author: '시대관광교육연구소', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143401472', imageUrl: KB('9791143401472'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218277207' },
+    { title: '영어 관광통역안내사', author: '최희찬', publisher: '좋은땅', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 4, tags: ['추천'], hasEbook: true, isbn: '9791138806411', imageUrl: KB('9791138806411'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001717912' },
+    { title: '중국어 관광통역안내사 2차 면접 한권으로 끝내기', author: '백정욱', publisher: '메인에듀', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791189357481', imageUrl: KB('9791189357481'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212175328' },
+    { title: '관광 호텔 항공 실무영어', author: '배상정', publisher: '기문사', price: 20000, tags: ['추천'], hasEbook: false, isbn: '9788977234864', imageUrl: KB('9788977234864'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001200530' },
   ],
 
   '한국어능력시험(TOPIK)': [
