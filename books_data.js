@@ -1086,6 +1086,8 @@ const REAL_BOOKS = {
     { title: '2026 이기적 리눅스마스터 1급(1·2차) 기본서 세트', author: '김윤수, 최정현', publisher: '영진닷컴', price: 34200, originalPrice: 38000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012448056', isbn: '9788931481402', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931481402.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218968390' },
     { title: '리눅스마스터 1급 2차 실기 정복하기', author: '정성재', publisher: '북스홀릭퍼블리싱', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791162890257', imageUrl: KB('9791162890257'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001816547' },
     { title: '국가공인 리눅스 마스터 1급', author: '박성수, 강기봉, 정우영', publisher: '수퍼유저코리아', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791195178605', imageUrl: KB('9791195178605'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001958046' },
+    { title: 'CentOS 7으로 리눅스마스터 1급 정복하기', author: '정성재', publisher: '북스홀릭퍼블리싱', price: 29700, originalPrice: 29700, discount: '0%', tags: ['추천'], hasEbook: true, isbn: '9791162890301', imageUrl: KB('9791162890301'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001816552' },
+    // 2026-09-21 확인: 나머지 이기적 구판·정성재 구판·기출문제집 등은 전부 절판. 실판매 중인 건 위 4종이 전부(니치 시장 소진).
   ],
 
   // ────────────────────────────────────────
