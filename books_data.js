@@ -1142,6 +1142,10 @@ const REAL_BOOKS = {
 
   '변리사': [
     { title: '2027 시대에듀 변리사 1차 산업재산권법 한권으로 끝내기', author: '정은석, 이유정, 오윤정', publisher: '시대고시기획', price: 50400, originalPrice: 56000, discount: '10%', rating: 5.0, reviews: 8, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012949664', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791143413888.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219811941' },
+    { title: '2027 시대에듀 변리사 1차 민법개론 한권으로 끝내기', author: '김동진, 시대법학연구소', publisher: '시대고시기획', price: 52200, originalPrice: 58000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143412096', imageUrl: KB('9791143412096'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219601291' },
+    { title: '2027 시대에듀 변리사 1차 자연과학개론 한권으로 끝내기', author: '김학균, 조효진, 정낙훈', publisher: '시대고시기획', price: 50400, originalPrice: 56000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143413536', imageUrl: KB('9791143413536'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219713539' },
+    { title: '2027 시대에듀 변리사 1차 전과목 6개년 기출문제해설', author: '시대법학연구소, 지적재산연구소', publisher: '시대고시기획', price: 32400, originalPrice: 36000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143416377', imageUrl: KB('9791143416377'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220339709' },
+    { title: '준특허법 조판기 (변리사 1차시험 대비)', author: '박형준', publisher: '윌비스', price: 50400, originalPrice: 56000, discount: '10%', rating: 10.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9791175610866', imageUrl: KB('9791175610866'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219407425' },
   ],
 
   '법무사': [
