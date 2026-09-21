@@ -715,6 +715,7 @@ const REAL_BOOKS = {
     { title: '2026 건설재료시험기능사 실기', author: '박종삼', publisher: '금호출판사', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 223, tags: ['베스트'], hasEbook: false, isbn: '9791192089331', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791192089331.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218203407' },
     { title: '2025 건설재료시험기능사 필기 실기', author: '고행만', publisher: '건기원', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791157678549', imageUrl: KB('9791157678549'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214181416' },
     { title: '2023 건설재료시험기능사 필기·실기', author: '김수영, 박효숙, 최규태, 박홍식, 김명성', publisher: '구민사', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168750753', imageUrl: KB('9791168750753'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061695540' },
+    // 2026-09-21 확인: 현재 판매 중인 건설재료시험기능사 교재는 위 5종이 전부(과거 연도판은 모두 절판). 10종 채우기용 중복 등록 없음.
   ],
 
   '건설안전기사': [
