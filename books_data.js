@@ -1428,6 +1428,8 @@ const REAL_BOOKS = {
   'GTQi': [
     { title: '2026 이기적 GTQ 포토샵+일러스트 1급 올인원 ver.CC', author: '영진닷컴 수험연구소', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 1876, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012449050', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788931476644.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218960821' },
     { title: '2026 시대에듀 유선배 GTQ 일러스트 1급 합격노트 ver. Adobe CC', author: '유선배', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1234, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000011743534', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791138396905.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217119017' },
+    { title: '내일은 GTQi 일러스트 1급 Ver. CC', author: '장민희', publisher: '김앤북', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788965128557', imageUrl: KB('9788965128557'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000210967669' },
+    { title: 'GTQi 일러스트 2급 with Adobe CC', author: '유윤자', publisher: '아티오', price: 17100, originalPrice: 19000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791192991030', imageUrl: KB('9791192991030'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201358133' },
   ],
 
   'MOS': [
