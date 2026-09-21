@@ -1592,6 +1592,10 @@ const REAL_BOOKS = {
 
   '한국어능력시험(TOPIK)': [
     { title: '합격특강 한국어능력시험 TOPIK 토픽 2 한권으로 끝내기', author: '전나영, 손성희', publisher: '다락원', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927773818', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788927773818.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000213024398' },
+    { title: '2026 한국어능력시험 TOPIK 2(토픽 2) 한 번에 통과하기', author: '한국어능력시험연구회, 임준, 유종원, 우연희', publisher: '시대고시기획', price: 21600, originalPrice: 24000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143404084', imageUrl: KB('9791143404084'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218796342' },
+    { title: '2026 한국어능력시험 TOPIK 1(토픽 1) 한 번에 통과하기', author: '한국어능력시험연구회, 임준', publisher: '시대고시기획', price: 18000, originalPrice: 20000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143404053', imageUrl: KB('9791143404053'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218796339' },
+    { title: '2026 한국어능력시험 TOPIK 2(토픽 2) 실전 모의고사', author: '정은화', publisher: '시대고시기획', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143404091', imageUrl: KB('9791143404091'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218973179' },
+    { title: '한국어능력시험 COOL TOPIK I(쿨토픽 1): 종합서', author: '오윤정, 윤새롬', publisher: '한글파크', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791167340399', imageUrl: KB('9791167340399'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000202673011' },
   ],
 
   '임용고시': [
