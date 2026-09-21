@@ -754,6 +754,9 @@ const REAL_BOOKS = {
     { title: '2026 측량기능사 필기 및 실기', author: '김영국, 박종삼', publisher: '금호출판사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.6, reviews: 189, tags: ['베스트'], hasEbook: false, isbn: '9791192089348', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791192089348.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218437185' },
     { title: '단기완성 측량기능사 필기 및 실기', author: '송용희', publisher: '지적EDU', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.5, reviews: 156, tags: ['추천'], hasEbook: false, isbn: '9791187997665', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791187997665.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000214895621' },
     { title: '2024 측량기능사 필기 이론 및 문제해설', author: '박종삼', publisher: '금호출판사', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.5, reviews: 134, tags: ['추천'], hasEbook: false, isbn: '9791192089201', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791192089201.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000211621667' },
+    { title: '2027 CBT대비 측량기능사 필기+실기 3주완성', author: '염창열, 고길용, 정병노', publisher: '한솔아카데미', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 7, tags: ['추천'], hasEbook: true, isbn: '9791166549021', imageUrl: KB('9791166549021'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220516551' },
+    { title: '측량기능사 필기+실기 3주완성', author: '최병윤, 김준현, 김형준', publisher: '엔플북스', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788968134333', imageUrl: KB('9788968134333'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221263830' },
+    // 2026-09-21 확인: 현재 판매 중인 측량기능사 교재는 위 8종이 전부(니치 시장 소진).
   ],
 
   '건설재료시험기능사': [
