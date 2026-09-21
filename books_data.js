@@ -1112,6 +1112,14 @@ const REAL_BOOKS = {
   ],
 
   '관세사': [
+    { title: '2027 시대에듀 합격자 관세사 1차 한권으로 끝내기', author: '유영웅, 나기철, 설나현', publisher: '시대고시기획', price: 51300, originalPrice: 57000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143416704', imageUrl: KB('9791143416704'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220646343' },
+    { title: '2027 해커스관세사 변달수 관세법 3단 법령집', author: '변달수', publisher: '해커스관세사', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176441452', imageUrl: KB('9791176441452'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219940127' },
+    { title: '2027 해커스관세사 진민규 무역영어 1: 핵심이론', author: '진민규', publisher: '해커스관세사', price: 12600, originalPrice: 14000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176441131', imageUrl: KB('9791176441131'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220040655' },
+    { title: '2027 해커스관세사 진민규 무역영어 2: 국제 협약·법규 원문 및 해설', author: '진민규', publisher: '해커스관세사', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176441476', imageUrl: KB('9791176441476'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220046944' },
+    { title: '2027 인스TV 관세사 1차 관세법 3단 법령집', author: '김준휘', publisher: '고시아카데미', price: 27900, originalPrice: 31000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788966314256', imageUrl: KB('9788966314256'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220154105' },
+    { title: '2027 중급회계 (관세사, 보험계리사, 감정평가사 시험대비)', author: '유지원', publisher: '세인북스', price: 43200, originalPrice: 48000, discount: '10%', rating: 9.2, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791124104125', imageUrl: KB('9791124104125'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219975512' },
+    { title: '2025 원가관리회계 (관세사, 보험계리사, 감정평가사 시험대비)', author: '백승철, 유지원', publisher: 'FTA관세무역연구원', price: 29700, originalPrice: 33000, discount: '10%', rating: 10.0, tags: ['추천'], hasEbook: false, isbn: '9788998761899', imageUrl: KB('9788998761899'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217089301' },
+    { title: '최두원 관세사의 국제무역사', author: '최두원', publisher: '무역창고', price: 40500, originalPrice: 45000, discount: '10%', rating: 10.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791198242723', imageUrl: KB('9791198242723'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214015309' },
   ],
 
   '손해사정사': [
