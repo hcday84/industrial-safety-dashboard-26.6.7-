@@ -1136,6 +1136,10 @@ const REAL_BOOKS = {
   '세무사': [
     { title: '세법개론 1(2026)', author: '이철재, 정우승, 유은종', publisher: '리즈북스', price: 36000, originalPrice: 36000, discount: '0%', rating: 4.8, reviews: 1234, tags: ['베스트'], hasEbook: false, isbn: '9791124345016', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791124345016.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219470255' },
     { title: '2026 시대에듀 기출이답이다 CTA 세무사 1차 재정학 10개년 기출문제해설', author: '송지은', publisher: '시대고시기획', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.6, reviews: 17, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012181368', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791143402943.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218330722' },
+    { title: '해커스 IFRS 정윤돈 중급회계 1', author: '정윤돈', publisher: '해커스 경영아카데미', price: 34000, originalPrice: 34000, discount: '0%', tags: ['베스트'], hasEbook: false, isbn: '9791174045232', imageUrl: KB('9791174045232'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219301301' },
+    { title: '2026 해커스 이훈엽 세법 마스터', author: '이훈엽', publisher: '해커스 경영아카데미', price: 29000, originalPrice: 29000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791174040589', imageUrl: KB('9791174040589'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218366549' },
+    { title: '해커스 윤 원가관리회계', author: '엄윤', publisher: '해커스 경영아카데미', price: 40000, originalPrice: 40000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791174040169', imageUrl: KB('9791174040169'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216831632' },
+    { title: '해커스 세무사 서호성 재정학', author: '서호성', publisher: '해커스 경영아카데미', price: 44000, originalPrice: 44000, discount: '0%', rating: 9.4, reviews: 22, tags: ['추천'], hasEbook: false, isbn: '9791174042736', imageUrl: KB('9791174042736'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217050557' },
   ],
 
   '공인회계사': [
