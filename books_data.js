@@ -1488,6 +1488,9 @@ const REAL_BOOKS = {
   '바리스타1급': [
     { title: '바리스타 1급 자격시험 예상문제집 (NCS 개정판)', author: '한국커피협회', publisher: '한국커피협회', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 2345, tags: ['베스트'], hasEbook: false, isbn: '9791186627259', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791186627259.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000214736527' },
     { title: '커피 바리스타 문제집 & 커피용어 해설', author: '한국커피바리스타협회', publisher: '성안당', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 987, tags: ['추천'], hasEbook: false, isbn: '9791190591218', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791190591218.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001941998' },
+    { title: '2026 이기적 바리스타 1급 필기 기본서', author: '임형준', publisher: '영진닷컴', price: 15300, originalPrice: 17000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931479812', imageUrl: KB('9788931479812'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217421975' },
+    { title: '답만 외우는 바리스타 자격시험 1급 기출예상문제집', author: '류중호', publisher: '시대고시기획', price: 15300, originalPrice: 17000, discount: '10%', rating: 8.2, reviews: 7, tags: ['추천'], hasEbook: false, isbn: '9791138350976', imageUrl: KB('9791138350976'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000202181001' },
+    { title: '바리스타 1급 핵심요약+실전문제', author: '타임 NCS 바리스타연구소', publisher: '시스컴', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791169415644', imageUrl: KB('9791169415644'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214826511' },
   ],
 
   '바리스타2급': [
