@@ -1583,6 +1583,8 @@ const REAL_BOOKS = {
     { title: '2026 시대에듀 유선배 GTQ 일러스트 1급 합격노트 ver. Adobe CC', author: '유선배', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 1234, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000011743534', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791138396905.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217119017' },
     { title: '내일은 GTQi 일러스트 1급 Ver. CC', author: '장민희', publisher: '김앤북', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788965128557', imageUrl: KB('9788965128557'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000210967669' },
     { title: 'GTQi 일러스트 2급 with Adobe CC', author: '유윤자', publisher: '아티오', price: 17100, originalPrice: 19000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791192991030', imageUrl: KB('9791192991030'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201358133' },
+    { title: 'GTQi 일러스트 1급 with Adobe CC', author: '유윤자', publisher: '아티오', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: true, isbn: '9791190732819', imageUrl: KB('9791190732819'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061451284' },
+    // 2026-09-21 확인: 나머지 GTQi 교재(2024 유선배 과외노트 등)는 전부 절판. 실판매 중인 건 위 5종이 전부(니치 시장 소진).
   ],
 
   'MOS': [
