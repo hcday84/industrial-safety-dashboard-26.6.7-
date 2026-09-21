@@ -1530,6 +1530,10 @@ const REAL_BOOKS = {
 
   '한자능력검정': [
     { title: '2026 어문회 한자능력검정시험 2급 한 권으로 끝내기', author: '박정서, 박원길', publisher: '시대고시기획', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 23, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012162497', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791143402332.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218277194' },
+    { title: '2026 한자능력검정시험 1급', author: '남기탁', publisher: '한국어문교육연구회', price: 29700, originalPrice: 33000, discount: '10%', rating: 10.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791191238945', imageUrl: KB('9791191238945'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220047059' },
+    { title: '2026 한자능력검정시험 3급', author: '남기탁, 한국어문교육연구회', publisher: '한국어문교육연구회', price: 26100, originalPrice: 29000, discount: '10%', rating: 10.0, reviews: 21, tags: ['베스트'], hasEbook: false, isbn: '9791191238853', imageUrl: KB('9791191238853'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217112136' },
+    { title: '2026 한자능력검정시험 4급', author: '남기탁', publisher: '한국어문교육연구회', price: 20700, originalPrice: 23000, discount: '10%', rating: 10.0, reviews: 5, tags: ['추천'], hasEbook: false, isbn: '9791191238891', imageUrl: KB('9791191238891'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219059442' },
+    { title: '어문회 한자능력검정시험 5급 한 권으로 끝내기', author: '박정서, 박원길', publisher: '시대고시기획', price: 15300, originalPrice: 17000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791138396493', imageUrl: KB('9791138396493'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217097150' },
   ],
 
   'KBS한국어능력시험': [
