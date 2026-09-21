@@ -460,6 +460,9 @@ const REAL_BOOKS = {
     { title: '임상 핵의학검사기술학', author: '서일택 외', publisher: '고려의학', price: 35000, tags: ['베스트'], hasEbook: false, isbn: '9791189210229', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791189210229.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001924284' },
     // 추천수험서 5
     { title: '핵심방사선생물학', author: '구연화 외', publisher: 'JMK', price: 25000, tags: ['추천'], hasEbook: false, isbn: '9791185210377', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791185210377.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001864086' },
+    { title: '찢었다! 방사선사 국가시험 총정리(2025)', author: '방사선사국가시험문항연구회', publisher: '청구문화사', price: 90000, originalPrice: 90000, discount: '0%', rating: 9.2, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9788956169569', imageUrl: KB('9788956169569'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216124707' },
+    { title: '방사선사 국가시험을 위한 예상문제 총정리(1, 2교시)', author: '방사선과학교육연구회', publisher: '신광출판사', price: 50000, originalPrice: 50000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788964510650', imageUrl: KB('9788964510650'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219997242' },
+    { title: '방사선사 국가시험 준비를 위한 핵심 방사선사 국가시험 총정리', author: '대한방사선과학회', publisher: '대학서림', price: 42000, originalPrice: 42000, discount: '0%', rating: 10.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9788969401502', imageUrl: KB('9788969401502'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001062841' },
   ],
 
   // ────────────────────────────────────────
