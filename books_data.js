@@ -142,6 +142,9 @@ const REAL_BOOKS = {
     { title: '2027 나합격 일반기계기사 필기 세트(핵심이론+13개년 기출)', author: '나합격 콘텐츠 연구소', publisher: '삼원북스', price: 40500, originalPrice: 45000, discount: '10%', rating: 1.3, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791176400145', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791176400145.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000220308919' },
     // 추천수험서 5
     { title: '2026 스마트 7개년 과년도 일반기계기사 필기', author: '허원회, 박만재', publisher: '성안당', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012416827', isbn: '9788931512076', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931512076.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218300253' },
+    { title: '일반기계 기사 필답형 실기', author: '위을복', publisher: '학진북스', price: 41400, originalPrice: 46000, discount: '10%', rating: 9.5, reviews: 6, tags: ['추천'], hasEbook: false, isbn: '9788968780523', imageUrl: KB('9788968780523'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211570433' },
+    { title: '2026 해커스 일반기계기사 실기 필답형 한권합격 이론+최신기출', author: '이선형', publisher: '해커스자격증', price: 45000, originalPrice: 50000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788969656513', imageUrl: KB('9788969656513'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219084736' },
+    { title: '2026 시대에듀 Win-Q 일반기계기사 필기 단기합격', author: '신원장', publisher: '시대고시기획', price: 30600, originalPrice: 34000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791138395991', imageUrl: KB('9791138395991'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217222386' },
   ],
 
   // ────────────────────────────────────────
