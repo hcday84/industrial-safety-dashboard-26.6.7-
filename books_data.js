@@ -806,18 +806,24 @@ const REAL_BOOKS = {
 
   '초음파비파괴검사기사': [
     { title: '비파괴검사 기사 산업기사 실기 필답형 기출문제집', author: 'NDT시험연구회', publisher: '세진사', price: 30000, rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791160455281', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791160455281.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000061352238' },
+    { title: '초음파 비파괴검사 실기 (기사·산업기사·기능사 시험대비)', author: 'NDT시험연구회', publisher: '세진사', price: 24000, originalPrice: 24000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791160454277', imageUrl: KB('9791160454277'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001791900' },
+    { title: '초음파탐상검사 (비파괴검사 이론&응용 3)', author: '한치현, 박익근', publisher: '노드미디어', price: 39000, originalPrice: 39000, discount: '0%', rating: 10.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788984582538', imageUrl: KB('9788984582538'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001316296' },
   ],
 
   '방사선비파괴검사기사': [
     { title: '방사선비파괴검사 문제 & 해설 (기사.산업기사 / 기능사 공통)', author: '여화연', publisher: '일진사', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.7, reviews: 312, tags: ['베스트'], hasEbook: false, isbn: '9788942911592', imageUrl: 'https://image.aladin.co.kr/product/687/56/coversum/8942911595_3.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000000670965' },
+    { title: '최신 방사선 비파괴검사 실기 (기사/산업기사/기능사 시험대비)', author: '김승대, 김한삼, 강보안, 최현석', publisher: '세진사', price: 22000, originalPrice: 22000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791160451245', imageUrl: KB('9791160451245'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001791648' },
+    { title: '방사선투과검사 (비파괴검사 이론&응용 2)', author: '주광태', publisher: '노드미디어', price: 45000, originalPrice: 45000, discount: '0%', rating: 10.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788984582521', imageUrl: KB('9788984582521'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001316295' },
   ],
 
   '침투비파괴검사기사': [
     { title: '침투비파괴검사 산업기사·기사 실기 필답형', author: '조정현', publisher: '피앤피북', price: 17100, originalPrice: 19000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000011689030', imageUrl: 'https://image.aladin.co.kr/product/36664/67/coversum/k492030187_1.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216904888' },
+    { title: '침투탐상검사 (비파괴검사 이론&응용 5)', author: '한기수', publisher: '노드미디어', price: 28000, originalPrice: 28000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788984582545', imageUrl: KB('9788984582545'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001316297' },
   ],
 
   '자기비파괴검사기사': [
     { title: '비파괴검사 기사 산업기사 실기 필답형 기출문제집', author: 'NDT시험연구회', publisher: '세진사', price: 30000, rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791160455281', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791160455281.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000061352238' },
+    { title: '자분탐상검사 (비파괴검사 이론&응용 4)', author: '한기수', publisher: '노드미디어', price: 35000, originalPrice: 35000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788984582583', imageUrl: KB('9788984582583'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001316301' },
   ],
 
   '전기공사기사': [
