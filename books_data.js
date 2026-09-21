@@ -1509,6 +1509,9 @@ const REAL_BOOKS = {
   'JLPT': [
     { title: '해커스 JLPT N1(일본어능력시험) 한 권으로 합격', author: '해커스 JLPT 연구소', publisher: '해커스어학연구소', price: 24210, originalPrice: 26900, discount: '10%', rating: 4.8, reviews: 81, tags: ['베스트'], hasEbook: false, isbn: '9788965426073', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788965426073.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000203100592' },
     { title: '해커스 JLPT N2(일본어능력시험) 한권합격', author: '해커스 JLPT 연구소', publisher: '해커스어학연구소', price: 24300, originalPrice: 27000, discount: '10%', rating: 5.0, reviews: 26, tags: ['베스트'], hasEbook: false, isbn: '9788965427513', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788965427513.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217243407' },
+    { title: 'JLPT(일본어능력시험) 한권으로 끝내기 N3', author: '이치우, 기타지마 치즈코, 김윤선, 도리이 마이코', publisher: '다락원', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927713357', imageUrl: KB('9788927713357'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219563316' },
+    { title: 'JLPT(일본어능력시험) 한권으로 끝내기 N2', author: '이치우, 기타지마 치즈코, 박성길, 도리이 마이코', publisher: '다락원', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927713340', imageUrl: KB('9788927713340'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219451452' },
+    { title: '해커스 JLPT(일본어능력시험) N3 한권합격', author: '해커스 JLPT연구소', publisher: '해커스어학연구소', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788965424420', imageUrl: KB('9788965424420'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215570341' },
   ],
 
   'HSK': [
