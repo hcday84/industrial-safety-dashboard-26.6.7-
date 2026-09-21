@@ -1633,6 +1633,9 @@ const REAL_BOOKS = {
   '관광통역안내사': [
     { title: '2026 관광통역안내사 영어면접 핵심 기출문제 200', author: '호기헌', publisher: '창조와지식', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], hasEbook: false, isbn: '9791176270106', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791176270106.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219407374' },
     { title: '시대에듀 50일 만에 끝내는 중국어 관광통역안내사 2차 면접', author: '김미숙', publisher: '시대고시기획', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012704543', isbn: '9791143410245', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143410245.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219391364' },
+    { title: '2026 메인에듀 관광통역안내사 필기 1차 한권으로 끝내기', author: '김성태, 이한용', publisher: '메인에듀', price: 33300, originalPrice: 37000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791189357887', imageUrl: KB('9791189357887'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218681412' },
+    { title: '2026 시대에듀 관광통역안내사 2차 면접 한권으로 끝내기', author: '김희경, 어용수, 류걸', publisher: '시대고시기획', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143406125', imageUrl: KB('9791143406125'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219128342' },
+    { title: '2026 관광통역안내사 실전 모의고사 7회분', author: '자격시험연구소', publisher: '서원각', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125746898', imageUrl: KB('9791125746898'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218666756' },
   ],
 
   '한국어능력시험(TOPIK)': [
