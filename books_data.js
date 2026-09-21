@@ -360,6 +360,11 @@ const REAL_BOOKS = {
     { title: '건설안전기술사 실전면접', author: '한경보, Willy.H', publisher: '예문사', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788927441137', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788927441137.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000000523650' },
     { title: '건설안전기술사 최신 기출문제 풀이', author: '이호행', publisher: '교문사', price: 69000, rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788936327125', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788936327125.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218565187' },
     // 추천수험서 5
+    { title: '건설안전기술사 263제', author: '김용원', publisher: '건기원', price: 29700, originalPrice: 33000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791157679560', imageUrl: KB('9791157679560'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220430510' },
+    { title: 'Keypoint 건설안전기술사: 공사안전', author: '한경보', publisher: '예문사', price: 28800, originalPrice: 32000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927457336', imageUrl: KB('9788927457336'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216002188' },
+    { title: '21세기 건설안전기술사 고득점 기출문제', author: '김정태', publisher: '예문사', price: 54000, originalPrice: 60000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788927460220', imageUrl: KB('9788927460220'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218565639' },
+    { title: '21세기 건설안전기술사', author: '김정태', publisher: '예문사', price: 63000, originalPrice: 70000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788927461784', imageUrl: KB('9788927461784'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219333023' },
+    { title: '건설안전기술사 핵심 문제', author: '한경보, Willy. H', publisher: '예문사', price: 33300, originalPrice: 37000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927461906', imageUrl: KB('9788927461906'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219491100' },
   ],
 
   '소방기술사': [
