@@ -483,6 +483,8 @@ const REAL_BOOKS = {
     { title: '2027 해커스소방 심규식 응급처치학개론 기본서 1: 총론', author: '심규식', publisher: '해커스소방', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.7, reviews: 12, tags: ['베스트'], hasEbook: false, isbn: '9791176440936', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791176440936.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219975317' },
     // 추천수험서 5
     { title: '전투외상 응급처치', author: '데루이 모토키', publisher: '호비스트', price: 15000, rating: 5.0, reviews: 15, tags: ['추천'], hasEbook: false, isbn: '9788985578707', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788985578707.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001343044' },
+    { title: '2027 해커스소방 심규식 응급처치학개론 핵심요약집', author: '심규식', publisher: '해커스소방', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176448710', imageUrl: KB('9791176448710'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221336727' },
+    { title: '2027 해커스소방 심규식 응급처치학개론 단원별 기출문제집', author: '심규식', publisher: '해커스소방', price: 35100, originalPrice: 39000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176448727', imageUrl: KB('9791176448727'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221336763' },
   ],
 
   // ────────────────────────────────────────
