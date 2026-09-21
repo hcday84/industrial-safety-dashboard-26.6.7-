@@ -1287,6 +1287,10 @@ const REAL_BOOKS = {
   '사회조사분석사2급': [
     { title: '2026 사회조사분석사 기출문제 완전분석', author: '시대통계연구소', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000011937569', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791138397490.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217462891' },
     { title: '2026 해커스 사회조사분석사 2급 필기 한권합격 이론+최신기출+핵심노트', author: '김홍규', publisher: '해커스자격증', price: 30510, originalPrice: 33900, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788969656483', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788969656483.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218560804' },
+    { title: '2026 시대에듀 사회조사분석사 2급 2차 실기 한권으로 끝내기', author: '소정현', publisher: '시대고시기획', price: 24300, originalPrice: 27000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143405852', imageUrl: KB('9791143405852'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218854000' },
+    { title: '2026 해커스 사회조사분석사 2급 실기 한권합격+무료특강', author: '김홍규', publisher: '해커스자격증', price: 30510, originalPrice: 33900, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788969656490', imageUrl: KB('9788969656490'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218968884' },
+    { title: '2026 사회조사분석사 2급 무료강의+필기실기 올인원', author: '김대환', publisher: '박영사', price: 29700, originalPrice: 33000, discount: '10%', rating: 10.0, reviews: 8, tags: ['추천'], hasEbook: false, isbn: '9791130397122', imageUrl: KB('9791130397122'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218271552' },
+    { title: '2027 에듀윌 사회조사분석사 2급 필기 2주합격+무료특강', author: '김형표, 박경은', publisher: '에듀윌', price: 29700, originalPrice: 33000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791136043016', imageUrl: KB('9791136043016'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220448091' },
   ],
 
   '사회조사분석사1급': [
