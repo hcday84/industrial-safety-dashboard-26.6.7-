@@ -997,6 +997,8 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   '자동차정비기사': [
     { title: '2026 패스 자동차정비기사 필기', author: '박만재·국창호·문학훈', publisher: '골든벨', price: 30600, originalPrice: 34000, discount: '10%', rating: 4.6, reviews: 245, tags: ['베스트'], hasEbook: false, isbn: '9791124114209', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791124114209.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218935739' },
+    { title: '202X 자동차정비기사 필기', author: '구민사 기획실', publisher: '구민사', price: 40500, originalPrice: 45000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168757530', imageUrl: KB('9791168757530'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221281565' },
+    { title: '자동차정비 기사실기 필답형', author: '김인태, 김창용', publisher: '골든벨', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791158063146', imageUrl: KB('9791158063146'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001762068' },
   ],
 
   // ────────────────────────────────────────
