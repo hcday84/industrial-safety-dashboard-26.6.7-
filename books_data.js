@@ -1947,6 +1947,11 @@ const REAL_BOOKS = {
     { title: '2026 시대에듀 관광자원해설 한권으로 끝내기', author: '시대관광교육연구소', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143401496', imageUrl: KB('9791143401496'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218277204' },
     { title: '2026 시대에듀 국내여행안내사 필기+면접 기출문제집', author: '시대관광교육연구소', publisher: '시대고시기획', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143408389', imageUrl: KB('9791143408389'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219205976' },
     { title: '2026 국내여행안내사 자격증 한 번에 따기', author: '자격시험연구소', publisher: '서원각', price: 36000, originalPrice: 40000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125747260', imageUrl: KB('9791125747260'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219198685' },
+    { title: '2026 국내여행안내사 기출문제 정복하기', author: '자격시험연구소', publisher: '서원각', price: 15300, originalPrice: 17000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125747062', imageUrl: KB('9791125747062'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218823047' },
+    { title: '관광국사 기출 예상문제집(2020)', author: '이현호', publisher: '삼영서관', price: 17100, originalPrice: 19000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791190478021', imageUrl: KB('9791190478021'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001940721' },
+    { title: '국내여행 안내영어', author: '김도영', publisher: '기문사', price: 19000, tags: ['추천'], hasEbook: false, isbn: '9788977237582', imageUrl: KB('9788977237582'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001200737' },
+    { title: '관광학개론(2018)', author: '심현보', publisher: '서원각', price: 14400, originalPrice: 16000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125721178', imageUrl: KB('9791125721178'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001664054' },
+    { title: '관광자원해설', author: '자격시험연구소', publisher: '서원각', price: 14400, originalPrice: 16000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125715887', imageUrl: KB('9791125715887'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001663530' },
   ],
 
   '국외관광안내사': [
