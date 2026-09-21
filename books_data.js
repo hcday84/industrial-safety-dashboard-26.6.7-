@@ -824,6 +824,8 @@ const REAL_BOOKS = {
     { title: '2026 전산응용기계제도기능사 필기 실기 기출예상문제집', author: '정인훈', publisher: '지식오름', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791174910257', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791174910257.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218189371' },
     { title: '2026 전산응용기계제도기능사 필기 기출문제', author: '김원중', publisher: '책과상상', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], hasEbook: false, isbn: '9791169673433', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791169673433.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218276625' },
     { title: '2025 시대에듀 Win-Q 전산응용기계제도기능사 실기', author: '정인훈', publisher: '시대에듀', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000011217827', isbn: '9791138390163', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791138390163.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216090452' },
+    { title: '2026 해커스 전산응용기계제도기능사 필기 한권완성 이론+최신기출+핵심노트', author: '이재형', publisher: '해커스자격증', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788969656803', imageUrl: KB('9788969656803'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218192843' },
+    { title: '나합격 전산응용기계제도기능사 실기', author: '자격증의모든것DC', publisher: '삼원북스', price: 29700, originalPrice: 33000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791193858981', imageUrl: KB('9791193858981'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217304406' },
   ],
 
   '승강기기사': [
