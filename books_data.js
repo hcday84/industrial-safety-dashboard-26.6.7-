@@ -1501,6 +1501,16 @@ const REAL_BOOKS = {
   ],
 
   '임용고시': [
+    // 중등 임용고시 공통 1교시 '교육학' 과목 기준 (전공별 세부과목은 미포함)
+    { title: '2027 김신 교육학 백신 기본', author: '김신', publisher: 'G북스(지북스)', price: 16200, originalPrice: 18000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791173561139', imageUrl: KB('9791173561139'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218939759' },
+    { title: '2025 해커스임용 설보연 SANTA 교육학 찐 단권화(이론+기출 Ver.)', author: '설보연', publisher: '해커스임용', price: 34200, originalPrice: 38000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791172440183', imageUrl: KB('9791172440183'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213157157' },
+    { title: '다커미와 함께하는 EOS 교육학 기본이론서', author: '이지원', publisher: '동문사', price: 43200, originalPrice: 48000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791163285519', imageUrl: KB('9791163285519'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211728636' },
+    { title: '실전 교육학 테마 165', author: '대어해리', publisher: '미래가치', price: 19800, originalPrice: 22000, discount: '10%', rating: 7.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791167732743', imageUrl: KB('9791167732743'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000202188564' },
+    { title: '2024 Easy One 교육학 기본이론서', author: '이지원', publisher: '포러스', price: 36000, originalPrice: 40000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791191321692', imageUrl: KB('9791191321692'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200311339' },
+    { title: '2025 해커스임용 설보연 SANTA 교육학 씬(Thin) 찐 단권화(이론 Ver.)', author: '설보연', publisher: '해커스임용', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791172440855', imageUrl: KB('9791172440855'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213304827' },
+    { title: '교육학 개론', author: '김성제, 강주영', publisher: '행복에너지', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791192486130', imageUrl: KB('9791192486130'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061586055' },
+    { title: 'EOS 교육학 카운터펀치 2: 요약의 모든 것', author: '이지원', publisher: '포러스', price: 14400, originalPrice: 16000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791191321470', imageUrl: KB('9791191321470'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001950403' },
+    { title: '2024 김신 교육학 백신 심화', author: '김신', publisher: '지스쿨', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788962518702', imageUrl: KB('9788962518702'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201174430' },
   ],
 
   '한국실용글쓰기': [
