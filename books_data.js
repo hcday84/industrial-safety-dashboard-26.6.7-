@@ -471,7 +471,12 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   '치과위생사': [
     // 베스트셀러 5
+    { title: '2027 시대에듀 치과위생사 국가시험 한권으로 끝내기', author: '이남숙', publisher: '시대고시기획', price: 34200, originalPrice: 38000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143416414', imageUrl: KB('9791143416414'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220270953' },
+    { title: '2026 파워 치과위생사 국가시험 핵심요약집 세트', author: '스마트에듀K아카데미', publisher: '군자출판사', price: 52000, originalPrice: 52000, discount: '0%', tags: ['베스트'], hasEbook: false, isbn: '9791170684206', imageUrl: KB('9791170684206'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219306933' },
+    { title: '2026 파워 치과위생사 국가시험 실전문제집 세트', author: '스마트에듀K아카데미', publisher: '군자출판사', price: 48000, originalPrice: 48000, discount: '0%', tags: ['베스트'], hasEbook: false, isbn: '9791170684213', imageUrl: KB('9791170684213'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219306921' },
     // 추천수험서 5
+    { title: '2026 더 CORE 치과위생사 국가시험 핵심요약집 세트', author: '나래e러닝아카데미', publisher: '나래출판사', price: 50000, originalPrice: 50000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791171332458', imageUrl: KB('9791171332458'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219311971' },
+    { title: '2026 더 CORE Final 치과위생사 국가시험 예상문제집 세트', author: '나래e러닝아카데미', publisher: '나래출판사', price: 50000, originalPrice: 50000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791171332496', imageUrl: KB('9791171332496'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219311975' },
     { title: '임상치위생학실습', author: '임상치위생학실습 편집위원회', publisher: '청구문화사', price: 40000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788956168661', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788956168661.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000000817220' },
   ],
 
