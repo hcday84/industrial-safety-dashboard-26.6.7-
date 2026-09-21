@@ -430,13 +430,14 @@ const REAL_BOOKS = {
 
   '가스기술사': [
     // 베스트셀러 5
-    { title: '합격Easy 가스기술사 2', author: '한국가스기술사회', publisher: '건기원', price: 46800, originalPrice: 52000, discount: '10%', rating: 10.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791157679386', imageUrl: KB('9791157679386'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219997693' },
-    { title: '합격Easy 가스기술사 1', author: '한국가스기술사회', publisher: '건기원', price: 48600, originalPrice: 54000, discount: '10%', rating: 10.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791157679379', imageUrl: KB('9791157679379'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219997679' },
-    { title: '가스기술사 필독서', author: '박현석', publisher: '세움', price: 64800, originalPrice: 72000, discount: '10%', rating: 8.0, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9788994430195', imageUrl: KB('9788994430195'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001549106' },
+    { title: '합격Easy 가스기술사 2', author: '한국가스기술사회', publisher: '건기원', price: 46800, originalPrice: 52000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791157679386', imageUrl: KB('9791157679386'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219997693' },
+    { title: '합격Easy 가스기술사 1', author: '한국가스기술사회', publisher: '건기원', price: 48600, originalPrice: 54000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791157679379', imageUrl: KB('9791157679379'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219997679' },
+    { title: '가스기술사 필독서', author: '박현석', publisher: '세움', price: 64800, originalPrice: 72000, discount: '10%', rating: 4.0, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9788994430195', imageUrl: KB('9788994430195'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001549106' },
     { title: 'NEW 가스기술사(상 하) 세트', author: '지구문화사 편집부', publisher: '지구문화사', price: 58500, originalPrice: 65000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788970064444', imageUrl: KB('9788970064444'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001065780' },
     // 추천수험서 5
     { title: '가스기술사 서브노트', author: '주광호, 박현석', publisher: '이든북스', price: 59000, originalPrice: 59000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791196478377', imageUrl: KB('9791196478377'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212603039' },
     { title: '가스기술사 용어 정의', author: '주광호, 박현석', publisher: '이든북스', price: 28900, originalPrice: 28900, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791196478384', imageUrl: KB('9791196478384'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212603023' },
+    // 2026-09-21 확인: 현재 판매 중인 가스기술사 교재는 위 6종이 전부(니치 시장 소진, 나머지는 절판/eBook 전용).
   ],
 
   '정보관리기술사': [
