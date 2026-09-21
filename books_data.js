@@ -1579,6 +1579,10 @@ const REAL_BOOKS = {
 
   '국외관광안내사': [
     { title: '국외여행인솔자 실무', author: '장서진, 정연국', publisher: '백산출판사', price: 31000, originalPrice: 31000, discount: '0%', rating: 4.7, reviews: 1543, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000005060683', isbn: '9791165675523', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791165675523.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000061757729' },
+    { title: '국외여행 인솔 실무', author: '조영훈, 조광익', publisher: '한올', price: 25000, originalPrice: 25000, discount: '0%', tags: ['베스트'], hasEbook: false, isbn: '9791166472602', imageUrl: KB('9791166472602'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061695308' },
+    { title: '해외여행안내', author: '고종원, 조문식, 김경한, 주성열, 서현웅, 박종하', publisher: '백산출판사', price: 23760, originalPrice: 24000, discount: '1%', tags: ['베스트'], hasEbook: false, isbn: '9791165679750', imageUrl: KB('9791165679750'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215816892' },
+    { title: '국외여행인솔자 업무론', author: '김병헌', publisher: '백산출판사', price: 23000, originalPrice: 23000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791166391415', imageUrl: KB('9791166391415'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001844846' },
+    { title: '국외여행인솔자 현장실무지침서', author: '장양례', publisher: '백산출판사', price: 13500, originalPrice: 15000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791188892280', imageUrl: KB('9791188892280'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001919768' },
   ],
 
   '관광통역안내사': [
