@@ -1188,6 +1188,10 @@ const REAL_BOOKS = {
   ],
 
   '일반행정사': [
+    { title: '2027 박문각 행정사 1차 최욱진 행정학개론 기본서', author: '최욱진', publisher: '박문각', price: 26100, originalPrice: 29000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176493802', imageUrl: KB('9791176493802'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220929342' },
+    { title: '2027 박문각 행정사 1차 조민기 민법총칙 기본서', author: '조민기', publisher: '박문각', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176493369', imageUrl: KB('9791176493369'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220699743' },
+    { title: '2027 박문각 행정사 1차 이준희 행정법 기본서', author: '이준희', publisher: '박문각', price: 25200, originalPrice: 28000, discount: '10%', rating: 10.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791176492461', imageUrl: KB('9791176492461'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220493026' },
+    { title: '2027 박문각 행정사 1차 단원별 기출문제집: 민법총칙, 행정법, 행정학개론', author: '조민기, 임병주, 최욱진', publisher: '박문각', price: 34200, originalPrice: 38000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176492881', imageUrl: KB('9791176492881'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220806564' },
     { title: '2026 The준 행정법 최종 점검 실전 모의고사', author: '이재준', publisher: '도담북스', price: 13500, originalPrice: 15000, discount: '10%', rating: 2.5, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791199790506', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791199790506.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219411742' },
   ],
 
