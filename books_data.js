@@ -1960,6 +1960,8 @@ const REAL_BOOKS = {
     { title: '해외여행안내', author: '고종원, 조문식, 김경한, 주성열, 서현웅, 박종하', publisher: '백산출판사', price: 23760, originalPrice: 24000, discount: '1%', tags: ['베스트'], hasEbook: false, isbn: '9791165679750', imageUrl: KB('9791165679750'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215816892' },
     { title: '국외여행인솔자 업무론', author: '김병헌', publisher: '백산출판사', price: 23000, originalPrice: 23000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791166391415', imageUrl: KB('9791166391415'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001844846' },
     { title: '국외여행인솔자 현장실무지침서', author: '장양례', publisher: '백산출판사', price: 13500, originalPrice: 15000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791188892280', imageUrl: KB('9791188892280'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001919768' },
+    { title: '영어 일어 중국어 해외여행 인솔자 외국어', author: '박복덕, 정재희, 구은아', publisher: '한올', price: 9800, tags: ['추천'], hasEbook: true, isbn: '9791156853824', imageUrl: KB('9791156853824'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001746877' },
+    // 2026-09-21 확인: 국외여행인솔자(TC) 관련 현재 판매 중인 교재는 위 6종이 전부(니치 시장 소진).
   ],
 
   '관광통역안내사': [
