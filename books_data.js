@@ -1244,6 +1244,9 @@ const REAL_BOOKS = {
   '청소년지도사2급': [
     { title: '2026 청소년지도사 2·3급 한권으로 끝내기', author: '청소년지도사연구회', publisher: '시대고시기획', price: 33300, originalPrice: 37000, discount: '10%', rating: 4.7, reviews: 765, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012305539', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143402967.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218704137' },
     { title: '2026 청소년지도사 면접 완벽 대비', author: '면접연구회', publisher: '시대고시기획', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.5, reviews: 356, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012816300', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791143412003.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219570080' },
+    { title: '2023 청소년지도사 면접시험 한권으로 끝내기', author: '이정서', publisher: '동문사', price: 22000, originalPrice: 22000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791163285236', imageUrl: KB('9791163285236'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000202673902' },
+    { title: '청소년지도사 면접시험 적중문제집(2급 및 3급)', author: '이정서', publisher: '공동체', price: 20000, originalPrice: 20000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791161054322', imageUrl: KB('9791161054322'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001798327' },
+    { title: '청소년지도사 2급 2차 면접시험 대비 가이드북', author: '최용진', publisher: '퍼플', price: 9400, originalPrice: 9400, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788924055542', imageUrl: null, pageUrl: 'https://product.kyobobook.co.kr/detail/S000060606124' },
   ],
 
   '평생교육사': [
