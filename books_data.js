@@ -989,6 +989,7 @@ const REAL_BOOKS = {
     { title: '2026 에듀윌 수질환경기사 실기 2주끝장+무료특강', author: '이찬범', publisher: '에듀윌', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.6, reviews: 167, tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013223872', isbn: '9791136050434', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136050434.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218881745' },
     { title: '2026 물쌤닷컴 수질환경기사 산업기사 실기 + 기출해설', author: '이종혁', publisher: '미교원', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], hasEbook: false, isbn: '9791194457145', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791194457145.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218971292' },
     { title: '수질환경기사 실기 단기완성(2018)', author: '신동성, 하부영, 조희경', publisher: '세진사', price: 15000, rating: 3.8, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791160452457', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791160452457.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001791742' },
+    { title: '2027 수질환경기사·산업기사 실기', author: '이철한, 서영민, 이승민, 이준명', publisher: '예문사', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927462484', imageUrl: KB('9788927462484'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220041047' },
   ],
 
   '초음파비파괴검사기사': [
