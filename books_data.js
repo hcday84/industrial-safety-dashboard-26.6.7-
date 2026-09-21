@@ -910,6 +910,10 @@ const REAL_BOOKS = {
     { title: '2026 기분파 피복아크용접기능사 필기 (가스텅스텐아크용접/이산화탄소가스아크용접기능사 포함)', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], isbn: '9791194328216', imageUrl: null, pageUrl: 'https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=376256841' },
     { title: '2026 단기완성 가스텅스텐아크용접기능사 필기', author: '최갑규', publisher: '세진북스', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791157458660', imageUrl: KB('9791157458660'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220241334' },
     { title: '가스 텅스텐아크 용접기능사 실기', author: '김명선, 이상원, 홍상현, 윤상준', publisher: '크라운출판사', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788940648933', imageUrl: KB('9788940648933'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213691384' },
+    { title: '2027 에듀윌 용접기능사 3종 동시대비 필기·실기 한권끝장+무료특강', author: '김정혁', publisher: '에듀윌', price: 21600, originalPrice: 24000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791136042521', imageUrl: KB('9791136042521'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221329548' },
+    { title: '2025 용접기능사필기 총정리(피복아크,가스텅스텐아크,이산화탄소가스아크 공통)', author: '용접기술시험연구회', publisher: '일진사', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788942920082', imageUrl: KB('9788942920082'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216485694' },
+    { title: '2026 패스 피복아크용접기능사 필기', author: 'Gb생각공작소', publisher: '골든벨', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791124114414', imageUrl: KB('9791124114414'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219744318' },
+    { title: '2026 피복아크용접기능사 필기 (가스텅스텐아크용접/이산화탄소가스아크용접기능사 포함)', author: '국가기술자격시험연구회', publisher: '예문사', price: 18900, originalPrice: 21000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927461012', imageUrl: KB('9788927461012'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218964284' },
   ],
 
   '이산화탄소가스아크용접기능사': [
