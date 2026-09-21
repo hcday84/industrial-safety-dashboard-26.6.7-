@@ -147,6 +147,8 @@ const REAL_BOOKS = {
     { title: '일반기계 기사 필답형 실기', author: '위을복', publisher: '학진북스', price: 41400, originalPrice: 46000, discount: '10%', rating: 4.8, reviews: 6, tags: ['추천'], hasEbook: false, isbn: '9788968780523', imageUrl: KB('9788968780523'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211570433' },
     { title: '2026 해커스 일반기계기사 실기 필답형 한권합격 이론+최신기출', author: '이선형', publisher: '해커스자격증', price: 45000, originalPrice: 50000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788969656513', imageUrl: KB('9788969656513'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219084736' },
     { title: '2026 시대에듀 Win-Q 일반기계기사 필기 단기합격', author: '신원장', publisher: '시대고시기획', price: 30600, originalPrice: 34000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791138395991', imageUrl: KB('9791138395991'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217222386' },
+    { title: '개념탑재 일반기계기사 작업형 실기 도면집', author: '개념탑재팀', publisher: '피앤피북', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: true, isbn: '9791194085768', imageUrl: KB('9791194085768'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218227991' },
+    { title: '2026 일반기계기사 필기', author: '다솔유캠퍼스, 박성일', publisher: '예문사', price: 45000, originalPrice: 50000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788927459095', imageUrl: KB('9788927459095'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217187310' },
   ],
 
   // ────────────────────────────────────────
