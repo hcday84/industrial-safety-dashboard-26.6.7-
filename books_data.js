@@ -1305,6 +1305,8 @@ const REAL_BOOKS = {
     { title: 'Pass 자동차정비기능장 필답형', author: '박태화, 기호', publisher: '골든벨', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: true, isbn: '9791158064969', imageUrl: KB('9791158064969'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001762192' },
     { title: '30여년간 기출문제를 과목별 핵심 분석한 자동차정비기능장 필답형 실기(2020)', author: '김인태', publisher: '골든벨', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: true, isbn: '9791158062217', imageUrl: KB('9791158062217'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001762020' },
     { title: '자동차정비 기능장(필기)', author: '서영달, 김명준, 김형진, 유도정', publisher: '골든벨', price: 20700, originalPrice: 23000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: true, isbn: '9788979719789', imageUrl: KB('9788979719789'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001232945' },
+    { title: '자동차 기능장 필기', author: '서영달 외', publisher: '골든벨', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: true, isbn: '9788979714913', imageUrl: KB('9788979714913'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001232538' },
+    // 2026-09-23 확인: 교보문고에 실판매 중인 자동차정비기능장 전용 도서는 위 9종이 전부(니치 시장 소진).
   ],
 
   // ────────────────────────────────────────
