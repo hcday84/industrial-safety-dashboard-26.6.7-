@@ -1552,6 +1552,8 @@ const REAL_BOOKS = {
     { title: '2027 중급회계 (관세사, 보험계리사, 감정평가사 시험대비)', author: '유지원', publisher: '세인북스', price: 43200, originalPrice: 48000, discount: '10%', rating: 4.6, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791124104125', imageUrl: KB('9791124104125'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219975512' },
     { title: '2025 원가관리회계 (관세사, 보험계리사, 감정평가사 시험대비)', author: '백승철, 유지원', publisher: 'FTA관세무역연구원', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, tags: ['추천'], hasEbook: false, isbn: '9788998761899', imageUrl: KB('9788998761899'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217089301' },
     { title: '최두원 관세사의 국제무역사', author: '최두원', publisher: '무역창고', price: 40500, originalPrice: 45000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791198242723', imageUrl: KB('9791198242723'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214015309' },
+    { title: '2027 시대에듀 합격자 관세사 1차 3개년 기출문제집 한권으로 끝내기', author: '관세사시험연구소', publisher: '시대고시기획', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143416711', imageUrl: KB('9791143416711'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220567720' },
+    { title: '2027 해커스관세사 한지우 내국소비세법', author: '한지우', publisher: '해커스관세사', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176441537', imageUrl: KB('9791176441537'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220053005' },
   ],
 
   '손해사정사': [
