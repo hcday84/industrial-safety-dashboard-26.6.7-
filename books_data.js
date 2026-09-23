@@ -1958,6 +1958,10 @@ const REAL_BOOKS = {
     { title: '매경 Test 공식 가이드', author: '매일경제 경제경영연구소', publisher: '매일경제신문사', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791164845576', imageUrl: KB('9791164845576'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000202826649' },
     { title: '해커스 매경Test 2주 완성 이론+적중문제+모의고사', author: '서호성, 이인호', publisher: '해커스금융', price: 28800, originalPrice: 32000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791172444440', imageUrl: KB('9791172444440'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214888750' },
     { title: '에듀윌 매경Test 찐기출동형 500제+모의고사 5회분', author: '신경수, 황선일', publisher: '에듀윌', price: 21600, originalPrice: 24000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791136041029', imageUrl: KB('9791136041029'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219081148' },
+    { title: '토마토패스 매경 Test 초단기완성', author: '김동빈, 유신, 지한송', publisher: '예문에듀', price: 23400, originalPrice: 26000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791163861041', imageUrl: KB('9791163861041'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061532652' },
+    { title: '짱박사 매경테스트 기본이론서(경제+경영편)', author: '장선구, 박환재', publisher: '비앤엠북스', price: 53000, originalPrice: 53000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788968211638', imageUrl: KB('9788968211638'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061584175' },
+    { title: '매경테스트 핵심정리', author: '김재진', publisher: '매경출판', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.9, reviews: 10, tags: ['추천'], hasEbook: false, isbn: '9791155426166', imageUrl: KB('9791155426166'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001724834' },
+    { title: '매경Test 출제예상문제(2019)', author: '자격시험연구소', publisher: '서원각', price: 18900, originalPrice: 21000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125725473', imageUrl: KB('9791125725473'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001664483' },
   ],
 
   'TESAT': [
