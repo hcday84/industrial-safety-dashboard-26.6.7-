@@ -2001,6 +2001,9 @@ const REAL_BOOKS = {
     { title: '해커스 중국어 HSK 4급 한 권으로 합격 기본서 + 실전모의고사 + 핵심어휘집', author: '해커스 HSK연구소', publisher: '해커스', price: 24210, originalPrice: 26900, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791137902121', imageUrl: KB('9791137902121'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001715841' },
     { title: '해커스중국어 HSK 3급 한 권으로 합격 기본서 + 실전모의고사 + 핵심어휘집', author: '리우윈, 해커스어학연구소', publisher: '해커스', price: 22410, originalPrice: 24900, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791137904378', imageUrl: KB('9791137904378'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061351816' },
     { title: '해커스 중국어 HSK 1-2급 한 권으로 가뿐하게 합격', author: '해커스 HSK연구소', publisher: '해커스어학연구소', price: 18900, originalPrice: 21000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791164302918', imageUrl: KB('9791164302918'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001826899' },
+    { title: '해커스 해설이 상세한 중국어 HSK 6급 실전모의고사', author: '해커스 HSK연구소', publisher: '해커스', price: 16110, originalPrice: 17900, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791164305186', imageUrl: KB('9791164305186'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001826901' },
+    { title: '맛있는 중국어 신 HSK 5급', author: '장영미', publisher: '맛있는북스', price: 24750, originalPrice: 27500, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791161481685', imageUrl: KB('9791161481685'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218918516' },
+    { title: '해커스 중국어 HSK 6급 단어장(큰글씨 확대판)', author: '해커스 HSK연구소', publisher: '해커스', price: 16110, originalPrice: 17900, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791137905481', imageUrl: KB('9791137905481'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000060624366' },
   ],
 
   '재경관리사': [
