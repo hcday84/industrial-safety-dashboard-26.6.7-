@@ -1518,6 +1518,9 @@ const REAL_BOOKS = {
     { title: '2027 박손사의 손해사정사 1차 3과목 통합 이론서 + 100% 무료강의', author: '박관양', publisher: '직업상점', price: 59400, originalPrice: 66000, discount: '10%', rating: 5.0, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9791194695509', imageUrl: KB('9791194695509'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220662305' },
     { title: '2027 시대에듀 손해사정사 1차 10개년 기출문제해설 한권으로 끝내기', author: '김명규', publisher: '시대고시기획', price: 32400, originalPrice: 36000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143416070', imageUrl: KB('9791143416070'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220296557' },
     { title: '2027 인스TV 손해사정사 1차 핵심 손해사정이론', author: '인스TV보험교육원', publisher: '고시아카데미', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788966314386', imageUrl: KB('9788966314386'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220774146' },
+    { title: '2027 박손사의 손해사정사 1차 기출+예상문제집 + 100% 무료강의', author: '박관양', publisher: '직업상점', price: 39600, originalPrice: 44000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791194695516', imageUrl: KB('9791194695516'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220662318' },
+    { title: '2027 유튜버 바른손사 손해사정사 1차 8개년 기출문제집', author: '조윤', publisher: '지식오름', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791174911520', imageUrl: KB('9791174911520'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220924516' },
+    { title: '2027 시대에듀 한치영 손해사정사 정석 1차', author: '한치영', publisher: '시대고시기획', price: 38700, originalPrice: 43000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143420213', imageUrl: KB('9791143420213'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221268656' },
   ],
 
   '보험계리사': [
