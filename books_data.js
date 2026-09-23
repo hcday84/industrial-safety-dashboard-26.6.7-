@@ -446,7 +446,6 @@ const REAL_BOOKS = {
     { title: '2022 KEC 한국전기설비규정 관련 건축전기설비기술사 기출·예상문제집', author: '양재학, 김용운, 윤종철, 김석태', publisher: '성안당', price: 45000, originalPrice: 50000, discount: '10%', rating: 5.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9788931527629', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788931527629.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000000557656' },
     { title: '손동민 기술사의 전기응용기술사 합격 서브노트 1', author: '손동민', publisher: '전기박사드림', price: 45000, originalPrice: 50000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791199492608', imageUrl: KB('9791199492608'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219595536' },
     { title: '박종호 기술사의 전자응용기술사 합격 서브노트 1', author: '박종호', publisher: '전기박사드림', price: 45000, originalPrice: 50000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791199492677', imageUrl: KB('9791199492677'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219595682' },
-    { title: '전기응용기술사(상)', author: '오진택, 이동주', publisher: '명인북스', price: 49500, originalPrice: 55000, discount: '10%', tags: ['추천'], isbn: '9791189757762', imageUrl: KB('S000201325549'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201325549' },
   ],
 
   '기계기술사': [
