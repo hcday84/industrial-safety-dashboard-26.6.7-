@@ -1758,6 +1758,9 @@ const REAL_BOOKS = {
     { title: '한국 도시계획기사 실기(2026-27년 대비)', author: '김소영', publisher: '아모스', price: 34200, originalPrice: 38000, discount: '10%', tags: ['추천'], isbn: '9791195285389', imageUrl: KB('9791195285389'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216819437' },
     { title: '2026 도시계획기사 실기', author: '홍성덕, 정웅, 홍평화, 정가원, 박성하', publisher: '예문사', price: 34200, originalPrice: 38000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927461067', imageUrl: KB('9788927461067'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218934792' },
     { title: '핵심 도시계획론 (도시계획기사·도시계획직 공무원수험서)', author: '백기영', publisher: '보성각', price: 22000, originalPrice: 22000, discount: '0%', rating: 4.2, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9788978396493', imageUrl: KB('9788978396493'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001216217' },
+    { title: '김조교 도시계획기사', author: '김진우', publisher: '보성각', price: 38000, originalPrice: 38000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788978396912', imageUrl: KB('9788978396912'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001216254' },
+    { title: '우선순위 도시계획관계법규 (도시계획기사 제5과목 기출문제집)', author: '정명재', publisher: '법률저널', price: 25200, originalPrice: 28000, discount: '10%', rating: 3.2, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9788963365541', imageUrl: KB('9788963365541'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000985485' },
+    { title: '합격 도시계획기사 실기', author: '임영수', publisher: '보성각', price: 20000, originalPrice: 20000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788978396905', imageUrl: KB('9788978396905'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001216253' },
   ],
 
 
