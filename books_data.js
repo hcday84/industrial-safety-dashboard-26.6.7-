@@ -228,6 +228,8 @@ const REAL_BOOKS = {
     { title: '2025 가스기능장 실기 기출문제 총정리', author: '최갑규', publisher: '세진북스', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791157457014', imageUrl: KB('9791157457014'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215756160' },
     { title: '한권으로 필기와 실기를 끝내는 가스기능장', author: '최갑규', publisher: '세진북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.4, reviews: 76, tags: ['베스트'], hasEbook: false, isbn: '9791157457007', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791157457007.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000215756151' },
     // 추천수험서 5
+    { title: '2027 시대에듀 Win-Q 가스기능장 필기 단기합격', author: '시대에듀', publisher: '시대에듀', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143418180', imageUrl: KB('9791143418180'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220563464' },
+    // 2026-09-23 확인: 교보문고에 가스기능장 전용 도서는 위 8종이 전부(니치 시장 소진, 나머지는 절판이거나 가스기사/산업기사/기능사 공용 KGS CODE 교재로 이미 등록됨).
   ],
 
   // ────────────────────────────────────────
