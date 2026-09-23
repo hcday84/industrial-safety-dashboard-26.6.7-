@@ -1618,6 +1618,10 @@ const REAL_BOOKS = {
     { title: '2026 해커스 사회조사분석사 2급 실기 한권합격+무료특강', author: '김홍규', publisher: '해커스자격증', price: 30510, originalPrice: 33900, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788969656490', imageUrl: KB('9788969656490'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218968884' },
     { title: '2026 사회조사분석사 2급 무료강의+필기실기 올인원', author: '김대환', publisher: '박영사', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 8, tags: ['추천'], hasEbook: false, isbn: '9791130397122', imageUrl: KB('9791130397122'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218271552' },
     { title: '2027 에듀윌 사회조사분석사 2급 필기 2주합격+무료특강', author: '김형표, 박경은', publisher: '에듀윌', price: 29700, originalPrice: 33000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791136043016', imageUrl: KB('9791136043016'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220448091' },
+    { title: '2027 시대에듀 사회조사분석사 2급 1차 필기 한권으로 끝내기', author: '사회조사분석사 수험연구소', publisher: '시대고시기획', price: 29700, originalPrice: 33000, discount: '10%', tags: ['베스트'], hasEbook: true, isbn: '9791143418470', imageUrl: KB('9791143418470'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220923129' },
+    { title: '2026 이패스 사회조사분석사 2급 2차 실기', author: '심우진', publisher: '이패스코리아', price: 29700, originalPrice: 33000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791172094164', imageUrl: KB('9791172094164'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219407881' },
+    { title: '2027 시대에듀 사회조사분석사 2급 1차 필기 기출문제 CBT 문제은행', author: '사회조사분석사 수험연구소', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143419057', imageUrl: KB('9791143419057'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221190043' },
+    { title: '토마토패스 사회조사분석사 2급 1차 필기 한권완성', author: '김지현', publisher: '예문에듀', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 7, tags: ['추천'], hasEbook: false, isbn: '9791163863755', imageUrl: KB('9791163863755'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214921505' },
   ],
 
   '사회조사분석사1급': [
