@@ -1583,6 +1583,9 @@ const REAL_BOOKS = {
     { title: '2027 해커스 주택관리사 1차 기본서 공동주택시설개론', author: '이강일, 해커스 주택관리사시험 연구소', publisher: '해커스주택관리사', price: 34200, originalPrice: 38000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176447546', imageUrl: KB('9791176447546'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220852572' },
     { title: '2027 박문각 주택관리사 기본서 1차 회계원리', author: '김종화, 박문각 주택관리연구소', publisher: '박문각', price: 40500, originalPrice: 45000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176493932', imageUrl: KB('9791176493932'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221074365' },
     { title: '2026 해커스 주택관리사 1차 기출문제집 민법', author: '민희열, 해커스 주택관리사시험 연구소', publisher: '해커스주택관리사', price: 15300, originalPrice: 17000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791174046437', imageUrl: KB('9791174046437'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218560100' },
+    { title: '2026 에듀윌 주택관리사 1차 단원별 기출문제집', author: '윤재옥, 신명, 신의영', publisher: '에듀윌', price: 29700, originalPrice: 33000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791136039682', imageUrl: KB('9791136039682'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218681356' },
+    { title: '2026 해커스 주택관리사 1차 기출문제집 공동주택시설개론', author: '이강일, 해커스 주택관리사시험 연구소', publisher: '해커스주택관리사', price: 12600, originalPrice: 14000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791174046420', imageUrl: KB('9791174046420'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218560102' },
+    { title: '2026 해커스 주택관리사 2차 단원별 기출문제집 공동주택관리실무', author: '김성환, 해커스 주택관리사시험 연구소', publisher: '해커스주택관리사', price: 15300, originalPrice: 17000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176440271', imageUrl: KB('9791176440271'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219789730' },
   ],
 
   // ────────────────────────────────────────
