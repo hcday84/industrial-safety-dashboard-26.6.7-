@@ -1972,6 +1972,10 @@ const REAL_BOOKS = {
     { title: '2027 시대에듀 TESAT(테셋) 한권으로 끝내기', author: '시대경제경영연구소', publisher: '시대고시기획', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143418739', imageUrl: KB('9791143418739'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220646350' },
     { title: '해커스 TESAT(테셋) 2주 완성 이론+적중문제+모의고사', author: '서호성', publisher: '해커스금융', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791172444426', imageUrl: KB('9791172444426'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214923233' },
     { title: '에듀윌 TESAT 영역별 600제(필수기출 208제 포함)', author: 'David Kim', publisher: '에듀윌', price: 23400, originalPrice: 26000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791136041999', imageUrl: KB('9791136041999'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219564278' },
+    { title: '한경 TESAT 기본서와 핵심문제', author: '장선구', publisher: '비앤엠북스', price: 35000, originalPrice: 35000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788968212468', imageUrl: KB('9788968212468'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219514733' },
+    { title: '2024 TESAT 경제이해력 검증시험 핵심요약+적중문제', author: '김대수', publisher: '시스컴', price: 21600, originalPrice: 24000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791169413046', imageUrl: KB('9791169413046'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211625823' },
+    { title: '와우패스 TESAT 핵심이론문제집', author: '고범석', publisher: '와우패스', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788966137084', imageUrl: KB('9788966137084'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001030685' },
+    { title: '토마토패스 TESAT(테샛) 핵심이론 + 문제집', author: '김동빈', publisher: '예문사', price: 21600, originalPrice: 24000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927440499', imageUrl: KB('9788927440499'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000523592' },
   ],
 
   '펀드투자권유대행인': [
