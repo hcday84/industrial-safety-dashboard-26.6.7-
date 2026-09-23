@@ -1985,6 +1985,10 @@ const REAL_BOOKS = {
     { title: '2026 해커스 펀드투자권유대행인 한권합격 핵심개념+적중문제', author: '민영기', publisher: '해커스금융', price: 21510, originalPrice: 23900, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791174049056', imageUrl: KB('9791174049056'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219647392' },
     { title: '2026~2027 고시넷 펀드투자권유대행인 한권완성 + 무료강의', author: '고시넷 금융자격연구소', publisher: '고시넷', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791175920125', imageUrl: KB('9791175920125'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221034811' },
     { title: '2026 이패스 펀드투자권유대행인 금융의 바이블 3주 CUT 핵심개념+문제풀이', author: '김종모, 김종희, 박성현, 이동건', publisher: '이패스코리아', price: 18900, originalPrice: 21000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791172094720', imageUrl: KB('9791172094720'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219720170' },
+    { title: '2026 시대에듀 PASSCODE 펀드투자권유대행인 최신출제동형 100문항 + 모의고사 3회분', author: '김범곤', publisher: '시대고시기획', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143414465', imageUrl: KB('9791143414465'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219864590' },
+    { title: '토마토패스 펀드투자권유대행인 모의고사', author: '송범용', publisher: '토마토북스', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791199723047', imageUrl: KB('9791199723047'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219981955' },
+    { title: '2026 펀드투자권유대행인 (금융투자전문인력 표준교재)', author: '금융투자교육원', publisher: '금융투자협회', price: 32000, originalPrice: 32000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788960508101', imageUrl: KB('9788960508101'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219305253' },
+    { title: '펀드투자 권유대행인 핵심유형 총정리', author: '유창호, 송범용, 조성', publisher: '시대고시기획', price: 21600, originalPrice: 24000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125453710', imageUrl: KB('9791125453710'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001654446' },
   ],
 
   '소믈리에': [
