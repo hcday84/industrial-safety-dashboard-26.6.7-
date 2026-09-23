@@ -956,6 +956,8 @@ const REAL_BOOKS = {
     { title: '2026 용접산업기사 필기 10년간 기출문제', author: '나중식', publisher: '책과상상', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.5, reviews: 145, tags: ['추천'], hasEbook: false, isbn: '9791169672900', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791169672900.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218276629' },
     { title: '2020 완전정복 용접산업기사 실기', author: 'NDT 시험연구회', publisher: '세진사', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.4, reviews: 123, tags: ['추천'], hasEbook: false, isbn: '9791160453683', imageUrl: 'https://image.aladin.co.kr/product/22900/13/coversum/k692636944_1.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001791851' },
     { title: '평생 무료 동영상과 함께하는 용접산업기사 필기', author: '최갑규', publisher: '세진북스', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012222707', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791157457540.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218472931' },
+    { title: '용접산업기사 필기시험 7년간 기출문제(2020)', author: '선치웅', publisher: '크라운출판사', price: 14400, originalPrice: 16000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788940642733', imageUrl: KB('9788940642733'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000643960' },
+    { title: '평생 무료 동영상과 함께하는 용접산업기사 필기 최근 기출문제', author: '최갑규', publisher: '세진북스', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791157457557', imageUrl: KB('9791157457557'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218473221' },
   ],
 
   '피복아크용접기능사': [
