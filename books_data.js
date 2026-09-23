@@ -2155,6 +2155,9 @@ const REAL_BOOKS = {
     { title: '2026 큰별쌤 최태성의 별별한국사 한국사능력검정시험 심화(1,2,3급)(하)', author: '최태성', publisher: '이투스북', price: 16650, originalPrice: 18500, discount: '10%', rating: 5.0, tags: ['추천'], hasEbook: false, isbn: '9791138934442', imageUrl: KB('9791138934442'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218674985' },
     { title: '2026 에듀윌 한국사능력검정시험 심화 한권끝장+무료특강', author: '에듀윌 한국사교육연구소', publisher: '에듀윌', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791136039217', imageUrl: KB('9791136039217'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218358750' },
     { title: '2026 해커스 한국사능력검정시험 심화(1·2·3급) 이중석 맵핑 한국사 필기노트', author: '이중석', publisher: '해커스한국사', price: 17100, originalPrice: 19000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176441995', imageUrl: KB('9791176441995'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220047110' },
+    { title: '큰별쌤 최태성의 별별한국사 시대별 기출문제집 한국사능력검정시험 심화(1,2,3급)', author: '최태성', publisher: '이투스북', price: 17730, originalPrice: 19700, discount: '10%', rating: 5.0, tags: ['추천'], hasEbook: false, isbn: '9791138932943', imageUrl: KB('9791138932943'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216796440' },
+    { title: '2026 해커스 한국사능력검정시험 심화(1·2·3급) 한능검 초단기 3급+ 합격', author: '해커스 한국사연구소', publisher: '해커스한국사', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788969656919', imageUrl: KB('9788969656919'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218969538' },
+    { title: '2027 한국사능력검정시험 N지선다 초압축 기출문제집 심화(1·2·3급)', author: '한국사수험연구소', publisher: '시대에듀', price: 15300, originalPrice: 17000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143418159', imageUrl: KB('9791143418159'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220634284' },
   ],
 
   '사회통합프로그램': [
