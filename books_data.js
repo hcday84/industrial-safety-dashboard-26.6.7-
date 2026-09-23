@@ -1153,6 +1153,8 @@ const REAL_BOOKS = {
     { title: '2026 에듀윌 전기 전기기능사 실기 해설집+도면집+무료특강', author: '에듀윌 전기수험연구소', publisher: '에듀윌', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], hasEbook: false, isbn: '9791136037916', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136037916.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000216907984' },
     { title: '전기기능사 실기 바이블 3', author: '신석환, 최경호', publisher: '동일출판사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 145, tags: ['추천'], hasEbook: false, isbn: '9788938117687', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788938117687.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000220004569' },
     { title: '2026 박문각 전기기능사 실기 + 무료특강', author: '정용걸', publisher: '박문각', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], hasEbook: false, isbn: '9791175193116', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791175193116.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218606447' },
+    { title: '2026 나합격 전기기능사 필기+무료특강+온라인CBT문제풀이', author: '나합격 콘텐츠 연구소', publisher: '삼원북스', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791194997498', imageUrl: KB('9791194997498'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218907515' },
+    { title: '2026 초스피드 전기기능사 필기', author: '전기자격시험연구회', publisher: '성안당', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931514469', imageUrl: KB('9788931514469'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218470377' },
   ],
 
 
