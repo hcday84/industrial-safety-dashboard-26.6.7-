@@ -1256,6 +1256,8 @@ const REAL_BOOKS = {
     { title: 'Rocky Linux8로 리눅스마스터 2급 정복하기', author: '정성재, 이재웅', publisher: '북스홀릭퍼블리싱', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791162891186', imageUrl: KB('9791162891186'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211820693' },
     { title: '국가공인 리눅스마스터 2급', author: '박성수, 강기봉, 정우영', publisher: '수퍼유저코리아', price: 25000, originalPrice: 25000, discount: '0%', rating: 3.8, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791195178612', imageUrl: KB('9791195178612'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001958047' },
     { title: '2023 이기적 리눅스마스터 2급 기본서', author: '권소라', publisher: '영진닷컴', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931466683', imageUrl: KB('9788931466683'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200456451' },
+    { title: '2025 이기적 리눅스마스터 2급 1·2차', author: '권소라', publisher: '영진닷컴', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931476811', imageUrl: KB('9788931476811'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214822089' },
+    // 2026-09-23 확인: 교보문고에 실판매 중인 리눅스마스터 2급 전용 도서는 위 8종이 전부(니치 시장 소진, 전용 실기 도서는 없음).
   ],
 
   // ────────────────────────────────────────
