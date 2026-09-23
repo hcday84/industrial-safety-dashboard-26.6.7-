@@ -1975,6 +1975,9 @@ const REAL_BOOKS = {
     { title: '시나공 ITQ OA Master', author: '길벗알앤디', publisher: '길벗', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791140717866', imageUrl: KB('9791140717866'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219387983' },
     { title: '2026 이공자 ITQ OA Master', author: 'KIE기획연구실', publisher: '아카데미소프트', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791192695808', imageUrl: KB('9791192695808'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218778791' },
     { title: '2026 백발백중 ITQ 마스터종합서', author: '한정수, 박윤정', publisher: '성안당', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931583670', imageUrl: KB('9788931583670'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217294678' },
+    { title: '2027 이기적 ITQ 엑셀 ver.2021', author: '영진정보연구소', publisher: '영진닷컴', price: 15300, originalPrice: 17000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788931482331', imageUrl: KB('9788931482331'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220221624' },
+    { title: '2027 이기적 ITQ 파워포인트 ver.2021', author: '영진정보연구소', publisher: '영진닷컴', price: 15300, originalPrice: 17000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788931482355', imageUrl: KB('9788931482355'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220153692' },
+    { title: '2026 이기적 ITQ OA Master 엑셀/파워포인트 ver.2021+한글 ver.2020 올인원', author: '영진정보연구소', publisher: '영진닷컴', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931480917', imageUrl: KB('9788931480917'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217395498' },
   ],
 
   'JLPT': [
