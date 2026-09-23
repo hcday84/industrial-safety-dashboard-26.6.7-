@@ -1386,6 +1386,9 @@ const REAL_BOOKS = {
     { title: '네일 미용 미용사네일 실기', author: '샤인위드 도서편찬위원회', publisher: '샤인위드', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791196681258', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791196681258.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000209166828' },
     { title: '미용사(네일) 실기+무료동영상', author: '이윤희', publisher: '구민사', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168750401', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791168750401.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001853991' },
     { title: '미용사 네일 실기시험에 미치다(2021)', author: '한국미용교과교육과정연구회, 이수연, 최명옥', publisher: '성안당', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931581256', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788931581256.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000000561870' },
+    { title: '2026 기분파 네일미용사 필기(네일아트 필기)', author: '권지우, 에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791194328292', imageUrl: KB('9791194328292'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217503211' },
+    { title: '2026 New 완전합격 미용사 네일 필기시험문제', author: '류은주, 윤미선, 배현영', publisher: '크라운출판사', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788940649534', imageUrl: KB('9788940649534'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218575322' },
+    { title: '2025 이기적 권쌤TV 미용사(네일) 필기 기본서', author: '권순현, 민지영', publisher: '영진닷컴', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931476934', imageUrl: KB('9788931476934'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216002263' },
   ],
 
   // ────────────────────────────────────────
