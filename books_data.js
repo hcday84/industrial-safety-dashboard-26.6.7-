@@ -1945,6 +1945,10 @@ const REAL_BOOKS = {
     { title: '2026 에듀윌 ERP 정보관리사 회계 1급 한권끝장+무료특강', author: '유슬기', publisher: '에듀윌', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791136041807', imageUrl: KB('9791136041807'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219786630' },
     { title: '2026 에듀윌 ERP 정보관리사 인사 2급 한권끝장+무료특강', author: '배문주', publisher: '에듀윌', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791136041913', imageUrl: KB('9791136041913'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219542361' },
     { title: '2026 에듀윌 ERP 정보관리사 생산 1·2급 한권끝장+무료특강', author: '최주영', publisher: '에듀윌', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791136042026', imageUrl: KB('9791136042026'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219786620' },
+    { title: '2026 에듀윌 ERP 정보관리사 인사 1급 한권끝장+무료특강', author: '배문주', publisher: '에듀윌', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791136042156', imageUrl: KB('9791136042156'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219786624' },
+    { title: '2026 유튜버 김쌤학원의 100% 무료강의 ERP 정보관리사 물류 1급/2급 통합이론서+기출문제집', author: '김기훈', publisher: '지식오름', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791174911186', imageUrl: KB('9791174911186'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219917236' },
+    { title: '2026 영림원 SystemEver ERP정보관리사 물류 1·2급', author: '최연희', publisher: '도서출판배움', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791189986780', imageUrl: KB('9791189986780'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219725274' },
+    { title: '2026 국가공인 정보관리사 ERP 회계 2급', author: '김갑수, 홍윤표, 이민주', publisher: '나눔클래스', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791194800248', imageUrl: KB('9791194800248'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219672380' },
   ],
 
   '매경TEST': [
