@@ -2346,6 +2346,9 @@ const REAL_BOOKS = {
     { title: '2027 해커스소방 이영철 소방학개론 기본서', author: '이영철', publisher: '해커스소방', price: 44100, originalPrice: 49000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176440844', imageUrl: KB('9791176440844'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219811082' },
     { title: '2027 해커스소방 김정희 소방관계법규 단원별 실전문제집', author: '김정희', publisher: '해커스소방', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176443654', imageUrl: KB('9791176443654'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221151017' },
     { title: '2027 소방공무원 한권으로 합격하는 소방학개론', author: '이중희, 강단아, 장희재', publisher: '미래가치', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791167737083', imageUrl: KB('9791167737083'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220216761' },
+    { title: '2027 박문각 소방직 정태화 소방학개론 기본서', author: '정태화', publisher: '박문각', price: 52200, originalPrice: 58000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791175199057', imageUrl: KB('9791175199057'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219570488' },
+    { title: '2027 곽동진 최강 소방학개론', author: '곽동진', publisher: '배움', price: 35100, originalPrice: 39000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791124262481', imageUrl: KB('9791124262481'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219752363' },
+    { title: 'New 이근상 소방학개론 기출N제+무한궤도(기출OX)', author: '이근상', publisher: '영기획비엠씨', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791165547875', imageUrl: KB('9791165547875'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217467659' },
   ],
 
   // ────────────────────────────────────────
