@@ -1785,6 +1785,8 @@ const REAL_BOOKS = {
     { title: '2026 에너지관리기사 필기', author: '서상희', publisher: '동일출판사', price: 39600, originalPrice: 44000, discount: '10%', rating: 4.4, reviews: 132, tags: ['추천'], hasEbook: false, isbn: '9788938117151', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788938117151.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217454947' },
     { title: '2026 물쌤닷컴 에너지관리기사 필기+기출해설', author: '김선태', publisher: '미교원', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 112, tags: ['추천'], hasEbook: false, isbn: '9791194457251', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791194457251.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218632205' },
     { title: '2026 과년도 출제문제 중심 에너지관리기사 필기', author: '서상희', publisher: '동일출판사', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.3, reviews: 98, tags: ['추천'], hasEbook: false, isbn: '9788938117144', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788938117144.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217454935' },
+    { title: '2026 에듀윌 에너지관리기사 실기 한권끝장 + 무료특강', author: '남진우, 박수한, 어준혁', publisher: '에듀윌', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791136041425', imageUrl: KB('9791136041425'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219150377' },
+    { title: '2026 시대에듀 Win-Q 에너지관리기사 실기 단기합격', author: '박병호', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143409188', imageUrl: KB('9791143409188'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219128335' },
   ],
 
   // ────────────────────────────────────────
