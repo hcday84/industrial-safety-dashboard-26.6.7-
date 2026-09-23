@@ -1588,6 +1588,7 @@ const REAL_BOOKS = {
     { title: '2024 건축사자격시험 과년도 출제문제 1교시 과목 대지계획', author: '한솔아카데미수험연구회', publisher: '한솔아카데미', price: 33000, originalPrice: 33000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791166544439', imageUrl: KB('9791166544439'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211900789' },
     { title: '2024 건축사자격시험 과년도 출제문제 2교시 과목 건축설계 1', author: '한솔아카데미수험연구회', publisher: '한솔아카데미', price: 33000, originalPrice: 33000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791166544446', imageUrl: KB('9791166544446'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211900803' },
     { title: '2024 건축사자격시험 과년도 출제문제 3교시 과목 건축설계 2', author: '한솔아카데미수험연구회', publisher: '한솔아카데미', price: 33000, originalPrice: 33000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791166544453', imageUrl: KB('9791166544453'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211901043' },
+    // 2026-09-23 확인: 교보문고에 실판매 중인 건축사(자격시험) 전용 도서는 위 6종이 전부(2007~2021년판 등 구판은 전부 절판). '한국건축사'(법률저널, 국가유산수리기술자 시험대비)는 다른 종목이라 제외. 니치 시장 소진.
   ],
 
   '수의사': [
