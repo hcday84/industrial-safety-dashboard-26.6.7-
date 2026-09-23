@@ -1358,6 +1358,9 @@ const REAL_BOOKS = {
     { title: '2026 에듀윌 피부미용사 필기 1주끝장', author: '에듀윌 편집부', publisher: '에듀윌', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 112, tags: ['추천'], hasEbook: false, isbn: '9791136039415', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791136039415.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218235698' },
     { title: '피부미용관리의 이론과 실제', author: '이정화, 홍재기', publisher: '서우', price: 24000, tags: ['추천'], hasEbook: false, isbn: '9788991985513', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788991985513.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001489826' },
     { title: '딱!! 2주만 집중 피부미용사 필기 총정리 문제', author: '하경미, 윤태효, 임선민', publisher: '크라운출판사', price: 14400, originalPrice: 16000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788940650646', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788940650646.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219019184' },
+    { title: '2026 기분파 피부미용사 실기', author: '문서원, 조효정', publisher: '에듀웨이', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791194328384', imageUrl: KB('9791194328384'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218667039' },
+    { title: '2027 한번에 합격하는 피부미용사 실기시험문제', author: '이성내, 이수연, 문한나', publisher: '크라운출판사', price: 23400, originalPrice: 26000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788940651001', imageUrl: KB('9788940651001'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220996780' },
+    { title: '2026 시대에듀 유선배 미용사(피부) 필기+실기 합격노트', author: '안유림', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 13, tags: ['추천'], hasEbook: false, isbn: '9791143403407', imageUrl: KB('9791143403407'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218796065' },
   ],
 
   // ────────────────────────────────────────
