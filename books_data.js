@@ -1599,6 +1599,9 @@ const REAL_BOOKS = {
     { title: '2027 시대에듀 사회복지사 1급 한권으로 끝내기', author: '이용석, 사회복지사 수험연구소', publisher: '시대고시기획', price: 45000, originalPrice: 50000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143407504', imageUrl: KB('9791143407504'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219601294' },
     { title: '2027 김진원 사회복지사1급 족집게 벼락치기 세트', author: '김진원', publisher: '오이코스북스', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.6, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9791124962008', imageUrl: KB('9791124962008'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221142762' },
     { title: '2027 사회복지사 1급 기출문제집 딱풀 + 무료강의', author: '김유경', publisher: '지식터', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.9, reviews: 9, tags: ['추천'], hasEbook: false, isbn: '9791124326329', imageUrl: KB('9791124326329'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219744560' },
+    { title: '2027 에듀윌 사회복지사 1급 단원별X회차별 기출문제집+무료특강', author: '손용근', publisher: '에듀윌', price: 26100, originalPrice: 29000, discount: '10%', tags: ['추천'], hasEbook: true, isbn: '9791136041869', imageUrl: KB('9791136041869'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219562810' },
+    { title: '2027 해커스 사회복지사 1급 단원별·회차별 기출문제집+무료특강', author: '박정훈', publisher: '해커스 사회복지사', price: 36000, originalPrice: 40000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791165401511', imageUrl: KB('9791165401511'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219811833' },
+    { title: '2027 나눔의집 사회복지사1급 기출회독과정 세트', author: '사회복지교육연구센터', publisher: '나눔의집', price: 86400, originalPrice: 96000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788958105343', imageUrl: KB('9788958105343'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220444226' },
   ],
 
   '청소년상담사2급': [
