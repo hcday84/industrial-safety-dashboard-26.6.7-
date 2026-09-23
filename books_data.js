@@ -551,6 +551,9 @@ const REAL_BOOKS = {
     // 추천수험서 5
     { title: '임상생리학 최신경향 문제', author: '한국임상생리학연구회', publisher: '고려의학', price: 38000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791124381038', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791124381038.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219570701' },
     { title: '요화학 및 체액검사', author: 'Lillian Mundt, Kristy Shanahan', publisher: '범문에듀케이션', price: 35000, tags: ['추천'], hasEbook: false, isbn: '9791159431043', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791159431043.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001778450' },
+    { title: '의료관계법규 핵심정리 및 문제(임상병리사국가시험대비)', author: '의료관계법규연구회', publisher: '고려의학', price: 22000, originalPrice: 22000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791196032883', imageUrl: KB('9791196032883'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001970911' },
+    { title: '2024 임상병리사 국가고시를 위한 최신 의료관계법규', author: '강현구, 김극준, 김선규 외', publisher: '고려의학', price: 30000, originalPrice: 30000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791192422565', imageUrl: KB('9791192422565'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214398014' },
+    // 2026-09-23 확인: 교보문고에 실판매 중인 임상병리사 국가시험 전용 도서는 위 9종이 전부(니치 시장 소진).
   ],
 
   // ────────────────────────────────────────
