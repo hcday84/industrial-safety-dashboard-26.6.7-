@@ -1847,6 +1847,9 @@ const REAL_BOOKS = {
     { title: '시나공 GTQ 포토샵 1급(ver.CC)', author: '길벗알앤디', publisher: '길벗', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 6, tags: ['추천'], hasEbook: false, isbn: '9791140708550', imageUrl: KB('9791140708550'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212304255' },
     { title: '에듀윌 EXIT GTQ 포토샵 1급 ver.CC', author: '김부치', publisher: '에듀윌', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791136029058', imageUrl: KB('9791136029058'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000210401792' },
     { title: '이기적 GTQ 포토샵 2급 기본서(ver.CC 2024)', author: '박은영', publisher: '영진닷컴', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931476637', imageUrl: KB('9788931476637'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216559811' },
+    { title: '이기적 GTQ 일러스트 2급 기본서 ver.CC 2024', author: '박은영', publisher: '영진닷컴', price: 21600, originalPrice: 24000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931476606', imageUrl: KB('9788931476606'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217353605' },
+    { title: '2027 시대에듀 유선배 GTQ 일러스트 1급(ver. Adobe CC) 핵심기능+기출변형+무료강의', author: '조인명', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143420305', imageUrl: KB('9791143420305'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221328430' },
+    { title: '2026 이기적 GTQ 일러스트 1급 기본서 ver.CC 2020', author: '일마', publisher: '영진닷컴', price: 23400, originalPrice: 26000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931476590', imageUrl: KB('9788931476590'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217019941' },
   ],
 
   'GTQi': [
