@@ -2035,6 +2035,10 @@ const REAL_BOOKS = {
     { title: '2027 에듀윌 KBS한국어능력시험 한권끝장+무료특강', author: '송주연, 김지학, 황혜림', publisher: '에듀윌', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791136041586', imageUrl: KB('9791136041586'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220273634' },
     { title: '2026 해커스 36시간에 끝내는 KBS한국어능력시험 (암기편+전략편)', author: '해커스 한국어연구소', publisher: '해커스자격증', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788969656865', imageUrl: KB('9788969656865'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218478219' },
     { title: '2026 에듀윌 KBS한국어능력시험 13개년 기출분석으로 2주끝장', author: '신은재, 김지학', publisher: '에듀윌', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791136038272', imageUrl: KB('9791136038272'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218787529' },
+    { title: 'KBS한국어능력시험 공식 기출문제집 2026 상반기 제91, 90, 89회', author: 'KBS한국어진흥원', publisher: '해커스자격증', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788969657497', imageUrl: KB('9788969657497'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220574456' },
+    { title: '2027 기분좋은 KBS한국어능력시험 반반끝 한 권에 합격', author: '한국방송공사 편집부, 정원상', publisher: '시대고시기획', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143418760', imageUrl: KB('9791143418760'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220774197' },
+    { title: '2026 시대에듀 오선희 쌤의 KBS 한국어능력시험 기출 패턴으로 끝내기', author: '오선희', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143409638', imageUrl: KB('9791143409638'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219205986' },
+    { title: '시대에듀 KBS 한국어능력시험 고득점 기출 동형 모의고사', author: '노수경', publisher: '시대고시기획', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143415998', imageUrl: KB('9791143415998'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220215234' },
   ],
 
   'TOEFL': [
