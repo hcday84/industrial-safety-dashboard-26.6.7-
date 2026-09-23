@@ -1189,6 +1189,9 @@ const REAL_BOOKS = {
     { title: 'Pass 자동차정비산업기사 유형별 실기', author: '김광수, 박동수, 이종호, 한승철', publisher: '골든벨', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791124114612', imageUrl: KB('9791124114612'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220663556' },
     // 추천수험서 5
     { title: '자동차전문가 정장만과 함께하는 자동차정비산업기사 필기', author: '정장만', publisher: '에듀피디', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 112, tags: ['추천'], hasEbook: false, isbn: '9791155866160', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791155866160.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219081001' },
+    { title: '2026 자동차정비 산업기사 실기', author: '임춘무', publisher: '일진사', price: 30600, originalPrice: 34000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788942920860', imageUrl: KB('9788942920860'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219306844' },
+    { title: '2026 자동차정비산업기사 필기', author: '김형진, 김승수', publisher: '구민사', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168756564', imageUrl: KB('9791168756564'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218847116' },
+    { title: '2026 합격포인트 자동차정비산업기사 필기', author: '김광석, 김영호, 김지호, 박영식', publisher: '골든벨', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791124114049', imageUrl: KB('9791124114049'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218685900' },
   ],
 
   // ────────────────────────────────────────
