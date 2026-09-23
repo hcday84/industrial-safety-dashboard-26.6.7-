@@ -1761,6 +1761,7 @@ const REAL_BOOKS = {
     { title: '김조교 도시계획기사', author: '김진우', publisher: '보성각', price: 38000, originalPrice: 38000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788978396912', imageUrl: KB('9788978396912'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001216254' },
     { title: '우선순위 도시계획관계법규 (도시계획기사 제5과목 기출문제집)', author: '정명재', publisher: '법률저널', price: 25200, originalPrice: 28000, discount: '10%', rating: 3.2, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9788963365541', imageUrl: KB('9788963365541'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000985485' },
     { title: '합격 도시계획기사 실기', author: '임영수', publisher: '보성각', price: 20000, originalPrice: 20000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788978396905', imageUrl: KB('9788978396905'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001216253' },
+    // 2026-09-23 확인: 교보문고에 실판매 중인 도시계획기사 전용 도서는 위 9종이 전부(니치 시장 소진, 나머지 검색결과는 중복이거나 절판).
   ],
 
 
