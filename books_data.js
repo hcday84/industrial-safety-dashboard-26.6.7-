@@ -1894,6 +1894,7 @@ const REAL_BOOKS = {
     { title: '멘토시리즈 MOS 365 엑셀', author: '멘토 IT 연구회', publisher: '멘토르', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], hasEbook: false, isbn: '9791189028510', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791189028510.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219135369' },
     { title: '멘토시리즈 MOS 365 워드', author: '멘토 IT 연구회', publisher: '멘토르', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], hasEbook: false, isbn: '9791189028534', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791189028534.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219135217' },
     { title: '멘토시리즈 MOS 365 파워포인트', author: '코리아교육그룹 교육연구소', publisher: '코리아교육그룹', price: 15300, originalPrice: 17000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791189028527', imageUrl: KB('9791189028527'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219135223' },
+    // 2026-09-21 확인: 교보문고에 실판매 중인 MOS 국내 수험서는 위 3종(멘토시리즈)이 전부(니치 시장 소진, 대부분 해외 공식 교재로 대체됨).
   ],
 
   'TOEIC': [
