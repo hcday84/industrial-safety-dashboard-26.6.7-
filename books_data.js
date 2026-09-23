@@ -339,6 +339,9 @@ const REAL_BOOKS = {
     // 추천수험서 5
     { title: '오라클 성능 고도화 원리와 해법 1', author: '조시형', publisher: '디비안(주)(DBian)', price: 39000, rating: 5.0, reviews: 17, tags: ['추천'], hasEbook: false, isbn: '9791191941043', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791191941043.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000061696047' },
     { title: '데이터아키텍처 전문가 가이드', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 50000, rating: 4.9, reviews: 32, tags: ['추천'], hasEbook: false, isbn: '9788988474877', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788988474877.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001399870' },
+    { title: '오라클 성능 고도화 원리와 해법 2', author: '조시형', publisher: '디비안(주)(DBian)', price: 49000, originalPrice: 49000, discount: '0%', rating: 5.0, reviews: 10, tags: ['추천'], hasEbook: false, isbn: '9791191941050', imageUrl: KB('9791191941050'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061696048' },
+    { title: '데이터아키텍처 자격검정 실전문제', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 12000, originalPrice: 12000, discount: '0%', rating: 4.9, reviews: 54, tags: ['추천'], hasEbook: false, isbn: '9788988474150', imageUrl: KB('9788988474150'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001399857' },
+    { title: '한번에 이해되는 Oracle SQL & PL/SQL', author: '김수환', publisher: '인피니티북스', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791185578088', imageUrl: KB('9791185578088'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001870526' },
   ],
 
   // ────────────────────────────────────────
