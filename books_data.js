@@ -1247,6 +1247,7 @@ const REAL_BOOKS = {
 
   // ────────────────────────────────────────
   '네트워크관리사2급': [
+    // 2026-09-21 확인: 나머지 네트워크관리사 도서(크라운출판사·성안당 시리즈)는 전부 절판. 실판매 중인 건 이 1종뿐(1급과 공용 교재).
     { title: '이기적 네트워크관리사 1, 2급 필기+실기 올인원', author: '임호진, 황성하', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012129182', isbn: '9788931481211', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931481211.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218204635' },
   ],
 
