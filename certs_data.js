@@ -6,17 +6,17 @@ const CERTIFICATIONS = {
   '산업안전산업기사': {
     name: '산업안전산업기사', icon: 'fa-helmet-safety', category: '안전관리',
     heroTitle: '2026년도 산업안전산업기사 합격 전략',
-    heroDesc: '중대재해처벌법 강화로 건설 및 제조업 안전관리자 채용 의무 증가! 평균 합격률 40% 장벽을 깨는 과목별 정밀 분석 데이터를 대시보드에서 확인하세요.',
-    passRateSummary: '필기 40.1% | 실기 42.4%',
-    avgPassRate: '41.3%',
+    heroDesc: '중대재해처벌법 강화로 건설 및 제조업 안전관리자 채용 의무 증가! 필기는 좁고 실기는 넓어지는 과목별 정밀 분석 데이터를 대시보드에서 확인하세요.',
+    passRateSummary: '필기 39.0% | 실기 60.6%',
+    avgPassRate: '49.8%',
     avgExamRate: '80%',
     examRateSummary: '필기 72% | 실기 88%',
     passRates: [
-      { year: 2020, written: 51.3, practical: 34.2 },
       { year: 2021, written: 48.2, practical: 43.0 },
       { year: 2022, written: 45.1, practical: 43.8 },
       { year: 2023, written: 44.5, practical: 46.9 },
       { year: 2024, written: 40.1, practical: 42.4 },
+      { year: 2025, written: 39.0, practical: 60.6 },
     ],
     schedules: [
       { round: '제1회', isCurrent: false, isDone: true,
