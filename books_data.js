@@ -1998,6 +1998,8 @@ const REAL_BOOKS = {
     { title: '소믈리에 & 어드바이저를 위한 와인 테이스팅', author: '센톤 교재편찬위원회', publisher: '시대인', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791138314503', imageUrl: KB('9791138314503'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000060624392' },
     { title: 'Basic 와인 소믈리에 서비스', author: '김효근', publisher: '새로미', price: 20000, originalPrice: 20000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788964767993', imageUrl: KB('9788964767993'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061584129' },
     { title: '와인소믈리에 실무', author: '김춘호, 이상준', publisher: '새로미', price: 18000, originalPrice: 18000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788964761847', imageUrl: KB('9788964761847'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001010422' },
+    { title: '와인 소믈리에', author: '이희수', publisher: '21세기사', price: 32000, originalPrice: 32000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791168330795', imageUrl: KB('9791168330795'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000208855042' },
+    // 2026-09-23 확인: 교보문고에 소믈리에 자격시험 전용 도서는 위 7종이 전부(니치 시장 소진). '국제소믈리에' 검색 결과 없음. 나머지 '소믈리에' 검색결과는 신의 물방울(만화)·부르고뉴 와인·와인 교양 수업 등 일반 와인 교양서로 자격시험용이 아니라 제외.
   ],
 
   '바텐더': [
