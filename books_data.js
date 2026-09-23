@@ -1736,6 +1736,7 @@ const REAL_BOOKS = {
     { title: '2026 시대에듀 언어재활사 최종모의고사', author: '곽경미, 곽은정, 엄지연, 이보람', publisher: '시대고시기획', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013268945', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791143416964.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000220455785' },
     { title: '언어재활사를 위한 임상 가이드', author: 'Froma P. Roth, Colleen K. Worthington', publisher: '박학사', price: 27000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788998521714', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788998521714.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001633635' },
     { title: '언어재활 국가고시 마스터키', author: '이효진, 고은주, 박효진, 이주영, 정지민, 한호연', publisher: '에이스북', price: 47000, originalPrice: 47000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791199394193', imageUrl: KB('9791199394193'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221151921' },
+    // 2026-09-21 확인: 교보문고에 실판매 중인 언어재활사 국가시험 전용 도서는 위 3종이 전부(니치 시장 소진).
   ],
 
   // ────────────────────────────────────────
