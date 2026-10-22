@@ -167,6 +167,8 @@ const REAL_BOOKS = {
     { title: '2024 화공기사 필기총정리', author: '박병호', publisher: '일진사', price: 46800, originalPrice: 52000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788942919246', imageUrl: KB('9788942919246'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211992576' },
     { title: '100주 공업화학 (기술고시·기술사·변리사·공무원·공사·공단·화공기사 대비)', author: '이홍주', publisher: '성안당', price: 49500, originalPrice: 55000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931584608', imageUrl: KB('9788931584608'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216237800' },
     // 2026-09-21 확인: 현재 판매 중인 화공기사 교재는 위 8종이 전부(과거 연도판은 모두 절판/품절, 정나나·화공기사연구회 시리즈 구판 다수 포함). 10종 채우기용 중복 등록 없음.
+    { title: '2027 한번에 합격하는 화공기사 기출문제집 필기', author: '화공기사연구회', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931515824', imageUrl: KB('9788931515824'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221513907' },
+    // 2026-10-22 재확인: 성안당 2027 기출문제집(신간) 추가.
   ],
 
   // ────────────────────────────────────────
@@ -554,6 +556,10 @@ const REAL_BOOKS = {
     { title: '의료관계법규 핵심정리 및 문제(임상병리사국가시험대비)', author: '의료관계법규연구회', publisher: '고려의학', price: 22000, originalPrice: 22000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791196032883', imageUrl: KB('9791196032883'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001970911' },
     { title: '2024 임상병리사 국가고시를 위한 최신 의료관계법규', author: '강현구, 김극준, 김선규 외', publisher: '고려의학', price: 30000, originalPrice: 30000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791192422565', imageUrl: KB('9791192422565'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214398014' },
     // 2026-09-23 확인: 교보문고에 실판매 중인 임상병리사 국가시험 전용 도서는 위 9종이 전부(니치 시장 소진).
+    { title: '2026 최신·적중 임상병리사를 위한 의료관계법규(예상문제 포함)', author: '김대식, 강효찬', publisher: 'JMK', price: 42000, originalPrice: 42000, discount: '0%', rating: 3.8, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791162605134', imageUrl: KB('9791162605134'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220773618' },
+    { title: '임상병리사 실기문제 및 풀이', author: '대학서림 편집부', publisher: '대학서림', price: 35000, originalPrice: 35000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788969401847', imageUrl: KB('9788969401847'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001062870' },
+    { title: '단박에 합격하기 임상병리사 실전모의고사: 실기편', author: '홍아란', publisher: '군자출판사', price: 40000, originalPrice: 40000, discount: '0%', rating: 5, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791159554889', imageUrl: KB('9791159554889'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001780505' },
+    // 2026-10-22 재확인: JMK 의료관계법규·대학서림 실기문제·군자 실기 모의고사 3종 추가 → 10종 초과 달성.
   ],
 
   // ────────────────────────────────────────
@@ -807,6 +813,8 @@ const REAL_BOOKS = {
     { title: '2024 콘크리트 기능사 필기', author: '박종삼', publisher: '금호출판사', price: 14400, originalPrice: 16000, discount: '10%', rating: 4.5, reviews: 167, tags: ['추천'], hasEbook: false, isbn: '9791192089225', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791192089225.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000212390214' },
     { title: '2025 콘크리트 기능사 필기 실기', author: '고행만', publisher: '건기원', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791157678655', imageUrl: KB('9791157678655'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215015509' },
     // 2026-09-21 확인: 현재 판매 중인 콘크리트기능사 교재는 위 7종이 전부(니치 시장 소진, 나머지는 절판).
+    { title: '2027 CBT대비 콘크리트기능사 필기+실기 3주완성', author: '염창열, 고길용, 전지현', publisher: '한솔아카데미', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791166549359', imageUrl: KB('9791166549359'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221697831' },
+    // 2026-10-22 재확인: 한솔아카데미 2027판(신간) 추가.
   ],
 
   '측량기능사': [
@@ -828,6 +836,8 @@ const REAL_BOOKS = {
     { title: '2025 건설재료시험기능사 필기 실기', author: '고행만', publisher: '건기원', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791157678549', imageUrl: KB('9791157678549'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214181416' },
     { title: '2023 건설재료시험기능사 필기·실기', author: '김수영, 박효숙, 최규태, 박홍식, 김명성', publisher: '구민사', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168750753', imageUrl: KB('9791168750753'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061695540' },
     // 2026-09-21 확인: 현재 판매 중인 건설재료시험기능사 교재는 위 5종이 전부(과거 연도판은 모두 절판). 10종 채우기용 중복 등록 없음.
+    { title: '2027 건설재료시험기능사 필기 예상문제집', author: '에듀채널 편집부', publisher: '스터디채널', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176181907', imageUrl: KB('9791176181907'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221737132' },
+    // 2026-10-22 재확인: 스터디채널 2027 예상문제집(신간) 추가.
   ],
 
   '건설안전기사': [
@@ -1021,6 +1031,9 @@ const REAL_BOOKS = {
     { title: '2024 한 권으로 끝내는 승강기기사.산업기사 필기', author: '한영규', publisher: '건기원', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.6, reviews: 156, tags: ['베스트'], hasEbook: false, isbn: '9791157677825', imageUrl: 'https://image.aladin.co.kr/product/32409/38/coversum/k742935389_1.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000208952492' },
     { title: '2025 승강기 기사 산업기사', author: '정재수', publisher: '남양문화', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.7, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9788955540734', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788955540734.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000000803189' },
     { title: '승강기 기사·산업기사', author: '최기호, 이명상', publisher: '대광서림', price: 33300, originalPrice: 37000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788938452108', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788938452108.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219665341' },
+    { title: '2027 승강기 기사.산업기사 필기', author: '이도흠', publisher: '엔트미디어', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791192810959', imageUrl: KB('9791192810959'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221653034' },
+    { title: '2024 승강기 실기 총정리', author: '최기호, 한영규', publisher: '건기원', price: 19800, originalPrice: 22000, discount: '10%', rating: 5, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791157677993', imageUrl: KB('9791157677993'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211810563' },
+    // 2026-10-22 재확인: 엔트미디어 2027 필기(신간)·건기원 실기 추가.
   ],
 
   '품질경영기사': [
@@ -1173,6 +1186,8 @@ const REAL_BOOKS = {
     { title: '화학분석기사를 대비한 최신 분석화학', author: '유은숙, 차상원, 최재성', publisher: '북스힐', price: 29000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791159713927', imageUrl: KB('9791159713927'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001784656' },
     { title: '화학분석기사', author: '분석화학연구회', publisher: '자유아카데미', price: 38000, tags: ['추천'], hasEbook: false, isbn: '9791158082161', imageUrl: KB('9791158082161'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001762459' },
     // 2026-09-21 확인: 현재 판매 중인 화학분석기사 교재는 위 9종이 전부(과거 연도판은 모두 절판/품절). 10종 채우기용 중복 등록 없음.
+    { title: '2024 SD에듀 Win-Q 화학분석기사 실기 단기합격', author: '조현욱, 김찬양', publisher: '시대고시기획', price: 24300, originalPrice: 27000, discount: '10%', rating: 5, reviews: 12, tags: ['추천'], hasEbook: false, isbn: '9791138359252', imageUrl: KB('9791138359252'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211872999' },
+    // 2026-10-22 재확인: Win-Q 2024 실기 추가 → 10종 달성.
   ],
 
   // ────────────────────────────────────────
@@ -1305,6 +1320,9 @@ const REAL_BOOKS = {
     { title: '자동차정비 기사실기 필답형', author: '김인태, 김창용', publisher: '골든벨', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791158063146', imageUrl: KB('9791158063146'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001762068' },
     { title: '자동차정비기사', author: '박일주, 양인권, 이정호, 정지욱', publisher: '골든벨', price: 17000, originalPrice: 17000, discount: '0%', tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000003237709', isbn: '9791158063160', imageUrl: KB('9791158063160'), pageUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000003237709' },
     // 2026-09-21 확인: '자동차정비기사'(산업기사 아님) 전용 종이책은 대부분 절판, 실판매 중인 건 위 4종이 전부(니치 시장 소진). 검색결과 대다수는 '자동차정비산업기사'로 등급이 달라 제외함.
+    { title: '2024 패스 자동차정비기사 필기', author: '국창호, 문학훈, 박만재', publisher: '골든벨', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9791158066833', imageUrl: KB('9791158066833'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211823503' },
+    { title: '202X 자동차정비기사 실기', author: '김승수, 김형진, 임병철', publisher: '구민사', price: 43200, originalPrice: 48000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168757578', imageUrl: KB('9791168757578'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221641028' },
+    // 2026-10-22 재확인: 골든벨 2024 필기·구민사 실기 추가(검색결과 대부분은 산업기사용이라 제외).
   ],
 
   // ────────────────────────────────────────
@@ -1319,6 +1337,9 @@ const REAL_BOOKS = {
     { title: '자동차정비 기능장(필기)', author: '서영달, 김명준, 김형진, 유도정', publisher: '골든벨', price: 20700, originalPrice: 23000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: true, isbn: '9788979719789', imageUrl: KB('9788979719789'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001232945' },
     { title: '자동차 기능장 필기', author: '서영달 외', publisher: '골든벨', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: true, isbn: '9788979714913', imageUrl: KB('9788979714913'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001232538' },
     // 2026-09-23 확인: 교보문고에 실판매 중인 자동차정비기능장 전용 도서는 위 9종이 전부(니치 시장 소진).
+    { title: '202X 자동차정비기능장 필기', author: '김형진, 김승수', publisher: '구민사', price: 39600, originalPrice: 44000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168757554', imageUrl: KB('9791168757554'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221506144' },
+    { title: '202X 자동차정비기능장 실기', author: '김승수, 김형진, 김영직', publisher: '구민사', price: 41400, originalPrice: 46000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168757561', imageUrl: KB('9791168757561'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221641024' },
+    // 2026-10-22 재확인: 구민사 202X 필기·실기(신간) 추가 → 10종 초과 달성.
   ],
 
   // ────────────────────────────────────────
@@ -1357,6 +1378,8 @@ const REAL_BOOKS = {
     { title: '플랜트배관 설계 시공 실무 가이드북 Q&A', author: '박영희', publisher: '신기술', price: 28800, originalPrice: 32000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788993954128', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788993954128.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001538363' },
     { title: '2027 배관기능사 필기+실기 한권 완성', author: '유기섭', publisher: '예문사', price: 20700, originalPrice: 23000, discount: '10%', tags: ['베스트'], isbn: '9788927462644', imageUrl: KB('9788927462644'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220120336' },
     // 2026-09-21 확인: 교보문고에 실판매 중인 배관기능사 전용 도서는 위 4종이 전부(니치 시장 거의 소진).
+    { title: '2027 배관기능사 필기 예상문제집', author: '에듀채널 편집부', publisher: '스터디채널', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176181891', imageUrl: KB('9791176181891'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221737142' },
+    // 2026-10-22 재확인: 스터디채널 2027 예상문제집(신간) 추가.
   ],
 
   // ────────────────────────────────────────
@@ -1695,6 +1718,9 @@ const REAL_BOOKS = {
     { title: '수의사 국가시험 대비 KVLE 월간국시 2023년 상반기', author: '수의미래연구소', publisher: '젊수', price: 20000, originalPrice: 20000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791198381040', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/1400000614815.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000208597804' },
     { title: '수의사 국가시험 대비 KVLE 월간국시 2022년 상반기', author: '수의미래연구소', publisher: '젊수', price: 20000, originalPrice: 20000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791198381026', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/1400000614792.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000208597807' },
     { title: '수의사 국가시험 대비 KVLE 월간국시 2022년 하반기', author: '수의미래연구소', publisher: '젊수', price: 20000, originalPrice: 20000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791198381033', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/1400000614822.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000208597803' },
+    { title: '수의사 국가시험 대비 KVLE 모의고사 2022 edition', author: '수의미래연구소', publisher: '젊수', price: 35000, originalPrice: 35000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791198381019', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/1400000610237.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000203379159' },
+    { title: 'KVLE 모의고사 2023 기출', author: '수의미래연구소', publisher: '젊수', price: 35000, originalPrice: 35000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791198381002', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/1400000608593.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000203282383' },
+    // 2026-10-22 재확인: 젊수 KVLE 2022·2023판 추가(POD라 교보 내부코드 이미지 사용).
   ],
 
   '2급생활스포츠지도사': [
@@ -1748,6 +1774,8 @@ const REAL_BOOKS = {
     { title: '언어재활사를 위한 임상 가이드', author: 'Froma P. Roth, Colleen K. Worthington', publisher: '박학사', price: 27000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788998521714', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788998521714.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000001633635' },
     { title: '언어재활 국가고시 마스터키', author: '이효진, 고은주, 박효진, 이주영, 정지민, 한호연', publisher: '에이스북', price: 47000, originalPrice: 47000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9791199394193', imageUrl: KB('9791199394193'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221151921' },
     // 2026-09-21 확인: 교보문고에 실판매 중인 언어재활사 국가시험 전용 도서는 위 3종이 전부(니치 시장 소진).
+    { title: '2026 시대에듀 언어재활사 핵심요약집', author: '곽경미, 곽은정 외', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.9, reviews: 16, tags: ['추천'], hasEbook: false, isbn: '9791143408778', imageUrl: KB('9791143408778'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219205975' },
+    // 2026-10-22 재확인: 시대에듀 핵심요약집 추가. 나머지 검색결과는 임상 워크북·전공서.
   ],
 
   // ────────────────────────────────────────
@@ -1755,12 +1783,17 @@ const REAL_BOOKS = {
     { title: '치과재료학', author: '한국치과재료학교수협의회', publisher: '군자출판사', price: 80000, tags: ['추천'], hasEbook: false, isbn: '9791170684626', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791170684626.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219647914' },
     { title: '치과기공사 국가시험예상문제집 세트', author: '대학서림 편집부', publisher: '대학서림', price: 60000, originalPrice: 60000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788969403735', imageUrl: KB('9788969403735'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219509416' },
     // 2026-09-21 확인: 교보문고에 실판매 중인 치과기공사 국가시험 전용 도서는 위 2종이 전부(니치 시장 소진).
+    { title: '치과기공사가 꼭 알아야 할 의료관계법규', author: '조인환', publisher: '북샘출판사', price: 19000, originalPrice: 20000, discount: '5%', tags: ['추천'], hasEbook: false, isbn: '9791188516469', imageUrl: KB('9791188516469'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001915446' },
+    { title: '치과기공사를 위한 치과재료학', author: '문준모, 안재석 외', publisher: '대학서림', price: 45000, originalPrice: 45000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788969403254', imageUrl: KB('9788969403254'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212606433' },
+    // 2026-10-22 재확인: 국시 과목(의료관계법규·치과재료학) 교재 2종 추가. 전용 문제집은 여전히 없음.
   ],
 
   // ────────────────────────────────────────
   '조산사': [
     // 2026-09-21 확인: 국내 조산사 국가시험(국시원) 전용 수험서가 교보문고에 현재 판매 중인 것이 없음.
     // 유일한 국내도서('민뽀개기 의료관계법규 기출예상')도 절판. 검색 결과 대부분 일본 助産師 국가시험서(무관).
+    { title: '조산학', author: '대한조산협회 교육위원회', publisher: '수문사', price: 100000, originalPrice: 100000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788930455572', imageUrl: KB('9788930455572'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219504368' },
+    // 2026-10-22 재확인: 전용 문제집은 없지만 대한조산협회 공식 교재 "조산학"(2026) 판매 중이라 1종 등록.
   ],
 
   // ────────────────────────────────────────
@@ -1873,6 +1906,8 @@ const REAL_BOOKS = {
     { title: '우선순위 도시계획관계법규 (도시계획기사 제5과목 기출문제집)', author: '정명재', publisher: '법률저널', price: 25200, originalPrice: 28000, discount: '10%', rating: 3.2, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9788963365541', imageUrl: KB('9788963365541'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000985485' },
     { title: '합격 도시계획기사 실기', author: '임영수', publisher: '보성각', price: 20000, originalPrice: 20000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788978396905', imageUrl: KB('9788978396905'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001216253' },
     // 2026-09-23 확인: 교보문고에 실판매 중인 도시계획기사 전용 도서는 위 9종이 전부(니치 시장 소진, 나머지 검색결과는 중복이거나 절판).
+    { title: '[제1과목] 도시계획기사 기출문제집 우선순위 도시계획론 유형 30', author: '정명재', publisher: '법률저널', price: 18000, originalPrice: 20000, discount: '10%', rating: 1.3, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788963365794', imageUrl: KB('9788963365794'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000985510' },
+    // 2026-10-22 재확인: 법률저널 우선순위 도시계획론(제1과목) 추가 → 10종 달성.
   ],
 
 
@@ -1899,6 +1934,12 @@ const REAL_BOOKS = {
     { title: 'GTQi 일러스트 2급 with Adobe CC', author: '유윤자', publisher: '아티오', price: 17100, originalPrice: 19000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791192991030', imageUrl: KB('9791192991030'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201358133' },
     { title: 'GTQi 일러스트 1급 with Adobe CC', author: '유윤자', publisher: '아티오', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: true, isbn: '9791190732819', imageUrl: KB('9791190732819'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061451284' },
     // 2026-09-21 확인: 나머지 GTQi 교재(2024 유선배 과외노트 등)는 전부 절판. 실판매 중인 건 위 5종이 전부(니치 시장 소진).
+    { title: '2027 이기적 GTQ 일러스트 1급 기본서 ver.CC', author: '박은영', publisher: '영진닷컴', price: 23400, originalPrice: 26000, discount: '10%', rating: 5, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9788931481969', imageUrl: KB('9788931481969'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220293520' },
+    { title: '2027 시대에듀 유선배 GTQ 일러스트 1급(ver. Adobe CC)', author: '조인명', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143420305', imageUrl: KB('9791143420305'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221328430' },
+    { title: '이기적 GTQ 일러스트 2급 기본서 ver.CC 2024', author: '박은영', publisher: '영진닷컴', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.2, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788931476606', imageUrl: KB('9788931476606'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217353605' },
+    { title: '이기적 GTQ 일러스트 2급(ver.CC)', author: '일마', publisher: '영진닷컴', price: 21600, originalPrice: 24000, discount: '10%', rating: 5, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788931465877', imageUrl: KB('9788931465877'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200404273' },
+    { title: '이기적 GTQ 포토샵+일러스트 올인원 2급(ver.CC)', author: '일마', publisher: '영진닷컴', price: 27900, originalPrice: 31000, discount: '10%', rating: 5, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788931476583', imageUrl: KB('9788931476583'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215763527' },
+    // 2026-10-22 재확인: GTQi=GTQ 일러스트 시험이라 "GTQ 일러스트" 검색어로 5종 추가 발견.
   ],
 
   'MOS': [
@@ -2244,6 +2285,9 @@ const REAL_BOOKS = {
     { title: '국외여행인솔자 현장실무지침서', author: '장양례', publisher: '백산출판사', price: 13500, originalPrice: 15000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791188892280', imageUrl: KB('9791188892280'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001919768' },
     { title: '영어 일어 중국어 해외여행 인솔자 외국어', author: '박복덕, 정재희, 구은아', publisher: '한올', price: 9800, tags: ['추천'], hasEbook: true, isbn: '9791156853824', imageUrl: KB('9791156853824'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001746877' },
     // 2026-09-21 확인: 국외여행인솔자(TC) 관련 현재 판매 중인 교재는 위 6종이 전부(니치 시장 소진).
+    { title: '국외여행인솔실무', author: '박시범, 이병열 외', publisher: '새로미', price: 20000, originalPrice: 20000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788964766781', imageUrl: KB('9788964766781'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001010577' },
+    { title: '국외여행인솔 업무', author: '하인수, 윤종운', publisher: '기문사', price: 17000, originalPrice: 17000, discount: '0%', tags: ['추천'], hasEbook: false, isbn: '9788977237599', imageUrl: KB('9788977237599'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001200738' },
+    // 2026-10-22 재확인: "국외여행인솔" 검색어로 판매 중인 교재 2종 추가.
   ],
 
   '관광통역안내사': [
@@ -2330,6 +2374,10 @@ const REAL_BOOKS = {
     { title: '2024 TAT 세무실무 2급', author: '최창우', publisher: '와우패스', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788966138340', imageUrl: KB('9788966138340'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213513666' },
     { title: 'TAT 세무실무 2급(2017)', author: '김광용, 홍윤표', publisher: '나눔A&T', price: 21600, originalPrice: 24000, discount: '10%', rating: 1.3, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788968911965', imageUrl: KB('9788968911965'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001061499' },
     // 2026-09-21 확인: 현재 판매 중인 TAT 교재는 위 9종이 전부(대부분 연도판이 절판). 10종 채우기용 중복 등록 없음.
+    { title: '2026 이패스 TAT 2급 세무실무 이론+실무+최신기출', author: '전형진', publisher: '이패스코리아', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791172094430', imageUrl: KB('9791172094430'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219562798' },
+    { title: '2026 이패스 TAT 1급 세무실무 이론+실무+최신기출', author: '박지성', publisher: '이패스코리아', price: 30600, originalPrice: 34000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791172094959', imageUrl: KB('9791172094959'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219942128' },
+    { title: '2026 로그인 TAT 1급', author: '김영철', publisher: '어울림', price: 27000, originalPrice: 30000, discount: '10%', rating: 5, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791176160186', imageUrl: KB('9791176160186'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219450755' },
+    // 2026-10-22 재확인: "TAT 1급/2급/세무실무" 검색어로 2026판 3종 추가 → 10종 초과 달성.
   ],
 
   // ────────────────────────────────────────
