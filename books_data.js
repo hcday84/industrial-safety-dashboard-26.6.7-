@@ -2481,4 +2481,19 @@ const REAL_BOOKS = {
     { title: '2026 9급 법원직/등기직 민사소송법 기출문제집', author: '법원직시험연구진', publisher: '엑스퍼트원', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791193137802', imageUrl: KB('9791193137802'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219552266' },
   ],
 
+  // ────────────────────────────────────────
+  '3D프린터운용기능사': [
+    // 2026-10-22: REAL_BOOKS 미등록이라 certs_data.js의 가상 도서(CSS 목업 표지)가 노출되던 것을 실판매 도서로 교체
+    { title: '2027 시대에듀 Win-Q 3D프린터운용기능사 필기 단기합격', author: '김철희', publisher: '시대고시기획', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791143419996', imageUrl: KB('9791143419996'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220989089' },
+    { title: '2026 시대에듀 Win-Q 3D프린터운용기능사 실기 단기합격', author: '박병욱', publisher: '시대고시기획', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 11, tags: ['베스트'], hasEbook: false, isbn: '9791143408631', imageUrl: KB('9791143408631'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218934798' },
+    { title: '100% 무료특강 자력 3D프린터운용기능사 필기+실기 한권쏙', author: '이우홍', publisher: '박영사', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 6, tags: ['베스트'], hasEbook: false, isbn: '9791144200142', imageUrl: KB('9791144200142'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220574607' },
+    { title: '2027 3D프린터운용기능사 필기', author: '이빛샘', publisher: '예문에듀', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791163865995', imageUrl: KB('9791163865995'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220647888' },
+    { title: '2026 원큐패스 3D프린터운용기능사 필기 실기(오토데스크 퓨전)', author: '박나래', publisher: '다락원', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788927775799', imageUrl: KB('9788927775799'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219615800' },
+    { title: '2026 3D프린터운용기능사 실기: 인벤터편', author: '이빛샘', publisher: '예문에듀', price: 23400, originalPrice: 26000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791163865742', imageUrl: KB('9791163865742'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219800990' },
+    { title: '시험에 꼭 나오는 3D 프린터 운용기능사 필기 기출문제 풀이집', author: '김진원, 노수황', publisher: '메카피아', price: 17820, originalPrice: 19800, discount: '10%', rating: 5.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9791162481752', imageUrl: KB('9791162481752'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201368135' },
+    { title: '3D프린터운용기능사 실기: 퓨전360 활용편', author: '이예진', publisher: '메카피아', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791162481196', imageUrl: KB('9791162481196'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001813383' },
+    { title: '3D프린터운용기능사 실기', author: '장미선, 정상준', publisher: '일진사', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788942916726', imageUrl: KB('9788942916726'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000671438' },
+    { title: '3D프린터운용기능사 필기 예상문제집', author: '에듀채널 편집부', publisher: '스터디채널', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176181723', imageUrl: KB('9791176181723'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221517999' },
+  ],
+
 };
