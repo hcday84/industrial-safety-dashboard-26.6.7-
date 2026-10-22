@@ -1242,14 +1242,24 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   // 네트워크관리사 1급·2급은 필기+실기 통합 교재로 시험이 시행되어 동일 도서가 두 등급에 공통으로 쓰입니다.
   '네트워크관리사1급': [
-    // 2026-09-21 확인: 나머지 네트워크관리사 도서(크라운출판사·성안당 시리즈)는 전부 절판. 실판매 중인 건 이 1종뿐.
     { title: '이기적 네트워크관리사 1, 2급 필기+실기 올인원', author: '임호진, 황성하', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012129182', isbn: '9788931481211', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931481211.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218204635' },
+    { title: '2027 최적합 네트워크 관리사 1.2급 필기+실기', author: '허준, 선세리', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931584905', imageUrl: KB('9788931584905'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220341549' },
+    { title: '2023 원큐패스 네트워크관리사 1·2급 필기+실기', author: '권소라', publisher: '다락원', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 13, tags: ['추천'], hasEbook: false, isbn: '9788927772774', imageUrl: KB('9788927772774'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200641399' },
+    { title: '국가공인 네트워크관리사 완벽대비서: 네트워크 일반', author: '하기종', publisher: '현우사', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788980815647', imageUrl: KB('9788980815647'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001249468' },
+    { title: '국가공인 네트워크관리사 완벽대비서: TCP/IP 네트워크', author: '하기종', publisher: '현우사', price: 21600, originalPrice: 24000, discount: '10%', rating: 5, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788980815630', imageUrl: KB('9788980815630'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001249467' },
+    { title: '국가공인 네트워크관리사 완벽대비서: 최신 네트워크 운용기기', author: '하기종', publisher: '현우사', price: 21600, originalPrice: 24000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788980815944', imageUrl: KB('9788980815944'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200472868' },
+    // 2026-10-22 재확인: 이전 "1종뿐" 판단은 오류 — 성안당 최적합 2027·다락원 원큐패스·현우사 완벽대비서 3종이 판매 중이라 추가(1·2급 공용). 그 외 성안당 구판·엠제이씨북스·아신21 등은 절판, 6종이 한계.
   ],
 
   // ────────────────────────────────────────
   '네트워크관리사2급': [
-    // 2026-09-21 확인: 나머지 네트워크관리사 도서(크라운출판사·성안당 시리즈)는 전부 절판. 실판매 중인 건 이 1종뿐(1급과 공용 교재).
     { title: '이기적 네트워크관리사 1, 2급 필기+실기 올인원', author: '임호진, 황성하', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012129182', isbn: '9788931481211', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788931481211.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000218204635' },
+    { title: '2027 최적합 네트워크 관리사 1.2급 필기+실기', author: '허준, 선세리', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931584905', imageUrl: KB('9788931584905'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220341549' },
+    { title: '2023 원큐패스 네트워크관리사 1·2급 필기+실기', author: '권소라', publisher: '다락원', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 13, tags: ['추천'], hasEbook: false, isbn: '9788927772774', imageUrl: KB('9788927772774'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200641399' },
+    { title: '국가공인 네트워크관리사 완벽대비서: 네트워크 일반', author: '하기종', publisher: '현우사', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788980815647', imageUrl: KB('9788980815647'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001249468' },
+    { title: '국가공인 네트워크관리사 완벽대비서: TCP/IP 네트워크', author: '하기종', publisher: '현우사', price: 21600, originalPrice: 24000, discount: '10%', rating: 5, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788980815630', imageUrl: KB('9788980815630'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001249467' },
+    { title: '국가공인 네트워크관리사 완벽대비서: 최신 네트워크 운용기기', author: '하기종', publisher: '현우사', price: 21600, originalPrice: 24000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788980815944', imageUrl: KB('9788980815944'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200472868' },
+    // 2026-10-22 재확인: 이전 "1종뿐" 판단은 오류 — 성안당 최적합 2027·다락원 원큐패스·현우사 완벽대비서 3종이 판매 중이라 추가(1·2급 공용). 그 외 성안당 구판·엠제이씨북스·아신21 등은 절판, 6종이 한계.
   ],
 
   // ────────────────────────────────────────
@@ -1895,7 +1905,13 @@ const REAL_BOOKS = {
     { title: '멘토시리즈 MOS 365 엑셀', author: '멘토 IT 연구회', publisher: '멘토르', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.8, reviews: 2134, tags: ['베스트'], hasEbook: false, isbn: '9791189028510', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791189028510.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219135369' },
     { title: '멘토시리즈 MOS 365 워드', author: '멘토 IT 연구회', publisher: '멘토르', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 1876, tags: ['베스트'], hasEbook: false, isbn: '9791189028534', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791189028534.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000219135217' },
     { title: '멘토시리즈 MOS 365 파워포인트', author: '코리아교육그룹 교육연구소', publisher: '코리아교육그룹', price: 15300, originalPrice: 17000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791189028527', imageUrl: KB('9791189028527'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219135223' },
-    // 2026-09-21 확인: 교보문고에 실판매 중인 MOS 국내 수험서는 위 3종(멘토시리즈)이 전부(니치 시장 소진, 대부분 해외 공식 교재로 대체됨).
+    { title: 'MOS 365 Excel Associate', author: '김경희, 오해강 외', publisher: '시대인', price: 13500, originalPrice: 15000, discount: '10%', rating: 5, reviews: 16, tags: ['베스트'], hasEbook: false, isbn: '9791138393843', imageUrl: KB('9791138393843'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216753102' },
+    { title: 'MOS 365 Excel Expert', author: '김경희, 오해강 외', publisher: '시대인', price: 13500, originalPrice: 15000, discount: '10%', rating: 5, reviews: 10, tags: ['추천'], hasEbook: false, isbn: '9791143411143', imageUrl: KB('9791143411143'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219311044' },
+    { title: 'MOS 365 Word Associate', author: '김경희, 오해강 외', publisher: '시대인', price: 13500, originalPrice: 15000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791138394437', imageUrl: KB('9791138394437'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216865871' },
+    { title: 'MOS 365 Word Expert', author: '김경희, 오해강 외', publisher: '시대인', price: 13500, originalPrice: 15000, discount: '10%', rating: 5, reviews: 11, tags: ['추천'], hasEbook: false, isbn: '9791143410993', imageUrl: KB('9791143410993'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219311043' },
+    { title: 'MOS 365 PowerPoint Associate', author: '김경희, 오해강 외', publisher: '시대인', price: 13500, originalPrice: 15000, discount: '10%', rating: 5, reviews: 10, tags: ['추천'], hasEbook: false, isbn: '9791138394994', imageUrl: KB('9791138394994'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216966421' },
+    { title: 'MOS Excel 2016 Core', author: '김노환, 최철재 외', publisher: '현우사', price: 16200, originalPrice: 18000, discount: '10%', rating: 3.8, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788980815715', imageUrl: KB('9788980815715'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001249472' },
+    // 2026-10-22 재확인: 시대인 MOS 365 시리즈(Excel/Word Associate·Expert, PowerPoint Associate) 5종과 현우사 Excel 2016 Core 추가. 멘토시리즈 엑셀은 기존 등록본과 같은 ISBN이라 제외, 나머지 2007~2016 구판(기한재 등)은 가격 미표기·주문불가로 제외 → 9종이 한계.
   ],
 
   'TOEIC': [
@@ -1957,7 +1973,9 @@ const REAL_BOOKS = {
     { title: '토마토패스 CFP 지식형 핵심정리문제집', author: '홍영진·김인회 외', publisher: '예문에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 543, tags: ['추천'], hasEbook: false, isbn: '9791163865018', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791163865018.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217296470' },
     { title: '토마토패스 CFP 사례형 핵심정리문제집', author: '홍영진·김인회 외', publisher: '예문에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 432, tags: ['추천'], hasEbook: false, isbn: '9791163865100', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791163865100.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217595699' },
     { title: '2023 이패스 CFP 최종실전 모의고사', author: '이패스코리아 금융연구소, 김종희, 박성현, 최동진', publisher: '이패스코리아', price: 26100, originalPrice: 29000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791193111215', imageUrl: KB('9791193111215'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000203246783' },
-    // 2026-07-26 확인: 교보문고에 실판매 중인 CFP 전용 도서는 위 5종이 전부(대부분 구판 절판, 니치 시장).
+    { title: '토마토패스 CFP Final 최종모의고사', author: '김범곤', publisher: '예문에듀', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791163862109', imageUrl: KB('9791163862109'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000203247004' },
+    { title: '토마토패스 CFP 지식형 핵심정리문제집 (개정4판)', author: '김범곤', publisher: '예문에듀', price: 30600, originalPrice: 34000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791163862086', imageUrl: KB('9791163862086'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000203247009' },
+    // 2026-10-22 재확인: 토마토패스 2023판 Final 최종모의고사·지식형(개정4판, 2025판과 다른 ISBN) 2종 추가 → 7종이 한계(그 외 검색결과는 재무설계 교양서).
   ],
 
   '바리스타1급': [
@@ -2271,6 +2289,14 @@ const REAL_BOOKS = {
   '한국실용글쓰기': [
     // 2026-08-23: 기존 유일 등록 도서 절판 확인되어 교체
     { title: '2026 시대에듀 한국실용글쓰기 실제 기출로 끝내기', author: '이원근, 김슬옹', publisher: '시대고시기획', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.9, reviews: 83, tags: ['베스트'], hasEbook: false, isbn: '9791143406422', imageUrl: KB('9791143406422'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218787224' },
+    { title: '2026 7일 만에 끝내는 해커스 한국실용글쓰기', author: '해커스 한국어연구소', publisher: '해커스자격증', price: 15750, originalPrice: 17500, discount: '10%', rating: 5, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9788969657152', imageUrl: KB('9788969657152'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219337490' },
+    { title: '2026 에듀윌 한국실용글쓰기 기출분석으로 7일컷+무료특강', author: '이영택', publisher: '에듀윌', price: 16200, originalPrice: 18000, discount: '10%', rating: 5, reviews: 8, tags: ['베스트'], hasEbook: false, isbn: '9791136041876', imageUrl: KB('9791136041876'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219682610' },
+    { title: '2026 김영북스 한국실용글쓰기 7일 단권끝장', author: '한국실용글쓰기 합격콘텐츠연구소', publisher: '김영북스', price: 17100, originalPrice: 19000, discount: '10%', rating: 5, reviews: 10, tags: ['추천'], hasEbook: false, isbn: '9791173491887', imageUrl: KB('9791173491887'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219011191' },
+    { title: '이기적 한국실용글쓰기 이론+예상문제', author: '정원상', publisher: '영진닷컴', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931483383', imageUrl: KB('9788931483383'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221654456' },
+    { title: '에듀윌 한국실용글쓰기 기출분석으로 1주끝장+무료특강', author: '이영택', publisher: '에듀윌', price: 15750, originalPrice: 17500, discount: '10%', rating: 5, reviews: 11, tags: ['추천'], hasEbook: false, isbn: '9791136036841', imageUrl: KB('9791136036841'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216452952' },
+    { title: '2024 박문각 단끝 한국실용글쓰기', author: '김남미', publisher: '박문각', price: 15300, originalPrice: 17000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791169874335', imageUrl: KB('9791169874335'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000208494300' },
+    { title: '2023 혜원국어 9시간 완성 한국 실용글쓰기', author: '고혜원', publisher: '오스틴북스', price: 13050, originalPrice: 14500, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791188426782', imageUrl: KB('9791188426782'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000203156947' },
+    // 2026-10-22 재확인: 해커스·에듀윌(7일컷/1주끝장)·김영북스·이기적(2026-11 출간)·박문각·혜원국어 7종 추가 → 8종이 한계(그 외는 절판).
   ],
 
   '임상심리사2급': [
