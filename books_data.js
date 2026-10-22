@@ -1200,6 +1200,7 @@ const REAL_BOOKS = {
     { title: '2027 뻥! 뚫린 패스 자동차정비기능사 필기', author: '김연수, 김광수, 최범석, 이상호', publisher: '골든벨', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791124114698', imageUrl: KB('9791124114698'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220716543' },
     { title: 'PASS 자동차정비기능사 안별 실기', author: '강대진, 전영민, 유재용, 김진혁', publisher: '골든벨', price: 19800, originalPrice: 22000, discount: '10%', rating: 3.2, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791158064587', imageUrl: KB('9791158064587'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001762158' },
     { title: '자동차정비기능사 실기', author: '임춘무, 최종기, 이호상, 최필식', publisher: '일진사', price: 26100, originalPrice: 29000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788942919772', imageUrl: KB('9788942919772'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214764140' },
+    { title: '2027 박문각 자동차정비기능사 필기 8개년 기출문제집+무료특강', author: '양희석', publisher: '박문각', price: 17550, originalPrice: 19500, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176494977', imageUrl: KB('9791176494977'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221729792' },
   ],
 
   // ────────────────────────────────────────
@@ -1460,7 +1461,7 @@ const REAL_BOOKS = {
     { title: '항공기시스템', author: '남명관', publisher: '성안당', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: true, ebookUrl: 'https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012619501', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788931511963.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217251096' },
     { title: '항공법규 필기', author: '항공출판사 편집부', publisher: '항공출판사', price: 20000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791197947506', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791197947506.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000061672004' },
     { title: '2027 항공산업기사 필기', author: '장성희', publisher: '성안당', price: 38700, originalPrice: 43000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931505818', imageUrl: KB('9788931505818'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221031542' },
-    { title: '2026 항공산업기사 필기', author: '항공기술교육아카데미', publisher: '성안당', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: false, isbn: '9791169672931', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791169672931.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217577896' },
+    { title: '2026 항공산업기사 필기', author: '항공기술교육아카데미', publisher: '책과상상', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.5, reviews: 198, tags: ['베스트'], hasEbook: false, isbn: '9791169672931', imageUrl: 'https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791169672931.jpg', pageUrl: 'https://product.kyobobook.co.kr/detail/S000217577896' },
     { title: '2026 항공산업기사 실기', author: '장성희', publisher: '성안당', price: 26100, originalPrice: 29000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931584080', imageUrl: KB('9788931584080'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218941431' },
     { title: 'Best 항공산업기사 필기(2020)', author: '김진우', publisher: '일진사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.7, reviews: 8, tags: ['추천'], hasEbook: false, isbn: '9788942914418', imageUrl: KB('9788942914418'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000671233' },
     { title: '2024 항공산업기사 필기+실기 필답', author: '이명성', publisher: '듀오북스', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791190349635', imageUrl: KB('9791190349635'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211513562' },
@@ -1728,6 +1729,7 @@ const REAL_BOOKS = {
     { title: '2026 생활스포츠지도사 필기 2급 초단기완성', author: '김효승, 스포츠지도사연구소', publisher: '예문에듀', price: 29700, originalPrice: 33000, discount: '10%', rating: 4.2, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791163865070', imageUrl: KB('9791163865070'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217556301' },
     { title: '2026 생활스포츠지도사 2급 2주 마무리 문제집', author: '스포츠지도사연구소', publisher: '예문에듀', price: 21600, originalPrice: 24000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791163865124', imageUrl: KB('9791163865124'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218189570' },
     { title: '스포츠지도사 한권으로 정리하기', author: '김택천, 한태룡, 김정효, 한동욱, 정진욱, 양종현', publisher: '레인보우북스', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788962064971', imageUrl: KB('9788962064971'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000961549' },
+    { title: '2027 이기적 스포츠지도사 2급 필기 기본서(생활/전문)', author: '이우경', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931481518', imageUrl: KB('9788931481518'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221566127' },
   ],
 
   '사회조사분석사2급': [
@@ -1918,6 +1920,7 @@ const REAL_BOOKS = {
     { title: '이기적 GTQ 일러스트 2급 기본서 ver.CC 2024', author: '박은영', publisher: '영진닷컴', price: 21600, originalPrice: 24000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931476606', imageUrl: KB('9788931476606'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217353605' },
     { title: '2027 시대에듀 유선배 GTQ 일러스트 1급(ver. Adobe CC) 핵심기능+기출변형+무료강의', author: '조인명', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143420305', imageUrl: KB('9791143420305'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221328430' },
     { title: '2027 이기적 GTQ 일러스트 1급 기본서 ver.CC', author: '박은영', publisher: '영진닷컴', price: 23400, originalPrice: 26000, discount: '10%', rating: 5, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9788931481969', imageUrl: KB('9788931481969'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220293520' },
+    { title: '2027 시대에듀 유선배 GTQ 포토샵 1급(ver. Adobe CC) 핵심기능+기출변형+무료강의', author: '조인명', publisher: '시대고시기획', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143420404', imageUrl: KB('9791143420404'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221519098' },
   ],
 
   'GTQi': [
