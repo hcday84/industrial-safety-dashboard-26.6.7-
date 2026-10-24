@@ -5191,7 +5191,7 @@ function renderDDayWidget() {
   }
 
   if (!shown.length) {
-    el.innerHTML = '<p class="hot-empty">향후 6개월 이내 예정된 시험이 없습니다.</p>';
+    el.innerHTML = `<p class="hot-empty">향후 6개월 이내 예정된 시험이 없습니다. ${NEXT_SCHEDULE_YEAR}년 일정은 시행기관 공고 후 반영됩니다.</p>`;
     return;
   }
 
