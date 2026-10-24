@@ -717,7 +717,8 @@ function switchCertification(certName) {
 
   // 공공데이터 API — 종목 정보 + 시험 일정 비동기 업데이트
   const cert = getCert();
-  if (cert) {
+  // ownSchedule 종목(수시검정 신설 등)은 종목 페이지에서 확인한 정적 일정을 그대로 쓴다
+  if (cert && !cert.ownSchedule) {
     fetchExamSchedule(cert.name).then(schedules => {
       if (!schedules || !schedules.length) return;
       // CERTIFICATIONS 데이터 갱신

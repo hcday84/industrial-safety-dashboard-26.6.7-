@@ -2751,6 +2751,7 @@ const CERTIFICATIONS = {
     category: '기계·설비',
     heroTitle: '2026년도 이륜자동차정비기능사 합격 가이드',
     heroDesc: '이륜자동차정비기능사는 2026년 신설된 국가기술자격으로, 오토바이·전기이륜차의 엔진·전기장치·섀시 점검과 정비 능력을 평가합니다. 첫 필기시험은 2026년 수시검정 제2회(11월 21일)로 치러지고 실기(작업형)는 2027년 상반기에 시행될 예정입니다. 배달 이륜차와 전기오토바이 보급으로 정비 인력 수요가 늘고 있습니다.',
+    ownSchedule: true, // 표준 회차 일괄 적용(app.js applyOfficialSchedules) 제외
     schedules: [
       { round: '수시 2회', writtenApply: '2026-11-02 ~ 2026-11-05', writtenExam: '2026-11-21', writtenResult: '2026-12-02', practicalApply: '—', practicalExam: '—', finalResult: '—' },
     ],
@@ -2780,6 +2781,7 @@ const CERTIFICATIONS = {
     category: '기계·설비',
     heroTitle: '2026년도 스마트공장산업기사 합격 가이드',
     heroDesc: '스마트공장산업기사는 2026년 신설된 국가기술자격으로, PLC·HMI·센서·로봇·산업용 네트워크를 연계해 스마트공장 시스템을 구축·운영하는 능력을 평가합니다. 첫 필기시험은 2026년 수시검정 제2회(11월 21일)이며, 산업기사 응시자격 서류를 12월 11일까지 제출해야 필기 합격이 확정됩니다. 실기는 2027년 상반기 시행 예정입니다.',
+    ownSchedule: true, // 표준 회차 일괄 적용(app.js applyOfficialSchedules) 제외
     schedules: [
       { round: '수시 2회', writtenApply: '2026-11-02 ~ 2026-11-05', writtenExam: '2026-11-21', writtenResult: '2026-12-02', practicalApply: '—', practicalExam: '—', finalResult: '—' },
     ],
@@ -2810,6 +2812,7 @@ const CERTIFICATIONS = {
     category: '기계·설비',
     heroTitle: '2026년도 스마트공장기능사 합격 가이드',
     heroDesc: '스마트공장기능사는 2026년 신설된 국가기술자격으로, 스마트공장 설비의 설치와 유지보수를 담당하는 현장 기능인력을 평가합니다. 응시자격 제한이 없으며 첫 필기시험은 2026년 수시검정 제2회(11월 21일)입니다. 실기(작업형)는 2027년 상반기에 시행될 예정입니다.',
+    ownSchedule: true, // 표준 회차 일괄 적용(app.js applyOfficialSchedules) 제외
     schedules: [
       { round: '수시 2회', writtenApply: '2026-11-02 ~ 2026-11-05', writtenExam: '2026-11-21', writtenResult: '2026-12-02', practicalApply: '—', practicalExam: '—', finalResult: '—' },
     ],
@@ -2837,6 +2840,7 @@ const CERTIFICATIONS = {
     category: '화학·환경',
     heroTitle: '2026년도 바이오공정기능사 합격 가이드',
     heroDesc: '바이오공정기능사는 2026년 신설된 국가기술자격(화학·화공 분야)으로, 바이오의약품 등 바이오 생산공정의 세포 준비·배양·분리정제와 품질시험 기초 능력을 평가합니다. 첫 필기시험은 2026년 수시검정 제2회(11월 21일)이며, 실기는 2027년 상반기 시행 예정입니다.',
+    ownSchedule: true, // 표준 회차 일괄 적용(app.js applyOfficialSchedules) 제외
     schedules: [
       { round: '수시 2회', writtenApply: '2026-11-02 ~ 2026-11-05', writtenExam: '2026-11-21', writtenResult: '2026-12-02', practicalApply: '—', practicalExam: '—', finalResult: '—' },
     ],
@@ -2876,6 +2880,7 @@ const CERTIFICATIONS = {
       { year: 2024, written: 67.1, practical: 36.8 },
       { year: 2025, written: 71.1, practical: 41.2 },
     ],
+    ownSchedule: true, // 표준 회차 일괄 적용(app.js applyOfficialSchedules) 제외 — 종목 페이지 일정이 표준과 일부 다름
     schedules: [
       // Q-Net 종목별 시험일정(jmCd 6921) 2026년 정기 기능사
       { round: '1회', writtenApply: '2026-01-06 ~ 2026-01-09', writtenExam: '2026-01-20 ~ 2026-01-24', writtenResult: '2026-01-30', practicalApply: '2026-02-02 ~ 2026-02-05', practicalExam: '2026-03-14 ~ 2026-04-05', practicalResult: '2026-04-17' },
@@ -2913,6 +2918,7 @@ const CERTIFICATIONS = {
     category: 'IT·정보',
     heroTitle: '2026년도 컴퓨터시스템기사 합격 가이드',
     heroDesc: '컴퓨터시스템기사는 2026년 1월 1일 전자계산기기사와 전자계산기조직응용기사를 통합해 새로 만든 국가기술자격입니다. 운영체제·컴퓨터 구조·프로그래밍·디지털 회로를 아우르며, 정기 기사 1회·3회에 시행됩니다. 필기는 과목당 40점 과락이 있고 실기는 2시간 필답형입니다.',
+    ownSchedule: true, // 표준 회차 일괄 적용(app.js applyOfficialSchedules) 제외
     schedules: [
       // Q-Net 종목별 시험일정(jmCd 1998) 2026년 정기 기사 — 2회는 시행하지 않음
       { round: '1회', writtenApply: '2026-01-12 ~ 2026-01-15', writtenExam: '2026-01-30 ~ 2026-03-03', writtenResult: '2026-03-11', practicalApply: '2026-03-23 ~ 2026-03-26', practicalExam: '2026-04-18 ~ 2026-05-06', practicalResult: '2026-06-12' },
