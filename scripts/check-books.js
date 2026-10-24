@@ -116,6 +116,7 @@ async function pool(items, fn) {
 
   const today = new Date().toISOString().slice(0, 10);
   const row = e => `| ${e.book.title} | ${e.book.publisher} | ${e.certs.join(', ')} |`;
+  // row(e) 끝의 '|' 뒤에 칸을 하나 더 붙임
   const md = [
     `# 수험서 점검 리포트 (${today})`, '',
     `- 점검 도서: ${byIsbn.size}권(ISBN 기준) · 품절/절판/검색 안 됨 ${unavailable.length} · 가격 변경 ${priceChanged.length}${APPLY_PRICES ? `(반영 ${applied}줄)` : ''} · 후속판 ${successors.length} · 조회 실패 ${failed.length}`, '',
