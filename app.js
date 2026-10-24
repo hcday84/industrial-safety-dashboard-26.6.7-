@@ -893,12 +893,35 @@ function getScheduleStatus(s) {
   return 'upcoming';
 }
 
+// 다음 해 시험일정 공고 전 안내 — 2026년도 국가기술자격 시행계획은 2025-11-28 큐넷 공고였음.
+// 2027년도 일정이 확정되면 certs_data.js의 schedules에 추가하면 이 안내는 자동으로 사라짐.
+const NEXT_SCHEDULE_YEAR = 2027;
+
+function isQnetCert(cert) {
+  if (typeof JM_CODES !== 'undefined' && JM_CODES[cert.name]) return true;
+  return /(기사|기능사|기능장|기술사)$/.test(cert.name.replace(/\(.*?\)/g, '')) ||
+    /^(미용사|이용사|컴퓨터활용능력|워드프로세서)/.test(cert.name);
+}
+
+function nextScheduleNotice(cert) {
+  return isQnetCert(cert)
+    ? `${NEXT_SCHEDULE_YEAR}년 일정은 큐넷 시행계획 공고(매년 11월 말~12월 초) 후 반영됩니다.`
+    : `${NEXT_SCHEDULE_YEAR}년 일정은 시행기관 공고 후 반영됩니다.`;
+}
+
+// 등록된 일정 중 가장 늦은 연도 (없으면 2026)
+function scheduleYear(cert) {
+  const years = (cert.schedules || []).flatMap(s => Object.values(s))
+    .flatMap(v => String(v).match(/20\d\d(?=-\d\d-\d\d)/g) || []).map(Number);
+  return years.length ? Math.max(...years) : 2026;
+}
+
 function renderScheduleCards(cert) {
   const grid = document.getElementById('schedule-cards-grid');
   if (!grid) return;
 
   const titleEl = document.getElementById('schedule-section-title');
-  if (titleEl) titleEl.textContent = `2026년 ${cert.name} 정기 시험 일정`;
+  if (titleEl) titleEl.textContent = `${scheduleYear(cert)}년 ${cert.name} 정기 시험 일정`;
 
   const sourceNoteEl = document.getElementById('schedule-source-note');
   if (sourceNoteEl) {
@@ -948,6 +971,21 @@ function renderScheduleCards(cert) {
       </div>
     `;
   }).join('');
+
+  // 올해 회차가 모두 끝났는데 다음 해 일정이 아직 없으면 공고 대기 카드 추가
+  const allDone = cert.schedules.length > 0 && cert.schedules.every(s => getScheduleStatus(s) === 'done');
+  if (allDone && scheduleYear(cert) < NEXT_SCHEDULE_YEAR) {
+    grid.insertAdjacentHTML('beforeend', `
+      <div class="schedule-card active-round" id="schedule-card-next-year">
+        <div class="round-badge">${NEXT_SCHEDULE_YEAR}년</div>
+        <ul class="schedule-details">
+          <li><span class="detail-label">일정 상태</span><span class="detail-val">공고 대기</span></li>
+          <li><span class="detail-label">안내</span><span class="detail-val">${nextScheduleNotice(cert)}</span></li>
+        </ul>
+        <div class="schedule-card-footer"><span class="status-tag status-upcoming">공고 예정</span></div>
+      </div>
+    `);
+  }
 }
 
 // ============================================
@@ -1019,9 +1057,9 @@ function renderDdays(cert) {
       writtenValEl.className   = ddayClass(nextWritten.diff);
       writtenLblEl.textContent = `${nextWritten.s.round} 필기 (${nextWritten.s.writtenExam})`;
     } else {
-      writtenValEl.textContent = '종료';
+      writtenValEl.textContent = '공고 대기';
       writtenValEl.className   = 'stat-value text-muted';
-      writtenLblEl.textContent = '2026년 필기 일정이 모두 종료되었습니다.';
+      writtenLblEl.textContent = `${scheduleYear(cert)}년 필기 일정 종료 · ${nextScheduleNotice(cert)}`;
     }
   }
 
@@ -1037,9 +1075,9 @@ function renderDdays(cert) {
       practicalValEl.className   = ddayClass(nextPractical.diff);
       practicalLblEl.textContent = `${nextPractical.s.round} 실기 (${nextPractical.s.practicalExam})`;
     } else {
-      practicalValEl.textContent = '종료';
+      practicalValEl.textContent = '공고 대기';
       practicalValEl.className   = 'stat-value text-muted';
-      practicalLblEl.textContent = '2026년 실기 일정이 모두 종료되었습니다.';
+      practicalLblEl.textContent = `${scheduleYear(cert)}년 실기 일정 종료 · ${nextScheduleNotice(cert)}`;
     }
   }
 
@@ -1068,9 +1106,9 @@ function renderDdays(cert) {
       applyValEl.className   = ddayClass(nextApply.diff);
       applyLblEl.textContent = `${nextApply.s.round} ${nextApply.type} 원서접수 (${nextApply.dateStr})`;
     } else {
-      applyValEl.textContent = '종료';
+      applyValEl.textContent = '공고 대기';
       applyValEl.className   = 'stat-value text-muted';
-      applyLblEl.textContent = '2026년 접수 일정이 모두 종료되었습니다.';
+      applyLblEl.textContent = `${scheduleYear(cert)}년 접수 일정 종료 · ${nextScheduleNotice(cert)}`;
     }
   }
 
