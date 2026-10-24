@@ -4421,4 +4421,64 @@ const REAL_BOOKS = {
     { title: '공공조달관리사 이론서 핵심요약정리', author: '이찬엽', publisher: '베스트에듀', price: 45000, originalPrice: 50000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791193106846', imageUrl: KB('9791193106846'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220160948' },
   ],
 
+  // ────────────────────────────────────────
+  '이륜자동차정비기능사': [
+    // 2026-10-24: 신규 자격증 등록 — 교보문고 판매중 종이책 전수(세트·구판 제외), 리뷰 많은 순, 상위 5권 베스트
+    // 2026-10-24 확인: 신설 종목이라 교보 판매중 전용 수험서 8권
+    { title: '2026 시대에듀 Win-Q 이륜자동차정비기능사 필기 단기합격', author: '최광희', publisher: '시대고시기획', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 7, tags: ['베스트'], hasEbook: false, isbn: '9791143414168', imageUrl: KB('9791143414168'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220004107' },
+    { title: '이륜자동차정비기능사 1300제 필기', author: '문학훈', publisher: '골든벨', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791158064495', imageUrl: KB('9791158064495'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217304158' },
+    { title: '패스 이륜자동차정비기능사 필기', author: '이상호, 정우연 외', publisher: '골든벨', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791124114254', imageUrl: KB('9791124114254'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219055205' },
+    { title: '2026 이륜자동차정비기능사 필기 예상문제집', author: '유재웅', publisher: '예문에듀', price: 21600, originalPrice: 24000, discount: '10%', rating: 1.3, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791163865728', imageUrl: KB('9791163865728'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219602164' },
+    { title: '2026 이륜자동차정비기능사 필기', author: '김현열, 박윤하', publisher: '구민사', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791168756830', imageUrl: KB('9791168756830'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219206264' },
+    { title: '2027 박문각 이륜자동차정비기능사 필기 합격적중 출제예상문제+무료특강', author: '양희석, 한영욱', publisher: '박문각', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176494410', imageUrl: KB('9791176494410'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221506019' },
+    { title: 'Pass 이륜자동차정비기능사 실기 답안지작성법', author: '문학훈, 국제기능올림픽선수협회', publisher: '골든벨', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791124114568', imageUrl: KB('9791124114568'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220167571' },
+    { title: '2026 경록 이륜자동차 정비기능사 필기', author: '경록 국가자격시험 연구위원회', publisher: '경록', price: 26100, originalPrice: 29000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791194560968', imageUrl: KB('9791194560968'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220616020' },
+  ],
+
+  // ────────────────────────────────────────
+  '스마트공장산업기사': [
+    // 2026-10-24: 신규 자격증 등록 — 교보문고 판매중 종이책 전수(세트·구판 제외), 리뷰 많은 순, 상위 5권 베스트
+    // 2026-10-24 확인: 신설 종목이라 교보 판매중 전용 수험서 4권
+    { title: '100% 무료특강 자력 스마트공장산업기사 필기 초단기 완전정복', author: '이정익, 윤현진 외', publisher: '박영사', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 7, tags: ['베스트'], hasEbook: false, isbn: '9791144200135', imageUrl: KB('9791144200135'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220694339' },
+    { title: '2026 시대에듀 Win-Q 스마트공장산업기사 필기 단기합격', author: '신원장', publisher: '시대고시기획', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791143415486', imageUrl: KB('9791143415486'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220004096' },
+    { title: '2027 건기원 스마트공장산업기사 필기', author: '조동헌, 강광협 외', publisher: '건기원', price: 29700, originalPrice: 33000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791157679652', imageUrl: KB('9791157679652'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221270859' },
+    { title: '2027 패스 스마트공장산업기사 필기', author: '김세연, 이종현 외', publisher: '골든벨', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791124114674', imageUrl: KB('9791124114674'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220767131' },
+  ],
+
+  // ────────────────────────────────────────
+  '스마트공장기능사': [
+    // 2026-10-24: 신규 자격증 등록 — 교보문고 판매중 종이책 전수(세트·구판 제외), 리뷰 많은 순, 상위 5권 베스트
+    // 2026-10-24 확인: 신설 종목이라 교보 판매중 전용 수험서 4권
+    { title: '100% 무료특강 자력 스마트공장기능사 필기 초단기 완전정복', author: '이정익, 윤현진 외', publisher: '박영사', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791144200128', imageUrl: KB('9791144200128'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220871443' },
+    { title: '2026 건기원 스마트공장기능사 필기', author: '조동헌, 강철민 외', publisher: '건기원', price: 24300, originalPrice: 27000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791157679447', imageUrl: KB('9791157679447'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220110959' },
+    { title: '2026 시대에듀 Win-Q 스마트공장기능사 필기 단기합격', author: '한규철, 이하영', publisher: '시대고시기획', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791143416407', imageUrl: KB('9791143416407'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220339700' },
+    { title: '스마트공장기능사 필기', author: '김세연, 이종현 외', publisher: '골든벨', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791124114667', imageUrl: KB('9791124114667'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220525216' },
+  ],
+
+  // ────────────────────────────────────────
+  '프로그래밍기능사': [
+    // 2026-10-24: 신규 자격증 등록 — 교보문고 판매중 종이책 전수(세트·구판 제외), 리뷰 많은 순, 상위 5권 베스트
+    // 2026-10-24 확인: 개명 후 이름의 교보 판매중 수험서 6권(2026 이기적 필기 기본서는 2027판과 중복이라 제외)
+    { title: '2026 시나공 프로그래밍기능사 실기 기본서', author: '길벗알앤디', publisher: '길벗', price: 18900, originalPrice: 21000, discount: '10%', rating: 4.4, reviews: 7, tags: ['베스트'], hasEbook: false, isbn: '9791140717446', imageUrl: KB('9791140717446'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219019970' },
+    { title: '2026 이기적 프로그래밍기능사 필기 기출 900제', author: '임승현', publisher: '영진닷컴', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.8, reviews: 6, tags: ['베스트'], hasEbook: false, isbn: '9788931479744', imageUrl: KB('9788931479744'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219186336' },
+    { title: '2026 이기적 프로그래밍기능사 실기 기본서', author: '임승현', publisher: '영진닷컴', price: 18900, originalPrice: 21000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9788931480351', imageUrl: KB('9788931480351'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219080998' },
+    { title: '2027 기분좋은 프로그래밍기능사 필기 한 권에 합격', author: '강희영', publisher: '시대고시기획', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791143419828', imageUrl: KB('9791143419828'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221047548' },
+    { title: '2027 이기적 프로그래밍기능사 필기 기본서', author: '김흥식', publisher: '영진닷컴', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788931483307', imageUrl: KB('9788931483307'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221031945' },
+    { title: '2027 시나공 프로그래밍기능사 필기 기본서', author: '길벗알앤디', publisher: '길벗', price: 18900, originalPrice: 21000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791140719891', imageUrl: KB('9791140719891'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220844530' },
+  ],
+
+  // ────────────────────────────────────────
+  '컴퓨터시스템기사': [
+    // 2026-10-24: 신규 자격증 등록 — 교보문고 판매중 종이책 전수(세트·구판 제외), 리뷰 많은 순, 상위 5권 베스트
+    // 2026-10-24 확인: 통합 신설 종목이라 교보 판매중 전용 수험서 1권
+    { title: '2027 컴퓨터시스템기사 필기 예상문제집', author: '에듀채널 편집부', publisher: '스터디채널', price: 18000, originalPrice: 20000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176181624', imageUrl: KB('9791176181624'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221509905' },
+  ],
+
+  // ────────────────────────────────────────
+  '바이오공정기능사': [
+    // 2026-10-24: 신규 자격증 등록 — 교보문고 판매중 종이책 전수(세트·구판 제외), 리뷰 많은 순, 상위 5권 베스트
+    // 2026-10-24 확인: 신설 종목이라 교보 판매중 전용 수험서 1권
+    { title: '바이오 공정기능사 필기·실기 핵심정리 및 예상문제집', author: '바이오교재연구회', publisher: '마지원', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791192534923', imageUrl: KB('9791192534923'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218673236' },
+  ],
+
 };

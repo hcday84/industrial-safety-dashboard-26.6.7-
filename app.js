@@ -180,6 +180,8 @@ function parseExamItems(items) {
     const n = cert.name;
     // 운전면허·상시 자격증 제외
     if (n.includes('운전면허') || n.includes('운전기능사') || n === 'SQLD') return;
+    // 수시검정 신설 종목·일부 회차만 시행하는 종목은 certs_data.js의 자체 일정 유지
+    if (cert.ownSchedule) return;
     if (n.endsWith('기능장') || n.includes('기능장(')) {
       cert.schedules  = SCHEDULES.기능장.schedules;
       cert.milestones = SCHEDULES.기능장.milestones;
