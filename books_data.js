@@ -2496,4 +2496,2091 @@ const REAL_BOOKS = {
     { title: '3D프린터운용기능사 필기 예상문제집', author: '에듀채널 편집부', publisher: '스터디채널', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176181723', imageUrl: KB('9791176181723'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221517999' },
   ],
 
+  // ────────────────────────────────────────
+  '정보처리산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2026 시나공 정보처리산업기사 실기 기본서', author: '길벗알앤디, 김정준', publisher: '길벗', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791140717514', imageUrl: KB('9791140717514'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219186331' },
+    { title: '2027 이기적 정보처리산업기사 실기 기본서', author: '고소현, 한진만', publisher: '영진닷컴', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788931480368', imageUrl: KB('9788931480368'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220308265' },
+    { title: '2027 이기적 정보처리산업기사 필기 기본서', author: '신면철, 강희영', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788931483321', imageUrl: KB('9788931483321'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220924540' },
+    { title: '2027 이기적 정보처리산업기사 필기+실기 올인원', author: '정선아, 강희영', publisher: '영진닷컴', price: 42300, originalPrice: 47000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9788931483338', imageUrl: KB('9788931483338'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220716797' },
+    { title: '2026 시나공 정보처리산업기사 필기 기본서', author: '길벗알앤디', publisher: '길벗', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.8, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9791140716159', imageUrl: KB('9791140716159'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218197637' },
+    { title: '흥달쌤의 정보처리산업기사 실기', author: '이흥직', publisher: '에듀콕스', price: 35100, originalPrice: 39000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791193666449', imageUrl: KB('9791193666449'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218973391' },
+    { title: '한 방에 합격하는 정보처리산업기사 필기 단기완성', author: '박주형, 조숙향 외', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 12, tags: ['추천'], hasEbook: false, isbn: '9791138382298', imageUrl: KB('9791138382298'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214844879' },
+    { title: '2025 수제비 정보처리산업기사 필기', author: '윤영빈, 서용욱 외', publisher: '건기원', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.7, reviews: 12, tags: ['추천'], hasEbook: false, isbn: '9791157678600', imageUrl: KB('9791157678600'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214608032' },
+    { title: '과정평가형 정보처리산업기사 실기', author: '이대희', publisher: '웅보출판사', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788984625464', imageUrl: KB('9788984625464'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216900966' },
+    { title: '과정평가형 정보처리산업기사 필기', author: '이대희', publisher: '웅보출판사', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788984625488', imageUrl: KB('9788984625488'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218822384' },
+  ],
+
+  // ────────────────────────────────────────
+  '건설기계정비기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 9권뿐 — 니치 시장
+    { title: '패스 건설기계정비산업기사 필기', author: '김인호, 김기홍 외', publisher: '골든벨', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791158066376', imageUrl: KB('9791158066376'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200688124' },
+    { title: '건설기계 정비기능사 필기 CBT 총정리문제', author: '한국건설기계기술연구회', publisher: '크라운출판사', price: 13500, originalPrice: 15000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788940650103', imageUrl: KB('9788940650103'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216702637' },
+    { title: '건설기계정비산업기사 실기', author: '김인호, 김기홍 외', publisher: '골든벨', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791158063825', imageUrl: KB('9791158063825'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001762105' },
+    { title: '202X 건설기계정비기능장 필기+실기(필답형)', author: '김진국, 김상홍 외', publisher: '구민사', price: 39600, originalPrice: 44000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791168756540', imageUrl: KB('9791168756540'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218854534' },
+    { title: '패스 건설기계정비기능장 필답형 실기', author: '김인호, 유인재 외', publisher: '골든벨', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791158065690', imageUrl: KB('9791158065690'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001762246' },
+    { title: '202X 건설기계정비기능사 필기', author: '손길상, 김원철 외', publisher: '구민사', price: 23400, originalPrice: 26000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168755567', imageUrl: KB('9791168755567'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216701733' },
+    { title: '2026 시대에듀 Win-Q 건설기계정비기능사 필기 단기합격', author: '최광희', publisher: '시대고시기획', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 8, tags: ['추천'], hasEbook: false, isbn: '9791138394826', imageUrl: KB('9791138394826'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216886060' },
+    { title: '건설기계정비기능사 실기(2019)', author: '김인호, 김기홍 외', publisher: '골든벨', price: 18000, originalPrice: 20000, discount: '10%', rating: 2.5, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791158063801', imageUrl: KB('9791158063801'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001762103' },
+    { title: '2023 패스 건설기계정비기능사 필기', author: '김인호, 유인재 외', publisher: '골든벨', price: 20700, originalPrice: 23000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791158065898', imageUrl: KB('9791158065898'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061584743' },
+  ],
+
+  // ────────────────────────────────────────
+  '신재생에너지발전설비기능사(태양광)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 8권뿐 — 니치 시장
+    { title: '2027 시대에듀 신재생에너지발전설비기능사(태양광) 필기 한권으로 끝내기', author: '김대범', publisher: '시대고시기획', price: 27900, originalPrice: 31000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791143419620', imageUrl: KB('9791143419620'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221162610' },
+    { title: '2026 신재생에너지 발전설비(태양광) 기능사 실기', author: '신재생에너지 발전시스템 연구회', publisher: '엔트미디어', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791192810898', imageUrl: KB('9791192810898'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218840780' },
+    { title: '2026 시대에듀 신재생에너지발전설비기능사(태양광) 실기 한권으로 끝내기', author: '김대범', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 9, tags: ['베스트'], hasEbook: false, isbn: '9791143406507', imageUrl: KB('9791143406507'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218853991' },
+    { title: '2026 신재생에너지발전설비(태양광)기능사 실기', author: '박문환', publisher: '예문사', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927460503', imageUrl: KB('9788927460503'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218641249' },
+    { title: '신재생에너지발전설비(태양광)기능사 필기', author: '김평식, 박왕서', publisher: '일진사', price: 21600, originalPrice: 24000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788942915071', imageUrl: KB('9788942915071'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000671288' },
+    { title: '신재생에너지발전설비기능사 필기 예상문제집', author: '에듀채널 편집부(AI 활용)', publisher: '스터디채널', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176181754', imageUrl: KB('9791176181754'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221573203' },
+    { title: '2026 신재생에너지 발전설비(태양광) 기능사 필기', author: '신재생에너지 발전시스템 연구회', publisher: '엔트미디어', price: 29700, originalPrice: 33000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791192810799', imageUrl: KB('9791192810799'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218681382' },
+    { title: '신재생에너지 발전설비 태양광 기능사 필기(2020)', author: '김종택', publisher: '금호', price: 13500, originalPrice: 15000, discount: '10%', rating: 2.8, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9788998269876', imageUrl: KB('9788998269876'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001629736' },
+  ],
+
+  // ────────────────────────────────────────
+  '에너지관리산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2026 나합격 에너지관리산업기사 필기+실기+무료특강', author: '강진규', publisher: '삼원북스', price: 38700, originalPrice: 43000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791194997467', imageUrl: KB('9791194997467'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218969589' },
+    { title: '2027 에너지관리산업기사 필기 과년도 문제풀이 10개년+기출 3개년 무료동영상', author: '권오수, 고성조', publisher: '예문사', price: 21600, originalPrice: 24000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927462590', imageUrl: KB('9788927462590'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220120348' },
+    { title: '2027 에너지관리산업기사 실기 필답형+작업형', author: '권오수, 박창현', publisher: '예문사', price: 28800, originalPrice: 32000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927463191', imageUrl: KB('9788927463191'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221143177' },
+    { title: '2026 과년도 출제문제 중심 에너지관리산업기사 실기 완벽대비', author: '서상희', publisher: '동일출판사', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788938117496', imageUrl: KB('9788938117496'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218935698' },
+    { title: '모아 에너지관리산업기사 필기 핵심이론+과년도 8개년', author: 'MCC', publisher: '모아교육그룹', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791168046764', imageUrl: KB('9791168046764'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221231521' },
+    { title: '2027 에너지관리산업기사 필기', author: '서상희', publisher: '동일출판사', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788938117816', imageUrl: KB('9788938117816'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221467288' },
+    { title: '에너지관리산업기사 필기(2027)', author: '권오수, 한홍걸', publisher: '예문사', price: 35100, originalPrice: 39000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927462651', imageUrl: KB('9788927462651'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220216360' },
+    { title: '2026 에너지아카데미의 에너지관리산업기사 실기 핵심이론+10개년 기출', author: '에너지아카데미', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788931585476', imageUrl: KB('9788931585476'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219212690' },
+    { title: '2025 완전정복 에너지관리산업기사 필기', author: '안동칠, 장영오', publisher: '구민사', price: 30600, originalPrice: 34000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168754973', imageUrl: KB('9791168754973'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215664581' },
+    { title: '2026 에너지관리산업기사 필기', author: '조성구', publisher: '책과상상', price: 22500, originalPrice: 25000, discount: '10%', rating: 1.3, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791169672849', imageUrl: KB('9791169672849'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218197924' },
+  ],
+
+  // ────────────────────────────────────────
+  '용접산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '평생 무료 동영상과 함께하는 용접산업기사 필기', author: '최갑규', publisher: '세진북스', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791157457540', imageUrl: KB('9791157457540'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218472931' },
+    { title: '2026 용접산업기사 필기 10년간 기출문제', author: '나중식', publisher: '책과상상', price: 16200, originalPrice: 18000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169672900', imageUrl: KB('9791169672900'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218276629' },
+    { title: '2027 시대에듀 Win-Q 용접산업기사 필기 단기합격', author: '홍순규', publisher: '시대고시기획', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791143419422', imageUrl: KB('9791143419422'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221190110' },
+    { title: '평생 무료 동영상과 함께하는 용접산업기사 필기 최근 기출문제', author: '최갑규', publisher: '세진북스', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791157457557', imageUrl: KB('9791157457557'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218473221' },
+    { title: '202X 고수열강 용접산업기사 필기+실기', author: '정균호, 나중쇠 외', publisher: '구민사', price: 28800, originalPrice: 32000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791168755857', imageUrl: KB('9791168755857'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217177573' },
+    { title: '용접산업기사 실기', author: 'NDT시험연구회', publisher: '세진사', price: 28000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791160453683', imageUrl: KB('9791160453683'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001791851' },
+    { title: '2026 용접산업기사 필기', author: '나중식', publisher: '책과상상', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791169672894', imageUrl: KB('9791169672894'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217579038' },
+    { title: '용접산업기사 필기 특강', author: '용접기술시험연구회', publisher: '일진사', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788942915620', imageUrl: KB('9788942915620'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000671336' },
+    { title: '용접산업기사 학과정복', author: '강상욱, 송득중 외', publisher: 'HJ골든벨타임', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788986412871', imageUrl: KB('9788986412871'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001361110' },
+    { title: '용접산업기사(필기)', author: '용접기술시험연구회', publisher: '일진사', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788942912438', imageUrl: KB('9788942912438'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000671044' },
+  ],
+
+  // ────────────────────────────────────────
+  '공조냉동기계산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 공조냉동기계산업기사 필기+무료동영상', author: '강진규', publisher: '구민사', price: 35100, originalPrice: 39000, discount: '10%', rating: 3.8, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791168757295', imageUrl: KB('9791168757295'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220716881' },
+    { title: '2026 공조냉동기계기능사 산업기사 실기+무료동영상', author: '강진규, 오태정', publisher: '구민사', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791168756106', imageUrl: KB('9791168756106'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218278053' },
+    { title: '2026 공조냉동기계산업기사 실기 + 무료 동영상 강의', author: '이정근', publisher: '건기원', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 8, tags: ['베스트'], hasEbook: false, isbn: '9791157679096', imageUrl: KB('9791157679096'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218961805' },
+    { title: '2026 공조냉동기계산업기사 필기 과년도 4주완성', author: '공조기술자격연구회', publisher: '엔플북스', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788968134272', imageUrl: KB('9788968134272'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218668229' },
+    { title: '2026 공조냉동기계산업기사 필기 7개년 과년도 1260제 + 무료 동영상 강의', author: '이정근, 이주석 외', publisher: '건기원', price: 20700, originalPrice: 23000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791157678990', imageUrl: KB('9791157678990'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218473794' },
+    { title: '2027 모아 공조냉동기계 산업기사 필기 핵심이론+과년도 7개년', author: '이지원', publisher: '모아교육그룹', price: 34200, originalPrice: 38000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791168046863', imageUrl: KB('9791168046863'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221164998' },
+    { title: '2027 스마트 공조냉동기계산업기사 필기', author: '허원회, 박만재', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931512670', imageUrl: KB('9788931512670'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221566832' },
+    { title: '2027 스마트 7개년 과년도 공조냉동기계 산업기사 필기', author: '최승일', publisher: '성안당', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931512687', imageUrl: KB('9788931512687'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221508716' },
+    { title: '2026 에듀윌 공조냉동기계산업기사 필기 한권끝장', author: '손익희', publisher: '에듀윌', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 36, tags: ['추천'], hasEbook: false, isbn: '9791136040268', imageUrl: KB('9791136040268'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218564949' },
+    { title: '2026 시대에듀 Win-Q 공조냉동기계산업기사 필기 단기합격', author: '안준기', publisher: '시대고시기획', price: 24300, originalPrice: 27000, discount: '10%', rating: 5.0, reviews: 11, tags: ['추천'], hasEbook: false, isbn: '9791143400321', imageUrl: KB('9791143400321'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218133827' },
+  ],
+
+  // ────────────────────────────────────────
+  '소음진동기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 3권뿐 — 니치 시장
+    { title: '2026 소음·진동기사 필기', author: '서영민, 이철한 외', publisher: '예문사', price: 40500, originalPrice: 45000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788927461548', imageUrl: KB('9788927461548'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219080779' },
+    { title: '소음·진동기사 실기', author: '서영민, 이철한 외', publisher: '예문사', price: 30600, originalPrice: 34000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927461555', imageUrl: KB('9788927461555'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219080774' },
+    { title: '2026 한번에 합격하는 소음진동기사 필기+실기', author: '신은상', publisher: '성안당', price: 43200, originalPrice: 48000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788931585438', imageUrl: KB('9788931585438'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219435204' },
+  ],
+
+  // ────────────────────────────────────────
+  '폐기물처리기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 폐기물처리기사 필기+과년도+무료동영상', author: '전화택', publisher: '구민사', price: 38700, originalPrice: 43000, discount: '10%', rating: 5.0, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9791168757240', imageUrl: KB('9791168757240'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220698690' },
+    { title: '2026 폐기물처리기사 실기+무료동영상', author: '전화택', publisher: '구민사', price: 30600, originalPrice: 34000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791168756434', imageUrl: KB('9791168756434'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218853992' },
+    { title: '2026 한번에 합격하는 폐기물처리기사 실기', author: '김현우', publisher: '성안당', price: 25200, originalPrice: 28000, discount: '10%', rating: 3.8, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788931585384', imageUrl: KB('9788931585384'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219304489' },
+    { title: '2026 폐기물처리기사, 산업기사 필기', author: '신동성, 하부영', publisher: '세진사', price: 36000, tags: ['베스트'], hasEbook: false, isbn: '9791160457193', imageUrl: KB('9791160457193'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218933688' },
+    { title: '2026 폐기물처리기사, 산업기사 실기', author: '신동성, 하부영', publisher: '세진사', price: 32000, rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791160457209', imageUrl: KB('9791160457209'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218933843' },
+    { title: '2026 한번에 합격하는 폐기물처리기사 필기 기출문제집', author: '김현우', publisher: '성안당', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.5, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9788931585377', imageUrl: KB('9788931585377'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218437044' },
+    { title: '2026 폐기물처리기사·산업기사 실기', author: '서영민', publisher: '예문사', price: 32400, originalPrice: 36000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927461500', imageUrl: KB('9788927461500'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219198700' },
+    { title: '2026 폐기물처리기사 필기', author: '서영민', publisher: '예문사', price: 38700, originalPrice: 43000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927460046', imageUrl: KB('9788927460046'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218193661' },
+    { title: '2026 폐기물처리기사 필기 핵심요점 과년도 기출문제 해설', author: '서영민', publisher: '예문사', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927460053', imageUrl: KB('9788927460053'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218193576' },
+    { title: '2025 시대에듀 Win-Q 폐기물처리기사·산업기사 필기 단기합격', author: '윤석표', publisher: '시대에듀', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 12, tags: ['추천'], hasEbook: false, isbn: '9791138387668', imageUrl: KB('9791138387668'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215769087' },
+  ],
+
+  // ────────────────────────────────────────
+  '토양환경기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 4권뿐 — 니치 시장
+    { title: '알기쉽게 풀어쓴 토양환경기사 실기', author: '전나훈', publisher: '에듀피디', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791155866368', imageUrl: KB('9791155866368'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220574440' },
+    { title: '알기쉽게 풀어쓴 토양환경기사 필기', author: '전나훈', publisher: '에듀피디', price: 30600, originalPrice: 34000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791155865262', imageUrl: KB('9791155865262'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211497300' },
+    { title: '2026 토양환경기사 필기', author: '서영민, 이철한 외', publisher: '예문사', price: 40500, originalPrice: 45000, discount: '10%', rating: 3.2, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788927460589', imageUrl: KB('9788927460589'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218729948' },
+    { title: '2026 토양환경기사 실기', author: '서영민', publisher: '예문사', price: 32400, originalPrice: 36000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788927461456', imageUrl: KB('9788927461456'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219139693' },
+  ],
+
+  // ────────────────────────────────────────
+  '품질경영산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 배극윤의 품질경영산업기사 필기 세트', author: '배극윤', publisher: '예문사', price: 36000, originalPrice: 40000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927463115', imageUrl: KB('9788927463115'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221031310' },
+    { title: '최신 생산시스템(품질경영산업기사)', author: '권오운', publisher: '정일', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788956662923', imageUrl: KB('9788956662923'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000830400' },
+    { title: '2026 배극윤의 품질경영기사산업기사 실기 세트', author: '배극윤', publisher: '예문사', price: 36900, originalPrice: 41000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788927461425', imageUrl: KB('9788927461425'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219080792' },
+    { title: '2026 명품 품질경영기사, 산업기사 실기', author: '이정훈', publisher: '올배움', price: 36900, originalPrice: 41000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791165172107', imageUrl: KB('9791165172107'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219211419' },
+    { title: '2026 명품 품질경영산업기사 필기', author: '이정훈', publisher: '올배움', price: 36000, originalPrice: 40000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791165171957', imageUrl: KB('9791165171957'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218704204' },
+    { title: '2026 유튜브와 함께하는 양쌤의 품질경영산업기사 실기', author: '양희정', publisher: '이나무', price: 32400, originalPrice: 36000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791191569483', imageUrl: KB('9791191569483'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219564922' },
+    { title: '2026 품질경영기사&산업기사 실기', author: '정헌석', publisher: '일진사', price: 36900, originalPrice: 41000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788942920907', imageUrl: KB('9788942920907'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219411823' },
+    { title: '최신 실험계획법(품질경영산업기사)', author: '권오운', publisher: '정일', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788956662916', imageUrl: KB('9788956662916'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000830399' },
+    { title: '2023 품질경영기사 산업기사 실기', author: '정헌석', publisher: '구민사', price: 33300, originalPrice: 37000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168751767', imageUrl: KB('9791168751767'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200832412' },
+    { title: '품질경영산업기사(2019)', author: '권오운', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931537307', imageUrl: KB('9788931537307'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000558198' },
+  ],
+
+  // ────────────────────────────────────────
+  '용접기능장': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 7권뿐 — 니치 시장
+    { title: '2026 시대에듀 Win-Q 용접기능장 필기 단기합격', author: '홍순규', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9791138399029', imageUrl: KB('9791138399029'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217535779' },
+    { title: '2025 용접기능장 필기', author: '권오수, 최봉열', publisher: '예문사', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927454915', imageUrl: KB('9788927454915'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213834858' },
+    { title: '2026 평생 무료 동영상과 함께하는 용접기능장 필기', author: '최갑규', publisher: '세진북스', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791157457502', imageUrl: KB('9791157457502'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218472192' },
+    { title: '2026 평생 무료 동영상과 함께하는 용접기능장 필기 최근 기출문제', author: '최갑규', publisher: '세진북스', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791157457519', imageUrl: KB('9791157457519'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218472681' },
+    { title: '2026 초단기완성! 용접기능장 필기', author: '박경수', publisher: '책과상상', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673365', imageUrl: KB('9791169673365'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218197919' },
+    { title: '202X 고수열강 용접기능장 필기+실기', author: '정균호, 오동수 외', publisher: '구민사', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168755864', imageUrl: KB('9791168755864'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217177538' },
+    { title: '2024 단기완성 용접기능장 필기 + 평생 무료 동영상 강의', author: '최갑규', publisher: '세진북스', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791157455959', imageUrl: KB('9791157455959'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000210585678' },
+  ],
+
+  // ────────────────────────────────────────
+  '배관기능장': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 3권뿐 — 니치 시장
+    { title: '2027 배관기능장 필기 과년도 풀이', author: '서상희', publisher: '동일출판사', price: 32400, originalPrice: 36000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788938117755', imageUrl: KB('9788938117755'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220854465' },
+    { title: '배관기능장 필기+실기 기출문제', author: '권오수, 문덕인 외', publisher: '예문사', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.4, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788927462101', imageUrl: KB('9788927462101'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219524005' },
+    { title: '배관기능장 필기실기 시험문제', author: '김관식, 도천기', publisher: '크라운출판사', price: 26100, originalPrice: 29000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788940640593', imageUrl: KB('9788940640593'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000643761' },
+  ],
+
+  // ────────────────────────────────────────
+  '기계가공조립기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 3권뿐 — 니치 시장
+    { title: '2026 기계가공조립기능사 필기 5개년 과년도 1200제', author: '정연택', publisher: '건기원', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791157678969', imageUrl: KB('9791157678969'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218510346' },
+    { title: '2027 시대에듀 Win-Q 기계가공조립기능사 필기 단기합격', author: '박병욱', publisher: '시대고시기획', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791143419613', imageUrl: KB('9791143419613'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221109749' },
+    { title: '기계가공조립기능사 필기(2020)', author: '정연택, 유판열 외', publisher: '건기원', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791157674732', imageUrl: KB('9791157674732'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001758503' },
+  ],
+
+  // ────────────────────────────────────────
+  '위험물기능장': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2026 더플러스 위험물기능장 필기+실기', author: '현성호', publisher: '성안당', price: 47700, originalPrice: 53000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9788931585131', imageUrl: KB('9788931585131'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218740037' },
+    { title: '2027 현성호 위험물기능장 필기', author: '현성호', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931514933', imageUrl: KB('9788931514933'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221566781' },
+    { title: '모아 위험물기능장 필기 핵심이론+과년도 12개년', author: '모아합격전략연구소', publisher: '모아교육그룹(모아팩토리)', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791168046030', imageUrl: KB('9791168046030'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219926380' },
+    { title: '2026 시대에듀 위험물기능장 필기 한권으로 끝내기', author: '이덕수', publisher: '시대고시기획', price: 37800, originalPrice: 42000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], hasEbook: false, isbn: '9791138396318', imageUrl: KB('9791138396318'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217164447' },
+    { title: '2027 모아 위험물기능장 실기: 핵심이론+과년도 12개년', author: 'MCC(MOA Creative Center)', publisher: '모아교육그룹', price: 34200, originalPrice: 38000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791168046276', imageUrl: KB('9791168046276'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220568668' },
+    { title: '2026 평생 무료 동영상과 함께하는 위험물기능장 실기', author: '강석민, 정진홍', publisher: '세진북스', price: 40500, originalPrice: 45000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791157457427', imageUrl: KB('9791157457427'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218228278' },
+    { title: '2025 나합격 위험물기능장 필기+무료특강', author: '나합격 콘텐츠 연구소', publisher: '삼원북스', price: 37800, originalPrice: 42000, discount: '10%', rating: 4.4, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791193858530', imageUrl: KB('9791193858530'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215528891' },
+    { title: '2026 시대에듀 위험물기능장 실기 한권으로 끝내기', author: '이덕수', publisher: '시대고시기획', price: 36000, originalPrice: 40000, discount: '10%', rating: 5.0, reviews: 11, tags: ['추천'], hasEbook: false, isbn: '9791143401328', imageUrl: KB('9791143401328'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218308681' },
+    { title: '2026 평생 무료 동영상과 함께하는 위험물기능장 필기 최근 기출문제', author: '강석민, 정진홍', publisher: '세진북스', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791157457212', imageUrl: KB('9791157457212'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217242660' },
+    { title: '2026 평생 무료 동영상과 함께하는 위험물기능장 실기 20개년 기출문제', author: '강석민, 정진홍', publisher: '세진북스', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791157457434', imageUrl: KB('9791157457434'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218228200' },
+  ],
+
+  // ────────────────────────────────────────
+  '금형기능장': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 1권뿐 — 니치 시장
+    { title: '사출금형산업기사', author: '이상민, 박병석 외', publisher: '기전연구사', price: 24300, originalPrice: 27000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788933609347', imageUrl: KB('9788933609347'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000587579' },
+  ],
+
+  // ────────────────────────────────────────
+  '승강기기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 에듀윌 승강기기능사 필기 한권끝장+무료특강', author: '에듀윌 승강기연구소', publisher: '에듀윌', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791136043818', imageUrl: KB('9791136043818'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221063275' },
+    { title: '2027 나합격 승강기기능사 필기+실기+무료특강', author: '박환용', publisher: '삼원북스', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176400169', imageUrl: KB('9791176400169'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220698982' },
+    { title: '2027 시대에듀 Win-Q 승강기기능사 필기+실기 단기합격', author: '한규철', publisher: '시대고시기획', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791143418234', imageUrl: KB('9791143418234'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220988815' },
+    { title: '2026 유튜버 순수찜 승강기기능사 필기/실기 핵심이론+기출문제집', author: '순수찜', publisher: '지식오름', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791174910332', imageUrl: KB('9791174910332'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218357567' },
+    { title: '2026 승강기기능사 필기+실기 한권 완성', author: '민찬식, 김진만 외', publisher: '예문사', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788927459989', imageUrl: KB('9788927459989'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218136476' },
+    { title: '2026 승강기기능사 필기', author: '전영선', publisher: '책과상상', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791169672948', imageUrl: KB('9791169672948'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217569883' },
+    { title: '승강기기능사 필기 예상문제집', author: '에듀채널 편집부(AI 활용)', publisher: '스터디채널', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176181747', imageUrl: KB('9791176181747'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221573207' },
+    { title: '2026 승강기기능사 필기 기출문제', author: '전영선', publisher: '책과상상', price: 15300, originalPrice: 17000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791169672955', imageUrl: KB('9791169672955'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218331357' },
+    { title: '2026 초스피드 승강기기능사 필기', author: '이후곤', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931514278', imageUrl: KB('9788931514278'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219195306' },
+    { title: '2026 유단자 승강기기능사 필기+실기+CBT 모의고사', author: '김창일', publisher: '미디어몬', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791124115039', imageUrl: KB('9791124115039'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218732046' },
+  ],
+
+  // ────────────────────────────────────────
+  '화학분석기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 4권뿐 — 니치 시장
+    { title: '2026 나합격 화학분석기능사 필기+실기+무료특강', author: '나합격 콘텐츠 연구소', publisher: '삼원북스', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9791193858936', imageUrl: KB('9791193858936'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217187104' },
+    { title: '2027 한번에 합격하는 화학분석기능사 필기+실기', author: '김재호', publisher: '성안당', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931515565', imageUrl: KB('9788931515565'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221513904' },
+    { title: '2026 시대에듀 YouTube 무료 동영상이 있는 Win-Q 화학분석기능사 필기+실기 단기합격', author: '김민', publisher: '시대고시기획', price: 24300, originalPrice: 27000, discount: '10%', rating: 5.0, reviews: 12, tags: ['베스트'], hasEbook: false, isbn: '9791138397902', imageUrl: KB('9791138397902'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217541939' },
+    { title: '2026 화학분석기능사 필기+실기(필답형+작업형)+무료동영상', author: '전화택', publisher: '구민사', price: 23400, originalPrice: 26000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791168756090', imageUrl: KB('9791168756090'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218329919' },
+  ],
+
+  // ────────────────────────────────────────
+  '전산응용건축제도기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 go來 독학 전산응용건축제도기능사 필기', author: '김희정', publisher: '예문사', price: 24300, originalPrice: 27000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927463535', imageUrl: KB('9788927463535'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221760668' },
+    { title: '2027년 전산응용건축제도기능사 필기 기출문제', author: '박한서', publisher: '책과상상', price: 16200, originalPrice: 18000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169674256', imageUrl: KB('9791169674256'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751847' },
+    { title: '2027년 전산응용건축제도기능사 필기', author: '박한서', publisher: '책과상상', price: 18000, originalPrice: 20000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169674249', imageUrl: KB('9791169674249'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751840' },
+    { title: '2027 에듀윌 전산응용건축제도기능사 필기 2주끝장+무료특강', author: '민영기', publisher: '에듀윌', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791136044754', imageUrl: KB('9791136044754'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221730731' },
+    { title: '2026 스마트 전산응용건축제도기능사 실기', author: '황두환', publisher: '성안당', price: 28800, originalPrice: 32000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931583977', imageUrl: KB('9788931583977'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218171638' },
+    { title: '2026 나합격 전산응용건축제도기능사 필기+무료특강', author: '김수진', publisher: '삼원북스', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 6, tags: ['추천'], hasEbook: false, isbn: '9791194997368', imageUrl: KB('9791194997368'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218570136' },
+    { title: '에듀윌 전산응용건축제도기능사 실기 2주끝장+무료특강', author: '김호진', publisher: '에듀윌', price: 27900, originalPrice: 31000, discount: '10%', rating: 5.0, reviews: 8, tags: ['추천'], hasEbook: false, isbn: '9791136042552', imageUrl: KB('9791136042552'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219930531' },
+    { title: '2027 스마트 전산응용건축제도기능사 필기+전 과정 무료 동영상 강의 제공', author: '황두환', publisher: '성안당', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931512793', imageUrl: KB('9788931512793'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221513897' },
+    { title: '2026 나합격 전산응용건축제도기능사 실기+무료특강', author: '김수진', publisher: '삼원북스', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791194997733', imageUrl: KB('9791194997733'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219026572' },
+    { title: '2026 독학 전산응용건축제도기능사 실기 무료 동영상', author: '김희정', publisher: '예문사', price: 23400, originalPrice: 26000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927460671', imageUrl: KB('9788927460671'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218787220' },
+  ],
+
+  // ────────────────────────────────────────
+  '웹디자인기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 6권뿐 — 니치 시장
+    { title: '2026 시대에듀 유선배 웹디자인개발기능사 실기 합격노트', author: '김동주', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 11, tags: ['베스트'], hasEbook: false, isbn: '9791143400703', imageUrl: KB('9791143400703'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218234905' },
+    { title: '2026 이기적 웹디자인개발기능사 필기 절대족보', author: '이민희', publisher: '영진닷컴', price: 17100, originalPrice: 19000, discount: '10%', rating: 3.2, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788931476569', imageUrl: KB('9788931476569'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217187027' },
+    { title: '2026 시대에듀 유선배 웹디자인개발기능사 필기 합격노트', author: '홍진아', publisher: '시대고시기획', price: 17100, originalPrice: 19000, discount: '10%', rating: 5.0, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9791143400680', imageUrl: KB('9791143400680'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218054005' },
+    { title: '2027 이기적 웹디자인개발기능사 실기 기본서', author: '이민희', publisher: '영진닷컴', price: 27900, originalPrice: 31000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931481983', imageUrl: KB('9788931481983'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221662836' },
+    { title: '2026 이기적 웹디자인개발기능사 필기+실기 올인원', author: '이민희', publisher: '영진닷컴', price: 36900, originalPrice: 41000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9788931480122', imageUrl: KB('9788931480122'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218779120' },
+    { title: '2026 이기적 웹디자인개발기능사 필기 기본서', author: '윤미선', publisher: '영진닷컴', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788931476552', imageUrl: KB('9788931476552'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216663507' },
+  ],
+
+  // ────────────────────────────────────────
+  '맞춤형화장품조제관리사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2026 에듀윌 맞춤형화장품조제관리사 한권끝장(핵심이론+900제)', author: '이은주, 유선희', publisher: '에듀윌', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.7, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9791136040107', imageUrl: KB('9791136040107'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218783250' },
+    { title: '2026 해커스 맞춤형화장품 조제관리사 한권합격 이론+적중문제', author: '김경표', publisher: '해커스자격증', price: 35100, originalPrice: 39000, discount: '10%', rating: 5.0, reviews: 9, tags: ['베스트'], hasEbook: false, isbn: '9788969657121', imageUrl: KB('9788969657121'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219312281' },
+    { title: '2027 맞춤형화장품 조제관리사 필기 이론서(상)', author: '전혜승', publisher: '오스틴북스', price: 39600, originalPrice: 44000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791124051870', imageUrl: KB('9791124051870'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221652888' },
+    { title: '2027 맞춤형화장품 조제관리사 핵심 700제 단원별 문제집', author: '전혜승', publisher: '오스틴북스', price: 37800, originalPrice: 42000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791124051894', imageUrl: KB('9791124051894'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221518714' },
+    { title: '이기적 맞춤형화장품조제관리사 이론+기출문제', author: '서윤애, 이현아 외', publisher: '영진닷컴', price: 33300, originalPrice: 37000, discount: '10%', rating: 3.2, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9788931482225', imageUrl: KB('9788931482225'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219521420' },
+    { title: '2026 100% 무료강의 제공 지한쌤의 EASY한 맞춤형화장품조제관리사 필기 화장품 법령 백과사전', author: '이지한', publisher: '종이향기', price: 43200, originalPrice: 48000, discount: '10%', rating: 1.3, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791174910882', imageUrl: KB('9791174910882'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219244835' },
+    { title: '2025/2026 원큐패스 맞춤형화장품 조제관리사', author: '이강연', publisher: '다락원', price: 34200, originalPrice: 38000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927774600', imageUrl: KB('9788927774600'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217139446' },
+    { title: '2026 맞춤형 화장품 조제관리사 핵심요약+적중문제', author: '타임 맞춤형화장품 연구소', publisher: '시스컴', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791169417815', imageUrl: KB('9791169417815'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218197402' },
+    { title: '2026 무료강의 제공 지한쌤의 EASY한맞춤형화장품조제관리사 400문항 찐 스포일러 필수 문제집', author: '이지한', publisher: '지식오름', price: 35100, originalPrice: 39000, discount: '10%', rating: 1.3, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791174910899', imageUrl: KB('9791174910899'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219248925' },
+    { title: '2026 지한쌤의 EASY한 맞춤형화장품조제관리사 교수 학습가이드 700문항 찐 스포일러 합격문제집', author: '이지한', publisher: '지식오름', price: 43200, originalPrice: 48000, discount: '10%', rating: 3.8, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791174910974', imageUrl: KB('9791174910974'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219346847' },
+  ],
+
+  // ────────────────────────────────────────
+  '이용사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 9권뿐 — 니치 시장
+    { title: '2027 원큐패스 이용사[이용장 포함] 필기 실기 [ CBT 모의고사 제공 ]', author: '김명수, 정현주', publisher: '다락원', price: 26100, originalPrice: 29000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927776253', imageUrl: KB('9788927776253'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751554' },
+    { title: '2027 기분파 이용사 필기', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9791194328438', imageUrl: KB('9791194328438'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221047920' },
+    { title: '2027 딱!! 한권으로 끝내주는 이용사 필기·실기 시험문제', author: '김성철, 박순철 외', publisher: '크라운출판사', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788940651100', imageUrl: KB('9788940651100'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221738459' },
+    { title: '2027 이용사 필기 예상문제집', author: '에듀채널 편집부', publisher: '스터디채널', price: 16200, originalPrice: 18000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176181853', imageUrl: KB('9791176181853'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221736991' },
+    { title: '2026 유단자 이용사 필기 실기+무료강의', author: '유은선, 최문희 외', publisher: '미디어몬', price: 24300, originalPrice: 27000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791124115046', imageUrl: KB('9791124115046'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218796318' },
+    { title: '2026 시대에듀 Win-Q 이용사 필기 단기합격', author: '최평훈, 진민준', publisher: '시대고시기획', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 12, tags: ['추천'], hasEbook: false, isbn: '9791143406552', imageUrl: KB('9791143406552'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218853987' },
+    { title: '2025 이용사 필기', author: '김영래, 김원중 외', publisher: '구민사', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168754003', imageUrl: KB('9791168754003'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213987132' },
+    { title: '이용사 필기', author: '박은준, 최지연 외', publisher: '메디시언', price: 22000, tags: ['추천'], hasEbook: false, isbn: '9791190839037', imageUrl: KB('9791190839037'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001944645' },
+    { title: '202X 이용사 필기+실기', author: '백태윤, 노환국 외', publisher: '구민사', price: 26100, originalPrice: 29000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168755017', imageUrl: KB('9791168755017'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215746882' },
+  ],
+
+  // ────────────────────────────────────────
+  '산업위생관리산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 산업위생관리산업기사 필기+과년도+무료동영상+핸드북', author: '최윤정', publisher: '구민사', price: 41400, originalPrice: 46000, discount: '10%', rating: 5.0, reviews: 8, tags: ['베스트'], hasEbook: false, isbn: '9791168757363', imageUrl: KB('9791168757363'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221256361' },
+    { title: '2026 2주완성 산업위생관리산업기사 실기', author: '서영민', publisher: '성안당', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788931585063', imageUrl: KB('9788931585063'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218917433' },
+    { title: '2026 산업위생관리산업기사 필기 기출문제집', author: '서영민, 조만희', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9788931585032', imageUrl: KB('9788931585032'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000562034' },
+    { title: '2026 산업위생관리기사산업기사 실기', author: '서영민', publisher: '성안당', price: 37800, originalPrice: 42000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931585049', imageUrl: KB('9788931585049'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218913078' },
+    { title: '알기쉽게 풀어쓴 에듀피디 산업위생관리기사 ·산업기사 필기', author: '전나훈', publisher: '에듀피디', price: 34200, originalPrice: 38000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791155866337', imageUrl: KB('9791155866337'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220452160' },
+    { title: '2026 더플러스 산업위생관리 산업기사 필기', author: '서영민', publisher: '성안당', price: 36000, originalPrice: 40000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931585025', imageUrl: KB('9788931585025'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218171682' },
+    { title: '2026 물쌤닷컴 산업위생관리기사 산업기사 실기+기출해설', author: '최고야', publisher: '미교원(미래교육개발원)', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791194457237', imageUrl: KB('9791194457237'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218971495' },
+    { title: '2025 합격Easy 산업위생관리 산업기사 필기', author: '신은상', publisher: '건기원', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791157678686', imageUrl: KB('9791157678686'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215529294' },
+    { title: '2026 산업위생관리산업기사 실기+무료동영상+핸드북', author: '최윤정', publisher: '구민사', price: 40500, originalPrice: 45000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168756724', imageUrl: KB('9791168756724'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219053911' },
+    { title: '2025 합격Easy 산업위생관리기사·산업기사 실기', author: '신은상', publisher: '건기원', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791157678402', imageUrl: KB('9791157678402'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213235947' },
+  ],
+
+  // ────────────────────────────────────────
+  '인간공학기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 에듀윌 인간공학기사 필기 한권끝장+무료특강', author: '권윤아, 윤예림', publisher: '에듀윌', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.9, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9791136043351', imageUrl: KB('9791136043351'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220525738' },
+    { title: '2026 직8딴 김영북스 직접 8일 만에 딴 인간공학기사 실기', author: '김진태', publisher: '김영북스', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 17, tags: ['베스트'], hasEbook: false, isbn: '9791173491450', imageUrl: KB('9791173491450'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219407265' },
+    { title: '2026 에듀윌 인간공학기사 실기 한권끝장', author: '권윤아', publisher: '에듀윌', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.9, reviews: 75, tags: ['베스트'], hasEbook: false, isbn: '9791136041289', imageUrl: KB('9791136041289'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219240697' },
+    { title: '2026 인간공학기사 실기 한권완성', author: '정현석', publisher: '예문에듀', price: 26100, originalPrice: 29000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791163865612', imageUrl: KB('9791163865612'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219412287' },
+    { title: '2026 고시넷 인간공학기사 실기 기출복원문제+유형분석', author: '정권호, 국가전문기술자격연구소', publisher: '고시넷', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791156469742', imageUrl: KB('9791156469742'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219387596' },
+    { title: '2027 시대에듀 무단뽀 인간공학기사 필기 + 무료 동영상', author: '추철웅, 김홍관', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143413024', imageUrl: KB('9791143413024'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221581827' },
+    { title: '시대에듀 Win-Q 인간공학기사 필기 단기합격', author: '김훈', publisher: '시대고시기획', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791143419880', imageUrl: KB('9791143419880'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221281869' },
+    { title: '2027 인간공학기사 필기 5년간 문제', author: '김명정, 김상철', publisher: '크라운출판사', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788940651438', imageUrl: KB('9788940651438'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220996794' },
+    { title: '2027 인간공학기사 필기', author: '문정희', publisher: '예문사', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927463450', imageUrl: KB('9788927463450'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221573512' },
+    { title: '인간공학기사 실기편', author: '김유창, 홍창우 외', publisher: '교문사', price: 33000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788936326418', imageUrl: KB('9788936326418'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216049230' },
+  ],
+
+  // ────────────────────────────────────────
+  '온실가스관리기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 8권뿐 — 니치 시장
+    { title: '2026 한번에 합격하는 온실가스관리기사 필기', author: '강헌, 박기학 외', publisher: '성안당', price: 43200, originalPrice: 48000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788931585414', imageUrl: KB('9788931585414'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219868435' },
+    { title: '2026 온실가스관리기사 실기', author: '서영민', publisher: '예문사', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927461524', imageUrl: KB('9788927461524'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219139705' },
+    { title: '2026 온실가스관리기사 필기', author: '서영민, 전재식', publisher: '예문사', price: 43200, originalPrice: 48000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788927461517', imageUrl: KB('9788927461517'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219182326' },
+    { title: '2026 한번에 합격하는 온실가스관리 기사 실기', author: '강헌, 박기학 외', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931585421', imageUrl: KB('9788931585421'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219924517' },
+    { title: '온실가스관리기사 산업기사 실기(2020)', author: '서영민, 전재식 외', publisher: '예문사', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9788927426677', imageUrl: KB('9788927426677'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000522478' },
+    { title: '온실가스관리기사 산업기사 필기 실전 예상 문제집(2015)', author: '홍성호, 김현창 외', publisher: '인포더북스', price: 17100, originalPrice: 19000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788994567457', imageUrl: KB('9788994567457'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001551452' },
+    { title: '온실가스관리기사 산업기사 필기 핵심 요약 정리(2015)', author: '홍성호, 남윤미 외', publisher: '인포더북스', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788994567440', imageUrl: KB('9788994567440'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001551451' },
+    { title: '온실가스관리 기사 산업기사(2017)', author: '이봉재, 임철수 외', publisher: '성안당', price: 33300, originalPrice: 37000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931519532', imageUrl: KB('9788931519532'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000556924' },
+  ],
+
+  // ────────────────────────────────────────
+  '지적기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2026 PASS 지적기사·산업기사 실기 필답형+작업형', author: '민웅기, 정완석 외', publisher: '예문사', price: 28800, originalPrice: 32000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927461227', imageUrl: KB('9788927461227'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219054942' },
+    { title: '2027 Pass 지적기사·산업기사 필기 세트', author: '민웅기, 정완석 외', publisher: '예문사', price: 42300, originalPrice: 47000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927462736', imageUrl: KB('9788927462736'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220298345' },
+    { title: '지적기사 필기 이론 및 문제해설', author: '이영수, 이영욱 외', publisher: '예문사', price: 43200, originalPrice: 48000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927462293', imageUrl: KB('9788927462293'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219787185' },
+    { title: '2027 스마트 지적기사 산업기사 필기', author: '송용희, 조정관 외', publisher: '성안당', price: 43200, originalPrice: 48000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931512595', imageUrl: KB('9788931512595'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221573822' },
+    { title: '2025 지적기사 필기', author: '이영수, 안재현 외', publisher: '세진사', price: 34000, tags: ['베스트'], hasEbook: false, isbn: '9791160456622', imageUrl: KB('9791160456622'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214971585' },
+    { title: '2026 지적기사·산업기사 실기', author: '이영수, 황보상원 외', publisher: '예문사', price: 30600, originalPrice: 34000, discount: '10%', rating: 1.3, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788927461791', imageUrl: KB('9788927461791'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219346509' },
+    { title: '지적실기 기사·산업기사(필답형/작업형)', author: '조정관, 박민호 외', publisher: '예문사', price: 34200, originalPrice: 38000, discount: '10%', rating: 3.8, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788927455042', imageUrl: KB('9788927455042'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214083214' },
+    { title: '2026 지적기사 필기 과년도 문제해설', author: '김정민, 곽인선 외', publisher: '예문사', price: 33300, originalPrice: 37000, discount: '10%', rating: 3.8, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788927460626', imageUrl: KB('9788927460626'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218778967' },
+    { title: '지적 기사 산업기사 실기', author: '라용화, 신동현 외', publisher: '예문에듀', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791163864912', imageUrl: KB('9791163864912'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216848119' },
+    { title: '알기쉽게 풀어쓴 지적기사/지적산업기사 필기', author: '이진녕', publisher: '에듀피디', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791155865637', imageUrl: KB('9791155865637'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214514414' },
+  ],
+
+  // ────────────────────────────────────────
+  '신재생에너지발전설비산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 8권뿐 — 니치 시장
+    { title: '2026 신재생에너지 발전설비(태양광) 산업기사 실기', author: '태양광발전연구회', publisher: '동일출판사', price: 26100, originalPrice: 29000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788938117557', imageUrl: KB('9788938117557'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218844972' },
+    { title: '2026 마스터 신재생에너지 발전설비(태양광) 산업기사 실기', author: '봉우근', publisher: '엔트미디어', price: 29700, originalPrice: 33000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791192810881', imageUrl: KB('9791192810881'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218846149' },
+    { title: '2026 마스터 신재생에너지 발전설비(태양광) 산업기사 필기', author: '봉우근', publisher: '엔트미디어', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791192810782', imageUrl: KB('9791192810782'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218683789' },
+    { title: '2025 신재생에너지발전설비(태양광)산업기사 실기', author: '박문환', publisher: '예문사', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927455608', imageUrl: KB('9788927455608'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214344938' },
+    { title: '2026 신재생에너지발전설비산업기사(태양광) 필기 13개년 과년도', author: '이후곤', publisher: '명인북스', price: 37800, originalPrice: 42000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791194269342', imageUrl: KB('9791194269342'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218278060' },
+    { title: '신재생에너지발전설비 태양광 기사 산업기사 실기', author: '신정수', publisher: '일진사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788942914739', imageUrl: KB('9788942914739'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000671256' },
+    { title: '신재생에너지 발전설비 태양광 기사 산업기사 500문제 해설', author: '김종택', publisher: '금호', price: 13500, originalPrice: 15000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788998269685', imageUrl: KB('9788998269685'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001629717' },
+    { title: '신재생에너지발전설비산업기사(태양광) 필기 한권으로 끝내기(2020)', author: '백국현, 김태우', publisher: '시대고시기획', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 7, tags: ['추천'], hasEbook: false, isbn: '9791125467748', imageUrl: KB('9791125467748'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001655794' },
+  ],
+
+  // ────────────────────────────────────────
+  '소음진동산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 4권뿐 — 니치 시장
+    { title: '소음진동(산업)기사', author: '김장호', publisher: '지구문화사', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788970060170', imageUrl: KB('9788970060170'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001065404' },
+    { title: '2026 소음·진동기사 필기', author: '서영민, 이철한 외', publisher: '예문사', price: 40500, originalPrice: 45000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788927461548', imageUrl: KB('9788927461548'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219080779' },
+    { title: '소음·진동기사 실기', author: '서영민, 이철한 외', publisher: '예문사', price: 30600, originalPrice: 34000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927461555', imageUrl: KB('9788927461555'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219080774' },
+    { title: '2026 한번에 합격하는 소음진동기사 필기+실기', author: '신은상', publisher: '성안당', price: 43200, originalPrice: 48000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788931585438', imageUrl: KB('9788931585438'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219435204' },
+  ],
+
+  // ────────────────────────────────────────
+  '로봇기구개발기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 1권뿐 — 니치 시장
+    { title: '2022 로봇기구개발기사 한권으로 끝내기', author: '안준기', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.0, reviews: 8, tags: ['베스트'], hasEbook: false, isbn: '9791138312561', imageUrl: KB('9791138312561'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001716812' },
+  ],
+
+  // ────────────────────────────────────────
+  '산림기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 8권뿐 — 니치 시장
+    { title: '2027 산림기능사 필기', author: '이정희', publisher: '예문사', price: 24300, originalPrice: 27000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927462576', imageUrl: KB('9788927462576'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220101524' },
+    { title: '2027 시대에듀 산림기능사 필기 한권으로 끝내기', author: '김민철', publisher: '시대고시기획', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791143417503', imageUrl: KB('9791143417503'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220511525' },
+    { title: '2027 산림기능사 필기 실기', author: '김희율', publisher: '부민문화사', price: 27000, rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788938505026', imageUrl: KB('9788938505026'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219648048' },
+    { title: '2027 시대에듀 산림기능사 필기 기출문제집', author: '김민철', publisher: '시대고시기획', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791143420084', imageUrl: KB('9791143420084'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221162612' },
+    { title: '2027 산림기능사 필기 초단기 CBT 10개년 빈출+기출문제집', author: '파이팅혼공TV 컨텐츠 개발팀', publisher: '종이향기', price: 23400, originalPrice: 26000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791174911681', imageUrl: KB('9791174911681'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221565789' },
+    { title: '2027 박문각 산림기능사 필기 8개년 기출문제집+무료특강', author: '박진호', publisher: '박문각', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176494809', imageUrl: KB('9791176494809'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221643122' },
+    { title: '2026 명품 산림기능사 필기', author: '권현준', publisher: '올배움', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791165171827', imageUrl: KB('9791165171827'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218323085' },
+    { title: '2024 산림기능사 기출문제해설 핵심요약기출문제분석', author: '부민문화사 자연과학부', publisher: '부민문화사', price: 19000, tags: ['추천'], hasEbook: false, isbn: '9788938503756', imageUrl: KB('9788938503756'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000633312' },
+  ],
+
+  // ────────────────────────────────────────
+  '산림기능장': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 2권뿐 — 니치 시장
+    { title: '2026 산림기능장 필기+실기', author: '김정호', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931506204', imageUrl: KB('9788931506204'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220107773' },
+    { title: '2026 시대에듀 산림기능장 필기 한권으로 끝내기', author: '김민철', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], hasEbook: false, isbn: '9791143409065', imageUrl: KB('9791143409065'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219205977' },
+  ],
+
+  // ────────────────────────────────────────
+  '나무의사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 시대에듀 나무의사 필기 기출문제해설 한권으로 끝내기', author: '김동욱, 정규종', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9791143414076', imageUrl: KB('9791143414076'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219881495' },
+    { title: '나무의사 하이패스', author: '이병호', publisher: '방아출판사', price: 41400, originalPrice: 46000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791198851611', imageUrl: KB('9791198851611'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220226328' },
+    { title: '2026 유튜버 나무쌤 나무의사 필기 핵심 이론서', author: '나무쌤 김희성', publisher: '종이향기', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791174910912', imageUrl: KB('9791174910912'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219382101' },
+    { title: '2027 시대에듀 나무의사 한권으로 끝내기', author: '김동욱, 정규종', publisher: '시대고시기획', price: 36000, originalPrice: 40000, discount: '10%', rating: 5.0, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9791143414069', imageUrl: KB('9791143414069'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219743238' },
+    { title: '2026 기분파 나무의사 필기 심화모의고사 Point Summary 625제', author: '박범수, 에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9791194328339', imageUrl: KB('9791194328339'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217600646' },
+    { title: '2026 나무의사 2차 서술고사(서술형 필기+실기시험)', author: '배창호, 조오영', publisher: '예문에듀', price: 34200, originalPrice: 38000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791163865773', imageUrl: KB('9791163865773'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219917431' },
+    { title: '2026 나무의사 필기', author: '김태성', publisher: '예문사', price: 34200, originalPrice: 38000, discount: '10%', rating: 4.8, reviews: 5, tags: ['추천'], hasEbook: false, isbn: '9788927458982', imageUrl: KB('9788927458982'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217012742' },
+    { title: '2026 나무의사 필기+실기 통합본', author: '윤준원', publisher: '예문에듀', price: 36000, originalPrice: 40000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791163865032', imageUrl: KB('9791163865032'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217395228' },
+    { title: '2026 나무의사 핵심문제집', author: '윤준원, 김태성', publisher: '예문에듀', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.4, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791163864943', imageUrl: KB('9791163864943'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216962003' },
+    { title: '2023 유튜버 나무쌤 나무의사 필기 블랙박스 기초문제집', author: '나무쌤 김희성', publisher: '종이향기', price: 17100, originalPrice: 19000, discount: '10%', rating: 5.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9791191292718', imageUrl: KB('9791191292718'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061451358' },
+  ],
+
+  // ────────────────────────────────────────
+  '산림기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 시대에듀 산림기사·산업기사 필기 한권으로 끝내기', author: '정한기', publisher: '시대에듀', price: 40500, originalPrice: 45000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143422200', imageUrl: KB('9791143422200'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221565840' },
+    { title: '2026 산림기사/산업기사 실기 필답형·작업형', author: '소방수', publisher: '부민문화사', price: 25000, rating: 4.6, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9788938504982', imageUrl: KB('9788938504982'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219059132' },
+    { title: '2026 명품 산림기사 산업기사 실기', author: '권현준', publisher: '올배움', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791165171988', imageUrl: KB('9791165171988'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218778048' },
+    { title: '2026 명품 산림기사, 산업기사 필기', author: '권현준', publisher: '올배움', price: 26100, originalPrice: 29000, discount: '10%', rating: 4.7, reviews: 8, tags: ['베스트'], hasEbook: false, isbn: '9791165171810', imageUrl: KB('9791165171810'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218323538' },
+    { title: '2026 산림기사/산업기사 2: 사방산지복구·산림기반시설·산림보호', author: '부민문화사 자연과학부', publisher: '부민문화사', price: 25000, rating: 4.7, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9788938504838', imageUrl: KB('9788938504838'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218203381' },
+    { title: '2026 산림기사/산업기사 1: 산림조성·산림경영', author: '부민문화사 자연과학부', publisher: '부민문화사', price: 25000, rating: 4.8, reviews: 5, tags: ['추천'], hasEbook: false, isbn: '9788938504821', imageUrl: KB('9788938504821'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218203374' },
+    { title: '2026 산림기사 필기+실기', author: '김정호', publisher: '성안당', price: 44100, originalPrice: 49000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931584004', imageUrl: KB('9788931584004'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219407453' },
+    { title: '2026 산림기사 · 산업기사 필기', author: '이정희', publisher: '예문사', price: 43200, originalPrice: 48000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927462200', imageUrl: KB('9788927462200'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219647846' },
+    { title: '2026 시대에듀 산림기사·산업기사 실기 한권으로 끝내기', author: '정한기', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 12, tags: ['추천'], hasEbook: false, isbn: '9791143410948', imageUrl: KB('9791143410948'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219524186' },
+    { title: '2026 명품 산림기사·산업기사 과년도 필기', author: '권현준', publisher: '올배움', price: 26100, originalPrice: 29000, discount: '10%', rating: 4.6, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791165171834', imageUrl: KB('9791165171834'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218323545' },
+  ],
+
+  // ────────────────────────────────────────
+  '식물보호기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 시대에듀 식물보호기사·산업기사 필기 한권으로 끝내기', author: '박정호', publisher: '시대고시기획', price: 33300, originalPrice: 37000, discount: '10%', rating: 5.0, reviews: 8, tags: ['베스트'], hasEbook: false, isbn: '9791143417770', imageUrl: KB('9791143417770'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220646300' },
+    { title: '2027 식물보호기사 필기(동영상 강의 교재, 2026년 CBT 기출복원문제 수록)', author: '김두석', publisher: '성안당', price: 32400, originalPrice: 36000, discount: '10%', rating: 1.3, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788931505559', imageUrl: KB('9788931505559'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220350717' },
+    { title: '2026 식물보호기사·산업기사 필기+실기', author: '서윤경', publisher: '예문사', price: 33300, originalPrice: 37000, discount: '10%', rating: 3.8, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9788927462040', imageUrl: KB('9788927462040'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219523964' },
+    { title: '2026 식물보호기사/산업기사 실기 필답형', author: '부민문화사 자연과학부', publisher: '부민문화사', price: 24000, tags: ['베스트'], hasEbook: false, isbn: '9788938505002', imageUrl: KB('9788938505002'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219138812' },
+    { title: '2026 시대에듀 식물보호기사·산업기사 실기 한권으로 끝내기', author: '박정호', publisher: '시대고시기획', price: 18900, originalPrice: 21000, discount: '10%', rating: 4.7, reviews: 14, tags: ['베스트'], hasEbook: false, isbn: '9791143404152', imageUrl: KB('9791143404152'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218673584' },
+    { title: '식물보호 기사 산업기사 필기', author: '부민문화사 자연과학부', publisher: '부민문화사', price: 36000, rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788938504753', imageUrl: KB('9788938504753'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217429566' },
+    { title: '2026 명품 식물보호기사 산업기사 실기', author: '권현준', publisher: '올배움', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791165172015', imageUrl: KB('9791165172015'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218778052' },
+    { title: '2026 명품 식물보호기사 산업기사 과년도 필기', author: '권현준', publisher: '올배움', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791165171872', imageUrl: KB('9791165171872'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218355056' },
+    { title: '2026 명품 식물보호기사, 산업기사 필기', author: '권현준', publisher: '올배움', price: 26100, originalPrice: 29000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791165171858', imageUrl: KB('9791165171858'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218323547' },
+    { title: '2026 합격Easy 식물보호기사 산업기사 필답형 실기', author: '정승기', publisher: '건기원', price: 21600, originalPrice: 24000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791157679188', imageUrl: KB('9791157679188'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219023332' },
+  ],
+
+  // ────────────────────────────────────────
+  '무선설비기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 4권뿐 — 니치 시장
+    { title: '무선 설비 기사 실기', author: '조준익', publisher: '한산', price: 20000, tags: ['베스트'], hasEbook: false, isbn: '9791187555056', imageUrl: KB('9791187555056'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001903529' },
+    { title: '2026 무선설비기사 필기', author: '양윤석, 김남선', publisher: '세화', price: 38700, originalPrice: 43000, discount: '10%', rating: 2.5, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788931713794', imageUrl: KB('9788931713794'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218961383' },
+    { title: '무선설비 기출문제풀이(기사 산업기사)', author: '김기남 고시연구회', publisher: 'NT미디어', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791187180135', imageUrl: KB('9791187180135'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001898390' },
+    { title: '2022 무선설비기사 산업기사 10개년 영역별 기출문제 풀이', author: '김기남 고시연구회', publisher: 'NT미디어', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.4, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791187180234', imageUrl: KB('9791187180234'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001898396' },
+  ],
+
+  // ────────────────────────────────────────
+  '자동차기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 1권뿐 — 니치 시장
+    { title: '시대에듀 그린전동자동차기사 필기 한권으로 끝내기', author: '함성훈, 국창호 외', publisher: '시대고시기획', price: 34200, originalPrice: 38000, discount: '10%', rating: 5.0, reviews: 12, tags: ['베스트'], hasEbook: false, isbn: '9791143413031', imageUrl: KB('9791143413031'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219524234' },
+  ],
+
+  // ────────────────────────────────────────
+  '화재감식평가기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 9권뿐 — 니치 시장
+    { title: '2027 에듀윌 화재감식평가기사 필기 한권끝장(산업기사 동시대비)', author: '김훈', publisher: '에듀윌', price: 32400, originalPrice: 36000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791136044433', imageUrl: KB('9791136044433'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221738301' },
+    { title: '2026 시대에듀  화재감식평가기사·산업기사 실기 필답형', author: '문옥섭, 박정주', publisher: '시대고시기획', price: 32400, originalPrice: 36000, discount: '10%', rating: 5.0, reviews: 15, tags: ['베스트'], hasEbook: false, isbn: '9791143408143', imageUrl: KB('9791143408143'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219083889' },
+    { title: '2026 화재감식평가 기사·산업기사 실기', author: '황인호, 유병선', publisher: '예문에듀', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791163865674', imageUrl: KB('9791163865674'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219468757' },
+    { title: '2026 시대에듀 화재감식평가기사·산업기사 필기 한권으로 끝내기', author: '문옥섭, 박정주', publisher: '시대고시기획', price: 38700, originalPrice: 43000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], hasEbook: false, isbn: '9791138395915', imageUrl: KB('9791138395915'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217049156' },
+    { title: '2026 시대에듀 화재감식평가기사·산업기사 필기 기출문제집', author: '문옥섭, 박정주', publisher: '시대고시기획', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.8, reviews: 17, tags: ['베스트'], hasEbook: false, isbn: '9791143400772', imageUrl: KB('9791143400772'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218024658' },
+    { title: '2026 화재감식평가기사·산업기사 필기', author: '신현숙, 권혁서 외', publisher: '예문사', price: 33300, originalPrice: 37000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788927461098', imageUrl: KB('9788927461098'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218942131' },
+    { title: '2025 화재감식 평가 기사, 산업기사 필답형 실기', author: '화재감식평가수험연구회', publisher: '성안당', price: 34200, originalPrice: 38000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788931513264', imageUrl: KB('9788931513264'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216344434' },
+    { title: '2026 화재감식평가 기사·산업기사 필기 새트(이론편+기출문제편)', author: '유병선, 황인호', publisher: '예문에듀', price: 36000, originalPrice: 40000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791163865360', imageUrl: KB('9791163865360'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218783620' },
+    { title: '2024 화재감식평가기사/산업기사 필기', author: '화재감식연구회', publisher: '성안당', price: 44100, originalPrice: 49000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788931586886', imageUrl: KB('9788931586886'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212909158' },
+  ],
+
+  // ────────────────────────────────────────
+  '워드프로세서': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 이기적 워드프로세서 필기+실기 올인원', author: '김옥남, 송재현', publisher: '영진닷컴', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9788931483628', imageUrl: KB('9788931483628'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221031949' },
+    { title: '2027 시나공 워드프로세서 실기 기본서 (ver.한글2022)', author: '길벗알앤디', publisher: '길벗', price: 18000, originalPrice: 20000, discount: '10%', rating: 2.5, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791140719860', imageUrl: KB('9791140719860'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220844544' },
+    { title: '2027 시나공 워드프로세서 필기 기본서', author: '길벗알앤디', publisher: '길벗', price: 18900, originalPrice: 21000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791140719488', imageUrl: KB('9791140719488'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221746087' },
+    { title: '2027 이기적 워드프로세서 필기 기본서', author: '김옥남, 이상미', publisher: '영진닷컴', price: 18900, originalPrice: 21000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931483567', imageUrl: KB('9788931483567'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221339980' },
+    { title: '2027 이기적 워드프로세서 실기 기본서 ver.2022', author: '송재현, 영진정보연구소', publisher: '영진닷컴', price: 17100, originalPrice: 19000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788931484564', imageUrl: KB('9788931484564'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221641644' },
+    { title: '2026 이기적 워드프로세서 필기 최신문제집', author: '김옥남, 이상미', publisher: '영진닷컴', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.9, reviews: 16, tags: ['추천'], hasEbook: false, isbn: '9788931479584', imageUrl: KB('9788931479584'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216967977' },
+    { title: '2027 이기적 워드프로세서 실기 기본서 ver. 한글 2022', author: '송재현, 영진정보연구소', publisher: '영진닷컴', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931484571', imageUrl: KB('9788931484571'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221756406' },
+    { title: '2027 빠르게 따는 워드프로세서 필기+실기', author: '강태안', publisher: '골든래빗(주)', price: 24300, originalPrice: 27000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791124516751', imageUrl: KB('9791124516751'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221661215' },
+    { title: '2027 이공자 DIAT 워드프로세서 한글 2022', author: 'KIE기획연구실', publisher: '아카데미소프트', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791124733110', imageUrl: KB('9791124733110'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221269889' },
+    { title: '2025 놀자비 DIAT 워드프로세서 한글 2022(좌무선)', author: '렉스수험서팀', publisher: '렉스미디어', price: 14400, originalPrice: 16000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788959604982', imageUrl: KB('9788959604982'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215527972' },
+  ],
+
+  // ────────────────────────────────────────
+  'ADP': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 2권뿐 — 니치 시장
+    { title: '2026 ADP 필기 데이터 분석 전문가: 올패키지', author: '윤종식', publisher: '데이터에듀', price: 47700, originalPrice: 53000, discount: '10%', rating: 4.0, reviews: 11, tags: ['베스트'], hasEbook: false, isbn: '9791193672297', imageUrl: KB('9791193672297'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216841733' },
+    { title: '데이터 분석 전문가 가이드(ADP)(ADsP)', author: '한국데이터산업진흥원', publisher: '한국데이터산업진흥원', price: 50000, rating: 4.4, reviews: 63, tags: ['베스트'], hasEbook: false, isbn: '9788988474839', imageUrl: KB('9788988474839'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001399866' },
+  ],
+
+  // ────────────────────────────────────────
+  '정보통신산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 5권뿐 — 니치 시장
+    { title: '2026 정보통신산업기사 필기', author: '김남선, 양윤석', publisher: '세화', price: 38700, originalPrice: 43000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931713787', imageUrl: KB('9788931713787'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219412334' },
+    { title: '정보통신 산업기사 10개년 영역별 연도별 기출문제 풀이', author: '김기남고시연구회', publisher: 'CAMPUS', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791187180500', imageUrl: KB('9791187180500'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001898411' },
+    { title: '정보통신산업기사필답', author: '박승환, 김한기', publisher: '21세기사', price: 10000, rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788984686816', imageUrl: KB('9788984686816'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001318747' },
+    { title: '2026 과년도 정보통신산업기사 필기', author: '구기준, 임병광 외', publisher: '기문사', price: 36900, originalPrice: 41000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791194568322', imageUrl: KB('9791194568322'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218790033' },
+    { title: '정보통신산업기사(필기형)', author: '최만수', publisher: '신화전산기획', price: 33000, tags: ['베스트'], hasEbook: false, isbn: '9788955341522', imageUrl: KB('9788955341522'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000798243' },
+  ],
+
+  // ────────────────────────────────────────
+  '정보통신기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 1권뿐 — 니치 시장
+    { title: '2027 정보통신기능사 필기 예상문제집', author: '에듀채널 편집부', publisher: '스터디채널', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791176181617', imageUrl: KB('9791176181617'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221261599' },
+  ],
+
+  // ────────────────────────────────────────
+  '사무자동화산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 8권뿐 — 니치 시장
+    { title: '2027 이기적 사무자동화산업기사 필기+실기 올인원', author: '신면철, 영진정보연구소', publisher: '영진닷컴', price: 30600, originalPrice: 34000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9788931478990', imageUrl: KB('9788931478990'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220448323' },
+    { title: '2026 이기적 사무자동화산업기사 실기 기본서 세트', author: '신면철', publisher: '영진닷컴', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9788931478969', imageUrl: KB('9788931478969'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219434636' },
+    { title: '2027 이기적 사무자동화산업기사 필기 기본서', author: '박성조', publisher: '영진닷컴', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788931478976', imageUrl: KB('9788931478976'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220502188' },
+    { title: '시나공 사무자동화산업기사 필기 총정리', author: '길벗알앤디', publisher: '길벗', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 8, tags: ['베스트'], hasEbook: false, isbn: '9791140717354', imageUrl: KB('9791140717354'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218961063' },
+    { title: '시나공 사무자동화산업기사 실기 기본서', author: '길벗알앤디', publisher: '길벗', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791140717927', imageUrl: KB('9791140717927'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219436117' },
+    { title: '사무자동화산업기사필기핵심문제집', author: '김영일', publisher: '범론사', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788955575712', imageUrl: KB('9788955575712'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218439463' },
+    { title: '2025 이기적 사무자동화산업기사 필기 절대족보', author: '신면철, 영진정보연구소', publisher: '영진닷컴', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 16, tags: ['추천'], hasEbook: false, isbn: '9788931476354', imageUrl: KB('9788931476354'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214399381' },
+    { title: '2027 이기적 사무자동화산업기사 필기 초단기합격', author: '영진정보연구소, 신면철', publisher: '영진닷컴', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931484731', imageUrl: KB('9788931484731'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221745644' },
+  ],
+
+  // ────────────────────────────────────────
+  '도배기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 2권뿐 — 니치 시장
+    { title: '도배기능사 실기', author: '윤석종', publisher: '일진사', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788942918942', imageUrl: KB('9788942918942'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000202631856' },
+    { title: '도배기능사 실기문제 해설집', author: '최돈화', publisher: '성안당', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931511932', imageUrl: KB('9788931511932'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216451372' },
+  ],
+
+  // ────────────────────────────────────────
+  '금속재료산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 4권뿐 — 니치 시장
+    { title: '2026 금속재료산업기사 필기+실기', author: '조수연, 제창웅 외', publisher: '구민사', price: 39600, originalPrice: 44000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791168755734', imageUrl: KB('9791168755734'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216980602' },
+    { title: '2026 나합격 금속재료산업기사 필기+실기+무료특강', author: '나합격 콘텐츠 연구소', publisher: '삼원북스', price: 38700, originalPrice: 43000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791194997627', imageUrl: KB('9791194997627'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218939850' },
+    { title: '2026 시대에듀 Win-Q 금속재료산업기사 필기+실기 단기합격', author: '김준태', publisher: '시대고시기획', price: 35100, originalPrice: 39000, discount: '10%', rating: 5.0, reviews: 11, tags: ['베스트'], hasEbook: false, isbn: '9791138396059', imageUrl: KB('9791138396059'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217164433' },
+    { title: '금속재료산업기사 필기 실기', author: '최병도', publisher: '일진사', price: 34200, originalPrice: 38000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788942916719', imageUrl: KB('9788942916719'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000671437' },
+  ],
+
+  // ────────────────────────────────────────
+  '건설기계정비산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 2권뿐 — 니치 시장
+    { title: '패스 건설기계정비산업기사 필기', author: '김인호, 김기홍 외', publisher: '골든벨', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791158066376', imageUrl: KB('9791158066376'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200688124' },
+    { title: '건설기계정비산업기사 실기', author: '김인호, 김기홍 외', publisher: '골든벨', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791158063825', imageUrl: KB('9791158063825'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001762105' },
+  ],
+
+  // ────────────────────────────────────────
+  '기중기운전기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 9권뿐 — 니치 시장
+    { title: '2027 기중기운전기능사필기 기출문제', author: '건설기계교육아카데미', publisher: '책과상상', price: 11700, originalPrice: 13000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673976', imageUrl: KB('9791169673976'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221509155' },
+    { title: '2026 기분파 기중기운전기능사 필기', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 13500, originalPrice: 15000, discount: '10%', rating: 5.0, reviews: 8, tags: ['베스트'], hasEbook: false, isbn: '9791194328391', imageUrl: KB('9791194328391'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218667018' },
+    { title: '2027 시대에듀 AI PASSCODE 기중기운전기능사 필기  CBT기출+AI 분석 모의고사', author: '최진호', publisher: '시대고시기획', price: 13500, originalPrice: 15000, discount: '10%', rating: 5.0, reviews: 6, tags: ['베스트'], hasEbook: false, isbn: '9791143419507', imageUrl: KB('9791143419507'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220923123' },
+    { title: '2025 원큐패스 기중기운전기능사 필기 문제집', author: '다락원아카데미', publisher: '다락원', price: 12600, originalPrice: 14000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927774495', imageUrl: KB('9788927774495'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215130655' },
+    { title: '패스 기중기운전기능사 필기', author: '전문교육기관협의회', publisher: '골든벨', price: 13500, originalPrice: 15000, discount: '10%', rating: 5.0, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9791158067540', imageUrl: KB('9791158067540'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215698913' },
+    { title: '2025 기중기운전기능사 필기 총정리문제', author: '건설기계교육아카데미', publisher: '책과상상', price: 13500, originalPrice: 15000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791169671774', imageUrl: KB('9791169671774'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214554926' },
+    { title: '기중기운전기능사', author: '박광암', publisher: '일진사', price: 12600, originalPrice: 14000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788942915835', imageUrl: KB('9788942915835'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000671356' },
+    { title: '기중기 운전기능사(2019)', author: '이찬수, 황성일', publisher: '복두출판사', price: 20000, rating: 1.3, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791159065583', imageUrl: KB('9791159065583'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001775571' },
+    { title: '2024 완전합격 기중기 운전기능사 필기시험문제', author: '한국건설기계기술연구회', publisher: '크라운출판사', price: 12600, originalPrice: 14000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788940647448', imageUrl: KB('9788940647448'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000208720198' },
+  ],
+
+  // ────────────────────────────────────────
+  '타워크레인운전기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 4권뿐 — 니치 시장
+    { title: '2027 시대에듀 Win-Q 타워크레인운전기능사 필기 단기합격', author: '최평희', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791143417022', imageUrl: KB('9791143417022'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220339730' },
+    { title: '2026 원턴킬 타워크레인 운전기능사 필기시험문제', author: '김정식', publisher: '크라운출판사', price: 20700, originalPrice: 23000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788940649732', imageUrl: KB('9788940649732'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218643049' },
+    { title: '확! 바뀐 패스 타워크레인운전기능사 필기', author: '류중북', publisher: '골든벨', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791158067489', imageUrl: KB('9791158067489'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215069316' },
+    { title: '타워크레인운전기능사 필기(2021)', author: '김희승, 호종관 외', publisher: '성안당', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931590630', imageUrl: KB('9788931590630'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000562365' },
+  ],
+
+  // ────────────────────────────────────────
+  '컨테이너크레인운전기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 1권뿐 — 니치 시장
+    { title: '2026 시대에듀 Win-Q 컨테이너크레인운전기능사 필기 단기합격', author: '최평희', publisher: '시대고시기획', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9791143403735', imageUrl: KB('9791143403735'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218330699' },
+  ],
+
+  // ────────────────────────────────────────
+  '농기계운전기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 2권뿐 — 니치 시장
+    { title: '농기계운전기능사 필기', author: '강진석', publisher: '골든벨', price: 18000, originalPrice: 20000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791158063610', imageUrl: KB('9791158063610'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001762093' },
+    { title: '농기계 운전정비 기능사 필기', author: '강진석', publisher: '골든벨', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791158062231', imageUrl: KB('9791158062231'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001762022' },
+  ],
+
+  // ────────────────────────────────────────
+  '천장크레인운전기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 5권뿐 — 니치 시장
+    { title: '2026 시대에듀 답만 외우는 천장크레인운전기능사 필기 CBT기출문제+모의고사 14회', author: '최진호', publisher: '시대고시기획', price: 16200, originalPrice: 18000, discount: '10%', rating: 5.0, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9791138394833', imageUrl: KB('9791138394833'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216886095' },
+    { title: '2026 천장크레인운전기능사 필기 기출문제', author: '천장크레인연구회', publisher: '책과상상', price: 14400, originalPrice: 16000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673099', imageUrl: KB('9791169673099'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218331395' },
+    { title: '2026 천장크레인운전기능사 필기', author: '천장크레인연구회', publisher: '책과상상', price: 16200, originalPrice: 18000, discount: '10%', rating: 1.3, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791169673082', imageUrl: KB('9791169673082'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218331389' },
+    { title: '천장크레인 운전기능사', author: '이정석', publisher: '남양문화', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788955540697', imageUrl: KB('9788955540697'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000803185' },
+    { title: '천장크레인 운전기능사 필기시험문제(2020)', author: '이정석', publisher: '크라운출판사', price: 16200, originalPrice: 18000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788940642054', imageUrl: KB('9788940642054'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000643897' },
+  ],
+
+  // ────────────────────────────────────────
+  '불도저운전기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 1권뿐 — 니치 시장
+    { title: '2027년 기중기 로더 불도저 운전기능사 기출문제 복원집', author: 'JH건설기계자격시험연구회', publisher: '정훈사', price: 13500, originalPrice: 15000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788961299268', imageUrl: KB('9788961299268'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221599827' },
+  ],
+
+  // ────────────────────────────────────────
+  '로더운전기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 6권뿐 — 니치 시장
+    { title: '2027년 로더운전기능사 필기', author: '건설기계교육아카데미', publisher: '책과상상', price: 13500, originalPrice: 15000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673921', imageUrl: KB('9791169673921'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751800' },
+    { title: '2026 박문각 로더운전기능사 필기 기본서+무료특강', author: '박문각자격시험개발팀', publisher: '박문각', price: 16200, originalPrice: 18000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791175191754', imageUrl: KB('9791175191754'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218570131' },
+    { title: '2026 시대에듀 답만 외우는 로더운전기능사 필기 CBT기출문제+모의고사 14회', author: '최진호', publisher: '시대고시기획', price: 13500, originalPrice: 15000, discount: '10%', rating: 5.0, reviews: 12, tags: ['베스트'], hasEbook: false, isbn: '9791143404237', imageUrl: KB('9791143404237'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218641268' },
+    { title: '2025 원큐패스 로더운전기능사 필기 문제집', author: '다락원아카데미', publisher: '다락원', price: 12600, originalPrice: 14000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927774501', imageUrl: KB('9788927774501'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215131114' },
+    { title: '로더 운전기능사', author: '박광암', publisher: '일진사', price: 12600, originalPrice: 14000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788942915842', imageUrl: KB('9788942915842'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000671357' },
+    { title: '패스 로더운전기능사', author: '전문교육기관협의회', publisher: '골든벨', price: 13500, originalPrice: 15000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791158067571', imageUrl: KB('9791158067571'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215699073' },
+  ],
+
+  // ────────────────────────────────────────
+  '롤러운전기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 5권뿐 — 니치 시장
+    { title: '2027년 롤러운전기능사 필기', author: '건설기계교육아카데미', publisher: '책과상상', price: 13500, originalPrice: 15000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673938', imageUrl: KB('9791169673938'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751807' },
+    { title: '2027 시대에듀 AI PASSCODE 롤러운전기능사 필기 CBT기출+AI 분석 모의고사', author: '최진호', publisher: '시대고시기획', price: 13500, originalPrice: 15000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143422170', imageUrl: KB('9791143422170'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221462172' },
+    { title: '2025 원큐패스 롤러운전기능사 필기 문제집', author: '다락원아카데미', publisher: '다락원', price: 12600, originalPrice: 14000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927774488', imageUrl: KB('9788927774488'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215019709' },
+    { title: '롤러운전기능사', author: '박광암', publisher: '일진사', price: 12600, originalPrice: 14000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788942915859', imageUrl: KB('9788942915859'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000671358' },
+    { title: '롤러 운전기능사 필기(2017)', author: 'GB건설기계자격연구팀', publisher: '골든벨', price: 16200, originalPrice: 18000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791158061289', imageUrl: KB('9791158061289'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001761984' },
+  ],
+
+  // ────────────────────────────────────────
+  '천공기운전기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 2권뿐 — 니치 시장
+    { title: '2026 천공기운전기능사 필기', author: '건설기계교육아카데미', publisher: '책과상상', price: 14400, originalPrice: 16000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673075', imageUrl: KB('9791169673075'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218055117' },
+    { title: '2026 답만 외우는 천공기운전기능사 필기 CBT기출문제+모의고사 14회', author: '최진호', publisher: '시대고시기획', price: 14400, originalPrice: 16000, discount: '10%', rating: 5.0, reviews: 12, tags: ['베스트'], hasEbook: false, isbn: '9791143401861', imageUrl: KB('9791143401861'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218234903' },
+  ],
+
+  // ────────────────────────────────────────
+  '화물운송종사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 에듀윌 화물운송종사 하루합격 5개년 기출문제집', author: '최주영', publisher: '에듀윌', price: 12150, originalPrice: 13500, discount: '10%', rating: 1.3, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791136043597', imageUrl: KB('9791136043597'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220853974' },
+    { title: '2026 1일이면 합격! 끝내주는! 화물운송종사 자격시험문제', author: '대한교통안전연구회', publisher: '크라운출판사', price: 11700, originalPrice: 13000, discount: '10%', rating: 5.0, reviews: 6, tags: ['베스트'], hasEbook: false, isbn: '9788940649893', imageUrl: KB('9788940649893'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218203505' },
+    { title: '2026 시대에듀 답만 외우는 화물운송종사자격 CBT 필기 기출문제+모의고사 14회', author: '최진호', publisher: '시대고시기획', price: 13500, originalPrice: 15000, discount: '10%', rating: 5.0, reviews: 11, tags: ['베스트'], hasEbook: false, isbn: '9791138393522', imageUrl: KB('9791138393522'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216717192' },
+    { title: '2026 화물운송종사자격시험 총정리문제집', author: '화물운송종사자격시험연구회', publisher: '책과상상', price: 10800, originalPrice: 12000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791169672733', imageUrl: KB('9791169672733'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218331356' },
+    { title: '2026 한권으로 합격하는 화물운송종사 자격시험문제', author: '대한교통안전연구회', publisher: '에듀크라운', price: 11700, originalPrice: 13000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788940650585', imageUrl: KB('9788940650585'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218934735' },
+    { title: '2026 기분파 화물운송종사 필기 자격시험', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 11700, originalPrice: 13000, discount: '10%', rating: 5.0, reviews: 5, tags: ['추천'], hasEbook: false, isbn: '9791194328193', imageUrl: KB('9791194328193'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217277865' },
+    { title: '2026 화물운송종사 자격시험 총정리 기출문제집', author: '박래호', publisher: '종이향기', price: 16200, originalPrice: 18000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791174910172', imageUrl: KB('9791174910172'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218096857' },
+    { title: '양재호의 화물운송종사자격시험', author: '양재호', publisher: '트랜북스', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791193643242', imageUrl: KB('9791193643242'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214820429' },
+    { title: '2026 단끝 화물운송종사 필기 5개년 기출문제집', author: '박문각 자격시험 개발팀', publisher: '박문각', price: 9900, originalPrice: 11000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791175191044', imageUrl: KB('9791175191044'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217347194' },
+    { title: '2026 완전합격 화물운송종사 자격시험 총정리문제', author: '대한교통안전연구회', publisher: '크라운출판사', price: 14400, originalPrice: 16000, discount: '10%', rating: 3.8, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788940650134', imageUrl: KB('9788940650134'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216933431' },
+  ],
+
+  // ────────────────────────────────────────
+  '버스운전자격': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027년 버스운전자격시험총정리문제집', author: '버스운전자격시험연구회', publisher: '책과상상', price: 10800, originalPrice: 12000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673679', imageUrl: KB('9791169673679'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751858' },
+    { title: '2027 기분파 버스운전자격시험 필기 문제집', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 11700, originalPrice: 13000, discount: '10%', rating: 5.0, reviews: 8, tags: ['베스트'], hasEbook: false, isbn: '9791194328414', imageUrl: KB('9791194328414'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220843359' },
+    { title: '양재호의 버스운전자격시험', author: '양재호', publisher: '트랜북스', price: 17820, originalPrice: 19800, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791193643488', imageUrl: KB('9791193643488'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219731904' },
+    { title: '2027 시대에듀 버스운전자격시험 문제지', author: '버스운전 자격시험연구회', publisher: '시대고시기획', price: 11700, originalPrice: 13000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791143418098', imageUrl: KB('9791143418098'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220567725' },
+    { title: '2027 완전합격 버스운전 자격시험문제', author: '대한교통안전연구회', publisher: '크라운출판사', price: 11700, originalPrice: 13000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788940651490', imageUrl: KB('9788940651490'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221032679' },
+    { title: '2027 1일이면 끝내주는 버스운전 자격시험 출제문제', author: '대한교통안전연구회', publisher: '크라운출판사', price: 13500, originalPrice: 15000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788940651407', imageUrl: KB('9788940651407'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220502546' },
+    { title: '2027 버스운전자격시험 문제집', author: '버스운전 자격시험연구회', publisher: '책과상상', price: 11700, originalPrice: 13000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791169673662', imageUrl: KB('9791169673662'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221352254' },
+    { title: '2026 초단기합격 버스운전자격시험 적중기출문제집', author: '교통지식연구회', publisher: '지식과 실천', price: 12600, originalPrice: 14000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791193835203', imageUrl: KB('9791193835203'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217602023' },
+    { title: '2027 버스운전 자격시험', author: '버스운전자격시험연구회', publisher: '브레인21', price: 13500, originalPrice: 15000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791192315331', imageUrl: KB('9791192315331'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218269810' },
+    { title: '2026 버스운전 자격시험 실전문제', author: '공무원시험연구소', publisher: '서원각', price: 13500, originalPrice: 15000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125746492', imageUrl: KB('9791125746492'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217542919' },
+  ],
+
+  // ────────────────────────────────────────
+  '1종운전면허(대형)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 8권뿐 — 니치 시장
+    { title: '2026 시대에듀 답만 외우면 무조건 합격 운전면허 필기시험 1종·2종 공통', author: '한국도로교통공단', publisher: '시대고시기획', price: 10800, originalPrice: 12000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], hasEbook: false, isbn: '9791143411716', imageUrl: KB('9791143411716'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219381954' },
+    { title: '2027 기분파 정답이 보이는 운전면허 필기 학과시험문제은행(1종·2종 공통)', author: '한국도로교통공단', publisher: '에듀웨이', price: 10800, originalPrice: 12000, discount: '10%', rating: 5.0, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9791194328452', imageUrl: KB('9791194328452'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221564446' },
+    { title: '2026 운전면허학과시험문제은행 1종.2종', author: '둘출판사 편집부', publisher: '둘 출판사', price: 11700, originalPrice: 13000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788994604541', imageUrl: KB('9788994604541'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218438504' },
+    { title: '2026 운전면허 학과시험문제은행 1000제', author: '한국도로교통공단', publisher: '책과상상', price: 10800, originalPrice: 12000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169672788', imageUrl: KB('9791169672788'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217541819' },
+    { title: '2026년 운전면허 학과시험문제집 1종', author: '도로교통공단', publisher: '윤미디어', price: 10800, originalPrice: 12000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788964091661', imageUrl: KB('9788964091661'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218787437' },
+    { title: '2026년 운전면허 학과시험문제집 1종, 2종', author: '도로교통공단', publisher: '윤미디어', price: 10800, originalPrice: 12000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788964091685', imageUrl: KB('9788964091685'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218787474' },
+    { title: '2026 운전면허 1일완성 제1종 학과시험문제은행', author: '도로교통공단', publisher: '책과상상', price: 10800, originalPrice: 12000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791169672757', imageUrl: KB('9791169672757'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217834969' },
+    { title: '운전면허학과시험문제은행 1종', author: '둘출판사 편집부', publisher: '둘 출판사', price: 9900, originalPrice: 11000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788994604527', imageUrl: KB('9788994604527'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218438498' },
+  ],
+
+  // ────────────────────────────────────────
+  '1종운전면허(보통)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2026 경록 운전면허시험 공단 공식문제 1종 보통 필기', author: '도로교통공단', publisher: '경록', price: 10800, originalPrice: 12000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791194560388', imageUrl: KB('9791194560388'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218147502' },
+    { title: '2026 운전면허시험 제1종 보통면허 합격출제문제', author: '크라운출판사 편집부', publisher: '크라운출판사', price: 10800, originalPrice: 12000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788940649985', imageUrl: KB('9788940649985'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218331431' },
+    { title: '2026 시대에듀 답만 외우면 무조건 합격 운전면허 필기시험 1종·2종 공통', author: '한국도로교통공단', publisher: '시대고시기획', price: 10800, originalPrice: 12000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], hasEbook: false, isbn: '9791143411716', imageUrl: KB('9791143411716'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219381954' },
+    { title: '2027 기분파 정답이 보이는 운전면허 필기 학과시험문제은행(1종·2종 공통)', author: '한국도로교통공단', publisher: '에듀웨이', price: 10800, originalPrice: 12000, discount: '10%', rating: 5.0, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9791194328452', imageUrl: KB('9791194328452'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221564446' },
+    { title: '2026 운전면허학과시험문제은행 1종.2종', author: '둘출판사 편집부', publisher: '둘 출판사', price: 11700, originalPrice: 13000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788994604541', imageUrl: KB('9788994604541'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218438504' },
+    { title: '2026 운전면허 학과시험문제은행 1000제', author: '한국도로교통공단', publisher: '책과상상', price: 10800, originalPrice: 12000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791169672788', imageUrl: KB('9791169672788'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217541819' },
+    { title: '2026년 운전면허 학과시험문제집 1종', author: '도로교통공단', publisher: '윤미디어', price: 10800, originalPrice: 12000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788964091661', imageUrl: KB('9788964091661'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218787437' },
+    { title: '2026년 운전면허 학과시험문제집 1종, 2종', author: '도로교통공단', publisher: '윤미디어', price: 10800, originalPrice: 12000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788964091685', imageUrl: KB('9788964091685'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218787474' },
+    { title: '2026 운전면허 1일완성 제1종 학과시험문제은행', author: '도로교통공단', publisher: '책과상상', price: 10800, originalPrice: 12000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791169672757', imageUrl: KB('9791169672757'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217834969' },
+    { title: '운전면허학과시험문제은행 1종', author: '둘출판사 편집부', publisher: '둘 출판사', price: 9900, originalPrice: 11000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788994604527', imageUrl: KB('9788994604527'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218438498' },
+  ],
+
+  // ────────────────────────────────────────
+  '2종운전면허(보통)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2026 에듀윌 운전면허 필기 답만보고 3일컷(1종, 2종 공통)', author: '한국도로교통공단', publisher: '에듀윌', price: 10800, originalPrice: 12000, discount: '10%', rating: 5.0, reviews: 15, tags: ['베스트'], hasEbook: false, isbn: '9791136041654', imageUrl: KB('9791136041654'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219435900' },
+    { title: '2026 시대에듀 답만 외우면 무조건 합격 운전면허 필기시험 1종·2종 공통', author: '한국도로교통공단', publisher: '시대고시기획', price: 10800, originalPrice: 12000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], hasEbook: false, isbn: '9791143411716', imageUrl: KB('9791143411716'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219381954' },
+    { title: '2027 기분파 정답이 보이는 운전면허 필기 학과시험문제은행(1종·2종 공통)', author: '한국도로교통공단', publisher: '에듀웨이', price: 10800, originalPrice: 12000, discount: '10%', rating: 5.0, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9791194328452', imageUrl: KB('9791194328452'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221564446' },
+    { title: '2026년 운전면허 학과시험문제집 2종', author: '도로교통공단', publisher: '윤미디어', price: 10800, originalPrice: 12000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788964091678', imageUrl: KB('9788964091678'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218787472' },
+    { title: '2026 경록 운전면허시험 공단 공식문제 2종 보통 필기', author: '도로교통공단', publisher: '경록', price: 10800, originalPrice: 12000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791194560265', imageUrl: KB('9791194560265'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218147504' },
+    { title: '2026 운전면허 단숨에 끝내자 2종 문제집', author: '도로교통공단', publisher: '한솔아카데미', price: 11700, originalPrice: 13000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791166548888', imageUrl: KB('9791166548888'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219510078' },
+    { title: '2026 김영북스 답만 봐도 합격! 운전면허 필기 1, 2종 공통   ​', author: '도로교통공단', publisher: '김영북스', price: 9900, originalPrice: 11000, discount: '10%', rating: 5.0, reviews: 9, tags: ['추천'], hasEbook: false, isbn: '9791173491139', imageUrl: KB('9791173491139'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218239331' },
+    { title: '2026 이기적 운전면허 필기 문제은행 1, 2종 공통', author: '도로교통공단', publisher: '영진닷컴', price: 10800, originalPrice: 12000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9788931482867', imageUrl: KB('9788931482867'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219311040' },
+    { title: '2026년 운전면허 학과시험문제집 1종, 2종', author: '도로교통공단', publisher: '윤미디어', price: 10800, originalPrice: 12000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788964091685', imageUrl: KB('9788964091685'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218787474' },
+    { title: '2026 운전면허학과시험문제은행 2종', author: '둘출판사 편집부', publisher: '둘 출판사', price: 9900, originalPrice: 11000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788994604534', imageUrl: KB('9788994604534'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218438500' },
+  ],
+
+  // ────────────────────────────────────────
+  '택시운전자격': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027년 택시운전자격시험문제집[서울,경기.인천지역]', author: '택시운전자격시험연구회', publisher: '책과상상', price: 11700, originalPrice: 13000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673617', imageUrl: KB('9791169673617'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751854' },
+    { title: '2027년 택시운전자격시험문제집[대전,충남.충북지역]', author: '택시운전자격시험연구회', publisher: '책과상상', price: 11700, originalPrice: 13000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673648', imageUrl: KB('9791169673648'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751852' },
+    { title: '2026 단끝 택시운전 자격시험 CBT 기출복원문제집+무료특강-서울·경기·인천', author: '윤정현, 정한진', publisher: '박문각', price: 11700, originalPrice: 13000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791175194496', imageUrl: KB('9791175194496'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218783064' },
+    { title: '2027 한번에 끝내주기 택시운전 자격시험 총정리문제(서울, 경기, 인천)', author: '대한교통안전연구회', publisher: '크라운출판사', price: 11700, originalPrice: 13000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788940651568', imageUrl: KB('9788940651568'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221564628' },
+    { title: '2026 택시운전자격시험 문제집: 대구·경북·강원도지역 응시자용', author: '택시운전자격시험연구회', publisher: '책과상상', price: 10800, originalPrice: 12000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169672511', imageUrl: KB('9791169672511'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218086612' },
+    { title: '2026 택시운전자격시험문제집(서울,경기,인천지역)', author: '택시운전자격시험연구회', publisher: '책과상상', price: 10800, originalPrice: 12000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791169672498', imageUrl: KB('9791169672498'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218331354' },
+    { title: '2026 택시운전자격시험 문제집: 광주·전남·전북·제주도지역 응시자용', author: '택시운전자격시험연구회', publisher: '책과상상', price: 10800, originalPrice: 12000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791169672535', imageUrl: KB('9791169672535'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218086621' },
+    { title: '2027 초단기합격 택시운전자격시험 적중기출문제집: 광주 전남 전북 제주', author: '교통지식연구회', publisher: '지식과 실천', price: 11700, originalPrice: 13000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791193835258', imageUrl: KB('9791193835258'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221654476' },
+    { title: '2027 초단기합격 택시운전자격시험 적중기출문제집: 부산 울산 경남', author: '교통지식연구회', publisher: '지식과 실천', price: 11700, originalPrice: 13000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791193835227', imageUrl: KB('9791193835227'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221654508' },
+    { title: '2026 한번에 끝내주기 택시운전 자격시험 총정리문제: 대전, 충남, 충북', author: '대한교통안전연구회', publisher: '크라운출판사', price: 11700, originalPrice: 13000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788940650677', imageUrl: KB('9788940650677'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219027010' },
+  ],
+
+  // ────────────────────────────────────────
+  '이륜자동차운전면허': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 5권뿐 — 니치 시장
+    { title: '2026 이륜자동차운전면허 학과시험문제은행 800제', author: '한국도로교통공단', publisher: '책과상상', price: 10800, originalPrice: 12000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791169672795', imageUrl: KB('9791169672795'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217541822' },
+    { title: '2026 100% 완전합격!! 이륜자동차 운전면허 시험문제', author: '한국도로교통공단', publisher: '크라운출판사', price: 10800, originalPrice: 12000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788940651193', imageUrl: KB('9788940651193'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220096847' },
+    { title: '2027 경록 이륜자동차 운전면허시험 도로교통공사 공식문제', author: '한국도로교통공단', publisher: '경록', price: 10800, originalPrice: 12000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791194560920', imageUrl: KB('9791194560920'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219917395' },
+    { title: '2026 이륜자동차 운전면허시험문제 너!! 한번에 끝내 줄께!', author: '도로교통공단', publisher: '크라운출판사', price: 10800, originalPrice: 12000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788940649848', imageUrl: KB('9788940649848'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218676687' },
+    { title: '2022 이륜자동차 운전면허 500제', author: '도로교통공단, 박성지', publisher: '박문각', price: 9000, originalPrice: 10000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791167044792', imageUrl: KB('9791167044792'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001848966' },
+  ],
+
+  // ────────────────────────────────────────
+  '자동차차체수리기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 2권뿐 — 니치 시장
+    { title: '패스 자동차차체수리기능사 필기', author: '김태원, 박상윤 외', publisher: '골든벨', price: 23400, originalPrice: 26000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791124114797', imageUrl: KB('9791124114797'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220861013' },
+    { title: '202X 자동차차체수리기능사 필기', author: '김현열, 오만진 외', publisher: '구민사', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791168757592', imageUrl: KB('9791168757592'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221641017' },
+  ],
+
+  // ────────────────────────────────────────
+  '자동차보수도장기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 3권뿐 — 니치 시장
+    { title: '2026 확 바뀐 패스 자동차보수도장기능사 필기', author: 'GB기획센터', publisher: '골든벨', price: 21600, originalPrice: 24000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791124114117', imageUrl: KB('9791124114117'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218962925' },
+    { title: '2026 자동차보수도장기능사 필기', author: '장영오, 이종호', publisher: '구민사', price: 24300, originalPrice: 27000, discount: '10%', rating: 3.2, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791168756571', imageUrl: KB('9791168756571'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218820671' },
+    { title: '2027 자동차보수도장기능사 필기 예상문제집', author: '에듀채널 편집부', publisher: '스터디채널', price: 16200, originalPrice: 18000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176181655', imageUrl: KB('9791176181655'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221330028' },
+  ],
+
+  // ────────────────────────────────────────
+  '기계설계산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2026 나합격 기계설계산업기사 필기+무료특강 세트', author: '나합격 콘텐츠 연구소', publisher: '삼원북스', price: 32400, originalPrice: 36000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791194997085', imageUrl: KB('9791194997085'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218082105' },
+    { title: '2026 Win-Q 기계설계산업기사 필기 단기합격', author: '정의', publisher: '시대고시기획', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], hasEbook: false, isbn: '9791143401878', imageUrl: KB('9791143401878'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218751559' },
+    { title: '2027 기계설계산업기사 필기+전 과목 무료동영상', author: '다솔유캠퍼스', publisher: '예문사', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788927462675', imageUrl: KB('9788927462675'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220350463' },
+    { title: '일반기계기사 기계설계산업기사 건설기계설비기사/산업기사 작업형 실기', author: '메카피아, 노수황', publisher: '메카피아', price: 30600, originalPrice: 34000, discount: '10%', rating: 4.1, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791162480311', imageUrl: KB('9791162480311'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001813341' },
+    { title: '기계 인벤터-3D/2D 실기 활용서[일반기계기사, 기계설계산업기사, 전산응용기계제도기능사 대비]', author: '권신혁', publisher: '예문사', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927450306', imageUrl: KB('9788927450306'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201944602' },
+    { title: '2026 일반기계기사 기계설계산업기사 전산응용기계제도기능사 실기 출제도면집', author: '이현문', publisher: '세영에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 1.3, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791198386458', imageUrl: KB('9791198386458'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216063918' },
+    { title: '기계설계산업기사', author: '김순채', publisher: '엔지니어데이터넷', price: 32000, rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791198598363', imageUrl: KB('9791198598363'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213841667' },
+    { title: '전산응용기계제도 기계설계산업기사 2D & 3D 실기 퍼펙트 가이드북', author: '조성일, 이원모 외', publisher: '메카피아', price: 27000, originalPrice: 30000, discount: '10%', rating: 1.3, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791185276144', imageUrl: KB('9791185276144'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001865182' },
+    { title: '기계설계산업기사 실기 출제도면집', author: '메카피아', publisher: '메카피아', price: 23400, originalPrice: 26000, discount: '10%', rating: 3.2, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9791162480762', imageUrl: KB('9791162480762'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001813362' },
+    { title: '2025 합격Easy 기계설계산업기사 필기', author: '정연택', publisher: '건기원', price: 33300, originalPrice: 37000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791157678556', imageUrl: KB('9791157678556'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214526744' },
+  ],
+
+  // ────────────────────────────────────────
+  '선반기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 시대에듀 무료 동영상이 있는 Win-Q 컴퓨터응용선반·밀링기능사 필기 단기합격', author: '박병욱', publisher: '시대고시기획', price: 30600, originalPrice: 34000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143421296', imageUrl: KB('9791143421296'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221581754' },
+    { title: '2026 100% 무료강의 제공되는 컴퓨터응용 선반&밀링기능사 필기 실기 찐정리 이론+예상기출문제집', author: '정인훈, 고강호', publisher: '지식오름', price: 29700, originalPrice: 33000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791174910615', imageUrl: KB('9791174910615'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218913970' },
+    { title: '2027 박문각 컴퓨터응용선반 밀링기능사 필기 8개년 기출문제집+무료특강', author: '박수한, 정휘영', publisher: '박문각', price: 27900, originalPrice: 31000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176494595', imageUrl: KB('9791176494595'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221506219' },
+    { title: '2027 컴퓨터응용선반.밀링기능사 필기', author: '김원중', publisher: '책과상상', price: 20700, originalPrice: 23000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169674263', imageUrl: KB('9791169674263'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221636451' },
+    { title: '2027 컴퓨터응용선반기능사 필기 기출문제(기출+적중모의고사)', author: '김원중', publisher: '책과상상', price: 14400, originalPrice: 16000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169674270', imageUrl: KB('9791169674270'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221566448' },
+    { title: '2025 컴퓨터응용선반 밀링기능사 필기 5개년 과년도 1800제', author: '정연택', publisher: '건기원', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791157678662', imageUrl: KB('9791157678662'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215015499' },
+    { title: '컴퓨터응용선반·밀링 기능사 필기+무료강좌', author: '다솔유캠퍼스, 이영숙', publisher: '예문사', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788927450276', imageUrl: KB('9788927450276'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201854020' },
+    { title: '컴퓨터응용 선반 밀링기능사 필기 총정리', author: '하종국', publisher: '일진사', price: 23400, originalPrice: 26000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788942916979', imageUrl: KB('9788942916979'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000671462' },
+    { title: '컴퓨터응용선반기능사 필기', author: '심해성, 김정권', publisher: '엔플북스', price: 17100, originalPrice: 19000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788968133091', imageUrl: KB('9788968133091'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001051908' },
+    { title: '컴퓨터응용 밀링 선반 기능사 필기(단기완성)', author: '김화정, 박정만', publisher: '메카피아', price: 21600, originalPrice: 24000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791162480496', imageUrl: KB('9791162480496'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001813350' },
+  ],
+
+  // ────────────────────────────────────────
+  '밀링기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 시대에듀 무료 동영상이 있는 Win-Q 컴퓨터응용선반·밀링기능사 필기 단기합격', author: '박병욱', publisher: '시대고시기획', price: 30600, originalPrice: 34000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143421296', imageUrl: KB('9791143421296'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221581754' },
+    { title: '2026 100% 무료강의 제공되는 컴퓨터응용 선반&밀링기능사 필기 실기 찐정리 이론+예상기출문제집', author: '정인훈, 고강호', publisher: '지식오름', price: 29700, originalPrice: 33000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791174910615', imageUrl: KB('9791174910615'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218913970' },
+    { title: '2027 박문각 컴퓨터응용선반 밀링기능사 필기 8개년 기출문제집+무료특강', author: '박수한, 정휘영', publisher: '박문각', price: 27900, originalPrice: 31000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176494595', imageUrl: KB('9791176494595'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221506219' },
+    { title: '2027 컴퓨터응용선반.밀링기능사 필기', author: '김원중', publisher: '책과상상', price: 20700, originalPrice: 23000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169674263', imageUrl: KB('9791169674263'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221636451' },
+    { title: '2027 컴퓨터응용밀링기능사 필기 기출문제(기출+적중모의고사)', author: '김원중', publisher: '책과상상', price: 14400, originalPrice: 16000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169674287', imageUrl: KB('9791169674287'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221566456' },
+    { title: '2025 컴퓨터응용선반 밀링기능사 필기 5개년 과년도 1800제', author: '정연택', publisher: '건기원', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791157678662', imageUrl: KB('9791157678662'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215015499' },
+    { title: '컴퓨터응용선반·밀링 기능사 필기+무료강좌', author: '다솔유캠퍼스, 이영숙', publisher: '예문사', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788927450276', imageUrl: KB('9788927450276'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201854020' },
+    { title: '컴퓨터응용 밀링기능사 필기 실기', author: '정연택, 조영배 외', publisher: '건기원', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791157674695', imageUrl: KB('9791157674695'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001758499' },
+    { title: '컴퓨터응용 선반 밀링기능사 필기 총정리', author: '하종국', publisher: '일진사', price: 23400, originalPrice: 26000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788942916979', imageUrl: KB('9788942916979'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000671462' },
+    { title: 'SolidCAM 기반 컴퓨터 응용 밀링기능사 실기 가이드 Ver 1', author: '윤여민', publisher: '바른북스', price: 13500, originalPrice: 15000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791172633011', imageUrl: KB('9791172633011'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216298592' },
+  ],
+
+  // ────────────────────────────────────────
+  '기계정비산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 9권뿐 — 니치 시장
+    { title: '기계정비 산업기사 기계정비실무 실기', author: '박준호, 윤순배 외', publisher: '광문각', price: 20000, tags: ['베스트'], hasEbook: false, isbn: '9788970939759', imageUrl: KB('9788970939759'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001091422' },
+    { title: '기계정비산업기사 실기', author: '기계정비시험연구회', publisher: '일진사', price: 18000, originalPrice: 20000, discount: '10%', rating: 1.3, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788942917655', imageUrl: KB('9788942917655'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200857276' },
+    { title: '기계정비산업기사 필기(2019)', author: '손종원, 조대희 외', publisher: '건기원', price: 35100, originalPrice: 39000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791157674107', imageUrl: KB('9791157674107'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001758444' },
+    { title: '기계정비 산업기사 필기', author: '기계정비시험연구회', publisher: '일진사', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788942916627', imageUrl: KB('9788942916627'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000671428' },
+    { title: '기계정비산업기사 실기: 기계 정비 실무', author: '박동순', publisher: '건기원', price: 18900, originalPrice: 21000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791157673414', imageUrl: KB('9791157673414'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001758375' },
+    { title: '기계정비산업기사 필기(2018)', author: '박병호', publisher: '문운당', price: 30000, tags: ['추천'], hasEbook: false, isbn: '9791156923411', imageUrl: KB('9791156923411'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001747763' },
+    { title: '2024 기계정비산업기사 필기', author: '마용화', publisher: '책과상상', price: 18000, originalPrice: 20000, discount: '10%', rating: 2.5, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9791169670272', imageUrl: KB('9791169670272'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000210532179' },
+    { title: '패스 건설기계정비산업기사 필기', author: '김인호, 김기홍 외', publisher: '골든벨', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791158066376', imageUrl: KB('9791158066376'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200688124' },
+    { title: '건설기계정비산업기사 실기', author: '김인호, 김기홍 외', publisher: '골든벨', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791158063825', imageUrl: KB('9791158063825'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001762105' },
+  ],
+
+  // ────────────────────────────────────────
+  '건축설비산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 5권뿐 — 니치 시장
+    { title: '2027 건축설비산업기사 필기', author: '조성안, 이석훈', publisher: '기문사', price: 40500, originalPrice: 45000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791194568599', imageUrl: KB('9791194568599'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221280627' },
+    { title: '2026 실전단기완성 건축설비산업기사 실기', author: '조성안', publisher: '기문사', price: 22500, originalPrice: 25000, discount: '10%', rating: 3.8, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791194568483', imageUrl: KB('9791194568483'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219976107' },
+    { title: '2026 건축설비산업기사 실기', author: '조성안', publisher: '기문사', price: 49500, originalPrice: 55000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791194568308', imageUrl: KB('9791194568308'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218667698' },
+    { title: '2027 핵심기출 건축설비산업기사 필기', author: '조성안, 이석훈', publisher: '기문사', price: 27900, originalPrice: 31000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791194568636', imageUrl: KB('9791194568636'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221280641' },
+    { title: '2027 Compact 건축설비산업기사 필기', author: '조성안, 이석훈', publisher: '기문사', price: 29700, originalPrice: 33000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791194568612', imageUrl: KB('9791194568612'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221280694' },
+  ],
+
+  // ────────────────────────────────────────
+  '건설재료시험기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 7권뿐 — 니치 시장
+    { title: '2026 건설재료시험기사 산업기사 실기 3주완성 필답형+작업형', author: '고길용, 한웅규 외', publisher: '한솔아카데미', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 8, tags: ['베스트'], hasEbook: false, isbn: '9791166548727', imageUrl: KB('9791166548727'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219488783' },
+    { title: '2027 건설재료시험기사 필기', author: '강두헌, 전병렬', publisher: '예문에듀', price: 24300, originalPrice: 27000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791163866176', imageUrl: KB('9791163866176'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221643101' },
+    { title: '2026 건설재료시험기사 14개년 과년도문제 해설', author: '고길용, 정용욱 외', publisher: '한솔아카데미', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 11, tags: ['베스트'], hasEbook: false, isbn: '9791166548154', imageUrl: KB('9791166548154'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219245875' },
+    { title: '2026 명품 건설재료시험기사 필기', author: '김현우', publisher: '올배움', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791165171889', imageUrl: KB('9791165171889'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218667123' },
+    { title: '2025 합격Easy 건설재료시험기사 필기', author: '고행만', publisher: '건기원', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791157678563', imageUrl: KB('9791157678563'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214526637' },
+    { title: '2026 건설재료시험기사 과년도 필기', author: '김현우', publisher: '올배움', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791165171896', imageUrl: KB('9791165171896'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218667129' },
+    { title: '2026 스마트 7개년 과년도 건설재료시험기사 필기', author: '박영태', publisher: '성안당', price: 35100, originalPrice: 39000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788931512342', imageUrl: KB('9788931512342'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218171642' },
+  ],
+
+  // ────────────────────────────────────────
+  '철도신호기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 1권뿐 — 니치 시장
+    { title: '철도신호 기사,산업기사', author: '철도자격시험연구회', publisher: '성안당', price: 48600, originalPrice: 54000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788931513660', imageUrl: KB('9788931513660'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214926920' },
+  ],
+
+  // ────────────────────────────────────────
+  '항공기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2026 항공산업기사 실기', author: '장성희', publisher: '성안당', price: 26100, originalPrice: 29000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931584080', imageUrl: KB('9788931584080'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218941431' },
+    { title: '2027 항공산업기사 필기', author: '장성희', publisher: '성안당', price: 38700, originalPrice: 43000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931505818', imageUrl: KB('9788931505818'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221031542' },
+    { title: '항공산업기사 1: 항공역학', author: '항공산업기사 검정연구회', publisher: '연경문화사', price: 8100, originalPrice: 9000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788982981593', imageUrl: KB('9788982981593'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001282017' },
+    { title: '2026 항공산업기사 필기', author: '항공기술교육아카데미', publisher: '책과상상', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169672931', imageUrl: KB('9791169672931'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217577896' },
+    { title: '항공산업기사 2: 항공기관', author: '항공산업기사 검정연구회', publisher: '연경문화사', price: 8100, originalPrice: 9000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788982981609', imageUrl: KB('9788982981609'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001282018' },
+    { title: '항공산업기사 3: 항공기체', author: '항공산업기사 검정연구회', publisher: '연경문화사', price: 8100, originalPrice: 9000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788982981616', imageUrl: KB('9788982981616'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001282019' },
+    { title: '항공산업기사 4: 항공장비', author: '항공산업기사 검정연구회', publisher: '연경문화사', price: 8100, originalPrice: 9000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788982981623', imageUrl: KB('9788982981623'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001282020' },
+    { title: '2026 시대에듀 Win-Q 항공산업기사 필기 단기합격', author: '윤재영, 이한상', publisher: '시대고시기획', price: 32400, originalPrice: 36000, discount: '10%', rating: 5.0, reviews: 13, tags: ['추천'], hasEbook: false, isbn: '9791138396103', imageUrl: KB('9791138396103'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217119501' },
+    { title: '항공산업기사 필기시험문제', author: '최형식, 권효덕 외', publisher: '크라운출판사', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788940640241', imageUrl: KB('9788940640241'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000643727' },
+    { title: '항공산업기사 필기(2020)', author: '김진우', publisher: '일진사', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.7, reviews: 8, tags: ['추천'], hasEbook: false, isbn: '9788942914418', imageUrl: KB('9788942914418'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000671233' },
+  ],
+
+  // ────────────────────────────────────────
+  '철도신호산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 2권뿐 — 니치 시장
+    { title: '철도신호 산업기사 필기 기출 및 예상문제집', author: '김장열', publisher: '성안당', price: 40500, originalPrice: 45000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788931513820', imageUrl: KB('9788931513820'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220046444' },
+    { title: '철도신호 기사,산업기사', author: '철도자격시험연구회', publisher: '성안당', price: 48600, originalPrice: 54000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788931513660', imageUrl: KB('9788931513660'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214926920' },
+  ],
+
+  // ────────────────────────────────────────
+  '한식조리기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2026 에듀윌 한식조리기능사 필기 싹쓸이 총정리문제집', author: '김선희, 김자경 외', publisher: '에듀윌', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.6, reviews: 24, tags: ['베스트'], hasEbook: false, isbn: '9791136040312', imageUrl: KB('9791136040312'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218732582' },
+    { title: '에듀윌 한식조리기능사 실기 한권끝장+과제 무료강의', author: '김선희, 김자경 외', publisher: '에듀윌', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 15, tags: ['베스트'], hasEbook: false, isbn: '9791136040077', imageUrl: KB('9791136040077'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218918504' },
+    { title: '2027 한식조리기능사 필기 초단기 CBT 핵심이론&기출문제 100% 저자직강 무료강의', author: '파이팅혼공TV 컨텐츠 개발팀', publisher: '지식오름', price: 14850, originalPrice: 16500, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791174911568', imageUrl: KB('9791174911568'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220774307' },
+    { title: '2027 원큐패스 한식조리기능사 필기', author: '이현경', publisher: '다락원', price: 17100, originalPrice: 19000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927776000', imageUrl: KB('9788927776000'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221462872' },
+    { title: '2026 이기적 한식조리기능사 필기+실기 올인원', author: '최경선', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788931479515', imageUrl: KB('9788931479515'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219083479' },
+    { title: '2027 시대에듀 답만 외우는 한식조리기능사 필기 CBT기출문제+모의고사 14회', author: '한은숙', publisher: '시대고시기획', price: 15300, originalPrice: 17000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143405494', imageUrl: KB('9791143405494'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221581744' },
+    { title: '2026 박문각 한식조리기능사 필기+무료특강', author: '안정은, 신훈희', publisher: '박문각', price: 16200, originalPrice: 18000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791175193390', imageUrl: KB('9791175193390'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218301905' },
+    { title: '2027 이기적 한식조리기능사 필기(이론+기출)', author: '최경선', publisher: '영진닷컴', price: 15300, originalPrice: 17000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931482430', imageUrl: KB('9788931482430'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221644832' },
+    { title: '2027 한식조리기능사 필기 빈출 600제', author: '타임 NCS 연구소', publisher: '시스컴', price: 13500, originalPrice: 15000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176940412', imageUrl: KB('9791176940412'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221281912' },
+    { title: '2027 한식조리기능사 필기', author: '국가자격시험연구회', publisher: '책과상상', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791169673716', imageUrl: KB('9791169673716'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221636483' },
+  ],
+
+  // ────────────────────────────────────────
+  '양식조리기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2026 에듀윌 한식 양식조리기능사 필기 D-7 1주끝장+무료특강', author: '이유나', publisher: '에듀윌', price: 13500, originalPrice: 15000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791136040879', imageUrl: KB('9791136040879'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219018465' },
+    { title: '2026 에듀윌 양식조리기능사 필기 싹쓸이 총정리문제집', author: '송은주, 김선희 외', publisher: '에듀윌', price: 15300, originalPrice: 17000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791136040329', imageUrl: KB('9791136040329'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218732585' },
+    { title: '2027 양식조리기능사 실기시험문제', author: '이가희, 김창희', publisher: '책과상상', price: 14400, originalPrice: 16000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673778', imageUrl: KB('9791169673778'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221509182' },
+    { title: '2026 원큐패스 양식조리기능사 필기 빈출문제 10회', author: '이현경', publisher: '다락원', price: 12600, originalPrice: 14000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788927775096', imageUrl: KB('9788927775096'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218795776' },
+    { title: '2026 이기적 양식조리기능사 필기+실기 올인원', author: '최경선', publisher: '영진닷컴', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788931479522', imageUrl: KB('9788931479522'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219083512' },
+    { title: '에듀윌 양식 조리기능사 실기', author: '송은주, 김자경 외', publisher: '에듀윌', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791136024077', imageUrl: KB('9791136024077'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200777890' },
+    { title: '시사쿡 한식·양식조리기능사 필기', author: '조경인, 윤인자', publisher: '시사북스', price: 13320, originalPrice: 14800, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788940294666', imageUrl: KB('9788940294666'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220341339' },
+    { title: '2026 박문각 양식조리기능사 필기 8개년 기출문제집 + 무료특강', author: '안이준', publisher: '박문각', price: 13500, originalPrice: 15000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791175197992', imageUrl: KB('9791175197992'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219435792' },
+    { title: '2027 양식조리기능사 필기', author: '국가자격시험연구회', publisher: '책과상상', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791169673723', imageUrl: KB('9791169673723'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221636490' },
+    { title: '2027 원큐패스 양식조리기능사 필기', author: '이현경, 곽다영 외', publisher: '다락원', price: 17100, originalPrice: 19000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927776024', imageUrl: KB('9788927776024'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221572073' },
+  ],
+
+  // ────────────────────────────────────────
+  '중식조리기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '에듀윌 중식 조리기능사 실기', author: '문혜자', publisher: '에듀윌', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.4, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791136024039', imageUrl: KB('9791136024039'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200777897' },
+    { title: '2027 원큐패스 중식조리기능사 필기', author: '이현경, 곽다영 외', publisher: '다락원', price: 17100, originalPrice: 19000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927776048', imageUrl: KB('9788927776048'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221572079' },
+    { title: '2027 중식조리기능사 필기', author: '국가자격시험연구회', publisher: '책과상상', price: 16200, originalPrice: 18000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673730', imageUrl: KB('9791169673730'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221636493' },
+    { title: '2027 중식조리기능사 실기시험문제', author: '노수정', publisher: '책과상상', price: 14400, originalPrice: 16000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673792', imageUrl: KB('9791169673792'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221509228' },
+    { title: '2026 원큐패스 중식조리기능사 실기', author: '이현경, 정흥옥', publisher: '다락원', price: 14400, originalPrice: 16000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788927775058', imageUrl: KB('9788927775058'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218911892' },
+    { title: '중식 조리기능사 실기', author: '전현근, 남은경 외', publisher: '지구문화', price: 17000, tags: ['추천'], hasEbook: false, isbn: '9788970069579', imageUrl: KB('9788970069579'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219350261' },
+    { title: '중식조리기능사 실기 20품목', author: '한국식음료외식조리교육협회', publisher: '백산출판사', price: 12000, tags: ['추천'], hasEbook: false, isbn: '9791173851483', imageUrl: KB('9791173851483'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219435439' },
+    { title: '2025 경록 새 중식조리기능사 실기', author: '임인숙, 이경주 외', publisher: '경록', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791193559895', imageUrl: KB('9791193559895'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214911618' },
+    { title: '2026 NCS 중식조리기능사 필기시험문제', author: '노수정', publisher: '크라운출판사', price: 23400, originalPrice: 26000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788940650394', imageUrl: KB('9788940650394'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218642721' },
+    { title: '중식 조리기능사 실기(20품목)', author: '강란기, 최송산', publisher: '유강', price: 10800, originalPrice: 12000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791190591102', imageUrl: KB('9791190591102'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001941989' },
+  ],
+
+  // ────────────────────────────────────────
+  '일식조리기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 2권뿐 — 니치 시장
+    { title: 'Let’s Pass 일식조리기능사, 일식조리산업기사', author: '전현근, 윤옥희 외', publisher: '지식인', price: 22000, tags: ['베스트'], hasEbook: false, isbn: '9791190815994', imageUrl: KB('9791190815994'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061532831' },
+    { title: '2023 중식ㆍ일식조리기능사 실기 한권합격', author: '배은자, 송정애 외', publisher: '시대고시기획', price: 21600, originalPrice: 24000, discount: '10%', rating: 5.0, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9791138335508', imageUrl: KB('9791138335508'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200134888' },
+  ],
+
+  // ────────────────────────────────────────
+  '복어조리기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2026 이기적 중식·일식·복어조리기능사 필기+실기 올인원', author: '최경선', publisher: '영진닷컴', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9788931479539', imageUrl: KB('9788931479539'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219083548' },
+    { title: '2027 원큐패스 일식복어조리기능사 필기', author: '이현경, 김욱진', publisher: '다락원', price: 17100, originalPrice: 19000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927776062', imageUrl: KB('9788927776062'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221572221' },
+    { title: '2026 원큐패스 일식복어조리기능사 실기', author: '이승철, 김욱진', publisher: '다락원', price: 16200, originalPrice: 18000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927775072', imageUrl: KB('9788927775072'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218896367' },
+    { title: '에듀윌 일식ㆍ복어 조리기능사 실기', author: '최은주', publisher: '에듀윌', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791136024022', imageUrl: KB('9791136024022'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200777899' },
+    { title: '2027 일식.복어조리기능사 실기시험문제', author: '노수정', publisher: '책과상상', price: 16200, originalPrice: 18000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673785', imageUrl: KB('9791169673785'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221509311' },
+    { title: '최신 복어조리 기능사, 산업기사, 기능장 실기', author: '최재홍, 이재상 외', publisher: '백산출판사', price: 27000, tags: ['추천'], hasEbook: false, isbn: '9791165673987', imageUrl: KB('9791165673987'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001839131' },
+    { title: '일식 복어조리기능사', author: '허이재, 조병숙 외', publisher: '백산출판사', price: 22000, tags: ['추천'], hasEbook: false, isbn: '9791173850936', imageUrl: KB('9791173850936'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219010848' },
+    { title: '2025 경록 새 일식복어조리기능사 실기', author: '임인숙, 이경주 외', publisher: '경록', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791193559918', imageUrl: KB('9791193559918'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214911842' },
+    { title: '일식 복어 조리기능사 실기', author: '서재실', publisher: '유강', price: 12600, originalPrice: 14000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791190591126', imageUrl: KB('9791190591126'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001941991' },
+    { title: '일식 복어 조리기능사 필기(이론+문제)', author: '강란기', publisher: '유강', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791190591164', imageUrl: KB('9791190591164'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001941994' },
+  ],
+
+  // ────────────────────────────────────────
+  '한식조리산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 시대에듀 한식조리산업기사·조리기능장 필기 한권으로 끝내기', author: '정상열, 김옥선', publisher: '시대고시기획', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791143416650', imageUrl: KB('9791143416650'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220339707' },
+    { title: '한식, 양식, 중식, 일식, 복어 조리산업기사 실기', author: '강란기, 봉준호 외', publisher: '유강', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.7, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791190591270', imageUrl: KB('9791190591270'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001942003' },
+    { title: '2023 한식조리산업기사 실기', author: '이수진, 조성순 외', publisher: '백산출판사', price: 22000, tags: ['베스트'], hasEbook: false, isbn: '9791165676902', imageUrl: KB('9791165676902'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000208506776' },
+    { title: '한식조리기능사 산업기사', author: '이영옥, 정숙희 외', publisher: '대왕사', price: 20000, tags: ['베스트'], hasEbook: false, isbn: '9788945658586', imageUrl: KB('9788945658586'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000679600' },
+    { title: '완전합격 한식조리산업기사 실기 출제문제', author: '전경철, 전장철 외', publisher: '크라운출판사', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788940644737', imageUrl: KB('9788940644737'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000644145' },
+    { title: '한식조리산업기사', author: '김덕희, 김정순', publisher: '백산출판사', price: 25000, tags: ['추천'], hasEbook: false, isbn: '9788961835350', imageUrl: KB('9788961835350'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000956886' },
+    { title: '한식조리 산업기사 실기', author: '이영순', publisher: '일진사', price: 23400, originalPrice: 26000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788942910748', imageUrl: KB('9788942910748'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000670885' },
+    { title: '한식조리실기(기능사 산업기사)', author: '김경옥, 정숙희 외', publisher: '예문사', price: 17100, originalPrice: 19000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927413004', imageUrl: KB('9788927413004'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000521402' },
+    { title: '한식조리 기능사ㆍ산업기사', author: '강현우, 조성순 외', publisher: '효일', price: 28000, tags: ['추천'], hasEbook: false, isbn: '9788984894884', imageUrl: KB('9788984894884'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001324769' },
+    { title: '2026 한방에 합격하는 경록 조리산업기사 한식 실기', author: '임인숙, 최미숙 외', publisher: '경록', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791194560357', imageUrl: KB('9791194560357'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217503298' },
+  ],
+
+  // ────────────────────────────────────────
+  '양식조리산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 5권뿐 — 니치 시장
+    { title: '한식, 양식, 중식, 일식, 복어 조리산업기사 실기', author: '강란기, 봉준호 외', publisher: '유강', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.7, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791190591270', imageUrl: KB('9791190591270'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001942003' },
+    { title: '양식조리기능사 산업기사', author: '김병희, 양동인 외', publisher: '효일', price: 23000, rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788984894457', imageUrl: KB('9788984894457'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001324748' },
+    { title: '2026 박문각 조리산업기사·기능장 필기+무료특강', author: '전경철', publisher: '박문각', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791175192362', imageUrl: KB('9791175192362'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218096451' },
+    { title: '2026 경록 조리산업기사 양식ㆍ중식ㆍ일식ㆍ복어 실기', author: '임인숙, 이경주 외', publisher: '경록', price: 35100, originalPrice: 39000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791194560609', imageUrl: KB('9791194560609'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219020087' },
+    { title: '조리 산업기사 기능장', author: '진양호', publisher: '지구문화사', price: 18000, originalPrice: 20000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788970064765', imageUrl: KB('9788970064765'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001065809' },
+  ],
+
+  // ────────────────────────────────────────
+  '조리기능장': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 시대에듀 한식조리산업기사·조리기능장 필기 한권으로 끝내기', author: '정상열, 김옥선', publisher: '시대고시기획', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791143416650', imageUrl: KB('9791143416650'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220339707' },
+    { title: '2027 경록 조리기능장 한식 실기', author: '임인숙, 안상란', publisher: '경록', price: 37800, originalPrice: 42000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791124897072', imageUrl: KB('9791124897072'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221696443' },
+    { title: '중국요리(중식조리기능장 시험대비)', author: '서정희', publisher: '예문사', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788927307297', imageUrl: KB('9788927307297'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000520477' },
+    { title: '복어조리기능장·산업기사·기능사 완전정복', author: '서재실', publisher: '백산출판사', price: 21000, tags: ['베스트'], hasEbook: false, isbn: '9791166392825', imageUrl: KB('9791166392825'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200557636' },
+    { title: '조리기능장 한식 실기', author: '전혜경, 성경자 외', publisher: '백산출판사', price: 35000, tags: ['베스트'], hasEbook: false, isbn: '9791165674205', imageUrl: KB('9791165674205'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201246086' },
+    { title: '조리기능장 한식 실기', author: '양진삼, 김정민 외', publisher: '다이어리알', price: 33000, tags: ['추천'], hasEbook: false, isbn: '9788998740528', imageUrl: KB('9788998740528'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219128408' },
+    { title: '조리기능장중식실기', author: '양진삼, 김정민 외', publisher: '다이어리알', price: 25000, tags: ['추천'], hasEbook: false, isbn: '9788998740535', imageUrl: KB('9788998740535'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219411960' },
+    { title: '조리기능장 실기시험문제: 한식편', author: '전경철, 전동철 외', publisher: '크라운출판사', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.2, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788940628539', imageUrl: KB('9788940628539'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000642925' },
+    { title: '조리기능장이 전하는 중식조리', author: '조리기능장(공저)', publisher: '미림원', price: 14400, originalPrice: 16000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788994204550', imageUrl: KB('9788994204550'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001544258' },
+    { title: '한식조리기능장 실기', author: '강현우', publisher: '유강', price: 30600, originalPrice: 34000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788997601042', imageUrl: KB('9788997601042'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001619731' },
+  ],
+
+  // ────────────────────────────────────────
+  '중식조리산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 6권뿐 — 니치 시장
+    { title: '한식, 양식, 중식, 일식, 복어 조리산업기사 실기', author: '강란기, 봉준호 외', publisher: '유강', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.7, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791190591270', imageUrl: KB('9791190591270'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001942003' },
+    { title: '단번에 합격하는 중식조리 기능사·산업기사·기능장', author: '이지현, 김아영', publisher: '백산출판사', price: 26000, tags: ['베스트'], hasEbook: false, isbn: '9791165679217', imageUrl: KB('9791165679217'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214181454' },
+    { title: '중식 조리기능사·산업기사 필기실기문제', author: '전경철, 임점희 외', publisher: '크라운출판사', price: 20700, originalPrice: 23000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788940645116', imageUrl: KB('9788940645116'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000644183' },
+    { title: '2026 박문각 조리산업기사·기능장 필기+무료특강', author: '전경철', publisher: '박문각', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791175192362', imageUrl: KB('9791175192362'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218096451' },
+    { title: '2026 경록 조리산업기사 양식ㆍ중식ㆍ일식ㆍ복어 실기', author: '임인숙, 이경주 외', publisher: '경록', price: 35100, originalPrice: 39000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791194560609', imageUrl: KB('9791194560609'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219020087' },
+    { title: '조리 산업기사 기능장', author: '진양호', publisher: '지구문화사', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788970064765', imageUrl: KB('9788970064765'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001065809' },
+  ],
+
+  // ────────────────────────────────────────
+  '일식조리산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 5권뿐 — 니치 시장
+    { title: 'Let’s Pass 일식조리기능사, 일식조리산업기사', author: '전현근, 윤옥희 외', publisher: '지식인', price: 22000, tags: ['베스트'], hasEbook: false, isbn: '9791190815994', imageUrl: KB('9791190815994'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061532831' },
+    { title: '한식, 양식, 중식, 일식, 복어 조리산업기사 실기', author: '강란기, 봉준호 외', publisher: '유강', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.7, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791190591270', imageUrl: KB('9791190591270'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001942003' },
+    { title: '2026 박문각 조리산업기사·기능장 필기+무료특강', author: '전경철', publisher: '박문각', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791175192362', imageUrl: KB('9791175192362'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218096451' },
+    { title: '2026 경록 조리산업기사 양식ㆍ중식ㆍ일식ㆍ복어 실기', author: '임인숙, 이경주 외', publisher: '경록', price: 35100, originalPrice: 39000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791194560609', imageUrl: KB('9791194560609'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219020087' },
+    { title: '조리 산업기사 기능장', author: '진양호', publisher: '지구문화사', price: 18000, originalPrice: 20000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788970064765', imageUrl: KB('9788970064765'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001065809' },
+  ],
+
+  // ────────────────────────────────────────
+  '조주기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 조주기능사 필기+실기 한권 완성', author: '신지해', publisher: '예문사', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927462897', imageUrl: KB('9788927462897'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220694705' },
+    { title: '2026 나합격 조주기능사 필기+실기+무료특강', author: '전재구', publisher: '삼원북스', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791199411555', imageUrl: KB('9791199411555'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217371513' },
+    { title: '2026 조선바텐더 조주기능사 필기+실기+100% 무료강의', author: '이진광', publisher: '직업상점', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.7, reviews: 11, tags: ['베스트'], hasEbook: false, isbn: '9791194695271', imageUrl: KB('9791194695271'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218315471' },
+    { title: '2027 이기적 조주기능사 필기+실기 올인원', author: '한잔공감', publisher: '영진닷컴', price: 28800, originalPrice: 32000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931482454', imageUrl: KB('9788931482454'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221662667' },
+    { title: '2027 조주기능사 필기', author: '이윤주', publisher: '책과상상', price: 15300, originalPrice: 17000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673846', imageUrl: KB('9791169673846'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221636476' },
+    { title: '2027 조주기능사 필기 기출문제', author: '이윤주', publisher: '책과상상', price: 13500, originalPrice: 15000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791169673853', imageUrl: KB('9791169673853'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221636470' },
+    { title: '2026 시대에듀 무단뽀 조주기능사 필기+실기+무료 동영상', author: '류중호', publisher: '시대고시기획', price: 27900, originalPrice: 31000, discount: '10%', rating: 5.0, reviews: 13, tags: ['추천'], hasEbook: false, isbn: '9791143400284', imageUrl: KB('9791143400284'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218133857' },
+    { title: '조주기능사 쉽게 따기', author: '이석현, 양웅식 외', publisher: '베버리지', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791195906369', imageUrl: KB('9791195906369'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215079040' },
+    { title: '2026 조주기능사 필기·실기문제 한권으로 합격하기', author: '허정봉', publisher: '크라운출판사', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788940650004', imageUrl: KB('9788940650004'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218569936' },
+    { title: '조주기능사 필기ㆍ실기시험', author: '박해나', publisher: '씨마스21', price: 28800, originalPrice: 32000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791199560017', imageUrl: KB('9791199560017'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218858822' },
+  ],
+
+  // ────────────────────────────────────────
+  '제과기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 제과제빵 기능사산업기사 필기', author: '김연진', publisher: '종이향기', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791174911711', imageUrl: KB('9791174911711'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221636255' },
+    { title: '2026 기분파 제과제빵기능사 필기', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 14, tags: ['베스트'], hasEbook: false, isbn: '9791194328377', imageUrl: KB('9791194328377'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218262585' },
+    { title: '2027 제과제빵기능사 CBT 기출문제집', author: '김연진', publisher: '종이향기', price: 18000, originalPrice: 20000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791174911674', imageUrl: KB('9791174911674'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221636280' },
+    { title: '2027 제과제빵기능사 필기', author: '제과제빵자격시험연구회', publisher: '책과상상', price: 16200, originalPrice: 18000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673808', imageUrl: KB('9791169673808'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221352402' },
+    { title: '2026 박문각 제과제빵기능사 필기 8개년 기출문제집+무료특강', author: '하혜란, 안지현 외', publisher: '박문각', price: 13500, originalPrice: 15000, discount: '10%', rating: 3.8, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791175191730', imageUrl: KB('9791175191730'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217567480' },
+    { title: '2027 시대에듀 제과제빵기능사 필기 총정리 기출문제집', author: '권영회', publisher: '시대고시기획', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791143418081', imageUrl: KB('9791143418081'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220616382' },
+    { title: '2027 제과제빵기능사 실기', author: '김인호, 이경애 외', publisher: '책과상상', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791169673815', imageUrl: KB('9791169673815'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221509163' },
+    { title: '2026 EBS 제과제빵기능사 필기 단기합격', author: '김경진, 최성은', publisher: '신지원', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791166336027', imageUrl: KB('9791166336027'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218965279' },
+    { title: '2026 원큐패스 제과기능사 필기 빈출 문제 10회', author: '이지선', publisher: '다락원', price: 11700, originalPrice: 13000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927775157', imageUrl: KB('9788927775157'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218853333' },
+    { title: '제과제빵기능사 필기', author: '고석환', publisher: '아이콕스', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791164261741', imageUrl: KB('9791164261741'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001826839' },
+  ],
+
+  // ────────────────────────────────────────
+  '제빵기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 에듀윌 제과·제빵기능사 필기 한권끝장+무료특강', author: '오명석, 장다예 외', publisher: '에듀윌', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791136043986', imageUrl: KB('9791136043986'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221283209' },
+    { title: '2027 완전합격 제과·제빵기능사 실기', author: '이노운, 위재상 외', publisher: '크라운출판사', price: 23400, originalPrice: 26000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788940651162', imageUrl: KB('9788940651162'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221270850' },
+    { title: '2026 에듀윌 제과·제빵기능사 실기 무료특강으로 한권끝장(산업기사 동시 대비)', author: '오명석, 장다예 외', publisher: '에듀윌', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 16, tags: ['베스트'], hasEbook: false, isbn: '9791136040770', imageUrl: KB('9791136040770'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219081146' },
+    { title: '2027 시대에듀 AI PASSCODE 제빵기능사 필기 CBT기출+AI 분석 모의고사', author: '김선영', publisher: '시대고시기획', price: 15300, originalPrice: 17000, discount: '10%', rating: 5.0, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9791143417213', imageUrl: KB('9791143417213'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220501134' },
+    { title: '2027 최단기 3일완성 제과ㆍ제빵기능사 총정리문제', author: '김창석', publisher: '크라운출판사', price: 12600, originalPrice: 14000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788940651179', imageUrl: KB('9788940651179'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221509730' },
+    { title: '2027 제과·제빵기능사산업기사 필기 CBT 복원 기출문제집', author: '파이팅혼공TV 컨텐츠 개발팀', publisher: '지식오름', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791174911704', imageUrl: KB('9791174911704'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221640951' },
+    { title: '2027 제과제빵 기능사산업기사 필기', author: '김연진', publisher: '종이향기', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791174911711', imageUrl: KB('9791174911711'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221636255' },
+    { title: '2026 기분파 제과제빵기능사 필기', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 14, tags: ['추천'], hasEbook: false, isbn: '9791194328377', imageUrl: KB('9791194328377'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218262585' },
+    { title: '2027 제과제빵기능사 CBT 기출문제집', author: '김연진', publisher: '종이향기', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791174911674', imageUrl: KB('9791174911674'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221636280' },
+    { title: '2027 제과제빵기능사 필기', author: '제과제빵자격시험연구회', publisher: '책과상상', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791169673808', imageUrl: KB('9791169673808'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221352402' },
+  ],
+
+  // ────────────────────────────────────────
+  '유기농업기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2026 나합격 유기농업기능사 필기+실기+무료특강', author: '김수정', publisher: '삼원북스', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 7, tags: ['베스트'], hasEbook: false, isbn: '9791194997450', imageUrl: KB('9791194997450'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218741782' },
+    { title: '2026 박문각 유기농업기능사 필기·실기 올큐패스+무료특강', author: '박진호', publisher: '박문각', price: 24300, originalPrice: 27000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791175197930', imageUrl: KB('9791175197930'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219333234' },
+    { title: '2026 유기농업기능사 실기', author: '김명희', publisher: '일진사', price: 26100, originalPrice: 29000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788942921003', imageUrl: KB('9788942921003'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220226255' },
+    { title: '2026 시대에듀 무단뽀 유기농업기능사 필기+실기+무료 동영상', author: '김현민', publisher: '시대고시기획', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], hasEbook: false, isbn: '9791143401809', imageUrl: KB('9791143401809'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218704278' },
+    { title: '유기농업기능사 필기', author: '김영세', publisher: '부민문화사', price: 25000, rating: 4.4, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788938503800', imageUrl: KB('9788938503800'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000633317' },
+    { title: '2025 유기농업기능사 실기 필답형', author: '안제국, 강태윤 외', publisher: '부민문화사', price: 20000, rating: 5.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9788938504623', imageUrl: KB('9788938504623'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215561463' },
+    { title: '2026 명품 유기농업기능사 실기', author: '권현준', publisher: '올배움', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791165172022', imageUrl: KB('9791165172022'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218913345' },
+    { title: '유기농업기능사 필기', author: '최상민', publisher: '예문사', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927437925', imageUrl: KB('9788927437925'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000523359' },
+    { title: '2026 명품 유기농업기능사 필기', author: '권현준', publisher: '올배움', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791165171865', imageUrl: KB('9791165171865'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218355047' },
+    { title: '2024 컨셉 유기농업기능사 한 권으로 합격하기 필기+실기', author: '장사원', publisher: '서울고시각(SG P&E)', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788952646422', imageUrl: KB('9788952646422'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211008533' },
+  ],
+
+  // ────────────────────────────────────────
+  '원예기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 3권뿐 — 니치 시장
+    { title: '2026 원예기능사 필기, 실기 필답형', author: '부민문화사 자연과학부', publisher: '부민문화사', price: 26000, tags: ['베스트'], hasEbook: false, isbn: '9788938504869', imageUrl: KB('9788938504869'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218569829' },
+    { title: '2026 시대에듀 Win-Q 원예기능사 필기+실기 단기합격', author: '최광희', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.7, reviews: 15, tags: ['베스트'], hasEbook: false, isbn: '9791143403551', imageUrl: KB('9791143403551'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218358624' },
+    { title: '2027 원예기능사 필기 예상문제집', author: '에듀채널 편집부(AI 활용)', publisher: '스터디채널', price: 16200, originalPrice: 18000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176181815', imageUrl: KB('9791176181815'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221662684' },
+  ],
+
+  // ────────────────────────────────────────
+  '화훼장식기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 화훼장식기능사 필기&실기&미니북 세트', author: '배철호, 최민주', publisher: '수풀미디어', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 16, tags: ['베스트'], hasEbook: false, isbn: '9788994177670', imageUrl: KB('9788994177670'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220363136' },
+    { title: '2027 화훼장식기능사 필기 합격보장', author: '배철호', publisher: '수풀미디어', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 11, tags: ['베스트'], hasEbook: false, isbn: '9788994177717', imageUrl: KB('9788994177717'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220363291' },
+    { title: '2026 화훼장식기능사 필기·실기', author: '김록영', publisher: '크라운출판사', price: 20700, originalPrice: 23000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788940649831', imageUrl: KB('9788940649831'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218642703' },
+    { title: '2027 박문각 화훼장식기능사 필기 8개년 기출문제집+무료특강', author: '박진호, 김영미', publisher: '박문각', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176494366', imageUrl: KB('9791176494366'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221566063' },
+    { title: '2026 시대에듀 Win-Q 화훼장식기능사 필기 단기합격', author: '김근성', publisher: '시대고시기획', price: 20700, originalPrice: 23000, discount: '10%', rating: 5.0, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9791138397827', imageUrl: KB('9791138397827'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217401747' },
+    { title: '화훼장식기능사', author: '한국화훼장식기사협회', publisher: '부민문화사', price: 25000, rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9788938504111', imageUrl: KB('9788938504111'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000202742903' },
+    { title: '2027 금메달 토선생의 화훼장식기능사 필기+실기', author: '김예지(토선생)', publisher: '예문에듀', price: 26100, originalPrice: 29000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791163866169', imageUrl: KB('9791163866169'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221566446' },
+    { title: '2026 화훼장식기능사 필기·실기', author: '김아름', publisher: '예문사', price: 23400, originalPrice: 26000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927460930', imageUrl: KB('9788927460930'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218914141' },
+    { title: '2026 유튜버 프리샘 화훼장식기능사 필기&실기', author: '김윤경', publisher: '지식오름', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791174910752', imageUrl: KB('9791174910752'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219001165' },
+    { title: '화훼장식 기능사 필기', author: '김혜정', publisher: '일진사', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788942913824', imageUrl: KB('9788942913824'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000671176' },
+  ],
+
+  // ────────────────────────────────────────
+  '화훼장식기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 3권뿐 — 니치 시장
+    { title: '2026 화훼장식기사 필기&실기 Revised Edition', author: '박정안, 배철호', publisher: '수풀미디어', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788994177663', imageUrl: KB('9788994177663'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219208956' },
+    { title: '2025 화훼장식기사 필기실기', author: '한국화훼장식기사협회', publisher: '부민문화사', price: 32000, tags: ['베스트'], hasEbook: false, isbn: '9788938504746', imageUrl: KB('9788938504746'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216748915' },
+    { title: '화훼장식 필기시험 기능사 기사 세트(2015 출제경향대비)', author: '김유선, 서지현 외', publisher: '미진사', price: 32000, tags: ['베스트'], hasEbook: false, isbn: '9788940804766', imageUrl: KB('9788940804766'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000647318' },
+  ],
+
+  // ────────────────────────────────────────
+  '축산기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 4권뿐 — 니치 시장
+    { title: '2026 축산기사 산업기사', author: '안제국', publisher: '부민문화사', price: 34000, rating: 2.5, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788938504906', imageUrl: KB('9788938504906'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218853955' },
+    { title: '2027 시대에듀 축산기사·산업기사 필기 한권으로 끝내기', author: '최광희', publisher: '시대고시기획', price: 32400, originalPrice: 36000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143420763', imageUrl: KB('9791143420763'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221565878' },
+    { title: '2026 시대에듀 축산기사·산업기사 실기 한권으로 끝내기', author: '윤예은', publisher: '시대고시기획', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 11, tags: ['베스트'], hasEbook: false, isbn: '9791143406576', imageUrl: KB('9791143406576'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218913312' },
+    { title: '축산기사 2000', author: '선진문화사 편집부', publisher: '선진문화사', price: 25000, rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788973922666', imageUrl: KB('9788973922666'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001145999' },
+  ],
+
+  // ────────────────────────────────────────
+  '축산기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 2권뿐 — 니치 시장
+    { title: '2026 시대에듀 Win-Q 축산기능사 필기+실기 단기합격', author: '윤예은', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 12, tags: ['베스트'], hasEbook: false, isbn: '9791143401786', imageUrl: KB('9791143401786'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218315401' },
+    { title: '축산기능사 축산직 7,9급', author: '안제국', publisher: '부민문화사', price: 24000, tags: ['베스트'], hasEbook: false, isbn: '9788938504128', imageUrl: KB('9788938504128'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211650578' },
+  ],
+
+  // ────────────────────────────────────────
+  '화훼장식산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 3권뿐 — 니치 시장
+    { title: '2026 화훼장식산업기사 필기실기 Revised Edition', author: '박정안, 이민지 외', publisher: '수풀미디어', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788994177618', imageUrl: KB('9788994177618'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218080976' },
+    { title: '2025 화훼장식산업기사 필기실기', author: '박정안, 이민지 외', publisher: '수풀미디어', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788994177588', imageUrl: KB('9788994177588'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215611457' },
+    { title: '2023 Win-Q 화훼장식산업기사 필기 단기합격', author: '하순엽, 공신희 외', publisher: '시대고시기획', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 6, tags: ['베스트'], hasEbook: false, isbn: '9791138333474', imageUrl: KB('9791138333474'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200199970' },
+  ],
+
+  // ────────────────────────────────────────
+  '농산물품질관리사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 시대에듀 농산물품질관리사 1차 한권으로 끝내기', author: '조규태, 홍성철 외', publisher: '시대고시기획', price: 36000, originalPrice: 40000, discount: '10%', rating: 5.0, reviews: 6, tags: ['베스트'], hasEbook: false, isbn: '9791143416339', imageUrl: KB('9791143416339'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220215225' },
+    { title: '2026 시대에듀 농산물품질관리사 2차 필답형 실기 한권으로 끝내기', author: '정현철', publisher: '시대고시기획', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9791143410764', imageUrl: KB('9791143410764'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219411771' },
+    { title: '농산물품질관리사 한 권으로 끝내기 2차 필답형 실기', author: '이영복', publisher: '메인에듀', price: 28800, originalPrice: 32000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791189357870', imageUrl: KB('9791189357870'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219407326' },
+    { title: '단끝 농산물품질관리사 1차 2차 기출문제집', author: '김봉호', publisher: '박문각', price: 27000, originalPrice: 30000, discount: '10%', rating: 2.5, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791169875585', imageUrl: KB('9791169875585'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211497924' },
+    { title: '단끝 농산물품질관리사 1차 한권으로 합격하기', author: '김봉호', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791169875561', imageUrl: KB('9791169875561'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211220285' },
+    { title: '농산물품질관리사 기출문제 정복하기 1차 필기', author: '자격시험연구소', publisher: '서원각', price: 18900, originalPrice: 21000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125740148', imageUrl: KB('9791125740148'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061694641' },
+    { title: '농산물품질관리사 2차 기출문제집', author: '고송남', publisher: '성안당', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788931559781', imageUrl: KB('9788931559781'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201360796' },
+    { title: '농산물품질관리사 1차 기출문제집', author: '고송남, 김봉호', publisher: '성안당', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788931559378', imageUrl: KB('9788931559378'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201278746' },
+    { title: '메인에듀 농산물품질관리사 필기 1차 한 권으로 끝내기', author: '선영학, 이영복', publisher: '메인에듀', price: 30600, originalPrice: 34000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791189357863', imageUrl: KB('9791189357863'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217729466' },
+    { title: '농산물품질관리사 1차 필기시험문제', author: '고송남, 어상일 외', publisher: '크라운출판사', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788940621677', imageUrl: KB('9788940621677'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000642306' },
+  ],
+
+  // ────────────────────────────────────────
+  '수산물품질관리사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '수산물품질관리사 1차 수산물유통론', author: '윤희복', publisher: '사마출판', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791192118321', imageUrl: KB('9791192118321'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211551919' },
+    { title: '2026 수산물품질관리사 2차 품질관리실무와 등급판정', author: '사마 자격증수험서연구원', publisher: '사마출판', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791192118536', imageUrl: KB('9791192118536'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220339422' },
+    { title: '수산물품질관리사 1차 기출문제집', author: '고송남, 김봉호', publisher: '성안당', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931559385', imageUrl: KB('9788931559385'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201278745' },
+    { title: '2026 시대에듀 수산물품질관리사 1차+2차 한권으로 끝내기', author: '최평희, 홍성철 외', publisher: '시대고시기획', price: 72000, originalPrice: 80000, discount: '10%', rating: 5.0, reviews: 8, tags: ['베스트'], hasEbook: false, isbn: '9791143414175', imageUrl: KB('9791143414175'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219789904' },
+    { title: '수산물품질관리사 2차 기출문제집', author: '김봉호', publisher: '성안당', price: 17820, originalPrice: 19800, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931559798', imageUrl: KB('9788931559798'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201360799' },
+    { title: '2025 수산물품질관리사 1차대비 관련법령', author: '김봉호', publisher: '사마출판', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791192118444', imageUrl: KB('9791192118444'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216548922' },
+    { title: '수산물품질관리사 한번에 합격하기', author: '김하연, 전병식 외', publisher: '혜성출판사', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791186345054', imageUrl: KB('9791186345054'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001883417' },
+    { title: '수산물품질관리사 1차 종합예상문제집', author: '한국산업교육원 해양수산연구회', publisher: '범론사', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788955574852', imageUrl: KB('9788955574852'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000804364' },
+    { title: '수산물품질관리사 1처 기출문제분석과 실전모의고사', author: '이보선', publisher: '사마출판', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791192118093', imageUrl: KB('9791192118093'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001954551' },
+    { title: '수산물품질관리사 1차 필기 기출문제 정복하기', author: '자격시험연구소', publisher: '서원각', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125740179', imageUrl: KB('9791125740179'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061694643' },
+  ],
+
+  // ────────────────────────────────────────
+  '종자기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 9권뿐 — 니치 시장
+    { title: '2027 시대에듀 기출이 답이다 종자기사 필기', author: '최광희', publisher: '시대고시기획', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791143419415', imageUrl: KB('9791143419415'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221047547' },
+    { title: '2026 명품 종자기사 산업기사 실기', author: '권현준', publisher: '올배움', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791165172008', imageUrl: KB('9791165172008'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218913642' },
+    { title: '2026 명품 종자기사 산업기사 필기', author: '권현준', publisher: '올배움', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791165171902', imageUrl: KB('9791165171902'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218355051' },
+    { title: '2026 명품 종자기사 산업기사 과년도 필기', author: '권현준', publisher: '올배움', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791165171919', imageUrl: KB('9791165171919'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218355054' },
+    { title: '2026 종자 기사 산업기사 필기 실기 필답형', author: '부민문화사 자연과학부', publisher: '부민문화사', price: 36000, tags: ['베스트'], hasEbook: false, isbn: '9788938504944', imageUrl: KB('9788938504944'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218918180' },
+    { title: '정통 종자 기사 및 산업기사 문제집', author: '기술자격검정시험연구회', publisher: '향문사', price: 30000, tags: ['추천'], hasEbook: false, isbn: '9788971872192', imageUrl: KB('9788971872192'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001106843' },
+    { title: '2024 종자기사·산업기사 필기', author: '최상민', publisher: '예문사', price: 28800, originalPrice: 32000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927453963', imageUrl: KB('9788927453963'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212757263' },
+    { title: '2024 종자기사·산업기사 실기', author: '최상민', publisher: '예문사', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927454359', imageUrl: KB('9788927454359'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213021409' },
+    { title: '2024 SD에듀 Win-Q 종자기사·산업기사 필기 단기합격', author: '이종일', publisher: '시대고시기획', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 16, tags: ['추천'], hasEbook: false, isbn: '9791138359313', imageUrl: KB('9791138359313'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000209702449' },
+  ],
+
+  // ────────────────────────────────────────
+  '종자기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 4권뿐 — 니치 시장
+    { title: '2026 나합격 종자기능사 필기+실기+무료특강', author: '김수정', publisher: '삼원북스', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.8, reviews: 6, tags: ['베스트'], hasEbook: false, isbn: '9791194997092', imageUrl: KB('9791194997092'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218092347' },
+    { title: '2025 종자기능사 필기 실기 필답형', author: '부민문화사 자연과학부', publisher: '부민문화사', price: 25000, rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788938504722', imageUrl: KB('9788938504722'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216211501' },
+    { title: '2026 명품 종자기능사 필기 실기', author: '권현준', publisher: '올배움', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9791165171803', imageUrl: KB('9791165171803'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218323086' },
+    { title: '2024 SD에듀 종자기능사 실기 한권으로 끝내기', author: '김수현', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 11, tags: ['베스트'], hasEbook: false, isbn: '9791138368773', imageUrl: KB('9791138368773'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212671030' },
+  ],
+
+  // ────────────────────────────────────────
+  '버섯종균기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 4권뿐 — 니치 시장
+    { title: '100% 무료특강 버섯종균기능사버섯산업기사 필기 실기 한권 쏙', author: '김민경, 최성우', publisher: '박영사', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791144201125', imageUrl: KB('9791144201125'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221519127' },
+    { title: '2026 버섯종균기능사 필기/실기', author: '장명준, 이윤혜', publisher: '부민문화사', price: 23000, rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788938504807', imageUrl: KB('9788938504807'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217737291' },
+    { title: '시대에듀 Win-Q 버섯종균기능사 필기 단기합격', author: '최재용', publisher: '시대고시기획', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9791138396035', imageUrl: KB('9791138396035'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217164453' },
+    { title: '2024 버섯종균기능사 필기 실기', author: '서금희, 장현유', publisher: '푸른행복', price: 20700, originalPrice: 23000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791156374756', imageUrl: KB('9791156374756'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000210729996' },
+  ],
+
+  // ────────────────────────────────────────
+  '식육처리기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 3권뿐 — 니치 시장
+    { title: '2026 시대에듀 식육처리기능사 한권으로 끝내기', author: '식육처리연구회, 김성호', publisher: '시대고시기획', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 15, tags: ['베스트'], hasEbook: false, isbn: '9791143411129', imageUrl: KB('9791143411129'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219513910' },
+    { title: '2027 식육처리기능사 필기 예상문제집', author: '에듀채널 편집부', publisher: '스터디채널', price: 16200, originalPrice: 18000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176181679', imageUrl: KB('9791176181679'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221329884' },
+    { title: '식육처리기능사 이론 실기 완전 정복', author: '임치호, 김천제', publisher: 'PAN n PEN(팬앤펜)', price: 40500, originalPrice: 45000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791191739220', imageUrl: KB('9791191739220'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215719580' },
+  ],
+
+  // ────────────────────────────────────────
+  '가축인공수정사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 1권뿐 — 니치 시장
+    { title: '시대에듀 가축인공수정사 필기 한권으로 합격하기', author: '최광희', publisher: '시대고시기획', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 6, tags: ['베스트'], hasEbook: false, isbn: '9791143412539', imageUrl: KB('9791143412539'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219713570' },
+  ],
+
+  // ────────────────────────────────────────
+  '유기농업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 5권뿐 — 니치 시장
+    { title: '2026 명품 유기농업기사 실기', author: '권현준', publisher: '올배움', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791165171995', imageUrl: KB('9791165171995'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218778055' },
+    { title: '2027 시대에듀 기출이 답이다 유기농업기사 필기 최빈출 기출 800제 + 최근 기출복원문제 3개년', author: '최광희', publisher: '시대에듀', price: 30600, originalPrice: 34000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143420688', imageUrl: KB('9791143420688'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221663773' },
+    { title: '2026 유기농업기사 필기', author: '김두석', publisher: '성안당', price: 35100, originalPrice: 39000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931583984', imageUrl: KB('9788931583984'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218491287' },
+    { title: '유기농업기사 필기', author: '권현준', publisher: '올배움', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791165172046', imageUrl: KB('9791165172046'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218941864' },
+    { title: '2024 SD에듀 Win-Q 유기농업기사·산업기사 필기 단기합격', author: '최광희', publisher: '시대고시기획', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 7, tags: ['베스트'], hasEbook: false, isbn: '9791138356978', imageUrl: KB('9791138356978'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000209019450' },
+  ],
+
+  // ────────────────────────────────────────
+  '원예기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 1권뿐 — 니치 시장
+    { title: '2027 시설원예기사 필기 예상문제', author: '에듀채널 편집부', publisher: '스터디채널', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176181594', imageUrl: KB('9791176181594'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221506861' },
+  ],
+
+  // ────────────────────────────────────────
+  'ISMS': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 7권뿐 — 니치 시장
+    { title: '이기적 ISMS-P 인증심사원 자격검정 기본서', author: '최중우, 김기남 외', publisher: '영진닷컴', price: 45000, originalPrice: 50000, discount: '10%', rating: 5.0, reviews: 7, tags: ['베스트'], hasEbook: false, isbn: '9788931480078', imageUrl: KB('9788931480078'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220340512' },
+    { title: '2026 원큐패스 ISMS-P 인증심사원 자격검정 실전모의고사', author: '오명선, 오세현 외', publisher: '다락원', price: 36000, originalPrice: 40000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9788927775829', imageUrl: KB('9788927775829'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219712884' },
+    { title: 'ISMS-P 인증 실무 가이드', author: '연수권, 신동혁 외', publisher: '에이콘출판', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791161758367', imageUrl: KB('9791161758367'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212844801' },
+    { title: '2026 ISMS-P 인증심사원 자격검정 파이널', author: '이정윤', publisher: '크라운출판사', price: 15300, originalPrice: 17000, discount: '10%', rating: 4.6, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9788940649862', imageUrl: KB('9788940649862'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219085265' },
+    { title: '정보보호 및 개인정보보호 관리체계(ISMS-P) 인증기준 안내서', author: '과학기술정보통신부, 한국인터넷진흥원', publisher: '진한엠앤비', price: 25000, tags: ['베스트'], hasEbook: false, isbn: '9791129032379', imageUrl: KB('9791129032379'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061863320' },
+    { title: 'ISMS-P 인증심사원 실무가이드', author: '권성호', publisher: '성안당', price: 34200, originalPrice: 38000, discount: '10%', rating: 5.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9788931555059', imageUrl: KB('9788931555059'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000559799' },
+    { title: 'ISMS-P 실무가이드', author: '공병철, 고범재 외', publisher: '정보보호북스', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791196444839', imageUrl: KB('9791196444839'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001976498' },
+  ],
+
+  // ────────────────────────────────────────
+  '실내건축기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 나합격 실내건축기능사 실기+무료특강', author: '김수진', publisher: '삼원북스', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791176400411', imageUrl: KB('9791176400411'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221327905' },
+    { title: '2027 스마트 실내건축기능사 필기+전 과정 무료동영상 제공', author: '황두환', publisher: '성안당', price: 26100, originalPrice: 29000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931512724', imageUrl: KB('9788931512724'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221257317' },
+    { title: '2027 스마트 실내건축기능사 실기+전 과정 무료 동영상 제공', author: '황두환', publisher: '성안당', price: 30600, originalPrice: 34000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931512731', imageUrl: KB('9788931512731'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221046062' },
+    { title: '2027 나합격 실내건축기능사 필기+무료특강+온라인CBT문제풀이', author: '김수진', publisher: '삼원북스', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176400114', imageUrl: KB('9791176400114'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220363483' },
+    { title: '2026 한번에 합격하기 실내건축 기능사 필기', author: '정하정, 정효재', publisher: '성안당', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931513721', imageUrl: KB('9788931513721'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217409826' },
+    { title: '2027 시대에듀 Win-Q 실내건축기능사 필기 단기합격', author: '최광희', publisher: '시대고시기획', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143419323', imageUrl: KB('9791143419323'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220988981' },
+    { title: '2027 독학 실내건축기능사 필기', author: '김희정', publisher: '예문사', price: 23400, originalPrice: 26000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927462989', imageUrl: KB('9788927462989'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220781372' },
+    { title: '실내건축기능사 실기', author: '백연우, 정범철', publisher: '엔플북스', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788968131974', imageUrl: KB('9788968131974'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001051796' },
+    { title: '2025 실내건축기능사 필기 문제풀이', author: '이상화', publisher: '엔플북스', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788968134203', imageUrl: KB('9788968134203'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215015059' },
+    { title: '실내건축기능사 2차 실기', author: '동방디자인학원', publisher: '동방디자인', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 11, tags: ['추천'], hasEbook: false, isbn: '9788986881769', imageUrl: KB('9788986881769'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001370147' },
+  ],
+
+  // ────────────────────────────────────────
+  '플라스틱창호기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 1권뿐 — 니치 시장
+    { title: '적중 TOP 플라스틱 창호 기능사', author: '건축자격연구회', publisher: '마지원', price: 23000, tags: ['베스트'], hasEbook: false, isbn: '9791192534183', imageUrl: KB('9791192534183'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201225698' },
+  ],
+
+  // ────────────────────────────────────────
+  '전자계산기기술사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 1권뿐 — 니치 시장
+    { title: '정보관리기술사&컴퓨터시스템응용기술사 5: 소프트웨어 공학', author: '권영식', publisher: '성안당', price: 49500, originalPrice: 55000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9788931559972', imageUrl: KB('9788931559972'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211901156' },
+  ],
+
+  // ────────────────────────────────────────
+  '산림산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 시대에듀 산림기사·산업기사 필기 한권으로 끝내기', author: '정한기', publisher: '시대에듀', price: 40500, originalPrice: 45000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143422200', imageUrl: KB('9791143422200'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221565840' },
+    { title: '2026 산림기사/산업기사 실기 필답형·작업형', author: '소방수', publisher: '부민문화사', price: 25000, rating: 4.6, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9788938504982', imageUrl: KB('9788938504982'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219059132' },
+    { title: '2026 명품 산림기사 산업기사 실기', author: '권현준', publisher: '올배움', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.4, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791165171988', imageUrl: KB('9791165171988'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218778048' },
+    { title: '2026 명품 산림기사, 산업기사 필기', author: '권현준', publisher: '올배움', price: 26100, originalPrice: 29000, discount: '10%', rating: 4.7, reviews: 8, tags: ['베스트'], hasEbook: false, isbn: '9791165171810', imageUrl: KB('9791165171810'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218323538' },
+    { title: '2026 산림기사/산업기사 2: 사방산지복구·산림기반시설·산림보호', author: '부민문화사 자연과학부', publisher: '부민문화사', price: 25000, rating: 4.7, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9788938504838', imageUrl: KB('9788938504838'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218203381' },
+    { title: '2026 산림기사/산업기사 1: 산림조성·산림경영', author: '부민문화사 자연과학부', publisher: '부민문화사', price: 25000, rating: 4.8, reviews: 5, tags: ['추천'], hasEbook: false, isbn: '9788938504821', imageUrl: KB('9788938504821'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218203374' },
+    { title: '2026 산림기사 · 산업기사 필기', author: '이정희', publisher: '예문사', price: 43200, originalPrice: 48000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927462200', imageUrl: KB('9788927462200'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219647846' },
+    { title: '2026 시대에듀 산림기사·산업기사 실기 한권으로 끝내기', author: '정한기', publisher: '시대고시기획', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 12, tags: ['추천'], hasEbook: false, isbn: '9791143410948', imageUrl: KB('9791143410948'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219524186' },
+    { title: '2026 명품 산림기사·산업기사 과년도 필기', author: '권현준', publisher: '올배움', price: 26100, originalPrice: 29000, discount: '10%', rating: 4.6, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791165171834', imageUrl: KB('9791165171834'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218323545' },
+    { title: '2026 산림기사/산업기사 CBT 기출·복원문제 해설 30회', author: '부민문화사 자연과학부', publisher: '부민문화사', price: 24000, tags: ['추천'], hasEbook: false, isbn: '9788938504883', imageUrl: KB('9788938504883'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218604939' },
+  ],
+
+  // ────────────────────────────────────────
+  '무선설비산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 5권뿐 — 니치 시장
+    { title: '2026 무선설비산업기사 필기', author: '양윤석, 김남선', publisher: '세화', price: 38700, originalPrice: 43000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931713800', imageUrl: KB('9788931713800'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218934572' },
+    { title: '무선설비산업기사: 필기시험편', author: '송면규, 오정균 외', publisher: '석학당', price: 18000, rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791187621119', imageUrl: KB('9791187621119'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001904409' },
+    { title: '무선설비 기출문제풀이(기사 산업기사)', author: '김기남 고시연구회', publisher: 'NT미디어', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791187180135', imageUrl: KB('9791187180135'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001898390' },
+    { title: '무선설비 (산업)기사 실기 노트', author: '조준익', publisher: '기한재', price: 18000, tags: ['베스트'], hasEbook: false, isbn: '9788970187587', imageUrl: KB('9788970187587'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001070779' },
+    { title: '2022 무선설비기사 산업기사 10개년 영역별 기출문제 풀이', author: '김기남 고시연구회', publisher: 'NT미디어', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.4, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791187180234', imageUrl: KB('9791187180234'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001898396' },
+  ],
+
+  // ────────────────────────────────────────
+  '농업기계기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 2권뿐 — 니치 시장
+    { title: '농업기계기사', author: '조기현', publisher: '동진', price: 30600, originalPrice: 34000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788987465715', imageUrl: KB('9788987465715'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001380818' },
+    { title: '농업 기계 기사 문제집', author: '박금주, 권순홍 외', publisher: '문운당', price: 24000, tags: ['베스트'], hasEbook: false, isbn: '9788973936786', imageUrl: KB('9788973936786'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001146441' },
+  ],
+
+  // ────────────────────────────────────────
+  '축산산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 4권뿐 — 니치 시장
+    { title: '2026 축산기사 산업기사', author: '안제국', publisher: '부민문화사', price: 34000, rating: 2.5, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788938504906', imageUrl: KB('9788938504906'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218853955' },
+    { title: '2027 시대에듀 축산기사·산업기사 필기 한권으로 끝내기', author: '최광희', publisher: '시대고시기획', price: 32400, originalPrice: 36000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143420763', imageUrl: KB('9791143420763'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221565878' },
+    { title: '축산산업기사', author: '축산기술연구회', publisher: '지구문화사', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788970066134', imageUrl: KB('9788970066134'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001065908' },
+    { title: '2026 시대에듀 축산기사·산업기사 실기 한권으로 끝내기', author: '윤예은', publisher: '시대고시기획', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 11, tags: ['베스트'], hasEbook: false, isbn: '9791143406576', imageUrl: KB('9791143406576'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218913312' },
+  ],
+
+  // ────────────────────────────────────────
+  '드론조종자격증': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 5권뿐 — 니치 시장
+    { title: '2027 무인 멀티·헬리콥터 드론조종 자격증', author: '박장환, 류영기', publisher: '골든벨', price: 24300, originalPrice: 27000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791124114735', imageUrl: KB('9791124114735'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221074790' },
+    { title: '이기적 드론(무인멀티콥터 초경량비행장치) 조종자 자격 필기', author: '안승용', publisher: '영진닷컴', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788931479010', imageUrl: KB('9788931479010'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219930485' },
+    { title: '드론 무인멀티콥터 조종사 자격증 필기', author: '민진규, 박재희 외', publisher: '배움', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791191391992', imageUrl: KB('9791191391992'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001950942' },
+    { title: '무인멀티콥터(드론) 국가자격증 이론&필기 수험서', author: '송태섭, 임진택 외', publisher: '이십일세기사', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788984688162', imageUrl: KB('9788984688162'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001318812' },
+    { title: '드론 무인멀티콥터 조종사 자격시험', author: '김종복, 이정대 외', publisher: '동양북스', price: 27900, originalPrice: 31000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791157684113', imageUrl: KB('9791157684113'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001758782' },
+  ],
+
+  // ────────────────────────────────────────
+  '소형선박조종사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 9권뿐 — 니치 시장
+    { title: '2026 신 시대에듀 문제만 보고 합격하기! 소형선박조종사 해기사 시험대비 2,000제', author: '이영후, 서영섭', publisher: '시대고시기획', price: 21600, originalPrice: 24000, discount: '10%', rating: 5.0, reviews: 7, tags: ['베스트'], hasEbook: false, isbn: '9791143412386', imageUrl: KB('9791143412386'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219570110' },
+    { title: '2027 소형선박조종사 자격증 한 번에 따기', author: '자격시험연구소', publisher: '서원각', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791125748694', imageUrl: KB('9791125748694'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220465623' },
+    { title: '2026 원큐패스 소형선박조종사', author: '김준성, 양아영', publisher: '다락원', price: 18000, originalPrice: 20000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927775713', imageUrl: KB('9788927775713'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218938454' },
+    { title: '2026 소형선박조종사 5일 완성 기출문제집', author: '한국해양동력수상연구소', publisher: '신지원', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791166336614', imageUrl: KB('9791166336614'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219653701' },
+    { title: '2026 소형선박조종사 8일 완성 최신기출+실전모의고사', author: '해양수상자격연구소', publisher: '예문에듀', price: 21600, originalPrice: 24000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791163865568', imageUrl: KB('9791163865568'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219238790' },
+    { title: '2025 5일만에 끝내기 소형선박조종사', author: '김성곤', publisher: '서울고시각(SG P&E)', price: 17100, originalPrice: 19000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788952648235', imageUrl: KB('9788952648235'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213637331' },
+    { title: '2025 소형선박조종사 7일 완성', author: '한국해양동력수상연구소', publisher: '신지원', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791166335167', imageUrl: KB('9791166335167'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215747147' },
+    { title: '2024 소형선박조종사 이론과 문제', author: '해기사시험연구회', publisher: '해광', price: 23000, rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791168815704', imageUrl: KB('9791168815704'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213780330' },
+    { title: '2024 딱 7일 소형선박조종사 1800제', author: '한국해양동력수상연구소', publisher: '신지원', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791166334160', imageUrl: KB('9791166334160'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213156925' },
+  ],
+
+  // ────────────────────────────────────────
+  '교통기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 7권뿐 — 니치 시장
+    { title: '2026 양재호의 교통기사 필기 이론편', author: '양재호', publisher: '트랜북스', price: 49500, originalPrice: 55000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791193643341', imageUrl: KB('9791193643341'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218179627' },
+    { title: '2026 양재호의 교통기사 필기 기출편', author: '양재호', publisher: '트랜북스', price: 39600, originalPrice: 44000, discount: '10%', rating: 4.4, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791193643358', imageUrl: KB('9791193643358'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218179735' },
+    { title: '2026 교통기사 필기 세트', author: '이훈, 이석훈', publisher: '예문사', price: 44100, originalPrice: 49000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927460084', imageUrl: KB('9788927460084'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218302814' },
+    { title: '2027 교통기사 필기', author: '박창수, 김정위', publisher: '정일', price: 35100, originalPrice: 39000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788956663524', imageUrl: KB('9788956663524'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221581756' },
+    { title: '2027 교통기사 실기', author: '이상준', publisher: '정일', price: 26100, originalPrice: 29000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788956663531', imageUrl: KB('9788956663531'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221598914' },
+    { title: '2026 양재호의 교통기사 실기', author: '양재호', publisher: '트랜북스', price: 49500, originalPrice: 55000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791193643365', imageUrl: KB('9791193643365'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218790208' },
+    { title: '2026 교통기사 필기+실기', author: '박창수, 이상준 외', publisher: '정일', price: 36900, originalPrice: 41000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788956663487', imageUrl: KB('9788956663487'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217286168' },
+  ],
+
+  // ────────────────────────────────────────
+  '식품안전기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 해커스 식품안전기사 필기 한권합격+무료특강(이론+최신기출+핵심노트)', author: '권유진', publisher: '해커스자격증', price: 38700, originalPrice: 43000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788969657688', imageUrl: KB('9788969657688'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221280433' },
+    { title: '2026 해커스 식품안전기사 실기 한권합격 이론+최신기출+핵심노트', author: '권유진', publisher: '해커스자격증', price: 36000, originalPrice: 40000, discount: '10%', rating: 4.8, reviews: 13, tags: ['베스트'], hasEbook: false, isbn: '9788969656285', imageUrl: KB('9788969656285'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218791239' },
+    { title: '2026 나합격 식품안전기사 필기+무료특강+온라인CBT문제풀이', author: '이현정', publisher: '삼원북스', price: 39600, originalPrice: 44000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791194997290', imageUrl: KB('9791194997290'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218741770' },
+    { title: '2026 나합격 식품안전기사 실기 유형별 582제+최신기출+무료특강', author: '이현정', publisher: '삼원북스', price: 34200, originalPrice: 38000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791194997771', imageUrl: KB('9791194997771'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219190663' },
+    { title: '2026 시대에듀 식품안전기사 실기(필답형) 초단기합격', author: '김진혁', publisher: '시대고시기획', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 11, tags: ['베스트'], hasEbook: false, isbn: '9791143411136', imageUrl: KB('9791143411136'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219391368' },
+    { title: '2027 기분좋은 KFI 한국식품정보원이 집필한 식품안전기사 필기 요약이론+기출문제+ 파이널', author: '한국식품정보원', publisher: '시대에듀', price: 38700, originalPrice: 43000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791143421449', imageUrl: KB('9791143421449'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221509333' },
+    { title: '2027 모아 식품안전기사 필기 핵심이론', author: 'MCC(MOA Creator Center)', publisher: '모아교육그룹', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791168047075', imageUrl: KB('9791168047075'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221337286' },
+    { title: '2027 모아 식품안전기사 필기 과년도7개년', author: 'MCC(MOA Creator Center)', publisher: '모아교육그룹', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791168047082', imageUrl: KB('9791168047082'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221337278' },
+    { title: '2026 식품안전기사 실기 필답형', author: '정진경, 유연희 외', publisher: '예문사', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788927460756', imageUrl: KB('9788927460756'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218821422' },
+    { title: '2027 시대에듀 식품안전기사 필기 초단기합격', author: '김진혁', publisher: '시대고시기획', price: 37800, originalPrice: 42000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791143414137', imageUrl: KB('9791143414137'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221190210' },
+  ],
+
+  // ────────────────────────────────────────
+  '식품가공기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 5권뿐 — 니치 시장
+    { title: '2027 식품가공기능사 필기', author: '정진경, 이다빈', publisher: '예문사', price: 20700, originalPrice: 23000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927462552', imageUrl: KB('9788927462552'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220101516' },
+    { title: '2027 시대에듀 Win-Q 식품가공기능사 필기+실기 단기합격', author: '정상열', publisher: '시대고시기획', price: 24300, originalPrice: 27000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143422446', imageUrl: KB('9791143422446'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221565909' },
+    { title: '2026 나합격 식품가공기능사 필기+실기+무료특강', author: '서하영', publisher: '삼원북스', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791194997276', imageUrl: KB('9791194997276'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218570139' },
+    { title: '2025 식품가공 기능사 필기', author: '이지헌, 이정숙 외', publisher: '부민문화사', price: 25000, rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9788938503251', imageUrl: KB('9788938503251'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000633264' },
+    { title: '식품가공실무(식품가공기능사 작업형 실기시험)(2019)', author: '이지헌', publisher: '부민문화사', price: 30000, tags: ['베스트'], hasEbook: false, isbn: '9788938503206', imageUrl: KB('9788938503206'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000633260' },
+  ],
+
+  // ────────────────────────────────────────
+  '수산양식기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 1권뿐 — 니치 시장
+    { title: '2026 시대에듀 Win-Q 수산양식기사·산업기사 필기 단기합격', author: '최석희', publisher: '시대고시기획', price: 33300, originalPrice: 37000, discount: '10%', rating: 5.0, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9791143400352', imageUrl: KB('9791143400352'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218028924' },
+  ],
+
+  // ────────────────────────────────────────
+  '금속재료기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 1권뿐 — 니치 시장
+    { title: '2026 금속재료기사 필기', author: '조수연, 제창웅 외', publisher: '구민사', price: 45000, originalPrice: 50000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791168755901', imageUrl: KB('9791168755901'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217297586' },
+  ],
+
+  // ────────────────────────────────────────
+  '수산양식산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 1권뿐 — 니치 시장
+    { title: '2026 시대에듀 Win-Q 수산양식기사·산업기사 필기 단기합격', author: '최석희', publisher: '시대고시기획', price: 33300, originalPrice: 37000, discount: '10%', rating: 5.0, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9791143400352', imageUrl: KB('9791143400352'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218028924' },
+  ],
+
+  // ────────────────────────────────────────
+  '열처리기능사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 3권뿐 — 니치 시장
+    { title: '2026 시대에듀 Win-Q 금속재료시험·열처리기능사 필기+실기 단기합격', author: '김풍환, 권유현', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 12, tags: ['베스트'], hasEbook: false, isbn: '9791138398459', imageUrl: KB('9791138398459'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217484064' },
+    { title: '금속 재료시험 열처리 기능사', author: '조수연, 박일부 외', publisher: '남양문화', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788955540536', imageUrl: KB('9788955540536'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000803172' },
+    { title: '열처리기능사 필기 실기(2020)', author: '조수연, 제창웅', publisher: '구민사', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791158138271', imageUrl: KB('9791158138271'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001763549' },
+  ],
+
+  // ────────────────────────────────────────
+  '화약류관리기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 2권뿐 — 니치 시장
+    { title: '2026 화약류관리기사·산업기사 필기', author: '송진혁, 백성식', publisher: '예문사', price: 35100, originalPrice: 39000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788927461135', imageUrl: KB('9788927461135'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219001358' },
+    { title: '2026 화약류관리기사·산업기사 실기', author: '송진혁, 백성식', publisher: '예문사', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927462095', imageUrl: KB('9788927462095'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219570653' },
+  ],
+
+  // ────────────────────────────────────────
+  '화약류관리산업기사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 2권뿐 — 니치 시장
+    { title: '2026 화약류관리기사·산업기사 필기', author: '송진혁, 백성식', publisher: '예문사', price: 35100, originalPrice: 39000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788927461135', imageUrl: KB('9788927461135'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219001358' },
+    { title: '2026 화약류관리기사·산업기사 실기', author: '송진혁, 백성식', publisher: '예문사', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927462095', imageUrl: KB('9788927462095'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219570653' },
+  ],
+
+  // ────────────────────────────────────────
+  '외국어번역행정사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 해커스행정사 송상호 행정학개론 1차 기본서', author: '송상호', publisher: '해커스행정사', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176445894', imageUrl: KB('9791176445894'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220500698' },
+    { title: '2027 박문각 행정사 1차 단원별 기출문제집: 민법총칙, 행정법, 행정학개론', author: '조민기, 임병주 외', publisher: '박문각', price: 34200, originalPrice: 38000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791176492881', imageUrl: KB('9791176492881'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220806564' },
+    { title: '2027 해커스행정사 하성우 행정법 1차 기본서', author: '하성우', publisher: '해커스행정사', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176445887', imageUrl: KB('9791176445887'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220500726' },
+    { title: '2027 해커스행정사 양기백 민법총칙 1차 기본서', author: '양기백', publisher: '해커스행정사', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176445603', imageUrl: KB('9791176445603'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220455571' },
+    { title: '2027 박문각 행정사 1차 조민기 민법총칙 기본서', author: '조민기, 박문각 행정사연구소', publisher: '박문각', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791176493369', imageUrl: KB('9791176493369'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220699743' },
+    { title: '2027 해커스행정사 박결 민법총칙 1차 기본서', author: '박결', publisher: '해커스행정사', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176445610', imageUrl: KB('9791176445610'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220455481' },
+    { title: '2027 시대에듀 행정사 1차 기출문제해설 한권으로 끝내기', author: '박종화, 구준평 외', publisher: '시대고시기획', price: 37800, originalPrice: 42000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791143417954', imageUrl: KB('9791143417954'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220844525' },
+    { title: '2027 시대에듀 행정사 1차 전과목 한권으로 끝내기', author: '박종화, 구준평 외', publisher: '시대고시기획', price: 49500, originalPrice: 55000, discount: '10%', rating: 5.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9791143418982', imageUrl: KB('9791143418982'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221190144' },
+    { title: '2027 박문각 행정사 1차 조민기 민법총칙 문제집', author: '조민기', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791176494038', imageUrl: KB('9791176494038'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221031974' },
+    { title: '2027 박문각 행정사 1차 최욱진 행정학개론 기본서', author: '박문각 행정사연구소, 최욱진', publisher: '박문각', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791176493802', imageUrl: KB('9791176493802'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220929342' },
+  ],
+
+  // ────────────────────────────────────────
+  '청소년상담사3급': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2026 시대에듀 청소년상담사 3급 2차 면접대비 한권으로 끝내기', author: '문두식', publisher: '시대에듀', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 11, tags: ['베스트'], hasEbook: false, isbn: '9791143409898', imageUrl: KB('9791143409898'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219513846' },
+    { title: '2026 에듀윌 청소년상담사 3급 면접 사례별 질문+답변+무료특강', author: '에듀윌청소년상담LAB', publisher: '에듀윌', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 49, tags: ['베스트'], hasEbook: false, isbn: '9791136038975', imageUrl: KB('9791136038975'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217580429' },
+    { title: '2026 시대에듀 청소년상담사 3급 한권으로 끝내기', author: '시대청소년상담사 수험연구소', publisher: '시대고시기획', price: 39600, originalPrice: 44000, discount: '10%', rating: 4.6, reviews: 14, tags: ['베스트'], hasEbook: false, isbn: '9791143406095', imageUrl: KB('9791143406095'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219059292' },
+    { title: '2026 유리 청소년상담사 3급 필기 기출풀이+100% 무료강의', author: '정유리', publisher: '직업상점', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.7, reviews: 12, tags: ['베스트'], hasEbook: false, isbn: '9791194695455', imageUrl: KB('9791194695455'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219863142' },
+    { title: '2026 하이패스 청소년상담사 3급 21일만에 합격하기', author: '고인숙', publisher: '서울고시각(SG P&E)', price: 38700, originalPrice: 43000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788952652966', imageUrl: KB('9788952652966'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219719671' },
+    { title: '2026 시대에듀 청소년상담사 3급 최종모의고사 한권으로 끝내기', author: '시대청소년상담사 수험연구소', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 11, tags: ['추천'], hasEbook: false, isbn: '9791143406118', imageUrl: KB('9791143406118'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219144174' },
+    { title: '2026 청소년상담사 3급 기출문제집', author: '고인숙', publisher: '신지원', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791166336300', imageUrl: KB('9791166336300'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219128378' },
+    { title: '2026 유리 청소년상담사 3급 필기 통합이론서+100% 무료강의', author: '정유리', publisher: '직업상점', price: 41400, originalPrice: 46000, discount: '10%', rating: 5.0, reviews: 11, tags: ['추천'], hasEbook: false, isbn: '9791194695394', imageUrl: KB('9791194695394'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219386361' },
+    { title: '청소년상담사 3급 필기 한권으로 끝내기', author: '고인숙', publisher: '메인에듀', price: 32400, originalPrice: 36000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791189357436', imageUrl: KB('9791189357436'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061838773' },
+    { title: '2026 시대에듀 기출이 답이다 청소년상담사 3급 한권으로 끝내기', author: '시대청소년상담사 수험연구소', publisher: '시대에듀', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 10, tags: ['추천'], hasEbook: false, isbn: '9791143405821', imageUrl: KB('9791143405821'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218934808' },
+  ],
+
+  // ────────────────────────────────────────
+  '해사행정사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 해커스행정사 송상호 행정학개론 1차 기본서', author: '송상호', publisher: '해커스행정사', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176445894', imageUrl: KB('9791176445894'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220500698' },
+    { title: '2027 박문각 행정사 1차 단원별 기출문제집: 민법총칙, 행정법, 행정학개론', author: '조민기, 임병주 외', publisher: '박문각', price: 34200, originalPrice: 38000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791176492881', imageUrl: KB('9791176492881'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220806564' },
+    { title: '2027 해커스행정사 하성우 행정법 1차 기본서', author: '하성우', publisher: '해커스행정사', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176445887', imageUrl: KB('9791176445887'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220500726' },
+    { title: '2027 해커스행정사 양기백 민법총칙 1차 기본서', author: '양기백', publisher: '해커스행정사', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176445603', imageUrl: KB('9791176445603'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220455571' },
+    { title: '2027 박문각 행정사 1차 조민기 민법총칙 기본서', author: '조민기, 박문각 행정사연구소', publisher: '박문각', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791176493369', imageUrl: KB('9791176493369'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220699743' },
+    { title: '2027 해커스행정사 박결 민법총칙 1차 기본서', author: '박결', publisher: '해커스행정사', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176445610', imageUrl: KB('9791176445610'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220455481' },
+    { title: '2027 시대에듀 행정사 1차 기출문제해설 한권으로 끝내기', author: '박종화, 구준평 외', publisher: '시대고시기획', price: 37800, originalPrice: 42000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791143417954', imageUrl: KB('9791143417954'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220844525' },
+    { title: '2027 시대에듀 행정사 1차 전과목 한권으로 끝내기', author: '박종화, 구준평 외', publisher: '시대고시기획', price: 49500, originalPrice: 55000, discount: '10%', rating: 5.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9791143418982', imageUrl: KB('9791143418982'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221190144' },
+    { title: '2027 박문각 행정사 1차 조민기 민법총칙 문제집', author: '조민기', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791176494038', imageUrl: KB('9791176494038'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221031974' },
+    { title: '2027 박문각 행정사 1차 최욱진 행정학개론 기본서', author: '박문각 행정사연구소, 최욱진', publisher: '박문각', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791176493802', imageUrl: KB('9791176493802'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220929342' },
+  ],
+
+  // ────────────────────────────────────────
+  '청소년상담사1급': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 4권뿐 — 니치 시장
+    { title: '2026 시대에듀 청소년상담사 1급 2차 면접대비 한권으로 끝내기', author: '문두식', publisher: '시대고시기획', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.8, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9791143409874', imageUrl: KB('9791143409874'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219335745' },
+    { title: '2026 시대에듀 청소년상담사 1급 한권으로 끝내기', author: '문두식', publisher: '시대고시기획', price: 44100, originalPrice: 49000, discount: '10%', rating: 4.7, reviews: 12, tags: ['베스트'], hasEbook: false, isbn: '9791143405678', imageUrl: KB('9791143405678'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218913651' },
+    { title: '2026 김형준 청소년상담사 1급 기출문제집 문제편+해설편 세트', author: '김형준', publisher: '나눔Book', price: 38700, originalPrice: 43000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791174910370', imageUrl: KB('9791174910370'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218569805' },
+    { title: '2026 시대에듀 기출이 답이다 청소년상담사 1급 한권으로 끝내기', author: '문두식', publisher: '시대고시기획', price: 30600, originalPrice: 34000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], hasEbook: false, isbn: '9791143405975', imageUrl: KB('9791143405975'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218942100' },
+  ],
+
+  // ────────────────────────────────────────
+  '청소년지도사3급': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '청소년 지도사 2, 3급 면접 가이드', author: '백현옥', publisher: '박영스토리', price: 16000, tags: ['베스트'], hasEbook: false, isbn: '9791165192259', imageUrl: KB('9791165192259'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001834290' },
+    { title: '청소년지도사 2 3급 면접시험 가이드북', author: '김상범, 김성수 외', publisher: '공동체', price: 8000, tags: ['베스트'], hasEbook: false, isbn: '9791167250322', imageUrl: KB('9791167250322'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001849577' },
+    { title: '청소년지도사 2/3급 면접시험 대비 가이드북', author: '김진희', publisher: '에듀컨텐츠휴피아', price: 11700, originalPrice: 13000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788963563039', imageUrl: KB('9788963563039'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000989372' },
+    { title: '청소년지도사 면접시험 적중문제집(2급 및 3급)', author: '이정서', publisher: '공동체', price: 20000, tags: ['베스트'], hasEbook: false, isbn: '9791161054322', imageUrl: KB('9791161054322'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001798327' },
+    { title: '2026 시대에듀 청소년지도사 2·3급 2차 면접대비 한권으로 끝내기', author: '시대청소년지도연구소', publisher: '시대고시기획', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.8, reviews: 11, tags: ['베스트'], hasEbook: false, isbn: '9791143412003', imageUrl: KB('9791143412003'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219570080' },
+    { title: '청소년지도사 면접시험 2·3급', author: '(사)청소년과 미래', publisher: '학지사', price: 13500, originalPrice: 15000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788999730085', imageUrl: KB('9788999730085'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211314634' },
+    { title: '2026 김형준의 청소년지도사 면접가이드  1·2·3급', author: '김형준', publisher: '나눔Book', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791174911490', imageUrl: KB('9791174911490'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220575392' },
+    { title: '2026 시대에듀 청소년지도사 2·3급 한권으로 끝내기', author: '시대청소년지도연구소', publisher: '시대고시기획', price: 42300, originalPrice: 47000, discount: '10%', rating: 5.0, reviews: 12, tags: ['추천'], hasEbook: false, isbn: '9791143402967', imageUrl: KB('9791143402967'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218704137' },
+    { title: '청소년지도사 면접시험 2·3급', author: '청소년 활짝', publisher: '양성원', price: 20000, tags: ['추천'], hasEbook: false, isbn: '9791161266589', imageUrl: KB('9791161266589'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217278600' },
+    { title: '2023 청소년지도사 면접시험 한권으로 끝내기', author: '이정서', publisher: '동문사', price: 22000, tags: ['추천'], hasEbook: false, isbn: '9791163285236', imageUrl: KB('9791163285236'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000202673902' },
+  ],
+
+  // ────────────────────────────────────────
+  '반려동물행동지도사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '에듀윌 반려동물행동지도사 2주합격', author: '이하늬, 이광호', publisher: '에듀윌', price: 24300, originalPrice: 27000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791136041579', imageUrl: KB('9791136041579'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219942283' },
+    { title: '반려동물 행동지도사 2급 봉투모의고사 5회분', author: '자격시험연구소', publisher: '서원각', price: 15300, originalPrice: 17000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791125747161', imageUrl: KB('9791125747161'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218961382' },
+    { title: '2027 이기적 반려동물행동지도사 이론+모의고사', author: '한준우, 신려정 외', publisher: '영진닷컴', price: 24300, originalPrice: 27000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788931479102', imageUrl: KB('9788931479102'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220633641' },
+    { title: '반려동물행동지도사 실기 한권 완전정복', author: '김병부', publisher: '박영스토리', price: 22000, tags: ['베스트'], hasEbook: false, isbn: '9791172791186', imageUrl: KB('9791172791186'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216851648' },
+    { title: '2026 시대에듀 반려동물행동지도사 한권으로 끝내기', author: '이웅종', publisher: '시대고시기획', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 9, tags: ['베스트'], hasEbook: false, isbn: '9791143412010', imageUrl: KB('9791143412010'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219570176' },
+    { title: '반려동물행동지도사 기본서', author: '한국애견연맹 편집부', publisher: '한국애견연맹', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791198547316', imageUrl: KB('9791198547316'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219569871' },
+    { title: '2025 한권 완성 반려동물행동지도사 필기 과목별 문제집', author: '반려동물행동지도사 자격시험 연구회', publisher: '박영스토리', price: 17000, rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791172791179', imageUrl: KB('9791172791179'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216847985' },
+    { title: '2025 반려동물행동지도사 필기 한권 완전정복', author: '김병부, 김현주 외', publisher: '박영스토리', price: 26000, rating: 5.0, reviews: 11, tags: ['추천'], hasEbook: false, isbn: '9791172791162', imageUrl: KB('9791172791162'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216362843' },
+    { title: '반려동물 행동지도사 출제 예상문제 풀이집', author: '반려동물행동지도사 교재연구위원회', publisher: 'HANOL4ANI', price: 18800, tags: ['추천'], hasEbook: false, isbn: '9791166475627', imageUrl: KB('9791166475627'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216805064' },
+    { title: '반려동물행동지도사 국가자격 실기편', author: '구태호, 차지호 외', publisher: '탐진', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791193595213', imageUrl: KB('9791193595213'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214781270' },
+  ],
+
+  // ────────────────────────────────────────
+  '반려동물스타일리스트': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 1권뿐 — 니치 시장
+    { title: '초보자를 위한 반려견 스타일리스트 3급, 2급 실기', author: '배고은, 서영교', publisher: '박영사', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791130345574', imageUrl: KB('9791130345574'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219860156' },
+  ],
+
+  // ────────────────────────────────────────
+  '청소년지도사1급': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 2권뿐 — 니치 시장
+    { title: '청소년 지도사 면접대비문제집', author: '김재원, 유중원', publisher: '동문사', price: 10000, tags: ['베스트'], hasEbook: false, isbn: '9791163280330', imageUrl: KB('9791163280330'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001818829' },
+    { title: '2023 청소년지도사 면접시험 한권으로 끝내기', author: '이정서', publisher: '동문사', price: 22000, tags: ['베스트'], hasEbook: false, isbn: '9791163285236', imageUrl: KB('9791163285236'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000202673902' },
+  ],
+
+  // ────────────────────────────────────────
+  '1급전문스포츠지도사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 5권뿐 — 니치 시장
+    { title: '2027 헝그리스포츠2주 완성 생활/전문 스포츠지도사 2급 필기 +100% 무료강의', author: '한현근', publisher: '직업상점', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9791194695592', imageUrl: KB('9791194695592'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221696238' },
+    { title: '2027 헝그리스포츠 생활/전문 스포츠지도사 2급 파이널 모의고사 기출문제집 +100% 무료강의', author: '한현근', publisher: '직업상점', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791194695585', imageUrl: KB('9791194695585'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221696165' },
+    { title: '2026 2급 생활·전문 스포츠지도사 한 권으로 준비하기', author: '황태식, 정재영', publisher: '서원각', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791125746348', imageUrl: KB('9791125746348'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217371176' },
+    { title: '2027 2급 생활·전문 스포츠지도사 기출문제 정복하기 8개년', author: '황태식, 정재영', publisher: '서원각', price: 21600, originalPrice: 24000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791125748366', imageUrl: KB('9791125748366'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220154011' },
+    { title: '2025 생활 전문 스포츠지도사 2급 필기 단박에오름 올인원', author: '전지호, 이지영 외', publisher: '오름', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791198240637', imageUrl: KB('9791198240637'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214657941' },
+  ],
+
+  // ────────────────────────────────────────
+  '유소년스포츠지도사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 에듀윌 스포츠지도사 필기 한권끝장(빈출이론+기출문제+모의고사+무료특강)', author: '정수봉, 이준영 외', publisher: '에듀윌', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791136043740', imageUrl: KB('9791136043740'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221048964' },
+    { title: '2026 에듀윌 스포츠지도사 필기 한권끝장 모의고사 4회분 포함+무료특강', author: '정수봉, 이준영 외', publisher: '에듀윌', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.6, reviews: 26, tags: ['베스트'], hasEbook: false, isbn: '9791136038838', imageUrl: KB('9791136038838'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217395813' },
+    { title: '2027 스포츠지도사 무료강의4주 완성 필기', author: 'M스포츠연구소', publisher: '박영사', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791144200777', imageUrl: KB('9791144200777'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221518828' },
+    { title: '2026 메인에듀 2급 생활스포츠지도사 필기 한 권으로 끝내기', author: '메인에듀 스포츠지도사 연구소', publisher: '메인에듀', price: 27900, originalPrice: 31000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791189357931', imageUrl: KB('9791189357931'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218881268' },
+    { title: '2027 짧,굵 멘토원 스포츠지도사 2급 필기+개념&기출문제 전 과목 무료강의', author: '이창원', publisher: '김영북스', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791173493133', imageUrl: KB('9791173493133'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221163080' },
+    { title: '2027 시대에듀 스포츠지도사 2급 필기 한권으로 끝내기', author: '시대스포츠연구소', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 7, tags: ['추천'], hasEbook: false, isbn: '9791143415851', imageUrl: KB('9791143415851'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220270939' },
+    { title: '2027 시대에듀 스포츠지도사 2급 필기 기출문제집', author: '시대스포츠연구소', publisher: '시대고시기획', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9791143415509', imageUrl: KB('9791143415509'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220166153' },
+    { title: '2026 해커스 스포츠지도사 2급 필기 한권합격 이론+최신기출+핵심노트', author: '안승기, 김옥현 외', publisher: '해커스자격증', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788969656759', imageUrl: KB('9788969656759'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218331837' },
+    { title: '2026 성피티의 생활스포츠지도사 2급 필기 합격공식', author: '성우재, 정빛나', publisher: '좋은땅', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791138848664', imageUrl: KB('9791138848664'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218448152' },
+    { title: '2027 스포츠지도사 2급 필기 기출문제집', author: '이제승, 이정노', publisher: '신지원', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791166337222', imageUrl: KB('9791166337222'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221383748' },
+  ],
+
+  // ────────────────────────────────────────
+  '의사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 Pacific 크믈레 예상문제풀이 16: 예방의학', author: '퍼시픽학술국', publisher: '퍼시픽북', price: 29000, tags: ['베스트'], hasEbook: false, isbn: '9791158145460', imageUrl: KB('9791158145460'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219598165' },
+    { title: '2027 Pacific 크믈레 예상문제풀이 1: 순환기', author: '퍼시픽학술국', publisher: '퍼시픽북', price: 31000, tags: ['베스트'], hasEbook: false, isbn: '9791158145316', imageUrl: KB('9791158145316'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219598167' },
+    { title: '2027 Pacific 크믈레 예상문제풀이 17: 의료법규', author: '퍼시픽학술국', publisher: '퍼시픽북', price: 23000, tags: ['베스트'], hasEbook: false, isbn: '9791158145477', imageUrl: KB('9791158145477'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219598166' },
+    { title: '2027 Pacific 크믈레 맥잡기 플러스 5: 마이너, 예방의학, 의료법규', author: '퍼시픽학술국', publisher: '퍼시픽북', price: 28000, rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791158145729', imageUrl: KB('9791158145729'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219598172' },
+    { title: '2027 Pacific 크믈레 예상문제풀이 13: 소아과 각론(2)', author: '퍼시픽학술국', publisher: '퍼시픽북', price: 24000, tags: ['베스트'], hasEbook: false, isbn: '9791158145439', imageUrl: KB('9791158145439'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219598170' },
+    { title: '2027 Pacific 크믈레 맥잡기 플러스 3: 외과 총론, 외과 각론, 산과, 부인과', author: '퍼시픽학술국', publisher: '퍼시픽북', price: 22000, tags: ['추천'], hasEbook: false, isbn: '9791158145705', imageUrl: KB('9791158145705'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219598163' },
+    { title: '2027 Pacific 크믈레 예상문제풀이 5: 내분비, 알레르기', author: '퍼시픽학술국', publisher: '퍼시픽북', price: 26000, tags: ['추천'], hasEbook: false, isbn: '9791158145354', imageUrl: KB('9791158145354'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219598153' },
+    { title: '2027 Pacific 크믈레 예상문제풀이 11: 소아과 총론', author: '퍼시픽학술국', publisher: '퍼시픽북', price: 24000, tags: ['추천'], hasEbook: false, isbn: '9791158145415', imageUrl: KB('9791158145415'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219598152' },
+    { title: '2027 Pacific 크믈레 예상문제풀이 6: 혈액, 종양, 류마티스', author: '퍼시픽학술국', publisher: '퍼시픽북', price: 26000, tags: ['추천'], hasEbook: false, isbn: '9791158145361', imageUrl: KB('9791158145361'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219598144' },
+    { title: '2027 Pacific 크믈레 맥잡기 플러스 2: 신장, 감염, 내분비, 알레르기, 혈액, 종양, 류마티스', author: '퍼시픽학술국', publisher: '퍼시픽북', price: 24000, tags: ['추천'], hasEbook: false, isbn: '9791158145699', imageUrl: KB('9791158145699'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219598160' },
+  ],
+
+  // ────────────────────────────────────────
+  '변호사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 변호사시험 대비 헌법 객관식 최종병기 K', author: '금동흠', publisher: '아름다운새벽', price: 20700, originalPrice: 23000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791186952849', imageUrl: KB('9791186952849'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221755637' },
+    { title: '2027 변호사시험대비 국제거래법 기출문제 Outline 최종정리', author: '이성원', publisher: '북스테이트', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9791199354586', imageUrl: KB('9791199354586'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219854636' },
+    { title: '2027 Union 변호사시험 민소법 선택형 기출문제집 1: 기출편', author: '백현관', publisher: '인해', price: 20700, originalPrice: 23000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791124291023', imageUrl: KB('9791124291023'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219302939' },
+    { title: '2026 변호사시험법전', author: '현암사 법전팀', publisher: '현암사', price: 27000, rating: 5.0, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9788932324876', imageUrl: KB('9788932324876'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219442505' },
+    { title: '2027 한글 변호사시험용 법전', author: '법조문연구회', publisher: '법학사', price: 27000, rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791124264461', imageUrl: KB('9791124264461'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219646534' },
+    { title: '2027 Union 변호사시험 기출문제집 상법 선택형 1: 기출편', author: '백현관', publisher: '인해', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791124291016', imageUrl: KB('9791124291016'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219249160' },
+    { title: '2027 Union 변호사시험 민법 선택형 기출문제집 1: 기출편', author: '백현관', publisher: '인해', price: 35100, originalPrice: 39000, discount: '10%', rating: 5.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9791124291030', imageUrl: KB('9791124291030'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219306782' },
+    { title: '2027 Union 변호사시험 민소법 선택형 기출문제집 2: 모의편', author: '백현관', publisher: '인해', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791194788874', imageUrl: KB('9791194788874'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219059278' },
+    { title: '2027 Union 변호사시험 행정법 선택형 기출문제집 1: 기출편', author: '백현관', publisher: '인해', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 5, tags: ['추천'], hasEbook: false, isbn: '9791194788997', imageUrl: KB('9791194788997'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219249198' },
+    { title: '2027 Union 변호사시험 형소법 선택형 기출문제집 1: 기출편', author: '백현관', publisher: '인해', price: 27900, originalPrice: 31000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791194788829', imageUrl: KB('9791194788829'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219212641' },
+  ],
+
+  // ────────────────────────────────────────
+  '한국어교원3급': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 7권뿐 — 니치 시장
+    { title: '2026 시대에듀 한국어교육능력검정시험 2차 면접시험 일주일 안에 다잡기', author: '정은화', publisher: '시대고시기획', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.9, reviews: 13, tags: ['베스트'], hasEbook: false, isbn: '9791143410306', imageUrl: KB('9791143410306'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219305354' },
+    { title: '2026 시대에듀 한국어교육능력검정시험 30일 안에 다잡기', author: '김훈, 이수정', publisher: '시대고시기획', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.8, reviews: 14, tags: ['베스트'], hasEbook: false, isbn: '9791143410290', imageUrl: KB('9791143410290'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219488482' },
+    { title: '2026 시대에듀 한국어교육능력검정시험 5년간 기출문제해설', author: '안혜진', publisher: '시대고시기획', price: 32400, originalPrice: 36000, discount: '10%', rating: 5.0, reviews: 14, tags: ['베스트'], hasEbook: false, isbn: '9791143410313', imageUrl: KB('9791143410313'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219570183' },
+    { title: '시대에듀 한국어교육능력검정시험 용어해설', author: '한국어교재연구소', publisher: '시대고시기획', price: 15300, originalPrice: 17000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791143416001', imageUrl: KB('9791143416001'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220215231' },
+    { title: '2026 시대에듀 한국어교육능력검정시험 교안작성연습', author: '정은화', publisher: '시대고시기획', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 12, tags: ['베스트'], hasEbook: false, isbn: '9791143403391', imageUrl: KB('9791143403391'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219305287' },
+    { title: '한국어교육능력 검정시험(제5회)', author: '서경숙', publisher: '박이정', price: 10000, tags: ['추천'], hasEbook: false, isbn: '9788962922073', imageUrl: KB('9788962922073'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000978046' },
+    { title: '한국어교육능력검정시험(2018)', author: 'TOPIK KOREA 한국어평가연구소, 공유정 외', publisher: '도서출판 참', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791188572076', imageUrl: KB('9791188572076'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001916208' },
+  ],
+
+  // ────────────────────────────────────────
+  '한국어교원2급': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 7권뿐 — 니치 시장
+    { title: '2026 시대에듀 한국어교육능력검정시험 2차 면접시험 일주일 안에 다잡기', author: '정은화', publisher: '시대고시기획', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.9, reviews: 13, tags: ['베스트'], hasEbook: false, isbn: '9791143410306', imageUrl: KB('9791143410306'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219305354' },
+    { title: '2026 시대에듀 한국어교육능력검정시험 30일 안에 다잡기', author: '김훈, 이수정', publisher: '시대고시기획', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.8, reviews: 14, tags: ['베스트'], hasEbook: false, isbn: '9791143410290', imageUrl: KB('9791143410290'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219488482' },
+    { title: '2026 시대에듀 한국어교육능력검정시험 5년간 기출문제해설', author: '안혜진', publisher: '시대고시기획', price: 32400, originalPrice: 36000, discount: '10%', rating: 5.0, reviews: 14, tags: ['베스트'], hasEbook: false, isbn: '9791143410313', imageUrl: KB('9791143410313'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219570183' },
+    { title: '시대에듀 한국어교육능력검정시험 용어해설', author: '한국어교재연구소', publisher: '시대고시기획', price: 15300, originalPrice: 17000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791143416001', imageUrl: KB('9791143416001'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220215231' },
+    { title: '2026 시대에듀 한국어교육능력검정시험 교안작성연습', author: '정은화', publisher: '시대고시기획', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 12, tags: ['베스트'], hasEbook: false, isbn: '9791143403391', imageUrl: KB('9791143403391'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219305287' },
+    { title: '한국어교육능력 검정시험(제5회)', author: '서경숙', publisher: '박이정', price: 10000, tags: ['추천'], hasEbook: false, isbn: '9788962922073', imageUrl: KB('9788962922073'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000978046' },
+    { title: '한국어교육능력검정시험(2018)', author: 'TOPIK KOREA 한국어평가연구소, 공유정 외', publisher: '도서출판 참', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791188572076', imageUrl: KB('9791188572076'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001916208' },
+  ],
+
+  // ────────────────────────────────────────
+  '한국어교원1급': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '한국어 교원 자격 취득을 위한 한국어 교육 실습', author: '이윤진, 이은경', publisher: '한국문화사', price: 22500, originalPrice: 25000, discount: '10%', rating: 4.9, reviews: 7, tags: ['베스트'], hasEbook: false, isbn: '9791169190879', imageUrl: KB('9791169190879'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200898031' },
+    { title: '한국어교원 자격제도 길잡이', author: '국립국어원', publisher: '휴먼컬처아리랑', price: 15000, tags: ['베스트'], hasEbook: false, isbn: '9791165371647', imageUrl: KB('9791165371647'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001836231' },
+    { title: '한국어교원 자격제도 길잡이', author: '국립국어원', publisher: '진한엠앤비', price: 10800, originalPrice: 12000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791129032997', imageUrl: KB('9791129032997'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200472067' },
+    { title: '2026 시대에듀 한국어교육능력검정시험 2차 면접시험 일주일 안에 다잡기', author: '정은화', publisher: '시대고시기획', price: 19800, originalPrice: 22000, discount: '10%', rating: 4.9, reviews: 13, tags: ['베스트'], hasEbook: false, isbn: '9791143410306', imageUrl: KB('9791143410306'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219305354' },
+    { title: '2026 시대에듀 한국어교육능력검정시험 30일 안에 다잡기', author: '김훈, 이수정', publisher: '시대고시기획', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.8, reviews: 14, tags: ['베스트'], hasEbook: false, isbn: '9791143410290', imageUrl: KB('9791143410290'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219488482' },
+    { title: '2026 시대에듀 한국어교육능력검정시험 5년간 기출문제해설', author: '안혜진', publisher: '시대고시기획', price: 32400, originalPrice: 36000, discount: '10%', rating: 5.0, reviews: 14, tags: ['추천'], hasEbook: false, isbn: '9791143410313', imageUrl: KB('9791143410313'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219570183' },
+    { title: '시대에듀 한국어교육능력검정시험 용어해설', author: '한국어교재연구소', publisher: '시대고시기획', price: 15300, originalPrice: 17000, discount: '10%', rating: 5.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9791143416001', imageUrl: KB('9791143416001'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220215231' },
+    { title: '2026 시대에듀 한국어교육능력검정시험 교안작성연습', author: '정은화', publisher: '시대고시기획', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 12, tags: ['추천'], hasEbook: false, isbn: '9791143403391', imageUrl: KB('9791143403391'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219305287' },
+    { title: '한국어교육능력 검정시험(제5회)', author: '서경숙', publisher: '박이정', price: 10000, tags: ['추천'], hasEbook: false, isbn: '9788962922073', imageUrl: KB('9788962922073'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000978046' },
+    { title: '한국어교육능력검정시험(2018)', author: 'TOPIK KOREA 한국어평가연구소, 공유정 외', publisher: '도서출판 참', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791188572076', imageUrl: KB('9791188572076'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001916208' },
+  ],
+
+  // ────────────────────────────────────────
+  '정신건강임상심리사': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 9권뿐 — 니치 시장
+    { title: '2026 임상심리사 1급 실기 예상 + 기출문제집', author: '김형준, 유상현', publisher: '나눔Book', price: 45000, originalPrice: 50000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791174910530', imageUrl: KB('9791174910530'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218783515' },
+    { title: '2027 시대에듀 임상심리사 1급(필기+실기) 한권으로 끝내기', author: '민지', publisher: '시대고시기획', price: 30600, originalPrice: 34000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791143419088', imageUrl: KB('9791143419088'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221162185' },
+    { title: '2026 임상심리사 1급 실기', author: '이은주, 임의진 외', publisher: '군자출판사', price: 35000, rating: 3.8, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791170688372', imageUrl: KB('9791170688372'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220297605' },
+    { title: '2026 시대에듀 기출이 답이다 임상심리사 1급(필기+실기) 한권으로 끝내기', author: '민지', publisher: '시대고시기획', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.3, reviews: 17, tags: ['베스트'], hasEbook: false, isbn: '9791143405883', imageUrl: KB('9791143405883'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218961027' },
+    { title: '2026 원큐패스 임상심리사 1급 필기·실기­', author: '이경희', publisher: '다락원', price: 30600, originalPrice: 34000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788927775447', imageUrl: KB('9788927775447'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218911888' },
+    { title: '2026 임상심리사 1급 필기 기출문제집 문제해설편 세트', author: '김형준, 조은문', publisher: '나눔Book', price: 49500, originalPrice: 55000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791174910202', imageUrl: KB('9791174910202'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218183051' },
+    { title: '2026 임상심리사 1급 필기', author: '이은주, 임의진 외', publisher: '군자출판사', price: 45000, rating: 2.5, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791170688365', imageUrl: KB('9791170688365'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220297580' },
+    { title: '2023 임상심리사 1급 필기', author: '김도연', publisher: '학지사', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788999729065', imageUrl: KB('9788999729065'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000202037915' },
+    { title: '2023 쉽게 풀어 쓴 임상심리사 1급 실기', author: '김도연', publisher: '학지사', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788999729058', imageUrl: KB('9788999729058'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000201972981' },
+  ],
+
+  // ────────────────────────────────────────
+  '세무직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2026 이진욱 세무사의 국세청 세무직 공무원 실무면접 가이드: 국세 편', author: '이진욱', publisher: '배움', price: 16200, originalPrice: 18000, discount: '10%', rating: 5.0, reviews: 6, tags: ['베스트'], hasEbook: false, isbn: '9791124262566', imageUrl: KB('9791124262566'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219926253' },
+    { title: '2027 공단기 신용철의 공무원 세법 기출문제집', author: '신용철', publisher: '에스티유니타스', price: 28800, originalPrice: 32000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169667081', imageUrl: KB('9791169667081'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221760370' },
+    { title: '2027 해커스공무원 정윤돈 회계학 단원별 기출문제집', author: '정윤돈, 엄윤', publisher: '해커스공무원', price: 45000, originalPrice: 50000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176449472', imageUrl: KB('9791176449472'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221752858' },
+    { title: '2026 김소영 국가직 면접 합격 Dream 세무직 세트', author: '김소영', publisher: '지금', price: 32400, originalPrice: 36000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791160184297', imageUrl: KB('9791160184297'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219602131' },
+    { title: '2027 해커스공무원 이훈엽 세법 단원별 기출문제집(9급, 7급 공무원)', author: '이훈엽', publisher: '해커스공무원', price: 35100, originalPrice: 39000, discount: '10%', rating: 5.0, reviews: 16, tags: ['베스트'], hasEbook: false, isbn: '9791176448161', imageUrl: KB('9791176448161'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221061480' },
+    { title: '2027 해커스공무원 정윤돈 회계학 재무회계 기본서', author: '정윤돈', publisher: '해커스공무원', price: 47700, originalPrice: 53000, discount: '10%', rating: 4.8, reviews: 12, tags: ['추천'], hasEbook: false, isbn: '9791176442589', imageUrl: KB('9791176442589'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220339341' },
+    { title: '다이어트 K-IFRS 재무회계(2020) : 세무직·관세직 시험 대비', author: '현진환, 박민석', publisher: '배움', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791190130318', imageUrl: KB('9791190130318'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001935768' },
+    { title: '2027 공단기 오정화 세법 기출플러스', author: '오정화', publisher: '올에듀케이션', price: 40500, originalPrice: 45000, discount: '10%', rating: 5.0, reviews: 10, tags: ['추천'], hasEbook: false, isbn: '9791124520284', imageUrl: KB('9791124520284'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221152075' },
+    { title: '2027 오정화 회계학 재무회계', author: '오정화', publisher: '올에듀케이션', price: 45000, originalPrice: 50000, discount: '10%', rating: 4.8, reviews: 16, tags: ['추천'], hasEbook: false, isbn: '9791124520178', imageUrl: KB('9791124520178'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220453128' },
+    { title: '2024 국가직 세무직대비 남정선 이종하 세법회계 전공강화 동형모의고사', author: '남정선, 이종하', publisher: '더나은', price: 16200, originalPrice: 18000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791192498874', imageUrl: KB('9791192498874'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000212569023' },
+  ],
+
+  // ────────────────────────────────────────
+  '교육행정직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 How To Pass 교육행정직 교육학 기출문제 분석집', author: '이경범', publisher: '씨엘웍스', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.8, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9791194245261', imageUrl: KB('9791194245261'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220704861' },
+    { title: '2027 9급 공무원 기출문제 정복하기 교육학개론', author: '공무원시험연구소', publisher: '서원각', price: 18000, originalPrice: 20000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791125748700', imageUrl: KB('9791125748700'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220502924' },
+    { title: '2027 해커스공무원 김대현 행정법총론 최신 4개년 기출문제집', author: '김대현', publisher: '해커스공무원', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176449601', imageUrl: KB('9791176449601'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751691' },
+    { title: '2026-2027 7·9급 교육행정직 고세훈 교육학', author: '고세훈', publisher: 'TCP', price: 40000, rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791198833709', imageUrl: KB('9791198833709'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213800651' },
+    { title: '2027 나두공 9급공무원 교육학개론 써머리노트', author: '나두공수험연구소', publisher: '시스컴', price: 15300, originalPrice: 17000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791169419970', imageUrl: KB('9791169419970'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220930776' },
+    { title: '2027 해커스공무원 3분의 1로 줄여 쓴 김대현 행정법총론 기본서', author: '김대현', publisher: '해커스공무원', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.9, reviews: 47, tags: ['추천'], hasEbook: false, isbn: '9791176442220', imageUrl: KB('9791176442220'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220221375' },
+    { title: '2027 시대에듀 기출이 답이다 9급 공무원 교육행정직 전과목 3개년 기출문제집', author: '시대공무원시험연구소', publisher: '시대고시기획', price: 24300, originalPrice: 27000, discount: '10%', rating: 5.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9791143418630', imageUrl: KB('9791143418630'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220988818' },
+    { title: '2027 9급 공무원 파워특강 교육학개론', author: '공무원시험연구소', publisher: '서원각', price: 25200, originalPrice: 28000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125749219', imageUrl: KB('9791125749219'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221566391' },
+    { title: '2027 해커스공무원 3분의 1로 줄여 쓴 김대현 행정법총론 핵심요약노트 (핵요)', author: '김대현', publisher: '해커스공무원', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 38, tags: ['추천'], hasEbook: false, isbn: '9791176448086', imageUrl: KB('9791176448086'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221151681' },
+    { title: 'HOW TO PASS 교육행정직 교육학 단원별 문제집', author: '이경범', publisher: '씨엘웍스', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.9, reviews: 8, tags: ['추천'], hasEbook: false, isbn: '9791194245131', imageUrl: KB('9791194245131'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218549592' },
+  ],
+
+  // ────────────────────────────────────────
+  '사회복지직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 시대에듀 기출이 답이다 9급 공무원 사회복지직 전과목 3개년 기출문제집', author: '시대공무원시험연구소', publisher: '시대고시기획', price: 20700, originalPrice: 23000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791143418623', imageUrl: KB('9791143418623'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220989088' },
+    { title: '2027 해커스공무원 박정훈 사회복지학개론 합격생 필기노트(9급 공무원)', author: '박정훈', publisher: '해커스공무원', price: 20700, originalPrice: 23000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791176445740', imageUrl: KB('9791176445740'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220451979' },
+    { title: '2027 해커스공무원 김대현 행정법총론 최신 4개년 기출문제집', author: '김대현', publisher: '해커스공무원', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176449601', imageUrl: KB('9791176449601'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751691' },
+    { title: '2026 사회복지직 공무원 면접 가이드', author: '김형준, 노종태 외', publisher: '배움', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791124262450', imageUrl: KB('9791124262450'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219648009' },
+    { title: '2027 해커스공무원 박정훈 사회복지학개론 기본서 세트', author: '박정훈', publisher: '해커스공무원', price: 45900, originalPrice: 51000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176445757', imageUrl: KB('9791176445757'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220432081' },
+    { title: '2027 해커스공무원 3분의 1로 줄여 쓴 김대현 행정법총론 기본서', author: '김대현', publisher: '해커스공무원', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.9, reviews: 47, tags: ['추천'], hasEbook: false, isbn: '9791176442220', imageUrl: KB('9791176442220'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220221375' },
+    { title: '2026 9급 공무원 사회복지직 전공과목 총정리', author: '공무원시험연구소', publisher: '서원각', price: 27000, originalPrice: 30000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125747154', imageUrl: KB('9791125747154'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218917454' },
+    { title: '2027 김유경 사회복지학개론 기출문제집 단원별 연도별', author: '김유경', publisher: '지식터', price: 40500, originalPrice: 45000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791124326688', imageUrl: KB('9791124326688'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221109419' },
+    { title: '2027 해커스공무원 3분의 1로 줄여 쓴 김대현 행정법총론 핵심요약노트 (핵요)', author: '김대현', publisher: '해커스공무원', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 38, tags: ['추천'], hasEbook: false, isbn: '9791176448086', imageUrl: KB('9791176448086'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221151681' },
+    { title: '2027 나두공 9급공무원 사회복지직 써머리', author: '나두공 수험연구소', publisher: '시스컴', price: 35100, originalPrice: 39000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791169413336', imageUrl: KB('9791169413336'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221189863' },
+  ],
+
+  // ────────────────────────────────────────
+  '전산직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 전산직ㆍ계리직 박미진 컴퓨터일반 기출문제집', author: '박미진', publisher: '포러스', price: 40500, originalPrice: 45000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791193823941', imageUrl: KB('9791193823941'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221193615' },
+    { title: '2027 전산직·군무원 컴퓨터일반 기출문제집', author: '박태순, 김강현', publisher: '지안에듀', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788966113606', imageUrl: KB('9788966113606'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220807883' },
+    { title: '2027 박미진 정보보호론 이론서', author: '박미진', publisher: '포러스', price: 33120, originalPrice: 36800, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791193823903', imageUrl: KB('9791193823903'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220466675' },
+    { title: '2027 전산직·군무원 컴퓨터일반 이론편', author: '박태순, 김강현', publisher: '지안에듀', price: 33300, originalPrice: 37000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788966113521', imageUrl: KB('9788966113521'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220452987' },
+    { title: '2026 해커스공무원 곽후근 정보보호론 단원별 기출문제집', author: '곽후근', publisher: '해커스공무원', price: 25200, originalPrice: 28000, discount: '10%', rating: 4.7, reviews: 9, tags: ['베스트'], hasEbook: false, isbn: '9791174045744', imageUrl: KB('9791174045744'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218197885' },
+    { title: '2027 신지원 계리직 컴퓨터일반', author: '신지원', publisher: '미래가치', price: 36000, originalPrice: 40000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791167737069', imageUrl: KB('9791167737069'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220217114' },
+    { title: '해커스공무원 곽후근 정보보호론 기본서 세트', author: '곽후근', publisher: '해커스공무원', price: 38700, originalPrice: 43000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791176442466', imageUrl: KB('9791176442466'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220241103' },
+    { title: '2027 전산직·데이터직 데이터베이스론 이론서', author: '김강현', publisher: '지안에듀', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788966113576', imageUrl: KB('9788966113576'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220457790' },
+    { title: '2026 해커스공무원 곽후근 컴퓨터일반 단원별 기출문제집', author: '곽후근', publisher: '해커스공무원', price: 27000, originalPrice: 30000, discount: '10%', rating: 4.6, reviews: 7, tags: ['추천'], hasEbook: false, isbn: '9791174045751', imageUrl: KB('9791174045751'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218197855' },
+    { title: '박문각 공무원 손경희 정보보호론 전산직 기본서', author: '손경희', publisher: '박문각', price: 34200, originalPrice: 38000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176492355', imageUrl: KB('9791176492355'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220453667' },
+  ],
+
+  // ────────────────────────────────────────
+  '관세직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '관세직 적중모의고사(10회분 모의고사)(2017)', author: '장은숙 외', publisher: '엑스퍼트', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788952508065', imageUrl: KB('9788952508065'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000723890' },
+    { title: '2027 해커스공무원 이명호 관세법 단원별 기출문제집(9급·7급 공무원)', author: '이명호', publisher: '해커스공무원', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.6, reviews: 11, tags: ['베스트'], hasEbook: false, isbn: '9791176447867', imageUrl: KB('9791176447867'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221031502' },
+    { title: '2027 에듀윌 분개로 익히는 기초회계원리 2주끝장(이론+핵심분개 550제+무료특강)', author: '김성수, 박진혁 외', publisher: '에듀윌', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791136044167', imageUrl: KB('9791136044167'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221384280' },
+    { title: '다이어트 K-IFRS 재무회계(2020) : 세무직·관세직 시험 대비', author: '현진환, 박민석', publisher: '배움', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791190130318', imageUrl: KB('9791190130318'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001935768' },
+    { title: '2027 해커스공무원 이명호 올인원 관세법', author: '이명호', publisher: '해커스공무원', price: 38700, originalPrice: 43000, discount: '10%', rating: 4.9, reviews: 33, tags: ['베스트'], hasEbook: false, isbn: '9791176440592', imageUrl: KB('9791176440592'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219795473' },
+    { title: '2026 해커스 기초회계원리 초단기 7일 완성 이론+기출+분개연습', author: '이남호', publisher: '해커스금융', price: 16200, originalPrice: 18000, discount: '10%', rating: 5.0, reviews: 12, tags: ['추천'], hasEbook: false, isbn: '9791174040893', imageUrl: KB('9791174040893'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218668709' },
+    { title: '2023 9급.세무.관세직대비 김성수 회계학 동형모의고사(12회)', author: '김성수', publisher: '더나은', price: 14400, originalPrice: 16000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791192498423', imageUrl: KB('9791192498423'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200631736' },
+    { title: '2027 해커스공무원 이명호 관세법 뻥령집', author: '이명호', publisher: '해커스공무원', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9791176441544', imageUrl: KB('9791176441544'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219997239' },
+    { title: '김용재 코어 공무원 회계학 회계원리편', author: '김용재', publisher: '패스원탑(PASS ON TOP)', price: 10800, originalPrice: 12000, discount: '10%', rating: 4.9, reviews: 8, tags: ['추천'], hasEbook: false, isbn: '9791191672688', imageUrl: KB('9791191672688'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213668450' },
+    { title: '2026 해커스공무원 이명호 관세법 핵심요약집', author: '이명호', publisher: '해커스공무원', price: 16200, originalPrice: 18000, discount: '10%', rating: 5.0, reviews: 22, tags: ['추천'], hasEbook: false, isbn: '9791174049940', imageUrl: KB('9791174049940'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219182453' },
+  ],
+
+  // ────────────────────────────────────────
+  '우정9급(계리직)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 계리직 송현남 예금일반 & 보험일반 핵심요약', author: '송현남', publisher: '미래가치', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791167737298', imageUrl: KB('9791167737298'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221282059' },
+    { title: '2027 전산직ㆍ계리직 박미진 컴퓨터일반 기출문제집', author: '박미진', publisher: '포러스', price: 40500, originalPrice: 45000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791193823941', imageUrl: KB('9791193823941'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221193615' },
+    { title: '2027 계리직 신지원 컴퓨터일반 단원별 예상&기출문제집', author: '신지원', publisher: '미래가치', price: 29700, originalPrice: 33000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791167737502', imageUrl: KB('9791167737502'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221665571' },
+    { title: '2026 9급 계리직 공무원 우편일반 기본이론서', author: '하종화', publisher: '오스틴북스', price: 31500, originalPrice: 35000, discount: '10%', rating: 4.6, reviews: 9, tags: ['베스트'], hasEbook: false, isbn: '9791124051221', imageUrl: KB('9791124051221'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218685604' },
+    { title: '2026 9급 계리직 공무원 보험일반 기본이론서', author: '하종화', publisher: '오스틴북스', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 9, tags: ['베스트'], hasEbook: false, isbn: '9791124051245', imageUrl: KB('9791124051245'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218934441' },
+    { title: '2026 All New 계리직 영어 예상문제집 세트', author: 'jane Sim', publisher: '에듀콕스', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 29, tags: ['추천'], hasEbook: false, isbn: '9791193666418', imageUrl: KB('9791193666418'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218858876' },
+    { title: '2026 9급 계리직 공무원 예금일반 기본이론서', author: '하종화', publisher: '오스틴북스', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 9, tags: ['추천'], hasEbook: false, isbn: '9791124051238', imageUrl: KB('9791124051238'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218729305' },
+    { title: '2027 신지원 계리직 컴퓨터일반', author: '신지원', publisher: '미래가치', price: 36000, originalPrice: 40000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791167737069', imageUrl: KB('9791167737069'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220217114' },
+    { title: '2027 계리직 공무원 백세레나 올인원 영어', author: '백세레나', publisher: '고시동네', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 5, tags: ['추천'], hasEbook: false, isbn: '9791168182608', imageUrl: KB('9791168182608'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220004175' },
+    { title: '2027 계리직 공무원 기출문제집', author: 'JH공무원시험연구소', publisher: '미디어정훈', price: 21600, originalPrice: 24000, discount: '10%', rating: 3.8, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791166431609', imageUrl: KB('9791166431609'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220046683' },
+  ],
+
+  // ────────────────────────────────────────
+  '검찰사무직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2026 검찰직 9급 적중모의고사', author: '김한 외', publisher: '엑스퍼트원', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791193137697', imageUrl: KB('9791193137697'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218942330' },
+    { title: '2026 해커스경찰 갓대환 형사법 기본서 2: 형사소송법 수사와 증거', author: '김대환', publisher: '해커스경찰', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 71, tags: ['베스트'], hasEbook: false, isbn: '9791174048790', imageUrl: KB('9791174048790'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218936196' },
+    { title: '2026 해커스경찰 갓대환 형사법 기본서 1: 형법', author: '김대환', publisher: '해커스경찰', price: 42300, originalPrice: 47000, discount: '10%', rating: 5.0, reviews: 68, tags: ['베스트'], hasEbook: false, isbn: '9791174048783', imageUrl: KB('9791174048783'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218936181' },
+    { title: '2025 검찰직총정리: 형법', author: '신호진', publisher: '렉스스터디', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791193851555', imageUrl: KB('9791193851555'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215699415' },
+    { title: '2027 해커스경찰 갓대환 형사소송법 기출 1000제 세트(경찰공무원)', author: '김대환', publisher: '해커스경찰', price: 59400, originalPrice: 66000, discount: '10%', rating: 5.0, reviews: 44, tags: ['베스트'], hasEbook: false, isbn: '9791176448444', imageUrl: KB('9791176448444'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221247645' },
+    { title: '2027 해커스경찰 갓대환 형법 기출 1200제 세트(경찰공무원)', author: '김대환', publisher: '해커스경찰', price: 60300, originalPrice: 67000, discount: '10%', rating: 5.0, reviews: 39, tags: ['추천'], hasEbook: false, isbn: '9791176448413', imageUrl: KB('9791176448413'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221247642' },
+    { title: '코칭 형법 기출공략집 1: 법원·검찰직', author: '장진', publisher: '새흐름', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791162934364', imageUrl: KB('9791162934364'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000211507755' },
+    { title: '2027 홍형철 공무원 형사소송법', author: '홍형철', publisher: '새흐름', price: 45900, originalPrice: 51000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791162938485', imageUrl: KB('9791162938485'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220340067' },
+    { title: '2027 김승봉 레전드 형법 기본서', author: '김승봉', publisher: '에스티유니타스', price: 38700, originalPrice: 43000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791169665599', imageUrl: KB('9791169665599'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219391448' },
+    { title: '형사소송법(경찰승진 사시 행시 법원직 검찰직 각종시험대비)', author: '한남현', publisher: '법문사', price: 38000, tags: ['추천'], hasEbook: false, isbn: '9788918018560', imageUrl: KB('9788918018560'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000452140' },
+  ],
+
+  // ────────────────────────────────────────
+  '출입국관리직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2026 해커스공무원 패권 국제법 단원별 기출문제집(출입국관리직 9·7급)', author: '이상구', publisher: '해커스공무원', price: 33300, originalPrice: 37000, discount: '10%', rating: 5.0, reviews: 7, tags: ['베스트'], hasEbook: false, isbn: '9791174047663', imageUrl: KB('9791174047663'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218907745' },
+    { title: '해커스공무원 패권 국제법 기본서 일반국제법', author: '이상구', publisher: '해커스공무원', price: 36000, originalPrice: 40000, discount: '10%', rating: 5.0, reviews: 17, tags: ['베스트'], hasEbook: false, isbn: '9791174042453', imageUrl: KB('9791174042453'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216922416' },
+    { title: '2027 해커스공무원 김대현 행정법총론 최신 4개년 기출문제집', author: '김대현', publisher: '해커스공무원', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176449601', imageUrl: KB('9791176449601'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751691' },
+    { title: '2025 9급 출입국관리직 적중모의고사', author: '이정은 외', publisher: '엑스퍼트원', price: 24300, originalPrice: 27000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791193137369', imageUrl: KB('9791193137369'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215020268' },
+    { title: '해커스공무원 패권 국제법 핵심요약집', author: '이상구', publisher: '해커스공무원', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9791176446235', imageUrl: KB('9791176446235'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220693773' },
+    { title: '2027 해커스공무원 3분의 1로 줄여 쓴 김대현 행정법총론 기본서', author: '김대현', publisher: '해커스공무원', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.9, reviews: 47, tags: ['추천'], hasEbook: false, isbn: '9791176442220', imageUrl: KB('9791176442220'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220221375' },
+    { title: '해커스 공무원 패권 국제법 기본서 국제경제법', author: '이상구', publisher: '해커스공무원', price: 16200, originalPrice: 18000, discount: '10%', rating: 4.7, reviews: 18, tags: ['추천'], hasEbook: false, isbn: '9791169994590', imageUrl: KB('9791169994590'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000208721968' },
+    { title: '2027 해커스공무원 3분의 1로 줄여 쓴 김대현 행정법총론 핵심요약노트 (핵요)', author: '김대현', publisher: '해커스공무원', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 38, tags: ['추천'], hasEbook: false, isbn: '9791176448086', imageUrl: KB('9791176448086'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221151681' },
+    { title: '해커스공무원 패권 국제법 단원별 핵심지문 OX', author: '이상구', publisher: '해커스공무원', price: 34200, originalPrice: 38000, discount: '10%', rating: 5.0, reviews: 11, tags: ['추천'], hasEbook: false, isbn: '9791176442565', imageUrl: KB('9791176442565'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220341307' },
+    { title: '2027 해커스 홍대겸 행정법총론 단원별 기출문제집(9급·7급 공무원)', author: '홍대겸', publisher: '해커스공무원', price: 35100, originalPrice: 39000, discount: '10%', rating: 5.0, reviews: 7, tags: ['추천'], hasEbook: false, isbn: '9791176447935', imageUrl: KB('9791176447935'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221031556' },
+  ],
+
+  // ────────────────────────────────────────
+  '일반행정직 공무원(7급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 해커스PSAT 7급(기본) 길규범 상황판단 기본서', author: '길규범', publisher: '해커스PSAT', price: 30600, originalPrice: 34000, discount: '10%', rating: 5.0, reviews: 16, tags: ['베스트'], hasEbook: false, isbn: '9791176448130', imageUrl: KB('9791176448130'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221142519' },
+    { title: '2027 황철곤 행정학 기본서 세트', author: '황철곤', publisher: '모두공북스', price: 41400, originalPrice: 46000, discount: '10%', rating: 5.0, reviews: 44, tags: ['베스트'], hasEbook: false, isbn: '9791173603884', imageUrl: KB('9791173603884'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220351248' },
+    { title: '2027 해커스공무원 김대현 행정법총론 최신 4개년 기출문제집', author: '김대현', publisher: '해커스공무원', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176449601', imageUrl: KB('9791176449601'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751691' },
+    { title: '2027 해커스PSAT 7급(기본) 조은정 언어논리 기본서', author: '조은정', publisher: '해커스PSAT', price: 30600, originalPrice: 34000, discount: '10%', rating: 5.0, reviews: 20, tags: ['베스트'], hasEbook: false, isbn: '9791176448123', imageUrl: KB('9791176448123'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221142538' },
+    { title: '2027 해커스공무원 금나나 행정학 기본서 세트', author: '금나나, 해커스 공무원시험연구소', publisher: '해커스공무원', price: 42300, originalPrice: 47000, discount: '10%', rating: 5.0, reviews: 8, tags: ['베스트'], hasEbook: false, isbn: '9791176445719', imageUrl: KB('9791176445719'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220354994' },
+    { title: '2027 해커스공무원 3분의 1로 줄여 쓴 김대현 행정법총론 기본서', author: '김대현', publisher: '해커스공무원', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.9, reviews: 47, tags: ['추천'], hasEbook: false, isbn: '9791176442220', imageUrl: KB('9791176442220'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220221375' },
+    { title: '2027 해커스PSAT 7급(기본) 김용훈 자료해석 기본서', author: '김용훈', publisher: '해커스PSAT', price: 30600, originalPrice: 34000, discount: '10%', rating: 5.0, reviews: 15, tags: ['추천'], hasEbook: false, isbn: '9791176448147', imageUrl: KB('9791176448147'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221142527' },
+    { title: '2027 해커스공무원 현 행정학 기본서 세트', author: '서현, 해커스 공무원시험연구소', publisher: '해커스공무원', price: 46800, originalPrice: 52000, discount: '10%', rating: 4.8, reviews: 9, tags: ['추천'], hasEbook: false, isbn: '9791176442978', imageUrl: KB('9791176442978'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220354979' },
+    { title: '2027 해커스공무원 3분의 1로 줄여 쓴 김대현 행정법총론 핵심요약노트 (핵요)', author: '김대현', publisher: '해커스공무원', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 38, tags: ['추천'], hasEbook: false, isbn: '9791176448086', imageUrl: KB('9791176448086'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221151681' },
+    { title: '2027 해커스PSAT 기본(7급/민간경력자) 10+9개년 기출문제집(언어논리+상황판단+자료해석)', author: '김소원, 복지훈 외', publisher: '해커스잡', price: 26820, originalPrice: 29800, discount: '10%', rating: 5.0, reviews: 25, tags: ['추천'], hasEbook: false, isbn: '9788969657565', imageUrl: KB('9788969657565'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221173472' },
+  ],
+
+  // ────────────────────────────────────────
+  '교정직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 9권뿐 — 니치 시장
+    { title: '2027 LOGOS 형사소송법 교정직 전용 기출 문제집', author: '이준현', publisher: '미래가치', price: 18000, originalPrice: 20000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791167737397', imageUrl: KB('9791167737397'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221262652' },
+    { title: '2026 교정학 최근 1년간 기출총정리', author: '함승한', publisher: '양지에듀', price: 13000, rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791194825210', imageUrl: KB('9791194825210'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218786815' },
+    { title: '2026 해커스경찰 갓대환 형사법 기본서 2: 형사소송법 수사와 증거', author: '김대환', publisher: '해커스경찰', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 71, tags: ['베스트'], hasEbook: false, isbn: '9791174048790', imageUrl: KB('9791174048790'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218936196' },
+    { title: '2027 해커스공무원 이언담 교정학 법령·판례집(교정직 9, 7급 공채, 교정직 승진)', author: '이언담', publisher: '해커스공무원', price: 27900, originalPrice: 31000, discount: '10%', rating: 5.0, reviews: 17, tags: ['베스트'], hasEbook: false, isbn: '9791176443739', imageUrl: KB('9791176443739'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221142619' },
+    { title: '2027 41개 테마로 끝장내는 교정학 형사정책 기출사용설명서', author: '임현', publisher: '에듀에프엠', price: 35100, originalPrice: 39000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791161702155', imageUrl: KB('9791161702155'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221651076' },
+    { title: '2027 해커스경찰 갓대환 형사소송법 기출 1000제 세트(경찰공무원)', author: '김대환', publisher: '해커스경찰', price: 59400, originalPrice: 66000, discount: '10%', rating: 5.0, reviews: 44, tags: ['추천'], hasEbook: false, isbn: '9791176448444', imageUrl: KB('9791176448444'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221247645' },
+    { title: '2027 해커스공무원 이언담 교정학 기본서', author: '이언담', publisher: '해커스공무원', price: 33300, originalPrice: 37000, discount: '10%', rating: 5.0, reviews: 12, tags: ['추천'], hasEbook: false, isbn: '9791174048011', imageUrl: KB('9791174048011'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219377954' },
+    { title: '2027 홍형철 공무원 형사소송법', author: '홍형철', publisher: '새흐름', price: 45900, originalPrice: 51000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791162938485', imageUrl: KB('9791162938485'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220340067' },
+    { title: '2027 시대에듀 9급 공무원 교정직 전과목 한권으로 다잡기', author: '시대공무원시험연구소', publisher: '시대고시기획', price: 35100, originalPrice: 39000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791143411044', imageUrl: KB('9791143411044'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220501130' },
+  ],
+
+  // ────────────────────────────────────────
+  '사서직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 9급 공무원 사서직 기출문제 정복하기', author: '공무원시험연구소', publisher: '서원각', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791125748922', imageUrl: KB('9791125748922'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220735523' },
+    { title: '2026 자료조직개론 단원별 기출 1000제', author: '신인수', publisher: '스페라플러스(SperaPlus)', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 18, tags: ['베스트'], hasEbook: false, isbn: '9791188116317', imageUrl: KB('9791188116317'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218962156' },
+    { title: '2026 정보봉사개론', author: '신인수', publisher: '스페라플러스(SperaPlus)', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 17, tags: ['베스트'], hasEbook: false, isbn: '9791188116287', imageUrl: KB('9791188116287'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217489049' },
+    { title: '2026 기합 9급 사서직 정보봉사개론 단원별 기출문제집', author: '전경선', publisher: '서울고시각(SG P&E)', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9788952651402', imageUrl: KB('9788952651402'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217430094' },
+    { title: '2026 기합 9급 사서직 자료조직개론 단원별 기출문제집', author: '전경선', publisher: '서울고시각(SG P&E)', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9788952651211', imageUrl: KB('9788952651211'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217232802' },
+    { title: '2026 정보봉사개론 단원별 기출 1000제', author: '신인수', publisher: '스페라플러스(SperaPlus)', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 15, tags: ['추천'], hasEbook: false, isbn: '9791188116324', imageUrl: KB('9791188116324'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218962166' },
+    { title: '2025 9급 공무원 기출문제집: 자료조직개론', author: '공무원연구소', publisher: '소정미디어', price: 11700, originalPrice: 13000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788959694198', imageUrl: KB('9788959694198'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214417034' },
+    { title: '2024 사서직 공무원 핵심요약', author: '신인수', publisher: '포러스', price: 18000, originalPrice: 20000, discount: '10%', rating: 4.7, reviews: 10, tags: ['추천'], hasEbook: false, isbn: '9791193823125', imageUrl: KB('9791193823125'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213671470' },
+    { title: '자료조직개론 9급공무원(2018)', author: '공무원시험연구소', publisher: '서원각', price: 16200, originalPrice: 18000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125720591', imageUrl: KB('9791125720591'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001663997' },
+    { title: '2025 9급 공무원 기출문제집 정보봉사개론', author: '공무원연구소', publisher: '소정미디어', price: 10800, originalPrice: 12000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788959694174', imageUrl: KB('9788959694174'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214417243' },
+  ],
+
+  // ────────────────────────────────────────
+  '일반기계직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 기합 기계직 공무원 기계설계 기출문제집', author: '박병호', publisher: '서울고시각(SG P&E)', price: 20700, originalPrice: 23000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788952653178', imageUrl: KB('9788952653178'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219860557' },
+    { title: '2026 시대에듀 기술직 공무원 기계일반 한권으로 끝내기', author: '홍순규', publisher: '시대고시기획', price: 24300, originalPrice: 27000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], hasEbook: false, isbn: '9791143410016', imageUrl: KB('9791143410016'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219144185' },
+    { title: '시대에듀 9급 기술직 공무원 기계설계 한권으로 끝내기', author: '홍순규', publisher: '시대고시기획', price: 24300, originalPrice: 27000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], hasEbook: false, isbn: '9791143410849', imageUrl: KB('9791143410849'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219305297' },
+    { title: 'Pass 기계직 공무원 기출문제', author: '위을복', publisher: '학진북스', price: 37800, originalPrice: 42000, discount: '10%', rating: 5.0, reviews: 7, tags: ['베스트'], hasEbook: false, isbn: '9788968780509', imageUrl: KB('9788968780509'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000202238016' },
+    { title: '2026 기합 기계일반 기출문제집', author: '박병호', publisher: '서울고시각(SG P&E)', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788952652164', imageUrl: KB('9788952652164'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218936079' },
+    { title: '고졸특별채용 기계직 공무원 특성화고 기계제도', author: '한홍걸', publisher: '한필', price: 21600, originalPrice: 24000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791189374624', imageUrl: KB('9791189374624'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001926410' },
+    { title: '2027 9급 공무원 기계일반 기출문제집', author: '공무원연구소', publisher: '소정미디어', price: 14400, originalPrice: 16000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788959694433', imageUrl: KB('9788959694433'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221031752' },
+    { title: '기계설계 문제 7급 국가직', author: '유주식', publisher: '교육과학사', price: 15000, tags: ['추천'], hasEbook: false, isbn: '9788925412689', imageUrl: KB('9788925412689'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000474510' },
+    { title: '2027 9급 공무원 기출문제 정복하기 기계직', author: '주한종', publisher: '서원각', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125748946', imageUrl: KB('9791125748946'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220807995' },
+    { title: '2025 Easy Tech 이지테크 기계직 공무원 기계일반', author: '박병호', publisher: '서울고시각(SG P&E)', price: 29700, originalPrice: 33000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788952648532', imageUrl: KB('9788952648532'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214034736' },
+  ],
+
+  // ────────────────────────────────────────
+  '전기직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '9급 공무원 전기직 기출문제 정복하기(2027)', author: '공무원시험연구소', publisher: '서원각', price: 23400, originalPrice: 26000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791125748977', imageUrl: KB('9791125748977'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220871422' },
+    { title: '2027 EASY TECH 이지테크 전기직 공무원 전기이론', author: '김영복, 김지호', publisher: '서울고시각(SG P&E)', price: 32400, originalPrice: 36000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788952653598', imageUrl: KB('9788952653598'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220574386' },
+    { title: '2027 에듀윌 전기 전기기기 필기 기본서+유형별 N제+무료특강', author: '에듀윌 전기교육연구소', publisher: '에듀윌', price: 21600, originalPrice: 24000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791136044044', imageUrl: KB('9791136044044'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221509486' },
+    { title: '2027 9급 공무원 전기이론 기출문제집', author: '공무원연구소', publisher: '소정미디어', price: 16200, originalPrice: 18000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788959694457', imageUrl: KB('9788959694457'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221047857' },
+    { title: '2026 전기기기 필기 기본서', author: '검정연구회', publisher: '동일출판사', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788938117366', imageUrl: KB('9788938117366'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218399757' },
+    { title: '위포트 공기업 전기직 최신기출 600제', author: '위포트 연구소', publisher: '위포트', price: 21600, originalPrice: 24000, discount: '10%', rating: 4.7, reviews: 7, tags: ['추천'], hasEbook: false, isbn: '9791161982052', imageUrl: KB('9791161982052'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216257152' },
+    { title: '2026 전기이론 9급 기술직공무원 시험대비', author: '기술직공무원시험연구진', publisher: '엑스퍼트원', price: 20700, originalPrice: 23000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791193137666', imageUrl: KB('9791193137666'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218448199' },
+    { title: '2027 9급 공무원 전기기기 기출문제집', author: '공무원연구소', publisher: '소정미디어', price: 11700, originalPrice: 13000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788959694464', imageUrl: KB('9788959694464'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221047849' },
+    { title: '2027 EASY TECH 이지테크 전기직 공무원 전기기기', author: '김지호, 김영복', publisher: '서울고시각(SG P&E)', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788952653581', imageUrl: KB('9788952653581'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220574370' },
+    { title: '전기이론(9급 전기직공무원)', author: '정용걸, 이은영', publisher: '세진사', price: 19800, originalPrice: 22000, discount: '10%', rating: 3.8, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791160451504', imageUrl: KB('9791160451504'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001791664' },
+  ],
+
+  // ────────────────────────────────────────
+  '화공직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 EASY TECH 화공직 공업화학', author: '박찬혁', publisher: '서울고시각(SG P&E)', price: 30600, originalPrice: 34000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788952653772', imageUrl: KB('9788952653772'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221048687' },
+    { title: '2026 기합 화공직 공무원 화학공학일반 기출문제집', author: '박찬혁', publisher: '서울고시각(SG P&E)', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.6, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9788952652577', imageUrl: KB('9788952652577'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219350578' },
+    { title: '2027 EASY TECH 이지테크 화공직 공무원 화학공학일반', author: '박찬혁', publisher: '서울고시각(SG P&E)', price: 30600, originalPrice: 34000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788952653802', imageUrl: KB('9788952653802'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221109542' },
+    { title: '박문각 공무원 이찬범 화학 기본서', author: '이찬범', publisher: '박문각', price: 23400, originalPrice: 26000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791172621025', imageUrl: KB('9791172621025'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213834314' },
+    { title: '2025 화학공학일반', author: '고경미', publisher: '일진사', price: 18000, originalPrice: 20000, discount: '10%', rating: 3.8, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9788942919475', imageUrl: KB('9788942919475'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214291364' },
+    { title: '2023 9급 공무원 공업직 화학공학 일반 기출문제 정복하기', author: '공무원시험연구소', publisher: '서원각', price: 15300, originalPrice: 17000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125740087', imageUrl: KB('9791125740087'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061671395' },
+    { title: '2027 기합 기술직 공무원 화학 기출문제집', author: '박찬혁', publisher: '서울고시각(SG P&E)', price: 21600, originalPrice: 24000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788952653222', imageUrl: KB('9788952653222'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219976321' },
+    { title: '장미 기술직 공무원 식품화학 기출예상문제', author: '장미', publisher: '하이앤북', price: 20700, originalPrice: 23000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791165336059', imageUrl: KB('9791165336059'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217456374' },
+    { title: '김남균 공무원 화학 올인원 All In One: 화학1·2+개론', author: '김남균', publisher: '마이패스북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 3.8, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791194603054', imageUrl: KB('9791194603054'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215753898' },
+    { title: '2025 배수진 공무원 화학 기본 이론서', author: '배수진', publisher: 'BTB Books', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791192327792', imageUrl: KB('9791192327792'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214174956' },
+  ],
+
+  // ────────────────────────────────────────
+  '일반토목직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 진승현 토목직 가벼운 응용역학 기출문제집', author: '진승현', publisher: '모두공북스', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791173604546', imageUrl: KB('9791173604546'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221353681' },
+    { title: '2027 응용역학개론 9급 공무원 기출문제집', author: '공무원연구소', publisher: '소정미디어', price: 16200, originalPrice: 18000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788959694471', imageUrl: KB('9788959694471'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221064004' },
+    { title: '2027 진승현 토목직 가벼운 토목설계 기출문제집', author: '진승현', publisher: '모두공북스', price: 27900, originalPrice: 31000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791173604560', imageUrl: KB('9791173604560'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221335627' },
+    { title: '응용역학개론(기술직 공무원)', author: '주한종', publisher: '서원각', price: 21600, originalPrice: 24000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791125717768', imageUrl: KB('9791125717768'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001663716' },
+    { title: '2027 이학민 토목직 토목설계 세트', author: '이학민', publisher: '지안에듀', price: 41400, originalPrice: 46000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788966113668', imageUrl: KB('9788966113668'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220956913' },
+    { title: '2027 이학민 토목직 응용역학 세트', author: '이학민', publisher: '지안에듀', price: 41400, originalPrice: 46000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788966113613', imageUrl: KB('9788966113613'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220956643' },
+    { title: '2022 9급 공무원 토목직 응용역학개론 기출문제 정복하기', author: '주한종', publisher: '서원각', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791125736233', imageUrl: KB('9791125736233'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001665549' },
+    { title: '2027 토목직 공무원 토목설계', author: '장성국', publisher: '세진사', price: 48000, tags: ['추천'], hasEbook: false, isbn: '9791160457353', imageUrl: KB('9791160457353'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220564599' },
+    { title: '2022 9급 토목직 공무원 기출문제 단기완성 응용역학개론', author: '정경동', publisher: '한솔아카데미', price: 36000, originalPrice: 40000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791166540097', imageUrl: KB('9791166540097'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000060626071' },
+    { title: '2026 진승현 토목직 가벼운 토목설계 동형모의고사', author: '진승현', publisher: '넥스트스터디', price: 12600, originalPrice: 14000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791173603228', imageUrl: KB('9791173603228'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219135225' },
+  ],
+
+  // ────────────────────────────────────────
+  '건축직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 김창훈 건축직 건축구조학 21개년 단원별 기출문제집', author: '김창훈', publisher: '모두공북스', price: 26100, originalPrice: 29000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791173604409', imageUrl: KB('9791173604409'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220705396' },
+    { title: '2026 해커스공무원 건축계획 기본서', author: '이석훈, 최승윤', publisher: '해커스공무원', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791174042606', imageUrl: KB('9791174042606'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216937073' },
+    { title: '2027 해커스공무원 안병관 건축구조 10개년 기출문제집', author: '안병관', publisher: '해커스공무원', price: 23400, originalPrice: 26000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176449465', imageUrl: KB('9791176449465'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221744792' },
+    { title: '2026 7급 공무원 기출문제 정복하기 건축직', author: '주한종', publisher: '서원각', price: 23400, originalPrice: 26000, discount: '10%', rating: 1.3, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791125746966', imageUrl: KB('9791125746966'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218704813' },
+    { title: '2027 9급 공무원 건축계획 기출문제집', author: '공무원연구소', publisher: '소정미디어', price: 14400, originalPrice: 16000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788959694419', imageUrl: KB('9788959694419'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220945960' },
+    { title: '2027 해커스공무원 안병관 건축구조 기본서', author: '안병관', publisher: '해커스공무원', price: 28800, originalPrice: 32000, discount: '10%', rating: 3.8, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791176442572', imageUrl: KB('9791176442572'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220276763' },
+    { title: '2026 박문각 공무원 건축직 실전 동형 모의고사', author: '김현, 차민휘', publisher: '박문각', price: 12600, originalPrice: 14000, discount: '10%', rating: 2.8, reviews: 5, tags: ['추천'], hasEbook: false, isbn: '9791172628031', imageUrl: KB('9791172628031'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216354442' },
+    { title: '2026 안남식 건축계획(학) 핵심 기출지문 빵꾸노트', author: '안남식', publisher: '서울고시각(SG P&E)', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788952652614', imageUrl: KB('9788952652614'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219451418' },
+    { title: '2027 9급 공무원 건축구조 기출문제집', author: '공무원연구소', publisher: '소정미디어', price: 14400, originalPrice: 16000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788959694426', imageUrl: KB('9788959694426'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220945989' },
+    { title: '2027 9급 공무원 기출문제 정복하기 건축직', author: '공무원시험연구소', publisher: '서원각', price: 24300, originalPrice: 27000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791125748915', imageUrl: KB('9791125748915'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220853801' },
+  ],
+
+  // ────────────────────────────────────────
+  '일반농업직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 컨셉 농업직·농촌지도사·농업연구사 재배학(개론)', author: '장사원', publisher: '서울고시각(SG P&E)', price: 34200, originalPrice: 38000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788952653697', imageUrl: KB('9788952653697'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220806559' },
+    { title: '2027 NO.1 농업직 컨셉 식용작물(학)', author: '장사원', publisher: '서울고시각(SG P&E)', price: 34200, originalPrice: 38000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788952653703', imageUrl: KB('9788952653703'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220845842' },
+    { title: '2026 재배학개론', author: '김규리', publisher: '명인북스', price: 36000, originalPrice: 40000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791194269083', imageUrl: KB('9791194269083'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218016102' },
+    { title: '2026 컨셉 식용작물(학) 기출문제집', author: '장사원', publisher: '서울고시각(SG P&E)', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9788952651884', imageUrl: KB('9788952651884'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218642689' },
+    { title: '2027 김동이 농업직 재배학', author: '김동이', publisher: '지안에듀', price: 30600, originalPrice: 34000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788966113897', imageUrl: KB('9788966113897'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221353890' },
+    { title: '2025 재배학(개론) 기출문제집', author: '공무원연구소', publisher: '소정미디어', price: 13500, originalPrice: 15000, discount: '10%', rating: 3.8, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788959694129', imageUrl: KB('9788959694129'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214181853' },
+    { title: '박문각 공무원 박진호 식용작물학 기본서', author: '박진호', publisher: '박문각', price: 30600, originalPrice: 34000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791172620813', imageUrl: KB('9791172620813'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213661063' },
+    { title: '2027 9급 공무원 농업직 기출문제 정복하기', author: '공무원시험연구소', publisher: '서원각', price: 18900, originalPrice: 21000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125748731', imageUrl: KB('9791125748731'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220511731' },
+    { title: '재배학개론(기술직 공무원 시험 대비)', author: '이준곤', publisher: '서원각', price: 17100, originalPrice: 19000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125706748', imageUrl: KB('9791125706748'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001662617' },
+    { title: '2027 김동이 농업직 식용작물학', author: '김동이', publisher: '지안에듀', price: 30600, originalPrice: 34000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788966113903', imageUrl: KB('9788966113903'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221353881' },
+  ],
+
+  // ────────────────────────────────────────
+  '산림자원직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 9급 공무원 산림자원직 기출문제 정복하기', author: '공무원시험연구소', publisher: '서원각', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791125748762', imageUrl: KB('9791125748762'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220564013' },
+    { title: '2027 김동이 임업직 조림학 세트', author: '김동이', publisher: '지안에듀', price: 38700, originalPrice: 43000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9788966113781', imageUrl: KB('9788966113781'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221179084' },
+    { title: '2027 김동이 임업직(산림자원) 임업경영학 세트', author: '김동이', publisher: '지안에듀', price: 38700, originalPrice: 43000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788966113743', imageUrl: KB('9788966113743'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221268826' },
+    { title: '산림자원직 실전모의고사(2018)', author: '정영기 외', publisher: '한국교육기획', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788970972176', imageUrl: KB('9788970972176'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001093192' },
+    { title: '박문각 공무원 박진호 임업직 조림학 기본서', author: '박진호', publisher: '박문각', price: 36000, originalPrice: 40000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791175193673', imageUrl: KB('9791175193673'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218330761' },
+    { title: '박문각 공무원 박진호 임업직 임업경영 기본서', author: '박진호', publisher: '박문각', price: 36000, originalPrice: 40000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791175193512', imageUrl: KB('9791175193512'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218277978' },
+    { title: '2026 기합 조림(학) 단원별 기출문제집', author: '김정호', publisher: '서울고시각(SG P&E)', price: 17100, originalPrice: 19000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9788952652034', imageUrl: KB('9788952652034'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218787582' },
+    { title: '2027 7·9급 임업직(산림자원) 공무원 임업경영(학) 단원별 기출문제집', author: '김정호', publisher: '서울고시각(SG P&E)', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788952653215', imageUrl: KB('9788952653215'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219940266' },
+    { title: '2023 It\'s easy 임업직 공무원 조림(학)', author: '김정호', publisher: '서울고시각(SG P&E)', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788952644343', imageUrl: KB('9788952644343'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200621885' },
+    { title: '임업경영(기술직 공무원)', author: '박근희', publisher: '서원각', price: 23400, originalPrice: 26000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125716617', imageUrl: KB('9791125716617'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001663603' },
+  ],
+
+  // ────────────────────────────────────────
+  '방재안전직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 9권뿐 — 니치 시장
+    { title: '2027 9급 공무원 방재안전직 기출문제 정복하기', author: '공무원시험연구소', publisher: '서원각', price: 21600, originalPrice: 24000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791125748779', imageUrl: KB('9791125748779'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220563996' },
+    { title: '2026 재난관리론', author: '소방대학교수연구모임', publisher: '두빛나래', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791194425106', imageUrl: KB('9791194425106'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217127784' },
+    { title: '2025 막판! 안전관리론 이론 요약집', author: '정명재', publisher: '법률저널', price: 7200, originalPrice: 8000, discount: '10%', rating: 3.8, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791173840395', imageUrl: KB('9791173840395'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216738557' },
+    { title: '재난안전방재 관계법규(방재안전직 공무원)', author: '정재수', publisher: '세화', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931707762', imageUrl: KB('9788931707762'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000564968' },
+    { title: '2025 막판! 정리 재난관리론(법령)', author: '정명재', publisher: '법률저널', price: 29700, originalPrice: 33000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791173840388', imageUrl: KB('9791173840388'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216695558' },
+    { title: '안전관리론(기술직공무원 시험대비)', author: '김완중', publisher: '서원각', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125707769', imageUrl: KB('9791125707769'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001662719' },
+    { title: '방재안전직렬 안전관리론', author: '한국방재학회', publisher: '예문사', price: 20700, originalPrice: 23000, discount: '10%', rating: 4.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9788927429067', imageUrl: KB('9788927429067'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000522706' },
+    { title: '재난관리론(기술직공무원 시험대비)', author: '김선준', publisher: '서원각', price: 22500, originalPrice: 25000, discount: '10%', rating: 3.8, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791125711698', imageUrl: KB('9791125711698'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001663111' },
+    { title: '방재안전직 적중모의고사(공무원 9급)(2014)', author: '홍미숙', publisher: '엑스퍼트', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788952506948', imageUrl: KB('9788952506948'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000723778' },
+  ],
+
+  // ────────────────────────────────────────
+  '보건직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2025 해커스공무원 최성희 공중보건 실전동형모의고사 13회분(9·7급 보건직 공무원)', author: '최성희', publisher: '해커스공무원', price: 11700, originalPrice: 13000, discount: '10%', rating: 4.6, reviews: 9, tags: ['베스트'], hasEbook: false, isbn: '9791172448950', imageUrl: KB('9791172448950'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216092614' },
+    { title: '해커스공무원 최성희 공중보건 기본서', author: '최성희', publisher: '해커스공무원', price: 38700, originalPrice: 43000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], hasEbook: false, isbn: '9791176443579', imageUrl: KB('9791176443579'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221031465' },
+    { title: '해커스공무원 최성희 보건행정 기본서', author: '최성희', publisher: '해커스공무원', price: 32400, originalPrice: 36000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791176443661', imageUrl: KB('9791176443661'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221031444' },
+    { title: '2027 9급 공무원 보건직 기출문제 정복하기', author: '공무원시험연구소', publisher: '서원각', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791125748861', imageUrl: KB('9791125748861'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220699644' },
+    { title: '2027 합격자가 적극 추천하는 김희영 공중보건 기본 이론서', author: '김희영', publisher: 'BTB', price: 34200, originalPrice: 38000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791194690436', imageUrl: KB('9791194690436'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220945948' },
+    { title: '2027 합격자가 적극 추천하는 김희영 보건행정 기본 이론서', author: '김희영', publisher: 'BTB Books', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791194690443', imageUrl: KB('9791194690443'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221145185' },
+    { title: '한 권으로 끝내는 보건직 공무원 수험서 공중보건학', author: '한현우', publisher: '아카데미아', price: 25000, tags: ['추천'], hasEbook: false, isbn: '9788959384969', imageUrl: KB('9788959384969'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200090588' },
+    { title: '2027 나두공 9급공무원 공중보건 써머리노트', author: '나두공수험연구소', publisher: '시스컴', price: 15300, originalPrice: 17000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791169410892', imageUrl: KB('9791169410892'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220930767' },
+    { title: '2027 합격자가 적극 추천하는 김희영 보건행정 요약+기출문제집', author: '김희영', publisher: 'BTB Books', price: 18000, originalPrice: 20000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791194690498', imageUrl: KB('9791194690498'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221329705' },
+    { title: '한 권으로 끝내는 보건직공무원수험서 영어', author: '강창국', publisher: '아카데미아', price: 28000, tags: ['추천'], hasEbook: false, isbn: '9788959384983', imageUrl: KB('9788959384983'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200384144' },
+  ],
+
+  // ────────────────────────────────────────
+  '환경직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 환경직공무원 환경공학', author: '신동성, 하부영 외', publisher: '세진사', price: 40000, tags: ['베스트'], hasEbook: false, isbn: '9791160457391', imageUrl: KB('9791160457391'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220938805' },
+    { title: '2026 기합 환경직 공무원 환경공학(개론) 기출문제집', author: '이철한', publisher: '서울고시각(SG P&E)', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788952652706', imageUrl: KB('9788952652706'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219559542' },
+    { title: '2026 기합 화공직 공무원 화학공학일반 기출문제집', author: '박찬혁', publisher: '서울고시각(SG P&E)', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.6, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9788952652577', imageUrl: KB('9788952652577'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219350578' },
+    { title: '2027 EASY TECH 환경공학(개론)', author: '이철한', publisher: '서울고시각(SG P&E)', price: 36900, originalPrice: 41000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788952654038', imageUrl: KB('9788952654038'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221636748' },
+    { title: '박문각 공무원 이찬범 화학 기본서', author: '이찬범', publisher: '박문각', price: 23400, originalPrice: 26000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791172621025', imageUrl: KB('9791172621025'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213834314' },
+    { title: '환경생태학 (환경직 공무원)(핵심정리 및 기출문제 해설)', author: '장부규', publisher: '지구문화사', price: 25200, originalPrice: 28000, discount: '10%', rating: 3.8, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788970064086', imageUrl: KB('9788970064086'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001065747' },
+    { title: '2027 9급 공무원 환경공학개론 기출문제 정복하기', author: '공무원시험연구소', publisher: '서원각', price: 13500, originalPrice: 15000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125749417', imageUrl: KB('9791125749417'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221664903' },
+    { title: '2027 EASY TECH 이지테크 화공직 공무원 화학공학일반', author: '박찬혁', publisher: '서울고시각(SG P&E)', price: 30600, originalPrice: 34000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788952653802', imageUrl: KB('9788952653802'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221109542' },
+    { title: '2027 9급 공무원 환경직 기출문제 정복하기', author: '공무원시험연구소', publisher: '서원각', price: 21600, originalPrice: 24000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125749394', imageUrl: KB('9791125749394'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221643523' },
+    { title: '2027 문진영 환경직 공무원 환경공학(개론)', author: '문진영', publisher: '하이앤북', price: 31500, originalPrice: 35000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791165336707', imageUrl: KB('9791165336707'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220273808' },
+  ],
+
+  // ────────────────────────────────────────
+  '식품위생직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 9권뿐 — 니치 시장
+    { title: '식품위생직, 식품기사 시험을 위한 식품미생물 점수 쉽게 따기', author: '식품위생연구회', publisher: '수학연구사', price: 17550, originalPrice: 19500, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791191036183', imageUrl: KB('9791191036183'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001947294' },
+    { title: '2027 김지연 식품위생', author: '김지연', publisher: '마지원', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791124295199', imageUrl: KB('9791124295199'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221230818' },
+    { title: '에센스 식품위생관계법규(2026-2027)', author: '고진현, 박정숙 외', publisher: '지구문화', price: 30000, tags: ['베스트'], hasEbook: false, isbn: '9791199809062', imageUrl: KB('9791199809062'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220852655' },
+    { title: '2023 It\'s easy 식품위생직 식품화학(개론)', author: '이정선', publisher: '서울고시각(SG P&E)', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788952644282', imageUrl: KB('9788952644282'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200528737' },
+    { title: '식품위생(기술직 공무원 시험대비)', author: '노미라', publisher: '서원각', price: 18000, originalPrice: 20000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791125711612', imageUrl: KB('9791125711612'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001663103' },
+    { title: '2027 기합 조리직 위생관계법규 단원별 기출예상문제집', author: '권이승, 김병선', publisher: '서울고시각(SG P&E)', price: 21600, originalPrice: 24000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788952654021', imageUrl: KB('9788952654021'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221519899' },
+    { title: '2023 식품위생직 식품위생 한권으로 끝내기', author: '김민정', publisher: '시대고시기획', price: 21600, originalPrice: 24000, discount: '10%', rating: 5.0, reviews: 7, tags: ['추천'], hasEbook: false, isbn: '9791138335065', imageUrl: KB('9791138335065'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000200149704' },
+    { title: '위생관계법규(조리직 공무원)', author: '정성진', publisher: '서원각', price: 21600, originalPrice: 24000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791125724889', imageUrl: KB('9791125724889'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001664424' },
+    { title: '위생관계법규 조문과 오엑스: 조리직 공무원시험', author: '공무원시험연구회', publisher: '수학연구사', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791191036275', imageUrl: KB('9791191036275'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001947302' },
+  ],
+
+  // ────────────────────────────────────────
+  '고용노동직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 9급 공무원 기출문제 정복하기: 고용노동직', author: '공무원시험연구소', publisher: '서원각', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791125749431', imageUrl: KB('9791125749431'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221737062' },
+    { title: '2026 공단기 노동법개론 정답률로 끝내는 단기 합격 문제집', author: '에스티유니타스 편집부', publisher: '에스티유니타스', price: 9000, originalPrice: 10000, discount: '10%', rating: 5.0, reviews: 9, tags: ['베스트'], hasEbook: false, isbn: '9791169665537', imageUrl: KB('9791169665537'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219198937' },
+    { title: '2027 해커스공무원 김대현 행정법총론 최신 4개년 기출문제집', author: '김대현', publisher: '해커스공무원', price: 27000, originalPrice: 30000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176449601', imageUrl: KB('9791176449601'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751691' },
+    { title: '2027 나두공 9급공무원 고용노동직 써머리', author: '나두공 수험연구소', publisher: '시스컴', price: 35100, originalPrice: 39000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176940009', imageUrl: KB('9791176940009'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221189839' },
+    { title: '2027 나두공 9급공무원 노동법개론 써머리노트', author: '나두공수험연구소', publisher: '시스컴', price: 15300, originalPrice: 17000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169419949', imageUrl: KB('9791169419949'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220930809' },
+    { title: '2027 해커스공무원 3분의 1로 줄여 쓴 김대현 행정법총론 기본서', author: '김대현', publisher: '해커스공무원', price: 28800, originalPrice: 32000, discount: '10%', rating: 4.9, reviews: 47, tags: ['추천'], hasEbook: false, isbn: '9791176442220', imageUrl: KB('9791176442220'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220221375' },
+    { title: '2025 9급 고용노동직 적중모의고사', author: '홍미숙 외', publisher: '엑스퍼트원', price: 24300, originalPrice: 27000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791193137390', imageUrl: KB('9791193137390'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215020281' },
+    { title: '2023 올패스 9급 고용노동직류 노동법개론', author: '이용석, SD 공무원시험연구소', publisher: '시대고시기획', price: 21600, originalPrice: 24000, discount: '10%', rating: 5.0, reviews: 6, tags: ['추천'], hasEbook: false, isbn: '9791138326858', imageUrl: KB('9791138326858'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061403962' },
+    { title: '2027 해커스공무원 3분의 1로 줄여 쓴 김대현 행정법총론 핵심요약노트 (핵요)', author: '김대현', publisher: '해커스공무원', price: 27000, originalPrice: 30000, discount: '10%', rating: 5.0, reviews: 38, tags: ['추천'], hasEbook: false, isbn: '9791176448086', imageUrl: KB('9791176448086'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221151681' },
+    { title: '공무원 노동법: 노동법·노동법개론(2021)', author: '김성권', publisher: '학연', price: 33300, originalPrice: 37000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791158245719', imageUrl: KB('9791158245719'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001764833' },
+  ],
+
+  // ────────────────────────────────────────
+  '통계직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2026 해커스공무원 서호성 ABC 경제학 기본서', author: '서호성', publisher: '해커스공무원', price: 45900, originalPrice: 51000, discount: '10%', rating: 5.0, reviews: 18, tags: ['베스트'], hasEbook: false, isbn: '9791174048660', imageUrl: KB('9791174048660'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218917554' },
+    { title: '2026 해커스공무원 국 경제학 기출문제집(9급·7급 공무원, 국회직 8급, 7급 군무원)', author: '김종국', publisher: '해커스공무원', price: 45000, originalPrice: 50000, discount: '10%', rating: 5.0, reviews: 7, tags: ['베스트'], hasEbook: false, isbn: '9791174047564', imageUrl: KB('9791174047564'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218847055' },
+    { title: '2026 공무원 경제학 기출문제', author: '정병열', publisher: '세경북스', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 16, tags: ['베스트'], hasEbook: false, isbn: '9791159734830', imageUrl: KB('9791159734830'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218749511' },
+    { title: '해커스공무원 국 경제학 Final 합격 봉투모의고사 5회분(봉투)', author: '김종국', publisher: '해커스공무원', price: 11700, originalPrice: 13000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791176441933', imageUrl: KB('9791176441933'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220003717' },
+    { title: '해커스공무원 국 경제학 실전동형모의고사(7급 공무원)', author: '김종국', publisher: '해커스공무원', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 10, tags: ['베스트'], hasEbook: false, isbn: '9791174048004', imageUrl: KB('9791174048004'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219434637' },
+    { title: '2026 해커스공무원 서호성 ABC 경제학 단원별 기출문제집', author: '서호성', publisher: '해커스공무원', price: 42300, originalPrice: 47000, discount: '10%', rating: 4.9, reviews: 25, tags: ['추천'], hasEbook: false, isbn: '9791174048691', imageUrl: KB('9791174048691'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218917555' },
+    { title: '2027 해커스 서호성 경제학원론 핵심포인트', author: '서호성', publisher: '해커스 감정평가사', price: 17100, originalPrice: 19000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176444071', imageUrl: KB('9791176444071'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221651928' },
+    { title: '공무원 경제학 시험직전', author: '함경백', publisher: '물음표와느낌표', price: 12000, rating: 4.4, reviews: 7, tags: ['추천'], hasEbook: false, isbn: '9791188531479', imageUrl: KB('9791188531479'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001915654' },
+    { title: '2026 신경수 공무원 경제학 기출문제집', author: '신경수', publisher: '배움', price: 35100, originalPrice: 39000, discount: '10%', rating: 5.0, reviews: 12, tags: ['추천'], hasEbook: false, isbn: '9791194613954', imageUrl: KB('9791194613954'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218694030' },
+    { title: '7급 경제학: 미시편 + 거시편 세트', author: '정병열', publisher: '세경북스', price: 47700, originalPrice: 53000, discount: '10%', rating: 5.0, reviews: 16, tags: ['추천'], hasEbook: false, isbn: '9791159733710', imageUrl: KB('9791159733710'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000208958248' },
+  ],
+
+  // ────────────────────────────────────────
+  '지적직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 지적직공무원 지적측량 기본서', author: '이영수, 안병구 외', publisher: '세진사', price: 38000, tags: ['베스트'], hasEbook: false, isbn: '9791160457414', imageUrl: KB('9791160457414'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221337227' },
+    { title: '2026 지적직공무원 지적전산학 기출문제집&합격모의고사', author: '이영수', publisher: '세진사', price: 29000, tags: ['베스트'], hasEbook: false, isbn: '9791160457117', imageUrl: KB('9791160457117'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218353829' },
+    { title: '2026 지적직공무원 지적측량 적중모의고사 1200제', author: '이영수', publisher: '세진사', price: 35000, tags: ['베스트'], hasEbook: false, isbn: '9791160457100', imageUrl: KB('9791160457100'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218782977' },
+    { title: '2026 지적직공무원 지적전산학 기본서', author: '이영수, 안병구 외', publisher: '세진사', price: 38000, tags: ['베스트'], hasEbook: false, isbn: '9791160456905', imageUrl: KB('9791160456905'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217512447' },
+    { title: '2026 기합 지적직 공무원 지적측량 기출문제집', author: '이영수', publisher: '서울고시각(SG P&E)', price: 35100, originalPrice: 39000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788952651631', imageUrl: KB('9788952651631'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218271517' },
+    { title: '2026 지적직공무원 지적전산학 적중모의고사 1200제', author: '이영수', publisher: '세진사', price: 35000, rating: 3.8, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791160457094', imageUrl: KB('9791160457094'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218782999' },
+    { title: '지적직 공무원 기출 문제 해설', author: '최한영', publisher: '구미서관', price: 25000, tags: ['추천'], hasEbook: false, isbn: '9791162572115', imageUrl: KB('9791162572115'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001813945' },
+    { title: '2026 기합 지적직 지적전산학(개론) 기출문제집', author: '이영수', publisher: '서울고시각(SG P&E)', price: 34200, originalPrice: 38000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788952651648', imageUrl: KB('9788952651648'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218271535' },
+    { title: '2027 지적직공무원 지적측량 기초입문서', author: '이영욱, 이영수 외', publisher: '세진사', price: 29000, tags: ['추천'], hasEbook: false, isbn: '9791160457377', imageUrl: KB('9791160457377'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220564735' },
+    { title: '2026 지적 전산학개론', author: '송용희, 조정관', publisher: '성안당', price: 36000, originalPrice: 40000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788931512045', imageUrl: KB('9788931512045'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217401185' },
+  ],
+
+  // ────────────────────────────────────────
+  '방송통신직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 7권뿐 — 니치 시장
+    { title: '2026 EASY TECH 이지테크 방송통신직 군무원 전자공학(개론)', author: '김영복', publisher: '서울고시각(SG P&E)', price: 33300, originalPrice: 37000, discount: '10%', rating: 3.5, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9788952652010', imageUrl: KB('9788952652010'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218737042' },
+    { title: '2027 통신이론 이론+기출', author: '양윤석', publisher: '지안에듀', price: 36000, originalPrice: 40000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788966113712', imageUrl: KB('9788966113712'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220956919' },
+    { title: '2027 통신직 전자공학개론(이론+기출)', author: '양윤석', publisher: '지안에듀', price: 37800, originalPrice: 42000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788966113736', imageUrl: KB('9788966113736'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220924416' },
+    { title: '2026 기합 방송통신직 통신이론 단원별 기출문제집', author: '백주기', publisher: '서울고시각(SG P&E)', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9788952652959', imageUrl: KB('9788952652959'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219655510' },
+    { title: '2026 이지테크 방송통신직 통신이론', author: '백주기', publisher: '서울고시각(SG P&E)', price: 38700, originalPrice: 43000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788952652904', imageUrl: KB('9788952652904'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219611608' },
+    { title: '통신이론(기술직 공무원 시험대비)', author: '김영포, 박병준', publisher: '서원각', price: 21600, originalPrice: 24000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791125706861', imageUrl: KB('9791125706861'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001662629' },
+    { title: '전자공학개론(기술직공무원)(2016)', author: '박병준', publisher: '서원각', price: 23400, originalPrice: 26000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791125710172', imageUrl: KB('9791125710172'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001662959' },
+  ],
+
+  // ────────────────────────────────────────
+  '간호직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2027 8급 공무원 간호직 기출문제 정복하기', author: '공무원시험연구소', publisher: '서원각', price: 20700, originalPrice: 23000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791125748748', imageUrl: KB('9791125748748'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220511666' },
+    { title: '2027 바이탈 지역사회간호학', author: '최성희', publisher: '포러스', price: 37800, originalPrice: 42000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791193823934', imageUrl: KB('9791193823934'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221162872' },
+    { title: '2027 합격자가 적극 추천하는 오정화 간호관리 기본 이론서', author: '오정화', publisher: 'BTB', price: 36000, originalPrice: 40000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791194690467', imageUrl: KB('9791194690467'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221191603' },
+    { title: '2027 간호직 공무원 김지혜 교수의 빵꾸노트 간호관리학', author: '김지혜', publisher: '드림널스', price: 18000, originalPrice: 20000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791194436645', imageUrl: KB('9791194436645'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221109662' },
+    { title: '2027 간호직 공무원 김지혜 교수님의 빵꾸노트 지역사회간호학', author: '김지혜', publisher: '드림널스', price: 18000, originalPrice: 20000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791194436652', imageUrl: KB('9791194436652'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221109583' },
+    { title: '2027 합격자가 적극 추천하는 오정화 간호관리 기출문제집', author: '오정화', publisher: 'BTB Books', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791194690511', imageUrl: KB('9791194690511'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221145160' },
+    { title: '지역사회 간호학(간호직 공무원 8급)', author: '공무원수험연구원', publisher: '메디시언', price: 17100, originalPrice: 19000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791186739457', imageUrl: KB('9791186739457'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001891501' },
+    { title: '2026 김헌경 알약 간호관리 필기노트', author: '김헌경', publisher: '에스티유니타스', price: 12600, originalPrice: 14000, discount: '10%', rating: 5.0, reviews: 13, tags: ['추천'], hasEbook: false, isbn: '9791169665223', imageUrl: KB('9791169665223'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218841095' },
+    { title: '2025 8급 공무원 간호직 전과목 총정리: 국어, 영어, 한국사, 간호관리, 지역사회간호', author: '공무원시험연구소', publisher: '서원각', price: 36000, originalPrice: 40000, discount: '10%', rating: 3.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791125745273', imageUrl: KB('9791125745273'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000216111907' },
+    { title: '2026 김헌경 간호관리 기회', author: '김헌경', publisher: '에스티유니타스', price: 9000, originalPrice: 10000, discount: '10%', rating: 5.0, reviews: 6, tags: ['추천'], hasEbook: false, isbn: '9791169665834', imageUrl: KB('9791169665834'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219495735' },
+  ],
+
+  // ────────────────────────────────────────
+  '해양수산직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 2권뿐 — 니치 시장
+    { title: '해양수산직 최종모의고사(2020)', author: 'SD 공무원시험연구소', publisher: '시대고시기획', price: 14400, originalPrice: 16000, discount: '10%', rating: 5.0, reviews: 6, tags: ['베스트'], hasEbook: false, isbn: '9791125469148', imageUrl: KB('9791125469148'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001655929' },
+    { title: '수산직 공무원 수산 일반 최종 모의고사', author: '김용회, 최혜진 외', publisher: '그린로드', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 2, tags: ['베스트'], hasEbook: false, isbn: '9791189977306', imageUrl: KB('9791189977306'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001933867' },
+  ],
+
+  // ────────────────────────────────────────
+  '기상직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    // 2026-10-24 확인: 교보 판매중 전용 수험서 2권뿐 — 니치 시장
+    { title: '운명기상학 1: 기상학개론', author: '문찬혁', publisher: '포러스', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791193823538', imageUrl: KB('9791193823538'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217482990' },
+    { title: '운명기상학 3 통합문제편: 기상학개론, 일기분석및예보법', author: '고시연구회', publisher: '포러스', price: 41400, originalPrice: 46000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791193823804', imageUrl: KB('9791193823804'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219487866' },
+  ],
+
+  // ────────────────────────────────────────
+  '보호직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '형사정책 기출총정리(교정직·보호직)', author: '유안석', publisher: '배움', price: 18000, originalPrice: 20000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791194613794', imageUrl: KB('9791194613794'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218185664' },
+    { title: '2027 해커스공무원 이언담 형사정책 기본서', author: '이언담', publisher: '해커스공무원', price: 33300, originalPrice: 37000, discount: '10%', rating: 5.0, reviews: 13, tags: ['베스트'], hasEbook: false, isbn: '9791176440615', imageUrl: KB('9791176440615'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219742817' },
+    { title: '2027 해커스공무원 박정훈 사회복지학개론 합격생 필기노트(9급 공무원)', author: '박정훈', publisher: '해커스공무원', price: 20700, originalPrice: 23000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791176445740', imageUrl: KB('9791176445740'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220451979' },
+    { title: '2026 해커스공무원 이언담 형사정책 실전동형모의고사(보호직 9, 7급)', author: '이언담', publisher: '해커스공무원', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791174047724', imageUrl: KB('9791174047724'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218858333' },
+    { title: '2027 해커스공무원 노신 형사정책 단원별 기출문제집', author: '노신', publisher: '해커스공무원', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 18, tags: ['베스트'], hasEbook: false, isbn: '9791176447829', imageUrl: KB('9791176447829'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220852100' },
+    { title: '2027 해커스공무원 박정훈 사회복지학개론 기본서 세트', author: '박정훈', publisher: '해커스공무원', price: 45900, originalPrice: 51000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176445757', imageUrl: KB('9791176445757'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220432081' },
+    { title: '2025 박상민 JUSTICE 형사정책 핵심지문 총정리 보호직용', author: '박상민', publisher: '박영사', price: 20000, tags: ['추천'], hasEbook: false, isbn: '9791130348124', imageUrl: KB('9791130348124'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000214043353' },
+    { title: '2027 41개 테마로 끝장내는 교정학 형사정책 기출사용설명서', author: '임현', publisher: '에듀에프엠', price: 35100, originalPrice: 39000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791161702155', imageUrl: KB('9791161702155'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221651076' },
+    { title: '2027 김유경 사회복지학개론 기출문제집 단원별 연도별', author: '김유경', publisher: '지식터', price: 40500, originalPrice: 45000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791124326688', imageUrl: KB('9791124326688'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221109419' },
+    { title: '2025 13개 테마로 끝장내는 보호직 형사정책 기출사용설명서', author: '임현', publisher: '에듀에프엠', price: 22500, originalPrice: 25000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791161701851', imageUrl: KB('9791161701851'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000213685205' },
+  ],
+
+  // ────────────────────────────────────────
+  '마약수사직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2026 해커스경찰 갓대환 형사법 기본서 2: 형사소송법 수사와 증거', author: '김대환', publisher: '해커스경찰', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 71, tags: ['베스트'], hasEbook: false, isbn: '9791174048790', imageUrl: KB('9791174048790'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218936196' },
+    { title: '2026 해커스경찰 갓대환 형사법 기본서 1: 형법', author: '김대환', publisher: '해커스경찰', price: 42300, originalPrice: 47000, discount: '10%', rating: 5.0, reviews: 68, tags: ['베스트'], hasEbook: false, isbn: '9791174048783', imageUrl: KB('9791174048783'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218936181' },
+    { title: '2027 해커스경찰 갓대환 형사소송법 기출 1000제 세트(경찰공무원)', author: '김대환', publisher: '해커스경찰', price: 59400, originalPrice: 66000, discount: '10%', rating: 5.0, reviews: 44, tags: ['베스트'], hasEbook: false, isbn: '9791176448444', imageUrl: KB('9791176448444'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221247645' },
+    { title: '2027 해커스경찰 갓대환 형법 기출 1200제 세트(경찰공무원)', author: '김대환', publisher: '해커스경찰', price: 60300, originalPrice: 67000, discount: '10%', rating: 5.0, reviews: 39, tags: ['베스트'], hasEbook: false, isbn: '9791176448413', imageUrl: KB('9791176448413'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221247642' },
+    { title: '2027 홍형철 공무원 형사소송법', author: '홍형철', publisher: '새흐름', price: 45900, originalPrice: 51000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791162938485', imageUrl: KB('9791162938485'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220340067' },
+    { title: '2027 김승봉 레전드 형법 기본서', author: '김승봉', publisher: '에스티유니타스', price: 38700, originalPrice: 43000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791169665599', imageUrl: KB('9791169665599'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219391448' },
+    { title: '2026 해커스경찰 허정 형사법 기본서 3권 형사소송법 (경찰공무원)', author: '이용배, 허정', publisher: '해커스경찰', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 8, tags: ['추천'], hasEbook: false, isbn: '9791174046529', imageUrl: KB('9791174046529'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218565642' },
+    { title: '2027 박문각 공무원 최정훈 형법총론 기본 이론서', author: '최정훈', publisher: '박문각', price: 27900, originalPrice: 31000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176491402', imageUrl: KB('9791176491402'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220110963' },
+    { title: '2027 홍형철 형사소송법 조문', author: '홍형철', publisher: '새흐름', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791162938478', imageUrl: KB('9791162938478'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220178563' },
+    { title: '2027 박문각 공무원 최정훈 형법각론 기본 이론서', author: '최정훈', publisher: '박문각', price: 34200, originalPrice: 38000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176491419', imageUrl: KB('9791176491419'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220120420' },
+  ],
+
+  // ────────────────────────────────────────
+  '철도경찰직 공무원(9급)': [
+    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
+    { title: '2026 해커스경찰 갓대환 형사법 기본서 2: 형사소송법 수사와 증거', author: '김대환', publisher: '해커스경찰', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 71, tags: ['베스트'], hasEbook: false, isbn: '9791174048790', imageUrl: KB('9791174048790'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218936196' },
+    { title: '2026 해커스경찰 갓대환 형사법 기본서 1: 형법', author: '김대환', publisher: '해커스경찰', price: 42300, originalPrice: 47000, discount: '10%', rating: 5.0, reviews: 68, tags: ['베스트'], hasEbook: false, isbn: '9791174048783', imageUrl: KB('9791174048783'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218936181' },
+    { title: '2027 해커스경찰 갓대환 형사소송법 기출 1000제 세트(경찰공무원)', author: '김대환', publisher: '해커스경찰', price: 59400, originalPrice: 66000, discount: '10%', rating: 5.0, reviews: 44, tags: ['베스트'], hasEbook: false, isbn: '9791176448444', imageUrl: KB('9791176448444'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221247645' },
+    { title: '2027 해커스경찰 갓대환 형법 기출 1200제 세트(경찰공무원)', author: '김대환', publisher: '해커스경찰', price: 60300, originalPrice: 67000, discount: '10%', rating: 5.0, reviews: 39, tags: ['베스트'], hasEbook: false, isbn: '9791176448413', imageUrl: KB('9791176448413'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221247642' },
+    { title: '2027 홍형철 공무원 형사소송법', author: '홍형철', publisher: '새흐름', price: 45900, originalPrice: 51000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791162938485', imageUrl: KB('9791162938485'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220340067' },
+    { title: '2027 김승봉 레전드 형법 기본서', author: '김승봉', publisher: '에스티유니타스', price: 38700, originalPrice: 43000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791169665599', imageUrl: KB('9791169665599'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219391448' },
+    { title: '2026 해커스경찰 허정 형사법 기본서 3권 형사소송법 (경찰공무원)', author: '이용배, 허정', publisher: '해커스경찰', price: 18000, originalPrice: 20000, discount: '10%', rating: 5.0, reviews: 8, tags: ['추천'], hasEbook: false, isbn: '9791174046529', imageUrl: KB('9791174046529'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218565642' },
+    { title: '2027 박문각 공무원 최정훈 형법총론 기본 이론서', author: '최정훈', publisher: '박문각', price: 27900, originalPrice: 31000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176491402', imageUrl: KB('9791176491402'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220110963' },
+    { title: '2027 홍형철 형사소송법 조문', author: '홍형철', publisher: '새흐름', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9791162938478', imageUrl: KB('9791162938478'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220178563' },
+    { title: '2027 박문각 공무원 최정훈 형법각론 기본 이론서', author: '최정훈', publisher: '박문각', price: 34200, originalPrice: 38000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176491419', imageUrl: KB('9791176491419'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220120420' },
+  ],
+
 };
