@@ -3843,21 +3843,6 @@ const REAL_BOOKS = {
   ],
 
   // ────────────────────────────────────────
-  '외국어번역행정사': [
-    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
-    { title: '2027 해커스행정사 송상호 행정학개론 1차 기본서', author: '송상호', publisher: '해커스행정사', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176445894', imageUrl: KB('9791176445894'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220500698' },
-    { title: '2027 박문각 행정사 1차 단원별 기출문제집: 민법총칙, 행정법, 행정학개론', author: '조민기, 임병주 외', publisher: '박문각', price: 34200, originalPrice: 38000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791176492881', imageUrl: KB('9791176492881'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220806564' },
-    { title: '2027 해커스행정사 하성우 행정법 1차 기본서', author: '하성우', publisher: '해커스행정사', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176445887', imageUrl: KB('9791176445887'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220500726' },
-    { title: '2027 해커스행정사 양기백 민법총칙 1차 기본서', author: '양기백', publisher: '해커스행정사', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176445603', imageUrl: KB('9791176445603'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220455571' },
-    { title: '2027 박문각 행정사 1차 조민기 민법총칙 기본서', author: '조민기, 박문각 행정사연구소', publisher: '박문각', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791176493369', imageUrl: KB('9791176493369'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220699743' },
-    { title: '2027 해커스행정사 박결 민법총칙 1차 기본서', author: '박결', publisher: '해커스행정사', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176445610', imageUrl: KB('9791176445610'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220455481' },
-    { title: '2027 시대에듀 행정사 1차 기출문제해설 한권으로 끝내기', author: '박종화, 구준평 외', publisher: '시대고시기획', price: 37800, originalPrice: 42000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791143417954', imageUrl: KB('9791143417954'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220844525' },
-    { title: '2027 시대에듀 행정사 1차 전과목 한권으로 끝내기', author: '박종화, 구준평 외', publisher: '시대고시기획', price: 49500, originalPrice: 55000, discount: '10%', rating: 5.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9791143418982', imageUrl: KB('9791143418982'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221190144' },
-    { title: '2027 박문각 행정사 1차 조민기 민법총칙 문제집', author: '조민기', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791176494038', imageUrl: KB('9791176494038'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221031974' },
-    { title: '2027 박문각 행정사 1차 최욱진 행정학개론 기본서', author: '박문각 행정사연구소, 최욱진', publisher: '박문각', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791176493802', imageUrl: KB('9791176493802'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220929342' },
-  ],
-
-  // ────────────────────────────────────────
   '청소년상담사3급': [
     // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
     { title: '2026 시대에듀 청소년상담사 3급 2차 면접대비 한권으로 끝내기', author: '문두식', publisher: '시대에듀', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 11, tags: ['베스트'], hasEbook: false, isbn: '9791143409898', imageUrl: KB('9791143409898'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219513846' },
@@ -3870,21 +3855,6 @@ const REAL_BOOKS = {
     { title: '2026 유리 청소년상담사 3급 필기 통합이론서+100% 무료강의', author: '정유리', publisher: '직업상점', price: 41400, originalPrice: 46000, discount: '10%', rating: 5.0, reviews: 11, tags: ['추천'], hasEbook: false, isbn: '9791194695394', imageUrl: KB('9791194695394'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219386361' },
     { title: '청소년상담사 3급 필기 한권으로 끝내기', author: '고인숙', publisher: '메인에듀', price: 32400, originalPrice: 36000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791189357436', imageUrl: KB('9791189357436'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000061838773' },
     { title: '2026 시대에듀 기출이 답이다 청소년상담사 3급 한권으로 끝내기', author: '시대청소년상담사 수험연구소', publisher: '시대에듀', price: 28800, originalPrice: 32000, discount: '10%', rating: 5.0, reviews: 10, tags: ['추천'], hasEbook: false, isbn: '9791143405821', imageUrl: KB('9791143405821'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218934808' },
-  ],
-
-  // ────────────────────────────────────────
-  '해사행정사': [
-    // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
-    { title: '2027 해커스행정사 송상호 행정학개론 1차 기본서', author: '송상호', publisher: '해커스행정사', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176445894', imageUrl: KB('9791176445894'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220500698' },
-    { title: '2027 박문각 행정사 1차 단원별 기출문제집: 민법총칙, 행정법, 행정학개론', author: '조민기, 임병주 외', publisher: '박문각', price: 34200, originalPrice: 38000, discount: '10%', rating: 5.0, reviews: 3, tags: ['베스트'], hasEbook: false, isbn: '9791176492881', imageUrl: KB('9791176492881'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220806564' },
-    { title: '2027 해커스행정사 하성우 행정법 1차 기본서', author: '하성우', publisher: '해커스행정사', price: 31500, originalPrice: 35000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176445887', imageUrl: KB('9791176445887'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220500726' },
-    { title: '2027 해커스행정사 양기백 민법총칙 1차 기본서', author: '양기백', publisher: '해커스행정사', price: 19800, originalPrice: 22000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176445603', imageUrl: KB('9791176445603'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220455571' },
-    { title: '2027 박문각 행정사 1차 조민기 민법총칙 기본서', author: '조민기, 박문각 행정사연구소', publisher: '박문각', price: 19800, originalPrice: 22000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791176493369', imageUrl: KB('9791176493369'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220699743' },
-    { title: '2027 해커스행정사 박결 민법총칙 1차 기본서', author: '박결', publisher: '해커스행정사', price: 19800, originalPrice: 22000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9791176445610', imageUrl: KB('9791176445610'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220455481' },
-    { title: '2027 시대에듀 행정사 1차 기출문제해설 한권으로 끝내기', author: '박종화, 구준평 외', publisher: '시대고시기획', price: 37800, originalPrice: 42000, discount: '10%', rating: 5.0, reviews: 3, tags: ['추천'], hasEbook: false, isbn: '9791143417954', imageUrl: KB('9791143417954'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220844525' },
-    { title: '2027 시대에듀 행정사 1차 전과목 한권으로 끝내기', author: '박종화, 구준평 외', publisher: '시대고시기획', price: 49500, originalPrice: 55000, discount: '10%', rating: 5.0, reviews: 4, tags: ['추천'], hasEbook: false, isbn: '9791143418982', imageUrl: KB('9791143418982'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221190144' },
-    { title: '2027 박문각 행정사 1차 조민기 민법총칙 문제집', author: '조민기', publisher: '박문각', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791176494038', imageUrl: KB('9791176494038'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221031974' },
-    { title: '2027 박문각 행정사 1차 최욱진 행정학개론 기본서', author: '박문각 행정사연구소, 최욱진', publisher: '박문각', price: 26100, originalPrice: 29000, discount: '10%', rating: 5.0, reviews: 1, tags: ['추천'], hasEbook: false, isbn: '9791176493802', imageUrl: KB('9791176493802'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220929342' },
   ],
 
   // ────────────────────────────────────────
