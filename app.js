@@ -1338,9 +1338,9 @@ function renderBooks() {
   if (!bestContainer || !recContainer) return;
 
   const certName = STATE.currentCert;
-  const rawBooks = (typeof REAL_BOOKS !== 'undefined' && REAL_BOOKS[certName])
-    ? REAL_BOOKS[certName]
-    : (getCert().books || []);
+  // REAL_BOOKS에 없는 자격증은 certs_data.js의 가상 도서(books)로 폴백하지 않는다 —
+  // 2026-10-24 확인 기준 교보에 판매 중인 전용 수험서가 없는 종목이라 "없음" 안내를 보여준다.
+  const rawBooks = (typeof REAL_BOOKS !== 'undefined' && REAL_BOOKS[certName]) || [];
 
   // 실데이터가 5종 미만이어도 가상의 평점·가격·출판사를 지어내 패딩하지 않는다.
   // 부족하면 있는 만큼만 보여주고, 0종이면 아래 innerHTML의 "데이터 없음" 문구로 처리한다.
@@ -1480,13 +1480,20 @@ function renderBooks() {
     `;
   }
 
-  bestContainer.innerHTML = bestBooks.length
-    ? bestBooks.map(b => bookCard(b, '베스트')).join('')
-    : '<p class="books-empty">베스트셀러 데이터가 없습니다.</p>';
+  if (!allBooks.length) {
+    const q = encodeURIComponent(certName || '');
+    bestContainer.innerHTML = `<p class="books-empty"><i class="fa-solid fa-circle-info"></i> 교보문고에서 현재 판매 중인 ${certName} 전용 수험서가 없습니다.
+      <a href="https://search.kyobobook.co.kr/search?keyword=${q}" target="_blank" rel="noopener noreferrer">교보문고에서 직접 검색</a></p>`;
+    recContainer.innerHTML = '';
+  } else {
+    bestContainer.innerHTML = bestBooks.length
+      ? bestBooks.map(b => bookCard(b, '베스트')).join('')
+      : '<p class="books-empty">베스트셀러 데이터가 없습니다.</p>';
 
-  recContainer.innerHTML = recBooks.length
-    ? recBooks.map(b => bookCard(b, '추천')).join('')
-    : '<p class="books-empty">추천 수험서 데이터가 없습니다.</p>';
+    recContainer.innerHTML = recBooks.length
+      ? recBooks.map(b => bookCard(b, '추천')).join('')
+      : '<p class="books-empty">추천 수험서 데이터가 없습니다.</p>';
+  }
 
   // 입문자 추천 1권: 베스트셀러 1위(실데이터가 있을 때만) 하나를 강조 표시해 선택 피로를 줄여준다
   const beginnerPickEl = document.getElementById('beginner-pick-container');
@@ -3360,9 +3367,7 @@ window.showBookChecklist = function() {
   const certName = STATE.currentCert;
   if (!certName) return;
 
-  const rawBooks = (typeof REAL_BOOKS !== 'undefined' && REAL_BOOKS[certName])
-    ? REAL_BOOKS[certName]
-    : (getCert().books || []);
+  const rawBooks = (typeof REAL_BOOKS !== 'undefined' && REAL_BOOKS[certName]) || [];
 
   const seen = new Set();
   const books = rawBooks.filter(b => {
@@ -3434,8 +3439,7 @@ window._clChange = function(cb) {
   else { arr = arr.filter(t => t !== cb.dataset.title); }
   localStorage.setItem(key, JSON.stringify(arr));
   cb.closest('.cl-item')?.classList.toggle('cl-checked', cb.checked);
-  const certBooks = (typeof REAL_BOOKS !== 'undefined' && REAL_BOOKS[cb.dataset.cert])
-    || (CERTIFICATIONS[cb.dataset.cert]?.books) || [];
+  const certBooks = (typeof REAL_BOOKS !== 'undefined' && REAL_BOOKS[cb.dataset.cert]) || [];
   const total = certBooks.filter(b => arr.includes(b.title) && b.price > 0).reduce((s, b) => s + b.price, 0);
   const totalEl = document.getElementById('checklist-total');
   if (totalEl) totalEl.innerHTML = total > 0 ? `선택 도서 합계: <strong>${total.toLocaleString()}원</strong>` : '';
