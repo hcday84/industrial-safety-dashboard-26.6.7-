@@ -2716,8 +2716,8 @@ const REAL_BOOKS = {
   '전산응용건축제도기능사': [
     // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
     { title: '2027 go來 독학 전산응용건축제도기능사 필기', author: '김희정', publisher: '예문사', price: 24300, originalPrice: 27000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927463535', imageUrl: KB('9788927463535'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221760668' },
-    { title: '2027년 전산응용건축제도기능사 필기 기출문제', author: '박한서', publisher: '책과상상', price: 16200, originalPrice: 18000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169674256', imageUrl: KB('9791169674256'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751847' },
-    { title: '2027년 전산응용건축제도기능사 필기', author: '박한서', publisher: '책과상상', price: 18000, originalPrice: 20000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169674249', imageUrl: KB('9791169674249'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751840' },
+    { title: '2027년 전산응용건축제도기능사 필기 기출문제', author: '박한서', publisher: '책과상상', price: 16200, originalPrice: 18000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169674256', imageUrl: null, pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751847' },
+    { title: '2027년 전산응용건축제도기능사 필기', author: '박한서', publisher: '책과상상', price: 18000, originalPrice: 20000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169674249', imageUrl: null, pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751840' },
     { title: '2027 에듀윌 전산응용건축제도기능사 필기 2주끝장+무료특강', author: '민영기', publisher: '에듀윌', price: 22500, originalPrice: 25000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791136044754', imageUrl: KB('9791136044754'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221730731' },
     { title: '2026 스마트 전산응용건축제도기능사 실기', author: '황두환', publisher: '성안당', price: 28800, originalPrice: 32000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788931583977', imageUrl: KB('9788931583977'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218171638' },
     { title: '2026 나합격 전산응용건축제도기능사 필기+무료특강', author: '김수진', publisher: '삼원북스', price: 25200, originalPrice: 28000, discount: '10%', rating: 5.0, reviews: 6, tags: ['추천'], hasEbook: false, isbn: '9791194997368', imageUrl: KB('9791194997368'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218570136' },
@@ -2758,7 +2758,7 @@ const REAL_BOOKS = {
   '이용사': [
     // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
     // 2026-10-24 확인: 교보 판매중 전용 수험서 9권뿐 — 니치 시장
-    { title: '2027 원큐패스 이용사[이용장 포함] 필기 실기 [ CBT 모의고사 제공 ]', author: '김명수, 정현주', publisher: '다락원', price: 26100, originalPrice: 29000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927776253', imageUrl: KB('9788927776253'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751554' },
+    { title: '2027 원큐패스 이용사[이용장 포함] 필기 실기 [ CBT 모의고사 제공 ]', author: '김명수, 정현주', publisher: '다락원', price: 26100, originalPrice: 29000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927776253', imageUrl: null, pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751554' },
     { title: '2027 기분파 이용사 필기', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 22500, originalPrice: 25000, discount: '10%', rating: 5.0, reviews: 5, tags: ['베스트'], hasEbook: false, isbn: '9791194328438', imageUrl: KB('9791194328438'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221047920' },
     { title: '2027 딱!! 한권으로 끝내주는 이용사 필기·실기 시험문제', author: '김성철, 박순철 외', publisher: '크라운출판사', price: 25200, originalPrice: 28000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788940651100', imageUrl: KB('9788940651100'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221738459' },
     { title: '2027 이용사 필기 예상문제집', author: '에듀채널 편집부', publisher: '스터디채널', price: 16200, originalPrice: 18000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791176181853', imageUrl: KB('9791176181853'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221736991' },
@@ -3101,7 +3101,7 @@ const REAL_BOOKS = {
   '로더운전기능사': [
     // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
     // 2026-10-24 확인: 교보 판매중 전용 수험서 6권뿐 — 니치 시장
-    { title: '2027년 로더운전기능사 필기', author: '건설기계교육아카데미', publisher: '책과상상', price: 13500, originalPrice: 15000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673921', imageUrl: KB('9791169673921'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751800' },
+    { title: '2027년 로더운전기능사 필기', author: '건설기계교육아카데미', publisher: '책과상상', price: 13500, originalPrice: 15000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673921', imageUrl: null, pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751800' },
     { title: '2026 박문각 로더운전기능사 필기 기본서+무료특강', author: '박문각자격시험개발팀', publisher: '박문각', price: 16200, originalPrice: 18000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791175191754', imageUrl: KB('9791175191754'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218570131' },
     { title: '2026 시대에듀 답만 외우는 로더운전기능사 필기 CBT기출문제+모의고사 14회', author: '최진호', publisher: '시대고시기획', price: 13500, originalPrice: 15000, discount: '10%', rating: 5.0, reviews: 12, tags: ['베스트'], hasEbook: false, isbn: '9791143404237', imageUrl: KB('9791143404237'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218641268' },
     { title: '2025 원큐패스 로더운전기능사 필기 문제집', author: '다락원아카데미', publisher: '다락원', price: 12600, originalPrice: 14000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927774501', imageUrl: KB('9788927774501'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215131114' },
@@ -3113,7 +3113,7 @@ const REAL_BOOKS = {
   '롤러운전기능사': [
     // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
     // 2026-10-24 확인: 교보 판매중 전용 수험서 5권뿐 — 니치 시장
-    { title: '2027년 롤러운전기능사 필기', author: '건설기계교육아카데미', publisher: '책과상상', price: 13500, originalPrice: 15000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673938', imageUrl: KB('9791169673938'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751807' },
+    { title: '2027년 롤러운전기능사 필기', author: '건설기계교육아카데미', publisher: '책과상상', price: 13500, originalPrice: 15000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673938', imageUrl: null, pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751807' },
     { title: '2027 시대에듀 AI PASSCODE 롤러운전기능사 필기 CBT기출+AI 분석 모의고사', author: '최진호', publisher: '시대고시기획', price: 13500, originalPrice: 15000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791143422170', imageUrl: KB('9791143422170'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221462172' },
     { title: '2025 원큐패스 롤러운전기능사 필기 문제집', author: '다락원아카데미', publisher: '다락원', price: 12600, originalPrice: 14000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788927774488', imageUrl: KB('9788927774488'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000215019709' },
     { title: '롤러운전기능사', author: '박광암', publisher: '일진사', price: 12600, originalPrice: 14000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788942915859', imageUrl: KB('9788942915859'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000671358' },
@@ -3146,7 +3146,7 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   '버스운전자격': [
     // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
-    { title: '2027년 버스운전자격시험총정리문제집', author: '버스운전자격시험연구회', publisher: '책과상상', price: 10800, originalPrice: 12000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673679', imageUrl: KB('9791169673679'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751858' },
+    { title: '2027년 버스운전자격시험총정리문제집', author: '버스운전자격시험연구회', publisher: '책과상상', price: 10800, originalPrice: 12000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673679', imageUrl: null, pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751858' },
     { title: '2027 기분파 버스운전자격시험 필기 문제집', author: '에듀웨이 R&D 연구소', publisher: '에듀웨이', price: 11700, originalPrice: 13000, discount: '10%', rating: 5.0, reviews: 8, tags: ['베스트'], hasEbook: false, isbn: '9791194328414', imageUrl: KB('9791194328414'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220843359' },
     { title: '양재호의 버스운전자격시험', author: '양재호', publisher: '트랜북스', price: 17820, originalPrice: 19800, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791193643488', imageUrl: KB('9791193643488'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219731904' },
     { title: '2027 시대에듀 버스운전자격시험 문제지', author: '버스운전 자격시험연구회', publisher: '시대고시기획', price: 11700, originalPrice: 13000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791143418098', imageUrl: KB('9791143418098'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000220567725' },
@@ -3205,8 +3205,8 @@ const REAL_BOOKS = {
   // ────────────────────────────────────────
   '택시운전자격': [
     // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
-    { title: '2027년 택시운전자격시험문제집[서울,경기.인천지역]', author: '택시운전자격시험연구회', publisher: '책과상상', price: 11700, originalPrice: 13000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673617', imageUrl: KB('9791169673617'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751854' },
-    { title: '2027년 택시운전자격시험문제집[대전,충남.충북지역]', author: '택시운전자격시험연구회', publisher: '책과상상', price: 11700, originalPrice: 13000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673648', imageUrl: KB('9791169673648'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751852' },
+    { title: '2027년 택시운전자격시험문제집[서울,경기.인천지역]', author: '택시운전자격시험연구회', publisher: '책과상상', price: 11700, originalPrice: 13000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673617', imageUrl: null, pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751854' },
+    { title: '2027년 택시운전자격시험문제집[대전,충남.충북지역]', author: '택시운전자격시험연구회', publisher: '책과상상', price: 11700, originalPrice: 13000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169673648', imageUrl: null, pageUrl: 'https://product.kyobobook.co.kr/detail/S000221751852' },
     { title: '2026 단끝 택시운전 자격시험 CBT 기출복원문제집+무료특강-서울·경기·인천', author: '윤정현, 정한진', publisher: '박문각', price: 11700, originalPrice: 13000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791175194496', imageUrl: KB('9791175194496'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218783064' },
     { title: '2027 한번에 끝내주기 택시운전 자격시험 총정리문제(서울, 경기, 인천)', author: '대한교통안전연구회', publisher: '크라운출판사', price: 11700, originalPrice: 13000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9788940651568', imageUrl: KB('9788940651568'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000221564628' },
     { title: '2026 택시운전자격시험 문제집: 대구·경북·강원도지역 응시자용', author: '택시운전자격시험연구회', publisher: '책과상상', price: 10800, originalPrice: 12000, discount: '10%', tags: ['베스트'], hasEbook: false, isbn: '9791169672511', imageUrl: KB('9791169672511'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000218086612' },
@@ -3465,7 +3465,7 @@ const REAL_BOOKS = {
     { title: '조리기능장중식실기', author: '양진삼, 김정민 외', publisher: '다이어리알', price: 25000, tags: ['추천'], hasEbook: false, isbn: '9788998740535', imageUrl: KB('9788998740535'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219411960' },
     { title: '조리기능장 실기시험문제: 한식편', author: '전경철, 전동철 외', publisher: '크라운출판사', price: 24300, originalPrice: 27000, discount: '10%', rating: 4.2, reviews: 2, tags: ['추천'], hasEbook: false, isbn: '9788940628539', imageUrl: KB('9788940628539'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000000642925' },
     { title: '조리기능장이 전하는 중식조리', author: '조리기능장(공저)', publisher: '미림원', price: 14400, originalPrice: 16000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788994204550', imageUrl: KB('9788994204550'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001544258' },
-    { title: '한식조리기능장 실기', author: '강현우', publisher: '유강', price: 30600, originalPrice: 34000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788997601042', imageUrl: KB('9788997601042'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000001619731' },
+    { title: '한식조리기능장 실기', author: '강현우', publisher: '유강', price: 30600, originalPrice: 34000, discount: '10%', tags: ['추천'], hasEbook: false, isbn: '9788997601042', imageUrl: null, pageUrl: 'https://product.kyobobook.co.kr/detail/S000001619731' },
   ],
 
   // ────────────────────────────────────────
@@ -4535,7 +4535,7 @@ const REAL_BOOKS = {
     // 2026-10-24: REAL_BOOKS 미등록(가상 도서 노출) → 교보문고 실판매 도서로 등록 (검색 관련도순, 상위 5권 베스트)
     // 2026-10-24 확인: 교보 판매중 전용 수험서 2권뿐 — 니치 시장
     { title: '운명기상학 1: 기상학개론', author: '문찬혁', publisher: '포러스', price: 31500, originalPrice: 35000, discount: '10%', rating: 5.0, reviews: 4, tags: ['베스트'], hasEbook: false, isbn: '9791193823538', imageUrl: KB('9791193823538'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000217482990' },
-    { title: '운명기상학 3 통합문제편: 기상학개론, 일기분석및예보법', author: '고시연구회', publisher: '포러스', price: 41400, originalPrice: 46000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791193823804', imageUrl: KB('9791193823804'), pageUrl: 'https://product.kyobobook.co.kr/detail/S000219487866' },
+    { title: '운명기상학 3 통합문제편: 기상학개론, 일기분석및예보법', author: '고시연구회', publisher: '포러스', price: 41400, originalPrice: 46000, discount: '10%', rating: 5.0, reviews: 1, tags: ['베스트'], hasEbook: false, isbn: '9791193823804', imageUrl: null, pageUrl: 'https://product.kyobobook.co.kr/detail/S000219487866' },
   ],
 
   // ────────────────────────────────────────
