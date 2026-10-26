@@ -168,7 +168,7 @@ async function pool(items, fn) {
   const row = e => `| ${e.book.title} | ${e.book.publisher} | ${e.certs.join(', ')} |`;
   const md = [
     `# 수험서 점검 리포트 (${today})`, '',
-    `- 점검 도서: ${byIsbn.size}권(ISBN 기준) · 품절/절판/검색 안 됨 ${unavailable.length} · 가격 변경 ${priceChanged.length}${APPLY_PRICES ? `(반영 ${applied}줄)` : ''} · 후속판 ${successors.length} · 조회 실패 ${failed.length}`, '',
+    `- 점검 도서: ${byIsbn.size}권(ISBN 기준) · 품절/절판/검색 안 됨 ${unavailable.length} · 가격 변경 ${priceChanged.length}${APPLY_PRICES ? `(반영 ${applied}줄)` : ''}${APPLY_STATUS ? ` · 판매상태 표시 ${marked}줄·해제 ${cleared}줄` : ''} · 후속판 ${successors.length} · 조회 실패 ${failed.length}`, '',
     `## 후속판 출간 (${successors.length})`, '', '| 현재 등록 | 출판사 | 자격증 | 후속판 | 후속판 상품코드 |', '|---|---|---|---|---|',
     ...successors.map(e => `| ${e.book.title} | ${e.book.publisher} | ${e.certs.join(', ')} | ${e.succ.title} (${e.succ.isbn}) | ${e.succ.pid} |`), '',
     `## 품절·절판·검색 안 됨 (${unavailable.length})`, '', '| 도서 | 출판사 | 자격증 | 상태 |', '|---|---|---|---|',

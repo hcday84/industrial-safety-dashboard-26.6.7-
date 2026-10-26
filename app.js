@@ -1377,6 +1377,10 @@ function renderBooks() {
     bestBooks = sortedBySales .slice(0, 5);
     recBooks  = sortedByRating.slice(0, 5);
   }
+  // 고른 5권 안에서 품절·절판 도서는 뒤로 보낸다 (선정 자체는 바꾸지 않음)
+  const byAvailability = (a, b) => (a.saleStatus ? 1 : 0) - (b.saleStatus ? 1 : 0);
+  bestBooks.sort(byAvailability);
+  recBooks.sort(byAvailability);
 
   function bookCard(book, fallbackTag) {
     const tags = (book.tags && book.tags.length > 0) ? book.tags : (fallbackTag ? [fallbackTag] : []);
@@ -1391,6 +1395,12 @@ function renderBooks() {
     const currentYear = new Date().getFullYear();
     const editionBadgeHTML = (titleYear && titleYear < currentYear)
       ? `<span class="edition-badge" title="제목에 표기된 ${titleYear}년판입니다. 최신판 출간 여부를 확인해보세요."><i class="fa-solid fa-triangle-exclamation"></i> ${titleYear}년판</span>`
+      : '';
+
+    // 품절·절판: 목록에서 지우지 않고 표시만 한다 (scripts/check-books.js --apply-status가 saleStatus를 관리)
+    const saleStatus = book.saleStatus === '품절' || book.saleStatus === '절판' ? book.saleStatus : '';
+    const saleBadgeHTML = saleStatus
+      ? `<span class="sale-status-badge" title="교보문고 기준 ${saleStatus} 도서입니다. 중고·도서관 등으로 구할 수 있는지 확인해보세요."><i class="fa-solid fa-ban"></i> ${saleStatus}</span>`
       : '';
 
     // 전자책(eBook) 존재 여부: 교보문고 상품페이지를 직접 대조해 수기 검증된 도서만 표시.
@@ -1457,15 +1467,17 @@ function renderBooks() {
     const rating = book.rating || 4.5;
     const pageUrl = book.pageUrl
       || `https://search.kyobobook.co.kr/search?keyword=${encodeURIComponent(book.title)}`;
-    const priceHTML = price > 0
+    const priceHTML = saleStatus
+      ? `<span class="book-price book-price-unavailable">${saleStatus}${price > 0 ? ` <small>(정가 ${originalPrice.toLocaleString()}원)</small>` : ''}</span>`
+      : price > 0
       ? `${discount ? `<span class="book-discount">${discount}</span>` : ''}<span class="book-price">${price.toLocaleString()}원</span>${originalPrice > price ? `<span class="book-original-price">${originalPrice.toLocaleString()}원</span>` : ''}`
       : `<span class="book-price" style="color:var(--text-muted);font-size:0.8rem">교보문고에서 가격 확인</span>`;
 
     return `
-      <div class="book-card">
+      <div class="book-card${saleStatus ? ' is-unavailable' : ''}">
         <div class="book-cover-container">
           ${coverHTML}
-          <div class="book-badge-container">${badgesHTML}${editionBadgeHTML}</div>
+          <div class="book-badge-container">${badgesHTML}${saleBadgeHTML}${editionBadgeHTML}</div>
           ${wishBtnHTML}
         </div>
         <div class="book-info">
@@ -1478,7 +1490,7 @@ function renderBooks() {
             ${priceHTML}
           </div>
         </div>
-        <a href="${pageUrl}" target="_blank" rel="noopener noreferrer" class="book-btn">교보문고 상세보기</a>
+        <a href="${pageUrl}" target="_blank" rel="noopener noreferrer" class="book-btn">교보문고 상세보기${saleStatus ? ` (${saleStatus})` : ''}</a>
       </div>
     `;
   }
@@ -3354,7 +3366,7 @@ function renderBookCompareTable(certName, books, checkedTitles) {
   el.style.display = '';
   const rows = [
     { label: '출판사', get: b => b.publisher || '-' },
-    { label: '가격', get: b => b.price > 0 ? `${b.price.toLocaleString()}원` : '상세페이지 확인' },
+    { label: '가격', get: b => b.saleStatus ? b.saleStatus : b.price > 0 ? `${b.price.toLocaleString()}원` : '상세페이지 확인' },
     { label: '연도', get: b => (b.title.match(/^(20\d{2})\b/) || [])[1] || '-' },
     { label: '태그', get: b => (b.tags && b.tags.length) ? b.tags.join(', ') : '-' },
     { label: '평점(추정)', get: b => b.rating ? `${b.rating.toFixed(1)} (${b.reviews || 0}건)` : '-' },

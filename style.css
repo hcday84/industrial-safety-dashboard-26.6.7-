@@ -1594,6 +1594,20 @@ button, input, select {
   border-radius: 4px;
   margin-top: 4px;
 }
+.sale-status-badge {
+  display: inline-block;
+  background-color: #475569;
+  color: #fff;
+  padding: 2px 6px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+.book-card.is-unavailable .book-cover-img,
+.book-card.is-unavailable .book-cover-mock { filter: grayscale(1); opacity: .6; }
+.book-price-unavailable { color: var(--text-muted) !important; font-size: 0.85rem !important; }
+.book-price-unavailable small { font-weight: 400; }
 .book-preview-hint {
   display: inline-flex;
   align-items: center;
