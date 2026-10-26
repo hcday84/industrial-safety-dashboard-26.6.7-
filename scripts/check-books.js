@@ -2,18 +2,23 @@
 //
 //   node scripts/check-books.js                 → reports/book-check-YYYY-MM-DD.md 리포트만 작성
 //   node scripts/check-books.js --apply-prices  → 판매중 도서의 가격 변경분을 books_data.js에 반영
+//   node scripts/check-books.js --apply-status  → 품절·절판 도서에 saleStatus 표시(재판매되면 해제)
 //
 // REAL_BOOKS의 모든 도서를 교보문고 검색(ISBN)으로 조회해 다음을 골라낸다.
 //   1) 품절·절판·검색 안 됨  2) 가격 변경  3) 제목 연도의 다음 해 판(같은 출판사·시리즈) 출간
-// 후속판 교체와 품절 도서 처리는 사람이 리포트를 보고 결정한다(자동 교체하지 않음).
+// 품절·절판 도서는 삭제하지 않고 saleStatus로 표시만 한다(2026-10-26 사용자 결정).
+// 후속판 교체는 사람이 리포트를 보고 결정한다(자동 교체하지 않음).
 const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const BOOKS_FILE = path.join(ROOT, 'books_data.js');
 const APPLY_PRICES = process.argv.includes('--apply-prices');
+const APPLY_STATUS = process.argv.includes('--apply-status');
 const CONCURRENCY = 6;
-const STATUS = { '001': '판매중', '002': '품절', '003': '절판', '008': '예약판매' };
+// 검색결과 data-cdtn-code는 상품상태 코드라 010(일시품절)도 나온다
+const STATUS = { '001': '판매중', '002': '품절', '003': '절판', '008': '예약판매', '010': '품절' };
+const ON_SALE = ['001', '008'];
 
 const dec = s => s.replace(/&amp;/g, '&').replace(/&#40;/g, '(').replace(/&#41;/g, ')').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ');
 const norm = s => s.replace(/20\d\d년?(판)?/g, '').replace(/[\s·・ㆍ,.\-()[\]&+/!:~'"]/g, '');
@@ -52,6 +57,18 @@ async function search(keyword) {
   return null; // 네트워크 실패 — 리포트에 "조회 실패"로 남김
 }
 
+// 검색에 안 잡히는 책(POD 등)이나 상태 코드가 애매한 책은 상품 상세페이지의 판매상태로 확인한다
+async function detailStatus(pageUrl) {
+  if (!pageUrl || !pageUrl.includes('/detail/S')) return null;
+  try {
+    const r = await fetch(pageUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+    if (!r.ok) return null;
+    const m = (await r.text()).match(/salePrice\\?":(\d+),\\?"cmdtCdtnCode\\?":\\?"(\d+)\\?",\\?"saleCdtnCode\\?":\\?"(\d+)/);
+    if (!m) return null;
+    return { price: +m[1], status: m[3] === '001' && m[2] === '010' ? '010' : m[3] };
+  } catch (e) { return null; }
+}
+
 async function pool(items, fn) {
   const q = items.slice();
   await Promise.all(Array.from({ length: CONCURRENCY }, async () => { while (q.length) await fn(q.shift()); }));
@@ -74,15 +91,23 @@ async function pool(items, fn) {
   }
 
   const unavailable = [], priceChanged = [], successors = [], failed = [];
+  const onSale = new Set();
   let done = 0;
   await pool([...byIsbn.values()], async entry => {
     const { isbn, book, certs } = entry;
     const res = await search(isbn);
     if (!res) { failed.push(entry); return; }
-    const hit = res.find(x => x.isbn === isbn);
+    let hit = res.find(x => x.isbn === isbn);
+    if (!hit || !STATUS[hit.status]) {
+      const d = await detailStatus(book.pageUrl);
+      if (d) hit = { ...(hit || {}), ...d };
+    }
     const status = hit ? (STATUS[hit.status] || `코드 ${hit.status}`) : '검색 안 됨';
-    if (!hit || !['001', '008'].includes(hit.status)) unavailable.push({ ...entry, status });
-    else if (hit.price && book.price && hit.price !== book.price) priceChanged.push({ ...entry, hit });
+    if (!hit || !ON_SALE.includes(hit.status)) unavailable.push({ ...entry, status });
+    else {
+      onSale.add(isbn);
+      if (hit.price && book.price && hit.price !== book.price) priceChanged.push({ ...entry, hit });
+    }
 
     // 후속판: 제목 연도가 올해 이하이면 다음 해 판을 찾는다
     const y = +((book.title.match(/(20\d\d)/) || [])[1] || 0);
@@ -96,10 +121,12 @@ async function pool(items, fn) {
     if (++done % 200 === 0) console.log(`${done}/${byIsbn.size}`);
   });
 
+  const lineIsbn = line => (line.match(/isbn: '(\d{13})'/) || line.match(/pdt\/(97[89]\d{10})\.jpg/) || [])[1];
+  let out = src;
+
   // 가격 반영: 같은 ISBN·pageUrl 줄의 price/originalPrice/discount만 바꾼다
   let applied = 0;
   if (APPLY_PRICES && priceChanged.length) {
-    let out = src;
     for (const { isbn, book, hit } of priceChanged) {
       out = out.split('\n').map(line => {
         if (!line.includes(`'${isbn}'`) && !line.includes(`/${isbn}.jpg`)) return line;
@@ -110,6 +137,29 @@ async function pool(items, fn) {
         return l;
       }).join('\n');
     }
+  }
+
+  // 판매상태 반영: 품절·절판은 saleStatus를 달고, 다시 판매중이 된 책은 떼어낸다.
+  // "검색 안 됨"·"코드 N"은 상태가 확실하지 않아 건드리지 않는다(리포트로만 확인).
+  let marked = 0, cleared = 0;
+  if (APPLY_STATUS) {
+    const mark = new Map(unavailable.filter(e => e.status === '품절' || e.status === '절판').map(e => [e.isbn, e.status]));
+    out = out.split('\n').map(line => {
+      const isbn = lineIsbn(line);
+      if (!isbn || !line.includes('title:')) return line;
+      const had = line.match(/ saleStatus: '[^']*',/);
+      if (mark.has(isbn)) {
+        const tag = ` saleStatus: '${mark.get(isbn)}',`;
+        if (had && had[0] === tag) return line;
+        marked++;
+        return had ? line.replace(had[0], tag) : line.replace(/ pageUrl:/, `${tag} pageUrl:`);
+      }
+      if (had && onSale.has(isbn)) { cleared++; return line.replace(had[0], ''); }
+      return line;
+    }).join('\n');
+  }
+
+  if (out !== src) {
     new Function(out + ';return REAL_BOOKS')(); // 문법 확인
     fs.writeFileSync(BOOKS_FILE, out);
   }
