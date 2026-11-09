@@ -5,9 +5,11 @@
 //
 // 1) REAL_BOOKS의 모든 도서를 교보문고 검색(ISBN)으로 조회해 rating(10점 만점 → 5점 만점)·reviews(리뷰 수)를 실제 값으로 바꾼다.
 //    교보에 리뷰가 없으면 rating·reviews를 지운다. 조회에 실패한 책은 기존 값을 그대로 둔다.
-// 2) 자격증마다 다시 순위를 매긴다(품절·절판 도서는 맨 뒤).
-//      베스트 5 = 리뷰 수(판매량 대용) 내림차순 · 추천 5 = 나머지 중 평점 → 리뷰 수 내림차순 · 그 외는 태그 없음
+// 2) 자격증명을 교보 검색 '판매량순'(ra=qntt, 상위 80권)으로 조회해 등록 도서의 판매 순위를 구한다.
+// 3) 자격증마다 다시 순위를 매긴다(품절·절판 도서는 맨 뒤).
+//      베스트 5 = 교보 판매량 순위(리뷰가 없어도 반영, 순위 밖이면 리뷰 수로) · 추천 5 = 나머지 중 평점 → 리뷰 수 내림차순 · 그 외는 태그 없음
 //    동점이면 기존 줄 순서를 유지한다. 줄도 이 순서로 다시 놓아 '// 베스트셀러 5' · '// 추천수험서 5' 주석과 맞춘다.
+//    등록된 도서끼리 순서만 바꾸며, 판매 상위라도 미등록 도서는 추가하지 않는다.
 // 가격·판매상태·후속판은 scripts/check-books.js(월 1회)가 담당한다.
 const fs = require('fs');
 const path = require('path');
@@ -43,6 +45,24 @@ async function lookup(isbn) {
     await new Promise(res => setTimeout(res, 1500 * (attempt + 1)));
   }
   return null; // 네트워크 실패 — 기존 값 유지
+}
+
+// 자격증명 판매량순 검색 → ISBN별 판매 순위(0부터). 실패하면 null
+async function salesRank(keyword) {
+  const rank = new Map();
+  for (const page of [1, 2]) {
+    let html = null;
+    for (let attempt = 0; attempt < 3 && html === null; attempt++) {
+      try {
+        const r = await fetch('https://search.kyobobook.co.kr/search?keyword=' + encodeURIComponent(keyword) + '&ra=qntt&len=40&page=' + page, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+        if (r.ok) html = await r.text();
+      } catch (e) { /* 재시도 */ }
+      if (html === null) await new Promise(res => setTimeout(res, 1500 * (attempt + 1)));
+    }
+    if (html === null) return page === 1 ? null : rank;
+    for (const isbn of parseReviews(html).keys()) if (!rank.has(isbn)) rank.set(isbn, rank.size);
+  }
+  return rank;
 }
 
 async function pool(items, fn) {
@@ -87,16 +107,29 @@ const titleOf = line => (line.match(/title: '((?:[^'\\]|\\.)*)'/) || [])[1] || '
     if (l !== lines[i]) { lines[i] = l; reviewUpdated++; }
   }
 
-  // 2) 자격증별 재순위 · 태그 · 줄 순서
+  // 2) 자격증별 교보 판매량 순위
+  const ranks = new Map();
+  let rankFailed = 0;
+  await pool(certs.filter(c => c.rows.length), async c => {
+    const r = await salesRank(c.name);
+    if (r) ranks.set(c.name, r); else rankFailed++;
+  });
+
+  // 3) 자격증별 재순위 · 태그 · 줄 순서
   const changes = [];
+  let ranked = 0;
   for (const c of certs) {
+    const rank = ranks.get(c.name) || new Map();
     const books = c.rows.map((i, order) => {
       const line = lines[i];
-      return { line, order, soldOut: / saleStatus: '/.test(line), rating: num(line, 'rating'), reviews: num(line, 'reviews'),
+      const sales = rank.has(lineIsbn(line)) ? rank.get(lineIsbn(line)) : Infinity;
+      if (sales !== Infinity) ranked++;
+      return { line, order, sales, soldOut: / saleStatus: '/.test(line), rating: num(line, 'rating'), reviews: num(line, 'reviews'),
         before: (line.match(/tags: \[([^\]]*)\]/) || [])[1] || '' };
     });
     const avail = b => (b.soldOut ? 1 : 0);
-    const best = [...books].sort((a, b) => avail(a) - avail(b) || b.reviews - a.reviews || a.order - b.order).slice(0, 5);
+    const bySales = (a, b) => (a.sales === b.sales ? 0 : a.sales < b.sales ? -1 : 1);
+    const best = [...books].sort((a, b) => avail(a) - avail(b) || bySales(a, b) || b.reviews - a.reviews || a.order - b.order).slice(0, 5);
     const rest = books.filter(b => !best.includes(b))
       .sort((a, b) => avail(a) - avail(b) || b.rating - a.rating || b.reviews - a.reviews || a.order - b.order);
     const rec = rest.slice(0, 5);
@@ -119,7 +152,7 @@ const titleOf = line => (line.match(/title: '((?:[^'\\]|\\.)*)'/) || [])[1] || '
   const touched = new Set(changes.map(c => c.cert));
   const md = [
     `# 베스트·추천 주간 갱신 (${today})${DRY_RUN ? ' — dry-run' : ''}`, '',
-    `- 자격증 ${certs.length}개 · 조회 도서 ${isbns.length}권(ISBN 기준) · 평점·리뷰 갱신 ${reviewUpdated}줄 · 태그 변경 ${changes.length}줄(자격증 ${touched.size}개) · 조회 실패 ${failed}`, '',
+    `- 자격증 ${certs.length}개 · 조회 도서 ${isbns.length}권(ISBN 기준) · 평점·리뷰 갱신 ${reviewUpdated}줄 · 태그 변경 ${changes.length}줄(자격증 ${touched.size}개) · 판매순위 확인 ${ranked}줄 · 조회 실패 ${failed} · 판매순위 조회 실패 ${rankFailed}개 자격증`, '',
     `## 태그 변경 (${changes.length})`, '', '| 자격증 | 도서 | 변경 |', '|---|---|---|',
     ...changes.map(c => `| ${c.cert} | ${c.title} | ${c.from} → ${c.to} |`), '',
   ].join('\n');
