@@ -30,7 +30,8 @@ const dec = s => s.replace(/&amp;/g, '&').replace(/&#40;/g, '(').replace(/&#41;/
 const norm = s => s.replace(/20\d\d년?(판)?/g, '').replace(/[\s·・ㆍ,.\-()[\]&+/!:~'"]/g, '');
 const compact = s => s.replace(/[\s·・ㆍ]/g, '');
 const EXAM_WORDS = /필기|실기|기출|문제|시험|합격|완성|요약|모의|핵심|이론|과년도|국시|국가고시|[12]차|단기|CBT|면접|대비|한권|총정리|끝장|수험|마스터|적중|예상|기본서|특강|Win-Q|공략|노트|강의|작업형|필답형/i;
-const certPattern = name => new RegExp('(^|[^가-힣])' + compact(name).split('').map(ch => ch.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('[\\s·・ㆍ]*'));
+// 3글자 이하 자격증명은 뒤도 막는다('의사' ≠ '의사소통능력')
+const certPattern = name => new RegExp('(^|[^가-힣])' + compact(name).split('').map(ch => ch.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('[\\s·・ㆍ]*') + (compact(name).length <= 3 ? '(?![가-힣])' : ''));
 const esc = s =>s.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
 
 // 교보 검색결과 HTML → 종이책(KOR) 상품 목록(검색 순서대로)
@@ -114,7 +115,7 @@ const field = (line, key) => unq((line.match(new RegExp(`${key}: '((?:[^'\\\\]|\
     const picks = [];
     const certRe = certPattern(c.name);
     top.forEach((b, rank) => {
-      if (picks.length >= MAX_PER_CERT || !b.isbn || !b.pid || !b.price) return;
+      if (picks.length >= MAX_PER_CERT || !/^97[89]\d{10}$/.test(b.isbn || '') || !b.pid || !b.price) return;
       if (!['001', '008'].includes(b.status) || !certRe.test(b.title) || !EXAM_WORDS.test(b.title)) return;
       const years = (b.title.match(/20\d\d/g) || []).map(Number);
       if (years.length && Math.max(...years) < thisYear) return;
