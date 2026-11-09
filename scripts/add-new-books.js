@@ -7,6 +7,9 @@
 // 그 자격증 목록 끝에 tags: []로 추가한다(베스트·추천 태그는 목요일 refresh-rankings.js가 판매량·평점으로 붙인다).
 //   - 판매중(001)·예약판매(008)
 //   - 제목에 자격증명이 들어 있음(공백·가운뎃점 무시) — 다른 자격증 교재가 섞이지 않게(사용자 규칙)
+//     바로 앞에 한글이 붙어 있으면 다른 자격증으로 본다('실내건축기사' ≠ 건축기사, '건설기계정비산업기사' ≠ 기계정비산업기사)
+//   - 제목에 수험서 단어(필기·실기·기출·문제·합격…)가 있음 — '서양 건축사' 같은 일반 도서 제외
+//   - 제목 연도가 있으면 올해 이후 판만(2022·2023년판 등 지난 판 제외)
 //   - 그 자격증에 같은 ISBN이 없음
 //   - 이미 등록된 책의 다른 연도판이 아님(같은 출판사 + 연도 뺀 제목 동일) → 추가하지 않고 리포트에만
 //     남긴다. 후속판 교체는 scripts/check-books.js(매달 1일)가 담당.
@@ -26,7 +29,9 @@ const PLACEHOLDER_BYTES = 34150;
 const dec = s => s.replace(/&amp;/g, '&').replace(/&#40;/g, '(').replace(/&#41;/g, ')').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ');
 const norm = s => s.replace(/20\d\d년?(판)?/g, '').replace(/[\s·・ㆍ,.\-()[\]&+/!:~'"]/g, '');
 const compact = s => s.replace(/[\s·・ㆍ]/g, '');
-const esc = s => s.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+const EXAM_WORDS = /필기|실기|기출|문제|시험|합격|완성|요약|모의|핵심|이론|과년도|국시|국가고시|[12]차|단기|CBT|면접|대비|한권|총정리|끝장|수험|마스터|적중|예상|기본서|특강|Win-Q|공략|노트|강의|작업형|필답형/i;
+const certPattern = name => new RegExp('(^|[^가-힣])' + compact(name).split('').map(ch => ch.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('[\\s·・ㆍ]*'));
+const esc = s =>s.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
 
 // 교보 검색결과 HTML → 종이책(KOR) 상품 목록(검색 순서대로)
 function parseSearch(html) {
@@ -87,6 +92,7 @@ const field = (line, key) => unq((line.match(new RegExp(`${key}: '((?:[^'\\\\]|\
 (async () => {
   const src = fs.readFileSync(BOOKS_FILE, 'utf8');
   const lines = src.split('\n');
+  const thisYear = new Date().getFullYear();
 
   // 자격증 블록: 이름, 도서 줄, 닫는 줄 위치
   const certs = [];
@@ -106,9 +112,12 @@ const field = (line, key) => unq((line.match(new RegExp(`${key}: '((?:[^'\\\\]|\
     if (!top) { failed++; return; }
     const have = c.rows.map(i => ({ isbn: lineIsbn(lines[i]), title: field(lines[i], 'title'), publisher: field(lines[i], 'publisher') }));
     const picks = [];
+    const certRe = certPattern(c.name);
     top.forEach((b, rank) => {
       if (picks.length >= MAX_PER_CERT || !b.isbn || !b.pid || !b.price) return;
-      if (!['001', '008'].includes(b.status) || !compact(b.title).includes(compact(c.name))) return;
+      if (!['001', '008'].includes(b.status) || !certRe.test(b.title) || !EXAM_WORDS.test(b.title)) return;
+      const years = (b.title.match(/20\d\d/g) || []).map(Number);
+      if (years.length && Math.max(...years) < thisYear) return;
       if (have.some(h => h.isbn === b.isbn)) return;
       const same = have.find(h => h.publisher === b.publisher && norm(h.title) === norm(b.title));
       if (same) { editions.push({ cert: c.name, rank: rank + 1, book: b, existing: same.title }); return; }
