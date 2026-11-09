@@ -43,7 +43,7 @@ function parseSearch(html) {
     if (g(/data-code="(\w+)"/) !== 'KOR') continue;
     const num = s => s ? +s.replace(/[^\d]/g, '') : null;
     const pub = p.match(/class="prod_publish">\s*<a[^>]*>([^<]+)<\/a>/);
-    const authorBox = (p.split('auto_overflow_inner')[1] || '').split('auto_overflow_footer')[0];
+    const authorBox = (p.split('prod_author_group')[1] || '').split('auto_overflow_footer')[0];
     const score = g(/class="review_klover_text[^"]*">([\d.]+)</);
     const count = g(/class="review_desc">\((\d[\d,]*)\)/);
     out.push({
