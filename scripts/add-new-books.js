@@ -88,7 +88,7 @@ async function pool(items, fn) {
 
 const lineIsbn = line => (line.match(/isbn: '(\d{13})'/) || line.match(/pdt\/(97[89]\d{10})\.jpg/) || [])[1];
 const unq = s => s.replace(/\\(.)/g, '$1');
-const field = (line, key) => unq((line.match(new RegExp(`${key}: '((?:[^'\\\\]|\\\\.)*)'`)) || [])[1] || '');
+const field = (line, key) => unq((line.match(new RegExp(`${key}: '((?:[^'\\\\]|\\\\.)*)'`)) || line.match(new RegExp(`${key}: "((?:[^"\\\\]|\\\\.)*)"`)) || [])[1] || '');
 
 (async () => {
   const src = fs.readFileSync(BOOKS_FILE, 'utf8');
@@ -101,7 +101,7 @@ const field = (line, key) => unq((line.match(new RegExp(`${key}: '((?:[^'\\\\]|\
     const head = lines[i].match(/^  '([^']+)': \[/);
     if (head) certs.push({ name: head[1], rows: [], close: -1 });
     else if (certs.length && certs[certs.length - 1].close < 0) {
-      if (/^\s*\{ title: '/.test(lines[i])) certs[certs.length - 1].rows.push(i);
+      if (/^\s*\{ title: ['"]/.test(lines[i])) certs[certs.length - 1].rows.push(i);
       else if (/^  \],?\s*$/.test(lines[i])) certs[certs.length - 1].close = i;
     }
   }
