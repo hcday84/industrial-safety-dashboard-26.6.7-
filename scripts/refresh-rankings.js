@@ -72,7 +72,7 @@ async function pool(items, fn) {
 
 const lineIsbn = line => (line.match(/isbn: '(\d{13})'/) || line.match(/pdt\/(97[89]\d{10})\.jpg/) || [])[1];
 const num = (line, key) => +((line.match(new RegExp(` ${key}: ([\\d.]+),`)) || [])[1] || 0);
-const titleOf = line => (line.match(/title: '((?:[^'\\]|\\.)*)'/) || [])[1] || '';
+const titleOf = line => (line.match(/title: '((?:[^'\\]|\\.)*)'/) || line.match(/title: "((?:[^"\\]|\\.)*)"/) || [])[1] || '';
 
 (async () => {
   const src = fs.readFileSync(BOOKS_FILE, 'utf8');
@@ -83,7 +83,7 @@ const titleOf = line => (line.match(/title: '((?:[^'\\]|\\.)*)'/) || [])[1] || '
   for (let i = 0; i < lines.length; i++) {
     const head = lines[i].match(/^  '([^']+)': \[/);
     if (head) certs.push({ name: head[1], rows: [] });
-    else if (certs.length && /^\s*\{ title: '/.test(lines[i])) certs[certs.length - 1].rows.push(i);
+    else if (certs.length && /^\s*\{ title: ['"]/.test(lines[i])) certs[certs.length - 1].rows.push(i);
   }
 
   // 1) 평점·리뷰 수 조회
