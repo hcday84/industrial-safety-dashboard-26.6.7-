@@ -19,6 +19,7 @@
 - 링크는 `pageUrl: 'https://product.kyobobook.co.kr/detail/<S코드>'`로 쓴다.
 - 평점은 교보 10점 만점을 2로 나눈 **5점 만점**으로 넣는다(10.0을 그대로 넣던 과거 버그가 있었다).
 - `hasEbook`은 확인된 경우에만 true/false로 넣고, 모르면 넣지 않는다.
+- **전자책은 그 종이책 판의 전자책만 단다.** 종이책 상세페이지에 나온 전자책 코드 중, 전자책 페이지가 다시 그 종이책(S코드)을 가리키는 것만 인정한다. 후속판으로 바꿀 때 옛 판의 `hasEbook`·`ebookUrl`은 넘기지 않는다(2026-11-23 결정).
 - **품절·절판 도서는 삭제하지 않는다.** `saleStatus: '품절'|'절판'`만 달면 화면에 회색 표지와 배지로 나온다(2026-10-26 결정).
 - **같은 책의 스프링판(ISBN 다름)은 중복이 아니다.** 출판사가 독자 편의를 위해 따로 만든 상품이므로 일반판과 함께 둔다(2026-11-13 결정).
 - **판매중 수험서가 없는 니치 자격증을 다른(관련) 자격증 교재로 채우지 않는다.** 차라리 비워 둔다(2026-10-24 결정).
@@ -31,7 +32,7 @@
 |---|---|---|---|
 | 매주 화 10:00 | `weekly-new-books` | [scripts/add-new-books.js](scripts/add-new-books.js) | 판매량순 상위 20위 안의 미등록 신간을 자격증당 최대 2권, `tags: []`로 추가 |
 | 매주 목 10:00 | `weekly-book-rankings` | [scripts/refresh-rankings.js](scripts/refresh-rankings.js) | 평점·리뷰 실제 값으로 갱신 → 베스트 5(판매량순)·추천 5(평점순) 태그를 다시 달고 줄 순서 정렬 |
-| 매달 1일 10:00 | `monthly-book-check` | [scripts/check-books.js](scripts/check-books.js) | 가격 갱신, 품절·절판 `saleStatus` 표시, 후속판 리포트 → 교체 |
+| 매달 1일 10:00 | `monthly-book-check` | [scripts/check-books.js](scripts/check-books.js) | 가격 갱신, 품절·절판 `saleStatus` 표시, 전자책 배지·링크를 현재 판에 맞춤(`--apply-ebooks`), 후속판 리포트 → 교체 → 전자책 다시 대조(`--ebooks-only`) |
 
 - 세 스크립트 모두 `reports/`에 리포트를 남긴다. `add-new-books.js`와 `refresh-rankings.js`는 `--dry-run`을 지원한다.
 - 신간 등록 필터:
